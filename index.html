@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Christopher McCarthy</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+
+    height:100%;
+
+}
+
+body{
+
+    overflow:hidden;
+
+    font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    background:#111;
+
+}
+
+/* ---------- BLURRED BACKGROUND ---------- */
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background-image:url("01-024.jpg");
+    background-size:cover;
+    background-position:center;
+
+    transform:scale(1.15);
+
+    filter:
+        blur(28px)
+        brightness(.30)
+        contrast(120%)
+        saturate(0);
+
+}
+
+/* dark overlay */
+
+.background::after{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+/* ---------- PAGE ---------- */
+
+main{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* ---------- IMAGE ---------- */
+
+.hero{
+
+    position:relative;
+
+    width:min(760px,88vw);
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.55);
+
+}
+
+.hero img{
+
+    display:block;
+    width:100%;
+    height:auto;
+
+}
+
+/* ---------- NAME ---------- */
+
+.name{
+
+    position:absolute;
+
+    left:38px;
+    bottom:36px;
+
+    color:#ece8df;
+
+    font-family:Georgia,serif;
+
+    font-size:clamp(2rem,4vw,3.6rem);
+
+    line-height:.9;
+
+    letter-spacing:-.04em;
+
+    text-shadow:
+        0 3px 25px rgba(0,0,0,.7);
+
+}
+
+/* ---------- INDEX ---------- */
+
+.index{
+
+    position:absolute;
+
+    top:34px;
+    left:38px;
+
+    border:none;
+    background:none;
+
+    color:#ece8df;
+
+    font-size:12px;
+
+    letter-spacing:.35em;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.index::after{
+
+    content:"";
+
+    display:block;
+
+    width:58px;
+    height:1px;
+
+    background:#ece8df;
+
+    margin-top:9px;
+
+    transition:.25s;
+
+}
+
+.index:hover{
+
+    opacity:.65;
+
+}
+
+.index:hover::after{
+
+    width:80px;
+
+}
+
+/* ---------- OVERLAY ---------- */
+
+.overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.35s;
+
+    z-index:8;
+
+}
+
+/* ---------- MENU ---------- */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:430px;
+    max-width:85vw;
+
+    height:100vh;
+
+    background:#1b1b1b;
+
+    padding:120px 70px;
+
+    transform:translateX(-100%);
+
+    transition:.45s cubic-bezier(.2,.8,.2,1);
+
+    z-index:10;
+
+}
+
+nav a{
+
+    display:block;
+
+    color:#ece8df;
+
+    text-decoration:none;
+
+    font-family:Georgia,serif;
+
+    font-size:46px;
+
+    margin-bottom:22px;
+
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    opacity:.45;
+
+}
+
+body.open nav{
+
+    transform:translateX(0);
+
+}
+
+body.open .overlay{
+
+    opacity:1;
+    pointer-events:auto;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<nav>
+
+<a href="#">Liverwort</a>
+
+</nav>
+
+<main>
+
+<div class="hero">
+
+<img src="01-024.jpg">
+
+<button class="index" onclick="toggleMenu()">
+INDEX
+</button>
+
+<div class="name">
+
+Christopher<br>
+McCarthy
+
+</div>
+
+</div>
+
+</main>
+
+<script>
+
+function toggleMenu(){
+
+    document.body.classList.toggle("open");
+
+}
+
+</script>
+
+</body>
+
+</html>
