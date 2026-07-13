@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Saccogynidium decurvum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Geocalycaceae</span>
-    <span class="badge secondary">Saccogynidium</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Diplodium decurvum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Phaeohelotium recurvum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Ranunculus decurvus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Saccogynidium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Saccogynidium australe</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Saccogynidium muricellum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Saccogynidium rigidulum (Nees) Grolle</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Spyridium mucronatum subsp. recurvum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stylidium recurvum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Calyptrocolea R.M.Schust</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea decurva</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Saccogynidium</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,21 +48,25 @@
     <p class="big-num">60</p>
     <footer>45 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">8</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -100,102 +74,107 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Recent advances in technology have seen these difficult procedures now replaced
+    <pre class="description-text">Recent advances in technology have seen these difficult procedures now replaced
 
 with the Environmental Scanning Electron Microscope. It enables the observation of
 
@@ -254,16 +233,19 @@ ESEM papillae. Scale bar IOJ.lm. (H) SEM papillae. Scale bar IOJ.lm.
 
 
                                         72
-                                                                               ,</p>
+                                                                               ,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">ex Gott. et al.
+    <pre class="description-text">ex Gott. et al.
 L u/othrix (Schwaegr.) Lindenb.                                            x            x      x         x      x
 Leptophyllopsis laxa (Mitt.) Schust.                                       x                                    x
 Leptoscyphus sp.                                                           x                                    x
@@ -323,34 +305,43 @@ Total number of taxa                                            56        19    
 
 
 
-                    DISCUSSION                               species is distinctly westem in its Tasmanian distribution</p>
+                    DISCUSSION                               species is distinctly westem in its Tasmanian distribution</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>conservation_status:</strong> Threatened - Nationally Vulnerable</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> Threatened - Nationally Vulnerable</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">C. echinellus (TV) also has papillose leaves, but the stem is
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">C. echinellus (TV) also has papillose leaves, but the stem is
 visible between the leaves and is also papillose, and the leaf
 margins are irregularly toothed.
 
@@ -472,16 +463,19 @@ Sphagnum                                                                        
     novo-zelandicum ......................................... 30            Treubia
     subsecundum ............................................... 30                lacunosa.................................................... 210
 Symphyogyna                                                                       tasmanica .................................................. 210
-    interrupta ................................................... 208      Trichocolea</p>
+    interrupta ................................................... 208      Trichocolea</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">formoruvn 54,55, 121
+    <pre class="description-text">formoruvn 54,55, 121
    surculosum 80, 81, 123
                                               jun.il,~rinum 55, 121
 zUegacmos lorzg;is;l,irus 122              Pseudolepicoleaceae 126
@@ -540,16 +534,19 @@ T                                      Z
 Y&#39;ela~aneagrossiseta 125                 setulosa 107, 125
                                        Zygodon Lgran&#39;llim?~s121
                                          hooken&#39; 121
-                                         inlerrr~edius121</p>
+                                         inlerrr~edius121</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">leaf insertion clearly incubous; leaf surface distinctly
+    <pre class="description-text">leaf insertion clearly incubous; leaf surface distinctly
                                                                                                                                                                                      striolate ...................................................................... Triandrophyllum subtrifidum
                                                                                                                                                                                    Leaves and underleaves shallowly 2-lobed or entire, sometimes
                                                                                                                                                                                      with small accessory teeth, never 3-lobed; leaf insertion ± transverse;
@@ -609,7 +606,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                9   Leaves moderately to deeply concave; underleaves plane,
                                                                                                                                                                                      convex, or cucullate ........................................................................... Clasmatocolea
                                                                                                                                                                                    Leaves plane or convex; underleaves sometimes strongly
-                                                                                                                                                                                     concave, especially near shoot apices .................................................. Chiloscyphus</p>
+                                                                                                                                                                                     concave, especially near shoot apices .................................................. Chiloscyphus</pre>
     
     
   </details>
@@ -618,14 +615,43 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Diplodium decurvum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phaeohelotium recurvum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ranunculus decurvus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Saccogynidium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Saccogynidium australe</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Saccogynidium muricellum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Saccogynidium rigidulum (Nees) Grolle</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Spyridium mucronatum subsp. recurvum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stylidium recurvum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Calyptrocolea R.M.Schust</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea decurva</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -640,22 +666,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [98.3, 89.3, 119.7, 128.5, 196.8, 182.9, 215.1, 230.7, 217.4, 188.0, 117.7, 143.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.9, 20.0, 17.7, 14.5, 11.7, 9.8, 9.3, 10.1, 12.0, 13.9, 16.8, 17.9], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.1, 9.3, 8.1, 6.2, 4.8, 3.3, 2.6, 2.9, 4.1, 5.0, 6.8, 7.8], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

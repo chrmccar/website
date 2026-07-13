@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Colura saccophylla</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lejeuneaceae</span>
-    <span class="badge secondary">Colura</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acrophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura acroloba</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura apiculata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura ari</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura conica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura crispiloba</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura herzogii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Colura ornata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Rectolejeunea subgen</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Colura</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">46</p>
     <footer>11 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">6</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,86 +74,93 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">EPIPHYLLOUS_HEPATICS_1999</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">EPIPHYLLOUS_HEPATICS_1999</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">EPIPHYLLOUS_HEPATICS_1999</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>EPIPHYLLOUS_HEPATICS_1999</strong> (1 entry)</summary>
+    <summary>
+      <strong>EPIPHYLLOUS_HEPATICS_1999</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">epiphyllous species are in the floristic regions of New Zealand, New Caledonia, Macraonesia, and
+    <pre class="description-text">epiphyllous species are in the floristic regions of New Zealand, New Caledonia, Macraonesia, and
 Madagascar. Frullania epiphylls range in altitude from sea-level to 2500m and can be categorised
 into facultative or accidental epiphylls. The number of Frullania species currently recorded growing
 as epiphylls will no doubt increase as more revisions of the genus in different floristic regions take
@@ -237,16 +220,19 @@ growing as epiphylls in New Zealand (based on         Konrat 97/102 (AKU); F. pa
 our own observations); one species in New             North Island, Gisborne District, MJ von Konrat
 Caledonia (Dr. Hans Hürlimann, pers. com.) and        &amp; RK Barraclough 97/126 (AKU) and South
 one species in Colombia (Jaime Uribe M., pers.        Island, Otago District, JE Braggins 98/389c
-comm.) In addition, we present an extensive           (AKU); F. ptychantha: New Zealand, North</p>
+comm.) In addition, we present an extensive           (AKU); F. ptychantha: New Zealand, North</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Lophocolea echinella Lindenb. &amp; Gottsche               (Steph.) ].].Engel
+    <pre class="description-text">Lophocolea echinella Lindenb. &amp; Gottsche               (Steph.) ].].Engel
 Chiloscyphus erectifolius (Steph.) Steph.                      Lophocolea meridionalis Steph.
 Chiloscyphus fissistipulus (Steph.) ].].Engel &amp;        Chiloscyphus novae-zeelandiae (Lehm. &amp; Lindenb.)
         R.M.Schust.                                           ].].Engel &amp; R.M.Schust. var. novae-zeelandiae
@@ -306,25 +292,31 @@ Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle       Echinolejeunea papi
         Chiloscyphus notophyllus (Hook.f. &amp; Taylor)      Eoisotachis stephanii (Salm.) R.M.Schust.
         Hassel                                           Eotrichocolea polyacantha (Hook.f. &amp; Taylor)
 Clasmatocolea strongylophylla (Hook.f. &amp; Taylor)                 R.M.Schust.
-       Grolle</p>
+       Grolle</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">,
+    <pre class="description-text">,
 
 
 
@@ -384,7 +376,7 @@ bryophytes found in Tasmanian rainforest.
 93. Lepicolea scolqbsndra is a large epiphyte, often found in the canopy or
     other well-lit situations. It is p~nnatelybranched, with the lateral
     branches often tapering to flagellifornl tips. The leaves are divided
-    into four long, tapering lobes and there are ~ e e t hon the dorsal</p>
+    into four long, tapering lobes and there are ~ e e t hon the dorsal</pre>
     
     
   </details>
@@ -393,14 +385,41 @@ bryophytes found in Tasmanian rainforest.
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acrophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura acroloba</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura apiculata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura ari</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura conica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura crispiloba</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura herzogii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Colura ornata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Rectolejeunea subgen</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -415,22 +434,32 @@ bryophytes found in Tasmanian rainforest.
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [86.0, 79.0, 106.4, 112.7, 173.7, 166.3, 195.4, 207.7, 190.1, 163.9, 104.2, 124.2], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.6, 20.8, 18.4, 15.2, 12.4, 10.5, 9.9, 10.8, 12.6, 14.5, 17.4, 18.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.0, 10.1, 8.8, 6.8, 5.7, 4.0, 3.4, 3.7, 4.7, 5.6, 7.5, 8.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

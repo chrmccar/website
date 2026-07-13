@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Trichocolea mollissima</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Trichocoleaceae</span>
-    <span class="badge secondary">Tricochlea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Bertya mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Castanea mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Darwinia mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Halichondria (Halichondria) mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hippospongia mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Oenothera mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Salix x mollisima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tacsonia mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Thelephora mollissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tricochlea mollissima</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Tricochlea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,35 +48,37 @@
     <p class="big-num">909</p>
     <footer>318 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">10.8&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1679&thinsp;mm</p>
-    <footer>
-      CV 21.5
-    </footer>
+    <footer>annual · CV&thinsp;21.5</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">33</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -112,302 +86,282 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
-          <td class="muted small">Wikipedia English; fetched via title &#39;Trichocolea mollissima…</td>
-          <td>⚠</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Wikipedia English; fetched via title &#39;Trichocolea molli…</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>7.0–12.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>7.0–12.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>14.0–24.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>14.0–24.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
-          <td class="muted small">Wikipedia English; fetched via title &#39;Trichocolea mollissima…</td>
-          <td>⚠</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Wikipedia English; fetched via title &#39;Trichocolea molli…</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>0.6</td>
-          <td>mm</td>
-          <td class="muted small">Wikipedia English; fetched via title &#39;Trichocolea mollissima…</td>
-          <td>⚠</td>
+          <td>thallus width mm</td>
+          <td><strong>0.6</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">Wikipedia English; fetched via title &#39;Trichocolea molli…</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>13.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>13.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>35.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>35.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>small</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Racomitrium Brid.
+    <pre class="description-text">Racomitrium Brid.
 Three species of Racomitrium have been reported from Lord Howe Island, but none are known
 to occur there.
 ‘Racomitrium aciculum’ was reported for the island by Ramsay (1984), but there is no such
@@ -530,16 +484,19 @@ Trichocolea pluma (Reinw. Blume &amp; Nees) Mont.
 Jungermannia pluma (Reinw., Blume &amp; Nees), Nova Acta Acad. Leop.-Carol. 12: 209 (1824);
 Trichocolea pluma (Reinw., Blume &amp; Nees) Mont. in Gaudichaud, Voy. Bonite, Bot. 3: 238 (1846)
 Type: INDONESIA, Java, ‘in montibus Parangkudjang Provinciae Bantam Iavae insulae’,
-Blume s.n., herbarium unknown, not seen.</p>
+Blume s.n., herbarium unknown, not seen.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Steph.                                         Telaranea centipes (Taylor) R.M.Schust.
+    <pre class="description-text">Steph.                                         Telaranea centipes (Taylor) R.M.Schust.
 Ricciocarpos natans (L.) Corda                         Telaranea corticola (Steph.) E.A.Hodgs.
                                                        Telaranea dispar (Mont.) E.A.Hodgs.
 Saccogynidium australe (Mitt.) Grolle                  Telaranea elegans (Colenso) J.J.Engel &amp; G.L.S.Merrill
@@ -599,25 +556,31 @@ Temnoma palmatum var. pseudospiniferum                    and the name they shou
 Temnoma paucisetigerum R.M.Schust.                        (1972), and synonyms which were names accepted by
 Temnoma pulchellum (Hook.) Mitt.                          Hamlin (1972) or in later literature but are not accepted
 Temnoma quadrifidum (Mitt.) E.A.Hodgs. &amp; Allison          in this checklist.
-Temnoma quadripartitum var. pseudopungens</p>
+Temnoma quadripartitum var. pseudopungens</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants with an aspect of a plumosely branched pleurocarpous moss, ascending or, when arboreal, pendulous, pale yellowish green to ± pale cream, robust, to 3.5 cm wide, including branches. Branches regularly 3-pinnate, tertiary branches uniformly arising from lowest secondary branches, the leading axis retaining its dominance, the main branches progressively less vigorous, the primary branches widely spreading; in suberect, particularly vigorous plants the pinnae drooping, convex and oriented perpendicular to plane of main axis. Branches jula- ceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems stiff, paraphyllia present, often dense, often branched, with cells similar to those of leaf cilia. Rhizoids usually absent. Leaves of stem firmly attached, stiffly and widely spreading but with lobes and cilia arching toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ often appearing as a dense, brushed fringe of cilia, the individual lobes hardly discernible, the leaves on the stem distant to approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, suborbicular to subreniform, divided into 4-6 erect, pinnulate lobes (the lobes in ventral sector of leaf weakly larger), each lobe actually unequally (2)3-fid, consisting of a stronger, erect, regularly pinnulate division and 1-2 small, ir¬ regular, abaxially displaced, accessory divisions that are (1)2-4 cells wide at the base, and arched in same direction as main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, usually ± distinctly pinnulate (best seen in adaxial view), with numerous capillary segments and cilia, the ventral lobes 2-5 cells wide at base, with 2-3 tiers of lat¬ erally juxtaposed cells basal to the uniseriate row of 5-6(7) cells; cells of uniseriate row tapering, with swollen, dilated septa, thick-walled, becoming progressively longer and narrower toward lobe apices and ultimately becoming capillary, the surface finely striolate-papillose, the penultimate cell 10-12 p^m wide X 60-98 pm long; terminal cell of uniseriate row often curved to sinuous, finely tapering to a sharp point, 7-12 pm wide, (90)100-150(170 or more) pm long, usually thick-walled in the tip, the surface smooth to finely striate-papillose; margins of lobes armed with pairs of opposing cilia, the cilia usually branched, often repeatedly, the armature in basal sector of lobe inserted on the abaxial surface of lobe and abaxially patent, the armature in distal sector of lobe ± in same plane as lobe, often appearing as if brushed in the same direction as the lobe; marginal cilia of lobe uniformly uniseriate throughout, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 2-5 cells high (from base to sinuses); margins of disc with branched cilia similar to those of lobes, the cilia sometimes abaxially dis¬ placed and lying at right angles to the disc plane. Cells of disc ± thick-walled, rarely with small trigones, the cells elongated, in somewhat regular tiers, in lamina middle 14-24 pm wide X 34-54 pm long; surface long-striolate, with only a few papillae. Oil-bodies pale New Zealand, South Is., Westland EP, between eonfluenee of Jaekson R. and Arawata R. and Lake Ellery; 2, from Engel 18034, New Zealand, South Is., Westland EP, Mt. Aspiring Natl. Park, summit area of Haast Pass; 3-7, from Engel 18489, New Zealand, South Is., Canterbury EP, Arthur’s Pass Natl. Park, Bealey R.; 8, 9, from Engel 18942, New Zealand, South Is., Westland EP, near Waiho R. between Lake Wombat Terraee and Canavans Knob.) 200 m. smokey grey, the paired cells at lobe bases with 11-15(20) per cell, irregularly granular- papillose, the tiny spherules distinct but faint and variable in size, the oil-bodies irregular in shape: subglobose to ovoid to broad-elliptic, some potato-shaped and with irregular bulges, 4. 8-6.2 X 7.7-10.6 juim, spherical ones 3. 8-6.7 juim in diam. Underleaves somewhat smaller than leaves, free or narrowly connate on one side, subreniform, quadrifid, the median sinus often deeper (then bisbifid), the armature similar to leaves; disc 3-4 cells high, at times 2 cells high below median sinus. Eungal partner absent. Androecia intercalary on primary and secondary branches, hardly differentiated, the bracts divided to ca. 0.7-0.8, similar to leaves except somewhat ventricose at base and the disc higher dorsally, the abaxial face of lamina devoid of surface armature; antheridia large for bract size, 1- 2 per bract, the stalk to ca. 18 cells long, biseriate. Coelocaule on main shoot or short to rather long branches, but becoming axillary or pseudolateral (through development, respectively, of 2 or 1 subfloral branches), the coelocaule cylindrical to narrowly clavate, densely paraphyllose. Seta becoming hollow at maturity, ca. 21 cells in diam., the epidermal cells in numerous rows, smaller, the inner cells gradually becoming larger toward seta middle. Capsule ellipsoidal, the wall 78-92 juim thick, of 7-8 layers; outer layer of cells large, hyaline, ephemeral, lacking thickenings; innermost layer with very irregularly oriented, various-sized cells, with semiannular bands common, rather narrow, usually complete, rarely forked. Spores 13.5-13.9 luim in diam., with low but sharply defined, close papillae and short- vermiculate markings. Elaters somewhat contorted, bluntly pointed at the ends, short, 8.6- 11.9 |ULm wide, bispiral, the spirals 3. 8-4. 2 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Campbell Island, Stewart Island (0-340 m). South Island (0-915 m). North Island (150-1040 m), Chatham Islands (160-260 m); Australia: Tasmania, Victoria, New South Wales. In New Zealand known from Rakiura (Stewart Island, Solander Island), Eiordland, Southern North Island, Volcanic Plateau, Taranaki, Gisborne, Auckland and Northland EPs. Common throughout our area in a variety of forest types from sea level to ca. 950 m, especially those that are rich and particularly wet. It occurs on the forest floor often in damp leaf litter (then erect), in often thick masses on logs that are totally bryophyte covered, on old stumps and tree bases (then horizontal to ± pendulous), on tree-fern trunks, and on bryophyte- covered banks (at times along stream courses). It tolerates particularly wet, terricolous niches such as mucky soil in boggy areas, etc. It also may be arboreal (hosts include Nothofagus men- ziesii, Weinmannia racemosa and Neomyrtus pedunculatus) and is then pendulous in hanging sheets of bryophytes. It is occasional on vertical rock walls, rock ledges, or wet rock faces (especially where some soil and decaying vegetation have accumulated). Also in relatively open, boggy areas where it occurs at the sides of wet depressions and on bryophyte-covered banks. Accompanying species are Adelanthus falcatus, Breutelia pendula, Canalohypopterygium tamariscinum, Cratoneuropsis relaxa, Cyathophorum bulbosum, Dicranoloma billardierei, Distichophyllum pulchellum, Heteroscyphus billardierei, Hypnodendron comosum, Leptotheca gaudichaudii, Lepidogyna hodgsoniae, Lepidozia pendulina, L. spinosissima, Lepidolaena ies. 7. Underleaf disc. (Figs. 1-5, 7, from Engel 18637, New Zealand, South Is., Fiordland EP, track to Island Lake; 6, from Glenny 8853, New Zealand, South Is., Canterbury EP, Arthur’s Pass, McGrath Creek.) palpebrifolia, L taylorii, Metzgeria leptoneura, Plagiochila circinalis, R gigantea, R incurvicolla, R lyallii, R retrospectans, R Stephens oniana, R strombifolia, Ptychomnion aciculare, Pyrrhobryum mnioides, Temnoma pulchellum, Thuidium furfurosum and Wey- mouthia cochlearifolia. Comments: Smaller, weakly developed plants may be confused with Trichocolea hatcheri, and must be identified with care. Also, hygrophilous plants growing on mucky soils often appear ‘‘etiolated” and spindly and have fewer tertiary branches. In such phases cells of the cilia have only slightly thickened walls, and have septa that are only slightly thickened. The cells of the uniseriate row, including the terminal cell, are often more papillose. The terminal cell tapers, but is narrowly rounded and neither sharp nor thickened at the tip. The terminal cell, however, is long and narrow, as in more well-developed material of the species. Most often confused with Lepidogyna hodgsoniae as the two species are about the same size and can occur in similar niches in forest, are often the same yellow-green color, are both regularly 3-pinnate, and both ciliate. Trichocolea mollissima lacks lobules, and the cilia are branched while in Lepidogyna they are unbranched. Eor the confusion in names applied to this species and Trichocolea hatcheri, see under that species.</p>
+    <pre class="description-text">Plants with an aspect of a plumosely branched pleurocarpous moss, ascending or, when arboreal, pendulous, pale yellowish green to ± pale cream, robust, to 3.5 cm wide, including branches. Branches regularly 3-pinnate, tertiary branches uniformly arising from lowest secondary branches, the leading axis retaining its dominance, the main branches progressively less vigorous, the primary branches widely spreading; in suberect, particularly vigorous plants the pinnae drooping, convex and oriented perpendicular to plane of main axis. Branches jula- ceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems stiff, paraphyllia present, often dense, often branched, with cells similar to those of leaf cilia. Rhizoids usually absent. Leaves of stem firmly attached, stiffly and widely spreading but with lobes and cilia arching toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ often appearing as a dense, brushed fringe of cilia, the individual lobes hardly discernible, the leaves on the stem distant to approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, suborbicular to subreniform, divided into 4-6 erect, pinnulate lobes (the lobes in ventral sector of leaf weakly larger), each lobe actually unequally (2)3-fid, consisting of a stronger, erect, regularly pinnulate division and 1-2 small, ir¬ regular, abaxially displaced, accessory divisions that are (1)2-4 cells wide at the base, and arched in same direction as main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, usually ± distinctly pinnulate (best seen in adaxial view), with numerous capillary segments and cilia, the ventral lobes 2-5 cells wide at base, with 2-3 tiers of lat¬ erally juxtaposed cells basal to the uniseriate row of 5-6(7) cells; cells of uniseriate row tapering, with swollen, dilated septa, thick-walled, becoming progressively longer and narrower toward lobe apices and ultimately becoming capillary, the surface finely striolate-papillose, the penultimate cell 10-12 p^m wide X 60-98 pm long; terminal cell of uniseriate row often curved to sinuous, finely tapering to a sharp point, 7-12 pm wide, (90)100-150(170 or more) pm long, usually thick-walled in the tip, the surface smooth to finely striate-papillose; margins of lobes armed with pairs of opposing cilia, the cilia usually branched, often repeatedly, the armature in basal sector of lobe inserted on the abaxial surface of lobe and abaxially patent, the armature in distal sector of lobe ± in same plane as lobe, often appearing as if brushed in the same direction as the lobe; marginal cilia of lobe uniformly uniseriate throughout, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 2-5 cells high (from base to sinuses); margins of disc with branched cilia similar to those of lobes, the cilia sometimes abaxially dis¬ placed and lying at right angles to the disc plane. Cells of disc ± thick-walled, rarely with small trigones, the cells elongated, in somewhat regular tiers, in lamina middle 14-24 pm wide X 34-54 pm long; surface long-striolate, with only a few papillae. Oil-bodies pale New Zealand, South Is., Westland EP, between eonfluenee of Jaekson R. and Arawata R. and Lake Ellery; 2, from Engel 18034, New Zealand, South Is., Westland EP, Mt. Aspiring Natl. Park, summit area of Haast Pass; 3-7, from Engel 18489, New Zealand, South Is., Canterbury EP, Arthur’s Pass Natl. Park, Bealey R.; 8, 9, from Engel 18942, New Zealand, South Is., Westland EP, near Waiho R. between Lake Wombat Terraee and Canavans Knob.) 200 m. smokey grey, the paired cells at lobe bases with 11-15(20) per cell, irregularly granular- papillose, the tiny spherules distinct but faint and variable in size, the oil-bodies irregular in shape: subglobose to ovoid to broad-elliptic, some potato-shaped and with irregular bulges, 4. 8-6.2 X 7.7-10.6 juim, spherical ones 3. 8-6.7 juim in diam. Underleaves somewhat smaller than leaves, free or narrowly connate on one side, subreniform, quadrifid, the median sinus often deeper (then bisbifid), the armature similar to leaves; disc 3-4 cells high, at times 2 cells high below median sinus. Eungal partner absent. Androecia intercalary on primary and secondary branches, hardly differentiated, the bracts divided to ca. 0.7-0.8, similar to leaves except somewhat ventricose at base and the disc higher dorsally, the abaxial face of lamina devoid of surface armature; antheridia large for bract size, 1- 2 per bract, the stalk to ca. 18 cells long, biseriate. Coelocaule on main shoot or short to rather long branches, but becoming axillary or pseudolateral (through development, respectively, of 2 or 1 subfloral branches), the coelocaule cylindrical to narrowly clavate, densely paraphyllose. Seta becoming hollow at maturity, ca. 21 cells in diam., the epidermal cells in numerous rows, smaller, the inner cells gradually becoming larger toward seta middle. Capsule ellipsoidal, the wall 78-92 juim thick, of 7-8 layers; outer layer of cells large, hyaline, ephemeral, lacking thickenings; innermost layer with very irregularly oriented, various-sized cells, with semiannular bands common, rather narrow, usually complete, rarely forked. Spores 13.5-13.9 luim in diam., with low but sharply defined, close papillae and short- vermiculate markings. Elaters somewhat contorted, bluntly pointed at the ends, short, 8.6- 11.9 |ULm wide, bispiral, the spirals 3. 8-4. 2 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Campbell Island, Stewart Island (0-340 m). South Island (0-915 m). North Island (150-1040 m), Chatham Islands (160-260 m); Australia: Tasmania, Victoria, New South Wales. In New Zealand known from Rakiura (Stewart Island, Solander Island), Eiordland, Southern North Island, Volcanic Plateau, Taranaki, Gisborne, Auckland and Northland EPs. Common throughout our area in a variety of forest types from sea level to ca. 950 m, especially those that are rich and particularly wet. It occurs on the forest floor often in damp leaf litter (then erect), in often thick masses on logs that are totally bryophyte covered, on old stumps and tree bases (then horizontal to ± pendulous), on tree-fern trunks, and on bryophyte- covered banks (at times along stream courses). It tolerates particularly wet, terricolous niches such as mucky soil in boggy areas, etc. It also may be arboreal (hosts include Nothofagus men- ziesii, Weinmannia racemosa and Neomyrtus pedunculatus) and is then pendulous in hanging sheets of bryophytes. It is occasional on vertical rock walls, rock ledges, or wet rock faces (especially where some soil and decaying vegetation have accumulated). Also in relatively open, boggy areas where it occurs at the sides of wet depressions and on bryophyte-covered banks. Accompanying species are Adelanthus falcatus, Breutelia pendula, Canalohypopterygium tamariscinum, Cratoneuropsis relaxa, Cyathophorum bulbosum, Dicranoloma billardierei, Distichophyllum pulchellum, Heteroscyphus billardierei, Hypnodendron comosum, Leptotheca gaudichaudii, Lepidogyna hodgsoniae, Lepidozia pendulina, L. spinosissima, Lepidolaena ies. 7. Underleaf disc. (Figs. 1-5, 7, from Engel 18637, New Zealand, South Is., Fiordland EP, track to Island Lake; 6, from Glenny 8853, New Zealand, South Is., Canterbury EP, Arthur’s Pass, McGrath Creek.) palpebrifolia, L taylorii, Metzgeria leptoneura, Plagiochila circinalis, R gigantea, R incurvicolla, R lyallii, R retrospectans, R Stephens oniana, R strombifolia, Ptychomnion aciculare, Pyrrhobryum mnioides, Temnoma pulchellum, Thuidium furfurosum and Wey- mouthia cochlearifolia. Comments: Smaller, weakly developed plants may be confused with Trichocolea hatcheri, and must be identified with care. Also, hygrophilous plants growing on mucky soils often appear ‘‘etiolated” and spindly and have fewer tertiary branches. In such phases cells of the cilia have only slightly thickened walls, and have septa that are only slightly thickened. The cells of the uniseriate row, including the terminal cell, are often more papillose. The terminal cell tapers, but is narrowly rounded and neither sharp nor thickened at the tip. The terminal cell, however, is long and narrow, as in more well-developed material of the species. Most often confused with Lepidogyna hodgsoniae as the two species are about the same size and can occur in similar niches in forest, are often the same yellow-green color, are both regularly 3-pinnate, and both ciliate. Trichocolea mollissima lacks lobules, and the cilia are branched while in Lepidogyna they are unbranched. Eor the confusion in names applied to this species and Trichocolea hatcheri, see under that species.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">yellow-green shoots are pinnately branched, forming soft, flattened fronds up to 100
+    <pre class="description-text">yellow-green shoots are pinnately branched, forming soft, flattened fronds up to 100
   mm long. The branches �re also pinnately divided, and the length of the sub-branches
   decreases towards the branch apex so that the branches have a rather rounded-triangular
   appearance, somewhat resembling a lace doily. The featheriness arises from the hairy,
@@ -677,16 +640,19 @@ D
     Although locally common in suitable habitats, in overall terms this species is rare in
     the region.
 
-    Similar species: Marsupidium spp., Tylimanthus spp.</p>
+    Similar species: Marsupidium spp., Tylimanthus spp.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+    <pre class="description-text">Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
 Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
                          (F); Copland Valley, ca. 90 m, Child H4731 (F); 5 km             posed of 2 disc cells, the uniseriate portion 6–
                          N of Runanga, ca. 60 m, Child H5366—c. ? (F). NEL-               9(10) cells long, the cells 6 thin-walled, the septa
@@ -743,16 +709,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                          weakly incubous; leaves 1015–1825 mm wide 3                      minating in a short uniseriate cilium of 2–3 elon-
                          1015–1400 mm long, very slightly asymmetric, 6                   gated cells, often with a terminal slime papilla;
                          equally (7)9–12(13)-lobed to 0.55–0.65, the lobes                lamina composed of 6 regularly subrectangular
-                         6 symmetrically spreading, longer than the disc.                 cells, the margins curved, the marginal cells</p>
+                         6 symmetrically spreading, longer than the disc.                 cells, the margins curved, the marginal cells</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Oil bodies several per cell, not grape-cluster type; apical tooth of lobule
+    <pre class="description-text">Oil bodies several per cell, not grape-cluster type; apical tooth of lobule
                                                                                                                                                                                     ± parallel to stem; hyaline papilla on outer side of apical tooth of lobule ............. 19
                                                                                                                                                                                19 Leaf base with 1 or 2 enlarged cells, each almost filled by an
                                                                                                                                                                                     oil body ................................................................................ Harpalejeunea latitans
@@ -811,16 +780,19 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                Group C
                                                                                                                                                                                Leafy liverworts without underleaves, or underleaves not apparent
                                                                                                                                                                                1 Leaves with a ventral lobule ........................................................................................ 2
-                                                                                                                                                                                  Leaves without a ventral lobule ................................................................................... 3</p>
+                                                                                                                                                                                  Leaves without a ventral lobule ................................................................................... 3</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Trichocolea mollissima is a large liverwort of the Trichocoleaceae family. It is found commonly throughout wet sclerophyll and rainforests in Australia and New Zealand. In Australia it is present in Tasmania, Victoria, New South Wales and Queensland. It also occurs extensively on the north island of New Zealand. Its most distinctive feature is its highly divided, densely arranged and extremely small leaves, which lend it a woolly appearance; hence its common name “woolly worm”. It usually grows in a matted or tufted habit on the ground and lower trunks of trees, and exhibits a preference for decaying wood and deep shade. On casual observance, its leaf arrangement and growth habit resemble that of a large moss. Its stems are commonly 3–6 cm long, with leaves up to 0.6mm wide, with up to 3-3 divisions. leaves and stems are arranged in bi-pinnate form. It is commonly coloured pale-yellow-green, which fades to white or blue-green upon desiccation in drier conditions.</p>
+    <pre class="description-text">Trichocolea mollissima is a large liverwort of the Trichocoleaceae family. It is found commonly throughout wet sclerophyll and rainforests in Australia and New Zealand. In Australia it is present in Tasmania, Victoria, New South Wales and Queensland. It also occurs extensively on the north island of New Zealand. Its most distinctive feature is its highly divided, densely arranged and extremely small leaves, which lend it a woolly appearance; hence its common name “woolly worm”. It usually grows in a matted or tufted habit on the ground and lower trunks of trees, and exhibits a preference for decaying wood and deep shade. On casual observance, its leaf arrangement and growth habit resemble that of a large moss. Its stems are commonly 3–6 cm long, with leaves up to 0.6mm wide, with up to 3-3 divisions. leaves and stems are arranged in bi-pinnate form. It is commonly coloured pale-yellow-green, which fades to white or blue-green upon desiccation in drier conditions.</pre>
     
     
   </details>
@@ -829,14 +801,41 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Bertya mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Castanea mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Darwinia mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Halichondria (Halichondria) mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hippospongia mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Oenothera mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Salix x mollisima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tacsonia mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Thelephora mollissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tricochlea mollissima</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -851,22 +850,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [77.8, 70.2, 89.2, 97.6, 148.3, 144.8, 170.7, 189.1, 172.2, 149.4, 95.5, 109.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.7, 20.8, 18.6, 15.5, 12.7, 10.8, 10.2, 11.1, 12.9, 14.7, 17.4, 18.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.9, 9.9, 8.8, 6.9, 5.4, 3.8, 3.2, 3.3, 4.8, 5.7, 7.6, 8.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,51 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Nothogymnomitrion erosum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Gymnomitriaceae</span>
-    <span class="badge secondary">Nothogymnomitrion</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (14)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Aglaophyllum erosum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Brachidontes erosus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Calymperes erosum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chenopodium erosum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Nitophyllum erosum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Nothogymnomitrion</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pachyrhizus erosus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Podotenus erosus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Scotinosoma erasum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cesius erosus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Gymnomitrion denticulatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Gymnomitrion erosum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Herzogobryum erosum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophozia subgen</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Nothogymnomitrion</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -84,35 +48,37 @@
     <p class="big-num">93</p>
     <footer>36 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">7.5&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">2006&thinsp;mm</p>
-    <footer>
-      CV 21.5
-    </footer>
+    <footer>annual · CV&thinsp;21.5</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">24</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">14</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -120,230 +86,219 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>300.0–350.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>300.0–350.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>18.0–20.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>18.0–20.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>bulging</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>bulging</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">nadl, rps3, rpb2, respectively).—: missing data. Voucher numbers begin            JF315941, AY6079311, JF316196, JF316291, AY6080521, AY608169,
+    <pre class="description-text">nadl, rps3, rpb2, respectively).—: missing data. Voucher numbers begin            JF315941, AY6079311, JF316196, JF316291, AY6080521, AY608169,
 ning with &#34;gb&#34; designate sequences downloaded from GenBank.                       AY608121, AY607870, AY608169, KJ802016; Metacalypogeia altemifolia:
                                                                                   E30, Bhutan, D.G. Long 28712 (Ε),—, JF513396, JF513412, JF513455,
    Acrobolbaceae: Acrobolbus ochrophyllus: FATOL118, Chile, /./. En gel           JF513474, KJ802040, KJ802068, KF852423, KF851522,—; Mizutania
@@ -403,16 +358,19 @@ s.n. (DUKE),—, KF942605, KF943370,—, KF943523,—, KF943089, KF943246,      
 J.J.                                                                           KF942558, KF943328,—, KF943475,—, KF943043, KF943200, KF942761,—;
 KF943125, KF942711,—; L1233, New Zealand, J.J. Engel &amp; M. von                  N. japonica: L1509, USA: Alaska, W.B. Schpfteld (DUKE),—, KF942620,
 Konrat 28342 (F),—&gt; KF942551,—, KF943584, KF943470,—,—, KF943193,              KF943386,—, KF943539, KF942939, KF943104,—;        N. lescurii: L1077,
-KF942755,—; G. graveolens: E13, China: Yunnan, D. G. Long 34828                USA: North Carolina, B. Shaw 12987 (DUKE),—, KF942522,—&gt;■—-,</p>
+KF942755,—; G. graveolens: E13, China: Yunnan, D. G. Long 34828                USA: North Carolina, B. Shaw 12987 (DUKE),—, KF942522,—&gt;■—-,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Lunularia cruciata (L.) Dumort.                          Metzgeria atrichoneura Spruce
+    <pre class="description-text">Lunularia cruciata (L.) Dumort.                          Metzgeria atrichoneura Spruce
                                                          Metzgeria australis Steph.
 Marchantia berteroana Lehm. &amp; Lindenb.                   Metzgeria bartlettii Kuwah.
 Marchantia foliacea Mitt.                                Metzgeria campbelliensis Kuwah.
@@ -472,42 +430,51 @@ Pachyschistochila subhyalina var. grandidentata        Plagiochila annotina Lind
 Pachyschistochila subhyalina (R.M.Schust.)             Plagiochila banksiana Gottsche var. banksiana
        R.M.Schust. &amp; ].].Engel var. subhyalina         Plagiochila banksiana var. echinophora Inoue &amp;
        Schistochila subhyalina R.M.Schust.                     R.M.Schust.
-Pachyschistochila succulenta ].].Engel &amp; R.M.Schust.   Plagiochila baylisii Inoue &amp; R.M.Schust.</p>
+Pachyschistochila succulenta ].].Engel &amp; R.M.Schust.   Plagiochila baylisii Inoue &amp; R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (3 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(3)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants firm but usually not rigid, typically erect, at times loosely procumbent, rarely forming cushions, light or deep green to usually brownish or reddish, or purplish red or piceous to black, minute to robust. Branching sparing, usually from lower, smaller-leaved sectors of leafy axes; branches all lateral-intercalary, from middle or ventral end of leaf axil, of 2 types: phototropic and soon becoming larger-leaved, and geotropic, microphyllous and forming stoloni- form, root-like axes. Rhizoids lacking from sectors with mature leaves, usually abundant on geotropic axes. Leaves vertical, usually erect- spreading to stiffly, pectinately spreading (in a few taxa scale-like and erect or sheathing), distant to imbricate (but with stem at least in part exposed), transversely oriented, the insertion transverse in dorsal half, the leaf insertions crossing the stem midline dorsally (except subg. Stolonicaulon), the leaves mostly somewhat concave to canaliculate, usually bilobed to 0.15-0.45 (rarely unlobed); lobes usually equal, triangular, blunt or rounded to sharp, entire; marginal cells of lobes and lamina never differentiated, chlorophyllose like others, never decolorate, never forming crenulations or denticulations. Cells with conspicuous, often coarse trigones, the cells usually small, in lobes 8-18 juim, in median sector of lamina 8-15 X 12-22 juim; surface smooth. Oil-bodies (Schuster, 2002a) 2- 3(4) per cell, large, finely granular, mostly ovoid or oval. Underleaves completely lacking, the leaf insertions approaching the ventral stem midline. Dioecious, rarely (but in both of our species) paroecious. Androecia terminal or becoming intercalary, the bracts in 4-12 pairs, not reduced in size, the base strongly ventricose, saccate; antheridia 1-6 per bract, the stalk 1-2-seriate. Gynoecial bracts in (1)2-3 increasingly larger series, the innermost bracts less deeply divided than leaves, ± erect, arising from a ring- or tube-like, fleshy stem-perigynium; bracteoles completely lacking. Perianth short, included within (and ± hidden by) the uppermost bracts, typically a short tube, rarely vestigial and then reduced to lobed vestiges or, rarely, lacking, the perianth subtended by a ± distinct, erect, tubular perigynium; perianth when mature broadly obconic to ovate, delicate, contracted at the plicate mouth, the mouth 4-6(8)-lobed after extrusion of the capsule, the lobes crenulate by projecting cells. Calyptra with sterile archegonia near its base. Seta short to moderately long, massive or reduced to 8-10 outer + 3-4 inner rows of cells. Capsule spherical to slightly ovoid, usually 4-valved to the base, the wall 2- or 2-3-stratose; outer layer of cells with strongly nodular thickenings on all but short walls; inner layer of cells with weaker nodular thickenings, often tangentially extended as incomplete or complete semi- annular bands (in several taxa with semi annular bands common). Spores very small, 7-15 juim in diam., the wall obscurely papillate or with low, often furcate, vermiform ridges. Elaters 2- or 3 -4- spiral. Type: Marsupella emarginata (Ehrh.) Dumort. (= Jungermannia emarginata Ehrh.) A genus of 40-45 species, of which two are bipolar and occur in New Zealand {Marsupella sprucei, M. sparsifolia). Other Austral species are M. minutula Hassel of South Georgia (Has- sel, 1980b); M. capensis S.W.Arnell of South Africa (Vaha, 1985); M. lacerata (Steph.) Vaha of the Neotropics and South Africa (see Vaha, 2003); M. emarginata (Ehrh.) Dumort. of wide distribution in the Holarctic and also present in Central Africa (Vaha, 1985; see range in Vaha, 2003); and M. miniata (Lindenb. &amp; Gottsche) Grolle (= M. lorentziana Steph., type: Argentina, leg. Lorentz) occurs in the Neotropics with a range that includes northern Argentina (see Vaha, 2003, p. 122). The genus is absent from Antarctica; the report by Chen et al. (1995) of M. boeckii (Austin) Lindb. is actually Lophozia excisa (Bednarek-Ochyra et al., 2000). Schuster (2002a) subdivided the genus into five subgenera; the New Zealand species belong to subg. Marsupella. Description adapted and modified from Schuster (2002a). Key to Species la. Leafy shoots minute, to 525 juim wide, 2-5 (rarely 7-8) mm tall; leafy shoots abruptly larger-leaved distally, almost always eventually fertile, the lower leaves often scale-like and ± erect or erect-appressed; spores 13.4-14.9 luim in diam . M. sprucei (p. 799) lb. Leafy shoots relatively large, to 650-1100 juim wide, 8-15 mm tall; leafy shoots sub- equally leafy throughout or gradually smaller-leaved below, with strongly and stiffly spreading leaves; spores 9.1-10.6 juim in diam . M. sparsifolia (p. 801) Subg. Marsupella Marsupella sprucei (Limpr.) Bernet [Eig. Ill: 9-17] (Limpr.) Bernet, Cat. Hep. Suisse 33. 1888. Marsupella ustulata var. sprucei (Limpr.) R.M.Schust., Hepat. Anthocerotae N. Amer. 3: 30. 1974. Type: Germany, Fichtelgebirge, Funck. Plants chocolate-brown to fuscous brown, erect in growth, (270)420-525 juim wide, often repeatedly fertile by frequent innovation from below the 9 inflorescence, the innovations usually again fertile, the fertile plants often subcapitate in appearance (due to the small lower leaves becoming swiftly larger toward the inflorescence). Branching common in sterile, leafy sectors of shoots, the branches lateral-intercalary, from median, or less often ventral, sector of leaf axil, the plants rather sparingly stoloniferous. Leaves mostly obliquely spreading, only sporadically widely spreading, remote to contiguous below but toward the shoot apices becoming approximate to weakly imbricate, the insertion transverse in dorsal half, the leaf in¬ sertions crossing the stem midline dorsally, the leaves adaxially concave, broadly ovate to sub- oblate, widest a little below the middle, on sterile shoots 300-350 juim wide X 360-410 juim long, often somewhat cordate at the base, bilobed to 0.2-0.3, sometimes a little asymmetrically so, with one lobe slightly larger than the other, lobes acute to subacute, at times feebly apicu- late, terminating in a single cell or a uniseriate row of 2 cells (in either case these tip cells as wide as long or wider than long); sinus acute. Cells with bulging trigones, the median lamina cells subisodiametric, 13-17 X 13-18(22) juim, the basal cells 18-20 juim wide X 20-22 juim long; surface ?smooth. Paroecious. Androecial bracts in 2 pairs, much larger than leaves, erect, suboblate, moderately ventricose in median-basal sector, bifid to ca. 0.25, the lobes rather broadly acute; an- theridia 2 per bract, the stalk to 13 cells long, biseriate. Gynoecial bracts erect, mutually involute, sheathing the abbreviated perianth, ± clasping at the base, bilobed to ca. 0.25, the lobes acute to often apiculate. Perianth delicate, low and inconspicuous, formed of variously rectangular cells, those near the mouth hyaline and colorless, the mouth crenulate by cells that are finger-like and free only near the distal end. Capsule spherical, the wall 2-stratose, outer layer of cells subquadrate to short-rectangular, the radial longitudinal and transverse walls with sharply defined, strong, nodular to weakly spur-like thickenings; inner layer of cells much more irregular, often narrowly rectangular, the longitudinal walls with similar nodular to spur-like thickenings but somewhat smaller, the thickenings rarely extended on the tangential face as complete semiannular bands. Spores pale brown, 13.4-14.9 juim in diam., the wall with low papillae and short-vermiculate markings; spore:elater diam. ratio 1.4-1.7:1. Elaters slightly tortuous, 8. 6-9. 6 juim wide, bispiral to tips, the spirals 3.4-4. 3 juim wide. Distribution and Ecology: Bipolar; in New Zealand: South Island (1160-1970 m). In the Southern Hemisphere also known from southern South America (Argentina, Tierra del Euego, Cerro Garibaldi, 245-275 m). In New Zealand known from Eiordland (Gertrude Valley), Westland (Main Divide near Mt. Brewster; ridge to Mole Tops, Ella Ra.) and Otago (Old Man Ra.) EPs. In the alpine zone on fully exposed soil among stones, e.g., on track to Gertrude Saddle (head of Gertrude Valley, Eiordland Natl. Park), or on an exposed ridge admixed with Soleno- stoma rufiflorum (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park). Also on an exposed ridge in penalpine scrub consisting mainly of Chionochloa, Dra- cophyllum and Hebe (e.g., below and W of Mt. Shrimpton, Mt. Aspiring Natl. Park). On the Old Man Ra. it occurred on damp soil above a snowbank. It has been found with Bartramia papillata, Chrysoblastella chilensis, Conostomum pusillum, Coprosma petriei, Ditrichum bre- virostre, Grimmia pulvinata, Solenostoma totipapillosum and Weissia controversa. Schuster (1996d, p. 66) remarked the ecology of Marsupella sprucei ‘‘differs from that of M. sparsi- folia: rather than occurring on soil along rivulets, or on rocks where kept moist by seepage. M. sprucei s. lat., in the Antipodes, the species occurs on soil, often [at] considerable distances from rock outcrops, and rarely in areas where apt to be submerged,” which matches the conditions that we have encountered our two Marsupella species in New Zealand. Schuster (1996d, p. 65) also commented that in the Southern Hemisphere, M. sprucei occurs in ‘‘moist montane, treeless zones — from sites not too dissimilar to those occupied by the species in the Northern Hemisphere.” Comments: The above description is based solely on New Zealand plants. Eor comments see under Marsupella spars if olia. Marsupella sparsifolia (Lindb.) Dumort. (Lindb.) Dumort., Hepat. Eur. 128. 1874. Nardia sparsifolia (Lindb.) Lindb., Musci Scand. 10. 1879. Type: Scandinavia. This bipolar species has two subspecies: subspecies sparsifolia is “largely Arctic- alpine and high subarctic” and is generally rare and local (Schuster, 1996d, p. 41); subspecies childii occurs in our area.</p>
+    <pre class="description-text">Plants firm but usually not rigid, typically erect, at times loosely procumbent, rarely forming cushions, light or deep green to usually brownish or reddish, or purplish red or piceous to black, minute to robust. Branching sparing, usually from lower, smaller-leaved sectors of leafy axes; branches all lateral-intercalary, from middle or ventral end of leaf axil, of 2 types: phototropic and soon becoming larger-leaved, and geotropic, microphyllous and forming stoloni- form, root-like axes. Rhizoids lacking from sectors with mature leaves, usually abundant on geotropic axes. Leaves vertical, usually erect- spreading to stiffly, pectinately spreading (in a few taxa scale-like and erect or sheathing), distant to imbricate (but with stem at least in part exposed), transversely oriented, the insertion transverse in dorsal half, the leaf insertions crossing the stem midline dorsally (except subg. Stolonicaulon), the leaves mostly somewhat concave to canaliculate, usually bilobed to 0.15-0.45 (rarely unlobed); lobes usually equal, triangular, blunt or rounded to sharp, entire; marginal cells of lobes and lamina never differentiated, chlorophyllose like others, never decolorate, never forming crenulations or denticulations. Cells with conspicuous, often coarse trigones, the cells usually small, in lobes 8-18 juim, in median sector of lamina 8-15 X 12-22 juim; surface smooth. Oil-bodies (Schuster, 2002a) 2- 3(4) per cell, large, finely granular, mostly ovoid or oval. Underleaves completely lacking, the leaf insertions approaching the ventral stem midline. Dioecious, rarely (but in both of our species) paroecious. Androecia terminal or becoming intercalary, the bracts in 4-12 pairs, not reduced in size, the base strongly ventricose, saccate; antheridia 1-6 per bract, the stalk 1-2-seriate. Gynoecial bracts in (1)2-3 increasingly larger series, the innermost bracts less deeply divided than leaves, ± erect, arising from a ring- or tube-like, fleshy stem-perigynium; bracteoles completely lacking. Perianth short, included within (and ± hidden by) the uppermost bracts, typically a short tube, rarely vestigial and then reduced to lobed vestiges or, rarely, lacking, the perianth subtended by a ± distinct, erect, tubular perigynium; perianth when mature broadly obconic to ovate, delicate, contracted at the plicate mouth, the mouth 4-6(8)-lobed after extrusion of the capsule, the lobes crenulate by projecting cells. Calyptra with sterile archegonia near its base. Seta short to moderately long, massive or reduced to 8-10 outer + 3-4 inner rows of cells. Capsule spherical to slightly ovoid, usually 4-valved to the base, the wall 2- or 2-3-stratose; outer layer of cells with strongly nodular thickenings on all but short walls; inner layer of cells with weaker nodular thickenings, often tangentially extended as incomplete or complete semi- annular bands (in several taxa with semi annular bands common). Spores very small, 7-15 juim in diam., the wall obscurely papillate or with low, often furcate, vermiform ridges. Elaters 2- or 3 -4- spiral. Type: Marsupella emarginata (Ehrh.) Dumort. (= Jungermannia emarginata Ehrh.) A genus of 40-45 species, of which two are bipolar and occur in New Zealand {Marsupella sprucei, M. sparsifolia). Other Austral species are M. minutula Hassel of South Georgia (Has- sel, 1980b); M. capensis S.W.Arnell of South Africa (Vaha, 1985); M. lacerata (Steph.) Vaha of the Neotropics and South Africa (see Vaha, 2003); M. emarginata (Ehrh.) Dumort. of wide distribution in the Holarctic and also present in Central Africa (Vaha, 1985; see range in Vaha, 2003); and M. miniata (Lindenb. &amp; Gottsche) Grolle (= M. lorentziana Steph., type: Argentina, leg. Lorentz) occurs in the Neotropics with a range that includes northern Argentina (see Vaha, 2003, p. 122). The genus is absent from Antarctica; the report by Chen et al. (1995) of M. boeckii (Austin) Lindb. is actually Lophozia excisa (Bednarek-Ochyra et al., 2000). Schuster (2002a) subdivided the genus into five subgenera; the New Zealand species belong to subg. Marsupella. Description adapted and modified from Schuster (2002a). Key to Species la. Leafy shoots minute, to 525 juim wide, 2-5 (rarely 7-8) mm tall; leafy shoots abruptly larger-leaved distally, almost always eventually fertile, the lower leaves often scale-like and ± erect or erect-appressed; spores 13.4-14.9 luim in diam . M. sprucei (p. 799) lb. Leafy shoots relatively large, to 650-1100 juim wide, 8-15 mm tall; leafy shoots sub- equally leafy throughout or gradually smaller-leaved below, with strongly and stiffly spreading leaves; spores 9.1-10.6 juim in diam . M. sparsifolia (p. 801) Subg. Marsupella Marsupella sprucei (Limpr.) Bernet [Eig. Ill: 9-17] (Limpr.) Bernet, Cat. Hep. Suisse 33. 1888. Marsupella ustulata var. sprucei (Limpr.) R.M.Schust., Hepat. Anthocerotae N. Amer. 3: 30. 1974. Type: Germany, Fichtelgebirge, Funck. Plants chocolate-brown to fuscous brown, erect in growth, (270)420-525 juim wide, often repeatedly fertile by frequent innovation from below the 9 inflorescence, the innovations usually again fertile, the fertile plants often subcapitate in appearance (due to the small lower leaves becoming swiftly larger toward the inflorescence). Branching common in sterile, leafy sectors of shoots, the branches lateral-intercalary, from median, or less often ventral, sector of leaf axil, the plants rather sparingly stoloniferous. Leaves mostly obliquely spreading, only sporadically widely spreading, remote to contiguous below but toward the shoot apices becoming approximate to weakly imbricate, the insertion transverse in dorsal half, the leaf in¬ sertions crossing the stem midline dorsally, the leaves adaxially concave, broadly ovate to sub- oblate, widest a little below the middle, on sterile shoots 300-350 juim wide X 360-410 juim long, often somewhat cordate at the base, bilobed to 0.2-0.3, sometimes a little asymmetrically so, with one lobe slightly larger than the other, lobes acute to subacute, at times feebly apicu- late, terminating in a single cell or a uniseriate row of 2 cells (in either case these tip cells as wide as long or wider than long); sinus acute. Cells with bulging trigones, the median lamina cells subisodiametric, 13-17 X 13-18(22) juim, the basal cells 18-20 juim wide X 20-22 juim long; surface ?smooth. Paroecious. Androecial bracts in 2 pairs, much larger than leaves, erect, suboblate, moderately ventricose in median-basal sector, bifid to ca. 0.25, the lobes rather broadly acute; an- theridia 2 per bract, the stalk to 13 cells long, biseriate. Gynoecial bracts erect, mutually involute, sheathing the abbreviated perianth, ± clasping at the base, bilobed to ca. 0.25, the lobes acute to often apiculate. Perianth delicate, low and inconspicuous, formed of variously rectangular cells, those near the mouth hyaline and colorless, the mouth crenulate by cells that are finger-like and free only near the distal end. Capsule spherical, the wall 2-stratose, outer layer of cells subquadrate to short-rectangular, the radial longitudinal and transverse walls with sharply defined, strong, nodular to weakly spur-like thickenings; inner layer of cells much more irregular, often narrowly rectangular, the longitudinal walls with similar nodular to spur-like thickenings but somewhat smaller, the thickenings rarely extended on the tangential face as complete semiannular bands. Spores pale brown, 13.4-14.9 juim in diam., the wall with low papillae and short-vermiculate markings; spore:elater diam. ratio 1.4-1.7:1. Elaters slightly tortuous, 8. 6-9. 6 juim wide, bispiral to tips, the spirals 3.4-4. 3 juim wide. Distribution and Ecology: Bipolar; in New Zealand: South Island (1160-1970 m). In the Southern Hemisphere also known from southern South America (Argentina, Tierra del Euego, Cerro Garibaldi, 245-275 m). In New Zealand known from Eiordland (Gertrude Valley), Westland (Main Divide near Mt. Brewster; ridge to Mole Tops, Ella Ra.) and Otago (Old Man Ra.) EPs. In the alpine zone on fully exposed soil among stones, e.g., on track to Gertrude Saddle (head of Gertrude Valley, Eiordland Natl. Park), or on an exposed ridge admixed with Soleno- stoma rufiflorum (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park). Also on an exposed ridge in penalpine scrub consisting mainly of Chionochloa, Dra- cophyllum and Hebe (e.g., below and W of Mt. Shrimpton, Mt. Aspiring Natl. Park). On the Old Man Ra. it occurred on damp soil above a snowbank. It has been found with Bartramia papillata, Chrysoblastella chilensis, Conostomum pusillum, Coprosma petriei, Ditrichum bre- virostre, Grimmia pulvinata, Solenostoma totipapillosum and Weissia controversa. Schuster (1996d, p. 66) remarked the ecology of Marsupella sprucei ‘‘differs from that of M. sparsi- folia: rather than occurring on soil along rivulets, or on rocks where kept moist by seepage. M. sprucei s. lat., in the Antipodes, the species occurs on soil, often [at] considerable distances from rock outcrops, and rarely in areas where apt to be submerged,” which matches the conditions that we have encountered our two Marsupella species in New Zealand. Schuster (1996d, p. 65) also commented that in the Southern Hemisphere, M. sprucei occurs in ‘‘moist montane, treeless zones — from sites not too dissimilar to those occupied by the species in the Northern Hemisphere.” Comments: The above description is based solely on New Zealand plants. Eor comments see under Marsupella spars if olia. Marsupella sparsifolia (Lindb.) Dumort. (Lindb.) Dumort., Hepat. Eur. 128. 1874. Nardia sparsifolia (Lindb.) Lindb., Musci Scand. 10. 1879. Type: Scandinavia. This bipolar species has two subspecies: subspecies sparsifolia is “largely Arctic- alpine and high subarctic” and is generally rare and local (Schuster, 1996d, p. 41); subspecies childii occurs in our area.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants firm but usually not rigid, typically erect, at times loosely procumbent, rarely forming cushions, light or deep green to usually brownish or reddish, or purplish red or piceous to black, minute to robust. Branching sparing, usually from lower, smaller-leaved sectors of leafy axes; branches all lateral-intercalary, from middle or ventral end of leaf axil, of 2 types: phototropic and soon becoming larger-leaved, and geotropic, microphyllous and forming stoloni- form, root-like axes. Rhizoids lacking from sectors with mature leaves, usually abundant on geotropic axes. Leaves vertical, usually erect- spreading to stiffly, pectinately spreading (in a few taxa scale-like and erect or sheathing), distant to imbricate (but with stem at least in part exposed), transversely oriented, the insertion transverse in dorsal half, the leaf insertions crossing the stem midline dorsally (except subg. Stolonicaulon), the leaves mostly somewhat concave to canaliculate, usually bilobed to 0.15-0.45 (rarely unlobed); lobes usually equal, triangular, blunt or rounded to sharp, entire; marginal cells of lobes and lamina never differentiated, chlorophyllose like others, never decolorate, never forming crenulations or denticulations. Cells with conspicuous, often coarse trigones, the cells usually small, in lobes 8-18 juim, in median sector of lamina 8-15 X 12-22 juim; surface smooth. Oil-bodies (Schuster, 2002a) 2- 3(4) per cell, large, finely granular, mostly ovoid or oval. Underleaves completely lacking, the leaf insertions approaching the ventral stem midline. Dioecious, rarely (but in both of our species) paroecious. Androecia terminal or becoming intercalary, the bracts in 4-12 pairs, not reduced in size, the base strongly ventricose, saccate; antheridia 1-6 per bract, the stalk 1-2-seriate. Gynoecial bracts in (1)2-3 increasingly larger series, the innermost bracts less deeply divided than leaves, ± erect, arising from a ring- or tube-like, fleshy stem-perigynium; bracteoles completely lacking. Perianth short, included within (and ± hidden by) the uppermost bracts, typically a short tube, rarely vestigial and then reduced to lobed vestiges or, rarely, lacking, the perianth subtended by a ± distinct, erect, tubular perigynium; perianth when mature broadly obconic to ovate, delicate, contracted at the plicate mouth, the mouth 4-6(8)-lobed after extrusion of the capsule, the lobes crenulate by projecting cells. Calyptra with sterile archegonia near its base. Seta short to moderately long, massive or reduced to 8-10 outer + 3-4 inner rows of cells. Capsule spherical to slightly ovoid, usually 4-valved to the base, the wall 2- or 2-3-stratose; outer layer of cells with strongly nodular thickenings on all but short walls; inner layer of cells with weaker nodular thickenings, often tangentially extended as incomplete or complete semi- annular bands (in several taxa with semi annular bands common). Spores very small, 7-15 juim in diam., the wall obscurely papillate or with low, often furcate, vermiform ridges. Elaters 2- or 3 -4- spiral. Type: Marsupella emarginata (Ehrh.) Dumort. (= Jungermannia emarginata Ehrh.) A genus of 40-45 species, of which two are bipolar and occur in New Zealand {Marsupella sprucei, M. sparsifolia). Other Austral species are M. minutula Hassel of South Georgia (Has- sel, 1980b); M. capensis S.W.Arnell of South Africa (Vaha, 1985); M. lacerata (Steph.) Vaha of the Neotropics and South Africa (see Vaha, 2003); M. emarginata (Ehrh.) Dumort. of wide distribution in the Holarctic and also present in Central Africa (Vaha, 1985; see range in Vaha, 2003); and M. miniata (Lindenb. &amp; Gottsche) Grolle (= M. lorentziana Steph., type: Argentina, leg. Lorentz) occurs in the Neotropics with a range that includes northern Argentina (see Vaha, 2003, p. 122). The genus is absent from Antarctica; the report by Chen et al. (1995) of M. boeckii (Austin) Lindb. is actually Lophozia excisa (Bednarek-Ochyra et al., 2000). Schuster (2002a) subdivided the genus into five subgenera; the New Zealand species belong to subg. Marsupella. Description adapted and modified from Schuster (2002a). Key to Species la. Leafy shoots minute, to 525 juim wide, 2-5 (rarely 7-8) mm tall; leafy shoots abruptly larger-leaved distally, almost always eventually fertile, the lower leaves often scale-like and ± erect or erect-appressed; spores 13.4-14.9 luim in diam . M. sprucei (p. 799) lb. Leafy shoots relatively large, to 650-1100 juim wide, 8-15 mm tall; leafy shoots sub- equally leafy throughout or gradually smaller-leaved below, with strongly and stiffly spreading leaves; spores 9.1-10.6 juim in diam . M. sparsifolia (p. 801) Subg. Marsupella Marsupella sprucei (Limpr.) Bernet [Eig. Ill: 9-17] (Limpr.) Bernet, Cat. Hep. Suisse 33. 1888. Marsupella ustulata var. sprucei (Limpr.) R.M.Schust., Hepat. Anthocerotae N. Amer. 3: 30. 1974. Type: Germany, Fichtelgebirge, Funck. Plants chocolate-brown to fuscous brown, erect in growth, (270)420-525 juim wide, often repeatedly fertile by frequent innovation from below the 9 inflorescence, the innovations usually again fertile, the fertile plants often subcapitate in appearance (due to the small lower leaves becoming swiftly larger toward the inflorescence). Branching common in sterile, leafy sectors of shoots, the branches lateral-intercalary, from median, or less often ventral, sector of leaf axil, the plants rather sparingly stoloniferous. Leaves mostly obliquely spreading, only sporadically widely spreading, remote to contiguous below but toward the shoot apices becoming approximate to weakly imbricate, the insertion transverse in dorsal half, the leaf in¬ sertions crossing the stem midline dorsally, the leaves adaxially concave, broadly ovate to sub- oblate, widest a little below the middle, on sterile shoots 300-350 juim wide X 360-410 juim long, often somewhat cordate at the base, bilobed to 0.2-0.3, sometimes a little asymmetrically so, with one lobe slightly larger than the other, lobes acute to subacute, at times feebly apicu- late, terminating in a single cell or a uniseriate row of 2 cells (in either case these tip cells as wide as long or wider than long); sinus acute. Cells with bulging trigones, the median lamina cells subisodiametric, 13-17 X 13-18(22) juim, the basal cells 18-20 juim wide X 20-22 juim long; surface ?smooth. Paroecious. Androecial bracts in 2 pairs, much larger than leaves, erect, suboblate, moderately ventricose in median-basal sector, bifid to ca. 0.25, the lobes rather broadly acute; an- theridia 2 per bract, the stalk to 13 cells long, biseriate. Gynoecial bracts erect, mutually involute, sheathing the abbreviated perianth, ± clasping at the base, bilobed to ca. 0.25, the lobes acute to often apiculate. Perianth delicate, low and inconspicuous, formed of variously rectangular cells, those near the mouth hyaline and colorless, the mouth crenulate by cells that are finger-like and free only near the distal end. Capsule spherical, the wall 2-stratose, outer layer of cells subquadrate to short-rectangular, the radial longitudinal and transverse walls with sharply defined, strong, nodular to weakly spur-like thickenings; inner layer of cells much more irregular, often narrowly rectangular, the longitudinal walls with similar nodular to spur-like thickenings but somewhat smaller, the thickenings rarely extended on the tangential face as complete semiannular bands. Spores pale brown, 13.4-14.9 juim in diam., the wall with low papillae and short-vermiculate markings; spore:elater diam. ratio 1.4-1.7:1. Elaters slightly tortuous, 8. 6-9. 6 juim wide, bispiral to tips, the spirals 3.4-4. 3 juim wide. Distribution and Ecology: Bipolar; in New Zealand: South Island (1160-1970 m). In the Southern Hemisphere also known from southern South America (Argentina, Tierra del Euego, Cerro Garibaldi, 245-275 m). In New Zealand known from Eiordland (Gertrude Valley), Westland (Main Divide near Mt. Brewster; ridge to Mole Tops, Ella Ra.) and Otago (Old Man Ra.) EPs. In the alpine zone on fully exposed soil among stones, e.g., on track to Gertrude Saddle (head of Gertrude Valley, Eiordland Natl. Park), or on an exposed ridge admixed with Soleno- stoma rufiflorum (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park). Also on an exposed ridge in penalpine scrub consisting mainly of Chionochloa, Dra- cophyllum and Hebe (e.g., below and W of Mt. Shrimpton, Mt. Aspiring Natl. Park). On the Old Man Ra. it occurred on damp soil above a snowbank. It has been found with Bartramia papillata, Chrysoblastella chilensis, Conostomum pusillum, Coprosma petriei, Ditrichum bre- virostre, Grimmia pulvinata, Solenostoma totipapillosum and Weissia controversa. Schuster (1996d, p. 66) remarked the ecology of Marsupella sprucei ‘‘differs from that of M. sparsi- folia: rather than occurring on soil along rivulets, or on rocks where kept moist by seepage. M. sprucei s. lat., in the Antipodes, the species occurs on soil, often [at] considerable distances from rock outcrops, and rarely in areas where apt to be submerged,” which matches the conditions that we have encountered our two Marsupella species in New Zealand. Schuster (1996d, p. 65) also commented that in the Southern Hemisphere, M. sprucei occurs in ‘‘moist montane, treeless zones — from sites not too dissimilar to those occupied by the species in the Northern Hemisphere.” Comments: The above description is based solely on New Zealand plants. Eor comments see under Marsupella spars if olia. Marsupella sparsifolia (Lindb.) Dumort. (Lindb.) Dumort., Hepat. Eur. 128. 1874. Nardia sparsifolia (Lindb.) Lindb., Musci Scand. 10. 1879. Type: Scandinavia. This bipolar species has two subspecies: subspecies sparsifolia is “largely Arctic- alpine and high subarctic” and is generally rare and local (Schuster, 1996d, p. 41); subspecies childii occurs in our area.</p>
+    <pre class="description-text">Plants firm but usually not rigid, typically erect, at times loosely procumbent, rarely forming cushions, light or deep green to usually brownish or reddish, or purplish red or piceous to black, minute to robust. Branching sparing, usually from lower, smaller-leaved sectors of leafy axes; branches all lateral-intercalary, from middle or ventral end of leaf axil, of 2 types: phototropic and soon becoming larger-leaved, and geotropic, microphyllous and forming stoloni- form, root-like axes. Rhizoids lacking from sectors with mature leaves, usually abundant on geotropic axes. Leaves vertical, usually erect- spreading to stiffly, pectinately spreading (in a few taxa scale-like and erect or sheathing), distant to imbricate (but with stem at least in part exposed), transversely oriented, the insertion transverse in dorsal half, the leaf insertions crossing the stem midline dorsally (except subg. Stolonicaulon), the leaves mostly somewhat concave to canaliculate, usually bilobed to 0.15-0.45 (rarely unlobed); lobes usually equal, triangular, blunt or rounded to sharp, entire; marginal cells of lobes and lamina never differentiated, chlorophyllose like others, never decolorate, never forming crenulations or denticulations. Cells with conspicuous, often coarse trigones, the cells usually small, in lobes 8-18 juim, in median sector of lamina 8-15 X 12-22 juim; surface smooth. Oil-bodies (Schuster, 2002a) 2- 3(4) per cell, large, finely granular, mostly ovoid or oval. Underleaves completely lacking, the leaf insertions approaching the ventral stem midline. Dioecious, rarely (but in both of our species) paroecious. Androecia terminal or becoming intercalary, the bracts in 4-12 pairs, not reduced in size, the base strongly ventricose, saccate; antheridia 1-6 per bract, the stalk 1-2-seriate. Gynoecial bracts in (1)2-3 increasingly larger series, the innermost bracts less deeply divided than leaves, ± erect, arising from a ring- or tube-like, fleshy stem-perigynium; bracteoles completely lacking. Perianth short, included within (and ± hidden by) the uppermost bracts, typically a short tube, rarely vestigial and then reduced to lobed vestiges or, rarely, lacking, the perianth subtended by a ± distinct, erect, tubular perigynium; perianth when mature broadly obconic to ovate, delicate, contracted at the plicate mouth, the mouth 4-6(8)-lobed after extrusion of the capsule, the lobes crenulate by projecting cells. Calyptra with sterile archegonia near its base. Seta short to moderately long, massive or reduced to 8-10 outer + 3-4 inner rows of cells. Capsule spherical to slightly ovoid, usually 4-valved to the base, the wall 2- or 2-3-stratose; outer layer of cells with strongly nodular thickenings on all but short walls; inner layer of cells with weaker nodular thickenings, often tangentially extended as incomplete or complete semi- annular bands (in several taxa with semi annular bands common). Spores very small, 7-15 juim in diam., the wall obscurely papillate or with low, often furcate, vermiform ridges. Elaters 2- or 3 -4- spiral. Type: Marsupella emarginata (Ehrh.) Dumort. (= Jungermannia emarginata Ehrh.) A genus of 40-45 species, of which two are bipolar and occur in New Zealand {Marsupella sprucei, M. sparsifolia). Other Austral species are M. minutula Hassel of South Georgia (Has- sel, 1980b); M. capensis S.W.Arnell of South Africa (Vaha, 1985); M. lacerata (Steph.) Vaha of the Neotropics and South Africa (see Vaha, 2003); M. emarginata (Ehrh.) Dumort. of wide distribution in the Holarctic and also present in Central Africa (Vaha, 1985; see range in Vaha, 2003); and M. miniata (Lindenb. &amp; Gottsche) Grolle (= M. lorentziana Steph., type: Argentina, leg. Lorentz) occurs in the Neotropics with a range that includes northern Argentina (see Vaha, 2003, p. 122). The genus is absent from Antarctica; the report by Chen et al. (1995) of M. boeckii (Austin) Lindb. is actually Lophozia excisa (Bednarek-Ochyra et al., 2000). Schuster (2002a) subdivided the genus into five subgenera; the New Zealand species belong to subg. Marsupella. Description adapted and modified from Schuster (2002a). Key to Species la. Leafy shoots minute, to 525 juim wide, 2-5 (rarely 7-8) mm tall; leafy shoots abruptly larger-leaved distally, almost always eventually fertile, the lower leaves often scale-like and ± erect or erect-appressed; spores 13.4-14.9 luim in diam . M. sprucei (p. 799) lb. Leafy shoots relatively large, to 650-1100 juim wide, 8-15 mm tall; leafy shoots sub- equally leafy throughout or gradually smaller-leaved below, with strongly and stiffly spreading leaves; spores 9.1-10.6 juim in diam . M. sparsifolia (p. 801) Subg. Marsupella Marsupella sprucei (Limpr.) Bernet [Eig. Ill: 9-17] (Limpr.) Bernet, Cat. Hep. Suisse 33. 1888. Marsupella ustulata var. sprucei (Limpr.) R.M.Schust., Hepat. Anthocerotae N. Amer. 3: 30. 1974. Type: Germany, Fichtelgebirge, Funck. Plants chocolate-brown to fuscous brown, erect in growth, (270)420-525 juim wide, often repeatedly fertile by frequent innovation from below the 9 inflorescence, the innovations usually again fertile, the fertile plants often subcapitate in appearance (due to the small lower leaves becoming swiftly larger toward the inflorescence). Branching common in sterile, leafy sectors of shoots, the branches lateral-intercalary, from median, or less often ventral, sector of leaf axil, the plants rather sparingly stoloniferous. Leaves mostly obliquely spreading, only sporadically widely spreading, remote to contiguous below but toward the shoot apices becoming approximate to weakly imbricate, the insertion transverse in dorsal half, the leaf in¬ sertions crossing the stem midline dorsally, the leaves adaxially concave, broadly ovate to sub- oblate, widest a little below the middle, on sterile shoots 300-350 juim wide X 360-410 juim long, often somewhat cordate at the base, bilobed to 0.2-0.3, sometimes a little asymmetrically so, with one lobe slightly larger than the other, lobes acute to subacute, at times feebly apicu- late, terminating in a single cell or a uniseriate row of 2 cells (in either case these tip cells as wide as long or wider than long); sinus acute. Cells with bulging trigones, the median lamina cells subisodiametric, 13-17 X 13-18(22) juim, the basal cells 18-20 juim wide X 20-22 juim long; surface ?smooth. Paroecious. Androecial bracts in 2 pairs, much larger than leaves, erect, suboblate, moderately ventricose in median-basal sector, bifid to ca. 0.25, the lobes rather broadly acute; an- theridia 2 per bract, the stalk to 13 cells long, biseriate. Gynoecial bracts erect, mutually involute, sheathing the abbreviated perianth, ± clasping at the base, bilobed to ca. 0.25, the lobes acute to often apiculate. Perianth delicate, low and inconspicuous, formed of variously rectangular cells, those near the mouth hyaline and colorless, the mouth crenulate by cells that are finger-like and free only near the distal end. Capsule spherical, the wall 2-stratose, outer layer of cells subquadrate to short-rectangular, the radial longitudinal and transverse walls with sharply defined, strong, nodular to weakly spur-like thickenings; inner layer of cells much more irregular, often narrowly rectangular, the longitudinal walls with similar nodular to spur-like thickenings but somewhat smaller, the thickenings rarely extended on the tangential face as complete semiannular bands. Spores pale brown, 13.4-14.9 juim in diam., the wall with low papillae and short-vermiculate markings; spore:elater diam. ratio 1.4-1.7:1. Elaters slightly tortuous, 8. 6-9. 6 juim wide, bispiral to tips, the spirals 3.4-4. 3 juim wide. Distribution and Ecology: Bipolar; in New Zealand: South Island (1160-1970 m). In the Southern Hemisphere also known from southern South America (Argentina, Tierra del Euego, Cerro Garibaldi, 245-275 m). In New Zealand known from Eiordland (Gertrude Valley), Westland (Main Divide near Mt. Brewster; ridge to Mole Tops, Ella Ra.) and Otago (Old Man Ra.) EPs. In the alpine zone on fully exposed soil among stones, e.g., on track to Gertrude Saddle (head of Gertrude Valley, Eiordland Natl. Park), or on an exposed ridge admixed with Soleno- stoma rufiflorum (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park). Also on an exposed ridge in penalpine scrub consisting mainly of Chionochloa, Dra- cophyllum and Hebe (e.g., below and W of Mt. Shrimpton, Mt. Aspiring Natl. Park). On the Old Man Ra. it occurred on damp soil above a snowbank. It has been found with Bartramia papillata, Chrysoblastella chilensis, Conostomum pusillum, Coprosma petriei, Ditrichum bre- virostre, Grimmia pulvinata, Solenostoma totipapillosum and Weissia controversa. Schuster (1996d, p. 66) remarked the ecology of Marsupella sprucei ‘‘differs from that of M. sparsi- folia: rather than occurring on soil along rivulets, or on rocks where kept moist by seepage. M. sprucei s. lat., in the Antipodes, the species occurs on soil, often [at] considerable distances from rock outcrops, and rarely in areas where apt to be submerged,” which matches the conditions that we have encountered our two Marsupella species in New Zealand. Schuster (1996d, p. 65) also commented that in the Southern Hemisphere, M. sprucei occurs in ‘‘moist montane, treeless zones — from sites not too dissimilar to those occupied by the species in the Northern Hemisphere.” Comments: The above description is based solely on New Zealand plants. Eor comments see under Marsupella spars if olia. Marsupella sparsifolia (Lindb.) Dumort. (Lindb.) Dumort., Hepat. Eur. 128. 1874. Nardia sparsifolia (Lindb.) Lindb., Musci Scand. 10. 1879. Type: Scandinavia. This bipolar species has two subspecies: subspecies sparsifolia is “largely Arctic- alpine and high subarctic” and is generally rare and local (Schuster, 1996d, p. 41); subspecies childii occurs in our area.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants firm but usually not rigid, typically erect, at times loosely procumbent, rarely forming cushions, light or deep green to usually brownish or reddish, or purplish red or piceous to black, minute to robust. Branching sparing, usually from lower, smaller-leaved sectors of leafy axes; branches all lateral-intercalary, from middle or ventral end of leaf axil, of 2 types: phototropic and soon becoming larger-leaved, and geotropic, microphyllous and forming stoloni- form, root-like axes. Rhizoids lacking from sectors with mature leaves, usually abundant on geotropic axes. Leaves vertical, usually erect- spreading to stiffly, pectinately spreading (in a few taxa scale-like and erect or sheathing), distant to imbricate (but with stem at least in part exposed), transversely oriented, the insertion transverse in dorsal half, the leaf insertions crossing the stem midline dorsally (except subg. Stolonicaulon), the leaves mostly somewhat concave to canaliculate, usually bilobed to 0.15-0.45 (rarely unlobed); lobes usually equal, triangular, blunt or rounded to sharp, entire; marginal cells of lobes and lamina never differentiated, chlorophyllose like others, never decolorate, never forming crenulations or denticulations. Cells with conspicuous, often coarse trigones, the cells usually small, in lobes 8-18 juim, in median sector of lamina 8-15 X 12-22 juim; surface smooth. Oil-bodies (Schuster, 2002a) 2- 3(4) per cell, large, finely granular, mostly ovoid or oval. Underleaves completely lacking, the leaf insertions approaching the ventral stem midline. Dioecious, rarely (but in both of our species) paroecious. Androecia terminal or becoming intercalary, the bracts in 4-12 pairs, not reduced in size, the base strongly ventricose, saccate; antheridia 1-6 per bract, the stalk 1-2-seriate. Gynoecial bracts in (1)2-3 increasingly larger series, the innermost bracts less deeply divided than leaves, ± erect, arising from a ring- or tube-like, fleshy stem-perigynium; bracteoles completely lacking. Perianth short, included within (and ± hidden by) the uppermost bracts, typically a short tube, rarely vestigial and then reduced to lobed vestiges or, rarely, lacking, the perianth subtended by a ± distinct, erect, tubular perigynium; perianth when mature broadly obconic to ovate, delicate, contracted at the plicate mouth, the mouth 4-6(8)-lobed after extrusion of the capsule, the lobes crenulate by projecting cells. Calyptra with sterile archegonia near its base. Seta short to moderately long, massive or reduced to 8-10 outer + 3-4 inner rows of cells. Capsule spherical to slightly ovoid, usually 4-valved to the base, the wall 2- or 2-3-stratose; outer layer of cells with strongly nodular thickenings on all but short walls; inner layer of cells with weaker nodular thickenings, often tangentially extended as incomplete or complete semi- annular bands (in several taxa with semi annular bands common). Spores very small, 7-15 juim in diam., the wall obscurely papillate or with low, often furcate, vermiform ridges. Elaters 2- or 3 -4- spiral. Type: Marsupella emarginata (Ehrh.) Dumort. (= Jungermannia emarginata Ehrh.) A genus of 40-45 species, of which two are bipolar and occur in New Zealand {Marsupella sprucei, M. sparsifolia). Other Austral species are M. minutula Hassel of South Georgia (Has- sel, 1980b); M. capensis S.W.Arnell of South Africa (Vaha, 1985); M. lacerata (Steph.) Vaha of the Neotropics and South Africa (see Vaha, 2003); M. emarginata (Ehrh.) Dumort. of wide distribution in the Holarctic and also present in Central Africa (Vaha, 1985; see range in Vaha, 2003); and M. miniata (Lindenb. &amp; Gottsche) Grolle (= M. lorentziana Steph., type: Argentina, leg. Lorentz) occurs in the Neotropics with a range that includes northern Argentina (see Vaha, 2003, p. 122). The genus is absent from Antarctica; the report by Chen et al. (1995) of M. boeckii (Austin) Lindb. is actually Lophozia excisa (Bednarek-Ochyra et al., 2000). Schuster (2002a) subdivided the genus into five subgenera; the New Zealand species belong to subg. Marsupella. Description adapted and modified from Schuster (2002a). Key to Species la. Leafy shoots minute, to 525 juim wide, 2-5 (rarely 7-8) mm tall; leafy shoots abruptly larger-leaved distally, almost always eventually fertile, the lower leaves often scale-like and ± erect or erect-appressed; spores 13.4-14.9 luim in diam . M. sprucei (p. 799) lb. Leafy shoots relatively large, to 650-1100 juim wide, 8-15 mm tall; leafy shoots sub- equally leafy throughout or gradually smaller-leaved below, with strongly and stiffly spreading leaves; spores 9.1-10.6 juim in diam . M. sparsifolia (p. 801) Subg. Marsupella Marsupella sprucei (Limpr.) Bernet [Eig. Ill: 9-17] (Limpr.) Bernet, Cat. Hep. Suisse 33. 1888. Marsupella ustulata var. sprucei (Limpr.) R.M.Schust., Hepat. Anthocerotae N. Amer. 3: 30. 1974. Type: Germany, Fichtelgebirge, Funck. Plants chocolate-brown to fuscous brown, erect in growth, (270)420-525 juim wide, often repeatedly fertile by frequent innovation from below the 9 inflorescence, the innovations usually again fertile, the fertile plants often subcapitate in appearance (due to the small lower leaves becoming swiftly larger toward the inflorescence). Branching common in sterile, leafy sectors of shoots, the branches lateral-intercalary, from median, or less often ventral, sector of leaf axil, the plants rather sparingly stoloniferous. Leaves mostly obliquely spreading, only sporadically widely spreading, remote to contiguous below but toward the shoot apices becoming approximate to weakly imbricate, the insertion transverse in dorsal half, the leaf in¬ sertions crossing the stem midline dorsally, the leaves adaxially concave, broadly ovate to sub- oblate, widest a little below the middle, on sterile shoots 300-350 juim wide X 360-410 juim long, often somewhat cordate at the base, bilobed to 0.2-0.3, sometimes a little asymmetrically so, with one lobe slightly larger than the other, lobes acute to subacute, at times feebly apicu- late, terminating in a single cell or a uniseriate row of 2 cells (in either case these tip cells as wide as long or wider than long); sinus acute. Cells with bulging trigones, the median lamina cells subisodiametric, 13-17 X 13-18(22) juim, the basal cells 18-20 juim wide X 20-22 juim long; surface ?smooth. Paroecious. Androecial bracts in 2 pairs, much larger than leaves, erect, suboblate, moderately ventricose in median-basal sector, bifid to ca. 0.25, the lobes rather broadly acute; an- theridia 2 per bract, the stalk to 13 cells long, biseriate. Gynoecial bracts erect, mutually involute, sheathing the abbreviated perianth, ± clasping at the base, bilobed to ca. 0.25, the lobes acute to often apiculate. Perianth delicate, low and inconspicuous, formed of variously rectangular cells, those near the mouth hyaline and colorless, the mouth crenulate by cells that are finger-like and free only near the distal end. Capsule spherical, the wall 2-stratose, outer layer of cells subquadrate to short-rectangular, the radial longitudinal and transverse walls with sharply defined, strong, nodular to weakly spur-like thickenings; inner layer of cells much more irregular, often narrowly rectangular, the longitudinal walls with similar nodular to spur-like thickenings but somewhat smaller, the thickenings rarely extended on the tangential face as complete semiannular bands. Spores pale brown, 13.4-14.9 juim in diam., the wall with low papillae and short-vermiculate markings; spore:elater diam. ratio 1.4-1.7:1. Elaters slightly tortuous, 8. 6-9. 6 juim wide, bispiral to tips, the spirals 3.4-4. 3 juim wide. Distribution and Ecology: Bipolar; in New Zealand: South Island (1160-1970 m). In the Southern Hemisphere also known from southern South America (Argentina, Tierra del Euego, Cerro Garibaldi, 245-275 m). In New Zealand known from Eiordland (Gertrude Valley), Westland (Main Divide near Mt. Brewster; ridge to Mole Tops, Ella Ra.) and Otago (Old Man Ra.) EPs. In the alpine zone on fully exposed soil among stones, e.g., on track to Gertrude Saddle (head of Gertrude Valley, Eiordland Natl. Park), or on an exposed ridge admixed with Soleno- stoma rufiflorum (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park). Also on an exposed ridge in penalpine scrub consisting mainly of Chionochloa, Dra- cophyllum and Hebe (e.g., below and W of Mt. Shrimpton, Mt. Aspiring Natl. Park). On the Old Man Ra. it occurred on damp soil above a snowbank. It has been found with Bartramia papillata, Chrysoblastella chilensis, Conostomum pusillum, Coprosma petriei, Ditrichum bre- virostre, Grimmia pulvinata, Solenostoma totipapillosum and Weissia controversa. Schuster (1996d, p. 66) remarked the ecology of Marsupella sprucei ‘‘differs from that of M. sparsi- folia: rather than occurring on soil along rivulets, or on rocks where kept moist by seepage. M. sprucei s. lat., in the Antipodes, the species occurs on soil, often [at] considerable distances from rock outcrops, and rarely in areas where apt to be submerged,” which matches the conditions that we have encountered our two Marsupella species in New Zealand. Schuster (1996d, p. 65) also commented that in the Southern Hemisphere, M. sprucei occurs in ‘‘moist montane, treeless zones — from sites not too dissimilar to those occupied by the species in the Northern Hemisphere.” Comments: The above description is based solely on New Zealand plants. Eor comments see under Marsupella spars if olia. Marsupella sparsifolia (Lindb.) Dumort. (Lindb.) Dumort., Hepat. Eur. 128. 1874. Nardia sparsifolia (Lindb.) Lindb., Musci Scand. 10. 1879. Type: Scandinavia. This bipolar species has two subspecies: subspecies sparsifolia is “largely Arctic- alpine and high subarctic” and is generally rare and local (Schuster, 1996d, p. 41); subspecies childii occurs in our area.</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    <pre class="description-text">Plants firm but usually not rigid, typically erect, at times loosely procumbent, rarely forming cushions, light or deep green to usually brownish or reddish, or purplish red or piceous to black, minute to robust. Branching sparing, usually from lower, smaller-leaved sectors of leafy axes; branches all lateral-intercalary, from middle or ventral end of leaf axil, of 2 types: phototropic and soon becoming larger-leaved, and geotropic, microphyllous and forming stoloni- form, root-like axes. Rhizoids lacking from sectors with mature leaves, usually abundant on geotropic axes. Leaves vertical, usually erect- spreading to stiffly, pectinately spreading (in a few taxa scale-like and erect or sheathing), distant to imbricate (but with stem at least in part exposed), transversely oriented, the insertion transverse in dorsal half, the leaf insertions crossing the stem midline dorsally (except subg. Stolonicaulon), the leaves mostly somewhat concave to canaliculate, usually bilobed to 0.15-0.45 (rarely unlobed); lobes usually equal, triangular, blunt or rounded to sharp, entire; marginal cells of lobes and lamina never differentiated, chlorophyllose like others, never decolorate, never forming crenulations or denticulations. Cells with conspicuous, often coarse trigones, the cells usually small, in lobes 8-18 juim, in median sector of lamina 8-15 X 12-22 juim; surface smooth. Oil-bodies (Schuster, 2002a) 2- 3(4) per cell, large, finely granular, mostly ovoid or oval. Underleaves completely lacking, the leaf insertions approaching the ventral stem midline. Dioecious, rarely (but in both of our species) paroecious. Androecia terminal or becoming intercalary, the bracts in 4-12 pairs, not reduced in size, the base strongly ventricose, saccate; antheridia 1-6 per bract, the stalk 1-2-seriate. Gynoecial bracts in (1)2-3 increasingly larger series, the innermost bracts less deeply divided than leaves, ± erect, arising from a ring- or tube-like, fleshy stem-perigynium; bracteoles completely lacking. Perianth short, included within (and ± hidden by) the uppermost bracts, typically a short tube, rarely vestigial and then reduced to lobed vestiges or, rarely, lacking, the perianth subtended by a ± distinct, erect, tubular perigynium; perianth when mature broadly obconic to ovate, delicate, contracted at the plicate mouth, the mouth 4-6(8)-lobed after extrusion of the capsule, the lobes crenulate by projecting cells. Calyptra with sterile archegonia near its base. Seta short to moderately long, massive or reduced to 8-10 outer + 3-4 inner rows of cells. Capsule spherical to slightly ovoid, usually 4-valved to the base, the wall 2- or 2-3-stratose; outer layer of cells with strongly nodular thickenings on all but short walls; inner layer of cells with weaker nodular thickenings, often tangentially extended as incomplete or complete semi- annular bands (in several taxa with semi annular bands common). Spores very small, 7-15 juim in diam., the wall obscurely papillate or with low, often furcate, vermiform ridges. Elaters 2- or 3 -4- spiral. Type: Marsupella emarginata (Ehrh.) Dumort. (= Jungermannia emarginata Ehrh.) A genus of 40-45 species, of which two are bipolar and occur in New Zealand {Marsupella sprucei, M. sparsifolia). Other Austral species are M. minutula Hassel of South Georgia (Has- sel, 1980b); M. capensis S.W.Arnell of South Africa (Vaha, 1985); M. lacerata (Steph.) Vaha of the Neotropics and South Africa (see Vaha, 2003); M. emarginata (Ehrh.) Dumort. of wide distribution in the Holarctic and also present in Central Africa (Vaha, 1985; see range in Vaha, 2003); and M. miniata (Lindenb. &amp; Gottsche) Grolle (= M. lorentziana Steph., type: Argentina, leg. Lorentz) occurs in the Neotropics with a range that includes northern Argentina (see Vaha, 2003, p. 122). The genus is absent from Antarctica; the report by Chen et al. (1995) of M. boeckii (Austin) Lindb. is actually Lophozia excisa (Bednarek-Ochyra et al., 2000). Schuster (2002a) subdivided the genus into five subgenera; the New Zealand species belong to subg. Marsupella. Description adapted and modified from Schuster (2002a). Key to Species la. Leafy shoots minute, to 525 juim wide, 2-5 (rarely 7-8) mm tall; leafy shoots abruptly larger-leaved distally, almost always eventually fertile, the lower leaves often scale-like and ± erect or erect-appressed; spores 13.4-14.9 luim in diam . M. sprucei (p. 799) lb. Leafy shoots relatively large, to 650-1100 juim wide, 8-15 mm tall; leafy shoots sub- equally leafy throughout or gradually smaller-leaved below, with strongly and stiffly spreading leaves; spores 9.1-10.6 juim in diam . M. sparsifolia (p. 801) Subg. Marsupella Marsupella sprucei (Limpr.) Bernet [Eig. Ill: 9-17] (Limpr.) Bernet, Cat. Hep. Suisse 33. 1888. Marsupella ustulata var. sprucei (Limpr.) R.M.Schust., Hepat. Anthocerotae N. Amer. 3: 30. 1974. Type: Germany, Fichtelgebirge, Funck. Plants chocolate-brown to fuscous brown, erect in growth, (270)420-525 juim wide, often repeatedly fertile by frequent innovation from below the 9 inflorescence, the innovations usually again fertile, the fertile plants often subcapitate in appearance (due to the small lower leaves becoming swiftly larger toward the inflorescence). Branching common in sterile, leafy sectors of shoots, the branches lateral-intercalary, from median, or less often ventral, sector of leaf axil, the plants rather sparingly stoloniferous. Leaves mostly obliquely spreading, only sporadically widely spreading, remote to contiguous below but toward the shoot apices becoming approximate to weakly imbricate, the insertion transverse in dorsal half, the leaf in¬ sertions crossing the stem midline dorsally, the leaves adaxially concave, broadly ovate to sub- oblate, widest a little below the middle, on sterile shoots 300-350 juim wide X 360-410 juim long, often somewhat cordate at the base, bilobed to 0.2-0.3, sometimes a little asymmetrically so, with one lobe slightly larger than the other, lobes acute to subacute, at times feebly apicu- late, terminating in a single cell or a uniseriate row of 2 cells (in either case these tip cells as wide as long or wider than long); sinus acute. Cells with bulging trigones, the median lamina cells subisodiametric, 13-17 X 13-18(22) juim, the basal cells 18-20 juim wide X 20-22 juim long; surface ?smooth. Paroecious. Androecial bracts in 2 pairs, much larger than leaves, erect, suboblate, moderately ventricose in median-basal sector, bifid to ca. 0.25, the lobes rather broadly acute; an- theridia 2 per bract, the stalk to 13 cells long, biseriate. Gynoecial bracts erect, mutually involute, sheathing the abbreviated perianth, ± clasping at the base, bilobed to ca. 0.25, the lobes acute to often apiculate. Perianth delicate, low and inconspicuous, formed of variously rectangular cells, those near the mouth hyaline and colorless, the mouth crenulate by cells that are finger-like and free only near the distal end. Capsule spherical, the wall 2-stratose, outer layer of cells subquadrate to short-rectangular, the radial longitudinal and transverse walls with sharply defined, strong, nodular to weakly spur-like thickenings; inner layer of cells much more irregular, often narrowly rectangular, the longitudinal walls with similar nodular to spur-like thickenings but somewhat smaller, the thickenings rarely extended on the tangential face as complete semiannular bands. Spores pale brown, 13.4-14.9 juim in diam., the wall with low papillae and short-vermiculate markings; spore:elater diam. ratio 1.4-1.7:1. Elaters slightly tortuous, 8. 6-9. 6 juim wide, bispiral to tips, the spirals 3.4-4. 3 juim wide. Distribution and Ecology: Bipolar; in New Zealand: South Island (1160-1970 m). In the Southern Hemisphere also known from southern South America (Argentina, Tierra del Euego, Cerro Garibaldi, 245-275 m). In New Zealand known from Eiordland (Gertrude Valley), Westland (Main Divide near Mt. Brewster; ridge to Mole Tops, Ella Ra.) and Otago (Old Man Ra.) EPs. In the alpine zone on fully exposed soil among stones, e.g., on track to Gertrude Saddle (head of Gertrude Valley, Eiordland Natl. Park), or on an exposed ridge admixed with Soleno- stoma rufiflorum (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park). Also on an exposed ridge in penalpine scrub consisting mainly of Chionochloa, Dra- cophyllum and Hebe (e.g., below and W of Mt. Shrimpton, Mt. Aspiring Natl. Park). On the Old Man Ra. it occurred on damp soil above a snowbank. It has been found with Bartramia papillata, Chrysoblastella chilensis, Conostomum pusillum, Coprosma petriei, Ditrichum bre- virostre, Grimmia pulvinata, Solenostoma totipapillosum and Weissia controversa. Schuster (1996d, p. 66) remarked the ecology of Marsupella sprucei ‘‘differs from that of M. sparsi- folia: rather than occurring on soil along rivulets, or on rocks where kept moist by seepage. M. sprucei s. lat., in the Antipodes, the species occurs on soil, often [at] considerable distances from rock outcrops, and rarely in areas where apt to be submerged,” which matches the conditions that we have encountered our two Marsupella species in New Zealand. Schuster (1996d, p. 65) also commented that in the Southern Hemisphere, M. sprucei occurs in ‘‘moist montane, treeless zones — from sites not too dissimilar to those occupied by the species in the Northern Hemisphere.” Comments: The above description is based solely on New Zealand plants. Eor comments see under Marsupella spars if olia. Marsupella sparsifolia (Lindb.) Dumort. (Lindb.) Dumort., Hepat. Eur. 128. 1874. Nardia sparsifolia (Lindb.) Lindb., Musci Scand. 10. 1879. Type: Scandinavia. This bipolar species has two subspecies: subspecies sparsifolia is “largely Arctic- alpine and high subarctic” and is generally rare and local (Schuster, 1996d, p. 41); subspecies childii occurs in our area.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">5mm                           Lethocolea pansa
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">5mm                           Lethocolea pansa
   Mosses &amp; Allied Plants of Southern Australia
 
 
@@ -661,16 +628,19 @@ Papillaria                                                                      
 Paraschistochila tuloides .................................. 254            Pseudoleskea imbricata ..................................... 70
 Petalophyllum preissii...................................... 190            Pseudoleskeopsis imbricata ............................... 70
 Phaeoceros                                                                  Pseudoscleropodium purum .............................. 72
-    brotheri ...................................................... 190     Psilopilum .......................................................... 92</p>
+    brotheri ...................................................... 190     Psilopilum .......................................................... 92</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">26 Leaves ± opaque, cells almost filled by brownish oil bodies ... Acrobolbus concinnus
+    <pre class="description-text">26 Leaves ± opaque, cells almost filled by brownish oil bodies ... Acrobolbus concinnus
                                                                                                                                                                                   Leaves translucent, oil bodies pale (brownish only in Lethocolea pansa) ................ 27
                                                                                                                                                                                27 Plants minute; leaf and stem cells all similar, bulging; leaves few-celled ........ Zoopsis
                                                                                                                                                                                   Plants small to large, leaf and stem cells not bulging, leaf cells
@@ -730,7 +700,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                  Species of Lophozia, a genus not yet formally reported for Victoria but undoubtedly
                                                                                                                                                                                    present here, could key out at couplet 16 or 22.
                                                                                                                                                                                B
-                                                                                                                                                                                 Jamesoniella tasmanica, doubtfully recorded for Victoria, would key to here. It has</p>
+                                                                                                                                                                                 Jamesoniella tasmanica, doubtfully recorded for Victoria, would key to here. It has</pre>
     
     
   </details>
@@ -739,14 +709,49 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Aglaophyllum erosum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Brachidontes erosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Calymperes erosum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chenopodium erosum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Nitophyllum erosum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Nothogymnomitrion</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pachyrhizus erosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Podotenus erosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Scotinosoma erasum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cesius erosus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Gymnomitrion denticulatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Gymnomitrion erosum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Herzogobryum erosum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophozia subgen</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -761,22 +766,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [91.0, 77.4, 99.5, 105.9, 153.6, 158.6, 183.5, 203.8, 187.1, 152.4, 111.5, 118.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.2, 18.2, 15.5, 11.8, 8.7, 6.6, 5.8, 6.7, 8.9, 11.3, 14.6, 16.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [7.3, 7.3, 5.9, 4.1, 2.7, 1.2, 0.4, 0.6, 1.7, 2.7, 4.6, 5.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

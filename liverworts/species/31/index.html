@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Marchantia berteroana</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Marchantiaceae</span>
-    <span class="badge secondary">Marchantia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Chamelaucium marchantii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Fagraea berteroana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Gossypium marchantii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Loreleia marchantiae</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marchantia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marchantia foliacea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marchantia pileata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marchantia polymorpha</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Ornduffia marchantii</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Marchantia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,35 +48,37 @@
     <p class="big-num">801</p>
     <footer>196 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">12.0&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1180&thinsp;mm</p>
-    <footer>
-      CV 25.2
-    </footer>
+    <footer>annual · CV&thinsp;25.2</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">6</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -110,95 +86,105 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>GBIF</strong> (1 entry)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribución global:</strong> S regiones templadas</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribución global:</strong> S regiones templadas</p>
     
     
   </details>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">TYPES: G, NSW.
+    <pre class="description-text">TYPES: G, NSW.
 COMMENT: leones Hep. Steph. n. 5100 is based on Watts 1043 (Geissler &amp; Bischler 1985:
 47).
 
@@ -258,16 +244,19 @@ the type specimen of Balantiopsis subkingwella, see above.
 Mastigobryum dentistipulum Stephani (Stephani &amp; Watts 1914: 122)
 PROTO: &#39;Australia, New South Wales (Lane Cove River and Valley of Waters): Watts
 1096, 1129, 1104:
-LABEL: NEW SoUTH WALES: 1. Lane Cove River, W.W. Watts 1096, May 1912 (NSW H287);</p>
+LABEL: NEW SoUTH WALES: 1. Lane Cove River, W.W. Watts 1096, May 1912 (NSW H287);</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">literature.
+    <pre class="description-text">literature.
 Description: As Lunularia cruciata has been described and illustrated frequently in the
 literature (e.g. Scott 1985, Schuster 1992b, Atherton et al. 2010), no description or illustration is
 given here.
@@ -340,16 +329,19 @@ Total distribution: Australia (Tas, Vic, ACT, NSW, Qld, LHI), New Zealand.
 treated by Scott (1985). Specimens from Lord Howe Island previously identified as Marchantia
 foliacea Mitt. were found to be M. pileata in this study. M. pileata does not extend to New
 Caledonia; Bischler (1989) found that all records from there were referable to M. emarginata
-var. lecordiana.</p>
+var. lecordiana.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Lepidozia spinosissima (Hook.f. &amp; Taylor) Mitt.                 Tylimanthus knightii (Mitt.) Hassel &amp;
+    <pre class="description-text">Lepidozia spinosissima (Hook.f. &amp; Taylor) Mitt.                 Tylimanthus knightii (Mitt.) Hassel &amp;
 Lepidozia ulothrix (Schwaegr.) Lindenb.                         Solari
 Leptolejeunea elliptica subsp. subacuta (A.Evans)               Tylimanthus spinosus Steph.
         R.M.Schust.                                      Marsupidium perpusillum (Colenso) E.A.Hodgs.
@@ -409,16 +401,19 @@ Nephelolejeunea hamata Grolle                          Paracromastigum drucei (R
 Nephelolejeunea papillosa Glenny                               Pseudocephalozia drucei R.M.Schust.
 Nothogymnomitrion erosum (Carrington &amp; Pearson)        Paracromastigum fiordlandiae R.M.Schust. &amp;
        R.M.Schust.                                            JJ.Engel
-       Herzogobryum erosum (Carrington &amp;               Paracromastigum fissifolium (Steph.) R.M.Schust.</p>
+       Herzogobryum erosum (Carrington &amp;               Paracromastigum fissifolium (Steph.) R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">example, Hym enophyton, Metzgeria,
+    <pre class="description-text">example, Hym enophyton, Metzgeria,
                                                                        -- stalk (seta)
 Symphyogyna and Podomitrium species           ::c
                                               a..
@@ -542,16 +537,19 @@ Mosses - Brachytheciurn, Bryum, Leptodictyum, Physcomitrella, Pleuridium
 Liverworts and hornworts - Fossornbronia, Lethocolea, Riccard ia, Riccia,
 Ricciocarpos
 
-Alpine graeeland and heathland</p>
+Alpine graeeland and heathland</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chamaelaucium marchantii is a member of the family Myrtaceae endemic to Western Australia.</p>
+    <pre class="description-text">Chamaelaucium marchantii is a member of the family Myrtaceae endemic to Western Australia.</pre>
     
     
   </details>
@@ -560,14 +558,39 @@ Alpine graeeland and heathland</p>
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Chamelaucium marchantii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Fagraea berteroana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gossypium marchantii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Loreleia marchantiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marchantia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marchantia foliacea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marchantia pileata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marchantia polymorpha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ornduffia marchantii</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -582,22 +605,32 @@ Alpine graeeland and heathland</p>
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [68.9, 59.3, 75.2, 80.6, 114.7, 121.3, 137.1, 150.4, 132.4, 111.2, 84.4, 86.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.5, 20.6, 18.6, 15.4, 12.6, 10.7, 10.1, 10.8, 12.7, 14.5, 17.1, 18.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.1, 10.1, 8.9, 6.9, 5.3, 3.8, 3.2, 3.4, 4.7, 5.7, 7.6, 8.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

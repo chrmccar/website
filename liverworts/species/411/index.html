@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Zoopsis leitgebiana</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Zoopsis</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Cephalozia leitgebiana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis argentea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis basilaris</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis liukiuensis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis macrophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis setigera K.I.Goebel</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis setulosa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis tenuicaulis</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Zoopsis</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,21 +48,25 @@
     <p class="big-num">350</p>
     <footer>123 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">11</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -96,135 +74,140 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>180.0–220.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>180.0–220.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>90.0–120.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>90.0–120.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ZOOPSIS_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>10.0–12.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>10.0–12.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.4</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.4</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    <summary>
+      <strong>BANKS_PENINSULA_2013</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Present on Banks Peninsula at: Port Hills (DG10745 Omahu Reserve 360 m); Herbert district (DG10882a Mt Herbert 800 m; DG10929 Kaituna Valley 370 m; DG11006 Mt Fitzgerald 760 m); Akaroa district (DG11244 Armstrong Reserve 600 m; DG11223 Stony Bay Stream 210 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Present on Banks Peninsula at: Port Hills (DG10745 Omahu Reserve 360 m); Herbert district (DG10882a Mt Herbert 800 m; DG10929 Kaituna Valley 370 m; DG11006 Mt Fitzgerald 760 m); Akaroa district (DG11244 Armstrong Reserve 600 m; DG11223 Stony Bay Stream 210 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">NZ Liverworts and Hornworts       139
+    <pre class="description-text">NZ Liverworts and Hornworts       139
 
 
 
@@ -284,38 +267,47 @@ Aneura aequitexta - Riccardia aequitexta                 Chiloscyphus allodontus
 Aneura alba - Riccardia alba                             allodontus
 Aneura crispa - Riccardia alba                           Chiloscyphus ammophilus - Heteroscyphus
 Aneura dentata -Aneura alterniloba                       ammophilus
-Aneura effusa - Riccardia aequitexta                     Chiloscyphus amplectens - Clasmatocolea</p>
+Aneura effusa - Riccardia aequitexta                     Chiloscyphus amplectens - Clasmatocolea</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants delicate, very soft textured, fleshy but lax, creeping, light green, rather small, to 600(635) p^m wide. Branching free, remotely pinnate, the main axis tending to maintain its dominance, the branches of predominantly Frullania type; half-leaf normally consisting of a uniseriate row of 2-4 inflated cells, the basal cell notably turgid and up to 2.5 X width of the next cell, the base rarely with 2 lateral juxtaposed swollen cells, and in such cases subtend a uniseriate row; ventral-intercalary vegetative branches sparing, leafy as well as geotropic and stoloniform; apices of shoots at times becoming microphyllous, whitish and flagelliform (these sometimes again becoming normal leafy shoots). Axes pellucid and soft textured, in cross section subterete to ellipsoidal, in 6 rows: formed of 4 large cortical cell rows (= lateral merophytes), the dorsal 2 rows larger, + 2 rows of smaller cells (= ventral merophytes); dorsal cortical cells in surface view usually quadrate to 5 -6-angled and subisodiametric, lepto- dermous; medulla of ca. 12-16 rows of much smaller cells, only 13-18 pm in diam. Leaves remote to subcontiguous, normally 1. 5-3(4) cortical cells intervening between successive leaves on each side of axis; leaves laterally patent to sometimes dorsally assurgent, suc- cubously inserted, the insertion lines not extending to stem midline dorsally and defining a leaf-free strip nearly 2 cells broad. Leaves relatively small, strongly asymmetric, to 180- 220 pm wide X 240-300 pm long to apex of ventral lobe, the lobes persistent; ventral lobe (4)5-8-celled (on weak shoots only 3-celled), at base formed by 2 cells, side-by-side, the lobe proper of (2)3 progressively smaller, inflated, submoniliform cells, infrequently the ventral lobe formed of 2 tiers, each of 2 cells, plus 2 single terminal cells (then 6-7-celled); dorsal lobe reduced, formed of only (2)3 progressively smaller cells; disc 3(4-5) cells wide and 1 cell high, 2 cells wide in suboptimal phases. Leaf cells lax, leptodermous, inflated, those in lobes moniliform and progressively smaller, the end cells usually minute; basal cells and cells of lobe bases 90-120 pm wide X 110-130 pm long. Oil-bodies occupying a small fraction of the cell, dull, opaque, grey, (4)5-8 per basal cell of leaf and ones above, 7-8 per cortical cell, finely and densely papillose, globose to broadly elliptic to fusiform (many short- to long- fusiform), 7X9 pm to 7-8.5 X 12-16 pm. Underleaves normally separated by 2-3 tiers of ventral cortical cells, vestigial: normally formed of 2 inflated, sausage-shaped cells, each 30- 40 X 55-65 pm, inserted on a ‘‘disc” formed of (2)3 quadrate cells, the disc cells usually becoming subdivided, forming a cushion of 8-16 cells from which rhizoids arise; lobe cells each terminated by a small, ephemeral slime papilla. Asexual reproduction normally absent, rarely by tubers. Dioecious. Androecia spicate, bracts in 3-5 pairs, concave, bilobed, the dorsal lobe subequal to the ventral; antheridia 1 per bract, the stalk uniseriate. Gynoecia on weak, abbreviated ventral-intercalary branches; bracts of innermost series bifid to 0.6 or sometimes 3-fid, the lobes 2(3) cells broad, sublinear, ending in a single cell or a uniseriate row of 2 cells, the margins entire or with a tooth; bracteoles similar but smaller. Seta with 8 rows of outer cells surrounding an inner core of 10-21 rows of small cells. Capsule wall 2-3-stratose; outer layer of cells mostly subquadrate to quadrate, with imperfect two- phase development, primary cells with hyaline walls devoid of thickenings, usually divided once transversely and once vertically, the secondary walls (both longitudinal and transverse) with strong, sinuous-nodular thickenings; inner layer of cells narrowly oblong, with numerous complete semi annular bands. Spores delicately areolate. Elaters essentially straight, bispiral to tips. Distribution and Ecology: New Zealand: Campbell Island, Stewart Island (5 m), South Island (60-1370 m), North Island (10-1200 m), Chatham Islands; Australia: Tasmania, South Australia, Victoria, New South Wales (Meagher and Euhrer, 2003). An abundant species throughout temperate Australasia. In New Zealand known from Southland, Otago (Dunedin), Westland, Canterbury (Porters Pass), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau, Taranaki, Auckland and Northland EPs. In New Zealand ranging from Stewart Island to the northern sector of Northland (Radar Bush, WSW of Cape Reinga). Plants are frequent in deeply shaded sites, often in sheltered, humid pockets or recesses, at times occurring deep within such niches. Rather common on steep, often vertical, banks that are often associated with streams or creeks and mostly on damp clayey soils or, less often, on rock, often where sheltered by Asplenium bulbiferum, Blechnum chambersii, B. colensoi and Leptopteris superba. Also in hollows formed by exposed tree roots and in protected niches on shaded, vertical cliff faces. Also on saturated, rich, peaty soil of narrow, shallow and stagnant pools in a mixed podocarp-broadleaf forest (South Island, Lake Kaniere Scenic Reserve). This species is often associated with Lembidium nutans, which is also a pioneer on mineral soils. Other associated species are Balantiopsis diplophylla, Breutelia pendula, Categonium nitens, Chiloscyphus spiniferus, Distichophyllum pulchellum, Fissidens asplenioides, E leptocladus, Hypnodendron arcuatum, Kurzia hippuroides, Leptophyllopsis laxus, Philonotis tenuis, Pyrrhobryum mnioides and Zoopsis argentea. It also occasionally occurs under Chionochloa tussocks in the penalpine and alpine zones, thus overlapping in habitat with Z. macrophylla. Comments: In contrast to Zoopsis macrophylla, Z. leitgebiana is a relatively weak and slender plant. The leaves are strongly asymmetric as in Z. macrophylla, but in Z. leitgebiana the larger ventral lobe is usually formed of only 3-4 cells and the dorsal lobe of only 2-3 cells. Leaves in Z. leitgebiana on each side are separated by 1.5-3 (less often in part 4) cortical cells vs. up to 7 cells between leaves in Z. macrophylla. The underleaves are much smaller than in Z. macrophylla and are similar to species of subg. Zoopsis: vestigial, formed of 2-3 small, quadrate basal cells and 2 inflated, sausage-shaped cells constituting the 2 lobes, each terminated by a slime papilla. As shoot maturity is approached, the disc cells undergo secondary di¬ vision and a small transverse ‘‘cushion” of up to 8-16 cells is formed; rhizoids originate from such “cushion” cells. Ventral merophytes typically are formed of only 2 tiers of cells, i.e., the underleaves are separated by only 4 cells vs. 7-8 cell tiers (thus 14-16 cells) that separate successive underleaves in Z. macrophylla. The stem consists of only 6 rows of cortical cells, the 2 that each belong to lateral merophytes are notably large and inflated, the 2 belonging to the ventral merophytes are much smaller. Medullary cells are minute and, in contrast to Z. macrophylla, the entire central strand is narrower in diameter than the largest dorsal cortical cell. Branching, as in Z. macrophylla, is commonly of the Frullania type, but in this species the half-leaf is typically formed of only 3 cells. The orientation of the half-leaf is also different from Z. macrophylla: it lies along the basiscopic side of the branch. The leaf insertion is more variable than Schuster (1999a) would admit. The insertion lines of the succubously inserted leaves do not extend to the stem midline dorsally, and they delimit a leaf-free strip of, for the most part, 2 cells wide. The leaves often are articulated or inserted directly on the radial walls of the dorsal cortical cells (see Schuster, 1999a, fig. 2: 1,8, 9) and the leaf-free strip is 2 full cells wide. Such populations often have a leaf disc 3 cells wide. However, in some populations the dorsal extremity of the leaf is inserted on the exposed dorsal-lateral face of the dorsal-most cortical cell and ca. 0.5 of the dorsal-most cortical cell is leaf-free on each side. This condition approaches that of Zoopsis macrophylla (compare Schuster 1999a, fig. 3: 9, 10 with fig. 1: 10). Tubers were observed in Engel 20985 from Omahuta Eorest Kauri Sanctuary in Northland. These are similar in appearance to the tubers found in Telaranea tasmanica (Engel and Merrill, 2004, fig. 32: 1, 2) and represent the first report of this form of asexual reproduction in the genus. Zoopsis ceratophylla (Spruce) Hamlin R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Zoopsidella ceratophylla (Spruce) R.M.Schust., Taxon 18: 57, 87. 1969. Zoopsis ceratophylla (Spruce) R.M.Schust., Nova Hedwigia 10: 36. 1965, nom. inval, has. non cit. Zoopsis ceratophylla (Spruce) Hamlin, Rec. Domin. Mus., Wellington 7: 311. 1972. Type: Auckland Is., “supra Chiloscyphum notophyllum Taylor,” Hooker. Cephalozia fissifolia Steph., Sp. Hepat. 3: 314. 1908, syn.fide Schuster (1999a). Paracromastigum fissifolium (Steph.) R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Type: Auckland Is., Hooker. Plants creeping, light to whitish green, pellucid, nitid when dry, large for the genus, leafy shoots to 1.4 mm wide. Branching common, irregular, the branches of Frullania type; ventral- intercalary branches frequent, leafy or stoloniform. Axis subterete, the cortex of 6 rows of cells, the dorsal-most 2 rows of very large, inflated cells, the 2 rows of ventral-lateral cells slightly smaller, the ventral 2 cell rows somewhat but not greatly reduced in size; medulla with 11-15 rows of much smaller, weakly firm- walled cells. Rhizoids few, at underleaf bases only. Leaves strongly succubously inserted, remote to contiguous, widely spreading, plane or essentially so, 270-320 |ULm wide X 420-550(620) juim long, narrowly oblong to obovate-cuneate, widest in distal half (when not subparallel), nearly symmetrically bilobed to 0.35-0.5; lobes often somewhat spreading, 2-3(4) cells wide at base, formed of (3)5-8 to 10-12 cells, terminating in a uniseriate row of (2)3-5(7) progressively smaller, moniliform cells, the terminal cell sometimes an unspecialized slime papilla; disc 4-5 cells wide at base, the disc rarely with subdivision of cells distally and then to 6-8(10) cells wide, the disc 4-5 cells high (leaf base to sinus base). Cells of leaf disc very large, hyaline, leptodermous, quadrate to hexagonal, (42)45-65(72) X 60-95(115) juim; surface smooth. Oil-bodies (Schuster, 1999a) 10-12 per cell, brownish grey, opaque, finely granular, ellipsoidal to fusiform, 5.5-7 X 1 1 juim to 6-7 X 16-18 |ULm. Underleaves relatively large, the 2 lobes each 2-4-celled, terminating in a slime papilla, the disc comprised of 1-2 tiers of 4 cells each. Asexual reproduction by fragmenting or caducous leaf lobes. Eungal partner an ascomycete. Dioecious. Androecia not seen. Gynoecia on very short, ventral-intercalary branches; bracts and bracteoles much smaller-celled than leaves, bifid to ca. 0.5 or a little less, the lobes terminating in 3-4 strongly elongated cells; disc margins each usually with a few 1-celled teeth and at times a ciliiform process consisting of a uniseriate row of up to 4 strongly elongated cells. Perianth fusiform, cylindrical below, trigonous in distal sector, narrowing toward the mouth, the mouth deeply 6-lobed, the lobes caudate, terminating in 2-3 laterally juxtaposed, distinctly elongated cells that subtend a long, contorted cilium comprised of 4-6 markedly elongated cells (to 8.5:1), the lobes crenulate below the level of the cilium by projecting distal ends of cells, otherwise entire. Seta with 8 epidermal cell rows and many, much smaller internal cells (Scott, 1969). Capsule not seen. Distribution and Ecology: Endemic to New Zealand: Auckland Islands, Stewart Island (5- 40 m), South Island (35-630 m), North Island (340-940 m). Known from Eiordland (Lake Manapouri), Western Nelson (near Westport) and Southern North Island (Akatarawa Saddle, Tararua Ra.) EPs. A plant of shaded sites on organic substrates or peaty soil. It occurs over the peaty soil that lines deep hollows at the bases of stumps or dead trees. Also over soil deep in protected niches on the forest floor, at times with a root mass overhang. Also on the sides of bryophyte-covered logs and on tree ferns. On the ridge above Te Kuha, east of Westport, it occurs under Lepi- dothamnus intermedins forest, associated with Acrobolbus lophocoleoides, Acromastigum anisostomum, Bazzania adnexa, B. hochstetteri, Kurzia hippuroides, Lepidozia spinosissima, Paraschistochila pinnatifolia, Rhizogonium pennatum and Saccogynidium decurvum. On Stewart Island (Ereshwater Landing, 5 m), in an open area of swamp growing among leaf litter, it was associated with Telaranea quinque spina below dense Gleichenia ground cover in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus. Comments: Zoopsis ceratophylla is superficially rather similar to Zoopsidella caledonica, both having well-formed, widely spreading, contiguous, symmetrically bilobed leaves with very large cells. Zoopsis ceratophylla may be distinguished by the longer, acuminate leaf lobes with strongly moniliform cells and the caducous leaf apices vs. the always persistent leaf lobes, which are few-celled, triangular and terminate nearly uniformly in 2 cells in Z. cale- donica. Cytological distinctions between the two species are distinctive and useful, particularly when the two species grow together. Oil-bodies are opaque, brownish grey and finely granular in Z. ceratophylla vs. glistening, hyaline, smooth and homogeneous or nearly so in Z. caledonica. Seta anatomy differs strikingly between the two plants: 8 rows of outer cell rows and many, much smaller internal cells (Scott, 1969) vs. 8 outer rows and 4 rows of similar-sized internal cells in Z. caledonica. Zoopsis ceratophylla is much less common than Z. caledonica.</p>
+    <pre class="description-text">Plants delicate, very soft textured, fleshy but lax, creeping, light green, rather small, to 600(635) p^m wide. Branching free, remotely pinnate, the main axis tending to maintain its dominance, the branches of predominantly Frullania type; half-leaf normally consisting of a uniseriate row of 2-4 inflated cells, the basal cell notably turgid and up to 2.5 X width of the next cell, the base rarely with 2 lateral juxtaposed swollen cells, and in such cases subtend a uniseriate row; ventral-intercalary vegetative branches sparing, leafy as well as geotropic and stoloniform; apices of shoots at times becoming microphyllous, whitish and flagelliform (these sometimes again becoming normal leafy shoots). Axes pellucid and soft textured, in cross section subterete to ellipsoidal, in 6 rows: formed of 4 large cortical cell rows (= lateral merophytes), the dorsal 2 rows larger, + 2 rows of smaller cells (= ventral merophytes); dorsal cortical cells in surface view usually quadrate to 5 -6-angled and subisodiametric, lepto- dermous; medulla of ca. 12-16 rows of much smaller cells, only 13-18 pm in diam. Leaves remote to subcontiguous, normally 1. 5-3(4) cortical cells intervening between successive leaves on each side of axis; leaves laterally patent to sometimes dorsally assurgent, suc- cubously inserted, the insertion lines not extending to stem midline dorsally and defining a leaf-free strip nearly 2 cells broad. Leaves relatively small, strongly asymmetric, to 180- 220 pm wide X 240-300 pm long to apex of ventral lobe, the lobes persistent; ventral lobe (4)5-8-celled (on weak shoots only 3-celled), at base formed by 2 cells, side-by-side, the lobe proper of (2)3 progressively smaller, inflated, submoniliform cells, infrequently the ventral lobe formed of 2 tiers, each of 2 cells, plus 2 single terminal cells (then 6-7-celled); dorsal lobe reduced, formed of only (2)3 progressively smaller cells; disc 3(4-5) cells wide and 1 cell high, 2 cells wide in suboptimal phases. Leaf cells lax, leptodermous, inflated, those in lobes moniliform and progressively smaller, the end cells usually minute; basal cells and cells of lobe bases 90-120 pm wide X 110-130 pm long. Oil-bodies occupying a small fraction of the cell, dull, opaque, grey, (4)5-8 per basal cell of leaf and ones above, 7-8 per cortical cell, finely and densely papillose, globose to broadly elliptic to fusiform (many short- to long- fusiform), 7X9 pm to 7-8.5 X 12-16 pm. Underleaves normally separated by 2-3 tiers of ventral cortical cells, vestigial: normally formed of 2 inflated, sausage-shaped cells, each 30- 40 X 55-65 pm, inserted on a ‘‘disc” formed of (2)3 quadrate cells, the disc cells usually becoming subdivided, forming a cushion of 8-16 cells from which rhizoids arise; lobe cells each terminated by a small, ephemeral slime papilla. Asexual reproduction normally absent, rarely by tubers. Dioecious. Androecia spicate, bracts in 3-5 pairs, concave, bilobed, the dorsal lobe subequal to the ventral; antheridia 1 per bract, the stalk uniseriate. Gynoecia on weak, abbreviated ventral-intercalary branches; bracts of innermost series bifid to 0.6 or sometimes 3-fid, the lobes 2(3) cells broad, sublinear, ending in a single cell or a uniseriate row of 2 cells, the margins entire or with a tooth; bracteoles similar but smaller. Seta with 8 rows of outer cells surrounding an inner core of 10-21 rows of small cells. Capsule wall 2-3-stratose; outer layer of cells mostly subquadrate to quadrate, with imperfect two- phase development, primary cells with hyaline walls devoid of thickenings, usually divided once transversely and once vertically, the secondary walls (both longitudinal and transverse) with strong, sinuous-nodular thickenings; inner layer of cells narrowly oblong, with numerous complete semi annular bands. Spores delicately areolate. Elaters essentially straight, bispiral to tips. Distribution and Ecology: New Zealand: Campbell Island, Stewart Island (5 m), South Island (60-1370 m), North Island (10-1200 m), Chatham Islands; Australia: Tasmania, South Australia, Victoria, New South Wales (Meagher and Euhrer, 2003). An abundant species throughout temperate Australasia. In New Zealand known from Southland, Otago (Dunedin), Westland, Canterbury (Porters Pass), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau, Taranaki, Auckland and Northland EPs. In New Zealand ranging from Stewart Island to the northern sector of Northland (Radar Bush, WSW of Cape Reinga). Plants are frequent in deeply shaded sites, often in sheltered, humid pockets or recesses, at times occurring deep within such niches. Rather common on steep, often vertical, banks that are often associated with streams or creeks and mostly on damp clayey soils or, less often, on rock, often where sheltered by Asplenium bulbiferum, Blechnum chambersii, B. colensoi and Leptopteris superba. Also in hollows formed by exposed tree roots and in protected niches on shaded, vertical cliff faces. Also on saturated, rich, peaty soil of narrow, shallow and stagnant pools in a mixed podocarp-broadleaf forest (South Island, Lake Kaniere Scenic Reserve). This species is often associated with Lembidium nutans, which is also a pioneer on mineral soils. Other associated species are Balantiopsis diplophylla, Breutelia pendula, Categonium nitens, Chiloscyphus spiniferus, Distichophyllum pulchellum, Fissidens asplenioides, E leptocladus, Hypnodendron arcuatum, Kurzia hippuroides, Leptophyllopsis laxus, Philonotis tenuis, Pyrrhobryum mnioides and Zoopsis argentea. It also occasionally occurs under Chionochloa tussocks in the penalpine and alpine zones, thus overlapping in habitat with Z. macrophylla. Comments: In contrast to Zoopsis macrophylla, Z. leitgebiana is a relatively weak and slender plant. The leaves are strongly asymmetric as in Z. macrophylla, but in Z. leitgebiana the larger ventral lobe is usually formed of only 3-4 cells and the dorsal lobe of only 2-3 cells. Leaves in Z. leitgebiana on each side are separated by 1.5-3 (less often in part 4) cortical cells vs. up to 7 cells between leaves in Z. macrophylla. The underleaves are much smaller than in Z. macrophylla and are similar to species of subg. Zoopsis: vestigial, formed of 2-3 small, quadrate basal cells and 2 inflated, sausage-shaped cells constituting the 2 lobes, each terminated by a slime papilla. As shoot maturity is approached, the disc cells undergo secondary di¬ vision and a small transverse ‘‘cushion” of up to 8-16 cells is formed; rhizoids originate from such “cushion” cells. Ventral merophytes typically are formed of only 2 tiers of cells, i.e., the underleaves are separated by only 4 cells vs. 7-8 cell tiers (thus 14-16 cells) that separate successive underleaves in Z. macrophylla. The stem consists of only 6 rows of cortical cells, the 2 that each belong to lateral merophytes are notably large and inflated, the 2 belonging to the ventral merophytes are much smaller. Medullary cells are minute and, in contrast to Z. macrophylla, the entire central strand is narrower in diameter than the largest dorsal cortical cell. Branching, as in Z. macrophylla, is commonly of the Frullania type, but in this species the half-leaf is typically formed of only 3 cells. The orientation of the half-leaf is also different from Z. macrophylla: it lies along the basiscopic side of the branch. The leaf insertion is more variable than Schuster (1999a) would admit. The insertion lines of the succubously inserted leaves do not extend to the stem midline dorsally, and they delimit a leaf-free strip of, for the most part, 2 cells wide. The leaves often are articulated or inserted directly on the radial walls of the dorsal cortical cells (see Schuster, 1999a, fig. 2: 1,8, 9) and the leaf-free strip is 2 full cells wide. Such populations often have a leaf disc 3 cells wide. However, in some populations the dorsal extremity of the leaf is inserted on the exposed dorsal-lateral face of the dorsal-most cortical cell and ca. 0.5 of the dorsal-most cortical cell is leaf-free on each side. This condition approaches that of Zoopsis macrophylla (compare Schuster 1999a, fig. 3: 9, 10 with fig. 1: 10). Tubers were observed in Engel 20985 from Omahuta Eorest Kauri Sanctuary in Northland. These are similar in appearance to the tubers found in Telaranea tasmanica (Engel and Merrill, 2004, fig. 32: 1, 2) and represent the first report of this form of asexual reproduction in the genus. Zoopsis ceratophylla (Spruce) Hamlin R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Zoopsidella ceratophylla (Spruce) R.M.Schust., Taxon 18: 57, 87. 1969. Zoopsis ceratophylla (Spruce) R.M.Schust., Nova Hedwigia 10: 36. 1965, nom. inval, has. non cit. Zoopsis ceratophylla (Spruce) Hamlin, Rec. Domin. Mus., Wellington 7: 311. 1972. Type: Auckland Is., “supra Chiloscyphum notophyllum Taylor,” Hooker. Cephalozia fissifolia Steph., Sp. Hepat. 3: 314. 1908, syn.fide Schuster (1999a). Paracromastigum fissifolium (Steph.) R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Type: Auckland Is., Hooker. Plants creeping, light to whitish green, pellucid, nitid when dry, large for the genus, leafy shoots to 1.4 mm wide. Branching common, irregular, the branches of Frullania type; ventral- intercalary branches frequent, leafy or stoloniform. Axis subterete, the cortex of 6 rows of cells, the dorsal-most 2 rows of very large, inflated cells, the 2 rows of ventral-lateral cells slightly smaller, the ventral 2 cell rows somewhat but not greatly reduced in size; medulla with 11-15 rows of much smaller, weakly firm- walled cells. Rhizoids few, at underleaf bases only. Leaves strongly succubously inserted, remote to contiguous, widely spreading, plane or essentially so, 270-320 |ULm wide X 420-550(620) juim long, narrowly oblong to obovate-cuneate, widest in distal half (when not subparallel), nearly symmetrically bilobed to 0.35-0.5; lobes often somewhat spreading, 2-3(4) cells wide at base, formed of (3)5-8 to 10-12 cells, terminating in a uniseriate row of (2)3-5(7) progressively smaller, moniliform cells, the terminal cell sometimes an unspecialized slime papilla; disc 4-5 cells wide at base, the disc rarely with subdivision of cells distally and then to 6-8(10) cells wide, the disc 4-5 cells high (leaf base to sinus base). Cells of leaf disc very large, hyaline, leptodermous, quadrate to hexagonal, (42)45-65(72) X 60-95(115) juim; surface smooth. Oil-bodies (Schuster, 1999a) 10-12 per cell, brownish grey, opaque, finely granular, ellipsoidal to fusiform, 5.5-7 X 1 1 juim to 6-7 X 16-18 |ULm. Underleaves relatively large, the 2 lobes each 2-4-celled, terminating in a slime papilla, the disc comprised of 1-2 tiers of 4 cells each. Asexual reproduction by fragmenting or caducous leaf lobes. Eungal partner an ascomycete. Dioecious. Androecia not seen. Gynoecia on very short, ventral-intercalary branches; bracts and bracteoles much smaller-celled than leaves, bifid to ca. 0.5 or a little less, the lobes terminating in 3-4 strongly elongated cells; disc margins each usually with a few 1-celled teeth and at times a ciliiform process consisting of a uniseriate row of up to 4 strongly elongated cells. Perianth fusiform, cylindrical below, trigonous in distal sector, narrowing toward the mouth, the mouth deeply 6-lobed, the lobes caudate, terminating in 2-3 laterally juxtaposed, distinctly elongated cells that subtend a long, contorted cilium comprised of 4-6 markedly elongated cells (to 8.5:1), the lobes crenulate below the level of the cilium by projecting distal ends of cells, otherwise entire. Seta with 8 epidermal cell rows and many, much smaller internal cells (Scott, 1969). Capsule not seen. Distribution and Ecology: Endemic to New Zealand: Auckland Islands, Stewart Island (5- 40 m), South Island (35-630 m), North Island (340-940 m). Known from Eiordland (Lake Manapouri), Western Nelson (near Westport) and Southern North Island (Akatarawa Saddle, Tararua Ra.) EPs. A plant of shaded sites on organic substrates or peaty soil. It occurs over the peaty soil that lines deep hollows at the bases of stumps or dead trees. Also over soil deep in protected niches on the forest floor, at times with a root mass overhang. Also on the sides of bryophyte-covered logs and on tree ferns. On the ridge above Te Kuha, east of Westport, it occurs under Lepi- dothamnus intermedins forest, associated with Acrobolbus lophocoleoides, Acromastigum anisostomum, Bazzania adnexa, B. hochstetteri, Kurzia hippuroides, Lepidozia spinosissima, Paraschistochila pinnatifolia, Rhizogonium pennatum and Saccogynidium decurvum. On Stewart Island (Ereshwater Landing, 5 m), in an open area of swamp growing among leaf litter, it was associated with Telaranea quinque spina below dense Gleichenia ground cover in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus. Comments: Zoopsis ceratophylla is superficially rather similar to Zoopsidella caledonica, both having well-formed, widely spreading, contiguous, symmetrically bilobed leaves with very large cells. Zoopsis ceratophylla may be distinguished by the longer, acuminate leaf lobes with strongly moniliform cells and the caducous leaf apices vs. the always persistent leaf lobes, which are few-celled, triangular and terminate nearly uniformly in 2 cells in Z. cale- donica. Cytological distinctions between the two species are distinctive and useful, particularly when the two species grow together. Oil-bodies are opaque, brownish grey and finely granular in Z. ceratophylla vs. glistening, hyaline, smooth and homogeneous or nearly so in Z. caledonica. Seta anatomy differs strikingly between the two plants: 8 rows of outer cell rows and many, much smaller internal cells (Scott, 1969) vs. 8 outer rows and 4 rows of similar-sized internal cells in Z. caledonica. Zoopsis ceratophylla is much less common than Z. caledonica.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants delicate, very soft textured, fleshy but lax, creeping, light green, rather small, to 600(635) p^m wide. Branching free, remotely pinnate, the main axis tending to maintain its dominance, the branches of predominantly Frullania type; half-leaf normally consisting of a uniseriate row of 2-4 inflated cells, the basal cell notably turgid and up to 2.5 X width of the next cell, the base rarely with 2 lateral juxtaposed swollen cells, and in such cases subtend a uniseriate row; ventral-intercalary vegetative branches sparing, leafy as well as geotropic and stoloniform; apices of shoots at times becoming microphyllous, whitish and flagelliform (these sometimes again becoming normal leafy shoots). Axes pellucid and soft textured, in cross section subterete to ellipsoidal, in 6 rows: formed of 4 large cortical cell rows (= lateral merophytes), the dorsal 2 rows larger, + 2 rows of smaller cells (= ventral merophytes); dorsal cortical cells in surface view usually quadrate to 5 -6-angled and subisodiametric, lepto- dermous; medulla of ca. 12-16 rows of much smaller cells, only 13-18 pm in diam. Leaves remote to subcontiguous, normally 1. 5-3(4) cortical cells intervening between successive leaves on each side of axis; leaves laterally patent to sometimes dorsally assurgent, suc- cubously inserted, the insertion lines not extending to stem midline dorsally and defining a leaf-free strip nearly 2 cells broad. Leaves relatively small, strongly asymmetric, to 180- 220 pm wide X 240-300 pm long to apex of ventral lobe, the lobes persistent; ventral lobe (4)5-8-celled (on weak shoots only 3-celled), at base formed by 2 cells, side-by-side, the lobe proper of (2)3 progressively smaller, inflated, submoniliform cells, infrequently the ventral lobe formed of 2 tiers, each of 2 cells, plus 2 single terminal cells (then 6-7-celled); dorsal lobe reduced, formed of only (2)3 progressively smaller cells; disc 3(4-5) cells wide and 1 cell high, 2 cells wide in suboptimal phases. Leaf cells lax, leptodermous, inflated, those in lobes moniliform and progressively smaller, the end cells usually minute; basal cells and cells of lobe bases 90-120 pm wide X 110-130 pm long. Oil-bodies occupying a small fraction of the cell, dull, opaque, grey, (4)5-8 per basal cell of leaf and ones above, 7-8 per cortical cell, finely and densely papillose, globose to broadly elliptic to fusiform (many short- to long- fusiform), 7X9 pm to 7-8.5 X 12-16 pm. Underleaves normally separated by 2-3 tiers of ventral cortical cells, vestigial: normally formed of 2 inflated, sausage-shaped cells, each 30- 40 X 55-65 pm, inserted on a ‘‘disc” formed of (2)3 quadrate cells, the disc cells usually becoming subdivided, forming a cushion of 8-16 cells from which rhizoids arise; lobe cells each terminated by a small, ephemeral slime papilla. Asexual reproduction normally absent, rarely by tubers. Dioecious. Androecia spicate, bracts in 3-5 pairs, concave, bilobed, the dorsal lobe subequal to the ventral; antheridia 1 per bract, the stalk uniseriate. Gynoecia on weak, abbreviated ventral-intercalary branches; bracts of innermost series bifid to 0.6 or sometimes 3-fid, the lobes 2(3) cells broad, sublinear, ending in a single cell or a uniseriate row of 2 cells, the margins entire or with a tooth; bracteoles similar but smaller. Seta with 8 rows of outer cells surrounding an inner core of 10-21 rows of small cells. Capsule wall 2-3-stratose; outer layer of cells mostly subquadrate to quadrate, with imperfect two- phase development, primary cells with hyaline walls devoid of thickenings, usually divided once transversely and once vertically, the secondary walls (both longitudinal and transverse) with strong, sinuous-nodular thickenings; inner layer of cells narrowly oblong, with numerous complete semi annular bands. Spores delicately areolate. Elaters essentially straight, bispiral to tips. Distribution and Ecology: New Zealand: Campbell Island, Stewart Island (5 m), South Island (60-1370 m), North Island (10-1200 m), Chatham Islands; Australia: Tasmania, South Australia, Victoria, New South Wales (Meagher and Euhrer, 2003). An abundant species throughout temperate Australasia. In New Zealand known from Southland, Otago (Dunedin), Westland, Canterbury (Porters Pass), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau, Taranaki, Auckland and Northland EPs. In New Zealand ranging from Stewart Island to the northern sector of Northland (Radar Bush, WSW of Cape Reinga). Plants are frequent in deeply shaded sites, often in sheltered, humid pockets or recesses, at times occurring deep within such niches. Rather common on steep, often vertical, banks that are often associated with streams or creeks and mostly on damp clayey soils or, less often, on rock, often where sheltered by Asplenium bulbiferum, Blechnum chambersii, B. colensoi and Leptopteris superba. Also in hollows formed by exposed tree roots and in protected niches on shaded, vertical cliff faces. Also on saturated, rich, peaty soil of narrow, shallow and stagnant pools in a mixed podocarp-broadleaf forest (South Island, Lake Kaniere Scenic Reserve). This species is often associated with Lembidium nutans, which is also a pioneer on mineral soils. Other associated species are Balantiopsis diplophylla, Breutelia pendula, Categonium nitens, Chiloscyphus spiniferus, Distichophyllum pulchellum, Fissidens asplenioides, E leptocladus, Hypnodendron arcuatum, Kurzia hippuroides, Leptophyllopsis laxus, Philonotis tenuis, Pyrrhobryum mnioides and Zoopsis argentea. It also occasionally occurs under Chionochloa tussocks in the penalpine and alpine zones, thus overlapping in habitat with Z. macrophylla. Comments: In contrast to Zoopsis macrophylla, Z. leitgebiana is a relatively weak and slender plant. The leaves are strongly asymmetric as in Z. macrophylla, but in Z. leitgebiana the larger ventral lobe is usually formed of only 3-4 cells and the dorsal lobe of only 2-3 cells. Leaves in Z. leitgebiana on each side are separated by 1.5-3 (less often in part 4) cortical cells vs. up to 7 cells between leaves in Z. macrophylla. The underleaves are much smaller than in Z. macrophylla and are similar to species of subg. Zoopsis: vestigial, formed of 2-3 small, quadrate basal cells and 2 inflated, sausage-shaped cells constituting the 2 lobes, each terminated by a slime papilla. As shoot maturity is approached, the disc cells undergo secondary di¬ vision and a small transverse ‘‘cushion” of up to 8-16 cells is formed; rhizoids originate from such “cushion” cells. Ventral merophytes typically are formed of only 2 tiers of cells, i.e., the underleaves are separated by only 4 cells vs. 7-8 cell tiers (thus 14-16 cells) that separate successive underleaves in Z. macrophylla. The stem consists of only 6 rows of cortical cells, the 2 that each belong to lateral merophytes are notably large and inflated, the 2 belonging to the ventral merophytes are much smaller. Medullary cells are minute and, in contrast to Z. macrophylla, the entire central strand is narrower in diameter than the largest dorsal cortical cell. Branching, as in Z. macrophylla, is commonly of the Frullania type, but in this species the half-leaf is typically formed of only 3 cells. The orientation of the half-leaf is also different from Z. macrophylla: it lies along the basiscopic side of the branch. The leaf insertion is more variable than Schuster (1999a) would admit. The insertion lines of the succubously inserted leaves do not extend to the stem midline dorsally, and they delimit a leaf-free strip of, for the most part, 2 cells wide. The leaves often are articulated or inserted directly on the radial walls of the dorsal cortical cells (see Schuster, 1999a, fig. 2: 1,8, 9) and the leaf-free strip is 2 full cells wide. Such populations often have a leaf disc 3 cells wide. However, in some populations the dorsal extremity of the leaf is inserted on the exposed dorsal-lateral face of the dorsal-most cortical cell and ca. 0.5 of the dorsal-most cortical cell is leaf-free on each side. This condition approaches that of Zoopsis macrophylla (compare Schuster 1999a, fig. 3: 9, 10 with fig. 1: 10). Tubers were observed in Engel 20985 from Omahuta Eorest Kauri Sanctuary in Northland. These are similar in appearance to the tubers found in Telaranea tasmanica (Engel and Merrill, 2004, fig. 32: 1, 2) and represent the first report of this form of asexual reproduction in the genus. Zoopsis ceratophylla (Spruce) Hamlin R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Zoopsidella ceratophylla (Spruce) R.M.Schust., Taxon 18: 57, 87. 1969. Zoopsis ceratophylla (Spruce) R.M.Schust., Nova Hedwigia 10: 36. 1965, nom. inval, has. non cit. Zoopsis ceratophylla (Spruce) Hamlin, Rec. Domin. Mus., Wellington 7: 311. 1972. Type: Auckland Is., “supra Chiloscyphum notophyllum Taylor,” Hooker. Cephalozia fissifolia Steph., Sp. Hepat. 3: 314. 1908, syn.fide Schuster (1999a). Paracromastigum fissifolium (Steph.) R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Type: Auckland Is., Hooker. Plants creeping, light to whitish green, pellucid, nitid when dry, large for the genus, leafy shoots to 1.4 mm wide. Branching common, irregular, the branches of Frullania type; ventral- intercalary branches frequent, leafy or stoloniform. Axis subterete, the cortex of 6 rows of cells, the dorsal-most 2 rows of very large, inflated cells, the 2 rows of ventral-lateral cells slightly smaller, the ventral 2 cell rows somewhat but not greatly reduced in size; medulla with 11-15 rows of much smaller, weakly firm- walled cells. Rhizoids few, at underleaf bases only. Leaves strongly succubously inserted, remote to contiguous, widely spreading, plane or essentially so, 270-320 |ULm wide X 420-550(620) juim long, narrowly oblong to obovate-cuneate, widest in distal half (when not subparallel), nearly symmetrically bilobed to 0.35-0.5; lobes often somewhat spreading, 2-3(4) cells wide at base, formed of (3)5-8 to 10-12 cells, terminating in a uniseriate row of (2)3-5(7) progressively smaller, moniliform cells, the terminal cell sometimes an unspecialized slime papilla; disc 4-5 cells wide at base, the disc rarely with subdivision of cells distally and then to 6-8(10) cells wide, the disc 4-5 cells high (leaf base to sinus base). Cells of leaf disc very large, hyaline, leptodermous, quadrate to hexagonal, (42)45-65(72) X 60-95(115) juim; surface smooth. Oil-bodies (Schuster, 1999a) 10-12 per cell, brownish grey, opaque, finely granular, ellipsoidal to fusiform, 5.5-7 X 1 1 juim to 6-7 X 16-18 |ULm. Underleaves relatively large, the 2 lobes each 2-4-celled, terminating in a slime papilla, the disc comprised of 1-2 tiers of 4 cells each. Asexual reproduction by fragmenting or caducous leaf lobes. Eungal partner an ascomycete. Dioecious. Androecia not seen. Gynoecia on very short, ventral-intercalary branches; bracts and bracteoles much smaller-celled than leaves, bifid to ca. 0.5 or a little less, the lobes terminating in 3-4 strongly elongated cells; disc margins each usually with a few 1-celled teeth and at times a ciliiform process consisting of a uniseriate row of up to 4 strongly elongated cells. Perianth fusiform, cylindrical below, trigonous in distal sector, narrowing toward the mouth, the mouth deeply 6-lobed, the lobes caudate, terminating in 2-3 laterally juxtaposed, distinctly elongated cells that subtend a long, contorted cilium comprised of 4-6 markedly elongated cells (to 8.5:1), the lobes crenulate below the level of the cilium by projecting distal ends of cells, otherwise entire. Seta with 8 epidermal cell rows and many, much smaller internal cells (Scott, 1969). Capsule not seen. Distribution and Ecology: Endemic to New Zealand: Auckland Islands, Stewart Island (5- 40 m), South Island (35-630 m), North Island (340-940 m). Known from Eiordland (Lake Manapouri), Western Nelson (near Westport) and Southern North Island (Akatarawa Saddle, Tararua Ra.) EPs. A plant of shaded sites on organic substrates or peaty soil. It occurs over the peaty soil that lines deep hollows at the bases of stumps or dead trees. Also over soil deep in protected niches on the forest floor, at times with a root mass overhang. Also on the sides of bryophyte-covered logs and on tree ferns. On the ridge above Te Kuha, east of Westport, it occurs under Lepi- dothamnus intermedins forest, associated with Acrobolbus lophocoleoides, Acromastigum anisostomum, Bazzania adnexa, B. hochstetteri, Kurzia hippuroides, Lepidozia spinosissima, Paraschistochila pinnatifolia, Rhizogonium pennatum and Saccogynidium decurvum. On Stewart Island (Ereshwater Landing, 5 m), in an open area of swamp growing among leaf litter, it was associated with Telaranea quinque spina below dense Gleichenia ground cover in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus. Comments: Zoopsis ceratophylla is superficially rather similar to Zoopsidella caledonica, both having well-formed, widely spreading, contiguous, symmetrically bilobed leaves with very large cells. Zoopsis ceratophylla may be distinguished by the longer, acuminate leaf lobes with strongly moniliform cells and the caducous leaf apices vs. the always persistent leaf lobes, which are few-celled, triangular and terminate nearly uniformly in 2 cells in Z. cale- donica. Cytological distinctions between the two species are distinctive and useful, particularly when the two species grow together. Oil-bodies are opaque, brownish grey and finely granular in Z. ceratophylla vs. glistening, hyaline, smooth and homogeneous or nearly so in Z. caledonica. Seta anatomy differs strikingly between the two plants: 8 rows of outer cell rows and many, much smaller internal cells (Scott, 1969) vs. 8 outer rows and 4 rows of similar-sized internal cells in Z. caledonica. Zoopsis ceratophylla is much less common than Z. caledonica.</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <pre class="description-text">Plants delicate, very soft textured, fleshy but lax, creeping, light green, rather small, to 600(635) p^m wide. Branching free, remotely pinnate, the main axis tending to maintain its dominance, the branches of predominantly Frullania type; half-leaf normally consisting of a uniseriate row of 2-4 inflated cells, the basal cell notably turgid and up to 2.5 X width of the next cell, the base rarely with 2 lateral juxtaposed swollen cells, and in such cases subtend a uniseriate row; ventral-intercalary vegetative branches sparing, leafy as well as geotropic and stoloniform; apices of shoots at times becoming microphyllous, whitish and flagelliform (these sometimes again becoming normal leafy shoots). Axes pellucid and soft textured, in cross section subterete to ellipsoidal, in 6 rows: formed of 4 large cortical cell rows (= lateral merophytes), the dorsal 2 rows larger, + 2 rows of smaller cells (= ventral merophytes); dorsal cortical cells in surface view usually quadrate to 5 -6-angled and subisodiametric, lepto- dermous; medulla of ca. 12-16 rows of much smaller cells, only 13-18 pm in diam. Leaves remote to subcontiguous, normally 1. 5-3(4) cortical cells intervening between successive leaves on each side of axis; leaves laterally patent to sometimes dorsally assurgent, suc- cubously inserted, the insertion lines not extending to stem midline dorsally and defining a leaf-free strip nearly 2 cells broad. Leaves relatively small, strongly asymmetric, to 180- 220 pm wide X 240-300 pm long to apex of ventral lobe, the lobes persistent; ventral lobe (4)5-8-celled (on weak shoots only 3-celled), at base formed by 2 cells, side-by-side, the lobe proper of (2)3 progressively smaller, inflated, submoniliform cells, infrequently the ventral lobe formed of 2 tiers, each of 2 cells, plus 2 single terminal cells (then 6-7-celled); dorsal lobe reduced, formed of only (2)3 progressively smaller cells; disc 3(4-5) cells wide and 1 cell high, 2 cells wide in suboptimal phases. Leaf cells lax, leptodermous, inflated, those in lobes moniliform and progressively smaller, the end cells usually minute; basal cells and cells of lobe bases 90-120 pm wide X 110-130 pm long. Oil-bodies occupying a small fraction of the cell, dull, opaque, grey, (4)5-8 per basal cell of leaf and ones above, 7-8 per cortical cell, finely and densely papillose, globose to broadly elliptic to fusiform (many short- to long- fusiform), 7X9 pm to 7-8.5 X 12-16 pm. Underleaves normally separated by 2-3 tiers of ventral cortical cells, vestigial: normally formed of 2 inflated, sausage-shaped cells, each 30- 40 X 55-65 pm, inserted on a ‘‘disc” formed of (2)3 quadrate cells, the disc cells usually becoming subdivided, forming a cushion of 8-16 cells from which rhizoids arise; lobe cells each terminated by a small, ephemeral slime papilla. Asexual reproduction normally absent, rarely by tubers. Dioecious. Androecia spicate, bracts in 3-5 pairs, concave, bilobed, the dorsal lobe subequal to the ventral; antheridia 1 per bract, the stalk uniseriate. Gynoecia on weak, abbreviated ventral-intercalary branches; bracts of innermost series bifid to 0.6 or sometimes 3-fid, the lobes 2(3) cells broad, sublinear, ending in a single cell or a uniseriate row of 2 cells, the margins entire or with a tooth; bracteoles similar but smaller. Seta with 8 rows of outer cells surrounding an inner core of 10-21 rows of small cells. Capsule wall 2-3-stratose; outer layer of cells mostly subquadrate to quadrate, with imperfect two- phase development, primary cells with hyaline walls devoid of thickenings, usually divided once transversely and once vertically, the secondary walls (both longitudinal and transverse) with strong, sinuous-nodular thickenings; inner layer of cells narrowly oblong, with numerous complete semi annular bands. Spores delicately areolate. Elaters essentially straight, bispiral to tips. Distribution and Ecology: New Zealand: Campbell Island, Stewart Island (5 m), South Island (60-1370 m), North Island (10-1200 m), Chatham Islands; Australia: Tasmania, South Australia, Victoria, New South Wales (Meagher and Euhrer, 2003). An abundant species throughout temperate Australasia. In New Zealand known from Southland, Otago (Dunedin), Westland, Canterbury (Porters Pass), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau, Taranaki, Auckland and Northland EPs. In New Zealand ranging from Stewart Island to the northern sector of Northland (Radar Bush, WSW of Cape Reinga). Plants are frequent in deeply shaded sites, often in sheltered, humid pockets or recesses, at times occurring deep within such niches. Rather common on steep, often vertical, banks that are often associated with streams or creeks and mostly on damp clayey soils or, less often, on rock, often where sheltered by Asplenium bulbiferum, Blechnum chambersii, B. colensoi and Leptopteris superba. Also in hollows formed by exposed tree roots and in protected niches on shaded, vertical cliff faces. Also on saturated, rich, peaty soil of narrow, shallow and stagnant pools in a mixed podocarp-broadleaf forest (South Island, Lake Kaniere Scenic Reserve). This species is often associated with Lembidium nutans, which is also a pioneer on mineral soils. Other associated species are Balantiopsis diplophylla, Breutelia pendula, Categonium nitens, Chiloscyphus spiniferus, Distichophyllum pulchellum, Fissidens asplenioides, E leptocladus, Hypnodendron arcuatum, Kurzia hippuroides, Leptophyllopsis laxus, Philonotis tenuis, Pyrrhobryum mnioides and Zoopsis argentea. It also occasionally occurs under Chionochloa tussocks in the penalpine and alpine zones, thus overlapping in habitat with Z. macrophylla. Comments: In contrast to Zoopsis macrophylla, Z. leitgebiana is a relatively weak and slender plant. The leaves are strongly asymmetric as in Z. macrophylla, but in Z. leitgebiana the larger ventral lobe is usually formed of only 3-4 cells and the dorsal lobe of only 2-3 cells. Leaves in Z. leitgebiana on each side are separated by 1.5-3 (less often in part 4) cortical cells vs. up to 7 cells between leaves in Z. macrophylla. The underleaves are much smaller than in Z. macrophylla and are similar to species of subg. Zoopsis: vestigial, formed of 2-3 small, quadrate basal cells and 2 inflated, sausage-shaped cells constituting the 2 lobes, each terminated by a slime papilla. As shoot maturity is approached, the disc cells undergo secondary di¬ vision and a small transverse ‘‘cushion” of up to 8-16 cells is formed; rhizoids originate from such “cushion” cells. Ventral merophytes typically are formed of only 2 tiers of cells, i.e., the underleaves are separated by only 4 cells vs. 7-8 cell tiers (thus 14-16 cells) that separate successive underleaves in Z. macrophylla. The stem consists of only 6 rows of cortical cells, the 2 that each belong to lateral merophytes are notably large and inflated, the 2 belonging to the ventral merophytes are much smaller. Medullary cells are minute and, in contrast to Z. macrophylla, the entire central strand is narrower in diameter than the largest dorsal cortical cell. Branching, as in Z. macrophylla, is commonly of the Frullania type, but in this species the half-leaf is typically formed of only 3 cells. The orientation of the half-leaf is also different from Z. macrophylla: it lies along the basiscopic side of the branch. The leaf insertion is more variable than Schuster (1999a) would admit. The insertion lines of the succubously inserted leaves do not extend to the stem midline dorsally, and they delimit a leaf-free strip of, for the most part, 2 cells wide. The leaves often are articulated or inserted directly on the radial walls of the dorsal cortical cells (see Schuster, 1999a, fig. 2: 1,8, 9) and the leaf-free strip is 2 full cells wide. Such populations often have a leaf disc 3 cells wide. However, in some populations the dorsal extremity of the leaf is inserted on the exposed dorsal-lateral face of the dorsal-most cortical cell and ca. 0.5 of the dorsal-most cortical cell is leaf-free on each side. This condition approaches that of Zoopsis macrophylla (compare Schuster 1999a, fig. 3: 9, 10 with fig. 1: 10). Tubers were observed in Engel 20985 from Omahuta Eorest Kauri Sanctuary in Northland. These are similar in appearance to the tubers found in Telaranea tasmanica (Engel and Merrill, 2004, fig. 32: 1, 2) and represent the first report of this form of asexual reproduction in the genus. Zoopsis ceratophylla (Spruce) Hamlin R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Zoopsidella ceratophylla (Spruce) R.M.Schust., Taxon 18: 57, 87. 1969. Zoopsis ceratophylla (Spruce) R.M.Schust., Nova Hedwigia 10: 36. 1965, nom. inval, has. non cit. Zoopsis ceratophylla (Spruce) Hamlin, Rec. Domin. Mus., Wellington 7: 311. 1972. Type: Auckland Is., “supra Chiloscyphum notophyllum Taylor,” Hooker. Cephalozia fissifolia Steph., Sp. Hepat. 3: 314. 1908, syn.fide Schuster (1999a). Paracromastigum fissifolium (Steph.) R.M.Schust., J. Hattori Bot. Lab. 26: 276. 1963. Type: Auckland Is., Hooker. Plants creeping, light to whitish green, pellucid, nitid when dry, large for the genus, leafy shoots to 1.4 mm wide. Branching common, irregular, the branches of Frullania type; ventral- intercalary branches frequent, leafy or stoloniform. Axis subterete, the cortex of 6 rows of cells, the dorsal-most 2 rows of very large, inflated cells, the 2 rows of ventral-lateral cells slightly smaller, the ventral 2 cell rows somewhat but not greatly reduced in size; medulla with 11-15 rows of much smaller, weakly firm- walled cells. Rhizoids few, at underleaf bases only. Leaves strongly succubously inserted, remote to contiguous, widely spreading, plane or essentially so, 270-320 |ULm wide X 420-550(620) juim long, narrowly oblong to obovate-cuneate, widest in distal half (when not subparallel), nearly symmetrically bilobed to 0.35-0.5; lobes often somewhat spreading, 2-3(4) cells wide at base, formed of (3)5-8 to 10-12 cells, terminating in a uniseriate row of (2)3-5(7) progressively smaller, moniliform cells, the terminal cell sometimes an unspecialized slime papilla; disc 4-5 cells wide at base, the disc rarely with subdivision of cells distally and then to 6-8(10) cells wide, the disc 4-5 cells high (leaf base to sinus base). Cells of leaf disc very large, hyaline, leptodermous, quadrate to hexagonal, (42)45-65(72) X 60-95(115) juim; surface smooth. Oil-bodies (Schuster, 1999a) 10-12 per cell, brownish grey, opaque, finely granular, ellipsoidal to fusiform, 5.5-7 X 1 1 juim to 6-7 X 16-18 |ULm. Underleaves relatively large, the 2 lobes each 2-4-celled, terminating in a slime papilla, the disc comprised of 1-2 tiers of 4 cells each. Asexual reproduction by fragmenting or caducous leaf lobes. Eungal partner an ascomycete. Dioecious. Androecia not seen. Gynoecia on very short, ventral-intercalary branches; bracts and bracteoles much smaller-celled than leaves, bifid to ca. 0.5 or a little less, the lobes terminating in 3-4 strongly elongated cells; disc margins each usually with a few 1-celled teeth and at times a ciliiform process consisting of a uniseriate row of up to 4 strongly elongated cells. Perianth fusiform, cylindrical below, trigonous in distal sector, narrowing toward the mouth, the mouth deeply 6-lobed, the lobes caudate, terminating in 2-3 laterally juxtaposed, distinctly elongated cells that subtend a long, contorted cilium comprised of 4-6 markedly elongated cells (to 8.5:1), the lobes crenulate below the level of the cilium by projecting distal ends of cells, otherwise entire. Seta with 8 epidermal cell rows and many, much smaller internal cells (Scott, 1969). Capsule not seen. Distribution and Ecology: Endemic to New Zealand: Auckland Islands, Stewart Island (5- 40 m), South Island (35-630 m), North Island (340-940 m). Known from Eiordland (Lake Manapouri), Western Nelson (near Westport) and Southern North Island (Akatarawa Saddle, Tararua Ra.) EPs. A plant of shaded sites on organic substrates or peaty soil. It occurs over the peaty soil that lines deep hollows at the bases of stumps or dead trees. Also over soil deep in protected niches on the forest floor, at times with a root mass overhang. Also on the sides of bryophyte-covered logs and on tree ferns. On the ridge above Te Kuha, east of Westport, it occurs under Lepi- dothamnus intermedins forest, associated with Acrobolbus lophocoleoides, Acromastigum anisostomum, Bazzania adnexa, B. hochstetteri, Kurzia hippuroides, Lepidozia spinosissima, Paraschistochila pinnatifolia, Rhizogonium pennatum and Saccogynidium decurvum. On Stewart Island (Ereshwater Landing, 5 m), in an open area of swamp growing among leaf litter, it was associated with Telaranea quinque spina below dense Gleichenia ground cover in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus. Comments: Zoopsis ceratophylla is superficially rather similar to Zoopsidella caledonica, both having well-formed, widely spreading, contiguous, symmetrically bilobed leaves with very large cells. Zoopsis ceratophylla may be distinguished by the longer, acuminate leaf lobes with strongly moniliform cells and the caducous leaf apices vs. the always persistent leaf lobes, which are few-celled, triangular and terminate nearly uniformly in 2 cells in Z. cale- donica. Cytological distinctions between the two species are distinctive and useful, particularly when the two species grow together. Oil-bodies are opaque, brownish grey and finely granular in Z. ceratophylla vs. glistening, hyaline, smooth and homogeneous or nearly so in Z. caledonica. Seta anatomy differs strikingly between the two plants: 8 rows of outer cell rows and many, much smaller internal cells (Scott, 1969) vs. 8 outer rows and 4 rows of similar-sized internal cells in Z. caledonica. Zoopsis ceratophylla is much less common than Z. caledonica.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>ZOOPSIS_2006</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Subgenus Eozoopsis. Leaves asymmetrically bifid, multicellular, succubously inserted, widely spaced; leaf insertion line runs onto the dorsal stem surface. Comparative notes: distinguished from Z. argentea by insertion line running onto dorsal stem surface and asymmetrically bifid leaves. [Source: Engel &amp; Smith Merrill 2006, Two new Zoopsis species and their relationships to other zoopsids]</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>ZOOPSIS_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Subgenus Eozoopsis. Leaves asymmetrically bifid, multicellular, succubously inserted, widely spaced; leaf insertion line runs onto the dorsal stem surface. Comparative notes: distinguished from Z. argentea by insertion line running onto dorsal stem surface and asymmetrically bifid leaves. [Source: Engel &amp; Smith Merrill 2006, Two new Zoopsis species and their relationships to other zoopsids]</pre>
     
     
   </details>
@@ -324,14 +316,39 @@ Aneura effusa - Riccardia aequitexta                     Chiloscyphus amplectens
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cephalozia leitgebiana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis argentea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis basilaris</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis liukiuensis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis macrophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis setigera K.I.Goebel</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis tenuicaulis</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -346,22 +363,32 @@ Aneura effusa - Riccardia aequitexta                     Chiloscyphus amplectens
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [77.6, 66.2, 83.1, 87.6, 123.0, 128.0, 141.7, 155.0, 139.2, 118.5, 92.4, 94.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.2, 20.2, 18.2, 15.1, 12.3, 10.4, 9.8, 10.6, 12.5, 14.3, 16.8, 18.3], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.9, 9.9, 8.8, 6.8, 5.3, 3.7, 3.1, 3.2, 4.5, 5.5, 7.4, 8.4], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

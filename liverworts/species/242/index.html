@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Dinckleria pleurata</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Plagiochilaceae</span>
-    <span class="badge secondary">Dinckleria</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Capitularia pleurota</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Dinckleria</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Dinckleria fruticella</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Dinckleria singularis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia pleurata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila pleurata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pleurata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pleurata tyleri</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Proskauera pleurata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila sect</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Dinckleria</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">162</p>
     <footer>27 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">3</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,62 +74,72 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>NZ_TAS_FLORA_VOL3_REVIEW_2020</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_TAS_FLORA_VOL3_REVIEW_2020</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">upper leafy sector.                                                  tion of Chiastocaulon (Patzak et al. 2016; Renner et al.
+    <pre class="description-text">upper leafy sector.                                                  tion of Chiastocaulon (Patzak et al. 2016; Renner et al.
                            Couplet 13a. The leaves of Plagiochila baylisii                2016b), but the new combinations proposed are not
                      may bear as few as one tooth at the very base of the                 listed in synonymies as the family introduction
                      dorsal margin only, and no others on the dorsal                      promised (see Table 1 for corresponding names).
@@ -213,16 +199,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
              Plagiochila colensoi var. quinquespina       Plagiochila incurvicolla
                                                                                            phyletic Schistochila. To resolve the paraphyly of
              Plagiochila deltoidei var. deltoidea         Plagiochila deltoidea
-                                                                                           Schistochila, He &amp; Glenny (2010) proposed synon-</p>
+                                                                                           Schistochila, He &amp; Glenny (2010) proposed synon-</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>PLAGIOCHILA_AUSTRALIA_2018</strong> (1 entry)</summary>
+    <summary>
+      <strong>PLAGIOCHILA_AUSTRALIA_2018</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">al. (2017), when I overlooked the fact that my Plagiochila aff. gregaria was actually P. fragmentissima, and
+    <pre class="description-text">al. (2017), when I overlooked the fact that my Plagiochila aff. gregaria was actually P. fragmentissima, and
 misinterpreted the figures and description in the protologue of P. fragmentissima (Inoue and Schuster 1971)
 and P. ratkowskiana (Inoue 1980).
 Recognition: Plagiochila ratkowskiana can be recognized by the combination of stolon production by ventral-
@@ -284,16 +273,19 @@ Ratkowsky (HO 49868); Mt Wellington, near The Wires, 42°53&#39;S 147°14&#39;E,
 A.V. Ratkowsky (HO 304359); Organ Pipes, on rocks, 42°54&#39;S 147°14&#39;E, 31 Jan 1980, A.V. Ratkowsky (HO
 304360); Upper Collins Bonnet, 42°53&#39;S 147°09&#39;E, 2 Feb 1980, A.V. Ratkowsky H1576 (HO 304361); Mt Rufus,
 42°08&#39;S 146°06&#39;E, 10 Mar 1979, A.V. Ratkowsky (HO 304362); Mt Rufus circuit, 42°08&#39;S 146°06&#39;E, 11 Nov
-1978, A.V. Ratkowsky (HO 304363); Mt Wellington, The Wires, 42°53&#39;S 147°14&#39;E, 1050 m, 29 Sep 1979, A.V.</p>
+1978, A.V. Ratkowsky (HO 304363); Mt Wellington, The Wires, 42°53&#39;S 147°14&#39;E, 1050 m, 29 Sep 1979, A.V.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
     
     
   </details>
@@ -302,14 +294,41 @@ A.V. Ratkowsky (HO 304359); Organ Pipes, on rocks, 42°54&#39;S 147°14&#39;E, 3
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Capitularia pleurota</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Dinckleria</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Dinckleria fruticella</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Dinckleria singularis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia pleurata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila pleurata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pleurata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pleurata tyleri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Proskauera pleurata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila sect</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -324,22 +343,32 @@ A.V. Ratkowsky (HO 304359); Organ Pipes, on rocks, 42°54&#39;S 147°14&#39;E, 3
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [83.3, 72.2, 92.3, 94.9, 129.0, 136.8, 142.9, 154.2, 138.9, 121.7, 97.7, 99.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.8, 18.9, 16.9, 13.9, 11.2, 9.4, 8.7, 9.4, 11.3, 13.1, 15.5, 17.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.3, 9.1, 7.9, 6.2, 4.5, 3.1, 2.5, 2.5, 3.6, 4.6, 6.6, 7.5], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

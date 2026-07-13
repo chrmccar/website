@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,37 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Tylimanthus pseudosaccatus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Acrobolbaceae</span>
-    <span class="badge secondary">Tylimanthus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (7)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acrobolbus pseudosaccatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Nothogenia pseudosaccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tylimanthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tylimanthus diversifolius</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tylimanthus perpusillus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tylimanthus saccatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tylimanthus tenellus</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Tylimanthus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -70,35 +48,37 @@
     <p class="big-num">157</p>
     <footer>156 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">9.7&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1502&thinsp;mm</p>
-    <footer>
-      CV 22.6
-    </footer>
+    <footer>annual · CV&thinsp;22.6</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">2</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">7</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -106,54 +86,65 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">generally represented by more species than mosses at any given site. The
+    <pre class="description-text">generally represented by more species than mosses at any given site. The
 ratio is often as much as 2:l in favoilr of leafy iiverworts, and may be as
 high as 3:l in very humid situations. Families represented by the highest
 number of species in rainforest include the Geocalycaceae, Lepidoziaceae,
@@ -213,16 +204,19 @@ each other across the stem. There are no underleaves.
     on the margin but are sometirnes entire, especially towards the base
     of the shoots.
 Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
-                                                                           Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U</p>
+                                                                           Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Acrobolbus pseudosaccatus, synonym Tylimanthus pseudosaccatus, is a bryophyte, a species from the liverwort family Acrobolbaceae. The family grows on logs, rocks, and soil. Under certain circumstances, however, they are epiphyte, growing on other plant species.</p>
+    <pre class="description-text">Acrobolbus pseudosaccatus, synonym Tylimanthus pseudosaccatus, is a bryophyte, a species from the liverwort family Acrobolbaceae. The family grows on logs, rocks, and soil. Under certain circumstances, however, they are epiphyte, growing on other plant species.</pre>
     
     
   </details>
@@ -231,14 +225,35 @@ each other across the stem. There are no underleaves.
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acrobolbus pseudosaccatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Nothogenia pseudosaccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus diversifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus perpusillus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus saccatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus tenellus</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -253,22 +268,32 @@ each other across the stem. There are no underleaves.
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [78.3, 73.1, 85.8, 95.4, 141.6, 138.1, 161.5, 186.2, 173.8, 158.7, 96.6, 112.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.5, 20.5, 18.3, 15.1, 12.3, 10.3, 9.8, 10.7, 12.7, 14.5, 17.1, 18.5], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.7, 9.6, 8.7, 6.8, 5.4, 3.5, 3.0, 3.0, 4.7, 5.6, 7.4, 8.4], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

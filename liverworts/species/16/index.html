@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Heteroscyphus coalitus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Heteroscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Heteroscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus allodontus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus cambewarranus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus circumdentatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus coalitus var. coalitus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus coalitus var. simplicifolius</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus cuneistipulus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Spyridium coalitum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus coalitus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia coalita</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,35 +48,37 @@
     <p class="big-num">534</p>
     <footer>146 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">11.8&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1665&thinsp;mm</p>
-    <footer>
-      CV 23.6
-    </footer>
+    <footer>annual · CV&thinsp;23.6</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">5</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -114,78 +86,86 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CYANOLOPHOCOLEA_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CYANOLOPHOCOLEA_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.8</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.8</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">CYANOLOPHOCOLEA_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CYANOLOPHOCOLEA_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
-          <td class="muted small">GBIF key 7925489; source: A taxonomic revision of the Lophoc…</td>
-          <td>⚠</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">GBIF key 7925489; source: A taxonomic revision of the L…</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>CYANOLOPHOCOLEA_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CYANOLOPHOCOLEA_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chiloscyphus cuspidatus (He-Nygrén et al. 2004)                                    AY149845        AY462348       AY149866
+    <pre class="description-text">Chiloscyphus cuspidatus (He-Nygrén et al. 2004)                                    AY149845        AY462348       AY149866
         Chiloscyphus helmsianus (Glenny et al. 2009)                                        FJ173311        FJ173326       FJ173297
         Chiloscyphus itoanus (He-Nygrén &amp; Piippo 2003)                                     AY149846                       AY149868
         Chiloscyphus japonicus (He-Nygrén &amp; Piippo 2003)                                   AY149847                       AY149869
@@ -307,77 +287,83 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
         (Fig. 4.1), and gynoecia may occur on short,                        stem mostly smooth, sporadically with a projection;
         abbreviated ventral-intercalary branches (Fig. 5.4);                stems 9 cells high, the cortex poorly differentiated, in
         for further discussion see under Variation. Perianths               1(–2) layers of rather thick-walled cells; medullary
-        are often subcampanulate, a shape frequently found                  cells slightly less thick walled. Rhizoids from stem in</p>
+        are often subcampanulate, a shape frequently found                  cells slightly less thick walled. Rhizoids from stem in</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>GBIF</strong> (14 entrys)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(14)</span>
+    </summary>
     
     
-    <p class="description-text">DESCRIPTION Dioecious. Habit Plants large with shoots 2.50 - 4.00 mm wide. Leaves Spreading at nearly right angle, longitudinally convex, ovaloblong to subrectangular, 1.30 - 1.60 mm long, 1.00 - 1.60 mm wide at bases, 0.50 - 0.80 mm at apices, usually as wide as long at base, not dorsally confluent, margins entire, truncate apices straight to slightly convex, with a single tooth at both angles, teeth acuminate to linear, acute, 3 - 6 uniseriate cells long above and 0 - 2 biseriate ranks at base. Cells Median leaf cells hexagonal, somewhat elongate, 30 - 60 µm long, 30 - 75 µm wide, trigones acute, small to inconspicuous. Underleaves Reniform, 2 - 3 times the stem width, 0.20 - 0.50 mm long, 0.70 - 1.20 mm wide, inserted on the stem in a deep sinus and connate to both adjacent leaves by a very wide band of cells, the apical margin widely convex with 4 - 6 straight teeth, sublinear acute, the innermost erect, the lateral spreading, like the leaf ones. Gametangia Gynoecia at the end of short leafless ventral lateral branches, bracts small, rounded, 2 - toothed, perianths 1 mm long, cupulate with trilobate mouth, lobes rounded, toothed, surface mammillose; androecia not seen.</p>
-    
-    
-    
-    <p><strong>discussion:</strong> COMMENTS Heteroscyphis coalitus is morphologically highly variable and a large number of forms and varieties have been described in this species (Tropicos 2021). According to Piippo (1985), the species especially varies in the shape of the underleaves and their connation to the leaves. As it is a species widely distributed, it is not surprising that there are so many names for this taxon. The original materiel of Chiloscyphus confertifolius at G is limited to a single packet handwritten by Stephani which is therefore selected as the lectotype. Regarding Lophocolea latistipula, two specimens are kept as types at G, both collected by Franc in the same locality. The specimen with the mark “ n. sp. ” is selected despite the orthographic error “ latistipa ” which may not lead to confusion, since the epithet latistipus is in fact assigned to Chiloscyphus latistipus with a type collected by Mrs L. Le Rat. In addition, the drawing by Stephani matches with this specimen. In contrast, a second specimen labelled Lophocolea latistipula in G (G 00112472, duplicate PC 0102424) turned to be Chiloscyphus longifissus Steph. (see below). Among the specimens marked as types of Chiloscyphus latistipus at G, the specimen G 00069461 is selected as lectotype since it contains the collecting number (171) and the annotation “ n. sp. ” in a letter from Stephani to E. G. Paris dated 31 March 1910 (Rennes 1 University Library). Furthermore, “ original ” is written on the label in the author’s handwriting. In contrast, the specimens kept at PC (PC 0101941 and PC 0150605) are in packets with the handwriting of E. G. Paris without any annotation by Stephani, so that they cannot be considered with certainty as parts of the original material. The name Chiloscyphus similis was given to two different type specimens a few years apart by Stephani. In 1908, a New Caledonian specimen collected by Le Rat was validly published under this name in Revue bryologique and the original materiel can be identified with the number 195 according to a letter to E. G. Paris dated 2 January 1908 (Rennes 1 University Library). But, in 1911, Stephani described another C. similis based on a voucher collected by Scottsberg from Tierra del Fuego. The drawing and protologue show a very different plant, confirmed by the examination of the corresponding specimen from Tierra del Fuego kept at G. No New Caledonian specimen labelled C. similis and matching the diagnosis published in 1908 has been found at G, REN or PC. On another hand, in 1922, Stephani published Chiloscyphus subsimilis based on a type specimen kept at G and marked with the same number (195) than C. similis (1908), according to the correspondence from Stephani to E. G. Paris. Consequently, C. subsimilis is an illegitimate name, superfluous against C. similis (1908) (International Code of Nomenclature, art. 52.1, Turland et al. 2018; Loiseau et al. 2019), which was validly published with an identified type, while C. similis (1911) is invalid as a later homonym. Fortunately, C. similis (1911) from Tierra de Fuego is furthermore synonym of Heteroscyphus valdiviensis (Mont.) Schiffner (Fulford 1976). A lot of duplicates of the original material used by Stephani for Chiloscyphus francanus were examined, raising the opportunity to recognise a set of syntypes. But a further specimen kept at PC as an isosyntype (PC 0101947), cannot be a type since it was collected one year later than the specimens kept at G and lacks annotation by Stephani.</p>
-    
-    
-    
-    <p><strong>distribution:</strong> DISTRIBUTION IN NEW CALEDONIA. — Frequent in rain forest and creek banks in both provinces of Grande Terre, collected from 150 to 1150 m, on soils or rocks, occasionally at the base of trees. TOTAL RANGE. — South-East Asia, Indonesia, Melanesia, Australasia, (Argentina?).</p>
+    <pre class="description-text">DESCRIPTION Dioecious. Habit Plants large with shoots 2.50 - 4.00 mm wide. Leaves Spreading at nearly right angle, longitudinally convex, ovaloblong to subrectangular, 1.30 - 1.60 mm long, 1.00 - 1.60 mm wide at bases, 0.50 - 0.80 mm at apices, usually as wide as long at base, not dorsally confluent, margins entire, truncate apices straight to slightly convex, with a single tooth at both angles, teeth acuminate to linear, acute, 3 - 6 uniseriate cells long above and 0 - 2 biseriate ranks at base. Cells Median leaf cells hexagonal, somewhat elongate, 30 - 60 µm long, 30 - 75 µm wide, trigones acute, small to inconspicuous. Underleaves Reniform, 2 - 3 times the stem width, 0.20 - 0.50 mm long, 0.70 - 1.20 mm wide, inserted on the stem in a deep sinus and connate to both adjacent leaves by a very wide band of cells, the apical margin widely convex with 4 - 6 straight teeth, sublinear acute, the innermost erect, the lateral spreading, like the leaf ones. Gametangia Gynoecia at the end of short leafless ventral lateral branches, bracts small, rounded, 2 - toothed, perianths 1 mm long, cupulate with trilobate mouth, lobes rounded, toothed, surface mammillose; androecia not seen.</pre>
     
     
     
-    <p><strong>materials_examined:</strong> Type: New Caledonia. Franc s. n. (lecto-, here designated, G [“ Lophocolea latistipa (sic) n. sp., Nlle Calédonie, forêt de Tao, 600 à 800 m ”, I. 1910, Franc s. n., G 00121768]!) syn. nov.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>discussion:</strong> COMMENTS Heteroscyphis coalitus is morphologically highly variable and a large number of forms and varieties have been described in this species (Tropicos 2021). According to Piippo (1985), the species especially varies in the shape of the underleaves and their connation to the leaves. As it is a species widely distributed, it is not surprising that there are so many names for this taxon. The original materiel of Chiloscyphus confertifolius at G is limited to a single packet handwritten by Stephani which is therefore selected as the lectotype. Regarding Lophocolea latistipula, two specimens are kept as types at G, both collected by Franc in the same locality. The specimen with the mark “ n. sp. ” is selected despite the orthographic error “ latistipa ” which may not lead to confusion, since the epithet latistipus is in fact assigned to Chiloscyphus latistipus with a type collected by Mrs L. Le Rat. In addition, the drawing by Stephani matches with this specimen. In contrast, a second specimen labelled Lophocolea latistipula in G (G 00112472, duplicate PC 0102424) turned to be Chiloscyphus longifissus Steph. (see below). Among the specimens marked as types of Chiloscyphus latistipus at G, the specimen G 00069461 is selected as lectotype since it contains the collecting number (171) and the annotation “ n. sp. ” in a letter from Stephani to E. G. Paris dated 31 March 1910 (Rennes 1 University Library). Furthermore, “ original ” is written on the label in the author’s handwriting. In contrast, the specimens kept at PC (PC 0101941 and PC 0150605) are in packets with the handwriting of E. G. Paris without any annotation by Stephani, so that they cannot be considered with certainty as parts of the original material. The name Chiloscyphus similis was given to two different type specimens a few years apart by Stephani. In 1908, a New Caledonian specimen collected by Le Rat was validly published under this name in Revue bryologique and the original materiel can be identified with the number 195 according to a letter to E. G. Paris dated 2 January 1908 (Rennes 1 University Library). But, in 1911, Stephani described another C. similis based on a voucher collected by Scottsberg from Tierra del Fuego. The drawing and protologue show a very different plant, confirmed by the examination of the corresponding specimen from Tierra del Fuego kept at G. No New Caledonian specimen labelled C. similis and matching the diagnosis published in 1908 has been found at G, REN or PC. On another hand, in 1922, Stephani published Chiloscyphus subsimilis based on a type specimen kept at G and marked with the same number (195) than C. similis (1908), according to the correspondence from Stephani to E. G. Paris. Consequently, C. subsimilis is an illegitimate name, superfluous against C. similis (1908) (International Code of Nomenclature, art. 52.1, Turland et al. 2018; Loiseau et al. 2019), which was validly published with an identified type, while C. similis (1911) is invalid as a later homonym. Fortunately, C. similis (1911) from Tierra de Fuego is furthermore synonym of Heteroscyphus valdiviensis (Mont.) Schiffner (Fulford 1976). A lot of duplicates of the original material used by Stephani for Chiloscyphus francanus were examined, raising the opportunity to recognise a set of syntypes. But a further specimen kept at PC as an isosyntype (PC 0101947), cannot be a type since it was collected one year later than the specimens kept at G and lacks annotation by Stephani.</p>
     
     
     
-    <p><strong>materials_examined:</strong> Type: New Caledonia. Franc s. n. (lecto-, here designated, G [“ Mt. Dzumac, 900 m, tronc d’arbre ”, 1. XI. 1907, Franc s. n., G 00283066]!; syn-, G [“ Nlle Calédonie, Mts. Koghis, versant ouest, 300 m, bords d’un torrent ”, 20. X. 1907, Franc s. n., G 00069483, G 0069484! s. l., s. d., Franc s. n., G 00283067]!; isolecto-, PC [PC 0101950]!; isosyn-, PC [PC 101948, PC 0101949]!) syn. nov. FURTHER SPECIMENS EXAMINED. — New Caledonia. South Province, Sarraméa, Dogny plateau, on ground in rain forest, 650 m, 24. X. 2019, Thouvenot NC 2602 (PC [PC 0779853]); Yaté, Dzumac massif, on ground in rain forest, 900 m, 26. X. 2012, Thouvenot NC 2392; North Province, Poindimié, Amoa valley, Tipwadabwé, on damp rock in a creek, 163 m, 13. X. 2019, Thouvenot NC 2726; South Province, Mé Amméri, 700 m, 30. IX. 1950, Guillaumin &amp; Baum. Bod. 9150, det. Hürlimann, as Chiloscyphus francanus (G [G 045946]); “ Mts. Koghis, forêt ”, Franc s. n. as Chiloscyphus similis (sensu 1908) (PC [PC 0167662], G s. n.); “ in jugo Dogny 1040 m ”, VII. 1909, L. Le Rat s. n. as Chiloscyphus latistipus (G s. n.); “ in jugo Dogny ”, X. 1909, L. Le Rat s. n. as Chiloscyphus latistipus (PC [PC 0101941, PC 0150605]); “ Mts. Koghis ”, 1. X. 1909, Franc s. n. as Chiloscyphus latistipus (G s. n.).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> DISTRIBUTION IN NEW CALEDONIA. — Frequent in rain forest and creek banks in both provinces of Grande Terre, collected from 150 to 1150 m, on soils or rocks, occasionally at the base of trees. TOTAL RANGE. — South-East Asia, Indonesia, Melanesia, Australasia, (Argentina?).</p>
     
     
     
-    <p><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Chiloscyphus subsimilis. Nov. Caledon. Sine schedule ”, 1907, Le Rat 195, G 00069431]!) syn. nov.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Franc s. n. (lecto-, here designated, G [“ Lophocolea latistipa (sic) n. sp., Nlle Calédonie, forêt de Tao, 600 à 800 m ”, I. 1910, Franc s. n., G 00121768]!) syn. nov.</p>
     
     
     
-    <p><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Nov. Caledon. Inter Farino et Table Unio. 07 / 1909 ”, Le Rat 95, G 00069493]!) syn. nov.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Franc s. n. (lecto-, here designated, G [“ Mt. Dzumac, 900 m, tronc d’arbre ”, 1. XI. 1907, Franc s. n., G 00283066]!; syn-, G [“ Nlle Calédonie, Mts. Koghis, versant ouest, 300 m, bords d’un torrent ”, 20. X. 1907, Franc s. n., G 00069483, G 0069484! s. l., s. d., Franc s. n., G 00283067]!; isolecto-, PC [PC 0101950]!; isosyn-, PC [PC 101948, PC 0101949]!) syn. nov. FURTHER SPECIMENS EXAMINED. — New Caledonia. South Province, Sarraméa, Dogny plateau, on ground in rain forest, 650 m, 24. X. 2019, Thouvenot NC 2602 (PC [PC 0779853]); Yaté, Dzumac massif, on ground in rain forest, 900 m, 26. X. 2012, Thouvenot NC 2392; North Province, Poindimié, Amoa valley, Tipwadabwé, on damp rock in a creek, 163 m, 13. X. 2019, Thouvenot NC 2726; South Province, Mé Amméri, 700 m, 30. IX. 1950, Guillaumin &amp; Baum. Bod. 9150, det. Hürlimann, as Chiloscyphus francanus (G [G 045946]); “ Mts. Koghis, forêt ”, Franc s. n. as Chiloscyphus similis (sensu 1908) (PC [PC 0167662], G s. n.); “ in jugo Dogny 1040 m ”, VII. 1909, L. Le Rat s. n. as Chiloscyphus latistipus (G s. n.); “ in jugo Dogny ”, X. 1909, L. Le Rat s. n. as Chiloscyphus latistipus (PC [PC 0101941, PC 0150605]); “ Mts. Koghis ”, 1. X. 1909, Franc s. n. as Chiloscyphus latistipus (G s. n.).</p>
     
     
     
-    <p><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Nova Caledonia, Me Areimbo. s. d., Dna L. Le Rat 171, mit Balantiopsis, mit Lepidozia ”, G 00069461]!; isolecto-, REN [herb. E. G. Paris, s. n.]!) syn. nov.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Chiloscyphus subsimilis. Nov. Caledon. Sine schedule ”, 1907, Le Rat 195, G 00069431]!) syn. nov.</p>
     
     
     
-    <p><strong>materials_examined:</strong> Type: New Zealand. Dusky Bay, A. Menzies s. n. (G [G 00283086]!).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Nov. Caledon. Inter Farino et Table Unio. 07 / 1909 ”, Le Rat 95, G 00069493]!) syn. nov.</p>
     
     
     
-    <p><strong>synonymic_list:</strong> Chiloscyphus confertifolius Steph., Species Hepaticarum 6: 304 (Stephani 1922).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Nova Caledonia, Me Areimbo. s. d., Dna L. Le Rat 171, mit Balantiopsis, mit Lepidozia ”, G 00069461]!; isolecto-, REN [herb. E. G. Paris, s. n.]!) syn. nov.</p>
     
     
     
-    <p><strong>synonymic_list:</strong> Chiloscyphus francanus Steph., Species Hepaticarum 6: 306 (Stephani 1922).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Zealand. Dusky Bay, A. Menzies s. n. (G [G 00283086]!).</p>
     
     
     
-    <p><strong>synonymic_list:</strong> Chiloscyphus latistipus Steph., Species Hepaticarum 6: 309 (Stephani 1922).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus confertifolius Steph., Species Hepaticarum 6: 304 (Stephani 1922).</p>
     
     
     
-    <p><strong>synonymic_list:</strong> Chiloscyphus similis Steph., Revue bryologique 35: 28 (Paris 1908), non Chiloscyphus similis Steph., Kongliga Svenska Vetenskaps Academiens Handlingar, Ny Följd 46: 56 (Stephani 1911). — Chiloscyphus subsimilis Steph., Species Hepaticarum 6: 314 (Stephani 1922), nom. illeg.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus francanus Steph., Species Hepaticarum 6: 306 (Stephani 1922).</p>
     
     
     
-    <p><strong>synonymic_list:</strong> Lophocolea latistipula Steph., Species Hepaticarum 6: 281 (Stephani 1922). — Chiloscyphus latistipulus (Steph.) J. J. Engel &amp; R. M. Schust., Nova Hedwigia 39: 418 (Engel &amp; Schuster 1984 [1985]).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus latistipus Steph., Species Hepaticarum 6: 309 (Stephani 1922).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus similis Steph., Revue bryologique 35: 28 (Paris 1908), non Chiloscyphus similis Steph., Kongliga Svenska Vetenskaps Academiens Handlingar, Ny Följd 46: 56 (Stephani 1911). — Chiloscyphus subsimilis Steph., Species Hepaticarum 6: 314 (Stephani 1922), nom. illeg.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Lophocolea latistipula Steph., Species Hepaticarum 6: 281 (Stephani 1922). — Chiloscyphus latistipulus (Steph.) J. J. Engel &amp; R. M. Schust., Nova Hedwigia 39: 418 (Engel &amp; Schuster 1984 [1985]).</p>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_GLENNY_2006</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_GLENNY_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">number
+    <pre class="description-text">number
 Chiloscyphus pallescens (IV)           Germany,            Hentschel Bryo 01590 (GOET)        AM282824
                                         Lower Saxony
 Chiloscyphus pallescens (V)            Bulgaria            Hentschel Bryo 0772 (JE)           AM282825
@@ -437,37 +423,43 @@ performed with the following options implemented:        search recovered 2 equa
 heuristic search mode with 1000 random-addition          trees with a length of 1343 steps, a consistency
 sequence replicates, tree bisection-reconnection         index (CI) of 0.50, a CI excluding uninformative
 branch swapping (TBR), MULTrees option on,               characters of 0.45, a retention index of 0.73, and
-and collapse zero-length branches oﬀ. All charac-        a rescaled consistency index of 0.36. The strict</p>
+and collapse zero-length branches oﬀ. All charac-        a rescaled consistency index of 0.36. The strict</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (4 entrys)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(4)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
-    
-    
-    
-    <p><strong>distribution:</strong> Tas.</p>
-    
-    
-    
-    <p><strong>infraspecific_taxon:</strong> Heteroscyphus coalitus var. coalitus</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Heteroscyphus coalitus var. simplicifolius</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Heteroscyphus coalitus var. coalitus</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Heteroscyphus coalitus var. simplicifolius</p>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Spyridium coalitum is a species of flowering plant in the family Rhamnaceae and is endemic to Kangaroo Island in South Australia. It is a slender, erect shrub with softly-hairy young stems, oblong to narrowly elliptic leaves, and head of white to cream-coloured flowers.</p>
+    <pre class="description-text">Spyridium coalitum is a species of flowering plant in the family Rhamnaceae and is endemic to Kangaroo Island in South Australia. It is a slender, erect shrub with softly-hairy young stems, oblong to narrowly elliptic leaves, and head of white to cream-coloured flowers.</pre>
     
     
   </details>
@@ -476,14 +468,43 @@ and collapse zero-length branches oﬀ. All charac-        a rescaled consistenc
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus allodontus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cambewarranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus circumdentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus coalitus var. coalitus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus coalitus var. simplicifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cuneistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Spyridium coalitum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus coalitus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia coalita</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -498,22 +519,32 @@ and collapse zero-length branches oﬀ. All charac-        a rescaled consistenc
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [76.3, 64.6, 84.1, 90.6, 131.6, 137.4, 157.9, 170.4, 150.9, 125.5, 92.8, 97.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.3, 20.3, 18.2, 15.0, 12.1, 10.2, 9.5, 10.3, 12.2, 14.2, 16.9, 18.3], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.7, 9.8, 8.5, 6.5, 5.0, 3.5, 2.8, 2.9, 4.3, 5.3, 7.2, 8.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

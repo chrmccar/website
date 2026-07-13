@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Goebelobryum grossitextum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Acrobolbaceae</span>
-    <span class="badge secondary">Goebelobryum</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Chaetodontoplus mesoleucus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Entomacrodus vermiculatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Goebelobryum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Goebelobryum unguiculatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plectropomus oligacanthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Siganus vermiculatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stachystemon vermicularis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Vermicularia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Podanthe Taylor</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Symphyomitra Spruce</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Goebelobryum vermiculare</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Goebelobryum</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,21 +48,25 @@
     <p class="big-num">15</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">2</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -100,54 +74,57 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">BRYOPHYTE_GENERA_ETYMOLOGY_2008</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">BRYOPHYTE_GENERA_ETYMOLOGY_2008</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong> (1 entry)</summary>
+    <summary>
+      <strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">hornwort suffix.                                                  Frullania Raddi 1818—after Leonardo Frullani
+    <pre class="description-text">hornwort suffix.                                                  Frullania Raddi 1818—after Leonardo Frullani
             Dendrolejeunea (Spruce) Lacout. 1908—dendron                          (d. 1841), Florentine Privy Counselor and
               (tree)+Lejeunea, alluding to the dendroid                           director of the Tuscan Treasury (Müller,
               growth habit of the one species (Dendrolejeunea                     1912–1916; Stotler, 1968) and a colleague of
@@ -207,25 +184,31 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
          1979—hepatikos (liver)+stolon (root)+phoros                          type species Isolembidium cucullatum and its
          (bearing), i.e., a liverwort with stolons, which                     original placement in the genus Lembidium
          are profuse. The name replaced Stolonophora,                         (Schuster, 1963, p. 278).
-         which was already in use for an algal                             Isophyllaria E. A. Hodgs. &amp; Allison 1965—isos</p>
+         which was already in use for an algal                             Isophyllaria E. A. Hodgs. &amp; Allison 1965—isos</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>WINDOLF_QLD_HEPATICAE_1987</strong> (1 entry)</summary>
+    <summary>
+      <strong>WINDOLF_QLD_HEPATICAE_1987</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">This content downloaded from 131.217.255.240 on Fri, 10 Jul 2026 03:55:03 UTC
+    <pre class="description-text">This content downloaded from 131.217.255.240 on Fri, 10 Jul 2026 03:55:03 UTC
                         All use subject to https://about.jstor.org/terms
                                                 388
 
@@ -281,7 +264,7 @@ Pleuroziaceae
  specimens dating back to 1 885, show that
 
  (8) Practically nothing is known regarding
- Schistochila should help clarify most point</p>
+ Schistochila should help clarify most point</pre>
     
     
   </details>
@@ -290,14 +273,43 @@ Pleuroziaceae
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Chaetodontoplus mesoleucus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Entomacrodus vermiculatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Goebelobryum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Goebelobryum unguiculatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plectropomus oligacanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siganus vermiculatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stachystemon vermicularis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Vermicularia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Podanthe Taylor</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Symphyomitra Spruce</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Goebelobryum vermiculare</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -312,23 +324,17 @@ Pleuroziaceae
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
 </script>
+
+
 
 
 </body>

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Diplasiolejeunea plicatiloba</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lejeuneaceae</span>
-    <span class="badge secondary">Diplasiolejeunea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Diplasiolejeunea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Diplasiolejeunea brachyclada A.Evans</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Diplasiolejeunea cavifolia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Diplasiolejeunea lyratifolia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Diplasiolejeunea pusilla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Drepanolejeunea plicatiloba</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia plicatiloba</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea subg. Diplasiolejeunea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea lyratifolia</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Diplasiolejeunea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,21 +48,25 @@
     <p class="big-num">129</p>
     <footer>54 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">3</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -96,62 +74,72 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chiloscyphus hattorii J.J .Engel                              Jungermannia perpusilla (Hook.f. &amp; Taylor)
+    <pre class="description-text">Chiloscyphus hattorii J.J .Engel                              Jungermannia perpusilla (Hook.f. &amp; Taylor)
 Chiloscyphus helmsianus (Steph.) ].].Engel &amp;                   Taylor
          R.M.Schust.                                           Lophocolea perpusilla Hook.f. &amp; Taylor
                                                                             NZ Liverworts and Hornworts     131
@@ -211,25 +199,31 @@ Clasmatocolea strongylophylla (Hook.f. &amp; Taylor)                 R.M.Schust.
 
 
         Noteroclada perpusilla Colenso                   Frullania solanderiana Colenso
-Fossombronia reticulata Steph.                           Frullania spinifera Taylor</p>
+Fossombronia reticulata Steph.                           Frullania spinifera Taylor</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Underleaves absent ............................................................... Paraschistochila tuloides
+    <pre class="description-text">Underleaves absent ............................................................... Paraschistochila tuloides
                                                                                                                                                                                3 Lobule dorsal ............................................................................................................... 4
                                                                                                                                                                                   Lobule ventral .............................................................................................................. 6
                                                                                                                                                                                4 Plants thick, fleshy, brittle, bright green ......................................... Treubia tasmanica
@@ -289,7 +283,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                2   Small, helmet-shaped ventral lobules present ...................... Gackstroemia weindorfei
                                                                                                                                                                                    Ventral lobules not present .......................................................................................... 3
                                                                                                                                                                                3   Lobule formed by keeling of leaf ....................................... Schistochila lehmanniana
-                                                                                                                                                                                   Lobule formed by folding of leaf margin .............................. Balantiopsis diplophylla</p>
+                                                                                                                                                                                   Lobule formed by folding of leaf margin .............................. Balantiopsis diplophylla</pre>
     
     
   </details>
@@ -298,14 +292,39 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Diplasiolejeunea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplasiolejeunea brachyclada A.Evans</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplasiolejeunea cavifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplasiolejeunea lyratifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplasiolejeunea pusilla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Drepanolejeunea plicatiloba</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia plicatiloba</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea subg. Diplasiolejeunea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea lyratifolia</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -320,22 +339,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [83.0, 71.5, 92.8, 99.2, 147.0, 152.0, 177.0, 192.5, 171.8, 141.1, 102.3, 108.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.4, 19.4, 16.9, 13.5, 10.5, 8.5, 7.8, 8.7, 10.7, 12.9, 15.9, 17.2], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.4, 8.6, 7.1, 5.2, 3.7, 2.3, 1.6, 1.7, 2.9, 4.0, 5.9, 6.9], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

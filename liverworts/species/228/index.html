@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,47 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Clasmatocolea notophylla</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Clasmatocolea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (12)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Clasmatocolea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Clasmatocolea humilis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Clasmatocolea inflexispina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Clasmatocolea marginata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Clasmatocolea strongylophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Clasmatocolea vermicularis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Clasmatocolea verrucosa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Notophyllia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Notophyllia etheridgi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus notophyllus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia notophylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea notophylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Clasmatocolea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -80,21 +48,25 @@
     <p class="big-num">84</p>
     <footer>42 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">8</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -102,102 +74,107 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>irregular</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CHILOSCYPHUS_MONOGRAPH_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">TABLE 2.     Comparison between Chiloscyphus austrigenus mod. integrifolia-planifolia and mod. retusifolia-undulatifolia.
+    <pre class="description-text">TABLE 2.     Comparison between Chiloscyphus austrigenus mod. integrifolia-planifolia and mod. retusifolia-undulatifolia.
 
                     Character                                mod. integrifolia-planifolia                            mod. retusifolia-undulatifolia
 
@@ -257,16 +234,19 @@
           1.     Median leaf cells 22–34 mm wide 3 28–40 mm long; lobes                     taken with plants having concave leaves because they are quite
                  of perianth mouth retuse to retuse-bidentate, otherwise                    clasmatocoleoid in appearance. Indeed, plants with concave
                  entire. Southern South America . . . [subsp. austrigenus]                  leaves and plane, narrow, more deeply divided underleaves
-                                                                                            bear a strong resemblance to Clasmatocolea humilis (Hook. f.</p>
+                                                                                            bear a strong resemblance to Clasmatocolea humilis (Hook. f.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">63
+    <pre class="description-text">63
                                     Table 5.3.
 
 
@@ -386,16 +366,19 @@ Jungennanniaceae
 
  Drepanolejeunea aucklandica Steph.
 
- unknown species</p>
+ unknown species</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Acrobolbus einerascens (Lehm. &amp; Lindb.) Schiffn.             x                               x
+    <pre class="description-text">Acrobolbus einerascens (Lehm. &amp; Lindb.) Schiffn.             x                               x
 A. concinnus (Mitt.) Grolle                                  x            x
 A. ochrophyllus (J.D.Hook. &amp; Taylor) Schus1.                                                 x
 Acrochila biserialis (Lehm. &amp; Lindh.) Grolle                 x                               x
@@ -452,16 +435,19 @@ H. cymhaliferus (J.D.Hook. &amp; Taylor) Engel &amp; Schust.         x          
                                                                                      -.---~.--~-~
 
                                                                                                          &#34;      5      6
-                                                                                                    -----&#39;---~------------,-----</p>
+                                                                                                    -----&#39;---~------------,-----</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chiloscyphus spiniferus (Hook.f. &amp; Taylor) J.J.Engel     Cololejeunea mamillata (Angstr.) R.M.Schust.
+    <pre class="description-text">Chiloscyphus spiniferus (Hook.f. &amp; Taylor) J.J.Engel     Cololejeunea mamillata (Angstr.) R.M.Schust.
         &amp; R.M.Schust.                                    Cololejeunea minutissima (Sm.) Schiffn.
         Lophocolea spinifera (Hook.f. &amp; Taylor)          Cololejeunea pulchella (Mitt.) R.M.Schust.
         Taylor                                           Colura pulcherrima var. bartlettii Ast
@@ -521,25 +507,31 @@ Frullania engelii S.Hatt.                                       strictum
 Frullania falciloba Lehm.                                Gymnomitrion strictum (Berggr.) R.M.Schust. var.
 Frullania fugax (Hook.f. &amp; Taylor) Taylor                       inaequalis R.M.Schust.
 Frullania incumbens Mitt.
-Frullania junghuhniana Gottsche                          Haplomitrium gibbsiae (Steph.) R.M.Schust.</p>
+Frullania junghuhniana Gottsche                          Haplomitrium gibbsiae (Steph.) R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">from the canopy to low in the understorey. It is one of the smallest
+    <pre class="description-text">from the canopy to low in the understorey. It is one of the smallest
     species of the genus and closely resembles F. aterrima. Both have a
     helmet-shaped lob~llebut they can be separated by the shape of the
     small underleaves (rounded to obovate in F. rostrafa, but angled, with
@@ -598,7 +590,7 @@ and are awaiting revision. Leaves arc in three rows.
 
     V 79. Heterosq$hus coalitus (x3)
                                                                             Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
-      A 80. Hrterosqphus conjugatus (xl)</p>
+      A 80. Hrterosqphus conjugatus (xl)</pre>
     
     
   </details>
@@ -607,14 +599,45 @@ and are awaiting revision. Leaves arc in three rows.
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Clasmatocolea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Clasmatocolea humilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Clasmatocolea inflexispina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Clasmatocolea marginata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Clasmatocolea strongylophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Clasmatocolea vermicularis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Clasmatocolea verrucosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Notophyllia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Notophyllia etheridgi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus notophyllus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia notophylla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea notophylla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -629,22 +652,32 @@ and are awaiting revision. Leaves arc in three rows.
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [107.7, 95.4, 122.6, 133.1, 201.7, 190.8, 222.9, 244.2, 228.8, 199.8, 128.4, 150.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [17.7, 17.8, 15.4, 12.3, 9.5, 7.7, 7.0, 7.8, 9.7, 11.7, 14.6, 15.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [7.8, 7.9, 6.9, 5.2, 4.0, 2.6, 1.6, 2.0, 2.8, 3.8, 5.5, 6.4], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

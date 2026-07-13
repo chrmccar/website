@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Zoopsis setulosa</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Zoopsis</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Clavulina setulosa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Linnaemya setulosa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Misophrice setulosa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pultenaea setulosa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis argentea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis leitgebiana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis liukiuensis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Zoopsis setigera K.I.Goebel</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cephalozia setulosa</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Zoopsis</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">241</p>
     <footer>59 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">15</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,158 +74,156 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.6</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.6</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Illustrations: Scott (1985, Figure 65), Meagher and Fuhrer (2003, page 239), Engel and Glenny
+    <pre class="description-text">Illustrations: Scott (1985, Figure 65), Meagher and Fuhrer (2003, page 239), Engel and Glenny
 (2008, plate 9B).
 Habitat: Rotting wood and logs, tree-fern and tree trunks, soil, leaf litter, occasionally epiphytic
 and on rock in sheltered habitats.
@@ -309,38 +283,47 @@ collection made by William Watts in 1911 (Stephani and Watts 1914). Engel and Sc
 (1985) transferred the species to Chiloscyphus with numerous other species as part of a re-
 evaluation of the family Geocalycaceae, in which Chiloscyphus was then placed. The species
 clearly belongs in Chiloscyphus on account of the characters described below.
-The only other Chiloscyphus species known to occur on Lord Howe Island is C. semiteres,</p>
+The only other Chiloscyphus species known to occur on Lord Howe Island is C. semiteres,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants ribbon-like, pale green, markedly nitid when dry, to 600 juim wide. Branching common, the branches usually mostly of Frullania type; ventral-intercalary branches also com¬ mon, often geotropic and microphyllous. Axes planoconvex, consisting of 2 rows of dorsal cortical cells, the cells very large, isodiametric or wider than high, their inner margins forming a zigzag median line; ventral cortical cells in 4 rows: 2 lateral rows (= lower cells of lateral merophytes) on each side subequal to the dorsal cortical cells, and 2 rows of cells constituting the ventral merophytes rather broad, the cells smaller than those of the 2 lateral rows, subquadrate; medulla of 19-22 rows of small cells forming a central strand. Leaves distinctly pro¬ jecting laterally, each typically separated on the same side of axis by less than half of a marginal cortical cell; leaf consisting of two 1 -celled, ovoid-conoidal basal cells connate to each other for 0.5-0.65 their length, the apices broadly rounded, each bearing a 2-celled setose appendage; appendages conspicuous, attached by the narrow basal-lateral side of the basal cell, arched to geniculate, the distal cell tapered to the summit, curved over the basal leaf cell, the surface of the appendage cells strongly papillose. Oil-bodies 5-10 per thallus cell, occupying a very small portion of volume of lumen, hyaline, moderately botryoidal, elliptic to linear to fusiform to crescentic, 5. 8-7.7 X 17.8-20.6 juim, a few smaller, more broadly elliptic and 5.3- 6.2 X 11.5-14.4 |ULm, a few linear and 4.3 X 17.3 juim. (In a short time the spherules enlarge and the oil-body perimeter becomes irregularly bulged.) Claw-like cells of the leaf lobes thick- walled, with numerous chloroplasts, but with fewer and considerably smaller oil-bodies, only 2.9 X 3. 8-5. 3 |ULm. Underleaves separated by 2 tiers of 2 cells each, rudimentary, consisting of 2-4 subspherical basal cells (‘‘disc”) and two 1 -celled “lobes,” the lobe cells each terminating in a hyaline papilla. Asexual reproduction lacking. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island (20-30 m). South Island (130-630 m). North Island ([240]720-890 m); Australia: Tasmania, Victoria, New South Wales (Meagher and Euhrer, 2003). Known in New Zealand from Eiordland, Westland, Western Nelson, Auckland and Northland (Waipoua) EPs. Sporadic and scattered sites over a broad range, occurring on Stewart Island, on the South Island in Westland north to the Marino Mtns. in Nelson, and in the North Island in scattered, mostly middle-elevation stations, e.g., at 720-750 m in the Herangi Ra. (S of Kawhia Harbor), 880-890 m on Mt. Te Aroha, 835 m on Table Mtn., 650-680 m on the Hauturu Highpoint Track and 800 m on Mt. Moehau. The species occurs in shaded, protected, humid niches within forests. It occurs over peaty soil in well-shaded hollows or pockets, a characteristic niche, and in such situations it may cover large areas. Also, in the Herangi Ra. (S of Te Whaka- patiki), on soil of a small vertical bank in a very narrow and shallow water channel in a small valley system, with vegetation consisting of Podocarpus hallii, Dracophyllum traversii and Weinmannia to 3-5 m tall. In the Paparoa Ra. (upper slopes of N side of Tiropahi River) over soil under a granitic ledge at 130-170 m in dense scrub dominated by Nothofagus menziesii and N. solandri with scattered Dacrydium cupressinum, Freycinetia baueriana, Dicksonia squarrosa, Coprosma spp. and Brachy glottis. On Stewart Island (Pern Gully Track) over humus of the floor in a forest with a canopy of Fuchsia excorticata and Griselinia littoralis, and an understory of Blechnum discolor. Species associated with Z. setulosa are Bazzania adnexa, B. nitida. Cryptopodium bartramioides, Distichophyllum kraussei, D. pulchellum, Hy- menophyton leptopodum, Kurzia hippuroides, Lepidozia spinosissima, Leucobryum can- didum, Psiloclada clandestina, Rhizogonium distichum, Thuidium furfurosum and Wijkia extenuata. Comments&#39;. A distinctive species, recognizable at a glance because of the leaves, which are closely contiguous and formed of two large chlorophyllous cells, each free distally, so that the leaf appears bilobed, bearing a hooked, slender, 2-celled ‘‘appendix.” The precise arrangement of the leaves lends a distinctive, crisp regularity to the plants vs. the somewhat irregularly scalloped margins of shoots of Zoopsis argentea. The surface of the incurved appendices is rough¬ ened, while the surface of the chlorophyllous cells is smooth. The leaves are closely juxtaposed on each side of the stem and only a fraction of one cortical cell intervenes between leaf bases. Zoopsidella R.M.Schust. Zoopsidella R.M.Schust., Nova Hedwigia 10: 24. 1965. Plants markedly distichous-leaved and strongly complanate, prostrate or creeping, light to pale green, nitid, rather translucent, small, the tips occasionally becoming flagelliform, the plants small to medium, to 1.6 mm wide. Branching sparing and irregular, the branches normally ventral-intercalary, often stoloniform and microphyllous; Frullania-typt branches sometimes also present (in ours). Stem with 6 or 10-13 rows of large, hyaline cortical cells forming a conspicuous hyaloderm, the dorsal rows of large cells in surface view irregularly polygonal and not or little elongated, the cells of the ventral merophyte smaller than the dorsal and lateral cells; medullary cells markedly smaller, firm- walled. Rhizoids at the bases of underleaves or (extraterritorial species) sometimes also from ventral side of apical and sub- apical leaf cells, often with bulbous apices. Leaves typically formed of many cells, laterally spreading, nearly or quite flat, almost longitudinally inserted, leaving a broad strip of 2-3(5) cell rows leaf-free; leaves symmetrically 2-lobed to 0. 2-0.4 (in ours), or strongly asymmetric and with a reduced or vestigial dorsal lobe; lobes ending in crescentic slime papillae attached along their longer walls, or without these cells (our species). Cells very large, leptodermous; surface smooth. Oil-bodies (Schuster, 2000a) glistening and almost homogeneous or, at most, obscurely botryoidal. Underleaves small or vestigial. Asexual reproduction absent. Dioecious, autoecious (in ours), or paroecious. Androecia sometimes terminal but becoming intercalary on leading leafy axes, or sometimes on small, ventral-intercalary branches; bracts pouched at base, bilobed; antheridia 1 per bract, the stalk uniseriate. Gynoecia normally on feeble, short, ventral-intercalary branches; bracts and bracteoles of innermost series bifid to 0.5-0.85, the lobes entire or subentire. Perianth fusiform-trigonous, the basal cells much larger than median and apical cells, the mouth narrow, deeply 6-fid; perianth 1-stratose. Seta with 8 rows of large outer cells surrounding 4 rows of internal cells. Capsule wall 2- stratose; outer layer of cells rectangular, usually both faces of alternating walls with sinuous- nodular thickenings; inner layer of cells with well-defined semi annular bands. Spores delicately areolate. Type: Zoopsidella cynosuranda (Spruce ex Steph.) R.M.Schust. (= Zoopsis cynosurandra Spruce ex Steph.) A genus of 8 species, of which only one occurs in New Zealand. The other species are Neotropical and range north to the Antilles; for these see Schuster (1999b). The genus has three subgenera: subg. Hyalolepidoziopsis R.M.Schust., with only our species, subg. Hypo- zoopsis R.M.Schust. and subg. Zoopsidella. All species of Zoopsidella have large, flat, lamelliform leaves, unlike a number of Zoopsis species, in which leaves are usually highly reduced to a very few, specialized cells. Also, Zoopsidella has a seta of the 8+4 type vs. a seta with 8 epidermal cell rows enclosing numerous, much smaller internal cell rows in Zoopsis. References: Schuster (1999b, 2000a). The species treatment is adapted, with considerable modification, from Schuster (1999b).</p>
+    <pre class="description-text">Plants ribbon-like, pale green, markedly nitid when dry, to 600 juim wide. Branching common, the branches usually mostly of Frullania type; ventral-intercalary branches also com¬ mon, often geotropic and microphyllous. Axes planoconvex, consisting of 2 rows of dorsal cortical cells, the cells very large, isodiametric or wider than high, their inner margins forming a zigzag median line; ventral cortical cells in 4 rows: 2 lateral rows (= lower cells of lateral merophytes) on each side subequal to the dorsal cortical cells, and 2 rows of cells constituting the ventral merophytes rather broad, the cells smaller than those of the 2 lateral rows, subquadrate; medulla of 19-22 rows of small cells forming a central strand. Leaves distinctly pro¬ jecting laterally, each typically separated on the same side of axis by less than half of a marginal cortical cell; leaf consisting of two 1 -celled, ovoid-conoidal basal cells connate to each other for 0.5-0.65 their length, the apices broadly rounded, each bearing a 2-celled setose appendage; appendages conspicuous, attached by the narrow basal-lateral side of the basal cell, arched to geniculate, the distal cell tapered to the summit, curved over the basal leaf cell, the surface of the appendage cells strongly papillose. Oil-bodies 5-10 per thallus cell, occupying a very small portion of volume of lumen, hyaline, moderately botryoidal, elliptic to linear to fusiform to crescentic, 5. 8-7.7 X 17.8-20.6 juim, a few smaller, more broadly elliptic and 5.3- 6.2 X 11.5-14.4 |ULm, a few linear and 4.3 X 17.3 juim. (In a short time the spherules enlarge and the oil-body perimeter becomes irregularly bulged.) Claw-like cells of the leaf lobes thick- walled, with numerous chloroplasts, but with fewer and considerably smaller oil-bodies, only 2.9 X 3. 8-5. 3 |ULm. Underleaves separated by 2 tiers of 2 cells each, rudimentary, consisting of 2-4 subspherical basal cells (‘‘disc”) and two 1 -celled “lobes,” the lobe cells each terminating in a hyaline papilla. Asexual reproduction lacking. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island (20-30 m). South Island (130-630 m). North Island ([240]720-890 m); Australia: Tasmania, Victoria, New South Wales (Meagher and Euhrer, 2003). Known in New Zealand from Eiordland, Westland, Western Nelson, Auckland and Northland (Waipoua) EPs. Sporadic and scattered sites over a broad range, occurring on Stewart Island, on the South Island in Westland north to the Marino Mtns. in Nelson, and in the North Island in scattered, mostly middle-elevation stations, e.g., at 720-750 m in the Herangi Ra. (S of Kawhia Harbor), 880-890 m on Mt. Te Aroha, 835 m on Table Mtn., 650-680 m on the Hauturu Highpoint Track and 800 m on Mt. Moehau. The species occurs in shaded, protected, humid niches within forests. It occurs over peaty soil in well-shaded hollows or pockets, a characteristic niche, and in such situations it may cover large areas. Also, in the Herangi Ra. (S of Te Whaka- patiki), on soil of a small vertical bank in a very narrow and shallow water channel in a small valley system, with vegetation consisting of Podocarpus hallii, Dracophyllum traversii and Weinmannia to 3-5 m tall. In the Paparoa Ra. (upper slopes of N side of Tiropahi River) over soil under a granitic ledge at 130-170 m in dense scrub dominated by Nothofagus menziesii and N. solandri with scattered Dacrydium cupressinum, Freycinetia baueriana, Dicksonia squarrosa, Coprosma spp. and Brachy glottis. On Stewart Island (Pern Gully Track) over humus of the floor in a forest with a canopy of Fuchsia excorticata and Griselinia littoralis, and an understory of Blechnum discolor. Species associated with Z. setulosa are Bazzania adnexa, B. nitida. Cryptopodium bartramioides, Distichophyllum kraussei, D. pulchellum, Hy- menophyton leptopodum, Kurzia hippuroides, Lepidozia spinosissima, Leucobryum can- didum, Psiloclada clandestina, Rhizogonium distichum, Thuidium furfurosum and Wijkia extenuata. Comments&#39;. A distinctive species, recognizable at a glance because of the leaves, which are closely contiguous and formed of two large chlorophyllous cells, each free distally, so that the leaf appears bilobed, bearing a hooked, slender, 2-celled ‘‘appendix.” The precise arrangement of the leaves lends a distinctive, crisp regularity to the plants vs. the somewhat irregularly scalloped margins of shoots of Zoopsis argentea. The surface of the incurved appendices is rough¬ ened, while the surface of the chlorophyllous cells is smooth. The leaves are closely juxtaposed on each side of the stem and only a fraction of one cortical cell intervenes between leaf bases. Zoopsidella R.M.Schust. Zoopsidella R.M.Schust., Nova Hedwigia 10: 24. 1965. Plants markedly distichous-leaved and strongly complanate, prostrate or creeping, light to pale green, nitid, rather translucent, small, the tips occasionally becoming flagelliform, the plants small to medium, to 1.6 mm wide. Branching sparing and irregular, the branches normally ventral-intercalary, often stoloniform and microphyllous; Frullania-typt branches sometimes also present (in ours). Stem with 6 or 10-13 rows of large, hyaline cortical cells forming a conspicuous hyaloderm, the dorsal rows of large cells in surface view irregularly polygonal and not or little elongated, the cells of the ventral merophyte smaller than the dorsal and lateral cells; medullary cells markedly smaller, firm- walled. Rhizoids at the bases of underleaves or (extraterritorial species) sometimes also from ventral side of apical and sub- apical leaf cells, often with bulbous apices. Leaves typically formed of many cells, laterally spreading, nearly or quite flat, almost longitudinally inserted, leaving a broad strip of 2-3(5) cell rows leaf-free; leaves symmetrically 2-lobed to 0. 2-0.4 (in ours), or strongly asymmetric and with a reduced or vestigial dorsal lobe; lobes ending in crescentic slime papillae attached along their longer walls, or without these cells (our species). Cells very large, leptodermous; surface smooth. Oil-bodies (Schuster, 2000a) glistening and almost homogeneous or, at most, obscurely botryoidal. Underleaves small or vestigial. Asexual reproduction absent. Dioecious, autoecious (in ours), or paroecious. Androecia sometimes terminal but becoming intercalary on leading leafy axes, or sometimes on small, ventral-intercalary branches; bracts pouched at base, bilobed; antheridia 1 per bract, the stalk uniseriate. Gynoecia normally on feeble, short, ventral-intercalary branches; bracts and bracteoles of innermost series bifid to 0.5-0.85, the lobes entire or subentire. Perianth fusiform-trigonous, the basal cells much larger than median and apical cells, the mouth narrow, deeply 6-fid; perianth 1-stratose. Seta with 8 rows of large outer cells surrounding 4 rows of internal cells. Capsule wall 2- stratose; outer layer of cells rectangular, usually both faces of alternating walls with sinuous- nodular thickenings; inner layer of cells with well-defined semi annular bands. Spores delicately areolate. Type: Zoopsidella cynosuranda (Spruce ex Steph.) R.M.Schust. (= Zoopsis cynosurandra Spruce ex Steph.) A genus of 8 species, of which only one occurs in New Zealand. The other species are Neotropical and range north to the Antilles; for these see Schuster (1999b). The genus has three subgenera: subg. Hyalolepidoziopsis R.M.Schust., with only our species, subg. Hypo- zoopsis R.M.Schust. and subg. Zoopsidella. All species of Zoopsidella have large, flat, lamelliform leaves, unlike a number of Zoopsis species, in which leaves are usually highly reduced to a very few, specialized cells. Also, Zoopsidella has a seta of the 8+4 type vs. a seta with 8 epidermal cell rows enclosing numerous, much smaller internal cell rows in Zoopsis. References: Schuster (1999b, 2000a). The species treatment is adapted, with considerable modification, from Schuster (1999b).</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants ribbon-like, pale green, markedly nitid when dry, to 600 juim wide. Branching common, the branches usually mostly of Frullania type; ventral-intercalary branches also com¬ mon, often geotropic and microphyllous. Axes planoconvex, consisting of 2 rows of dorsal cortical cells, the cells very large, isodiametric or wider than high, their inner margins forming a zigzag median line; ventral cortical cells in 4 rows: 2 lateral rows (= lower cells of lateral merophytes) on each side subequal to the dorsal cortical cells, and 2 rows of cells constituting the ventral merophytes rather broad, the cells smaller than those of the 2 lateral rows, subquadrate; medulla of 19-22 rows of small cells forming a central strand. Leaves distinctly pro¬ jecting laterally, each typically separated on the same side of axis by less than half of a marginal cortical cell; leaf consisting of two 1 -celled, ovoid-conoidal basal cells connate to each other for 0.5-0.65 their length, the apices broadly rounded, each bearing a 2-celled setose appendage; appendages conspicuous, attached by the narrow basal-lateral side of the basal cell, arched to geniculate, the distal cell tapered to the summit, curved over the basal leaf cell, the surface of the appendage cells strongly papillose. Oil-bodies 5-10 per thallus cell, occupying a very small portion of volume of lumen, hyaline, moderately botryoidal, elliptic to linear to fusiform to crescentic, 5. 8-7.7 X 17.8-20.6 juim, a few smaller, more broadly elliptic and 5.3- 6.2 X 11.5-14.4 |ULm, a few linear and 4.3 X 17.3 juim. (In a short time the spherules enlarge and the oil-body perimeter becomes irregularly bulged.) Claw-like cells of the leaf lobes thick- walled, with numerous chloroplasts, but with fewer and considerably smaller oil-bodies, only 2.9 X 3. 8-5. 3 |ULm. Underleaves separated by 2 tiers of 2 cells each, rudimentary, consisting of 2-4 subspherical basal cells (‘‘disc”) and two 1 -celled “lobes,” the lobe cells each terminating in a hyaline papilla. Asexual reproduction lacking. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island (20-30 m). South Island (130-630 m). North Island ([240]720-890 m); Australia: Tasmania, Victoria, New South Wales (Meagher and Euhrer, 2003). Known in New Zealand from Eiordland, Westland, Western Nelson, Auckland and Northland (Waipoua) EPs. Sporadic and scattered sites over a broad range, occurring on Stewart Island, on the South Island in Westland north to the Marino Mtns. in Nelson, and in the North Island in scattered, mostly middle-elevation stations, e.g., at 720-750 m in the Herangi Ra. (S of Kawhia Harbor), 880-890 m on Mt. Te Aroha, 835 m on Table Mtn., 650-680 m on the Hauturu Highpoint Track and 800 m on Mt. Moehau. The species occurs in shaded, protected, humid niches within forests. It occurs over peaty soil in well-shaded hollows or pockets, a characteristic niche, and in such situations it may cover large areas. Also, in the Herangi Ra. (S of Te Whaka- patiki), on soil of a small vertical bank in a very narrow and shallow water channel in a small valley system, with vegetation consisting of Podocarpus hallii, Dracophyllum traversii and Weinmannia to 3-5 m tall. In the Paparoa Ra. (upper slopes of N side of Tiropahi River) over soil under a granitic ledge at 130-170 m in dense scrub dominated by Nothofagus menziesii and N. solandri with scattered Dacrydium cupressinum, Freycinetia baueriana, Dicksonia squarrosa, Coprosma spp. and Brachy glottis. On Stewart Island (Pern Gully Track) over humus of the floor in a forest with a canopy of Fuchsia excorticata and Griselinia littoralis, and an understory of Blechnum discolor. Species associated with Z. setulosa are Bazzania adnexa, B. nitida. Cryptopodium bartramioides, Distichophyllum kraussei, D. pulchellum, Hy- menophyton leptopodum, Kurzia hippuroides, Lepidozia spinosissima, Leucobryum can- didum, Psiloclada clandestina, Rhizogonium distichum, Thuidium furfurosum and Wijkia extenuata. Comments&#39;. A distinctive species, recognizable at a glance because of the leaves, which are closely contiguous and formed of two large chlorophyllous cells, each free distally, so that the leaf appears bilobed, bearing a hooked, slender, 2-celled ‘‘appendix.” The precise arrangement of the leaves lends a distinctive, crisp regularity to the plants vs. the somewhat irregularly scalloped margins of shoots of Zoopsis argentea. The surface of the incurved appendices is rough¬ ened, while the surface of the chlorophyllous cells is smooth. The leaves are closely juxtaposed on each side of the stem and only a fraction of one cortical cell intervenes between leaf bases. Zoopsidella R.M.Schust. Zoopsidella R.M.Schust., Nova Hedwigia 10: 24. 1965. Plants markedly distichous-leaved and strongly complanate, prostrate or creeping, light to pale green, nitid, rather translucent, small, the tips occasionally becoming flagelliform, the plants small to medium, to 1.6 mm wide. Branching sparing and irregular, the branches normally ventral-intercalary, often stoloniform and microphyllous; Frullania-typt branches sometimes also present (in ours). Stem with 6 or 10-13 rows of large, hyaline cortical cells forming a conspicuous hyaloderm, the dorsal rows of large cells in surface view irregularly polygonal and not or little elongated, the cells of the ventral merophyte smaller than the dorsal and lateral cells; medullary cells markedly smaller, firm- walled. Rhizoids at the bases of underleaves or (extraterritorial species) sometimes also from ventral side of apical and sub- apical leaf cells, often with bulbous apices. Leaves typically formed of many cells, laterally spreading, nearly or quite flat, almost longitudinally inserted, leaving a broad strip of 2-3(5) cell rows leaf-free; leaves symmetrically 2-lobed to 0. 2-0.4 (in ours), or strongly asymmetric and with a reduced or vestigial dorsal lobe; lobes ending in crescentic slime papillae attached along their longer walls, or without these cells (our species). Cells very large, leptodermous; surface smooth. Oil-bodies (Schuster, 2000a) glistening and almost homogeneous or, at most, obscurely botryoidal. Underleaves small or vestigial. Asexual reproduction absent. Dioecious, autoecious (in ours), or paroecious. Androecia sometimes terminal but becoming intercalary on leading leafy axes, or sometimes on small, ventral-intercalary branches; bracts pouched at base, bilobed; antheridia 1 per bract, the stalk uniseriate. Gynoecia normally on feeble, short, ventral-intercalary branches; bracts and bracteoles of innermost series bifid to 0.5-0.85, the lobes entire or subentire. Perianth fusiform-trigonous, the basal cells much larger than median and apical cells, the mouth narrow, deeply 6-fid; perianth 1-stratose. Seta with 8 rows of large outer cells surrounding 4 rows of internal cells. Capsule wall 2- stratose; outer layer of cells rectangular, usually both faces of alternating walls with sinuous- nodular thickenings; inner layer of cells with well-defined semi annular bands. Spores delicately areolate. Type: Zoopsidella cynosuranda (Spruce ex Steph.) R.M.Schust. (= Zoopsis cynosurandra Spruce ex Steph.) A genus of 8 species, of which only one occurs in New Zealand. The other species are Neotropical and range north to the Antilles; for these see Schuster (1999b). The genus has three subgenera: subg. Hyalolepidoziopsis R.M.Schust., with only our species, subg. Hypo- zoopsis R.M.Schust. and subg. Zoopsidella. All species of Zoopsidella have large, flat, lamelliform leaves, unlike a number of Zoopsis species, in which leaves are usually highly reduced to a very few, specialized cells. Also, Zoopsidella has a seta of the 8+4 type vs. a seta with 8 epidermal cell rows enclosing numerous, much smaller internal cell rows in Zoopsis. References: Schuster (1999b, 2000a). The species treatment is adapted, with considerable modification, from Schuster (1999b).</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
+    <pre class="description-text">Plants ribbon-like, pale green, markedly nitid when dry, to 600 juim wide. Branching common, the branches usually mostly of Frullania type; ventral-intercalary branches also com¬ mon, often geotropic and microphyllous. Axes planoconvex, consisting of 2 rows of dorsal cortical cells, the cells very large, isodiametric or wider than high, their inner margins forming a zigzag median line; ventral cortical cells in 4 rows: 2 lateral rows (= lower cells of lateral merophytes) on each side subequal to the dorsal cortical cells, and 2 rows of cells constituting the ventral merophytes rather broad, the cells smaller than those of the 2 lateral rows, subquadrate; medulla of 19-22 rows of small cells forming a central strand. Leaves distinctly pro¬ jecting laterally, each typically separated on the same side of axis by less than half of a marginal cortical cell; leaf consisting of two 1 -celled, ovoid-conoidal basal cells connate to each other for 0.5-0.65 their length, the apices broadly rounded, each bearing a 2-celled setose appendage; appendages conspicuous, attached by the narrow basal-lateral side of the basal cell, arched to geniculate, the distal cell tapered to the summit, curved over the basal leaf cell, the surface of the appendage cells strongly papillose. Oil-bodies 5-10 per thallus cell, occupying a very small portion of volume of lumen, hyaline, moderately botryoidal, elliptic to linear to fusiform to crescentic, 5. 8-7.7 X 17.8-20.6 juim, a few smaller, more broadly elliptic and 5.3- 6.2 X 11.5-14.4 |ULm, a few linear and 4.3 X 17.3 juim. (In a short time the spherules enlarge and the oil-body perimeter becomes irregularly bulged.) Claw-like cells of the leaf lobes thick- walled, with numerous chloroplasts, but with fewer and considerably smaller oil-bodies, only 2.9 X 3. 8-5. 3 |ULm. Underleaves separated by 2 tiers of 2 cells each, rudimentary, consisting of 2-4 subspherical basal cells (‘‘disc”) and two 1 -celled “lobes,” the lobe cells each terminating in a hyaline papilla. Asexual reproduction lacking. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island (20-30 m). South Island (130-630 m). North Island ([240]720-890 m); Australia: Tasmania, Victoria, New South Wales (Meagher and Euhrer, 2003). Known in New Zealand from Eiordland, Westland, Western Nelson, Auckland and Northland (Waipoua) EPs. Sporadic and scattered sites over a broad range, occurring on Stewart Island, on the South Island in Westland north to the Marino Mtns. in Nelson, and in the North Island in scattered, mostly middle-elevation stations, e.g., at 720-750 m in the Herangi Ra. (S of Kawhia Harbor), 880-890 m on Mt. Te Aroha, 835 m on Table Mtn., 650-680 m on the Hauturu Highpoint Track and 800 m on Mt. Moehau. The species occurs in shaded, protected, humid niches within forests. It occurs over peaty soil in well-shaded hollows or pockets, a characteristic niche, and in such situations it may cover large areas. Also, in the Herangi Ra. (S of Te Whaka- patiki), on soil of a small vertical bank in a very narrow and shallow water channel in a small valley system, with vegetation consisting of Podocarpus hallii, Dracophyllum traversii and Weinmannia to 3-5 m tall. In the Paparoa Ra. (upper slopes of N side of Tiropahi River) over soil under a granitic ledge at 130-170 m in dense scrub dominated by Nothofagus menziesii and N. solandri with scattered Dacrydium cupressinum, Freycinetia baueriana, Dicksonia squarrosa, Coprosma spp. and Brachy glottis. On Stewart Island (Pern Gully Track) over humus of the floor in a forest with a canopy of Fuchsia excorticata and Griselinia littoralis, and an understory of Blechnum discolor. Species associated with Z. setulosa are Bazzania adnexa, B. nitida. Cryptopodium bartramioides, Distichophyllum kraussei, D. pulchellum, Hy- menophyton leptopodum, Kurzia hippuroides, Lepidozia spinosissima, Leucobryum can- didum, Psiloclada clandestina, Rhizogonium distichum, Thuidium furfurosum and Wijkia extenuata. Comments&#39;. A distinctive species, recognizable at a glance because of the leaves, which are closely contiguous and formed of two large chlorophyllous cells, each free distally, so that the leaf appears bilobed, bearing a hooked, slender, 2-celled ‘‘appendix.” The precise arrangement of the leaves lends a distinctive, crisp regularity to the plants vs. the somewhat irregularly scalloped margins of shoots of Zoopsis argentea. The surface of the incurved appendices is rough¬ ened, while the surface of the chlorophyllous cells is smooth. The leaves are closely juxtaposed on each side of the stem and only a fraction of one cortical cell intervenes between leaf bases. Zoopsidella R.M.Schust. Zoopsidella R.M.Schust., Nova Hedwigia 10: 24. 1965. Plants markedly distichous-leaved and strongly complanate, prostrate or creeping, light to pale green, nitid, rather translucent, small, the tips occasionally becoming flagelliform, the plants small to medium, to 1.6 mm wide. Branching sparing and irregular, the branches normally ventral-intercalary, often stoloniform and microphyllous; Frullania-typt branches sometimes also present (in ours). Stem with 6 or 10-13 rows of large, hyaline cortical cells forming a conspicuous hyaloderm, the dorsal rows of large cells in surface view irregularly polygonal and not or little elongated, the cells of the ventral merophyte smaller than the dorsal and lateral cells; medullary cells markedly smaller, firm- walled. Rhizoids at the bases of underleaves or (extraterritorial species) sometimes also from ventral side of apical and sub- apical leaf cells, often with bulbous apices. Leaves typically formed of many cells, laterally spreading, nearly or quite flat, almost longitudinally inserted, leaving a broad strip of 2-3(5) cell rows leaf-free; leaves symmetrically 2-lobed to 0. 2-0.4 (in ours), or strongly asymmetric and with a reduced or vestigial dorsal lobe; lobes ending in crescentic slime papillae attached along their longer walls, or without these cells (our species). Cells very large, leptodermous; surface smooth. Oil-bodies (Schuster, 2000a) glistening and almost homogeneous or, at most, obscurely botryoidal. Underleaves small or vestigial. Asexual reproduction absent. Dioecious, autoecious (in ours), or paroecious. Androecia sometimes terminal but becoming intercalary on leading leafy axes, or sometimes on small, ventral-intercalary branches; bracts pouched at base, bilobed; antheridia 1 per bract, the stalk uniseriate. Gynoecia normally on feeble, short, ventral-intercalary branches; bracts and bracteoles of innermost series bifid to 0.5-0.85, the lobes entire or subentire. Perianth fusiform-trigonous, the basal cells much larger than median and apical cells, the mouth narrow, deeply 6-fid; perianth 1-stratose. Seta with 8 rows of large outer cells surrounding 4 rows of internal cells. Capsule wall 2- stratose; outer layer of cells rectangular, usually both faces of alternating walls with sinuous- nodular thickenings; inner layer of cells with well-defined semi annular bands. Spores delicately areolate. Type: Zoopsidella cynosuranda (Spruce ex Steph.) R.M.Schust. (= Zoopsis cynosurandra Spruce ex Steph.) A genus of 8 species, of which only one occurs in New Zealand. The other species are Neotropical and range north to the Antilles; for these see Schuster (1999b). The genus has three subgenera: subg. Hyalolepidoziopsis R.M.Schust., with only our species, subg. Hypo- zoopsis R.M.Schust. and subg. Zoopsidella. All species of Zoopsidella have large, flat, lamelliform leaves, unlike a number of Zoopsis species, in which leaves are usually highly reduced to a very few, specialized cells. Also, Zoopsidella has a seta of the 8+4 type vs. a seta with 8 epidermal cell rows enclosing numerous, much smaller internal cell rows in Zoopsis. References: Schuster (1999b, 2000a). The species treatment is adapted, with considerable modification, from Schuster (1999b).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">100. Isolembidium aizomal,um is a small, dark green species found on the
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">100. Isolembidium aizomal,um is a small, dark green species found on the
      forest floor. It is uncommon and occurs sporadically in rainforest
      at high altitudes. The leaves and underleaves are entire and are lhe
      same shape and size.
@@ -392,16 +375,19 @@ although the leaves may be toothed, they are never deeply divided.
 108. Plagiochilu retrospectans is often found on wet rocks in creeks (usually
      above water level) but also occurs in drier situations on soil and
      rocks, or occasionally as a low epiphyte. The leaves typically have
-     numerous ven- small teeth around the margin.</p>
+     numerous ven- small teeth around the margin.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>ZOOPSIS_2006</strong> (1 entry)</summary>
+    <summary>
+      <strong>ZOOPSIS_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Section Setulosae. Leaves with claw-like two-celled papillae; cells papillose. Leaves separated by less than half the length of one dorsal cortical cell. [Source: Engel &amp; Smith Merrill 2006, Two new Zoopsis species and their relationships to other zoopsids]</p>
+    <pre class="description-text">Section Setulosae. Leaves with claw-like two-celled papillae; cells papillose. Leaves separated by less than half the length of one dorsal cortical cell. [Source: Engel &amp; Smith Merrill 2006, Two new Zoopsis species and their relationships to other zoopsids]</pre>
     
     
   </details>
@@ -410,14 +396,41 @@ although the leaves may be toothed, they are never deeply divided.
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Clavulina setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Linnaemya setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Misophrice setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pultenaea setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis argentea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis leitgebiana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis liukiuensis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis setigera K.I.Goebel</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cephalozia setulosa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -432,22 +445,32 @@ although the leaves may be toothed, they are never deeply divided.
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [88.4, 78.5, 104.7, 113.8, 173.2, 168.2, 197.4, 209.0, 189.9, 161.6, 106.1, 122.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.8, 19.9, 17.7, 14.6, 11.8, 9.9, 9.3, 10.1, 11.9, 13.8, 16.6, 17.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.5, 8.2, 6.3, 5.0, 3.6, 2.8, 3.1, 4.3, 5.2, 7.0, 8.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

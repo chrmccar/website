@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,55 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Chiloscyphus rupicola</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Chiloscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (16)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Chiloscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Coronidium rupicola</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Drosera rupicola</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Fissidens rupicola</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hibbertia rupicola</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Philoscaphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Schoenus rupicola</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tetratheca rupicola</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Wahlenbergia rupicola</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus fissistipulus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Chiloscyphus insularis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Chiloscyphus variabilis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea fissistipula</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea insularis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea rupicola</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea variabilis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Chiloscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -88,35 +48,37 @@
     <p class="big-num">103</p>
     <footer>68 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">10.7&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1616&thinsp;mm</p>
-    <footer>
-      CV 23.8
-    </footer>
+    <footer>annual · CV&thinsp;23.8</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">8</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">16</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -124,102 +86,107 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>8.0–12.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>8.0–12.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>3.0–5.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>3.0–5.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>concave-sided</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CHILOSCYPHUS_MONOGRAPH_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">hand is plastic yet, on the other hand, is of considerable                     from the median point of the apex to the leaf base. In bifid
+    <pre class="description-text">hand is plastic yet, on the other hand, is of considerable                     from the median point of the apex to the leaf base. In bifid
            taxonomic value, offering a significant number of characters.                  leaves, that line (B in Fig. 1: 1, 2) extends from the leaf base,
               Orientation is strongly succubous, except in C. austrigenus                 through the maximum depth of the sinus, to the bisection with
            and C. edentatus, where it is subtransverse to subsuccubous                    line A (which extends between the lobe apices, Fig. 1: 1, 2).
@@ -424,7 +391,7 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
           margins are often sparingly denticulate. Median leaf cell                       or sparingly denticulate on the upper ventral and dorsal
           trigones vary from small and concave sided to medium and                        margins; the leaf apex is often retuse. Such leaves are similar to
           straight sided to large and feebly bulging. Trigones of                         those described by Stephani as ‘‘Folia caulina superiora’’;
-          subapical leaf cells are more strongly developed and are large                  Stephani illustrates such a leaf in his icones (Lophocolea</p>
+          subapical leaf cells are more strongly developed and are large                  Stephani illustrates such a leaf in his icones (Lophocolea</pre>
     
     
   </details>
@@ -433,14 +400,53 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Chiloscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Coronidium rupicola</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Drosera rupicola</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Fissidens rupicola</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hibbertia rupicola</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Philoscaphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schoenus rupicola</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tetratheca rupicola</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Wahlenbergia rupicola</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus fissistipulus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Chiloscyphus insularis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Chiloscyphus variabilis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea fissistipula</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea insularis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea rupicola</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea variabilis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -455,22 +461,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [83.5, 72.7, 96.9, 104.3, 159.6, 157.6, 185.3, 200.3, 181.8, 149.7, 103.1, 113.2], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.1, 20.2, 17.8, 14.5, 11.5, 9.6, 9.0, 9.8, 11.7, 13.8, 16.7, 18.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.0, 9.2, 7.7, 5.7, 4.2, 2.8, 2.2, 2.4, 3.6, 4.6, 6.5, 7.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

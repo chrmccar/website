@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,53 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Acromastigum colensoanum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Acromastigum</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (15)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acromastigum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum anisostomum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum cavifolium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum cunninghamii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum divaricatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum echinatiforme</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum mooreanum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum stenophyllum R.M.Schust.</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum verticale</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania colensoana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum amoenum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum colensoanum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum erosifolium</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum minutulum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum smaragdinum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Acromastigum</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -86,21 +48,25 @@
     <p class="big-num">251</p>
     <footer>69 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">22</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">15</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -108,214 +74,205 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>15.0–30.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>15.0–30.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>340.0–370.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>340.0–370.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>160.0–220.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>160.0–220.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HEPATIC_TYPES_AUSTRALIA_1992</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–3.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>humus</td>
-          <td>categorical</td>
+          <td><strong>humus</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.6</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.6</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>small</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>ACROMASTIGUM_AUSTRALIA_2014</strong> (1 entry)</summary>
+    <summary>
+      <strong>ACROMASTIGUM_AUSTRALIA_2014</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Fig, 16. Distribution Acromastigum prismaticale in Tasmania, Australia.
+    <pre class="description-text">Fig, 16. Distribution Acromastigum prismaticale in Tasmania, Australia.
 284            Telopea 17: 195–237, 2014                                                                 Brown and Renner
 
 
@@ -471,16 +428,19 @@ Range, start of track to summit off mine road, 37°2&#39;24&#39;&#39; S 175°11&
 Coromandel Range, Kaitarakihi Track, lower third, 37° 9&#39;S 175° 40&#39;E, 540 m, 31 Jan 1987, J.E. Braggins 87/016 (AK259070);
 Taranaki: Manaia Road, in mixed broadleaf forest near third Island in road, 39° 21&#39;S 174° 8&#39; E, 580 m, 26 Aug 1998,
 J.E. Braggins 98/271B (AK254258); Volcanic Plateau: Mt Ruapehu, off Ohakune Mountain Road, c. 100 m, downhill of
-7 km marker, 39°22’S 175°28’E, 890 m, 27 Nov 1992, J.E. Braggins 92/090 0(AK325220); Southern North Island: Manawatu</p>
+7 km marker, 39°22’S 175°28’E, 890 m, 27 Nov 1992, J.E. Braggins 92/090 0(AK325220); Southern North Island: Manawatu</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Mastigobryum corbieri Stephani (Stephani &amp; Watts 1914: 122)
+    <pre class="description-text">Mastigobryum corbieri Stephani (Stephani &amp; Watts 1914: 122)
 PROTO: &#39;Australia, (Kingwell, Wyong): Watts, 971 b :
 LABEL: NEW SOUTH WALES: gully south of house, &#39;Kingwell&#39;, Wyong, w.w. Watts 971b,
 Nov 1907 [2 similarly labelled specimens].
@@ -539,16 +499,19 @@ Metzgeria howeana Stephani (Stephani &amp; Watts 1914: 126)
 PROTO: &#39;Australia, Mount Wilson and Wyong: Watts legit 1065.&#39;
 LABEL: NEW SoUTH WALES: 1. &#39;Yarrawah&#39;, Mt Wilson, W. W. W[atts] 1065, 11 Jan 1911; 2.
 gully over mountain SW of &#39;Kingwell&#39;, Wyong, w.w. Watts 948, 24 Aug 1910.
-TYPES: G, NSW.</p>
+TYPES: G, NSW.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Anthoceros carolinianus Michx.                   Anastrophyllum novae-zelandiae R.M.Schust.
+    <pre class="description-text">Anthoceros carolinianus Michx.                   Anastrophyllum novae-zelandiae R.M.Schust.
        Phaeoceros laevis subsp. carolinianus (Michx.)   Anastrophyllum schismoides (Mont.) Steph.
        Prosk.                                           Andrewsianthus confusus (R.M.Schust.) R.M.Schust.
 Phaeoceros coriaceus (Steph.) E.O.Campb. comb. nov.     Andrewsianthus perigonialis (Hook.f. &amp; Taylor)
@@ -607,25 +570,31 @@ Balantiopsis lingulata R.M.Schust.                    Cephaloziella densifolia R
 Balantiopsis montana (Colenso) J.J.Engel &amp;            Cephaloziella densifolia var. dubia R.M.Schust.
         G.L.S.Merrill                                 Cephaloziella exigua R.M.Sch ust.
         Chiloscyphus montanus Colenso                 Cephaloziella exiliflora (Taylor) R.M.Schust.
-Balantiopsis rosea Berggr.                            Cephaloziella grandiretis (R.M.Schust.) R.M.Schust.</p>
+Balantiopsis rosea Berggr.                            Cephaloziella grandiretis (R.M.Schust.) R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Although underleaves are present they are invisible under a hand lens, as they consist
+    <pre class="description-text">Although underleaves are present they are invisible under a hand lens, as they consist
 of a pair of miniscule, sausage-shaped cells.
     Z. setulosa (TVN) is very similar, but the leaf papillae consist of two long cells
 curled over the &#39;leaves&#39;, like the claws of a crab. Z. leitgebiana (STVN) has larger,
@@ -737,16 +706,19 @@ spreading apical lobes.
                                                                          0
 B. hochstetteri (TVN) is of a
 similar size to B. monilinervis
-                                                       �o&#39;:</p>
+                                                       �o&#39;:</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_ACROMASTIGUM</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_ACROMASTIGUM</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Downloaded from search.informit.org/doi/10.3316/informit.668315447922014. University of Tasmania, on 07/09/2026 11:46 AM AEST; UTC+10:00. © The Victorian
+    <pre class="description-text">Downloaded from search.informit.org/doi/10.3316/informit.668315447922014. University of Tasmania, on 07/09/2026 11:46 AM AEST; UTC+10:00. © The Victorian
                                                                                                                                                                                                                                                                               Research Reports
 
                                                                                                                                                             Studies on Victorian bryophytes 11. The genus Acromastigum A.Evans
@@ -914,7 +886,7 @@ usually slightly longer and not much narrower         D.A. Meagher 4599 (MELU); 
                                                                                                                                                             NEW ZEALAND — South Island: Cascade
                                                                                                                                                             Cove, Dusky Sound, Scott s.n., Feb 1969, MELU       References
                                                                                                                                                                                                                 Engel JJ and Glenny D (2008) A Flora of the Liverworts and
-                                                                                                                                                            s.n. (OTA-24042).                                     Hornworts of New Zealand. Volume 1. (Missouri Botanical</p>
+                                                                                                                                                            s.n. (OTA-24042).                                     Hornworts of New Zealand. Volume 1. (Missouri Botanical</pre>
     
     
   </details>
@@ -923,14 +895,51 @@ usually slightly longer and not much narrower         D.A. Meagher 4599 (MELU); 
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acromastigum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum anisostomum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum cavifolium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum cunninghamii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum divaricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum echinatiforme</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum mooreanum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum stenophyllum R.M.Schust.</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum verticale</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania colensoana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum amoenum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum colensoanum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum erosifolium</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum minutulum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum smaragdinum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -945,22 +954,32 @@ usually slightly longer and not much narrower         D.A. Meagher 4599 (MELU); 
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [74.6, 65.7, 86.3, 93.5, 140.0, 139.5, 161.3, 173.9, 157.2, 132.5, 91.8, 100.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.5, 20.7, 18.6, 15.5, 12.8, 10.9, 10.3, 11.2, 12.9, 14.7, 17.2, 18.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.2, 10.4, 9.2, 7.2, 5.6, 4.2, 3.6, 3.9, 5.1, 6.0, 7.9, 8.8], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

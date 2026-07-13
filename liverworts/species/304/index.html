@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Lejeunea flava</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lejeuneaceae</span>
-    <span class="badge secondary">Lejeunea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Lejeunea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea aloba</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea angusta</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea catanduana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea flava subsp. flava</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea flava subsp. orientalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea ramosissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea sinclairii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea wallichiana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia flava</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Lejeunea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">302</p>
     <footer>1 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">2</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,71 +74,85 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>GBIF</strong> (3 entrys)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(3)</span>
+    </summary>
     
     
-    <p class="description-text">In Naturgeschichte der Europäischen Lebermoose 3: 277 (1838). — Jungermannia flava Sw., Nova Genera et Species Plantarum seu Prodromus 144 (1788). SPECIMEN. — Région des Plateaux. Danyi, corticole en forêt ripicole, 700, 23. III. 1982, Tixier 13166 (PC) det. Tixier, (Tixier 1983); Monastère de Dzogreagan, corticole sur arbres d’avenu, 700 m, 23. III. 1982, Tixier 13173 (PC) v. s., det. Tixier (Tixier 1983); Kouma-Apéyémé, 7 ° 71 ’ 71.7 ” N, 2 ° 30 ’ 02 ” E, épiphyte, forêt semi-décidue, 696 m, 09. VI. 2013, Abalo-Loko 24 (TOGO), det. S. R. Gradstein and S. Abalo-Loko.</p>
+    <pre class="description-text">In Naturgeschichte der Europäischen Lebermoose 3: 277 (1838). — Jungermannia flava Sw., Nova Genera et Species Plantarum seu Prodromus 144 (1788). SPECIMEN. — Région des Plateaux. Danyi, corticole en forêt ripicole, 700, 23. III. 1982, Tixier 13166 (PC) det. Tixier, (Tixier 1983); Monastère de Dzogreagan, corticole sur arbres d’avenu, 700 m, 23. III. 1982, Tixier 13173 (PC) v. s., det. Tixier (Tixier 1983); Kouma-Apéyémé, 7 ° 71 ’ 71.7 ” N, 2 ° 30 ’ 02 ” E, épiphyte, forêt semi-décidue, 696 m, 09. VI. 2013, Abalo-Loko 24 (TOGO), det. S. R. Gradstein and S. Abalo-Loko.</pre>
     
     
     
-    <p><strong>distribución global:</strong> Pantropical, holártica</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribución global:</strong> Pantropical, holártica</p>
     
     
     
-    <p><strong>región biogeográfica:</strong> Amazonia, Andes, Orinoquia, Pacífico</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>región biogeográfica:</strong> Amazonia, Andes, Orinoquia, Pacífico</p>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Heteroscyphus triacanthus (Hook.f. &amp; Taylor)
+    <pre class="description-text">Heteroscyphus triacanthus (Hook.f. &amp; Taylor)
 134   Tuhinga, Number 10 (1998)
 
 
@@ -222,16 +212,19 @@ Kurzia hippuroides (Hook.f. &amp; Taylor) Grolle var.      Lepidozia filamentosa
         Linden 6.                                               R.M.Schust.
 Lepidozia kirkii Steph.                                  Marsupella sprucei (Limpr.) Bernet
 Lepidozia laevifolia (Hook.f. &amp; Taylor) Taylor                  Marsupella ustulata (Huebener) Spruce 1901
-Lepidozia microphylla (Hook.) Lindenb.                          [nom. illeg., non (Hueberner) Spruce ex</p>
+Lepidozia microphylla (Hook.) Lindenb.                          [nom. illeg., non (Hueberner) Spruce ex</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Norfolk I.; Lord Howe I.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Norfolk I.; Lord Howe I.</p>
     
     
   </details>
@@ -240,14 +233,41 @@ Lepidozia microphylla (Hook.) Lindenb.                          [nom. illeg., no
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Lejeunea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea aloba</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea angusta</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea catanduana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea flava subsp. flava</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea flava subsp. orientalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea ramosissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea sinclairii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea wallichiana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia flava</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -262,22 +282,32 @@ Lepidozia microphylla (Hook.) Lindenb.                          [nom. illeg., no
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [73.8, 56.3, 76.8, 75.1, 87.6, 99.4, 90.9, 93.2, 85.7, 72.9, 73.8, 73.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.0, 19.9, 19.1, 16.9, 14.7, 12.8, 12.4, 13.1, 14.8, 15.7, 16.9, 18.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [11.9, 11.7, 10.9, 10.5, 7.7, 7.1, 7.1, 6.5, 7.8, 8.2, 9.4, 10.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

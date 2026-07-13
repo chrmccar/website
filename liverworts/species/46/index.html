@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Schistochila lehmanniana</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Schistochilaceae</span>
-    <span class="badge secondary">Schistochila</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Allocasuarina lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Andersonia lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Banksia lemanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Billardiera lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eremophila lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hakea lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Olearia lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pimelea lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Schistochila</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia lehmanniana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Schistochila</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,35 +48,37 @@
     <p class="big-num">472</p>
     <footer>339 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">10.0&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1564&thinsp;mm</p>
-    <footer>
-      CV 22.7
-    </footer>
+    <footer>annual · CV&thinsp;22.7</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">13</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -112,142 +86,142 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
-          <td class="muted small">Wikipedia English; fetched via title &#39;Schistochila lehmannia…</td>
-          <td>⚠</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Wikipedia English; fetched via title &#39;Schistochila lehm…</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">L u/othrix (Schwaegr.) Lindenb.                                            x            x      x         x      x
+    <pre class="description-text">L u/othrix (Schwaegr.) Lindenb.                                            x            x      x         x      x
 Leptophyllopsis laxa (Mitt.) Schust.                                       x                                    x
 Leptoscyphus sp.                                                           x                                    x
 
@@ -307,16 +281,19 @@ Total number of taxa                                            56        19    
 
 
                     DISCUSSION                               species is distinctly westem in its Tasmanian distribution
-                                                             including Baeomyees sJat sp.nov., Cladia moniliformis,</p>
+                                                             including Baeomyees sJat sp.nov., Cladia moniliformis,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Aneura papulosa Steph.                                 Chiloscyphus fiordlandiae (E.A.Hodgs.)
+    <pre class="description-text">Aneura papulosa Steph.                                 Chiloscyphus fiordlandiae (E.A.Hodgs.)
 Riccardia pennata E.A.Brown                                    J.J.Engel &amp; R.M.Schust.
 Riccardia perspicua E.A.Brown                                  Clasmatocolea fio rdlandiae (E.A.Hodgs.)
 Riccardia pseudodendroceros R.M.Schust.                        Grolle
@@ -376,25 +353,31 @@ Telaranea remotifolia (E.A.Hodgs.) E.A.Hodgs. (nom.       Verdoornia succulenta 
         Taiwan.]                                          Xenothallus vulcanicolus R.M.Schust.
 Telaranea roseana (Steph.) E.A.Hodgs.
 Telaranea tetradactyla (Hook.f. &amp; Taylor) E.A.Hodgs.      Zoopsidella caledonica ( Steph.) R.M.Schust.
-Telaranea tetrapila (Taylor) ].].Engel &amp; G.L.S.Merrill    Zoopsis argentea (Hook.f. &amp; Taylor) Hook.f.</p>
+Telaranea tetrapila (Taylor) ].].Engel &amp; G.L.S.Merrill    Zoopsis argentea (Hook.f. &amp; Taylor) Hook.f.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Vic.; Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Similar species: Blepharidophyllum spp., other Schistochilaceae spp.
+    <pre class="description-text">Similar species: Blepharidophyllum spp., other Schistochilaceae spp.
 
 
 
@@ -453,16 +436,19 @@ through other bryophytes, but it is probably commonly overlooked because of its
 size.
 
 Similar species: Lepidozia glaucophylla, Leptophyllopsis laxa
-Liverworts with underleaves and incubous leaves - Group D</p>
+Liverworts with underleaves and incubous leaves - Group D</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Key to groups
+    <pre class="description-text">Key to groups
                                                                                                                                                                                1 Leaves complicate-bilobed; folded, keeled, or with an inflated ventral sac .. Group A
                                                                                                                                                                                   Leaves not complicate-bilobed .................................................................................... 2
                                                                                                                                                                                2 Leaves densely hairy or ciliate, the leaf lamina hard to distinguish ............... Group B
@@ -578,16 +564,19 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
                                                                                                                                                                                * Most specimens keying to here will be Lepidozia ultothrix, but another species
                                                                                                                                                                                   resesmbling L. hirta of New Zealand is present in Victoria. L. ulothrix often has the
-                                                                                                                                                                                  lobes further divided; the other species does not.</p>
+                                                                                                                                                                                  lobes further divided; the other species does not.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Schistochila lehmanniana is a species of liverwort in the family Schistochilaceae, commonly known as &#34;Common Pocketwort&#34;, and are known for their &#34;handsome&#34; appearance. Schistochila lehmanniana is the most common Schistochila liverwort, and can be found in various substrates in wet forest and rainforest across Australia and New Zealand.</p>
+    <pre class="description-text">Schistochila lehmanniana is a species of liverwort in the family Schistochilaceae, commonly known as &#34;Common Pocketwort&#34;, and are known for their &#34;handsome&#34; appearance. Schistochila lehmanniana is the most common Schistochila liverwort, and can be found in various substrates in wet forest and rainforest across Australia and New Zealand.</pre>
     
     
   </details>
@@ -596,14 +585,41 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Allocasuarina lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Andersonia lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Banksia lemanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Billardiera lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eremophila lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hakea lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Olearia lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pimelea lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia lehmanniana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -618,22 +634,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [81.1, 74.3, 93.0, 101.6, 153.4, 148.9, 175.0, 195.1, 180.7, 158.5, 100.3, 115.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.3, 20.4, 18.1, 14.8, 12.0, 10.0, 9.5, 10.4, 12.3, 14.2, 16.9, 18.3], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.5, 9.5, 8.4, 6.4, 4.9, 3.3, 2.8, 2.9, 4.4, 5.3, 7.1, 8.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

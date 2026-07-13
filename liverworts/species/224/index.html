@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,55 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Chiloscyphus subporosus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Chiloscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (16)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Chiloscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus edentatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus glaucescens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus leucophyllus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus longifolius</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus multipennus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus subporosus var. inflexifolius</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus subporosus var. subporosus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Philoscaphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus inflexifolius</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea beckettiana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea inflexifolia</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea kaalaasii</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea petriana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea scorpionifolia</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea subporosa</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Chiloscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -88,21 +48,25 @@
     <p class="big-num">263</p>
     <footer>103 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">14</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">16</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -110,159 +74,161 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>5-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>5-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>wood</td>
-          <td>categorical</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>medium</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>medium</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    <summary>
+      <strong>BANKS_PENINSULA_2013</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Recorded from Banks Peninsula: var. inflexifolius and var. subporosus both present. [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Recorded from Banks Peninsula: var. inflexifolius and var. subporosus both present. [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
     
     
   </details>
   
   <details>
-    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CHILOSCYPHUS_MONOGRAPH_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">McMahon s.n. as L. inflexifolia (CHR). NORTH ISLAND. WEL-                       31 mm long or 1.1–2.13 longer than wide, the lobe margins
+    <pre class="description-text">McMahon s.n. as L. inflexifolia (CHR). NORTH ISLAND. WEL-                       31 mm long or 1.1–2.13 longer than wide, the lobe margins
           LINGTON: Gollans Valley, Moore s.n. as L. mitteniana (CHR);
           Wellington, Hawkins Hill, Moss s.n. (AK); Wairongomai River,
                                                                                           entire, the sinus rounded, often lunate, rarely and sporadically
@@ -651,16 +617,19 @@ ca. 5 m, Child H 4459 (F); Cook Strait, Stephens Island, Macmillan             R
            per. + = (F), 79/96 (HO); trail from Fern Tree to Silver Falls, ca.            speckled appearance because of the distinctly dimorphic cells.
            500 m, Norris 29191 (F); Wellington Falls Track, ca. 760 m,                       The appearance of the robust extreme in ventral aspect is
            Ratkowsky s.n. (F); Mt. Wellington, Ratkowsky s.n. as L. lenta (F);            reminiscent of the sparsely armed variant of C. villosus,
-           ibid., Rodway s.n. as L. lenta (HO); ibid., NW Bay River, bottom of</p>
+           ibid., Rodway s.n. as L. lenta (HO); ibid., NW Bay River, bottom of</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Figure 21.3 Chiloscyphus howeanus. A Female shoot (dorsal view) with incipient gynoecium;
+    <pre class="description-text">Figure 21.3 Chiloscyphus howeanus. A Female shoot (dorsal view) with incipient gynoecium;
 arrow indicates the leaf-free strip. B: Androecium (dorsal view). C perianth. D Bracteole (left)
 and bracts. E Leaf lobe. E Leaf cells in mid-lamina. G Underleaves. (Scale bars: A,B = 2 mm;
 C,D,G = 0.5 mm; E,F = 100 µm.)
@@ -720,16 +689,19 @@ evolutionary relationships between these species.
 material has been identified, and I could not find any Watts collection that could be allied to the
 type material. It must be assumed, then, that the only extant type material is the holotype.
 
-Chiloscyphus semiteres (Lehm.) Lehm. &amp; Lindenb. var. semiteres</p>
+Chiloscyphus semiteres (Lehm.) Lehm. &amp; Lindenb. var. semiteres</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Lophocolea echinella Lindenb. &amp; Gottsche               (Steph.) ].].Engel
+    <pre class="description-text">Lophocolea echinella Lindenb. &amp; Gottsche               (Steph.) ].].Engel
 Chiloscyphus erectifolius (Steph.) Steph.                      Lophocolea meridionalis Steph.
 Chiloscyphus fissistipulus (Steph.) ].].Engel &amp;        Chiloscyphus novae-zeelandiae (Lehm. &amp; Lindenb.)
         R.M.Schust.                                           ].].Engel &amp; R.M.Schust. var. novae-zeelandiae
@@ -789,29 +761,35 @@ Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle       Echinolejeunea papi
         Chiloscyphus notophyllus (Hook.f. &amp; Taylor)      Eoisotachis stephanii (Salm.) R.M.Schust.
         Hassel                                           Eotrichocolea polyacantha (Hook.f. &amp; Taylor)
 Clasmatocolea strongylophylla (Hook.f. &amp; Taylor)                 R.M.Schust.
-       Grolle</p>
+       Grolle</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; ACT; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; ACT; Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Chiloscyphus subporosus var. subporosus</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Chiloscyphus subporosus var. subporosus</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Polytrichastrum longisetum ® Polytrichastrum formosum (Australian records only)
+    <pre class="description-text">Polytrichastrum longisetum ® Polytrichastrum formosum (Australian records only)
 Polytrichum pillferum — Not an Australian species
 Pyrrhobryum bifarium ® Hymenodontopsis bifaria
 Pyrrhobryum mnioides subsp. contorta ® Hymenodontopsis mnioides
@@ -870,7 +848,7 @@ Schizymenium bryoides ® Mielichhoferia bryoides                                
       Radula tabularis — Not an Australian species (reports are R. aneurismalis, R. ratkowskiana or
       R. tasmanica)
 282   Radula wattsii ® R. buccinifera
-                                                                     Appendix</p>
+                                                                     Appendix</pre>
     
     
   </details>
@@ -879,14 +857,53 @@ Schizymenium bryoides ® Mielichhoferia bryoides                                
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Chiloscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus edentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus glaucescens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus leucophyllus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus longifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus multipennus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus subporosus var. inflexifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus subporosus var. subporosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Philoscaphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus inflexifolius</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea beckettiana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea inflexifolia</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea kaalaasii</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea petriana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea scorpionifolia</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea subporosa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -901,22 +918,32 @@ Schizymenium bryoides ® Mielichhoferia bryoides                                
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [73.5, 62.4, 77.1, 79.7, 110.7, 120.7, 133.7, 148.2, 133.8, 108.8, 89.3, 88.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.2, 20.1, 17.8, 14.3, 11.4, 9.3, 8.6, 9.5, 11.6, 13.7, 16.5, 18.1], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.3, 8.0, 6.1, 4.3, 2.7, 2.1, 2.3, 3.6, 4.8, 6.6, 7.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

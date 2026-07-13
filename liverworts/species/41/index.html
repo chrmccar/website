@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Riccardia aequicellularis</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Aneuraceae</span>
-    <span class="badge secondary">Riccardia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Riccardia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia gracilis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia longiflora</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia maxima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia muscoides</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia prehensilis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia scabra</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia stellaris</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Aneura aequicellularis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Riccardia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,35 +48,37 @@
     <p class="big-num">331</p>
     <footer>172 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">10.2&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1509&thinsp;mm</p>
-    <footer>
-      CV 25.1
-    </footer>
+    <footer>annual · CV&thinsp;25.1</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">4</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -112,70 +86,79 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>hygric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>hygric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>3.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>3.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">examination or from literature), synonymy where applicable, as well as any other
+    <pre class="description-text">examination or from literature), synonymy where applicable, as well as any other
 recent information such as lectotypification [Comment].
 At some time in the past many of Watts&#39; collections have been broken up, repacket-
 ted and relabelled; the duplicates may all be contained within the one specimen
@@ -235,16 +218,19 @@ LABEL: QUEENSLAND: Vision Falls, Lake Eacham, HI Hewson H.64.68.398, 20 Aug 1964
 TYPES: NSW (179240: holotype), BRI (isotype).
 COMMENT: Name in current use.
 
-Aneura gigantea Stephani (Stephani &amp; Watts 1914: 95)</p>
+Aneura gigantea Stephani (Stephani &amp; Watts 1914: 95)</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">lamesoniella c%rata (Lehm.) Spruce ex Schiftil.                            x                   x                X      x
+    <pre class="description-text">lamesoniella c%rata (Lehm.) Spruce ex Schiftil.                            x                   x                X      x
 
 KUf&#39;zia sp.                                                                                                     x
 
@@ -303,16 +289,19 @@ Zoopsis argentea (J.D.Hook. &amp; Taylor) JD.Hook.
 Z. leitgebiana (earring. &amp; Pears.) Bastow                        x                x                x
 Z. setulosa Leitg                                                x
 
-Total number of taxa                                            56        19      54      19       86      24</p>
+Total number of taxa                                            56        19      54      19       86      24</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Pachyschistochila succulenta ].].Engel &amp; R.M.Schust.   Plagiochila baylisii Inoue &amp; R.M.Schust.
+    <pre class="description-text">Pachyschistochila succulenta ].].Engel &amp; R.M.Schust.   Plagiochila baylisii Inoue &amp; R.M.Schust.
                                                                          NZ Liverworts and Hornworts    137
 
 
@@ -372,25 +361,31 @@ Psiloclada clandestina Mitt.
 Riccardia crassa (Schwaegr.) Carrington &amp; Pearson      Schistochila monticola R.M.Schust.
 Riccardia eriocaula (Hook.) Besch. &amp; C. Massal.        Schistochila muricata E.A.Hodgs. &amp; Allison
 Riccardia exilis E.A. Brown                            Schistochila nitidissima R.M.Schust.
-Riccardia furtiva E.A. Brown &amp; Braggins                Schistochila nobilis (Hook.) Trevis.</p>
+Riccardia furtiva E.A. Brown &amp; Braggins                Schistochila nobilis (Hook.) Trevis.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">the calyptra ends in a cap of long, transparent hairs.
+    <pre class="description-text">the calyptra ends in a cap of long, transparent hairs.
      R. minima (TVN) is very similar but the calyptra is hairless. In R. alcicornis (TV)
  the thalfos is almost circular in cross-section.
 
@@ -448,16 +443,19 @@ rare on the mainland. It is usually very densely branched, with two types of
 branches. The primary branches are usually prostrate, 2 to 3 mm wide, and often
 hidden by the secondary branches, which are only 0.5 mm or so wide and rather
 palmate. The apices of the terminal branches are dissected, but this is often
-impossible to see with a hand lens.</p>
+impossible to see with a hand lens.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">(C. Muell.) Reichdt.
+    <pre class="description-text">(C. Muell.) Reichdt.
 KHIZOGONIACEAE
     Goniobryum subbasilare (Hook.) Lindb.
 * Pym-ho-hohryummnioides (Hook.) Manuel
@@ -513,7 +511,7 @@ TEUBIACEM
 * Treubia lacunosa (Col.) Prosk.
 * T. tasmnnica Srhust. &amp; Scott
 
-HEPATICAE (leafy species)</p>
+HEPATICAE (leafy species)</pre>
     
     
   </details>
@@ -522,14 +520,41 @@ HEPATICAE (leafy species)</p>
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Riccardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia gracilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia longiflora</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia maxima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia muscoides</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia prehensilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia scabra</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia stellaris</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Aneura aequicellularis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -544,22 +569,32 @@ HEPATICAE (leafy species)</p>
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [90.8, 78.9, 101.0, 109.6, 165.4, 159.6, 188.4, 210.4, 196.4, 166.5, 110.1, 125.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.1, 20.2, 17.8, 14.4, 11.4, 9.4, 8.8, 9.7, 11.7, 13.8, 16.8, 18.1], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.8, 9.0, 7.6, 5.6, 4.2, 2.8, 2.0, 2.3, 3.5, 4.5, 6.4, 7.5], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

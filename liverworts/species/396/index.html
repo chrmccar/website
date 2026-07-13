@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,49 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Syzygiella sonderi</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Adelanthaceae</span>
-    <span class="badge secondary">Syzygiella</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (13)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Amplirhagada ponderi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Callitriche sonderi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Levenhookia sonderi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lomandra sonderi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Nitella sonderi A.Braun</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Notocrater ponderi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pisidium (Euglesa) ponderi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Platynectes (Gueorguievtes) ponderi</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Syzygiella</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cryptochila grandiflora</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jamesoniella grandiflora</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia grandiflora</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia sonderi</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Syzygiella</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -82,21 +48,25 @@
     <p class="big-num">154</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">2</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">13</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -104,76 +74,85 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>GBIF</strong> (2 entrys)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>distribución global:</strong> S regiones templadas, Pantropical</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribución global:</strong> S regiones templadas, Pantropical</p>
     
     
     
-    <p><strong>región biogeográfica:</strong> Andes, Sierra Nevada de Santa Marta</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>región biogeográfica:</strong> Andes, Sierra Nevada de Santa Marta</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Pyrrhobryum mnioides subsp. contorta ® Hymenodontopsis mnioides
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Pyrrhobryum mnioides subsp. contorta ® Hymenodontopsis mnioides
 Rhynchostegium tenuifolium var. tenuifolium ® Rhynchostegium tenuifolium
 Rosulabryum billarderi ® Rosulabryum billarderii
 Sauloma tenella ® Sauloma tenellum
@@ -233,7 +212,7 @@ Schizymenium bryoides ® Mielichhoferia bryoides                                
 
 Riccardia wattsiana ® R. nitida
 Riccia bifurca ® R. subbifurca (Australian records only)
-Riccia marginata ® Riccia cartilaginosa</p>
+Riccia marginata ® Riccia cartilaginosa</pre>
     
     
   </details>
@@ -242,14 +221,47 @@ Riccia marginata ® Riccia cartilaginosa</p>
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Amplirhagada ponderi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Callitriche sonderi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Levenhookia sonderi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lomandra sonderi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Nitella sonderi A.Braun</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Notocrater ponderi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pisidium (Euglesa) ponderi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Platynectes (Gueorguievtes) ponderi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Syzygiella</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptochila grandiflora</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jamesoniella grandiflora</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia grandiflora</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia sonderi</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -264,23 +276,17 @@ Riccia marginata ® Riccia cartilaginosa</p>
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
 </script>
+
+
 
 
 </body>

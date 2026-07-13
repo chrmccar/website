@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Symphyogyna rhodina</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Pallaviciniaceae</span>
-    <span class="badge secondary">Symphyogyna</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Hymenophyllum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hymenophyllum javanicum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hymenophyllum moorei</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Symphyogyna</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Symphyogyna irregularis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Symphyogyna lacerosquama</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Symphyogyna lehmanniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Symphyogyna multiflora</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Symphyogyna pulchra</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia hymenophyllum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Symphyogyna hymenophyllum</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Symphyogyna</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,37 +48,50 @@
     <p class="big-num">12</p>
     <footer>8 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">11.6&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1322&thinsp;mm</p>
-    <footer>
-      CV 22.6
-    </footer>
+    <footer>annual · CV&thinsp;22.6</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">0</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
 </section>
 
 
@@ -119,14 +102,43 @@
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Hymenophyllum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hymenophyllum javanicum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hymenophyllum moorei</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Symphyogyna</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Symphyogyna irregularis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Symphyogyna lacerosquama</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Symphyogyna lehmanniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Symphyogyna multiflora</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Symphyogyna pulchra</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia hymenophyllum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Symphyogyna hymenophyllum</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -141,22 +153,32 @@
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [77.8, 72.7, 87.6, 91.9, 130.8, 134.2, 144.0, 155.9, 143.5, 123.6, 94.1, 97.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.4, 20.5, 18.5, 15.5, 12.8, 10.9, 10.4, 11.2, 13.1, 14.8, 17.1, 18.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.8, 10.9, 9.7, 8.0, 6.4, 4.7, 4.3, 4.3, 5.6, 6.5, 8.3, 9.4], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Radula australiana</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Radulaceae</span>
-    <span class="badge secondary">Radula</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Australara</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Australian Lungfish</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Australian Magpie</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Australian Pelican</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Australiasca</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Australina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Australinina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Australiusa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Radula</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Radula</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,21 +48,25 @@
     <p class="big-num">120</p>
     <footer>17 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">6</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -96,86 +74,93 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>wood</td>
-          <td>categorical</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>RADULA_NZ_TASMANIA_2005</strong> (1 entry)</summary>
+    <summary>
+      <strong>RADULA_NZ_TASMANIA_2005</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">of reduced stature, incipient Radula-type branches commonly dormant as &#39;buds&#39; along
+    <pre class="description-text">of reduced stature, incipient Radula-type branches commonly dormant as &#39;buds&#39; along
 leafy shoots. Lejeunea-type branches produced sporadically independent of damage to
 shoot apex. Stems of sterile shoots 35-41 fJ.m , exceptionally up to 60 fJ.m diameter, four
 cell rows in width, cells 5.0-6.5 fJ.m diameter, ovoid to rectangular in outline, cell walls in
@@ -298,16 +283,19 @@ three to five leaves. Microphyllous and amentulose branching absent. Stems up to
  Free exterior lobule Reftexe~ never turned  Never reftexe~                 Reftexe~ never
  margin               becoming perpendicular frequently turned              turned becoming
                       to stem                becoming perpendicular         perpendicular
-                                             to the stem                    to stem</p>
+                                             to the stem                    to stem</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RADULA_SYNOPSIS_NZ_TAS_2005</strong> (1 entry)</summary>
+    <summary>
+      <strong>RADULA_SYNOPSIS_NZ_TAS_2005</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">2.    Radula aneurismalis (Hook. f. &amp; Taylor) Gottsche, Lindenb. &amp; Nees, Syn. Hepat.:
+    <pre class="description-text">2.    Radula aneurismalis (Hook. f. &amp; Taylor) Gottsche, Lindenb. &amp; Nees, Syn. Hepat.:
       262.l84S.(Fig. l c- f;2a-d)
 Jungermmania aneurismalis Hook. f. &amp; Taylor, London 1. Bot. 4: 86. 1845. - Type: Australia, Tasma-
      nia, Voy. of H. M. S. Erebus &amp; Terror, Gunn s.n. (holotype: FHI; isotypes: S-[B24842]! , S-
@@ -497,16 +485,19 @@ Castle, H. 1937. A revision of the genus Radula. Introduction and Part 1. Subgen
      Ann. Bryol. 9: 13- 56.
 Castle, H. 1950. A revision of the genus Radula. Section 2. Amentulosae. Bryologist 53 : 253- 375.
 Castle, H. 1959. A revision of the genus Radula. Section 4. Marginatae Rev. Bryol. Lichenol. 28:
-     290- 296.</p>
+     290- 296.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
     
     
   </details>
@@ -515,14 +506,39 @@ Castle, H. 1959. A revision of the genus Radula. Section 4. Marginatae Rev. Bryo
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Australara</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Australian Lungfish</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Australian Magpie</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Australian Pelican</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Australiasca</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Australina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Australinina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Australiusa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Radula</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -537,22 +553,32 @@ Castle, H. 1959. A revision of the genus Radula. Section 4. Marginatae Rev. Bryo
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [85.2, 72.9, 85.1, 84.7, 107.7, 120.7, 121.5, 144.8, 132.7, 116.4, 102.0, 97.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [16.9, 16.9, 14.4, 11.0, 8.1, 6.1, 5.3, 6.1, 8.3, 10.4, 13.3, 14.9], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [7.4, 7.2, 6.1, 4.5, 3.0, 1.4, 0.5, 0.5, 1.8, 2.9, 4.6, 5.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

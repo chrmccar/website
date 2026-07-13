@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Metzgeria saccata</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Metzgeriaceae</span>
-    <span class="badge secondary">Metzgeria</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Calandrinia baccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eremophila laccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Goodenia saccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Grevillea saccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Luffa saccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Metzgeria</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Persoonia saccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Triumfetta saccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Wurmbea saccata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Austrometzgeria saccata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Metzgeria</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">148</p>
     <footer>84 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">1</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,46 +74,58 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MARCHANTIOPHYTA_PHYLOGENY_2009</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">-.---~.--~-~
+    <pre class="description-text">-.---~.--~-~
 
                                                                                                          &#34;      5      6
                                                                                                     -----&#39;---~------------,-----
@@ -197,16 +185,19 @@ S. pseudoeiliata Schust.                                                        
 S. lasmaniea Steph.                                                                            x                x
 Symphogyna podophylla (Thunb.) Mont. &amp; Nees                                                    x                x
 
-Telaranea mooreana (Stcph.) Schust.                                         x                  x</p>
+Telaranea mooreana (Stcph.) Schust.                                         x                  x</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MARCHANTIOPHYTA_PHYLOGENY_2009</strong> (1 entry)</summary>
+    <summary>
+      <strong>MARCHANTIOPHYTA_PHYLOGENY_2009</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">rbcL analysis. This transfer was formalised by He-Nygrén et al. (2006). A relation-
+    <pre class="description-text">rbcL analysis. This transfer was formalised by He-Nygrén et al. (2006). A relation-
                  ship between Mizutania and Calypogeia is not supported by any morphological
                  evidence (Crandall-Stotler et al., 1994). In addition to its simple thalloid morphol-
                  ogy, which is unknown even in sporelings of Calypogeia, Mizutania possesses large,
@@ -266,16 +257,19 @@ https://doi.org/10.1017/S0960428609005393 Published online by Cambridge Universi
                       with the analyses of Forrest et al. (2006) and is supported by morphological evi-
                       dence. As herein defined, all taxa of the Jubulineae are characterised by sporophytes
                       borne in stalked, true calyptrae and have beaked perianths, spheroidal capsules, and
-                      vertically aligned elaters that are attached to the capsule valve apices. The Radu-</p>
+                      vertically aligned elaters that are attached to the capsule valve apices. The Radu-</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Prosk.                                           Andrewsianthus confusus (R.M.Schust.) R.M.Schust.
+    <pre class="description-text">Prosk.                                           Andrewsianthus confusus (R.M.Schust.) R.M.Schust.
 Phaeoceros coriaceus (Steph.) E.O.Campb. comb. nov.     Andrewsianthus perigonialis (Hook.f. &amp; Taylor)
        Anthoceros coriaceus Steph.                             R.M.Schust.
 Phaeoceros delicatus E.O.Campb &amp; Outred                 Aneura aff. novaeguineensis Hewson
@@ -335,16 +329,19 @@ Balantiopsis montana (Colenso) J.J.Engel &amp;            Cephaloziella densifol
 Balantiopsis rosea Berggr.                            Cephaloziella grandiretis (R.M.Schust.) R.M.Schust.
 Balantiopsis tumida Berggr.                                  Cephaloziella byssacea subsp. grandiretis
 Balantiopsis verrucosa J.J.Engel &amp; G.L.S.Merrill             R.M.Schust.
-Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. ad-   Cephaloziella hispidissima R.M.Schust.</p>
+Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. ad-   Cephaloziella hispidissima R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
     
     
   </details>
@@ -353,14 +350,41 @@ Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. ad-   Cephaloziella hispidis
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Calandrinia baccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eremophila laccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Goodenia saccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Grevillea saccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Luffa saccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Metzgeria</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Persoonia saccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Triumfetta saccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Wurmbea saccata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Austrometzgeria saccata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -375,22 +399,32 @@ Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. ad-   Cephaloziella hispidis
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [82.9, 70.1, 89.9, 96.5, 139.1, 142.2, 160.4, 174.3, 156.3, 132.1, 98.6, 103.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.6, 19.7, 17.6, 14.5, 11.7, 9.8, 9.2, 10.0, 11.9, 13.7, 16.3, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.5, 9.6, 8.4, 6.5, 4.9, 3.5, 2.8, 3.0, 4.2, 5.2, 7.0, 8.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

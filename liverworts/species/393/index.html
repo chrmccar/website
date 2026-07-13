@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Lepidozia obtusiloba</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Stolonivector</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Brachychiton obtusilobus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Juncus obtusiflorus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia obtusiloba var. obtusiloba</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stolonivector</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stolonivector clasmatocoleoides</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stolonivector fiordlandiae</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stolonivector fiordlandiae var. nodulosus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stolonivector waipouensis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stolonivector obtusilobus</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Stolonivector</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,21 +48,25 @@
     <p class="big-num">226</p>
     <footer>23 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">14</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -96,150 +74,149 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>hygric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>hygric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>10.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>10.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>10.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>10.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>LEPIDOZIA_NZ_REVISION_2001</strong> (1 entry)</summary>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">1400 South Lake Shore Drive
+    <pre class="description-text">1400 South Lake Shore Drive
 Chicago, Illinois 60605-2496, U.S.A.
 
 
@@ -699,16 +676,19 @@ Lepidozia dispar (Mont, ex Tayl.     &amp;
                                      Hook, f.) Mont. 2,      Lepidozia subquadrata Steph. 95
       57                                                     Lepidozia subtransversa Steph. 16
 Lepidozia elobata Schust. 74                                 Lepidozia tetradactyla (Hook. f. &amp; Tayl.) G. L. &amp; N. 2
-Lepidozia ferdinandi-muelleri Steph. 13                      Lepidozia ulothrix (Schwagr.) Lindenb. 88</p>
+Lepidozia ferdinandi-muelleri Steph. 13                      Lepidozia ulothrix (Schwagr.) Lindenb. 88</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Jamesoniella colorata (Lehm.) Schiffn.                 Lejeunea gracilipes (Taylor) Steph.
+    <pre class="description-text">Jamesoniella colorata (Lehm.) Schiffn.                 Lejeunea gracilipes (Taylor) Steph.
 Jamesoniella kirkii Steph.                                     Taxilejeunea gracilipes (Taylor) Steph.
 Jamesoniella monodon (Lehm.) N. Kitag.                 Lejeunea helmsiana Steph.
          Cuspidatula monodon (Lehm.) Steph.            Lejeunea primordialis (Hook.f. &amp; Taylor) Taylor
@@ -768,25 +748,31 @@ Lophozia druceae Grolle &amp; E.A.Hodgs.                            Lejeunea cuc
 Lophozia excisa (Dicks.) Dumort.                                Nees
 Lophozia herzogiana E.A.Hodgs. &amp; Grolle                         Microlejeunea cucullata (Reinw., Blume &amp;
 Lophozia multicuspidata (Hook.£. &amp; Taylor) Grolle               Nees) Steph.
-Lophozia nivicola R.M.Schust.                            Metzgeria albinea Spruce</p>
+Lophozia nivicola R.M.Schust.                            Metzgeria albinea Spruce</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">in A. diacantha, but we chose to score A. diacan-                pula (Engel &amp; Schust.) Schust. &amp; Engel, suborder
+    <pre class="description-text">in A. diacantha, but we chose to score A. diacan-                pula (Engel &amp; Schust.) Schust. &amp; Engel, suborder
                          tha as lacking terminal branches, since this spe-                Perssoniellineae (see Schuster &amp; Engel, 1985).
                          cies was included in the analysis as the exemplar                   Microlepidozia-type branching is treated as a
                          for Arachniopsis, and the absence of terminal                    binary character: 0 5 absent; 1 5 present.
@@ -1109,7 +1095,7 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                               bract apices divided to 0.4 (Fig. 34: 10). Deeply               OIL-BODIES—Oil-bodies are known for about
                               divided bracts are found in such dissimilar taxa              nine species. Oil-bodies in Telaranea are for the
                               as T. chaetocarpa (Fig. 41: 1, 5), T. chaetophylla            most part hyaline or, in a few species, pale, smokey
-                              (disc 2–3 cells high, Fig. 43: 1), T. herzogii (Fig.          grey (T. herzogii, T. remotifolia). The surface is</p>
+                              (disc 2–3 cells high, Fig. 43: 1), T. herzogii (Fig.          grey (T. herzogii, T. remotifolia). The surface is</pre>
     
     
   </details>
@@ -1118,14 +1104,39 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Brachychiton obtusilobus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Juncus obtusiflorus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia obtusiloba var. obtusiloba</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stolonivector</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stolonivector clasmatocoleoides</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stolonivector fiordlandiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stolonivector fiordlandiae var. nodulosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stolonivector waipouensis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stolonivector obtusilobus</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -1140,22 +1151,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [92.4, 74.1, 98.4, 107.0, 154.7, 164.2, 193.3, 208.1, 182.0, 145.0, 111.5, 114.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.3, 18.3, 15.9, 12.5, 9.5, 7.5, 6.7, 7.4, 9.4, 11.6, 14.8, 16.1], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [7.9, 8.2, 6.7, 4.9, 3.4, 1.8, 1.1, 1.0, 2.3, 3.2, 5.2, 6.3], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

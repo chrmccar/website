@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Podomitrium phyllanthus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Pallaviciniaceae</span>
-    <span class="badge secondary">Podomitrium</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Holomitrium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Holomitrium cylindraceum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Holomitrium trichopodum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Phyllacanthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Phyllanthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Phyllanthus aridus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Phyllanthus erwinii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Phymanthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Podomitrium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia phyllanthus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Podomitrium</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,35 +48,37 @@
     <p class="big-num">344</p>
     <footer>75 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">11.6&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1518&thinsp;mm</p>
-    <footer>
-      CV 23.8
-    </footer>
+    <footer>annual · CV&thinsp;23.8</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">5</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -112,78 +86,86 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
-          <td class="muted small">Wikipedia English; fetched via title &#39;Podomitrium phyllanthu…</td>
-          <td>⚠</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Wikipedia English; fetched via title &#39;Podomitrium phyll…</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
-        </tr>
-        
-        <tr class="unverified">
-          <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
-          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">fl. weymolAthianus (Steph.) Schiffn.                                       x
+    <pre class="description-text">fl. weymolAthianus (Steph.) Schiffn.                                       x
 H. sp.                                                                                                   x
 
 Iso/emoidium anomaium (Rodway) Grolle                                                          x                x
@@ -243,16 +225,19 @@ T. pseudosaccatus Grolle                                                        
 
 T. tencl/us (J.D.lhok. &amp; Taylor) Hodgs.                                                            x
 
-Zoopsis argentea (J.D.Hook. &amp; Taylor) JD.Hook.</p>
+Zoopsis argentea (J.D.Hook. &amp; Taylor) JD.Hook.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Plagiochila circumdentata Steph.
+    <pre class="description-text">Plagiochila circumdentata Steph.
 Plagiochila deltoidea Lindenb.                         Radula allisonii Castle
 Plagiochila fasciculata Lindenb.                       Radula buccinifera (Hook.f. &amp; Taylor) Taylor
 Plagiochila fragmentissima Inoue &amp; R.M.Schust.         Radula campanigera Mont.
@@ -312,16 +297,19 @@ Riccardia marginata (Colenso) Pearson                  Seppeltia succuba Grolle
         Riccardia muscoides (Colenso) E.A.Hodgs.       Siphonolejeunea nudipes (Hook.f. &amp; Taylor)
 Riccardia multicorpora E.A.Brown                               Herzog
 Riccardia nitida (Colenso) E.A.Hodgs.                  Stenolejeunea apiculata (Sande-Lac.) R.M.Schust.
-Riccardia aff. pallidevirens (Steph.) A.Evans                  Lejeunea apiculata Sande-Lac.</p>
+Riccardia aff. pallidevirens (Steph.) A.Evans                  Lejeunea apiculata Sande-Lac.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Thallose liverworts and hornworts - Group A
+    <pre class="description-text">Thallose liverworts and hornworts - Group A
 
 
 
@@ -530,16 +518,19 @@ Phaeoceros                                                                  Pseu
 Ptychomnion aciculare ....................................... 72           Riccardia
 Pyrrhobryum                                                                    aequicellularis ........................................... 194
     bifarium ..................................................... 166         cochleata ................................................... 194
-    mnioides subsp. contortum ....................... 166                      colensoi ..................................................... 194</p>
+    mnioides subsp. contortum ....................... 166                      colensoi ..................................................... 194</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Podomitrium phyllanthus is a thalloid liverwort in the family Pallaviciniaceae. It is found in wet forests and rainforests of Australia, New Zealand and New Caledonia.</p>
+    <pre class="description-text">Podomitrium phyllanthus is a thalloid liverwort in the family Pallaviciniaceae. It is found in wet forests and rainforests of Australia, New Zealand and New Caledonia.</pre>
     
     
   </details>
@@ -548,14 +539,41 @@ Pyrrhobryum                                                                    a
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Holomitrium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Holomitrium cylindraceum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Holomitrium trichopodum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phyllacanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phyllanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phyllanthus aridus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phyllanthus erwinii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phymanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Podomitrium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia phyllanthus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -570,22 +588,32 @@ Pyrrhobryum                                                                    a
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [78.2, 69.4, 90.4, 98.3, 147.0, 147.5, 171.2, 182.2, 163.4, 137.6, 94.7, 104.9], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.3, 20.4, 18.3, 15.3, 12.5, 10.6, 10.0, 10.8, 12.6, 14.4, 17.0, 18.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.0, 10.1, 8.9, 6.9, 5.4, 3.8, 3.3, 3.4, 4.8, 5.8, 7.6, 8.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

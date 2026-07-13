@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Lepidozia nova</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Lepidozia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Lepidozia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia appressifolia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia communis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia concinna</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia crassitexta</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia eenii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia montana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia ulothrix</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia wattsiana</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Lepidozia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,21 +48,25 @@
     <p class="big-num">2</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">10</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -96,118 +74,113 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>2.0–5.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>2.0–5.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>4.0–6.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>4.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.5</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.5</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">[2 similarly labelled packets in specimen folderl.
+    <pre class="description-text">[2 similarly labelled packets in specimen folderl.
 TYPES: G, NSW (H159).
 COMMENT: Name in current use.
 
@@ -267,16 +240,19 @@ TYPES: G, NSW.
 COMMENT: Name in current use.
 
 Lepidozia septemfida Stephani (1909: 588)
-PROTO: &#39;Australia, N.S. Wales (Watts).&#39;</p>
+PROTO: &#39;Australia, N.S. Wales (Watts).&#39;</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>LEPIDOZIA_NZ_REVISION_2001</strong> (1 entry)</summary>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">PUBLISHED BY FIELD MUSEUM OF NATURAL HISTORY
+    <pre class="description-text">PUBLISHED BY FIELD MUSEUM OF NATURAL HISTORY
       2001 Field Museum of Natural History
                ISSN 0015-0746
 PRINTED IN THE UNITED STATES OF AMERICA
@@ -856,16 +832,19 @@ Lepidozia dispar (Mont, ex Tayl.     &amp;
                                      Hook, f.) Mont. 2,      Lepidozia subquadrata Steph. 95
       57                                                     Lepidozia subtransversa Steph. 16
 Lepidozia elobata Schust. 74                                 Lepidozia tetradactyla (Hook. f. &amp; Tayl.) G. L. &amp; N. 2
-Lepidozia ferdinandi-muelleri Steph. 13                      Lepidozia ulothrix (Schwagr.) Lindenb. 88</p>
+Lepidozia ferdinandi-muelleri Steph. 13                      Lepidozia ulothrix (Schwagr.) Lindenb. 88</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
     
     
   </details>
@@ -874,14 +853,39 @@ Lepidozia ferdinandi-muelleri Steph. 13                      Lepidozia ulothrix 
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Lepidozia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia appressifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia communis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia concinna</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia crassitexta</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia eenii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia montana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia ulothrix</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia wattsiana</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -896,23 +900,17 @@ Lepidozia ferdinandi-muelleri Steph. 13                      Lepidozia ulothrix 
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
 </script>
+
+
 
 
 </body>

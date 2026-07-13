@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Asterella australis</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Aytoniaceae</span>
-    <span class="badge secondary">Asterella</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Asterella</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Asterella conocephala</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Asterella dioica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Asterella muelleri</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Asterella tasmanica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Asterella tenella</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Asterella tenerrima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Austalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hibbertia asterella</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Fimbraria australis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Asterella</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">125</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">2</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,54 +74,57 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Asterella drummondii (Taylor) R.M.Schust. ex D.G.Long
+    <pre class="description-text">Asterella drummondii (Taylor) R.M.Schust. ex D.G.Long
 Fimbriaria drummondii Hook.f. &amp; Taylor, London J. Bot. 3: 574 (1844), nom. nud.; Fimbriaria
 drummondii Hook.f &amp; Taylor in Gottsche, Lindenb. &amp; Nees, Syn. Hep. 566, 791 (1846) nom. nud.;
 Fimbriaria drummondii Taylor, London J. Bot. 5: 412 (1846); Asterella drummondii (Hook.f. &amp; Taylor)
@@ -200,16 +179,19 @@ Total distribution: Circumglobal.
 Discussion: Plagiochasma rupestre var. rupestre and Asterella drummondii are sympatric on
 Lord Howe Island, perhaps reflecting the limited suitable habitat there. Plagiochasma rupestre
 var. volkii Bischl. is known only from southern Africa, Peru and Argentina (Perold 1995). It has
-long-acuminate, colourless appendages on the ventral scales, and slightly larger spores.</p>
+long-acuminate, colourless appendages on the ventral scales, and slightly larger spores.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">66 Aytoniaceae                                    Megaceros giganteus (Lehm. &amp; Lindenb.) Steph.
+    <pre class="description-text">66 Aytoniaceae                                    Megaceros giganteus (Lehm. &amp; Lindenb.) Steph.
        Asterella, Plagiochasma, Reboulia                 Anthoceros colensoi Mitt.
 69 Marchantiaceae                                        Dendroceros giganteus (Lehm. &amp; Lindenb.)
        Marchantia, Neohodgsonia                          Prosk.
@@ -268,16 +250,19 @@ Allisoniella recurva R.M.Schust.
 Allisoniella scottii (R.M.Schust.) R.M.Schust.          Balantiopsis convexiuscula Berggr.
         Protomarsupella scottii R.M.Schust.             Balantiopsis diplophylla (Hook.£ &amp; Taylor) Mitt. var.
                                                                 diplophylla
-                                                                         NZ Liverworts and Hornworts    129</p>
+                                                                         NZ Liverworts and Hornworts    129</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; Tas.</p>
     
     
   </details>
@@ -286,14 +271,41 @@ Allisoniella scottii (R.M.Schust.) R.M.Schust.          Balantiopsis convexiuscu
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Asterella</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Asterella conocephala</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Asterella dioica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Asterella muelleri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Asterella tasmanica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Asterella tenella</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Asterella tenerrima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Austalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hibbertia asterella</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Fimbraria australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -308,23 +320,17 @@ Allisoniella scottii (R.M.Schust.) R.M.Schust.          Balantiopsis convexiuscu
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
 </script>
+
+
 
 
 </body>

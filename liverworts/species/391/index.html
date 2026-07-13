@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,39 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Siphonolejeunea olgae</em></h1>
-  <p>
+  <div class="taxon-path">
     
-    <span class="badge secondary">Siphonolejeunea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (8)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Siphonolejeunea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Siphonolejeunea elegantissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Siphonolejeunea nudipes</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Siphonolejeunea nudipes var. magnicarinata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Siphonolejeunea nudipes var. nudipes</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Siphonolejeunea schiffneri</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Siphonolejeunea subg. Austrolejeunea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Austrolejeunea olgae</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Siphonolejeunea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -72,16 +48,20 @@
     <p class="big-num">0</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">0</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">8</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
@@ -92,14 +72,20 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong> (1 entry)</summary>
+    <summary>
+      <strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">name. I have referred to this edition rather than                     1900, p. 103). The flagella arise from the posti-
+    <pre class="description-text">name. I have referred to this edition rather than                     1900, p. 103). The flagella arise from the posti-
        the more widely known third edition (Müller,                          cal segment of apical cells, rather than from the
        1951–1954, 1956–1958) for the sake of consis-                         medulla as in Bazzania.
        tency, except where necessary to clarify a point.                   Adelanthus Mitt. 1864—adeles (uncertain)+
@@ -159,16 +145,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
               name was coined in 1729 by Micheli (see                             brevis (short)+anthos (flower), alluding to the
               Bazzania), who apparently thought that the                          very short branches on which the androecia
               sporophyte was the male inflorescence (Müller,                      and gynoecia occur.
-              1912–1916, p. 589).                                               Calypogeia Raddi 1818—kalyx (flower or fruit</p>
+              1912–1916, p. 589).                                               Calypogeia Raddi 1818—kalyx (flower or fruit</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
@@ -177,18 +166,43 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Siphonolejeunea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea elegantissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea nudipes</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea nudipes var. magnicarinata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea nudipes var. nudipes</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea schiffneri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea subg. Austrolejeunea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Austrolejeunea olgae</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
   
+
+
 
 
 </body>

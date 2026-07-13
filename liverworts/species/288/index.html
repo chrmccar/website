@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,49 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Hygrolembidium acrocladum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Hygrolembidium</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (13)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acrocladium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acrocladium chlamydophyllum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Gonytrichum macrocladum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hygrolembidium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hygrolembidium australe</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hygrolembidium isodictyon</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hygrolembidium rigidum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hygrolembidium stereophyllum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hygrolembidium triquetrum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Aplozia acroclada</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Aplozia lacerata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia acroclada</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lembidium isodictyon</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Hygrolembidium</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -82,21 +48,25 @@
     <p class="big-num">96</p>
     <footer>39 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">29</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">13</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -104,270 +74,254 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">BRYOPHYTE_GENERA_ETYMOLOGY_2008</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>950.0–1100.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>950.0–1100.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>15.0–26.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>15.0–26.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>18.0–26.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>18.0–26.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">BRYOPHYTE_GENERA_ETYMOLOGY_2008</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>3.0–9.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>3.0–9.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.5</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.5</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong> (1 entry)</summary>
+    <summary>
+      <strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Herzogobryum Grolle 1964—after Theodor                                 highly respected by European bryologists, and
+    <pre class="description-text">Herzogobryum Grolle 1964—after Theodor                                 highly respected by European bryologists, and
          Herzog (1880–1961), German bryologist in                             his obituary in Hedwigia was written by Franz
                                                                               Stephani (Stephani, 1901).
          Jena, who worked largely on tropical liver-
@@ -427,16 +381,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
               (Rupp, 1718).                                                       an appropriate name for this monotypic genus:
             Kurzia G. Martens 1870—After Wilhelm Sulpiz                           “with…leaves that are characteristically glis-
               Kurz (1834–1878), German botanist, specialist                       tening, very delicate and large-celled (cells…
-              in bananas and bamboos and curator of the                           very leptodermous)” (Schuster, 1963, p. 270).</p>
+              in bananas and bamboos and curator of the                           very leptodermous)” (Schuster, 1963, p. 270).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chiloscyphus circumdentatus W.Martin &amp;                  Mitt
+    <pre class="description-text">Chiloscyphus circumdentatus W.Martin &amp;                  Mitt
        E.A.Hodgs.                                       Heteroscyphyus planiusculus (Hook.f. &amp; Taylor)
 Heteroscyphus coalitis (Hook.f.) Schiffn.                      Engel
        Chiloscyphus coalitis (Hook.) Nees                      Chiloscyphus planiusculus (Hook.f. &amp; Taylor)
@@ -496,46 +453,55 @@ Jamesoniella tasmanica (Hook.f. &amp; Taylor) Steph.       Lejeunea sinclairii S
 Jubulopsis novae-zelandiae (E.A.Hodgs. &amp; Arn.)                  Mitt. 1862 ofFiji].
          R.M.Schust.                                   Lejeunea tumida Mitt.
 Jungermannia inundata Hook.f. &amp; Taylor                 Lembidium longifolium R.M.Schust.
-         Solenostoma rufiflora (Colenso) R.M.Schust.   Lembidium nutans (Hook.f. &amp; Taylor) Mitt.</p>
+         Solenostoma rufiflora (Colenso) R.M.Schust.   Lembidium nutans (Hook.f. &amp; Taylor) Mitt.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (4 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(4)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants light green to light yellow-green, variable in size, the leafy shoots ranging from stoutly clavate, being only 650-750 juim wide and bearing 3-5 pairs of leaves to more robust, to 2.2 mm wide and bearing several to many pairs of leaves. Branching abundant, the leafy branches ventral- or lateral-intercalary and mostly from a system of creeping, freely branched, colorless, long slender stolons, the leafy branches rarely and sporadically issuing from leafy sectors of another leafy shoot and then only ventral-intercalary. Stem distinctly thick and fleshy for plant size, the cortex in 36-39 rows, leptodermous, poorly differentiated. Rhizoids ventral-intercalary androecial branches, lateral view; note cf branches proliferate vegetatively distally and become stoloniform. 5. Portion of main shoot with 2 ventral-intercalary androecial branches; note determinate cf branches (sb = stoloniform branch). 6. Sector of leafy shoot, lateral aspect, the leaves cut off except for basal ca. 0.25; note fleshy leaf bases (ul = underleaf). 7. Leaf, cross section through basal sector (vm = ventral margin). 8,9. Leaves and within each, an underleaf, all from same upright leafy shoot (dm = dorsal margin). 10. Stem, cross section through leafy shoot. 11. Capsule wall, cross section. (All from Engel 13950, Tasmania, Cradle Mtn.) els of perianth (a = distal 0.25; m = medium sector; b = base) and calyptra base (= c). 2. Distal portion of innermost bract. 3. Perianth, cross section through distal 0.25 (stippled areas indicate mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, polystratose in median and basal sectors, the median and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5(6)-stratose in intramarginal sector, the marginal sector remaining polystratose or thinning to unistratose, the epidermal cells of leaf on average smaller in diameter than internal cells; leaves contiguous to closely imbricate, suberect to obliquely spreading, the insertion succubous in well-developed plants, ± transverse in smaller or weaker plants, the leaves deeply concave, at times subcupulate, orbicular (particularly in smaller plants) to suboblate, occasionally ovate, to 1 120 juim wide X 1295 juim long when flattened; apex normally broadly rounded, less often truncate, sporadically repand, undivided, never retuse; lamina margins entire. Cells of apical sector subquadrate, at most short-rectangular, not elongate, the walls thin or slightly thickened, 22-36 juim wide X 22- 45 |ULm long up to 35-40 juim wide X 35-50 juim long; median cells 24-32 juim wide X 32- 56(62) |ULm long; basal cells 24-30 juim wide X 55-75 juim long; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate; surface smooth at least in median portion of leaf and often smooth throughout, distal cells occasionally faintly papillose, the marginal cells rarely so. Oil-bodies (in part after Schuster and Engel [1987b]) variable in number: 1-3 to 3-5, sometimes 6-9 per cell, coarsely and irregularly segmented and formed of a few variable, spherical segments; oil-bodies small, spherical and 4 juim in diam. to ovoid and 3-4.5 X 6-7(9) luim to 4-4.5 X 7-10 juim to broadly elliptic. Underleaves small, often inconspicuous and appearing as if lacking, the underleaves plane to weakly concave, wide-ovate to orbicular to suboblate, occasionally oblong or Ungulate, the apex crenulate or with 1-3 teeth or irregular lobules; lamina margins entire or locally denticulate by projections of 1 or 2 cells. Androecial branches originating from axils of underleaves, laxly spicate and at times sub- julaceous; bracts erect, of similar form to leaves; antheridia 2-4 per bract, the stalk biseriate. Gynoecia on abbreviated ventral-intercalary branches, from lower, microphyllous sectors of leafy shoots; bracts and bracteoles concave, similar or bracteole somewhat narrower, the bracts considerably larger than leaves, ovate to wide-elliptic, the apex irregularly dentate or at times clearly 4-dentate-lobulate, the lamina margins with several teeth and (less often) ciliiform projections. Perianth very large for plant size, to 4.2 mm long X 1.4 mm in diam., subclavate to oblong-fusiform, cylindrical throughout or cylindrical below and faintly 3(4)-gonous above, the mouth crenulate to spinose dentate-lobulate; perianth 4-5-stratose at base. Seta (fide Herzog, 1952) with 16-17 rows of outer cells. Capsule wall 4-stratose and 30- 36 |ULm thick to 5-stratose and 42-46 juim thick; outer layer of cells equal to thickness of 1.8- 3 of interior strata, the radial walls with nodular to spur- like thickenings on both longitudinal and most transverse walls, those of longitudinal walls sporadically extended tangentially to form complete, somewhat thickened semi annular bands; innermost layer of cells with radial walls often with ± continuous sheets of red-brown wall material, the radial walls also with rather thin semi annular bands and occasional nodular to spur-like thickenings. Spores 15.8-17.8 juim in diam., the wall red-brown, with dense, low but sharply defined, close, papillose and short- vermiculate markings, 1. 7-2.3 X the elater diam. Elaters tortuous, bispiral, 7. 2-9. 6 juim in diam., the spirals 2. 9-3. 8 juim wide. bistratose sectors, the remainder unistratose). 4. Portion of plant with main leafy shoot, 2 ventral- intercalary leafy branches and a gynoecium with mature sporophyte; note isophyllous gynoecium (sb = stoloniform branch). 5. Capsule wall, inner layer. 6, 7. Portion of perianth mouth (each fig. from a different perianth). 8. Capsule wall, outer layer. (All from Engel 13950, Tasmania, Cradle Mtn.) Distribution and Ecology: New Zealand: Stewart Island (600-690 m), South Island (560- 1525 m), North Island (305-2000 m); Australia: Tasmania, Victoria, New South Wales. In New Zealand known from Eiordland (Hunter Mtns.), Otago (Pisa Ra., Old Man Ra., Maun- gatua. Swampy Summit, Lammermoor Ra., Rock and Pillar Ra.), Westland (Aspiring Natl. Park, Nelson Lakes Natl. Park), Canterbury (Harman Pass, Arthur’s Pass, Porters Pass), Sounds-Nelson (Richmond Ra.), Southern North Island (Tararua and Ruahine ranges) and Volcanic Plateau (Kaimanawa Ra., Atiamuri, Rotorua) EPs. A medium- to high-elevation species. In forested areas it occurs on well-shaded rocky cliffs, while in penalpine communities it may be found, for example, in and at the edges of peaty, saturated bogs or between boulders. On Stewart Island (Mt. Rakeahua summit area, 600-690 m) present over a thick soil layer in a pocket between boulders in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi 0.5-2 m tall and significant areas of exposed rock. Also at the summit area of Te Rangaakapua (Urewera Natl. Park, Huiarau Ra., 1265-1320 m) occurring on the floor in open areas and on small banks of soil in open areas within mosaics of stunted Olearia colensoi and tussock with occasional Coprosma spp. Below the summit of ‘‘Little Moehau” (Coro¬ mandel Eorest Park, ca. 800 m) the species formed a pure colony on the exposed side of a seepage area in a mosaic of Sphagnum bog and small communities of shrub-heath including Dracophyllum recurvum, Lepidothamnus laxifolius, Coprosma foetidissima, Oreobolus pecti- natus, Corokia, and occasional stunted Weinmannia silvicola and Dacrydium cupressinum. In alpine communities it occurs over moist, peaty ground at edges of rills or tarns where it may form pure, compact colonies. Also over soil of protected pockets or of narrow crevices of boulders in areas of cliffs and outcrops with scattered alpine plants. The species often occurs as a pioneer over bare soil and the extensive, deep system of subterranean rhizoidous axes may be of significance in consolidating and stabilizing such habitats. In the bare soil niches often in pockets or under the lip of overhangs or under rock ledges, and, in such cases, at least a nominal amount of moisture and protection is provided. Also, in these niches Hygrolembidium acrocladum often is one of the few hepatics present. In wet peat-soil habitats it occurs with A/- lisonia cockaynei, Kurzia compacta, Marchantia foliacea and Solenostoma inundatum. In better-drained and bare soil sites it is found with Chrysoblastella chilensis. Ditrichum cylindri- carpum, Notoligotrichum australe and Polytrichum juniperinum. Comments: Similar to Hygrolembidium rigidum in the form of the leaf cells: non-elongated, chiefly 5 -6-angled, with walls thin or at best very faintly firm-walled. Also approaching that species in the densely imbricate leaves, the shoots becoming stoutly julaceous and in its translucent light green to green color. Plants are at once distinct from H. rigidum in: 1) leaf cells much the same in size throughout the leaf; 2) leaf cells all (at least the epidermal) with 1-2 small, coarsely botryoidal oil-bodies; 3) surface of the leaves quite smooth, even distally; 4) leaves more nearly orbicular, never folded above; and 5) underleaves all small and appressed, the shoots never trigonous as seen in apical profile. The underleaves although small are normally quite visible (Eig. 116: 5), but are sometimes inconspicuous and then appear as if altogether lacking. Shoots frequently have a mixture of conspicuous and inconspicuous underleaves. However, occasional shoots have underleaves uniformly reduced and thus, at first glance, appear underleaf-free. Small phases of this species sometimes may be mistaken for Solenostoma totipapillosum, but the presence of underleaves and the lack of papillae on the stem will immediately distinguish Hygrolembidium acrocladum from that species.</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants pure, clear green, variable, especially in size, the leafy shoots to 1.5 mm wide. Branching abundant, the leafy branches ventral- or lateral-intercalary and from a system of creeping, freely branched, colorless, long, slender stolons, the leafy branches issuing only from microphyllous sectors of plants and not from leafy sectors of another leafy shoot. Stem cortical cells leptodermous, usually in 19-20 to over 30 rows, the medullary cells very large, pellucid. Rhizoids mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, poly- stratose in median and basal sectors, the peripheral and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5-stratose in intramarginal sectors, the marginal sectors remaining polystratose or thinning to unistratose; epidermal cells of leaf moderately smaller in diameter than internal cells; leaves increasing in size upward, or (on longer shoots) remaining ± equal in size except for smaller leaves near the apex, the leaves contiguous to moderately imbricate, suberect to obliquely spreading, ± loosely sheathing stem, feebly to distinctly succubously inserted, deeply concave, at times subcupulate, ovate, widest in basal one third or in the middle and narrowed to the blunt, very concave, undivided, never retuse apex; lamina margins entire. Larger leaves (700)950- 1100 |ULm wide X (1000)1120-1200 juim long (when flattened, which is difficult to do without tearing the leaf). Cells of apical sector ± strongly elongated, narrowly oblong, ± prosenchy- matous, thick-walled, (12)15-26 juim wide X (35)40-60(90) juim long; median cells 18- 26 |ULm wide X 34-50(72) juim long; basal cells not or hardly larger; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate, chlorophyllose; surface of distal and marginal cells papillose (sometimes faintly so), that of median portion of leaf smooth or (rarely) delicately granulate-papillate. Oil-bodies (Schuster and Engel, 1987b) lacking in unistratose portion of leaf, present in all or most cells of polystratose region, there 1-2(3) per cell (some internal cells with 3-9 oil-bodies); oil-bodies small, glistening, 2.5-3. 5 X 5 juim to 3.5-5 X 5-6 |ULm, the smaller sometimes unsegmented, the larger coarse, few-segmented. Underleaves small, often inconspicuous and appearing as if lacking, plane to weakly concave, variable in shape: lingulate to oblong-ovate or wide-ovate to suborbicular, the apex crenulate; lamina margins entire. Eungal partner an ascomycete. cf Plants small. Androecial branches originating from axils of underleaves or leaves, sometimes very small and slender, at other times a little less vigorous than smaller vegetative branches; bracts unlobed, of similar form to leaves, the apices and sides suberect; antheridia (l)2-3(4) per bract, the stalk 2-4-seriate. Gynoecia on ± abbreviated ventral- or lateral- intercalary branches; bracts and bracteoles concave, similar or bracteole somewhat smaller, the bracts widely spaced, somewhat larger than leaves, ovate to wide-elliptic, the apex 0.15- 0. 2(0.4) bilobed and with lobes variable-denticulate above (often with free ends of elongated cells ± sigmoid) or unlobed and blunt to broad-acute, crenulate, the lamina margins entire or with a ciliiform projection. Perianth very large for plant size, to 3 mm long X 1 .4 mm in diam., oblong-fusiform or (less often) ovate, cylindrical below and bluntly 3(4)-gonous above, the mouth lobulate-fimbriolate to crenulate-ciliolate with narrow, often strongly elongated cells and short cilia (to 120 juim long); perianth 3-4(5)-stratose in basal and median sectors. Seta with (14)16-18 rows of large epidermal cells. Capsule ellipsoidal, the wall 3-4(5)- stratose and ca. 35-39 luim when 5-stratose; outer layer of cells with 2-3 to 4-6 nodular thickenings per face of all or almost all longitudinal walls (primary walls sometimes with thicken¬ ings weaker and more yellowish, rather than brownish); innermost layer of cells with almost exclusively nodular to weak or imperfect semi annular thickenings. Spores 13.5-17.5 juim in diam., the wall yellow-brown, papillate-granulate to papillate, the markings partly coalescent and forming short- vermiculate lines, the spores 2X the elater diam. Elaters ± tortuous, bispiral, 6.7-9. 5 juim in diam., the spirals 3-3.3 juim wide. Distribution and Ecology: Endemic to New Zealand: Campbell Island, South Island (1000- 1550 m). North Island (840-1800 m). Known from Eiordland, Southland (Blue Mtns.), Otago (Rock and Pillar Ra.), Westland (Spenser Mtns., Mt. Te Kinga, upper Otira River), Western Nelson (Mt. Peel), Sounds-Nelson (Richmond Ra.) and Auckland (Mt. Moehau) EPs. Widespread but sporadic in distribution. The species occurs primarily in alpine and pen- alpine, moory sites mostly at 855-1800 m, but sporadically at lower elevations (520-825 m). In the alpine zone it grows along small rills in deep shade under tussock blades where conditions are permanently moist. Also over soil near the edges of tarns and on lips of stagnant pools in mosaics of tussock grass and alpine vegetation along with tarns, pools, rills, rocky outcrops and boulderfields. In these sites it grows with Sphagnum cristatum, S. falcatulum (growing at times on the surface of the Sphagnum), Campylopus clavatus, C. introflexus, Kurzia hip- puroides and K. calcarata, Pachyglossa tenacifolia, Pseudocephalozia paludicola and Siphula rubra. The species also may be found in more exposed situations; for example, it occurs over bare soil of exposed portions of slopes as well as over soil of pockets on ice-scoured slopes. In penalpine communities the species occurs over soil in vegetation dominated by Chionochloa (but with some scattered Dracophyllum and Phormium cookianum) as well as near rills or under tussock overhangs in scrub consisting mainly of Chionochloa, Dracophyllum and Hebe. In these sites it occurs with Cladia aggregata, Conostomum pusillum. Ditrichum difficile, D. punctulatum, Notoligotrichum australe, Philonotis tenuis and Racomitrium lanugi- nosum. At somewhat lower elevations over soil of vertical banks of drainage channels; e.g., on Mt. Moehau (Coromandel Eorest Park, ca. 840 m) it occurred in a narrow truncated valley system under stunted Weinmannia silvicola, Coprosma foetidissima and Corokia buddleioides. The species rarely occurs in Nothofagus forests; e.g., near the South Branch of Borland Bum (Eiord- land, 855-870 m) the species occurs over peaty soil at the side of a normally dry stream channel. Comments: Vegetatively this species, like other Hygrolembidium species, is extremely variable, especially in size. Plants often are dwarfed and bear smaller, often shorter, less concave leaves, never folded at the tips; they seem always to be rather remote-leaved. All forms of Hygrolembidium australe are at once distinct from H. rigidum, which may occur admixed with this species, in the 1) bluntly pointed to ± rounded leaves whose apices are never incised or retuse; 2) much smaller underleaves; and 3) firm-walled leaf cells (except at the leaf bases), strongly elongated and (marginally) prosenchymatous in form. Also, oil- bodies are present at least in some cells; in H. rigidum no cells ever bear oil-bodies. Chloranthelia R.M.Schust. Chloranthelia R.M.Schust., Nova Hedwigia 8: 278. 1964; J. Hattori Bot. Lab. 26: 215, 275. 1963, nom. inval. Maculia E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 3: 72. 1965. Plants anisophyllous, erect or prostrate, greyish to pure green (without ability to develop secondary pigmentation), dull-textured and water-repellent when dry; leafy shoots small, the apices never with autonomous curvature. Branching normally all axillary and intercalary, from axils of both leaves and/or underleaves, the leafy branches ascending to erect, arising from and/or freely giving rise to geotropic, pale, leafless rhizomes or stolons which freely bear rhi- zoids, the leafy shoots usually unbranched, very rarely and sporadically producing a terminal, Frullania-iy^Q branch. Stem soft, with or without a hyalodermis; cortex with large, pellucid cells that are equal in size to or larger than the very leptodermous medullary cells; cortical cells in surface view oblong, lying in sharply defined tiers, superior in size to leaf cells. Rhizoids sparsely developed on leafy shoots, but if present, then toward shoot bases. Leaves adaxially concave or concave-canaliculate, but never canaliculate-conduplicate, unistratose, soft-textured, chlorophyllose except sometimes for marginal and submarginal cells, which are at times ± thicker- walled and hyaline, the insertion transverse to very weakly succubous; mature leaves variable, asymmetrically lobed, either 2(3)- or 3-4(5)-lobed for less than 0.35 their length; margins entire or denticulate-dentate. Cells non-collenchymatous, rather large, but an area basalis or apicalis not differentiated, in median and basal sectors ± oblong, the marginal cells typically echlorophyllose; surface clearly papillose. Oil-bodies completely lacking, only a few scattered, tiny, glistening oil-droplets present. Chloroplasts numerous, small: 1. 4-2.4 X 2.4- 4.3 |ULm. Underleaves distinct, 0.1 -0.65 X area of lateral leaves, erect-appressed and often nearly hiding stem, present throughout, the apex variable, 2-4-dentate or -lobulate; lamina margins as on leaves. Asexual reproduction lacking. Dioecious. Androecia (known only for Chloranthelia denticulata) at base of abbreviated branches that may proliferate distally, lateral- or ventral-intercalary, spicate; bracts leaf-like, slightly smaller than leaves; antheridia 1 per bract, the stalk biseriate. Gynoecia arising on short, abbreviated, intercalary branches bearing at most 1-2 cycles of minute leaves, the branches either from axils of lateral leaves, or from axils of underleaves; bracts small, hyaline, leptodermous, suberect. Perianth mouth lobulate-incised, fimbriolate with long, linear cells distally. Seta with 8 rows of outer cells surrounding 7-8 rows of smaller internal cells. Spore wall asperulate. Elaters bispiral. Type: Chloranthelia denticulata (Steph.) R.M.Schust. (= Lembidium denticulatum Steph.) The genus includes two species, Chloranthelia denticulata (Steph.) R.M.Schust. of New Caledonia and C. berggrenii of New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a).</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants light green to light yellow-green, variable in size, the leafy shoots ranging from stoutly clavate, being only 650-750 juim wide and bearing 3-5 pairs of leaves to more robust, to 2.2 mm wide and bearing several to many pairs of leaves. Branching abundant, the leafy branches ventral- or lateral-intercalary and mostly from a system of creeping, freely branched, colorless, long slender stolons, the leafy branches rarely and sporadically issuing from leafy sectors of another leafy shoot and then only ventral-intercalary. Stem distinctly thick and fleshy for plant size, the cortex in 36-39 rows, leptodermous, poorly differentiated. Rhizoids ventral-intercalary androecial branches, lateral view; note cf branches proliferate vegetatively distally and become stoloniform. 5. Portion of main shoot with 2 ventral-intercalary androecial branches; note determinate cf branches (sb = stoloniform branch). 6. Sector of leafy shoot, lateral aspect, the leaves cut off except for basal ca. 0.25; note fleshy leaf bases (ul = underleaf). 7. Leaf, cross section through basal sector (vm = ventral margin). 8,9. Leaves and within each, an underleaf, all from same upright leafy shoot (dm = dorsal margin). 10. Stem, cross section through leafy shoot. 11. Capsule wall, cross section. (All from Engel 13950, Tasmania, Cradle Mtn.) els of perianth (a = distal 0.25; m = medium sector; b = base) and calyptra base (= c). 2. Distal portion of innermost bract. 3. Perianth, cross section through distal 0.25 (stippled areas indicate mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, polystratose in median and basal sectors, the median and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5(6)-stratose in intramarginal sector, the marginal sector remaining polystratose or thinning to unistratose, the epidermal cells of leaf on average smaller in diameter than internal cells; leaves contiguous to closely imbricate, suberect to obliquely spreading, the insertion succubous in well-developed plants, ± transverse in smaller or weaker plants, the leaves deeply concave, at times subcupulate, orbicular (particularly in smaller plants) to suboblate, occasionally ovate, to 1 120 juim wide X 1295 juim long when flattened; apex normally broadly rounded, less often truncate, sporadically repand, undivided, never retuse; lamina margins entire. Cells of apical sector subquadrate, at most short-rectangular, not elongate, the walls thin or slightly thickened, 22-36 juim wide X 22- 45 |ULm long up to 35-40 juim wide X 35-50 juim long; median cells 24-32 juim wide X 32- 56(62) |ULm long; basal cells 24-30 juim wide X 55-75 juim long; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate; surface smooth at least in median portion of leaf and often smooth throughout, distal cells occasionally faintly papillose, the marginal cells rarely so. Oil-bodies (in part after Schuster and Engel [1987b]) variable in number: 1-3 to 3-5, sometimes 6-9 per cell, coarsely and irregularly segmented and formed of a few variable, spherical segments; oil-bodies small, spherical and 4 juim in diam. to ovoid and 3-4.5 X 6-7(9) luim to 4-4.5 X 7-10 juim to broadly elliptic. Underleaves small, often inconspicuous and appearing as if lacking, the underleaves plane to weakly concave, wide-ovate to orbicular to suboblate, occasionally oblong or Ungulate, the apex crenulate or with 1-3 teeth or irregular lobules; lamina margins entire or locally denticulate by projections of 1 or 2 cells. Androecial branches originating from axils of underleaves, laxly spicate and at times sub- julaceous; bracts erect, of similar form to leaves; antheridia 2-4 per bract, the stalk biseriate. Gynoecia on abbreviated ventral-intercalary branches, from lower, microphyllous sectors of leafy shoots; bracts and bracteoles concave, similar or bracteole somewhat narrower, the bracts considerably larger than leaves, ovate to wide-elliptic, the apex irregularly dentate or at times clearly 4-dentate-lobulate, the lamina margins with several teeth and (less often) ciliiform projections. Perianth very large for plant size, to 4.2 mm long X 1.4 mm in diam., subclavate to oblong-fusiform, cylindrical throughout or cylindrical below and faintly 3(4)-gonous above, the mouth crenulate to spinose dentate-lobulate; perianth 4-5-stratose at base. Seta (fide Herzog, 1952) with 16-17 rows of outer cells. Capsule wall 4-stratose and 30- 36 |ULm thick to 5-stratose and 42-46 juim thick; outer layer of cells equal to thickness of 1.8- 3 of interior strata, the radial walls with nodular to spur- like thickenings on both longitudinal and most transverse walls, those of longitudinal walls sporadically extended tangentially to form complete, somewhat thickened semi annular bands; innermost layer of cells with radial walls often with ± continuous sheets of red-brown wall material, the radial walls also with rather thin semi annular bands and occasional nodular to spur-like thickenings. Spores 15.8-17.8 juim in diam., the wall red-brown, with dense, low but sharply defined, close, papillose and short- vermiculate markings, 1. 7-2.3 X the elater diam. Elaters tortuous, bispiral, 7. 2-9. 6 juim in diam., the spirals 2. 9-3. 8 juim wide. bistratose sectors, the remainder unistratose). 4. Portion of plant with main leafy shoot, 2 ventral- intercalary leafy branches and a gynoecium with mature sporophyte; note isophyllous gynoecium (sb = stoloniform branch). 5. Capsule wall, inner layer. 6, 7. Portion of perianth mouth (each fig. from a different perianth). 8. Capsule wall, outer layer. (All from Engel 13950, Tasmania, Cradle Mtn.) Distribution and Ecology: New Zealand: Stewart Island (600-690 m), South Island (560- 1525 m), North Island (305-2000 m); Australia: Tasmania, Victoria, New South Wales. In New Zealand known from Eiordland (Hunter Mtns.), Otago (Pisa Ra., Old Man Ra., Maun- gatua. Swampy Summit, Lammermoor Ra., Rock and Pillar Ra.), Westland (Aspiring Natl. Park, Nelson Lakes Natl. Park), Canterbury (Harman Pass, Arthur’s Pass, Porters Pass), Sounds-Nelson (Richmond Ra.), Southern North Island (Tararua and Ruahine ranges) and Volcanic Plateau (Kaimanawa Ra., Atiamuri, Rotorua) EPs. A medium- to high-elevation species. In forested areas it occurs on well-shaded rocky cliffs, while in penalpine communities it may be found, for example, in and at the edges of peaty, saturated bogs or between boulders. On Stewart Island (Mt. Rakeahua summit area, 600-690 m) present over a thick soil layer in a pocket between boulders in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi 0.5-2 m tall and significant areas of exposed rock. Also at the summit area of Te Rangaakapua (Urewera Natl. Park, Huiarau Ra., 1265-1320 m) occurring on the floor in open areas and on small banks of soil in open areas within mosaics of stunted Olearia colensoi and tussock with occasional Coprosma spp. Below the summit of ‘‘Little Moehau” (Coro¬ mandel Eorest Park, ca. 800 m) the species formed a pure colony on the exposed side of a seepage area in a mosaic of Sphagnum bog and small communities of shrub-heath including Dracophyllum recurvum, Lepidothamnus laxifolius, Coprosma foetidissima, Oreobolus pecti- natus, Corokia, and occasional stunted Weinmannia silvicola and Dacrydium cupressinum. In alpine communities it occurs over moist, peaty ground at edges of rills or tarns where it may form pure, compact colonies. Also over soil of protected pockets or of narrow crevices of boulders in areas of cliffs and outcrops with scattered alpine plants. The species often occurs as a pioneer over bare soil and the extensive, deep system of subterranean rhizoidous axes may be of significance in consolidating and stabilizing such habitats. In the bare soil niches often in pockets or under the lip of overhangs or under rock ledges, and, in such cases, at least a nominal amount of moisture and protection is provided. Also, in these niches Hygrolembidium acrocladum often is one of the few hepatics present. In wet peat-soil habitats it occurs with A/- lisonia cockaynei, Kurzia compacta, Marchantia foliacea and Solenostoma inundatum. In better-drained and bare soil sites it is found with Chrysoblastella chilensis. Ditrichum cylindri- carpum, Notoligotrichum australe and Polytrichum juniperinum. Comments: Similar to Hygrolembidium rigidum in the form of the leaf cells: non-elongated, chiefly 5 -6-angled, with walls thin or at best very faintly firm-walled. Also approaching that species in the densely imbricate leaves, the shoots becoming stoutly julaceous and in its translucent light green to green color. Plants are at once distinct from H. rigidum in: 1) leaf cells much the same in size throughout the leaf; 2) leaf cells all (at least the epidermal) with 1-2 small, coarsely botryoidal oil-bodies; 3) surface of the leaves quite smooth, even distally; 4) leaves more nearly orbicular, never folded above; and 5) underleaves all small and appressed, the shoots never trigonous as seen in apical profile. The underleaves although small are normally quite visible (Eig. 116: 5), but are sometimes inconspicuous and then appear as if altogether lacking. Shoots frequently have a mixture of conspicuous and inconspicuous underleaves. However, occasional shoots have underleaves uniformly reduced and thus, at first glance, appear underleaf-free. Small phases of this species sometimes may be mistaken for Solenostoma totipapillosum, but the presence of underleaves and the lack of papillae on the stem will immediately distinguish Hygrolembidium acrocladum from that species.</p>
+    <pre class="description-text">Plants light green to light yellow-green, variable in size, the leafy shoots ranging from stoutly clavate, being only 650-750 juim wide and bearing 3-5 pairs of leaves to more robust, to 2.2 mm wide and bearing several to many pairs of leaves. Branching abundant, the leafy branches ventral- or lateral-intercalary and mostly from a system of creeping, freely branched, colorless, long slender stolons, the leafy branches rarely and sporadically issuing from leafy sectors of another leafy shoot and then only ventral-intercalary. Stem distinctly thick and fleshy for plant size, the cortex in 36-39 rows, leptodermous, poorly differentiated. Rhizoids ventral-intercalary androecial branches, lateral view; note cf branches proliferate vegetatively distally and become stoloniform. 5. Portion of main shoot with 2 ventral-intercalary androecial branches; note determinate cf branches (sb = stoloniform branch). 6. Sector of leafy shoot, lateral aspect, the leaves cut off except for basal ca. 0.25; note fleshy leaf bases (ul = underleaf). 7. Leaf, cross section through basal sector (vm = ventral margin). 8,9. Leaves and within each, an underleaf, all from same upright leafy shoot (dm = dorsal margin). 10. Stem, cross section through leafy shoot. 11. Capsule wall, cross section. (All from Engel 13950, Tasmania, Cradle Mtn.) els of perianth (a = distal 0.25; m = medium sector; b = base) and calyptra base (= c). 2. Distal portion of innermost bract. 3. Perianth, cross section through distal 0.25 (stippled areas indicate mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, polystratose in median and basal sectors, the median and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5(6)-stratose in intramarginal sector, the marginal sector remaining polystratose or thinning to unistratose, the epidermal cells of leaf on average smaller in diameter than internal cells; leaves contiguous to closely imbricate, suberect to obliquely spreading, the insertion succubous in well-developed plants, ± transverse in smaller or weaker plants, the leaves deeply concave, at times subcupulate, orbicular (particularly in smaller plants) to suboblate, occasionally ovate, to 1 120 juim wide X 1295 juim long when flattened; apex normally broadly rounded, less often truncate, sporadically repand, undivided, never retuse; lamina margins entire. Cells of apical sector subquadrate, at most short-rectangular, not elongate, the walls thin or slightly thickened, 22-36 juim wide X 22- 45 |ULm long up to 35-40 juim wide X 35-50 juim long; median cells 24-32 juim wide X 32- 56(62) |ULm long; basal cells 24-30 juim wide X 55-75 juim long; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate; surface smooth at least in median portion of leaf and often smooth throughout, distal cells occasionally faintly papillose, the marginal cells rarely so. Oil-bodies (in part after Schuster and Engel [1987b]) variable in number: 1-3 to 3-5, sometimes 6-9 per cell, coarsely and irregularly segmented and formed of a few variable, spherical segments; oil-bodies small, spherical and 4 juim in diam. to ovoid and 3-4.5 X 6-7(9) luim to 4-4.5 X 7-10 juim to broadly elliptic. Underleaves small, often inconspicuous and appearing as if lacking, the underleaves plane to weakly concave, wide-ovate to orbicular to suboblate, occasionally oblong or Ungulate, the apex crenulate or with 1-3 teeth or irregular lobules; lamina margins entire or locally denticulate by projections of 1 or 2 cells. Androecial branches originating from axils of underleaves, laxly spicate and at times sub- julaceous; bracts erect, of similar form to leaves; antheridia 2-4 per bract, the stalk biseriate. Gynoecia on abbreviated ventral-intercalary branches, from lower, microphyllous sectors of leafy shoots; bracts and bracteoles concave, similar or bracteole somewhat narrower, the bracts considerably larger than leaves, ovate to wide-elliptic, the apex irregularly dentate or at times clearly 4-dentate-lobulate, the lamina margins with several teeth and (less often) ciliiform projections. Perianth very large for plant size, to 4.2 mm long X 1.4 mm in diam., subclavate to oblong-fusiform, cylindrical throughout or cylindrical below and faintly 3(4)-gonous above, the mouth crenulate to spinose dentate-lobulate; perianth 4-5-stratose at base. Seta (fide Herzog, 1952) with 16-17 rows of outer cells. Capsule wall 4-stratose and 30- 36 |ULm thick to 5-stratose and 42-46 juim thick; outer layer of cells equal to thickness of 1.8- 3 of interior strata, the radial walls with nodular to spur- like thickenings on both longitudinal and most transverse walls, those of longitudinal walls sporadically extended tangentially to form complete, somewhat thickened semi annular bands; innermost layer of cells with radial walls often with ± continuous sheets of red-brown wall material, the radial walls also with rather thin semi annular bands and occasional nodular to spur-like thickenings. Spores 15.8-17.8 juim in diam., the wall red-brown, with dense, low but sharply defined, close, papillose and short- vermiculate markings, 1. 7-2.3 X the elater diam. Elaters tortuous, bispiral, 7. 2-9. 6 juim in diam., the spirals 2. 9-3. 8 juim wide. bistratose sectors, the remainder unistratose). 4. Portion of plant with main leafy shoot, 2 ventral- intercalary leafy branches and a gynoecium with mature sporophyte; note isophyllous gynoecium (sb = stoloniform branch). 5. Capsule wall, inner layer. 6, 7. Portion of perianth mouth (each fig. from a different perianth). 8. Capsule wall, outer layer. (All from Engel 13950, Tasmania, Cradle Mtn.) Distribution and Ecology: New Zealand: Stewart Island (600-690 m), South Island (560- 1525 m), North Island (305-2000 m); Australia: Tasmania, Victoria, New South Wales. In New Zealand known from Eiordland (Hunter Mtns.), Otago (Pisa Ra., Old Man Ra., Maun- gatua. Swampy Summit, Lammermoor Ra., Rock and Pillar Ra.), Westland (Aspiring Natl. Park, Nelson Lakes Natl. Park), Canterbury (Harman Pass, Arthur’s Pass, Porters Pass), Sounds-Nelson (Richmond Ra.), Southern North Island (Tararua and Ruahine ranges) and Volcanic Plateau (Kaimanawa Ra., Atiamuri, Rotorua) EPs. A medium- to high-elevation species. In forested areas it occurs on well-shaded rocky cliffs, while in penalpine communities it may be found, for example, in and at the edges of peaty, saturated bogs or between boulders. On Stewart Island (Mt. Rakeahua summit area, 600-690 m) present over a thick soil layer in a pocket between boulders in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi 0.5-2 m tall and significant areas of exposed rock. Also at the summit area of Te Rangaakapua (Urewera Natl. Park, Huiarau Ra., 1265-1320 m) occurring on the floor in open areas and on small banks of soil in open areas within mosaics of stunted Olearia colensoi and tussock with occasional Coprosma spp. Below the summit of ‘‘Little Moehau” (Coro¬ mandel Eorest Park, ca. 800 m) the species formed a pure colony on the exposed side of a seepage area in a mosaic of Sphagnum bog and small communities of shrub-heath including Dracophyllum recurvum, Lepidothamnus laxifolius, Coprosma foetidissima, Oreobolus pecti- natus, Corokia, and occasional stunted Weinmannia silvicola and Dacrydium cupressinum. In alpine communities it occurs over moist, peaty ground at edges of rills or tarns where it may form pure, compact colonies. Also over soil of protected pockets or of narrow crevices of boulders in areas of cliffs and outcrops with scattered alpine plants. The species often occurs as a pioneer over bare soil and the extensive, deep system of subterranean rhizoidous axes may be of significance in consolidating and stabilizing such habitats. In the bare soil niches often in pockets or under the lip of overhangs or under rock ledges, and, in such cases, at least a nominal amount of moisture and protection is provided. Also, in these niches Hygrolembidium acrocladum often is one of the few hepatics present. In wet peat-soil habitats it occurs with A/- lisonia cockaynei, Kurzia compacta, Marchantia foliacea and Solenostoma inundatum. In better-drained and bare soil sites it is found with Chrysoblastella chilensis. Ditrichum cylindri- carpum, Notoligotrichum australe and Polytrichum juniperinum. Comments: Similar to Hygrolembidium rigidum in the form of the leaf cells: non-elongated, chiefly 5 -6-angled, with walls thin or at best very faintly firm-walled. Also approaching that species in the densely imbricate leaves, the shoots becoming stoutly julaceous and in its translucent light green to green color. Plants are at once distinct from H. rigidum in: 1) leaf cells much the same in size throughout the leaf; 2) leaf cells all (at least the epidermal) with 1-2 small, coarsely botryoidal oil-bodies; 3) surface of the leaves quite smooth, even distally; 4) leaves more nearly orbicular, never folded above; and 5) underleaves all small and appressed, the shoots never trigonous as seen in apical profile. The underleaves although small are normally quite visible (Eig. 116: 5), but are sometimes inconspicuous and then appear as if altogether lacking. Shoots frequently have a mixture of conspicuous and inconspicuous underleaves. However, occasional shoots have underleaves uniformly reduced and thus, at first glance, appear underleaf-free. Small phases of this species sometimes may be mistaken for Solenostoma totipapillosum, but the presence of underleaves and the lack of papillae on the stem will immediately distinguish Hygrolembidium acrocladum from that species.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants pure, clear green, variable, especially in size, the leafy shoots to 1.5 mm wide. Branching abundant, the leafy branches ventral- or lateral-intercalary and from a system of creeping, freely branched, colorless, long, slender stolons, the leafy branches issuing only from microphyllous sectors of plants and not from leafy sectors of another leafy shoot. Stem cortical cells leptodermous, usually in 19-20 to over 30 rows, the medullary cells very large, pellucid. Rhizoids mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, poly- stratose in median and basal sectors, the peripheral and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5-stratose in intramarginal sectors, the marginal sectors remaining polystratose or thinning to unistratose; epidermal cells of leaf moderately smaller in diameter than internal cells; leaves increasing in size upward, or (on longer shoots) remaining ± equal in size except for smaller leaves near the apex, the leaves contiguous to moderately imbricate, suberect to obliquely spreading, ± loosely sheathing stem, feebly to distinctly succubously inserted, deeply concave, at times subcupulate, ovate, widest in basal one third or in the middle and narrowed to the blunt, very concave, undivided, never retuse apex; lamina margins entire. Larger leaves (700)950- 1100 |ULm wide X (1000)1120-1200 juim long (when flattened, which is difficult to do without tearing the leaf). Cells of apical sector ± strongly elongated, narrowly oblong, ± prosenchy- matous, thick-walled, (12)15-26 juim wide X (35)40-60(90) juim long; median cells 18- 26 |ULm wide X 34-50(72) juim long; basal cells not or hardly larger; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate, chlorophyllose; surface of distal and marginal cells papillose (sometimes faintly so), that of median portion of leaf smooth or (rarely) delicately granulate-papillate. Oil-bodies (Schuster and Engel, 1987b) lacking in unistratose portion of leaf, present in all or most cells of polystratose region, there 1-2(3) per cell (some internal cells with 3-9 oil-bodies); oil-bodies small, glistening, 2.5-3. 5 X 5 juim to 3.5-5 X 5-6 |ULm, the smaller sometimes unsegmented, the larger coarse, few-segmented. Underleaves small, often inconspicuous and appearing as if lacking, plane to weakly concave, variable in shape: lingulate to oblong-ovate or wide-ovate to suborbicular, the apex crenulate; lamina margins entire. Eungal partner an ascomycete. cf Plants small. Androecial branches originating from axils of underleaves or leaves, sometimes very small and slender, at other times a little less vigorous than smaller vegetative branches; bracts unlobed, of similar form to leaves, the apices and sides suberect; antheridia (l)2-3(4) per bract, the stalk 2-4-seriate. Gynoecia on ± abbreviated ventral- or lateral- intercalary branches; bracts and bracteoles concave, similar or bracteole somewhat smaller, the bracts widely spaced, somewhat larger than leaves, ovate to wide-elliptic, the apex 0.15- 0. 2(0.4) bilobed and with lobes variable-denticulate above (often with free ends of elongated cells ± sigmoid) or unlobed and blunt to broad-acute, crenulate, the lamina margins entire or with a ciliiform projection. Perianth very large for plant size, to 3 mm long X 1 .4 mm in diam., oblong-fusiform or (less often) ovate, cylindrical below and bluntly 3(4)-gonous above, the mouth lobulate-fimbriolate to crenulate-ciliolate with narrow, often strongly elongated cells and short cilia (to 120 juim long); perianth 3-4(5)-stratose in basal and median sectors. Seta with (14)16-18 rows of large epidermal cells. Capsule ellipsoidal, the wall 3-4(5)- stratose and ca. 35-39 luim when 5-stratose; outer layer of cells with 2-3 to 4-6 nodular thickenings per face of all or almost all longitudinal walls (primary walls sometimes with thicken¬ ings weaker and more yellowish, rather than brownish); innermost layer of cells with almost exclusively nodular to weak or imperfect semi annular thickenings. Spores 13.5-17.5 juim in diam., the wall yellow-brown, papillate-granulate to papillate, the markings partly coalescent and forming short- vermiculate lines, the spores 2X the elater diam. Elaters ± tortuous, bispiral, 6.7-9. 5 juim in diam., the spirals 3-3.3 juim wide. Distribution and Ecology: Endemic to New Zealand: Campbell Island, South Island (1000- 1550 m). North Island (840-1800 m). Known from Eiordland, Southland (Blue Mtns.), Otago (Rock and Pillar Ra.), Westland (Spenser Mtns., Mt. Te Kinga, upper Otira River), Western Nelson (Mt. Peel), Sounds-Nelson (Richmond Ra.) and Auckland (Mt. Moehau) EPs. Widespread but sporadic in distribution. The species occurs primarily in alpine and pen- alpine, moory sites mostly at 855-1800 m, but sporadically at lower elevations (520-825 m). In the alpine zone it grows along small rills in deep shade under tussock blades where conditions are permanently moist. Also over soil near the edges of tarns and on lips of stagnant pools in mosaics of tussock grass and alpine vegetation along with tarns, pools, rills, rocky outcrops and boulderfields. In these sites it grows with Sphagnum cristatum, S. falcatulum (growing at times on the surface of the Sphagnum), Campylopus clavatus, C. introflexus, Kurzia hip- puroides and K. calcarata, Pachyglossa tenacifolia, Pseudocephalozia paludicola and Siphula rubra. The species also may be found in more exposed situations; for example, it occurs over bare soil of exposed portions of slopes as well as over soil of pockets on ice-scoured slopes. In penalpine communities the species occurs over soil in vegetation dominated by Chionochloa (but with some scattered Dracophyllum and Phormium cookianum) as well as near rills or under tussock overhangs in scrub consisting mainly of Chionochloa, Dracophyllum and Hebe. In these sites it occurs with Cladia aggregata, Conostomum pusillum. Ditrichum difficile, D. punctulatum, Notoligotrichum australe, Philonotis tenuis and Racomitrium lanugi- nosum. At somewhat lower elevations over soil of vertical banks of drainage channels; e.g., on Mt. Moehau (Coromandel Eorest Park, ca. 840 m) it occurred in a narrow truncated valley system under stunted Weinmannia silvicola, Coprosma foetidissima and Corokia buddleioides. The species rarely occurs in Nothofagus forests; e.g., near the South Branch of Borland Bum (Eiord- land, 855-870 m) the species occurs over peaty soil at the side of a normally dry stream channel. Comments: Vegetatively this species, like other Hygrolembidium species, is extremely variable, especially in size. Plants often are dwarfed and bear smaller, often shorter, less concave leaves, never folded at the tips; they seem always to be rather remote-leaved. All forms of Hygrolembidium australe are at once distinct from H. rigidum, which may occur admixed with this species, in the 1) bluntly pointed to ± rounded leaves whose apices are never incised or retuse; 2) much smaller underleaves; and 3) firm-walled leaf cells (except at the leaf bases), strongly elongated and (marginally) prosenchymatous in form. Also, oil- bodies are present at least in some cells; in H. rigidum no cells ever bear oil-bodies. Chloranthelia R.M.Schust. Chloranthelia R.M.Schust., Nova Hedwigia 8: 278. 1964; J. Hattori Bot. Lab. 26: 215, 275. 1963, nom. inval. Maculia E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 3: 72. 1965. Plants anisophyllous, erect or prostrate, greyish to pure green (without ability to develop secondary pigmentation), dull-textured and water-repellent when dry; leafy shoots small, the apices never with autonomous curvature. Branching normally all axillary and intercalary, from axils of both leaves and/or underleaves, the leafy branches ascending to erect, arising from and/or freely giving rise to geotropic, pale, leafless rhizomes or stolons which freely bear rhi- zoids, the leafy shoots usually unbranched, very rarely and sporadically producing a terminal, Frullania-iy^Q branch. Stem soft, with or without a hyalodermis; cortex with large, pellucid cells that are equal in size to or larger than the very leptodermous medullary cells; cortical cells in surface view oblong, lying in sharply defined tiers, superior in size to leaf cells. Rhizoids sparsely developed on leafy shoots, but if present, then toward shoot bases. Leaves adaxially concave or concave-canaliculate, but never canaliculate-conduplicate, unistratose, soft-textured, chlorophyllose except sometimes for marginal and submarginal cells, which are at times ± thicker- walled and hyaline, the insertion transverse to very weakly succubous; mature leaves variable, asymmetrically lobed, either 2(3)- or 3-4(5)-lobed for less than 0.35 their length; margins entire or denticulate-dentate. Cells non-collenchymatous, rather large, but an area basalis or apicalis not differentiated, in median and basal sectors ± oblong, the marginal cells typically echlorophyllose; surface clearly papillose. Oil-bodies completely lacking, only a few scattered, tiny, glistening oil-droplets present. Chloroplasts numerous, small: 1. 4-2.4 X 2.4- 4.3 |ULm. Underleaves distinct, 0.1 -0.65 X area of lateral leaves, erect-appressed and often nearly hiding stem, present throughout, the apex variable, 2-4-dentate or -lobulate; lamina margins as on leaves. Asexual reproduction lacking. Dioecious. Androecia (known only for Chloranthelia denticulata) at base of abbreviated branches that may proliferate distally, lateral- or ventral-intercalary, spicate; bracts leaf-like, slightly smaller than leaves; antheridia 1 per bract, the stalk biseriate. Gynoecia arising on short, abbreviated, intercalary branches bearing at most 1-2 cycles of minute leaves, the branches either from axils of lateral leaves, or from axils of underleaves; bracts small, hyaline, leptodermous, suberect. Perianth mouth lobulate-incised, fimbriolate with long, linear cells distally. Seta with 8 rows of outer cells surrounding 7-8 rows of smaller internal cells. Spore wall asperulate. Elaters bispiral. Type: Chloranthelia denticulata (Steph.) R.M.Schust. (= Lembidium denticulatum Steph.) The genus includes two species, Chloranthelia denticulata (Steph.) R.M.Schust. of New Caledonia and C. berggrenii of New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a).</p>
+    <pre class="description-text">Plants pure, clear green, variable, especially in size, the leafy shoots to 1.5 mm wide. Branching abundant, the leafy branches ventral- or lateral-intercalary and from a system of creeping, freely branched, colorless, long, slender stolons, the leafy branches issuing only from microphyllous sectors of plants and not from leafy sectors of another leafy shoot. Stem cortical cells leptodermous, usually in 19-20 to over 30 rows, the medullary cells very large, pellucid. Rhizoids mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, poly- stratose in median and basal sectors, the peripheral and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5-stratose in intramarginal sectors, the marginal sectors remaining polystratose or thinning to unistratose; epidermal cells of leaf moderately smaller in diameter than internal cells; leaves increasing in size upward, or (on longer shoots) remaining ± equal in size except for smaller leaves near the apex, the leaves contiguous to moderately imbricate, suberect to obliquely spreading, ± loosely sheathing stem, feebly to distinctly succubously inserted, deeply concave, at times subcupulate, ovate, widest in basal one third or in the middle and narrowed to the blunt, very concave, undivided, never retuse apex; lamina margins entire. Larger leaves (700)950- 1100 |ULm wide X (1000)1120-1200 juim long (when flattened, which is difficult to do without tearing the leaf). Cells of apical sector ± strongly elongated, narrowly oblong, ± prosenchy- matous, thick-walled, (12)15-26 juim wide X (35)40-60(90) juim long; median cells 18- 26 |ULm wide X 34-50(72) juim long; basal cells not or hardly larger; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate, chlorophyllose; surface of distal and marginal cells papillose (sometimes faintly so), that of median portion of leaf smooth or (rarely) delicately granulate-papillate. Oil-bodies (Schuster and Engel, 1987b) lacking in unistratose portion of leaf, present in all or most cells of polystratose region, there 1-2(3) per cell (some internal cells with 3-9 oil-bodies); oil-bodies small, glistening, 2.5-3. 5 X 5 juim to 3.5-5 X 5-6 |ULm, the smaller sometimes unsegmented, the larger coarse, few-segmented. Underleaves small, often inconspicuous and appearing as if lacking, plane to weakly concave, variable in shape: lingulate to oblong-ovate or wide-ovate to suborbicular, the apex crenulate; lamina margins entire. Eungal partner an ascomycete. cf Plants small. Androecial branches originating from axils of underleaves or leaves, sometimes very small and slender, at other times a little less vigorous than smaller vegetative branches; bracts unlobed, of similar form to leaves, the apices and sides suberect; antheridia (l)2-3(4) per bract, the stalk 2-4-seriate. Gynoecia on ± abbreviated ventral- or lateral- intercalary branches; bracts and bracteoles concave, similar or bracteole somewhat smaller, the bracts widely spaced, somewhat larger than leaves, ovate to wide-elliptic, the apex 0.15- 0. 2(0.4) bilobed and with lobes variable-denticulate above (often with free ends of elongated cells ± sigmoid) or unlobed and blunt to broad-acute, crenulate, the lamina margins entire or with a ciliiform projection. Perianth very large for plant size, to 3 mm long X 1 .4 mm in diam., oblong-fusiform or (less often) ovate, cylindrical below and bluntly 3(4)-gonous above, the mouth lobulate-fimbriolate to crenulate-ciliolate with narrow, often strongly elongated cells and short cilia (to 120 juim long); perianth 3-4(5)-stratose in basal and median sectors. Seta with (14)16-18 rows of large epidermal cells. Capsule ellipsoidal, the wall 3-4(5)- stratose and ca. 35-39 luim when 5-stratose; outer layer of cells with 2-3 to 4-6 nodular thickenings per face of all or almost all longitudinal walls (primary walls sometimes with thicken¬ ings weaker and more yellowish, rather than brownish); innermost layer of cells with almost exclusively nodular to weak or imperfect semi annular thickenings. Spores 13.5-17.5 juim in diam., the wall yellow-brown, papillate-granulate to papillate, the markings partly coalescent and forming short- vermiculate lines, the spores 2X the elater diam. Elaters ± tortuous, bispiral, 6.7-9. 5 juim in diam., the spirals 3-3.3 juim wide. Distribution and Ecology: Endemic to New Zealand: Campbell Island, South Island (1000- 1550 m). North Island (840-1800 m). Known from Eiordland, Southland (Blue Mtns.), Otago (Rock and Pillar Ra.), Westland (Spenser Mtns., Mt. Te Kinga, upper Otira River), Western Nelson (Mt. Peel), Sounds-Nelson (Richmond Ra.) and Auckland (Mt. Moehau) EPs. Widespread but sporadic in distribution. The species occurs primarily in alpine and pen- alpine, moory sites mostly at 855-1800 m, but sporadically at lower elevations (520-825 m). In the alpine zone it grows along small rills in deep shade under tussock blades where conditions are permanently moist. Also over soil near the edges of tarns and on lips of stagnant pools in mosaics of tussock grass and alpine vegetation along with tarns, pools, rills, rocky outcrops and boulderfields. In these sites it grows with Sphagnum cristatum, S. falcatulum (growing at times on the surface of the Sphagnum), Campylopus clavatus, C. introflexus, Kurzia hip- puroides and K. calcarata, Pachyglossa tenacifolia, Pseudocephalozia paludicola and Siphula rubra. The species also may be found in more exposed situations; for example, it occurs over bare soil of exposed portions of slopes as well as over soil of pockets on ice-scoured slopes. In penalpine communities the species occurs over soil in vegetation dominated by Chionochloa (but with some scattered Dracophyllum and Phormium cookianum) as well as near rills or under tussock overhangs in scrub consisting mainly of Chionochloa, Dracophyllum and Hebe. In these sites it occurs with Cladia aggregata, Conostomum pusillum. Ditrichum difficile, D. punctulatum, Notoligotrichum australe, Philonotis tenuis and Racomitrium lanugi- nosum. At somewhat lower elevations over soil of vertical banks of drainage channels; e.g., on Mt. Moehau (Coromandel Eorest Park, ca. 840 m) it occurred in a narrow truncated valley system under stunted Weinmannia silvicola, Coprosma foetidissima and Corokia buddleioides. The species rarely occurs in Nothofagus forests; e.g., near the South Branch of Borland Bum (Eiord- land, 855-870 m) the species occurs over peaty soil at the side of a normally dry stream channel. Comments: Vegetatively this species, like other Hygrolembidium species, is extremely variable, especially in size. Plants often are dwarfed and bear smaller, often shorter, less concave leaves, never folded at the tips; they seem always to be rather remote-leaved. All forms of Hygrolembidium australe are at once distinct from H. rigidum, which may occur admixed with this species, in the 1) bluntly pointed to ± rounded leaves whose apices are never incised or retuse; 2) much smaller underleaves; and 3) firm-walled leaf cells (except at the leaf bases), strongly elongated and (marginally) prosenchymatous in form. Also, oil- bodies are present at least in some cells; in H. rigidum no cells ever bear oil-bodies. Chloranthelia R.M.Schust. Chloranthelia R.M.Schust., Nova Hedwigia 8: 278. 1964; J. Hattori Bot. Lab. 26: 215, 275. 1963, nom. inval. Maculia E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 3: 72. 1965. Plants anisophyllous, erect or prostrate, greyish to pure green (without ability to develop secondary pigmentation), dull-textured and water-repellent when dry; leafy shoots small, the apices never with autonomous curvature. Branching normally all axillary and intercalary, from axils of both leaves and/or underleaves, the leafy branches ascending to erect, arising from and/or freely giving rise to geotropic, pale, leafless rhizomes or stolons which freely bear rhi- zoids, the leafy shoots usually unbranched, very rarely and sporadically producing a terminal, Frullania-iy^Q branch. Stem soft, with or without a hyalodermis; cortex with large, pellucid cells that are equal in size to or larger than the very leptodermous medullary cells; cortical cells in surface view oblong, lying in sharply defined tiers, superior in size to leaf cells. Rhizoids sparsely developed on leafy shoots, but if present, then toward shoot bases. Leaves adaxially concave or concave-canaliculate, but never canaliculate-conduplicate, unistratose, soft-textured, chlorophyllose except sometimes for marginal and submarginal cells, which are at times ± thicker- walled and hyaline, the insertion transverse to very weakly succubous; mature leaves variable, asymmetrically lobed, either 2(3)- or 3-4(5)-lobed for less than 0.35 their length; margins entire or denticulate-dentate. Cells non-collenchymatous, rather large, but an area basalis or apicalis not differentiated, in median and basal sectors ± oblong, the marginal cells typically echlorophyllose; surface clearly papillose. Oil-bodies completely lacking, only a few scattered, tiny, glistening oil-droplets present. Chloroplasts numerous, small: 1. 4-2.4 X 2.4- 4.3 |ULm. Underleaves distinct, 0.1 -0.65 X area of lateral leaves, erect-appressed and often nearly hiding stem, present throughout, the apex variable, 2-4-dentate or -lobulate; lamina margins as on leaves. Asexual reproduction lacking. Dioecious. Androecia (known only for Chloranthelia denticulata) at base of abbreviated branches that may proliferate distally, lateral- or ventral-intercalary, spicate; bracts leaf-like, slightly smaller than leaves; antheridia 1 per bract, the stalk biseriate. Gynoecia arising on short, abbreviated, intercalary branches bearing at most 1-2 cycles of minute leaves, the branches either from axils of lateral leaves, or from axils of underleaves; bracts small, hyaline, leptodermous, suberect. Perianth mouth lobulate-incised, fimbriolate with long, linear cells distally. Seta with 8 rows of outer cells surrounding 7-8 rows of smaller internal cells. Spore wall asperulate. Elaters bispiral. Type: Chloranthelia denticulata (Steph.) R.M.Schust. (= Lembidium denticulatum Steph.) The genus includes two species, Chloranthelia denticulata (Steph.) R.M.Schust. of New Caledonia and C. berggrenii of New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a).</pre>
     
     
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    <pre class="description-text">Plants light green to light yellow-green, variable in size, the leafy shoots ranging from stoutly clavate, being only 650-750 juim wide and bearing 3-5 pairs of leaves to more robust, to 2.2 mm wide and bearing several to many pairs of leaves. Branching abundant, the leafy branches ventral- or lateral-intercalary and mostly from a system of creeping, freely branched, colorless, long slender stolons, the leafy branches rarely and sporadically issuing from leafy sectors of another leafy shoot and then only ventral-intercalary. Stem distinctly thick and fleshy for plant size, the cortex in 36-39 rows, leptodermous, poorly differentiated. Rhizoids ventral-intercalary androecial branches, lateral view; note cf branches proliferate vegetatively distally and become stoloniform. 5. Portion of main shoot with 2 ventral-intercalary androecial branches; note determinate cf branches (sb = stoloniform branch). 6. Sector of leafy shoot, lateral aspect, the leaves cut off except for basal ca. 0.25; note fleshy leaf bases (ul = underleaf). 7. Leaf, cross section through basal sector (vm = ventral margin). 8,9. Leaves and within each, an underleaf, all from same upright leafy shoot (dm = dorsal margin). 10. Stem, cross section through leafy shoot. 11. Capsule wall, cross section. (All from Engel 13950, Tasmania, Cradle Mtn.) els of perianth (a = distal 0.25; m = medium sector; b = base) and calyptra base (= c). 2. Distal portion of innermost bract. 3. Perianth, cross section through distal 0.25 (stippled areas indicate mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, polystratose in median and basal sectors, the median and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5(6)-stratose in intramarginal sector, the marginal sector remaining polystratose or thinning to unistratose, the epidermal cells of leaf on average smaller in diameter than internal cells; leaves contiguous to closely imbricate, suberect to obliquely spreading, the insertion succubous in well-developed plants, ± transverse in smaller or weaker plants, the leaves deeply concave, at times subcupulate, orbicular (particularly in smaller plants) to suboblate, occasionally ovate, to 1 120 juim wide X 1295 juim long when flattened; apex normally broadly rounded, less often truncate, sporadically repand, undivided, never retuse; lamina margins entire. Cells of apical sector subquadrate, at most short-rectangular, not elongate, the walls thin or slightly thickened, 22-36 juim wide X 22- 45 |ULm long up to 35-40 juim wide X 35-50 juim long; median cells 24-32 juim wide X 32- 56(62) |ULm long; basal cells 24-30 juim wide X 55-75 juim long; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate; surface smooth at least in median portion of leaf and often smooth throughout, distal cells occasionally faintly papillose, the marginal cells rarely so. Oil-bodies (in part after Schuster and Engel [1987b]) variable in number: 1-3 to 3-5, sometimes 6-9 per cell, coarsely and irregularly segmented and formed of a few variable, spherical segments; oil-bodies small, spherical and 4 juim in diam. to ovoid and 3-4.5 X 6-7(9) luim to 4-4.5 X 7-10 juim to broadly elliptic. Underleaves small, often inconspicuous and appearing as if lacking, the underleaves plane to weakly concave, wide-ovate to orbicular to suboblate, occasionally oblong or Ungulate, the apex crenulate or with 1-3 teeth or irregular lobules; lamina margins entire or locally denticulate by projections of 1 or 2 cells. Androecial branches originating from axils of underleaves, laxly spicate and at times sub- julaceous; bracts erect, of similar form to leaves; antheridia 2-4 per bract, the stalk biseriate. Gynoecia on abbreviated ventral-intercalary branches, from lower, microphyllous sectors of leafy shoots; bracts and bracteoles concave, similar or bracteole somewhat narrower, the bracts considerably larger than leaves, ovate to wide-elliptic, the apex irregularly dentate or at times clearly 4-dentate-lobulate, the lamina margins with several teeth and (less often) ciliiform projections. Perianth very large for plant size, to 4.2 mm long X 1.4 mm in diam., subclavate to oblong-fusiform, cylindrical throughout or cylindrical below and faintly 3(4)-gonous above, the mouth crenulate to spinose dentate-lobulate; perianth 4-5-stratose at base. Seta (fide Herzog, 1952) with 16-17 rows of outer cells. Capsule wall 4-stratose and 30- 36 |ULm thick to 5-stratose and 42-46 juim thick; outer layer of cells equal to thickness of 1.8- 3 of interior strata, the radial walls with nodular to spur- like thickenings on both longitudinal and most transverse walls, those of longitudinal walls sporadically extended tangentially to form complete, somewhat thickened semi annular bands; innermost layer of cells with radial walls often with ± continuous sheets of red-brown wall material, the radial walls also with rather thin semi annular bands and occasional nodular to spur-like thickenings. Spores 15.8-17.8 juim in diam., the wall red-brown, with dense, low but sharply defined, close, papillose and short- vermiculate markings, 1. 7-2.3 X the elater diam. Elaters tortuous, bispiral, 7. 2-9. 6 juim in diam., the spirals 2. 9-3. 8 juim wide. bistratose sectors, the remainder unistratose). 4. Portion of plant with main leafy shoot, 2 ventral- intercalary leafy branches and a gynoecium with mature sporophyte; note isophyllous gynoecium (sb = stoloniform branch). 5. Capsule wall, inner layer. 6, 7. Portion of perianth mouth (each fig. from a different perianth). 8. Capsule wall, outer layer. (All from Engel 13950, Tasmania, Cradle Mtn.) Distribution and Ecology: New Zealand: Stewart Island (600-690 m), South Island (560- 1525 m), North Island (305-2000 m); Australia: Tasmania, Victoria, New South Wales. In New Zealand known from Eiordland (Hunter Mtns.), Otago (Pisa Ra., Old Man Ra., Maun- gatua. Swampy Summit, Lammermoor Ra., Rock and Pillar Ra.), Westland (Aspiring Natl. Park, Nelson Lakes Natl. Park), Canterbury (Harman Pass, Arthur’s Pass, Porters Pass), Sounds-Nelson (Richmond Ra.), Southern North Island (Tararua and Ruahine ranges) and Volcanic Plateau (Kaimanawa Ra., Atiamuri, Rotorua) EPs. A medium- to high-elevation species. In forested areas it occurs on well-shaded rocky cliffs, while in penalpine communities it may be found, for example, in and at the edges of peaty, saturated bogs or between boulders. On Stewart Island (Mt. Rakeahua summit area, 600-690 m) present over a thick soil layer in a pocket between boulders in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi 0.5-2 m tall and significant areas of exposed rock. Also at the summit area of Te Rangaakapua (Urewera Natl. Park, Huiarau Ra., 1265-1320 m) occurring on the floor in open areas and on small banks of soil in open areas within mosaics of stunted Olearia colensoi and tussock with occasional Coprosma spp. Below the summit of ‘‘Little Moehau” (Coro¬ mandel Eorest Park, ca. 800 m) the species formed a pure colony on the exposed side of a seepage area in a mosaic of Sphagnum bog and small communities of shrub-heath including Dracophyllum recurvum, Lepidothamnus laxifolius, Coprosma foetidissima, Oreobolus pecti- natus, Corokia, and occasional stunted Weinmannia silvicola and Dacrydium cupressinum. In alpine communities it occurs over moist, peaty ground at edges of rills or tarns where it may form pure, compact colonies. Also over soil of protected pockets or of narrow crevices of boulders in areas of cliffs and outcrops with scattered alpine plants. The species often occurs as a pioneer over bare soil and the extensive, deep system of subterranean rhizoidous axes may be of significance in consolidating and stabilizing such habitats. In the bare soil niches often in pockets or under the lip of overhangs or under rock ledges, and, in such cases, at least a nominal amount of moisture and protection is provided. Also, in these niches Hygrolembidium acrocladum often is one of the few hepatics present. In wet peat-soil habitats it occurs with A/- lisonia cockaynei, Kurzia compacta, Marchantia foliacea and Solenostoma inundatum. In better-drained and bare soil sites it is found with Chrysoblastella chilensis. Ditrichum cylindri- carpum, Notoligotrichum australe and Polytrichum juniperinum. Comments: Similar to Hygrolembidium rigidum in the form of the leaf cells: non-elongated, chiefly 5 -6-angled, with walls thin or at best very faintly firm-walled. Also approaching that species in the densely imbricate leaves, the shoots becoming stoutly julaceous and in its translucent light green to green color. Plants are at once distinct from H. rigidum in: 1) leaf cells much the same in size throughout the leaf; 2) leaf cells all (at least the epidermal) with 1-2 small, coarsely botryoidal oil-bodies; 3) surface of the leaves quite smooth, even distally; 4) leaves more nearly orbicular, never folded above; and 5) underleaves all small and appressed, the shoots never trigonous as seen in apical profile. The underleaves although small are normally quite visible (Eig. 116: 5), but are sometimes inconspicuous and then appear as if altogether lacking. Shoots frequently have a mixture of conspicuous and inconspicuous underleaves. However, occasional shoots have underleaves uniformly reduced and thus, at first glance, appear underleaf-free. Small phases of this species sometimes may be mistaken for Solenostoma totipapillosum, but the presence of underleaves and the lack of papillae on the stem will immediately distinguish Hygrolembidium acrocladum from that species.</pre>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    <pre class="description-text">Plants pure, clear green, variable, especially in size, the leafy shoots to 1.5 mm wide. Branching abundant, the leafy branches ventral- or lateral-intercalary and from a system of creeping, freely branched, colorless, long, slender stolons, the leafy branches issuing only from microphyllous sectors of plants and not from leafy sectors of another leafy shoot. Stem cortical cells leptodermous, usually in 19-20 to over 30 rows, the medullary cells very large, pellucid. Rhizoids mostly lacking on erect, leafy shoots, but if present, then from basal cells of underleaf or from stem at immediate base of underleaf. Leaves rather rigid, fleshy, poly- stratose in median and basal sectors, the peripheral and distal sectors unistratose in an area below apex and within lateral margins; leaves in cross section toward base 3-5-stratose in intramarginal sectors, the marginal sectors remaining polystratose or thinning to unistratose; epidermal cells of leaf moderately smaller in diameter than internal cells; leaves increasing in size upward, or (on longer shoots) remaining ± equal in size except for smaller leaves near the apex, the leaves contiguous to moderately imbricate, suberect to obliquely spreading, ± loosely sheathing stem, feebly to distinctly succubously inserted, deeply concave, at times subcupulate, ovate, widest in basal one third or in the middle and narrowed to the blunt, very concave, undivided, never retuse apex; lamina margins entire. Larger leaves (700)950- 1100 |ULm wide X (1000)1120-1200 juim long (when flattened, which is difficult to do without tearing the leaf). Cells of apical sector ± strongly elongated, narrowly oblong, ± prosenchy- matous, thick-walled, (12)15-26 juim wide X (35)40-60(90) juim long; median cells 18- 26 |ULm wide X 34-50(72) juim long; basal cells not or hardly larger; cells of unistratose region firm-walled, those of polystratose area leptodermous, delicate, chlorophyllose; surface of distal and marginal cells papillose (sometimes faintly so), that of median portion of leaf smooth or (rarely) delicately granulate-papillate. Oil-bodies (Schuster and Engel, 1987b) lacking in unistratose portion of leaf, present in all or most cells of polystratose region, there 1-2(3) per cell (some internal cells with 3-9 oil-bodies); oil-bodies small, glistening, 2.5-3. 5 X 5 juim to 3.5-5 X 5-6 |ULm, the smaller sometimes unsegmented, the larger coarse, few-segmented. Underleaves small, often inconspicuous and appearing as if lacking, plane to weakly concave, variable in shape: lingulate to oblong-ovate or wide-ovate to suborbicular, the apex crenulate; lamina margins entire. Eungal partner an ascomycete. cf Plants small. Androecial branches originating from axils of underleaves or leaves, sometimes very small and slender, at other times a little less vigorous than smaller vegetative branches; bracts unlobed, of similar form to leaves, the apices and sides suberect; antheridia (l)2-3(4) per bract, the stalk 2-4-seriate. Gynoecia on ± abbreviated ventral- or lateral- intercalary branches; bracts and bracteoles concave, similar or bracteole somewhat smaller, the bracts widely spaced, somewhat larger than leaves, ovate to wide-elliptic, the apex 0.15- 0. 2(0.4) bilobed and with lobes variable-denticulate above (often with free ends of elongated cells ± sigmoid) or unlobed and blunt to broad-acute, crenulate, the lamina margins entire or with a ciliiform projection. Perianth very large for plant size, to 3 mm long X 1 .4 mm in diam., oblong-fusiform or (less often) ovate, cylindrical below and bluntly 3(4)-gonous above, the mouth lobulate-fimbriolate to crenulate-ciliolate with narrow, often strongly elongated cells and short cilia (to 120 juim long); perianth 3-4(5)-stratose in basal and median sectors. Seta with (14)16-18 rows of large epidermal cells. Capsule ellipsoidal, the wall 3-4(5)- stratose and ca. 35-39 luim when 5-stratose; outer layer of cells with 2-3 to 4-6 nodular thickenings per face of all or almost all longitudinal walls (primary walls sometimes with thicken¬ ings weaker and more yellowish, rather than brownish); innermost layer of cells with almost exclusively nodular to weak or imperfect semi annular thickenings. Spores 13.5-17.5 juim in diam., the wall yellow-brown, papillate-granulate to papillate, the markings partly coalescent and forming short- vermiculate lines, the spores 2X the elater diam. Elaters ± tortuous, bispiral, 6.7-9. 5 juim in diam., the spirals 3-3.3 juim wide. Distribution and Ecology: Endemic to New Zealand: Campbell Island, South Island (1000- 1550 m). North Island (840-1800 m). Known from Eiordland, Southland (Blue Mtns.), Otago (Rock and Pillar Ra.), Westland (Spenser Mtns., Mt. Te Kinga, upper Otira River), Western Nelson (Mt. Peel), Sounds-Nelson (Richmond Ra.) and Auckland (Mt. Moehau) EPs. Widespread but sporadic in distribution. The species occurs primarily in alpine and pen- alpine, moory sites mostly at 855-1800 m, but sporadically at lower elevations (520-825 m). In the alpine zone it grows along small rills in deep shade under tussock blades where conditions are permanently moist. Also over soil near the edges of tarns and on lips of stagnant pools in mosaics of tussock grass and alpine vegetation along with tarns, pools, rills, rocky outcrops and boulderfields. In these sites it grows with Sphagnum cristatum, S. falcatulum (growing at times on the surface of the Sphagnum), Campylopus clavatus, C. introflexus, Kurzia hip- puroides and K. calcarata, Pachyglossa tenacifolia, Pseudocephalozia paludicola and Siphula rubra. The species also may be found in more exposed situations; for example, it occurs over bare soil of exposed portions of slopes as well as over soil of pockets on ice-scoured slopes. In penalpine communities the species occurs over soil in vegetation dominated by Chionochloa (but with some scattered Dracophyllum and Phormium cookianum) as well as near rills or under tussock overhangs in scrub consisting mainly of Chionochloa, Dracophyllum and Hebe. In these sites it occurs with Cladia aggregata, Conostomum pusillum. Ditrichum difficile, D. punctulatum, Notoligotrichum australe, Philonotis tenuis and Racomitrium lanugi- nosum. At somewhat lower elevations over soil of vertical banks of drainage channels; e.g., on Mt. Moehau (Coromandel Eorest Park, ca. 840 m) it occurred in a narrow truncated valley system under stunted Weinmannia silvicola, Coprosma foetidissima and Corokia buddleioides. The species rarely occurs in Nothofagus forests; e.g., near the South Branch of Borland Bum (Eiord- land, 855-870 m) the species occurs over peaty soil at the side of a normally dry stream channel. Comments: Vegetatively this species, like other Hygrolembidium species, is extremely variable, especially in size. Plants often are dwarfed and bear smaller, often shorter, less concave leaves, never folded at the tips; they seem always to be rather remote-leaved. All forms of Hygrolembidium australe are at once distinct from H. rigidum, which may occur admixed with this species, in the 1) bluntly pointed to ± rounded leaves whose apices are never incised or retuse; 2) much smaller underleaves; and 3) firm-walled leaf cells (except at the leaf bases), strongly elongated and (marginally) prosenchymatous in form. Also, oil- bodies are present at least in some cells; in H. rigidum no cells ever bear oil-bodies. Chloranthelia R.M.Schust. Chloranthelia R.M.Schust., Nova Hedwigia 8: 278. 1964; J. Hattori Bot. Lab. 26: 215, 275. 1963, nom. inval. Maculia E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 3: 72. 1965. Plants anisophyllous, erect or prostrate, greyish to pure green (without ability to develop secondary pigmentation), dull-textured and water-repellent when dry; leafy shoots small, the apices never with autonomous curvature. Branching normally all axillary and intercalary, from axils of both leaves and/or underleaves, the leafy branches ascending to erect, arising from and/or freely giving rise to geotropic, pale, leafless rhizomes or stolons which freely bear rhi- zoids, the leafy shoots usually unbranched, very rarely and sporadically producing a terminal, Frullania-iy^Q branch. Stem soft, with or without a hyalodermis; cortex with large, pellucid cells that are equal in size to or larger than the very leptodermous medullary cells; cortical cells in surface view oblong, lying in sharply defined tiers, superior in size to leaf cells. Rhizoids sparsely developed on leafy shoots, but if present, then toward shoot bases. Leaves adaxially concave or concave-canaliculate, but never canaliculate-conduplicate, unistratose, soft-textured, chlorophyllose except sometimes for marginal and submarginal cells, which are at times ± thicker- walled and hyaline, the insertion transverse to very weakly succubous; mature leaves variable, asymmetrically lobed, either 2(3)- or 3-4(5)-lobed for less than 0.35 their length; margins entire or denticulate-dentate. Cells non-collenchymatous, rather large, but an area basalis or apicalis not differentiated, in median and basal sectors ± oblong, the marginal cells typically echlorophyllose; surface clearly papillose. Oil-bodies completely lacking, only a few scattered, tiny, glistening oil-droplets present. Chloroplasts numerous, small: 1. 4-2.4 X 2.4- 4.3 |ULm. Underleaves distinct, 0.1 -0.65 X area of lateral leaves, erect-appressed and often nearly hiding stem, present throughout, the apex variable, 2-4-dentate or -lobulate; lamina margins as on leaves. Asexual reproduction lacking. Dioecious. Androecia (known only for Chloranthelia denticulata) at base of abbreviated branches that may proliferate distally, lateral- or ventral-intercalary, spicate; bracts leaf-like, slightly smaller than leaves; antheridia 1 per bract, the stalk biseriate. Gynoecia arising on short, abbreviated, intercalary branches bearing at most 1-2 cycles of minute leaves, the branches either from axils of lateral leaves, or from axils of underleaves; bracts small, hyaline, leptodermous, suberect. Perianth mouth lobulate-incised, fimbriolate with long, linear cells distally. Seta with 8 rows of outer cells surrounding 7-8 rows of smaller internal cells. Spore wall asperulate. Elaters bispiral. Type: Chloranthelia denticulata (Steph.) R.M.Schust. (= Lembidium denticulatum Steph.) The genus includes two species, Chloranthelia denticulata (Steph.) R.M.Schust. of New Caledonia and C. berggrenii of New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">10-30 mm tall, usually erect and often mixed with other bryophytes
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">10-30 mm tall, usually erect and often mixed with other bryophytes
 on logs and tree trunks in Nothofagus forest. The stems are almost bare of leaves at
 the &#39;base, becoming leafier towards the apex but with the largest leaves often in mid­
 stem. The concave leaves are almost circular (sometimes longer and flat in young
@@ -659,16 +625,19 @@ Isotachis                                                                       
 
 Megaceros gracilis ........................................... 186              laevis ......................................................... 190
 Mesochaete undulata.......................................... 34                punctatus................................................... 190
-Metzgeria                                                                   Philonotis</p>
+Metzgeria                                                                   Philonotis</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">capsule in a buried marsupium .............................................................................. 25
+    <pre class="description-text">capsule in a buried marsupium .............................................................................. 25
                                                                                                                                                                                25 Plants yellowish to deep green, sometimes tinted chestnut;
                                                                                                                                                                                     oil bodies large, brownish, few per cell; leaf cuticle papillose
                                                                                                                                                                                     only towards apex ......................................................................... Lethocolea pansa
@@ -801,7 +770,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                      concave, especially near shoot apices .................................................. Chiloscyphus
 
 
-                                                                                                                                                                               * I have found no legitimate material of H. rotata from Victoria, and therefore discount it</p>
+                                                                                                                                                                               * I have found no legitimate material of H. rotata from Victoria, and therefore discount it</pre>
     
     
   </details>
@@ -810,14 +779,47 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acrocladium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acrocladium chlamydophyllum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gonytrichum macrocladum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hygrolembidium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hygrolembidium australe</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hygrolembidium isodictyon</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hygrolembidium rigidum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hygrolembidium stereophyllum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hygrolembidium triquetrum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Aplozia acroclada</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Aplozia lacerata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia acroclada</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lembidium isodictyon</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -832,22 +834,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [93.0, 80.5, 100.3, 105.1, 149.7, 155.5, 174.3, 196.1, 180.7, 153.3, 115.1, 118.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [17.2, 17.2, 14.5, 11.0, 7.9, 5.9, 5.1, 5.9, 8.1, 10.4, 13.7, 15.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [6.9, 6.9, 5.5, 3.9, 2.4, 0.9, 0.1, 0.1, 1.3, 2.3, 4.1, 5.3], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

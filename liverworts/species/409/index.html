@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Vandiemenia ratkowskiana</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Metzgeriaceae</span>
-    <span class="badge secondary">Vandiemenia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Eutrombicula vandiemeni</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Juncus ratkowskyanus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marsupostrongylus vandiemeni</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Parsonsia sankowskyana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila ratkowskiana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Rhinebothrium vandiemeni</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Vandiemenia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Vandiermenia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Vandiermenia beveridgei</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Vandiemenia ratkowskyana</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Vandiemenia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">2</p>
     <footer>2 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">11</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,126 +74,128 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIACEAE_HEWSON_1982</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIA_REVISED_2024</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIA_REVISED_2024</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VANDIEMENIACEAE_HEWSON_1982</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VANDIEMENIA_REVISED_2024</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>wood</td>
-          <td>categorical</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIACEAE_HEWSON_1982</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIA_REVISED_2024</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>MARCHANTIOPHYTA_PHYLOGENY_2009</strong> (1 entry)</summary>
+    <summary>
+      <strong>MARCHANTIOPHYTA_PHYLOGENY_2009</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">E N G E L , J. J. &amp; G L E N N Y , D. (2007). Austral Hepaticae 43. Castanoclobos, a new genus of
+    <pre class="description-text">E N G E L , J. J. &amp; G L E N N Y , D. (2007). Austral Hepaticae 43. Castanoclobos, a new genus of
                    Trichocoleaceae from New Zealand. Novon 17: 424–428.
                  E N G E L , J. J. &amp; H E I N R I C H S , J. (2008). Studies of New Zealand Hepaticae. 39. Dinckleria
                    Trevis., an older name for Proskauera Heinrichs and J.J. Engel. Cryptog. Bryol. 29:
@@ -277,25 +255,31 @@ https://doi.org/10.1017/S0960428609005393 Published online by Cambridge Universi
                         cons. prop. Taxon 22: 504.
                       G R O L L E , R. &amp; L O N G , D. G. (2000). An annotated check-list of the Hepaticae and
                         Anthocerotae of Europe and Macaronesia. J. Bryol. 22: 103–140.
-                      G R O T H , H. (2005). Molecular phylogeny and morphological reconstructions of Plagiochilaceae</p>
+                      G R O T H , H. (2005). Molecular phylogeny and morphological reconstructions of Plagiochilaceae</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>VANDIEMENIACEAE_HEWSON_1982</strong> (1 entry)</summary>
+    <summary>
+      <strong>VANDIEMENIACEAE_HEWSON_1982</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Journ. Hattori Bot. Lab. No . 52: 163- 165 (May 1982)
+    <pre class="description-text">Journ. Hattori Bot. Lab. No . 52: 163- 165 (May 1982)
 
 
 
@@ -341,16 +325,19 @@ for the taxon Metzgeriineae in the sense of Schuster (1979), who ranks it as a s
 Phy llothallia. He draws attention to the Southern Hemisphere proving to be a
 probable centre for the evolution of a polytypic Metzgerialean flora. Indeed Van-
 diemenia adds weight to this observation but it also brings with it the frustration of
-  1</p>
+  1</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VANDIEMENIA_FURUKI_2008</strong> (1 entry)</summary>
+    <summary>
+      <strong>VANDIEMENIA_FURUKI_2008</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Journal of Bryology
+    <pre class="description-text">Journal of Bryology
 
 
 
@@ -639,16 +626,19 @@ elaterophores which are longer than 1/4 the capsule length,
 and sometimes exceed half the length of the capsule
                                                                   Vandiemenia, the genus is most closely related to the family
 (Furuki, 1991).
-                                                                  Metzgeriaceae in sharing cells lacking oil bodies, the hair-</p>
+                                                                  Metzgeriaceae in sharing cells lacking oil bodies, the hair-</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VANDIEMENIA_REVISED_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>VANDIEMENIA_REVISED_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Journal of Bryology
+    <pre class="description-text">Journal of Bryology
 
 
 
@@ -937,7 +927,7 @@ elaterophores which are longer than 1/4 the capsule length,
 and sometimes exceed half the length of the capsule
                                                                   Vandiemenia, the genus is most closely related to the family
 (Furuki, 1991).
-                                                                  Metzgeriaceae in sharing cells lacking oil bodies, the hair-</p>
+                                                                  Metzgeriaceae in sharing cells lacking oil bodies, the hair-</pre>
     
     
   </details>
@@ -946,14 +936,41 @@ and sometimes exceed half the length of the capsule
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Eutrombicula vandiemeni</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Juncus ratkowskyanus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marsupostrongylus vandiemeni</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Parsonsia sankowskyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila ratkowskiana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Rhinebothrium vandiemeni</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Vandiemenia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Vandiermenia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Vandiermenia beveridgei</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Vandiemenia ratkowskyana</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -968,22 +985,32 @@ and sometimes exceed half the length of the capsule
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [72.9, 65.8, 69.4, 64.8, 72.0, 92.0, 78.9, 102.1, 93.0, 84.6, 88.9, 75.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.5, 18.4, 16.2, 12.9, 10.2, 8.1, 7.4, 8.2, 10.5, 12.3, 14.8, 16.5], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.8, 8.1, 7.4, 6.1, 3.9, 2.3, 1.4, 0.9, 2.9, 4.6, 6.0, 7.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

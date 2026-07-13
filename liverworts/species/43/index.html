@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Riccardia crassa</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Aneuraceae</span>
-    <span class="badge secondary">Riccardia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Allocasuarina crassa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cressa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Daviesia crassa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia gracilis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia scabra</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia stellaris</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Sannantha crassa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia crassa</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Riccardia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,35 +48,37 @@
     <p class="big-num">475</p>
     <footer>147 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">10.8&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1714&thinsp;mm</p>
-    <footer>
-      CV 23.5
-    </footer>
+    <footer>annual · CV&thinsp;23.5</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">7</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -112,94 +86,100 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HEPATIC_TYPES_AUSTRALIA_1992</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HEPATIC_TYPES_AUSTRALIA_1992</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HEPATIC_TYPES_AUSTRALIA_1992</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">umes were used to obtain putative label information for many of the types held at G.
+    <pre class="description-text">umes were used to obtain putative label information for many of the types held at G.
 E.A. Brown has examined the type specimens from overseas herbaria for the genera
 Riccardia and Aneura in the course of other studies (Brown &amp; Braggins 1989).
 
@@ -323,16 +303,19 @@ PROTO: &#39;Australia, (Wyong): Watts, 985:
 LABEL: NEW SoUTH WALES: gully south of house, &#39;Kingwell&#39;, Wyong, W.W. Watts 985,
 Nov 1907 [3 packets in one specimen folder].
 TYPES: G, NSW.
-COMMENT: = B. diplophylla (Hook. f. &amp; Taylor) Mitten fide Engel (1968: 109,111).</p>
+COMMENT: = B. diplophylla (Hook. f. &amp; Taylor) Mitten fide Engel (1968: 109,111).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Plagiochila pleurata var. arguta Steph.                Radula uvifera (Hook.f. &amp; Taylor) Taylor
+    <pre class="description-text">Plagiochila pleurata var. arguta Steph.                Radula uvifera (Hook.f. &amp; Taylor) Taylor
 Plagiochila pleurata (Hook.f. &amp; Taylor) Hook.f. &amp;      Reboulia hemisphaerica subsp. australis R.M.Schust.
         Taylor var. pleurata                           Rectolejeunea ocellata Herzog
 Plagiochila radiculosa Mitt.                           Riccardia aequicellularis (Steph.) Hewson
@@ -392,16 +375,19 @@ Riccia fluitans L.                                     Symphyogyna undulata Cole
 Riccia glauca L.
 Riccia sorocarpa Bisch.                                Targionia hypophylla L.
         Riccia vesiculosa (Carrington &amp; Pearson)       Telaranea capilligera (Schwaegr.) R.M.Schust.
-        Steph.                                         Telaranea centipes (Taylor) R.M.Schust.</p>
+        Steph.                                         Telaranea centipes (Taylor) R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">WNW of Borland Lodge, above South Branch of Bor-                 basal cell of uniseriate row 28–34 3 72–84 mm,
+    <pre class="description-text">WNW of Borland Lodge, above South Branch of Bor-                 basal cell of uniseriate row 28–34 3 72–84 mm,
                          land Burn, W of Monowai, 680 m, Engel 18735 (F).                 the next cell shorter and narrower; terminal cell
                          OTAGO PROV.: Mt. Aspiring Natl. Park, Blue Valley                (in intact lobes) not distinctly shorter than the
                          Track, above Blue River just N of confluence with Mak-           penultimate cell; lobe cells rather firm-walled, the
@@ -461,7 +447,7 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                               of the leaves (Fig. 34: 1, 3), as do the extra-ter-             Lectotype (nov.): Auckland Is., Nov. 1840, on Jun-
                               ritorial T. anomala and T. monocera (sect. Ten-                 germannia coalita, Hooker (FH!); isolectotypes:
                               uifoliae). Telaranea herzogii (Fig. 35: 2, 3) and               (BM! [2 seen]).
-                              T. tasmanica (Fig. 32: 10–14) differ in having                Telaranea longii J. A. Paton, J. Bryol. 17: 289. fig.</p>
+                              T. tasmanica (Fig. 32: 10–14) differ in having                Telaranea longii J. A. Paton, J. Bryol. 17: 289. fig.</pre>
     
     
   </details>
@@ -470,14 +456,41 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Allocasuarina crassa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cressa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Daviesia crassa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia gracilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia scabra</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia stellaris</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Sannantha crassa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia crassa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -492,22 +505,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [87.3, 77.0, 98.9, 106.3, 157.5, 153.5, 179.1, 199.1, 185.9, 159.8, 106.3, 119.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.4, 19.5, 17.1, 13.8, 10.9, 8.9, 8.3, 9.2, 11.1, 13.2, 16.2, 17.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.3, 8.4, 7.2, 5.2, 3.9, 2.4, 1.7, 1.9, 3.1, 4.1, 5.9, 7.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Bazzania novaezelandiae</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Bazzania</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Bazzania</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania echinata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania fasciculata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania intermedia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania nitida</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania serpentina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania tridens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania vittata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania wattsiana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania avia</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Bazzania</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">205</p>
     <footer>17 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">3</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,87 +74,127 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">BAZZANIA_AUSTRALIA_2019</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>7.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>7.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">BAZZANIA_AUSTRALIA_2019</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">BAZZANIA_AUSTRALIA_2019</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BAZZANIA_AUSTRALIA_2019</strong> (1 entry)</summary>
+    <summary>
+      <strong>BAZZANIA_AUSTRALIA_2019</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Plants mid- to dark green or brownish-green, forming loose mats on tree trunks. Shoots up to 7 mm wide, stems ~180–200 μm in diameter. Leaves triangular-ovate, mostly 2.5–3.5 mm long and 1.2–1.5 mm wide, apex distinctly 3-fid, the lobes shortly triangular, rather blunt. Underleaves large, quadrate to rectangular, narrowing slightly towards the apex, typically 0.8–1.0 mm wide × 1.2–1.4 mm long, margins entire to weakly crenate; narrowly connate with a leaf on one side only; 1 or 2 marginal rows of hyaline cells in the apical half. Distribution: Australia (Tasmania), New Zealand. [Note: DB alternate spelling of novae-zelandiae; same taxon]</p>
+    <pre class="description-text">Plants mid- to dark green or brownish-green, forming loose mats on tree trunks. Shoots up to 7 mm wide, stems ~180–200 μm in diameter. Leaves triangular-ovate, mostly 2.5–3.5 mm long and 1.2–1.5 mm wide, apex distinctly 3-fid, the lobes shortly triangular, rather blunt. Underleaves large, quadrate to rectangular, narrowing slightly towards the apex, typically 0.8–1.0 mm wide × 1.2–1.4 mm long, margins entire to weakly crenate; narrowly connate with a leaf on one side only; 1 or 2 marginal rows of hyaline cells in the apical half. Distribution: Australia (Tasmania), New Zealand. [Note: DB alternate spelling of novae-zelandiae; same taxon]</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Bazzania</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania echinata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania fasciculata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania intermedia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania nitida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania serpentina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania tridens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania vittata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania wattsiana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania avia</em> <span class="muted small">input</span></li>
+    
+  </ul>
 </section>
 
 
 
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -193,22 +209,32 @@
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [93.9, 83.6, 117.4, 127.8, 199.0, 188.4, 224.0, 230.2, 209.6, 175.0, 110.7, 134.2], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.6, 19.8, 17.6, 14.7, 11.9, 10.3, 9.7, 10.4, 12.0, 13.9, 16.6, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.6, 9.9, 8.8, 7.0, 5.6, 4.3, 3.5, 3.9, 4.8, 5.5, 7.4, 8.3], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

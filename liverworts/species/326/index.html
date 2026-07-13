@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,49 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Leptoscyphus australis</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Leptoscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (13)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Austalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Grimmia australis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus belmoranus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus excipulatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus expansus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus horizontalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus longistipulus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus subemarginatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus australis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia australis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea australis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea hodgsoniae</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Leptoscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -82,21 +48,25 @@
     <p class="big-num">78</p>
     <footer>21 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">8</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">13</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -104,102 +74,107 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>concave-sided</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CHILOSCYPHUS_MONOGRAPH_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">free. Distal to that point each lobe member flares, lending the                1050 m, Engel 15958 (F); Leven Gorge, along River Leven, 10 km by
+    <pre class="description-text">free. Distal to that point each lobe member flares, lending the                1050 m, Engel 15958 (F); Leven Gorge, along River Leven, 10 km by
                                                                                           road from Nietta, SSE of Burnie, 400 m, Engel 15759 (F); Emu
            perianth a campanulate shape (the protologue states the                        (Companion) River, near Guildford Road, SSW of Burnie, 500 m,
            perianths are ‘‘prismatico triangulari-campanulato’’). Perianth                Engel 15841–c. = (F); track from Ferndene to Mt. Dial, SSW of
@@ -259,16 +234,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
           plants. Leaves are consistently bifid, have gemmae at the lobe                  Schuster 49367 (F). OTAGO: Fiordland Natl. Park, Lake Howden,
           tips and have erose lobes in median and basal shoot sectors.                    ca. 610 m, Child H 2564 (F). CANTERBURY: Banks Peninsula, valley
           The ventral and sometimes the dorsal leaf margins have a few                    NE of Te Oka, on Kinloch Road, 260 m, Fife 6815 (F); ibid., Kaituna
-          small teeth (see sub. Variation, p. 77). Underleaves are                        Valley, Hatcher 1213E–c. sporo., 1851–c. sporo. (F); Arthur’s Pass</p>
+          small teeth (see sub. Variation, p. 77). Underleaves are                        Valley, Hatcher 1213E–c. sporo., 1851–c. sporo. (F); Arthur’s Pass</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
@@ -277,14 +255,47 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Austalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Grimmia australis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus belmoranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus excipulatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus expansus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus horizontalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus longistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus subemarginatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea hodgsoniae</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -299,22 +310,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [76.6, 64.6, 83.3, 90.0, 129.7, 138.2, 155.2, 171.2, 151.1, 123.5, 94.0, 97.5], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.1, 20.1, 17.7, 14.2, 11.2, 9.1, 8.5, 9.3, 11.4, 13.5, 16.5, 18.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.1, 9.3, 7.8, 5.9, 4.4, 2.9, 2.2, 2.4, 3.6, 4.7, 6.5, 7.5], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

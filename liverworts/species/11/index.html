@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,53 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Cuspidatula monodon</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Jungermanniaceae</span>
-    <span class="badge secondary">Cuspidatula</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (15)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Cuspidatula</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Distichophyllum cuspidatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Euprosopia monodon</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Euptychium cuspidatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Monoon</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Monoon australe</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Monoon michaelii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Monoon patinatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Odontonema cuspidatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Anastrophyllum monodon</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jamesoniella monodon</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia consimilis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia geminiflora</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia mondon</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia monodon</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Cuspidatula</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -86,35 +48,37 @@
     <p class="big-num">562</p>
     <footer>232 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">11.4&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1727&thinsp;mm</p>
-    <footer>
-      CV 23.5
-    </footer>
+    <footer>annual · CV&thinsp;23.5</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">31</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">15</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -122,286 +86,268 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>570.0–1100.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>570.0–1100.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>20.0–24.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>20.0–24.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>peat</td>
-          <td>categorical</td>
+          <td><strong>peat</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>2.5</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>2.5</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>bulging</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>bulging</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Zygodon intermedius                                                            +
+    <pre class="description-text">Zygodon intermedius                                                            +
 
 
 
@@ -461,16 +407,19 @@ Plagiochila incurvicola?                                +
                                         64
 Hepatic species                                            lnter-       Intra-        Epi�
                                                            organ        organ        organ
-Piagiochila circ inalis                                      +</p>
+Piagiochila circ inalis                                      +</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">vertebrate: L1209,
+    <pre class="description-text">vertebrate: L1209,
      logeny of the epiphyllous liverwort genus Cololejeuenea (Lejeuneaceae).      KF852073, KF851921, KF852217, KF852363, KF851454,—, KJ802086,
      Systematic Botany 38: 553-563.                                               KF852522, KF851625,—; Clandarium gottscheanum: FATOL777, Chile, /./.
 Zwickl, D. J. 2006. Genetic algorithm approaches for the phylogenetic             Engel 26229 (F), KF852032, KF851885,, KF852329, KF851425,—,—,
@@ -530,16 +479,19 @@ KF942484, KF943280, KF943550, KF943414, KF942838, KF942968,                     
                                                        All use subject to https://about.jstor.org/terms
 2015]                               SHAW ET AL.: PHYLOGENY OF THE JUNGERMANNIINEAE                                                                    43
 
-B. Shaw 7211 (DUKE), KF942450, KF942578, KF943346—, KF943496,                  KF942742, KF942652; L1075, USA: Alaska, B. Shaw 7210 (DUKE),</p>
+B. Shaw 7211 (DUKE), KF942450, KF942578, KF943346—, KF943496,                  KF942742, KF942652; L1075, USA: Alaska, B. Shaw 7210 (DUKE),</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">A. ochrophyllus (J.D.Hook. &amp; Taylor) Schus1.                                                 x
+    <pre class="description-text">A. ochrophyllus (J.D.Hook. &amp; Taylor) Schus1.                                                 x
 Acrochila biserialis (Lehm. &amp; Lindh.) Grolle                 x                               x
 Acromastigum anisostomum (Lehm. &amp; Lindenb.) Evans                x                   x       x
 A. cavifolium Schust.                                                                        x
@@ -599,16 +551,19 @@ H. cymhaliferus (J.D.Hook. &amp; Taylor) Engel &amp; Schust.         x          
 
 
 
-H. decipif&#39;nI (Got!.) Engel &amp; Schust.                                      x            x</p>
+H. decipif&#39;nI (Got!.) Engel &amp; Schust.                                      x            x</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Rectolejeunea ocellata Herzog, Trans. Proc. Roy. Soc. New Zealand 77: 255 (1949); Microlejeunea
+    <pre class="description-text">Rectolejeunea ocellata Herzog, Trans. Proc. Roy. Soc. New Zealand 77: 255 (1949); Microlejeunea
 ocellata (Herzog) Grolle, Haussknechtia 8: 60 (2001)
 Type: NEW ZEALAND, North Island, near Wairoa, Hodgson s.n., 21 Jan 1934; holotype ?JE,
 not seen.
@@ -700,16 +655,19 @@ and Glenny (2010) and He and Sun (2013), the Schistochilaceae is here considered
 single genus, Schistochila. This genus was not previously reported from Lord Howe Island.
 
 Schistochila Nees ex Mont.
-Schistochila Dumort. was erected in 1835 to include liverworts with the characters described</p>
+Schistochila Dumort. was erected in 1835 to include liverworts with the characters described</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Schiffn.                                                hippuroides
+    <pre class="description-text">Schiffn.                                                hippuroides
        Chiloscyphus triacanthus (Hook.f. &amp; Taylor)            Jungermannia dispar Mont. ex Taylor &amp;
        Steph.                                                  Hook.f.
 Hygrolembidium acrocladum (Berggr.) R.M.Schust.                Kurzia allisonii (Herzog) Grolle
@@ -828,42 +786,51 @@ Lophocolea amplectens - Clasmatocolea inflexispina     Lophocolea variabilis - C
 Lophocolea austrigena - Chiloscyphus austrigenus       Lophocolea villosa - Chiloscyphus villosus
 subsp. austrigenus                                     Marchantia hirsuta - Dumortiera hirsuta
 Lophocolea biciliata - Heteroscyphus biciliatus        Marchantia pallida - Marchantia pileata
-Lophocolea bidentata - Chiloscyphus chlorophyll us     Marsupella ustulata - Marsupella sprucei</p>
+Lophocolea bidentata - Chiloscyphus chlorophyll us     Marsupella ustulata - Marsupella sprucei</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (3 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(3)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants rigid, prostrate, the tips ascending, greenish brown to golden brown to purplish brown to reddish, nitid when dry, medium-sized, to 2.5 mm broad, rather short, seldom exceeding 2 cm long. Branching rather common, irregular, the branches all or in part ventral-intercalary, evidently from ventral ends of lateral merophytes (superficially appearing ventral in origin); Frullania-iypo branches rather common in some populations, apparently lacking in others, the ventral view; note very narrow ventral merophytes. 3. Shoot with mature sporophyte. 4, 5. Leaves, half-leaf of similar form to the leaves, broadly connate with the first branch underleaf, which is ovate and broadly rounded at the summit. Stem wiry, with cortex in 1(2) layers of rigid, thick-walled cells, the exposed wall pigmented, notably thickened; medullary cells larger, strongly thick- walled with distinct, bulging comer thickenings. Rhizoids whitish, frequent, scattered. Leaves typically dorsally ± connivent in drying, when moist strongly dorsally assurgent grading to widely spreading, closely imbricate, 570-1100 juim wide X 750-1650 juim long, often adaxially concave, symmetrically to asymmetrically ovate-lanceolate, unlobed, apices caudate-piliferous, terminating in a uniseriate row of 8-15 cells, the distal cells highly elongated (to 8:1), otherwise entire, the tips often appearing hyaline and parched; dorsal margin arched and rather similar to the ventral in degree curvature (the leaves then symmetric) or the dorsal margin straight (the leaves then asymmetric), the ventral margin always arched, often sharply and locally incurved, entire but often a small blunt projection in distal portion of median third of margin, the base subcordate. Cells in median sector with strongly nodose trigones, the middle lamella conspicuous, 20-24 juim wide X 25-31 juim long; surface striate- papillose or smooth. Oil-bodies in all cells of leaf except distal cells of uniseriate row of leaf tips, occupying conspicuous portion of cell lumen, hyaline, glistening, 3(5)-(7)10 per cell, moderately botryoidal, subglobose and 4-6 juim in diam. to ellipsoidal, sometimes crescent- shaped and 5-7 X 9-12 juim. Chloroplasts large for cell size. Underleaves absent or vestigial, of 1-2 segments formed of 1-2 elongated cells, each ending in an ephemeral slime papilla; ventral merophytes appearing to be 2-3 cells broad. Asexual reproduction lacking (?or by fragmentation of leaf apices). Eungal partner absent. Dioecious. Androecia on leading shoots, rather inconspicuous, becoming intercalary, often repeatedly so, ± spicate; bracts in 4-6 pairs, somewhat smaller and (when moist) more dorsally assurgent than leaves, the distal sector tapering and similar in form to leaves; lobule well developed, inflated, rather large for bract size, with a short, low wing, the free margin involute, distinctly long-acuminate distally; antheridia 1 per bract, the stalk biseriate, the stalk cells thick- walled; paraphyllia lacking. Gynoecia terminal on leading leafy shoots or relatively short gy- noecial innovations; bracts large, sheathing the perianth, rather deeply concave, the insertion markedly narrow, the innermost pair of bracts often differing in lobe number, one bilobed, the other 3-4-lobed, in either case divided to 0.4-0.65, the lobes long-attenuate to acuminate to caudate-piliferous, terminating in a uniseriate row of up to 10 cells, the distal cells often elongated (to ca. 4:1), the lobe margins entire or with several often opposing sharp teeth and ac¬ cessory lobule(s), the lamina on each side with a few small teeth and often an attenuated lobule; bracteole free or narrowly connate on 1 side, less than 0.55 width of bracts, distinctly narrow at the insertion, usually shorter than the bracts, oblong-lanceolate, acute or acuminate, undivided, on each side usually with a ciliiform to laciniiform to lobuliform process in distal half, the lateral processes never exceeding the length or size of the main, median process, the lamina also with a few small teeth and at times an accessory lobule below. Perianths frequent. spore profile at same scale. (Figs. 1, 2, 7, from Engel 12855, Tasmania, Arve Valley; 3, from Engel 16020, Tasmania, West Downs; 4-6, from Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 8, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 9, from Engel 13155, Tasmania, Tasman Penin¬ sula; 10, 12, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aongatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 11, from Engel 18000, New Zealand, South Is., Westland EP, summit area of Haast Pass.) (dorsal view). Note that the half-leaf (= HE) is distinctly connate with the first branch underleaf. large for shoot size, terete and ± inflated basally, the distal 0. 6-0.7 deeply plicate, the plicae 5-7, rounded, separated by deep sulci, contracted at the often scorched mouth; mouth lobu- late and ciliate/laciniate with stiff, piliferous cilia that terminate in a uniseriate row of 9-17 elongate, thick-walled cells, the lacinia bases often with a few, often opposed, stiff teeth. Sporophyte as in generic description. Distribution and Ecology: New Zealand: Auckland Islands (400 m). Antipodes Islands (200-300 m), Stewart Island (10-100 m). South Island (5-1525 m). North Island (60-1200 m), Chatham Islands (140-240 m); Australia: Tasmania, Victoria, New South Wales. Known from all ecological provinces of New Zealand. Extending to drier parts of some provinces, e.g., present in Marlborough (Pelorus Valley, Mt. Robertson), Banks Peninsula, Hawkes Bay and Wairarapa. A common species throughout our area, but typically in rather exposed sites. It occurs on tree bark, e.g., on Nothofagus spp., Agathis australis (where particularly common), Phyllo- cladus, Weinmannia, Metrosideros, Coprosma and Libocedrus. Also on the bark of a number of species of Dracophyllum, e.g., in an area of rocky outcrops and shrub-heath communities including Coprosma foetidissima, Corokia buddleioides, Dracophyllum recurvum, Lepido- thamnus laxifolius and Oreobolus pectinatus (exposed rocky ridge below summit area of ‘‘Little Moehau,” Mt. Moehau, Coromandel Eorest Park, ca. 800-840 m). In “mesic conditions” also on old rotted, often decorticated logs. Commonly found on soil in rock crevices, particularly on exposed rock outcrops but also under forest. Also found on peat in penalpine bogs at sites subject to strong surface drying, and on soil, decomposing litter, and shrub bases in penalpine tussockland and scrub. Pound with Campylopus introflexus, Hypnum cupres- siforme, Jamesoniella colorata, Lepidozia obtusiloba, Leptotheca gaudichaudii, Pseudomar- supidium piliferum, Ptychomnion densifolium, Racomitrium crispulum, R. lanuginosum and R. pruinosum. The species is strikingly tolerant of desiccation and may occur under quite rigorous conditions. Por example, it was found on a thick soil layer over rock with Pseudomarsupidium pili- ferum over a lava flow within a forest of Metrosideros robusta (Rangitoto Island, 50-160 m). Also in the frost flats near Otupaka Stream (SW of Minginui, 700 m), a rigorous environment consisting of an open, low area with scattered Leptospermum scoparium and Dracophyllum subulatum with abundant Cladonia. And in the alpine zone it may form tight clumps on ice- eroded banks (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park, 1250-1450 m). The species may be a frequent component of the tree canopy bryoflora, and Allison and Child (1975, p. 94) mentioned that the species is “frequently an epiphyte, on branches rather than trunks.” Hodgson (1946, p. 73) indicated “K. W. Allison has a note to the Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 2, 3, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 4-8, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aon- gatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 9-11, from Engel 23998, New Zealand, North Is., Gisborne EP, Urewera Natl. Park, Huiarau Ra., summit area of Te Rangaakapua.) effect that this species is sometimes found growing in the tops of tall forest trees.” Moreover, it may be found in fallen masses of bryophytes on the forest floor, e.g., in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis sapida, Coprosma, Dacrycarpus dacrydioides and Hoheria (Kiwanis Reserve, N edge of Herekino Eorest area, Northland, ca. 60-80 m). When found epiphytically, typical accompanying species arc Acrochila biserialis, Dicnemon calycinum, D. semicryptum, Frullania aterrima, Holomitrium perichae- tiale, Macromitrium longipes, Paraschistochila tuloides, Porella elegantula, Pseudomarsu- pidium piliferum, Pyrrosia eleagnifolia, Usnea rubicunda and Weymouthia cochlearifolia. Comments: This species may be readily recognized in the field by the closely imbricate, un- lobed leaves with the apex caudate-piliferous (Eig. 159: 1, 4, 5; Eig. 160: 1). It has been confused with Chandonanthus squarrosus, which can be a similar red or brown color, is found in similar habitats and has acute leaf lobe apices, but Chandonanthus has bifid leaves. The leaves, when moist, are often strongly dorsally assurgent (Eig. 159: 1), but may be widely spreading (Eig. 160: 1), and in some cases populations are either of one type of leaf orientation or the other. Leaves are typically dorsally ± connivent in drying. Plants are greenish brown to golden brown or reddish, prostrate, and often form pure, quite large patches. Underleaves are completely lacking, and ventral merophytes are very narrow (Eig. 159: 2). Schuster (2002a, p. 41 1, 413) was unable to document Frullania-typt branches for the species. We have found that terminal branching is rather common in some populations of Cuspidatula monodon (Eig. 160: 1) while apparently lacking in others. Spores are baculate and the bacula are truncate at the summit (Eig. 160: 8). This is yet another example of a predominantly corticolous hepatic having baculate spores (for a discussion see Engel and Gradstein, 2003). Cryptochila R.M.Schust. Cryptochila R.M.Schust. J. Hatt. Bot. Lab. 26: 284. 1963. Plants erect, deep green or reddish brown to fuscous, often nitid, vigorous, to 2.5 mm wide and 10 cm long, clearly divided into a system of rhizoidous leafless stolons and stiffly erect or ascending leafy shoots of determinate height. Branching sparing, the branches ventral-intercalary; Frullania-iypQ branching lacking (sporadic on cf plants in Cryptochila pseudocclusa); stoloniform branches frequent, strongly geotropic, originating just above point of origin of leafy, phototropic branches. Stems rigid, with 2-3(4) strata of thick-walled, brown to fuscous (at matu¬ rity) cells smaller in diameter than medullary cells; paraphyllia often present, vestigial. Rhizoids scarce, usually restricted to stolons. Leaves alternate, often subvertical, erect to widely spreading, transversely oriented, inserted on an asymmetric, acroscopically convex line, undivided and entire, the apex rounded. Cells in median sector often hexagonal, the walls firm, evenly thick- walled and lacking trigones or with trigones large and bulging (but not nodulose); peripheral sectors of leaves with cells mostly subquadrate, with walls evenly thick-walled; median-basal cells elongated (ca. 2-4:1), evenly thick-walled or with coarse trigones; surface smooth, except sometimes basally (often delicately striate-papillose in C. grandiflora). Oil- bodies 2-12 per cell, finely to coarsely papillose, at times lacking in marginal /submarginal cells. Underleaves vestigial, consisting of an ephemeral cilium or 2-4 such cilia, or a filiform rudiment often connate at base with a lateral leaf. Asexual reproduction absent. Dioecious. Androecia eventually intercalary, with 4-5 or more pairs of bracts, the bracts smaller than leaves, the dorsal margin with or without a discrete lobule; paraphyllia often present; antheridia 1 per bract, the stalk 2-seriate. Gynoecia often innovating, the innovations re¬ peatedly gynoecial; subinvolucral bracts leaf-like, but distal 2(3) series of bracts progressively smaller, in inner gyre one bract often much reduced; innermost bracts polymorphic, often unequal in size, coarsely dentate/ lobulate at least basally, free, ventrally often with 1-2 coarse lobes; bracteole free or nearly so, similarly polymorphous, often bilobed and toothed/ lacini ate, to 0.65-0.9 length of bracts. Perianth long-emergent at maturity, contracted to the deeply (5)6-12-plicate mouth, distally often twisted; mouth weakly crenulate or entire; perianth 2- several-stratose in basal half, firm. Capsule ellipsoidal, the wall thick, of 5-7 layers; outer layer of cells ca. 2X height of each inner stratum, with well-developed nodular thickenings; innermost layer of cells with mostly nodular to spine-like thickenings, the thickenings only sporadically extending across tangential wall to form complete semiannular bands. Spores finely and closely papillose, the papillae often forming short-vermiculate ridges. Elaters bispiral. Type: Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust. (= Jamesoniella pseudocclusa E.A.Hodgs.) A genus of six species, all south temperate in distribution. One species, Cryptochila grandi- flora, extends north in the Andes at high elevations, north into Central America and in southeast Brazil. Grolle (1971a) divided the genus into three subgenera: 1) subg. Nigritula Grolle, with only C. nigrescens of our area; 2) subg. Cryptochila, with C. pseudocclusa of our area and C. grandiflora, a pan- south- temperate species; 3) subg. Acinaria Grolle, which is comprised of two sections, sect. Acinaria, with C. aci- nacifolia of our area and C. paludosa (Steph.) Grolle of the Ealkland Islands, southern South America and Tristan da Cunha, and sect. Spegazzinia Grolle, with C. spegazzini- ana (Spruce) Grolle of southern South America. References: Grolle (1971a); Schuster (1970b, 2002a). Key to Species la. Lateral merophytes not interlocking; leaf cells evenly thick- walled (at least in distal portion of leaf) . 2 2a. Dorsal leaf base unistratose; leaves orbicular to reniform, ventrally secund; stem paraphyllia usually present . 3 3a. Dorsal leaf margins erect-inflexed to involute . C. grandiflora (p. 736) 3b. Dorsal leaf margins sharply and narrowly revolute . C. pseudocclusa (p. 740) 2b. Dorsal leaf base 2-3-stratose at and above the insertion; leaves Ungulate, dorsally assurgent; stem paraphyllia lacking . C. acinacifolia (p. 742) lb. Lateral merophytes interlocking, the leaf insertions distinctly crossing the stem midline dorsally; leaf cells thin-walled, with distinct trigones . C. nigrescens (p. 734)</p>
+    <pre class="description-text">Plants rigid, prostrate, the tips ascending, greenish brown to golden brown to purplish brown to reddish, nitid when dry, medium-sized, to 2.5 mm broad, rather short, seldom exceeding 2 cm long. Branching rather common, irregular, the branches all or in part ventral-intercalary, evidently from ventral ends of lateral merophytes (superficially appearing ventral in origin); Frullania-iypo branches rather common in some populations, apparently lacking in others, the ventral view; note very narrow ventral merophytes. 3. Shoot with mature sporophyte. 4, 5. Leaves, half-leaf of similar form to the leaves, broadly connate with the first branch underleaf, which is ovate and broadly rounded at the summit. Stem wiry, with cortex in 1(2) layers of rigid, thick-walled cells, the exposed wall pigmented, notably thickened; medullary cells larger, strongly thick- walled with distinct, bulging comer thickenings. Rhizoids whitish, frequent, scattered. Leaves typically dorsally ± connivent in drying, when moist strongly dorsally assurgent grading to widely spreading, closely imbricate, 570-1100 juim wide X 750-1650 juim long, often adaxially concave, symmetrically to asymmetrically ovate-lanceolate, unlobed, apices caudate-piliferous, terminating in a uniseriate row of 8-15 cells, the distal cells highly elongated (to 8:1), otherwise entire, the tips often appearing hyaline and parched; dorsal margin arched and rather similar to the ventral in degree curvature (the leaves then symmetric) or the dorsal margin straight (the leaves then asymmetric), the ventral margin always arched, often sharply and locally incurved, entire but often a small blunt projection in distal portion of median third of margin, the base subcordate. Cells in median sector with strongly nodose trigones, the middle lamella conspicuous, 20-24 juim wide X 25-31 juim long; surface striate- papillose or smooth. Oil-bodies in all cells of leaf except distal cells of uniseriate row of leaf tips, occupying conspicuous portion of cell lumen, hyaline, glistening, 3(5)-(7)10 per cell, moderately botryoidal, subglobose and 4-6 juim in diam. to ellipsoidal, sometimes crescent- shaped and 5-7 X 9-12 juim. Chloroplasts large for cell size. Underleaves absent or vestigial, of 1-2 segments formed of 1-2 elongated cells, each ending in an ephemeral slime papilla; ventral merophytes appearing to be 2-3 cells broad. Asexual reproduction lacking (?or by fragmentation of leaf apices). Eungal partner absent. Dioecious. Androecia on leading shoots, rather inconspicuous, becoming intercalary, often repeatedly so, ± spicate; bracts in 4-6 pairs, somewhat smaller and (when moist) more dorsally assurgent than leaves, the distal sector tapering and similar in form to leaves; lobule well developed, inflated, rather large for bract size, with a short, low wing, the free margin involute, distinctly long-acuminate distally; antheridia 1 per bract, the stalk biseriate, the stalk cells thick- walled; paraphyllia lacking. Gynoecia terminal on leading leafy shoots or relatively short gy- noecial innovations; bracts large, sheathing the perianth, rather deeply concave, the insertion markedly narrow, the innermost pair of bracts often differing in lobe number, one bilobed, the other 3-4-lobed, in either case divided to 0.4-0.65, the lobes long-attenuate to acuminate to caudate-piliferous, terminating in a uniseriate row of up to 10 cells, the distal cells often elongated (to ca. 4:1), the lobe margins entire or with several often opposing sharp teeth and ac¬ cessory lobule(s), the lamina on each side with a few small teeth and often an attenuated lobule; bracteole free or narrowly connate on 1 side, less than 0.55 width of bracts, distinctly narrow at the insertion, usually shorter than the bracts, oblong-lanceolate, acute or acuminate, undivided, on each side usually with a ciliiform to laciniiform to lobuliform process in distal half, the lateral processes never exceeding the length or size of the main, median process, the lamina also with a few small teeth and at times an accessory lobule below. Perianths frequent. spore profile at same scale. (Figs. 1, 2, 7, from Engel 12855, Tasmania, Arve Valley; 3, from Engel 16020, Tasmania, West Downs; 4-6, from Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 8, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 9, from Engel 13155, Tasmania, Tasman Penin¬ sula; 10, 12, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aongatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 11, from Engel 18000, New Zealand, South Is., Westland EP, summit area of Haast Pass.) (dorsal view). Note that the half-leaf (= HE) is distinctly connate with the first branch underleaf. large for shoot size, terete and ± inflated basally, the distal 0. 6-0.7 deeply plicate, the plicae 5-7, rounded, separated by deep sulci, contracted at the often scorched mouth; mouth lobu- late and ciliate/laciniate with stiff, piliferous cilia that terminate in a uniseriate row of 9-17 elongate, thick-walled cells, the lacinia bases often with a few, often opposed, stiff teeth. Sporophyte as in generic description. Distribution and Ecology: New Zealand: Auckland Islands (400 m). Antipodes Islands (200-300 m), Stewart Island (10-100 m). South Island (5-1525 m). North Island (60-1200 m), Chatham Islands (140-240 m); Australia: Tasmania, Victoria, New South Wales. Known from all ecological provinces of New Zealand. Extending to drier parts of some provinces, e.g., present in Marlborough (Pelorus Valley, Mt. Robertson), Banks Peninsula, Hawkes Bay and Wairarapa. A common species throughout our area, but typically in rather exposed sites. It occurs on tree bark, e.g., on Nothofagus spp., Agathis australis (where particularly common), Phyllo- cladus, Weinmannia, Metrosideros, Coprosma and Libocedrus. Also on the bark of a number of species of Dracophyllum, e.g., in an area of rocky outcrops and shrub-heath communities including Coprosma foetidissima, Corokia buddleioides, Dracophyllum recurvum, Lepido- thamnus laxifolius and Oreobolus pectinatus (exposed rocky ridge below summit area of ‘‘Little Moehau,” Mt. Moehau, Coromandel Eorest Park, ca. 800-840 m). In “mesic conditions” also on old rotted, often decorticated logs. Commonly found on soil in rock crevices, particularly on exposed rock outcrops but also under forest. Also found on peat in penalpine bogs at sites subject to strong surface drying, and on soil, decomposing litter, and shrub bases in penalpine tussockland and scrub. Pound with Campylopus introflexus, Hypnum cupres- siforme, Jamesoniella colorata, Lepidozia obtusiloba, Leptotheca gaudichaudii, Pseudomar- supidium piliferum, Ptychomnion densifolium, Racomitrium crispulum, R. lanuginosum and R. pruinosum. The species is strikingly tolerant of desiccation and may occur under quite rigorous conditions. Por example, it was found on a thick soil layer over rock with Pseudomarsupidium pili- ferum over a lava flow within a forest of Metrosideros robusta (Rangitoto Island, 50-160 m). Also in the frost flats near Otupaka Stream (SW of Minginui, 700 m), a rigorous environment consisting of an open, low area with scattered Leptospermum scoparium and Dracophyllum subulatum with abundant Cladonia. And in the alpine zone it may form tight clumps on ice- eroded banks (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park, 1250-1450 m). The species may be a frequent component of the tree canopy bryoflora, and Allison and Child (1975, p. 94) mentioned that the species is “frequently an epiphyte, on branches rather than trunks.” Hodgson (1946, p. 73) indicated “K. W. Allison has a note to the Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 2, 3, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 4-8, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aon- gatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 9-11, from Engel 23998, New Zealand, North Is., Gisborne EP, Urewera Natl. Park, Huiarau Ra., summit area of Te Rangaakapua.) effect that this species is sometimes found growing in the tops of tall forest trees.” Moreover, it may be found in fallen masses of bryophytes on the forest floor, e.g., in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis sapida, Coprosma, Dacrycarpus dacrydioides and Hoheria (Kiwanis Reserve, N edge of Herekino Eorest area, Northland, ca. 60-80 m). When found epiphytically, typical accompanying species arc Acrochila biserialis, Dicnemon calycinum, D. semicryptum, Frullania aterrima, Holomitrium perichae- tiale, Macromitrium longipes, Paraschistochila tuloides, Porella elegantula, Pseudomarsu- pidium piliferum, Pyrrosia eleagnifolia, Usnea rubicunda and Weymouthia cochlearifolia. Comments: This species may be readily recognized in the field by the closely imbricate, un- lobed leaves with the apex caudate-piliferous (Eig. 159: 1, 4, 5; Eig. 160: 1). It has been confused with Chandonanthus squarrosus, which can be a similar red or brown color, is found in similar habitats and has acute leaf lobe apices, but Chandonanthus has bifid leaves. The leaves, when moist, are often strongly dorsally assurgent (Eig. 159: 1), but may be widely spreading (Eig. 160: 1), and in some cases populations are either of one type of leaf orientation or the other. Leaves are typically dorsally ± connivent in drying. Plants are greenish brown to golden brown or reddish, prostrate, and often form pure, quite large patches. Underleaves are completely lacking, and ventral merophytes are very narrow (Eig. 159: 2). Schuster (2002a, p. 41 1, 413) was unable to document Frullania-typt branches for the species. We have found that terminal branching is rather common in some populations of Cuspidatula monodon (Eig. 160: 1) while apparently lacking in others. Spores are baculate and the bacula are truncate at the summit (Eig. 160: 8). This is yet another example of a predominantly corticolous hepatic having baculate spores (for a discussion see Engel and Gradstein, 2003). Cryptochila R.M.Schust. Cryptochila R.M.Schust. J. Hatt. Bot. Lab. 26: 284. 1963. Plants erect, deep green or reddish brown to fuscous, often nitid, vigorous, to 2.5 mm wide and 10 cm long, clearly divided into a system of rhizoidous leafless stolons and stiffly erect or ascending leafy shoots of determinate height. Branching sparing, the branches ventral-intercalary; Frullania-iypQ branching lacking (sporadic on cf plants in Cryptochila pseudocclusa); stoloniform branches frequent, strongly geotropic, originating just above point of origin of leafy, phototropic branches. Stems rigid, with 2-3(4) strata of thick-walled, brown to fuscous (at matu¬ rity) cells smaller in diameter than medullary cells; paraphyllia often present, vestigial. Rhizoids scarce, usually restricted to stolons. Leaves alternate, often subvertical, erect to widely spreading, transversely oriented, inserted on an asymmetric, acroscopically convex line, undivided and entire, the apex rounded. Cells in median sector often hexagonal, the walls firm, evenly thick- walled and lacking trigones or with trigones large and bulging (but not nodulose); peripheral sectors of leaves with cells mostly subquadrate, with walls evenly thick-walled; median-basal cells elongated (ca. 2-4:1), evenly thick-walled or with coarse trigones; surface smooth, except sometimes basally (often delicately striate-papillose in C. grandiflora). Oil- bodies 2-12 per cell, finely to coarsely papillose, at times lacking in marginal /submarginal cells. Underleaves vestigial, consisting of an ephemeral cilium or 2-4 such cilia, or a filiform rudiment often connate at base with a lateral leaf. Asexual reproduction absent. Dioecious. Androecia eventually intercalary, with 4-5 or more pairs of bracts, the bracts smaller than leaves, the dorsal margin with or without a discrete lobule; paraphyllia often present; antheridia 1 per bract, the stalk 2-seriate. Gynoecia often innovating, the innovations re¬ peatedly gynoecial; subinvolucral bracts leaf-like, but distal 2(3) series of bracts progressively smaller, in inner gyre one bract often much reduced; innermost bracts polymorphic, often unequal in size, coarsely dentate/ lobulate at least basally, free, ventrally often with 1-2 coarse lobes; bracteole free or nearly so, similarly polymorphous, often bilobed and toothed/ lacini ate, to 0.65-0.9 length of bracts. Perianth long-emergent at maturity, contracted to the deeply (5)6-12-plicate mouth, distally often twisted; mouth weakly crenulate or entire; perianth 2- several-stratose in basal half, firm. Capsule ellipsoidal, the wall thick, of 5-7 layers; outer layer of cells ca. 2X height of each inner stratum, with well-developed nodular thickenings; innermost layer of cells with mostly nodular to spine-like thickenings, the thickenings only sporadically extending across tangential wall to form complete semiannular bands. Spores finely and closely papillose, the papillae often forming short-vermiculate ridges. Elaters bispiral. Type: Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust. (= Jamesoniella pseudocclusa E.A.Hodgs.) A genus of six species, all south temperate in distribution. One species, Cryptochila grandi- flora, extends north in the Andes at high elevations, north into Central America and in southeast Brazil. Grolle (1971a) divided the genus into three subgenera: 1) subg. Nigritula Grolle, with only C. nigrescens of our area; 2) subg. Cryptochila, with C. pseudocclusa of our area and C. grandiflora, a pan- south- temperate species; 3) subg. Acinaria Grolle, which is comprised of two sections, sect. Acinaria, with C. aci- nacifolia of our area and C. paludosa (Steph.) Grolle of the Ealkland Islands, southern South America and Tristan da Cunha, and sect. Spegazzinia Grolle, with C. spegazzini- ana (Spruce) Grolle of southern South America. References: Grolle (1971a); Schuster (1970b, 2002a). Key to Species la. Lateral merophytes not interlocking; leaf cells evenly thick- walled (at least in distal portion of leaf) . 2 2a. Dorsal leaf base unistratose; leaves orbicular to reniform, ventrally secund; stem paraphyllia usually present . 3 3a. Dorsal leaf margins erect-inflexed to involute . C. grandiflora (p. 736) 3b. Dorsal leaf margins sharply and narrowly revolute . C. pseudocclusa (p. 740) 2b. Dorsal leaf base 2-3-stratose at and above the insertion; leaves Ungulate, dorsally assurgent; stem paraphyllia lacking . C. acinacifolia (p. 742) lb. Lateral merophytes interlocking, the leaf insertions distinctly crossing the stem midline dorsally; leaf cells thin-walled, with distinct trigones . C. nigrescens (p. 734)</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants rigid, prostrate, the tips ascending, greenish brown to golden brown to purplish brown to reddish, nitid when dry, medium-sized, to 2.5 mm broad, rather short, seldom exceeding 2 cm long. Branching rather common, irregular, the branches all or in part ventral-intercalary, evidently from ventral ends of lateral merophytes (superficially appearing ventral in origin); Frullania-iypo branches rather common in some populations, apparently lacking in others, the ventral view; note very narrow ventral merophytes. 3. Shoot with mature sporophyte. 4, 5. Leaves, half-leaf of similar form to the leaves, broadly connate with the first branch underleaf, which is ovate and broadly rounded at the summit. Stem wiry, with cortex in 1(2) layers of rigid, thick-walled cells, the exposed wall pigmented, notably thickened; medullary cells larger, strongly thick- walled with distinct, bulging comer thickenings. Rhizoids whitish, frequent, scattered. Leaves typically dorsally ± connivent in drying, when moist strongly dorsally assurgent grading to widely spreading, closely imbricate, 570-1100 juim wide X 750-1650 juim long, often adaxially concave, symmetrically to asymmetrically ovate-lanceolate, unlobed, apices caudate-piliferous, terminating in a uniseriate row of 8-15 cells, the distal cells highly elongated (to 8:1), otherwise entire, the tips often appearing hyaline and parched; dorsal margin arched and rather similar to the ventral in degree curvature (the leaves then symmetric) or the dorsal margin straight (the leaves then asymmetric), the ventral margin always arched, often sharply and locally incurved, entire but often a small blunt projection in distal portion of median third of margin, the base subcordate. Cells in median sector with strongly nodose trigones, the middle lamella conspicuous, 20-24 juim wide X 25-31 juim long; surface striate- papillose or smooth. Oil-bodies in all cells of leaf except distal cells of uniseriate row of leaf tips, occupying conspicuous portion of cell lumen, hyaline, glistening, 3(5)-(7)10 per cell, moderately botryoidal, subglobose and 4-6 juim in diam. to ellipsoidal, sometimes crescent- shaped and 5-7 X 9-12 juim. Chloroplasts large for cell size. Underleaves absent or vestigial, of 1-2 segments formed of 1-2 elongated cells, each ending in an ephemeral slime papilla; ventral merophytes appearing to be 2-3 cells broad. Asexual reproduction lacking (?or by fragmentation of leaf apices). Eungal partner absent. Dioecious. Androecia on leading shoots, rather inconspicuous, becoming intercalary, often repeatedly so, ± spicate; bracts in 4-6 pairs, somewhat smaller and (when moist) more dorsally assurgent than leaves, the distal sector tapering and similar in form to leaves; lobule well developed, inflated, rather large for bract size, with a short, low wing, the free margin involute, distinctly long-acuminate distally; antheridia 1 per bract, the stalk biseriate, the stalk cells thick- walled; paraphyllia lacking. Gynoecia terminal on leading leafy shoots or relatively short gy- noecial innovations; bracts large, sheathing the perianth, rather deeply concave, the insertion markedly narrow, the innermost pair of bracts often differing in lobe number, one bilobed, the other 3-4-lobed, in either case divided to 0.4-0.65, the lobes long-attenuate to acuminate to caudate-piliferous, terminating in a uniseriate row of up to 10 cells, the distal cells often elongated (to ca. 4:1), the lobe margins entire or with several often opposing sharp teeth and ac¬ cessory lobule(s), the lamina on each side with a few small teeth and often an attenuated lobule; bracteole free or narrowly connate on 1 side, less than 0.55 width of bracts, distinctly narrow at the insertion, usually shorter than the bracts, oblong-lanceolate, acute or acuminate, undivided, on each side usually with a ciliiform to laciniiform to lobuliform process in distal half, the lateral processes never exceeding the length or size of the main, median process, the lamina also with a few small teeth and at times an accessory lobule below. Perianths frequent. spore profile at same scale. (Figs. 1, 2, 7, from Engel 12855, Tasmania, Arve Valley; 3, from Engel 16020, Tasmania, West Downs; 4-6, from Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 8, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 9, from Engel 13155, Tasmania, Tasman Penin¬ sula; 10, 12, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aongatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 11, from Engel 18000, New Zealand, South Is., Westland EP, summit area of Haast Pass.) (dorsal view). Note that the half-leaf (= HE) is distinctly connate with the first branch underleaf. large for shoot size, terete and ± inflated basally, the distal 0. 6-0.7 deeply plicate, the plicae 5-7, rounded, separated by deep sulci, contracted at the often scorched mouth; mouth lobu- late and ciliate/laciniate with stiff, piliferous cilia that terminate in a uniseriate row of 9-17 elongate, thick-walled cells, the lacinia bases often with a few, often opposed, stiff teeth. Sporophyte as in generic description. Distribution and Ecology: New Zealand: Auckland Islands (400 m). Antipodes Islands (200-300 m), Stewart Island (10-100 m). South Island (5-1525 m). North Island (60-1200 m), Chatham Islands (140-240 m); Australia: Tasmania, Victoria, New South Wales. Known from all ecological provinces of New Zealand. Extending to drier parts of some provinces, e.g., present in Marlborough (Pelorus Valley, Mt. Robertson), Banks Peninsula, Hawkes Bay and Wairarapa. A common species throughout our area, but typically in rather exposed sites. It occurs on tree bark, e.g., on Nothofagus spp., Agathis australis (where particularly common), Phyllo- cladus, Weinmannia, Metrosideros, Coprosma and Libocedrus. Also on the bark of a number of species of Dracophyllum, e.g., in an area of rocky outcrops and shrub-heath communities including Coprosma foetidissima, Corokia buddleioides, Dracophyllum recurvum, Lepido- thamnus laxifolius and Oreobolus pectinatus (exposed rocky ridge below summit area of ‘‘Little Moehau,” Mt. Moehau, Coromandel Eorest Park, ca. 800-840 m). In “mesic conditions” also on old rotted, often decorticated logs. Commonly found on soil in rock crevices, particularly on exposed rock outcrops but also under forest. Also found on peat in penalpine bogs at sites subject to strong surface drying, and on soil, decomposing litter, and shrub bases in penalpine tussockland and scrub. Pound with Campylopus introflexus, Hypnum cupres- siforme, Jamesoniella colorata, Lepidozia obtusiloba, Leptotheca gaudichaudii, Pseudomar- supidium piliferum, Ptychomnion densifolium, Racomitrium crispulum, R. lanuginosum and R. pruinosum. The species is strikingly tolerant of desiccation and may occur under quite rigorous conditions. Por example, it was found on a thick soil layer over rock with Pseudomarsupidium pili- ferum over a lava flow within a forest of Metrosideros robusta (Rangitoto Island, 50-160 m). Also in the frost flats near Otupaka Stream (SW of Minginui, 700 m), a rigorous environment consisting of an open, low area with scattered Leptospermum scoparium and Dracophyllum subulatum with abundant Cladonia. And in the alpine zone it may form tight clumps on ice- eroded banks (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park, 1250-1450 m). The species may be a frequent component of the tree canopy bryoflora, and Allison and Child (1975, p. 94) mentioned that the species is “frequently an epiphyte, on branches rather than trunks.” Hodgson (1946, p. 73) indicated “K. W. Allison has a note to the Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 2, 3, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 4-8, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aon- gatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 9-11, from Engel 23998, New Zealand, North Is., Gisborne EP, Urewera Natl. Park, Huiarau Ra., summit area of Te Rangaakapua.) effect that this species is sometimes found growing in the tops of tall forest trees.” Moreover, it may be found in fallen masses of bryophytes on the forest floor, e.g., in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis sapida, Coprosma, Dacrycarpus dacrydioides and Hoheria (Kiwanis Reserve, N edge of Herekino Eorest area, Northland, ca. 60-80 m). When found epiphytically, typical accompanying species arc Acrochila biserialis, Dicnemon calycinum, D. semicryptum, Frullania aterrima, Holomitrium perichae- tiale, Macromitrium longipes, Paraschistochila tuloides, Porella elegantula, Pseudomarsu- pidium piliferum, Pyrrosia eleagnifolia, Usnea rubicunda and Weymouthia cochlearifolia. Comments: This species may be readily recognized in the field by the closely imbricate, un- lobed leaves with the apex caudate-piliferous (Eig. 159: 1, 4, 5; Eig. 160: 1). It has been confused with Chandonanthus squarrosus, which can be a similar red or brown color, is found in similar habitats and has acute leaf lobe apices, but Chandonanthus has bifid leaves. The leaves, when moist, are often strongly dorsally assurgent (Eig. 159: 1), but may be widely spreading (Eig. 160: 1), and in some cases populations are either of one type of leaf orientation or the other. Leaves are typically dorsally ± connivent in drying. Plants are greenish brown to golden brown or reddish, prostrate, and often form pure, quite large patches. Underleaves are completely lacking, and ventral merophytes are very narrow (Eig. 159: 2). Schuster (2002a, p. 41 1, 413) was unable to document Frullania-typt branches for the species. We have found that terminal branching is rather common in some populations of Cuspidatula monodon (Eig. 160: 1) while apparently lacking in others. Spores are baculate and the bacula are truncate at the summit (Eig. 160: 8). This is yet another example of a predominantly corticolous hepatic having baculate spores (for a discussion see Engel and Gradstein, 2003). Cryptochila R.M.Schust. Cryptochila R.M.Schust. J. Hatt. Bot. Lab. 26: 284. 1963. Plants erect, deep green or reddish brown to fuscous, often nitid, vigorous, to 2.5 mm wide and 10 cm long, clearly divided into a system of rhizoidous leafless stolons and stiffly erect or ascending leafy shoots of determinate height. Branching sparing, the branches ventral-intercalary; Frullania-iypQ branching lacking (sporadic on cf plants in Cryptochila pseudocclusa); stoloniform branches frequent, strongly geotropic, originating just above point of origin of leafy, phototropic branches. Stems rigid, with 2-3(4) strata of thick-walled, brown to fuscous (at matu¬ rity) cells smaller in diameter than medullary cells; paraphyllia often present, vestigial. Rhizoids scarce, usually restricted to stolons. Leaves alternate, often subvertical, erect to widely spreading, transversely oriented, inserted on an asymmetric, acroscopically convex line, undivided and entire, the apex rounded. Cells in median sector often hexagonal, the walls firm, evenly thick- walled and lacking trigones or with trigones large and bulging (but not nodulose); peripheral sectors of leaves with cells mostly subquadrate, with walls evenly thick-walled; median-basal cells elongated (ca. 2-4:1), evenly thick-walled or with coarse trigones; surface smooth, except sometimes basally (often delicately striate-papillose in C. grandiflora). Oil- bodies 2-12 per cell, finely to coarsely papillose, at times lacking in marginal /submarginal cells. Underleaves vestigial, consisting of an ephemeral cilium or 2-4 such cilia, or a filiform rudiment often connate at base with a lateral leaf. Asexual reproduction absent. Dioecious. Androecia eventually intercalary, with 4-5 or more pairs of bracts, the bracts smaller than leaves, the dorsal margin with or without a discrete lobule; paraphyllia often present; antheridia 1 per bract, the stalk 2-seriate. Gynoecia often innovating, the innovations re¬ peatedly gynoecial; subinvolucral bracts leaf-like, but distal 2(3) series of bracts progressively smaller, in inner gyre one bract often much reduced; innermost bracts polymorphic, often unequal in size, coarsely dentate/ lobulate at least basally, free, ventrally often with 1-2 coarse lobes; bracteole free or nearly so, similarly polymorphous, often bilobed and toothed/ lacini ate, to 0.65-0.9 length of bracts. Perianth long-emergent at maturity, contracted to the deeply (5)6-12-plicate mouth, distally often twisted; mouth weakly crenulate or entire; perianth 2- several-stratose in basal half, firm. Capsule ellipsoidal, the wall thick, of 5-7 layers; outer layer of cells ca. 2X height of each inner stratum, with well-developed nodular thickenings; innermost layer of cells with mostly nodular to spine-like thickenings, the thickenings only sporadically extending across tangential wall to form complete semiannular bands. Spores finely and closely papillose, the papillae often forming short-vermiculate ridges. Elaters bispiral. Type: Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust. (= Jamesoniella pseudocclusa E.A.Hodgs.) A genus of six species, all south temperate in distribution. One species, Cryptochila grandi- flora, extends north in the Andes at high elevations, north into Central America and in southeast Brazil. Grolle (1971a) divided the genus into three subgenera: 1) subg. Nigritula Grolle, with only C. nigrescens of our area; 2) subg. Cryptochila, with C. pseudocclusa of our area and C. grandiflora, a pan- south- temperate species; 3) subg. Acinaria Grolle, which is comprised of two sections, sect. Acinaria, with C. aci- nacifolia of our area and C. paludosa (Steph.) Grolle of the Ealkland Islands, southern South America and Tristan da Cunha, and sect. Spegazzinia Grolle, with C. spegazzini- ana (Spruce) Grolle of southern South America. References: Grolle (1971a); Schuster (1970b, 2002a). Key to Species la. Lateral merophytes not interlocking; leaf cells evenly thick- walled (at least in distal portion of leaf) . 2 2a. Dorsal leaf base unistratose; leaves orbicular to reniform, ventrally secund; stem paraphyllia usually present . 3 3a. Dorsal leaf margins erect-inflexed to involute . C. grandiflora (p. 736) 3b. Dorsal leaf margins sharply and narrowly revolute . C. pseudocclusa (p. 740) 2b. Dorsal leaf base 2-3-stratose at and above the insertion; leaves Ungulate, dorsally assurgent; stem paraphyllia lacking . C. acinacifolia (p. 742) lb. Lateral merophytes interlocking, the leaf insertions distinctly crossing the stem midline dorsally; leaf cells thin-walled, with distinct trigones . C. nigrescens (p. 734)</p>
+    <pre class="description-text">Plants rigid, prostrate, the tips ascending, greenish brown to golden brown to purplish brown to reddish, nitid when dry, medium-sized, to 2.5 mm broad, rather short, seldom exceeding 2 cm long. Branching rather common, irregular, the branches all or in part ventral-intercalary, evidently from ventral ends of lateral merophytes (superficially appearing ventral in origin); Frullania-iypo branches rather common in some populations, apparently lacking in others, the ventral view; note very narrow ventral merophytes. 3. Shoot with mature sporophyte. 4, 5. Leaves, half-leaf of similar form to the leaves, broadly connate with the first branch underleaf, which is ovate and broadly rounded at the summit. Stem wiry, with cortex in 1(2) layers of rigid, thick-walled cells, the exposed wall pigmented, notably thickened; medullary cells larger, strongly thick- walled with distinct, bulging comer thickenings. Rhizoids whitish, frequent, scattered. Leaves typically dorsally ± connivent in drying, when moist strongly dorsally assurgent grading to widely spreading, closely imbricate, 570-1100 juim wide X 750-1650 juim long, often adaxially concave, symmetrically to asymmetrically ovate-lanceolate, unlobed, apices caudate-piliferous, terminating in a uniseriate row of 8-15 cells, the distal cells highly elongated (to 8:1), otherwise entire, the tips often appearing hyaline and parched; dorsal margin arched and rather similar to the ventral in degree curvature (the leaves then symmetric) or the dorsal margin straight (the leaves then asymmetric), the ventral margin always arched, often sharply and locally incurved, entire but often a small blunt projection in distal portion of median third of margin, the base subcordate. Cells in median sector with strongly nodose trigones, the middle lamella conspicuous, 20-24 juim wide X 25-31 juim long; surface striate- papillose or smooth. Oil-bodies in all cells of leaf except distal cells of uniseriate row of leaf tips, occupying conspicuous portion of cell lumen, hyaline, glistening, 3(5)-(7)10 per cell, moderately botryoidal, subglobose and 4-6 juim in diam. to ellipsoidal, sometimes crescent- shaped and 5-7 X 9-12 juim. Chloroplasts large for cell size. Underleaves absent or vestigial, of 1-2 segments formed of 1-2 elongated cells, each ending in an ephemeral slime papilla; ventral merophytes appearing to be 2-3 cells broad. Asexual reproduction lacking (?or by fragmentation of leaf apices). Eungal partner absent. Dioecious. Androecia on leading shoots, rather inconspicuous, becoming intercalary, often repeatedly so, ± spicate; bracts in 4-6 pairs, somewhat smaller and (when moist) more dorsally assurgent than leaves, the distal sector tapering and similar in form to leaves; lobule well developed, inflated, rather large for bract size, with a short, low wing, the free margin involute, distinctly long-acuminate distally; antheridia 1 per bract, the stalk biseriate, the stalk cells thick- walled; paraphyllia lacking. Gynoecia terminal on leading leafy shoots or relatively short gy- noecial innovations; bracts large, sheathing the perianth, rather deeply concave, the insertion markedly narrow, the innermost pair of bracts often differing in lobe number, one bilobed, the other 3-4-lobed, in either case divided to 0.4-0.65, the lobes long-attenuate to acuminate to caudate-piliferous, terminating in a uniseriate row of up to 10 cells, the distal cells often elongated (to ca. 4:1), the lobe margins entire or with several often opposing sharp teeth and ac¬ cessory lobule(s), the lamina on each side with a few small teeth and often an attenuated lobule; bracteole free or narrowly connate on 1 side, less than 0.55 width of bracts, distinctly narrow at the insertion, usually shorter than the bracts, oblong-lanceolate, acute or acuminate, undivided, on each side usually with a ciliiform to laciniiform to lobuliform process in distal half, the lateral processes never exceeding the length or size of the main, median process, the lamina also with a few small teeth and at times an accessory lobule below. Perianths frequent. spore profile at same scale. (Figs. 1, 2, 7, from Engel 12855, Tasmania, Arve Valley; 3, from Engel 16020, Tasmania, West Downs; 4-6, from Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 8, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 9, from Engel 13155, Tasmania, Tasman Penin¬ sula; 10, 12, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aongatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 11, from Engel 18000, New Zealand, South Is., Westland EP, summit area of Haast Pass.) (dorsal view). Note that the half-leaf (= HE) is distinctly connate with the first branch underleaf. large for shoot size, terete and ± inflated basally, the distal 0. 6-0.7 deeply plicate, the plicae 5-7, rounded, separated by deep sulci, contracted at the often scorched mouth; mouth lobu- late and ciliate/laciniate with stiff, piliferous cilia that terminate in a uniseriate row of 9-17 elongate, thick-walled cells, the lacinia bases often with a few, often opposed, stiff teeth. Sporophyte as in generic description. Distribution and Ecology: New Zealand: Auckland Islands (400 m). Antipodes Islands (200-300 m), Stewart Island (10-100 m). South Island (5-1525 m). North Island (60-1200 m), Chatham Islands (140-240 m); Australia: Tasmania, Victoria, New South Wales. Known from all ecological provinces of New Zealand. Extending to drier parts of some provinces, e.g., present in Marlborough (Pelorus Valley, Mt. Robertson), Banks Peninsula, Hawkes Bay and Wairarapa. A common species throughout our area, but typically in rather exposed sites. It occurs on tree bark, e.g., on Nothofagus spp., Agathis australis (where particularly common), Phyllo- cladus, Weinmannia, Metrosideros, Coprosma and Libocedrus. Also on the bark of a number of species of Dracophyllum, e.g., in an area of rocky outcrops and shrub-heath communities including Coprosma foetidissima, Corokia buddleioides, Dracophyllum recurvum, Lepido- thamnus laxifolius and Oreobolus pectinatus (exposed rocky ridge below summit area of ‘‘Little Moehau,” Mt. Moehau, Coromandel Eorest Park, ca. 800-840 m). In “mesic conditions” also on old rotted, often decorticated logs. Commonly found on soil in rock crevices, particularly on exposed rock outcrops but also under forest. Also found on peat in penalpine bogs at sites subject to strong surface drying, and on soil, decomposing litter, and shrub bases in penalpine tussockland and scrub. Pound with Campylopus introflexus, Hypnum cupres- siforme, Jamesoniella colorata, Lepidozia obtusiloba, Leptotheca gaudichaudii, Pseudomar- supidium piliferum, Ptychomnion densifolium, Racomitrium crispulum, R. lanuginosum and R. pruinosum. The species is strikingly tolerant of desiccation and may occur under quite rigorous conditions. Por example, it was found on a thick soil layer over rock with Pseudomarsupidium pili- ferum over a lava flow within a forest of Metrosideros robusta (Rangitoto Island, 50-160 m). Also in the frost flats near Otupaka Stream (SW of Minginui, 700 m), a rigorous environment consisting of an open, low area with scattered Leptospermum scoparium and Dracophyllum subulatum with abundant Cladonia. And in the alpine zone it may form tight clumps on ice- eroded banks (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park, 1250-1450 m). The species may be a frequent component of the tree canopy bryoflora, and Allison and Child (1975, p. 94) mentioned that the species is “frequently an epiphyte, on branches rather than trunks.” Hodgson (1946, p. 73) indicated “K. W. Allison has a note to the Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 2, 3, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 4-8, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aon- gatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 9-11, from Engel 23998, New Zealand, North Is., Gisborne EP, Urewera Natl. Park, Huiarau Ra., summit area of Te Rangaakapua.) effect that this species is sometimes found growing in the tops of tall forest trees.” Moreover, it may be found in fallen masses of bryophytes on the forest floor, e.g., in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis sapida, Coprosma, Dacrycarpus dacrydioides and Hoheria (Kiwanis Reserve, N edge of Herekino Eorest area, Northland, ca. 60-80 m). When found epiphytically, typical accompanying species arc Acrochila biserialis, Dicnemon calycinum, D. semicryptum, Frullania aterrima, Holomitrium perichae- tiale, Macromitrium longipes, Paraschistochila tuloides, Porella elegantula, Pseudomarsu- pidium piliferum, Pyrrosia eleagnifolia, Usnea rubicunda and Weymouthia cochlearifolia. Comments: This species may be readily recognized in the field by the closely imbricate, un- lobed leaves with the apex caudate-piliferous (Eig. 159: 1, 4, 5; Eig. 160: 1). It has been confused with Chandonanthus squarrosus, which can be a similar red or brown color, is found in similar habitats and has acute leaf lobe apices, but Chandonanthus has bifid leaves. The leaves, when moist, are often strongly dorsally assurgent (Eig. 159: 1), but may be widely spreading (Eig. 160: 1), and in some cases populations are either of one type of leaf orientation or the other. Leaves are typically dorsally ± connivent in drying. Plants are greenish brown to golden brown or reddish, prostrate, and often form pure, quite large patches. Underleaves are completely lacking, and ventral merophytes are very narrow (Eig. 159: 2). Schuster (2002a, p. 41 1, 413) was unable to document Frullania-typt branches for the species. We have found that terminal branching is rather common in some populations of Cuspidatula monodon (Eig. 160: 1) while apparently lacking in others. Spores are baculate and the bacula are truncate at the summit (Eig. 160: 8). This is yet another example of a predominantly corticolous hepatic having baculate spores (for a discussion see Engel and Gradstein, 2003). Cryptochila R.M.Schust. Cryptochila R.M.Schust. J. Hatt. Bot. Lab. 26: 284. 1963. Plants erect, deep green or reddish brown to fuscous, often nitid, vigorous, to 2.5 mm wide and 10 cm long, clearly divided into a system of rhizoidous leafless stolons and stiffly erect or ascending leafy shoots of determinate height. Branching sparing, the branches ventral-intercalary; Frullania-iypQ branching lacking (sporadic on cf plants in Cryptochila pseudocclusa); stoloniform branches frequent, strongly geotropic, originating just above point of origin of leafy, phototropic branches. Stems rigid, with 2-3(4) strata of thick-walled, brown to fuscous (at matu¬ rity) cells smaller in diameter than medullary cells; paraphyllia often present, vestigial. Rhizoids scarce, usually restricted to stolons. Leaves alternate, often subvertical, erect to widely spreading, transversely oriented, inserted on an asymmetric, acroscopically convex line, undivided and entire, the apex rounded. Cells in median sector often hexagonal, the walls firm, evenly thick- walled and lacking trigones or with trigones large and bulging (but not nodulose); peripheral sectors of leaves with cells mostly subquadrate, with walls evenly thick-walled; median-basal cells elongated (ca. 2-4:1), evenly thick-walled or with coarse trigones; surface smooth, except sometimes basally (often delicately striate-papillose in C. grandiflora). Oil- bodies 2-12 per cell, finely to coarsely papillose, at times lacking in marginal /submarginal cells. Underleaves vestigial, consisting of an ephemeral cilium or 2-4 such cilia, or a filiform rudiment often connate at base with a lateral leaf. Asexual reproduction absent. Dioecious. Androecia eventually intercalary, with 4-5 or more pairs of bracts, the bracts smaller than leaves, the dorsal margin with or without a discrete lobule; paraphyllia often present; antheridia 1 per bract, the stalk 2-seriate. Gynoecia often innovating, the innovations re¬ peatedly gynoecial; subinvolucral bracts leaf-like, but distal 2(3) series of bracts progressively smaller, in inner gyre one bract often much reduced; innermost bracts polymorphic, often unequal in size, coarsely dentate/ lobulate at least basally, free, ventrally often with 1-2 coarse lobes; bracteole free or nearly so, similarly polymorphous, often bilobed and toothed/ lacini ate, to 0.65-0.9 length of bracts. Perianth long-emergent at maturity, contracted to the deeply (5)6-12-plicate mouth, distally often twisted; mouth weakly crenulate or entire; perianth 2- several-stratose in basal half, firm. Capsule ellipsoidal, the wall thick, of 5-7 layers; outer layer of cells ca. 2X height of each inner stratum, with well-developed nodular thickenings; innermost layer of cells with mostly nodular to spine-like thickenings, the thickenings only sporadically extending across tangential wall to form complete semiannular bands. Spores finely and closely papillose, the papillae often forming short-vermiculate ridges. Elaters bispiral. Type: Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust. (= Jamesoniella pseudocclusa E.A.Hodgs.) A genus of six species, all south temperate in distribution. One species, Cryptochila grandi- flora, extends north in the Andes at high elevations, north into Central America and in southeast Brazil. Grolle (1971a) divided the genus into three subgenera: 1) subg. Nigritula Grolle, with only C. nigrescens of our area; 2) subg. Cryptochila, with C. pseudocclusa of our area and C. grandiflora, a pan- south- temperate species; 3) subg. Acinaria Grolle, which is comprised of two sections, sect. Acinaria, with C. aci- nacifolia of our area and C. paludosa (Steph.) Grolle of the Ealkland Islands, southern South America and Tristan da Cunha, and sect. Spegazzinia Grolle, with C. spegazzini- ana (Spruce) Grolle of southern South America. References: Grolle (1971a); Schuster (1970b, 2002a). Key to Species la. Lateral merophytes not interlocking; leaf cells evenly thick- walled (at least in distal portion of leaf) . 2 2a. Dorsal leaf base unistratose; leaves orbicular to reniform, ventrally secund; stem paraphyllia usually present . 3 3a. Dorsal leaf margins erect-inflexed to involute . C. grandiflora (p. 736) 3b. Dorsal leaf margins sharply and narrowly revolute . C. pseudocclusa (p. 740) 2b. Dorsal leaf base 2-3-stratose at and above the insertion; leaves Ungulate, dorsally assurgent; stem paraphyllia lacking . C. acinacifolia (p. 742) lb. Lateral merophytes interlocking, the leaf insertions distinctly crossing the stem midline dorsally; leaf cells thin-walled, with distinct trigones . C. nigrescens (p. 734)</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants rigid, prostrate, the tips ascending, greenish brown to golden brown to purplish brown to reddish, nitid when dry, medium-sized, to 2.5 mm broad, rather short, seldom exceeding 2 cm long. Branching rather common, irregular, the branches all or in part ventral-intercalary, evidently from ventral ends of lateral merophytes (superficially appearing ventral in origin); Frullania-iypo branches rather common in some populations, apparently lacking in others, the ventral view; note very narrow ventral merophytes. 3. Shoot with mature sporophyte. 4, 5. Leaves, half-leaf of similar form to the leaves, broadly connate with the first branch underleaf, which is ovate and broadly rounded at the summit. Stem wiry, with cortex in 1(2) layers of rigid, thick-walled cells, the exposed wall pigmented, notably thickened; medullary cells larger, strongly thick- walled with distinct, bulging comer thickenings. Rhizoids whitish, frequent, scattered. Leaves typically dorsally ± connivent in drying, when moist strongly dorsally assurgent grading to widely spreading, closely imbricate, 570-1100 juim wide X 750-1650 juim long, often adaxially concave, symmetrically to asymmetrically ovate-lanceolate, unlobed, apices caudate-piliferous, terminating in a uniseriate row of 8-15 cells, the distal cells highly elongated (to 8:1), otherwise entire, the tips often appearing hyaline and parched; dorsal margin arched and rather similar to the ventral in degree curvature (the leaves then symmetric) or the dorsal margin straight (the leaves then asymmetric), the ventral margin always arched, often sharply and locally incurved, entire but often a small blunt projection in distal portion of median third of margin, the base subcordate. Cells in median sector with strongly nodose trigones, the middle lamella conspicuous, 20-24 juim wide X 25-31 juim long; surface striate- papillose or smooth. Oil-bodies in all cells of leaf except distal cells of uniseriate row of leaf tips, occupying conspicuous portion of cell lumen, hyaline, glistening, 3(5)-(7)10 per cell, moderately botryoidal, subglobose and 4-6 juim in diam. to ellipsoidal, sometimes crescent- shaped and 5-7 X 9-12 juim. Chloroplasts large for cell size. Underleaves absent or vestigial, of 1-2 segments formed of 1-2 elongated cells, each ending in an ephemeral slime papilla; ventral merophytes appearing to be 2-3 cells broad. Asexual reproduction lacking (?or by fragmentation of leaf apices). Eungal partner absent. Dioecious. Androecia on leading shoots, rather inconspicuous, becoming intercalary, often repeatedly so, ± spicate; bracts in 4-6 pairs, somewhat smaller and (when moist) more dorsally assurgent than leaves, the distal sector tapering and similar in form to leaves; lobule well developed, inflated, rather large for bract size, with a short, low wing, the free margin involute, distinctly long-acuminate distally; antheridia 1 per bract, the stalk biseriate, the stalk cells thick- walled; paraphyllia lacking. Gynoecia terminal on leading leafy shoots or relatively short gy- noecial innovations; bracts large, sheathing the perianth, rather deeply concave, the insertion markedly narrow, the innermost pair of bracts often differing in lobe number, one bilobed, the other 3-4-lobed, in either case divided to 0.4-0.65, the lobes long-attenuate to acuminate to caudate-piliferous, terminating in a uniseriate row of up to 10 cells, the distal cells often elongated (to ca. 4:1), the lobe margins entire or with several often opposing sharp teeth and ac¬ cessory lobule(s), the lamina on each side with a few small teeth and often an attenuated lobule; bracteole free or narrowly connate on 1 side, less than 0.55 width of bracts, distinctly narrow at the insertion, usually shorter than the bracts, oblong-lanceolate, acute or acuminate, undivided, on each side usually with a ciliiform to laciniiform to lobuliform process in distal half, the lateral processes never exceeding the length or size of the main, median process, the lamina also with a few small teeth and at times an accessory lobule below. Perianths frequent. spore profile at same scale. (Figs. 1, 2, 7, from Engel 12855, Tasmania, Arve Valley; 3, from Engel 16020, Tasmania, West Downs; 4-6, from Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 8, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 9, from Engel 13155, Tasmania, Tasman Penin¬ sula; 10, 12, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aongatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 11, from Engel 18000, New Zealand, South Is., Westland EP, summit area of Haast Pass.) (dorsal view). Note that the half-leaf (= HE) is distinctly connate with the first branch underleaf. large for shoot size, terete and ± inflated basally, the distal 0. 6-0.7 deeply plicate, the plicae 5-7, rounded, separated by deep sulci, contracted at the often scorched mouth; mouth lobu- late and ciliate/laciniate with stiff, piliferous cilia that terminate in a uniseriate row of 9-17 elongate, thick-walled cells, the lacinia bases often with a few, often opposed, stiff teeth. Sporophyte as in generic description. Distribution and Ecology: New Zealand: Auckland Islands (400 m). Antipodes Islands (200-300 m), Stewart Island (10-100 m). South Island (5-1525 m). North Island (60-1200 m), Chatham Islands (140-240 m); Australia: Tasmania, Victoria, New South Wales. Known from all ecological provinces of New Zealand. Extending to drier parts of some provinces, e.g., present in Marlborough (Pelorus Valley, Mt. Robertson), Banks Peninsula, Hawkes Bay and Wairarapa. A common species throughout our area, but typically in rather exposed sites. It occurs on tree bark, e.g., on Nothofagus spp., Agathis australis (where particularly common), Phyllo- cladus, Weinmannia, Metrosideros, Coprosma and Libocedrus. Also on the bark of a number of species of Dracophyllum, e.g., in an area of rocky outcrops and shrub-heath communities including Coprosma foetidissima, Corokia buddleioides, Dracophyllum recurvum, Lepido- thamnus laxifolius and Oreobolus pectinatus (exposed rocky ridge below summit area of ‘‘Little Moehau,” Mt. Moehau, Coromandel Eorest Park, ca. 800-840 m). In “mesic conditions” also on old rotted, often decorticated logs. Commonly found on soil in rock crevices, particularly on exposed rock outcrops but also under forest. Also found on peat in penalpine bogs at sites subject to strong surface drying, and on soil, decomposing litter, and shrub bases in penalpine tussockland and scrub. Pound with Campylopus introflexus, Hypnum cupres- siforme, Jamesoniella colorata, Lepidozia obtusiloba, Leptotheca gaudichaudii, Pseudomar- supidium piliferum, Ptychomnion densifolium, Racomitrium crispulum, R. lanuginosum and R. pruinosum. The species is strikingly tolerant of desiccation and may occur under quite rigorous conditions. Por example, it was found on a thick soil layer over rock with Pseudomarsupidium pili- ferum over a lava flow within a forest of Metrosideros robusta (Rangitoto Island, 50-160 m). Also in the frost flats near Otupaka Stream (SW of Minginui, 700 m), a rigorous environment consisting of an open, low area with scattered Leptospermum scoparium and Dracophyllum subulatum with abundant Cladonia. And in the alpine zone it may form tight clumps on ice- eroded banks (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park, 1250-1450 m). The species may be a frequent component of the tree canopy bryoflora, and Allison and Child (1975, p. 94) mentioned that the species is “frequently an epiphyte, on branches rather than trunks.” Hodgson (1946, p. 73) indicated “K. W. Allison has a note to the Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 2, 3, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 4-8, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aon- gatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 9-11, from Engel 23998, New Zealand, North Is., Gisborne EP, Urewera Natl. Park, Huiarau Ra., summit area of Te Rangaakapua.) effect that this species is sometimes found growing in the tops of tall forest trees.” Moreover, it may be found in fallen masses of bryophytes on the forest floor, e.g., in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis sapida, Coprosma, Dacrycarpus dacrydioides and Hoheria (Kiwanis Reserve, N edge of Herekino Eorest area, Northland, ca. 60-80 m). When found epiphytically, typical accompanying species arc Acrochila biserialis, Dicnemon calycinum, D. semicryptum, Frullania aterrima, Holomitrium perichae- tiale, Macromitrium longipes, Paraschistochila tuloides, Porella elegantula, Pseudomarsu- pidium piliferum, Pyrrosia eleagnifolia, Usnea rubicunda and Weymouthia cochlearifolia. Comments: This species may be readily recognized in the field by the closely imbricate, un- lobed leaves with the apex caudate-piliferous (Eig. 159: 1, 4, 5; Eig. 160: 1). It has been confused with Chandonanthus squarrosus, which can be a similar red or brown color, is found in similar habitats and has acute leaf lobe apices, but Chandonanthus has bifid leaves. The leaves, when moist, are often strongly dorsally assurgent (Eig. 159: 1), but may be widely spreading (Eig. 160: 1), and in some cases populations are either of one type of leaf orientation or the other. Leaves are typically dorsally ± connivent in drying. Plants are greenish brown to golden brown or reddish, prostrate, and often form pure, quite large patches. Underleaves are completely lacking, and ventral merophytes are very narrow (Eig. 159: 2). Schuster (2002a, p. 41 1, 413) was unable to document Frullania-typt branches for the species. We have found that terminal branching is rather common in some populations of Cuspidatula monodon (Eig. 160: 1) while apparently lacking in others. Spores are baculate and the bacula are truncate at the summit (Eig. 160: 8). This is yet another example of a predominantly corticolous hepatic having baculate spores (for a discussion see Engel and Gradstein, 2003). Cryptochila R.M.Schust. Cryptochila R.M.Schust. J. Hatt. Bot. Lab. 26: 284. 1963. Plants erect, deep green or reddish brown to fuscous, often nitid, vigorous, to 2.5 mm wide and 10 cm long, clearly divided into a system of rhizoidous leafless stolons and stiffly erect or ascending leafy shoots of determinate height. Branching sparing, the branches ventral-intercalary; Frullania-iypQ branching lacking (sporadic on cf plants in Cryptochila pseudocclusa); stoloniform branches frequent, strongly geotropic, originating just above point of origin of leafy, phototropic branches. Stems rigid, with 2-3(4) strata of thick-walled, brown to fuscous (at matu¬ rity) cells smaller in diameter than medullary cells; paraphyllia often present, vestigial. Rhizoids scarce, usually restricted to stolons. Leaves alternate, often subvertical, erect to widely spreading, transversely oriented, inserted on an asymmetric, acroscopically convex line, undivided and entire, the apex rounded. Cells in median sector often hexagonal, the walls firm, evenly thick- walled and lacking trigones or with trigones large and bulging (but not nodulose); peripheral sectors of leaves with cells mostly subquadrate, with walls evenly thick-walled; median-basal cells elongated (ca. 2-4:1), evenly thick-walled or with coarse trigones; surface smooth, except sometimes basally (often delicately striate-papillose in C. grandiflora). Oil- bodies 2-12 per cell, finely to coarsely papillose, at times lacking in marginal /submarginal cells. Underleaves vestigial, consisting of an ephemeral cilium or 2-4 such cilia, or a filiform rudiment often connate at base with a lateral leaf. Asexual reproduction absent. Dioecious. Androecia eventually intercalary, with 4-5 or more pairs of bracts, the bracts smaller than leaves, the dorsal margin with or without a discrete lobule; paraphyllia often present; antheridia 1 per bract, the stalk 2-seriate. Gynoecia often innovating, the innovations re¬ peatedly gynoecial; subinvolucral bracts leaf-like, but distal 2(3) series of bracts progressively smaller, in inner gyre one bract often much reduced; innermost bracts polymorphic, often unequal in size, coarsely dentate/ lobulate at least basally, free, ventrally often with 1-2 coarse lobes; bracteole free or nearly so, similarly polymorphous, often bilobed and toothed/ lacini ate, to 0.65-0.9 length of bracts. Perianth long-emergent at maturity, contracted to the deeply (5)6-12-plicate mouth, distally often twisted; mouth weakly crenulate or entire; perianth 2- several-stratose in basal half, firm. Capsule ellipsoidal, the wall thick, of 5-7 layers; outer layer of cells ca. 2X height of each inner stratum, with well-developed nodular thickenings; innermost layer of cells with mostly nodular to spine-like thickenings, the thickenings only sporadically extending across tangential wall to form complete semiannular bands. Spores finely and closely papillose, the papillae often forming short-vermiculate ridges. Elaters bispiral. Type: Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust. (= Jamesoniella pseudocclusa E.A.Hodgs.) A genus of six species, all south temperate in distribution. One species, Cryptochila grandi- flora, extends north in the Andes at high elevations, north into Central America and in southeast Brazil. Grolle (1971a) divided the genus into three subgenera: 1) subg. Nigritula Grolle, with only C. nigrescens of our area; 2) subg. Cryptochila, with C. pseudocclusa of our area and C. grandiflora, a pan- south- temperate species; 3) subg. Acinaria Grolle, which is comprised of two sections, sect. Acinaria, with C. aci- nacifolia of our area and C. paludosa (Steph.) Grolle of the Ealkland Islands, southern South America and Tristan da Cunha, and sect. Spegazzinia Grolle, with C. spegazzini- ana (Spruce) Grolle of southern South America. References: Grolle (1971a); Schuster (1970b, 2002a). Key to Species la. Lateral merophytes not interlocking; leaf cells evenly thick- walled (at least in distal portion of leaf) . 2 2a. Dorsal leaf base unistratose; leaves orbicular to reniform, ventrally secund; stem paraphyllia usually present . 3 3a. Dorsal leaf margins erect-inflexed to involute . C. grandiflora (p. 736) 3b. Dorsal leaf margins sharply and narrowly revolute . C. pseudocclusa (p. 740) 2b. Dorsal leaf base 2-3-stratose at and above the insertion; leaves Ungulate, dorsally assurgent; stem paraphyllia lacking . C. acinacifolia (p. 742) lb. Lateral merophytes interlocking, the leaf insertions distinctly crossing the stem midline dorsally; leaf cells thin-walled, with distinct trigones . C. nigrescens (p. 734)</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Lord Howe I.</p>
+    <pre class="description-text">Plants rigid, prostrate, the tips ascending, greenish brown to golden brown to purplish brown to reddish, nitid when dry, medium-sized, to 2.5 mm broad, rather short, seldom exceeding 2 cm long. Branching rather common, irregular, the branches all or in part ventral-intercalary, evidently from ventral ends of lateral merophytes (superficially appearing ventral in origin); Frullania-iypo branches rather common in some populations, apparently lacking in others, the ventral view; note very narrow ventral merophytes. 3. Shoot with mature sporophyte. 4, 5. Leaves, half-leaf of similar form to the leaves, broadly connate with the first branch underleaf, which is ovate and broadly rounded at the summit. Stem wiry, with cortex in 1(2) layers of rigid, thick-walled cells, the exposed wall pigmented, notably thickened; medullary cells larger, strongly thick- walled with distinct, bulging comer thickenings. Rhizoids whitish, frequent, scattered. Leaves typically dorsally ± connivent in drying, when moist strongly dorsally assurgent grading to widely spreading, closely imbricate, 570-1100 juim wide X 750-1650 juim long, often adaxially concave, symmetrically to asymmetrically ovate-lanceolate, unlobed, apices caudate-piliferous, terminating in a uniseriate row of 8-15 cells, the distal cells highly elongated (to 8:1), otherwise entire, the tips often appearing hyaline and parched; dorsal margin arched and rather similar to the ventral in degree curvature (the leaves then symmetric) or the dorsal margin straight (the leaves then asymmetric), the ventral margin always arched, often sharply and locally incurved, entire but often a small blunt projection in distal portion of median third of margin, the base subcordate. Cells in median sector with strongly nodose trigones, the middle lamella conspicuous, 20-24 juim wide X 25-31 juim long; surface striate- papillose or smooth. Oil-bodies in all cells of leaf except distal cells of uniseriate row of leaf tips, occupying conspicuous portion of cell lumen, hyaline, glistening, 3(5)-(7)10 per cell, moderately botryoidal, subglobose and 4-6 juim in diam. to ellipsoidal, sometimes crescent- shaped and 5-7 X 9-12 juim. Chloroplasts large for cell size. Underleaves absent or vestigial, of 1-2 segments formed of 1-2 elongated cells, each ending in an ephemeral slime papilla; ventral merophytes appearing to be 2-3 cells broad. Asexual reproduction lacking (?or by fragmentation of leaf apices). Eungal partner absent. Dioecious. Androecia on leading shoots, rather inconspicuous, becoming intercalary, often repeatedly so, ± spicate; bracts in 4-6 pairs, somewhat smaller and (when moist) more dorsally assurgent than leaves, the distal sector tapering and similar in form to leaves; lobule well developed, inflated, rather large for bract size, with a short, low wing, the free margin involute, distinctly long-acuminate distally; antheridia 1 per bract, the stalk biseriate, the stalk cells thick- walled; paraphyllia lacking. Gynoecia terminal on leading leafy shoots or relatively short gy- noecial innovations; bracts large, sheathing the perianth, rather deeply concave, the insertion markedly narrow, the innermost pair of bracts often differing in lobe number, one bilobed, the other 3-4-lobed, in either case divided to 0.4-0.65, the lobes long-attenuate to acuminate to caudate-piliferous, terminating in a uniseriate row of up to 10 cells, the distal cells often elongated (to ca. 4:1), the lobe margins entire or with several often opposing sharp teeth and ac¬ cessory lobule(s), the lamina on each side with a few small teeth and often an attenuated lobule; bracteole free or narrowly connate on 1 side, less than 0.55 width of bracts, distinctly narrow at the insertion, usually shorter than the bracts, oblong-lanceolate, acute or acuminate, undivided, on each side usually with a ciliiform to laciniiform to lobuliform process in distal half, the lateral processes never exceeding the length or size of the main, median process, the lamina also with a few small teeth and at times an accessory lobule below. Perianths frequent. spore profile at same scale. (Figs. 1, 2, 7, from Engel 12855, Tasmania, Arve Valley; 3, from Engel 16020, Tasmania, West Downs; 4-6, from Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 8, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 9, from Engel 13155, Tasmania, Tasman Penin¬ sula; 10, 12, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aongatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 11, from Engel 18000, New Zealand, South Is., Westland EP, summit area of Haast Pass.) (dorsal view). Note that the half-leaf (= HE) is distinctly connate with the first branch underleaf. large for shoot size, terete and ± inflated basally, the distal 0. 6-0.7 deeply plicate, the plicae 5-7, rounded, separated by deep sulci, contracted at the often scorched mouth; mouth lobu- late and ciliate/laciniate with stiff, piliferous cilia that terminate in a uniseriate row of 9-17 elongate, thick-walled cells, the lacinia bases often with a few, often opposed, stiff teeth. Sporophyte as in generic description. Distribution and Ecology: New Zealand: Auckland Islands (400 m). Antipodes Islands (200-300 m), Stewart Island (10-100 m). South Island (5-1525 m). North Island (60-1200 m), Chatham Islands (140-240 m); Australia: Tasmania, Victoria, New South Wales. Known from all ecological provinces of New Zealand. Extending to drier parts of some provinces, e.g., present in Marlborough (Pelorus Valley, Mt. Robertson), Banks Peninsula, Hawkes Bay and Wairarapa. A common species throughout our area, but typically in rather exposed sites. It occurs on tree bark, e.g., on Nothofagus spp., Agathis australis (where particularly common), Phyllo- cladus, Weinmannia, Metrosideros, Coprosma and Libocedrus. Also on the bark of a number of species of Dracophyllum, e.g., in an area of rocky outcrops and shrub-heath communities including Coprosma foetidissima, Corokia buddleioides, Dracophyllum recurvum, Lepido- thamnus laxifolius and Oreobolus pectinatus (exposed rocky ridge below summit area of ‘‘Little Moehau,” Mt. Moehau, Coromandel Eorest Park, ca. 800-840 m). In “mesic conditions” also on old rotted, often decorticated logs. Commonly found on soil in rock crevices, particularly on exposed rock outcrops but also under forest. Also found on peat in penalpine bogs at sites subject to strong surface drying, and on soil, decomposing litter, and shrub bases in penalpine tussockland and scrub. Pound with Campylopus introflexus, Hypnum cupres- siforme, Jamesoniella colorata, Lepidozia obtusiloba, Leptotheca gaudichaudii, Pseudomar- supidium piliferum, Ptychomnion densifolium, Racomitrium crispulum, R. lanuginosum and R. pruinosum. The species is strikingly tolerant of desiccation and may occur under quite rigorous conditions. Por example, it was found on a thick soil layer over rock with Pseudomarsupidium pili- ferum over a lava flow within a forest of Metrosideros robusta (Rangitoto Island, 50-160 m). Also in the frost flats near Otupaka Stream (SW of Minginui, 700 m), a rigorous environment consisting of an open, low area with scattered Leptospermum scoparium and Dracophyllum subulatum with abundant Cladonia. And in the alpine zone it may form tight clumps on ice- eroded banks (below and W of Mt. Armstrong, SSW of Mt. Brewster, Mt. Aspiring Natl. Park, 1250-1450 m). The species may be a frequent component of the tree canopy bryoflora, and Allison and Child (1975, p. 94) mentioned that the species is “frequently an epiphyte, on branches rather than trunks.” Hodgson (1946, p. 73) indicated “K. W. Allison has a note to the Engel 24907, New Zealand, South Is., Westland EP, Lake Kaniere Scenic Reserve, Lake Kaniere; 2, 3, from Engel 23606, New Zealand, North Is., Auckland EP, Kaimai Ra., spur ESE of Ngatamahinerua; 4-8, from Engel 23541, New Zealand, North Is., Auckland EP, Kaimai Ra., Aon- gatete network of tracks at the end of Wrights Road off Katikati-Tauranga highway; 9-11, from Engel 23998, New Zealand, North Is., Gisborne EP, Urewera Natl. Park, Huiarau Ra., summit area of Te Rangaakapua.) effect that this species is sometimes found growing in the tops of tall forest trees.” Moreover, it may be found in fallen masses of bryophytes on the forest floor, e.g., in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis sapida, Coprosma, Dacrycarpus dacrydioides and Hoheria (Kiwanis Reserve, N edge of Herekino Eorest area, Northland, ca. 60-80 m). When found epiphytically, typical accompanying species arc Acrochila biserialis, Dicnemon calycinum, D. semicryptum, Frullania aterrima, Holomitrium perichae- tiale, Macromitrium longipes, Paraschistochila tuloides, Porella elegantula, Pseudomarsu- pidium piliferum, Pyrrosia eleagnifolia, Usnea rubicunda and Weymouthia cochlearifolia. Comments: This species may be readily recognized in the field by the closely imbricate, un- lobed leaves with the apex caudate-piliferous (Eig. 159: 1, 4, 5; Eig. 160: 1). It has been confused with Chandonanthus squarrosus, which can be a similar red or brown color, is found in similar habitats and has acute leaf lobe apices, but Chandonanthus has bifid leaves. The leaves, when moist, are often strongly dorsally assurgent (Eig. 159: 1), but may be widely spreading (Eig. 160: 1), and in some cases populations are either of one type of leaf orientation or the other. Leaves are typically dorsally ± connivent in drying. Plants are greenish brown to golden brown or reddish, prostrate, and often form pure, quite large patches. Underleaves are completely lacking, and ventral merophytes are very narrow (Eig. 159: 2). Schuster (2002a, p. 41 1, 413) was unable to document Frullania-typt branches for the species. We have found that terminal branching is rather common in some populations of Cuspidatula monodon (Eig. 160: 1) while apparently lacking in others. Spores are baculate and the bacula are truncate at the summit (Eig. 160: 8). This is yet another example of a predominantly corticolous hepatic having baculate spores (for a discussion see Engel and Gradstein, 2003). Cryptochila R.M.Schust. Cryptochila R.M.Schust. J. Hatt. Bot. Lab. 26: 284. 1963. Plants erect, deep green or reddish brown to fuscous, often nitid, vigorous, to 2.5 mm wide and 10 cm long, clearly divided into a system of rhizoidous leafless stolons and stiffly erect or ascending leafy shoots of determinate height. Branching sparing, the branches ventral-intercalary; Frullania-iypQ branching lacking (sporadic on cf plants in Cryptochila pseudocclusa); stoloniform branches frequent, strongly geotropic, originating just above point of origin of leafy, phototropic branches. Stems rigid, with 2-3(4) strata of thick-walled, brown to fuscous (at matu¬ rity) cells smaller in diameter than medullary cells; paraphyllia often present, vestigial. Rhizoids scarce, usually restricted to stolons. Leaves alternate, often subvertical, erect to widely spreading, transversely oriented, inserted on an asymmetric, acroscopically convex line, undivided and entire, the apex rounded. Cells in median sector often hexagonal, the walls firm, evenly thick- walled and lacking trigones or with trigones large and bulging (but not nodulose); peripheral sectors of leaves with cells mostly subquadrate, with walls evenly thick-walled; median-basal cells elongated (ca. 2-4:1), evenly thick-walled or with coarse trigones; surface smooth, except sometimes basally (often delicately striate-papillose in C. grandiflora). Oil- bodies 2-12 per cell, finely to coarsely papillose, at times lacking in marginal /submarginal cells. Underleaves vestigial, consisting of an ephemeral cilium or 2-4 such cilia, or a filiform rudiment often connate at base with a lateral leaf. Asexual reproduction absent. Dioecious. Androecia eventually intercalary, with 4-5 or more pairs of bracts, the bracts smaller than leaves, the dorsal margin with or without a discrete lobule; paraphyllia often present; antheridia 1 per bract, the stalk 2-seriate. Gynoecia often innovating, the innovations re¬ peatedly gynoecial; subinvolucral bracts leaf-like, but distal 2(3) series of bracts progressively smaller, in inner gyre one bract often much reduced; innermost bracts polymorphic, often unequal in size, coarsely dentate/ lobulate at least basally, free, ventrally often with 1-2 coarse lobes; bracteole free or nearly so, similarly polymorphous, often bilobed and toothed/ lacini ate, to 0.65-0.9 length of bracts. Perianth long-emergent at maturity, contracted to the deeply (5)6-12-plicate mouth, distally often twisted; mouth weakly crenulate or entire; perianth 2- several-stratose in basal half, firm. Capsule ellipsoidal, the wall thick, of 5-7 layers; outer layer of cells ca. 2X height of each inner stratum, with well-developed nodular thickenings; innermost layer of cells with mostly nodular to spine-like thickenings, the thickenings only sporadically extending across tangential wall to form complete semiannular bands. Spores finely and closely papillose, the papillae often forming short-vermiculate ridges. Elaters bispiral. Type: Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust. (= Jamesoniella pseudocclusa E.A.Hodgs.) A genus of six species, all south temperate in distribution. One species, Cryptochila grandi- flora, extends north in the Andes at high elevations, north into Central America and in southeast Brazil. Grolle (1971a) divided the genus into three subgenera: 1) subg. Nigritula Grolle, with only C. nigrescens of our area; 2) subg. Cryptochila, with C. pseudocclusa of our area and C. grandiflora, a pan- south- temperate species; 3) subg. Acinaria Grolle, which is comprised of two sections, sect. Acinaria, with C. aci- nacifolia of our area and C. paludosa (Steph.) Grolle of the Ealkland Islands, southern South America and Tristan da Cunha, and sect. Spegazzinia Grolle, with C. spegazzini- ana (Spruce) Grolle of southern South America. References: Grolle (1971a); Schuster (1970b, 2002a). Key to Species la. Lateral merophytes not interlocking; leaf cells evenly thick- walled (at least in distal portion of leaf) . 2 2a. Dorsal leaf base unistratose; leaves orbicular to reniform, ventrally secund; stem paraphyllia usually present . 3 3a. Dorsal leaf margins erect-inflexed to involute . C. grandiflora (p. 736) 3b. Dorsal leaf margins sharply and narrowly revolute . C. pseudocclusa (p. 740) 2b. Dorsal leaf base 2-3-stratose at and above the insertion; leaves Ungulate, dorsally assurgent; stem paraphyllia lacking . C. acinacifolia (p. 742) lb. Lateral merophytes interlocking, the leaf insertions distinctly crossing the stem midline dorsally; leaf cells thin-walled, with distinct trigones . C. nigrescens (p. 734)</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">D
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Lord Howe I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">D
      the leaves attached incubously and folded ventrally about the stem D
      so that the rows face each other. The succubous leaves are ovate,
      characteristically contracting to a spike-like point at right angles to
@@ -985,16 +952,19 @@ Chiloscyphus                                                                    
     biciliatus .................................................... 258         verrucosum ................................................ 212
     bidentatus .................................................. 258       Distichophyllum
     echineIlus .................................................. 258           crispulum .................................................... 36
-    latifolius .................................................... 258         microcarpum ............................................... 36</p>
+    latifolius .................................................... 258         microcarpum ............................................... 36</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Plants very dark green to black, appearing leafless
+    <pre class="description-text">Plants very dark green to black, appearing leafless
                                                                                                                                                                                     but with minute widely spaced leaves; stem clearly visible;
                                                                                                                                                                                     on rocks in flowing water .............................................. Cephalomitrion aterrimum
                                                                                                                                                                                19 Leaves bifid to halfway; plant aquatic or semi-aquatic .................... Allisoniella nigra
@@ -1054,7 +1024,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                     striate, not papillose ................................................................ Herzogobryum teres
                                                                                                                                                                                33 Erect branches arising from creeping stolon-like stems;
                                                                                                                                                                                     plants small, leaves deeply concave; in subalpine or
-                                                                                                                                                                                    alpine areas ................................................................ Hygrolembidium acrocladum</p>
+                                                                                                                                                                                    alpine areas ................................................................ Hygrolembidium acrocladum</pre>
     
     
   </details>
@@ -1063,14 +1033,51 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cuspidatula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Distichophyllum cuspidatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Euprosopia monodon</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Euptychium cuspidatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Monoon</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Monoon australe</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Monoon michaelii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Monoon patinatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Odontonema cuspidatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Anastrophyllum monodon</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jamesoniella monodon</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia consimilis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia geminiflora</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia mondon</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia monodon</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -1085,22 +1092,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [84.2, 70.8, 95.1, 102.6, 154.5, 156.8, 183.4, 194.3, 170.7, 139.6, 100.8, 107.5], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.6, 19.7, 17.6, 14.5, 11.7, 9.8, 9.2, 9.9, 11.7, 13.6, 16.4, 17.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.6, 8.2, 6.3, 4.8, 3.5, 2.8, 3.0, 4.1, 5.0, 6.9, 7.9], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

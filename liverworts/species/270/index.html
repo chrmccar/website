@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Haplomitrium gibbsiae</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Haplomitriaceae</span>
-    <span class="badge secondary">Haplomitrium</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Euphrasia gibbsiae</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Euphrasia gibbsiae subsp. gibbsiae</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Garcinia gibbsiae</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Haplomitrium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Haplomitrium intermedium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Holomitrium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Holomitrium cylindraceum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Holomitrium perichaetiale</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Holomitrium trichopodum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Calobryum gibbsiae</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Haplomitrium</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">58</p>
     <footer>6 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">14</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,175 +74,177 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>irregular</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>40.0–50.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>40.0–50.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>55.0–65.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>55.0–65.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
-          <td class="muted small">GBIF key 8272652; source: The first report of Haplomitrium g…</td>
-          <td>⚠</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">GBIF key 8272652; source: The first report of Haplomitr…</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>20.0–28.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>20.0–28.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
-          <td class="muted small">GBIF key 8272652; source: The first report of Haplomitrium g…</td>
-          <td>⚠</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">GBIF key 8272652; source: The first report of Haplomitr…</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>GBIF</strong> (5 entrys)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(5)</span>
+    </summary>
     
     
-    <p class="description-text">&lt;p&gt;The species exhibit variable morphology, with stolons arising from a prostrate, irregularly branched (Fig. 1b-d), colourless to ivory-coloured rhizome that often appears coralloid (Fig. 2b) and is adorned with numerous 1-2-celled slime papillae secreting a thick mucilaginous sheath. Erect leafy shoots arise from this rhizomatous system, displaying isophyllous or rarely anisophyllous arrangement with infrequent terminal branching (Fig. 2a-b). The leaves, bright yellow-green, translucent to opaque, rigid and brittle, are arranged in three subequal to equal ranks; lateral leaves are weakly succubously to nearly transversely inserted, often strongly undulate or crispate and widely spreading (Fig. 2e-i). Leaf shape varies from suborbicular-ovate basally to deltoid, rhomboidal or rhomboidal-reniform distally, typically bluntly pointed or acute at the tips, widest in the basal quarter and broader than long, with bluntly pointed or acute tips and undulate to crispate margins. Unistratose, except for a 2-4 stratose basal field, they have entire margins, occasionally bearing vestigial teeth or slime papillae near reproductive zones that fade with age. Median leaf cells range from 40-65 μm wide by 45-85 μm long (Fig. 2h-i). Leafy stems, unbranched above and nearly colourless and leafless below, with scattered, remote leaves that enlarge abruptly distally (Fig. 2a-b). Oil bodies, hyaline and finely granular, occupy a small cell portion (Fig. 2j).&lt;/p&gt;&lt;p&gt;The dioecious plant bears gametangia typically aggregated in distinct terminal rosettes, rarely scattered along the stem, with apical proliferation variably present (Fig. 1b-d and Fig. 2b). Male plants produce numerous antheridia (25-45 or more per androecium) in terminal receptacles, technically axillary within the cycle of male bracts, which are initially ivory-white, transitioning to cinnamon with age (Fig. 2c and k). Female plants produce approximately 20 archegonia aggregated in a terminal receptacle (Engel and Glenny 2008). The perichaetium varies from rhombic to subrotund or irregularly rhomboid-ovate, often sinuous-crispate, initially erect and convolute, becoming strongly spreading at maturity (Engel and Glenny 2008). The sporophyte, protected by a perigynium bearing archegonia, bractlets and slime papillae (bractlets absent or raised to the basal one-fifth to one-third), is usually solitary, though 2-4 may develop per gametophore; the seta extends 20-25 mm above the perigynium, supporting a capsule (0.5 × 3-4 mm) that dehisces along (2-3-)4(-5) incomplete lines (Bartholomew-Began 1991). Spores, 20-39 μm in diameter, often remain in tetrads or diads until late development, with a coarsely verrucate exine (verrucae 1.7-3.2 μm high), pale brown and adorned with irregular, roughened or tuberculate compound markings. Elaters, 7-10 μm wide × 280-520 μm long, are predominantly 2-spiralled (occasionally 3-spiralled), transitioning to 1-spiralled at the tips or throughout (Bartholomew-Began 1991, Engel and Glenny 2008).&lt;/p&gt;</p>
-    
-    
-    
-    <p><strong>discussion:</strong> &lt;p&gt;Initially described by Stephani (1917) as &lt;i&gt;Calobryum gibbsiae&lt;/i&gt; St. from New Zealand, it was later reclassified by Schuster (1963) into the &lt;i&gt;Haplomitrium&lt;/i&gt;. Subsequent revisions further clarified its status: Hässel de Menéndez and Solari (1975) synonymised the South American &lt;i&gt;Haplomitrium chilense&lt;/i&gt; R.M. Schust. with the species and Bartholomew-Began (1991) subsumed several Indian taxa — &lt;i&gt;Haplomitrium dentatum&lt;/i&gt; (D. Kumar &amp; Udar) J.J. Engel, &lt;i&gt;Haplomitrium grollei&lt;/i&gt; D. Kumar &amp; Udar, &lt;i&gt;Haplomitrium indicum&lt;/i&gt; (Udar &amp; V. Chandra) R.M. Schust. and &lt;i&gt;Haplomitrium kashyapii&lt;/i&gt; Udar &amp; D. Kumar — under the same species. &lt;/p&gt;&lt;p&gt;According to Bartholomew-Began (1991), &lt;em&gt;H. gibbsiae&lt;/em&gt; exhibits similarities to &lt;em&gt;Haplomitrium intermedium&lt;/em&gt; Berrie in both symmetry and habit. However, it is distinguished by its leaves, which feature extensive multistratose basal fields (Fig. 2i) — a characteristic that could set &lt;em&gt;H. gibbsiae&lt;/em&gt; apart from all other &lt;em&gt;Haplomitrium&lt;/em&gt; taxa (Bartholomew-Began 1991). Additionally, Schuster (1963) reported that the archegonia of &lt;em&gt;H. gibbsiae&lt;/em&gt; are typically arranged in a terminal group, with the shoot capable of continued growth in the absence of fertilisation. In contrast, that of &lt;em&gt;H. intermedium&lt;/em&gt; may be scattered along the axis, though they are usually grouped distally. Regrettably, the specimen collected in this study was male, preventing direct observation of archegonial characteristics.&lt;/p&gt;&lt;p&gt;Historically, &lt;i&gt;H. gibbsiae&lt;/i&gt; was thought to be restricted to regions such as Australasia (Gibbs 1911, Campbell 1959, Schuster 1967, Allison and Child 1975, Engel 1981), South America (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975) and India (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975), all of which trace their geological origins to the breakup of Gondwanan (Schuster 1972, Stech and Frey 2004). Its unexpected discovery in China, a region of East Asia shaped by the fragmentation of Laurasia, significantly expands its known geographic range (Fig. 3).&lt;/p&gt;</p>
-    
-    
-    
-    <p><strong>distribution:</strong> &lt;p&gt;The newly-documented occurrence of &lt;em&gt;H. gibbsiae&lt;/em&gt; from China, reported in this study, which, when integrated with previously established records from New Zealand (Gibbs 1911, Campbell 1959, Schuster 1967, Allison and Child 1975), Australia (Engel 1981), India (Udar and Chandra 1961, Kumar and Udar 1976, Kumar and Udar 1977, Udar and Kumar 1982), Chile and Argentina (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975), sourced from the Tropicos and GBIF, yield a total of 93 records with valid geographic coordinates for the species. Amongst these, New Zealand accounts for the highest number of distribution records, totalling 72, followed by Chile and Australia, with 12 and seven records, respectively. This comprehensive dataset supports the development of an updated global distribution map (Fig. 3), which illustrates the expanded range of &lt;em&gt;H. gibbsiae&lt;/em&gt; to include East Asia, alongside its previously documented presence in the Southern Hemisphere and the Indian subcontinent.&lt;/p&gt;</p>
+    <pre class="description-text">&lt;p&gt;The species exhibit variable morphology, with stolons arising from a prostrate, irregularly branched (Fig. 1b-d), colourless to ivory-coloured rhizome that often appears coralloid (Fig. 2b) and is adorned with numerous 1-2-celled slime papillae secreting a thick mucilaginous sheath. Erect leafy shoots arise from this rhizomatous system, displaying isophyllous or rarely anisophyllous arrangement with infrequent terminal branching (Fig. 2a-b). The leaves, bright yellow-green, translucent to opaque, rigid and brittle, are arranged in three subequal to equal ranks; lateral leaves are weakly succubously to nearly transversely inserted, often strongly undulate or crispate and widely spreading (Fig. 2e-i). Leaf shape varies from suborbicular-ovate basally to deltoid, rhomboidal or rhomboidal-reniform distally, typically bluntly pointed or acute at the tips, widest in the basal quarter and broader than long, with bluntly pointed or acute tips and undulate to crispate margins. Unistratose, except for a 2-4 stratose basal field, they have entire margins, occasionally bearing vestigial teeth or slime papillae near reproductive zones that fade with age. Median leaf cells range from 40-65 μm wide by 45-85 μm long (Fig. 2h-i). Leafy stems, unbranched above and nearly colourless and leafless below, with scattered, remote leaves that enlarge abruptly distally (Fig. 2a-b). Oil bodies, hyaline and finely granular, occupy a small cell portion (Fig. 2j).&lt;/p&gt;&lt;p&gt;The dioecious plant bears gametangia typically aggregated in distinct terminal rosettes, rarely scattered along the stem, with apical proliferation variably present (Fig. 1b-d and Fig. 2b). Male plants produce numerous antheridia (25-45 or more per androecium) in terminal receptacles, technically axillary within the cycle of male bracts, which are initially ivory-white, transitioning to cinnamon with age (Fig. 2c and k). Female plants produce approximately 20 archegonia aggregated in a terminal receptacle (Engel and Glenny 2008). The perichaetium varies from rhombic to subrotund or irregularly rhomboid-ovate, often sinuous-crispate, initially erect and convolute, becoming strongly spreading at maturity (Engel and Glenny 2008). The sporophyte, protected by a perigynium bearing archegonia, bractlets and slime papillae (bractlets absent or raised to the basal one-fifth to one-third), is usually solitary, though 2-4 may develop per gametophore; the seta extends 20-25 mm above the perigynium, supporting a capsule (0.5 × 3-4 mm) that dehisces along (2-3-)4(-5) incomplete lines (Bartholomew-Began 1991). Spores, 20-39 μm in diameter, often remain in tetrads or diads until late development, with a coarsely verrucate exine (verrucae 1.7-3.2 μm high), pale brown and adorned with irregular, roughened or tuberculate compound markings. Elaters, 7-10 μm wide × 280-520 μm long, are predominantly 2-spiralled (occasionally 3-spiralled), transitioning to 1-spiralled at the tips or throughout (Bartholomew-Began 1991, Engel and Glenny 2008).&lt;/p&gt;</pre>
     
     
     
-    <p><strong>ecology:</strong> &lt;p&gt;In New Zealand, &lt;em&gt;H. gibbsiae&lt;/em&gt; occupies a diverse array of habitats, ranging from moist, disturbed sites such as clay banks and swampy &lt;em&gt;Sphagnum&lt;/em&gt; areas to alpine environments where it grows on bare, wet soil amongst small rocks, spanning elevations from sea level to at least 1280 m (Gibbs 1911, Campbell 1959, Schuster 1967). Engel and Glenny (2008) further noted that populations in New Zealand are predominantly associated with fresh mineral soil on soil banks formed by human activities — such as road construction, track development, slips or washouts — occurring in both open sites and forested settings, particularly in areas that have experienced anthropogenic disturbance. In southern South America, the species is typically found at sea level, often in turfs on soil within shady, damp woods (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975). In India, &lt;i&gt;H. gibbsiae&lt;/i&gt; is confined to the Darjeeling Region of the Eastern Himalayas, where it grows on shaded, sandy soil over rocks at elevations between 1969 and 2121 m (Udar and Chandra 1965, Kumar and Udar 1976, Kumar and Udar 1977, Udar and Kumar 1982). The newly-discovered Chinese population of the species&lt;em&gt; &lt;/em&gt;was found at an elevation of 1200 m, growing on thin soil over rock walls at the edge of a broad-leaved forest (Fig. 1a, e). This habitat aligns closely with the species’ established ecological preferences, reflecting its consistent affinity for bare or thin soil conditions across both natural and disturbed environments as observed in its New Zealand distribution.&lt;/p&gt;</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>discussion:</strong> &lt;p&gt;Initially described by Stephani (1917) as &lt;i&gt;Calobryum gibbsiae&lt;/i&gt; St. from New Zealand, it was later reclassified by Schuster (1963) into the &lt;i&gt;Haplomitrium&lt;/i&gt;. Subsequent revisions further clarified its status: Hässel de Menéndez and Solari (1975) synonymised the South American &lt;i&gt;Haplomitrium chilense&lt;/i&gt; R.M. Schust. with the species and Bartholomew-Began (1991) subsumed several Indian taxa — &lt;i&gt;Haplomitrium dentatum&lt;/i&gt; (D. Kumar &amp; Udar) J.J. Engel, &lt;i&gt;Haplomitrium grollei&lt;/i&gt; D. Kumar &amp; Udar, &lt;i&gt;Haplomitrium indicum&lt;/i&gt; (Udar &amp; V. Chandra) R.M. Schust. and &lt;i&gt;Haplomitrium kashyapii&lt;/i&gt; Udar &amp; D. Kumar — under the same species. &lt;/p&gt;&lt;p&gt;According to Bartholomew-Began (1991), &lt;em&gt;H. gibbsiae&lt;/em&gt; exhibits similarities to &lt;em&gt;Haplomitrium intermedium&lt;/em&gt; Berrie in both symmetry and habit. However, it is distinguished by its leaves, which feature extensive multistratose basal fields (Fig. 2i) — a characteristic that could set &lt;em&gt;H. gibbsiae&lt;/em&gt; apart from all other &lt;em&gt;Haplomitrium&lt;/em&gt; taxa (Bartholomew-Began 1991). Additionally, Schuster (1963) reported that the archegonia of &lt;em&gt;H. gibbsiae&lt;/em&gt; are typically arranged in a terminal group, with the shoot capable of continued growth in the absence of fertilisation. In contrast, that of &lt;em&gt;H. intermedium&lt;/em&gt; may be scattered along the axis, though they are usually grouped distally. Regrettably, the specimen collected in this study was male, preventing direct observation of archegonial characteristics.&lt;/p&gt;&lt;p&gt;Historically, &lt;i&gt;H. gibbsiae&lt;/i&gt; was thought to be restricted to regions such as Australasia (Gibbs 1911, Campbell 1959, Schuster 1967, Allison and Child 1975, Engel 1981), South America (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975) and India (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975), all of which trace their geological origins to the breakup of Gondwanan (Schuster 1972, Stech and Frey 2004). Its unexpected discovery in China, a region of East Asia shaped by the fragmentation of Laurasia, significantly expands its known geographic range (Fig. 3).&lt;/p&gt;</p>
     
     
     
-    <p><strong>notes:</strong> &lt;p&gt;Due to the limited phylogenetic studies on &lt;em&gt;Haplomitrium&lt;/em&gt; available at their time, Engel and Glenny (2008) based their treatment of the genus on adaptations and modifications of earlier works by Schuster (1967) and Schuster (1971), rather than the study by Bartholomew-Began (1991). The latter employed experimental culture techniques, along with light and electron microscopy, to investigate the ontogenetic patterns underlying the morphological features of &lt;em&gt;Haplomitrium&lt;/em&gt;, earning widespread recognition in subsequent taxonomy (Forrest et al. 2006, Crandall-Stotler et al. 2009, Söderström et al. 2016, WFO 2025). A key highlight of our work is the first documented record of &lt;em&gt;H. gibbsiae&lt;/em&gt; in China, where a population was found thriving at the edge of a broad-leaved forest. Notably, the collected specimen here was male, with no female plants observed, leaving the morphological characteristics of female plants to be inferred from descriptions by Bartholomew-Began (1991) and Engel and Glenny (2008).&lt;/p&gt;</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> &lt;p&gt;The newly-documented occurrence of &lt;em&gt;H. gibbsiae&lt;/em&gt; from China, reported in this study, which, when integrated with previously established records from New Zealand (Gibbs 1911, Campbell 1959, Schuster 1967, Allison and Child 1975), Australia (Engel 1981), India (Udar and Chandra 1961, Kumar and Udar 1976, Kumar and Udar 1977, Udar and Kumar 1982), Chile and Argentina (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975), sourced from the Tropicos and GBIF, yield a total of 93 records with valid geographic coordinates for the species. Amongst these, New Zealand accounts for the highest number of distribution records, totalling 72, followed by Chile and Australia, with 12 and seven records, respectively. This comprehensive dataset supports the development of an updated global distribution map (Fig. 3), which illustrates the expanded range of &lt;em&gt;H. gibbsiae&lt;/em&gt; to include East Asia, alongside its previously documented presence in the Southern Hemisphere and the Indian subcontinent.&lt;/p&gt;</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>ecology:</strong> &lt;p&gt;In New Zealand, &lt;em&gt;H. gibbsiae&lt;/em&gt; occupies a diverse array of habitats, ranging from moist, disturbed sites such as clay banks and swampy &lt;em&gt;Sphagnum&lt;/em&gt; areas to alpine environments where it grows on bare, wet soil amongst small rocks, spanning elevations from sea level to at least 1280 m (Gibbs 1911, Campbell 1959, Schuster 1967). Engel and Glenny (2008) further noted that populations in New Zealand are predominantly associated with fresh mineral soil on soil banks formed by human activities — such as road construction, track development, slips or washouts — occurring in both open sites and forested settings, particularly in areas that have experienced anthropogenic disturbance. In southern South America, the species is typically found at sea level, often in turfs on soil within shady, damp woods (Hässel de Menéndez 1970, Schuster 1971, Hässel de Menéndez and Solari 1975). In India, &lt;i&gt;H. gibbsiae&lt;/i&gt; is confined to the Darjeeling Region of the Eastern Himalayas, where it grows on shaded, sandy soil over rocks at elevations between 1969 and 2121 m (Udar and Chandra 1965, Kumar and Udar 1976, Kumar and Udar 1977, Udar and Kumar 1982). The newly-discovered Chinese population of the species&lt;em&gt; &lt;/em&gt;was found at an elevation of 1200 m, growing on thin soil over rock walls at the edge of a broad-leaved forest (Fig. 1a, e). This habitat aligns closely with the species’ established ecological preferences, reflecting its consistent affinity for bare or thin soil conditions across both natural and disturbed environments as observed in its New Zealand distribution.&lt;/p&gt;</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>notes:</strong> &lt;p&gt;Due to the limited phylogenetic studies on &lt;em&gt;Haplomitrium&lt;/em&gt; available at their time, Engel and Glenny (2008) based their treatment of the genus on adaptations and modifications of earlier works by Schuster (1967) and Schuster (1971), rather than the study by Bartholomew-Began (1991). The latter employed experimental culture techniques, along with light and electron microscopy, to investigate the ontogenetic patterns underlying the morphological features of &lt;em&gt;Haplomitrium&lt;/em&gt;, earning widespread recognition in subsequent taxonomy (Forrest et al. 2006, Crandall-Stotler et al. 2009, Söderström et al. 2016, WFO 2025). A key highlight of our work is the first documented record of &lt;em&gt;H. gibbsiae&lt;/em&gt; in China, where a population was found thriving at the edge of a broad-leaved forest. Notably, the collected specimen here was male, with no female plants observed, leaving the morphological characteristics of female plants to be inferred from descriptions by Bartholomew-Began (1991) and Engel and Glenny (2008).&lt;/p&gt;</p>
     
     
   </details>
   
   <details>
-    <summary><strong>MONOCARPUS_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>MONOCARPUS_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">74                                Sauteria
+    <pre class="description-text">74                                Sauteria
                                                                            99
                                                                                                 Peltolepis
                                                                *                                Clevea                                                      Monocarpus
@@ -326,16 +304,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
-            A                                            B                                                       C</p>
+            A                                            B                                                       C</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle       Echinolejeunea papillata (Mitt.) R.M.Schust.
+    <pre class="description-text">Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle       Echinolejeunea papillata (Mitt.) R.M.Schust.
         Chiloscyphus notophyllus (Hook.f. &amp; Taylor)      Eoisotachis stephanii (Salm.) R.M.Schust.
         Hassel                                           Eotrichocolea polyacantha (Hook.f. &amp; Taylor)
 Clasmatocolea strongylophylla (Hook.f. &amp; Taylor)                 R.M.Schust.
@@ -393,38 +374,47 @@ Frullania scandens Mont.                                        Clasmatocolea ro
 Frullania setchellii Pearson                                    Grolle
         Frullania falciloba var. setchellii (Pearson)    Herbertus alpinus (Steph.) E.A.Hodgs.
         E.A.Hodgs.                                       Herzogianthus sanguineus R.M.Schust.
-                                                                          NZ Liverworts and Hornworts   133</p>
+                                                                          NZ Liverworts and Hornworts   133</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants variable, especially in vigor, the leafy shoots isophyllous, arising from a prostrate, irregularly branched, in large part creeping or horizontal, colorless to ivory-colored rhizome that may be coralloid; rhizomatous system with numerous 1-2-celled slime papillae that produce a thick mucilaginous sheath. Leafy stems unbranched above, nearly colorless and leaf¬ less below, to 6-7.5 mm wide above (9 plants), variable in height, to 16-25(30) mm, the shoots above the base with scattered, remote leaves that are rather abruptly larger distally. Leaves bright yellow-green, translucent to opaque, rigid and brittle, 3-ranked and subequal to equal in all ranks, the lateral weakly succubously to almost transversely inserted, variable, often strongly undulate or crispate, widely spreading, unistratose except for a 2-4-stratose basal field, suborbicular-ovate below to deltoid or rhomboidal to rhomboidal-reniform above, commonly bluntly pointed or acute at tips, widest in basal 0.25, nearly always broader than long; margins entire, or, approaching reproductive zones, occasionally with a few low, obtuse, scattered vestigial teeth or ± sinuate-lobulate, the margins with a few scattered slime papillae that are ephemeral and disappear with age. Cells in median sector variable in size from 40- 50 |ULm wide X 45-60 juim long up to 55-65 juim wide X 65-85 juim long. Oil-bodies occupying a small portion of the cell, hyaline, ca. 15-30 to ca. 30-40 per median leaf cell, obscurely finely papillose, sporadically to commonly with a distinct depression, some broad-elliptic to more often long-fusiform to long-crescentic, the tips often becoming protracted (?early stage of breakdown), at times irregular and with 3 protracted tips and triangular in profile, 2-3.5 X 6-11.5 |ULm. Chloroplasts large for cell size. Plants dioecious, cf Plants with antheridia in ± definite terminal receptacles (but technically axillary in the single cycle of cf bracts); androecial plants at times innovating freely from apex of androecium (thus with indeterminate growth), in others not or rarely so. Antheridia numerous (25-45 or more per androecium), at first ivory-white, with age cinnamon, usually with interspersed small bractlets, the stalk 4-10 tiers high. Gynoecium with ca. 20 archegonia aggregated in a terminal receptacle to 7-8 mm across, the gynoecium potentially with indeterminate growth if fertilization does not occur; if fertilization occurs, a shoot-calyptra forms. Gynoecial bracts very variable, rhombic to subrotund or irregularly rhomboid-ovate in outline, often sinuous-crispate, erect, convolute and sheathing the stem-calyptra when young, but usually becoming strongly spreading at maturity. Shoot-calyptra variable, fleshy, rigid, thick- walled, massive, green but becoming whitish green, to 8 mm high or more, the surface with polymorphous lamellae or unistratose teeth, laciniae, or ridges, the ornamentation with age may be in large part deciduous (the surface then smooth), the surface also often with sterile archegonia and slime papillae. Eungal partner a glomeromycote. Sporophyte usually single, rarely 2 or even 3-4 shoot-calyptrae and sporophytes may form at the apex of a single gametophore. Seta to 20-25 mm long (above perigynium). Capsule ca. 0.5 X 3-4 mm. Spores ca. 23-29 luim in diam., pale brown, covered with a limited number of compound markings that are irregular, roughened or tuberculate, obovoid to subclavate, strongly elevated, coarse, nipple- to mesa-like, distally often subtruncate and basally often somewhat constricted (best seen in spore profile); intervening spore coat smooth to locally with small finely tuber- culate interstices. Spores tending to cohere in tetrads or diads until maturity, the inner faces much less strongly sculptured. Elaters 7-10 juim wide medially X 280-520 juim long, medially usually 2- sometimes 1 -spiral, at times most elaters 1 -spiral, the tapered and tortuous ends always 1 -spiral. Distribution and Ecology: New Zealand: Stewart Island (5-30 m). South Island (85-1400 m). North Island (300-1280 m); Australia: Tasmania (rare, cf. Engel [1982a]). Known from Rakiura (Halfmoon Bay area), Eiordland, Otago (Dunedin), Westland, Canterbury (Craigieburn Ra., Arthur’s Pass, Upper Rakaia River), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau and Auckland EPs. Widely distributed in New Zealand; often rather common although rarely in any quantity. Almost always found on fresh mineral soil on soil banks created by roads, tracks, slips, or washouts, either in open sites or under forest (usually Nothofagus menziesii or N. solandri forest, but also under Agathis australis forest at Coromandel). At higher altitudes under dwarf scrub or in herbfield. Eor instance at Mt. Ruapehu at its North Island upper- altitude limit it was found on a stream bank of volcanic gravel and ash in low scrub of Dracophyllum recurvum, Lepidothamnus laxifolius and Gaultheria depressa var. novae- zelandiae with Triandrophyl- lum subtrifidum, and it occurs in high-altitude herbfields in the South Island with Celmisia an- gustifolia, C. petiolata, C. spectabilis, Leucogenes grandiceps and Ranunculus insignis. In just one case recorded from a rotten log in Eiordland with the note ‘‘unusual assoc.” (CHR 135736). At low altitudes almost always accompanied by Triandrophyllum subtrifidum and Kurzia hippuroides. Other associated species are Balantiopsis diplophylla, Breutelia elongata, Campylopus clavatus, Diplophyllum domesticum, Distichophyllum pulchellum, Ditrichum difficile, D. punctulatum, Hygrolembidium acrocladum, Isotachis intortifolia, L montana, Pallavicinia innovans, Philonotis scabrifolia, Pohlia wahlenbergii, Polytrichadelphus magel- lanicus, Soleno stoma crypt ogynum, and at higher altitudes in the South Island, Austrolophozia paradoxa, Conostomum pentastichum, Jensenia connivens and Pachyschistochila colensoana. The species appears to be a colonizer of new soil surfaces in damp places, and where such sites stabilize, it may be eventually outcompeted by taller vegetation, as indicated by its occurrence on grassy banks in Dunedin, or overtopped by dense Dendroligotrichum dendroides on a soil mound in the Craigieburn Ra. This accounts also for its sporadic occurrence and its disappearance from known localities. Schuster (1967d, p. 45) remarked that the species is clearly “tolerant and ecologically quite unspecialized” — so long “as there is no real danger of periodic desiccation”; it occurs in a “fantastically wide diversity of habitats.” We believe, rather, that the species is quite specialized as an early colonizer except in the alpine zone where competition is much less. There is strong consistency in the accompanying species suggesting a fairly precise niche. Comments: The species is closely allied with Haplomitrium chilensis (Schuster, 197 lb, figs. 1- 10), sharing with that species the rhomboidal to suborbicular leaves and the cohering spores. In H. chilensis, however, unfertilized archegonia are situated all or mostly at the base of the calyptra, which is smooth and devoid of bractlets. Spores in H. chilensis are larger (32- 35 |ULm in diam. vs. 23-29 |ULm in H. gibbsiae) and bear low tubercules, under 1.5 juim high vs. 2- 3 |ULm high in H. gibbsiae. Also, oil-bodies in H. chilensis are 20-28 per cell, ca. 4-5 X 4- 6 |ULm vs. 32-50 or more per cell and notably smaller in H. gibbsiae. Some authors treat these species as conspecific (e.g., Hassel and Solari, 1976; Bartholomew-Began, 1991). Bartholomew-Began (1991) placed four Indian taxa into synonymy of Haplomitrium gibb- siae; we agree with the comment in Schuster (2000a, p. 30) that ‘‘this remains to be convincingly demonstrated.”</p>
+    <pre class="description-text">Plants variable, especially in vigor, the leafy shoots isophyllous, arising from a prostrate, irregularly branched, in large part creeping or horizontal, colorless to ivory-colored rhizome that may be coralloid; rhizomatous system with numerous 1-2-celled slime papillae that produce a thick mucilaginous sheath. Leafy stems unbranched above, nearly colorless and leaf¬ less below, to 6-7.5 mm wide above (9 plants), variable in height, to 16-25(30) mm, the shoots above the base with scattered, remote leaves that are rather abruptly larger distally. Leaves bright yellow-green, translucent to opaque, rigid and brittle, 3-ranked and subequal to equal in all ranks, the lateral weakly succubously to almost transversely inserted, variable, often strongly undulate or crispate, widely spreading, unistratose except for a 2-4-stratose basal field, suborbicular-ovate below to deltoid or rhomboidal to rhomboidal-reniform above, commonly bluntly pointed or acute at tips, widest in basal 0.25, nearly always broader than long; margins entire, or, approaching reproductive zones, occasionally with a few low, obtuse, scattered vestigial teeth or ± sinuate-lobulate, the margins with a few scattered slime papillae that are ephemeral and disappear with age. Cells in median sector variable in size from 40- 50 |ULm wide X 45-60 juim long up to 55-65 juim wide X 65-85 juim long. Oil-bodies occupying a small portion of the cell, hyaline, ca. 15-30 to ca. 30-40 per median leaf cell, obscurely finely papillose, sporadically to commonly with a distinct depression, some broad-elliptic to more often long-fusiform to long-crescentic, the tips often becoming protracted (?early stage of breakdown), at times irregular and with 3 protracted tips and triangular in profile, 2-3.5 X 6-11.5 |ULm. Chloroplasts large for cell size. Plants dioecious, cf Plants with antheridia in ± definite terminal receptacles (but technically axillary in the single cycle of cf bracts); androecial plants at times innovating freely from apex of androecium (thus with indeterminate growth), in others not or rarely so. Antheridia numerous (25-45 or more per androecium), at first ivory-white, with age cinnamon, usually with interspersed small bractlets, the stalk 4-10 tiers high. Gynoecium with ca. 20 archegonia aggregated in a terminal receptacle to 7-8 mm across, the gynoecium potentially with indeterminate growth if fertilization does not occur; if fertilization occurs, a shoot-calyptra forms. Gynoecial bracts very variable, rhombic to subrotund or irregularly rhomboid-ovate in outline, often sinuous-crispate, erect, convolute and sheathing the stem-calyptra when young, but usually becoming strongly spreading at maturity. Shoot-calyptra variable, fleshy, rigid, thick- walled, massive, green but becoming whitish green, to 8 mm high or more, the surface with polymorphous lamellae or unistratose teeth, laciniae, or ridges, the ornamentation with age may be in large part deciduous (the surface then smooth), the surface also often with sterile archegonia and slime papillae. Eungal partner a glomeromycote. Sporophyte usually single, rarely 2 or even 3-4 shoot-calyptrae and sporophytes may form at the apex of a single gametophore. Seta to 20-25 mm long (above perigynium). Capsule ca. 0.5 X 3-4 mm. Spores ca. 23-29 luim in diam., pale brown, covered with a limited number of compound markings that are irregular, roughened or tuberculate, obovoid to subclavate, strongly elevated, coarse, nipple- to mesa-like, distally often subtruncate and basally often somewhat constricted (best seen in spore profile); intervening spore coat smooth to locally with small finely tuber- culate interstices. Spores tending to cohere in tetrads or diads until maturity, the inner faces much less strongly sculptured. Elaters 7-10 juim wide medially X 280-520 juim long, medially usually 2- sometimes 1 -spiral, at times most elaters 1 -spiral, the tapered and tortuous ends always 1 -spiral. Distribution and Ecology: New Zealand: Stewart Island (5-30 m). South Island (85-1400 m). North Island (300-1280 m); Australia: Tasmania (rare, cf. Engel [1982a]). Known from Rakiura (Halfmoon Bay area), Eiordland, Otago (Dunedin), Westland, Canterbury (Craigieburn Ra., Arthur’s Pass, Upper Rakaia River), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau and Auckland EPs. Widely distributed in New Zealand; often rather common although rarely in any quantity. Almost always found on fresh mineral soil on soil banks created by roads, tracks, slips, or washouts, either in open sites or under forest (usually Nothofagus menziesii or N. solandri forest, but also under Agathis australis forest at Coromandel). At higher altitudes under dwarf scrub or in herbfield. Eor instance at Mt. Ruapehu at its North Island upper- altitude limit it was found on a stream bank of volcanic gravel and ash in low scrub of Dracophyllum recurvum, Lepidothamnus laxifolius and Gaultheria depressa var. novae- zelandiae with Triandrophyl- lum subtrifidum, and it occurs in high-altitude herbfields in the South Island with Celmisia an- gustifolia, C. petiolata, C. spectabilis, Leucogenes grandiceps and Ranunculus insignis. In just one case recorded from a rotten log in Eiordland with the note ‘‘unusual assoc.” (CHR 135736). At low altitudes almost always accompanied by Triandrophyllum subtrifidum and Kurzia hippuroides. Other associated species are Balantiopsis diplophylla, Breutelia elongata, Campylopus clavatus, Diplophyllum domesticum, Distichophyllum pulchellum, Ditrichum difficile, D. punctulatum, Hygrolembidium acrocladum, Isotachis intortifolia, L montana, Pallavicinia innovans, Philonotis scabrifolia, Pohlia wahlenbergii, Polytrichadelphus magel- lanicus, Soleno stoma crypt ogynum, and at higher altitudes in the South Island, Austrolophozia paradoxa, Conostomum pentastichum, Jensenia connivens and Pachyschistochila colensoana. The species appears to be a colonizer of new soil surfaces in damp places, and where such sites stabilize, it may be eventually outcompeted by taller vegetation, as indicated by its occurrence on grassy banks in Dunedin, or overtopped by dense Dendroligotrichum dendroides on a soil mound in the Craigieburn Ra. This accounts also for its sporadic occurrence and its disappearance from known localities. Schuster (1967d, p. 45) remarked that the species is clearly “tolerant and ecologically quite unspecialized” — so long “as there is no real danger of periodic desiccation”; it occurs in a “fantastically wide diversity of habitats.” We believe, rather, that the species is quite specialized as an early colonizer except in the alpine zone where competition is much less. There is strong consistency in the accompanying species suggesting a fairly precise niche. Comments: The species is closely allied with Haplomitrium chilensis (Schuster, 197 lb, figs. 1- 10), sharing with that species the rhomboidal to suborbicular leaves and the cohering spores. In H. chilensis, however, unfertilized archegonia are situated all or mostly at the base of the calyptra, which is smooth and devoid of bractlets. Spores in H. chilensis are larger (32- 35 |ULm in diam. vs. 23-29 |ULm in H. gibbsiae) and bear low tubercules, under 1.5 juim high vs. 2- 3 |ULm high in H. gibbsiae. Also, oil-bodies in H. chilensis are 20-28 per cell, ca. 4-5 X 4- 6 |ULm vs. 32-50 or more per cell and notably smaller in H. gibbsiae. Some authors treat these species as conspecific (e.g., Hassel and Solari, 1976; Bartholomew-Began, 1991). Bartholomew-Began (1991) placed four Indian taxa into synonymy of Haplomitrium gibb- siae; we agree with the comment in Schuster (2000a, p. 30) that ‘‘this remains to be convincingly demonstrated.”</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants variable, especially in vigor, the leafy shoots isophyllous, arising from a prostrate, irregularly branched, in large part creeping or horizontal, colorless to ivory-colored rhizome that may be coralloid; rhizomatous system with numerous 1-2-celled slime papillae that produce a thick mucilaginous sheath. Leafy stems unbranched above, nearly colorless and leaf¬ less below, to 6-7.5 mm wide above (9 plants), variable in height, to 16-25(30) mm, the shoots above the base with scattered, remote leaves that are rather abruptly larger distally. Leaves bright yellow-green, translucent to opaque, rigid and brittle, 3-ranked and subequal to equal in all ranks, the lateral weakly succubously to almost transversely inserted, variable, often strongly undulate or crispate, widely spreading, unistratose except for a 2-4-stratose basal field, suborbicular-ovate below to deltoid or rhomboidal to rhomboidal-reniform above, commonly bluntly pointed or acute at tips, widest in basal 0.25, nearly always broader than long; margins entire, or, approaching reproductive zones, occasionally with a few low, obtuse, scattered vestigial teeth or ± sinuate-lobulate, the margins with a few scattered slime papillae that are ephemeral and disappear with age. Cells in median sector variable in size from 40- 50 |ULm wide X 45-60 juim long up to 55-65 juim wide X 65-85 juim long. Oil-bodies occupying a small portion of the cell, hyaline, ca. 15-30 to ca. 30-40 per median leaf cell, obscurely finely papillose, sporadically to commonly with a distinct depression, some broad-elliptic to more often long-fusiform to long-crescentic, the tips often becoming protracted (?early stage of breakdown), at times irregular and with 3 protracted tips and triangular in profile, 2-3.5 X 6-11.5 |ULm. Chloroplasts large for cell size. Plants dioecious, cf Plants with antheridia in ± definite terminal receptacles (but technically axillary in the single cycle of cf bracts); androecial plants at times innovating freely from apex of androecium (thus with indeterminate growth), in others not or rarely so. Antheridia numerous (25-45 or more per androecium), at first ivory-white, with age cinnamon, usually with interspersed small bractlets, the stalk 4-10 tiers high. Gynoecium with ca. 20 archegonia aggregated in a terminal receptacle to 7-8 mm across, the gynoecium potentially with indeterminate growth if fertilization does not occur; if fertilization occurs, a shoot-calyptra forms. Gynoecial bracts very variable, rhombic to subrotund or irregularly rhomboid-ovate in outline, often sinuous-crispate, erect, convolute and sheathing the stem-calyptra when young, but usually becoming strongly spreading at maturity. Shoot-calyptra variable, fleshy, rigid, thick- walled, massive, green but becoming whitish green, to 8 mm high or more, the surface with polymorphous lamellae or unistratose teeth, laciniae, or ridges, the ornamentation with age may be in large part deciduous (the surface then smooth), the surface also often with sterile archegonia and slime papillae. Eungal partner a glomeromycote. Sporophyte usually single, rarely 2 or even 3-4 shoot-calyptrae and sporophytes may form at the apex of a single gametophore. Seta to 20-25 mm long (above perigynium). Capsule ca. 0.5 X 3-4 mm. Spores ca. 23-29 luim in diam., pale brown, covered with a limited number of compound markings that are irregular, roughened or tuberculate, obovoid to subclavate, strongly elevated, coarse, nipple- to mesa-like, distally often subtruncate and basally often somewhat constricted (best seen in spore profile); intervening spore coat smooth to locally with small finely tuber- culate interstices. Spores tending to cohere in tetrads or diads until maturity, the inner faces much less strongly sculptured. Elaters 7-10 juim wide medially X 280-520 juim long, medially usually 2- sometimes 1 -spiral, at times most elaters 1 -spiral, the tapered and tortuous ends always 1 -spiral. Distribution and Ecology: New Zealand: Stewart Island (5-30 m). South Island (85-1400 m). North Island (300-1280 m); Australia: Tasmania (rare, cf. Engel [1982a]). Known from Rakiura (Halfmoon Bay area), Eiordland, Otago (Dunedin), Westland, Canterbury (Craigieburn Ra., Arthur’s Pass, Upper Rakaia River), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau and Auckland EPs. Widely distributed in New Zealand; often rather common although rarely in any quantity. Almost always found on fresh mineral soil on soil banks created by roads, tracks, slips, or washouts, either in open sites or under forest (usually Nothofagus menziesii or N. solandri forest, but also under Agathis australis forest at Coromandel). At higher altitudes under dwarf scrub or in herbfield. Eor instance at Mt. Ruapehu at its North Island upper- altitude limit it was found on a stream bank of volcanic gravel and ash in low scrub of Dracophyllum recurvum, Lepidothamnus laxifolius and Gaultheria depressa var. novae- zelandiae with Triandrophyl- lum subtrifidum, and it occurs in high-altitude herbfields in the South Island with Celmisia an- gustifolia, C. petiolata, C. spectabilis, Leucogenes grandiceps and Ranunculus insignis. In just one case recorded from a rotten log in Eiordland with the note ‘‘unusual assoc.” (CHR 135736). At low altitudes almost always accompanied by Triandrophyllum subtrifidum and Kurzia hippuroides. Other associated species are Balantiopsis diplophylla, Breutelia elongata, Campylopus clavatus, Diplophyllum domesticum, Distichophyllum pulchellum, Ditrichum difficile, D. punctulatum, Hygrolembidium acrocladum, Isotachis intortifolia, L montana, Pallavicinia innovans, Philonotis scabrifolia, Pohlia wahlenbergii, Polytrichadelphus magel- lanicus, Soleno stoma crypt ogynum, and at higher altitudes in the South Island, Austrolophozia paradoxa, Conostomum pentastichum, Jensenia connivens and Pachyschistochila colensoana. The species appears to be a colonizer of new soil surfaces in damp places, and where such sites stabilize, it may be eventually outcompeted by taller vegetation, as indicated by its occurrence on grassy banks in Dunedin, or overtopped by dense Dendroligotrichum dendroides on a soil mound in the Craigieburn Ra. This accounts also for its sporadic occurrence and its disappearance from known localities. Schuster (1967d, p. 45) remarked that the species is clearly “tolerant and ecologically quite unspecialized” — so long “as there is no real danger of periodic desiccation”; it occurs in a “fantastically wide diversity of habitats.” We believe, rather, that the species is quite specialized as an early colonizer except in the alpine zone where competition is much less. There is strong consistency in the accompanying species suggesting a fairly precise niche. Comments: The species is closely allied with Haplomitrium chilensis (Schuster, 197 lb, figs. 1- 10), sharing with that species the rhomboidal to suborbicular leaves and the cohering spores. In H. chilensis, however, unfertilized archegonia are situated all or mostly at the base of the calyptra, which is smooth and devoid of bractlets. Spores in H. chilensis are larger (32- 35 |ULm in diam. vs. 23-29 |ULm in H. gibbsiae) and bear low tubercules, under 1.5 juim high vs. 2- 3 |ULm high in H. gibbsiae. Also, oil-bodies in H. chilensis are 20-28 per cell, ca. 4-5 X 4- 6 |ULm vs. 32-50 or more per cell and notably smaller in H. gibbsiae. Some authors treat these species as conspecific (e.g., Hassel and Solari, 1976; Bartholomew-Began, 1991). Bartholomew-Began (1991) placed four Indian taxa into synonymy of Haplomitrium gibb- siae; we agree with the comment in Schuster (2000a, p. 30) that ‘‘this remains to be convincingly demonstrated.”</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> Tas.</p>
+    <pre class="description-text">Plants variable, especially in vigor, the leafy shoots isophyllous, arising from a prostrate, irregularly branched, in large part creeping or horizontal, colorless to ivory-colored rhizome that may be coralloid; rhizomatous system with numerous 1-2-celled slime papillae that produce a thick mucilaginous sheath. Leafy stems unbranched above, nearly colorless and leaf¬ less below, to 6-7.5 mm wide above (9 plants), variable in height, to 16-25(30) mm, the shoots above the base with scattered, remote leaves that are rather abruptly larger distally. Leaves bright yellow-green, translucent to opaque, rigid and brittle, 3-ranked and subequal to equal in all ranks, the lateral weakly succubously to almost transversely inserted, variable, often strongly undulate or crispate, widely spreading, unistratose except for a 2-4-stratose basal field, suborbicular-ovate below to deltoid or rhomboidal to rhomboidal-reniform above, commonly bluntly pointed or acute at tips, widest in basal 0.25, nearly always broader than long; margins entire, or, approaching reproductive zones, occasionally with a few low, obtuse, scattered vestigial teeth or ± sinuate-lobulate, the margins with a few scattered slime papillae that are ephemeral and disappear with age. Cells in median sector variable in size from 40- 50 |ULm wide X 45-60 juim long up to 55-65 juim wide X 65-85 juim long. Oil-bodies occupying a small portion of the cell, hyaline, ca. 15-30 to ca. 30-40 per median leaf cell, obscurely finely papillose, sporadically to commonly with a distinct depression, some broad-elliptic to more often long-fusiform to long-crescentic, the tips often becoming protracted (?early stage of breakdown), at times irregular and with 3 protracted tips and triangular in profile, 2-3.5 X 6-11.5 |ULm. Chloroplasts large for cell size. Plants dioecious, cf Plants with antheridia in ± definite terminal receptacles (but technically axillary in the single cycle of cf bracts); androecial plants at times innovating freely from apex of androecium (thus with indeterminate growth), in others not or rarely so. Antheridia numerous (25-45 or more per androecium), at first ivory-white, with age cinnamon, usually with interspersed small bractlets, the stalk 4-10 tiers high. Gynoecium with ca. 20 archegonia aggregated in a terminal receptacle to 7-8 mm across, the gynoecium potentially with indeterminate growth if fertilization does not occur; if fertilization occurs, a shoot-calyptra forms. Gynoecial bracts very variable, rhombic to subrotund or irregularly rhomboid-ovate in outline, often sinuous-crispate, erect, convolute and sheathing the stem-calyptra when young, but usually becoming strongly spreading at maturity. Shoot-calyptra variable, fleshy, rigid, thick- walled, massive, green but becoming whitish green, to 8 mm high or more, the surface with polymorphous lamellae or unistratose teeth, laciniae, or ridges, the ornamentation with age may be in large part deciduous (the surface then smooth), the surface also often with sterile archegonia and slime papillae. Eungal partner a glomeromycote. Sporophyte usually single, rarely 2 or even 3-4 shoot-calyptrae and sporophytes may form at the apex of a single gametophore. Seta to 20-25 mm long (above perigynium). Capsule ca. 0.5 X 3-4 mm. Spores ca. 23-29 luim in diam., pale brown, covered with a limited number of compound markings that are irregular, roughened or tuberculate, obovoid to subclavate, strongly elevated, coarse, nipple- to mesa-like, distally often subtruncate and basally often somewhat constricted (best seen in spore profile); intervening spore coat smooth to locally with small finely tuber- culate interstices. Spores tending to cohere in tetrads or diads until maturity, the inner faces much less strongly sculptured. Elaters 7-10 juim wide medially X 280-520 juim long, medially usually 2- sometimes 1 -spiral, at times most elaters 1 -spiral, the tapered and tortuous ends always 1 -spiral. Distribution and Ecology: New Zealand: Stewart Island (5-30 m). South Island (85-1400 m). North Island (300-1280 m); Australia: Tasmania (rare, cf. Engel [1982a]). Known from Rakiura (Halfmoon Bay area), Eiordland, Otago (Dunedin), Westland, Canterbury (Craigieburn Ra., Arthur’s Pass, Upper Rakaia River), Western Nelson, Southern North Island (Tararua Ra.), Volcanic Plateau and Auckland EPs. Widely distributed in New Zealand; often rather common although rarely in any quantity. Almost always found on fresh mineral soil on soil banks created by roads, tracks, slips, or washouts, either in open sites or under forest (usually Nothofagus menziesii or N. solandri forest, but also under Agathis australis forest at Coromandel). At higher altitudes under dwarf scrub or in herbfield. Eor instance at Mt. Ruapehu at its North Island upper- altitude limit it was found on a stream bank of volcanic gravel and ash in low scrub of Dracophyllum recurvum, Lepidothamnus laxifolius and Gaultheria depressa var. novae- zelandiae with Triandrophyl- lum subtrifidum, and it occurs in high-altitude herbfields in the South Island with Celmisia an- gustifolia, C. petiolata, C. spectabilis, Leucogenes grandiceps and Ranunculus insignis. In just one case recorded from a rotten log in Eiordland with the note ‘‘unusual assoc.” (CHR 135736). At low altitudes almost always accompanied by Triandrophyllum subtrifidum and Kurzia hippuroides. Other associated species are Balantiopsis diplophylla, Breutelia elongata, Campylopus clavatus, Diplophyllum domesticum, Distichophyllum pulchellum, Ditrichum difficile, D. punctulatum, Hygrolembidium acrocladum, Isotachis intortifolia, L montana, Pallavicinia innovans, Philonotis scabrifolia, Pohlia wahlenbergii, Polytrichadelphus magel- lanicus, Soleno stoma crypt ogynum, and at higher altitudes in the South Island, Austrolophozia paradoxa, Conostomum pentastichum, Jensenia connivens and Pachyschistochila colensoana. The species appears to be a colonizer of new soil surfaces in damp places, and where such sites stabilize, it may be eventually outcompeted by taller vegetation, as indicated by its occurrence on grassy banks in Dunedin, or overtopped by dense Dendroligotrichum dendroides on a soil mound in the Craigieburn Ra. This accounts also for its sporadic occurrence and its disappearance from known localities. Schuster (1967d, p. 45) remarked that the species is clearly “tolerant and ecologically quite unspecialized” — so long “as there is no real danger of periodic desiccation”; it occurs in a “fantastically wide diversity of habitats.” We believe, rather, that the species is quite specialized as an early colonizer except in the alpine zone where competition is much less. There is strong consistency in the accompanying species suggesting a fairly precise niche. Comments: The species is closely allied with Haplomitrium chilensis (Schuster, 197 lb, figs. 1- 10), sharing with that species the rhomboidal to suborbicular leaves and the cohering spores. In H. chilensis, however, unfertilized archegonia are situated all or mostly at the base of the calyptra, which is smooth and devoid of bractlets. Spores in H. chilensis are larger (32- 35 |ULm in diam. vs. 23-29 |ULm in H. gibbsiae) and bear low tubercules, under 1.5 juim high vs. 2- 3 |ULm high in H. gibbsiae. Also, oil-bodies in H. chilensis are 20-28 per cell, ca. 4-5 X 4- 6 |ULm vs. 32-50 or more per cell and notably smaller in H. gibbsiae. Some authors treat these species as conspecific (e.g., Hassel and Solari, 1976; Bartholomew-Began, 1991). Bartholomew-Began (1991) placed four Indian taxa into synonymy of Haplomitrium gibb- siae; we agree with the comment in Schuster (2000a, p. 30) that ‘‘this remains to be convincingly demonstrated.”</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">illigera (Fig. 3: 3, 4), and in the weakly projecting              Telaranea sect. Cancellatae Engel &amp; Merr., Phytolo-
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">illigera (Fig. 3: 3, 4), and in the weakly projecting              Telaranea sect. Cancellatae Engel &amp; Merr., Phytolo-
                                                                                               gia 79: 250. 1996 (1995). Type: Lepidozia tetrapila
                          septa of lobes (and disc margins) vs. lobe cells                     Hook. f. &amp; Tayl.
                          barrel-shaped in T. capilligera, the lobes contract-               Telaranea sect. Capillares Engel &amp; Merr., Phytologia
@@ -483,7 +473,7 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
-                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                       33</p>
+                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                       33</pre>
     
     
   </details>
@@ -492,14 +482,41 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Euphrasia gibbsiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Euphrasia gibbsiae subsp. gibbsiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Garcinia gibbsiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Haplomitrium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Haplomitrium intermedium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Holomitrium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Holomitrium cylindraceum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Holomitrium perichaetiale</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Holomitrium trichopodum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Calobryum gibbsiae</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -514,22 +531,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [82.9, 73.7, 87.7, 95.1, 133.2, 131.5, 149.5, 167.3, 156.1, 136.3, 97.6, 106.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.2, 19.3, 17.2, 14.2, 11.4, 9.5, 8.9, 9.8, 11.7, 13.5, 16.0, 17.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.6, 9.3, 8.5, 6.9, 5.3, 3.5, 2.8, 3.3, 4.5, 5.4, 7.1, 8.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

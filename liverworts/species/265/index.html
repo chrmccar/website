@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Geocalyx caledonicus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Geocalycaceae</span>
-    <span class="badge secondary">Geocalyx</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Eucithara caledonica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Funneliformis caledonium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Geocalyx</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Mikadotrochus caledonicus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Parribacus caledonicus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Platycercus (Platycercus) caledonicus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pleurobranchus caledonicus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Sporisorium caledonicum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Vayssierea caledonica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus montanus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Heteroscyphus montanus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Geocalyx</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,21 +48,25 @@
     <p class="big-num">84</p>
     <footer>24 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">12</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -100,134 +74,135 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>irregular</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HEPATIC_TYPES_AUSTRALIA_1992</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">tiogobryum corbieri Stephani, see below.
+    <pre class="description-text">tiogobryum corbieri Stephani, see below.
 
 Brachiolejeunea robusta Stephani (1912: 141)
 PROTO: &#39;Australia. New South Wales.&#39;
@@ -287,16 +262,19 @@ COMMENT: Specimens of Watts 812 held at PH and G designated as the type by Scott
 Fossombronia wattsii Stephani (1917: 75)
 PROTO: &#39;Australia, New South Wales (Watts legit.).&#39;
 LABEL: NEW SOUTH WALES: The Gap, near Young, W.w. W[atts] 881, 26 Sep 1905.
-TYPES: G (Hb Levier 5155), NSW.</p>
+TYPES: G (Hb Levier 5155), NSW.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">KF942564, KF943333, KF943589, KF943481, KF942888, KF943049,                       IBC14, Australia, H. Streimann 59793 (NY), KF942433,—, JF513433,—,—,
+    <pre class="description-text">KF942564, KF943333, KF943589, KF943481, KF942888, KF943049,                       IBC14, Australia, H. Streimann 59793 (NY), KF942433,—, JF513433,—,—,
 KF943205, KF942766, KF942671; S. nipponica: E22, Nepal, D.G. long                 KF942864, KJ802079,—, KF942739, KF942650; Herzogobryum atrocapillum:
 30702 (E),—, KF942461, KF943261,—, KF943397, KF942822, KF942950,                  L1497, Marion Island, R. Ochyra 1402/01 (DUKE),—,—, KF943380,—,
 KF943116,—, KF942631; S. sonderi: FATOL108, Gough Island, N.J.M.                  KF943534, KF942933,—,—,—,—; H. vermiculare: L1351, lies Kerguelen,
@@ -356,16 +334,19 @@ KF943428, KF942849, KF942980, KF943145, KF942729, KF942642;                    K
 G. corallioides: FATOL536, Svalbard, N.A. Konstantinova &amp; A.N. Savchenko       KF851671,—. Harpanthaceae: Harpanthus flotovianus: E16, Norway, D.G.
 K162/2-07 (F), KF942428, KF942494, KF943288, KF943555, KF943425,               Long &amp; D.B. Schill 31355 (E),—, KF851822, KF852114, KF852272, KF851379,
 KF942846, KF942977, KF943142, KF942726, KF942640; FATOL577,                    KJ802039, KJ802065, KF852418, KF851517, KJ802023; H. scutatus: IBC26,
-Russia, N. Konstantinova s.n. (F),—, KF942500, KF943292, KF943559,             USA, AC. Risk &amp; B. Ratliff 10341 (DUKE),—,—, KF943305,—,—, KF942867,</p>
+Russia, N. Konstantinova s.n. (F),—, KF942500, KF943292, KF943559,             USA, AC. Risk &amp; B. Ratliff 10341 (DUKE),—,—, KF943305,—,—, KF942867,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Type: SOUTH AFRICA: Cape Province, Ecklon s.n., s.d.; holotype unknown; isotypes G-
+    <pre class="description-text">Type: SOUTH AFRICA: Cape Province, Ecklon s.n., s.d.; holotype unknown; isotypes G-
 114823!d, G-114822!d, ‘ex W Lindenb. Hep. 4494’ JE-4005265!d, E-2699!d.
 Description: A comprehensive description of this taxon was provided by Engel (2010).
 Illustrations: Scott (1985, Figure 87), Engel (2010, Figures 34, 35, 36:1–6).
@@ -425,16 +406,19 @@ Key to Heteroscyphus for Lord Howe Island
 2   Underleaves  kidney-­‐shaped,  2–3  times  the  width  of  the  stem,  toothed  
     and  incised  all  around  the  margin    ...........................................................................................  fissistipus  
      Underleaves  not  kidney-­‐shaped,  less  than  twice  the  width  of  the  stem,  
-     deeply  bifid  with  only  1  or  2  accessory  teeth  on  each  side  .........................................................  argutus</p>
+     deeply  bifid  with  only  1  or  2  accessory  teeth  on  each  side  .........................................................  argutus</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chiloscyphus humilis (Hook.f. &amp; Taylor)          Diplophyllum dioicum R.M.Schust.
+    <pre class="description-text">Chiloscyphus humilis (Hook.f. &amp; Taylor)          Diplophyllum dioicum R.M.Schust.
         Hassel                                           Diplophyllum domesticum (Gottsche) Steph.
 Clasmatocolea inflexispina (Hook.f. &amp; Taylor)            Diplophyllum verrucosum R.M.Schust.
        JJ.Engel                                          Drepanolejeunea aucklandica Steph.
@@ -494,25 +478,31 @@ Frullania rostrata (Hook.f. &amp; Taylor) Hook.f. &amp;                 Clasmato
         &amp; Taylor                                                Calyptrocolea perssonii R.M.Schust.
         Frullania dissitifolia Steph.                           Clasmatocolea rotata (Hook.f. &amp; Taylor)
          Frullania grollei Hamlin                               Grolle
-         Frullania novaustralis S.Hatt.                         Stolonophora perssonii (R.M.Schust.) J .].Engel</p>
+         Frullania novaustralis S.Hatt.                         Stolonophora perssonii (R.M.Schust.) J .].Engel</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">narrow, tubular perianths about 5 mm long.
+    <pre class="description-text">narrow, tubular perianths about 5 mm long.
     T dispar (V) is rather dull olive-brown. It is common on soil in wet sclerophyll
 forest; and occasional in other damp habitats. The wedge-shaped leaves are 4-fid on
 the main stems but only 3-fid on the branches. The underleaves are 3-fid or 4-fid
@@ -572,16 +562,19 @@ margins are irregularly toothed.
 
 
 
-                                                                        C. echinellus</p>
+                                                                        C. echinellus</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">4   Leaf margins entire ................................................................. Cephaloziella exiliflora
+    <pre class="description-text">4   Leaf margins entire ................................................................. Cephaloziella exiliflora
                                                                                                                                                                                    Leaf margins raggedly toothed ....................................................... Cephaloziella hirta
                                                                                                                                                                                5   Stems dark, densely covered in pale hair-like paraphylls;
                                                                                                                                                                                      leaves and underleaves 2-lobed, underleaves usually
@@ -641,7 +634,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                 Liverworts and Hornworts. Version 6 April 2006
                                                                                                                                                                                 (www.anbg.gov.au/abrs). (ABRS: Canberra)             Received 13 April 2006; accepted 8 June 2006
                                                                                                                                                                                Meagher D and Fuhrer B (2003) A Field Guide to the
-                                                                                                                                                                                Mosses and Allied Plants of Southern Australia.</p>
+                                                                                                                                                                                Mosses and Allied Plants of Southern Australia.</pre>
     
     
   </details>
@@ -650,14 +643,43 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Eucithara caledonica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Funneliformis caledonium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Geocalyx</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Mikadotrochus caledonicus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Parribacus caledonicus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Platycercus (Platycercus) caledonicus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pleurobranchus caledonicus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Sporisorium caledonicum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Vayssierea caledonica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus montanus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Heteroscyphus montanus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -672,22 +694,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [89.7, 81.6, 109.4, 117.5, 179.1, 170.9, 201.0, 215.1, 198.6, 170.7, 108.6, 129.5], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.8, 19.9, 17.6, 14.5, 11.7, 9.9, 9.3, 10.1, 11.9, 13.8, 16.6, 17.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.5, 9.7, 8.5, 6.6, 5.0, 3.5, 3.0, 3.4, 4.5, 5.4, 7.1, 8.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

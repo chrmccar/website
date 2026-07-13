@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,51 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Cephalomitrion aterrimum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Cephaloziellaceae</span>
-    <span class="badge secondary">Cephalomitrion</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (14)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Cephalomitrion</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cephalomitrion aterrimum var. aterrimum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cephalomitrion aterrimum var. longiscyphum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chlamisus aterrimus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Doloporus aterrimus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Helcogaster aterrimus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Helluonidius aterrimus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Metopum aterrimum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Taphos aterrimus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cephalozia aterrima</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Cephalozia subgen</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Cephaloziella aterrima</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Herzogobryum aterrimum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Herzogobryum filiarum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Cephalomitrion</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -84,21 +48,25 @@
     <p class="big-num">70</p>
     <footer>36 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">9</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">14</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -106,110 +74,114 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
-        </tr>
-        
-        <tr class="unverified">
-          <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
-          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong> (1 entry)</summary>
+    <summary>
+      <strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">(nerve), alluding to the lack of a midrib in                        botanist and explorer.)
+    <pre class="description-text">(nerve), alluding to the lack of a midrib in                        botanist and explorer.)
               the thallus: “Frons ecostata” (Dumortier, 1831,                   Blepharidophyllum Ångstr. 1873—blepharis (eye-
               p. 85).                                                             lash) + phyllon (leaf), alluding to the very
             Anthoceros L. 1753—anthos (flower)+keras                              ciliate leaves.
@@ -269,16 +241,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
          mouth wide open, yawning)+anthos (flower),                          Colura calyptrifolia, in which each of the five
          alluding to the wide mouth of the perianth of                       keels ends in a triangular process resembling
          the type species, Chandonanthus squarrosus                          a docked tail. Dumortier first used the name
-         (Menzies ex Hook.) Mitt. Müller (1951–1954,                         for a section of Lejeunea that he later raised</p>
+         (Menzies ex Hook.) Mitt. Müller (1951–1954,                         for a section of Lejeunea that he later raised</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">to particular genera.                                           Tasmania (Ratkowsky 1987).
+    <pre class="description-text">to particular genera.                                           Tasmania (Ratkowsky 1987).
       The number of fam ilies listed here is 4 7, the
 number of genera 149, and the number of species
                                                                   Species, Subspecies and Varieties
@@ -405,25 +380,31 @@ Chiloscyphus austrigenus subsp. okaritanus (Steph.)    Chiloscyphus leucophyllus
         R.M.Schust.                                           R.M.Schust.
         Lophocolea okaritana Steph.                           Lophocolea leucophylla (Hook.f. &amp; Taylor)
         Lophocolea gunniana Nees                              Taylor
-Chiloscyphus bispinosus (Hook.f. &amp; Taylor) ].].Engel   Chiloscyphus mittenianus (Colenso) ].].Engel</p>
+Chiloscyphus bispinosus (Hook.f. &amp; Taylor) ].].Engel   Chiloscyphus mittenianus (Colenso) ].].Engel</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Outer cells of stem small and thick-walled, forming a
+    <pre class="description-text">Outer cells of stem small and thick-walled, forming a
                                                                                                                                                                                     distinct 2–3-layered cortex; marsupium at the shoot tip ....................... Tylimanthus
                                                                                                                                                                                14 Leaves with more than 2 lobes or teeth ..................................................................... 15
                                                                                                                                                                                   Leaves bilobed or with 2 large apical teeth, otherwise with entire margins ............. 17
@@ -483,7 +464,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                     distinctly different from stem cells; leaves many-celled ....................................... 28
                                                                                                                                                                                28 Leaves tongue-shaped, ending in an acute point ....................... Cuspidatula monodon
                                                                                                                                                                                   Leaves with widely rounded apex, not at all pointed ................................................ 29
-                                                                                                                                                                               29 Leaf insertion succubous, orientation ± longitudinal; leaves ± flat;</p>
+                                                                                                                                                                               29 Leaf insertion succubous, orientation ± longitudinal; leaves ± flat;</pre>
     
     
   </details>
@@ -492,14 +473,49 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cephalomitrion</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cephalomitrion aterrimum var. aterrimum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cephalomitrion aterrimum var. longiscyphum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chlamisus aterrimus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Doloporus aterrimus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Helcogaster aterrimus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Helluonidius aterrimus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Metopum aterrimum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Taphos aterrimus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cephalozia aterrima</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Cephalozia subgen</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Cephaloziella aterrima</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Herzogobryum aterrimum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Herzogobryum filiarum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -514,22 +530,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [79.4, 65.8, 85.9, 90.1, 126.9, 137.1, 155.8, 172.2, 157.3, 124.8, 97.2, 98.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.4, 18.3, 15.6, 11.9, 8.7, 6.5, 5.7, 6.7, 8.9, 11.4, 14.8, 16.2], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [7.1, 7.1, 5.6, 3.9, 2.4, 0.8, 0.1, 0.1, 1.3, 2.4, 4.3, 5.5], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,47 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Chiloscyphus cuspidatus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Chiloscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (12)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Andrewsianthus cuspidatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cyperus castaneus - Cyperus cuspidatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cyperus cuspidatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Diorygopyx cuspidatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Distichophyllum cuspidatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Euptychium cuspidatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Odontonema cuspidatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Philoscaphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lophocolea bidentata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea cuspidata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea fusca</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Chiloscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -80,21 +48,25 @@
     <p class="big-num">91</p>
     <footer>35 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">9</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -102,119 +74,126 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>2.0–4.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>2.0–4.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CYANOLOPHOCOLEA_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.8</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.8</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>concave-sided</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    <summary>
+      <strong>BANKS_PENINSULA_2013</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Recorded from Banks Peninsula: Port Hills (DG10751 Cass Peak 520 m; DG10954 Bowenvale Valley 400 m); Herbert district (DG10941 Kaituna Valley 360 m; DG11580 The Monument 668 m); Akaroa district (CHR348608 JL Otepatotu; DG10817 Cloud Farm 620 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Recorded from Banks Peninsula: Port Hills (DG10751 Cass Peak 520 m; DG10954 Bowenvale Valley 400 m); Herbert district (DG10941 Kaituna Valley 360 m; DG11580 The Monument 668 m); Akaroa district (CHR348608 JL Otepatotu; DG10817 Cloud Farm 620 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
     
     
   </details>
   
   <details>
-    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CHILOSCYPHUS_MONOGRAPH_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">1(2–3) per bract, the stalk 1-seriate but sometimes with a few                  enlarged cells, which may be easily distinguished under the
+    <pre class="description-text">1(2–3) per bract, the stalk 1-seriate but sometimes with a few                  enlarged cells, which may be easily distinguished under the
           local oblique walls. Gynoecia infrequent, on main shoot and                     dissecting microscope (Figs. 10: 12; 13: 7; see under Notes).
           short to rather long lateral- and ventral-intercalary branches.                 The dorsal and ventral margins of the leaf are entire or 1–2-
           Bracts of innermost series much larger than leaves, erect and                   ciliate; the ventral margin, especially in larger phases, is
@@ -598,16 +577,19 @@ base on optimal shoots, 4–9(11) cells wide on suboptimal ones,                
                                                                                           others) and cushion plants among boulders and rocky
            3.5–4.83 longer than broad, not to slightly narrowing toward
                                                                                           outcrops (1260–1370 m). It may be found terrestrially, well
-           the deeply 3-lobed mouth, the lobes free for ca. 0.25–0.3 the</p>
+           the deeply 3-lobed mouth, the lobes free for ca. 0.25–0.3 the</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>CYANOLOPHOCOLEA_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CYANOLOPHOCOLEA_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">calling attention to the characters that he (Schuster               generic rank, i.e., as belonging to an independent
+    <pre class="description-text">calling attention to the characters that he (Schuster               generic rank, i.e., as belonging to an independent
          1980) used to describe Lophocolea sect.                             genus, Cyanolophocolea? If not, what is the natural
          Cyanolophocolea and to differentiate it from sect.                  systematic position of the species? In order to address
          Microlophocolea. These are a) the bluish oil-bodies;                these questions, we inferred the phylogenetic
@@ -667,16 +649,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
         Heteroscyphus argutus (He-Nygrén et al. 2004; He-Nygrén &amp; Piippo 2003)            AY462355                       AY149861
         Heteroscyphus aselliformis (He-Nygrén &amp; Piippo 2003)                               AY149841
         Heteroscyphus coalitus (He-Nygrén &amp; Piippo 2003)                                   AY149844                       AY149865
-        Heteroscyphus cymbaliferus (He-Nygrén et al. 2006)                                 DQ026592        DQ026608       DQ026625</p>
+        Heteroscyphus cymbaliferus (He-Nygrén et al. 2006)                                 DQ026592        DQ026608       DQ026625</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; ACT; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; ACT; Tas.</p>
     
     
   </details>
@@ -685,14 +670,45 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Andrewsianthus cuspidatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cyperus castaneus - Cyperus cuspidatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cyperus cuspidatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diorygopyx cuspidatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Distichophyllum cuspidatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Euptychium cuspidatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Odontonema cuspidatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Philoscaphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lophocolea bidentata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea cuspidata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea fusca</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -707,22 +723,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [81.6, 72.8, 85.7, 87.6, 118.4, 127.0, 134.5, 157.3, 144.9, 126.3, 100.8, 100.2], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.9, 18.9, 16.5, 13.2, 10.4, 8.3, 7.6, 8.5, 10.6, 12.7, 15.4, 16.9], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.0, 8.7, 7.3, 5.6, 4.1, 2.3, 1.7, 1.6, 3.0, 4.2, 6.0, 7.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

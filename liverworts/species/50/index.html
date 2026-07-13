@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Treubia tasmanica</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Treubiaceae</span>
-    <span class="badge secondary">Treubia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Dendrocryphaea tasmanica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lewinskya tasmanica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tasmanica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tasmanina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tasmatica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tayloria tasmanica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Treubia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Treubia lacunosa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Triquetrella tasmanica</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Treubia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,35 +48,37 @@
     <p class="big-num">134</p>
     <footer>110 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">9.7&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1328&thinsp;mm</p>
-    <footer>
-      CV 20.0
-    </footer>
+    <footer>annual · CV&thinsp;20.0</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">13</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -110,151 +86,154 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Wikipedia English; fetched via title &#39;Treubia lacunosa&#39;</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Vic.; Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">----• 10mm                     Symphyogyna podophylla
+    <pre class="description-text">----• 10mm                     Symphyogyna podophylla
 
 
 
@@ -313,16 +292,19 @@ other southern Australian members of this genus in Australia are
 all rare species from Tasmania: D. androgyhum, D. angustifolium,
 D. dioicum, and D. incrassatum .                                        D. domesticum
 
-Similar species: Schistochila spp.</p>
+Similar species: Schistochila spp.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+    <pre class="description-text">Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
   A 62. Trfubia lacunosa ( XI)
 
 
@@ -381,16 +363,19 @@ appearance and a common misconception that all Iivenvorts have a
 
                                                                               Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
 thallose plant body. Thus, the lush green carpet of a &#39;mossy&#39; forest is
-due, as often as not, to a predominance of liverworts rather than mosses.</p>
+due, as often as not, to a predominance of liverworts rather than mosses.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">cells high, the disc margins armed with unicellular         eral-intercalary branches originate freely from
+    <pre class="description-text">cells high, the disc margins armed with unicellular         eral-intercalary branches originate freely from
                               teeth (or marginal cells divergent at their upper           other leafy shoots, resulting in a loosely to dense-
                               ends), often terminating in a slime papilla; brac-          ly interwoven, felt like mat of leafy shoots. The
                               teoles 2-lobed, somewhat smaller but otherwise              cells of the leaf lobes in T. tasmanica are broader
@@ -450,16 +435,19 @@ due, as often as not, to a predominance of liverworts rather than mosses.</p>
 
 Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
 Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
-                            FIG. 32. Telaranea tasmanica (Steph.) Engel &amp; Merr. 1. Plant showing prostrate stoloniform branches, 3 upright</p>
+                            FIG. 32. Telaranea tasmanica (Steph.) Engel &amp; Merr. 1. Plant showing prostrate stoloniform branches, 3 upright</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">2 Leaves densely hairy or ciliate, the leaf lamina hard to distinguish ............... Group B
+    <pre class="description-text">2 Leaves densely hairy or ciliate, the leaf lamina hard to distinguish ............... Group B
                                                                                                                                                                                   Leaves ciliate or not, but lamina always easily distinguished ..................................... 3
                                                                                                                                                                                3 Underleaves absent or not visible.................................................................... Group C
                                                                                                                                                                                   Underleaves present ................................................................... 4
@@ -519,16 +507,19 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                   Cells mamillose, never papillose .................. Diplasiolejeunea plicatiloba
                                                                                                                                                                                16 Leaves very narrow at base, attached to stem by 1 or 2 cells .................................... 17
                                                                                                                                                                                   Leaves widely attached to stem, by several cells ...................................................... 18
-                                                                                                                                                                               17 Leaf apex rounded; lobule with 3–4 teeth ............................ Siphonolejeunea nudipes</p>
+                                                                                                                                                                               17 Leaf apex rounded; lobule with 3–4 teeth ............................ Siphonolejeunea nudipes</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Treubia lacunosa is a species of liverwort in the family Treubiaceae that is found across New Zealand in moist shady areas on logs or soil. The organism is relatively complex for a liverwort, and hosts endosymbiotic fungi which provide it with growth-inhibiting nutrients.</p>
+    <pre class="description-text">Treubia lacunosa is a species of liverwort in the family Treubiaceae that is found across New Zealand in moist shady areas on logs or soil. The organism is relatively complex for a liverwort, and hosts endosymbiotic fungi which provide it with growth-inhibiting nutrients.</pre>
     
     
   </details>
@@ -537,14 +528,39 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Dendrocryphaea tasmanica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lewinskya tasmanica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tasmanica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tasmanina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tasmatica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tayloria tasmanica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Treubia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Treubia lacunosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Triquetrella tasmanica</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -559,22 +575,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [81.2, 71.8, 84.4, 87.7, 120.1, 126.4, 136.4, 158.5, 147.8, 128.8, 99.5, 101.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.2, 19.2, 16.9, 13.7, 10.8, 8.8, 8.1, 9.0, 11.1, 13.1, 15.7, 17.2], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.9, 8.7, 7.5, 5.7, 4.2, 2.6, 2.0, 2.0, 3.5, 4.4, 6.3, 7.3], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

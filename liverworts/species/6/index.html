@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Balantiopsis diplophylla</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Balantiopsidaceae</span>
-    <span class="badge secondary">Balantiopsis</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Balaniopsis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balaniopsis dendroidea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balaniopsis kirkii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balantiopsis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balantiopsis convexiuscula</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balantiopsis diplophylla f. paucidentata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balantiopsis diplophylla var. diplophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balantiopsis diplophylla var. hockenii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Diplophyllum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Balantiopsis knightii</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia diplophylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Balantiopsis</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,35 +48,37 @@
     <p class="big-num">539</p>
     <footer>191 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">11.5&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1589&thinsp;mm</p>
-    <footer>
-      CV 24.7
-    </footer>
+    <footer>annual · CV&thinsp;24.7</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">14</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -114,150 +86,149 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>regularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">to the genera of antipodal Hepaticae with special reference to                    cal rearrangements of Solenostomataceae (Marchantiophyta) with
+    <pre class="description-text">to the genera of antipodal Hepaticae with special reference to                    cal rearrangements of Solenostomataceae (Marchantiophyta) with
 
 
 
@@ -317,16 +288,19 @@ Goebelobryum unguiculatum: L1274, New Zealand: North Island, Y. Qiu             
 M.A.M. Renner &amp; R.M. Schuster NZ-03054 (AK), KF852077, JF513406,·                 Japan: Honshu, B. Shaw 8240 (DUKE), KF852105, KF851979, KF852262,
 JF513466, JF513487,—,—, JF513386, KF851638,—; Lethocolea glossophylla             KF852411, KF851505, KJ802064, KJ802104, KF852576, KF851672,—;
 IBC41, Ecuador, E.C. Davis 259 (DUKE), KF852059, AY607963, KF852195               Cephalozia (Jungermannia) conchata: LI 198, China: Yunnan, D.G. Long
-DQ439692, AY608084, KJ802051, KJ802080, KF852498, KF851602, KJ802025,             34888 (Ε),—, KF942541, KF943323, KF943576, KF943462, KF942883,</p>
+DQ439692, AY608084, KJ802051, KJ802080, KF852498, KF851602, KJ802025,             34888 (Ε),—, KF942541, KF943323, KF943576, KF943462, KF942883,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Description: Scott (1985) published a general description of this species that is adequate for
+    <pre class="description-text">Description: Scott (1985) published a general description of this species that is adequate for
 identification.
 Illustrations: Figure 3. Also Scott (1985, Figure 85), Meagher and Fuhrer (2003, pages 264–
 265).
@@ -399,16 +373,19 @@ At present 34 species of Plagiochila are recognised from eastern Australia (McCa
 The Australian species of Plagiochila are currently under review by Matt Renner (NSW), who
 has advised (in litt. 9 Feb. 2018) that the names of Lord Howe Island plants will change. Until
 these changes are published, it is appropriate to continue to use the current names applied to the
-Lord Howe Island plants. With this in mind, two species are recognised, and may be separated</p>
+Lord Howe Island plants. With this in mind, two species are recognised, and may be separated</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Acrobolbus ochrophyllus (Hook.f. &amp; Taylor)                      R.M.Schust.
+    <pre class="description-text">Acrobolbus ochrophyllus (Hook.f. &amp; Taylor)                      R.M.Schust.
         R.M.Schust.                                     Archilejeunea olivacea (Hook.f. &amp; Taylor) Steph.
 Acrochila biserialis (Lehm. &amp; Lindenb.) Grolle                  Archilejeunea scutellata (Taylor) Steph.
 Acrolejeunea allisonii Gradst.                          Asterella australis (Hook.f. &amp; Taylor) Verd.
@@ -541,25 +518,31 @@ planiusculus                                         Frullania congesta - Frulla
 Chiloscyphus polycladus - Heteroscyphus              Frullania dissitifolia - Frullania rostrata
 polycladus                                           Frullania falciloba var. setchellii - Frullania setchellii
 Chiloscyphus renistipulus - Heteroscyphus            Frullania fugax var. media - Frullania media
-renistipulus                                         Frullania grollei - Frullania rostrata</p>
+renistipulus                                         Frullania grollei - Frullania rostrata</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Lord Howe I.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Lord Howe I.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">in bogs, swamps and other wet places, especially in alpine areas.
+    <pre class="description-text">in bogs, swamps and other wet places, especially in alpine areas.
 The illustration shows two forms with the leaves opened out,
 and the corresponding underleaves.
      Diplophyllum domesticum (TVN) has the same leaf form,
@@ -680,16 +663,19 @@ apex.
 
 Similar species: other Schistochilaceae spp.
                                                                            B. xiphophyf/um
-        Liverworts with densely hairy or spiny leaves - Group B</p>
+        Liverworts with densely hairy or spiny leaves - Group B</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Cells mamillose, never papillose .................. Diplasiolejeunea plicatiloba
+    <pre class="description-text">Cells mamillose, never papillose .................. Diplasiolejeunea plicatiloba
                                                                                                                                                                                16 Leaves very narrow at base, attached to stem by 1 or 2 cells .................................... 17
                                                                                                                                                                                   Leaves widely attached to stem, by several cells ...................................................... 18
                                                                                                                                                                                17 Leaf apex rounded; lobule with 3–4 teeth ............................ Siphonolejeunea nudipes
@@ -745,7 +731,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
                                                                                                                                                                                * Most specimens keying to here will be Lepidozia ultothrix, but another species
                                                                                                                                                                                   resesmbling L. hirta of New Zealand is present in Victoria. L. ulothrix often has the
-                                                                                                                                                                                  lobes further divided; the other species does not.</p>
+                                                                                                                                                                                  lobes further divided; the other species does not.</pre>
     
     
   </details>
@@ -754,14 +740,43 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Balaniopsis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balaniopsis dendroidea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balaniopsis kirkii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balantiopsis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balantiopsis convexiuscula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balantiopsis diplophylla f. paucidentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balantiopsis diplophylla var. diplophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balantiopsis diplophylla var. hockenii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplophyllum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Balantiopsis knightii</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia diplophylla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -776,22 +791,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [85.8, 75.6, 99.1, 107.0, 161.2, 160.3, 187.3, 200.9, 182.5, 153.4, 104.3, 116.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.6, 19.7, 17.4, 14.1, 11.2, 9.3, 8.6, 9.5, 11.4, 13.4, 16.3, 17.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.1, 9.2, 7.8, 6.0, 4.5, 3.0, 2.3, 2.5, 3.8, 4.7, 6.6, 7.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

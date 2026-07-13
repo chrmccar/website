@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,47 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Frullania rostrata</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Frullaniaceae</span>
-    <span class="badge secondary">Frullania</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (12)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Euploca prostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Fontainea rostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Frullania</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Kunzea rostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leichhardtia rostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Petrophile prostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pultenaea rostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Rhynchosia rostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Styphelia prostrata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Frullania novaustralis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Neohattoria australis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Schusterella australis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Frullania</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -80,21 +48,25 @@
     <p class="big-num">749</p>
     <footer>292 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">15</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -102,158 +74,156 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>2.0–3.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>2.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>4.0–6.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>4.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>wood</td>
-          <td>categorical</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">FRULLANIA_CONGESTA_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Laboratory 44: 455-482.
+    <pre class="description-text">Laboratory 44: 455-482.
 
 
 
@@ -313,16 +283,19 @@ Jungennanniaceae
                                          92
 Lejeuneaceae
 
- Drepanolejeunea aucklandica Steph.</p>
+ Drepanolejeunea aucklandica Steph.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>FRULLANIA_CONGESTA_2006</strong> (1 entry)</summary>
+    <summary>
+      <strong>FRULLANIA_CONGESTA_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">long), cylindrical from base to apex, occasionally becoming expanded at the mouth, rim al-
+    <pre class="description-text">long), cylindrical from base to apex, occasionally becoming expanded at the mouth, rim al-
 way s terminated by d ense, thick-walled , unicellular papillae, 20-50 f..I.m long; protuber-
 ances developing the entire length ofthe inner beak surface.
        Capsule valves ca. 400 f..I.m long X 300 f..I.m wide; epidermal cells nodulose to semi-
@@ -510,16 +483,19 @@ Nomenclatural Notes
       Frullania congesta Gottsche et al. (1845) is the correct name for this taxon. It was
 based on Jungermannia congesta Hook.f. &amp; Taylor 1844 (cited as a synonym), which is an
 illegitimate homonym of J congesta Lehm. 1829, which is a different taxon with a differ-
-ent type. However, the name Frullania congesta Gottsche et al. 1845 can be treated as a</p>
+ent type. However, the name Frullania congesta Gottsche et al. 1845 can be treated as a</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Fossombronia microspora Herz.                    Frullania squarrosula (Hook.f. &amp; Taylor) Taylor
+    <pre class="description-text">Fossombronia microspora Herz.                    Frullania squarrosula (Hook.f. &amp; Taylor) Taylor
 Fossombronia wondraczekii (Corda) Dumort.                Frullania subhampeana E.A.Hodgs.
         Jungermannia wondraczekii Corda                  Frullania svihlana S.Hatt.
 Frullania allanii E.A.Hodgs.
@@ -763,25 +739,31 @@ Bartholemew-Began, S. E. 1991. A morphogenetic re-             Campbell, E.O. 19
        evaluation of Haplomitrium Nees (Hepatophyta).                   nov. (Calobryales). Memoirs of the New York
        Bryophytorum Bibliotheca 41: 1-297.                             Botanical Garden 45: 569-574.
 Berggren, S. 1898. On New Zealand Hepaticae: 3. Lund.          Campbell, E.O. 1988. Fossombronia species in New
-Bischler, H. 1979. Plagiochasma Lehm. &amp; Lindenb. III. Les              Zealand. Tuatara 30: 12-22.</p>
+Bischler, H. 1979. Plagiochasma Lehm. &amp; Lindenb. III. Les              Zealand. Tuatara 30: 12-22.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; NSW; ACT; Vic.; Tas.; Macquarie I.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; ACT; Vic.; Tas.; Macquarie I.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">kite-shaped, l:fifid to about one-third. Perianths are 8-keeled or
+    <pre class="description-text">kite-shaped, l:fifid to about one-third. Perianths are 8-keeled or
 more (3- 5 dorsal, 3-4 ventral and 2 transverse).
     F pentapleura (WSTVN) has shorter lobules that are often F. probosciphora
                                                                         (leaf and
@@ -841,7 +823,7 @@ I:)
 
 
                                                                                   0
-      leotachie intortifolia %DODQWLRSVLGDFHDH                                           TVAN</p>
+      leotachie intortifolia %DODQWLRSVLGDFHDH                                           TVAN</pre>
     
     
   </details>
@@ -850,14 +832,45 @@ I:)
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Euploca prostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Fontainea rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Kunzea rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leichhardtia rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Petrophile prostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pultenaea rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Rhynchosia rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Styphelia prostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania novaustralis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Neohattoria australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Schusterella australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -872,22 +885,32 @@ I:)
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [78.7, 66.3, 84.6, 90.1, 129.5, 135.6, 155.6, 170.2, 153.1, 125.2, 94.7, 98.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.9, 19.9, 17.5, 14.2, 11.3, 9.2, 8.6, 9.4, 11.4, 13.5, 16.4, 17.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.3, 9.3, 8.1, 6.2, 4.5, 2.8, 2.2, 2.5, 3.7, 4.8, 6.6, 7.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

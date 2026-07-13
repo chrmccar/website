@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,77 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Bazzania adnexa</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Bazzania</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (27)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Bazzania</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania adnexa f. novae-hollandiae</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania adnexa var. adnexa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania adnexa var. aucklandica</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania echinata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania nitida</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania novaezelandiae</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania tridens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania wattsiana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania adnexa</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Bazzania novae-hollandiae</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Bazzania semicordata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia adnexa</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia novae-hollandiae</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum adnexa</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum compactum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum heterodontum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum kirkianum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum macroamphigastrum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum macrodontum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum nitens</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum novae-hollandiae</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum olivaceum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum parasiticum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum polyodon</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum semicordatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum vulcanicum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Bazzania</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -110,35 +48,37 @@
     <p class="big-num">1156</p>
     <footer>307 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">11.8&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1559&thinsp;mm</p>
-    <footer>
-      CV 22.8
-    </footer>
+    <footer>annual · CV&thinsp;22.8</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">36</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">27</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -146,344 +86,327 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>23.0–33.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>23.0–33.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>16.0–19.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>16.0–19.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">BAZZANIA_AUSTRALIA_2019</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
-          <td class="muted small">GBIF key 7694237; source: A revision of the genus Bazzania G…</td>
-          <td>⚠</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">GBIF key 7694237; source: A revision of the genus Bazza…</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Wikipedia English; fetched via search fallback</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">BAZZANIA_AUSTRALIA_2019</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>3.4</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>3.4</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>small</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">BAZZANIA_AUSTRALIA_2019</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>medium</td>
-          <td>categorical</td>
-          <td class="muted small">GBIF key 7694237; source: A revision of the genus Bazzania G…</td>
-          <td>⚠</td>
+          <td>trigone type</td>
+          <td><strong>medium</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">GBIF key 7694237; source: A revision of the genus Bazza…</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>concave-sided</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">BAZZANIA_AUSTRALIA_2019</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
-          <td class="muted small">GBIF key 7694237; source: New records for the liverwort and …</td>
-          <td>⚠</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">GBIF key 7694237; source: New records for the liverwort…</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
-          <td class="muted small">GBIF key 7694237; source: A revision of the genus Bazzania G…</td>
-          <td>⚠</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">GBIF key 7694237; source: A revision of the genus Bazza…</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    <summary>
+      <strong>BANKS_PENINSULA_2013</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> An extremely abundant species west of the Main Divide, but there are no records from Canterbury other than on Banks Peninsula where it is only known from Stony Bay Valley (Armstrong Reserve 600 m; vouchers: RJL Hinewai n.v.; DG11255 Armstrong Reserve 600 m). Lewington (2007) reports Bazzania aff. adnexa from Hinewai Reserve, Stony Bay Gully, on a buttress of Nothofagus fusca, considered to be B. adnexa. [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>BAZZANIA_AUSTRALIA_2019</strong> (1 entry)</summary>
-    
-    
-    <p class="description-text">Plants yellow–green to dark green, forming dense, overlapping mats on tree trunks and branches and on rock. Shoots up to ~1.9 mm wide, stems ~180–200 μm in diameter. Leaves usually spreading widely from stem, up to ~1.9 mm long and 1.1 mm wide, trifid, usually denticulate around apex and margins, cells in mid-leaf mostly thin-walled, typically 35–50 × 20–25 μm, trigones small to medium; vittate with larger cells along both margins. Underleaves spreading, longer than wide, bifid to c. 0.4–0.5 of their length, margins entire to denticulate, connate on one or both sides with leaves. Distribution: Australia (Tasmania to northern Queensland, Lord Howe Island), New Zealand.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> An extremely abundant species west of the Main Divide, but there are no records from Canterbury other than on Banks Peninsula where it is only known from Stony Bay Valley (Armstrong Reserve 600 m; vouchers: RJL Hinewai n.v.; DG11255 Armstrong Reserve 600 m). Lewington (2007) reports Bazzania aff. adnexa from Hinewai Reserve, Stony Bay Gully, on a buttress of Nothofagus fusca, considered to be B. adnexa. [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
     
     
   </details>
   
   <details>
-    <summary><strong>BDE_EDITORIAL_2023</strong> (1 entry)</summary>
+    <summary>
+      <strong>BAZZANIA_AUSTRALIA_2019</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text"> • Bry. Div. Evo. 46 (1) © 2023 Magnolia Press                                                                         Cairns ET AL.
+    <pre class="description-text">Plants yellow–green to dark green, forming dense, overlapping mats on tree trunks and branches and on rock. Shoots up to ~1.9 mm wide, stems ~180–200 μm in diameter. Leaves usually spreading widely from stem, up to ~1.9 mm long and 1.1 mm wide, trifid, usually denticulate around apex and margins, cells in mid-leaf mostly thin-walled, typically 35–50 × 20–25 μm, trigones small to medium; vittate with larger cells along both margins. Underleaves spreading, longer than wide, bifid to c. 0.4–0.5 of their length, margins entire to denticulate, connate on one or both sides with leaves. Distribution: Australia (Tasmania to northern Queensland, Lord Howe Island), New Zealand.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>BDE_EDITORIAL_2023</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text"> • Bry. Div. Evo. 46 (1) © 2023 Magnolia Press                                                                         Cairns ET AL.
      search.informit.org/doi/10.3316/informit.658812632580332]
 Meagher, D. (2009) Studies on Victorian Bryophytes 11: The Genus Acromastigum A. Evans. The Victorian Naturalist 126 (5): 163–169.
      [https://search.informit.org/doi/10.3316/informit.668315447922014]
@@ -542,53 +465,59 @@ Meagher, D. (2016) Revised treatment of (Meteoriaceae) Australian Mosses Online.
 David Meagher (1956–2023)                                                       Bry. Div. Evo. 46 (1) © 2023 Magnolia Press • 
 Meagher, D. (2016) Revised treatment of (Hypnodendraceae) Australian Mosses Online. [https://www.anbg.gov.au/abrs/Mosses_online/
      Hypnodendraceae/Hypnodendraceae_Spiridens.pdf]
-Cairns, A. &amp; Meagher, D. (2017) Significant range extensions and new records of mosses from tropical Australia. Telopea 20: 277–287.</p>
+Cairns, A. &amp; Meagher, D. (2017) Significant range extensions and new records of mosses from tropical Australia. Telopea 20: 277–287.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>GBIF</strong> (8 entrys)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(8)</span>
+    </summary>
     
     
-    <p class="description-text">ILLUSTRATIONS. — Engel &amp; Glenny 2008: 423, fig. 94 and 426, fig. 95; Zhou et al. 2012: 12, fig. 2; Meagher 2019: 315, fig. 2.</p>
-    
-    
-    
-    <p class="description-text">DESCRIPTION Plants Medium, creeping, rigid, forming dense wefts or mixed with other bryophytes, shoots 2 - 3.2 mm wide, terminal branching common, pseudo-dichotomous; ventral-intercalary branching common, flagelliform; leaves imbricate, convex, unevenly deflexed when dry, widely spreading and complanate when moist. Leaves Asymmetrically ovate oblong to ovate lingulate, falcate, (0.55 -) 1.00 - 1.80 (- 2.00) mm long, (0.25 -) 0.50 - 1.15 mm wide near the bases, 0.24 - 0.50 mm below apices, length-width ratio 1.4 - 2.4; dorsal margins widely arched proximally, nearly straight distally, ventral margins straight, undulate or concave, shortly rounded at base, both margins with loose to dense denticulation in upper part, sometimes with a few sharp teeth; apex obliquely truncate, with three conspicuous triangular lobes, 3 - 8 cells long or longer, margins denticulate, often ornamented with additional sharp teeth. Cells Homogeneous but gradually becoming longer and wider toward the base, typically forming an ill-defined subvitta; median cells quadrate rounded to oblong, 20 - 30 µm wide, 20 - 60 µm long, either thin-walled with small to medium bulging trigones or thicker walled with inconspicuous trigones; marginal cells smaller; cells in the subvitta 30 - 50 µm wide, 38 - 75 µm long. Underleaves Erect, rounded-quadrate to wider than long, 0.50 - 1.30 mm wide, 0.35 - 1.00 mm long, 1.5 - 3 times wider than the stem, transversally to obliquely inserted, positioned near and connate to the leaf bases on both sides of the stem; lateral margins straight to convex, sometimes with 2 - 3 rounded lobules, apices lobulate-dentate with sharp ovate-triangular lobules or teeth, border denticulate; hyaline border narrow to wide all around the free margins, consisting of (1 -) 2 - 7 rows of thin-walled cells, occupying 0.15 - 0.25 (- 0.50) times the underleaf length; basal cells oblong to rectangular, firm walled with small trigones (Description after New Caledonian specimens).</p>
-    
-    
-    
-    <p><strong>discussion:</strong> NOTES It occurs in south China and Thailand and widespread from Australia through Melanesia to the Society Islands (Miller et al. 1983; Zhou et al. 2012). New to Vietnam. It is a very variable taxon with underleaves connate on both sides with the side leaves. Bazzania adnexa closely related to and vicariant of the African Bazzania decrescens (Lehm. &amp; Lindenb.) Trevis. Their relationship should be clarified by molecular methods.</p>
+    <pre class="description-text">ILLUSTRATIONS. — Engel &amp; Glenny 2008: 423, fig. 94 and 426, fig. 95; Zhou et al. 2012: 12, fig. 2; Meagher 2019: 315, fig. 2.</pre>
     
     
     
-    <p><strong>discussion:</strong> NOTES Bazzania adnexa is known to be a very variable species (Stephani 1908 c, Meagher 2013). It can be distinguished from the more or less similar species, by: 1) leaf margins denticulate, more strongly at the apices where additional small teeth are common; 2) leaf apices conspicuously 3 - lobate with triangular lobes; 3) underleaves wider than long, bordered by a wide band of hyaline cells, sharply dentate at apices, in addition, leaves are imbricate, ovate oblong to lingulate, strongly narrowed at apices, somewhat falcate; and 4) upper leaf cells have thin to sparingly thickened walls and medium trigones, gradually expanding toward the base forming an ill-defined subvitta. From B. franciana and B. paucidens, the sharply toothed underleaf apex is distinctive. In addition, B. paucidens has shorter leaves, with an ovate shape, apices shallowly trifid or with widely triangular lobes, margins less sharply denticulate. In the largest specimens, leaves are more strongly falcate and narrowed at apex. Furthermore, the underleaves of the youngest parts of the shoots may have a triangular shape due to the strongly recurved lateral margins. In the most depauperate specimens the leaves tend to be more narrowly ovate, with more denticulate margins. Meagher (2010) underlined the similarity of B. marginata with B. franciana, but the synonymy of B. marginata with B. adnexa is here recognized on the basis of the denticulate leaf margins and dentate underleaf apices. As I was unable to check the type of Mastigobryum lenormandii, I transfer it to B. adnexa following Kitagawa (1973) who synonymized it with Bazzania marginata.</p>
+    <pre class="description-text">DESCRIPTION Plants Medium, creeping, rigid, forming dense wefts or mixed with other bryophytes, shoots 2 - 3.2 mm wide, terminal branching common, pseudo-dichotomous; ventral-intercalary branching common, flagelliform; leaves imbricate, convex, unevenly deflexed when dry, widely spreading and complanate when moist. Leaves Asymmetrically ovate oblong to ovate lingulate, falcate, (0.55 -) 1.00 - 1.80 (- 2.00) mm long, (0.25 -) 0.50 - 1.15 mm wide near the bases, 0.24 - 0.50 mm below apices, length-width ratio 1.4 - 2.4; dorsal margins widely arched proximally, nearly straight distally, ventral margins straight, undulate or concave, shortly rounded at base, both margins with loose to dense denticulation in upper part, sometimes with a few sharp teeth; apex obliquely truncate, with three conspicuous triangular lobes, 3 - 8 cells long or longer, margins denticulate, often ornamented with additional sharp teeth. Cells Homogeneous but gradually becoming longer and wider toward the base, typically forming an ill-defined subvitta; median cells quadrate rounded to oblong, 20 - 30 µm wide, 20 - 60 µm long, either thin-walled with small to medium bulging trigones or thicker walled with inconspicuous trigones; marginal cells smaller; cells in the subvitta 30 - 50 µm wide, 38 - 75 µm long. Underleaves Erect, rounded-quadrate to wider than long, 0.50 - 1.30 mm wide, 0.35 - 1.00 mm long, 1.5 - 3 times wider than the stem, transversally to obliquely inserted, positioned near and connate to the leaf bases on both sides of the stem; lateral margins straight to convex, sometimes with 2 - 3 rounded lobules, apices lobulate-dentate with sharp ovate-triangular lobules or teeth, border denticulate; hyaline border narrow to wide all around the free margins, consisting of (1 -) 2 - 7 rows of thin-walled cells, occupying 0.15 - 0.25 (- 0.50) times the underleaf length; basal cells oblong to rectangular, firm walled with small trigones (Description after New Caledonian specimens).</pre>
     
     
     
-    <p><strong>distribution:</strong> DISTRIBUTION IN NEW CALEDONIA. — Bazzania adnexa is common in both provinces where it was known under various names of endemic species, now synonyms. It is found at all elevations mainly on grounds and dead woods but also on barks, in wet or riparian forests. TOTAL RANGE. — Australia, New Zealand, China (Meagher 2019) and New Caledonia.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>discussion:</strong> NOTES It occurs in south China and Thailand and widespread from Australia through Melanesia to the Society Islands (Miller et al. 1983; Zhou et al. 2012). New to Vietnam. It is a very variable taxon with underleaves connate on both sides with the side leaves. Bazzania adnexa closely related to and vicariant of the African Bazzania decrescens (Lehm. &amp; Lindenb.) Trevis. Their relationship should be clarified by molecular methods.</p>
     
     
     
-    <p><strong>materials_examined:</strong> SPECIMEN EXAMINED. — Vietnam. Lâm Đ ồng, Dalao, sur bois en forêt, 900 m, Tixier 5256 (PC [PC 0764718]).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>discussion:</strong> NOTES Bazzania adnexa is known to be a very variable species (Stephani 1908 c, Meagher 2013). It can be distinguished from the more or less similar species, by: 1) leaf margins denticulate, more strongly at the apices where additional small teeth are common; 2) leaf apices conspicuously 3 - lobate with triangular lobes; 3) underleaves wider than long, bordered by a wide band of hyaline cells, sharply dentate at apices, in addition, leaves are imbricate, ovate oblong to lingulate, strongly narrowed at apices, somewhat falcate; and 4) upper leaf cells have thin to sparingly thickened walls and medium trigones, gradually expanding toward the base forming an ill-defined subvitta. From B. franciana and B. paucidens, the sharply toothed underleaf apex is distinctive. In addition, B. paucidens has shorter leaves, with an ovate shape, apices shallowly trifid or with widely triangular lobes, margins less sharply denticulate. In the largest specimens, leaves are more strongly falcate and narrowed at apex. Furthermore, the underleaves of the youngest parts of the shoots may have a triangular shape due to the strongly recurved lateral margins. In the most depauperate specimens the leaves tend to be more narrowly ovate, with more denticulate margins. Meagher (2010) underlined the similarity of B. marginata with B. franciana, but the synonymy of B. marginata with B. adnexa is here recognized on the basis of the denticulate leaf margins and dentate underleaf apices. As I was unable to check the type of Mastigobryum lenormandii, I transfer it to B. adnexa following Kitagawa (1973) who synonymized it with Bazzania marginata.</p>
     
     
     
-    <p><strong>materials_examined:</strong> MATERIAL EXAMINED. — New Caledonia • North Province, Hienghène, Panié massif; path between Bwa Téan and Payolé; on dead wood in mountain wet forest on mica schist bedrock; 1000 m; 9. X. 2012; Thouvenot NC 1303, NC 3463 • Tao; lowland wet forest, on mica schist bedrock; 6. X. 2012; Thouvenot NC 3387 • Poindimié, Tango Plateau, Upper Hoeëne; on wet rock in riparian forest on volcano-sedimentary bedrock; 350 m; 11. X. 2019; Thouvenot NC 3324 • ibid; on the ground in riparian forest; 350 m; 11. X. 2019; Thouvenot NC 3021 • Pouébo, Diahoué; on metamorphic rock in dry creek; 450 m; 21. IX. 2019; Thouvenot NC 3299 • South Province, Boulouparis, Mt Do; wet forest on ultramafic bedrock with Nothofagus sp. and Araucaria sp.; 960 m; 14. IX. 2016; Thouvenot NC 3441 • Mont Dore, Pirogues River; on rocks in riparian woodland with Pandanus sp.; 13 m; 29. IX. 2019; Thouvenot NC 3322 • Mouirange; on barks; 500 - 550 m; 17. IX. 2019; Thouvenot NC 3303 • La Foa, Mt Dogny; eastern ridge of Mt Dogny, on dead wood in mountain forest on volcano-sedimentary bedrock; 990 m; 23. IX. 2008; Thouvenot NC 636, NC 668 • Mont-Doré, Mouirange; on dead wood in a wet forest with Nothofagus sp. on ultramafic bed-rock; 546 m; 17. IX. 2019; Thouvenot NC 3316 • Yaté, Chakéké lake; episodic creek, on lateritic silt deposited on trunks; 411 m; 4. X. 2019; Thouvenot NC 3051 • Païta, Mt Mou; VII. 1909; Le Rat s. n. (herbarium E. G. Paris as Mastigobryum lenormandii; REN [REN 000219]) • Mt Ouin; on humus on rocks, in mountain wet forest, ultramafic massif; 925 m; 19. IX. 2016; Thouvenot NC 2480 • Mt Humboldt; cloud forest on ultramafic bedrock, at the base of a tree fern; 1255 m; 1. X. 2008; Thouvenot NC 3420 • Dumbéa, Mt To; on dead wood in a hollow on the summit; 880 m; 10. V. 1951; Hürlimann 2579 p. p. as Bazzania marginata (Steph.) N. Kitag.; PC [PC 0793205] • Mt Bouo; on the trunk of dead tree in wet forest, ultramafic massif; 930 m; 16. IX. 2016; Thouvenot NC 3243, NC 3439 • Montagne des Sources; on bark in wet forest with Araucaria rulei F. Muell., ultramafic massif, 940 m; 21. IX. 2016; Thouvenot NC 3431 • Sarraméa, on the trail to Dogny plateau; mountain wet forest on volcano-sedimentary bedrock; 889 m; 26. IX. 2016; Thouvenot NC 3427 (“ dognyense ” form) • Pembaï; VII. 1909; L. Le Rat s. n. (herbarium E. G. Paris as Mastigobryum lenormandii; REN [REN 000220]).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> DISTRIBUTION IN NEW CALEDONIA. — Bazzania adnexa is common in both provinces where it was known under various names of endemic species, now synonyms. It is found at all elevations mainly on grounds and dead woods but also on barks, in wet or riparian forests. TOTAL RANGE. — Australia, New Zealand, China (Meagher 2019) and New Caledonia.</p>
     
     
     
-    <p><strong>materials_examined:</strong> — Type: Australia (collector and date unknown).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> SPECIMEN EXAMINED. — Vietnam. Lâm Đ ồng, Dalao, sur bois en forêt, 900 m, Tixier 5256 (PC [PC 0764718]).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> MATERIAL EXAMINED. — New Caledonia • North Province, Hienghène, Panié massif; path between Bwa Téan and Payolé; on dead wood in mountain wet forest on mica schist bedrock; 1000 m; 9. X. 2012; Thouvenot NC 1303, NC 3463 • Tao; lowland wet forest, on mica schist bedrock; 6. X. 2012; Thouvenot NC 3387 • Poindimié, Tango Plateau, Upper Hoeëne; on wet rock in riparian forest on volcano-sedimentary bedrock; 350 m; 11. X. 2019; Thouvenot NC 3324 • ibid; on the ground in riparian forest; 350 m; 11. X. 2019; Thouvenot NC 3021 • Pouébo, Diahoué; on metamorphic rock in dry creek; 450 m; 21. IX. 2019; Thouvenot NC 3299 • South Province, Boulouparis, Mt Do; wet forest on ultramafic bedrock with Nothofagus sp. and Araucaria sp.; 960 m; 14. IX. 2016; Thouvenot NC 3441 • Mont Dore, Pirogues River; on rocks in riparian woodland with Pandanus sp.; 13 m; 29. IX. 2019; Thouvenot NC 3322 • Mouirange; on barks; 500 - 550 m; 17. IX. 2019; Thouvenot NC 3303 • La Foa, Mt Dogny; eastern ridge of Mt Dogny, on dead wood in mountain forest on volcano-sedimentary bedrock; 990 m; 23. IX. 2008; Thouvenot NC 636, NC 668 • Mont-Doré, Mouirange; on dead wood in a wet forest with Nothofagus sp. on ultramafic bed-rock; 546 m; 17. IX. 2019; Thouvenot NC 3316 • Yaté, Chakéké lake; episodic creek, on lateritic silt deposited on trunks; 411 m; 4. X. 2019; Thouvenot NC 3051 • Païta, Mt Mou; VII. 1909; Le Rat s. n. (herbarium E. G. Paris as Mastigobryum lenormandii; REN [REN 000219]) • Mt Ouin; on humus on rocks, in mountain wet forest, ultramafic massif; 925 m; 19. IX. 2016; Thouvenot NC 2480 • Mt Humboldt; cloud forest on ultramafic bedrock, at the base of a tree fern; 1255 m; 1. X. 2008; Thouvenot NC 3420 • Dumbéa, Mt To; on dead wood in a hollow on the summit; 880 m; 10. V. 1951; Hürlimann 2579 p. p. as Bazzania marginata (Steph.) N. Kitag.; PC [PC 0793205] • Mt Bouo; on the trunk of dead tree in wet forest, ultramafic massif; 930 m; 16. IX. 2016; Thouvenot NC 3243, NC 3439 • Montagne des Sources; on bark in wet forest with Araucaria rulei F. Muell., ultramafic massif, 940 m; 21. IX. 2016; Thouvenot NC 3431 • Sarraméa, on the trail to Dogny plateau; mountain wet forest on volcano-sedimentary bedrock; 889 m; 26. IX. 2016; Thouvenot NC 3427 (“ dognyense ” form) • Pembaï; VII. 1909; L. Le Rat s. n. (herbarium E. G. Paris as Mastigobryum lenormandii; REN [REN 000220]).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> — Type: Australia (collector and date unknown).</p>
     
     
   </details>
   
   <details>
-    <summary><strong>LEPIDOZIA_NZ_REVISION_2001</strong> (1 entry)</summary>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">lobes acute, the lateral margins entire or with a
+    <pre class="description-text">lobes acute, the lateral margins entire or with a
 tooth and a few slime papillae; antheridia 1-2 per                DIFFERENTIATION The dorsal margin of the
 bract, the stalk biseriate. Gynoecia on abbreviated          leaf disc and the confluent margin of the dorsal
 ventral-intercalary branches issuing from main               lobe are typically coarsely and irregularly (often
@@ -648,16 +577,19 @@ of North Arm, Carnley Harbour, 15 m, Johnson 22/8
 (welt).   NEW ZEALAND. SOUTH ISLAND. SOUTH-                 lateral (side facing shoot base) side of branch and
 LAND PROV.: Fiordland Natl. Park, off track to Island              aligned with underleaves of branch; second
 Lake, just    Wof Borland Saddle, S of South Branch of      branch underleaf in a strong morphologically ven-
-Borland Burn,       W</p>
+Borland Burn,       W</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Total distribution: Australia (Qld, LHI), Malesia.
+    <pre class="description-text">Total distribution: Australia (Qld, LHI), Malesia.
 Discussion: A critical character of Lord Howe Island plants is that the cells in the uniseriate row
 of the leaf cilia are relatively short and thin-walled, the septa between them are not bulging, and
 their surfaces are covered in papillae or striolae which range from very fine and indistinct to
@@ -794,16 +726,19 @@ Miller NG and Manuel M 1982. Trachyloma (Bryophytina, Pterobryaceae): a taxonomi
 Miller HA, Whittier HO and Whittier BA 1978. Prodromus florae muscorum Polynesiae.
    Bryophytorum Bibliotheca 16: 1–334.
 Miller HA, Whittier HO and Whittier BA 1983. Prodromus florae hepaticarum Polynesiae.
-   Bryophytorum Bibliotheca 25: 1–423.</p>
+   Bryophytorum Bibliotheca 25: 1–423.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Acromastigum mooreanum (Steph.) E.A.Hodgs.              Austrometzgeria saccata (Mitt.) Kuwah.
+    <pre class="description-text">Acromastigum mooreanum (Steph.) E.A.Hodgs.              Austrometzgeria saccata (Mitt.) Kuwah.
 Acromastigum verticale (Steph.) E.A.Hodgs.              Austroscyphus nitidissimus (R.M.Schust.)
 Adelanthus bisetulus (Steph.) Grolle                             R.M.Schust.
         Pseudomarsupidium piliferum (Steph.) Herzog              Acroscyphus nitidissimus R.M.Schust.
@@ -930,46 +865,55 @@ Lophocolea muricata - Chiloscyphus muricatus           Protomarsupella scottii -
 Lophocolea novae-zeelandiae - Chiloscyphus             Pseudocephalozia drucei - Paracromastigum drucei
 novae-zeelandiae var. novae-zeelandiae                 Pseudocephalozia leptodictyon - Pseudocephalozia
 Lophocolea okaritana - Chiloscyphus austrigenus        lepidozioides
-subsp. okaritanus                                      Pseudocephaloziella macrostipa - Paracromastigum</p>
+subsp. okaritanus                                      Pseudocephaloziella macrostipa - Paracromastigum</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (3 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(3)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants strongly anisophyllous, sprawling to suberect in loose cushions or mats, yellow- green to deep green to brownish green; shoots medium-sized, to 3.4 mm wide. Branching repeatedly pseudo-dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, narrowly ovate or ovate-lanceolate, undivided, tapering to a sharp or bidentate, serrulate apex; first branch underleaf 2-3-lobulate, subtransversely inserted on ventral side of main axis somewhat below base of branch, usually marginally con¬ nate at base to an underleaf of main axis or less commonly free, but with bases ± juxtaposed. Ventral-intercalary leafy branches sporadically produced, at times mimicking the terminal branches; stoloniform branches abundantly produced. Stems stiff, the cortical cells small, firm, with evenly thickened walls or the longitudinal walls very thick and the transverse walls thin. Leaves opposite, horizontal to ventrally deflexed, distinctly imbricate, with little or none of stem exposed in dorsal aspect, widely spreading (ca. 90°); leaves not vittate, 910-1120 p^m wide X 1470-1890 pm long, distinctly incubous, asymmetrically ovate-ligulate, falcate, the apex rather broadly truncate, the truncation square to oblique, the apex often somewhat plicate, coarsely and ± symmetrically 3-dentate, the principal teeth broadly acute to apiculate to subacuminate, 2-7 cells wide at base, the teeth terminating in a single cell or a uniseriate row of 2-3 cells, the terminal cell tapering to a sharp, thick-walled point, the tooth margins and intervening sinus bases sharply and irregularly denticulate (occasionally edentate); dorsal mar¬ gin strongly ampliate, distinctly arched and defining a broad crescentic line, extending to middle of stem or slightly beyond, cordate at base, the margin entire or denticulate in distal half; ventral margin straight to curved gently inward, somewhat dilated and subcordate at base, entire or denticulate. Cells of leaf differentiated into a broad, diffuse band of enlarged rectangular cells in the median longitudinal portion of the leaf (subvittate), the cells much smaller near the margins, particularly the dorsal; median cells 23-33 pm wide X 35-44 pm long, thin-walled, trigones variable: small and concave-sided to knot-like, intermediate thickenings sporadic; surface smooth or the teeth often finely papillose. Oil-bodies occupying a conspic- hy aline border of thin- walled eells; note 2 underleaves (above) are eonnate on both sides, the underleaf below (var. aucklandica) is narrowly eonnate at right base and free and subaurieulate at left. 8. Porthiek- walled eells and distal border of thin- walled, hyaline eells; note also the thiekened exposed wall of underleaf apex and margin. (Figs. 1-3, 5, 9, from Engel 12795, Tasmania, Myrtle Forest, SW of Collinsvale; 4, from Engel 20203, same loe.; 6, 10, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 7, from Child H1017, New Zealand, South Is., Otago EP, Mt. Cargill; 8, from Hatcher 152, New Zealand, North Is., Auekland EP, Waitakere Hills.) of first branch underleaf and its juxtaposition with main shoot underleaf (seeond from shoot base). uous portion of cell lumen, dull opaque, with a cloud-like appearance, 2-3(4) to (2)3-5 per median leaf cell, 3-5 per in subvitta cells, 6-8(11) per basal cell, potato- shaped, ovoid to broadly elliptic, often irregularly so, to at times sausage- shaped, homogeneous, but the oil- body contents often not consistent throughout and appearing to possess folds, indentations or auriculations, the oil-bodies 7. 2-8. 5 X 9.1-11.7 juim, a few 7.8 X 12.4-13 juim. Underleaves conspicuous, erect to spreading, connate with the leaves on both sides (feebly connate or free at least on one side in var. aucklandica), subquadrate to oblate to reniform (or in var. auck- landica, triangular and tapering to a sharply channeled apex, the lateral margins sharply reflexed), broader than long, the apex distinctly ragged and hyaline (decelerate), with irregular, sharp, often crowded, sinuate teeth (rarely subentire), the hyaline distal sector variable in width, often occupying as much as half of underleaf or (var. aucklandica) very broad and with the green, thick-walled cells few and restricted to the median basal area, the hyaline sector composed of thin- walled, sinuate-rhomboidal cells; base straight or (var. aucklandica) cordate to subauriculate and with a narrow hyaline margin extending to the insertion; median nonhyaline cells quadrate to ± elongate; surface of hyaline cells very delicately papillose. Eungal partner absent. Androecia on inconspicuous, short, determinate, tightly spicate, ventral-intercalary branches from leading shoots and both ventral and lateral sides of stoloniform branches; bracts ventricose- cucullate, the apex retuse to 2(3)-dentate; dorsal margin of disc slightly dilated, crenate- sporadically denticulate, the teeth unicellular, the margin sporadically smooth and merely with a few slime papillae; antheridia 1-2 per bract, the stalk biseriate; bracteolar antheridia present or absent. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem, the gynoecium base swollen and rhizoidous; bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth, the bracts concave, ovate to subrectangular; apices with 4 main long lobes, each lobe either simple or in turn subdivided into 2 prominent lobules, the lobes or lobules markedly leptodermous, each subcaudate and with the distal sector consisting of a rather long biseriate region with the cell tips often variously projecting, the lobe-lobule biseriate to the tip or the tip composed of a uniseriate row of at most 3 cells, the lobe-lobule margins sparingly dentate-ciliate below the biseriate area; lamina composed of ± regularly short- to long-rectangular, leptodermous cells, the margin bordered by cells of variable shape, some only slightly longer than wide, others long and narrow, the apical or free end of marginal cells often divergent and forming a short projection or a tooth, the margin irregularly and rather copiously crenate-dentate, but often with a few short to long cilia; bracteole similar in size and form. Perianth prominent, straight to curved, fusiform, terete below, the distal half pluriplicate and gradually narrowing to the contracted mouth, the mouth irregularly dentate-subciliate, the processes composed of 1 or 2 superposed cells that are thin-walled, elongate and often completely laterally free; perianth ca. 9-10 stratose in basal sector. Seta with 15 rows of outer cells, the interior cells not seen. Capsule rather long-ellipsoidal, the wall 70-74 juim thick, of 5-6 layers that are subequally thick or the outer layer feebly thicker; outer layer of cells very small, 16-19 juim wide X 28-36 juim long, with two-phase 8. Gynoecium and mature sporophyte. (Fig. 1, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 2-8, from Engel 18741, New Zealand, South Is., Fiord¬ land EP, above South Branch of Borland Burn.) Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Bazzania involuta (Mont.) Trevis. dorsal, dilated portion of leaf. 3. Bazzania okaritana Meagher &amp; Glenny. Cells of median seetor of leaf. 4. Bazzania okaritana Meagher &amp; Glenny. Marginal and submarginal eells (dorsal-median seetor). (Figs. 1, 2, from Glenny 9199b, New Zealand, South Is., Westland EP, Upper Otira Valley; 3, 4, from Glenny 9191, type.) development, the longitudinal walls with very thin, feebly developed, sheet-like thickenings and a few large nodule-like to spine-like thickenings alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated nodule; innermost layer of cells with ± tiered, irregularly narrowly to broadly rectangular cells, with semiannular bands common, rather wide, close, usu¬ ally complete, rather frequently forked and anastomosing to delimit ill-defined, local fenestrae. Spores 16.8-19.7 juim in diam., brown, with dense, sharply defined papillae and abundant simple or furcate vermiculate markings. Elaters rigid, nontortuous, 9.1-11.5 juim wide, only slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island (0-500 m). South Island (0-1070 m). North Island (180-915 m), Chatham Islands; Australia: Tasmania, Victoria, New South Wales, Queensland. In the South Island found at over 1000 m in Nelson and Marlborough, but in Eiordland only reaching ca. 600 m. Very widespread and common and recorded from all provinces, but it is known from a single Marlborough record (Mt. Robertson), a single Canterbury record (Wilberforce River) and records from Otago are from only the Otago Coast and Lakes ERs. All records are from either forest or scrub with a closed canopy. Eorest types include Agathis australis forest, tall podocarp forest, sometimes mixed with Nothofagus and Wein- mannia, all types and mixtures of Nothofagus forest, Knightia excelsa - Beilschmiedia tawa forest and Weinmannia racemosa - Metrosideros umbellata forest. Not recorded from scrub, shrub-tussockland, or tussockland above the treeline. Eound on stumps, rotten logs, humus, tree bases and on trunks of tree ferns {Dicksonia and Cyathea), particularly at the base. Accompanying species are commonly Kurzia hippuroides, Psiloclada clandestina, Ptychom- nion aciculare, Rhizogonium distichum, and Wijkia extenuata. Other species less often seen with Bazzania adnexa are Acromastigum anisostomum, A. colensoanum, Bazzania nitida, B. novae- zelandiae, Dicranoloma dicarpum, D. robustum, Distichophyllum pulchellum, Het- eroscyphus billardierei, Hypnum chrysogaster, H. cupressiforme, Lepicolea scolopendra, Lepidozia pendulina, L. spinosissima, Leucobryum candidum, Saccogynidium australe, Schistochila balfouriana, S. nobilis, Telaranea tetrapila and T. tetradactyla. Comments: The apical dentition of the leaves in Bazzania adnexa is extremely variable. In well-developed plants it is coarsely denticulate or serrulate not only on the margins of the two or three principal teeth but also on the distal third to half of the lamina. The orientation of the leaves is also variable. Plants often have strongly ventrally secund leaves and, less often, plane and spreading leaves. The ragged, hyaline distal sector of the underleaf in typical Bazzania adnexa may occupy most of the underleaf area. No other New Zealand species of the genus has underleaves of this type. The hyaline portion is composed of thinner-walled, irregularly shaped cells, with an abrupt transition from the hyaline portion of the leaf to the thicker-walled, more collenchy- matous quadrate to subrectangular cells of the basal sector (Eig. 94: 10). In recently collected herbarium specimens the margin is colorless and transparent (decolorate) and the central-basal portion of the underleaf is green. Bazzania semicordata is placed in the synonymy of this species based on Gottsche et al. (1847, p. 720), who described the leaves as ‘‘tridenticulatus dentibus inaequalibus interdum minutissimis saepe denticulatus” and the underleaves as reniform and irregularly toothed at the apex. We have attempted to locate original material of this species, without success, at G, PC, S, STRandW. Mastigobryum kirkianum Steph. has been placed in the synonymy of Bazzania hochstetteri (e.g., Hodgson, 1954). One of us (JJE) has examined the type (G), which is here placed in the synonymy of B. adnexa. Type plants have persistent leaves, which may have teeth at the apex and, also, the texture is more like that of B. adnexa. Eorms of this species can be difficult to distinguish from other New Zealand Connatae, especially Bazzania hochstetteri and B. involuta var. submutica. Eor details, see the discussion under those taxa. Despite the extreme and often puzzling variability of the species, there is one expression in New Zealand worthy of recognition, the ‘To. aucklandica&#39;&#39; (Lindenberg and Gottsche, 1851), which is here recognized at the varietal level, as follows: Key to Varieties la. Underleaves often distinctly connate, often spreading, quadrate to broadly reniform, plane, the base not dilated, the hyaline cells mostly confined to the distal half; hyaline sector variable, the green thick-walled cells making up as much as half of the underleaf; plants pure green . var. adnexa (p. 430) lb. Underleaves scarcely connate or free (at least on one side), ± erect, triangular, tapering to a sharply channeled apex (the lateral margins sharply reflexed), the base cordate to subauriculate, with a narrow hyaline margin extending to the insertion; hyaline sector of underleaf often very broad, the green, thick- walled cells few and restricted to the median basal area; plants deep green . var. aucklandica (p. 431) Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. adnexa [Eig. 94: 1-6, 9, 10] Plants pure green; first branch underleaf typically connate to an underleaf of the main shoot, transversely inserted on the stem; flagelliform branches abundantly produced; underleaves connate on both sides, often distinctly so, erect to spreading, broadly reniform, with a ragged, hyaline apex, the lateral margins straight to moderately ampliate (not distinctly cordate at the base), the hyaline portion confined to the distal portion of the underleaf and not extending to the insertion as a narrow border. Distribution and Ecology: New Zealand: Auckland Islands; Australia: Tasmania, Victoria, New South Wales. This is one of our most common hepatics, occurring throughout New Zealand, and like other semi- weedy taxa, tolerates a variety of conditions. Eor example, it occurs in wet, rich forests grading to relatively dry forests and from sea level to the upper reaches of the forest zone, but does not extend into the penalpine or alpine zone. It tolerates a range of exposures from deeply shaded to fully exposed and a variety of substrates, being typically terricolous or corticolous or exceptionally saxicolous (including granite and limestone). Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) JJ.Engel &amp; Merrill [Eig. 94: 7, 8] Mastigobryum novae -hollandiae f . 7 2 aucklandicum Lindenb. &amp; Gottsche, Sp. Hepat. fasc. 8-11: 33, 46. 1851 {&#39;&#39;Aucklandica&#39;&#39;). Bazzania adnexa fo. aucklandica (Lindenb. &amp; Gottsche) E.A.Hodgs. ex Hamlin, Rec. Domin. Mus. 7: 251. 1972. Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) J.J.Engel &amp; Merrill, Bryologist 97: 319. 1994. Type: Auckland Is., Hooker (S!, herb. Lehmann, STR!). Plants rich, deep green in color, the underleaves appearing small and the stem narrow for plant size; first branch underleaf often free, obliquely inserted, often at right angles to underleaf of main shoot; flagelliform branches sparingly produced; leaves widely spreading and plane; underleaves narrowly connate or free (at least on one side), triangular-cordate, with a channeled apex formed by the sharply reflexed lateral margins, the base cordate to subauricu- late, bordered by a narrow hyaline strip extending to the insertion. Distribution and Ecology: Apparently confined to New Zealand including the Auckland Islands. Variety aucklandica typically occurs on rotted logs and tree-fern bases in forests (120-915 m).</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants strongly anisophyllous, sprawling to suberect in loose cushions or mats, yellow- green to deep green to brownish green; shoots medium-sized, to 3.4 mm wide. Branching repeatedly pseudo-dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, narrowly ovate or ovate-lanceolate, undivided, tapering to a sharp or bidentate, serrulate apex; first branch underleaf 2-3-lobulate, subtransversely inserted on ventral side of main axis somewhat below base of branch, usually marginally con¬ nate at base to an underleaf of main axis or less commonly free, but with bases ± juxtaposed. Ventral-intercalary leafy branches sporadically produced, at times mimicking the terminal branches; stoloniform branches abundantly produced. Stems stiff, the cortical cells small, firm, with evenly thickened walls or the longitudinal walls very thick and the transverse walls thin. Leaves opposite, horizontal to ventrally deflexed, distinctly imbricate, with little or none of stem exposed in dorsal aspect, widely spreading (ca. 90°); leaves not vittate, 910-1120 p^m wide X 1470-1890 pm long, distinctly incubous, asymmetrically ovate-ligulate, falcate, the apex rather broadly truncate, the truncation square to oblique, the apex often somewhat plicate, coarsely and ± symmetrically 3-dentate, the principal teeth broadly acute to apiculate to subacuminate, 2-7 cells wide at base, the teeth terminating in a single cell or a uniseriate row of 2-3 cells, the terminal cell tapering to a sharp, thick-walled point, the tooth margins and intervening sinus bases sharply and irregularly denticulate (occasionally edentate); dorsal mar¬ gin strongly ampliate, distinctly arched and defining a broad crescentic line, extending to middle of stem or slightly beyond, cordate at base, the margin entire or denticulate in distal half; ventral margin straight to curved gently inward, somewhat dilated and subcordate at base, entire or denticulate. Cells of leaf differentiated into a broad, diffuse band of enlarged rectangular cells in the median longitudinal portion of the leaf (subvittate), the cells much smaller near the margins, particularly the dorsal; median cells 23-33 pm wide X 35-44 pm long, thin-walled, trigones variable: small and concave-sided to knot-like, intermediate thickenings sporadic; surface smooth or the teeth often finely papillose. Oil-bodies occupying a conspic- hy aline border of thin- walled eells; note 2 underleaves (above) are eonnate on both sides, the underleaf below (var. aucklandica) is narrowly eonnate at right base and free and subaurieulate at left. 8. Porthiek- walled eells and distal border of thin- walled, hyaline eells; note also the thiekened exposed wall of underleaf apex and margin. (Figs. 1-3, 5, 9, from Engel 12795, Tasmania, Myrtle Forest, SW of Collinsvale; 4, from Engel 20203, same loe.; 6, 10, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 7, from Child H1017, New Zealand, South Is., Otago EP, Mt. Cargill; 8, from Hatcher 152, New Zealand, North Is., Auekland EP, Waitakere Hills.) of first branch underleaf and its juxtaposition with main shoot underleaf (seeond from shoot base). uous portion of cell lumen, dull opaque, with a cloud-like appearance, 2-3(4) to (2)3-5 per median leaf cell, 3-5 per in subvitta cells, 6-8(11) per basal cell, potato- shaped, ovoid to broadly elliptic, often irregularly so, to at times sausage- shaped, homogeneous, but the oil- body contents often not consistent throughout and appearing to possess folds, indentations or auriculations, the oil-bodies 7. 2-8. 5 X 9.1-11.7 juim, a few 7.8 X 12.4-13 juim. Underleaves conspicuous, erect to spreading, connate with the leaves on both sides (feebly connate or free at least on one side in var. aucklandica), subquadrate to oblate to reniform (or in var. auck- landica, triangular and tapering to a sharply channeled apex, the lateral margins sharply reflexed), broader than long, the apex distinctly ragged and hyaline (decelerate), with irregular, sharp, often crowded, sinuate teeth (rarely subentire), the hyaline distal sector variable in width, often occupying as much as half of underleaf or (var. aucklandica) very broad and with the green, thick-walled cells few and restricted to the median basal area, the hyaline sector composed of thin- walled, sinuate-rhomboidal cells; base straight or (var. aucklandica) cordate to subauriculate and with a narrow hyaline margin extending to the insertion; median nonhyaline cells quadrate to ± elongate; surface of hyaline cells very delicately papillose. Eungal partner absent. Androecia on inconspicuous, short, determinate, tightly spicate, ventral-intercalary branches from leading shoots and both ventral and lateral sides of stoloniform branches; bracts ventricose- cucullate, the apex retuse to 2(3)-dentate; dorsal margin of disc slightly dilated, crenate- sporadically denticulate, the teeth unicellular, the margin sporadically smooth and merely with a few slime papillae; antheridia 1-2 per bract, the stalk biseriate; bracteolar antheridia present or absent. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem, the gynoecium base swollen and rhizoidous; bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth, the bracts concave, ovate to subrectangular; apices with 4 main long lobes, each lobe either simple or in turn subdivided into 2 prominent lobules, the lobes or lobules markedly leptodermous, each subcaudate and with the distal sector consisting of a rather long biseriate region with the cell tips often variously projecting, the lobe-lobule biseriate to the tip or the tip composed of a uniseriate row of at most 3 cells, the lobe-lobule margins sparingly dentate-ciliate below the biseriate area; lamina composed of ± regularly short- to long-rectangular, leptodermous cells, the margin bordered by cells of variable shape, some only slightly longer than wide, others long and narrow, the apical or free end of marginal cells often divergent and forming a short projection or a tooth, the margin irregularly and rather copiously crenate-dentate, but often with a few short to long cilia; bracteole similar in size and form. Perianth prominent, straight to curved, fusiform, terete below, the distal half pluriplicate and gradually narrowing to the contracted mouth, the mouth irregularly dentate-subciliate, the processes composed of 1 or 2 superposed cells that are thin-walled, elongate and often completely laterally free; perianth ca. 9-10 stratose in basal sector. Seta with 15 rows of outer cells, the interior cells not seen. Capsule rather long-ellipsoidal, the wall 70-74 juim thick, of 5-6 layers that are subequally thick or the outer layer feebly thicker; outer layer of cells very small, 16-19 juim wide X 28-36 juim long, with two-phase 8. Gynoecium and mature sporophyte. (Fig. 1, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 2-8, from Engel 18741, New Zealand, South Is., Fiord¬ land EP, above South Branch of Borland Burn.) Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Bazzania involuta (Mont.) Trevis. dorsal, dilated portion of leaf. 3. Bazzania okaritana Meagher &amp; Glenny. Cells of median seetor of leaf. 4. Bazzania okaritana Meagher &amp; Glenny. Marginal and submarginal eells (dorsal-median seetor). (Figs. 1, 2, from Glenny 9199b, New Zealand, South Is., Westland EP, Upper Otira Valley; 3, 4, from Glenny 9191, type.) development, the longitudinal walls with very thin, feebly developed, sheet-like thickenings and a few large nodule-like to spine-like thickenings alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated nodule; innermost layer of cells with ± tiered, irregularly narrowly to broadly rectangular cells, with semiannular bands common, rather wide, close, usu¬ ally complete, rather frequently forked and anastomosing to delimit ill-defined, local fenestrae. Spores 16.8-19.7 juim in diam., brown, with dense, sharply defined papillae and abundant simple or furcate vermiculate markings. Elaters rigid, nontortuous, 9.1-11.5 juim wide, only slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island (0-500 m). South Island (0-1070 m). North Island (180-915 m), Chatham Islands; Australia: Tasmania, Victoria, New South Wales, Queensland. In the South Island found at over 1000 m in Nelson and Marlborough, but in Eiordland only reaching ca. 600 m. Very widespread and common and recorded from all provinces, but it is known from a single Marlborough record (Mt. Robertson), a single Canterbury record (Wilberforce River) and records from Otago are from only the Otago Coast and Lakes ERs. All records are from either forest or scrub with a closed canopy. Eorest types include Agathis australis forest, tall podocarp forest, sometimes mixed with Nothofagus and Wein- mannia, all types and mixtures of Nothofagus forest, Knightia excelsa - Beilschmiedia tawa forest and Weinmannia racemosa - Metrosideros umbellata forest. Not recorded from scrub, shrub-tussockland, or tussockland above the treeline. Eound on stumps, rotten logs, humus, tree bases and on trunks of tree ferns {Dicksonia and Cyathea), particularly at the base. Accompanying species are commonly Kurzia hippuroides, Psiloclada clandestina, Ptychom- nion aciculare, Rhizogonium distichum, and Wijkia extenuata. Other species less often seen with Bazzania adnexa are Acromastigum anisostomum, A. colensoanum, Bazzania nitida, B. novae- zelandiae, Dicranoloma dicarpum, D. robustum, Distichophyllum pulchellum, Het- eroscyphus billardierei, Hypnum chrysogaster, H. cupressiforme, Lepicolea scolopendra, Lepidozia pendulina, L. spinosissima, Leucobryum candidum, Saccogynidium australe, Schistochila balfouriana, S. nobilis, Telaranea tetrapila and T. tetradactyla. Comments: The apical dentition of the leaves in Bazzania adnexa is extremely variable. In well-developed plants it is coarsely denticulate or serrulate not only on the margins of the two or three principal teeth but also on the distal third to half of the lamina. The orientation of the leaves is also variable. Plants often have strongly ventrally secund leaves and, less often, plane and spreading leaves. The ragged, hyaline distal sector of the underleaf in typical Bazzania adnexa may occupy most of the underleaf area. No other New Zealand species of the genus has underleaves of this type. The hyaline portion is composed of thinner-walled, irregularly shaped cells, with an abrupt transition from the hyaline portion of the leaf to the thicker-walled, more collenchy- matous quadrate to subrectangular cells of the basal sector (Eig. 94: 10). In recently collected herbarium specimens the margin is colorless and transparent (decolorate) and the central-basal portion of the underleaf is green. Bazzania semicordata is placed in the synonymy of this species based on Gottsche et al. (1847, p. 720), who described the leaves as ‘‘tridenticulatus dentibus inaequalibus interdum minutissimis saepe denticulatus” and the underleaves as reniform and irregularly toothed at the apex. We have attempted to locate original material of this species, without success, at G, PC, S, STRandW. Mastigobryum kirkianum Steph. has been placed in the synonymy of Bazzania hochstetteri (e.g., Hodgson, 1954). One of us (JJE) has examined the type (G), which is here placed in the synonymy of B. adnexa. Type plants have persistent leaves, which may have teeth at the apex and, also, the texture is more like that of B. adnexa. Eorms of this species can be difficult to distinguish from other New Zealand Connatae, especially Bazzania hochstetteri and B. involuta var. submutica. Eor details, see the discussion under those taxa. Despite the extreme and often puzzling variability of the species, there is one expression in New Zealand worthy of recognition, the ‘To. aucklandica&#39;&#39; (Lindenberg and Gottsche, 1851), which is here recognized at the varietal level, as follows: Key to Varieties la. Underleaves often distinctly connate, often spreading, quadrate to broadly reniform, plane, the base not dilated, the hyaline cells mostly confined to the distal half; hyaline sector variable, the green thick-walled cells making up as much as half of the underleaf; plants pure green . var. adnexa (p. 430) lb. Underleaves scarcely connate or free (at least on one side), ± erect, triangular, tapering to a sharply channeled apex (the lateral margins sharply reflexed), the base cordate to subauriculate, with a narrow hyaline margin extending to the insertion; hyaline sector of underleaf often very broad, the green, thick- walled cells few and restricted to the median basal area; plants deep green . var. aucklandica (p. 431) Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. adnexa [Eig. 94: 1-6, 9, 10] Plants pure green; first branch underleaf typically connate to an underleaf of the main shoot, transversely inserted on the stem; flagelliform branches abundantly produced; underleaves connate on both sides, often distinctly so, erect to spreading, broadly reniform, with a ragged, hyaline apex, the lateral margins straight to moderately ampliate (not distinctly cordate at the base), the hyaline portion confined to the distal portion of the underleaf and not extending to the insertion as a narrow border. Distribution and Ecology: New Zealand: Auckland Islands; Australia: Tasmania, Victoria, New South Wales. This is one of our most common hepatics, occurring throughout New Zealand, and like other semi- weedy taxa, tolerates a variety of conditions. Eor example, it occurs in wet, rich forests grading to relatively dry forests and from sea level to the upper reaches of the forest zone, but does not extend into the penalpine or alpine zone. It tolerates a range of exposures from deeply shaded to fully exposed and a variety of substrates, being typically terricolous or corticolous or exceptionally saxicolous (including granite and limestone). Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) JJ.Engel &amp; Merrill [Eig. 94: 7, 8] Mastigobryum novae -hollandiae f . 7 2 aucklandicum Lindenb. &amp; Gottsche, Sp. Hepat. fasc. 8-11: 33, 46. 1851 {&#39;&#39;Aucklandica&#39;&#39;). Bazzania adnexa fo. aucklandica (Lindenb. &amp; Gottsche) E.A.Hodgs. ex Hamlin, Rec. Domin. Mus. 7: 251. 1972. Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) J.J.Engel &amp; Merrill, Bryologist 97: 319. 1994. Type: Auckland Is., Hooker (S!, herb. Lehmann, STR!). Plants rich, deep green in color, the underleaves appearing small and the stem narrow for plant size; first branch underleaf often free, obliquely inserted, often at right angles to underleaf of main shoot; flagelliform branches sparingly produced; leaves widely spreading and plane; underleaves narrowly connate or free (at least on one side), triangular-cordate, with a channeled apex formed by the sharply reflexed lateral margins, the base cordate to subauricu- late, bordered by a narrow hyaline strip extending to the insertion. Distribution and Ecology: Apparently confined to New Zealand including the Auckland Islands. Variety aucklandica typically occurs on rotted logs and tree-fern bases in forests (120-915 m).</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants strongly anisophyllous, sprawling to suberect in loose cushions or mats, yellow- green to deep green to brownish green; shoots medium-sized, to 3.4 mm wide. Branching repeatedly pseudo-dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, narrowly ovate or ovate-lanceolate, undivided, tapering to a sharp or bidentate, serrulate apex; first branch underleaf 2-3-lobulate, subtransversely inserted on ventral side of main axis somewhat below base of branch, usually marginally con¬ nate at base to an underleaf of main axis or less commonly free, but with bases ± juxtaposed. Ventral-intercalary leafy branches sporadically produced, at times mimicking the terminal branches; stoloniform branches abundantly produced. Stems stiff, the cortical cells small, firm, with evenly thickened walls or the longitudinal walls very thick and the transverse walls thin. Leaves opposite, horizontal to ventrally deflexed, distinctly imbricate, with little or none of stem exposed in dorsal aspect, widely spreading (ca. 90°); leaves not vittate, 910-1120 p^m wide X 1470-1890 pm long, distinctly incubous, asymmetrically ovate-ligulate, falcate, the apex rather broadly truncate, the truncation square to oblique, the apex often somewhat plicate, coarsely and ± symmetrically 3-dentate, the principal teeth broadly acute to apiculate to subacuminate, 2-7 cells wide at base, the teeth terminating in a single cell or a uniseriate row of 2-3 cells, the terminal cell tapering to a sharp, thick-walled point, the tooth margins and intervening sinus bases sharply and irregularly denticulate (occasionally edentate); dorsal mar¬ gin strongly ampliate, distinctly arched and defining a broad crescentic line, extending to middle of stem or slightly beyond, cordate at base, the margin entire or denticulate in distal half; ventral margin straight to curved gently inward, somewhat dilated and subcordate at base, entire or denticulate. Cells of leaf differentiated into a broad, diffuse band of enlarged rectangular cells in the median longitudinal portion of the leaf (subvittate), the cells much smaller near the margins, particularly the dorsal; median cells 23-33 pm wide X 35-44 pm long, thin-walled, trigones variable: small and concave-sided to knot-like, intermediate thickenings sporadic; surface smooth or the teeth often finely papillose. Oil-bodies occupying a conspic- hy aline border of thin- walled eells; note 2 underleaves (above) are eonnate on both sides, the underleaf below (var. aucklandica) is narrowly eonnate at right base and free and subaurieulate at left. 8. Porthiek- walled eells and distal border of thin- walled, hyaline eells; note also the thiekened exposed wall of underleaf apex and margin. (Figs. 1-3, 5, 9, from Engel 12795, Tasmania, Myrtle Forest, SW of Collinsvale; 4, from Engel 20203, same loe.; 6, 10, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 7, from Child H1017, New Zealand, South Is., Otago EP, Mt. Cargill; 8, from Hatcher 152, New Zealand, North Is., Auekland EP, Waitakere Hills.) of first branch underleaf and its juxtaposition with main shoot underleaf (seeond from shoot base). uous portion of cell lumen, dull opaque, with a cloud-like appearance, 2-3(4) to (2)3-5 per median leaf cell, 3-5 per in subvitta cells, 6-8(11) per basal cell, potato- shaped, ovoid to broadly elliptic, often irregularly so, to at times sausage- shaped, homogeneous, but the oil- body contents often not consistent throughout and appearing to possess folds, indentations or auriculations, the oil-bodies 7. 2-8. 5 X 9.1-11.7 juim, a few 7.8 X 12.4-13 juim. Underleaves conspicuous, erect to spreading, connate with the leaves on both sides (feebly connate or free at least on one side in var. aucklandica), subquadrate to oblate to reniform (or in var. auck- landica, triangular and tapering to a sharply channeled apex, the lateral margins sharply reflexed), broader than long, the apex distinctly ragged and hyaline (decelerate), with irregular, sharp, often crowded, sinuate teeth (rarely subentire), the hyaline distal sector variable in width, often occupying as much as half of underleaf or (var. aucklandica) very broad and with the green, thick-walled cells few and restricted to the median basal area, the hyaline sector composed of thin- walled, sinuate-rhomboidal cells; base straight or (var. aucklandica) cordate to subauriculate and with a narrow hyaline margin extending to the insertion; median nonhyaline cells quadrate to ± elongate; surface of hyaline cells very delicately papillose. Eungal partner absent. Androecia on inconspicuous, short, determinate, tightly spicate, ventral-intercalary branches from leading shoots and both ventral and lateral sides of stoloniform branches; bracts ventricose- cucullate, the apex retuse to 2(3)-dentate; dorsal margin of disc slightly dilated, crenate- sporadically denticulate, the teeth unicellular, the margin sporadically smooth and merely with a few slime papillae; antheridia 1-2 per bract, the stalk biseriate; bracteolar antheridia present or absent. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem, the gynoecium base swollen and rhizoidous; bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth, the bracts concave, ovate to subrectangular; apices with 4 main long lobes, each lobe either simple or in turn subdivided into 2 prominent lobules, the lobes or lobules markedly leptodermous, each subcaudate and with the distal sector consisting of a rather long biseriate region with the cell tips often variously projecting, the lobe-lobule biseriate to the tip or the tip composed of a uniseriate row of at most 3 cells, the lobe-lobule margins sparingly dentate-ciliate below the biseriate area; lamina composed of ± regularly short- to long-rectangular, leptodermous cells, the margin bordered by cells of variable shape, some only slightly longer than wide, others long and narrow, the apical or free end of marginal cells often divergent and forming a short projection or a tooth, the margin irregularly and rather copiously crenate-dentate, but often with a few short to long cilia; bracteole similar in size and form. Perianth prominent, straight to curved, fusiform, terete below, the distal half pluriplicate and gradually narrowing to the contracted mouth, the mouth irregularly dentate-subciliate, the processes composed of 1 or 2 superposed cells that are thin-walled, elongate and often completely laterally free; perianth ca. 9-10 stratose in basal sector. Seta with 15 rows of outer cells, the interior cells not seen. Capsule rather long-ellipsoidal, the wall 70-74 juim thick, of 5-6 layers that are subequally thick or the outer layer feebly thicker; outer layer of cells very small, 16-19 juim wide X 28-36 juim long, with two-phase 8. Gynoecium and mature sporophyte. (Fig. 1, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 2-8, from Engel 18741, New Zealand, South Is., Fiord¬ land EP, above South Branch of Borland Burn.) Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Bazzania involuta (Mont.) Trevis. dorsal, dilated portion of leaf. 3. Bazzania okaritana Meagher &amp; Glenny. Cells of median seetor of leaf. 4. Bazzania okaritana Meagher &amp; Glenny. Marginal and submarginal eells (dorsal-median seetor). (Figs. 1, 2, from Glenny 9199b, New Zealand, South Is., Westland EP, Upper Otira Valley; 3, 4, from Glenny 9191, type.) development, the longitudinal walls with very thin, feebly developed, sheet-like thickenings and a few large nodule-like to spine-like thickenings alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated nodule; innermost layer of cells with ± tiered, irregularly narrowly to broadly rectangular cells, with semiannular bands common, rather wide, close, usu¬ ally complete, rather frequently forked and anastomosing to delimit ill-defined, local fenestrae. Spores 16.8-19.7 juim in diam., brown, with dense, sharply defined papillae and abundant simple or furcate vermiculate markings. Elaters rigid, nontortuous, 9.1-11.5 juim wide, only slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island (0-500 m). South Island (0-1070 m). North Island (180-915 m), Chatham Islands; Australia: Tasmania, Victoria, New South Wales, Queensland. In the South Island found at over 1000 m in Nelson and Marlborough, but in Eiordland only reaching ca. 600 m. Very widespread and common and recorded from all provinces, but it is known from a single Marlborough record (Mt. Robertson), a single Canterbury record (Wilberforce River) and records from Otago are from only the Otago Coast and Lakes ERs. All records are from either forest or scrub with a closed canopy. Eorest types include Agathis australis forest, tall podocarp forest, sometimes mixed with Nothofagus and Wein- mannia, all types and mixtures of Nothofagus forest, Knightia excelsa - Beilschmiedia tawa forest and Weinmannia racemosa - Metrosideros umbellata forest. Not recorded from scrub, shrub-tussockland, or tussockland above the treeline. Eound on stumps, rotten logs, humus, tree bases and on trunks of tree ferns {Dicksonia and Cyathea), particularly at the base. Accompanying species are commonly Kurzia hippuroides, Psiloclada clandestina, Ptychom- nion aciculare, Rhizogonium distichum, and Wijkia extenuata. Other species less often seen with Bazzania adnexa are Acromastigum anisostomum, A. colensoanum, Bazzania nitida, B. novae- zelandiae, Dicranoloma dicarpum, D. robustum, Distichophyllum pulchellum, Het- eroscyphus billardierei, Hypnum chrysogaster, H. cupressiforme, Lepicolea scolopendra, Lepidozia pendulina, L. spinosissima, Leucobryum candidum, Saccogynidium australe, Schistochila balfouriana, S. nobilis, Telaranea tetrapila and T. tetradactyla. Comments: The apical dentition of the leaves in Bazzania adnexa is extremely variable. In well-developed plants it is coarsely denticulate or serrulate not only on the margins of the two or three principal teeth but also on the distal third to half of the lamina. The orientation of the leaves is also variable. Plants often have strongly ventrally secund leaves and, less often, plane and spreading leaves. The ragged, hyaline distal sector of the underleaf in typical Bazzania adnexa may occupy most of the underleaf area. No other New Zealand species of the genus has underleaves of this type. The hyaline portion is composed of thinner-walled, irregularly shaped cells, with an abrupt transition from the hyaline portion of the leaf to the thicker-walled, more collenchy- matous quadrate to subrectangular cells of the basal sector (Eig. 94: 10). In recently collected herbarium specimens the margin is colorless and transparent (decolorate) and the central-basal portion of the underleaf is green. Bazzania semicordata is placed in the synonymy of this species based on Gottsche et al. (1847, p. 720), who described the leaves as ‘‘tridenticulatus dentibus inaequalibus interdum minutissimis saepe denticulatus” and the underleaves as reniform and irregularly toothed at the apex. We have attempted to locate original material of this species, without success, at G, PC, S, STRandW. Mastigobryum kirkianum Steph. has been placed in the synonymy of Bazzania hochstetteri (e.g., Hodgson, 1954). One of us (JJE) has examined the type (G), which is here placed in the synonymy of B. adnexa. Type plants have persistent leaves, which may have teeth at the apex and, also, the texture is more like that of B. adnexa. Eorms of this species can be difficult to distinguish from other New Zealand Connatae, especially Bazzania hochstetteri and B. involuta var. submutica. Eor details, see the discussion under those taxa. Despite the extreme and often puzzling variability of the species, there is one expression in New Zealand worthy of recognition, the ‘To. aucklandica&#39;&#39; (Lindenberg and Gottsche, 1851), which is here recognized at the varietal level, as follows: Key to Varieties la. Underleaves often distinctly connate, often spreading, quadrate to broadly reniform, plane, the base not dilated, the hyaline cells mostly confined to the distal half; hyaline sector variable, the green thick-walled cells making up as much as half of the underleaf; plants pure green . var. adnexa (p. 430) lb. Underleaves scarcely connate or free (at least on one side), ± erect, triangular, tapering to a sharply channeled apex (the lateral margins sharply reflexed), the base cordate to subauriculate, with a narrow hyaline margin extending to the insertion; hyaline sector of underleaf often very broad, the green, thick- walled cells few and restricted to the median basal area; plants deep green . var. aucklandica (p. 431) Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. adnexa [Eig. 94: 1-6, 9, 10] Plants pure green; first branch underleaf typically connate to an underleaf of the main shoot, transversely inserted on the stem; flagelliform branches abundantly produced; underleaves connate on both sides, often distinctly so, erect to spreading, broadly reniform, with a ragged, hyaline apex, the lateral margins straight to moderately ampliate (not distinctly cordate at the base), the hyaline portion confined to the distal portion of the underleaf and not extending to the insertion as a narrow border. Distribution and Ecology: New Zealand: Auckland Islands; Australia: Tasmania, Victoria, New South Wales. This is one of our most common hepatics, occurring throughout New Zealand, and like other semi- weedy taxa, tolerates a variety of conditions. Eor example, it occurs in wet, rich forests grading to relatively dry forests and from sea level to the upper reaches of the forest zone, but does not extend into the penalpine or alpine zone. It tolerates a range of exposures from deeply shaded to fully exposed and a variety of substrates, being typically terricolous or corticolous or exceptionally saxicolous (including granite and limestone). Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) JJ.Engel &amp; Merrill [Eig. 94: 7, 8] Mastigobryum novae -hollandiae f . 7 2 aucklandicum Lindenb. &amp; Gottsche, Sp. Hepat. fasc. 8-11: 33, 46. 1851 {&#39;&#39;Aucklandica&#39;&#39;). Bazzania adnexa fo. aucklandica (Lindenb. &amp; Gottsche) E.A.Hodgs. ex Hamlin, Rec. Domin. Mus. 7: 251. 1972. Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) J.J.Engel &amp; Merrill, Bryologist 97: 319. 1994. Type: Auckland Is., Hooker (S!, herb. Lehmann, STR!). Plants rich, deep green in color, the underleaves appearing small and the stem narrow for plant size; first branch underleaf often free, obliquely inserted, often at right angles to underleaf of main shoot; flagelliform branches sparingly produced; leaves widely spreading and plane; underleaves narrowly connate or free (at least on one side), triangular-cordate, with a channeled apex formed by the sharply reflexed lateral margins, the base cordate to subauricu- late, bordered by a narrow hyaline strip extending to the insertion. Distribution and Ecology: Apparently confined to New Zealand including the Auckland Islands. Variety aucklandica typically occurs on rotted logs and tree-fern bases in forests (120-915 m).</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
-    
-    
-    <p><strong>distribution:</strong> Qld; NSW; ACT; Tas.; Lord Howe I.</p>
+    <pre class="description-text">Plants strongly anisophyllous, sprawling to suberect in loose cushions or mats, yellow- green to deep green to brownish green; shoots medium-sized, to 3.4 mm wide. Branching repeatedly pseudo-dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, narrowly ovate or ovate-lanceolate, undivided, tapering to a sharp or bidentate, serrulate apex; first branch underleaf 2-3-lobulate, subtransversely inserted on ventral side of main axis somewhat below base of branch, usually marginally con¬ nate at base to an underleaf of main axis or less commonly free, but with bases ± juxtaposed. Ventral-intercalary leafy branches sporadically produced, at times mimicking the terminal branches; stoloniform branches abundantly produced. Stems stiff, the cortical cells small, firm, with evenly thickened walls or the longitudinal walls very thick and the transverse walls thin. Leaves opposite, horizontal to ventrally deflexed, distinctly imbricate, with little or none of stem exposed in dorsal aspect, widely spreading (ca. 90°); leaves not vittate, 910-1120 p^m wide X 1470-1890 pm long, distinctly incubous, asymmetrically ovate-ligulate, falcate, the apex rather broadly truncate, the truncation square to oblique, the apex often somewhat plicate, coarsely and ± symmetrically 3-dentate, the principal teeth broadly acute to apiculate to subacuminate, 2-7 cells wide at base, the teeth terminating in a single cell or a uniseriate row of 2-3 cells, the terminal cell tapering to a sharp, thick-walled point, the tooth margins and intervening sinus bases sharply and irregularly denticulate (occasionally edentate); dorsal mar¬ gin strongly ampliate, distinctly arched and defining a broad crescentic line, extending to middle of stem or slightly beyond, cordate at base, the margin entire or denticulate in distal half; ventral margin straight to curved gently inward, somewhat dilated and subcordate at base, entire or denticulate. Cells of leaf differentiated into a broad, diffuse band of enlarged rectangular cells in the median longitudinal portion of the leaf (subvittate), the cells much smaller near the margins, particularly the dorsal; median cells 23-33 pm wide X 35-44 pm long, thin-walled, trigones variable: small and concave-sided to knot-like, intermediate thickenings sporadic; surface smooth or the teeth often finely papillose. Oil-bodies occupying a conspic- hy aline border of thin- walled eells; note 2 underleaves (above) are eonnate on both sides, the underleaf below (var. aucklandica) is narrowly eonnate at right base and free and subaurieulate at left. 8. Porthiek- walled eells and distal border of thin- walled, hyaline eells; note also the thiekened exposed wall of underleaf apex and margin. (Figs. 1-3, 5, 9, from Engel 12795, Tasmania, Myrtle Forest, SW of Collinsvale; 4, from Engel 20203, same loe.; 6, 10, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 7, from Child H1017, New Zealand, South Is., Otago EP, Mt. Cargill; 8, from Hatcher 152, New Zealand, North Is., Auekland EP, Waitakere Hills.) of first branch underleaf and its juxtaposition with main shoot underleaf (seeond from shoot base). uous portion of cell lumen, dull opaque, with a cloud-like appearance, 2-3(4) to (2)3-5 per median leaf cell, 3-5 per in subvitta cells, 6-8(11) per basal cell, potato- shaped, ovoid to broadly elliptic, often irregularly so, to at times sausage- shaped, homogeneous, but the oil- body contents often not consistent throughout and appearing to possess folds, indentations or auriculations, the oil-bodies 7. 2-8. 5 X 9.1-11.7 juim, a few 7.8 X 12.4-13 juim. Underleaves conspicuous, erect to spreading, connate with the leaves on both sides (feebly connate or free at least on one side in var. aucklandica), subquadrate to oblate to reniform (or in var. auck- landica, triangular and tapering to a sharply channeled apex, the lateral margins sharply reflexed), broader than long, the apex distinctly ragged and hyaline (decelerate), with irregular, sharp, often crowded, sinuate teeth (rarely subentire), the hyaline distal sector variable in width, often occupying as much as half of underleaf or (var. aucklandica) very broad and with the green, thick-walled cells few and restricted to the median basal area, the hyaline sector composed of thin- walled, sinuate-rhomboidal cells; base straight or (var. aucklandica) cordate to subauriculate and with a narrow hyaline margin extending to the insertion; median nonhyaline cells quadrate to ± elongate; surface of hyaline cells very delicately papillose. Eungal partner absent. Androecia on inconspicuous, short, determinate, tightly spicate, ventral-intercalary branches from leading shoots and both ventral and lateral sides of stoloniform branches; bracts ventricose- cucullate, the apex retuse to 2(3)-dentate; dorsal margin of disc slightly dilated, crenate- sporadically denticulate, the teeth unicellular, the margin sporadically smooth and merely with a few slime papillae; antheridia 1-2 per bract, the stalk biseriate; bracteolar antheridia present or absent. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem, the gynoecium base swollen and rhizoidous; bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth, the bracts concave, ovate to subrectangular; apices with 4 main long lobes, each lobe either simple or in turn subdivided into 2 prominent lobules, the lobes or lobules markedly leptodermous, each subcaudate and with the distal sector consisting of a rather long biseriate region with the cell tips often variously projecting, the lobe-lobule biseriate to the tip or the tip composed of a uniseriate row of at most 3 cells, the lobe-lobule margins sparingly dentate-ciliate below the biseriate area; lamina composed of ± regularly short- to long-rectangular, leptodermous cells, the margin bordered by cells of variable shape, some only slightly longer than wide, others long and narrow, the apical or free end of marginal cells often divergent and forming a short projection or a tooth, the margin irregularly and rather copiously crenate-dentate, but often with a few short to long cilia; bracteole similar in size and form. Perianth prominent, straight to curved, fusiform, terete below, the distal half pluriplicate and gradually narrowing to the contracted mouth, the mouth irregularly dentate-subciliate, the processes composed of 1 or 2 superposed cells that are thin-walled, elongate and often completely laterally free; perianth ca. 9-10 stratose in basal sector. Seta with 15 rows of outer cells, the interior cells not seen. Capsule rather long-ellipsoidal, the wall 70-74 juim thick, of 5-6 layers that are subequally thick or the outer layer feebly thicker; outer layer of cells very small, 16-19 juim wide X 28-36 juim long, with two-phase 8. Gynoecium and mature sporophyte. (Fig. 1, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 2-8, from Engel 18741, New Zealand, South Is., Fiord¬ land EP, above South Branch of Borland Burn.) Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Bazzania involuta (Mont.) Trevis. dorsal, dilated portion of leaf. 3. Bazzania okaritana Meagher &amp; Glenny. Cells of median seetor of leaf. 4. Bazzania okaritana Meagher &amp; Glenny. Marginal and submarginal eells (dorsal-median seetor). (Figs. 1, 2, from Glenny 9199b, New Zealand, South Is., Westland EP, Upper Otira Valley; 3, 4, from Glenny 9191, type.) development, the longitudinal walls with very thin, feebly developed, sheet-like thickenings and a few large nodule-like to spine-like thickenings alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated nodule; innermost layer of cells with ± tiered, irregularly narrowly to broadly rectangular cells, with semiannular bands common, rather wide, close, usu¬ ally complete, rather frequently forked and anastomosing to delimit ill-defined, local fenestrae. Spores 16.8-19.7 juim in diam., brown, with dense, sharply defined papillae and abundant simple or furcate vermiculate markings. Elaters rigid, nontortuous, 9.1-11.5 juim wide, only slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island (0-500 m). South Island (0-1070 m). North Island (180-915 m), Chatham Islands; Australia: Tasmania, Victoria, New South Wales, Queensland. In the South Island found at over 1000 m in Nelson and Marlborough, but in Eiordland only reaching ca. 600 m. Very widespread and common and recorded from all provinces, but it is known from a single Marlborough record (Mt. Robertson), a single Canterbury record (Wilberforce River) and records from Otago are from only the Otago Coast and Lakes ERs. All records are from either forest or scrub with a closed canopy. Eorest types include Agathis australis forest, tall podocarp forest, sometimes mixed with Nothofagus and Wein- mannia, all types and mixtures of Nothofagus forest, Knightia excelsa - Beilschmiedia tawa forest and Weinmannia racemosa - Metrosideros umbellata forest. Not recorded from scrub, shrub-tussockland, or tussockland above the treeline. Eound on stumps, rotten logs, humus, tree bases and on trunks of tree ferns {Dicksonia and Cyathea), particularly at the base. Accompanying species are commonly Kurzia hippuroides, Psiloclada clandestina, Ptychom- nion aciculare, Rhizogonium distichum, and Wijkia extenuata. Other species less often seen with Bazzania adnexa are Acromastigum anisostomum, A. colensoanum, Bazzania nitida, B. novae- zelandiae, Dicranoloma dicarpum, D. robustum, Distichophyllum pulchellum, Het- eroscyphus billardierei, Hypnum chrysogaster, H. cupressiforme, Lepicolea scolopendra, Lepidozia pendulina, L. spinosissima, Leucobryum candidum, Saccogynidium australe, Schistochila balfouriana, S. nobilis, Telaranea tetrapila and T. tetradactyla. Comments: The apical dentition of the leaves in Bazzania adnexa is extremely variable. In well-developed plants it is coarsely denticulate or serrulate not only on the margins of the two or three principal teeth but also on the distal third to half of the lamina. The orientation of the leaves is also variable. Plants often have strongly ventrally secund leaves and, less often, plane and spreading leaves. The ragged, hyaline distal sector of the underleaf in typical Bazzania adnexa may occupy most of the underleaf area. No other New Zealand species of the genus has underleaves of this type. The hyaline portion is composed of thinner-walled, irregularly shaped cells, with an abrupt transition from the hyaline portion of the leaf to the thicker-walled, more collenchy- matous quadrate to subrectangular cells of the basal sector (Eig. 94: 10). In recently collected herbarium specimens the margin is colorless and transparent (decolorate) and the central-basal portion of the underleaf is green. Bazzania semicordata is placed in the synonymy of this species based on Gottsche et al. (1847, p. 720), who described the leaves as ‘‘tridenticulatus dentibus inaequalibus interdum minutissimis saepe denticulatus” and the underleaves as reniform and irregularly toothed at the apex. We have attempted to locate original material of this species, without success, at G, PC, S, STRandW. Mastigobryum kirkianum Steph. has been placed in the synonymy of Bazzania hochstetteri (e.g., Hodgson, 1954). One of us (JJE) has examined the type (G), which is here placed in the synonymy of B. adnexa. Type plants have persistent leaves, which may have teeth at the apex and, also, the texture is more like that of B. adnexa. Eorms of this species can be difficult to distinguish from other New Zealand Connatae, especially Bazzania hochstetteri and B. involuta var. submutica. Eor details, see the discussion under those taxa. Despite the extreme and often puzzling variability of the species, there is one expression in New Zealand worthy of recognition, the ‘To. aucklandica&#39;&#39; (Lindenberg and Gottsche, 1851), which is here recognized at the varietal level, as follows: Key to Varieties la. Underleaves often distinctly connate, often spreading, quadrate to broadly reniform, plane, the base not dilated, the hyaline cells mostly confined to the distal half; hyaline sector variable, the green thick-walled cells making up as much as half of the underleaf; plants pure green . var. adnexa (p. 430) lb. Underleaves scarcely connate or free (at least on one side), ± erect, triangular, tapering to a sharply channeled apex (the lateral margins sharply reflexed), the base cordate to subauriculate, with a narrow hyaline margin extending to the insertion; hyaline sector of underleaf often very broad, the green, thick- walled cells few and restricted to the median basal area; plants deep green . var. aucklandica (p. 431) Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. adnexa [Eig. 94: 1-6, 9, 10] Plants pure green; first branch underleaf typically connate to an underleaf of the main shoot, transversely inserted on the stem; flagelliform branches abundantly produced; underleaves connate on both sides, often distinctly so, erect to spreading, broadly reniform, with a ragged, hyaline apex, the lateral margins straight to moderately ampliate (not distinctly cordate at the base), the hyaline portion confined to the distal portion of the underleaf and not extending to the insertion as a narrow border. Distribution and Ecology: New Zealand: Auckland Islands; Australia: Tasmania, Victoria, New South Wales. This is one of our most common hepatics, occurring throughout New Zealand, and like other semi- weedy taxa, tolerates a variety of conditions. Eor example, it occurs in wet, rich forests grading to relatively dry forests and from sea level to the upper reaches of the forest zone, but does not extend into the penalpine or alpine zone. It tolerates a range of exposures from deeply shaded to fully exposed and a variety of substrates, being typically terricolous or corticolous or exceptionally saxicolous (including granite and limestone). Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) JJ.Engel &amp; Merrill [Eig. 94: 7, 8] Mastigobryum novae -hollandiae f . 7 2 aucklandicum Lindenb. &amp; Gottsche, Sp. Hepat. fasc. 8-11: 33, 46. 1851 {&#39;&#39;Aucklandica&#39;&#39;). Bazzania adnexa fo. aucklandica (Lindenb. &amp; Gottsche) E.A.Hodgs. ex Hamlin, Rec. Domin. Mus. 7: 251. 1972. Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) J.J.Engel &amp; Merrill, Bryologist 97: 319. 1994. Type: Auckland Is., Hooker (S!, herb. Lehmann, STR!). Plants rich, deep green in color, the underleaves appearing small and the stem narrow for plant size; first branch underleaf often free, obliquely inserted, often at right angles to underleaf of main shoot; flagelliform branches sparingly produced; leaves widely spreading and plane; underleaves narrowly connate or free (at least on one side), triangular-cordate, with a channeled apex formed by the sharply reflexed lateral margins, the base cordate to subauricu- late, bordered by a narrow hyaline strip extending to the insertion. Distribution and Ecology: Apparently confined to New Zealand including the Auckland Islands. Variety aucklandica typically occurs on rotted logs and tree-fern bases in forests (120-915 m).</pre>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Bazzania adnexa var. adnexa</p>
+    <pre class="description-text">Plants strongly anisophyllous, sprawling to suberect in loose cushions or mats, yellow- green to deep green to brownish green; shoots medium-sized, to 3.4 mm wide. Branching repeatedly pseudo-dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, narrowly ovate or ovate-lanceolate, undivided, tapering to a sharp or bidentate, serrulate apex; first branch underleaf 2-3-lobulate, subtransversely inserted on ventral side of main axis somewhat below base of branch, usually marginally con¬ nate at base to an underleaf of main axis or less commonly free, but with bases ± juxtaposed. Ventral-intercalary leafy branches sporadically produced, at times mimicking the terminal branches; stoloniform branches abundantly produced. Stems stiff, the cortical cells small, firm, with evenly thickened walls or the longitudinal walls very thick and the transverse walls thin. Leaves opposite, horizontal to ventrally deflexed, distinctly imbricate, with little or none of stem exposed in dorsal aspect, widely spreading (ca. 90°); leaves not vittate, 910-1120 p^m wide X 1470-1890 pm long, distinctly incubous, asymmetrically ovate-ligulate, falcate, the apex rather broadly truncate, the truncation square to oblique, the apex often somewhat plicate, coarsely and ± symmetrically 3-dentate, the principal teeth broadly acute to apiculate to subacuminate, 2-7 cells wide at base, the teeth terminating in a single cell or a uniseriate row of 2-3 cells, the terminal cell tapering to a sharp, thick-walled point, the tooth margins and intervening sinus bases sharply and irregularly denticulate (occasionally edentate); dorsal mar¬ gin strongly ampliate, distinctly arched and defining a broad crescentic line, extending to middle of stem or slightly beyond, cordate at base, the margin entire or denticulate in distal half; ventral margin straight to curved gently inward, somewhat dilated and subcordate at base, entire or denticulate. Cells of leaf differentiated into a broad, diffuse band of enlarged rectangular cells in the median longitudinal portion of the leaf (subvittate), the cells much smaller near the margins, particularly the dorsal; median cells 23-33 pm wide X 35-44 pm long, thin-walled, trigones variable: small and concave-sided to knot-like, intermediate thickenings sporadic; surface smooth or the teeth often finely papillose. Oil-bodies occupying a conspic- hy aline border of thin- walled eells; note 2 underleaves (above) are eonnate on both sides, the underleaf below (var. aucklandica) is narrowly eonnate at right base and free and subaurieulate at left. 8. Porthiek- walled eells and distal border of thin- walled, hyaline eells; note also the thiekened exposed wall of underleaf apex and margin. (Figs. 1-3, 5, 9, from Engel 12795, Tasmania, Myrtle Forest, SW of Collinsvale; 4, from Engel 20203, same loe.; 6, 10, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 7, from Child H1017, New Zealand, South Is., Otago EP, Mt. Cargill; 8, from Hatcher 152, New Zealand, North Is., Auekland EP, Waitakere Hills.) of first branch underleaf and its juxtaposition with main shoot underleaf (seeond from shoot base). uous portion of cell lumen, dull opaque, with a cloud-like appearance, 2-3(4) to (2)3-5 per median leaf cell, 3-5 per in subvitta cells, 6-8(11) per basal cell, potato- shaped, ovoid to broadly elliptic, often irregularly so, to at times sausage- shaped, homogeneous, but the oil- body contents often not consistent throughout and appearing to possess folds, indentations or auriculations, the oil-bodies 7. 2-8. 5 X 9.1-11.7 juim, a few 7.8 X 12.4-13 juim. Underleaves conspicuous, erect to spreading, connate with the leaves on both sides (feebly connate or free at least on one side in var. aucklandica), subquadrate to oblate to reniform (or in var. auck- landica, triangular and tapering to a sharply channeled apex, the lateral margins sharply reflexed), broader than long, the apex distinctly ragged and hyaline (decelerate), with irregular, sharp, often crowded, sinuate teeth (rarely subentire), the hyaline distal sector variable in width, often occupying as much as half of underleaf or (var. aucklandica) very broad and with the green, thick-walled cells few and restricted to the median basal area, the hyaline sector composed of thin- walled, sinuate-rhomboidal cells; base straight or (var. aucklandica) cordate to subauriculate and with a narrow hyaline margin extending to the insertion; median nonhyaline cells quadrate to ± elongate; surface of hyaline cells very delicately papillose. Eungal partner absent. Androecia on inconspicuous, short, determinate, tightly spicate, ventral-intercalary branches from leading shoots and both ventral and lateral sides of stoloniform branches; bracts ventricose- cucullate, the apex retuse to 2(3)-dentate; dorsal margin of disc slightly dilated, crenate- sporadically denticulate, the teeth unicellular, the margin sporadically smooth and merely with a few slime papillae; antheridia 1-2 per bract, the stalk biseriate; bracteolar antheridia present or absent. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem, the gynoecium base swollen and rhizoidous; bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth, the bracts concave, ovate to subrectangular; apices with 4 main long lobes, each lobe either simple or in turn subdivided into 2 prominent lobules, the lobes or lobules markedly leptodermous, each subcaudate and with the distal sector consisting of a rather long biseriate region with the cell tips often variously projecting, the lobe-lobule biseriate to the tip or the tip composed of a uniseriate row of at most 3 cells, the lobe-lobule margins sparingly dentate-ciliate below the biseriate area; lamina composed of ± regularly short- to long-rectangular, leptodermous cells, the margin bordered by cells of variable shape, some only slightly longer than wide, others long and narrow, the apical or free end of marginal cells often divergent and forming a short projection or a tooth, the margin irregularly and rather copiously crenate-dentate, but often with a few short to long cilia; bracteole similar in size and form. Perianth prominent, straight to curved, fusiform, terete below, the distal half pluriplicate and gradually narrowing to the contracted mouth, the mouth irregularly dentate-subciliate, the processes composed of 1 or 2 superposed cells that are thin-walled, elongate and often completely laterally free; perianth ca. 9-10 stratose in basal sector. Seta with 15 rows of outer cells, the interior cells not seen. Capsule rather long-ellipsoidal, the wall 70-74 juim thick, of 5-6 layers that are subequally thick or the outer layer feebly thicker; outer layer of cells very small, 16-19 juim wide X 28-36 juim long, with two-phase 8. Gynoecium and mature sporophyte. (Fig. 1, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 2-8, from Engel 18741, New Zealand, South Is., Fiord¬ land EP, above South Branch of Borland Burn.) Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Bazzania involuta (Mont.) Trevis. dorsal, dilated portion of leaf. 3. Bazzania okaritana Meagher &amp; Glenny. Cells of median seetor of leaf. 4. Bazzania okaritana Meagher &amp; Glenny. Marginal and submarginal eells (dorsal-median seetor). (Figs. 1, 2, from Glenny 9199b, New Zealand, South Is., Westland EP, Upper Otira Valley; 3, 4, from Glenny 9191, type.) development, the longitudinal walls with very thin, feebly developed, sheet-like thickenings and a few large nodule-like to spine-like thickenings alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated nodule; innermost layer of cells with ± tiered, irregularly narrowly to broadly rectangular cells, with semiannular bands common, rather wide, close, usu¬ ally complete, rather frequently forked and anastomosing to delimit ill-defined, local fenestrae. Spores 16.8-19.7 juim in diam., brown, with dense, sharply defined papillae and abundant simple or furcate vermiculate markings. Elaters rigid, nontortuous, 9.1-11.5 juim wide, only slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island (0-500 m). South Island (0-1070 m). North Island (180-915 m), Chatham Islands; Australia: Tasmania, Victoria, New South Wales, Queensland. In the South Island found at over 1000 m in Nelson and Marlborough, but in Eiordland only reaching ca. 600 m. Very widespread and common and recorded from all provinces, but it is known from a single Marlborough record (Mt. Robertson), a single Canterbury record (Wilberforce River) and records from Otago are from only the Otago Coast and Lakes ERs. All records are from either forest or scrub with a closed canopy. Eorest types include Agathis australis forest, tall podocarp forest, sometimes mixed with Nothofagus and Wein- mannia, all types and mixtures of Nothofagus forest, Knightia excelsa - Beilschmiedia tawa forest and Weinmannia racemosa - Metrosideros umbellata forest. Not recorded from scrub, shrub-tussockland, or tussockland above the treeline. Eound on stumps, rotten logs, humus, tree bases and on trunks of tree ferns {Dicksonia and Cyathea), particularly at the base. Accompanying species are commonly Kurzia hippuroides, Psiloclada clandestina, Ptychom- nion aciculare, Rhizogonium distichum, and Wijkia extenuata. Other species less often seen with Bazzania adnexa are Acromastigum anisostomum, A. colensoanum, Bazzania nitida, B. novae- zelandiae, Dicranoloma dicarpum, D. robustum, Distichophyllum pulchellum, Het- eroscyphus billardierei, Hypnum chrysogaster, H. cupressiforme, Lepicolea scolopendra, Lepidozia pendulina, L. spinosissima, Leucobryum candidum, Saccogynidium australe, Schistochila balfouriana, S. nobilis, Telaranea tetrapila and T. tetradactyla. Comments: The apical dentition of the leaves in Bazzania adnexa is extremely variable. In well-developed plants it is coarsely denticulate or serrulate not only on the margins of the two or three principal teeth but also on the distal third to half of the lamina. The orientation of the leaves is also variable. Plants often have strongly ventrally secund leaves and, less often, plane and spreading leaves. The ragged, hyaline distal sector of the underleaf in typical Bazzania adnexa may occupy most of the underleaf area. No other New Zealand species of the genus has underleaves of this type. The hyaline portion is composed of thinner-walled, irregularly shaped cells, with an abrupt transition from the hyaline portion of the leaf to the thicker-walled, more collenchy- matous quadrate to subrectangular cells of the basal sector (Eig. 94: 10). In recently collected herbarium specimens the margin is colorless and transparent (decolorate) and the central-basal portion of the underleaf is green. Bazzania semicordata is placed in the synonymy of this species based on Gottsche et al. (1847, p. 720), who described the leaves as ‘‘tridenticulatus dentibus inaequalibus interdum minutissimis saepe denticulatus” and the underleaves as reniform and irregularly toothed at the apex. We have attempted to locate original material of this species, without success, at G, PC, S, STRandW. Mastigobryum kirkianum Steph. has been placed in the synonymy of Bazzania hochstetteri (e.g., Hodgson, 1954). One of us (JJE) has examined the type (G), which is here placed in the synonymy of B. adnexa. Type plants have persistent leaves, which may have teeth at the apex and, also, the texture is more like that of B. adnexa. Eorms of this species can be difficult to distinguish from other New Zealand Connatae, especially Bazzania hochstetteri and B. involuta var. submutica. Eor details, see the discussion under those taxa. Despite the extreme and often puzzling variability of the species, there is one expression in New Zealand worthy of recognition, the ‘To. aucklandica&#39;&#39; (Lindenberg and Gottsche, 1851), which is here recognized at the varietal level, as follows: Key to Varieties la. Underleaves often distinctly connate, often spreading, quadrate to broadly reniform, plane, the base not dilated, the hyaline cells mostly confined to the distal half; hyaline sector variable, the green thick-walled cells making up as much as half of the underleaf; plants pure green . var. adnexa (p. 430) lb. Underleaves scarcely connate or free (at least on one side), ± erect, triangular, tapering to a sharply channeled apex (the lateral margins sharply reflexed), the base cordate to subauriculate, with a narrow hyaline margin extending to the insertion; hyaline sector of underleaf often very broad, the green, thick- walled cells few and restricted to the median basal area; plants deep green . var. aucklandica (p. 431) Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. adnexa [Eig. 94: 1-6, 9, 10] Plants pure green; first branch underleaf typically connate to an underleaf of the main shoot, transversely inserted on the stem; flagelliform branches abundantly produced; underleaves connate on both sides, often distinctly so, erect to spreading, broadly reniform, with a ragged, hyaline apex, the lateral margins straight to moderately ampliate (not distinctly cordate at the base), the hyaline portion confined to the distal portion of the underleaf and not extending to the insertion as a narrow border. Distribution and Ecology: New Zealand: Auckland Islands; Australia: Tasmania, Victoria, New South Wales. This is one of our most common hepatics, occurring throughout New Zealand, and like other semi- weedy taxa, tolerates a variety of conditions. Eor example, it occurs in wet, rich forests grading to relatively dry forests and from sea level to the upper reaches of the forest zone, but does not extend into the penalpine or alpine zone. It tolerates a range of exposures from deeply shaded to fully exposed and a variety of substrates, being typically terricolous or corticolous or exceptionally saxicolous (including granite and limestone). Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) JJ.Engel &amp; Merrill [Eig. 94: 7, 8] Mastigobryum novae -hollandiae f . 7 2 aucklandicum Lindenb. &amp; Gottsche, Sp. Hepat. fasc. 8-11: 33, 46. 1851 {&#39;&#39;Aucklandica&#39;&#39;). Bazzania adnexa fo. aucklandica (Lindenb. &amp; Gottsche) E.A.Hodgs. ex Hamlin, Rec. Domin. Mus. 7: 251. 1972. Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) J.J.Engel &amp; Merrill, Bryologist 97: 319. 1994. Type: Auckland Is., Hooker (S!, herb. Lehmann, STR!). Plants rich, deep green in color, the underleaves appearing small and the stem narrow for plant size; first branch underleaf often free, obliquely inserted, often at right angles to underleaf of main shoot; flagelliform branches sparingly produced; leaves widely spreading and plane; underleaves narrowly connate or free (at least on one side), triangular-cordate, with a channeled apex formed by the sharply reflexed lateral margins, the base cordate to subauricu- late, bordered by a narrow hyaline strip extending to the insertion. Distribution and Ecology: Apparently confined to New Zealand including the Auckland Islands. Variety aucklandica typically occurs on rotted logs and tree-fern bases in forests (120-915 m).</pre>
+    
+    
+    
+    <pre class="description-text">Plants strongly anisophyllous, sprawling to suberect in loose cushions or mats, yellow- green to deep green to brownish green; shoots medium-sized, to 3.4 mm wide. Branching repeatedly pseudo-dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, narrowly ovate or ovate-lanceolate, undivided, tapering to a sharp or bidentate, serrulate apex; first branch underleaf 2-3-lobulate, subtransversely inserted on ventral side of main axis somewhat below base of branch, usually marginally con¬ nate at base to an underleaf of main axis or less commonly free, but with bases ± juxtaposed. Ventral-intercalary leafy branches sporadically produced, at times mimicking the terminal branches; stoloniform branches abundantly produced. Stems stiff, the cortical cells small, firm, with evenly thickened walls or the longitudinal walls very thick and the transverse walls thin. Leaves opposite, horizontal to ventrally deflexed, distinctly imbricate, with little or none of stem exposed in dorsal aspect, widely spreading (ca. 90°); leaves not vittate, 910-1120 p^m wide X 1470-1890 pm long, distinctly incubous, asymmetrically ovate-ligulate, falcate, the apex rather broadly truncate, the truncation square to oblique, the apex often somewhat plicate, coarsely and ± symmetrically 3-dentate, the principal teeth broadly acute to apiculate to subacuminate, 2-7 cells wide at base, the teeth terminating in a single cell or a uniseriate row of 2-3 cells, the terminal cell tapering to a sharp, thick-walled point, the tooth margins and intervening sinus bases sharply and irregularly denticulate (occasionally edentate); dorsal mar¬ gin strongly ampliate, distinctly arched and defining a broad crescentic line, extending to middle of stem or slightly beyond, cordate at base, the margin entire or denticulate in distal half; ventral margin straight to curved gently inward, somewhat dilated and subcordate at base, entire or denticulate. Cells of leaf differentiated into a broad, diffuse band of enlarged rectangular cells in the median longitudinal portion of the leaf (subvittate), the cells much smaller near the margins, particularly the dorsal; median cells 23-33 pm wide X 35-44 pm long, thin-walled, trigones variable: small and concave-sided to knot-like, intermediate thickenings sporadic; surface smooth or the teeth often finely papillose. Oil-bodies occupying a conspic- hy aline border of thin- walled eells; note 2 underleaves (above) are eonnate on both sides, the underleaf below (var. aucklandica) is narrowly eonnate at right base and free and subaurieulate at left. 8. Porthiek- walled eells and distal border of thin- walled, hyaline eells; note also the thiekened exposed wall of underleaf apex and margin. (Figs. 1-3, 5, 9, from Engel 12795, Tasmania, Myrtle Forest, SW of Collinsvale; 4, from Engel 20203, same loe.; 6, 10, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 7, from Child H1017, New Zealand, South Is., Otago EP, Mt. Cargill; 8, from Hatcher 152, New Zealand, North Is., Auekland EP, Waitakere Hills.) of first branch underleaf and its juxtaposition with main shoot underleaf (seeond from shoot base). uous portion of cell lumen, dull opaque, with a cloud-like appearance, 2-3(4) to (2)3-5 per median leaf cell, 3-5 per in subvitta cells, 6-8(11) per basal cell, potato- shaped, ovoid to broadly elliptic, often irregularly so, to at times sausage- shaped, homogeneous, but the oil- body contents often not consistent throughout and appearing to possess folds, indentations or auriculations, the oil-bodies 7. 2-8. 5 X 9.1-11.7 juim, a few 7.8 X 12.4-13 juim. Underleaves conspicuous, erect to spreading, connate with the leaves on both sides (feebly connate or free at least on one side in var. aucklandica), subquadrate to oblate to reniform (or in var. auck- landica, triangular and tapering to a sharply channeled apex, the lateral margins sharply reflexed), broader than long, the apex distinctly ragged and hyaline (decelerate), with irregular, sharp, often crowded, sinuate teeth (rarely subentire), the hyaline distal sector variable in width, often occupying as much as half of underleaf or (var. aucklandica) very broad and with the green, thick-walled cells few and restricted to the median basal area, the hyaline sector composed of thin- walled, sinuate-rhomboidal cells; base straight or (var. aucklandica) cordate to subauriculate and with a narrow hyaline margin extending to the insertion; median nonhyaline cells quadrate to ± elongate; surface of hyaline cells very delicately papillose. Eungal partner absent. Androecia on inconspicuous, short, determinate, tightly spicate, ventral-intercalary branches from leading shoots and both ventral and lateral sides of stoloniform branches; bracts ventricose- cucullate, the apex retuse to 2(3)-dentate; dorsal margin of disc slightly dilated, crenate- sporadically denticulate, the teeth unicellular, the margin sporadically smooth and merely with a few slime papillae; antheridia 1-2 per bract, the stalk biseriate; bracteolar antheridia present or absent. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem, the gynoecium base swollen and rhizoidous; bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth, the bracts concave, ovate to subrectangular; apices with 4 main long lobes, each lobe either simple or in turn subdivided into 2 prominent lobules, the lobes or lobules markedly leptodermous, each subcaudate and with the distal sector consisting of a rather long biseriate region with the cell tips often variously projecting, the lobe-lobule biseriate to the tip or the tip composed of a uniseriate row of at most 3 cells, the lobe-lobule margins sparingly dentate-ciliate below the biseriate area; lamina composed of ± regularly short- to long-rectangular, leptodermous cells, the margin bordered by cells of variable shape, some only slightly longer than wide, others long and narrow, the apical or free end of marginal cells often divergent and forming a short projection or a tooth, the margin irregularly and rather copiously crenate-dentate, but often with a few short to long cilia; bracteole similar in size and form. Perianth prominent, straight to curved, fusiform, terete below, the distal half pluriplicate and gradually narrowing to the contracted mouth, the mouth irregularly dentate-subciliate, the processes composed of 1 or 2 superposed cells that are thin-walled, elongate and often completely laterally free; perianth ca. 9-10 stratose in basal sector. Seta with 15 rows of outer cells, the interior cells not seen. Capsule rather long-ellipsoidal, the wall 70-74 juim thick, of 5-6 layers that are subequally thick or the outer layer feebly thicker; outer layer of cells very small, 16-19 juim wide X 28-36 juim long, with two-phase 8. Gynoecium and mature sporophyte. (Fig. 1, from Engel 19266, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Tiropahi R.; 2-8, from Engel 18741, New Zealand, South Is., Fiord¬ land EP, above South Branch of Borland Burn.) Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Bazzania involuta (Mont.) Trevis. dorsal, dilated portion of leaf. 3. Bazzania okaritana Meagher &amp; Glenny. Cells of median seetor of leaf. 4. Bazzania okaritana Meagher &amp; Glenny. Marginal and submarginal eells (dorsal-median seetor). (Figs. 1, 2, from Glenny 9199b, New Zealand, South Is., Westland EP, Upper Otira Valley; 3, 4, from Glenny 9191, type.) development, the longitudinal walls with very thin, feebly developed, sheet-like thickenings and a few large nodule-like to spine-like thickenings alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated nodule; innermost layer of cells with ± tiered, irregularly narrowly to broadly rectangular cells, with semiannular bands common, rather wide, close, usu¬ ally complete, rather frequently forked and anastomosing to delimit ill-defined, local fenestrae. Spores 16.8-19.7 juim in diam., brown, with dense, sharply defined papillae and abundant simple or furcate vermiculate markings. Elaters rigid, nontortuous, 9.1-11.5 juim wide, only slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island (0-500 m). South Island (0-1070 m). North Island (180-915 m), Chatham Islands; Australia: Tasmania, Victoria, New South Wales, Queensland. In the South Island found at over 1000 m in Nelson and Marlborough, but in Eiordland only reaching ca. 600 m. Very widespread and common and recorded from all provinces, but it is known from a single Marlborough record (Mt. Robertson), a single Canterbury record (Wilberforce River) and records from Otago are from only the Otago Coast and Lakes ERs. All records are from either forest or scrub with a closed canopy. Eorest types include Agathis australis forest, tall podocarp forest, sometimes mixed with Nothofagus and Wein- mannia, all types and mixtures of Nothofagus forest, Knightia excelsa - Beilschmiedia tawa forest and Weinmannia racemosa - Metrosideros umbellata forest. Not recorded from scrub, shrub-tussockland, or tussockland above the treeline. Eound on stumps, rotten logs, humus, tree bases and on trunks of tree ferns {Dicksonia and Cyathea), particularly at the base. Accompanying species are commonly Kurzia hippuroides, Psiloclada clandestina, Ptychom- nion aciculare, Rhizogonium distichum, and Wijkia extenuata. Other species less often seen with Bazzania adnexa are Acromastigum anisostomum, A. colensoanum, Bazzania nitida, B. novae- zelandiae, Dicranoloma dicarpum, D. robustum, Distichophyllum pulchellum, Het- eroscyphus billardierei, Hypnum chrysogaster, H. cupressiforme, Lepicolea scolopendra, Lepidozia pendulina, L. spinosissima, Leucobryum candidum, Saccogynidium australe, Schistochila balfouriana, S. nobilis, Telaranea tetrapila and T. tetradactyla. Comments: The apical dentition of the leaves in Bazzania adnexa is extremely variable. In well-developed plants it is coarsely denticulate or serrulate not only on the margins of the two or three principal teeth but also on the distal third to half of the lamina. The orientation of the leaves is also variable. Plants often have strongly ventrally secund leaves and, less often, plane and spreading leaves. The ragged, hyaline distal sector of the underleaf in typical Bazzania adnexa may occupy most of the underleaf area. No other New Zealand species of the genus has underleaves of this type. The hyaline portion is composed of thinner-walled, irregularly shaped cells, with an abrupt transition from the hyaline portion of the leaf to the thicker-walled, more collenchy- matous quadrate to subrectangular cells of the basal sector (Eig. 94: 10). In recently collected herbarium specimens the margin is colorless and transparent (decolorate) and the central-basal portion of the underleaf is green. Bazzania semicordata is placed in the synonymy of this species based on Gottsche et al. (1847, p. 720), who described the leaves as ‘‘tridenticulatus dentibus inaequalibus interdum minutissimis saepe denticulatus” and the underleaves as reniform and irregularly toothed at the apex. We have attempted to locate original material of this species, without success, at G, PC, S, STRandW. Mastigobryum kirkianum Steph. has been placed in the synonymy of Bazzania hochstetteri (e.g., Hodgson, 1954). One of us (JJE) has examined the type (G), which is here placed in the synonymy of B. adnexa. Type plants have persistent leaves, which may have teeth at the apex and, also, the texture is more like that of B. adnexa. Eorms of this species can be difficult to distinguish from other New Zealand Connatae, especially Bazzania hochstetteri and B. involuta var. submutica. Eor details, see the discussion under those taxa. Despite the extreme and often puzzling variability of the species, there is one expression in New Zealand worthy of recognition, the ‘To. aucklandica&#39;&#39; (Lindenberg and Gottsche, 1851), which is here recognized at the varietal level, as follows: Key to Varieties la. Underleaves often distinctly connate, often spreading, quadrate to broadly reniform, plane, the base not dilated, the hyaline cells mostly confined to the distal half; hyaline sector variable, the green thick-walled cells making up as much as half of the underleaf; plants pure green . var. adnexa (p. 430) lb. Underleaves scarcely connate or free (at least on one side), ± erect, triangular, tapering to a sharply channeled apex (the lateral margins sharply reflexed), the base cordate to subauriculate, with a narrow hyaline margin extending to the insertion; hyaline sector of underleaf often very broad, the green, thick- walled cells few and restricted to the median basal area; plants deep green . var. aucklandica (p. 431) Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. adnexa [Eig. 94: 1-6, 9, 10] Plants pure green; first branch underleaf typically connate to an underleaf of the main shoot, transversely inserted on the stem; flagelliform branches abundantly produced; underleaves connate on both sides, often distinctly so, erect to spreading, broadly reniform, with a ragged, hyaline apex, the lateral margins straight to moderately ampliate (not distinctly cordate at the base), the hyaline portion confined to the distal portion of the underleaf and not extending to the insertion as a narrow border. Distribution and Ecology: New Zealand: Auckland Islands; Australia: Tasmania, Victoria, New South Wales. This is one of our most common hepatics, occurring throughout New Zealand, and like other semi- weedy taxa, tolerates a variety of conditions. Eor example, it occurs in wet, rich forests grading to relatively dry forests and from sea level to the upper reaches of the forest zone, but does not extend into the penalpine or alpine zone. It tolerates a range of exposures from deeply shaded to fully exposed and a variety of substrates, being typically terricolous or corticolous or exceptionally saxicolous (including granite and limestone). Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) JJ.Engel &amp; Merrill [Eig. 94: 7, 8] Mastigobryum novae -hollandiae f . 7 2 aucklandicum Lindenb. &amp; Gottsche, Sp. Hepat. fasc. 8-11: 33, 46. 1851 {&#39;&#39;Aucklandica&#39;&#39;). Bazzania adnexa fo. aucklandica (Lindenb. &amp; Gottsche) E.A.Hodgs. ex Hamlin, Rec. Domin. Mus. 7: 251. 1972. Bazzania adnexa var. aucklandica (Lindenb. &amp; Gottsche) J.J.Engel &amp; Merrill, Bryologist 97: 319. 1994. Type: Auckland Is., Hooker (S!, herb. Lehmann, STR!). Plants rich, deep green in color, the underleaves appearing small and the stem narrow for plant size; first branch underleaf often free, obliquely inserted, often at right angles to underleaf of main shoot; flagelliform branches sparingly produced; leaves widely spreading and plane; underleaves narrowly connate or free (at least on one side), triangular-cordate, with a channeled apex formed by the sharply reflexed lateral margins, the base cordate to subauricu- late, bordered by a narrow hyaline strip extending to the insertion. Distribution and Ecology: Apparently confined to New Zealand including the Auckland Islands. Variety aucklandica typically occurs on rotted logs and tree-fern bases in forests (120-915 m).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p class="description-text">5mm                       Tylimanthus tenellus
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; ACT; Tas.; Lord Howe I.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Bazzania adnexa var. adnexa</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">5mm                       Tylimanthus tenellus
 
 
 
@@ -1106,16 +1050,19 @@ Similar species: Frullania spp., Radula spp., Lejeunea spp., other genera ofLeje
 
 
 
-------5mm                                      Cheilolejuenea mimosa</p>
+------5mm                                      Cheilolejuenea mimosa</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">broadly curved, cells of disc and lobe margins              cally 3-stratose in basal portion.
+    <pre class="description-text">broadly curved, cells of disc and lobe margins              cally 3-stratose in basal portion.
                               often bulging. Cells of disc thin- to moderately               Seta with 8 rows of outer cells surrounding an
                               and evenly thick-walled and firm, with small but            inner core of 21–24 much smaller cells. Capsule
                               distinct trigones, the cells in median sector of disc       rather short elliptic, 1070 3 525 mm, the wall 41–
@@ -1175,16 +1122,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                          ‘‘Dusky Bay,’’ and is a probable isotype, although                  2. Cells of disc smooth; uniseriate portion of
                          gynoecia are not present.                                               leaf lobes 2–4(5) cells long; underleaf disc
                             DIFFERENTIATION AND VARIATION—Telaranea                              (8)10–14 cells wide in distal portion nar-
-                         patentissima is a relatively common plant in New                        rowing to 8 cells wide at base . . . . . . . .</p>
+                         patentissima is a relatively common plant in New                        rowing to 8 cells wide at base . . . . . . . .</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Bazzania adnexa is a species of liverwort in the Lepidoziaceae family. A large liverwort, appearing in bright green mats or loose cushions, found in moist forests. Plants are characteristically branched in a Y-shape. Commonly found in suitable habitats in Australia and New Zealand.</p>
+    <pre class="description-text">Bazzania adnexa is a species of liverwort in the Lepidoziaceae family. A large liverwort, appearing in bright green mats or loose cushions, found in moist forests. Plants are characteristically branched in a Y-shape. Commonly found in suitable habitats in Australia and New Zealand.</pre>
     
     
   </details>
@@ -1193,14 +1143,75 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Bazzania</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania adnexa f. novae-hollandiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania adnexa var. adnexa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania adnexa var. aucklandica</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania echinata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania nitida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania novaezelandiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania tridens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania wattsiana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania adnexa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Bazzania novae-hollandiae</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Bazzania semicordata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia adnexa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia novae-hollandiae</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum adnexa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum compactum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum heterodontum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum kirkianum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum macroamphigastrum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum macrodontum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum nitens</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum novae-hollandiae</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum olivaceum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum parasiticum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum polyodon</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum semicordatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum vulcanicum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -1215,22 +1226,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [74.4, 62.5, 81.1, 86.6, 123.1, 128.3, 143.8, 155.0, 137.7, 114.6, 88.4, 91.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.2, 20.3, 18.3, 15.3, 12.6, 10.7, 10.1, 10.8, 12.6, 14.4, 16.8, 18.3], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.1, 10.2, 9.0, 7.1, 5.5, 4.1, 3.4, 3.5, 4.8, 5.8, 7.7, 8.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,47 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Lepicolea attenuata</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepicoleaceae</span>
-    <span class="badge secondary">Lepicolea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (12)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acacia attenuata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Attenuata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Castilleja attenuata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hymenochaete attenuata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Isoetes attenuata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepicolea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepicolea rara (Steph.) Grolle</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepicolea scolopendra</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Verticordia attenuata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herbertus attenuatus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Sendtnera attenuata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Sendtnera quadrifida</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Lepicolea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -80,21 +48,25 @@
     <p class="big-num">245</p>
     <footer>1 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">20</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -102,198 +74,191 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>335.0–465.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>335.0–465.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>20.0–24.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>20.0–24.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>16.0–22.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>16.0–22.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–3.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–4.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–4.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>3.0–7.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>3.0–7.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.6</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.6</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>small</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>ACROMASTIGUM_AUSTRALIA_2014</strong> (1 entry)</summary>
+    <summary>
+      <strong>ACROMASTIGUM_AUSTRALIA_2014</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
+    <pre class="description-text">often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
 imbricate, insertion transverse but sometimes the lateral margins slightly decurrent, somewhat spreading to
 almost squarrose, large (c. 3/4 size of lateral leaves), 1.2–1.7 × as wide as stem, suborbicular, 270–545 μm
 long, 335–465 μm wide, not auriculate at base; apex truncate, subentire to emarginate, sinuses vestigal, lobes
@@ -353,16 +318,19 @@ Scotts Peak Road, 42°49&#39;S 146°23&#39;E, 590 m, 19 Oct 2013, J. Jarman s.n.
 (HO49566).
 New Zealand: North Island: Auckland: Coromandel Ranges, Mt Moehau, E from trig, 36°32&#39;17&#39;&#39;S 175°24&#39;59&#39;&#39;E, 640 m,
 3 Nov 1980, E.K. Cameron s.n. (AK323763); Coromandel Ranges, ridge SW of Mt Rowe along track to Mt Rowe, 37°2&#39;16&#39;&#39;S
-175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb</p>
+175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Hygrolembidium australe (Steph.) Grolle                        Lepidozia allisonii Herz.
+    <pre class="description-text">Hygrolembidium australe (Steph.) Grolle                        Lepidozia allisonii Herz.
 Hygrolembidium rigidum R.M.Schust. &amp; ].].Engel                Telaranea dispar (Mont. ex Taylor &amp; Hook.f.)
 Hygrolembidium triquetrum J.J .Engel &amp;                         E.A.Hodgs.
        R.M.Schust.                                     Kurzia hippuroides var. ornata J.J.Engel &amp;
@@ -422,29 +390,35 @@ Lepidozia ulothrix (Schwaegr.) Lindenb.                         Solari
 Leptolejeunea elliptica subsp. subacuta (A.Evans)               Tylimanthus spinosus Steph.
         R.M.Schust.                                      Marsupidium perpusillum (Colenso) E.A.Hodgs.
 Leptophyllopsis laxus (Mitt.) R.M.Schust.                       Tylimanthus perpusillus Colenso
-Leptoscyphus innovatus (E.A.Hodgs.) J.J.Engel            Marsupidium surculosum (Nees) Schiffn</p>
+Leptoscyphus innovatus (E.A.Hodgs.) J.J.Engel            Marsupidium surculosum (Nees) Schiffn</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants stiff and wiry, pale green to golden brown; (20)60-70 mm long, 13-20(40) mm wide; shoots to 1.6 mm wide. Stems lacking paraphyllia. Leaves rigid, obliquely spreading, imbricate, subsymmetrically rectangular to narrowly long-ovate, the lamina often somewhat dilated dorsally; leaves 0.65-0.80 mm wide at level of median sinus, (1.1)1. 3-1. 6 mm long, quadrifid, the median sinus descending to 0.45-0.7, the marginal pair of sinuses often differing from one another in depth, the lobes acuminate to subcaudate, green throughout, the leaf lobes with uniseriate row 130-215 juim long, the terminal cell 1-5:1, 40-70 mm long, the second and third cells from tip at most 3:1, the fourth cell (when present) normally subquadrate. sporophyte, dorsal view. 3. Innermost 9 bract. 4. Innermost 9 bracteole. 5. Paraphyses from coelothe segment margins entire; dorsal and ventral margins of lamina broadly curved, subauricu- late at base, the marginal cells with swollen, protuberant septa giving a crenulate appearance, the dorsal margin otherwise coarsely ciliate-laciniate, the ventral entire, sporadically with a cilium. Vitta of leaves distinct, in median sector of lamina and extending to level of median sinus, or, less conspicuously, to middle of lobes, but not to the apices; cells of vitta elongate, near the leaf base 20-24 juim wide, 43-55 juim long. Leaf cells with massive trigones, the cells between vitta and margin in median sector of lamina 16-22 juim wide and long; surface of lamina coarsely striate-papillose, of uniseriate row of lobes papillose, of leaf base markedly long- striate. Oil-bodies 3-7 per cell, smooth, colorless, 4 X 4-6 juim, only visible in young leaves, not persisting. Underleaves ± clasping the stem, spreading, often widely so, imbricate, symmetric, the shape as in leaves, quadrifid, the median sinus descending to 0.6-0. 8; lobes as in leaves; lamina margins crenulate as in leaves, otherwise entire or repand, sporadically with a cilium. Asexual reproduction by regeneration or by fragmentation of leaves from older parts of stems. Eungal partner absent. Plants dioecious. Androecia restricted to branches, wider than sterile sectors of branch, terminal but eventually becoming intercalary; bracts in 3-8 pairs, less deeply lobed than leaves, the lamina ventricose; antheridia 1-2 per bract, the stalk and jacket-cells thick- walled. Gy- noecia on branches with several, but never numerous, vegetative leaves; bracts of innermost series much larger than branch leaves, subobtrapezoid, quadrifid, the median sinus descending to 0.7-0. 8, the lateral pair of sinuses much shallower, the lobes caudate, sulcate at least in basal half, the segment margins sparingly ciliate or entire; lamina margins rather copiously ciliate-laciniate-lobulate; bracteoles of innermost series as in bracts. Seta to 2.3 mm long, 10-11 cells in diam., with 48 rows of epidermal cells surrounding an inner core of scattered cells similar in size to epidermal cells. Capsule wall 96-106 juim thick, of 6 layers; outer layer of cells subquadrate to short-rectangular, with two-phase type of distribution of thickenings, the radial walls with broad-based nodules that tend to cluster on op¬ posing sides of a radial wall; innermost layer of cells highly irregular in shape, the radial walls with dense nodular thickenings that are sometimes confluent at the base, the walls with semi- annular bands sporadic. Spores 40-44 juim in diam. (including conical projections), brown, aculeate, the surface with fine papillae between the conical projections. Elaters tortuous, 10.6-1 1 juim wide, bispiral, strongly tapered toward the tips, the tips slender, each with a nonspiral thickening. Distribution and Ecology: Endemic to New Zealand: South Island (120-1130 m) and North Island (300-1220 m). Known from Eiordland, Westland, Canterbury, Western Nelson, Sounds-Nelson, Southern North Island, Volcanic Plateau, Taranaki, Gisborne, Auckland and Northland EPs. In the South Island not extending much east of the Main Divide. Very common throughout the North Island. Rather common in forest and scrub (60-1400 m), Lepicolea attenuata is an epiphyte on tree trunks and small to large branches of trees. Recorded on hosts Nothofagus menziesii, N. solan- dri, Griselinia littoralis, Beilschmiedia tawa, Weinmannia racemosa, Halocarpus biformis, stalk. (All from Engel 18497, New Zealand, South Is., Canterbury EP, Arthur’s Pass Natl. Park, Bealey Valley Track.) Lepicolea attenuata (Mitt.) Steph. (figs. 1-6) and Lepicolea scolopendra (Hook.) Dumort. ex Tre- Lepidothamnus intermedius, Dracophyllum longifolium and on twigs of Neomyrtus peduncu- latus. It may often be found loosely festooning tree branches, and on several occasions it was found on fallen tree branches, and may be a tree-top species. It also occurs on decaying logs and stumps as well as on boulders. Typical associates are Chandonanthus squarrosus, Cladomnion ericoides, Cuspidatula monodon, Dicnemon calycinum, D. semicryptum, Frullania rostrata, Goebeliella cornigera, Herbertus oldfieldianus , Hymenophyllum armstrongii, Jamesoniella kirkii, Macromitrium longipes, M. microstomum, Paraschistochila pinnatifolia, R tuloides, Plagiochila circinalis and Weymouthia cockle arifolia. Comments: The species may be distinguished, even in the field, by the relatively short cells of the leaf lobe apices, the cells other than the terminal cell being only at most 3:1 (Eig. 7: 3). These relatively short cells, at least for the most part, are chlorophyll-bearing and make the distal sector of the leaf lobes green and acuminate rather than hyaline and setaceous as in Lepicolea scolopendra.</p>
+    <pre class="description-text">Plants stiff and wiry, pale green to golden brown; (20)60-70 mm long, 13-20(40) mm wide; shoots to 1.6 mm wide. Stems lacking paraphyllia. Leaves rigid, obliquely spreading, imbricate, subsymmetrically rectangular to narrowly long-ovate, the lamina often somewhat dilated dorsally; leaves 0.65-0.80 mm wide at level of median sinus, (1.1)1. 3-1. 6 mm long, quadrifid, the median sinus descending to 0.45-0.7, the marginal pair of sinuses often differing from one another in depth, the lobes acuminate to subcaudate, green throughout, the leaf lobes with uniseriate row 130-215 juim long, the terminal cell 1-5:1, 40-70 mm long, the second and third cells from tip at most 3:1, the fourth cell (when present) normally subquadrate. sporophyte, dorsal view. 3. Innermost 9 bract. 4. Innermost 9 bracteole. 5. Paraphyses from coelothe segment margins entire; dorsal and ventral margins of lamina broadly curved, subauricu- late at base, the marginal cells with swollen, protuberant septa giving a crenulate appearance, the dorsal margin otherwise coarsely ciliate-laciniate, the ventral entire, sporadically with a cilium. Vitta of leaves distinct, in median sector of lamina and extending to level of median sinus, or, less conspicuously, to middle of lobes, but not to the apices; cells of vitta elongate, near the leaf base 20-24 juim wide, 43-55 juim long. Leaf cells with massive trigones, the cells between vitta and margin in median sector of lamina 16-22 juim wide and long; surface of lamina coarsely striate-papillose, of uniseriate row of lobes papillose, of leaf base markedly long- striate. Oil-bodies 3-7 per cell, smooth, colorless, 4 X 4-6 juim, only visible in young leaves, not persisting. Underleaves ± clasping the stem, spreading, often widely so, imbricate, symmetric, the shape as in leaves, quadrifid, the median sinus descending to 0.6-0. 8; lobes as in leaves; lamina margins crenulate as in leaves, otherwise entire or repand, sporadically with a cilium. Asexual reproduction by regeneration or by fragmentation of leaves from older parts of stems. Eungal partner absent. Plants dioecious. Androecia restricted to branches, wider than sterile sectors of branch, terminal but eventually becoming intercalary; bracts in 3-8 pairs, less deeply lobed than leaves, the lamina ventricose; antheridia 1-2 per bract, the stalk and jacket-cells thick- walled. Gy- noecia on branches with several, but never numerous, vegetative leaves; bracts of innermost series much larger than branch leaves, subobtrapezoid, quadrifid, the median sinus descending to 0.7-0. 8, the lateral pair of sinuses much shallower, the lobes caudate, sulcate at least in basal half, the segment margins sparingly ciliate or entire; lamina margins rather copiously ciliate-laciniate-lobulate; bracteoles of innermost series as in bracts. Seta to 2.3 mm long, 10-11 cells in diam., with 48 rows of epidermal cells surrounding an inner core of scattered cells similar in size to epidermal cells. Capsule wall 96-106 juim thick, of 6 layers; outer layer of cells subquadrate to short-rectangular, with two-phase type of distribution of thickenings, the radial walls with broad-based nodules that tend to cluster on op¬ posing sides of a radial wall; innermost layer of cells highly irregular in shape, the radial walls with dense nodular thickenings that are sometimes confluent at the base, the walls with semi- annular bands sporadic. Spores 40-44 juim in diam. (including conical projections), brown, aculeate, the surface with fine papillae between the conical projections. Elaters tortuous, 10.6-1 1 juim wide, bispiral, strongly tapered toward the tips, the tips slender, each with a nonspiral thickening. Distribution and Ecology: Endemic to New Zealand: South Island (120-1130 m) and North Island (300-1220 m). Known from Eiordland, Westland, Canterbury, Western Nelson, Sounds-Nelson, Southern North Island, Volcanic Plateau, Taranaki, Gisborne, Auckland and Northland EPs. In the South Island not extending much east of the Main Divide. Very common throughout the North Island. Rather common in forest and scrub (60-1400 m), Lepicolea attenuata is an epiphyte on tree trunks and small to large branches of trees. Recorded on hosts Nothofagus menziesii, N. solan- dri, Griselinia littoralis, Beilschmiedia tawa, Weinmannia racemosa, Halocarpus biformis, stalk. (All from Engel 18497, New Zealand, South Is., Canterbury EP, Arthur’s Pass Natl. Park, Bealey Valley Track.) Lepicolea attenuata (Mitt.) Steph. (figs. 1-6) and Lepicolea scolopendra (Hook.) Dumort. ex Tre- Lepidothamnus intermedius, Dracophyllum longifolium and on twigs of Neomyrtus peduncu- latus. It may often be found loosely festooning tree branches, and on several occasions it was found on fallen tree branches, and may be a tree-top species. It also occurs on decaying logs and stumps as well as on boulders. Typical associates are Chandonanthus squarrosus, Cladomnion ericoides, Cuspidatula monodon, Dicnemon calycinum, D. semicryptum, Frullania rostrata, Goebeliella cornigera, Herbertus oldfieldianus , Hymenophyllum armstrongii, Jamesoniella kirkii, Macromitrium longipes, M. microstomum, Paraschistochila pinnatifolia, R tuloides, Plagiochila circinalis and Weymouthia cockle arifolia. Comments: The species may be distinguished, even in the field, by the relatively short cells of the leaf lobe apices, the cells other than the terminal cell being only at most 3:1 (Eig. 7: 3). These relatively short cells, at least for the most part, are chlorophyll-bearing and make the distal sector of the leaf lobes green and acuminate rather than hyaline and setaceous as in Lepicolea scolopendra.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants stiff and wiry, pale green to golden brown; (20)60-70 mm long, 13-20(40) mm wide; shoots to 1.6 mm wide. Stems lacking paraphyllia. Leaves rigid, obliquely spreading, imbricate, subsymmetrically rectangular to narrowly long-ovate, the lamina often somewhat dilated dorsally; leaves 0.65-0.80 mm wide at level of median sinus, (1.1)1. 3-1. 6 mm long, quadrifid, the median sinus descending to 0.45-0.7, the marginal pair of sinuses often differing from one another in depth, the lobes acuminate to subcaudate, green throughout, the leaf lobes with uniseriate row 130-215 juim long, the terminal cell 1-5:1, 40-70 mm long, the second and third cells from tip at most 3:1, the fourth cell (when present) normally subquadrate. sporophyte, dorsal view. 3. Innermost 9 bract. 4. Innermost 9 bracteole. 5. Paraphyses from coelothe segment margins entire; dorsal and ventral margins of lamina broadly curved, subauricu- late at base, the marginal cells with swollen, protuberant septa giving a crenulate appearance, the dorsal margin otherwise coarsely ciliate-laciniate, the ventral entire, sporadically with a cilium. Vitta of leaves distinct, in median sector of lamina and extending to level of median sinus, or, less conspicuously, to middle of lobes, but not to the apices; cells of vitta elongate, near the leaf base 20-24 juim wide, 43-55 juim long. Leaf cells with massive trigones, the cells between vitta and margin in median sector of lamina 16-22 juim wide and long; surface of lamina coarsely striate-papillose, of uniseriate row of lobes papillose, of leaf base markedly long- striate. Oil-bodies 3-7 per cell, smooth, colorless, 4 X 4-6 juim, only visible in young leaves, not persisting. Underleaves ± clasping the stem, spreading, often widely so, imbricate, symmetric, the shape as in leaves, quadrifid, the median sinus descending to 0.6-0. 8; lobes as in leaves; lamina margins crenulate as in leaves, otherwise entire or repand, sporadically with a cilium. Asexual reproduction by regeneration or by fragmentation of leaves from older parts of stems. Eungal partner absent. Plants dioecious. Androecia restricted to branches, wider than sterile sectors of branch, terminal but eventually becoming intercalary; bracts in 3-8 pairs, less deeply lobed than leaves, the lamina ventricose; antheridia 1-2 per bract, the stalk and jacket-cells thick- walled. Gy- noecia on branches with several, but never numerous, vegetative leaves; bracts of innermost series much larger than branch leaves, subobtrapezoid, quadrifid, the median sinus descending to 0.7-0. 8, the lateral pair of sinuses much shallower, the lobes caudate, sulcate at least in basal half, the segment margins sparingly ciliate or entire; lamina margins rather copiously ciliate-laciniate-lobulate; bracteoles of innermost series as in bracts. Seta to 2.3 mm long, 10-11 cells in diam., with 48 rows of epidermal cells surrounding an inner core of scattered cells similar in size to epidermal cells. Capsule wall 96-106 juim thick, of 6 layers; outer layer of cells subquadrate to short-rectangular, with two-phase type of distribution of thickenings, the radial walls with broad-based nodules that tend to cluster on op¬ posing sides of a radial wall; innermost layer of cells highly irregular in shape, the radial walls with dense nodular thickenings that are sometimes confluent at the base, the walls with semi- annular bands sporadic. Spores 40-44 juim in diam. (including conical projections), brown, aculeate, the surface with fine papillae between the conical projections. Elaters tortuous, 10.6-1 1 juim wide, bispiral, strongly tapered toward the tips, the tips slender, each with a nonspiral thickening. Distribution and Ecology: Endemic to New Zealand: South Island (120-1130 m) and North Island (300-1220 m). Known from Eiordland, Westland, Canterbury, Western Nelson, Sounds-Nelson, Southern North Island, Volcanic Plateau, Taranaki, Gisborne, Auckland and Northland EPs. In the South Island not extending much east of the Main Divide. Very common throughout the North Island. Rather common in forest and scrub (60-1400 m), Lepicolea attenuata is an epiphyte on tree trunks and small to large branches of trees. Recorded on hosts Nothofagus menziesii, N. solan- dri, Griselinia littoralis, Beilschmiedia tawa, Weinmannia racemosa, Halocarpus biformis, stalk. (All from Engel 18497, New Zealand, South Is., Canterbury EP, Arthur’s Pass Natl. Park, Bealey Valley Track.) Lepicolea attenuata (Mitt.) Steph. (figs. 1-6) and Lepicolea scolopendra (Hook.) Dumort. ex Tre- Lepidothamnus intermedius, Dracophyllum longifolium and on twigs of Neomyrtus peduncu- latus. It may often be found loosely festooning tree branches, and on several occasions it was found on fallen tree branches, and may be a tree-top species. It also occurs on decaying logs and stumps as well as on boulders. Typical associates are Chandonanthus squarrosus, Cladomnion ericoides, Cuspidatula monodon, Dicnemon calycinum, D. semicryptum, Frullania rostrata, Goebeliella cornigera, Herbertus oldfieldianus , Hymenophyllum armstrongii, Jamesoniella kirkii, Macromitrium longipes, M. microstomum, Paraschistochila pinnatifolia, R tuloides, Plagiochila circinalis and Weymouthia cockle arifolia. Comments: The species may be distinguished, even in the field, by the relatively short cells of the leaf lobe apices, the cells other than the terminal cell being only at most 3:1 (Eig. 7: 3). These relatively short cells, at least for the most part, are chlorophyll-bearing and make the distal sector of the leaf lobes green and acuminate rather than hyaline and setaceous as in Lepicolea scolopendra.</p>
+    <pre class="description-text">Plants stiff and wiry, pale green to golden brown; (20)60-70 mm long, 13-20(40) mm wide; shoots to 1.6 mm wide. Stems lacking paraphyllia. Leaves rigid, obliquely spreading, imbricate, subsymmetrically rectangular to narrowly long-ovate, the lamina often somewhat dilated dorsally; leaves 0.65-0.80 mm wide at level of median sinus, (1.1)1. 3-1. 6 mm long, quadrifid, the median sinus descending to 0.45-0.7, the marginal pair of sinuses often differing from one another in depth, the lobes acuminate to subcaudate, green throughout, the leaf lobes with uniseriate row 130-215 juim long, the terminal cell 1-5:1, 40-70 mm long, the second and third cells from tip at most 3:1, the fourth cell (when present) normally subquadrate. sporophyte, dorsal view. 3. Innermost 9 bract. 4. Innermost 9 bracteole. 5. Paraphyses from coelothe segment margins entire; dorsal and ventral margins of lamina broadly curved, subauricu- late at base, the marginal cells with swollen, protuberant septa giving a crenulate appearance, the dorsal margin otherwise coarsely ciliate-laciniate, the ventral entire, sporadically with a cilium. Vitta of leaves distinct, in median sector of lamina and extending to level of median sinus, or, less conspicuously, to middle of lobes, but not to the apices; cells of vitta elongate, near the leaf base 20-24 juim wide, 43-55 juim long. Leaf cells with massive trigones, the cells between vitta and margin in median sector of lamina 16-22 juim wide and long; surface of lamina coarsely striate-papillose, of uniseriate row of lobes papillose, of leaf base markedly long- striate. Oil-bodies 3-7 per cell, smooth, colorless, 4 X 4-6 juim, only visible in young leaves, not persisting. Underleaves ± clasping the stem, spreading, often widely so, imbricate, symmetric, the shape as in leaves, quadrifid, the median sinus descending to 0.6-0. 8; lobes as in leaves; lamina margins crenulate as in leaves, otherwise entire or repand, sporadically with a cilium. Asexual reproduction by regeneration or by fragmentation of leaves from older parts of stems. Eungal partner absent. Plants dioecious. Androecia restricted to branches, wider than sterile sectors of branch, terminal but eventually becoming intercalary; bracts in 3-8 pairs, less deeply lobed than leaves, the lamina ventricose; antheridia 1-2 per bract, the stalk and jacket-cells thick- walled. Gy- noecia on branches with several, but never numerous, vegetative leaves; bracts of innermost series much larger than branch leaves, subobtrapezoid, quadrifid, the median sinus descending to 0.7-0. 8, the lateral pair of sinuses much shallower, the lobes caudate, sulcate at least in basal half, the segment margins sparingly ciliate or entire; lamina margins rather copiously ciliate-laciniate-lobulate; bracteoles of innermost series as in bracts. Seta to 2.3 mm long, 10-11 cells in diam., with 48 rows of epidermal cells surrounding an inner core of scattered cells similar in size to epidermal cells. Capsule wall 96-106 juim thick, of 6 layers; outer layer of cells subquadrate to short-rectangular, with two-phase type of distribution of thickenings, the radial walls with broad-based nodules that tend to cluster on op¬ posing sides of a radial wall; innermost layer of cells highly irregular in shape, the radial walls with dense nodular thickenings that are sometimes confluent at the base, the walls with semi- annular bands sporadic. Spores 40-44 juim in diam. (including conical projections), brown, aculeate, the surface with fine papillae between the conical projections. Elaters tortuous, 10.6-1 1 juim wide, bispiral, strongly tapered toward the tips, the tips slender, each with a nonspiral thickening. Distribution and Ecology: Endemic to New Zealand: South Island (120-1130 m) and North Island (300-1220 m). Known from Eiordland, Westland, Canterbury, Western Nelson, Sounds-Nelson, Southern North Island, Volcanic Plateau, Taranaki, Gisborne, Auckland and Northland EPs. In the South Island not extending much east of the Main Divide. Very common throughout the North Island. Rather common in forest and scrub (60-1400 m), Lepicolea attenuata is an epiphyte on tree trunks and small to large branches of trees. Recorded on hosts Nothofagus menziesii, N. solan- dri, Griselinia littoralis, Beilschmiedia tawa, Weinmannia racemosa, Halocarpus biformis, stalk. (All from Engel 18497, New Zealand, South Is., Canterbury EP, Arthur’s Pass Natl. Park, Bealey Valley Track.) Lepicolea attenuata (Mitt.) Steph. (figs. 1-6) and Lepicolea scolopendra (Hook.) Dumort. ex Tre- Lepidothamnus intermedius, Dracophyllum longifolium and on twigs of Neomyrtus peduncu- latus. It may often be found loosely festooning tree branches, and on several occasions it was found on fallen tree branches, and may be a tree-top species. It also occurs on decaying logs and stumps as well as on boulders. Typical associates are Chandonanthus squarrosus, Cladomnion ericoides, Cuspidatula monodon, Dicnemon calycinum, D. semicryptum, Frullania rostrata, Goebeliella cornigera, Herbertus oldfieldianus , Hymenophyllum armstrongii, Jamesoniella kirkii, Macromitrium longipes, M. microstomum, Paraschistochila pinnatifolia, R tuloides, Plagiochila circinalis and Weymouthia cockle arifolia. Comments: The species may be distinguished, even in the field, by the relatively short cells of the leaf lobe apices, the cells other than the terminal cell being only at most 3:1 (Eig. 7: 3). These relatively short cells, at least for the most part, are chlorophyll-bearing and make the distal sector of the leaf lobes green and acuminate rather than hyaline and setaceous as in Lepicolea scolopendra.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
@@ -453,14 +427,45 @@ Leptoscyphus innovatus (E.A.Hodgs.) J.J.Engel            Marsupidium surculosum 
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acacia attenuata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Attenuata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Castilleja attenuata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hymenochaete attenuata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Isoetes attenuata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepicolea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepicolea rara (Steph.) Grolle</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepicolea scolopendra</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Verticordia attenuata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herbertus attenuatus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Sendtnera attenuata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Sendtnera quadrifida</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -475,22 +480,32 @@ Leptoscyphus innovatus (E.A.Hodgs.) J.J.Engel            Marsupidium surculosum 
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [107.2, 93.0, 133.4, 144.4, 226.2, 213.1, 255.7, 268.1, 240.1, 211.4, 125.3, 152.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.7, 20.8, 18.2, 14.7, 11.7, 9.9, 9.3, 10.1, 11.8, 14.1, 17.6, 18.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.9, 10.1, 8.3, 6.2, 4.5, 3.6, 2.7, 3.4, 4.4, 5.2, 6.7, 8.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

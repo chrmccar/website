@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Telaranea inaequalis</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Telaranea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Crotalaria inaequalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Deyeuxia inaequalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Scholtzia inaequalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Telaranea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Telaranea capilligera</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Telaranea gottscheana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Telaranea pulcherrima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Utricularia inaequalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Xyris inaequalis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Telaranea inaequalis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Telaranea subgen</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Telaranea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,21 +48,25 @@
     <p class="big-num">31</p>
     <footer>3 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">3</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -100,62 +74,72 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>LEPIDOZIA_NZ_REVISION_2001</strong> (1 entry)</summary>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Lepidozia bisbifida Steph. 95                                Lepidozia pinnaticruris Spruce ex Steph. 12
+    <pre class="description-text">Lepidozia bisbifida Steph. 95                                Lepidozia pinnaticruris Spruce ex Steph. 12
 Lepidozia breviloba Steph. 41                                Lepidozia portoricensis Fulf. 27
 Lepidozia brevipinna Pears. 95                               Lepidozia praenitens (Lehm.  &amp;   Lindenb.) G. L. &amp; N. 2
 Lepidozia bursifera Hatt. &amp; Grolle 12, 14                    Lepidozia procera Mitt. 41
@@ -215,34 +199,43 @@ INDEX                                                                           
 
 
 
-                                                                 i:ijj</p>
+                                                                 i:ijj</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>conservation_status:</strong> Threatened - Nationally Vulnerable</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> Threatened - Nationally Vulnerable</p>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">spread over riparian skeletal soils with a discon-          Scenic Reserve, N of Auckland on State Highway 1, ca.
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">spread over riparian skeletal soils with a discon-          Scenic Reserve, N of Auckland on State Highway 1, ca.
                               tinuous scrub of Leptospermum lanigerum, Cal-               25 m, Engel 21161 (F); Waipoua Forest, Allison H759—
                               listemon viriflorus and Richea gunnii.                      c. per., H3176—c ? (CHR); ibid., Hatcher 487 (F); Wai-
                                                                                           poua Forest, Waikohatu Stream at Waikohatu Kauri
@@ -496,7 +489,7 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                               1. Leaves bilobed or monocrurous, never 3-lobed . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
                                  2. Leaves 2-lobed (1-lobed on poorly-developed shoots or on lower portion of shoots); stem thicker
                                     (411 in sectors with 1-lobed leaves) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-                                    3. Underleaves symmetric, caliper-like (2 basal cells 1 1–2 cylindric lobe cells 1 slime papillae)</p>
+                                    3. Underleaves symmetric, caliper-like (2 basal cells 1 1–2 cylindric lobe cells 1 slime papillae)</pre>
     
     
   </details>
@@ -505,14 +498,43 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Crotalaria inaequalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Deyeuxia inaequalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Scholtzia inaequalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea capilligera</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea gottscheana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea pulcherrima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Utricularia inaequalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Xyris inaequalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea inaequalis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Telaranea subgen</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -527,22 +549,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [87.2, 79.3, 105.5, 111.6, 170.8, 153.2, 180.8, 197.0, 192.8, 160.6, 102.4, 128.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [21.6, 21.8, 19.5, 16.4, 13.6, 11.6, 11.1, 12.2, 14.1, 15.8, 18.4, 19.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.5, 10.1, 9.9, 7.7, 6.5, 4.6, 4.1, 4.2, 5.6, 6.4, 8.0, 9.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

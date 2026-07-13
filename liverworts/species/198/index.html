@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,49 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Brevianthus flavus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Brevianthaceae</span>
-    <span class="badge secondary">Brevianthus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (13)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Aspergillus flavus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Brevianthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Brevianthus flavus subsp. crenulatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Brevianthus flavus subsp. flavus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Clavus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Flavodon flavus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Gymnomyces flavus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Mitthyridium flavum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Suillus flavus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cincinnulus Dumort</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jackiella flavus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Kantius Gray</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Parentia Léman</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Brevianthus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -82,21 +48,25 @@
     <p class="big-num">116</p>
     <footer>92 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">13</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">13</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -104,142 +74,142 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>335.0–465.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>335.0–465.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">KANTVILAS_TAS_WHR</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–3.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–4.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–4.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">KANTVILAS_TAS_WHR</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">KANTVILAS_TAS_WHR</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">KANTVILAS_TAS_WHR</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>small</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>ACROMASTIGUM_AUSTRALIA_2014</strong> (1 entry)</summary>
+    <summary>
+      <strong>ACROMASTIGUM_AUSTRALIA_2014</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
+    <pre class="description-text">often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
 imbricate, insertion transverse but sometimes the lateral margins slightly decurrent, somewhat spreading to
 almost squarrose, large (c. 3/4 size of lateral leaves), 1.2–1.7 × as wide as stem, suborbicular, 270–545 μm
 long, 335–465 μm wide, not auriculate at base; apex truncate, subentire to emarginate, sinuses vestigal, lobes
@@ -299,16 +269,19 @@ Scotts Peak Road, 42°49&#39;S 146°23&#39;E, 590 m, 19 Oct 2013, J. Jarman s.n.
 (HO49566).
 New Zealand: North Island: Auckland: Coromandel Ranges, Mt Moehau, E from trig, 36°32&#39;17&#39;&#39;S 175°24&#39;59&#39;&#39;E, 640 m,
 3 Nov 1980, E.K. Cameron s.n. (AK323763); Coromandel Ranges, ridge SW of Mt Rowe along track to Mt Rowe, 37°2&#39;16&#39;&#39;S
-175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb</p>
+175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">lesser extent with South Africa (Scott and Stone 1976). it awaits detailed floristic
+    <pre class="description-text">lesser extent with South Africa (Scott and Stone 1976). it awaits detailed floristic
 
 studies before conclusions can be made as (0 the extent of these relationships.
 
@@ -367,16 +340,19 @@ adapted and moisture preferring hepatics across New Zealand, Australia, Antarcti
 
 and southern South America. He has consistently argued (Schuster 1979) that the
 
-dispersal of southern hemisphere hepatics can be visualized as resulting primarily</p>
+dispersal of southern hemisphere hepatics can be visualized as resulting primarily</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">(9) Alpine heathland (lichen habitat)                                              Bryophytes
+    <pre class="description-text">(9) Alpine heathland (lichen habitat)                                              Bryophytes
 Low shrubby vegetation dominated by Eucalyptus
 vernicosa, Monotoca submutica, Nothofagus                     For bryophytes, 146 species were recorded (table 2,
 cunninghamii,Epacris serpyllifolia, Cenarrhenes nitida        pp.156-159), including 48 mosses and 98 liverworts.
@@ -432,29 +408,35 @@ saxicolous or occur amongst bryophytes over rocks,             microhabitats.
 
                                                                       Habitat
                                                          2       :1     4        7     8   9
--------                                                 -~----~--------~--.-----.--</p>
+-------                                                 -~----~--------~--.-----.--</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>conservation_status:</strong> At Risk - Naturally Uncommon</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> At Risk - Naturally Uncommon</p>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Brevianthus flavus subsp. flavus</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Brevianthus flavus subsp. flavus</p>
     
     
   </details>
@@ -463,14 +445,47 @@ saxicolous or occur amongst bryophytes over rocks,             microhabitats.
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Aspergillus flavus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Brevianthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Brevianthus flavus subsp. crenulatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Brevianthus flavus subsp. flavus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Clavus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Flavodon flavus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gymnomyces flavus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Mitthyridium flavum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Suillus flavus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cincinnulus Dumort</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jackiella flavus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Kantius Gray</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Parentia Léman</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -485,22 +500,32 @@ saxicolous or occur amongst bryophytes over rocks,             microhabitats.
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [99.9, 87.8, 118.5, 129.0, 198.4, 187.9, 221.5, 235.2, 217.5, 185.5, 117.8, 141.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.3, 19.5, 17.2, 14.1, 11.3, 9.5, 8.9, 9.7, 11.5, 13.4, 16.2, 17.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.0, 9.1, 8.0, 6.2, 4.8, 3.5, 2.7, 3.0, 4.0, 4.9, 6.7, 7.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

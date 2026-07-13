@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,39 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Adelanthus bisetulus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Adelanthaceae</span>
-    <span class="badge secondary">Adelanthus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (8)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Adelanthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Adelanthus capillaris</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Adelanthus falcatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Adelanthus gemmiparus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Adelanthus humilis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Adelanthus occlusus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Adenanthus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tylimanthus bisetulus</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Adelanthus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -72,35 +48,37 @@
     <p class="big-num">88</p>
     <footer>48 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">10.1&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1716&thinsp;mm</p>
-    <footer>
-      CV 23.2
-    </footer>
+    <footer>annual · CV&thinsp;23.2</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">11</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">8</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -108,126 +86,128 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Paraschistochila pinnatijoiia                    7         0           17.9
+    <pre class="description-text">Paraschistochila pinnatijoiia                    7         0           17.9
 Marsupidium surculosum                           6         0           15.4
 Lepicolea scolopendra                            5         I           15.4
 Radula compacta                                  4         I           12.8
@@ -351,16 +331,19 @@ Lepidozia sp.                                           +
 Lepidolaena brachyclada                                 +
 Lejeuneaceae sp?                                        +
 Marsupidium SUTcu/osum                                  +
-Marsupidium setulosum                                                           +</p>
+Marsupidium setulosum                                                           +</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Anthoceros coriaceus Steph.                             R.M.Schust.
+    <pre class="description-text">Anthoceros coriaceus Steph.                             R.M.Schust.
 Phaeoceros delicatus E.O.Campb &amp; Outred                 Aneura aff. novaeguineensis Hewson
 Phaeoceros hirticalyx (Steph.) Haseg.                   Aneura alterniloba (Hook.f. &amp; Taylor) Gottsche,
        Anthoceros hirticalyx (Steph.) Meijer                    Lindenb. &amp; Nees
@@ -484,16 +467,19 @@ pinnatifolia                                               I wish to thank Marie
 Schistochila pseudokirkiana - Pachyschistochila            checklist which was invaluable in checking mine and
 colensoana                                                 for other helpful information. I also wish to thank
 Schistochila ruahinensis - Pachyschistochila               Jessica Beever, John Braggins, Elizabeth Brown, Ella
-papillifera                                                Campbell, Paddy Dalton, John Engel, Riclef Grolle,</p>
+papillifera                                                Campbell, Paddy Dalton, John Engel, Riclef Grolle,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">carry two large teeth that are curved over in the same direction.
+    <pre class="description-text">carry two large teeth that are curved over in the same direction.
 Capsules are extremely rare.
     A. falcatus (TVN) is also more common than supposed. It too             A. falcatus
 grows mixed with other bryophytes. The general appearance is
@@ -553,16 +539,19 @@ i.
      damp soil in drier regions, such as the Victorian mallee. It has also been reported
      from alpine regions. Some records are probably not this taxon.
 
-      Similar species: *Acrolophozia spp., *Allisoniella spp., Herzogobryum spp., Gymnomitrium</p>
+      Similar species: *Acrolophozia spp., *Allisoniella spp., Herzogobryum spp., Gymnomitrium</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">65. Marst~pidiums7~rculosumis commonly epiphytic but also occurs on
+    <pre class="description-text">65. Marst~pidiums7~rculosumis commonly epiphytic but also occurs on
     logs and rocks. It has erect, sparsely branched stems which curve
     downwards at the tips. The rounded leaves are shallo~~ly bilobed and
     have one, or someti~nestwo, small teeth on the margin.
@@ -619,16 +608,19 @@ Balantiopsaceae
                                                                                Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
 Frullaniaceae
 Frullnninis one of the largest genera of leafy liverworts known. The leaves
-are in three rows, with those in the lateral rows being divided into avo</p>
+are in three rows, with those in the lateral rows being divided into avo</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">1 Leaves with a ventral lobule ........................................................................................ 2
+    <pre class="description-text">1 Leaves with a ventral lobule ........................................................................................ 2
                                                                                                                                                                                   Leaves without a ventral lobule ................................................................................... 3
 
 
@@ -687,7 +679,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                Group C cont&#39;d
                                                                                                                                                                                Leafy liverworts without underleaves, or underleaves not apparent
                                                                                                                                                                                15 Stems green or brownA ................................................................................ Plagiochila
-                                                                                                                                                                                  Stems black ................................................................................................................ 16</p>
+                                                                                                                                                                                  Stems black ................................................................................................................ 16</pre>
     
     
   </details>
@@ -696,14 +688,37 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Adelanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Adelanthus capillaris</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Adelanthus falcatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Adelanthus gemmiparus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Adelanthus humilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Adelanthus occlusus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Adenanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus bisetulus</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -718,22 +733,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [90.5, 79.2, 107.0, 116.7, 180.6, 179.7, 214.3, 224.6, 201.2, 166.0, 111.3, 124.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.9, 19.1, 16.8, 13.6, 10.8, 9.0, 8.3, 9.1, 10.8, 12.9, 15.8, 16.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.7, 8.9, 7.6, 5.8, 4.4, 3.1, 2.3, 2.5, 3.5, 4.5, 6.3, 7.3], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

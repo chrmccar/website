@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,51 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Psiloclada clandestina</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Psiloclada</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (14)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Corymbia clandestina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cyathochaeta clandestina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lembophyllum clandestinum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Phytophthora clandestina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Psiloclada</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Psiloclada clandestina subsp. clandestina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Psiloclada clandestina subsp. clandestina f. major</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stagonospora clandestina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Styphelia psiloclada</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acrolepidozia R.M.Schust</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Arachniopsis Spruce</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Psiloclada clandestina</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Psiloclada major</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Telaranea Spruce</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Psiloclada</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -84,21 +48,25 @@
     <p class="big-num">160</p>
     <footer>15 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">27</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">14</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -106,254 +74,240 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>irregularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>irregularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>120.0–175.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>120.0–175.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>160.0–250.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>160.0–250.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>20.0–25.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>20.0–25.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>11.0–16.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>11.0–16.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>2.4–2.9</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>2.4–2.9</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>5-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>5-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>0.45</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>0.45</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Lepidozia laevifolia (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenberg &amp; Nees
+    <pre class="description-text">Lepidozia laevifolia (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenberg &amp; Nees
 var. laevifolia
 Jungermannia laevifolia Hook.f. &amp; Taylor, London J. Bot. 3: 385 ‘285’ (1844); Lepidozia laevifolia
 (Hook.f. &amp; Taylor) Gottsche, Lindenberg &amp; Nees, Syn. Hepat. 208 (1845); Mastigophora laevifolia
@@ -478,42 +432,51 @@ Trail, Mount Pitt Reserve, Streimann 32121, 3 Dec 1984, CANB-625982.
 
 Schistochila aligera
 LORD HOWE ISLAND: Mt Gower summit plateau, Meagher LH-539, 24 Nov 2009. QUEENSLAND: Bellenden
-Ker, Streimann 27387, Mar 1983, CBG-8305352; Main Coast Range, Streimann 27147 p.p, Feb 1983, CANB-</p>
+Ker, Streimann 27387, Mar 1983, CBG-8305352; Main Coast Range, Streimann 27147 p.p, Feb 1983, CANB-</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants filamentous and thread-like in smaller phases to leafy in aspect in vigorous phases, with wiry, rigid, brittle axes; shoots to 345 juim wide with leaves. Branches remote and irregularly pinnate to frequent, distinctly and regularly l(2)-pinnate, the terminal branches fre¬ quently becoming flagelliform; branch half-leaf 4(5)-lobed; first branch underleaf 2-3-lobed. Rhizoids rare, lacking in distal shoot sectors. Leaves rigid, firmly attached, 120-175 juim wide X 100-175 |ULm long, on main stems (5)6-9(10)-lobed, moderately asymmetrical, the ventral 1-2 lobes larger, formed of 2-3 to 4-5 cells, the dorsal smaller, usually l(2)-celled. Lobes each ending in a highly differentiated, erect, unicellular, conspicuously elongated, hyaline, rigid, setose apical cell, the apical lobe cell directed toward stem apex or inclined toward stem, basally often a little dilated and bulb-like, long-tapered, 10-12 X 84-110 juim. Disc asymmetrical, 2 cells high in dorsal half, to 4-5 cells high in ventral half, the disc 10-16 cells wide at base. Cells of disc and lobe bases thick-walled, small, the median disc cells 12-17 X 15- 19 |ULm. Oil-bodies absent, but a few droplets present in some disc cells, when present, obscure. South Is., Westland EP, Mt. Hercules Scenic Reserve; 2, from Hatcher 820, New Zealand, South Is., Westland EP, Martins Bay; 3-10, from Engel 18326, New Zealand, South Is., Westland EP, Arthur’s Pass Natl. Park, N of Kellys Creek.) 1-2(3) per cell, hyaline, homogeneous or consisting of a few obscure inconspicuous spherules, much smaller than chloroplasts. Oil-droplets of stem cortex cells 0-5(7) per cell, homogeneous, colorless, 0.75-1.5 juim in diam., ellipsoidal or spherical or an irregular variant on spherical. Chloroplasts very large for cell size, in disc and all lobe cells except the long curved tip cell, which is devoid of contents. Underleaves of main stems (3)4-6(8)-lobed, the lobes usually consisting of a basal cell and a setose apical cell; disc rudimentary, spreading, 2 cells high. Eungal partner an ascomycete. Androecia on abbreviated, tightly spicate branches from leading shoots; bracts ventricose, the lobes acuminate, terminating in a uniseriate row of 2-3 cells, the terminal cell very long and narrowing toward the tip, the lobe bases crenate-denticulate; margins of disc sparingly crenate-dentate, devoid of slime papillae. Gynoecia with bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth but often with diverging lobes, the bracts concave, bifid; lobes caudate, the tip consisting of a uniseriate row of 2-3 very elongate cells, the lobe margins crenate-denticulate often by the variously projecting distal end of lobe cells; lamina composed of irregularly short- to long-rectangular, leptodermous cells, the margins sparingly crenate-dentate; bracteole similar in size and form. Perianth rather inconspicuous in situ yet rather large for plant size, straight to curved; mouth with cilia each con¬ sisting of a single elongate cell or a uniseriate row of 2 elongate cells (ca. 9-12 X 120- 150 |ULm), the distal end of the penultimate cells often projecting and forming a shoulder- like process. Capsule wall 2(very locally 3)-stratose, 16-20 juim thick, the outer layer 1.4-1.6X thicker than inner layer; outer layer of cells feebly tiered, ca. 28-34 X 45-48 juim, ± regularly short- rectangular, the alternating walls with thin, sheet-like thickenings and feebly nodule-like swellings lending the vertical walls a sinuous appearance, the transverse walls devoid of thickenings; innermost layer of cells longer and narrower, 8-12 X 45-75 juim, mostly with nodule¬ like to spine-like thickenings, with complete semi annular bands sporadic and often non- pigmented in median sector. Spores 12.5-13.9 luim in diam., with a network of low, often furcate ridges that often anastomose to form irregular and weak areolae. Elaters 8. 2-8. 6 juim wide, feebly to moderately tortuous, only slightly tapering toward tips, bispiral to tips, the spirals 2. 9-3. 4 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island, South Island (0- 660 m). North Island (200-580 m), Chatham Islands; Australia: Tasmania, Victoria. In New Zealand known from Eiordland, Westland, Western Nelson, Marlborough, Southern North Island, Volcanic Plateau (Lake Rotoehu), Taranaki (Mt. Taranaki), Auckland (Mt. Moehau) and Northland (Waipoua Eorest) EPs. Very common in lowland forests of Westland and Eiordland, but the comparatively few collections from the North Island suggest it is relatively uncommon there. In pure mats or woven through other bryophytes, on rotting wood and tree roots, humic soil, occasionally seen hanging in wefts from soil and other bryophytes, occasionally on rock surfaces. In the North Island usually on or at base of tree-fern trunks (with Calomnion com- planatum, Bazzania tayloriana and Trichomanes venosum); rarely epiphyllic (on Hymeno- phyllumferrugineum). Eound under lowland to montane forest, mainly under lowland forests of Dacrydium cupressinum, Weinmannia racemosa, Quintinia serrata, Metrosideros umbel- lata, under Nothofagus solandri and N. menziesii forest, or under Lepidothamnus intermedins forest. Eound most constantly in association with Bazzania nitida, Zoopsis argentea and Rhi- zogonium pennatum. Other species that sometimes occur with Psiloclada are Acrobolbus lopho- coleoides, Acromastigum anisostomum, A. colensoanum, A. marginatum, Bazzania hochstetteri, B. monilinervis , B. novae -zelandiae, Clandarium xiphophyllum, Distichophyllum pulchellum. Ditrichum punctulatum, Heteroscyphus billardierei, H. decipiens, Kurzia hippuroides, Lem- bidium longifolium, Lepicolea scolopendra, Lepidozia kirkii, L concinna, L spinosissima, Leu- cobryum candidum, Marsupidium knightii, Podomitrium phyllanthus, Rhizogonium distichum, Riccardia cochleata, R. crassa, Saccogynidium australe, S. decurvum, Schistochila glaucescens, S. nobilis, Telaranea tuberifera, Trichomanes venosum, Trichotemnoma corrugatum, Tylimanthus divers if olius, Zoopsidella caledonica, Zoopsis bicruris, Z. ceratophylla, Z. leitgebiana, Z. matawaia and Z setulosa. Comments: Psiloclada clandestina is here defined to include plants that are variable in vigor, leaf lobe number and underleaf lobe number. Smaller phases are filamentous in aspect and have 5-6 leaf lobes and 3-4 underleaf lobes. This is the phase regarded as P. clandestina fo. clandestina in Schuster (1980a) and P. clandestina s. str in Engel (1985). Subsequent detailed studies of New Zealand populations have revealed that a single species occurs within here and that an increase in vigor is coupled with an increase in the number of leaf and underleaf lobes. Particularly vigorous plants have leaves 8-9 to even 10-lobed and underleaves 5- 6(8)-lobed; such plants are often leafy in aspect. This phase was recognized taxonomically as P clandestina subsp. clandestina fo. major in Schuster (1980a) and as a distinct species, P. major, in Engel (1985). In the field, Psiloclada clandestina may be recognized by the minute size, the very slender, wiry plants with tiny and mostly remote leaves with lobes stiffly oriented toward the shoot apex and by the dull olive-green or brownish green color. Subfam. Drucelloideae (Boesen) R.M.Schust. Drucelloideae (Boesen) R.M.Schust., Phytologia 56: 69. 1984. Drucella E.A.Hodgs. Drucella E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 2: 45. 1962. Plants strongly anisophyllous, light green to whitish green, weakly chlorophyllose and devoid of wall pigments, nitid, to 0.45 mm wide. Plants with an extensive system of basal, creep¬ ing, plagiotropic, small-leaved, often microphyllous, strongly elongated, occasionally branched rhizomatous or stoloniform axes from which arise ascending to erect, often arched, simple or sporadically branched leafy shoots of limited length. Branching irregular, uniformly intercalary, the branches mostly lateral, exceptionally ventral. Stem rigid and wiry, the cortical cells in surface view strongly elongated, ± tiered, the longitudinal walls very thick, the transverse ones thin, in cross section in 6-10 rows; medulla of 5-9 rows of rather thick-walled cells of ± similar diameter to the cortical cells. Rhizoids occasional, the tips often swollen, at underleaf bases of older sectors of shoots, also from bases of leaves and underleaves of rhizomes or stolons. Leaves contiguous to weakly imbricate, stiffly and widely spreading, 160- 250 |ULm wide at the lobe apices, 100 juim wide at the leaf base, 270-325 juim long, separated by 1-3 cortical cells on either side, the insertion clearly incubous, not reaching stem midline dorsally and delimiting a leaf-free strip of 2 rows of cortical cells; leaves asymmetrically cuneate to narrowly obtrapezoidal, rather narrowed to the insertion, (2)3-fid to 0.5-0.75. Lobes usually unequal, entire, the dorsal lobe linear-lanceolate, 2-3(4) cells wide at base, terminating in a uniseriate row of 2-4 moderately elongated cells, the middle lobe similar to the dorsal or a little smaller, the ventral lobe usually smaller, often only 1-3-celled and at times ending in a slime papilla. Disc mostly 2-3(4) cells high, (5)6 cells wide at the base. Cells of disc cells pellucid, equally very thick-walled and without trigones, the middle lamella conspicuous, the median cells 20-25 juim wide X 30-35 juim long; surface smooth. Oil-bodies ab¬ sent or occasionally 1 or 2 per cell, spherical, moderately but faintly granular, ca. 5 juim in diam., breaking up rapidly to oil-droplets that are homogeneous, small, 1.8-2. 3 juim in diam. Chloroplasts few. Underleaves inserted on 2-3 rows of stem cells, narrower than stem and leaving the stem broadly exposed, distant, small, spreading to squarrose, ± obtrapezoid- quadrate, 2-3-lobed, the lobes often unequal, consisting of 1-2 cells, terminating in a slime papilla; the disc 1-2.5 cells high and 3 cells wide. Asexual reproduction absent. Dioecious. Androecia typically on short ventral-intercalary branches, rarely on lateral- intercalary branches; bracts slightly larger than vegetative leaves, strongly concave, bifid to 0. 5-0.7; antheridia 1 per bract, the stalk uniseriate. Gynoecia typically on short ventral- intercalary branches, exceptionally on short lateral-intercalary branches; bracts in 2-3 series, appressed to perianth, (2)3-5-fid to 0.5-0.7, the lobes 2-4 cells wide at base, terminating in a uniseriate row of 5-7 cells, the lobes with a few teeth below, the distal sector of lobes cilii- form; bracteoles similar to bracts but somewhat smaller and sparingly armed. Perianth ovoid- cylindrical, the mouth wide, lobulate-ciliate, the cilia terminating in a uniseriate row of 4-8 elongated cells, with accessory teeth below; perianth unistratose throughout and with cell walls thinner than those of leaf cells. Seta with 8 rows of outer cells surrounding an inner core of 14-16 much smaller cells. Capsule short-ovoid, small, the valves only 140-145 X 315-330 juim, the wall 14-15 juim thick, bistratose, the outer layer somewhat thicker than the inner; outer layer of cells distinctly tiered, comprised of only 6-7 tiers (the large basal cells at valve base excepted), the cells long- rectangular, the development of the outer layer not fixed and of two types: a) one with two-phase development, the longitudinal walls with pale magenta, well-defined, sheet-like, continuous thickenings + nodule-like thickenings (lending a sinuous appearance) alternating with walls that are devoid of thickenings (or with a very few, sporadic, local, non-pigmented, nodular swellings), the transverse walls devoid of thickenings; and b) the other type with one-phase development, all longitudinal walls with thickened continuous sheets of pigmented material and {fide Boesen, 1982) with semiannular bands common; innermost layer of cells markedly long and narrowly rectangular, the longitudinal walls with thick continuous sheets of material, with semiannular bands common or with complete, well-developed bands present but less frequent, the longitudinal walls then with nodular thickenings that variously extend onto the exposed tangential wall as feeble spurs or weak, faintly pigmented incomplete or complete semiannular bands. Spores 8. 6-9. 6 to 11-13.2 juim in diam., reddish brown or yellow-brown, finely reticulate. Elaters rigid, 8. 2-9. 6 to 11-16 juim wide, slightly tapered to tips, bispiral, the spirals 2.4- 2.9 |ULm wide. Type: Drucella integristipula (Steph.) E.A.Hodgs. (= Lepidozia integristipula Steph.) The genus is monotypic and known only from New Zealand, Tasmania and southeast Australia. References: Boesen (1982); Hodgson (1962b); Schuster (1980a, 2000a). walled leaf eells, the leaf-free strip and the long, thiek- walled eortieal eells. 2. Portion of perianth spore outline drawn to same seale. (Fig. 1, from Engel 23612, New Zealand, North Is., Voleanie Plateau EP, Kaimai-Mamaku Forest Park, Kaimai Ra., Aongatete R.; 2-6, from Glenny 9261, New Zealand, South Is., Western Nelson EP, Pupu Walkway.) axis; note long ealyptra (= C) and presenee of unfertilized arehegonia (stippled) earried partway 200 M</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants filamentous and thread-like in smaller phases to leafy in aspect in vigorous phases, with wiry, rigid, brittle axes; shoots to 345 juim wide with leaves. Branches remote and irregularly pinnate to frequent, distinctly and regularly l(2)-pinnate, the terminal branches fre¬ quently becoming flagelliform; branch half-leaf 4(5)-lobed; first branch underleaf 2-3-lobed. Rhizoids rare, lacking in distal shoot sectors. Leaves rigid, firmly attached, 120-175 juim wide X 100-175 |ULm long, on main stems (5)6-9(10)-lobed, moderately asymmetrical, the ventral 1-2 lobes larger, formed of 2-3 to 4-5 cells, the dorsal smaller, usually l(2)-celled. Lobes each ending in a highly differentiated, erect, unicellular, conspicuously elongated, hyaline, rigid, setose apical cell, the apical lobe cell directed toward stem apex or inclined toward stem, basally often a little dilated and bulb-like, long-tapered, 10-12 X 84-110 juim. Disc asymmetrical, 2 cells high in dorsal half, to 4-5 cells high in ventral half, the disc 10-16 cells wide at base. Cells of disc and lobe bases thick-walled, small, the median disc cells 12-17 X 15- 19 |ULm. Oil-bodies absent, but a few droplets present in some disc cells, when present, obscure. South Is., Westland EP, Mt. Hercules Scenic Reserve; 2, from Hatcher 820, New Zealand, South Is., Westland EP, Martins Bay; 3-10, from Engel 18326, New Zealand, South Is., Westland EP, Arthur’s Pass Natl. Park, N of Kellys Creek.) 1-2(3) per cell, hyaline, homogeneous or consisting of a few obscure inconspicuous spherules, much smaller than chloroplasts. Oil-droplets of stem cortex cells 0-5(7) per cell, homogeneous, colorless, 0.75-1.5 juim in diam., ellipsoidal or spherical or an irregular variant on spherical. Chloroplasts very large for cell size, in disc and all lobe cells except the long curved tip cell, which is devoid of contents. Underleaves of main stems (3)4-6(8)-lobed, the lobes usually consisting of a basal cell and a setose apical cell; disc rudimentary, spreading, 2 cells high. Eungal partner an ascomycete. Androecia on abbreviated, tightly spicate branches from leading shoots; bracts ventricose, the lobes acuminate, terminating in a uniseriate row of 2-3 cells, the terminal cell very long and narrowing toward the tip, the lobe bases crenate-denticulate; margins of disc sparingly crenate-dentate, devoid of slime papillae. Gynoecia with bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth but often with diverging lobes, the bracts concave, bifid; lobes caudate, the tip consisting of a uniseriate row of 2-3 very elongate cells, the lobe margins crenate-denticulate often by the variously projecting distal end of lobe cells; lamina composed of irregularly short- to long-rectangular, leptodermous cells, the margins sparingly crenate-dentate; bracteole similar in size and form. Perianth rather inconspicuous in situ yet rather large for plant size, straight to curved; mouth with cilia each con¬ sisting of a single elongate cell or a uniseriate row of 2 elongate cells (ca. 9-12 X 120- 150 |ULm), the distal end of the penultimate cells often projecting and forming a shoulder- like process. Capsule wall 2(very locally 3)-stratose, 16-20 juim thick, the outer layer 1.4-1.6X thicker than inner layer; outer layer of cells feebly tiered, ca. 28-34 X 45-48 juim, ± regularly short- rectangular, the alternating walls with thin, sheet-like thickenings and feebly nodule-like swellings lending the vertical walls a sinuous appearance, the transverse walls devoid of thickenings; innermost layer of cells longer and narrower, 8-12 X 45-75 juim, mostly with nodule¬ like to spine-like thickenings, with complete semi annular bands sporadic and often non- pigmented in median sector. Spores 12.5-13.9 luim in diam., with a network of low, often furcate ridges that often anastomose to form irregular and weak areolae. Elaters 8. 2-8. 6 juim wide, feebly to moderately tortuous, only slightly tapering toward tips, bispiral to tips, the spirals 2. 9-3. 4 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island, South Island (0- 660 m). North Island (200-580 m), Chatham Islands; Australia: Tasmania, Victoria. In New Zealand known from Eiordland, Westland, Western Nelson, Marlborough, Southern North Island, Volcanic Plateau (Lake Rotoehu), Taranaki (Mt. Taranaki), Auckland (Mt. Moehau) and Northland (Waipoua Eorest) EPs. Very common in lowland forests of Westland and Eiordland, but the comparatively few collections from the North Island suggest it is relatively uncommon there. In pure mats or woven through other bryophytes, on rotting wood and tree roots, humic soil, occasionally seen hanging in wefts from soil and other bryophytes, occasionally on rock surfaces. In the North Island usually on or at base of tree-fern trunks (with Calomnion com- planatum, Bazzania tayloriana and Trichomanes venosum); rarely epiphyllic (on Hymeno- phyllumferrugineum). Eound under lowland to montane forest, mainly under lowland forests of Dacrydium cupressinum, Weinmannia racemosa, Quintinia serrata, Metrosideros umbel- lata, under Nothofagus solandri and N. menziesii forest, or under Lepidothamnus intermedins forest. Eound most constantly in association with Bazzania nitida, Zoopsis argentea and Rhi- zogonium pennatum. Other species that sometimes occur with Psiloclada are Acrobolbus lopho- coleoides, Acromastigum anisostomum, A. colensoanum, A. marginatum, Bazzania hochstetteri, B. monilinervis , B. novae -zelandiae, Clandarium xiphophyllum, Distichophyllum pulchellum. Ditrichum punctulatum, Heteroscyphus billardierei, H. decipiens, Kurzia hippuroides, Lem- bidium longifolium, Lepicolea scolopendra, Lepidozia kirkii, L concinna, L spinosissima, Leu- cobryum candidum, Marsupidium knightii, Podomitrium phyllanthus, Rhizogonium distichum, Riccardia cochleata, R. crassa, Saccogynidium australe, S. decurvum, Schistochila glaucescens, S. nobilis, Telaranea tuberifera, Trichomanes venosum, Trichotemnoma corrugatum, Tylimanthus divers if olius, Zoopsidella caledonica, Zoopsis bicruris, Z. ceratophylla, Z. leitgebiana, Z. matawaia and Z setulosa. Comments: Psiloclada clandestina is here defined to include plants that are variable in vigor, leaf lobe number and underleaf lobe number. Smaller phases are filamentous in aspect and have 5-6 leaf lobes and 3-4 underleaf lobes. This is the phase regarded as P. clandestina fo. clandestina in Schuster (1980a) and P. clandestina s. str in Engel (1985). Subsequent detailed studies of New Zealand populations have revealed that a single species occurs within here and that an increase in vigor is coupled with an increase in the number of leaf and underleaf lobes. Particularly vigorous plants have leaves 8-9 to even 10-lobed and underleaves 5- 6(8)-lobed; such plants are often leafy in aspect. This phase was recognized taxonomically as P clandestina subsp. clandestina fo. major in Schuster (1980a) and as a distinct species, P. major, in Engel (1985). In the field, Psiloclada clandestina may be recognized by the minute size, the very slender, wiry plants with tiny and mostly remote leaves with lobes stiffly oriented toward the shoot apex and by the dull olive-green or brownish green color. Subfam. Drucelloideae (Boesen) R.M.Schust. Drucelloideae (Boesen) R.M.Schust., Phytologia 56: 69. 1984. Drucella E.A.Hodgs. Drucella E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 2: 45. 1962. Plants strongly anisophyllous, light green to whitish green, weakly chlorophyllose and devoid of wall pigments, nitid, to 0.45 mm wide. Plants with an extensive system of basal, creep¬ ing, plagiotropic, small-leaved, often microphyllous, strongly elongated, occasionally branched rhizomatous or stoloniform axes from which arise ascending to erect, often arched, simple or sporadically branched leafy shoots of limited length. Branching irregular, uniformly intercalary, the branches mostly lateral, exceptionally ventral. Stem rigid and wiry, the cortical cells in surface view strongly elongated, ± tiered, the longitudinal walls very thick, the transverse ones thin, in cross section in 6-10 rows; medulla of 5-9 rows of rather thick-walled cells of ± similar diameter to the cortical cells. Rhizoids occasional, the tips often swollen, at underleaf bases of older sectors of shoots, also from bases of leaves and underleaves of rhizomes or stolons. Leaves contiguous to weakly imbricate, stiffly and widely spreading, 160- 250 |ULm wide at the lobe apices, 100 juim wide at the leaf base, 270-325 juim long, separated by 1-3 cortical cells on either side, the insertion clearly incubous, not reaching stem midline dorsally and delimiting a leaf-free strip of 2 rows of cortical cells; leaves asymmetrically cuneate to narrowly obtrapezoidal, rather narrowed to the insertion, (2)3-fid to 0.5-0.75. Lobes usually unequal, entire, the dorsal lobe linear-lanceolate, 2-3(4) cells wide at base, terminating in a uniseriate row of 2-4 moderately elongated cells, the middle lobe similar to the dorsal or a little smaller, the ventral lobe usually smaller, often only 1-3-celled and at times ending in a slime papilla. Disc mostly 2-3(4) cells high, (5)6 cells wide at the base. Cells of disc cells pellucid, equally very thick-walled and without trigones, the middle lamella conspicuous, the median cells 20-25 juim wide X 30-35 juim long; surface smooth. Oil-bodies ab¬ sent or occasionally 1 or 2 per cell, spherical, moderately but faintly granular, ca. 5 juim in diam., breaking up rapidly to oil-droplets that are homogeneous, small, 1.8-2. 3 juim in diam. Chloroplasts few. Underleaves inserted on 2-3 rows of stem cells, narrower than stem and leaving the stem broadly exposed, distant, small, spreading to squarrose, ± obtrapezoid- quadrate, 2-3-lobed, the lobes often unequal, consisting of 1-2 cells, terminating in a slime papilla; the disc 1-2.5 cells high and 3 cells wide. Asexual reproduction absent. Dioecious. Androecia typically on short ventral-intercalary branches, rarely on lateral- intercalary branches; bracts slightly larger than vegetative leaves, strongly concave, bifid to 0. 5-0.7; antheridia 1 per bract, the stalk uniseriate. Gynoecia typically on short ventral- intercalary branches, exceptionally on short lateral-intercalary branches; bracts in 2-3 series, appressed to perianth, (2)3-5-fid to 0.5-0.7, the lobes 2-4 cells wide at base, terminating in a uniseriate row of 5-7 cells, the lobes with a few teeth below, the distal sector of lobes cilii- form; bracteoles similar to bracts but somewhat smaller and sparingly armed. Perianth ovoid- cylindrical, the mouth wide, lobulate-ciliate, the cilia terminating in a uniseriate row of 4-8 elongated cells, with accessory teeth below; perianth unistratose throughout and with cell walls thinner than those of leaf cells. Seta with 8 rows of outer cells surrounding an inner core of 14-16 much smaller cells. Capsule short-ovoid, small, the valves only 140-145 X 315-330 juim, the wall 14-15 juim thick, bistratose, the outer layer somewhat thicker than the inner; outer layer of cells distinctly tiered, comprised of only 6-7 tiers (the large basal cells at valve base excepted), the cells long- rectangular, the development of the outer layer not fixed and of two types: a) one with two-phase development, the longitudinal walls with pale magenta, well-defined, sheet-like, continuous thickenings + nodule-like thickenings (lending a sinuous appearance) alternating with walls that are devoid of thickenings (or with a very few, sporadic, local, non-pigmented, nodular swellings), the transverse walls devoid of thickenings; and b) the other type with one-phase development, all longitudinal walls with thickened continuous sheets of pigmented material and {fide Boesen, 1982) with semiannular bands common; innermost layer of cells markedly long and narrowly rectangular, the longitudinal walls with thick continuous sheets of material, with semiannular bands common or with complete, well-developed bands present but less frequent, the longitudinal walls then with nodular thickenings that variously extend onto the exposed tangential wall as feeble spurs or weak, faintly pigmented incomplete or complete semiannular bands. Spores 8. 6-9. 6 to 11-13.2 juim in diam., reddish brown or yellow-brown, finely reticulate. Elaters rigid, 8. 2-9. 6 to 11-16 juim wide, slightly tapered to tips, bispiral, the spirals 2.4- 2.9 |ULm wide. Type: Drucella integristipula (Steph.) E.A.Hodgs. (= Lepidozia integristipula Steph.) The genus is monotypic and known only from New Zealand, Tasmania and southeast Australia. References: Boesen (1982); Hodgson (1962b); Schuster (1980a, 2000a). walled leaf eells, the leaf-free strip and the long, thiek- walled eortieal eells. 2. Portion of perianth spore outline drawn to same seale. (Fig. 1, from Engel 23612, New Zealand, North Is., Voleanie Plateau EP, Kaimai-Mamaku Forest Park, Kaimai Ra., Aongatete R.; 2-6, from Glenny 9261, New Zealand, South Is., Western Nelson EP, Pupu Walkway.) axis; note long ealyptra (= C) and presenee of unfertilized arehegonia (stippled) earried partway 200 M</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
-    
-    
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
+    <pre class="description-text">Plants filamentous and thread-like in smaller phases to leafy in aspect in vigorous phases, with wiry, rigid, brittle axes; shoots to 345 juim wide with leaves. Branches remote and irregularly pinnate to frequent, distinctly and regularly l(2)-pinnate, the terminal branches fre¬ quently becoming flagelliform; branch half-leaf 4(5)-lobed; first branch underleaf 2-3-lobed. Rhizoids rare, lacking in distal shoot sectors. Leaves rigid, firmly attached, 120-175 juim wide X 100-175 |ULm long, on main stems (5)6-9(10)-lobed, moderately asymmetrical, the ventral 1-2 lobes larger, formed of 2-3 to 4-5 cells, the dorsal smaller, usually l(2)-celled. Lobes each ending in a highly differentiated, erect, unicellular, conspicuously elongated, hyaline, rigid, setose apical cell, the apical lobe cell directed toward stem apex or inclined toward stem, basally often a little dilated and bulb-like, long-tapered, 10-12 X 84-110 juim. Disc asymmetrical, 2 cells high in dorsal half, to 4-5 cells high in ventral half, the disc 10-16 cells wide at base. Cells of disc and lobe bases thick-walled, small, the median disc cells 12-17 X 15- 19 |ULm. Oil-bodies absent, but a few droplets present in some disc cells, when present, obscure. South Is., Westland EP, Mt. Hercules Scenic Reserve; 2, from Hatcher 820, New Zealand, South Is., Westland EP, Martins Bay; 3-10, from Engel 18326, New Zealand, South Is., Westland EP, Arthur’s Pass Natl. Park, N of Kellys Creek.) 1-2(3) per cell, hyaline, homogeneous or consisting of a few obscure inconspicuous spherules, much smaller than chloroplasts. Oil-droplets of stem cortex cells 0-5(7) per cell, homogeneous, colorless, 0.75-1.5 juim in diam., ellipsoidal or spherical or an irregular variant on spherical. Chloroplasts very large for cell size, in disc and all lobe cells except the long curved tip cell, which is devoid of contents. Underleaves of main stems (3)4-6(8)-lobed, the lobes usually consisting of a basal cell and a setose apical cell; disc rudimentary, spreading, 2 cells high. Eungal partner an ascomycete. Androecia on abbreviated, tightly spicate branches from leading shoots; bracts ventricose, the lobes acuminate, terminating in a uniseriate row of 2-3 cells, the terminal cell very long and narrowing toward the tip, the lobe bases crenate-denticulate; margins of disc sparingly crenate-dentate, devoid of slime papillae. Gynoecia with bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth but often with diverging lobes, the bracts concave, bifid; lobes caudate, the tip consisting of a uniseriate row of 2-3 very elongate cells, the lobe margins crenate-denticulate often by the variously projecting distal end of lobe cells; lamina composed of irregularly short- to long-rectangular, leptodermous cells, the margins sparingly crenate-dentate; bracteole similar in size and form. Perianth rather inconspicuous in situ yet rather large for plant size, straight to curved; mouth with cilia each con¬ sisting of a single elongate cell or a uniseriate row of 2 elongate cells (ca. 9-12 X 120- 150 |ULm), the distal end of the penultimate cells often projecting and forming a shoulder- like process. Capsule wall 2(very locally 3)-stratose, 16-20 juim thick, the outer layer 1.4-1.6X thicker than inner layer; outer layer of cells feebly tiered, ca. 28-34 X 45-48 juim, ± regularly short- rectangular, the alternating walls with thin, sheet-like thickenings and feebly nodule-like swellings lending the vertical walls a sinuous appearance, the transverse walls devoid of thickenings; innermost layer of cells longer and narrower, 8-12 X 45-75 juim, mostly with nodule¬ like to spine-like thickenings, with complete semi annular bands sporadic and often non- pigmented in median sector. Spores 12.5-13.9 luim in diam., with a network of low, often furcate ridges that often anastomose to form irregular and weak areolae. Elaters 8. 2-8. 6 juim wide, feebly to moderately tortuous, only slightly tapering toward tips, bispiral to tips, the spirals 2. 9-3. 4 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island, South Island (0- 660 m). North Island (200-580 m), Chatham Islands; Australia: Tasmania, Victoria. In New Zealand known from Eiordland, Westland, Western Nelson, Marlborough, Southern North Island, Volcanic Plateau (Lake Rotoehu), Taranaki (Mt. Taranaki), Auckland (Mt. Moehau) and Northland (Waipoua Eorest) EPs. Very common in lowland forests of Westland and Eiordland, but the comparatively few collections from the North Island suggest it is relatively uncommon there. In pure mats or woven through other bryophytes, on rotting wood and tree roots, humic soil, occasionally seen hanging in wefts from soil and other bryophytes, occasionally on rock surfaces. In the North Island usually on or at base of tree-fern trunks (with Calomnion com- planatum, Bazzania tayloriana and Trichomanes venosum); rarely epiphyllic (on Hymeno- phyllumferrugineum). Eound under lowland to montane forest, mainly under lowland forests of Dacrydium cupressinum, Weinmannia racemosa, Quintinia serrata, Metrosideros umbel- lata, under Nothofagus solandri and N. menziesii forest, or under Lepidothamnus intermedins forest. Eound most constantly in association with Bazzania nitida, Zoopsis argentea and Rhi- zogonium pennatum. Other species that sometimes occur with Psiloclada are Acrobolbus lopho- coleoides, Acromastigum anisostomum, A. colensoanum, A. marginatum, Bazzania hochstetteri, B. monilinervis , B. novae -zelandiae, Clandarium xiphophyllum, Distichophyllum pulchellum. Ditrichum punctulatum, Heteroscyphus billardierei, H. decipiens, Kurzia hippuroides, Lem- bidium longifolium, Lepicolea scolopendra, Lepidozia kirkii, L concinna, L spinosissima, Leu- cobryum candidum, Marsupidium knightii, Podomitrium phyllanthus, Rhizogonium distichum, Riccardia cochleata, R. crassa, Saccogynidium australe, S. decurvum, Schistochila glaucescens, S. nobilis, Telaranea tuberifera, Trichomanes venosum, Trichotemnoma corrugatum, Tylimanthus divers if olius, Zoopsidella caledonica, Zoopsis bicruris, Z. ceratophylla, Z. leitgebiana, Z. matawaia and Z setulosa. Comments: Psiloclada clandestina is here defined to include plants that are variable in vigor, leaf lobe number and underleaf lobe number. Smaller phases are filamentous in aspect and have 5-6 leaf lobes and 3-4 underleaf lobes. This is the phase regarded as P. clandestina fo. clandestina in Schuster (1980a) and P. clandestina s. str in Engel (1985). Subsequent detailed studies of New Zealand populations have revealed that a single species occurs within here and that an increase in vigor is coupled with an increase in the number of leaf and underleaf lobes. Particularly vigorous plants have leaves 8-9 to even 10-lobed and underleaves 5- 6(8)-lobed; such plants are often leafy in aspect. This phase was recognized taxonomically as P clandestina subsp. clandestina fo. major in Schuster (1980a) and as a distinct species, P. major, in Engel (1985). In the field, Psiloclada clandestina may be recognized by the minute size, the very slender, wiry plants with tiny and mostly remote leaves with lobes stiffly oriented toward the shoot apex and by the dull olive-green or brownish green color. Subfam. Drucelloideae (Boesen) R.M.Schust. Drucelloideae (Boesen) R.M.Schust., Phytologia 56: 69. 1984. Drucella E.A.Hodgs. Drucella E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 2: 45. 1962. Plants strongly anisophyllous, light green to whitish green, weakly chlorophyllose and devoid of wall pigments, nitid, to 0.45 mm wide. Plants with an extensive system of basal, creep¬ ing, plagiotropic, small-leaved, often microphyllous, strongly elongated, occasionally branched rhizomatous or stoloniform axes from which arise ascending to erect, often arched, simple or sporadically branched leafy shoots of limited length. Branching irregular, uniformly intercalary, the branches mostly lateral, exceptionally ventral. Stem rigid and wiry, the cortical cells in surface view strongly elongated, ± tiered, the longitudinal walls very thick, the transverse ones thin, in cross section in 6-10 rows; medulla of 5-9 rows of rather thick-walled cells of ± similar diameter to the cortical cells. Rhizoids occasional, the tips often swollen, at underleaf bases of older sectors of shoots, also from bases of leaves and underleaves of rhizomes or stolons. Leaves contiguous to weakly imbricate, stiffly and widely spreading, 160- 250 |ULm wide at the lobe apices, 100 juim wide at the leaf base, 270-325 juim long, separated by 1-3 cortical cells on either side, the insertion clearly incubous, not reaching stem midline dorsally and delimiting a leaf-free strip of 2 rows of cortical cells; leaves asymmetrically cuneate to narrowly obtrapezoidal, rather narrowed to the insertion, (2)3-fid to 0.5-0.75. Lobes usually unequal, entire, the dorsal lobe linear-lanceolate, 2-3(4) cells wide at base, terminating in a uniseriate row of 2-4 moderately elongated cells, the middle lobe similar to the dorsal or a little smaller, the ventral lobe usually smaller, often only 1-3-celled and at times ending in a slime papilla. Disc mostly 2-3(4) cells high, (5)6 cells wide at the base. Cells of disc cells pellucid, equally very thick-walled and without trigones, the middle lamella conspicuous, the median cells 20-25 juim wide X 30-35 juim long; surface smooth. Oil-bodies ab¬ sent or occasionally 1 or 2 per cell, spherical, moderately but faintly granular, ca. 5 juim in diam., breaking up rapidly to oil-droplets that are homogeneous, small, 1.8-2. 3 juim in diam. Chloroplasts few. Underleaves inserted on 2-3 rows of stem cells, narrower than stem and leaving the stem broadly exposed, distant, small, spreading to squarrose, ± obtrapezoid- quadrate, 2-3-lobed, the lobes often unequal, consisting of 1-2 cells, terminating in a slime papilla; the disc 1-2.5 cells high and 3 cells wide. Asexual reproduction absent. Dioecious. Androecia typically on short ventral-intercalary branches, rarely on lateral- intercalary branches; bracts slightly larger than vegetative leaves, strongly concave, bifid to 0. 5-0.7; antheridia 1 per bract, the stalk uniseriate. Gynoecia typically on short ventral- intercalary branches, exceptionally on short lateral-intercalary branches; bracts in 2-3 series, appressed to perianth, (2)3-5-fid to 0.5-0.7, the lobes 2-4 cells wide at base, terminating in a uniseriate row of 5-7 cells, the lobes with a few teeth below, the distal sector of lobes cilii- form; bracteoles similar to bracts but somewhat smaller and sparingly armed. Perianth ovoid- cylindrical, the mouth wide, lobulate-ciliate, the cilia terminating in a uniseriate row of 4-8 elongated cells, with accessory teeth below; perianth unistratose throughout and with cell walls thinner than those of leaf cells. Seta with 8 rows of outer cells surrounding an inner core of 14-16 much smaller cells. Capsule short-ovoid, small, the valves only 140-145 X 315-330 juim, the wall 14-15 juim thick, bistratose, the outer layer somewhat thicker than the inner; outer layer of cells distinctly tiered, comprised of only 6-7 tiers (the large basal cells at valve base excepted), the cells long- rectangular, the development of the outer layer not fixed and of two types: a) one with two-phase development, the longitudinal walls with pale magenta, well-defined, sheet-like, continuous thickenings + nodule-like thickenings (lending a sinuous appearance) alternating with walls that are devoid of thickenings (or with a very few, sporadic, local, non-pigmented, nodular swellings), the transverse walls devoid of thickenings; and b) the other type with one-phase development, all longitudinal walls with thickened continuous sheets of pigmented material and {fide Boesen, 1982) with semiannular bands common; innermost layer of cells markedly long and narrowly rectangular, the longitudinal walls with thick continuous sheets of material, with semiannular bands common or with complete, well-developed bands present but less frequent, the longitudinal walls then with nodular thickenings that variously extend onto the exposed tangential wall as feeble spurs or weak, faintly pigmented incomplete or complete semiannular bands. Spores 8. 6-9. 6 to 11-13.2 juim in diam., reddish brown or yellow-brown, finely reticulate. Elaters rigid, 8. 2-9. 6 to 11-16 juim wide, slightly tapered to tips, bispiral, the spirals 2.4- 2.9 |ULm wide. Type: Drucella integristipula (Steph.) E.A.Hodgs. (= Lepidozia integristipula Steph.) The genus is monotypic and known only from New Zealand, Tasmania and southeast Australia. References: Boesen (1982); Hodgson (1962b); Schuster (1980a, 2000a). walled leaf eells, the leaf-free strip and the long, thiek- walled eortieal eells. 2. Portion of perianth spore outline drawn to same seale. (Fig. 1, from Engel 23612, New Zealand, North Is., Voleanie Plateau EP, Kaimai-Mamaku Forest Park, Kaimai Ra., Aongatete R.; 2-6, from Glenny 9261, New Zealand, South Is., Western Nelson EP, Pupu Walkway.) axis; note long ealyptra (= C) and presenee of unfertilized arehegonia (stippled) earried partway 200 M</pre>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Psiloclada clandestina subsp. clandestina</p>
+    <pre class="description-text">Plants filamentous and thread-like in smaller phases to leafy in aspect in vigorous phases, with wiry, rigid, brittle axes; shoots to 345 juim wide with leaves. Branches remote and irregularly pinnate to frequent, distinctly and regularly l(2)-pinnate, the terminal branches fre¬ quently becoming flagelliform; branch half-leaf 4(5)-lobed; first branch underleaf 2-3-lobed. Rhizoids rare, lacking in distal shoot sectors. Leaves rigid, firmly attached, 120-175 juim wide X 100-175 |ULm long, on main stems (5)6-9(10)-lobed, moderately asymmetrical, the ventral 1-2 lobes larger, formed of 2-3 to 4-5 cells, the dorsal smaller, usually l(2)-celled. Lobes each ending in a highly differentiated, erect, unicellular, conspicuously elongated, hyaline, rigid, setose apical cell, the apical lobe cell directed toward stem apex or inclined toward stem, basally often a little dilated and bulb-like, long-tapered, 10-12 X 84-110 juim. Disc asymmetrical, 2 cells high in dorsal half, to 4-5 cells high in ventral half, the disc 10-16 cells wide at base. Cells of disc and lobe bases thick-walled, small, the median disc cells 12-17 X 15- 19 |ULm. Oil-bodies absent, but a few droplets present in some disc cells, when present, obscure. South Is., Westland EP, Mt. Hercules Scenic Reserve; 2, from Hatcher 820, New Zealand, South Is., Westland EP, Martins Bay; 3-10, from Engel 18326, New Zealand, South Is., Westland EP, Arthur’s Pass Natl. Park, N of Kellys Creek.) 1-2(3) per cell, hyaline, homogeneous or consisting of a few obscure inconspicuous spherules, much smaller than chloroplasts. Oil-droplets of stem cortex cells 0-5(7) per cell, homogeneous, colorless, 0.75-1.5 juim in diam., ellipsoidal or spherical or an irregular variant on spherical. Chloroplasts very large for cell size, in disc and all lobe cells except the long curved tip cell, which is devoid of contents. Underleaves of main stems (3)4-6(8)-lobed, the lobes usually consisting of a basal cell and a setose apical cell; disc rudimentary, spreading, 2 cells high. Eungal partner an ascomycete. Androecia on abbreviated, tightly spicate branches from leading shoots; bracts ventricose, the lobes acuminate, terminating in a uniseriate row of 2-3 cells, the terminal cell very long and narrowing toward the tip, the lobe bases crenate-denticulate; margins of disc sparingly crenate-dentate, devoid of slime papillae. Gynoecia with bracts of innermost series much larger than leaves, erect and closely ensheathing the perianth but often with diverging lobes, the bracts concave, bifid; lobes caudate, the tip consisting of a uniseriate row of 2-3 very elongate cells, the lobe margins crenate-denticulate often by the variously projecting distal end of lobe cells; lamina composed of irregularly short- to long-rectangular, leptodermous cells, the margins sparingly crenate-dentate; bracteole similar in size and form. Perianth rather inconspicuous in situ yet rather large for plant size, straight to curved; mouth with cilia each con¬ sisting of a single elongate cell or a uniseriate row of 2 elongate cells (ca. 9-12 X 120- 150 |ULm), the distal end of the penultimate cells often projecting and forming a shoulder- like process. Capsule wall 2(very locally 3)-stratose, 16-20 juim thick, the outer layer 1.4-1.6X thicker than inner layer; outer layer of cells feebly tiered, ca. 28-34 X 45-48 juim, ± regularly short- rectangular, the alternating walls with thin, sheet-like thickenings and feebly nodule-like swellings lending the vertical walls a sinuous appearance, the transverse walls devoid of thickenings; innermost layer of cells longer and narrower, 8-12 X 45-75 juim, mostly with nodule¬ like to spine-like thickenings, with complete semi annular bands sporadic and often non- pigmented in median sector. Spores 12.5-13.9 luim in diam., with a network of low, often furcate ridges that often anastomose to form irregular and weak areolae. Elaters 8. 2-8. 6 juim wide, feebly to moderately tortuous, only slightly tapering toward tips, bispiral to tips, the spirals 2. 9-3. 4 juim wide. Distribution and Ecology: New Zealand: Auckland Islands, Stewart Island, South Island (0- 660 m). North Island (200-580 m), Chatham Islands; Australia: Tasmania, Victoria. In New Zealand known from Eiordland, Westland, Western Nelson, Marlborough, Southern North Island, Volcanic Plateau (Lake Rotoehu), Taranaki (Mt. Taranaki), Auckland (Mt. Moehau) and Northland (Waipoua Eorest) EPs. Very common in lowland forests of Westland and Eiordland, but the comparatively few collections from the North Island suggest it is relatively uncommon there. In pure mats or woven through other bryophytes, on rotting wood and tree roots, humic soil, occasionally seen hanging in wefts from soil and other bryophytes, occasionally on rock surfaces. In the North Island usually on or at base of tree-fern trunks (with Calomnion com- planatum, Bazzania tayloriana and Trichomanes venosum); rarely epiphyllic (on Hymeno- phyllumferrugineum). Eound under lowland to montane forest, mainly under lowland forests of Dacrydium cupressinum, Weinmannia racemosa, Quintinia serrata, Metrosideros umbel- lata, under Nothofagus solandri and N. menziesii forest, or under Lepidothamnus intermedins forest. Eound most constantly in association with Bazzania nitida, Zoopsis argentea and Rhi- zogonium pennatum. Other species that sometimes occur with Psiloclada are Acrobolbus lopho- coleoides, Acromastigum anisostomum, A. colensoanum, A. marginatum, Bazzania hochstetteri, B. monilinervis , B. novae -zelandiae, Clandarium xiphophyllum, Distichophyllum pulchellum. Ditrichum punctulatum, Heteroscyphus billardierei, H. decipiens, Kurzia hippuroides, Lem- bidium longifolium, Lepicolea scolopendra, Lepidozia kirkii, L concinna, L spinosissima, Leu- cobryum candidum, Marsupidium knightii, Podomitrium phyllanthus, Rhizogonium distichum, Riccardia cochleata, R. crassa, Saccogynidium australe, S. decurvum, Schistochila glaucescens, S. nobilis, Telaranea tuberifera, Trichomanes venosum, Trichotemnoma corrugatum, Tylimanthus divers if olius, Zoopsidella caledonica, Zoopsis bicruris, Z. ceratophylla, Z. leitgebiana, Z. matawaia and Z setulosa. Comments: Psiloclada clandestina is here defined to include plants that are variable in vigor, leaf lobe number and underleaf lobe number. Smaller phases are filamentous in aspect and have 5-6 leaf lobes and 3-4 underleaf lobes. This is the phase regarded as P. clandestina fo. clandestina in Schuster (1980a) and P. clandestina s. str in Engel (1985). Subsequent detailed studies of New Zealand populations have revealed that a single species occurs within here and that an increase in vigor is coupled with an increase in the number of leaf and underleaf lobes. Particularly vigorous plants have leaves 8-9 to even 10-lobed and underleaves 5- 6(8)-lobed; such plants are often leafy in aspect. This phase was recognized taxonomically as P clandestina subsp. clandestina fo. major in Schuster (1980a) and as a distinct species, P. major, in Engel (1985). In the field, Psiloclada clandestina may be recognized by the minute size, the very slender, wiry plants with tiny and mostly remote leaves with lobes stiffly oriented toward the shoot apex and by the dull olive-green or brownish green color. Subfam. Drucelloideae (Boesen) R.M.Schust. Drucelloideae (Boesen) R.M.Schust., Phytologia 56: 69. 1984. Drucella E.A.Hodgs. Drucella E.A.Hodgs., Trans. Roy. Soc. New Zealand, Bot. 2: 45. 1962. Plants strongly anisophyllous, light green to whitish green, weakly chlorophyllose and devoid of wall pigments, nitid, to 0.45 mm wide. Plants with an extensive system of basal, creep¬ ing, plagiotropic, small-leaved, often microphyllous, strongly elongated, occasionally branched rhizomatous or stoloniform axes from which arise ascending to erect, often arched, simple or sporadically branched leafy shoots of limited length. Branching irregular, uniformly intercalary, the branches mostly lateral, exceptionally ventral. Stem rigid and wiry, the cortical cells in surface view strongly elongated, ± tiered, the longitudinal walls very thick, the transverse ones thin, in cross section in 6-10 rows; medulla of 5-9 rows of rather thick-walled cells of ± similar diameter to the cortical cells. Rhizoids occasional, the tips often swollen, at underleaf bases of older sectors of shoots, also from bases of leaves and underleaves of rhizomes or stolons. Leaves contiguous to weakly imbricate, stiffly and widely spreading, 160- 250 |ULm wide at the lobe apices, 100 juim wide at the leaf base, 270-325 juim long, separated by 1-3 cortical cells on either side, the insertion clearly incubous, not reaching stem midline dorsally and delimiting a leaf-free strip of 2 rows of cortical cells; leaves asymmetrically cuneate to narrowly obtrapezoidal, rather narrowed to the insertion, (2)3-fid to 0.5-0.75. Lobes usually unequal, entire, the dorsal lobe linear-lanceolate, 2-3(4) cells wide at base, terminating in a uniseriate row of 2-4 moderately elongated cells, the middle lobe similar to the dorsal or a little smaller, the ventral lobe usually smaller, often only 1-3-celled and at times ending in a slime papilla. Disc mostly 2-3(4) cells high, (5)6 cells wide at the base. Cells of disc cells pellucid, equally very thick-walled and without trigones, the middle lamella conspicuous, the median cells 20-25 juim wide X 30-35 juim long; surface smooth. Oil-bodies ab¬ sent or occasionally 1 or 2 per cell, spherical, moderately but faintly granular, ca. 5 juim in diam., breaking up rapidly to oil-droplets that are homogeneous, small, 1.8-2. 3 juim in diam. Chloroplasts few. Underleaves inserted on 2-3 rows of stem cells, narrower than stem and leaving the stem broadly exposed, distant, small, spreading to squarrose, ± obtrapezoid- quadrate, 2-3-lobed, the lobes often unequal, consisting of 1-2 cells, terminating in a slime papilla; the disc 1-2.5 cells high and 3 cells wide. Asexual reproduction absent. Dioecious. Androecia typically on short ventral-intercalary branches, rarely on lateral- intercalary branches; bracts slightly larger than vegetative leaves, strongly concave, bifid to 0. 5-0.7; antheridia 1 per bract, the stalk uniseriate. Gynoecia typically on short ventral- intercalary branches, exceptionally on short lateral-intercalary branches; bracts in 2-3 series, appressed to perianth, (2)3-5-fid to 0.5-0.7, the lobes 2-4 cells wide at base, terminating in a uniseriate row of 5-7 cells, the lobes with a few teeth below, the distal sector of lobes cilii- form; bracteoles similar to bracts but somewhat smaller and sparingly armed. Perianth ovoid- cylindrical, the mouth wide, lobulate-ciliate, the cilia terminating in a uniseriate row of 4-8 elongated cells, with accessory teeth below; perianth unistratose throughout and with cell walls thinner than those of leaf cells. Seta with 8 rows of outer cells surrounding an inner core of 14-16 much smaller cells. Capsule short-ovoid, small, the valves only 140-145 X 315-330 juim, the wall 14-15 juim thick, bistratose, the outer layer somewhat thicker than the inner; outer layer of cells distinctly tiered, comprised of only 6-7 tiers (the large basal cells at valve base excepted), the cells long- rectangular, the development of the outer layer not fixed and of two types: a) one with two-phase development, the longitudinal walls with pale magenta, well-defined, sheet-like, continuous thickenings + nodule-like thickenings (lending a sinuous appearance) alternating with walls that are devoid of thickenings (or with a very few, sporadic, local, non-pigmented, nodular swellings), the transverse walls devoid of thickenings; and b) the other type with one-phase development, all longitudinal walls with thickened continuous sheets of pigmented material and {fide Boesen, 1982) with semiannular bands common; innermost layer of cells markedly long and narrowly rectangular, the longitudinal walls with thick continuous sheets of material, with semiannular bands common or with complete, well-developed bands present but less frequent, the longitudinal walls then with nodular thickenings that variously extend onto the exposed tangential wall as feeble spurs or weak, faintly pigmented incomplete or complete semiannular bands. Spores 8. 6-9. 6 to 11-13.2 juim in diam., reddish brown or yellow-brown, finely reticulate. Elaters rigid, 8. 2-9. 6 to 11-16 juim wide, slightly tapered to tips, bispiral, the spirals 2.4- 2.9 |ULm wide. Type: Drucella integristipula (Steph.) E.A.Hodgs. (= Lepidozia integristipula Steph.) The genus is monotypic and known only from New Zealand, Tasmania and southeast Australia. References: Boesen (1982); Hodgson (1962b); Schuster (1980a, 2000a). walled leaf eells, the leaf-free strip and the long, thiek- walled eortieal eells. 2. Portion of perianth spore outline drawn to same seale. (Fig. 1, from Engel 23612, New Zealand, North Is., Voleanie Plateau EP, Kaimai-Mamaku Forest Park, Kaimai Ra., Aongatete R.; 2-6, from Glenny 9261, New Zealand, South Is., Western Nelson EP, Pupu Walkway.) axis; note long ealyptra (= C) and presenee of unfertilized arehegonia (stippled) earried partway 200 M</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p class="description-text">5mm                                   Gackstroemia weindorferi      4:.1
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Psiloclada clandestina subsp. clandestina</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">5mm                                   Gackstroemia weindorferi      4:.1
 
 
 
@@ -569,16 +532,19 @@ Ker, Streimann 27387, Mar 1983, CBG-8305352; Main Coast Range, Streimann 27147 p
 
 Similar species: Cheilolejeunea mimos_a, other Lejeuneaceae spp., Frullania spp.,
 Radula spp.
-                    Liverworts with underleaves and incubous leaves - Group D</p>
+                    Liverworts with underleaves and incubous leaves - Group D</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+    <pre class="description-text">Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
 Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
                          divisions toothed or with a 6 contorted bristle-                 weakly asymmetrically 2–3-lobed, vs. undivided
                          like tip 1–2 cells in length.                                    and ciliiform in T. lindenbergii.
@@ -636,16 +602,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                             Telaranea fernandeziensis resembles T. linden-                Cucao near W coast, 50 m, Engel 12083 (F); ibid., E of
                          bergii of New Zealand in having 6 transversely                   Cucao near SW end of Lago Cacao, Loncomilla (alto de
                          inserted, squarrose stem and branch leaves, with                 la Vergen), 75 m, Engel 12130 (F); ibid., 1.3 km by road
-                         a disc 2(3) cells high, and the basal tier of cells              N of junction of Ruta 5 and road to Delcahue, ca. 100</p>
+                         a disc 2(3) cells high, and the basal tier of cells              N of junction of Ruta 5 and road to Delcahue, ca. 100</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Leaves widely attached to stem, by several cells ...................................................... 18
+    <pre class="description-text">Leaves widely attached to stem, by several cells ...................................................... 18
                                                                                                                                                                                17 Leaf apex rounded; lobule with 3–4 teeth ............................ Siphonolejeunea nudipes
                                                                                                                                                                                   Leaf apex pointed; lobule with 1 tooth ................................ Nephelolejeunea hamata
                                                                                                                                                                                18 Oil bodies 1 or 2 per cell, each resembling a cluster of grapes;
@@ -769,7 +738,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                                                                                          Bryophyte special issue
 
                                                                                                                                                                                Ackowledgements                                         Flora of Australia Supplementary Series No. 20.
-                                                                                                                                                                               Many thanks are due to two anonymous referees           (ABRS and FNCV: Canberra and Blackburn)</p>
+                                                                                                                                                                               Many thanks are due to two anonymous referees           (ABRS and FNCV: Canberra and Blackburn)</pre>
     
     
   </details>
@@ -778,14 +747,49 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Corymbia clandestina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cyathochaeta clandestina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lembophyllum clandestinum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phytophthora clandestina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Psiloclada</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Psiloclada clandestina subsp. clandestina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Psiloclada clandestina subsp. clandestina f. major</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stagonospora clandestina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Styphelia psiloclada</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acrolepidozia R.M.Schust</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Arachniopsis Spruce</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Psiloclada clandestina</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Psiloclada major</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Telaranea Spruce</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -800,22 +804,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [100.1, 89.4, 123.3, 131.7, 201.0, 191.4, 223.6, 233.1, 212.4, 181.2, 118.0, 139.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.2, 20.3, 18.1, 15.0, 12.2, 10.3, 9.8, 10.6, 12.4, 14.3, 17.1, 18.3], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.7, 9.9, 8.6, 6.6, 4.9, 3.6, 2.9, 3.3, 4.5, 5.3, 7.2, 8.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

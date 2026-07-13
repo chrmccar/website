@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Chiloscyphus muricatus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Chiloscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Amphibolurus muricatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Ceratophyllum muricatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus multipennus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Myriophyllum muricatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Osteospermum muricatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Philoscaphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Ricinocarpos muricatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Scorpiurus muricatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia muricata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea muricata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Chiloscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,35 +48,37 @@
     <p class="big-num">415</p>
     <footer>54 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">11.9&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1462&thinsp;mm</p>
-    <footer>
-      CV 24.1
-    </footer>
+    <footer>annual · CV&thinsp;24.1</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">15</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -114,167 +86,168 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>8.0–12.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>8.0–12.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>3.0–5.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>3.0–5.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>2.2</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>2.2</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>small</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    <summary>
+      <strong>BANKS_PENINSULA_2013</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Recorded from Banks Peninsula: Herbert district (DG10939 Kaituna Valley 370 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Recorded from Banks Peninsula: Herbert district (DG10939 Kaituna Valley 370 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
     
     
   </details>
   
   <details>
-    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CHILOSCYPHUS_MONOGRAPH_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Two trends toward loss of a branch type occur in sect.                         (Fig. 72: 3, C. parvispineus). The two sections of subg.
+    <pre class="description-text">Two trends toward loss of a branch type occur in sect.                         (Fig. 72: 3, C. parvispineus). The two sections of subg.
            Novarum-zeelandiarum: one toward loss of lateral-intercalary                   Microlophocolea each have a species with echinae inserted
            branches (C. calcareus), the other toward loss of terminal                     strictly over the cell lumen (C. muricatus of sect. Micro-
            branches (C. hattorii). A tendency toward loss of terminal                     lophocolea, Fig. 79: 11; C. parvispineus of sect. Hemispini,
@@ -505,16 +478,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
           both dorsal and ventral surfaces armed as in vegetative leaves;                 leaves ventrally, a leaf-free gutter, and echinae on the dorsal
           apices short bifid by sharply deflexed lobes, the ventral lobe a                surface of the stem.
           bit larger but not or hardly longer, the lobes broadly acute,                      Well-developed plants of C. muricatus have ventral surface
-          with margins with opposing, sharp 1–2-celled teeth similar to                   echinae clearly visible under the dissecting microscope.</p>
+          with margins with opposing, sharp 1–2-celled teeth similar to                   echinae clearly visible under the dissecting microscope.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Nees) Steph.                                          Lophocolea helmsiana Steph.
+    <pre class="description-text">Nees) Steph.                                          Lophocolea helmsiana Steph.
 Cheilolejeunea mimosa (Hook.f. &amp; Taylor)               Chiloscyphus herzogii ].].Engel &amp; R.M.Schust.
         R.M.Schust.                                           Lophocolea decurrens Herzog
 Cheilolejeunea novaezelandiae R.M.Schust.              Chiloscyphus inflexifolius (Steph.) ].].Engel &amp;
@@ -635,16 +611,19 @@ conchophylla                                               Tylimanthus surculosu
 Schistochila papillifera - Pachyschistochila papillifera
 Schistochila parvistipula -Pachyschistochila
 parvisti pula
-Schistochila pinnatifolia - Paraschistochila</p>
+Schistochila pinnatifolia - Paraschistochila</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_GLENNY_2006</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_GLENNY_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">J.J.Engel &amp; R.M.Schust.
+    <pre class="description-text">J.J.Engel &amp; R.M.Schust.
 Chiloscyphus connatus (Sw.)           Costa Rica     Gradstein 9404 (GOET)           AM282806
  J.J.Engel &amp; R.M.Schust.
 Chiloscyphus costatus (Nees)          Malaysia       Schäfer-Verwimp &amp;              AM282807
@@ -704,16 +683,19 @@ Chiloscyphus polyanthos (III)          Germany,            Hentschel Bryo 01792 
                                         Hesse
 Chiloscyphus polyanthos (IV)           Slovakia         Hentschel Bryo 0318 (JE)      AM282831
 Chiloscyphus profundus (Nees)          Germany          Hentschel Bryo 01414 (JE)     AM282832
- J.J.Engel &amp; R.M.Schust.</p>
+ J.J.Engel &amp; R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">or unbranched, and the branches can be
+    <pre class="description-text">or unbranched, and the branches can be
 divided into lobes. The margins are
 generally entire, although in a few
 species (e.g. Symphyogyna) they can be                                       palmate branching
@@ -836,16 +818,19 @@ shoots are prostrate, attached to the substratum by fine
 
 
 
-                                                                       p</p>
+                                                                       p</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">The jacky dragon is a type of lizard native to south-eastern Australia. Other common names include blood-sucker, stonewalker, and tree dragon. It was one of the first Australian reptiles to be named by Europeans, originally described by English zoologist George Shaw in Surgeon-General John White&#39;s Journal of a Voyage to New South Wales, published in London in 1790. The lizard is well-known for its bright yellow mouth and well-developed vertebral crest, as well as the temperature-dependent sex determination of its offspring.</p>
+    <pre class="description-text">The jacky dragon is a type of lizard native to south-eastern Australia. Other common names include blood-sucker, stonewalker, and tree dragon. It was one of the first Australian reptiles to be named by Europeans, originally described by English zoologist George Shaw in Surgeon-General John White&#39;s Journal of a Voyage to New South Wales, published in London in 1790. The lizard is well-known for its bright yellow mouth and well-developed vertebral crest, as well as the temperature-dependent sex determination of its offspring.</pre>
     
     
   </details>
@@ -854,14 +839,43 @@ shoots are prostrate, attached to the substratum by fine
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Amphibolurus muricatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ceratophyllum muricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus multipennus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Myriophyllum muricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Osteospermum muricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Philoscaphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ricinocarpos muricatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Scorpiurus muricatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia muricata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea muricata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -876,22 +890,32 @@ shoots are prostrate, attached to the substratum by fine
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [78.1, 66.6, 86.6, 92.6, 134.0, 139.8, 157.9, 170.7, 150.3, 124.7, 94.9, 98.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.7, 20.7, 18.6, 15.3, 12.4, 10.4, 9.8, 10.6, 12.5, 14.5, 17.2, 18.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.9, 10.0, 8.7, 6.7, 5.0, 3.6, 3.0, 3.1, 4.4, 5.5, 7.4, 8.3], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

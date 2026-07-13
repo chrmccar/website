@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,39 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Plagiochila baileyana</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Plagiochilaceae</span>
-    <span class="badge secondary">Plagiochila</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (8)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acrotriche baileyana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cyathea baileyana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Dicranella baileyana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Frullania baileyana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Ixora baileyana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Samadera baileyana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Spermacoce baileyana</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Plagiochila</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -72,35 +48,37 @@
     <p class="big-num">70</p>
     <footer>14 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">17.5&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">2189&thinsp;mm</p>
-    <footer>
-      CV 53.6
-    </footer>
+    <footer>annual · CV&thinsp;53.6</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">17</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">8</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -108,174 +86,170 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>6.0–13.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>6.0–13.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>18.0–22.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>18.0–22.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>1200.0–2000.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>1200.0–2000.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>750.0–800.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>750.0–800.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>8.0–14.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>8.0–14.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>11.0–20.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>11.0–20.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>11.0–19.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>11.0–19.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>7.0–12.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>7.0–12.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>11.0–21.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>11.0–21.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>14.0–21.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>14.0–21.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>4.0–7.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>4.0–7.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>bulging</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>bulging</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">TYPES: G, NSW (H224).
+    <pre class="description-text">TYPES: G, NSW (H224).
 COMMENT: Name in current use.
 
 
@@ -349,16 +323,19 @@ Stephani&#39;s spelling, although original, must count as an orthographic error 
 amended by Scott &amp; Bradshaw (1986: 79).
 
 Riccardia babindae Hewson (1970b: 85)
-PROTO: &#39;Holotype-The Boulders, Babinda, N. Qld., Hewson 460, viii.1964 (NSW): ISOTYPE</p>
+PROTO: &#39;Holotype-The Boulders, Babinda, N. Qld., Hewson 460, viii.1964 (NSW): ISOTYPE</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Neohodgsonia mirabilis (Perss.) Perss.                 Pallavicinia tenuinervis (Hook.f. &amp; Taylor) Trevis.
+    <pre class="description-text">Neohodgsonia mirabilis (Perss.) Perss.                 Pallavicinia tenuinervis (Hook.f. &amp; Taylor) Trevis.
 Nephelolejeunea conchophylla Grolle                    Pallavicinia xiphoides (Hook.f. &amp; Taylor) Trevis.
 Nephelolejeunea hamata Grolle                          Paracromastigum drucei (R.M.Schust.) R.M.Schust.
 Nephelolejeunea papillosa Glenny                               Pseudocephalozia drucei R.M.Schust.
@@ -418,16 +395,19 @@ Plagiochila incurvicolla (Hook.f. &amp; Taylor) Hook.f.    Radula parviretis E.A
 Plagiochila lyallii Mitt. var. lyallii                 Radula plicata Mitt.
 Plagiochila lyallii var. quinquespina (Steph.) Inoue   Radula sainsburiana E.A.Hodgs. &amp; Allison
         &amp; R.M.Schust.                                  Radula silvosa E.A.Hodgs. &amp; Allison
-Plagiochila obscura Colenso                            Radula tabularis Steph.</p>
+Plagiochila obscura Colenso                            Radula tabularis Steph.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>PLAGIOCHILA_AUSTRALIA_2018</strong> (1 entry)</summary>
+    <summary>
+      <strong>PLAGIOCHILA_AUSTRALIA_2018</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">TELOPEA
+    <pre class="description-text">TELOPEA
                                         Journal of Plant Systematics
 plantnet.rbgsyd.nsw.gov.au/Telopea • escholarship.usyd.edu.au/journals/index.php/TEL • ISSN 0312-9764 (Print) • ISSN 2200-4025 (Online)
 
@@ -868,16 +848,19 @@ All the characters above are, by contrast, compatible with the lectotype in Gene
 P. baileyana as we know it from more recent collections. That the specimen of P. baileyana examined by Inoue
 and Schuster (1971) held in NY, although bearing the same collection details as the holotype of P. baileyana in
 G, does not contain the same plant was missed. The illustration of the type of P. baileyana in Inoue and Schuster
-(1971 Fig. 61: 2, 3, 5) shows the characteristic leaf shape and dentition of P. conturbata Steph., specifically the</p>
+(1971 Fig. 61: 2, 3, 5) shows the characteristic leaf shape and dentition of P. conturbata Steph., specifically the</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Acrotriche baileyana is a species of flowering plant in the family Ericaceae and is endemic to far north Queensland. It is an erect shrub with crowded elliptical leaves, spikes of small, tube-shaped, greenish-white flowers, and deep scarlet drupes.</p>
+    <pre class="description-text">Acrotriche baileyana is a species of flowering plant in the family Ericaceae and is endemic to far north Queensland. It is an erect shrub with crowded elliptical leaves, spikes of small, tube-shaped, greenish-white flowers, and deep scarlet drupes.</pre>
     
     
   </details>
@@ -886,14 +869,37 @@ G, does not contain the same plant was missed. The illustration of the type of P
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acrotriche baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cyathea baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Dicranella baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ixora baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Samadera baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Spermacoce baileyana</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -908,22 +914,32 @@ G, does not contain the same plant was missed. The illustration of the type of P
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [75.2, 63.4, 76.4, 81.4, 108.7, 120.0, 127.0, 140.9, 124.2, 105.5, 89.2, 86.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.5, 19.6, 17.5, 14.5, 11.7, 9.8, 9.1, 9.9, 11.9, 13.6, 16.0, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.3, 9.2, 8.0, 6.3, 4.6, 3.1, 2.5, 2.7, 3.7, 5.0, 6.9, 7.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

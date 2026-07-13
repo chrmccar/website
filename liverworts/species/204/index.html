@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,16 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Cephaloziella pulcherrima</em></h1>
-  <p>
+  <div class="taxon-path">
     
-    <span class="badge secondary">Cephaloziella</span>
-  </p>
-</hgroup>
-
-
-
+    <span class="badge">Cephaloziella</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -49,16 +48,14 @@
     <p class="big-num">0</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">4</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
 </div>
 
 
@@ -66,70 +63,71 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>CEPHALOZIELLA_REMOTIFOLIA_NZ</strong> (1 entry)</summary>
+    <summary>
+      <strong>CEPHALOZIELLA_REMOTIFOLIA_NZ</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">underleaves, branching mostly or entirely intercalary, leaves
+    <pre class="description-text">underleaves, branching mostly or entirely intercalary, leaves
 Figure 2. Cephaloziella remotifolia, stem in transverse section. Bleached.            only 170–200 µm long, bifid, and sub-transverse. Leaf cells are
 Photographed from the type (G. Napp s.n.; CHR 698205). Scale bar = 50 μm.             quadrate and the walls slightly thickened, oil-bodies are finely
 212          Telopea 29: 209–215, 2025                                                                                                          Glenny
@@ -189,16 +187,19 @@ type (G. Napp s.n.; CHR 698205). Scale bars = 50 μm.
                                                                                     walled. No mention is made of papillae on the stem surfaces.
 Infrageneric placement: Thirteen New Zealand species are in                         A sterile collection made on Stewart Island from very similar
 subgenus Cephaloziella, one in subgenus Schizophyllum Müll.                         habitat to the type may be this species (Fig. 4D). It shares most
-Frib., one in subgenus Evansia Müll.Frib., and one in subgenus                      features of the type (Table 1) but differs in a few respects as</p>
+Frib., one in subgenus Evansia Müll.Frib., and one in subgenus                      features of the type (Table 1) but differs in a few respects as</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">in Engel &amp; Merrill (1995)                                         (1988)
+    <pre class="description-text">in Engel &amp; Merrill (1995)                                         (1988)
 Telaranea pennata J.J.Engel &amp; G.L.S.Merrill- in Engel &amp;           Frullania engelii S. Hatt. - in Campbell (1997)
 Merrill (1995)                                                    Frullania junghuhniana Gottsche - in Campbell (1997)
 Telaranea tubifera J.J.Engel &amp; R.M.Schust. - in Engel &amp;           Harpalejeuneafilicuspis (Steph.) Mizut. - in Grolle (1980)
@@ -383,20 +384,23 @@ Engel, J.J. &amp; Merrill, G.L.S. 1996. Studies of New                       Bot
 
 
 
-Grolle, R. 1965a. Die Lebermoosgattungen                          Grolle, R. 1995. The Hepaticae and Anthocerotae of the</p>
+Grolle, R. 1965a. Die Lebermoosgattungen                          Grolle, R. 1995. The Hepaticae and Anthocerotae of the</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Cephaloziella pulcherrima subsp. sphagnicola</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Cephaloziella pulcherrima subsp. sphagnicola</p>
     
     
   </details>
@@ -405,18 +409,20 @@ Grolle, R. 1965a. Die Lebermoosgattungen                          Grolle, R. 199
 
 
 
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
   
+
+
 
 
 </body>

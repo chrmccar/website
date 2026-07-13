@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,47 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Trichotemnoma corrugatum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Trichotemnomataceae</span>
-    <span class="badge secondary">Trichotemnoma</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (12)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Cladosporium corrugatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Ditropidus corrugatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eudendrium corrugatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eurhopalus corrugatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Idiosoma corrugatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Liocarcinus corrugatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Strongylium corrugatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tholerosoma corrugatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Trichotemnoma</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Blepharostoma corrugatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Temnoma corrugatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Trichotemnoma corrugatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Trichotemnoma</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -80,21 +48,25 @@
     <p class="big-num">73</p>
     <footer>17 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">4</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -102,70 +74,79 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>regularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">KF942974, KF943139, KF942722,—; gb316, Russia: Murmansk, N.A.                 IBC34, Canada, E.C. Davis 431 (DUKE),—,—, KF943394,—,
+    <pre class="description-text">KF942974, KF943139, KF942722,—; gb316, Russia: Murmansk, N.A.                 IBC34, Canada, E.C. Davis 431 (DUKE),—,—, KF943394,—,
 Konstantinova 196-6-02 (KPABG),—,—,—,—,—,—, GQ220754,—,—,—;                   KF943004,—,—,—; S. sp.: gb320, Russia: Murmansk, N.A. Konstantinova
 gb317, Russia: Kemerovo, N.A. Konstantinova 72-2-00 (KPABG),—,—,              30-1-97 (KPABG),—,—,—,—,—,—, GQ220761,—,—,—; gb321, Russia:
 —,—·,·—,—, GQ220753,—,—,—; gb318, Russia: Perm, N.A. Konstantinova            Buryatiya, N.A. Konstantinova 70-2-01 (KPABG),—,—,—,—,—,—,
@@ -204,16 +185,19 @@ Zealand, M. Renner s.n. (DUKE),—, KF942576, KF943345, KF943599,               
 
                                                            This content downloaded from
                                          131.217.255.200 on Thu, 09 Jul 2026 03:22:11 UTC
-                                                   All use subject to https://about.jstor.org/terms</p>
+                                                   All use subject to https://about.jstor.org/terms</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Saccogynidium australe (Mitt.) Grolle                  Telaranea elegans (Colenso) J.J.Engel &amp; G.L.S.Merrill
+    <pre class="description-text">Saccogynidium australe (Mitt.) Grolle                  Telaranea elegans (Colenso) J.J.Engel &amp; G.L.S.Merrill
 Schistochila appendiculata (Hook.) Trevis.                     Lepidozia elegans Colenso
 Schistochila balfouriana (Hook.f. &amp; Taylor) Steph.     Telaranea exigua R.M.Schust.
         Schistochila unguicularis (Hook.f. &amp; Taylor)   Telaranea gibbsiana (Steph.) E.A.Hodgs.
@@ -273,29 +257,35 @@ Temnoma quadrifidum (Mitt.) E.A.Hodgs. &amp; Allison          in this checklist.
 Temnoma quadripartitum var. pseudopungens
         R.M.Schust.                                       Acroscyphella phoenicorhiza -Austroscyphus
 Temnoma quadripartitum (Hook.) Mitt. var.                 phoenicorhizus
-        quadripartitum                                    Acroscyphus nitidissimus -Austroscyphus</p>
+        quadripartitum                                    Acroscyphus nitidissimus -Austroscyphus</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants isophyllous, julaceous, closely prostrate, slender and terete, greenish to bluish green to brownish, with age plants often secreting a water-repellent whitish substance and appearing bleached; shoots small to medium in size. Branching usually laxly pinnate, the branches normally of Frullania type; Acromastigum-typc branches rare; ventral-intercalary branches rare, stoloniform. Stems comprised of a moderately well-defined hyaloderm of thin-walled cells that collapse with age and 1-2 subepidermal layers of thick- walled cells that grade into a leptodermous medulla, the stem cells similar in size but the subepidermal cells somewhat smaller. Rhizoids colorless, mostly from underleaf bases, some sporadically scattered over ventral surface of stem. Leaves suberect to erect, transversely inserted, unistratose or locally bistratose, concave, oblong, bifid to 0. 5-0.7, the lobes narrowly acute, the lobe and lamina margins entire. Cells, aside from marginal sectors, rectangular, thin- to equally thick-walled, trigones lacking; surface smooth. Oil-bodies lacking. Underleaves identical to leaves in form, size and orientation. Asexual reproduction absent. Dioecious or (in ours) paroecious. Androecia on leading shoots, becoming intercalary; bracts leaf-like but somewhat ventricose at the base and less deeply lobed; antheridia usually 1 per bract, the stalk biseriate; bracteoles lacking antheridia. Gynoecia terminal on leading shoots, with several progressively larger, closely imbricate bracts and bracteoles that are leaf- and underleaf-like, appressed to the perianth and form a compact bud-like, swollen, abruptly clavate capitulum; coelocaule-precursor distinct, low to rather high, the foot growing down into the shoot tip; shoot-calyptra present. Perianth distinct, ovate to oblong in outline, arising from a stout, swollen stem apex, pluriplicate, contracted at the mouth, often deeply 3-6-lobed. Seta short, of the general type, with ca. 16-24 rows of outer cells surrounding numerous inner cell rows identical in diameter. Capsule spherical or nearly so, usually only shortly exserted, the wall 2-stratose; outer layer of cells usually subquadrate, never consistently elongated, not tiered, with one-phase ontogeny, all walls (except isolated short ones) with 1-2 strong nodular thickenings; inner layer of cells elongated, with semi annular bands mostly incomplete, occasionally complete, the radial walls also with nodular thickenings. Spores delicately papillose, 1.5-2.5X elater diam. Elaters short, often tortuous, the ends weakly to strongly tapered, 2 broad or 3 narrow spirals. Type: Anthelia (Dumort.) Dumort. Anthelia (Dumort.) Dumort. mort., Recueil Observ. Jungerm. 18. 1835. Type: Anthelia julacea (L.) Dumort. (= Jungermannia julacea L.) The foregoing family description also serves to characterize the only genus. A family treated here with one genus, Anthelia. The genus has two Arctic-alpine species, one, A. juratzkana (Limpr.) Trevis., is bipolar in distribution and occurs in our area (see Schuster, 1974a). Some controversy surrounds circumscription of the family. Hassel (1980a) included the monotypic genus Grollea R.M.Schust. in the Antheliaceae, but (Schuster, 1984e, 2000a) placed it in its own family, Grolleaceae. Schuster (1984c, 2000a) placed the Grolleaceae in suborder Herbertineae. The Antheliaceae was placed in the Cephaloziineae by Schuster (1973, p. 392). The genus includes only two species, Anthelia julacea (L.) Dumort. and the following. Both occur in the Northern Hemisphere, h\xi A. julacea is chiefly oceanic and subarctic or alpine and absent from continental regions, whereas A. juratzkana is probably present in all Arctic regions and occurs northward to the farthest edges of land, to at least 82° 30&#39; N (Schuster et al., 1959, 1974a). The range of A. juratzkana extends southward to New Guinea and to New Zealand. In the Americas, it extends, following the Cordillera, to Mexico, Venezuela, Colombia, Ecuador and Bolivia, southward to Tierra del Euego, South Georgia and the Antarctic Peninsula. Both species occur only in strongly illuminated sites, either north or south of forested regions, or above treeline in alpine situations. Both occur on inorganic substrates, chiefly mineral soils. References: Schuster (1974a, 2000a).</p>
+    <pre class="description-text">Plants isophyllous, julaceous, closely prostrate, slender and terete, greenish to bluish green to brownish, with age plants often secreting a water-repellent whitish substance and appearing bleached; shoots small to medium in size. Branching usually laxly pinnate, the branches normally of Frullania type; Acromastigum-typc branches rare; ventral-intercalary branches rare, stoloniform. Stems comprised of a moderately well-defined hyaloderm of thin-walled cells that collapse with age and 1-2 subepidermal layers of thick- walled cells that grade into a leptodermous medulla, the stem cells similar in size but the subepidermal cells somewhat smaller. Rhizoids colorless, mostly from underleaf bases, some sporadically scattered over ventral surface of stem. Leaves suberect to erect, transversely inserted, unistratose or locally bistratose, concave, oblong, bifid to 0. 5-0.7, the lobes narrowly acute, the lobe and lamina margins entire. Cells, aside from marginal sectors, rectangular, thin- to equally thick-walled, trigones lacking; surface smooth. Oil-bodies lacking. Underleaves identical to leaves in form, size and orientation. Asexual reproduction absent. Dioecious or (in ours) paroecious. Androecia on leading shoots, becoming intercalary; bracts leaf-like but somewhat ventricose at the base and less deeply lobed; antheridia usually 1 per bract, the stalk biseriate; bracteoles lacking antheridia. Gynoecia terminal on leading shoots, with several progressively larger, closely imbricate bracts and bracteoles that are leaf- and underleaf-like, appressed to the perianth and form a compact bud-like, swollen, abruptly clavate capitulum; coelocaule-precursor distinct, low to rather high, the foot growing down into the shoot tip; shoot-calyptra present. Perianth distinct, ovate to oblong in outline, arising from a stout, swollen stem apex, pluriplicate, contracted at the mouth, often deeply 3-6-lobed. Seta short, of the general type, with ca. 16-24 rows of outer cells surrounding numerous inner cell rows identical in diameter. Capsule spherical or nearly so, usually only shortly exserted, the wall 2-stratose; outer layer of cells usually subquadrate, never consistently elongated, not tiered, with one-phase ontogeny, all walls (except isolated short ones) with 1-2 strong nodular thickenings; inner layer of cells elongated, with semi annular bands mostly incomplete, occasionally complete, the radial walls also with nodular thickenings. Spores delicately papillose, 1.5-2.5X elater diam. Elaters short, often tortuous, the ends weakly to strongly tapered, 2 broad or 3 narrow spirals. Type: Anthelia (Dumort.) Dumort. Anthelia (Dumort.) Dumort. mort., Recueil Observ. Jungerm. 18. 1835. Type: Anthelia julacea (L.) Dumort. (= Jungermannia julacea L.) The foregoing family description also serves to characterize the only genus. A family treated here with one genus, Anthelia. The genus has two Arctic-alpine species, one, A. juratzkana (Limpr.) Trevis., is bipolar in distribution and occurs in our area (see Schuster, 1974a). Some controversy surrounds circumscription of the family. Hassel (1980a) included the monotypic genus Grollea R.M.Schust. in the Antheliaceae, but (Schuster, 1984e, 2000a) placed it in its own family, Grolleaceae. Schuster (1984c, 2000a) placed the Grolleaceae in suborder Herbertineae. The Antheliaceae was placed in the Cephaloziineae by Schuster (1973, p. 392). The genus includes only two species, Anthelia julacea (L.) Dumort. and the following. Both occur in the Northern Hemisphere, h\xi A. julacea is chiefly oceanic and subarctic or alpine and absent from continental regions, whereas A. juratzkana is probably present in all Arctic regions and occurs northward to the farthest edges of land, to at least 82° 30&#39; N (Schuster et al., 1959, 1974a). The range of A. juratzkana extends southward to New Guinea and to New Zealand. In the Americas, it extends, following the Cordillera, to Mexico, Venezuela, Colombia, Ecuador and Bolivia, southward to Tierra del Euego, South Georgia and the Antarctic Peninsula. Both species occur only in strongly illuminated sites, either north or south of forested regions, or above treeline in alpine situations. Both occur on inorganic substrates, chiefly mineral soils. References: Schuster (1974a, 2000a).</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants isophyllous, julaceous, closely prostrate, slender and terete, greenish to bluish green to brownish, with age plants often secreting a water-repellent whitish substance and appearing bleached; shoots small to medium in size. Branching usually laxly pinnate, the branches normally of Frullania type; Acromastigum-typc branches rare; ventral-intercalary branches rare, stoloniform. Stems comprised of a moderately well-defined hyaloderm of thin-walled cells that collapse with age and 1-2 subepidermal layers of thick- walled cells that grade into a leptodermous medulla, the stem cells similar in size but the subepidermal cells somewhat smaller. Rhizoids colorless, mostly from underleaf bases, some sporadically scattered over ventral surface of stem. Leaves suberect to erect, transversely inserted, unistratose or locally bistratose, concave, oblong, bifid to 0. 5-0.7, the lobes narrowly acute, the lobe and lamina margins entire. Cells, aside from marginal sectors, rectangular, thin- to equally thick-walled, trigones lacking; surface smooth. Oil-bodies lacking. Underleaves identical to leaves in form, size and orientation. Asexual reproduction absent. Dioecious or (in ours) paroecious. Androecia on leading shoots, becoming intercalary; bracts leaf-like but somewhat ventricose at the base and less deeply lobed; antheridia usually 1 per bract, the stalk biseriate; bracteoles lacking antheridia. Gynoecia terminal on leading shoots, with several progressively larger, closely imbricate bracts and bracteoles that are leaf- and underleaf-like, appressed to the perianth and form a compact bud-like, swollen, abruptly clavate capitulum; coelocaule-precursor distinct, low to rather high, the foot growing down into the shoot tip; shoot-calyptra present. Perianth distinct, ovate to oblong in outline, arising from a stout, swollen stem apex, pluriplicate, contracted at the mouth, often deeply 3-6-lobed. Seta short, of the general type, with ca. 16-24 rows of outer cells surrounding numerous inner cell rows identical in diameter. Capsule spherical or nearly so, usually only shortly exserted, the wall 2-stratose; outer layer of cells usually subquadrate, never consistently elongated, not tiered, with one-phase ontogeny, all walls (except isolated short ones) with 1-2 strong nodular thickenings; inner layer of cells elongated, with semi annular bands mostly incomplete, occasionally complete, the radial walls also with nodular thickenings. Spores delicately papillose, 1.5-2.5X elater diam. Elaters short, often tortuous, the ends weakly to strongly tapered, 2 broad or 3 narrow spirals. Type: Anthelia (Dumort.) Dumort. Anthelia (Dumort.) Dumort. mort., Recueil Observ. Jungerm. 18. 1835. Type: Anthelia julacea (L.) Dumort. (= Jungermannia julacea L.) The foregoing family description also serves to characterize the only genus. A family treated here with one genus, Anthelia. The genus has two Arctic-alpine species, one, A. juratzkana (Limpr.) Trevis., is bipolar in distribution and occurs in our area (see Schuster, 1974a). Some controversy surrounds circumscription of the family. Hassel (1980a) included the monotypic genus Grollea R.M.Schust. in the Antheliaceae, but (Schuster, 1984e, 2000a) placed it in its own family, Grolleaceae. Schuster (1984c, 2000a) placed the Grolleaceae in suborder Herbertineae. The Antheliaceae was placed in the Cephaloziineae by Schuster (1973, p. 392). The genus includes only two species, Anthelia julacea (L.) Dumort. and the following. Both occur in the Northern Hemisphere, h\xi A. julacea is chiefly oceanic and subarctic or alpine and absent from continental regions, whereas A. juratzkana is probably present in all Arctic regions and occurs northward to the farthest edges of land, to at least 82° 30&#39; N (Schuster et al., 1959, 1974a). The range of A. juratzkana extends southward to New Guinea and to New Zealand. In the Americas, it extends, following the Cordillera, to Mexico, Venezuela, Colombia, Ecuador and Bolivia, southward to Tierra del Euego, South Georgia and the Antarctic Peninsula. Both species occur only in strongly illuminated sites, either north or south of forested regions, or above treeline in alpine situations. Both occur on inorganic substrates, chiefly mineral soils. References: Schuster (1974a, 2000a).</p>
+    <pre class="description-text">Plants isophyllous, julaceous, closely prostrate, slender and terete, greenish to bluish green to brownish, with age plants often secreting a water-repellent whitish substance and appearing bleached; shoots small to medium in size. Branching usually laxly pinnate, the branches normally of Frullania type; Acromastigum-typc branches rare; ventral-intercalary branches rare, stoloniform. Stems comprised of a moderately well-defined hyaloderm of thin-walled cells that collapse with age and 1-2 subepidermal layers of thick- walled cells that grade into a leptodermous medulla, the stem cells similar in size but the subepidermal cells somewhat smaller. Rhizoids colorless, mostly from underleaf bases, some sporadically scattered over ventral surface of stem. Leaves suberect to erect, transversely inserted, unistratose or locally bistratose, concave, oblong, bifid to 0. 5-0.7, the lobes narrowly acute, the lobe and lamina margins entire. Cells, aside from marginal sectors, rectangular, thin- to equally thick-walled, trigones lacking; surface smooth. Oil-bodies lacking. Underleaves identical to leaves in form, size and orientation. Asexual reproduction absent. Dioecious or (in ours) paroecious. Androecia on leading shoots, becoming intercalary; bracts leaf-like but somewhat ventricose at the base and less deeply lobed; antheridia usually 1 per bract, the stalk biseriate; bracteoles lacking antheridia. Gynoecia terminal on leading shoots, with several progressively larger, closely imbricate bracts and bracteoles that are leaf- and underleaf-like, appressed to the perianth and form a compact bud-like, swollen, abruptly clavate capitulum; coelocaule-precursor distinct, low to rather high, the foot growing down into the shoot tip; shoot-calyptra present. Perianth distinct, ovate to oblong in outline, arising from a stout, swollen stem apex, pluriplicate, contracted at the mouth, often deeply 3-6-lobed. Seta short, of the general type, with ca. 16-24 rows of outer cells surrounding numerous inner cell rows identical in diameter. Capsule spherical or nearly so, usually only shortly exserted, the wall 2-stratose; outer layer of cells usually subquadrate, never consistently elongated, not tiered, with one-phase ontogeny, all walls (except isolated short ones) with 1-2 strong nodular thickenings; inner layer of cells elongated, with semi annular bands mostly incomplete, occasionally complete, the radial walls also with nodular thickenings. Spores delicately papillose, 1.5-2.5X elater diam. Elaters short, often tortuous, the ends weakly to strongly tapered, 2 broad or 3 narrow spirals. Type: Anthelia (Dumort.) Dumort. Anthelia (Dumort.) Dumort. mort., Recueil Observ. Jungerm. 18. 1835. Type: Anthelia julacea (L.) Dumort. (= Jungermannia julacea L.) The foregoing family description also serves to characterize the only genus. A family treated here with one genus, Anthelia. The genus has two Arctic-alpine species, one, A. juratzkana (Limpr.) Trevis., is bipolar in distribution and occurs in our area (see Schuster, 1974a). Some controversy surrounds circumscription of the family. Hassel (1980a) included the monotypic genus Grollea R.M.Schust. in the Antheliaceae, but (Schuster, 1984e, 2000a) placed it in its own family, Grolleaceae. Schuster (1984c, 2000a) placed the Grolleaceae in suborder Herbertineae. The Antheliaceae was placed in the Cephaloziineae by Schuster (1973, p. 392). The genus includes only two species, Anthelia julacea (L.) Dumort. and the following. Both occur in the Northern Hemisphere, h\xi A. julacea is chiefly oceanic and subarctic or alpine and absent from continental regions, whereas A. juratzkana is probably present in all Arctic regions and occurs northward to the farthest edges of land, to at least 82° 30&#39; N (Schuster et al., 1959, 1974a). The range of A. juratzkana extends southward to New Guinea and to New Zealand. In the Americas, it extends, following the Cordillera, to Mexico, Venezuela, Colombia, Ecuador and Bolivia, southward to Tierra del Euego, South Georgia and the Antarctic Peninsula. Both species occur only in strongly illuminated sites, either north or south of forested regions, or above treeline in alpine situations. Both occur on inorganic substrates, chiefly mineral soils. References: Schuster (1974a, 2000a).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
@@ -304,14 +294,45 @@ Temnoma quadripartitum (Hook.) Mitt. var.                 phoenicorhizus
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cladosporium corrugatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ditropidus corrugatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eudendrium corrugatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eurhopalus corrugatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Idiosoma corrugatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Liocarcinus corrugatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Strongylium corrugatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tholerosoma corrugatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Trichotemnoma</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Blepharostoma corrugatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Temnoma corrugatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Trichotemnoma corrugatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -326,22 +347,32 @@ Temnoma quadripartitum (Hook.) Mitt. var.                 phoenicorhizus
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [100.6, 89.9, 121.1, 129.1, 198.6, 186.9, 220.4, 235.9, 220.9, 187.7, 121.3, 143.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.9, 20.0, 17.5, 14.2, 11.2, 9.3, 8.7, 9.6, 11.5, 13.6, 16.6, 17.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.0, 9.1, 7.8, 5.8, 4.3, 2.7, 2.1, 2.6, 3.7, 4.7, 6.5, 7.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

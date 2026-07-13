@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Acromastigum mooreanum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Acromastigum</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acromastigum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum anisostomum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum carcinum M.A.M.Renner &amp; T.C.Wilson</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum cavifolium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum cunninghamii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum divaricatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum echinatiforme</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum stenophyllum R.M.Schust.</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Acromastigum verticale</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Bazzania mooreana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigobryum mooreanum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Acromastigum</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,21 +48,25 @@
     <p class="big-num">123</p>
     <footer>78 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">35</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -100,318 +74,296 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>irregular</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>regularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>50.0–75.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>50.0–75.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>20.0–35.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>20.0–35.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>345.0–465.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>345.0–465.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>1.0–7.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>1.0–7.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>180.0–250.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>180.0–250.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>260.0–305.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>260.0–305.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>26.0–37.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>26.0–37.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>11.0–22.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>11.0–22.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>25.0–30.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>25.0–30.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>7.0–13.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>7.0–13.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–6.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>2.0–6.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>2.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.5</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.5</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.2</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.2</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>0.6</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>0.6</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>6.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>6.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>6.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>6.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>3.4</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>3.4</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>3.4</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>3.4</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.8</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.8</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>ACROMASTIGUM_AUSTRALIA_2014</strong> (1 entry)</summary>
+    <summary>
+      <strong>ACROMASTIGUM_AUSTRALIA_2014</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">the type: ‘The most typically developed underleaves… have two narrow and acute sinus at the apex, separating
+    <pre class="description-text">the type: ‘The most typically developed underleaves… have two narrow and acute sinus at the apex, separating
 three low crenations less than two cells high, which are obtuse, rounded, or subtruncate. These crenations,
 which represent the divisions of species with trifid underleaves, are tipped with two cells side by side or more
 rarely a single cell’ Evans (1934, p.43). Evans also noted that ‘Underleaves of A. tenax are of unusual interest
@@ -535,16 +487,19 @@ L. Rodway (HO87429; Adamson’s Peak Track, 43°20&#39;S 146°52&#39;E, 19 Feb 1
 South Cape Range, 43°33&#39;S 146°39&#39;E, 17 Mar 1983, S.J. Jarman 929 (HO74708; Catamaran, Recherche, 43°34&#39;S
 146°53&#39;E, 14 Jan 1911, W.A. Weymouth 1216 (HO87431).
 New Zealand: South Island: Western Nelson:Mt Augustus, 830 m, 15 Apr 2005, D. Glenny 9430, NSW745732;
-Stockton Mine Area, Ford Creek west of Burma Road, 41°40&#39;12&#39;&#39;S 171°52&#39;53&#39;&#39;E, 700 m, 4 Dec 2006, J.E. Braggins</p>
+Stockton Mine Area, Ford Creek west of Burma Road, 41°40&#39;12&#39;&#39;S 171°52&#39;53&#39;&#39;E, 700 m, 4 Dec 2006, J.E. Braggins</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">LeptoslOmum inclinans                                     +
+    <pre class="description-text">LeptoslOmum inclinans                                     +
 
 Papillariaflavo-limbata                                                        +
 Ptychomnion aciculare                                     ?
@@ -604,16 +559,19 @@ Lejeuneaceae sp?                                        +
 Marsupidium SUTcu/osum                                  +
 Marsupidium setulosum                                                           +
 Metzgeria decipiens                                     ?
-Paraschistochila pinnatifolia                           +</p>
+Paraschistochila pinnatifolia                           +</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Prosk.                                           Andrewsianthus confusus (R.M.Schust.) R.M.Schust.
+    <pre class="description-text">Prosk.                                           Andrewsianthus confusus (R.M.Schust.) R.M.Schust.
 Phaeoceros coriaceus (Steph.) E.O.Campb. comb. nov.     Andrewsianthus perigonialis (Hook.f. &amp; Taylor)
        Anthoceros coriaceus Steph.                             R.M.Schust.
 Phaeoceros delicatus E.O.Campb &amp; Outred                 Aneura aff. novaeguineensis Hewson
@@ -673,47 +631,59 @@ Balantiopsis montana (Colenso) J.J.Engel &amp;            Cephaloziella densifol
 Balantiopsis rosea Berggr.                            Cephaloziella grandiretis (R.M.Schust.) R.M.Schust.
 Balantiopsis tumida Berggr.                                  Cephaloziella byssacea subsp. grandiretis
 Balantiopsis verrucosa J.J.Engel &amp; G.L.S.Merrill             R.M.Schust.
-Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. ad-   Cephaloziella hispidissima R.M.Schust.</p>
+Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. ad-   Cephaloziella hispidissima R.M.Schust.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants stiff and wire-like, suberect to erect, yellowish to reddish brown (the stem often becoming blackish); plants when dry distinctly nitid and with leaves strongly ventrally de- flexed; shoots small, to 1.2 mm wide, subcircinate at the tip. Branching repeatedly pseudo- dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, ovate, undivided, nonvittate, tapering to a sharp apex; first branch underleaf 2-3-lobed, inserted on ventral-lateral side of branch at juncture of main axis and branch. Acromastigum-typc branches common, stoloniform. Ventral-intercalary branches occasional, leafy. Stem stiff and brittle, the cortical cells strongly differentiated, much larger than the medullary cells (ca. 2.5:1), in 7 rows, the radial walls thick, the outer tangential walls strongly thickened; medullary cells thin- walled. Leaves stiff and brittle, imbricate, allowing little of stem exposed in dorsal aspect, widely spreading, strongly deflexed, the ventral lobes of opposing leaves often approximate in ventral aspect, the leaves moderately convex; leaves vittate, 260- 305 |ULm wide X 600-720 juim long, strongly incubous, subfalcate, asymmetrically narrowly ovate; apex unequally bilobed to ca. 0.5, the ventral lobe 2-4 X longer than the dorsal, the lobes Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Acromastigum colensoanum mastigum mooreanum (Steph.) E.A.Hodgs. Vitta eells. (Figs. 1, 2, from Glenny 9174, New Zealand, South Is., Westland EP, Mt. Te Kinga; 3, 4, from Glenny 9605, New Zealand, South Is., Western Nelson EP, Stoekton Plateau.) type branch (= AB, note half-underleaf) and a Frullania-iyTpQ branch (= FB), ventral view. lobe). 4. Ventral sector of leaf (VL = ventral lobe; S = sinus base); note well-defined vitta, and slime papilla (at arrow). 5. Portion of dorsal base of leaf showing auricle and slime papilla. 6. Underleaves, stipple above insertion indicates line formed by distal end walls of intermediate cells. 7. Underleaf, cellular detail. 8. Stem, cross section. (All from Fife 6423, New Zealand, South Is., Western Nelson EP, Paparoa Ra., N flank of Mt. Euclid.) entire; dorsal lobe acute, the cells often with trigones smaller than those of ventral lobe, the cells at times evenly thick- walled, the lobe 4-5 cells wide at base, terminating in a single cell or a uniseriate row of 2 cells; ventral lobe subulate, 3-4 cells wide at the base and biseriate for much of its length, terminating in a single cell or more commonly a uniseriate row of 2-3 cells, the terminal cell somewhat elongated, tapering to a point; dorsal margin somewhat ampliate, extending to middle of stem or somewhat beyond, cordate to auriculate, at times with a lobuliform auricle near insertion, the basal sector often also with 1-2 slime papillae, the margin entire or somewhat sinuate at the base; ventral margin nearly straight or somewhat incurved, with a slight basal dilation, entire. Cells of leaf with a strong vitta of distinctly larger, rectangular cells occupying the ventral half of leaf (and continuing into the ventral lobe) but without a distinct mar¬ ginal row or rows of smaller, isodiametric cells, the vitta 4-5 cells wide in basal half of leaf; cells of vitta with knot-like trigones, 26-37 juim wide X 29-39(42) juim long; cells in dorsal sector of leaf becoming much smaller, isodiametric, 11-22 juim wide and long, uniformly thick- walled, without trigones; free walls of marginal cells of ventral lobe and ventral margin of disc strongly thickened; surface smooth. Oil-bodies pale smokey grey, 2-7(8) per vitta cell (6-12 per vitta ccW fide Schuster, 2000a, fig. Ill), 2-3 per non-vitta cell, broadly elliptic, coarsely and irregularly botryoidal, with age the spherules coalesce and the segments become fewer and the oil-body shape becomes subglobose. Underleaves rigid, small and inconspicuous, very firmly attached at a thick base, distant, ± squarrose at base and becoming erect, convex, broadly elliptic to subrectangular, much broader than long, deeply and ± equally 3-lobed to ca. 0.5; lobes 4-6 cells wide at base, the apex broadly rounded, entire, terminating in 2-4 laterally juxtaposed cells; disc margins cordate to subauriculate, narrowing abruptly to a narrow insertion; disc margins entire; cells of disc and lobes strongly thick-walled; surface smooth. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: Auckland Islands (15-55 m), Stewart Island (5- 530 m). South Island (200-1050 m); Australia: Tasmania. In New Zealand known from Eiord- land (Secretary Island) and North Westland (Paparoa Ra.) EPs. In New Zealand known from several stations on Stewart Island and South Island. On Stewart Island it occurs in small bryophyte mounds deep in thickets within mosaic communities of dense heath-forming shrubs to 3 m tall, penalpine herbs and dwarf heaths to 0.5 m tall; dominated by stunted Leptospermum scoparium and Dracophyllum and a ground tier including Empodisma minus (Mt. Rocky summit area, 530 m). Also on ground under Leptospermum in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (Ereshwater Landing, 5 m). Also on the sides of small cushions in open shrub- land consisting of Leptospermum scoparium, Olearia colens oi, Gahnia and emergent Podocarpus hallii (Pryse Peak, 350-355 m). In the South Island occurring in Eiordland (Eacile Harbor, Allan [MPN!] and Secretary Island) and in the Paparoa Mtns. (N flank of Mt. Euclid and ca. 0.5 km SE of Morgan Tarn, both at 1050 m) where it occurred with Dicranoloma on a granite ledge in a moist Nothofagus menziesii - Dracophyllum traversii forest. It is found with Bazzania adnexa, B. involuta, Clandarium xiphophyllum, Heteroscyphus decipiens, Lepidozia ulothrix, Schistochila chlorophylla and Wijkia extenuata. Comments: Acromastigum mooreanum is apparently rather rare in New Zealand in comparison to the closely related A. anisostomum. The ‘‘crossed swords” formed by the greatly elon¬ gated, strongly ventrally deflexed and approximate ventral leaf lobes (seen in ventral aspect) will readily distinguish this species. A suite of features involving the vitta, the size and shape of the ventral lobe, and the leaf areolation also differentiate this species from A. anisostomum. Acromastigum brachyphyllum A.Evans [Eig. 85: 3; Eig. 92] New Zealand, South Is., Paparoa Ra., 3000 ft., R. Helms (Y!); isotype: (CHR 4948 ex herb. T. Kirk 251!). Plants rigid and wire-like, in loose tufts or mats, the leaves yellowish to golden brown but often ± rust-colored basally, the stems reddish brown, the plants nitid when dry; shoots small, to 0.6 mm wide. Branching sparingly pseudo-dichotomously furcate or clearly lateral, of Frul- lania type, widely spreading; branch half-leaf ± symmetric, very wide ovate, undivided, tapering to a sharp apex (rarely bidentate), subauriculate at the base, with a median-basal field of larger cells; first branch underleaf 2-lobed, inserted on ventral-lateral side of juncture of main axis and branch. Acromasti gum-type ventral branches occasional, stoloniform. Stem cortical cells in 7 rows, the radial and outer tangential walls very thick, the transverse walls thin, the cortical cells larger than medullary cells, in surface view the dorsal cortical cells large, sinuate-hexagonal, the ventral cortical cells smaller. Leaves small in proportion to stem, rigid, fragile, easily tearing, cochleariform, distant to contiguous, with much of stem exposed in dorsal aspect, obliquely spreading, when dry strongly ventrally deflexed and cupped, when moist moderately convex, the lobe tips deflexed and not visible in dorsal aspect, with scattered bistratose patches (at most in groups of 3-5 cells), frequently in the median dorsal sector, sub- vittate, 245-400 p^m wide X 320-465 pm long, strongly incubous, asymmetrically orbicular- ovate; apex unequally bilobed to ca. 0.25, the ventral lobe longer and broader than the dorsal, the lobes acute to obtuse, terminating in a single cell or 2 superposed cells, entire; dorsal lobe 4-6 cells wide at base; ventral lobe 4-5 cells wide at the base, 2-4 cells long; dorsal margin strongly ampliate, cordate to ± auriculate at base, extending to middle of stem or somewhat beyond, entire or somewhat irregularly repand-denticulate at the base, sometimes with several large, spherical slime papillae; ventral margin nearly straight, entire, not decurrent. Underleaves small, about equal to the stem in width, distant, squarrose at base and becoming erect, slightly convex, broadly elliptic, ± equally 3-lobed to ca. 0.3-0. 5, subequal or the median lobe smaller; lobes closely approximate, 4-7 cells wide at base, the apex rounded to truncate, entire, terminating in 2-4 laterally juxtaposed cells and ending in a spherical slime papilla; disc margins cordate to subauriculate, narrowing abruptly to the insertion; cells of disc and lobes strongly thick-walled; margins entire; surface smooth. Cells of leaf distinctly thick- walled, those of ventral sector of leaf larger, forming an indistinct vitta (subvitta) that is strongly ventrally displaced, the cells strongly thick-walled, with bulging, knot-like, often confluent tri¬ gones; cells of vitta 25-30 pm wide X 30-40 pm long; cells of the ampliate dorsal sector much smaller, ± evenly thick-walled, 7-13 pm wide X 12-14 pm long; surface smooth throughout. Oil-bodies in the vitta cells occupying a conspicuous portion of the cell lumen, pale smokey grey, 2-3(4) per cell, very coarsely botryoidal, the segments very thin and membranous, the segmentation irregular and uneven, with age the individual spherules consider¬ ably swollen and the oil-bodies becoming fewer segmented and ultimately smooth; nonvittate cells and distal cells of lobes with oil-droplets only. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: South Island (320-540 m). Known only from Westland (Omoeroa Saddle) and Western Nelson (Paparoa Ra. and Stockton Plateau) EPs. sal base of a fourth leaf (X 280). 7. Apex of a fifth leaf (X 280). 8, 9. Leaf eells in eross seetion, showing bistratose eondition (X 375). 10. Leaf eells in surfaee view, showing bistratose eondition (X 375). 11. Underleaf (X 62). 12. Lateral lobe of a seeond underleaf (X 280). (All from type; after Evans, 1934.) The Omoeroa Saddle collection is from peaty soil in Lagarostrobos colensoi - Phyllocladus alpinus shrubland with Carpha alpina and Sphagnum cristatum at 320 m. Accompanying species are Adelanthus falcatus, Riccardia and Clasmatocolea. The Stockton collection is from a wet overhanging bank under stunted Nothofagus solandri var. clijfortioides - Phyllocladus alpinus forest at 540 m, with Acromastigum verticale. Comments: We know of no othtr Acromastigum with leaves at least locally bistratose (Eig. 92: 8-10). The presence of the bistratose condition in this species requires careful assessment, especially when compared to presence of that character in smaller phases of A. anisostomum. The species looks very similar to A. anisostomum in color and size of the plants, and further work needs to be done to establish its differentiation from that species. Bazzania Gray Bazzania Gray, Nat. Arr. Brit. PI. 1: 704, 775. 1821, &#39;&#39;Bazzanius/&#39; orth. cons. Plants strongly anisophyllous (except Bazzania involuta), typically firm, deep green to olive-green to yellow- or chestnut-brown, dull to highly nitid or (B. tayloriana) glaucous, milky and opaque, the shoots medium to robust in size, to 6 mm wide. Branching frequent, usually freely and repeatedly pseudo-dichotomous and never pinnate or {B. involuta) branching monopodial, the branches of Frullania type, normally originating from only one side of axis, subequal to main axis in vigor and with the main axis losing its dominance, branch halfleaf undivided, positioned in the fork of each ‘‘dichotomy”; first branch underleaf variable, asymmetrically or symmetrically 2-3(4)-lobed, rarely undivided, free or at times connate with a normal stem underleaf. Ventral branches all intercalary, occasional to frequent, often long and whip-like, stoloniform, geotropic, with scale-like leaves; ventral-intercalary leafy branches occasional to frequent. Stems rigid, with cortical cells often larger than the medullary, thick- walled, often ± evenly so. Rhizoids frequently at bases of reduced underleaves and leaves of geotropic stoloniform branches, less commonly from bases of underleaves on normal leafy shoots. Leaves alternate or subopposite (in ventral view), plane to moderately convex (the lobes often ± deflexed), widely spreading, the insertion distinctly incubous and extending to stem midline dorsally, the leaves typically ± asymmetrically ovate to falcate-rectangular, the dorsal margin commonly more arched and ampliate than the ventral; apex 2- or (in ours) 3- dentate (teeth sometimes obscure or almost lacking on weak shoots), at times with accessory teeth; dorsal margin (in ours) strongly arched, ampliate, at times cordate at base, entire or (rarely) denticulate; ventral margin typically ± straight or at times somewhat incurved, sometimes auriculate at base, entire or (rarely) denticulate (ciliate at the base in some extraterritorial species). Cells with walls slightly to distinctly thickened (especially in subapical sector of leaf), with trigones small to bulging and nodulose, the areolation ± uniform and without a vitta or the leaves subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf), or the leaves distinctly vitiate with several rows of sharply differen¬ tiated cells; surface smooth or papillose or {B. tayloriana) glaucous. Oil-bodies large for cell size, 2-6 per cell, homogeneous or at times few- segmented. Underleaves usually no more than 0.35-0.45 X leaf area, or sometimes approaching the leaves in size in some species, free or connate with the leaves on one or both sides, variable, large and widely spreading to closely appressed to the stem and inconspicuous, ± quadrate to orbicular to transversely rectangular to reniform, the apex distinctly and regularly 4-lobed or truncate to rounded-truncate and variously lobulate, toothed or ragged, often with some or all of the cells decolorate and forming a hyaline distal sector, the base at times cordate. Asexual reproduction, when present, by caducous leaves and underleaves, also {B. nova) by regeneration from leaves. Dioecious but often sterile, rarely with sporophytes. Androecia on short, ventral-intercalary branches from lower sectors of leading shoots and from both ventral and lateral sides of stoloniform branches, the androecia inconspicuous, tightly spicate; bracts concave to ventri- cose-cucullate to canaliculate, the apices truncate and entire to bidentate or bilobed; antheridia 1-2 per bract, the stalk biseriate; bracteoles smaller than bracts. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem; bracts of innermost series largest, erect and closely ensheathing the perianth, the apices 2-4-lobed, the lamina margins usually variously crenate to dentate (in ours) or ciliate or laciniate-ciliate; bracteole similar in size and form. Perianth subfusiform, terete below, trigonous and plicate above, gradually narrowed toward the usually contracted mouth; the mouth denticulate-dentate to subciliate; perianth usually multistratose below. Seta usually with 10-16 outer cell rows and a central core of numerous, much smaller cells. Capsule ovoid to ovoid-oblong to long-ellipsoidal, the walls (3)4-6-stratose; outer layer of cells with two-phase development, the longitudinal walls with coarse, nodular thickenings that are sometimes confluent and then at least locally sheet-like alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated swelling; innermost layer of cells commonly with numerous semiannular bands. Spores brown, with papillae and simple or furcate vermiculate markings, 1-1.25 to 2-3 X the elater diam. Elaters rather rigid, nontortuous or at most feebly tortuous, long and slender, bispiral. Type: Bazzania trilobata (L.) Gray (= Jungermannia trilobata L.) A large genus of over 100 species worldwide, with particularly strong representation in tropical montane regions. Eor example, Eulford (1963b) records 54 species from Neotropical regions (all but Bazzania skottsbergii have stations in the tropics), but Gradstein et al. (2001) stated ‘‘probably no more than 40 species in tropical America.” Grolle and Piippo (1984) record 53 species for New Guinea. Eulford (1946, 1959, 1963b) published useful revisions of the Neotropical and southern South American species. Two species occur in southern South America, B. peruviana (Nees) Trevis. and the pan-temperate B. nitida (E.Weber) Grolle (see Engel, 1978). Bazzania chilensis (Steph.) Eulford (see Eulford, 1963b, p. 125) is poorly known and needs further evaluation, and B. skottsbergii (Steph.) Eulford, while recognized by Eulford (1963b), is a synonym of B. peruviana (see Grolle, 1964a; Engel, 1978). Arnell (1963) included four species from South Africa, including B. adnexa, a species also present in our area. Nine species occur in New Zealand. We do not recognize subgenera within the genus, and with regard to subgeneric categories, recognize only the section level, following arguments put forth by Schuster (1969c, 2000a). References: Engel (2006b); Engel and Merrill (1994); Engel and Schuster (1988); Hodgson (1954; rev.); Schuster (2000a). Key to Species la. Leaves clearly alternate, vittate, with a ± distinct strip of larger cells 3-4(6) cells wide running parallel to, and several cells within, the ventral margin of the leaf, the vitta cells with conspicuously bulging trigones; underleaves membranous, appressed to the stem, ± regularly (2)4-lobed or 4-dentate-lobulate {B. monilinervis) . 2 2a. Plants glaucous, the leaves dull and opaque; leaf cell outlines obscured by a fine, granular coating. Underleaves 4-fid to 0.3, or ± bisbifid, the lobes bluntly rounded; plants fragile, easily broken when dry; branching often almost exclusively intercalary . B. tayloriana (p. 449) 2b. Plants green to olive-green (or brownish), the leaves ± translucent, not dull or opaque . 3 3a. Underleaves connate on one side, about as wide as stem, divided into 4 distinct lobes (to ca. 0.5); leaf distinctly convex, the apex with teeth obscurely developed . B. nitida (p. 442) 3b. Underleaves free, to 2.5 X stem width, wide elliptic to widely ovate or ± orbicular, very shallowly divided into small, irregular teeth or lobules; leaves plane to feebly convex, the apex with teeth well developed, distinct, spinu- lose, narrowly acuminate . B. monilinervis (p. 446) lb. Leaves (in ventral aspect) opposite, not vittate as above, or at most subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf, having more distinct trigones); underleaves conspicuous, with at least the basal half firm, ± spreading (often with apices and flanks at 90° to the stem, or more), the apex various but without discrete lobes (except B. nova) . 4 4a. Plants subisophyllous (leaves and underleaves of about equal size); underleaves squarrose-reflexed, the margins broadly revolute, with much of the adaxial surface visible in ventral view. Plants erect, sparingly branched, the branching not pseudo- dichotomous . B. involuta (p. 418) 4b. Plants clearly anisophyllous; underleaves typically spreading to less than 90° (sometimes with only apices ± reflexed), with little if any of adaxial surface visible in ventral view . 5 5a. Cells with trigones lacking or at most straight- sided and inconspicuous .... 6 6a. Terminal, Frullania-iy^Q branches exceedingly rare, a pseudo-dichotomous branch pattern thus lacking; leaves caducous; underleaves free on both sides, the apex shallowly 4-5-lobulate . B. exempta (p. 453) 6b. Terminal, Frullania-typt branches frequent, freely and repeatedly pseudo-dichotomous; leaves persistent; underleaves connate on both sides, the apex entire or repand . B. okaritana (p. 434) 5b. Cells with trigones bulging to knot-like (at least in subvitta cells), or if small and concave-sided (some populations of B. adnexa), then with principal teeth at leaf apex typically with margins denticulate . 7 7a. Underleaves ± regularly 4-6-lobed to ca. 0.3 (disc margins often with a prominent tooth in distal sector, the underleaf then appearing 6-8- lobed); underleaf lobes slenderly acuminate to spinulose; no hyaline cells present . B. nova (p. 439) 7b. Underleaves truncate to broadly rounded in outline, the apex ragged, sinuate-lobulate, or irregularly toothed (rarely subentire); hyaline, ± thin- walled cells often present (at least of underleaf apices) . 8 8a. Underleaves longer than wide, subrectangular to lingulate, the apex truncate and irregularly crenate to subentire, the hyaline, thin-walled cells confined to a narrow border on both apex and lateral margins; leaf not subvittate, the areolation ± uniform throughout; leaf apex and margins of lamina quite entire, the principal teeth broadly triangular; plants robust (to 6 mm wide), the leaves 2. 1-2.8 X 1-1.5 mm . B. novae-zelandiae (p. 436) 8b. Underleaves as wide as or wider than long, oblate to reniform (subquadrate in B. hochstetteri), the apex ragged, with irregular, crowded, sinuate teeth (rarely subentire), at least the distal sector of underleaf typically composed of hyaline, non-collenchyma- tous cells (sometimes occupying most of the underleaf); leaves subvittate, with a band of ± larger cells; plants medium to small (to 3.4 mm wide), the leaves 1-1.5 X 0.8-1 mm . 9 9a. Leaves persistent, firmly attached, distinctly imbricate, the stem mostly hidden in dorsal aspect; leaf apex and distal margins of lamina serrulate (at least on some shoots); plants medium-sized, to 3.4 mm wide . B. adnexa (p. 423) 9b. Leaves often caducous, easily detached, loosely imbricate, with much of stem exposed in dorsal aspect; leaf apex and margins of lamina typically entire; plants small, to 1.8 mm wide . B. hochstetteri (p. 431) Note: After the manuscript was prepared for publication Meagher (2003) reported Bazzania accreta (Lehm. &amp; Lindenb.) Trevis. in New Zealand; the species was heretofore known only for Australia. Sect. Protobazzania J.J.Engel luta (Mont.) Trevis. (= Herpetium involutum Mont.).</p>
+    <pre class="description-text">Plants stiff and wire-like, suberect to erect, yellowish to reddish brown (the stem often becoming blackish); plants when dry distinctly nitid and with leaves strongly ventrally de- flexed; shoots small, to 1.2 mm wide, subcircinate at the tip. Branching repeatedly pseudo- dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, ovate, undivided, nonvittate, tapering to a sharp apex; first branch underleaf 2-3-lobed, inserted on ventral-lateral side of branch at juncture of main axis and branch. Acromastigum-typc branches common, stoloniform. Ventral-intercalary branches occasional, leafy. Stem stiff and brittle, the cortical cells strongly differentiated, much larger than the medullary cells (ca. 2.5:1), in 7 rows, the radial walls thick, the outer tangential walls strongly thickened; medullary cells thin- walled. Leaves stiff and brittle, imbricate, allowing little of stem exposed in dorsal aspect, widely spreading, strongly deflexed, the ventral lobes of opposing leaves often approximate in ventral aspect, the leaves moderately convex; leaves vittate, 260- 305 |ULm wide X 600-720 juim long, strongly incubous, subfalcate, asymmetrically narrowly ovate; apex unequally bilobed to ca. 0.5, the ventral lobe 2-4 X longer than the dorsal, the lobes Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Acromastigum colensoanum mastigum mooreanum (Steph.) E.A.Hodgs. Vitta eells. (Figs. 1, 2, from Glenny 9174, New Zealand, South Is., Westland EP, Mt. Te Kinga; 3, 4, from Glenny 9605, New Zealand, South Is., Western Nelson EP, Stoekton Plateau.) type branch (= AB, note half-underleaf) and a Frullania-iyTpQ branch (= FB), ventral view. lobe). 4. Ventral sector of leaf (VL = ventral lobe; S = sinus base); note well-defined vitta, and slime papilla (at arrow). 5. Portion of dorsal base of leaf showing auricle and slime papilla. 6. Underleaves, stipple above insertion indicates line formed by distal end walls of intermediate cells. 7. Underleaf, cellular detail. 8. Stem, cross section. (All from Fife 6423, New Zealand, South Is., Western Nelson EP, Paparoa Ra., N flank of Mt. Euclid.) entire; dorsal lobe acute, the cells often with trigones smaller than those of ventral lobe, the cells at times evenly thick- walled, the lobe 4-5 cells wide at base, terminating in a single cell or a uniseriate row of 2 cells; ventral lobe subulate, 3-4 cells wide at the base and biseriate for much of its length, terminating in a single cell or more commonly a uniseriate row of 2-3 cells, the terminal cell somewhat elongated, tapering to a point; dorsal margin somewhat ampliate, extending to middle of stem or somewhat beyond, cordate to auriculate, at times with a lobuliform auricle near insertion, the basal sector often also with 1-2 slime papillae, the margin entire or somewhat sinuate at the base; ventral margin nearly straight or somewhat incurved, with a slight basal dilation, entire. Cells of leaf with a strong vitta of distinctly larger, rectangular cells occupying the ventral half of leaf (and continuing into the ventral lobe) but without a distinct mar¬ ginal row or rows of smaller, isodiametric cells, the vitta 4-5 cells wide in basal half of leaf; cells of vitta with knot-like trigones, 26-37 juim wide X 29-39(42) juim long; cells in dorsal sector of leaf becoming much smaller, isodiametric, 11-22 juim wide and long, uniformly thick- walled, without trigones; free walls of marginal cells of ventral lobe and ventral margin of disc strongly thickened; surface smooth. Oil-bodies pale smokey grey, 2-7(8) per vitta cell (6-12 per vitta ccW fide Schuster, 2000a, fig. Ill), 2-3 per non-vitta cell, broadly elliptic, coarsely and irregularly botryoidal, with age the spherules coalesce and the segments become fewer and the oil-body shape becomes subglobose. Underleaves rigid, small and inconspicuous, very firmly attached at a thick base, distant, ± squarrose at base and becoming erect, convex, broadly elliptic to subrectangular, much broader than long, deeply and ± equally 3-lobed to ca. 0.5; lobes 4-6 cells wide at base, the apex broadly rounded, entire, terminating in 2-4 laterally juxtaposed cells; disc margins cordate to subauriculate, narrowing abruptly to a narrow insertion; disc margins entire; cells of disc and lobes strongly thick-walled; surface smooth. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: Auckland Islands (15-55 m), Stewart Island (5- 530 m). South Island (200-1050 m); Australia: Tasmania. In New Zealand known from Eiord- land (Secretary Island) and North Westland (Paparoa Ra.) EPs. In New Zealand known from several stations on Stewart Island and South Island. On Stewart Island it occurs in small bryophyte mounds deep in thickets within mosaic communities of dense heath-forming shrubs to 3 m tall, penalpine herbs and dwarf heaths to 0.5 m tall; dominated by stunted Leptospermum scoparium and Dracophyllum and a ground tier including Empodisma minus (Mt. Rocky summit area, 530 m). Also on ground under Leptospermum in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (Ereshwater Landing, 5 m). Also on the sides of small cushions in open shrub- land consisting of Leptospermum scoparium, Olearia colens oi, Gahnia and emergent Podocarpus hallii (Pryse Peak, 350-355 m). In the South Island occurring in Eiordland (Eacile Harbor, Allan [MPN!] and Secretary Island) and in the Paparoa Mtns. (N flank of Mt. Euclid and ca. 0.5 km SE of Morgan Tarn, both at 1050 m) where it occurred with Dicranoloma on a granite ledge in a moist Nothofagus menziesii - Dracophyllum traversii forest. It is found with Bazzania adnexa, B. involuta, Clandarium xiphophyllum, Heteroscyphus decipiens, Lepidozia ulothrix, Schistochila chlorophylla and Wijkia extenuata. Comments: Acromastigum mooreanum is apparently rather rare in New Zealand in comparison to the closely related A. anisostomum. The ‘‘crossed swords” formed by the greatly elon¬ gated, strongly ventrally deflexed and approximate ventral leaf lobes (seen in ventral aspect) will readily distinguish this species. A suite of features involving the vitta, the size and shape of the ventral lobe, and the leaf areolation also differentiate this species from A. anisostomum. Acromastigum brachyphyllum A.Evans [Eig. 85: 3; Eig. 92] New Zealand, South Is., Paparoa Ra., 3000 ft., R. Helms (Y!); isotype: (CHR 4948 ex herb. T. Kirk 251!). Plants rigid and wire-like, in loose tufts or mats, the leaves yellowish to golden brown but often ± rust-colored basally, the stems reddish brown, the plants nitid when dry; shoots small, to 0.6 mm wide. Branching sparingly pseudo-dichotomously furcate or clearly lateral, of Frul- lania type, widely spreading; branch half-leaf ± symmetric, very wide ovate, undivided, tapering to a sharp apex (rarely bidentate), subauriculate at the base, with a median-basal field of larger cells; first branch underleaf 2-lobed, inserted on ventral-lateral side of juncture of main axis and branch. Acromasti gum-type ventral branches occasional, stoloniform. Stem cortical cells in 7 rows, the radial and outer tangential walls very thick, the transverse walls thin, the cortical cells larger than medullary cells, in surface view the dorsal cortical cells large, sinuate-hexagonal, the ventral cortical cells smaller. Leaves small in proportion to stem, rigid, fragile, easily tearing, cochleariform, distant to contiguous, with much of stem exposed in dorsal aspect, obliquely spreading, when dry strongly ventrally deflexed and cupped, when moist moderately convex, the lobe tips deflexed and not visible in dorsal aspect, with scattered bistratose patches (at most in groups of 3-5 cells), frequently in the median dorsal sector, sub- vittate, 245-400 p^m wide X 320-465 pm long, strongly incubous, asymmetrically orbicular- ovate; apex unequally bilobed to ca. 0.25, the ventral lobe longer and broader than the dorsal, the lobes acute to obtuse, terminating in a single cell or 2 superposed cells, entire; dorsal lobe 4-6 cells wide at base; ventral lobe 4-5 cells wide at the base, 2-4 cells long; dorsal margin strongly ampliate, cordate to ± auriculate at base, extending to middle of stem or somewhat beyond, entire or somewhat irregularly repand-denticulate at the base, sometimes with several large, spherical slime papillae; ventral margin nearly straight, entire, not decurrent. Underleaves small, about equal to the stem in width, distant, squarrose at base and becoming erect, slightly convex, broadly elliptic, ± equally 3-lobed to ca. 0.3-0. 5, subequal or the median lobe smaller; lobes closely approximate, 4-7 cells wide at base, the apex rounded to truncate, entire, terminating in 2-4 laterally juxtaposed cells and ending in a spherical slime papilla; disc margins cordate to subauriculate, narrowing abruptly to the insertion; cells of disc and lobes strongly thick-walled; margins entire; surface smooth. Cells of leaf distinctly thick- walled, those of ventral sector of leaf larger, forming an indistinct vitta (subvitta) that is strongly ventrally displaced, the cells strongly thick-walled, with bulging, knot-like, often confluent tri¬ gones; cells of vitta 25-30 pm wide X 30-40 pm long; cells of the ampliate dorsal sector much smaller, ± evenly thick-walled, 7-13 pm wide X 12-14 pm long; surface smooth throughout. Oil-bodies in the vitta cells occupying a conspicuous portion of the cell lumen, pale smokey grey, 2-3(4) per cell, very coarsely botryoidal, the segments very thin and membranous, the segmentation irregular and uneven, with age the individual spherules consider¬ ably swollen and the oil-bodies becoming fewer segmented and ultimately smooth; nonvittate cells and distal cells of lobes with oil-droplets only. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: South Island (320-540 m). Known only from Westland (Omoeroa Saddle) and Western Nelson (Paparoa Ra. and Stockton Plateau) EPs. sal base of a fourth leaf (X 280). 7. Apex of a fifth leaf (X 280). 8, 9. Leaf eells in eross seetion, showing bistratose eondition (X 375). 10. Leaf eells in surfaee view, showing bistratose eondition (X 375). 11. Underleaf (X 62). 12. Lateral lobe of a seeond underleaf (X 280). (All from type; after Evans, 1934.) The Omoeroa Saddle collection is from peaty soil in Lagarostrobos colensoi - Phyllocladus alpinus shrubland with Carpha alpina and Sphagnum cristatum at 320 m. Accompanying species are Adelanthus falcatus, Riccardia and Clasmatocolea. The Stockton collection is from a wet overhanging bank under stunted Nothofagus solandri var. clijfortioides - Phyllocladus alpinus forest at 540 m, with Acromastigum verticale. Comments: We know of no othtr Acromastigum with leaves at least locally bistratose (Eig. 92: 8-10). The presence of the bistratose condition in this species requires careful assessment, especially when compared to presence of that character in smaller phases of A. anisostomum. The species looks very similar to A. anisostomum in color and size of the plants, and further work needs to be done to establish its differentiation from that species. Bazzania Gray Bazzania Gray, Nat. Arr. Brit. PI. 1: 704, 775. 1821, &#39;&#39;Bazzanius/&#39; orth. cons. Plants strongly anisophyllous (except Bazzania involuta), typically firm, deep green to olive-green to yellow- or chestnut-brown, dull to highly nitid or (B. tayloriana) glaucous, milky and opaque, the shoots medium to robust in size, to 6 mm wide. Branching frequent, usually freely and repeatedly pseudo-dichotomous and never pinnate or {B. involuta) branching monopodial, the branches of Frullania type, normally originating from only one side of axis, subequal to main axis in vigor and with the main axis losing its dominance, branch halfleaf undivided, positioned in the fork of each ‘‘dichotomy”; first branch underleaf variable, asymmetrically or symmetrically 2-3(4)-lobed, rarely undivided, free or at times connate with a normal stem underleaf. Ventral branches all intercalary, occasional to frequent, often long and whip-like, stoloniform, geotropic, with scale-like leaves; ventral-intercalary leafy branches occasional to frequent. Stems rigid, with cortical cells often larger than the medullary, thick- walled, often ± evenly so. Rhizoids frequently at bases of reduced underleaves and leaves of geotropic stoloniform branches, less commonly from bases of underleaves on normal leafy shoots. Leaves alternate or subopposite (in ventral view), plane to moderately convex (the lobes often ± deflexed), widely spreading, the insertion distinctly incubous and extending to stem midline dorsally, the leaves typically ± asymmetrically ovate to falcate-rectangular, the dorsal margin commonly more arched and ampliate than the ventral; apex 2- or (in ours) 3- dentate (teeth sometimes obscure or almost lacking on weak shoots), at times with accessory teeth; dorsal margin (in ours) strongly arched, ampliate, at times cordate at base, entire or (rarely) denticulate; ventral margin typically ± straight or at times somewhat incurved, sometimes auriculate at base, entire or (rarely) denticulate (ciliate at the base in some extraterritorial species). Cells with walls slightly to distinctly thickened (especially in subapical sector of leaf), with trigones small to bulging and nodulose, the areolation ± uniform and without a vitta or the leaves subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf), or the leaves distinctly vitiate with several rows of sharply differen¬ tiated cells; surface smooth or papillose or {B. tayloriana) glaucous. Oil-bodies large for cell size, 2-6 per cell, homogeneous or at times few- segmented. Underleaves usually no more than 0.35-0.45 X leaf area, or sometimes approaching the leaves in size in some species, free or connate with the leaves on one or both sides, variable, large and widely spreading to closely appressed to the stem and inconspicuous, ± quadrate to orbicular to transversely rectangular to reniform, the apex distinctly and regularly 4-lobed or truncate to rounded-truncate and variously lobulate, toothed or ragged, often with some or all of the cells decolorate and forming a hyaline distal sector, the base at times cordate. Asexual reproduction, when present, by caducous leaves and underleaves, also {B. nova) by regeneration from leaves. Dioecious but often sterile, rarely with sporophytes. Androecia on short, ventral-intercalary branches from lower sectors of leading shoots and from both ventral and lateral sides of stoloniform branches, the androecia inconspicuous, tightly spicate; bracts concave to ventri- cose-cucullate to canaliculate, the apices truncate and entire to bidentate or bilobed; antheridia 1-2 per bract, the stalk biseriate; bracteoles smaller than bracts. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem; bracts of innermost series largest, erect and closely ensheathing the perianth, the apices 2-4-lobed, the lamina margins usually variously crenate to dentate (in ours) or ciliate or laciniate-ciliate; bracteole similar in size and form. Perianth subfusiform, terete below, trigonous and plicate above, gradually narrowed toward the usually contracted mouth; the mouth denticulate-dentate to subciliate; perianth usually multistratose below. Seta usually with 10-16 outer cell rows and a central core of numerous, much smaller cells. Capsule ovoid to ovoid-oblong to long-ellipsoidal, the walls (3)4-6-stratose; outer layer of cells with two-phase development, the longitudinal walls with coarse, nodular thickenings that are sometimes confluent and then at least locally sheet-like alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated swelling; innermost layer of cells commonly with numerous semiannular bands. Spores brown, with papillae and simple or furcate vermiculate markings, 1-1.25 to 2-3 X the elater diam. Elaters rather rigid, nontortuous or at most feebly tortuous, long and slender, bispiral. Type: Bazzania trilobata (L.) Gray (= Jungermannia trilobata L.) A large genus of over 100 species worldwide, with particularly strong representation in tropical montane regions. Eor example, Eulford (1963b) records 54 species from Neotropical regions (all but Bazzania skottsbergii have stations in the tropics), but Gradstein et al. (2001) stated ‘‘probably no more than 40 species in tropical America.” Grolle and Piippo (1984) record 53 species for New Guinea. Eulford (1946, 1959, 1963b) published useful revisions of the Neotropical and southern South American species. Two species occur in southern South America, B. peruviana (Nees) Trevis. and the pan-temperate B. nitida (E.Weber) Grolle (see Engel, 1978). Bazzania chilensis (Steph.) Eulford (see Eulford, 1963b, p. 125) is poorly known and needs further evaluation, and B. skottsbergii (Steph.) Eulford, while recognized by Eulford (1963b), is a synonym of B. peruviana (see Grolle, 1964a; Engel, 1978). Arnell (1963) included four species from South Africa, including B. adnexa, a species also present in our area. Nine species occur in New Zealand. We do not recognize subgenera within the genus, and with regard to subgeneric categories, recognize only the section level, following arguments put forth by Schuster (1969c, 2000a). References: Engel (2006b); Engel and Merrill (1994); Engel and Schuster (1988); Hodgson (1954; rev.); Schuster (2000a). Key to Species la. Leaves clearly alternate, vittate, with a ± distinct strip of larger cells 3-4(6) cells wide running parallel to, and several cells within, the ventral margin of the leaf, the vitta cells with conspicuously bulging trigones; underleaves membranous, appressed to the stem, ± regularly (2)4-lobed or 4-dentate-lobulate {B. monilinervis) . 2 2a. Plants glaucous, the leaves dull and opaque; leaf cell outlines obscured by a fine, granular coating. Underleaves 4-fid to 0.3, or ± bisbifid, the lobes bluntly rounded; plants fragile, easily broken when dry; branching often almost exclusively intercalary . B. tayloriana (p. 449) 2b. Plants green to olive-green (or brownish), the leaves ± translucent, not dull or opaque . 3 3a. Underleaves connate on one side, about as wide as stem, divided into 4 distinct lobes (to ca. 0.5); leaf distinctly convex, the apex with teeth obscurely developed . B. nitida (p. 442) 3b. Underleaves free, to 2.5 X stem width, wide elliptic to widely ovate or ± orbicular, very shallowly divided into small, irregular teeth or lobules; leaves plane to feebly convex, the apex with teeth well developed, distinct, spinu- lose, narrowly acuminate . B. monilinervis (p. 446) lb. Leaves (in ventral aspect) opposite, not vittate as above, or at most subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf, having more distinct trigones); underleaves conspicuous, with at least the basal half firm, ± spreading (often with apices and flanks at 90° to the stem, or more), the apex various but without discrete lobes (except B. nova) . 4 4a. Plants subisophyllous (leaves and underleaves of about equal size); underleaves squarrose-reflexed, the margins broadly revolute, with much of the adaxial surface visible in ventral view. Plants erect, sparingly branched, the branching not pseudo- dichotomous . B. involuta (p. 418) 4b. Plants clearly anisophyllous; underleaves typically spreading to less than 90° (sometimes with only apices ± reflexed), with little if any of adaxial surface visible in ventral view . 5 5a. Cells with trigones lacking or at most straight- sided and inconspicuous .... 6 6a. Terminal, Frullania-iy^Q branches exceedingly rare, a pseudo-dichotomous branch pattern thus lacking; leaves caducous; underleaves free on both sides, the apex shallowly 4-5-lobulate . B. exempta (p. 453) 6b. Terminal, Frullania-typt branches frequent, freely and repeatedly pseudo-dichotomous; leaves persistent; underleaves connate on both sides, the apex entire or repand . B. okaritana (p. 434) 5b. Cells with trigones bulging to knot-like (at least in subvitta cells), or if small and concave-sided (some populations of B. adnexa), then with principal teeth at leaf apex typically with margins denticulate . 7 7a. Underleaves ± regularly 4-6-lobed to ca. 0.3 (disc margins often with a prominent tooth in distal sector, the underleaf then appearing 6-8- lobed); underleaf lobes slenderly acuminate to spinulose; no hyaline cells present . B. nova (p. 439) 7b. Underleaves truncate to broadly rounded in outline, the apex ragged, sinuate-lobulate, or irregularly toothed (rarely subentire); hyaline, ± thin- walled cells often present (at least of underleaf apices) . 8 8a. Underleaves longer than wide, subrectangular to lingulate, the apex truncate and irregularly crenate to subentire, the hyaline, thin-walled cells confined to a narrow border on both apex and lateral margins; leaf not subvittate, the areolation ± uniform throughout; leaf apex and margins of lamina quite entire, the principal teeth broadly triangular; plants robust (to 6 mm wide), the leaves 2. 1-2.8 X 1-1.5 mm . B. novae-zelandiae (p. 436) 8b. Underleaves as wide as or wider than long, oblate to reniform (subquadrate in B. hochstetteri), the apex ragged, with irregular, crowded, sinuate teeth (rarely subentire), at least the distal sector of underleaf typically composed of hyaline, non-collenchyma- tous cells (sometimes occupying most of the underleaf); leaves subvittate, with a band of ± larger cells; plants medium to small (to 3.4 mm wide), the leaves 1-1.5 X 0.8-1 mm . 9 9a. Leaves persistent, firmly attached, distinctly imbricate, the stem mostly hidden in dorsal aspect; leaf apex and distal margins of lamina serrulate (at least on some shoots); plants medium-sized, to 3.4 mm wide . B. adnexa (p. 423) 9b. Leaves often caducous, easily detached, loosely imbricate, with much of stem exposed in dorsal aspect; leaf apex and margins of lamina typically entire; plants small, to 1.8 mm wide . B. hochstetteri (p. 431) Note: After the manuscript was prepared for publication Meagher (2003) reported Bazzania accreta (Lehm. &amp; Lindenb.) Trevis. in New Zealand; the species was heretofore known only for Australia. Sect. Protobazzania J.J.Engel luta (Mont.) Trevis. (= Herpetium involutum Mont.).</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants stiff and wire-like, suberect to erect, yellowish to reddish brown (the stem often becoming blackish); plants when dry distinctly nitid and with leaves strongly ventrally de- flexed; shoots small, to 1.2 mm wide, subcircinate at the tip. Branching repeatedly pseudo- dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, ovate, undivided, nonvittate, tapering to a sharp apex; first branch underleaf 2-3-lobed, inserted on ventral-lateral side of branch at juncture of main axis and branch. Acromastigum-typc branches common, stoloniform. Ventral-intercalary branches occasional, leafy. Stem stiff and brittle, the cortical cells strongly differentiated, much larger than the medullary cells (ca. 2.5:1), in 7 rows, the radial walls thick, the outer tangential walls strongly thickened; medullary cells thin- walled. Leaves stiff and brittle, imbricate, allowing little of stem exposed in dorsal aspect, widely spreading, strongly deflexed, the ventral lobes of opposing leaves often approximate in ventral aspect, the leaves moderately convex; leaves vittate, 260- 305 |ULm wide X 600-720 juim long, strongly incubous, subfalcate, asymmetrically narrowly ovate; apex unequally bilobed to ca. 0.5, the ventral lobe 2-4 X longer than the dorsal, the lobes Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Acromastigum colensoanum mastigum mooreanum (Steph.) E.A.Hodgs. Vitta eells. (Figs. 1, 2, from Glenny 9174, New Zealand, South Is., Westland EP, Mt. Te Kinga; 3, 4, from Glenny 9605, New Zealand, South Is., Western Nelson EP, Stoekton Plateau.) type branch (= AB, note half-underleaf) and a Frullania-iyTpQ branch (= FB), ventral view. lobe). 4. Ventral sector of leaf (VL = ventral lobe; S = sinus base); note well-defined vitta, and slime papilla (at arrow). 5. Portion of dorsal base of leaf showing auricle and slime papilla. 6. Underleaves, stipple above insertion indicates line formed by distal end walls of intermediate cells. 7. Underleaf, cellular detail. 8. Stem, cross section. (All from Fife 6423, New Zealand, South Is., Western Nelson EP, Paparoa Ra., N flank of Mt. Euclid.) entire; dorsal lobe acute, the cells often with trigones smaller than those of ventral lobe, the cells at times evenly thick- walled, the lobe 4-5 cells wide at base, terminating in a single cell or a uniseriate row of 2 cells; ventral lobe subulate, 3-4 cells wide at the base and biseriate for much of its length, terminating in a single cell or more commonly a uniseriate row of 2-3 cells, the terminal cell somewhat elongated, tapering to a point; dorsal margin somewhat ampliate, extending to middle of stem or somewhat beyond, cordate to auriculate, at times with a lobuliform auricle near insertion, the basal sector often also with 1-2 slime papillae, the margin entire or somewhat sinuate at the base; ventral margin nearly straight or somewhat incurved, with a slight basal dilation, entire. Cells of leaf with a strong vitta of distinctly larger, rectangular cells occupying the ventral half of leaf (and continuing into the ventral lobe) but without a distinct mar¬ ginal row or rows of smaller, isodiametric cells, the vitta 4-5 cells wide in basal half of leaf; cells of vitta with knot-like trigones, 26-37 juim wide X 29-39(42) juim long; cells in dorsal sector of leaf becoming much smaller, isodiametric, 11-22 juim wide and long, uniformly thick- walled, without trigones; free walls of marginal cells of ventral lobe and ventral margin of disc strongly thickened; surface smooth. Oil-bodies pale smokey grey, 2-7(8) per vitta cell (6-12 per vitta ccW fide Schuster, 2000a, fig. Ill), 2-3 per non-vitta cell, broadly elliptic, coarsely and irregularly botryoidal, with age the spherules coalesce and the segments become fewer and the oil-body shape becomes subglobose. Underleaves rigid, small and inconspicuous, very firmly attached at a thick base, distant, ± squarrose at base and becoming erect, convex, broadly elliptic to subrectangular, much broader than long, deeply and ± equally 3-lobed to ca. 0.5; lobes 4-6 cells wide at base, the apex broadly rounded, entire, terminating in 2-4 laterally juxtaposed cells; disc margins cordate to subauriculate, narrowing abruptly to a narrow insertion; disc margins entire; cells of disc and lobes strongly thick-walled; surface smooth. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: Auckland Islands (15-55 m), Stewart Island (5- 530 m). South Island (200-1050 m); Australia: Tasmania. In New Zealand known from Eiord- land (Secretary Island) and North Westland (Paparoa Ra.) EPs. In New Zealand known from several stations on Stewart Island and South Island. On Stewart Island it occurs in small bryophyte mounds deep in thickets within mosaic communities of dense heath-forming shrubs to 3 m tall, penalpine herbs and dwarf heaths to 0.5 m tall; dominated by stunted Leptospermum scoparium and Dracophyllum and a ground tier including Empodisma minus (Mt. Rocky summit area, 530 m). Also on ground under Leptospermum in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (Ereshwater Landing, 5 m). Also on the sides of small cushions in open shrub- land consisting of Leptospermum scoparium, Olearia colens oi, Gahnia and emergent Podocarpus hallii (Pryse Peak, 350-355 m). In the South Island occurring in Eiordland (Eacile Harbor, Allan [MPN!] and Secretary Island) and in the Paparoa Mtns. (N flank of Mt. Euclid and ca. 0.5 km SE of Morgan Tarn, both at 1050 m) where it occurred with Dicranoloma on a granite ledge in a moist Nothofagus menziesii - Dracophyllum traversii forest. It is found with Bazzania adnexa, B. involuta, Clandarium xiphophyllum, Heteroscyphus decipiens, Lepidozia ulothrix, Schistochila chlorophylla and Wijkia extenuata. Comments: Acromastigum mooreanum is apparently rather rare in New Zealand in comparison to the closely related A. anisostomum. The ‘‘crossed swords” formed by the greatly elon¬ gated, strongly ventrally deflexed and approximate ventral leaf lobes (seen in ventral aspect) will readily distinguish this species. A suite of features involving the vitta, the size and shape of the ventral lobe, and the leaf areolation also differentiate this species from A. anisostomum. Acromastigum brachyphyllum A.Evans [Eig. 85: 3; Eig. 92] New Zealand, South Is., Paparoa Ra., 3000 ft., R. Helms (Y!); isotype: (CHR 4948 ex herb. T. Kirk 251!). Plants rigid and wire-like, in loose tufts or mats, the leaves yellowish to golden brown but often ± rust-colored basally, the stems reddish brown, the plants nitid when dry; shoots small, to 0.6 mm wide. Branching sparingly pseudo-dichotomously furcate or clearly lateral, of Frul- lania type, widely spreading; branch half-leaf ± symmetric, very wide ovate, undivided, tapering to a sharp apex (rarely bidentate), subauriculate at the base, with a median-basal field of larger cells; first branch underleaf 2-lobed, inserted on ventral-lateral side of juncture of main axis and branch. Acromasti gum-type ventral branches occasional, stoloniform. Stem cortical cells in 7 rows, the radial and outer tangential walls very thick, the transverse walls thin, the cortical cells larger than medullary cells, in surface view the dorsal cortical cells large, sinuate-hexagonal, the ventral cortical cells smaller. Leaves small in proportion to stem, rigid, fragile, easily tearing, cochleariform, distant to contiguous, with much of stem exposed in dorsal aspect, obliquely spreading, when dry strongly ventrally deflexed and cupped, when moist moderately convex, the lobe tips deflexed and not visible in dorsal aspect, with scattered bistratose patches (at most in groups of 3-5 cells), frequently in the median dorsal sector, sub- vittate, 245-400 p^m wide X 320-465 pm long, strongly incubous, asymmetrically orbicular- ovate; apex unequally bilobed to ca. 0.25, the ventral lobe longer and broader than the dorsal, the lobes acute to obtuse, terminating in a single cell or 2 superposed cells, entire; dorsal lobe 4-6 cells wide at base; ventral lobe 4-5 cells wide at the base, 2-4 cells long; dorsal margin strongly ampliate, cordate to ± auriculate at base, extending to middle of stem or somewhat beyond, entire or somewhat irregularly repand-denticulate at the base, sometimes with several large, spherical slime papillae; ventral margin nearly straight, entire, not decurrent. Underleaves small, about equal to the stem in width, distant, squarrose at base and becoming erect, slightly convex, broadly elliptic, ± equally 3-lobed to ca. 0.3-0. 5, subequal or the median lobe smaller; lobes closely approximate, 4-7 cells wide at base, the apex rounded to truncate, entire, terminating in 2-4 laterally juxtaposed cells and ending in a spherical slime papilla; disc margins cordate to subauriculate, narrowing abruptly to the insertion; cells of disc and lobes strongly thick-walled; margins entire; surface smooth. Cells of leaf distinctly thick- walled, those of ventral sector of leaf larger, forming an indistinct vitta (subvitta) that is strongly ventrally displaced, the cells strongly thick-walled, with bulging, knot-like, often confluent tri¬ gones; cells of vitta 25-30 pm wide X 30-40 pm long; cells of the ampliate dorsal sector much smaller, ± evenly thick-walled, 7-13 pm wide X 12-14 pm long; surface smooth throughout. Oil-bodies in the vitta cells occupying a conspicuous portion of the cell lumen, pale smokey grey, 2-3(4) per cell, very coarsely botryoidal, the segments very thin and membranous, the segmentation irregular and uneven, with age the individual spherules consider¬ ably swollen and the oil-bodies becoming fewer segmented and ultimately smooth; nonvittate cells and distal cells of lobes with oil-droplets only. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: South Island (320-540 m). Known only from Westland (Omoeroa Saddle) and Western Nelson (Paparoa Ra. and Stockton Plateau) EPs. sal base of a fourth leaf (X 280). 7. Apex of a fifth leaf (X 280). 8, 9. Leaf eells in eross seetion, showing bistratose eondition (X 375). 10. Leaf eells in surfaee view, showing bistratose eondition (X 375). 11. Underleaf (X 62). 12. Lateral lobe of a seeond underleaf (X 280). (All from type; after Evans, 1934.) The Omoeroa Saddle collection is from peaty soil in Lagarostrobos colensoi - Phyllocladus alpinus shrubland with Carpha alpina and Sphagnum cristatum at 320 m. Accompanying species are Adelanthus falcatus, Riccardia and Clasmatocolea. The Stockton collection is from a wet overhanging bank under stunted Nothofagus solandri var. clijfortioides - Phyllocladus alpinus forest at 540 m, with Acromastigum verticale. Comments: We know of no othtr Acromastigum with leaves at least locally bistratose (Eig. 92: 8-10). The presence of the bistratose condition in this species requires careful assessment, especially when compared to presence of that character in smaller phases of A. anisostomum. The species looks very similar to A. anisostomum in color and size of the plants, and further work needs to be done to establish its differentiation from that species. Bazzania Gray Bazzania Gray, Nat. Arr. Brit. PI. 1: 704, 775. 1821, &#39;&#39;Bazzanius/&#39; orth. cons. Plants strongly anisophyllous (except Bazzania involuta), typically firm, deep green to olive-green to yellow- or chestnut-brown, dull to highly nitid or (B. tayloriana) glaucous, milky and opaque, the shoots medium to robust in size, to 6 mm wide. Branching frequent, usually freely and repeatedly pseudo-dichotomous and never pinnate or {B. involuta) branching monopodial, the branches of Frullania type, normally originating from only one side of axis, subequal to main axis in vigor and with the main axis losing its dominance, branch halfleaf undivided, positioned in the fork of each ‘‘dichotomy”; first branch underleaf variable, asymmetrically or symmetrically 2-3(4)-lobed, rarely undivided, free or at times connate with a normal stem underleaf. Ventral branches all intercalary, occasional to frequent, often long and whip-like, stoloniform, geotropic, with scale-like leaves; ventral-intercalary leafy branches occasional to frequent. Stems rigid, with cortical cells often larger than the medullary, thick- walled, often ± evenly so. Rhizoids frequently at bases of reduced underleaves and leaves of geotropic stoloniform branches, less commonly from bases of underleaves on normal leafy shoots. Leaves alternate or subopposite (in ventral view), plane to moderately convex (the lobes often ± deflexed), widely spreading, the insertion distinctly incubous and extending to stem midline dorsally, the leaves typically ± asymmetrically ovate to falcate-rectangular, the dorsal margin commonly more arched and ampliate than the ventral; apex 2- or (in ours) 3- dentate (teeth sometimes obscure or almost lacking on weak shoots), at times with accessory teeth; dorsal margin (in ours) strongly arched, ampliate, at times cordate at base, entire or (rarely) denticulate; ventral margin typically ± straight or at times somewhat incurved, sometimes auriculate at base, entire or (rarely) denticulate (ciliate at the base in some extraterritorial species). Cells with walls slightly to distinctly thickened (especially in subapical sector of leaf), with trigones small to bulging and nodulose, the areolation ± uniform and without a vitta or the leaves subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf), or the leaves distinctly vitiate with several rows of sharply differen¬ tiated cells; surface smooth or papillose or {B. tayloriana) glaucous. Oil-bodies large for cell size, 2-6 per cell, homogeneous or at times few- segmented. Underleaves usually no more than 0.35-0.45 X leaf area, or sometimes approaching the leaves in size in some species, free or connate with the leaves on one or both sides, variable, large and widely spreading to closely appressed to the stem and inconspicuous, ± quadrate to orbicular to transversely rectangular to reniform, the apex distinctly and regularly 4-lobed or truncate to rounded-truncate and variously lobulate, toothed or ragged, often with some or all of the cells decolorate and forming a hyaline distal sector, the base at times cordate. Asexual reproduction, when present, by caducous leaves and underleaves, also {B. nova) by regeneration from leaves. Dioecious but often sterile, rarely with sporophytes. Androecia on short, ventral-intercalary branches from lower sectors of leading shoots and from both ventral and lateral sides of stoloniform branches, the androecia inconspicuous, tightly spicate; bracts concave to ventri- cose-cucullate to canaliculate, the apices truncate and entire to bidentate or bilobed; antheridia 1-2 per bract, the stalk biseriate; bracteoles smaller than bracts. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem; bracts of innermost series largest, erect and closely ensheathing the perianth, the apices 2-4-lobed, the lamina margins usually variously crenate to dentate (in ours) or ciliate or laciniate-ciliate; bracteole similar in size and form. Perianth subfusiform, terete below, trigonous and plicate above, gradually narrowed toward the usually contracted mouth; the mouth denticulate-dentate to subciliate; perianth usually multistratose below. Seta usually with 10-16 outer cell rows and a central core of numerous, much smaller cells. Capsule ovoid to ovoid-oblong to long-ellipsoidal, the walls (3)4-6-stratose; outer layer of cells with two-phase development, the longitudinal walls with coarse, nodular thickenings that are sometimes confluent and then at least locally sheet-like alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated swelling; innermost layer of cells commonly with numerous semiannular bands. Spores brown, with papillae and simple or furcate vermiculate markings, 1-1.25 to 2-3 X the elater diam. Elaters rather rigid, nontortuous or at most feebly tortuous, long and slender, bispiral. Type: Bazzania trilobata (L.) Gray (= Jungermannia trilobata L.) A large genus of over 100 species worldwide, with particularly strong representation in tropical montane regions. Eor example, Eulford (1963b) records 54 species from Neotropical regions (all but Bazzania skottsbergii have stations in the tropics), but Gradstein et al. (2001) stated ‘‘probably no more than 40 species in tropical America.” Grolle and Piippo (1984) record 53 species for New Guinea. Eulford (1946, 1959, 1963b) published useful revisions of the Neotropical and southern South American species. Two species occur in southern South America, B. peruviana (Nees) Trevis. and the pan-temperate B. nitida (E.Weber) Grolle (see Engel, 1978). Bazzania chilensis (Steph.) Eulford (see Eulford, 1963b, p. 125) is poorly known and needs further evaluation, and B. skottsbergii (Steph.) Eulford, while recognized by Eulford (1963b), is a synonym of B. peruviana (see Grolle, 1964a; Engel, 1978). Arnell (1963) included four species from South Africa, including B. adnexa, a species also present in our area. Nine species occur in New Zealand. We do not recognize subgenera within the genus, and with regard to subgeneric categories, recognize only the section level, following arguments put forth by Schuster (1969c, 2000a). References: Engel (2006b); Engel and Merrill (1994); Engel and Schuster (1988); Hodgson (1954; rev.); Schuster (2000a). Key to Species la. Leaves clearly alternate, vittate, with a ± distinct strip of larger cells 3-4(6) cells wide running parallel to, and several cells within, the ventral margin of the leaf, the vitta cells with conspicuously bulging trigones; underleaves membranous, appressed to the stem, ± regularly (2)4-lobed or 4-dentate-lobulate {B. monilinervis) . 2 2a. Plants glaucous, the leaves dull and opaque; leaf cell outlines obscured by a fine, granular coating. Underleaves 4-fid to 0.3, or ± bisbifid, the lobes bluntly rounded; plants fragile, easily broken when dry; branching often almost exclusively intercalary . B. tayloriana (p. 449) 2b. Plants green to olive-green (or brownish), the leaves ± translucent, not dull or opaque . 3 3a. Underleaves connate on one side, about as wide as stem, divided into 4 distinct lobes (to ca. 0.5); leaf distinctly convex, the apex with teeth obscurely developed . B. nitida (p. 442) 3b. Underleaves free, to 2.5 X stem width, wide elliptic to widely ovate or ± orbicular, very shallowly divided into small, irregular teeth or lobules; leaves plane to feebly convex, the apex with teeth well developed, distinct, spinu- lose, narrowly acuminate . B. monilinervis (p. 446) lb. Leaves (in ventral aspect) opposite, not vittate as above, or at most subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf, having more distinct trigones); underleaves conspicuous, with at least the basal half firm, ± spreading (often with apices and flanks at 90° to the stem, or more), the apex various but without discrete lobes (except B. nova) . 4 4a. Plants subisophyllous (leaves and underleaves of about equal size); underleaves squarrose-reflexed, the margins broadly revolute, with much of the adaxial surface visible in ventral view. Plants erect, sparingly branched, the branching not pseudo- dichotomous . B. involuta (p. 418) 4b. Plants clearly anisophyllous; underleaves typically spreading to less than 90° (sometimes with only apices ± reflexed), with little if any of adaxial surface visible in ventral view . 5 5a. Cells with trigones lacking or at most straight- sided and inconspicuous .... 6 6a. Terminal, Frullania-iy^Q branches exceedingly rare, a pseudo-dichotomous branch pattern thus lacking; leaves caducous; underleaves free on both sides, the apex shallowly 4-5-lobulate . B. exempta (p. 453) 6b. Terminal, Frullania-typt branches frequent, freely and repeatedly pseudo-dichotomous; leaves persistent; underleaves connate on both sides, the apex entire or repand . B. okaritana (p. 434) 5b. Cells with trigones bulging to knot-like (at least in subvitta cells), or if small and concave-sided (some populations of B. adnexa), then with principal teeth at leaf apex typically with margins denticulate . 7 7a. Underleaves ± regularly 4-6-lobed to ca. 0.3 (disc margins often with a prominent tooth in distal sector, the underleaf then appearing 6-8- lobed); underleaf lobes slenderly acuminate to spinulose; no hyaline cells present . B. nova (p. 439) 7b. Underleaves truncate to broadly rounded in outline, the apex ragged, sinuate-lobulate, or irregularly toothed (rarely subentire); hyaline, ± thin- walled cells often present (at least of underleaf apices) . 8 8a. Underleaves longer than wide, subrectangular to lingulate, the apex truncate and irregularly crenate to subentire, the hyaline, thin-walled cells confined to a narrow border on both apex and lateral margins; leaf not subvittate, the areolation ± uniform throughout; leaf apex and margins of lamina quite entire, the principal teeth broadly triangular; plants robust (to 6 mm wide), the leaves 2. 1-2.8 X 1-1.5 mm . B. novae-zelandiae (p. 436) 8b. Underleaves as wide as or wider than long, oblate to reniform (subquadrate in B. hochstetteri), the apex ragged, with irregular, crowded, sinuate teeth (rarely subentire), at least the distal sector of underleaf typically composed of hyaline, non-collenchyma- tous cells (sometimes occupying most of the underleaf); leaves subvittate, with a band of ± larger cells; plants medium to small (to 3.4 mm wide), the leaves 1-1.5 X 0.8-1 mm . 9 9a. Leaves persistent, firmly attached, distinctly imbricate, the stem mostly hidden in dorsal aspect; leaf apex and distal margins of lamina serrulate (at least on some shoots); plants medium-sized, to 3.4 mm wide . B. adnexa (p. 423) 9b. Leaves often caducous, easily detached, loosely imbricate, with much of stem exposed in dorsal aspect; leaf apex and margins of lamina typically entire; plants small, to 1.8 mm wide . B. hochstetteri (p. 431) Note: After the manuscript was prepared for publication Meagher (2003) reported Bazzania accreta (Lehm. &amp; Lindenb.) Trevis. in New Zealand; the species was heretofore known only for Australia. Sect. Protobazzania J.J.Engel luta (Mont.) Trevis. (= Herpetium involutum Mont.).</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
-    
-    
-    <p><strong>conservation_status:</strong> At Risk - Naturally Uncommon</p>
+    <pre class="description-text">Plants stiff and wire-like, suberect to erect, yellowish to reddish brown (the stem often becoming blackish); plants when dry distinctly nitid and with leaves strongly ventrally de- flexed; shoots small, to 1.2 mm wide, subcircinate at the tip. Branching repeatedly pseudo- dichotomously furcate, the branches of Frullania type, widely spreading; branch half-leaf ± symmetric, ovate, undivided, nonvittate, tapering to a sharp apex; first branch underleaf 2-3-lobed, inserted on ventral-lateral side of branch at juncture of main axis and branch. Acromastigum-typc branches common, stoloniform. Ventral-intercalary branches occasional, leafy. Stem stiff and brittle, the cortical cells strongly differentiated, much larger than the medullary cells (ca. 2.5:1), in 7 rows, the radial walls thick, the outer tangential walls strongly thickened; medullary cells thin- walled. Leaves stiff and brittle, imbricate, allowing little of stem exposed in dorsal aspect, widely spreading, strongly deflexed, the ventral lobes of opposing leaves often approximate in ventral aspect, the leaves moderately convex; leaves vittate, 260- 305 |ULm wide X 600-720 juim long, strongly incubous, subfalcate, asymmetrically narrowly ovate; apex unequally bilobed to ca. 0.5, the ventral lobe 2-4 X longer than the dorsal, the lobes Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Acromastigum colensoanum mastigum mooreanum (Steph.) E.A.Hodgs. Vitta eells. (Figs. 1, 2, from Glenny 9174, New Zealand, South Is., Westland EP, Mt. Te Kinga; 3, 4, from Glenny 9605, New Zealand, South Is., Western Nelson EP, Stoekton Plateau.) type branch (= AB, note half-underleaf) and a Frullania-iyTpQ branch (= FB), ventral view. lobe). 4. Ventral sector of leaf (VL = ventral lobe; S = sinus base); note well-defined vitta, and slime papilla (at arrow). 5. Portion of dorsal base of leaf showing auricle and slime papilla. 6. Underleaves, stipple above insertion indicates line formed by distal end walls of intermediate cells. 7. Underleaf, cellular detail. 8. Stem, cross section. (All from Fife 6423, New Zealand, South Is., Western Nelson EP, Paparoa Ra., N flank of Mt. Euclid.) entire; dorsal lobe acute, the cells often with trigones smaller than those of ventral lobe, the cells at times evenly thick- walled, the lobe 4-5 cells wide at base, terminating in a single cell or a uniseriate row of 2 cells; ventral lobe subulate, 3-4 cells wide at the base and biseriate for much of its length, terminating in a single cell or more commonly a uniseriate row of 2-3 cells, the terminal cell somewhat elongated, tapering to a point; dorsal margin somewhat ampliate, extending to middle of stem or somewhat beyond, cordate to auriculate, at times with a lobuliform auricle near insertion, the basal sector often also with 1-2 slime papillae, the margin entire or somewhat sinuate at the base; ventral margin nearly straight or somewhat incurved, with a slight basal dilation, entire. Cells of leaf with a strong vitta of distinctly larger, rectangular cells occupying the ventral half of leaf (and continuing into the ventral lobe) but without a distinct mar¬ ginal row or rows of smaller, isodiametric cells, the vitta 4-5 cells wide in basal half of leaf; cells of vitta with knot-like trigones, 26-37 juim wide X 29-39(42) juim long; cells in dorsal sector of leaf becoming much smaller, isodiametric, 11-22 juim wide and long, uniformly thick- walled, without trigones; free walls of marginal cells of ventral lobe and ventral margin of disc strongly thickened; surface smooth. Oil-bodies pale smokey grey, 2-7(8) per vitta cell (6-12 per vitta ccW fide Schuster, 2000a, fig. Ill), 2-3 per non-vitta cell, broadly elliptic, coarsely and irregularly botryoidal, with age the spherules coalesce and the segments become fewer and the oil-body shape becomes subglobose. Underleaves rigid, small and inconspicuous, very firmly attached at a thick base, distant, ± squarrose at base and becoming erect, convex, broadly elliptic to subrectangular, much broader than long, deeply and ± equally 3-lobed to ca. 0.5; lobes 4-6 cells wide at base, the apex broadly rounded, entire, terminating in 2-4 laterally juxtaposed cells; disc margins cordate to subauriculate, narrowing abruptly to a narrow insertion; disc margins entire; cells of disc and lobes strongly thick-walled; surface smooth. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: Auckland Islands (15-55 m), Stewart Island (5- 530 m). South Island (200-1050 m); Australia: Tasmania. In New Zealand known from Eiord- land (Secretary Island) and North Westland (Paparoa Ra.) EPs. In New Zealand known from several stations on Stewart Island and South Island. On Stewart Island it occurs in small bryophyte mounds deep in thickets within mosaic communities of dense heath-forming shrubs to 3 m tall, penalpine herbs and dwarf heaths to 0.5 m tall; dominated by stunted Leptospermum scoparium and Dracophyllum and a ground tier including Empodisma minus (Mt. Rocky summit area, 530 m). Also on ground under Leptospermum in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1-2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (Ereshwater Landing, 5 m). Also on the sides of small cushions in open shrub- land consisting of Leptospermum scoparium, Olearia colens oi, Gahnia and emergent Podocarpus hallii (Pryse Peak, 350-355 m). In the South Island occurring in Eiordland (Eacile Harbor, Allan [MPN!] and Secretary Island) and in the Paparoa Mtns. (N flank of Mt. Euclid and ca. 0.5 km SE of Morgan Tarn, both at 1050 m) where it occurred with Dicranoloma on a granite ledge in a moist Nothofagus menziesii - Dracophyllum traversii forest. It is found with Bazzania adnexa, B. involuta, Clandarium xiphophyllum, Heteroscyphus decipiens, Lepidozia ulothrix, Schistochila chlorophylla and Wijkia extenuata. Comments: Acromastigum mooreanum is apparently rather rare in New Zealand in comparison to the closely related A. anisostomum. The ‘‘crossed swords” formed by the greatly elon¬ gated, strongly ventrally deflexed and approximate ventral leaf lobes (seen in ventral aspect) will readily distinguish this species. A suite of features involving the vitta, the size and shape of the ventral lobe, and the leaf areolation also differentiate this species from A. anisostomum. Acromastigum brachyphyllum A.Evans [Eig. 85: 3; Eig. 92] New Zealand, South Is., Paparoa Ra., 3000 ft., R. Helms (Y!); isotype: (CHR 4948 ex herb. T. Kirk 251!). Plants rigid and wire-like, in loose tufts or mats, the leaves yellowish to golden brown but often ± rust-colored basally, the stems reddish brown, the plants nitid when dry; shoots small, to 0.6 mm wide. Branching sparingly pseudo-dichotomously furcate or clearly lateral, of Frul- lania type, widely spreading; branch half-leaf ± symmetric, very wide ovate, undivided, tapering to a sharp apex (rarely bidentate), subauriculate at the base, with a median-basal field of larger cells; first branch underleaf 2-lobed, inserted on ventral-lateral side of juncture of main axis and branch. Acromasti gum-type ventral branches occasional, stoloniform. Stem cortical cells in 7 rows, the radial and outer tangential walls very thick, the transverse walls thin, the cortical cells larger than medullary cells, in surface view the dorsal cortical cells large, sinuate-hexagonal, the ventral cortical cells smaller. Leaves small in proportion to stem, rigid, fragile, easily tearing, cochleariform, distant to contiguous, with much of stem exposed in dorsal aspect, obliquely spreading, when dry strongly ventrally deflexed and cupped, when moist moderately convex, the lobe tips deflexed and not visible in dorsal aspect, with scattered bistratose patches (at most in groups of 3-5 cells), frequently in the median dorsal sector, sub- vittate, 245-400 p^m wide X 320-465 pm long, strongly incubous, asymmetrically orbicular- ovate; apex unequally bilobed to ca. 0.25, the ventral lobe longer and broader than the dorsal, the lobes acute to obtuse, terminating in a single cell or 2 superposed cells, entire; dorsal lobe 4-6 cells wide at base; ventral lobe 4-5 cells wide at the base, 2-4 cells long; dorsal margin strongly ampliate, cordate to ± auriculate at base, extending to middle of stem or somewhat beyond, entire or somewhat irregularly repand-denticulate at the base, sometimes with several large, spherical slime papillae; ventral margin nearly straight, entire, not decurrent. Underleaves small, about equal to the stem in width, distant, squarrose at base and becoming erect, slightly convex, broadly elliptic, ± equally 3-lobed to ca. 0.3-0. 5, subequal or the median lobe smaller; lobes closely approximate, 4-7 cells wide at base, the apex rounded to truncate, entire, terminating in 2-4 laterally juxtaposed cells and ending in a spherical slime papilla; disc margins cordate to subauriculate, narrowing abruptly to the insertion; cells of disc and lobes strongly thick-walled; margins entire; surface smooth. Cells of leaf distinctly thick- walled, those of ventral sector of leaf larger, forming an indistinct vitta (subvitta) that is strongly ventrally displaced, the cells strongly thick-walled, with bulging, knot-like, often confluent tri¬ gones; cells of vitta 25-30 pm wide X 30-40 pm long; cells of the ampliate dorsal sector much smaller, ± evenly thick-walled, 7-13 pm wide X 12-14 pm long; surface smooth throughout. Oil-bodies in the vitta cells occupying a conspicuous portion of the cell lumen, pale smokey grey, 2-3(4) per cell, very coarsely botryoidal, the segments very thin and membranous, the segmentation irregular and uneven, with age the individual spherules consider¬ ably swollen and the oil-bodies becoming fewer segmented and ultimately smooth; nonvittate cells and distal cells of lobes with oil-droplets only. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: South Island (320-540 m). Known only from Westland (Omoeroa Saddle) and Western Nelson (Paparoa Ra. and Stockton Plateau) EPs. sal base of a fourth leaf (X 280). 7. Apex of a fifth leaf (X 280). 8, 9. Leaf eells in eross seetion, showing bistratose eondition (X 375). 10. Leaf eells in surfaee view, showing bistratose eondition (X 375). 11. Underleaf (X 62). 12. Lateral lobe of a seeond underleaf (X 280). (All from type; after Evans, 1934.) The Omoeroa Saddle collection is from peaty soil in Lagarostrobos colensoi - Phyllocladus alpinus shrubland with Carpha alpina and Sphagnum cristatum at 320 m. Accompanying species are Adelanthus falcatus, Riccardia and Clasmatocolea. The Stockton collection is from a wet overhanging bank under stunted Nothofagus solandri var. clijfortioides - Phyllocladus alpinus forest at 540 m, with Acromastigum verticale. Comments: We know of no othtr Acromastigum with leaves at least locally bistratose (Eig. 92: 8-10). The presence of the bistratose condition in this species requires careful assessment, especially when compared to presence of that character in smaller phases of A. anisostomum. The species looks very similar to A. anisostomum in color and size of the plants, and further work needs to be done to establish its differentiation from that species. Bazzania Gray Bazzania Gray, Nat. Arr. Brit. PI. 1: 704, 775. 1821, &#39;&#39;Bazzanius/&#39; orth. cons. Plants strongly anisophyllous (except Bazzania involuta), typically firm, deep green to olive-green to yellow- or chestnut-brown, dull to highly nitid or (B. tayloriana) glaucous, milky and opaque, the shoots medium to robust in size, to 6 mm wide. Branching frequent, usually freely and repeatedly pseudo-dichotomous and never pinnate or {B. involuta) branching monopodial, the branches of Frullania type, normally originating from only one side of axis, subequal to main axis in vigor and with the main axis losing its dominance, branch halfleaf undivided, positioned in the fork of each ‘‘dichotomy”; first branch underleaf variable, asymmetrically or symmetrically 2-3(4)-lobed, rarely undivided, free or at times connate with a normal stem underleaf. Ventral branches all intercalary, occasional to frequent, often long and whip-like, stoloniform, geotropic, with scale-like leaves; ventral-intercalary leafy branches occasional to frequent. Stems rigid, with cortical cells often larger than the medullary, thick- walled, often ± evenly so. Rhizoids frequently at bases of reduced underleaves and leaves of geotropic stoloniform branches, less commonly from bases of underleaves on normal leafy shoots. Leaves alternate or subopposite (in ventral view), plane to moderately convex (the lobes often ± deflexed), widely spreading, the insertion distinctly incubous and extending to stem midline dorsally, the leaves typically ± asymmetrically ovate to falcate-rectangular, the dorsal margin commonly more arched and ampliate than the ventral; apex 2- or (in ours) 3- dentate (teeth sometimes obscure or almost lacking on weak shoots), at times with accessory teeth; dorsal margin (in ours) strongly arched, ampliate, at times cordate at base, entire or (rarely) denticulate; ventral margin typically ± straight or at times somewhat incurved, sometimes auriculate at base, entire or (rarely) denticulate (ciliate at the base in some extraterritorial species). Cells with walls slightly to distinctly thickened (especially in subapical sector of leaf), with trigones small to bulging and nodulose, the areolation ± uniform and without a vitta or the leaves subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf), or the leaves distinctly vitiate with several rows of sharply differen¬ tiated cells; surface smooth or papillose or {B. tayloriana) glaucous. Oil-bodies large for cell size, 2-6 per cell, homogeneous or at times few- segmented. Underleaves usually no more than 0.35-0.45 X leaf area, or sometimes approaching the leaves in size in some species, free or connate with the leaves on one or both sides, variable, large and widely spreading to closely appressed to the stem and inconspicuous, ± quadrate to orbicular to transversely rectangular to reniform, the apex distinctly and regularly 4-lobed or truncate to rounded-truncate and variously lobulate, toothed or ragged, often with some or all of the cells decolorate and forming a hyaline distal sector, the base at times cordate. Asexual reproduction, when present, by caducous leaves and underleaves, also {B. nova) by regeneration from leaves. Dioecious but often sterile, rarely with sporophytes. Androecia on short, ventral-intercalary branches from lower sectors of leading shoots and from both ventral and lateral sides of stoloniform branches, the androecia inconspicuous, tightly spicate; bracts concave to ventri- cose-cucullate to canaliculate, the apices truncate and entire to bidentate or bilobed; antheridia 1-2 per bract, the stalk biseriate; bracteoles smaller than bracts. Gynoecia on abbreviated ventral-intercalary branches issuing from main stem; bracts of innermost series largest, erect and closely ensheathing the perianth, the apices 2-4-lobed, the lamina margins usually variously crenate to dentate (in ours) or ciliate or laciniate-ciliate; bracteole similar in size and form. Perianth subfusiform, terete below, trigonous and plicate above, gradually narrowed toward the usually contracted mouth; the mouth denticulate-dentate to subciliate; perianth usually multistratose below. Seta usually with 10-16 outer cell rows and a central core of numerous, much smaller cells. Capsule ovoid to ovoid-oblong to long-ellipsoidal, the walls (3)4-6-stratose; outer layer of cells with two-phase development, the longitudinal walls with coarse, nodular thickenings that are sometimes confluent and then at least locally sheet-like alternating with walls that are devoid of thickenings (or are sporadically locally thickened), the transverse walls devoid of thickenings or sporadically have an isolated swelling; innermost layer of cells commonly with numerous semiannular bands. Spores brown, with papillae and simple or furcate vermiculate markings, 1-1.25 to 2-3 X the elater diam. Elaters rather rigid, nontortuous or at most feebly tortuous, long and slender, bispiral. Type: Bazzania trilobata (L.) Gray (= Jungermannia trilobata L.) A large genus of over 100 species worldwide, with particularly strong representation in tropical montane regions. Eor example, Eulford (1963b) records 54 species from Neotropical regions (all but Bazzania skottsbergii have stations in the tropics), but Gradstein et al. (2001) stated ‘‘probably no more than 40 species in tropical America.” Grolle and Piippo (1984) record 53 species for New Guinea. Eulford (1946, 1959, 1963b) published useful revisions of the Neotropical and southern South American species. Two species occur in southern South America, B. peruviana (Nees) Trevis. and the pan-temperate B. nitida (E.Weber) Grolle (see Engel, 1978). Bazzania chilensis (Steph.) Eulford (see Eulford, 1963b, p. 125) is poorly known and needs further evaluation, and B. skottsbergii (Steph.) Eulford, while recognized by Eulford (1963b), is a synonym of B. peruviana (see Grolle, 1964a; Engel, 1978). Arnell (1963) included four species from South Africa, including B. adnexa, a species also present in our area. Nine species occur in New Zealand. We do not recognize subgenera within the genus, and with regard to subgeneric categories, recognize only the section level, following arguments put forth by Schuster (1969c, 2000a). References: Engel (2006b); Engel and Merrill (1994); Engel and Schuster (1988); Hodgson (1954; rev.); Schuster (2000a). Key to Species la. Leaves clearly alternate, vittate, with a ± distinct strip of larger cells 3-4(6) cells wide running parallel to, and several cells within, the ventral margin of the leaf, the vitta cells with conspicuously bulging trigones; underleaves membranous, appressed to the stem, ± regularly (2)4-lobed or 4-dentate-lobulate {B. monilinervis) . 2 2a. Plants glaucous, the leaves dull and opaque; leaf cell outlines obscured by a fine, granular coating. Underleaves 4-fid to 0.3, or ± bisbifid, the lobes bluntly rounded; plants fragile, easily broken when dry; branching often almost exclusively intercalary . B. tayloriana (p. 449) 2b. Plants green to olive-green (or brownish), the leaves ± translucent, not dull or opaque . 3 3a. Underleaves connate on one side, about as wide as stem, divided into 4 distinct lobes (to ca. 0.5); leaf distinctly convex, the apex with teeth obscurely developed . B. nitida (p. 442) 3b. Underleaves free, to 2.5 X stem width, wide elliptic to widely ovate or ± orbicular, very shallowly divided into small, irregular teeth or lobules; leaves plane to feebly convex, the apex with teeth well developed, distinct, spinu- lose, narrowly acuminate . B. monilinervis (p. 446) lb. Leaves (in ventral aspect) opposite, not vittate as above, or at most subvittate (with a broad, indistinct band of enlarged cells in the median longitudinal portion of leaf, having more distinct trigones); underleaves conspicuous, with at least the basal half firm, ± spreading (often with apices and flanks at 90° to the stem, or more), the apex various but without discrete lobes (except B. nova) . 4 4a. Plants subisophyllous (leaves and underleaves of about equal size); underleaves squarrose-reflexed, the margins broadly revolute, with much of the adaxial surface visible in ventral view. Plants erect, sparingly branched, the branching not pseudo- dichotomous . B. involuta (p. 418) 4b. Plants clearly anisophyllous; underleaves typically spreading to less than 90° (sometimes with only apices ± reflexed), with little if any of adaxial surface visible in ventral view . 5 5a. Cells with trigones lacking or at most straight- sided and inconspicuous .... 6 6a. Terminal, Frullania-iy^Q branches exceedingly rare, a pseudo-dichotomous branch pattern thus lacking; leaves caducous; underleaves free on both sides, the apex shallowly 4-5-lobulate . B. exempta (p. 453) 6b. Terminal, Frullania-typt branches frequent, freely and repeatedly pseudo-dichotomous; leaves persistent; underleaves connate on both sides, the apex entire or repand . B. okaritana (p. 434) 5b. Cells with trigones bulging to knot-like (at least in subvitta cells), or if small and concave-sided (some populations of B. adnexa), then with principal teeth at leaf apex typically with margins denticulate . 7 7a. Underleaves ± regularly 4-6-lobed to ca. 0.3 (disc margins often with a prominent tooth in distal sector, the underleaf then appearing 6-8- lobed); underleaf lobes slenderly acuminate to spinulose; no hyaline cells present . B. nova (p. 439) 7b. Underleaves truncate to broadly rounded in outline, the apex ragged, sinuate-lobulate, or irregularly toothed (rarely subentire); hyaline, ± thin- walled cells often present (at least of underleaf apices) . 8 8a. Underleaves longer than wide, subrectangular to lingulate, the apex truncate and irregularly crenate to subentire, the hyaline, thin-walled cells confined to a narrow border on both apex and lateral margins; leaf not subvittate, the areolation ± uniform throughout; leaf apex and margins of lamina quite entire, the principal teeth broadly triangular; plants robust (to 6 mm wide), the leaves 2. 1-2.8 X 1-1.5 mm . B. novae-zelandiae (p. 436) 8b. Underleaves as wide as or wider than long, oblate to reniform (subquadrate in B. hochstetteri), the apex ragged, with irregular, crowded, sinuate teeth (rarely subentire), at least the distal sector of underleaf typically composed of hyaline, non-collenchyma- tous cells (sometimes occupying most of the underleaf); leaves subvittate, with a band of ± larger cells; plants medium to small (to 3.4 mm wide), the leaves 1-1.5 X 0.8-1 mm . 9 9a. Leaves persistent, firmly attached, distinctly imbricate, the stem mostly hidden in dorsal aspect; leaf apex and distal margins of lamina serrulate (at least on some shoots); plants medium-sized, to 3.4 mm wide . B. adnexa (p. 423) 9b. Leaves often caducous, easily detached, loosely imbricate, with much of stem exposed in dorsal aspect; leaf apex and margins of lamina typically entire; plants small, to 1.8 mm wide . B. hochstetteri (p. 431) Note: After the manuscript was prepared for publication Meagher (2003) reported Bazzania accreta (Lehm. &amp; Lindenb.) Trevis. in New Zealand; the species was heretofore known only for Australia. Sect. Protobazzania J.J.Engel luta (Mont.) Trevis. (= Herpetium involutum Mont.).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> At Risk - Naturally Uncommon</p>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_ACROMASTIGUM</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">A. verticale (Steph.) E.A.Hodgs.— Tasmania
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>VICTORIAN_ACROMASTIGUM</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">A. verticale (Steph.) E.A.Hodgs.— Tasmania
 
                                                                                                                                                             These seven species may be distinguished using the following key.
 
@@ -837,7 +807,7 @@ Streimann 43723, Feb 1990, CBG-9007708;
                                                                                                                                                                                                                 Stephani F (1889) Hepaticae Australiae. Hedwigia 28: 128–
                                                                                                                                                             crophyllous branch                                    135.
                                                                                                                                                             postical   farthest from the apex of the stem or    Stephani F (1908) Species Hepaticarum, vol. 3. (George &amp; Cie:
-                                                                                                                                                            shoot                                                 Genéve &amp; Bale)</p>
+                                                                                                                                                            shoot                                                 Genéve &amp; Bale)</pre>
     
     
   </details>
@@ -846,14 +816,43 @@ Streimann 43723, Feb 1990, CBG-9007708;
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acromastigum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum anisostomum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum carcinum M.A.M.Renner &amp; T.C.Wilson</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum cavifolium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum cunninghamii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum divaricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum echinatiforme</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum stenophyllum R.M.Schust.</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum verticale</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Bazzania mooreana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum mooreanum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -868,22 +867,32 @@ Streimann 43723, Feb 1990, CBG-9007708;
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [99.9, 89.1, 113.4, 124.3, 188.6, 179.3, 210.2, 230.5, 214.7, 187.6, 118.7, 140.2], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.4, 18.6, 16.3, 13.3, 10.5, 8.7, 8.0, 8.9, 10.7, 12.6, 15.3, 16.5], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.6, 8.5, 7.6, 5.9, 4.6, 3.0, 2.1, 2.5, 3.7, 4.6, 6.3, 7.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

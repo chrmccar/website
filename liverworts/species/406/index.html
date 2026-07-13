@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Trichocolea rigida</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Trichocoleaceae</span>
-    <span class="badge secondary">Trichocolea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Aloina rigida</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eotrichocolea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Persoonia rigida</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pterobryella rigida</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Pultenaea rigida</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Trichocolea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Trichocolea elegans</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Trichocolea hatcheri</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Trichocolea wattsiana</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Trichocolea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,21 +48,25 @@
     <p class="big-num">249</p>
     <footer>30 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">21</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -96,206 +74,198 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>regularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>500.0–650.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>500.0–650.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>10.0–12.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>10.0–12.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>7.0–11.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>7.0–11.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>14.0–24.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>14.0–24.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>600.0–700.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>600.0–700.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>5.0–9.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>5.0–9.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>4.0–5.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>4.0–5.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>wood</td>
-          <td>categorical</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Telaranea dispar (Mont.) E.A.Hodgs.
+    <pre class="description-text">Telaranea dispar (Mont.) E.A.Hodgs.
 Saccogynidium australe (Mitt.) Grolle                  Telaranea elegans (Colenso) J.J.Engel &amp; G.L.S.Merrill
 Schistochila appendiculata (Hook.) Trevis.                     Lepidozia elegans Colenso
 Schistochila balfouriana (Hook.f. &amp; Taylor) Steph.     Telaranea exigua R.M.Schust.
@@ -355,46 +325,55 @@ Temnoma pulchellum (Hook.) Mitt.                          Hamlin (1972) or in la
 Temnoma quadrifidum (Mitt.) E.A.Hodgs. &amp; Allison          in this checklist.
 Temnoma quadripartitum var. pseudopungens
         R.M.Schust.                                       Acroscyphella phoenicorhiza -Austroscyphus
-Temnoma quadripartitum (Hook.) Mitt. var.                 phoenicorhizus</p>
+Temnoma quadripartitum (Hook.) Mitt. var.                 phoenicorhizus</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (4 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(4)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants relatively rigid, woolly in appearance, prostrate, densely interwoven, yellow-green, whitish with age, the dried plants dull, appearing amorphous and resembling a crustose lichen, the shoots small, to 1 cm wide, including branches. Branching irregularly 2-pinnate, with 2-4(5) ± irregularly curved, secondary branches per primary branch; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems rather stiff, paraphyllia rather abundant, much branched, with cells similar to those of the leaf cilia. Rhizoids usually absent. Leaves of stem widely spreading but with lobes and cilia broadly arching upward toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ appearing as a dense mass of cilia, the individual lobes hardly discernable, the leaves on the stem approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, obtrapezoidal to subreniform, divided into 4-5 erect, pinnulate lobes, the lobes sometimes appearing forked or partially fused at base (those in ventral sector of leaf somewhat larger), each lobe actually unequally and irregularly (2)3-fid, consisting of a stronger, erect, pinnulate division and (0)1-2 small, freely branched and variably positioned accessory divisions that are 1-2(3) cells wide at the base, and stiffly abaxially spreading and arched in same direction as the main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, ± regularly pinnulate (best seen in adaxial view), with numerous stout segments and cilia, the ventral lobes 4-6 cells wide at base, with 3-5 tiers of later¬ ally juxtaposed, turgid cells basal to the uniseriate row of (4)5-7(8) cells; cells of uniseriate row short, barrel- shaped, rather thin- walled and ± turgid, constricted at the septa, the septa not thickened or dilated, the surface coarsely papillose, the penultimate cell (14)17-24 juim wide, (43)50-67(74) juim long; terminal cell of uniseriate row finger-like, slightly tapering to a broadly rounded apex, 12-22 juim wide, 50-65(82) juim long, thin- walled in the tip, the surface distinctly papillose; margins of lobes armed with pairs of abaxially displaced, opposing cilia, the cilia usually branched (often repeatedly so), the armature all inserted on the abaxial surface of lobe and abaxially patent, but ascending and nearly as long as lobes; marginal cilia of lobe mostly uniseriate throughout, the cilia bases rarely with 2 laterally juxtaposed cells, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 3-4 cells high (from base to sinuses); margins of disc with freely branched cilia, the cilia cells similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc faintly uniformly thick-walled, in lamina middle 22-34 juim wide, 53-75(80) juim long; surface densely striate-papillose to striolate. Oil-bodies within all cells of leaf including tip cell of cilia, occupying small portion of cell lumen, opaque, smokey grey, 4-8(12) per paired cells at lobe base, irregularly and inconspicuously and finely granular, the spherules tiny and irregular, the oil-bodies irregular in shape: globose to bottle-shaped to elliptic to sublinear to sub- crescentic to subsigmoid, 4.3-4.8 X 7. 2-8. 6 juim to 2.9-4. 8 X 9.6-11.5 juim or spherical and 4.8 |ULm in diam. Underleaves in situ appearing as a dense mass of cilia, somewhat smaller than leaves, free, suborbicular to reniform, quadrifid, often weakly bisbifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary and secondary branches, appearing brushed with apically oriented cilia, the bracts divided to ca. 0.4-0.5, the lamina strongly ventricose, the abaxial face of bract with simple or sporadically branched cilia in distal sector, the armature only sporadically on lamina; antheridia large for bract size, 1(2) per bract, the stalk biseriate. Gynoecia and sporophyte not seen. Distribution and Ecology: New Zealand: Stewart Island (10-30 m). South Island (0-1390 m). North Island (200-1250 m), Chatham Islands (240 m); Australia: Tasmania and Victoria. In New Zealand known from Northland, Auckland, Volcanic Plateau, Southern North Island (Ru- ahine and Tararua ranges). Western Nelson (Cobb Valley), Westland, Canterbury (Banks Peninsula, Hawdon River), Otago (Central Otago, Lammerlaw and Otago Coast ERs), Eiord- land and Rakiura (Stewart Island, Solander Islands) EPs. In New Zealand the species is known from scattered localities over a broad altitudinal range. It occurs on the floor and mossy banks in forests near the sea (Martin’s Bay and Milford Sound in Eiordland), as well as in upper-elevation forests (e.g., Nothofagus fusca - N. solandri var. clijfortioides forest at ca. 1280-1390 m at Pinchgut Track, Nelson Lakes Natl. Park). It also occurs in the penalpine zone in damp or springy niches under snow tussock (e.g., in the Lam- mermoor Ra., Old Man Ra., the type, both in Otago). Also on roadside banks at Halfmoon Bay, Stewart Island. Unlike our two other species, which occur in forests, Trichocolea rigida commonly occurs in more open sites, e.g., in seepage areas in penalpine tussock grassland (Chionochloa) and exposed roadside banks, and in grassland kept damp by seepage, for instance at Gebbies Pass and Hilltop on Banks Peninsula. At Stockton it occurs under gorse scrub in a gully, on damp soil with adventive grasses and Polytrichum commune. On Chatham Island it was found on a soil bank under a canopy of Dicksonia fibrosa. Species found with T. rigida are Brachythecium rutabulum, Breutelia pendula, Chiloscyphus leucophyllus, Cra- toneuropsis relaxa, Distichophyllum pulchellum, Drepanocladus aduncus, Fissidens asple- nioides, Canalohypopterygium tamariscinum, Plagiomnium novae-zealandiae, Pohlia cruda, Polytrichadelphus magellanicus, Sphagnum australe, Thuidium furfurosum and Trichocolea mollissima. Comments&#39;. The species name is in allusion to the more rigid plants, as compared to Trichocolea mollissima and T. hatcheri. Plants are mostly 1-pinnate, often relatively laxly so vs. the much denser 2-, 2-3-, or 3-pinnate branching of our other taxa. Trichocolea rigida is, also, a smaller species, with main axes mostly only 2-4 cm long; when dry it is a relatively dull plant, due to the conspicuously papillose surface, even terminal cells of cilia being clearly roughened (Pig. 25: 3, 5). The cilia are much less strongly tapered, with terminal cells ca. 4-5(5. 5)X as long as in basal diam.; the septa between cells are never distinctly dilated (Pig. 25: 1, 3-5). In T. mollissima and T. hatcheri the cilia striking taper from base to apex, and are formed of much more elongated cells (to 15-19X as long as in basal diam.) and distal cilium cells are smooth or obscurely striolate.</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants closely prostrate to adnate, compact and densely interwoven, deep green, velvety, small, 1-1.6 cm wide, including branches. Branches regularly 2-pinnate, tertiary branches rare, the leading axis retaining its dominance; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems stiff, paraphyllia few or altogether lacking. Rhizoids usually absent, when present, long for plant size. Leaves of stem widely spreading but with lobes and cilia broadly arching toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ often appearing as a dense fringe of cilia, the individual lobes often quite discernable, the leaves on the stem distant to approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, suborbicular to sub- reniform, 500-650 juim wide, 300-500 juim long, divided into 4-5 erect, pinnulate lobes (the lobes in ventral sector of leaf weakly larger), each lobe actually unequally (2)3-fid, consisting of a stronger, erect, pinnulate division and 1-2 small, irregularly branched, abaxially displaced, accessory divisions that are (1)2(3) cells wide at the base and feebly to distinctly arched in same direction as main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, somewhat irregularly pinnulate (best seen in adaxial view), with numerous segments and cilia, the ventral lobes 2-4 cells wide at base, with 2 tiers of laterally juxta¬ posed cells basal to the uniseriate row of 5-6 cells; cells of uniseriate row ± tapering, rather thin-walled, with only slightly thickened septa, somewhat longer and narrower toward lobe apices but not ultimately becoming capillary, the surface finely striolate to often distinctly papillose, the penultimate cell 10-12 juim wide X 41-60(72) juim long; terminal cell of uni- seriate row ± straight, not curved to sinuous, slightly tapering to a ± rounded apex, 7-11 juim wide, but the length variable: 55-85(100) to 100-150 juim, usually thin-walled in the tip, the surface smooth to finely papillose; margins of lobes armed with pairs of opposing cilia, the cilia usually branched, often repeatedly, the armature all inserted on the abaxial surface of lobe and abaxially patent; marginal cilia of lobe uniformly uniseriate throughout, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 2-3 (very locally 4) cells high (from base to sinuses); margins of disc with branched cilia similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc uniformly slightly to distinctly thickened, in somewhat regular tiers, in lamina middle 14-24 juim wide X (30)36-50(58) juim long; surface long-striolate, rarely with a few papillae. Underleaves somewhat smaller than leaves, free, subreniform, quadrifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary branches and sometimes also the main shoot, the bracts divided to ca. 0.3-0. 5, the lamina strongly ventricose, the abaxial face with ciliiform, unbranched processes (at times sparsely developed), the bract lobes similar to those of leaves; antheridia large for bract size, 1 per bract, the stalk biseriate. Coelocaule on main shoot or short to leading branches, but becoming axillary or pseudolateral (through development, respectively, of 2 or 1 subfloral branches), the coelocaule stoutly to longly and narrowly clavate, densely paraphyllose. Capsule (only old valves with ± collapsed cells seen), the wall of (?)6 layers; epidermal layer of large, hyaline ephemeral cells lacking thickenings; innermost layer of cells with semi- annular bands common, rather narrow, usually complete, rarely forked. Spores 11.9-14.4 juim in diam., with low, rather well-defined, close papillae and short- vermiculate markings. Elaters bluntly pointed at the ends, 1 1-1 1.9 juim wide, somewhat contorted, bispiral, the spirals 1. 9-2.4 juim wide. Distribution and Ecology: New Zealand: Stewart Island, South Island (30-600 m). North Island (100-425 m), Chatham Islands (80-160 m); Australia: Queensland. In New Zealand known from Otago (Dunedin), Westland (near Westport, Mahinapua), Sounds-Nelson (Pelorus Sound), Southern North Island, Taranaki, Volcanic Plateau, Gisborne, Auckland and Northland EPs. Occurring sporadically throughout its range, but most common in the eastern North Island. Pound under a variety of lowland forest types that include Beilschmiedia tawa, Weinmannia racemosa, Melicytus ramiflorus, Nothofagus fusca, N. menziesii, Prumnopitys taxifolia and Dacrycarpus dacrydioides in sites ranging from very damp sites in stream courses to dry overhanging banks. Pound on rotten logs, soil, tree roots, tree stumps, thin soil over rock, rarely epiphytic on Dicksonia squarrosa and (on Chatham Island) Dracophyllum arboreum. It may be corticolous, e.g., on trunk of Weinmannia at sea level to ca. 45 m in a narrow stream system with a canopy of Weinmannia racemosa at Port Pegasus, Stewart Island or, in the North Island, on the base of Rhopalostylis sapida (Kiwanis Reserve, N edge of Herekino Porest area, ca. 60-80 m) in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis, Coprosma, Dacrycarpus and Hoheria. It occasionally occurs over shaded rock, e.g., on the summit of ridge at Bream Head (SE of Whangarei, 425 m) in a scrubby forest with a few large Dysoxylum and Beilschmiedia, but with much Coprosma, Rhopalostylis, Hoheria and climbing Metrosideros. The species ranges as far north as Radar Bush (WSW of Cape Reinga) at ca. 100 m in a forest of Beilschmiedia - Vitex - Hoheria and Cyathea dealbata. at arrow). 2. Leaf, adaxial view (some of eilia shown only in part for elarity). 3. Median lamina eells and 2 lobe bases, adaxial view, surfaee detail shown in part (S = sinus between lobes). 4. Dis(TC = terminal eell of lobe). 8. Cilia from near base of leaf lobe. (All from Schuster 67-1068, New Zealand, North Is., Northland EP, SE of Kaitaia, Mangamuka Gorge Reserve.) Species found with Trichocolea hatcheri are Bazzania adnexa, Camptochaete angustata, Cate- gonium nitens, Chiloscyphus muricatus, Cyathophorum bulbosum, Distichophyllum pulchel- lum, Fissidens asplenioides, Heteroscyphus coalitus, Hy menophy Hum flab ellatum, Leiomitra lanata, Lopidium concinnum, Pyrrhobryum bifarium, Racopilum convolutaceum, Radula buc- cinifera, R. grandis, Schistochila appendiculata, Telaranea herzogii, Temnoma pulchellum, Thuidium laeviusculum and Trichomanes venosum. Comments: Apart from its smaller size, appressed habit, and ± regularly bipinnate branching, there is little to distinguish Trichocolea hatcheri vegetatively from T mollissima. How¬ ever, many of these smaller, appressed, bipinnate plants bear abundant and well-developed coelocaules, a fact that argues for maintaining these plants as distinct. Several characters are commonly associated with this smaller habit. The cells of the uniseriate portion of the leaf lobes are less tapered, have thinner walls with only slightly thickened septa, and often have a distinctly papillose surface. The terminal and penultimate lobe cells are usually shorter and less finely tapered than those of T mollissima, and the terminal cell is narrowly rounded and not thickened in the tip. When cf plants are present the two species may be readily separated, with T hatcheri having less deeply lobed bracts that are armed on the abaxial surface of the lamina, and the presence of androecia only on primary branches. More easily distinguished from Trichocolea mollissima in the field than from dried specimens by its vivid green color and velvety appearance due to the cilia being chlorophyllose (in contrast to the paler yellow color of T mollissima), and by its invariably prostrate habit. The terminal branches lack the open cage of leaves seen in T mollissima because the leaves tend to lie flatter to the stem. Trichocolea hatcheri is a smaller, more compact plant than T mollissima, with a quite different distribution and ecology. It tends to grow on thin mineral soil over rocks (sometimes with Treubia lacunosa) and grows closely creeping over the substrate. Even vigorous plants rarely exceed 3-5 cm long and are, usually, rather closely 2(3)-pinnate, with tertiary branches usually sporadic or rare. There has been a confusion in names applied to this species and Trichocolea mollissima. Hatcher (1958) used the name T mollissima for this taxon (Z hatcheri), and used the later name T australis Steph. for the true T mollissima. Schuster (1963b) proposed T. novae- zelandiae as a substitute for ‘T mollissima&#39;&#39; of Hatcher, but without the required Latin description. Hodgson (1965) subsequently described the species as T. hatcheri. Trichocolea hatcheri belongs to a complex that includes T. pluma. The two species are similar, for example, in having 2(3)-pinnate branching and a leaf disc 2-3 cells high. Trichocolea pluma differs from T. hatcheri in having a terminal cell of the leaf lobes that is rather thin- walled, ± parallel- sided throughout with a surface distinctly striate-papillose. In these respects T. pluma is more like T. rigida, and, moreover, like that species the tip cell of the leaf lobes is rounded at the summit. Trichocolea pluma may be distinguished from T. rigida by the regularly 2(3)-pinnate branching, by the straight or dilated septa of the cells in the cilia and by the lower leaf disc. Eotrichocolea R.M.Schust. Eotrichocolea R.M.Schust., J. Hattori Bot. Lab. 26: 252. 1963. Plants ± prickly in appearance, anisophyllous, rather rigid, rather closely procumbent to ascending, light yellow-green, small, usually to only 2 cm long. Branching typically 1 -pinnate (sporadically 2-pinnate), the branches irregularly arranged, nearly all of Frullania type, of limited length, cernuous, tapered, ultimately becoming flagelliform and microphyllous; Acro- mastigum-typQ branches rare. Stem rather large for plant size and notably more robust than the branch axes, paraphyllose, the paraphyllia 2-3(4)-celled, the cortical cells thin-walled, the medullary cells of similar size, also thin-walled. Leaves obliquely spreading, distant to contiguous, ± transverse to weakly to distinctly incubous, ± symmetrical, ca. 600-700 juim wide X 600-800 |ULm long, deeply quadrifid (lateral lobes slightly to markedly smaller), the lobes 2-4 cells wide at base, terminating in tapered cilia each comprised of a uniseriate row of 3-5 cells; margins of lobes with (1)2-5 cilia arranged alternately or (often) opposed, the armature often displaced and inserted on the abaxial surface of lobe and stiffly abaxially patent, the lateral cilia rather rigid, spiniform, tapered as in lobes, consisting of a uniseriate row of 2-3(4) cells; disc 2-3(4) cells high, the margins with short cilia. Cells moderately elongated (to 2:1 in disc, to 6:1 in lobes), with walls thin to somewhat firm, the surface of lobes conspicuously papillose, of disc distinctly and closely striolate-papillose. Oil-bodies pale smokey grey, the paired cells at base of uniseriate row of the lobes with 5-9 per cell, the uniseriate row with 8- 12 per cell, the basal row of disc with 4-5 per cell, 6-7(9) per cell of next row up in the disc, the oil-bodies coarsely granular-papillose, the granules well defined, not protruding beyond the membrane, the oil-bodies subglobose, almost spherical but slightly distorted, ovoid, the larger ones less spherical and 7X10 juim, the spherical ones 6-7 juim in diam. Underleaves ca. 0.5 X leaf size, deeply bifid, the lobes 2-3(4) cells wide at base, terminating in a uniseriate row of 3-4 cells, the lobes with a few, often opposed, marginal cilia similar to those of leaves and like them often abaxially displaced, the cilia at times with a marginal sessile slime papilla; disc 1-2 cells high. Asexual reproduction absent. Dioecious. Androecia on main shoot, becoming intercalary; bracts not much differentiated from leaves, the disc somewhat concave; antheridia 1 per bract, the stalk short, biseriate. Gy- noecia terminal on leading shoots; bracts leaf-like, inserted near coelocaule base as well as just beyond the coelocaule midpoint. Coelocaule clavate, the wall polystratose, bearing the bracts and variable paraphyllia, but with much of coelocaule surface exposed; perianth lacking, at times several larger, dilate leaves are present near coelocaule apex, which may represent perianth vestiges; free calyptra absent, the unfertilized archegonia at coelocaule summit. Loot massive, conoidal. Seta long, rather massive, becoming hollow at maturity. Capsule short-ellipsoidal, dehiscence irregular, the valves irregular in size and shape and tending to fragment with age, the wall 4-5-stratose; outer layer of cells large, hyaline, without pigmented thickenings; innermost layer of cells with complete or incomplete semi annular bands. Spores and elaters unknown. Type: Eotrichocolea polyacantha (Hook.f. &amp; Taylor) R.M. Schust. (= Jungermannia poly- acantha Hook.f. &amp; Taylor) Eotrichocolea is monotypic. It differs from Trichocolea in general aspect, as well as several other features that include the incubous leaves, the irregular capsule dehiscence, the 4-5- layered (vs. [5]6-8-layered) capsule wall, and the sporadic ability to Acromastigum- type branches. The presence of drooping, tapered and ultimately flagelliform terminal branches is also distinctive vs. branches that spread ± in the same plane as the main shoot and that do not taper or become flagelliform toward the tips. Also, the ecology of Eotrichocolea is quite different, often occurring sparingly as isolated plants. References: Schuster (2000a, 2001d).</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants relatively rigid, woolly in appearance, prostrate, densely interwoven, yellow-green, whitish with age, the dried plants dull, appearing amorphous and resembling a crustose lichen, the shoots small, to 1 cm wide, including branches. Branching irregularly 2-pinnate, with 2-4(5) ± irregularly curved, secondary branches per primary branch; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems rather stiff, paraphyllia rather abundant, much branched, with cells similar to those of the leaf cilia. Rhizoids usually absent. Leaves of stem widely spreading but with lobes and cilia broadly arching upward toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ appearing as a dense mass of cilia, the individual lobes hardly discernable, the leaves on the stem approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, obtrapezoidal to subreniform, divided into 4-5 erect, pinnulate lobes, the lobes sometimes appearing forked or partially fused at base (those in ventral sector of leaf somewhat larger), each lobe actually unequally and irregularly (2)3-fid, consisting of a stronger, erect, pinnulate division and (0)1-2 small, freely branched and variably positioned accessory divisions that are 1-2(3) cells wide at the base, and stiffly abaxially spreading and arched in same direction as the main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, ± regularly pinnulate (best seen in adaxial view), with numerous stout segments and cilia, the ventral lobes 4-6 cells wide at base, with 3-5 tiers of later¬ ally juxtaposed, turgid cells basal to the uniseriate row of (4)5-7(8) cells; cells of uniseriate row short, barrel- shaped, rather thin- walled and ± turgid, constricted at the septa, the septa not thickened or dilated, the surface coarsely papillose, the penultimate cell (14)17-24 juim wide, (43)50-67(74) juim long; terminal cell of uniseriate row finger-like, slightly tapering to a broadly rounded apex, 12-22 juim wide, 50-65(82) juim long, thin- walled in the tip, the surface distinctly papillose; margins of lobes armed with pairs of abaxially displaced, opposing cilia, the cilia usually branched (often repeatedly so), the armature all inserted on the abaxial surface of lobe and abaxially patent, but ascending and nearly as long as lobes; marginal cilia of lobe mostly uniseriate throughout, the cilia bases rarely with 2 laterally juxtaposed cells, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 3-4 cells high (from base to sinuses); margins of disc with freely branched cilia, the cilia cells similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc faintly uniformly thick-walled, in lamina middle 22-34 juim wide, 53-75(80) juim long; surface densely striate-papillose to striolate. Oil-bodies within all cells of leaf including tip cell of cilia, occupying small portion of cell lumen, opaque, smokey grey, 4-8(12) per paired cells at lobe base, irregularly and inconspicuously and finely granular, the spherules tiny and irregular, the oil-bodies irregular in shape: globose to bottle-shaped to elliptic to sublinear to sub- crescentic to subsigmoid, 4.3-4.8 X 7. 2-8. 6 juim to 2.9-4. 8 X 9.6-11.5 juim or spherical and 4.8 |ULm in diam. Underleaves in situ appearing as a dense mass of cilia, somewhat smaller than leaves, free, suborbicular to reniform, quadrifid, often weakly bisbifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary and secondary branches, appearing brushed with apically oriented cilia, the bracts divided to ca. 0.4-0.5, the lamina strongly ventricose, the abaxial face of bract with simple or sporadically branched cilia in distal sector, the armature only sporadically on lamina; antheridia large for bract size, 1(2) per bract, the stalk biseriate. Gynoecia and sporophyte not seen. Distribution and Ecology: New Zealand: Stewart Island (10-30 m). South Island (0-1390 m). North Island (200-1250 m), Chatham Islands (240 m); Australia: Tasmania and Victoria. In New Zealand known from Northland, Auckland, Volcanic Plateau, Southern North Island (Ru- ahine and Tararua ranges). Western Nelson (Cobb Valley), Westland, Canterbury (Banks Peninsula, Hawdon River), Otago (Central Otago, Lammerlaw and Otago Coast ERs), Eiord- land and Rakiura (Stewart Island, Solander Islands) EPs. In New Zealand the species is known from scattered localities over a broad altitudinal range. It occurs on the floor and mossy banks in forests near the sea (Martin’s Bay and Milford Sound in Eiordland), as well as in upper-elevation forests (e.g., Nothofagus fusca - N. solandri var. clijfortioides forest at ca. 1280-1390 m at Pinchgut Track, Nelson Lakes Natl. Park). It also occurs in the penalpine zone in damp or springy niches under snow tussock (e.g., in the Lam- mermoor Ra., Old Man Ra., the type, both in Otago). Also on roadside banks at Halfmoon Bay, Stewart Island. Unlike our two other species, which occur in forests, Trichocolea rigida commonly occurs in more open sites, e.g., in seepage areas in penalpine tussock grassland (Chionochloa) and exposed roadside banks, and in grassland kept damp by seepage, for instance at Gebbies Pass and Hilltop on Banks Peninsula. At Stockton it occurs under gorse scrub in a gully, on damp soil with adventive grasses and Polytrichum commune. On Chatham Island it was found on a soil bank under a canopy of Dicksonia fibrosa. Species found with T. rigida are Brachythecium rutabulum, Breutelia pendula, Chiloscyphus leucophyllus, Cra- toneuropsis relaxa, Distichophyllum pulchellum, Drepanocladus aduncus, Fissidens asple- nioides, Canalohypopterygium tamariscinum, Plagiomnium novae-zealandiae, Pohlia cruda, Polytrichadelphus magellanicus, Sphagnum australe, Thuidium furfurosum and Trichocolea mollissima. Comments&#39;. The species name is in allusion to the more rigid plants, as compared to Trichocolea mollissima and T. hatcheri. Plants are mostly 1-pinnate, often relatively laxly so vs. the much denser 2-, 2-3-, or 3-pinnate branching of our other taxa. Trichocolea rigida is, also, a smaller species, with main axes mostly only 2-4 cm long; when dry it is a relatively dull plant, due to the conspicuously papillose surface, even terminal cells of cilia being clearly roughened (Pig. 25: 3, 5). The cilia are much less strongly tapered, with terminal cells ca. 4-5(5. 5)X as long as in basal diam.; the septa between cells are never distinctly dilated (Pig. 25: 1, 3-5). In T. mollissima and T. hatcheri the cilia striking taper from base to apex, and are formed of much more elongated cells (to 15-19X as long as in basal diam.) and distal cilium cells are smooth or obscurely striolate.</p>
+    <pre class="description-text">Plants relatively rigid, woolly in appearance, prostrate, densely interwoven, yellow-green, whitish with age, the dried plants dull, appearing amorphous and resembling a crustose lichen, the shoots small, to 1 cm wide, including branches. Branching irregularly 2-pinnate, with 2-4(5) ± irregularly curved, secondary branches per primary branch; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems rather stiff, paraphyllia rather abundant, much branched, with cells similar to those of the leaf cilia. Rhizoids usually absent. Leaves of stem widely spreading but with lobes and cilia broadly arching upward toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ appearing as a dense mass of cilia, the individual lobes hardly discernable, the leaves on the stem approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, obtrapezoidal to subreniform, divided into 4-5 erect, pinnulate lobes, the lobes sometimes appearing forked or partially fused at base (those in ventral sector of leaf somewhat larger), each lobe actually unequally and irregularly (2)3-fid, consisting of a stronger, erect, pinnulate division and (0)1-2 small, freely branched and variably positioned accessory divisions that are 1-2(3) cells wide at the base, and stiffly abaxially spreading and arched in same direction as the main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, ± regularly pinnulate (best seen in adaxial view), with numerous stout segments and cilia, the ventral lobes 4-6 cells wide at base, with 3-5 tiers of later¬ ally juxtaposed, turgid cells basal to the uniseriate row of (4)5-7(8) cells; cells of uniseriate row short, barrel- shaped, rather thin- walled and ± turgid, constricted at the septa, the septa not thickened or dilated, the surface coarsely papillose, the penultimate cell (14)17-24 juim wide, (43)50-67(74) juim long; terminal cell of uniseriate row finger-like, slightly tapering to a broadly rounded apex, 12-22 juim wide, 50-65(82) juim long, thin- walled in the tip, the surface distinctly papillose; margins of lobes armed with pairs of abaxially displaced, opposing cilia, the cilia usually branched (often repeatedly so), the armature all inserted on the abaxial surface of lobe and abaxially patent, but ascending and nearly as long as lobes; marginal cilia of lobe mostly uniseriate throughout, the cilia bases rarely with 2 laterally juxtaposed cells, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 3-4 cells high (from base to sinuses); margins of disc with freely branched cilia, the cilia cells similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc faintly uniformly thick-walled, in lamina middle 22-34 juim wide, 53-75(80) juim long; surface densely striate-papillose to striolate. Oil-bodies within all cells of leaf including tip cell of cilia, occupying small portion of cell lumen, opaque, smokey grey, 4-8(12) per paired cells at lobe base, irregularly and inconspicuously and finely granular, the spherules tiny and irregular, the oil-bodies irregular in shape: globose to bottle-shaped to elliptic to sublinear to sub- crescentic to subsigmoid, 4.3-4.8 X 7. 2-8. 6 juim to 2.9-4. 8 X 9.6-11.5 juim or spherical and 4.8 |ULm in diam. Underleaves in situ appearing as a dense mass of cilia, somewhat smaller than leaves, free, suborbicular to reniform, quadrifid, often weakly bisbifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary and secondary branches, appearing brushed with apically oriented cilia, the bracts divided to ca. 0.4-0.5, the lamina strongly ventricose, the abaxial face of bract with simple or sporadically branched cilia in distal sector, the armature only sporadically on lamina; antheridia large for bract size, 1(2) per bract, the stalk biseriate. Gynoecia and sporophyte not seen. Distribution and Ecology: New Zealand: Stewart Island (10-30 m). South Island (0-1390 m). North Island (200-1250 m), Chatham Islands (240 m); Australia: Tasmania and Victoria. In New Zealand known from Northland, Auckland, Volcanic Plateau, Southern North Island (Ru- ahine and Tararua ranges). Western Nelson (Cobb Valley), Westland, Canterbury (Banks Peninsula, Hawdon River), Otago (Central Otago, Lammerlaw and Otago Coast ERs), Eiord- land and Rakiura (Stewart Island, Solander Islands) EPs. In New Zealand the species is known from scattered localities over a broad altitudinal range. It occurs on the floor and mossy banks in forests near the sea (Martin’s Bay and Milford Sound in Eiordland), as well as in upper-elevation forests (e.g., Nothofagus fusca - N. solandri var. clijfortioides forest at ca. 1280-1390 m at Pinchgut Track, Nelson Lakes Natl. Park). It also occurs in the penalpine zone in damp or springy niches under snow tussock (e.g., in the Lam- mermoor Ra., Old Man Ra., the type, both in Otago). Also on roadside banks at Halfmoon Bay, Stewart Island. Unlike our two other species, which occur in forests, Trichocolea rigida commonly occurs in more open sites, e.g., in seepage areas in penalpine tussock grassland (Chionochloa) and exposed roadside banks, and in grassland kept damp by seepage, for instance at Gebbies Pass and Hilltop on Banks Peninsula. At Stockton it occurs under gorse scrub in a gully, on damp soil with adventive grasses and Polytrichum commune. On Chatham Island it was found on a soil bank under a canopy of Dicksonia fibrosa. Species found with T. rigida are Brachythecium rutabulum, Breutelia pendula, Chiloscyphus leucophyllus, Cra- toneuropsis relaxa, Distichophyllum pulchellum, Drepanocladus aduncus, Fissidens asple- nioides, Canalohypopterygium tamariscinum, Plagiomnium novae-zealandiae, Pohlia cruda, Polytrichadelphus magellanicus, Sphagnum australe, Thuidium furfurosum and Trichocolea mollissima. Comments&#39;. The species name is in allusion to the more rigid plants, as compared to Trichocolea mollissima and T. hatcheri. Plants are mostly 1-pinnate, often relatively laxly so vs. the much denser 2-, 2-3-, or 3-pinnate branching of our other taxa. Trichocolea rigida is, also, a smaller species, with main axes mostly only 2-4 cm long; when dry it is a relatively dull plant, due to the conspicuously papillose surface, even terminal cells of cilia being clearly roughened (Pig. 25: 3, 5). The cilia are much less strongly tapered, with terminal cells ca. 4-5(5. 5)X as long as in basal diam.; the septa between cells are never distinctly dilated (Pig. 25: 1, 3-5). In T. mollissima and T. hatcheri the cilia striking taper from base to apex, and are formed of much more elongated cells (to 15-19X as long as in basal diam.) and distal cilium cells are smooth or obscurely striolate.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants closely prostrate to adnate, compact and densely interwoven, deep green, velvety, small, 1-1.6 cm wide, including branches. Branches regularly 2-pinnate, tertiary branches rare, the leading axis retaining its dominance; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems stiff, paraphyllia few or altogether lacking. Rhizoids usually absent, when present, long for plant size. Leaves of stem widely spreading but with lobes and cilia broadly arching toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ often appearing as a dense fringe of cilia, the individual lobes often quite discernable, the leaves on the stem distant to approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, suborbicular to sub- reniform, 500-650 juim wide, 300-500 juim long, divided into 4-5 erect, pinnulate lobes (the lobes in ventral sector of leaf weakly larger), each lobe actually unequally (2)3-fid, consisting of a stronger, erect, pinnulate division and 1-2 small, irregularly branched, abaxially displaced, accessory divisions that are (1)2(3) cells wide at the base and feebly to distinctly arched in same direction as main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, somewhat irregularly pinnulate (best seen in adaxial view), with numerous segments and cilia, the ventral lobes 2-4 cells wide at base, with 2 tiers of laterally juxta¬ posed cells basal to the uniseriate row of 5-6 cells; cells of uniseriate row ± tapering, rather thin-walled, with only slightly thickened septa, somewhat longer and narrower toward lobe apices but not ultimately becoming capillary, the surface finely striolate to often distinctly papillose, the penultimate cell 10-12 juim wide X 41-60(72) juim long; terminal cell of uni- seriate row ± straight, not curved to sinuous, slightly tapering to a ± rounded apex, 7-11 juim wide, but the length variable: 55-85(100) to 100-150 juim, usually thin-walled in the tip, the surface smooth to finely papillose; margins of lobes armed with pairs of opposing cilia, the cilia usually branched, often repeatedly, the armature all inserted on the abaxial surface of lobe and abaxially patent; marginal cilia of lobe uniformly uniseriate throughout, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 2-3 (very locally 4) cells high (from base to sinuses); margins of disc with branched cilia similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc uniformly slightly to distinctly thickened, in somewhat regular tiers, in lamina middle 14-24 juim wide X (30)36-50(58) juim long; surface long-striolate, rarely with a few papillae. Underleaves somewhat smaller than leaves, free, subreniform, quadrifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary branches and sometimes also the main shoot, the bracts divided to ca. 0.3-0. 5, the lamina strongly ventricose, the abaxial face with ciliiform, unbranched processes (at times sparsely developed), the bract lobes similar to those of leaves; antheridia large for bract size, 1 per bract, the stalk biseriate. Coelocaule on main shoot or short to leading branches, but becoming axillary or pseudolateral (through development, respectively, of 2 or 1 subfloral branches), the coelocaule stoutly to longly and narrowly clavate, densely paraphyllose. Capsule (only old valves with ± collapsed cells seen), the wall of (?)6 layers; epidermal layer of large, hyaline ephemeral cells lacking thickenings; innermost layer of cells with semi- annular bands common, rather narrow, usually complete, rarely forked. Spores 11.9-14.4 juim in diam., with low, rather well-defined, close papillae and short- vermiculate markings. Elaters bluntly pointed at the ends, 1 1-1 1.9 juim wide, somewhat contorted, bispiral, the spirals 1. 9-2.4 juim wide. Distribution and Ecology: New Zealand: Stewart Island, South Island (30-600 m). North Island (100-425 m), Chatham Islands (80-160 m); Australia: Queensland. In New Zealand known from Otago (Dunedin), Westland (near Westport, Mahinapua), Sounds-Nelson (Pelorus Sound), Southern North Island, Taranaki, Volcanic Plateau, Gisborne, Auckland and Northland EPs. Occurring sporadically throughout its range, but most common in the eastern North Island. Pound under a variety of lowland forest types that include Beilschmiedia tawa, Weinmannia racemosa, Melicytus ramiflorus, Nothofagus fusca, N. menziesii, Prumnopitys taxifolia and Dacrycarpus dacrydioides in sites ranging from very damp sites in stream courses to dry overhanging banks. Pound on rotten logs, soil, tree roots, tree stumps, thin soil over rock, rarely epiphytic on Dicksonia squarrosa and (on Chatham Island) Dracophyllum arboreum. It may be corticolous, e.g., on trunk of Weinmannia at sea level to ca. 45 m in a narrow stream system with a canopy of Weinmannia racemosa at Port Pegasus, Stewart Island or, in the North Island, on the base of Rhopalostylis sapida (Kiwanis Reserve, N edge of Herekino Porest area, ca. 60-80 m) in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis, Coprosma, Dacrycarpus and Hoheria. It occasionally occurs over shaded rock, e.g., on the summit of ridge at Bream Head (SE of Whangarei, 425 m) in a scrubby forest with a few large Dysoxylum and Beilschmiedia, but with much Coprosma, Rhopalostylis, Hoheria and climbing Metrosideros. The species ranges as far north as Radar Bush (WSW of Cape Reinga) at ca. 100 m in a forest of Beilschmiedia - Vitex - Hoheria and Cyathea dealbata. at arrow). 2. Leaf, adaxial view (some of eilia shown only in part for elarity). 3. Median lamina eells and 2 lobe bases, adaxial view, surfaee detail shown in part (S = sinus between lobes). 4. Dis(TC = terminal eell of lobe). 8. Cilia from near base of leaf lobe. (All from Schuster 67-1068, New Zealand, North Is., Northland EP, SE of Kaitaia, Mangamuka Gorge Reserve.) Species found with Trichocolea hatcheri are Bazzania adnexa, Camptochaete angustata, Cate- gonium nitens, Chiloscyphus muricatus, Cyathophorum bulbosum, Distichophyllum pulchel- lum, Fissidens asplenioides, Heteroscyphus coalitus, Hy menophy Hum flab ellatum, Leiomitra lanata, Lopidium concinnum, Pyrrhobryum bifarium, Racopilum convolutaceum, Radula buc- cinifera, R. grandis, Schistochila appendiculata, Telaranea herzogii, Temnoma pulchellum, Thuidium laeviusculum and Trichomanes venosum. Comments: Apart from its smaller size, appressed habit, and ± regularly bipinnate branching, there is little to distinguish Trichocolea hatcheri vegetatively from T mollissima. How¬ ever, many of these smaller, appressed, bipinnate plants bear abundant and well-developed coelocaules, a fact that argues for maintaining these plants as distinct. Several characters are commonly associated with this smaller habit. The cells of the uniseriate portion of the leaf lobes are less tapered, have thinner walls with only slightly thickened septa, and often have a distinctly papillose surface. The terminal and penultimate lobe cells are usually shorter and less finely tapered than those of T mollissima, and the terminal cell is narrowly rounded and not thickened in the tip. When cf plants are present the two species may be readily separated, with T hatcheri having less deeply lobed bracts that are armed on the abaxial surface of the lamina, and the presence of androecia only on primary branches. More easily distinguished from Trichocolea mollissima in the field than from dried specimens by its vivid green color and velvety appearance due to the cilia being chlorophyllose (in contrast to the paler yellow color of T mollissima), and by its invariably prostrate habit. The terminal branches lack the open cage of leaves seen in T mollissima because the leaves tend to lie flatter to the stem. Trichocolea hatcheri is a smaller, more compact plant than T mollissima, with a quite different distribution and ecology. It tends to grow on thin mineral soil over rocks (sometimes with Treubia lacunosa) and grows closely creeping over the substrate. Even vigorous plants rarely exceed 3-5 cm long and are, usually, rather closely 2(3)-pinnate, with tertiary branches usually sporadic or rare. There has been a confusion in names applied to this species and Trichocolea mollissima. Hatcher (1958) used the name T mollissima for this taxon (Z hatcheri), and used the later name T australis Steph. for the true T mollissima. Schuster (1963b) proposed T. novae- zelandiae as a substitute for ‘T mollissima&#39;&#39; of Hatcher, but without the required Latin description. Hodgson (1965) subsequently described the species as T. hatcheri. Trichocolea hatcheri belongs to a complex that includes T. pluma. The two species are similar, for example, in having 2(3)-pinnate branching and a leaf disc 2-3 cells high. Trichocolea pluma differs from T. hatcheri in having a terminal cell of the leaf lobes that is rather thin- walled, ± parallel- sided throughout with a surface distinctly striate-papillose. In these respects T. pluma is more like T. rigida, and, moreover, like that species the tip cell of the leaf lobes is rounded at the summit. Trichocolea pluma may be distinguished from T. rigida by the regularly 2(3)-pinnate branching, by the straight or dilated septa of the cells in the cilia and by the lower leaf disc. Eotrichocolea R.M.Schust. Eotrichocolea R.M.Schust., J. Hattori Bot. Lab. 26: 252. 1963. Plants ± prickly in appearance, anisophyllous, rather rigid, rather closely procumbent to ascending, light yellow-green, small, usually to only 2 cm long. Branching typically 1 -pinnate (sporadically 2-pinnate), the branches irregularly arranged, nearly all of Frullania type, of limited length, cernuous, tapered, ultimately becoming flagelliform and microphyllous; Acro- mastigum-typQ branches rare. Stem rather large for plant size and notably more robust than the branch axes, paraphyllose, the paraphyllia 2-3(4)-celled, the cortical cells thin-walled, the medullary cells of similar size, also thin-walled. Leaves obliquely spreading, distant to contiguous, ± transverse to weakly to distinctly incubous, ± symmetrical, ca. 600-700 juim wide X 600-800 |ULm long, deeply quadrifid (lateral lobes slightly to markedly smaller), the lobes 2-4 cells wide at base, terminating in tapered cilia each comprised of a uniseriate row of 3-5 cells; margins of lobes with (1)2-5 cilia arranged alternately or (often) opposed, the armature often displaced and inserted on the abaxial surface of lobe and stiffly abaxially patent, the lateral cilia rather rigid, spiniform, tapered as in lobes, consisting of a uniseriate row of 2-3(4) cells; disc 2-3(4) cells high, the margins with short cilia. Cells moderately elongated (to 2:1 in disc, to 6:1 in lobes), with walls thin to somewhat firm, the surface of lobes conspicuously papillose, of disc distinctly and closely striolate-papillose. Oil-bodies pale smokey grey, the paired cells at base of uniseriate row of the lobes with 5-9 per cell, the uniseriate row with 8- 12 per cell, the basal row of disc with 4-5 per cell, 6-7(9) per cell of next row up in the disc, the oil-bodies coarsely granular-papillose, the granules well defined, not protruding beyond the membrane, the oil-bodies subglobose, almost spherical but slightly distorted, ovoid, the larger ones less spherical and 7X10 juim, the spherical ones 6-7 juim in diam. Underleaves ca. 0.5 X leaf size, deeply bifid, the lobes 2-3(4) cells wide at base, terminating in a uniseriate row of 3-4 cells, the lobes with a few, often opposed, marginal cilia similar to those of leaves and like them often abaxially displaced, the cilia at times with a marginal sessile slime papilla; disc 1-2 cells high. Asexual reproduction absent. Dioecious. Androecia on main shoot, becoming intercalary; bracts not much differentiated from leaves, the disc somewhat concave; antheridia 1 per bract, the stalk short, biseriate. Gy- noecia terminal on leading shoots; bracts leaf-like, inserted near coelocaule base as well as just beyond the coelocaule midpoint. Coelocaule clavate, the wall polystratose, bearing the bracts and variable paraphyllia, but with much of coelocaule surface exposed; perianth lacking, at times several larger, dilate leaves are present near coelocaule apex, which may represent perianth vestiges; free calyptra absent, the unfertilized archegonia at coelocaule summit. Loot massive, conoidal. Seta long, rather massive, becoming hollow at maturity. Capsule short-ellipsoidal, dehiscence irregular, the valves irregular in size and shape and tending to fragment with age, the wall 4-5-stratose; outer layer of cells large, hyaline, without pigmented thickenings; innermost layer of cells with complete or incomplete semi annular bands. Spores and elaters unknown. Type: Eotrichocolea polyacantha (Hook.f. &amp; Taylor) R.M. Schust. (= Jungermannia poly- acantha Hook.f. &amp; Taylor) Eotrichocolea is monotypic. It differs from Trichocolea in general aspect, as well as several other features that include the incubous leaves, the irregular capsule dehiscence, the 4-5- layered (vs. [5]6-8-layered) capsule wall, and the sporadic ability to Acromastigum- type branches. The presence of drooping, tapered and ultimately flagelliform terminal branches is also distinctive vs. branches that spread ± in the same plane as the main shoot and that do not taper or become flagelliform toward the tips. Also, the ecology of Eotrichocolea is quite different, often occurring sparingly as isolated plants. References: Schuster (2000a, 2001d).</p>
+    <pre class="description-text">Plants closely prostrate to adnate, compact and densely interwoven, deep green, velvety, small, 1-1.6 cm wide, including branches. Branches regularly 2-pinnate, tertiary branches rare, the leading axis retaining its dominance; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems stiff, paraphyllia few or altogether lacking. Rhizoids usually absent, when present, long for plant size. Leaves of stem widely spreading but with lobes and cilia broadly arching toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ often appearing as a dense fringe of cilia, the individual lobes often quite discernable, the leaves on the stem distant to approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, suborbicular to sub- reniform, 500-650 juim wide, 300-500 juim long, divided into 4-5 erect, pinnulate lobes (the lobes in ventral sector of leaf weakly larger), each lobe actually unequally (2)3-fid, consisting of a stronger, erect, pinnulate division and 1-2 small, irregularly branched, abaxially displaced, accessory divisions that are (1)2(3) cells wide at the base and feebly to distinctly arched in same direction as main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, somewhat irregularly pinnulate (best seen in adaxial view), with numerous segments and cilia, the ventral lobes 2-4 cells wide at base, with 2 tiers of laterally juxta¬ posed cells basal to the uniseriate row of 5-6 cells; cells of uniseriate row ± tapering, rather thin-walled, with only slightly thickened septa, somewhat longer and narrower toward lobe apices but not ultimately becoming capillary, the surface finely striolate to often distinctly papillose, the penultimate cell 10-12 juim wide X 41-60(72) juim long; terminal cell of uni- seriate row ± straight, not curved to sinuous, slightly tapering to a ± rounded apex, 7-11 juim wide, but the length variable: 55-85(100) to 100-150 juim, usually thin-walled in the tip, the surface smooth to finely papillose; margins of lobes armed with pairs of opposing cilia, the cilia usually branched, often repeatedly, the armature all inserted on the abaxial surface of lobe and abaxially patent; marginal cilia of lobe uniformly uniseriate throughout, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 2-3 (very locally 4) cells high (from base to sinuses); margins of disc with branched cilia similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc uniformly slightly to distinctly thickened, in somewhat regular tiers, in lamina middle 14-24 juim wide X (30)36-50(58) juim long; surface long-striolate, rarely with a few papillae. Underleaves somewhat smaller than leaves, free, subreniform, quadrifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary branches and sometimes also the main shoot, the bracts divided to ca. 0.3-0. 5, the lamina strongly ventricose, the abaxial face with ciliiform, unbranched processes (at times sparsely developed), the bract lobes similar to those of leaves; antheridia large for bract size, 1 per bract, the stalk biseriate. Coelocaule on main shoot or short to leading branches, but becoming axillary or pseudolateral (through development, respectively, of 2 or 1 subfloral branches), the coelocaule stoutly to longly and narrowly clavate, densely paraphyllose. Capsule (only old valves with ± collapsed cells seen), the wall of (?)6 layers; epidermal layer of large, hyaline ephemeral cells lacking thickenings; innermost layer of cells with semi- annular bands common, rather narrow, usually complete, rarely forked. Spores 11.9-14.4 juim in diam., with low, rather well-defined, close papillae and short- vermiculate markings. Elaters bluntly pointed at the ends, 1 1-1 1.9 juim wide, somewhat contorted, bispiral, the spirals 1. 9-2.4 juim wide. Distribution and Ecology: New Zealand: Stewart Island, South Island (30-600 m). North Island (100-425 m), Chatham Islands (80-160 m); Australia: Queensland. In New Zealand known from Otago (Dunedin), Westland (near Westport, Mahinapua), Sounds-Nelson (Pelorus Sound), Southern North Island, Taranaki, Volcanic Plateau, Gisborne, Auckland and Northland EPs. Occurring sporadically throughout its range, but most common in the eastern North Island. Pound under a variety of lowland forest types that include Beilschmiedia tawa, Weinmannia racemosa, Melicytus ramiflorus, Nothofagus fusca, N. menziesii, Prumnopitys taxifolia and Dacrycarpus dacrydioides in sites ranging from very damp sites in stream courses to dry overhanging banks. Pound on rotten logs, soil, tree roots, tree stumps, thin soil over rock, rarely epiphytic on Dicksonia squarrosa and (on Chatham Island) Dracophyllum arboreum. It may be corticolous, e.g., on trunk of Weinmannia at sea level to ca. 45 m in a narrow stream system with a canopy of Weinmannia racemosa at Port Pegasus, Stewart Island or, in the North Island, on the base of Rhopalostylis sapida (Kiwanis Reserve, N edge of Herekino Porest area, ca. 60-80 m) in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis, Coprosma, Dacrycarpus and Hoheria. It occasionally occurs over shaded rock, e.g., on the summit of ridge at Bream Head (SE of Whangarei, 425 m) in a scrubby forest with a few large Dysoxylum and Beilschmiedia, but with much Coprosma, Rhopalostylis, Hoheria and climbing Metrosideros. The species ranges as far north as Radar Bush (WSW of Cape Reinga) at ca. 100 m in a forest of Beilschmiedia - Vitex - Hoheria and Cyathea dealbata. at arrow). 2. Leaf, adaxial view (some of eilia shown only in part for elarity). 3. Median lamina eells and 2 lobe bases, adaxial view, surfaee detail shown in part (S = sinus between lobes). 4. Dis(TC = terminal eell of lobe). 8. Cilia from near base of leaf lobe. (All from Schuster 67-1068, New Zealand, North Is., Northland EP, SE of Kaitaia, Mangamuka Gorge Reserve.) Species found with Trichocolea hatcheri are Bazzania adnexa, Camptochaete angustata, Cate- gonium nitens, Chiloscyphus muricatus, Cyathophorum bulbosum, Distichophyllum pulchel- lum, Fissidens asplenioides, Heteroscyphus coalitus, Hy menophy Hum flab ellatum, Leiomitra lanata, Lopidium concinnum, Pyrrhobryum bifarium, Racopilum convolutaceum, Radula buc- cinifera, R. grandis, Schistochila appendiculata, Telaranea herzogii, Temnoma pulchellum, Thuidium laeviusculum and Trichomanes venosum. Comments: Apart from its smaller size, appressed habit, and ± regularly bipinnate branching, there is little to distinguish Trichocolea hatcheri vegetatively from T mollissima. How¬ ever, many of these smaller, appressed, bipinnate plants bear abundant and well-developed coelocaules, a fact that argues for maintaining these plants as distinct. Several characters are commonly associated with this smaller habit. The cells of the uniseriate portion of the leaf lobes are less tapered, have thinner walls with only slightly thickened septa, and often have a distinctly papillose surface. The terminal and penultimate lobe cells are usually shorter and less finely tapered than those of T mollissima, and the terminal cell is narrowly rounded and not thickened in the tip. When cf plants are present the two species may be readily separated, with T hatcheri having less deeply lobed bracts that are armed on the abaxial surface of the lamina, and the presence of androecia only on primary branches. More easily distinguished from Trichocolea mollissima in the field than from dried specimens by its vivid green color and velvety appearance due to the cilia being chlorophyllose (in contrast to the paler yellow color of T mollissima), and by its invariably prostrate habit. The terminal branches lack the open cage of leaves seen in T mollissima because the leaves tend to lie flatter to the stem. Trichocolea hatcheri is a smaller, more compact plant than T mollissima, with a quite different distribution and ecology. It tends to grow on thin mineral soil over rocks (sometimes with Treubia lacunosa) and grows closely creeping over the substrate. Even vigorous plants rarely exceed 3-5 cm long and are, usually, rather closely 2(3)-pinnate, with tertiary branches usually sporadic or rare. There has been a confusion in names applied to this species and Trichocolea mollissima. Hatcher (1958) used the name T mollissima for this taxon (Z hatcheri), and used the later name T australis Steph. for the true T mollissima. Schuster (1963b) proposed T. novae- zelandiae as a substitute for ‘T mollissima&#39;&#39; of Hatcher, but without the required Latin description. Hodgson (1965) subsequently described the species as T. hatcheri. Trichocolea hatcheri belongs to a complex that includes T. pluma. The two species are similar, for example, in having 2(3)-pinnate branching and a leaf disc 2-3 cells high. Trichocolea pluma differs from T. hatcheri in having a terminal cell of the leaf lobes that is rather thin- walled, ± parallel- sided throughout with a surface distinctly striate-papillose. In these respects T. pluma is more like T. rigida, and, moreover, like that species the tip cell of the leaf lobes is rounded at the summit. Trichocolea pluma may be distinguished from T. rigida by the regularly 2(3)-pinnate branching, by the straight or dilated septa of the cells in the cilia and by the lower leaf disc. Eotrichocolea R.M.Schust. Eotrichocolea R.M.Schust., J. Hattori Bot. Lab. 26: 252. 1963. Plants ± prickly in appearance, anisophyllous, rather rigid, rather closely procumbent to ascending, light yellow-green, small, usually to only 2 cm long. Branching typically 1 -pinnate (sporadically 2-pinnate), the branches irregularly arranged, nearly all of Frullania type, of limited length, cernuous, tapered, ultimately becoming flagelliform and microphyllous; Acro- mastigum-typQ branches rare. Stem rather large for plant size and notably more robust than the branch axes, paraphyllose, the paraphyllia 2-3(4)-celled, the cortical cells thin-walled, the medullary cells of similar size, also thin-walled. Leaves obliquely spreading, distant to contiguous, ± transverse to weakly to distinctly incubous, ± symmetrical, ca. 600-700 juim wide X 600-800 |ULm long, deeply quadrifid (lateral lobes slightly to markedly smaller), the lobes 2-4 cells wide at base, terminating in tapered cilia each comprised of a uniseriate row of 3-5 cells; margins of lobes with (1)2-5 cilia arranged alternately or (often) opposed, the armature often displaced and inserted on the abaxial surface of lobe and stiffly abaxially patent, the lateral cilia rather rigid, spiniform, tapered as in lobes, consisting of a uniseriate row of 2-3(4) cells; disc 2-3(4) cells high, the margins with short cilia. Cells moderately elongated (to 2:1 in disc, to 6:1 in lobes), with walls thin to somewhat firm, the surface of lobes conspicuously papillose, of disc distinctly and closely striolate-papillose. Oil-bodies pale smokey grey, the paired cells at base of uniseriate row of the lobes with 5-9 per cell, the uniseriate row with 8- 12 per cell, the basal row of disc with 4-5 per cell, 6-7(9) per cell of next row up in the disc, the oil-bodies coarsely granular-papillose, the granules well defined, not protruding beyond the membrane, the oil-bodies subglobose, almost spherical but slightly distorted, ovoid, the larger ones less spherical and 7X10 juim, the spherical ones 6-7 juim in diam. Underleaves ca. 0.5 X leaf size, deeply bifid, the lobes 2-3(4) cells wide at base, terminating in a uniseriate row of 3-4 cells, the lobes with a few, often opposed, marginal cilia similar to those of leaves and like them often abaxially displaced, the cilia at times with a marginal sessile slime papilla; disc 1-2 cells high. Asexual reproduction absent. Dioecious. Androecia on main shoot, becoming intercalary; bracts not much differentiated from leaves, the disc somewhat concave; antheridia 1 per bract, the stalk short, biseriate. Gy- noecia terminal on leading shoots; bracts leaf-like, inserted near coelocaule base as well as just beyond the coelocaule midpoint. Coelocaule clavate, the wall polystratose, bearing the bracts and variable paraphyllia, but with much of coelocaule surface exposed; perianth lacking, at times several larger, dilate leaves are present near coelocaule apex, which may represent perianth vestiges; free calyptra absent, the unfertilized archegonia at coelocaule summit. Loot massive, conoidal. Seta long, rather massive, becoming hollow at maturity. Capsule short-ellipsoidal, dehiscence irregular, the valves irregular in size and shape and tending to fragment with age, the wall 4-5-stratose; outer layer of cells large, hyaline, without pigmented thickenings; innermost layer of cells with complete or incomplete semi annular bands. Spores and elaters unknown. Type: Eotrichocolea polyacantha (Hook.f. &amp; Taylor) R.M. Schust. (= Jungermannia poly- acantha Hook.f. &amp; Taylor) Eotrichocolea is monotypic. It differs from Trichocolea in general aspect, as well as several other features that include the incubous leaves, the irregular capsule dehiscence, the 4-5- layered (vs. [5]6-8-layered) capsule wall, and the sporadic ability to Acromastigum- type branches. The presence of drooping, tapered and ultimately flagelliform terminal branches is also distinctive vs. branches that spread ± in the same plane as the main shoot and that do not taper or become flagelliform toward the tips. Also, the ecology of Eotrichocolea is quite different, often occurring sparingly as isolated plants. References: Schuster (2000a, 2001d).</pre>
     
     
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    <pre class="description-text">Plants relatively rigid, woolly in appearance, prostrate, densely interwoven, yellow-green, whitish with age, the dried plants dull, appearing amorphous and resembling a crustose lichen, the shoots small, to 1 cm wide, including branches. Branching irregularly 2-pinnate, with 2-4(5) ± irregularly curved, secondary branches per primary branch; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems rather stiff, paraphyllia rather abundant, much branched, with cells similar to those of the leaf cilia. Rhizoids usually absent. Leaves of stem widely spreading but with lobes and cilia broadly arching upward toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ appearing as a dense mass of cilia, the individual lobes hardly discernable, the leaves on the stem approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, obtrapezoidal to subreniform, divided into 4-5 erect, pinnulate lobes, the lobes sometimes appearing forked or partially fused at base (those in ventral sector of leaf somewhat larger), each lobe actually unequally and irregularly (2)3-fid, consisting of a stronger, erect, pinnulate division and (0)1-2 small, freely branched and variably positioned accessory divisions that are 1-2(3) cells wide at the base, and stiffly abaxially spreading and arched in same direction as the main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, ± regularly pinnulate (best seen in adaxial view), with numerous stout segments and cilia, the ventral lobes 4-6 cells wide at base, with 3-5 tiers of later¬ ally juxtaposed, turgid cells basal to the uniseriate row of (4)5-7(8) cells; cells of uniseriate row short, barrel- shaped, rather thin- walled and ± turgid, constricted at the septa, the septa not thickened or dilated, the surface coarsely papillose, the penultimate cell (14)17-24 juim wide, (43)50-67(74) juim long; terminal cell of uniseriate row finger-like, slightly tapering to a broadly rounded apex, 12-22 juim wide, 50-65(82) juim long, thin- walled in the tip, the surface distinctly papillose; margins of lobes armed with pairs of abaxially displaced, opposing cilia, the cilia usually branched (often repeatedly so), the armature all inserted on the abaxial surface of lobe and abaxially patent, but ascending and nearly as long as lobes; marginal cilia of lobe mostly uniseriate throughout, the cilia bases rarely with 2 laterally juxtaposed cells, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 3-4 cells high (from base to sinuses); margins of disc with freely branched cilia, the cilia cells similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc faintly uniformly thick-walled, in lamina middle 22-34 juim wide, 53-75(80) juim long; surface densely striate-papillose to striolate. Oil-bodies within all cells of leaf including tip cell of cilia, occupying small portion of cell lumen, opaque, smokey grey, 4-8(12) per paired cells at lobe base, irregularly and inconspicuously and finely granular, the spherules tiny and irregular, the oil-bodies irregular in shape: globose to bottle-shaped to elliptic to sublinear to sub- crescentic to subsigmoid, 4.3-4.8 X 7. 2-8. 6 juim to 2.9-4. 8 X 9.6-11.5 juim or spherical and 4.8 |ULm in diam. Underleaves in situ appearing as a dense mass of cilia, somewhat smaller than leaves, free, suborbicular to reniform, quadrifid, often weakly bisbifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary and secondary branches, appearing brushed with apically oriented cilia, the bracts divided to ca. 0.4-0.5, the lamina strongly ventricose, the abaxial face of bract with simple or sporadically branched cilia in distal sector, the armature only sporadically on lamina; antheridia large for bract size, 1(2) per bract, the stalk biseriate. Gynoecia and sporophyte not seen. Distribution and Ecology: New Zealand: Stewart Island (10-30 m). South Island (0-1390 m). North Island (200-1250 m), Chatham Islands (240 m); Australia: Tasmania and Victoria. In New Zealand known from Northland, Auckland, Volcanic Plateau, Southern North Island (Ru- ahine and Tararua ranges). Western Nelson (Cobb Valley), Westland, Canterbury (Banks Peninsula, Hawdon River), Otago (Central Otago, Lammerlaw and Otago Coast ERs), Eiord- land and Rakiura (Stewart Island, Solander Islands) EPs. In New Zealand the species is known from scattered localities over a broad altitudinal range. It occurs on the floor and mossy banks in forests near the sea (Martin’s Bay and Milford Sound in Eiordland), as well as in upper-elevation forests (e.g., Nothofagus fusca - N. solandri var. clijfortioides forest at ca. 1280-1390 m at Pinchgut Track, Nelson Lakes Natl. Park). It also occurs in the penalpine zone in damp or springy niches under snow tussock (e.g., in the Lam- mermoor Ra., Old Man Ra., the type, both in Otago). Also on roadside banks at Halfmoon Bay, Stewart Island. Unlike our two other species, which occur in forests, Trichocolea rigida commonly occurs in more open sites, e.g., in seepage areas in penalpine tussock grassland (Chionochloa) and exposed roadside banks, and in grassland kept damp by seepage, for instance at Gebbies Pass and Hilltop on Banks Peninsula. At Stockton it occurs under gorse scrub in a gully, on damp soil with adventive grasses and Polytrichum commune. On Chatham Island it was found on a soil bank under a canopy of Dicksonia fibrosa. Species found with T. rigida are Brachythecium rutabulum, Breutelia pendula, Chiloscyphus leucophyllus, Cra- toneuropsis relaxa, Distichophyllum pulchellum, Drepanocladus aduncus, Fissidens asple- nioides, Canalohypopterygium tamariscinum, Plagiomnium novae-zealandiae, Pohlia cruda, Polytrichadelphus magellanicus, Sphagnum australe, Thuidium furfurosum and Trichocolea mollissima. Comments&#39;. The species name is in allusion to the more rigid plants, as compared to Trichocolea mollissima and T. hatcheri. Plants are mostly 1-pinnate, often relatively laxly so vs. the much denser 2-, 2-3-, or 3-pinnate branching of our other taxa. Trichocolea rigida is, also, a smaller species, with main axes mostly only 2-4 cm long; when dry it is a relatively dull plant, due to the conspicuously papillose surface, even terminal cells of cilia being clearly roughened (Pig. 25: 3, 5). The cilia are much less strongly tapered, with terminal cells ca. 4-5(5. 5)X as long as in basal diam.; the septa between cells are never distinctly dilated (Pig. 25: 1, 3-5). In T. mollissima and T. hatcheri the cilia striking taper from base to apex, and are formed of much more elongated cells (to 15-19X as long as in basal diam.) and distal cilium cells are smooth or obscurely striolate.</pre>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    
+    <pre class="description-text">Plants closely prostrate to adnate, compact and densely interwoven, deep green, velvety, small, 1-1.6 cm wide, including branches. Branches regularly 2-pinnate, tertiary branches rare, the leading axis retaining its dominance; branches julaceous, with a woolly appearance, with all sides appearing as a mass of interwoven cilia. Stems stiff, paraphyllia few or altogether lacking. Rhizoids usually absent, when present, long for plant size. Leaves of stem widely spreading but with lobes and cilia broadly arching toward shoot apex, the leaf thus somewhat hand-like, the leaves in situ often appearing as a dense fringe of cilia, the individual lobes often quite discernable, the leaves on the stem distant to approximate, becoming imbricate on branches, semiamplexicaul, the insertion transverse to weakly succubous, suborbicular to sub- reniform, 500-650 juim wide, 300-500 juim long, divided into 4-5 erect, pinnulate lobes (the lobes in ventral sector of leaf weakly larger), each lobe actually unequally (2)3-fid, consisting of a stronger, erect, pinnulate division and 1-2 small, irregularly branched, abaxially displaced, accessory divisions that are (1)2(3) cells wide at the base and feebly to distinctly arched in same direction as main lobes, the divisions armed with pairs of opposing branched cilia. Lobes caudate, somewhat irregularly pinnulate (best seen in adaxial view), with numerous segments and cilia, the ventral lobes 2-4 cells wide at base, with 2 tiers of laterally juxta¬ posed cells basal to the uniseriate row of 5-6 cells; cells of uniseriate row ± tapering, rather thin-walled, with only slightly thickened septa, somewhat longer and narrower toward lobe apices but not ultimately becoming capillary, the surface finely striolate to often distinctly papillose, the penultimate cell 10-12 juim wide X 41-60(72) juim long; terminal cell of uni- seriate row ± straight, not curved to sinuous, slightly tapering to a ± rounded apex, 7-11 juim wide, but the length variable: 55-85(100) to 100-150 juim, usually thin-walled in the tip, the surface smooth to finely papillose; margins of lobes armed with pairs of opposing cilia, the cilia usually branched, often repeatedly, the armature all inserted on the abaxial surface of lobe and abaxially patent; marginal cilia of lobe uniformly uniseriate throughout, the cells similar to those of the uniseriate sector of leaf lobes; sinus bases plane and not reflexed. Disc weakly asymmetric, consisting of a low, wide strip 2-3 (very locally 4) cells high (from base to sinuses); margins of disc with branched cilia similar to those of lobes, the cilia sometimes abaxially displaced and lying at right angles to the disc plane. Cells of disc uniformly slightly to distinctly thickened, in somewhat regular tiers, in lamina middle 14-24 juim wide X (30)36-50(58) juim long; surface long-striolate, rarely with a few papillae. Underleaves somewhat smaller than leaves, free, subreniform, quadrifid, the armature similar to leaves; disc 2-3 cells high. Androecia intercalary on primary branches and sometimes also the main shoot, the bracts divided to ca. 0.3-0. 5, the lamina strongly ventricose, the abaxial face with ciliiform, unbranched processes (at times sparsely developed), the bract lobes similar to those of leaves; antheridia large for bract size, 1 per bract, the stalk biseriate. Coelocaule on main shoot or short to leading branches, but becoming axillary or pseudolateral (through development, respectively, of 2 or 1 subfloral branches), the coelocaule stoutly to longly and narrowly clavate, densely paraphyllose. Capsule (only old valves with ± collapsed cells seen), the wall of (?)6 layers; epidermal layer of large, hyaline ephemeral cells lacking thickenings; innermost layer of cells with semi- annular bands common, rather narrow, usually complete, rarely forked. Spores 11.9-14.4 juim in diam., with low, rather well-defined, close papillae and short- vermiculate markings. Elaters bluntly pointed at the ends, 1 1-1 1.9 juim wide, somewhat contorted, bispiral, the spirals 1. 9-2.4 juim wide. Distribution and Ecology: New Zealand: Stewart Island, South Island (30-600 m). North Island (100-425 m), Chatham Islands (80-160 m); Australia: Queensland. In New Zealand known from Otago (Dunedin), Westland (near Westport, Mahinapua), Sounds-Nelson (Pelorus Sound), Southern North Island, Taranaki, Volcanic Plateau, Gisborne, Auckland and Northland EPs. Occurring sporadically throughout its range, but most common in the eastern North Island. Pound under a variety of lowland forest types that include Beilschmiedia tawa, Weinmannia racemosa, Melicytus ramiflorus, Nothofagus fusca, N. menziesii, Prumnopitys taxifolia and Dacrycarpus dacrydioides in sites ranging from very damp sites in stream courses to dry overhanging banks. Pound on rotten logs, soil, tree roots, tree stumps, thin soil over rock, rarely epiphytic on Dicksonia squarrosa and (on Chatham Island) Dracophyllum arboreum. It may be corticolous, e.g., on trunk of Weinmannia at sea level to ca. 45 m in a narrow stream system with a canopy of Weinmannia racemosa at Port Pegasus, Stewart Island or, in the North Island, on the base of Rhopalostylis sapida (Kiwanis Reserve, N edge of Herekino Porest area, ca. 60-80 m) in a mixed broadleaf forest dominated by Beilschmiedia and Vitex lucens, with Rhopalostylis, Coprosma, Dacrycarpus and Hoheria. It occasionally occurs over shaded rock, e.g., on the summit of ridge at Bream Head (SE of Whangarei, 425 m) in a scrubby forest with a few large Dysoxylum and Beilschmiedia, but with much Coprosma, Rhopalostylis, Hoheria and climbing Metrosideros. The species ranges as far north as Radar Bush (WSW of Cape Reinga) at ca. 100 m in a forest of Beilschmiedia - Vitex - Hoheria and Cyathea dealbata. at arrow). 2. Leaf, adaxial view (some of eilia shown only in part for elarity). 3. Median lamina eells and 2 lobe bases, adaxial view, surfaee detail shown in part (S = sinus between lobes). 4. Dis(TC = terminal eell of lobe). 8. Cilia from near base of leaf lobe. (All from Schuster 67-1068, New Zealand, North Is., Northland EP, SE of Kaitaia, Mangamuka Gorge Reserve.) Species found with Trichocolea hatcheri are Bazzania adnexa, Camptochaete angustata, Cate- gonium nitens, Chiloscyphus muricatus, Cyathophorum bulbosum, Distichophyllum pulchel- lum, Fissidens asplenioides, Heteroscyphus coalitus, Hy menophy Hum flab ellatum, Leiomitra lanata, Lopidium concinnum, Pyrrhobryum bifarium, Racopilum convolutaceum, Radula buc- cinifera, R. grandis, Schistochila appendiculata, Telaranea herzogii, Temnoma pulchellum, Thuidium laeviusculum and Trichomanes venosum. Comments: Apart from its smaller size, appressed habit, and ± regularly bipinnate branching, there is little to distinguish Trichocolea hatcheri vegetatively from T mollissima. How¬ ever, many of these smaller, appressed, bipinnate plants bear abundant and well-developed coelocaules, a fact that argues for maintaining these plants as distinct. Several characters are commonly associated with this smaller habit. The cells of the uniseriate portion of the leaf lobes are less tapered, have thinner walls with only slightly thickened septa, and often have a distinctly papillose surface. The terminal and penultimate lobe cells are usually shorter and less finely tapered than those of T mollissima, and the terminal cell is narrowly rounded and not thickened in the tip. When cf plants are present the two species may be readily separated, with T hatcheri having less deeply lobed bracts that are armed on the abaxial surface of the lamina, and the presence of androecia only on primary branches. More easily distinguished from Trichocolea mollissima in the field than from dried specimens by its vivid green color and velvety appearance due to the cilia being chlorophyllose (in contrast to the paler yellow color of T mollissima), and by its invariably prostrate habit. The terminal branches lack the open cage of leaves seen in T mollissima because the leaves tend to lie flatter to the stem. Trichocolea hatcheri is a smaller, more compact plant than T mollissima, with a quite different distribution and ecology. It tends to grow on thin mineral soil over rocks (sometimes with Treubia lacunosa) and grows closely creeping over the substrate. Even vigorous plants rarely exceed 3-5 cm long and are, usually, rather closely 2(3)-pinnate, with tertiary branches usually sporadic or rare. There has been a confusion in names applied to this species and Trichocolea mollissima. Hatcher (1958) used the name T mollissima for this taxon (Z hatcheri), and used the later name T australis Steph. for the true T mollissima. Schuster (1963b) proposed T. novae- zelandiae as a substitute for ‘T mollissima&#39;&#39; of Hatcher, but without the required Latin description. Hodgson (1965) subsequently described the species as T. hatcheri. Trichocolea hatcheri belongs to a complex that includes T. pluma. The two species are similar, for example, in having 2(3)-pinnate branching and a leaf disc 2-3 cells high. Trichocolea pluma differs from T. hatcheri in having a terminal cell of the leaf lobes that is rather thin- walled, ± parallel- sided throughout with a surface distinctly striate-papillose. In these respects T. pluma is more like T. rigida, and, moreover, like that species the tip cell of the leaf lobes is rounded at the summit. Trichocolea pluma may be distinguished from T. rigida by the regularly 2(3)-pinnate branching, by the straight or dilated septa of the cells in the cilia and by the lower leaf disc. Eotrichocolea R.M.Schust. Eotrichocolea R.M.Schust., J. Hattori Bot. Lab. 26: 252. 1963. Plants ± prickly in appearance, anisophyllous, rather rigid, rather closely procumbent to ascending, light yellow-green, small, usually to only 2 cm long. Branching typically 1 -pinnate (sporadically 2-pinnate), the branches irregularly arranged, nearly all of Frullania type, of limited length, cernuous, tapered, ultimately becoming flagelliform and microphyllous; Acro- mastigum-typQ branches rare. Stem rather large for plant size and notably more robust than the branch axes, paraphyllose, the paraphyllia 2-3(4)-celled, the cortical cells thin-walled, the medullary cells of similar size, also thin-walled. Leaves obliquely spreading, distant to contiguous, ± transverse to weakly to distinctly incubous, ± symmetrical, ca. 600-700 juim wide X 600-800 |ULm long, deeply quadrifid (lateral lobes slightly to markedly smaller), the lobes 2-4 cells wide at base, terminating in tapered cilia each comprised of a uniseriate row of 3-5 cells; margins of lobes with (1)2-5 cilia arranged alternately or (often) opposed, the armature often displaced and inserted on the abaxial surface of lobe and stiffly abaxially patent, the lateral cilia rather rigid, spiniform, tapered as in lobes, consisting of a uniseriate row of 2-3(4) cells; disc 2-3(4) cells high, the margins with short cilia. Cells moderately elongated (to 2:1 in disc, to 6:1 in lobes), with walls thin to somewhat firm, the surface of lobes conspicuously papillose, of disc distinctly and closely striolate-papillose. Oil-bodies pale smokey grey, the paired cells at base of uniseriate row of the lobes with 5-9 per cell, the uniseriate row with 8- 12 per cell, the basal row of disc with 4-5 per cell, 6-7(9) per cell of next row up in the disc, the oil-bodies coarsely granular-papillose, the granules well defined, not protruding beyond the membrane, the oil-bodies subglobose, almost spherical but slightly distorted, ovoid, the larger ones less spherical and 7X10 juim, the spherical ones 6-7 juim in diam. Underleaves ca. 0.5 X leaf size, deeply bifid, the lobes 2-3(4) cells wide at base, terminating in a uniseriate row of 3-4 cells, the lobes with a few, often opposed, marginal cilia similar to those of leaves and like them often abaxially displaced, the cilia at times with a marginal sessile slime papilla; disc 1-2 cells high. Asexual reproduction absent. Dioecious. Androecia on main shoot, becoming intercalary; bracts not much differentiated from leaves, the disc somewhat concave; antheridia 1 per bract, the stalk short, biseriate. Gy- noecia terminal on leading shoots; bracts leaf-like, inserted near coelocaule base as well as just beyond the coelocaule midpoint. Coelocaule clavate, the wall polystratose, bearing the bracts and variable paraphyllia, but with much of coelocaule surface exposed; perianth lacking, at times several larger, dilate leaves are present near coelocaule apex, which may represent perianth vestiges; free calyptra absent, the unfertilized archegonia at coelocaule summit. Loot massive, conoidal. Seta long, rather massive, becoming hollow at maturity. Capsule short-ellipsoidal, dehiscence irregular, the valves irregular in size and shape and tending to fragment with age, the wall 4-5-stratose; outer layer of cells large, hyaline, without pigmented thickenings; innermost layer of cells with complete or incomplete semi annular bands. Spores and elaters unknown. Type: Eotrichocolea polyacantha (Hook.f. &amp; Taylor) R.M. Schust. (= Jungermannia poly- acantha Hook.f. &amp; Taylor) Eotrichocolea is monotypic. It differs from Trichocolea in general aspect, as well as several other features that include the incubous leaves, the irregular capsule dehiscence, the 4-5- layered (vs. [5]6-8-layered) capsule wall, and the sporadic ability to Acromastigum- type branches. The presence of drooping, tapered and ultimately flagelliform terminal branches is also distinctive vs. branches that spread ± in the same plane as the main shoot and that do not taper or become flagelliform toward the tips. Also, the ecology of Eotrichocolea is quite different, often occurring sparingly as isolated plants. References: Schuster (2000a, 2001d).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">on inner side of apical tooth of lobule ................................. Cheilolejeunea mimosa
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">on inner side of apical tooth of lobule ................................. Cheilolejeunea mimosa
                                                                                                                                                                                   Oil bodies several per cell, not grape-cluster type; apical tooth of lobule
                                                                                                                                                                                     ± parallel to stem; hyaline papilla on outer side of apical tooth of lobule ............. 19
                                                                                                                                                                                19 Leaf base with 1 or 2 enlarged cells, each almost filled by an
@@ -454,7 +433,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                Group C
                                                                                                                                                                                Leafy liverworts without underleaves, or underleaves not apparent
                                                                                                                                                                                1 Leaves with a ventral lobule ........................................................................................ 2
-                                                                                                                                                                                  Leaves without a ventral lobule ................................................................................... 3</p>
+                                                                                                                                                                                  Leaves without a ventral lobule ................................................................................... 3</pre>
     
     
   </details>
@@ -463,14 +442,39 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Aloina rigida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eotrichocolea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Persoonia rigida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pterobryella rigida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pultenaea rigida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Trichocolea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Trichocolea elegans</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Trichocolea hatcheri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Trichocolea wattsiana</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -485,22 +489,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [67.7, 58.2, 71.4, 75.3, 102.1, 113.9, 122.2, 136.0, 118.9, 98.1, 82.3, 79.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.7, 20.8, 18.6, 15.3, 12.4, 10.3, 9.7, 10.6, 12.6, 14.5, 17.1, 18.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.6, 9.7, 8.5, 6.4, 4.7, 3.2, 2.7, 2.8, 4.2, 5.3, 7.2, 8.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

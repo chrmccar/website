@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,47 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Lepidozia glaucophylla</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Lepidozia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (12)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Callitris endlicheri - Callitris glaucophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cotoneaster glaucophyllus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cryptocarya leucophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Darwinia glaucophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eucalyptus leucophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia concinna</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lepidozia ulothrix</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Macrozamia glaucophylla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia glaucophylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lepidoziopsis glaucophylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Mastigophora glaucophylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Lepidozia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -80,21 +48,25 @@
     <p class="big-num">296</p>
     <footer>152 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">32</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -102,294 +74,275 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>irregularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>irregularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>regularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>2.0–3.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>2.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>humus</td>
-          <td>categorical</td>
+          <td><strong>humus</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>humus</td>
-          <td>categorical</td>
+          <td><strong>humus</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>15.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>15.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>15.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>15.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>15.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>15.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>20.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>20.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">H. conjugatus (Milt.) Engel &amp; Schus!.                        x   x        x          x       x
+    <pre class="description-text">H. conjugatus (Milt.) Engel &amp; Schus!.                        x   x        x          x       x
 H. cymhaliferus (J.D.Hook. &amp; Taylor) Engel &amp; Schust.         x                               x
 158          G.Kantvilas and S.J. Jarman
 
@@ -448,16 +401,19 @@ Riccardia aequicellularis (Steph.) Hewson                                       
 R. cochleata (J.D.Hook. &amp; Taylor) Kuntze                                    x           x      x         x      x
 R. crassa (Schwaegr.) Carring. &amp; Pears.                                     x           x      x         x      x
 R. aff. bipinnatijida (Col.) Hewson                                         x
-R. sp.                                                                                                          x</p>
+R. sp.                                                                                                          x</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>LEPIDOZIA_NZ_REVISION_2001</strong> (1 entry)</summary>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">21. Lepidozia laevifolia (Hook. f.   &amp; Tayl.)
+    <pre class="description-text">21. Lepidozia laevifolia (Hook. f.   &amp; Tayl.)
   Key to New Zealand Species of Lepido-                                  G. L.   &amp;N                                  60
         zia                                              20
                                                                      22. Lepidozia laevifolia var. alpina Schust.
@@ -797,16 +753,19 @@ Lepidozia (Dum.) Dum. 4
                                                              Lepidozia microphylla (Hook.) Lindenb. 28
   Subg. Cladolepidozia Schust. 13, 19
                                                              Lepidozia minuta Col. 56
-  Subg. Dendrolepidozia Schust. 23</p>
+  Subg. Dendrolepidozia Schust. 23</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">R.M.Schust.                                    Kymatolejeunea bartlettii Grolle
+    <pre class="description-text">R.M.Schust.                                    Kymatolejeunea bartlettii Grolle
         Isolembidium cucullatum (E.A.Hodgs.)
         R.M.Schust.                                    Lamellocolea granditexta (Steph.) ].].Engel
 Isophyllaria attenuata (Rodw.) E.A.Hodgs.                      Lophocolea granditexta Steph.
@@ -866,47 +825,59 @@ Lethocolea pansa (Taylor) G.A.M.Scott &amp;                  Marsupidium setulos
        Lethocolea squamata (Taylor) E.A.Hodgs.                  B.Thiers &amp; Gradst.
        Podanthe squamata Taylor                                 Thysananthus anguiformis (Hook.f. &amp; Taylor)
 Lopholejeunea colensoi Steph. [an invalid name un-              Taylor
-       less the genus name Lopho-Lejeunea Steph.         Megalembidium insulanum (W.Martin &amp;</p>
+       less the genus name Lopho-Lejeunea Steph.         Megalembidium insulanum (W.Martin &amp;</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants prostrate, in loosely interwoven pure mats or as conspicuous, isolated strands growing among other matted bryophytes, slender, with spreading branches, glaucous, whitish to ceraceous, the older sectors subnitid and brownish (as if scorched), the surface dull, waxy and water-repellent, the shoots medium, to 1.5 cm wide, including branches. Branching mostly of Frullania type, ± distantly 1 (2)-pinnate, the branches gradually tapering, occasionally whiplike, flagelliform and microphyllous; secondary branches occasional on well-developed shoots; branch half-leaf broadly ovate, slightly asymmetrical, cordate at base, 2-lobed to ca. 0.2-0. 3, the margin sinuate, or bluntly toothed; first branch underleaf large, mostly undivided, occasionally 2- or 3-lobed, inserted on ventral-lateral side of branch at or near junction of branch and main shoot, aligned with underleaves of branch. Ventral-intercalary branches sporadically produced. Stem epidermal cells in surface view ± thick- walled, with a waxy coating like that of the leaves, the cortex in 1 layer of thin to slightly thick-walled cells ± distinctly larger than the medullary cells; medullary cells slightly thickened. Leaves involute and sub- amplexicaul when dry, when moist spreading and divergent, rather strongly concave, contiguous to imbricate, at times nearly or completely hiding stem in dorsal view, uniform in size (not in sequential sectors of varying size), 0.6-0.7 mm long and wide, the insertion broad, moderately to strongly incubous; leaves asymmetric, ± equally 4-lobed, the leaves divided to ca. 0.4-0.5 (median sinus), the distance from dorsal sinus base to insertion not much greater than that from ventral sinus to insertion, the sinuses gradually becoming deeper ventrally. Lobes subcaudate, entire, abruptly narrowing to a uniseriate row of 3-5(6) cells; cells of uniseriate row and often the subtending lobe cells elongated (to 2:1), thick-walled, the terminal cell tapering to a point; dorsal lobe 5-7 cells wide at base. Disc distinctly asymmetric due to ampli¬ ation of dorsal margin, the dorsal sector to one third the disc area, 14-18 cells high at dorsal 8-11, from Fife 8987, New Zealand, South Is., Arthur’s Pass Natl. Park, Bealey Glacier Track; 3, 7, from type of L. albula.) dorsal view (HE = half-leaf). 2-4. Leaves (all at same scale). 5. Dorsal-most lobe (above) and dorsal pair of lobes, the surface detail shown for lobe at right. 6. Median lobes of leaves (all at same sinus, 10-14 cells high at ventral sinus, the dorsal margin subentire to sinuate to distantly and irregularly armed with 1-2-celled teeth, the margin auriculate at the base, the ventral subcor- date at the base, occasionally with a small tooth or short spine. Cells of disc and lobes rounded quadrate, evenly thick-walled, trigones absent, the median disc cells 20-26 X 22-30 juim; marginal cells of disc and lobes typically with a thickened outer wall; surface a dense and coarsely granular coating. Underleaves inserted on 8-9 rows of stem cells, distinctly spreading, ca. 1-1.3 X stem width, symmetrically 4-fid to ca. 0.4 (median sinus), the lobes plane, nar¬ rowly attenuate and consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a uniseriate row of 2-4 cells; disc 9-12 cells high at median sinus, the margins plane, occasionally with a 1-2-celled tooth that terminates in a slime papilla. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: South Island (695-1200 m); Australia: Tasmania, Victoria, New South Wales. Apparently very rare in New Zealand and known only from a few South Island sites. Known from four Eiordland sites: at 695 m at Lake Marion in a rather open Nothofagus menziesii forest, with frequent large boulders that are often largely bryophyte covered. At this site, plants of Lepidozia glaucophylla together with hymenophylls formed a thick mass that was loosely attached to a huge boulder (see Engel and Schuster, 2001). Known from Mackinnon Pass at 1000 m on a rock overhang; from the Borland Burn (also Eiordland) in bryophyte cushions under N. solandri var. clijfortioides forest, and from Deep Cove. Also known from two sites on the Paparoa Ra. (Mt. Euclid and Mt. Priestly, 960-1200 m) on humus over rock in N. menziesii forest with abundant Dracophyllum traversii, and from a rock overhang in Chionochloa australis grasslands. Accompanying species are Bazzania nitida, Dicranoloma dicarpum, Distichophyllum pulchellum, Lepidozia kirkii, Leptotheca gaudi- chaudii, Mittenia plumula, Plagiochila retrospectans, Pyrrhobryum mnioides, Rhizogonium distichum and Weymouthia cochlearifolia. Comments: Lepidozia species with a waxy, water-repellent ‘‘bloom” on the surface of the stems and leaves had been understood as constituting a single species, L. glaucophylla. In fact, however, in New Zealand four distinct elements are represented: L. glaucophylla s. str.,L. bis- bifida Steph., L. digitata Herzog and L. glaucescens J.J.Engel. Lepidozia glaucophylla is similar to L. bisbifida in the conspicuous water-repellent “bloom” on the surface of the stem and leaves, and the strongly incubous, subsymmetrically lobed leaves (Pig. 47: 1-3). It is immediately distinguishable, however, by the broadly ampliate and strongly auriculate dorsal margin of the leaf (Pig. 47: 1-4, 8); the irregularly sinuate to toothed leaf margins (Pig. 47: 7-9); the evenly thick-walled disc cells (Pig. 47: 7, 9, 10); the subcau- date, abruptly tapering leaf lobes, which terminate in a uniseriate row of 3-5 elongated cells (Pig. 47: 4-6); and the oblique to longitudinal insertion of the first branch underleaf at the base of the branch, rather than transversely inserted on the ventral-lateral face of the stem, as in L. bisbifida. branch, ventral view (note first branch underleaf = BUL). 13. Underleaves. 14. Underleaf, cellular detail. (Figs. 1, 2, 5, 8, 10, 12-14, from type; 3, 7, 11, from Life 6442, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Mt. Euclid; 4, 6, 9, from Engel 23170, New Zealand, South Is., Fiordland EP, Fiordland Natl. Park, S end of Lake Marion.) Lepidozia bisbifida Steph. Kirks.n. (G!). without speeifie loeality, Colenso &#39;&#39;inter 2064&#39;&#39; (G!). North Is., Wairakei, Waiora Valley, 4 May 1904, Setchell 9 (UC!). Plants prostrate to loosely procumbent, the stems loosely interwoven, flexuous, with spreading branches, glaucous and ash grey to ivory, the older shoot sectors burnt orange or lightly tinged with brown as if scorched, the surface dull and water-repellent; shoots mediumsized, to 1.5 cm wide, including branches (sporadically large and to 2 cm wide [including branches] X 7.5 cm long). Branching nearly exclusively of Frullania type, rather short, closely and regularly 1 -pinnate to locally 2-pinnate, the branches abruptly tapering, occasionally becoming ± whip-like, flagelliform and microphyllous; secondary branches occasional; branch half-leaf broadly ovate, subsymmetrical, subcordate at the base, 2-lobed to ca. 0.2-0.3, the dorsal lobe often smaller; first branch underleaf large, often squarrose-reflexed, 2-4-lobed (rarely undivided), usually on lateral or ventral-lateral side of stem, often somewhat below the branch, aligned with leaves of main shoot or underleaves of branch. Ventral-intercalary branching occasional, leafy. Stem epidermal cells thin-walled, with a waxy coating like the cells of the leaves. Leaves involute-triangular and distinctly amplexicaul when dry, when moist rigid, distinctly concave to nearly cup-like, approximate to contiguous, intermittently large and small along length of stem, those in well- developed sectors 0.8- 1.3 mm long and wide, the leaves of smaller sectors as small as 0.5 mm long and wide, the leaves spreading, nearly horizontal, the insertion broad, strongly incubous; leaves subsymmetric to moderately asymmetric, typically ± equally 4-lobed (rarely bisbifid), the lobes sometimes in turn divided, the leaves then appearing 5-8-lobed, the leaves divided to ca. 0.2-0.5 (median sinus), the distance from dorsal sinus base to insertion subequal to or not much greater than that from ventral sinus to insertion, the sinuses of subequal depth or gradually becoming deeper ventrally. Lobes acute to apiculate, terminating in a single cell or more commonly a uniseriate row of 2-3 cells; cells of uniseriate row ± isodiametric or slightly longer than wide, thin- walled, the terminal cell strongly tapering; median pair of lobes somewhat larger, 6-8(11) cells wide at base, the dorsal lobes (2)3-5 cells wide at base. Disc subsymmetric, (13)15-22(28) cells high at dorsal sinus, 9-14 cells high at ventral sinus, the margins usually entire, the dorsal margin moderately ampliate, sporadically with 1 or more blunt teeth or sinuate, cordate at the base, the ventral margin occasionally with a slender lobuliform process. Cells of disc and lobes uniformly thin- walled, with conspicuous intercellular pits, trigones minute to medium, the me¬ dian disc cells (18)24-40 X 28—40 |ULm; median basal cells not differentiated; marginal cells of disc smaller, those of disc and lobes sporadically with thickened outer walls, but rarely consistently so; surface a dense granular coating that ultimately develops cracks or fine fissures (especially over the vertical cell walls), the cell outlines obscured by the scurfy, water-repellent coating. Oil-bodies absent in many leaf cells, otherwise (1)2-3 per cell, colorless, coarsely to moderately botryoidal, spherical and ca. 3 juim in diam. or ellipsoidal with acute tips and 2-3 X 4.5-8 |ULm, as large as 4 X 10 juim at leaf base, fleeting. Oil-bodies (Engel and Schuster, 2001) small and inconspicuous, 2-5 to (0)4-6(9) per cell, few (often only 3-6[9]) segmented, coarsely botryoidal, much smaller than chloroplasts, often 3X6 juim and consisting of a large spherule at each end and 4-6 smaller ones centrally. Underleaves inserted on 9-10 rows of stem cells, widely spreading, ca. 0.7-1 X stem width, asymmetrically or symmetrically 4-fid to ca. 0.3-0.45 (median sinus), the underleaves often with 1, 2 or all 3 sinuses narrow, slit-like and the lobes adnate by the surface covering, the underleaves then in situ appearing 2- or 3-lobed, the lobes plane, attenuate to acuminate, consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a single cell or a uniseriate row of 2-4 cells that often terminate in a slime papillae; disc 5-9 cells high at median sinus, the margins plane, entire. Plants dioecious. Androecia on inconspicuous, short, determinate, tightly spicate, often cer- nuous ventral-intercalary branches from main shoot; bracts ventricose-cucullate, 2-lobed to ca. 0.3, the lobes acute to short-acuminate; antheridial stalk biseriate. Gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Antipodes Islands (150 m). South Island (200-1350 m). North Island (300-500 m). Known from Eiordland, Southland (Ajax Hill), Otago, Westland, Canterbury (Arthur’s Pass, Woolshed Hill), Western Nelson (Paparoa Ra.) and Volcanic Plateau (Tokaanu, Rotorua) EPs. A species occurring mainly in forests of Nothofagus solandri and N. menziesii ranging from as low as 200 m, but, more often, from over 750 m to treeline. Also known from Metrosideros umbellata - Podocarpus hallii - Dracophyllum traversii upper montane forest. It is found on rotted wood (particularly where there is cover of other bryophytes, along with, at times, hy- menophylls) or deep in shaded, moist, sheltered pockets of tree bases, boulders or rotted logs. Also on shaded cliff bases, particularly where soil has accumulated, and plants are notable as scattered glaucous patches among other bryophytes. It often grows loosely attached and may be locally very common. The species at times covers large areas, but typically does not become matted or pure. However, pure mats are at times formed deep in sheltered recesses. Accompanying species in forest habitats wcq Adelanthus falcatus, Bazzania adnexa, B. nitida, Catego- nium nitens, Chandonanthus squarrosus, Chiloscyphus leucophyllus, Dicranoloma robustum, Distichophyllum pulchellum, Hymenophyllum multifidum, Hypnum chrysogaster, Lepidozia pendulina, Rhizogonium distichum, Weymouthia cockle arifolia and Zoopsis argentea. In the penalpine zone over soil deep in protected recesses between boulders or under boulder overhangs, as well as on the sides of rills. In the alpine zone on shaded, damp slopes under cover of Chionochloa tussocks. Also known from the geothermal areas of the North Island (see Engel and Schuster, 2001) where it is found on sinter, often under Leptospermum scoparium, Kunzea ericoides and Cyathodes fasciculata scrub with Campylopus capillaceus. On the Antipodes Islands, it occurs in Chionochloa antarctica tussocklands with Campylopus intro- flexus, Lepidogyna hodgsoniae and Leptotheca gaudichaudii. Comments: This is the species long known in the New Zealand literature as Lepidozia glaucophylla. Lepidozia bisbifida is readily distinguished from L. glaucophylla by the broadly inserted, deeply concave, involute leaves; by the leptodermous leaf cells with small to minute trigones; and by the ± transverse insertion of the first branch underleaf on the stem, often some distance below the associated branch. Another feature of this species is the intermittently large and small leaf size along the length of the stem. (See also comments under L. glaucophylla.) The species is quite distinct in the field due to the large plant size coupled with the glaucous condition, with older portions of the plants often burnt orange or lightly tinged with brown and then appearing as if scorched.</p>
+    <pre class="description-text">Plants prostrate, in loosely interwoven pure mats or as conspicuous, isolated strands growing among other matted bryophytes, slender, with spreading branches, glaucous, whitish to ceraceous, the older sectors subnitid and brownish (as if scorched), the surface dull, waxy and water-repellent, the shoots medium, to 1.5 cm wide, including branches. Branching mostly of Frullania type, ± distantly 1 (2)-pinnate, the branches gradually tapering, occasionally whiplike, flagelliform and microphyllous; secondary branches occasional on well-developed shoots; branch half-leaf broadly ovate, slightly asymmetrical, cordate at base, 2-lobed to ca. 0.2-0. 3, the margin sinuate, or bluntly toothed; first branch underleaf large, mostly undivided, occasionally 2- or 3-lobed, inserted on ventral-lateral side of branch at or near junction of branch and main shoot, aligned with underleaves of branch. Ventral-intercalary branches sporadically produced. Stem epidermal cells in surface view ± thick- walled, with a waxy coating like that of the leaves, the cortex in 1 layer of thin to slightly thick-walled cells ± distinctly larger than the medullary cells; medullary cells slightly thickened. Leaves involute and sub- amplexicaul when dry, when moist spreading and divergent, rather strongly concave, contiguous to imbricate, at times nearly or completely hiding stem in dorsal view, uniform in size (not in sequential sectors of varying size), 0.6-0.7 mm long and wide, the insertion broad, moderately to strongly incubous; leaves asymmetric, ± equally 4-lobed, the leaves divided to ca. 0.4-0.5 (median sinus), the distance from dorsal sinus base to insertion not much greater than that from ventral sinus to insertion, the sinuses gradually becoming deeper ventrally. Lobes subcaudate, entire, abruptly narrowing to a uniseriate row of 3-5(6) cells; cells of uniseriate row and often the subtending lobe cells elongated (to 2:1), thick-walled, the terminal cell tapering to a point; dorsal lobe 5-7 cells wide at base. Disc distinctly asymmetric due to ampli¬ ation of dorsal margin, the dorsal sector to one third the disc area, 14-18 cells high at dorsal 8-11, from Fife 8987, New Zealand, South Is., Arthur’s Pass Natl. Park, Bealey Glacier Track; 3, 7, from type of L. albula.) dorsal view (HE = half-leaf). 2-4. Leaves (all at same scale). 5. Dorsal-most lobe (above) and dorsal pair of lobes, the surface detail shown for lobe at right. 6. Median lobes of leaves (all at same sinus, 10-14 cells high at ventral sinus, the dorsal margin subentire to sinuate to distantly and irregularly armed with 1-2-celled teeth, the margin auriculate at the base, the ventral subcor- date at the base, occasionally with a small tooth or short spine. Cells of disc and lobes rounded quadrate, evenly thick-walled, trigones absent, the median disc cells 20-26 X 22-30 juim; marginal cells of disc and lobes typically with a thickened outer wall; surface a dense and coarsely granular coating. Underleaves inserted on 8-9 rows of stem cells, distinctly spreading, ca. 1-1.3 X stem width, symmetrically 4-fid to ca. 0.4 (median sinus), the lobes plane, nar¬ rowly attenuate and consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a uniseriate row of 2-4 cells; disc 9-12 cells high at median sinus, the margins plane, occasionally with a 1-2-celled tooth that terminates in a slime papilla. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: South Island (695-1200 m); Australia: Tasmania, Victoria, New South Wales. Apparently very rare in New Zealand and known only from a few South Island sites. Known from four Eiordland sites: at 695 m at Lake Marion in a rather open Nothofagus menziesii forest, with frequent large boulders that are often largely bryophyte covered. At this site, plants of Lepidozia glaucophylla together with hymenophylls formed a thick mass that was loosely attached to a huge boulder (see Engel and Schuster, 2001). Known from Mackinnon Pass at 1000 m on a rock overhang; from the Borland Burn (also Eiordland) in bryophyte cushions under N. solandri var. clijfortioides forest, and from Deep Cove. Also known from two sites on the Paparoa Ra. (Mt. Euclid and Mt. Priestly, 960-1200 m) on humus over rock in N. menziesii forest with abundant Dracophyllum traversii, and from a rock overhang in Chionochloa australis grasslands. Accompanying species are Bazzania nitida, Dicranoloma dicarpum, Distichophyllum pulchellum, Lepidozia kirkii, Leptotheca gaudi- chaudii, Mittenia plumula, Plagiochila retrospectans, Pyrrhobryum mnioides, Rhizogonium distichum and Weymouthia cochlearifolia. Comments: Lepidozia species with a waxy, water-repellent ‘‘bloom” on the surface of the stems and leaves had been understood as constituting a single species, L. glaucophylla. In fact, however, in New Zealand four distinct elements are represented: L. glaucophylla s. str.,L. bis- bifida Steph., L. digitata Herzog and L. glaucescens J.J.Engel. Lepidozia glaucophylla is similar to L. bisbifida in the conspicuous water-repellent “bloom” on the surface of the stem and leaves, and the strongly incubous, subsymmetrically lobed leaves (Pig. 47: 1-3). It is immediately distinguishable, however, by the broadly ampliate and strongly auriculate dorsal margin of the leaf (Pig. 47: 1-4, 8); the irregularly sinuate to toothed leaf margins (Pig. 47: 7-9); the evenly thick-walled disc cells (Pig. 47: 7, 9, 10); the subcau- date, abruptly tapering leaf lobes, which terminate in a uniseriate row of 3-5 elongated cells (Pig. 47: 4-6); and the oblique to longitudinal insertion of the first branch underleaf at the base of the branch, rather than transversely inserted on the ventral-lateral face of the stem, as in L. bisbifida. branch, ventral view (note first branch underleaf = BUL). 13. Underleaves. 14. Underleaf, cellular detail. (Figs. 1, 2, 5, 8, 10, 12-14, from type; 3, 7, 11, from Life 6442, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Mt. Euclid; 4, 6, 9, from Engel 23170, New Zealand, South Is., Fiordland EP, Fiordland Natl. Park, S end of Lake Marion.) Lepidozia bisbifida Steph. Kirks.n. (G!). without speeifie loeality, Colenso &#39;&#39;inter 2064&#39;&#39; (G!). North Is., Wairakei, Waiora Valley, 4 May 1904, Setchell 9 (UC!). Plants prostrate to loosely procumbent, the stems loosely interwoven, flexuous, with spreading branches, glaucous and ash grey to ivory, the older shoot sectors burnt orange or lightly tinged with brown as if scorched, the surface dull and water-repellent; shoots mediumsized, to 1.5 cm wide, including branches (sporadically large and to 2 cm wide [including branches] X 7.5 cm long). Branching nearly exclusively of Frullania type, rather short, closely and regularly 1 -pinnate to locally 2-pinnate, the branches abruptly tapering, occasionally becoming ± whip-like, flagelliform and microphyllous; secondary branches occasional; branch half-leaf broadly ovate, subsymmetrical, subcordate at the base, 2-lobed to ca. 0.2-0.3, the dorsal lobe often smaller; first branch underleaf large, often squarrose-reflexed, 2-4-lobed (rarely undivided), usually on lateral or ventral-lateral side of stem, often somewhat below the branch, aligned with leaves of main shoot or underleaves of branch. Ventral-intercalary branching occasional, leafy. Stem epidermal cells thin-walled, with a waxy coating like the cells of the leaves. Leaves involute-triangular and distinctly amplexicaul when dry, when moist rigid, distinctly concave to nearly cup-like, approximate to contiguous, intermittently large and small along length of stem, those in well- developed sectors 0.8- 1.3 mm long and wide, the leaves of smaller sectors as small as 0.5 mm long and wide, the leaves spreading, nearly horizontal, the insertion broad, strongly incubous; leaves subsymmetric to moderately asymmetric, typically ± equally 4-lobed (rarely bisbifid), the lobes sometimes in turn divided, the leaves then appearing 5-8-lobed, the leaves divided to ca. 0.2-0.5 (median sinus), the distance from dorsal sinus base to insertion subequal to or not much greater than that from ventral sinus to insertion, the sinuses of subequal depth or gradually becoming deeper ventrally. Lobes acute to apiculate, terminating in a single cell or more commonly a uniseriate row of 2-3 cells; cells of uniseriate row ± isodiametric or slightly longer than wide, thin- walled, the terminal cell strongly tapering; median pair of lobes somewhat larger, 6-8(11) cells wide at base, the dorsal lobes (2)3-5 cells wide at base. Disc subsymmetric, (13)15-22(28) cells high at dorsal sinus, 9-14 cells high at ventral sinus, the margins usually entire, the dorsal margin moderately ampliate, sporadically with 1 or more blunt teeth or sinuate, cordate at the base, the ventral margin occasionally with a slender lobuliform process. Cells of disc and lobes uniformly thin- walled, with conspicuous intercellular pits, trigones minute to medium, the me¬ dian disc cells (18)24-40 X 28—40 |ULm; median basal cells not differentiated; marginal cells of disc smaller, those of disc and lobes sporadically with thickened outer walls, but rarely consistently so; surface a dense granular coating that ultimately develops cracks or fine fissures (especially over the vertical cell walls), the cell outlines obscured by the scurfy, water-repellent coating. Oil-bodies absent in many leaf cells, otherwise (1)2-3 per cell, colorless, coarsely to moderately botryoidal, spherical and ca. 3 juim in diam. or ellipsoidal with acute tips and 2-3 X 4.5-8 |ULm, as large as 4 X 10 juim at leaf base, fleeting. Oil-bodies (Engel and Schuster, 2001) small and inconspicuous, 2-5 to (0)4-6(9) per cell, few (often only 3-6[9]) segmented, coarsely botryoidal, much smaller than chloroplasts, often 3X6 juim and consisting of a large spherule at each end and 4-6 smaller ones centrally. Underleaves inserted on 9-10 rows of stem cells, widely spreading, ca. 0.7-1 X stem width, asymmetrically or symmetrically 4-fid to ca. 0.3-0.45 (median sinus), the underleaves often with 1, 2 or all 3 sinuses narrow, slit-like and the lobes adnate by the surface covering, the underleaves then in situ appearing 2- or 3-lobed, the lobes plane, attenuate to acuminate, consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a single cell or a uniseriate row of 2-4 cells that often terminate in a slime papillae; disc 5-9 cells high at median sinus, the margins plane, entire. Plants dioecious. Androecia on inconspicuous, short, determinate, tightly spicate, often cer- nuous ventral-intercalary branches from main shoot; bracts ventricose-cucullate, 2-lobed to ca. 0.3, the lobes acute to short-acuminate; antheridial stalk biseriate. Gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Antipodes Islands (150 m). South Island (200-1350 m). North Island (300-500 m). Known from Eiordland, Southland (Ajax Hill), Otago, Westland, Canterbury (Arthur’s Pass, Woolshed Hill), Western Nelson (Paparoa Ra.) and Volcanic Plateau (Tokaanu, Rotorua) EPs. A species occurring mainly in forests of Nothofagus solandri and N. menziesii ranging from as low as 200 m, but, more often, from over 750 m to treeline. Also known from Metrosideros umbellata - Podocarpus hallii - Dracophyllum traversii upper montane forest. It is found on rotted wood (particularly where there is cover of other bryophytes, along with, at times, hy- menophylls) or deep in shaded, moist, sheltered pockets of tree bases, boulders or rotted logs. Also on shaded cliff bases, particularly where soil has accumulated, and plants are notable as scattered glaucous patches among other bryophytes. It often grows loosely attached and may be locally very common. The species at times covers large areas, but typically does not become matted or pure. However, pure mats are at times formed deep in sheltered recesses. Accompanying species in forest habitats wcq Adelanthus falcatus, Bazzania adnexa, B. nitida, Catego- nium nitens, Chandonanthus squarrosus, Chiloscyphus leucophyllus, Dicranoloma robustum, Distichophyllum pulchellum, Hymenophyllum multifidum, Hypnum chrysogaster, Lepidozia pendulina, Rhizogonium distichum, Weymouthia cockle arifolia and Zoopsis argentea. In the penalpine zone over soil deep in protected recesses between boulders or under boulder overhangs, as well as on the sides of rills. In the alpine zone on shaded, damp slopes under cover of Chionochloa tussocks. Also known from the geothermal areas of the North Island (see Engel and Schuster, 2001) where it is found on sinter, often under Leptospermum scoparium, Kunzea ericoides and Cyathodes fasciculata scrub with Campylopus capillaceus. On the Antipodes Islands, it occurs in Chionochloa antarctica tussocklands with Campylopus intro- flexus, Lepidogyna hodgsoniae and Leptotheca gaudichaudii. Comments: This is the species long known in the New Zealand literature as Lepidozia glaucophylla. Lepidozia bisbifida is readily distinguished from L. glaucophylla by the broadly inserted, deeply concave, involute leaves; by the leptodermous leaf cells with small to minute trigones; and by the ± transverse insertion of the first branch underleaf on the stem, often some distance below the associated branch. Another feature of this species is the intermittently large and small leaf size along the length of the stem. (See also comments under L. glaucophylla.) The species is quite distinct in the field due to the large plant size coupled with the glaucous condition, with older portions of the plants often burnt orange or lightly tinged with brown and then appearing as if scorched.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants prostrate, in loosely interwoven pure mats or as conspicuous, isolated strands growing among other matted bryophytes, slender, with spreading branches, glaucous, whitish to ceraceous, the older sectors subnitid and brownish (as if scorched), the surface dull, waxy and water-repellent, the shoots medium, to 1.5 cm wide, including branches. Branching mostly of Frullania type, ± distantly 1 (2)-pinnate, the branches gradually tapering, occasionally whiplike, flagelliform and microphyllous; secondary branches occasional on well-developed shoots; branch half-leaf broadly ovate, slightly asymmetrical, cordate at base, 2-lobed to ca. 0.2-0. 3, the margin sinuate, or bluntly toothed; first branch underleaf large, mostly undivided, occasionally 2- or 3-lobed, inserted on ventral-lateral side of branch at or near junction of branch and main shoot, aligned with underleaves of branch. Ventral-intercalary branches sporadically produced. Stem epidermal cells in surface view ± thick- walled, with a waxy coating like that of the leaves, the cortex in 1 layer of thin to slightly thick-walled cells ± distinctly larger than the medullary cells; medullary cells slightly thickened. Leaves involute and sub- amplexicaul when dry, when moist spreading and divergent, rather strongly concave, contiguous to imbricate, at times nearly or completely hiding stem in dorsal view, uniform in size (not in sequential sectors of varying size), 0.6-0.7 mm long and wide, the insertion broad, moderately to strongly incubous; leaves asymmetric, ± equally 4-lobed, the leaves divided to ca. 0.4-0.5 (median sinus), the distance from dorsal sinus base to insertion not much greater than that from ventral sinus to insertion, the sinuses gradually becoming deeper ventrally. Lobes subcaudate, entire, abruptly narrowing to a uniseriate row of 3-5(6) cells; cells of uniseriate row and often the subtending lobe cells elongated (to 2:1), thick-walled, the terminal cell tapering to a point; dorsal lobe 5-7 cells wide at base. Disc distinctly asymmetric due to ampli¬ ation of dorsal margin, the dorsal sector to one third the disc area, 14-18 cells high at dorsal 8-11, from Fife 8987, New Zealand, South Is., Arthur’s Pass Natl. Park, Bealey Glacier Track; 3, 7, from type of L. albula.) dorsal view (HE = half-leaf). 2-4. Leaves (all at same scale). 5. Dorsal-most lobe (above) and dorsal pair of lobes, the surface detail shown for lobe at right. 6. Median lobes of leaves (all at same sinus, 10-14 cells high at ventral sinus, the dorsal margin subentire to sinuate to distantly and irregularly armed with 1-2-celled teeth, the margin auriculate at the base, the ventral subcor- date at the base, occasionally with a small tooth or short spine. Cells of disc and lobes rounded quadrate, evenly thick-walled, trigones absent, the median disc cells 20-26 X 22-30 juim; marginal cells of disc and lobes typically with a thickened outer wall; surface a dense and coarsely granular coating. Underleaves inserted on 8-9 rows of stem cells, distinctly spreading, ca. 1-1.3 X stem width, symmetrically 4-fid to ca. 0.4 (median sinus), the lobes plane, nar¬ rowly attenuate and consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a uniseriate row of 2-4 cells; disc 9-12 cells high at median sinus, the margins plane, occasionally with a 1-2-celled tooth that terminates in a slime papilla. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: South Island (695-1200 m); Australia: Tasmania, Victoria, New South Wales. Apparently very rare in New Zealand and known only from a few South Island sites. Known from four Eiordland sites: at 695 m at Lake Marion in a rather open Nothofagus menziesii forest, with frequent large boulders that are often largely bryophyte covered. At this site, plants of Lepidozia glaucophylla together with hymenophylls formed a thick mass that was loosely attached to a huge boulder (see Engel and Schuster, 2001). Known from Mackinnon Pass at 1000 m on a rock overhang; from the Borland Burn (also Eiordland) in bryophyte cushions under N. solandri var. clijfortioides forest, and from Deep Cove. Also known from two sites on the Paparoa Ra. (Mt. Euclid and Mt. Priestly, 960-1200 m) on humus over rock in N. menziesii forest with abundant Dracophyllum traversii, and from a rock overhang in Chionochloa australis grasslands. Accompanying species are Bazzania nitida, Dicranoloma dicarpum, Distichophyllum pulchellum, Lepidozia kirkii, Leptotheca gaudi- chaudii, Mittenia plumula, Plagiochila retrospectans, Pyrrhobryum mnioides, Rhizogonium distichum and Weymouthia cochlearifolia. Comments: Lepidozia species with a waxy, water-repellent ‘‘bloom” on the surface of the stems and leaves had been understood as constituting a single species, L. glaucophylla. In fact, however, in New Zealand four distinct elements are represented: L. glaucophylla s. str.,L. bis- bifida Steph., L. digitata Herzog and L. glaucescens J.J.Engel. Lepidozia glaucophylla is similar to L. bisbifida in the conspicuous water-repellent “bloom” on the surface of the stem and leaves, and the strongly incubous, subsymmetrically lobed leaves (Pig. 47: 1-3). It is immediately distinguishable, however, by the broadly ampliate and strongly auriculate dorsal margin of the leaf (Pig. 47: 1-4, 8); the irregularly sinuate to toothed leaf margins (Pig. 47: 7-9); the evenly thick-walled disc cells (Pig. 47: 7, 9, 10); the subcau- date, abruptly tapering leaf lobes, which terminate in a uniseriate row of 3-5 elongated cells (Pig. 47: 4-6); and the oblique to longitudinal insertion of the first branch underleaf at the base of the branch, rather than transversely inserted on the ventral-lateral face of the stem, as in L. bisbifida. branch, ventral view (note first branch underleaf = BUL). 13. Underleaves. 14. Underleaf, cellular detail. (Figs. 1, 2, 5, 8, 10, 12-14, from type; 3, 7, 11, from Life 6442, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Mt. Euclid; 4, 6, 9, from Engel 23170, New Zealand, South Is., Fiordland EP, Fiordland Natl. Park, S end of Lake Marion.) Lepidozia bisbifida Steph. Kirks.n. (G!). without speeifie loeality, Colenso &#39;&#39;inter 2064&#39;&#39; (G!). North Is., Wairakei, Waiora Valley, 4 May 1904, Setchell 9 (UC!). Plants prostrate to loosely procumbent, the stems loosely interwoven, flexuous, with spreading branches, glaucous and ash grey to ivory, the older shoot sectors burnt orange or lightly tinged with brown as if scorched, the surface dull and water-repellent; shoots mediumsized, to 1.5 cm wide, including branches (sporadically large and to 2 cm wide [including branches] X 7.5 cm long). Branching nearly exclusively of Frullania type, rather short, closely and regularly 1 -pinnate to locally 2-pinnate, the branches abruptly tapering, occasionally becoming ± whip-like, flagelliform and microphyllous; secondary branches occasional; branch half-leaf broadly ovate, subsymmetrical, subcordate at the base, 2-lobed to ca. 0.2-0.3, the dorsal lobe often smaller; first branch underleaf large, often squarrose-reflexed, 2-4-lobed (rarely undivided), usually on lateral or ventral-lateral side of stem, often somewhat below the branch, aligned with leaves of main shoot or underleaves of branch. Ventral-intercalary branching occasional, leafy. Stem epidermal cells thin-walled, with a waxy coating like the cells of the leaves. Leaves involute-triangular and distinctly amplexicaul when dry, when moist rigid, distinctly concave to nearly cup-like, approximate to contiguous, intermittently large and small along length of stem, those in well- developed sectors 0.8- 1.3 mm long and wide, the leaves of smaller sectors as small as 0.5 mm long and wide, the leaves spreading, nearly horizontal, the insertion broad, strongly incubous; leaves subsymmetric to moderately asymmetric, typically ± equally 4-lobed (rarely bisbifid), the lobes sometimes in turn divided, the leaves then appearing 5-8-lobed, the leaves divided to ca. 0.2-0.5 (median sinus), the distance from dorsal sinus base to insertion subequal to or not much greater than that from ventral sinus to insertion, the sinuses of subequal depth or gradually becoming deeper ventrally. Lobes acute to apiculate, terminating in a single cell or more commonly a uniseriate row of 2-3 cells; cells of uniseriate row ± isodiametric or slightly longer than wide, thin- walled, the terminal cell strongly tapering; median pair of lobes somewhat larger, 6-8(11) cells wide at base, the dorsal lobes (2)3-5 cells wide at base. Disc subsymmetric, (13)15-22(28) cells high at dorsal sinus, 9-14 cells high at ventral sinus, the margins usually entire, the dorsal margin moderately ampliate, sporadically with 1 or more blunt teeth or sinuate, cordate at the base, the ventral margin occasionally with a slender lobuliform process. Cells of disc and lobes uniformly thin- walled, with conspicuous intercellular pits, trigones minute to medium, the me¬ dian disc cells (18)24-40 X 28—40 |ULm; median basal cells not differentiated; marginal cells of disc smaller, those of disc and lobes sporadically with thickened outer walls, but rarely consistently so; surface a dense granular coating that ultimately develops cracks or fine fissures (especially over the vertical cell walls), the cell outlines obscured by the scurfy, water-repellent coating. Oil-bodies absent in many leaf cells, otherwise (1)2-3 per cell, colorless, coarsely to moderately botryoidal, spherical and ca. 3 juim in diam. or ellipsoidal with acute tips and 2-3 X 4.5-8 |ULm, as large as 4 X 10 juim at leaf base, fleeting. Oil-bodies (Engel and Schuster, 2001) small and inconspicuous, 2-5 to (0)4-6(9) per cell, few (often only 3-6[9]) segmented, coarsely botryoidal, much smaller than chloroplasts, often 3X6 juim and consisting of a large spherule at each end and 4-6 smaller ones centrally. Underleaves inserted on 9-10 rows of stem cells, widely spreading, ca. 0.7-1 X stem width, asymmetrically or symmetrically 4-fid to ca. 0.3-0.45 (median sinus), the underleaves often with 1, 2 or all 3 sinuses narrow, slit-like and the lobes adnate by the surface covering, the underleaves then in situ appearing 2- or 3-lobed, the lobes plane, attenuate to acuminate, consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a single cell or a uniseriate row of 2-4 cells that often terminate in a slime papillae; disc 5-9 cells high at median sinus, the margins plane, entire. Plants dioecious. Androecia on inconspicuous, short, determinate, tightly spicate, often cer- nuous ventral-intercalary branches from main shoot; bracts ventricose-cucullate, 2-lobed to ca. 0.3, the lobes acute to short-acuminate; antheridial stalk biseriate. Gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Antipodes Islands (150 m). South Island (200-1350 m). North Island (300-500 m). Known from Eiordland, Southland (Ajax Hill), Otago, Westland, Canterbury (Arthur’s Pass, Woolshed Hill), Western Nelson (Paparoa Ra.) and Volcanic Plateau (Tokaanu, Rotorua) EPs. A species occurring mainly in forests of Nothofagus solandri and N. menziesii ranging from as low as 200 m, but, more often, from over 750 m to treeline. Also known from Metrosideros umbellata - Podocarpus hallii - Dracophyllum traversii upper montane forest. It is found on rotted wood (particularly where there is cover of other bryophytes, along with, at times, hy- menophylls) or deep in shaded, moist, sheltered pockets of tree bases, boulders or rotted logs. Also on shaded cliff bases, particularly where soil has accumulated, and plants are notable as scattered glaucous patches among other bryophytes. It often grows loosely attached and may be locally very common. The species at times covers large areas, but typically does not become matted or pure. However, pure mats are at times formed deep in sheltered recesses. Accompanying species in forest habitats wcq Adelanthus falcatus, Bazzania adnexa, B. nitida, Catego- nium nitens, Chandonanthus squarrosus, Chiloscyphus leucophyllus, Dicranoloma robustum, Distichophyllum pulchellum, Hymenophyllum multifidum, Hypnum chrysogaster, Lepidozia pendulina, Rhizogonium distichum, Weymouthia cockle arifolia and Zoopsis argentea. In the penalpine zone over soil deep in protected recesses between boulders or under boulder overhangs, as well as on the sides of rills. In the alpine zone on shaded, damp slopes under cover of Chionochloa tussocks. Also known from the geothermal areas of the North Island (see Engel and Schuster, 2001) where it is found on sinter, often under Leptospermum scoparium, Kunzea ericoides and Cyathodes fasciculata scrub with Campylopus capillaceus. On the Antipodes Islands, it occurs in Chionochloa antarctica tussocklands with Campylopus intro- flexus, Lepidogyna hodgsoniae and Leptotheca gaudichaudii. Comments: This is the species long known in the New Zealand literature as Lepidozia glaucophylla. Lepidozia bisbifida is readily distinguished from L. glaucophylla by the broadly inserted, deeply concave, involute leaves; by the leptodermous leaf cells with small to minute trigones; and by the ± transverse insertion of the first branch underleaf on the stem, often some distance below the associated branch. Another feature of this species is the intermittently large and small leaf size along the length of the stem. (See also comments under L. glaucophylla.) The species is quite distinct in the field due to the large plant size coupled with the glaucous condition, with older portions of the plants often burnt orange or lightly tinged with brown and then appearing as if scorched.</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
-    
-    
-    <p><strong>conservation_status:</strong> At Risk - Naturally Uncommon</p>
+    <pre class="description-text">Plants prostrate, in loosely interwoven pure mats or as conspicuous, isolated strands growing among other matted bryophytes, slender, with spreading branches, glaucous, whitish to ceraceous, the older sectors subnitid and brownish (as if scorched), the surface dull, waxy and water-repellent, the shoots medium, to 1.5 cm wide, including branches. Branching mostly of Frullania type, ± distantly 1 (2)-pinnate, the branches gradually tapering, occasionally whiplike, flagelliform and microphyllous; secondary branches occasional on well-developed shoots; branch half-leaf broadly ovate, slightly asymmetrical, cordate at base, 2-lobed to ca. 0.2-0. 3, the margin sinuate, or bluntly toothed; first branch underleaf large, mostly undivided, occasionally 2- or 3-lobed, inserted on ventral-lateral side of branch at or near junction of branch and main shoot, aligned with underleaves of branch. Ventral-intercalary branches sporadically produced. Stem epidermal cells in surface view ± thick- walled, with a waxy coating like that of the leaves, the cortex in 1 layer of thin to slightly thick-walled cells ± distinctly larger than the medullary cells; medullary cells slightly thickened. Leaves involute and sub- amplexicaul when dry, when moist spreading and divergent, rather strongly concave, contiguous to imbricate, at times nearly or completely hiding stem in dorsal view, uniform in size (not in sequential sectors of varying size), 0.6-0.7 mm long and wide, the insertion broad, moderately to strongly incubous; leaves asymmetric, ± equally 4-lobed, the leaves divided to ca. 0.4-0.5 (median sinus), the distance from dorsal sinus base to insertion not much greater than that from ventral sinus to insertion, the sinuses gradually becoming deeper ventrally. Lobes subcaudate, entire, abruptly narrowing to a uniseriate row of 3-5(6) cells; cells of uniseriate row and often the subtending lobe cells elongated (to 2:1), thick-walled, the terminal cell tapering to a point; dorsal lobe 5-7 cells wide at base. Disc distinctly asymmetric due to ampli¬ ation of dorsal margin, the dorsal sector to one third the disc area, 14-18 cells high at dorsal 8-11, from Fife 8987, New Zealand, South Is., Arthur’s Pass Natl. Park, Bealey Glacier Track; 3, 7, from type of L. albula.) dorsal view (HE = half-leaf). 2-4. Leaves (all at same scale). 5. Dorsal-most lobe (above) and dorsal pair of lobes, the surface detail shown for lobe at right. 6. Median lobes of leaves (all at same sinus, 10-14 cells high at ventral sinus, the dorsal margin subentire to sinuate to distantly and irregularly armed with 1-2-celled teeth, the margin auriculate at the base, the ventral subcor- date at the base, occasionally with a small tooth or short spine. Cells of disc and lobes rounded quadrate, evenly thick-walled, trigones absent, the median disc cells 20-26 X 22-30 juim; marginal cells of disc and lobes typically with a thickened outer wall; surface a dense and coarsely granular coating. Underleaves inserted on 8-9 rows of stem cells, distinctly spreading, ca. 1-1.3 X stem width, symmetrically 4-fid to ca. 0.4 (median sinus), the lobes plane, nar¬ rowly attenuate and consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a uniseriate row of 2-4 cells; disc 9-12 cells high at median sinus, the margins plane, occasionally with a 1-2-celled tooth that terminates in a slime papilla. Androecia and gynoecia not seen. Distribution and Ecology: New Zealand: South Island (695-1200 m); Australia: Tasmania, Victoria, New South Wales. Apparently very rare in New Zealand and known only from a few South Island sites. Known from four Eiordland sites: at 695 m at Lake Marion in a rather open Nothofagus menziesii forest, with frequent large boulders that are often largely bryophyte covered. At this site, plants of Lepidozia glaucophylla together with hymenophylls formed a thick mass that was loosely attached to a huge boulder (see Engel and Schuster, 2001). Known from Mackinnon Pass at 1000 m on a rock overhang; from the Borland Burn (also Eiordland) in bryophyte cushions under N. solandri var. clijfortioides forest, and from Deep Cove. Also known from two sites on the Paparoa Ra. (Mt. Euclid and Mt. Priestly, 960-1200 m) on humus over rock in N. menziesii forest with abundant Dracophyllum traversii, and from a rock overhang in Chionochloa australis grasslands. Accompanying species are Bazzania nitida, Dicranoloma dicarpum, Distichophyllum pulchellum, Lepidozia kirkii, Leptotheca gaudi- chaudii, Mittenia plumula, Plagiochila retrospectans, Pyrrhobryum mnioides, Rhizogonium distichum and Weymouthia cochlearifolia. Comments: Lepidozia species with a waxy, water-repellent ‘‘bloom” on the surface of the stems and leaves had been understood as constituting a single species, L. glaucophylla. In fact, however, in New Zealand four distinct elements are represented: L. glaucophylla s. str.,L. bis- bifida Steph., L. digitata Herzog and L. glaucescens J.J.Engel. Lepidozia glaucophylla is similar to L. bisbifida in the conspicuous water-repellent “bloom” on the surface of the stem and leaves, and the strongly incubous, subsymmetrically lobed leaves (Pig. 47: 1-3). It is immediately distinguishable, however, by the broadly ampliate and strongly auriculate dorsal margin of the leaf (Pig. 47: 1-4, 8); the irregularly sinuate to toothed leaf margins (Pig. 47: 7-9); the evenly thick-walled disc cells (Pig. 47: 7, 9, 10); the subcau- date, abruptly tapering leaf lobes, which terminate in a uniseriate row of 3-5 elongated cells (Pig. 47: 4-6); and the oblique to longitudinal insertion of the first branch underleaf at the base of the branch, rather than transversely inserted on the ventral-lateral face of the stem, as in L. bisbifida. branch, ventral view (note first branch underleaf = BUL). 13. Underleaves. 14. Underleaf, cellular detail. (Figs. 1, 2, 5, 8, 10, 12-14, from type; 3, 7, 11, from Life 6442, New Zealand, South Is., Western Nelson EP, Paparoa Ra., Mt. Euclid; 4, 6, 9, from Engel 23170, New Zealand, South Is., Fiordland EP, Fiordland Natl. Park, S end of Lake Marion.) Lepidozia bisbifida Steph. Kirks.n. (G!). without speeifie loeality, Colenso &#39;&#39;inter 2064&#39;&#39; (G!). North Is., Wairakei, Waiora Valley, 4 May 1904, Setchell 9 (UC!). Plants prostrate to loosely procumbent, the stems loosely interwoven, flexuous, with spreading branches, glaucous and ash grey to ivory, the older shoot sectors burnt orange or lightly tinged with brown as if scorched, the surface dull and water-repellent; shoots mediumsized, to 1.5 cm wide, including branches (sporadically large and to 2 cm wide [including branches] X 7.5 cm long). Branching nearly exclusively of Frullania type, rather short, closely and regularly 1 -pinnate to locally 2-pinnate, the branches abruptly tapering, occasionally becoming ± whip-like, flagelliform and microphyllous; secondary branches occasional; branch half-leaf broadly ovate, subsymmetrical, subcordate at the base, 2-lobed to ca. 0.2-0.3, the dorsal lobe often smaller; first branch underleaf large, often squarrose-reflexed, 2-4-lobed (rarely undivided), usually on lateral or ventral-lateral side of stem, often somewhat below the branch, aligned with leaves of main shoot or underleaves of branch. Ventral-intercalary branching occasional, leafy. Stem epidermal cells thin-walled, with a waxy coating like the cells of the leaves. Leaves involute-triangular and distinctly amplexicaul when dry, when moist rigid, distinctly concave to nearly cup-like, approximate to contiguous, intermittently large and small along length of stem, those in well- developed sectors 0.8- 1.3 mm long and wide, the leaves of smaller sectors as small as 0.5 mm long and wide, the leaves spreading, nearly horizontal, the insertion broad, strongly incubous; leaves subsymmetric to moderately asymmetric, typically ± equally 4-lobed (rarely bisbifid), the lobes sometimes in turn divided, the leaves then appearing 5-8-lobed, the leaves divided to ca. 0.2-0.5 (median sinus), the distance from dorsal sinus base to insertion subequal to or not much greater than that from ventral sinus to insertion, the sinuses of subequal depth or gradually becoming deeper ventrally. Lobes acute to apiculate, terminating in a single cell or more commonly a uniseriate row of 2-3 cells; cells of uniseriate row ± isodiametric or slightly longer than wide, thin- walled, the terminal cell strongly tapering; median pair of lobes somewhat larger, 6-8(11) cells wide at base, the dorsal lobes (2)3-5 cells wide at base. Disc subsymmetric, (13)15-22(28) cells high at dorsal sinus, 9-14 cells high at ventral sinus, the margins usually entire, the dorsal margin moderately ampliate, sporadically with 1 or more blunt teeth or sinuate, cordate at the base, the ventral margin occasionally with a slender lobuliform process. Cells of disc and lobes uniformly thin- walled, with conspicuous intercellular pits, trigones minute to medium, the me¬ dian disc cells (18)24-40 X 28—40 |ULm; median basal cells not differentiated; marginal cells of disc smaller, those of disc and lobes sporadically with thickened outer walls, but rarely consistently so; surface a dense granular coating that ultimately develops cracks or fine fissures (especially over the vertical cell walls), the cell outlines obscured by the scurfy, water-repellent coating. Oil-bodies absent in many leaf cells, otherwise (1)2-3 per cell, colorless, coarsely to moderately botryoidal, spherical and ca. 3 juim in diam. or ellipsoidal with acute tips and 2-3 X 4.5-8 |ULm, as large as 4 X 10 juim at leaf base, fleeting. Oil-bodies (Engel and Schuster, 2001) small and inconspicuous, 2-5 to (0)4-6(9) per cell, few (often only 3-6[9]) segmented, coarsely botryoidal, much smaller than chloroplasts, often 3X6 juim and consisting of a large spherule at each end and 4-6 smaller ones centrally. Underleaves inserted on 9-10 rows of stem cells, widely spreading, ca. 0.7-1 X stem width, asymmetrically or symmetrically 4-fid to ca. 0.3-0.45 (median sinus), the underleaves often with 1, 2 or all 3 sinuses narrow, slit-like and the lobes adnate by the surface covering, the underleaves then in situ appearing 2- or 3-lobed, the lobes plane, attenuate to acuminate, consisting of several tiers of 2 laterally juxtaposed cells and then rounded at the tip, or, more commonly, terminating in a single cell or a uniseriate row of 2-4 cells that often terminate in a slime papillae; disc 5-9 cells high at median sinus, the margins plane, entire. Plants dioecious. Androecia on inconspicuous, short, determinate, tightly spicate, often cer- nuous ventral-intercalary branches from main shoot; bracts ventricose-cucullate, 2-lobed to ca. 0.3, the lobes acute to short-acuminate; antheridial stalk biseriate. Gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Antipodes Islands (150 m). South Island (200-1350 m). North Island (300-500 m). Known from Eiordland, Southland (Ajax Hill), Otago, Westland, Canterbury (Arthur’s Pass, Woolshed Hill), Western Nelson (Paparoa Ra.) and Volcanic Plateau (Tokaanu, Rotorua) EPs. A species occurring mainly in forests of Nothofagus solandri and N. menziesii ranging from as low as 200 m, but, more often, from over 750 m to treeline. Also known from Metrosideros umbellata - Podocarpus hallii - Dracophyllum traversii upper montane forest. It is found on rotted wood (particularly where there is cover of other bryophytes, along with, at times, hy- menophylls) or deep in shaded, moist, sheltered pockets of tree bases, boulders or rotted logs. Also on shaded cliff bases, particularly where soil has accumulated, and plants are notable as scattered glaucous patches among other bryophytes. It often grows loosely attached and may be locally very common. The species at times covers large areas, but typically does not become matted or pure. However, pure mats are at times formed deep in sheltered recesses. Accompanying species in forest habitats wcq Adelanthus falcatus, Bazzania adnexa, B. nitida, Catego- nium nitens, Chandonanthus squarrosus, Chiloscyphus leucophyllus, Dicranoloma robustum, Distichophyllum pulchellum, Hymenophyllum multifidum, Hypnum chrysogaster, Lepidozia pendulina, Rhizogonium distichum, Weymouthia cockle arifolia and Zoopsis argentea. In the penalpine zone over soil deep in protected recesses between boulders or under boulder overhangs, as well as on the sides of rills. In the alpine zone on shaded, damp slopes under cover of Chionochloa tussocks. Also known from the geothermal areas of the North Island (see Engel and Schuster, 2001) where it is found on sinter, often under Leptospermum scoparium, Kunzea ericoides and Cyathodes fasciculata scrub with Campylopus capillaceus. On the Antipodes Islands, it occurs in Chionochloa antarctica tussocklands with Campylopus intro- flexus, Lepidogyna hodgsoniae and Leptotheca gaudichaudii. Comments: This is the species long known in the New Zealand literature as Lepidozia glaucophylla. Lepidozia bisbifida is readily distinguished from L. glaucophylla by the broadly inserted, deeply concave, involute leaves; by the leptodermous leaf cells with small to minute trigones; and by the ± transverse insertion of the first branch underleaf on the stem, often some distance below the associated branch. Another feature of this species is the intermittently large and small leaf size along the length of the stem. (See also comments under L. glaucophylla.) The species is quite distinct in the field due to the large plant size coupled with the glaucous condition, with older portions of the plants often burnt orange or lightly tinged with brown and then appearing as if scorched.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> At Risk - Naturally Uncommon</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Tibey are a clear green when moist, but dry to a drab olive-green.
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Tibey are a clear green when moist, but dry to a drab olive-green.
   &#39;I&#39;he densely overlapping leaves are arranged alternately and
   incubously on the stem, which is invisible on the dorsal side. They
   are shortly oval in outline but are often slightly pointed, especially those nearer the
@@ -1071,16 +1042,19 @@ grassy understoreys. The leaves have two long, narrow
 spines at the leaf apex, often curved away from each other. The
 dorsal margin is more or less straight, but the ventral margin is
 distinctly rounded. The underleaves are deeply bifid to
-beyond half-way, often with long extra teeth.</p>
+beyond half-way, often with long extra teeth.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">A 98. Acrornrntigt~rnsp. nov. (x4)
+    <pre class="description-text">A 98. Acrornrntigt~rnsp. nov. (x4)
 99. Bazzania involutn is a common wet forest specics which is particularly
     abundant on buttresses, especially those of large old Nolhofabps or
     Eucalyptus trees. Two other species, B. nouae-zelandiae and
@@ -1201,16 +1175,19 @@ PLAGIOCI IILACEAE
 *   P. stromhyolia (Tayl.) Tayl. ex Lehrri.
 PSEUDOLEPICOLEACEL4E
     Tm&#39;chotemnomacormgaturn (Steph.) Schust.
-R4DULACEL4E</p>
+R4DULACEL4E</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">cells of the lobes. When the underleaf ‘‘disc’’ con-
+    <pre class="description-text">cells of the lobes. When the underleaf ‘‘disc’’ con-
                                                                                           in the plane of the disc produce a bi- or multi-
                               sists solely of the connate basal cells of the lobes
                                                                                           stratose pad of initials. In T. clatritexta these arise
@@ -1270,7 +1247,7 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                             30. Antheridial stalk. Biseriate antheridial                  ing was illustrated by Schuster &amp; Blomquist
                          stalks occur in T. meridiana, in T. centipes and T.              (1955, fig. 4) in T. longifolia, and has often been
                          perfragilis, as well as in T. pulcherrima and T.                 cited as a generic character of Telaranea. For ex-
-                         trichocoleoides. The stalk is uniseriate in other                ample, Schuster (1969, p. 31) noted for the genus</p>
+                         trichocoleoides. The stalk is uniseriate in other                ample, Schuster (1969, p. 31) noted for the genus</pre>
     
     
   </details>
@@ -1279,14 +1256,45 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Callitris endlicheri - Callitris glaucophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cotoneaster glaucophyllus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptocarya leucophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Darwinia glaucophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eucalyptus leucophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia concinna</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia ulothrix</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Macrozamia glaucophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia glaucophylla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidoziopsis glaucophylla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigophora glaucophylla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -1301,22 +1309,32 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [79.9, 69.5, 87.4, 94.2, 137.8, 138.9, 160.2, 178.2, 162.5, 137.6, 96.8, 105.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.1, 20.2, 17.9, 14.7, 11.8, 9.8, 9.2, 10.1, 12.0, 14.0, 16.7, 18.1], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.4, 8.1, 6.2, 4.6, 3.1, 2.4, 2.6, 4.0, 5.1, 6.9, 7.8], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

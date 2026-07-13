@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Tetracymbaliella cymbalifera</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Tetracymbaliella</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acrochaetium subsimplex</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Asperula subsimplex</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Deflexula subsimplex</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Memnoniella subsimplex</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Ptilothamnion subsimplex</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Stachybotrys subsimplex</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tetracymbaliella</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tetracymbaliella decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tetracymbaliella rodwayana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Tetracymbaliella subsimplex</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Tetracymbaliella</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">120</p>
     <footer>39 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">7</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,107 +74,116 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>GBIF</strong> (2 entrys)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>discussion:</strong> COMMENTS The only report of this species in New Caledonia is from E. G. Paris (1906, 1910) as Chiloscyphus cymbaliferus. The two specimens in his herbarium kept at Rennes University (REN) are not different from Tetracymbaliella comptonii. Therefore, T. cymbalifera must be removed from the New Caledonian flora.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>discussion:</strong> COMMENTS The only report of this species in New Caledonia is from E. G. Paris (1906, 1910) as Chiloscyphus cymbaliferus. The two specimens in his herbarium kept at Rennes University (REN) are not different from Tetracymbaliella comptonii. Therefore, T. cymbalifera must be removed from the New Caledonian flora.</p>
     
     
     
-    <p><strong>materials_examined:</strong> Type: New Zealand. Auckland Islands, not seen. SPECIMEN EXAMINED. — New Caledonia. South Province, Mt. Mou, VII. 1909, Le Rat s. n. as “ Chiloscyphus cymbaliferus ” (REN); Mt. Dzumac, “ ad arbores in silvat., 1000 m alt ”, VII. 1905, Le Rat s. n. as “ Chiloscyphus cymbaliferus ” (REN).</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Zealand. Auckland Islands, not seen. SPECIMEN EXAMINED. — New Caledonia. South Province, Mt. Mou, VII. 1909, Le Rat s. n. as “ Chiloscyphus cymbaliferus ” (REN); Mt. Dzumac, “ ad arbores in silvat., 1000 m alt ”, VII. 1905, Le Rat s. n. as “ Chiloscyphus cymbaliferus ” (REN).</p>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Heteroscyphus allodontus (Hook.f. &amp; Taylor)             Heteroscyphus knightii (Steph.) J.J.Engel &amp;
+    <pre class="description-text">Heteroscyphus allodontus (Hook.f. &amp; Taylor)             Heteroscyphus knightii (Steph.) J.J.Engel &amp;
        ].].Engel &amp; R.M.Schust.                                 R.M.Schust.
        Chiloscyphus allodontus (Hook.f. &amp; Taylor)              Heteroscyphus tridentatus (Mitt.) ].].Engel &amp;
        E.A.Hodgs.                                              R.M.Schust.
@@ -322,25 +307,31 @@ Boesen, D.F. 1982. The taxonomy of Drucella Hodgs. and                 journal o
        Drucelleae, trib. nov. and their position within        Campbell, E.O. 1997. Some additions and alterations to
        Lepidozioideae Limpr. Lindbergia 8: 77-88.                       the liverwort and hornwort flora of the
 Braggins, J. 1998. Cololejeunea cardiocarpa (Lejeuneaceae) a            Kermadec Islands. New Zealand Botanical Society
-        new record of a tropical species of liverwort in               Newsletter 49: 8-10.</p>
+        new record of a tropical species of liverwort in               Newsletter 49: 8-10.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">This Fommon species grows mainly on soil and rotting logs in wet
+    <pre class="description-text">This Fommon species grows mainly on soil and rotting logs in wet
  forest and rainforest. The shoots are typically 5 mm wide, pale
 ·yellow through green to brownish-green. The leaves.are straight­
  sided, the sides drawing closer together towards the leaf apex, where
@@ -463,7 +454,7 @@ Riccia marginata ® Riccia cartilaginosa
 Telaranea centipes ® Ceramanus centipes
 Telaranea dispar ® Kurzia hippurioides
 Telaranea mooreanum ® Tricholepidozia pulcherrima var. mooreana
-Telaranea patentissima ® Neolepidozia patentissima</p>
+Telaranea patentissima ® Neolepidozia patentissima</pre>
     
     
   </details>
@@ -472,14 +463,41 @@ Telaranea patentissima ® Neolepidozia patentissima</p>
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acrochaetium subsimplex</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Asperula subsimplex</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Deflexula subsimplex</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Memnoniella subsimplex</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ptilothamnion subsimplex</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stachybotrys subsimplex</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tetracymbaliella</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tetracymbaliella decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tetracymbaliella rodwayana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tetracymbaliella subsimplex</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -494,22 +512,32 @@ Telaranea patentissima ® Neolepidozia patentissima</p>
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [96.3, 86.0, 109.0, 118.5, 179.4, 173.1, 204.2, 226.0, 212.0, 181.7, 117.7, 136.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.6, 18.7, 16.3, 13.0, 10.1, 8.2, 7.5, 8.4, 10.4, 12.4, 15.4, 16.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.3, 8.1, 6.9, 5.2, 4.1, 2.4, 1.7, 1.8, 3.1, 4.0, 5.8, 6.9], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

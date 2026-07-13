@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,37 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Marsupidium surculosum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Acrobolbaceae</span>
-    <span class="badge secondary">Marsupidium</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (7)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Aimulosia marsupium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eimeria marsupialium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Epibryon marsupidii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Mallotus surculosus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marsupidium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marsupidium knightii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Marsupidium setulosum</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Marsupidium</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -70,35 +48,37 @@
     <p class="big-num">254</p>
     <footer>181 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">10.0&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1585&thinsp;mm</p>
-    <footer>
-      CV 23.9
-    </footer>
+    <footer>annual · CV&thinsp;23.9</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">12</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">7</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -106,134 +86,135 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Wijkia excenuata                                 7         8           38.5
+    <pre class="description-text">Wijkia excenuata                                 7         8           38.5
 
 Leptotheca Raudichaudii                          9         4           33.3
 
@@ -293,16 +274,19 @@ Heteroscyphus billardierei         1   0   2.6
 Heteroscyphus cymbal�fera          I   0   2.6
 Chandonanthus squarrosus           I   0   2.6
 Adelanthus bisetulus               I   0   2.6
-Plagiochilafasciculata             I   0   2.6</p>
+Plagiochilafasciculata             I   0   2.6</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">2      3
+    <pre class="description-text">2      3
                                                                                      -.---~.--~-~
 
                                                                                                          &#34;      5      6
@@ -361,16 +345,19 @@ Saccogynidium decurvum (Mitt.) Grolle                                           
 Schistochila lehmanniana (Lindenb.) Carring. &amp; Pears.                       x                  x
 S. pseudoeiliata Schust.                                                                                        x
 S. lasmaniea Steph.                                                                            x                x
-Symphogyna podophylla (Thunb.) Mont. &amp; Nees                                                    x                x</p>
+Symphogyna podophylla (Thunb.) Mont. &amp; Nees                                                    x                x</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">[nom inval. and synonym in Vana 1975]         Lepicolea attenuata (Mitt.) Steph.
+    <pre class="description-text">[nom inval. and synonym in Vana 1975]         Lepicolea attenuata (Mitt.) Steph.
         Jungermannia rufiflora Colenso                 Lepicolea scolopendra (Hook.) Trevis.
 Jungermannia orbiculata (Colenso) Grolle               Lepidogyna hodgsoniae (Grolle) R.M.Schust.
         Jungermannia hodgsoniae Grolle                         Lepidolaena hodgsoniae Grolle
@@ -494,16 +481,19 @@ hymenophyllum
 Symphyogyna prolifera - Symphyogyna tenuinervis
 Taxilejeunea gracilipes - Lejeunea gracilipes
 Telaranea dispar - Kurzia hippuroides
-Tetracymbaliella cymbalifera - Heteroscyphus</p>
+Tetracymbaliella cymbalifera - Heteroscyphus</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">more common than supposed. It is probably overlooked because it
+    <pre class="description-text">more common than supposed. It is probably overlooked because it
 often grows among _other bryophytes on trees in rainforest and wet
 forest. It is very rarely found on soil. The shoots are brown to green,
 always with a yellow tinge. The more or less circular leaves (to
@@ -751,16 +741,19 @@ Notoligotrichum                                                                 
                                                                             Pleurophascum
 Orthodontium lineare ....................................... 146                grandiglobum ............................................ 102
 Orthorrhynchium elegans .................................. 34                   occidentale ................................................ 102
-Orthotrichum                                                                Podomitrium phyllanthus ................................ 192</p>
+Orthotrichum                                                                Podomitrium phyllanthus ................................ 192</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">up to 20 mm in diameter, the lobe ruffled and lamellate on
+    <pre class="description-text">up to 20 mm in diameter, the lobe ruffled and lamellate on
                                                                                                                                                                                     dorsal surface; mature capsule enclosed in a bulbous central
                                                                                                                                                                                     involucre ................................................................................ Petalophyllum preissii
                                                                                                                                                                                   Rhizoids usually crimson; thallus not lamellate; mature capsule
@@ -880,7 +873,7 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                Group D
                                                                                                                                                                                Leafy liverworts with underleaves and incubous leaves
                                                                                                                                                                                1   Leaves with ventral lobules ............................................................................ Group A
-                                                                                                                                                                                   Leaves without ventral lobules .................................................................................... 2</p>
+                                                                                                                                                                                   Leaves without ventral lobules .................................................................................... 2</pre>
     
     
   </details>
@@ -889,14 +882,35 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Aimulosia marsupium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eimeria marsupialium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Epibryon marsupidii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Mallotus surculosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marsupidium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marsupidium knightii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marsupidium setulosum</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -911,22 +925,32 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [83.3, 73.7, 92.9, 101.5, 151.0, 149.5, 174.6, 193.4, 176.7, 154.1, 101.4, 113.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.0, 20.1, 17.8, 14.6, 11.8, 9.8, 9.2, 10.1, 12.0, 13.9, 16.7, 18.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.5, 8.3, 6.4, 4.9, 3.2, 2.7, 2.8, 4.2, 5.2, 7.0, 8.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

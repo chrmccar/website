@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,49 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Isolembidium anomalum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lepidoziaceae</span>
-    <span class="badge secondary">Isolembidium</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (13)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Aenictophyton anomalum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Allomyces anomalus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Corneohydnum anomalum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Isolembidium</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Isolembidium anomalum var. anomalum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Isolembidium anomalum var. cucullatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptosema anomalum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Prophlias anomalus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Isolembidium cucullatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lembidium anomalum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lembidium cucullatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lepidozia subgen</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Micrisophylla Fulford</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Isolembidium</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -82,21 +48,25 @@
     <p class="big-num">55</p>
     <footer>38 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">7</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">13</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -104,94 +74,100 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.6</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.6</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chiloscyphus cuneistipulus Steph.                       Chiloscyphus polycladus (Hook.f. &amp; Taylor)
+    <pre class="description-text">Chiloscyphus cuneistipulus Steph.                       Chiloscyphus polycladus (Hook.f. &amp; Taylor)
 Heteroscyphus cymbaliferus (Hook.f. &amp; Taylor)                  Mitt.
        ].].Engel &amp; R.M.Schust.                          Heteroscyphus renistipulus (Steph.) Schiffn.
        Tetracymbaliella cymbalifera (Hook.f. &amp;                 Chiloscyphus renistipulus Steph.
@@ -315,54 +291,63 @@ australis                                            Lepidozia meridiana var. pa
 paludicola                                             Lophocolea spinifera - Chiloscyphus spiniferus
 Lethocolea squamata - Lethocolea pansa                 Lophocolea subporosa - Chiloscyphus subporosa
 Lophocolea amplectens - Clasmatocolea inflexispina     Lophocolea variabilis - Chiloscyphus variabilis
-Lophocolea austrigena - Chiloscyphus austrigenus       Lophocolea villosa - Chiloscyphus villosus</p>
+Lophocolea austrigena - Chiloscyphus austrigenus       Lophocolea villosa - Chiloscyphus villosus</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (4 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(4)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants decurved to cernuous distally. Terminal branching ± regular, l-2(3)-pinnate, the branches crowded toward the distal sector of leading shoots and defining a deltoid to subflabellate outline; branch leaves (particularly the narrower, more elongate ones of secondary and tertiary branches as well as distal sectors of primary branches) often with denticulate-dentate apices. Stems rather stiff, in basal portion of well-developed shoots becoming ± woody, dark and brown and ultimately leafless with age; medulla 19-22 cells high. Distribution and Ecology: New Zealand: South Island (60-600 m); Australia: Tasmania. Known in New Zealand from Canterbury (Arthur’s Pass) and Western Nelson (Punakaiki, Stockton Plateau) EPs. The typical variety is known from only a few South Island sites, e.g., in a pakihi 20 km N of Punakaiki at 60 m. At Arthur’s Pass (Coral track, 600 m) it occurs on wet peaty soil in a forest of Nothofagus solandri var. cliffortioides, Phyllocladus alpinus, Coprosma pseudocuneata and C.foetidissima, with Sphagnum falcatulum and Riccardia crassa. At Stockton Plateau it occurs on Mt. Augustus at 960 m under Metrosideros umbellata and N. menziesii scrub on a granite rock outcrop, with Adelanthus occlusus and Kurzia hippuroides, and at Cypress Stream (also Stockton Plateau, 700 m) under Chionochloa juncea and Empodisma minus tus- sockland, on soil with Anastrophyllum schismoides, Dicranoloma robustum, Gackstroemia alpina and Riccardia crassa.</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants straight distally, not decurved. Terminal branching irregular, remote, sporadic on weaker plants, not aggregated to form a deltoid to subflabellate outline; branch leaves with apices consistently entire, edentate. Stems with medulla 10-14 cells high. Distribution and Ecology: New Zealand: Campbell Island, Auckland Islands, Stewart Island (5 m); Australia: Tasmania. This rare variety grows on Campbell Island usually as isolated stems in alpine moors, e.g., summit of Mt. Faye (Schuster, 2000a). On Stewart Island plants occur over a humus layer and dead debris under a dense layer of Gleichenia in a small open area among Leptospermum sco- parium scrub in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1 -2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (track to Mason Bay, ca. 1-1.8 km W of Freshwater Landing, 5 m). Comments: A distinctive plant, readily recognized by its erect growth and triseriate shoots, with identical leaves and underleaves, which are strongly concave or even hooded at the apices. The opaque, undivided, polystratose leaves with a field of swollen cells at the apex are distinctive. The stem anatomy is also notable. We are not certain that the two varieties will be able to be maintained when more collections come to hand. It is possible that var. cucullatum is merely a form of difficult conditions, e.g., exposed sites on Stewart Island or alpine areas. In both areas plants tend to occur as isolated individuals in a peaty low turf. Under such conditions, branching of the erect sectors of the gametophyte may be much reduced, so that the pinnate aspect fails to develop. Lembidium Mitt. Lembidium Mitt, in Hook.f., Handb. N. Zeal. El. 2: 751, 754. 1867, nom. cons.; Herzog, Ark. Bot. N.S. 1: All. 1952 (1951), /7. p., subg. Heterodictyon only. Plants strongly anisophyllous, erect, light to whitish green, secondary pigmentation lacking, moderate in size, to 1.6 mm wide, the leafy erect shoots with apices usually decurved, cir- cinate or even hamate. Branching polymorphous: bearing ventral-intercalary, creeping, elongated and interwoven stolons in abundance; leafy branches erect, ventral-intercalary in origin from the felt-like mat of stoloniferous branches, the erect leafy axes sporadically to commonly branching, the branches of the Erullania type or sometimes ventral-intercalary; Erullania-iypc Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Zoopsidella caledonica (Steph.) lamina of leaf, note that ehloroplasts (not shaded) are ± size of the oil-bodies. 3. Isolembidium (Berggr.) R.M.Sehust. Cells of lower-middle of leaf. (Fig. 1, from Glenny 9099, New Zealand, South Is., Westland EP, Mt. Brown; 2, from Glenny 8911, New Zealand, South Is., Western Nelson EP, Waimangaroa R., S end of Happy Valley (Cypress Stream); 3, from Glenny 9350, New Zealand, South Is., Western Nelson EP, Mt. Augustus; 4, from Glenny 9399b, New Zealand, South Is., Western Nelson EP, Brunner Ra.) branches bazzanioid: from one side of axis only; lateral-intercalary branching apparently absent (at least in leafy shoot sectors). Stems of leafy shoots with cortical cells exceedingly large by comparison to leaf cells, the cortical cells often a little larger than the leptodermous medullary cells. Rhizoids lacking on erect, leafy shoots, present in small groups on stolons. Leaves distichous, rather widely laterally spreading, the insertion transverse to weakly or dis- tinctly incubous, canaliculate-conduplicate, boat-shaped but without a keel, the dorsal halves lying slightly more displaced toward shoot apex than the ventral, incubously imbricate, the leaf thus with an incubous appearance in dorsal aspect, the leaves unistratose throughout; apices undivided and entire to emarginate or bidentate, or 4-dentate, or (3)4-lobate; leaf margins entire or irregularly toothed. Cells leptodermous throughout, at most the cells above the base with slight, evenly thickened walls; cells in basal area becoming very large, more inflated, forming a distinct area basalis, the cells of all but the area basalis relatively small, sub¬ quadrate to oblong to polygonal; surface papillose, the surface of area basalis cells smooth or striolate or papillose. Oil-bodies totally lacking in both leaf and stem cells; oil-droplets present in some populations of Lembidium nutans, tiny, homogeneous. Underleaves conspicuous throughout, ca. 0.5 the width and 0.3 the area of the lateral leaves, the apices crenulate- denticulate to shallowly or deeply bilobed. Asexual reproduction absent, or (L. longifolium) via caducous leaf lobes. Androecia (known only for Lembidium nutans) on short, apparently always ventral- intercalary branches from near the bases of erect, leafy stems or from stolons, short and spi- cate; bracts ovate, inflated; antheridia 1(2) per bract, the stalk rather short, uniseriate; bracte- olar antheridia rare. Gynoecia on very short, apparently ventral- or lateral-intercalary branches, from ± fleshy, microphyllous shoot bases. Gynoecial bracts in 3 series, gradually larger, imbricate, those of innermost series lanceolate to narrowly ovate-lanceolate, tapered to a narrow, pointed or bidenticulate tip; upper margins and apex with ± crenulate margins by free ends of elongated cells, otherwise entire. Perianth exceedingly slender, trigonous, very long (ca. 7X longer than wide) and extremely attenuated, fusiform, the apex shallowly to obscurely lobulate and crenulate with narrow, often curved cells that are somewhat thick- walled and free at the rounded, finger-like tips (or occasionally a few cells wholly free), the cells distinctly papillose (although perianth below apex is smooth). Sporophyte known only in Lembidium nutans. Seta formed of 8(9) rows of very large outer cells surrounding a core of numerous, much smaller cells. Capsule long-ellipsoidal, ranging from 350 X 1 120 juim to 560 X 1400 |ULm, the wall (2)3-stratose; outer layer of cells with nodular (radial) thickenings of, generally, both faces of alternating longitudinal walls, the thicken¬ ings ± confluent to form continuous sheets; innermost layer of cells with semi annular bands, the bands usually complete. Spores 12.5-14.4 juim in diam., dark yellowish brown, rather coarsely papillose, with short irregular papillae coalescing to form clumps or short ridges that rarely delimit areolae. Elaters rigid, ± straight, 8.6-11.5 juim wide, slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 |ULm wide. Type: Lembidium nutans (Hook.f. &amp; Taylor) Mitt. (= Jungermannia nutans Hook.f. &amp; Taylor) A genus with only two species, both found only in New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a). Key to Species la. Leaves relatively short, appearing inflated, without a discernible median longitudinal ‘‘keel,” with apices unlobed and entire to 2-4-dentate; leaf margins untoothed or with an isolated few-celled tooth; plants whitish green, the leafy shoots erect from a stolonifer- ous base; leafy shoots simple or sporadically with a single Frullania-iy^Q branch; shoot tips cernuous; cells of leaves strikingly dimorphic: basal cells inflated, smooth or striate, very large (ca. 25-60 X 70-120 juim), contrasted to distal and lateral cells, which are very small (ca. 16-22 X 20-26 juim), thick- walled and papillose; underleaves suborbic- ular, not strikingly bifid, the disc margins unarmed . L. nutans (p. 508) lb. Leaves strongly elongated, folded-canaliculate and the lateral half of a canoe in form, with apices clearly (3)4-lobed; leaf margins sinuous and irregularly toothed and rather ragged; plants bluish green in life, the leafy shoots loosely to closely adnate to substrate; leafy shoots with 1-2(4) terminal branches all originating from one side of stem; shoot tips virtually straight; cells of leaves not sharply dimorphic: basal cells not inflated, gradually larger toward base (ca. 16-25[32] X 38-62[82] juim), the subapical cells slightly narrower (ca. 15-21 X 20-28 [45] juim), the cells all rather thin-walled, all densely papillose; underleaves elongated, with 2 drawn-out apical lobes, the disc margins armed with several cilia . L. longifolium (p. 506)</p>
-    
-    
-    
-    <p><strong>morphological_description:</strong> Plants decurved to cernuous distally. Terminal branching ± regular, l-2(3)-pinnate, the branches crowded toward the distal sector of leading shoots and defining a deltoid to subflabellate outline; branch leaves (particularly the narrower, more elongate ones of secondary and tertiary branches as well as distal sectors of primary branches) often with denticulate-dentate apices. Stems rather stiff, in basal portion of well-developed shoots becoming ± woody, dark and brown and ultimately leafless with age; medulla 19-22 cells high. Distribution and Ecology: New Zealand: South Island (60-600 m); Australia: Tasmania. Known in New Zealand from Canterbury (Arthur’s Pass) and Western Nelson (Punakaiki, Stockton Plateau) EPs. The typical variety is known from only a few South Island sites, e.g., in a pakihi 20 km N of Punakaiki at 60 m. At Arthur’s Pass (Coral track, 600 m) it occurs on wet peaty soil in a forest of Nothofagus solandri var. cliffortioides, Phyllocladus alpinus, Coprosma pseudocuneata and C.foetidissima, with Sphagnum falcatulum and Riccardia crassa. At Stockton Plateau it occurs on Mt. Augustus at 960 m under Metrosideros umbellata and N. menziesii scrub on a granite rock outcrop, with Adelanthus occlusus and Kurzia hippuroides, and at Cypress Stream (also Stockton Plateau, 700 m) under Chionochloa juncea and Empodisma minus tus- sockland, on soil with Anastrophyllum schismoides, Dicranoloma robustum, Gackstroemia alpina and Riccardia crassa.</p>
+    <pre class="description-text">Plants decurved to cernuous distally. Terminal branching ± regular, l-2(3)-pinnate, the branches crowded toward the distal sector of leading shoots and defining a deltoid to subflabellate outline; branch leaves (particularly the narrower, more elongate ones of secondary and tertiary branches as well as distal sectors of primary branches) often with denticulate-dentate apices. Stems rather stiff, in basal portion of well-developed shoots becoming ± woody, dark and brown and ultimately leafless with age; medulla 19-22 cells high. Distribution and Ecology: New Zealand: South Island (60-600 m); Australia: Tasmania. Known in New Zealand from Canterbury (Arthur’s Pass) and Western Nelson (Punakaiki, Stockton Plateau) EPs. The typical variety is known from only a few South Island sites, e.g., in a pakihi 20 km N of Punakaiki at 60 m. At Arthur’s Pass (Coral track, 600 m) it occurs on wet peaty soil in a forest of Nothofagus solandri var. cliffortioides, Phyllocladus alpinus, Coprosma pseudocuneata and C.foetidissima, with Sphagnum falcatulum and Riccardia crassa. At Stockton Plateau it occurs on Mt. Augustus at 960 m under Metrosideros umbellata and N. menziesii scrub on a granite rock outcrop, with Adelanthus occlusus and Kurzia hippuroides, and at Cypress Stream (also Stockton Plateau, 700 m) under Chionochloa juncea and Empodisma minus tus- sockland, on soil with Anastrophyllum schismoides, Dicranoloma robustum, Gackstroemia alpina and Riccardia crassa.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants straight distally, not decurved. Terminal branching irregular, remote, sporadic on weaker plants, not aggregated to form a deltoid to subflabellate outline; branch leaves with apices consistently entire, edentate. Stems with medulla 10-14 cells high. Distribution and Ecology: New Zealand: Campbell Island, Auckland Islands, Stewart Island (5 m); Australia: Tasmania. This rare variety grows on Campbell Island usually as isolated stems in alpine moors, e.g., summit of Mt. Faye (Schuster, 2000a). On Stewart Island plants occur over a humus layer and dead debris under a dense layer of Gleichenia in a small open area among Leptospermum sco- parium scrub in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1 -2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (track to Mason Bay, ca. 1-1.8 km W of Freshwater Landing, 5 m). Comments: A distinctive plant, readily recognized by its erect growth and triseriate shoots, with identical leaves and underleaves, which are strongly concave or even hooded at the apices. The opaque, undivided, polystratose leaves with a field of swollen cells at the apex are distinctive. The stem anatomy is also notable. We are not certain that the two varieties will be able to be maintained when more collections come to hand. It is possible that var. cucullatum is merely a form of difficult conditions, e.g., exposed sites on Stewart Island or alpine areas. In both areas plants tend to occur as isolated individuals in a peaty low turf. Under such conditions, branching of the erect sectors of the gametophyte may be much reduced, so that the pinnate aspect fails to develop. Lembidium Mitt. Lembidium Mitt, in Hook.f., Handb. N. Zeal. El. 2: 751, 754. 1867, nom. cons.; Herzog, Ark. Bot. N.S. 1: All. 1952 (1951), /7. p., subg. Heterodictyon only. Plants strongly anisophyllous, erect, light to whitish green, secondary pigmentation lacking, moderate in size, to 1.6 mm wide, the leafy erect shoots with apices usually decurved, cir- cinate or even hamate. Branching polymorphous: bearing ventral-intercalary, creeping, elongated and interwoven stolons in abundance; leafy branches erect, ventral-intercalary in origin from the felt-like mat of stoloniferous branches, the erect leafy axes sporadically to commonly branching, the branches of the Erullania type or sometimes ventral-intercalary; Erullania-iypc Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Zoopsidella caledonica (Steph.) lamina of leaf, note that ehloroplasts (not shaded) are ± size of the oil-bodies. 3. Isolembidium (Berggr.) R.M.Sehust. Cells of lower-middle of leaf. (Fig. 1, from Glenny 9099, New Zealand, South Is., Westland EP, Mt. Brown; 2, from Glenny 8911, New Zealand, South Is., Western Nelson EP, Waimangaroa R., S end of Happy Valley (Cypress Stream); 3, from Glenny 9350, New Zealand, South Is., Western Nelson EP, Mt. Augustus; 4, from Glenny 9399b, New Zealand, South Is., Western Nelson EP, Brunner Ra.) branches bazzanioid: from one side of axis only; lateral-intercalary branching apparently absent (at least in leafy shoot sectors). Stems of leafy shoots with cortical cells exceedingly large by comparison to leaf cells, the cortical cells often a little larger than the leptodermous medullary cells. Rhizoids lacking on erect, leafy shoots, present in small groups on stolons. Leaves distichous, rather widely laterally spreading, the insertion transverse to weakly or dis- tinctly incubous, canaliculate-conduplicate, boat-shaped but without a keel, the dorsal halves lying slightly more displaced toward shoot apex than the ventral, incubously imbricate, the leaf thus with an incubous appearance in dorsal aspect, the leaves unistratose throughout; apices undivided and entire to emarginate or bidentate, or 4-dentate, or (3)4-lobate; leaf margins entire or irregularly toothed. Cells leptodermous throughout, at most the cells above the base with slight, evenly thickened walls; cells in basal area becoming very large, more inflated, forming a distinct area basalis, the cells of all but the area basalis relatively small, sub¬ quadrate to oblong to polygonal; surface papillose, the surface of area basalis cells smooth or striolate or papillose. Oil-bodies totally lacking in both leaf and stem cells; oil-droplets present in some populations of Lembidium nutans, tiny, homogeneous. Underleaves conspicuous throughout, ca. 0.5 the width and 0.3 the area of the lateral leaves, the apices crenulate- denticulate to shallowly or deeply bilobed. Asexual reproduction absent, or (L. longifolium) via caducous leaf lobes. Androecia (known only for Lembidium nutans) on short, apparently always ventral- intercalary branches from near the bases of erect, leafy stems or from stolons, short and spi- cate; bracts ovate, inflated; antheridia 1(2) per bract, the stalk rather short, uniseriate; bracte- olar antheridia rare. Gynoecia on very short, apparently ventral- or lateral-intercalary branches, from ± fleshy, microphyllous shoot bases. Gynoecial bracts in 3 series, gradually larger, imbricate, those of innermost series lanceolate to narrowly ovate-lanceolate, tapered to a narrow, pointed or bidenticulate tip; upper margins and apex with ± crenulate margins by free ends of elongated cells, otherwise entire. Perianth exceedingly slender, trigonous, very long (ca. 7X longer than wide) and extremely attenuated, fusiform, the apex shallowly to obscurely lobulate and crenulate with narrow, often curved cells that are somewhat thick- walled and free at the rounded, finger-like tips (or occasionally a few cells wholly free), the cells distinctly papillose (although perianth below apex is smooth). Sporophyte known only in Lembidium nutans. Seta formed of 8(9) rows of very large outer cells surrounding a core of numerous, much smaller cells. Capsule long-ellipsoidal, ranging from 350 X 1 120 juim to 560 X 1400 |ULm, the wall (2)3-stratose; outer layer of cells with nodular (radial) thickenings of, generally, both faces of alternating longitudinal walls, the thicken¬ ings ± confluent to form continuous sheets; innermost layer of cells with semi annular bands, the bands usually complete. Spores 12.5-14.4 juim in diam., dark yellowish brown, rather coarsely papillose, with short irregular papillae coalescing to form clumps or short ridges that rarely delimit areolae. Elaters rigid, ± straight, 8.6-11.5 juim wide, slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 |ULm wide. Type: Lembidium nutans (Hook.f. &amp; Taylor) Mitt. (= Jungermannia nutans Hook.f. &amp; Taylor) A genus with only two species, both found only in New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a). Key to Species la. Leaves relatively short, appearing inflated, without a discernible median longitudinal ‘‘keel,” with apices unlobed and entire to 2-4-dentate; leaf margins untoothed or with an isolated few-celled tooth; plants whitish green, the leafy shoots erect from a stolonifer- ous base; leafy shoots simple or sporadically with a single Frullania-iy^Q branch; shoot tips cernuous; cells of leaves strikingly dimorphic: basal cells inflated, smooth or striate, very large (ca. 25-60 X 70-120 juim), contrasted to distal and lateral cells, which are very small (ca. 16-22 X 20-26 juim), thick- walled and papillose; underleaves suborbic- ular, not strikingly bifid, the disc margins unarmed . L. nutans (p. 508) lb. Leaves strongly elongated, folded-canaliculate and the lateral half of a canoe in form, with apices clearly (3)4-lobed; leaf margins sinuous and irregularly toothed and rather ragged; plants bluish green in life, the leafy shoots loosely to closely adnate to substrate; leafy shoots with 1-2(4) terminal branches all originating from one side of stem; shoot tips virtually straight; cells of leaves not sharply dimorphic: basal cells not inflated, gradually larger toward base (ca. 16-25[32] X 38-62[82] juim), the subapical cells slightly narrower (ca. 15-21 X 20-28 [45] juim), the cells all rather thin-walled, all densely papillose; underleaves elongated, with 2 drawn-out apical lobes, the disc margins armed with several cilia . L. longifolium (p. 506)</p>
+    <pre class="description-text">Plants straight distally, not decurved. Terminal branching irregular, remote, sporadic on weaker plants, not aggregated to form a deltoid to subflabellate outline; branch leaves with apices consistently entire, edentate. Stems with medulla 10-14 cells high. Distribution and Ecology: New Zealand: Campbell Island, Auckland Islands, Stewart Island (5 m); Australia: Tasmania. This rare variety grows on Campbell Island usually as isolated stems in alpine moors, e.g., summit of Mt. Faye (Schuster, 2000a). On Stewart Island plants occur over a humus layer and dead debris under a dense layer of Gleichenia in a small open area among Leptospermum sco- parium scrub in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1 -2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (track to Mason Bay, ca. 1-1.8 km W of Freshwater Landing, 5 m). Comments: A distinctive plant, readily recognized by its erect growth and triseriate shoots, with identical leaves and underleaves, which are strongly concave or even hooded at the apices. The opaque, undivided, polystratose leaves with a field of swollen cells at the apex are distinctive. The stem anatomy is also notable. We are not certain that the two varieties will be able to be maintained when more collections come to hand. It is possible that var. cucullatum is merely a form of difficult conditions, e.g., exposed sites on Stewart Island or alpine areas. In both areas plants tend to occur as isolated individuals in a peaty low turf. Under such conditions, branching of the erect sectors of the gametophyte may be much reduced, so that the pinnate aspect fails to develop. Lembidium Mitt. Lembidium Mitt, in Hook.f., Handb. N. Zeal. El. 2: 751, 754. 1867, nom. cons.; Herzog, Ark. Bot. N.S. 1: All. 1952 (1951), /7. p., subg. Heterodictyon only. Plants strongly anisophyllous, erect, light to whitish green, secondary pigmentation lacking, moderate in size, to 1.6 mm wide, the leafy erect shoots with apices usually decurved, cir- cinate or even hamate. Branching polymorphous: bearing ventral-intercalary, creeping, elongated and interwoven stolons in abundance; leafy branches erect, ventral-intercalary in origin from the felt-like mat of stoloniferous branches, the erect leafy axes sporadically to commonly branching, the branches of the Erullania type or sometimes ventral-intercalary; Erullania-iypc Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Zoopsidella caledonica (Steph.) lamina of leaf, note that ehloroplasts (not shaded) are ± size of the oil-bodies. 3. Isolembidium (Berggr.) R.M.Sehust. Cells of lower-middle of leaf. (Fig. 1, from Glenny 9099, New Zealand, South Is., Westland EP, Mt. Brown; 2, from Glenny 8911, New Zealand, South Is., Western Nelson EP, Waimangaroa R., S end of Happy Valley (Cypress Stream); 3, from Glenny 9350, New Zealand, South Is., Western Nelson EP, Mt. Augustus; 4, from Glenny 9399b, New Zealand, South Is., Western Nelson EP, Brunner Ra.) branches bazzanioid: from one side of axis only; lateral-intercalary branching apparently absent (at least in leafy shoot sectors). Stems of leafy shoots with cortical cells exceedingly large by comparison to leaf cells, the cortical cells often a little larger than the leptodermous medullary cells. Rhizoids lacking on erect, leafy shoots, present in small groups on stolons. Leaves distichous, rather widely laterally spreading, the insertion transverse to weakly or dis- tinctly incubous, canaliculate-conduplicate, boat-shaped but without a keel, the dorsal halves lying slightly more displaced toward shoot apex than the ventral, incubously imbricate, the leaf thus with an incubous appearance in dorsal aspect, the leaves unistratose throughout; apices undivided and entire to emarginate or bidentate, or 4-dentate, or (3)4-lobate; leaf margins entire or irregularly toothed. Cells leptodermous throughout, at most the cells above the base with slight, evenly thickened walls; cells in basal area becoming very large, more inflated, forming a distinct area basalis, the cells of all but the area basalis relatively small, sub¬ quadrate to oblong to polygonal; surface papillose, the surface of area basalis cells smooth or striolate or papillose. Oil-bodies totally lacking in both leaf and stem cells; oil-droplets present in some populations of Lembidium nutans, tiny, homogeneous. Underleaves conspicuous throughout, ca. 0.5 the width and 0.3 the area of the lateral leaves, the apices crenulate- denticulate to shallowly or deeply bilobed. Asexual reproduction absent, or (L. longifolium) via caducous leaf lobes. Androecia (known only for Lembidium nutans) on short, apparently always ventral- intercalary branches from near the bases of erect, leafy stems or from stolons, short and spi- cate; bracts ovate, inflated; antheridia 1(2) per bract, the stalk rather short, uniseriate; bracte- olar antheridia rare. Gynoecia on very short, apparently ventral- or lateral-intercalary branches, from ± fleshy, microphyllous shoot bases. Gynoecial bracts in 3 series, gradually larger, imbricate, those of innermost series lanceolate to narrowly ovate-lanceolate, tapered to a narrow, pointed or bidenticulate tip; upper margins and apex with ± crenulate margins by free ends of elongated cells, otherwise entire. Perianth exceedingly slender, trigonous, very long (ca. 7X longer than wide) and extremely attenuated, fusiform, the apex shallowly to obscurely lobulate and crenulate with narrow, often curved cells that are somewhat thick- walled and free at the rounded, finger-like tips (or occasionally a few cells wholly free), the cells distinctly papillose (although perianth below apex is smooth). Sporophyte known only in Lembidium nutans. Seta formed of 8(9) rows of very large outer cells surrounding a core of numerous, much smaller cells. Capsule long-ellipsoidal, ranging from 350 X 1 120 juim to 560 X 1400 |ULm, the wall (2)3-stratose; outer layer of cells with nodular (radial) thickenings of, generally, both faces of alternating longitudinal walls, the thicken¬ ings ± confluent to form continuous sheets; innermost layer of cells with semi annular bands, the bands usually complete. Spores 12.5-14.4 juim in diam., dark yellowish brown, rather coarsely papillose, with short irregular papillae coalescing to form clumps or short ridges that rarely delimit areolae. Elaters rigid, ± straight, 8.6-11.5 juim wide, slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 |ULm wide. Type: Lembidium nutans (Hook.f. &amp; Taylor) Mitt. (= Jungermannia nutans Hook.f. &amp; Taylor) A genus with only two species, both found only in New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a). Key to Species la. Leaves relatively short, appearing inflated, without a discernible median longitudinal ‘‘keel,” with apices unlobed and entire to 2-4-dentate; leaf margins untoothed or with an isolated few-celled tooth; plants whitish green, the leafy shoots erect from a stolonifer- ous base; leafy shoots simple or sporadically with a single Frullania-iy^Q branch; shoot tips cernuous; cells of leaves strikingly dimorphic: basal cells inflated, smooth or striate, very large (ca. 25-60 X 70-120 juim), contrasted to distal and lateral cells, which are very small (ca. 16-22 X 20-26 juim), thick- walled and papillose; underleaves suborbic- ular, not strikingly bifid, the disc margins unarmed . L. nutans (p. 508) lb. Leaves strongly elongated, folded-canaliculate and the lateral half of a canoe in form, with apices clearly (3)4-lobed; leaf margins sinuous and irregularly toothed and rather ragged; plants bluish green in life, the leafy shoots loosely to closely adnate to substrate; leafy shoots with 1-2(4) terminal branches all originating from one side of stem; shoot tips virtually straight; cells of leaves not sharply dimorphic: basal cells not inflated, gradually larger toward base (ca. 16-25[32] X 38-62[82] juim), the subapical cells slightly narrower (ca. 15-21 X 20-28 [45] juim), the cells all rather thin-walled, all densely papillose; underleaves elongated, with 2 drawn-out apical lobes, the disc margins armed with several cilia . L. longifolium (p. 506)</pre>
     
     
-  </details>
-  
-  <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
+    
+    <pre class="description-text">Plants decurved to cernuous distally. Terminal branching ± regular, l-2(3)-pinnate, the branches crowded toward the distal sector of leading shoots and defining a deltoid to subflabellate outline; branch leaves (particularly the narrower, more elongate ones of secondary and tertiary branches as well as distal sectors of primary branches) often with denticulate-dentate apices. Stems rather stiff, in basal portion of well-developed shoots becoming ± woody, dark and brown and ultimately leafless with age; medulla 19-22 cells high. Distribution and Ecology: New Zealand: South Island (60-600 m); Australia: Tasmania. Known in New Zealand from Canterbury (Arthur’s Pass) and Western Nelson (Punakaiki, Stockton Plateau) EPs. The typical variety is known from only a few South Island sites, e.g., in a pakihi 20 km N of Punakaiki at 60 m. At Arthur’s Pass (Coral track, 600 m) it occurs on wet peaty soil in a forest of Nothofagus solandri var. cliffortioides, Phyllocladus alpinus, Coprosma pseudocuneata and C.foetidissima, with Sphagnum falcatulum and Riccardia crassa. At Stockton Plateau it occurs on Mt. Augustus at 960 m under Metrosideros umbellata and N. menziesii scrub on a granite rock outcrop, with Adelanthus occlusus and Kurzia hippuroides, and at Cypress Stream (also Stockton Plateau, 700 m) under Chionochloa juncea and Empodisma minus tus- sockland, on soil with Anastrophyllum schismoides, Dicranoloma robustum, Gackstroemia alpina and Riccardia crassa.</pre>
     
     
-    <p><strong>conservation_status:</strong> Threatened - Nationally Critical</p>
+    
+    <pre class="description-text">Plants straight distally, not decurved. Terminal branching irregular, remote, sporadic on weaker plants, not aggregated to form a deltoid to subflabellate outline; branch leaves with apices consistently entire, edentate. Stems with medulla 10-14 cells high. Distribution and Ecology: New Zealand: Campbell Island, Auckland Islands, Stewart Island (5 m); Australia: Tasmania. This rare variety grows on Campbell Island usually as isolated stems in alpine moors, e.g., summit of Mt. Faye (Schuster, 2000a). On Stewart Island plants occur over a humus layer and dead debris under a dense layer of Gleichenia in a small open area among Leptospermum sco- parium scrub in mosaic communities of stagnant ponds. Sphagnum bog, open Leptospermum scoparium - Dracophyllum heath to 1 -2 m tall and dense communities of Gleichenia dicarpa and Empodisma minus (track to Mason Bay, ca. 1-1.8 km W of Freshwater Landing, 5 m). Comments: A distinctive plant, readily recognized by its erect growth and triseriate shoots, with identical leaves and underleaves, which are strongly concave or even hooded at the apices. The opaque, undivided, polystratose leaves with a field of swollen cells at the apex are distinctive. The stem anatomy is also notable. We are not certain that the two varieties will be able to be maintained when more collections come to hand. It is possible that var. cucullatum is merely a form of difficult conditions, e.g., exposed sites on Stewart Island or alpine areas. In both areas plants tend to occur as isolated individuals in a peaty low turf. Under such conditions, branching of the erect sectors of the gametophyte may be much reduced, so that the pinnate aspect fails to develop. Lembidium Mitt. Lembidium Mitt, in Hook.f., Handb. N. Zeal. El. 2: 751, 754. 1867, nom. cons.; Herzog, Ark. Bot. N.S. 1: All. 1952 (1951), /7. p., subg. Heterodictyon only. Plants strongly anisophyllous, erect, light to whitish green, secondary pigmentation lacking, moderate in size, to 1.6 mm wide, the leafy erect shoots with apices usually decurved, cir- cinate or even hamate. Branching polymorphous: bearing ventral-intercalary, creeping, elongated and interwoven stolons in abundance; leafy branches erect, ventral-intercalary in origin from the felt-like mat of stoloniferous branches, the erect leafy axes sporadically to commonly branching, the branches of the Erullania type or sometimes ventral-intercalary; Erullania-iypc Oil-bodies, all with the outline of a few ehloroplasts ineluded. 1. Zoopsidella caledonica (Steph.) lamina of leaf, note that ehloroplasts (not shaded) are ± size of the oil-bodies. 3. Isolembidium (Berggr.) R.M.Sehust. Cells of lower-middle of leaf. (Fig. 1, from Glenny 9099, New Zealand, South Is., Westland EP, Mt. Brown; 2, from Glenny 8911, New Zealand, South Is., Western Nelson EP, Waimangaroa R., S end of Happy Valley (Cypress Stream); 3, from Glenny 9350, New Zealand, South Is., Western Nelson EP, Mt. Augustus; 4, from Glenny 9399b, New Zealand, South Is., Western Nelson EP, Brunner Ra.) branches bazzanioid: from one side of axis only; lateral-intercalary branching apparently absent (at least in leafy shoot sectors). Stems of leafy shoots with cortical cells exceedingly large by comparison to leaf cells, the cortical cells often a little larger than the leptodermous medullary cells. Rhizoids lacking on erect, leafy shoots, present in small groups on stolons. Leaves distichous, rather widely laterally spreading, the insertion transverse to weakly or dis- tinctly incubous, canaliculate-conduplicate, boat-shaped but without a keel, the dorsal halves lying slightly more displaced toward shoot apex than the ventral, incubously imbricate, the leaf thus with an incubous appearance in dorsal aspect, the leaves unistratose throughout; apices undivided and entire to emarginate or bidentate, or 4-dentate, or (3)4-lobate; leaf margins entire or irregularly toothed. Cells leptodermous throughout, at most the cells above the base with slight, evenly thickened walls; cells in basal area becoming very large, more inflated, forming a distinct area basalis, the cells of all but the area basalis relatively small, sub¬ quadrate to oblong to polygonal; surface papillose, the surface of area basalis cells smooth or striolate or papillose. Oil-bodies totally lacking in both leaf and stem cells; oil-droplets present in some populations of Lembidium nutans, tiny, homogeneous. Underleaves conspicuous throughout, ca. 0.5 the width and 0.3 the area of the lateral leaves, the apices crenulate- denticulate to shallowly or deeply bilobed. Asexual reproduction absent, or (L. longifolium) via caducous leaf lobes. Androecia (known only for Lembidium nutans) on short, apparently always ventral- intercalary branches from near the bases of erect, leafy stems or from stolons, short and spi- cate; bracts ovate, inflated; antheridia 1(2) per bract, the stalk rather short, uniseriate; bracte- olar antheridia rare. Gynoecia on very short, apparently ventral- or lateral-intercalary branches, from ± fleshy, microphyllous shoot bases. Gynoecial bracts in 3 series, gradually larger, imbricate, those of innermost series lanceolate to narrowly ovate-lanceolate, tapered to a narrow, pointed or bidenticulate tip; upper margins and apex with ± crenulate margins by free ends of elongated cells, otherwise entire. Perianth exceedingly slender, trigonous, very long (ca. 7X longer than wide) and extremely attenuated, fusiform, the apex shallowly to obscurely lobulate and crenulate with narrow, often curved cells that are somewhat thick- walled and free at the rounded, finger-like tips (or occasionally a few cells wholly free), the cells distinctly papillose (although perianth below apex is smooth). Sporophyte known only in Lembidium nutans. Seta formed of 8(9) rows of very large outer cells surrounding a core of numerous, much smaller cells. Capsule long-ellipsoidal, ranging from 350 X 1 120 juim to 560 X 1400 |ULm, the wall (2)3-stratose; outer layer of cells with nodular (radial) thickenings of, generally, both faces of alternating longitudinal walls, the thicken¬ ings ± confluent to form continuous sheets; innermost layer of cells with semi annular bands, the bands usually complete. Spores 12.5-14.4 juim in diam., dark yellowish brown, rather coarsely papillose, with short irregular papillae coalescing to form clumps or short ridges that rarely delimit areolae. Elaters rigid, ± straight, 8.6-11.5 juim wide, slightly tapering toward tips, bispiral to tips, the spirals 3. 8-4. 8 |ULm wide. Type: Lembidium nutans (Hook.f. &amp; Taylor) Mitt. (= Jungermannia nutans Hook.f. &amp; Taylor) A genus with only two species, both found only in New Zealand. References: Schuster and Engel (1987b; mon.); Schuster (2000a). Key to Species la. Leaves relatively short, appearing inflated, without a discernible median longitudinal ‘‘keel,” with apices unlobed and entire to 2-4-dentate; leaf margins untoothed or with an isolated few-celled tooth; plants whitish green, the leafy shoots erect from a stolonifer- ous base; leafy shoots simple or sporadically with a single Frullania-iy^Q branch; shoot tips cernuous; cells of leaves strikingly dimorphic: basal cells inflated, smooth or striate, very large (ca. 25-60 X 70-120 juim), contrasted to distal and lateral cells, which are very small (ca. 16-22 X 20-26 juim), thick- walled and papillose; underleaves suborbic- ular, not strikingly bifid, the disc margins unarmed . L. nutans (p. 508) lb. Leaves strongly elongated, folded-canaliculate and the lateral half of a canoe in form, with apices clearly (3)4-lobed; leaf margins sinuous and irregularly toothed and rather ragged; plants bluish green in life, the leafy shoots loosely to closely adnate to substrate; leafy shoots with 1-2(4) terminal branches all originating from one side of stem; shoot tips virtually straight; cells of leaves not sharply dimorphic: basal cells not inflated, gradually larger toward base (ca. 16-25[32] X 38-62[82] juim), the subapical cells slightly narrower (ca. 15-21 X 20-28 [45] juim), the cells all rather thin-walled, all densely papillose; underleaves elongated, with 2 drawn-out apical lobes, the disc margins armed with several cilia . L. longifolium (p. 506)</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (3 entrys)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> Threatened - Nationally Critical</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(3)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Isolembidium anomalum var. anomalum</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Isolembidium anomalum var. anomalum</p>
     
     
   </details>
@@ -371,14 +356,47 @@ Lophocolea austrigena - Chiloscyphus austrigenus       Lophocolea villosa - Chil
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Aenictophyton anomalum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Allomyces anomalus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Corneohydnum anomalum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Isolembidium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Isolembidium anomalum var. anomalum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Isolembidium anomalum var. cucullatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptosema anomalum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Prophlias anomalus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Isolembidium cucullatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lembidium anomalum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lembidium cucullatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia subgen</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Micrisophylla Fulford</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -393,22 +411,32 @@ Lophocolea austrigena - Chiloscyphus austrigenus       Lophocolea villosa - Chil
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [108.2, 94.0, 125.4, 134.7, 205.0, 196.5, 233.3, 253.5, 236.5, 198.8, 131.2, 152.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.4, 18.4, 15.8, 12.3, 9.3, 7.4, 6.6, 7.5, 9.5, 11.8, 15.1, 16.2], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [7.7, 7.8, 6.4, 4.5, 3.3, 1.9, 0.9, 1.3, 2.3, 3.3, 5.0, 6.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

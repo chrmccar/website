@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,53 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Chiloscyphus austrigenus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Chiloscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (15)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Austrimonus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus austrigenus subsp. austrigenus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus austrigenus subsp. okaritanus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus leucophyllus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus longifolius</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus multipennus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Desmocladus austrinus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Philoscaphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus okaritanus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia austrigena</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea austrigena</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea gunniana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Lophocolea okaritana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Pachyglossa austrigena</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Chiloscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -86,21 +48,25 @@
     <p class="big-num">349</p>
     <footer>133 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">17</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">15</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -108,183 +74,182 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>2.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>2.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>2.0</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>2.0</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    <summary>
+      <strong>BANKS_PENINSULA_2013</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Recorded from Banks Peninsula: Herbert district (CHR528907 HDW Mt Fitzgerald 490 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Recorded from Banks Peninsula: Herbert district (CHR528907 HDW Mt Fitzgerald 490 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
     
     
   </details>
   
   <details>
-    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    <summary>
+      <strong>CHILOSCYPHUS_MONOGRAPH_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">minute to small, only occasionally medium and straight sided; underleaves often 1.5–33
+    <pre class="description-text">minute to small, only occasionally medium and straight sided; underleaves often 1.5–33
                                                       stem width; plants translucent; oil-bodies hyaline and glistening, 2–3(4) per cell, mostly
                                                       elliptic to fusiform . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . C. semiteres (p. 91)
                                                  12. Underleaf disc lateral armature reduced: mostly dentiform to ciliiform or lacking, only
@@ -651,16 +616,19 @@ Furthermore, difficulties are enhanced because combinations of
                  Gottsche, Lindenb. &amp; Nees, Syn. Hep. 169. 1845. Type: Auckland
                  Is., Nov. 1840, Hooker (BM!–c. =, FH!–c. per.).                          separate plants,’’ implying dioecism. I was able to locate a few
                Lophocolea macrostipula Steph., Bull. Herb. Boissier 6(10): 888.           old, 6 decayed gynoecia but found no evidence of physical
-                 1906 (5 Spec. Hep. 3: 113), syn. nov. Chiloscyphus macrostipulus         attachment between androecial and gynoecial plants. Androe-</p>
+                 1906 (5 Spec. Hep. 3: 113), syn. nov. Chiloscyphus macrostipulus         attachment between androecial and gynoecial plants. Androe-</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">&amp; Nees) Angstr.                                        Cheilolejeunea aucklandica (Steph.) H.A.Mill.,
+    <pre class="description-text">&amp; Nees) Angstr.                                        Cheilolejeunea aucklandica (Steph.) H.A.Mill.,
 Bragginsella anomala R.M.Schust.                              Bonner &amp; Bisch.
                                                       Cheilolejeunea campbelliensis (Steph.) R.M.Schust.
 Calypogeia sphagnicola (Arn. &amp; Perss.) Warnst. &amp;      Cheilolejeunea comitans (Hook.f. &amp; Taylor)
@@ -887,16 +855,19 @@ parvisti pula
 Schistochila pinnatifolia - Paraschistochila
                                                                        Acknowledgements
 pinnatifolia                                               I wish to thank Marie Hicks for sending me her own
-Schistochila pseudokirkiana - Pachyschistochila            checklist which was invaluable in checking mine and</p>
+Schistochila pseudokirkiana - Pachyschistochila            checklist which was invaluable in checking mine and</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_GLENNY_2006</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_GLENNY_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">While genus and family circumscription            5 ll PCR buﬀer (BioLine, Berlin, Germany), 2 ll
+    <pre class="description-text">While genus and family circumscription            5 ll PCR buﬀer (BioLine, Berlin, Germany), 2 ll
 thus become clearer, many questions related to        MgCl2 (50 mM, BioLine, Berlin, Germany), 1 ll
 the infrageneric subdivision of Chiloscyphus and      dNTP-mixture (10 mM, Fermentas, St. Leon-Rot,
 to species boundaries remain unanswered. Cir-         Germany), 2 ll dimethylsulfoxide, 1 ll of both
@@ -956,29 +927,35 @@ Chiloscyphus liebmannianus (Gottsche) Mexico         Burghardt Bryo 01655 (GOET)
 Chiloscyphus martianus (Nees)         Ecuador        Gradstein 10119 (GOET)          AM282817
  J.J.Engel &amp; R.M.Schust. (I)
 Chiloscyphus martianus (II)           Mexico         Gradstein &amp; Equihua 7920 (GOET) AM282808
-Chiloscyphus minor (Nees)             Germany        Hentschel Bryo 01006 (JE)       AM282818</p>
+Chiloscyphus minor (Nees)             Germany        Hentschel Bryo 01006 (JE)       AM282818</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Chiloscyphus austrigenus subsp. okaritanus</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Chiloscyphus austrigenus subsp. okaritanus</p>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+    <pre class="description-text">Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
 Frullaniaceae
 Frullnninis one of the largest genera of leafy liverworts known. The leaves
 are in three rows, with those in the lateral rows being divided into avo
@@ -1037,7 +1014,7 @@ and are awaiting revision. Leaves arc in three rows.
     nunlerous slender yellow-green worms. It is very similar to the
     Tasmanian endemic C. u m c o s a and, in the field, the shape of the
     underleaves can he used to distinguish between them. Clnsmalocoka
-    notophylla has a more-or-less round underleaf whereas in C. ucnucosa,</p>
+    notophylla has a more-or-less round underleaf whereas in C. ucnucosa,</pre>
     
     
   </details>
@@ -1046,14 +1023,51 @@ and are awaiting revision. Leaves arc in three rows.
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Austrimonus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus austrigenus subsp. austrigenus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus austrigenus subsp. okaritanus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus leucophyllus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus longifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus multipennus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Desmocladus austrinus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Philoscaphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus okaritanus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia austrigena</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea austrigena</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea gunniana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea okaritana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Pachyglossa austrigena</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -1068,22 +1082,32 @@ and are awaiting revision. Leaves arc in three rows.
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [93.5, 80.7, 105.6, 112.5, 167.3, 167.2, 194.6, 210.7, 192.8, 159.7, 114.9, 123.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.4, 18.5, 16.0, 12.7, 9.8, 7.9, 7.2, 8.0, 9.9, 12.1, 15.1, 16.3], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.2, 8.3, 6.9, 5.1, 3.7, 2.3, 1.5, 1.7, 2.6, 3.6, 5.5, 6.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Heteroscyphus conjugatus</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Heteroscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Heteroscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus allodontus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus cambewarranus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus circumdentatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus cuneistipulus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus levieri</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus multifidus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochilion conjugatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus conjugatus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,35 +48,37 @@
     <p class="big-num">153</p>
     <footer>147 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">9.6&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">1744&thinsp;mm</p>
-    <footer>
-      CV 23.4
-    </footer>
+    <footer>annual · CV&thinsp;23.4</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">8</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -112,102 +86,107 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>trilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
-          <td>⚠</td>
-        </tr>
-        
-        <tr class="unverified">
-          <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
-          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>large</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>large</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">38
+    <pre class="description-text">38
                                      Table 4.5.
   The frequency of epiphytic bryophytes on the trunk ofAthrotaxis selaginoidesiA.
                 laxifolia, arranged in descending order of % occurrence.
@@ -265,16 +244,19 @@ Tasmania.
 The following descriptions provide the diagnostic features to allow the identification
 of the key moss and hepatic epiphytes that occur on N. cunninghamii and Athrotaxis,
 as well as their distinguishing characters from related species. It is not intended to be
-a taxonomic account for each species since that is already available in the published</p>
+a taxonomic account for each species since that is already available in the published</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>HETEROSCYPHUS_HIMALAYAS_1989</strong> (1 entry)</summary>
+    <summary>
+      <strong>HETEROSCYPHUS_HIMALAYAS_1989</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">2.9-4.2 mm wide. Stem 10-15 cells across diameter with                    Previous records of H. inflatus from India are as Chi
+    <pre class="description-text">2.9-4.2 mm wide. Stem 10-15 cells across diameter with                    Previous records of H. inflatus from India are as Chi
 outer 1-2 (-3) layers of relatively thick-walled cortical                 loscyphus inflatus (Stephani 1906-1909, Kashyap 1932).
 cells. Leaves closely imbricate, opposite, united dorsally                Following the views of Schiffner (1910), Schuster (1980)
 with each other at antical ends and ventrally with the                    and Engel and Schuster (1984), C. inflatus was trans
@@ -334,34 +316,43 @@ Fig. 1. Heteroscyphus inflatus (St.) Srivastava et Srivastava. 1: A portion of t
 male inflorescence (dorsal view). 3: A portion of plant with female inflorescence (dorsal view). 4: Cross-section of stem.
 5,6: Leaves. 7: Leaves and adjoining underleaf. 8: Marginal cells of leaf showing hyaline papillae. 9-11: Cells of leaf from apex,
 middle and base respectively. 12-16: Underleaves. 17: Marginal cells of the underleaf showing hyaline papillae. 18: Apical
-portion of the underleaf. 19: Male inflorescence. 20-22: Male bracts. 23,24: Male bracteoles. 25: Antheridium. 26: Female</p>
+portion of the underleaf. 19: Male inflorescence. 20-22: Male bracts. 23,24: Male bracteoles. 25: Antheridium. 26: Female</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>conservation_status:</strong> Data Deficient</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
-    
-    
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> Data Deficient</p>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Heteroscyphus is a genus of liverworts in the family Lophocoleaceae. 87 species was accepted in this worldwide group in 2019.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Heteroscyphus is a genus of liverworts in the family Lophocoleaceae. 87 species was accepted in this worldwide group in 2019.</pre>
     
     
   </details>
@@ -370,14 +361,41 @@ portion of the underleaf. 19: Male inflorescence. 20-22: Male bracts. 23,24: Mal
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus allodontus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cambewarranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus circumdentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cuneistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus levieri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus multifidus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochilion conjugatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus conjugatus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -392,22 +410,32 @@ portion of the underleaf. 19: Male inflorescence. 20-22: Male bracts. 23,24: Mal
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [92.2, 82.1, 105.2, 114.4, 173.3, 166.3, 195.1, 214.1, 199.3, 171.8, 111.1, 128.9], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.7, 19.8, 17.5, 14.2, 11.4, 9.5, 8.9, 9.7, 11.6, 13.6, 16.4, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.2, 9.3, 8.1, 6.3, 4.9, 3.3, 2.6, 2.8, 4.1, 5.0, 6.8, 7.9], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

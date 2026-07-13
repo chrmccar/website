@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Herzogobryum atrocapillum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Gymnomitriaceae</span>
-    <span class="badge secondary">Herzogobryum</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Gymnomitrion atrocapillum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herzogobryum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herzogobryum cucullatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herzogobryum filiarum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herzogobryum filiforme</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herzogobryum molle</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herzogobryum teres</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Herzogobryum vermiculare</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cesius atrocapilla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Gymnomitrion marionense</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia atrocapilla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Herzogobryum</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,21 +48,25 @@
     <p class="big-num">14</p>
     <footer>1 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">12</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -100,134 +74,127 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>17.0–24.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>17.0–24.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>11.0–19.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>11.0–19.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>2.0–5.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>2.0–5.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>4.0–7.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>4.0–7.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>2.0–3.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>2.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>concave-sided</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">gb242, Japan, Γ. Furuki 20233 (HIRO),—,            AB476566, AB476605,
+    <pre class="description-text">gb242, Japan, Γ. Furuki 20233 (HIRO),—,            AB476566, AB476605,
                                                                                   —,—,—,——■; Calypogeia muelleriana: E77, UK: Scotland, D.G. Long
    Appendix 1. List of sampled taxa by family, voucher information,               31227 (Ε),—, KF942466, KF943266,—,—, KF942826, KF942955,
 and GenBank Accession numbers (atpB, psbA, psbT, rbcL, rps4, trnC, trtiL,         KF943121, KF942707, KF942633; IBC11, USA, E.C. Davis 130 (DUKE),
@@ -287,16 +254,19 @@ L1444, Austria, P. Sova s.n. (DUKE),—, KF942604, KF943369,—, KF943522,      
 KF942925, KF943088, KF943245,—, KF942700; L1445, Norway, P. Sova               KF942683; L1419, Czech Republic, P. Sova s.n. (DUKE),—, KF942583,—,
 s.n. (DUKE),—, KF942605, KF943370,—, KF943523,—, KF943089, KF943246,           KF943602, KF943501, KF942906, KF943067, KF943225, KF942781, KF942684;
 —,—. Geocalycaceae: Geocalyx caledonicus: FATOL132, New Zealand,               N. insecta: L1284, Russia: Murmanskaya Oblast, J. Kucera 11367 (CBFS),—,
-   Engel &amp; M. von Konrat 23659 (F),—,—, KF943271,—, KF943403,—,—,</p>
+   Engel &amp; M. von Konrat 23659 (F),—,—, KF943271,—, KF943403,—,—,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Herz.ogianthus sanguineus R.M.Schust. - in Schuster (1985)        Riccardia furtiva E.A.Brown &amp; Braggins - in Brown &amp;
+    <pre class="description-text">Herz.ogianthus sanguineus R.M.Schust. - in Schuster (1985)        Riccardia furtiva E.A.Brown &amp; Braggins - in Brown &amp;
 Hygrolembidium rigidum R.M.Schust. &amp; ].]. Engel - in              Braggins (1989)
 Schuster &amp; Engel (1987)                                           Riccardia intercellula E.A.Brown - in Brown &amp; Braggins
 Hygrolembidium triquetrum R.M.Schust. &amp; ].].Engel - in            (1989)
@@ -420,38 +390,47 @@ Heteroscyphus coalitis (Hook.f.) Schiffn.                      Engel
 Heteroscyphus colensoi (Mitt.) Schiffn.                        ].].Engel &amp; R.M.Schust.
        Chiloscyphus colensoi (Mitt.) Bastow                    Lophocolea planiuscula (Hook.f. &amp; Taylor)
 Heteroscyphus compactus (Colenso) R.M.Schust.                  Taylor
-       Chiloscyphus compactus Colenso                   Heteroscyphus polycladus (Hook.f. &amp; Taylor)</p>
+       Chiloscyphus compactus Colenso                   Heteroscyphus polycladus (Hook.f. &amp; Taylor)</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants wiry, but rather fleshy and rigid, terete, julaceous, worm-like, somewhat nitid, green, at least upper surface of shoots, occasionally dull or rusty red or yellow-brown (but leaf margins decolorate), the shoots relatively stout, to 410 juim wide, the upper parts evenly leafy. Branching mostly lateral-intercalary, occasionally ?ventral-intercalary. Stems fleshy, colorless, stiff and wiry, the cells of ± the same size, the outer 1 .5-3 cell layers pale and thin-walled; medullary cells slightly to distinctly thick-walled. Rhizoids scarce, scattered, colorless. Leaves erect, loosely appressed, mostly subcontiguous to weakly to moderately imbricate, the insertion feebly to distinctly succubous, the insertion line broad, basiscopically arched, bowed (insertion both dorsally and ventrally obliquely arched toward shoot apex), the insertion lines extending considerably beyond stem midline; leaves unistratose (or in larger phases with a 2-stratose me¬ dian-basal field), concave, saucer-shaped, orbicular-ovate, wider than long when flattened, (22)24-40 cells wide at widest point, to 375-400 X 480-515 juim, broad-based and clasping the stem, unlobed; marginal cells differentiated into a hyaline, empty, incurved (especially api- cally) border (1)2-4 cells broad, the outermost row of radially or obliquely elongated cells (10-15 X 25—32 |ULm) that are relatively thin- walled and forming a crenulate, conspicuous border, often breaking down with age, the margin then erose; intramarginal cells thin- to clearly thick-walled, trigones minute to small and concave-sided or less often medium and straightsided, the cells 15-25 X 15-26(29) juim medially and subapically; surface typically minutely papillose-short-striate, the striae oriented perpendicular to the cell walls, the surface rarely rather long-striate with striae oriented strictly longitudinal, the surface rarely smooth. Oil-bodies in intramarginal cells of leaf, absent from hyaline marginal cells which also lack cell contents, the oil-bodies occupying a small portion of the cell volume, pale smokey grey, 2-5 per cell, finely papillose, subglobose to irregularly elliptic, 3. 8-5. 3 X 6.7-7.7 juim, globose ones 4.8- 5.8 |ULm in diam. Underleaves frequently developed, lanceolate, small to rather large, to 60 juim wide X 200 juim long, united for most of their length with an adjacent lateral leaf, hyaline, crenulate-margined. Eungal partner absent. Dioecious. Androecia terminal but becoming intercalary; bracts in few pairs, lacking a lobule, slightly ventricose, the dorsal base slightly broadened and incurved; antheridia single, the stalk 2-seriate. Gynoecia terminal on abbreviated or long branches; bracts in several tightly imbricate series, those of innermost series larger than leaves, shallowly 2-lobed and irregularly and sparsely coarse-dentate to lobulate, with recurved margins, at least in sinuses; bracteole free, large, broad, rarely approaching bracts in size, usually pointed or bilobed or lobulate. Perianth long-emergent, Lophozia-\ikQ, ovate, strongly pluriplicate, apically strongly and sometimes rather abruptly contracted, not compressed, the mouth plurilobulate, the lobules denticulate by rectangular cells; perianth 1-stratose in the densely pluriplicate distal sectors, becoming 3- 4(5)-stratose basally, the cells at and below mouth rectangular. Calyptra 2-layered to above its middle, becoming 3-4-layered toward middle and 4-5-layered toward base. Sporophyte unknown. Distribution and Ecology: ‘A circumsubantarctic species and the commonest and most widespread within the genus” (Bednarek-Ochyra et al., 2000, p. 139); New Zealand: Campbell Island, Stewart Island (600-720 m). South Island (1010-1970 m). North Island (1080- 2300 m); Australia: Tasmania; Antarctica (Bouvetoya, South Orkney Islands, South Shetland Islands); South Georgia; Ealkland Islands; southern South America (Tierra del Euego); Tristan da Cunha; Gough Island; Marion Island. In New Zealand known from Eiordland, Otago, Westland, Canterbury, Sounds-Nelson, Taranaki (Mt. Taranaki), Volcanic Plateau (Tongariro Natl. Park) and Gisborne (Mt. Hikurangi) EPs. The most frequent of our Herzogobryum species, typically associated with alpine areas and in these sites occurring on exposed faces of boulders and outcrops, in rock crevices or deep under protective rock overhangs or between boulders where a sizeably, often thick layer of soil has accumulated and on moist cliff faces. In such sites, it occurs with Acrolophozia pecti- nata, Andreaea acutifolia, Andrew sianthus cuspidatus, Arthroraphis alpina, Dicranoweisia antarctica, Jamesoniella colorata, Nothogymnomitrion erosum, Notholigotrichum australe, Racomitrium crispulum and Rhacocarpus purpurascens, more rarely, on Stewart Island, with Cryptochila acinacifolia, and in Otago with Ptilidium ciliare. Occasionally found in the pen- alpine zone, for example at 1240 m in an exposed stream valley through penalpine scrub of Halocarpus bidwillii, Ozothamnus leptophyllus and Phyllocladus alpinus (Taranaki Ealls Track, Tongariro Natl. Park). On Stewart Island occurring on an exposed ledge of a large rock outcrop at 600-690 m in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi from 0.5 m to 2 m tall and significant areas of exposed rock (Mt. Rakeahua summit area). Plants vary from semi-isolated shoots to formation of loose to tight mats; plants exceptionally may form tight compact small mounds. Comments: This is the largest New Zealand Herzogobryum species. Leaves normally are 24-40 cells wide at widest point, unlobed, with cells 15-25 X 15-26 juim medially and cell walls thin- to firm-walled with trigones minute to small and concave- sided. The stem cortex is ± undifferentiated with the cells of ± the same size throughout. Plants from exposed sites develop notable rust-red pigments except for the decolorate, bleached, marginal sectors. Small phases of the species may have leaves only 17-21 cells wide and therefore may cause confusion. However, such plants have unlobed leaves, with median leaf cells 17-24 juim wide X 20-23 |ULm long. Such populations nevertheless may produce sporophytes. Herzogobryum vermiculare (Schiffn.) Grolle Gymnomitrium vermiculare Schiffn. in Naumann, Forschungsr. Gazelle 4(4): 2. pi. l,f. 9, 10. 1890. len, Successful Harbor, 1874, Naumann. cucullatum (Herzog) Grolle, Rev. Bryol. Lichenol. 32: 160. 1963. Type: Chile, Prov. Aisen, Cerro Tesoro, ca. 1000 m, 13 Feb. 1940, Schwabe 39c p. p. Plants fleshy (rather than wiry), rather rigid when dry, greenish throughout or, more often, brownish green to brick-red on leaves within the hyaline border, the plants relatively vigorous, the shoots (including leaves) 625-685 juim wide, rarely larger, 10-20 mm long or more, remotely to loosely catenulate-leaved. Branching rather common but irregular, the branches mostly lateral-intercalary from near ventral end of leaf axils; Frullania-typt branches sometimes present; flagelliform, microphyllous branches lacking. Stems rigid and stout, the cortex in 1 layer of rather thin- walled, tangentially flattened cells surrounding 2-3 strata of progressively firmer-walled intracortical cells that are subisodiametric in cross section; medullary cells strongly thick-walled, with reduced lumina (in cross sections often angular to substel- late). Rhizoids rare or absent. Leaves erect to suberect, appressed to stem, the base clasping the stem, the leaves remote to contiguous (the stem always ± exposed in dorsal view), the insertion forming an acroscopically arched line; leaves usually (2)3-stratose except for apices and marginal sectors, strongly cochleariform-concave (in cross section lunate), subrotundate but (because of the strongly concave form) impossible to flatten without tearing, undivided, the margins indistinctly crenulate. Cells of leaves (epidermal, abaxial) ± irregularly polygonal to short-oblong, somewhat thick- walled, trigones lacking or distinct and small, the median cells 14-20 X (16)18-24(26) juim, the cells ± similar in size almost throughout leaf; surface smooth. Underleaves absent. Fungal partner absent. Dioecious. Androecia compactly spicate, the bracts in 3-4 to many pairs, contiguous to closely imbricate (the hyaline marginal sectors ± closely appressed to bracts immediately above), strongly concave, orbicular, entire; antheridia monandrous, the stalk 2-seriate. Gy- noecia terminal on leading shoots or ± elongated lateral-intercalary branches, the bracts in 2- 3 closely imbricate pairs, grading below into leaves, the inner bracts of innermost series often strongly dimorphic: one 3-4-lobed or lobulate, very broadly ovate and wider than long, the other usually shallowly lobed or lobulate at apex and ovate; bracteole distinct, free, rather large, lanceolate. Perianth and bracts forming a compact, mostly ovoid to obovate capitulum, the bracts closely sheathing perianth base, but distal half or more of perianth emergent, the perianth terete below, conspicuously plicate above, not compressed above, contracted to a rather small mouth, the mouth shallowly lobulate, the lobules fimbriolate by processes terminating in a uniseriate row of 2-4 cells; perianth mostly 6-7-stratose below, remaining 2(3)-stratose to within 0.2 of apex. Seta massive, of numerous rows. Capsule spherical, the wall rather firm (at least locally 3- stratose), the valves brittle and usually fragmenting after spore discharge; outer layer of cells mostly oblong, with very strong, often opposed, nodular thickenings of longer walls, the transverse walls frequently with a pair of such thickenings; inner layer of cells less regular, often narrowly oblong, variable, with much weaker nodular thickenings. Spores 14-18 juim in diam., minutely granulate. Elaters short and slender, hardly to quite tortuous, with blunt ends, 8-9 |ULm wide, with 2 or 3 spirals, the spirals often rather lax to close, narrow, under 2 juim wide. Distribution and Ecology: Mainly subantarctic in distribution; New Zealand: South Island (1650 m). North Island (1790 m); South Georgia, Ealkland Islands, southern South America only at ca. 1000 m in the Valdivian region, Kerguelen Island, Marion Island, Prince Edward Island (Schuster, 1996d) (also cf. Engel, 1990a). A species known from a few scattered loci. In the alpine zone immediately below the summit of Avalanche Peak (Arthur’s Pass Natl. Park, 1650 m) occurring admixed with Acro- lophozia pectinata and Nothogymnomitrion erosum in a protected niche of a rock outcrop. Also on the northern slope of Mt. Ruapehu (S of Top of the Bruce, Tongariro Natl. Park, 1790 m) on soil under a ledge of an outcrop in an area of cliffs and outcrops with scattered alpine plants. Comments: Plants of this species in situ and even when dry may be distinguished from other members of the genus and from Nothogymnomitrion (both of which are commonly admixed) by the smaller plant size coupled with the remotely to loosely catenulate-leaved shoots. Leaves are unlobed and 2-3-stratose (exclusive of the hyaline border); all other members of the genus have unistratose leaves (aside from a basal field at times present in some species). Nothogymnomitrion R.M.Schust. Nothogymnomitrion R.M.Schust., J. Hattori Bot. Lab. 80: 43. 1996. Plants often in dense, unordered, compact mats, wiry, rigid, nearly terete, vermiform, creeping, erect with crowding, plagiotropic, greenish to golden brown to red-brown. Branching common but irregular, the branches lateral-intercalary, from median sector of axil or from the ventral or sometimes dorsal end of the axil; branches of 2 types: normal and leafy, and stoloni- form, the microphyllous branches issuing from lower ends of leafy axes, creeping, with rudi- mentary 2-ranked leaves and copious rhizoids. Stems rather thick and rigid, striolate in surface view, the cortex very weakly differentiated, in a single layer of slightly larger, firm-walled cells with ± bulging free walls; medullary cells firm- walled, clearly thickened at the angles. Rhizoids colorless, few and scattered on ventral side of normal leafy axes, abundant on stolons and from all sides of axis. Leaves stiffly suberect and weakly laterally spreading, faintly dor- sally assurgent, closely and densely imbricate, the insertion subtransverse, shallowly U-shaped, the insertion lines interlocking dorsally for 2-3 or more cell rows (thus lateral merophytes clearly interlocking in a zigzag manner); leaves unistratose, strongly adaxially concave, broadly ovate-deltoid or rounded- deltoid, 270-580 juim wide X 260-500 juim long, usually as wide as long, narrowed to summit, the expanded bases closely investing the stem; apex shallowly emarginate to bidentate-bilobulate, the lobes then often barely perceptible; sinus shallow to vestigial; margins flat, the marginal cells differentiated into border of hyaline, empty, thick- walled cells in 1-2(3) rows, the marginal row mostly elongated radially, ca. 7-13 X 18- 36 |ULm, the cells typically free distally for only 0.5 or less, with the free ends projecting as irregular, extremely thick- walled, notably irregular ‘‘knobs” or finger- like, solid projections, the thickened tip at times equaling or exceeding the length of the cell lumen, the margins thus irregularly crenulate-denticulate; intramarginal cells chlorophyllose, in ± regular vertical rows, the cells in 2-several rows at the perimeter (especially in distal sector of leaf) usually pigmented, notably thick-walled, with guttulate lumina, the remaining leaf cells often devoid of strong pigmentation, with progressively thinner walls but rounded at angles, trigones lacking or small and concave-sided to, less often, medium and straight-sided; median cells 11-19 |ULm wide X 13-22 juim long; basal cells usually thinner-walled, 14-17 X 16-20 juim; surface conspicuously papillose, the papillae in lower parts of leaf wart-like. Oil-bodies occupying a mod¬ erate portion of cell, pale smokey grey, hyaline, (1)2-4 per middle of lamina, obscurely coarsely papillose, the spherules not bulging beyond membrane, the oil-bodies globose to sub- globose, 2.5-5 |ULm in diam.; oil-bodies at leaf base 4-7 per cell, at leaf margins 2-3 per cell. Underleaves lacking. Autoecious. Androecia on leading leafy shoots or ± elongated branches, terminal but becoming intercalary, the shoots sometimes repeatedly androecial, compactly spicate; bracts leaf-like but larger, more spreading and more strongly concave (the androecia thus appearing tumid), the dorsal margin without lobule, but with dorsal margin incurved and ampliate; an- theridia 2 per bract, the stalk unistratose but with local bistratose areas, particularly toward base. Gynoecia terminal on leafy axes or branches of variable length, completely lacking a subtending perigynium; bracts in several, progressively larger series (and becoming several times the size of stem leaves), closely imbricate, those of innermost series very variable, symmetrically ovate to ovate-deltoid, short-bilobed, with margins as in leaves but often even more coarsely crenulate-denticulate, the projecting thick-walled hyaline cells sometimes recurved; bracteole always present, rather large, rarely wholly free, usually connate on one or both sides with the bracts (sometimes so broadly so on one side that a 3-lobed bract is simulated). Perianth well developed, not or barely exceeding the innermost bracts, when immature ± strongly laterally compressed, at maturity the mouth remaining perceptibly laterally compressed toward the mouth, proximally inflated, ovate, with a narrowed base; mouth narrowed, shallowly bilabiate, irregularly crenulate-denticulate, with maturation soon becoming erose; perianth cells similar to leaf cells, quadrangular to short-rectangular, slightly thin- walled. Calyptra with unfertilized archegonia at or near base. Seta very short, usually not protruding capsule beyond bracts, with 22-24 rows of outer cells surrounding an inner core of ca. 30-32 rows, the outer cells not larger than the internal cells. Capsule subspherical, the wall ca. 24 juim thick, 2-stratose, the outer ca. 2X the inner in thickness; outer layer of cells with strong, nodular thickenings that are often stalked and dilated distally, sporadically extending as weak semiannular bands, the transverse walls also with nodular thickenings; inner layer of cells with nodular thickenings, occasional ones extended as tangential spurs, a few as weak semiannular bands. Spores brown, 10-14 juim in diam., appearing finely punctate, the spores ± equal to elater diam. Elaters 9-11 luim wide, the tips always rounded, the elaters 3-spiral throughout or at least medially and bispiral toward the ends, the spirals narrow, 1.6-2 juim wide. Type: Nothogymnomitrion erosum (Carrington &amp; Pearson) R.M.Schust. (= Cesia erosa Carrington &amp; Pearson) A monotypic genus, with only the subantarctic Nothogymnomitrion erosum. Description adapted and modified from Schuster (1996d). References: Grolle (1966b); Schuster (1996d, 2002a).</p>
+    <pre class="description-text">Plants wiry, but rather fleshy and rigid, terete, julaceous, worm-like, somewhat nitid, green, at least upper surface of shoots, occasionally dull or rusty red or yellow-brown (but leaf margins decolorate), the shoots relatively stout, to 410 juim wide, the upper parts evenly leafy. Branching mostly lateral-intercalary, occasionally ?ventral-intercalary. Stems fleshy, colorless, stiff and wiry, the cells of ± the same size, the outer 1 .5-3 cell layers pale and thin-walled; medullary cells slightly to distinctly thick-walled. Rhizoids scarce, scattered, colorless. Leaves erect, loosely appressed, mostly subcontiguous to weakly to moderately imbricate, the insertion feebly to distinctly succubous, the insertion line broad, basiscopically arched, bowed (insertion both dorsally and ventrally obliquely arched toward shoot apex), the insertion lines extending considerably beyond stem midline; leaves unistratose (or in larger phases with a 2-stratose me¬ dian-basal field), concave, saucer-shaped, orbicular-ovate, wider than long when flattened, (22)24-40 cells wide at widest point, to 375-400 X 480-515 juim, broad-based and clasping the stem, unlobed; marginal cells differentiated into a hyaline, empty, incurved (especially api- cally) border (1)2-4 cells broad, the outermost row of radially or obliquely elongated cells (10-15 X 25—32 |ULm) that are relatively thin- walled and forming a crenulate, conspicuous border, often breaking down with age, the margin then erose; intramarginal cells thin- to clearly thick-walled, trigones minute to small and concave-sided or less often medium and straightsided, the cells 15-25 X 15-26(29) juim medially and subapically; surface typically minutely papillose-short-striate, the striae oriented perpendicular to the cell walls, the surface rarely rather long-striate with striae oriented strictly longitudinal, the surface rarely smooth. Oil-bodies in intramarginal cells of leaf, absent from hyaline marginal cells which also lack cell contents, the oil-bodies occupying a small portion of the cell volume, pale smokey grey, 2-5 per cell, finely papillose, subglobose to irregularly elliptic, 3. 8-5. 3 X 6.7-7.7 juim, globose ones 4.8- 5.8 |ULm in diam. Underleaves frequently developed, lanceolate, small to rather large, to 60 juim wide X 200 juim long, united for most of their length with an adjacent lateral leaf, hyaline, crenulate-margined. Eungal partner absent. Dioecious. Androecia terminal but becoming intercalary; bracts in few pairs, lacking a lobule, slightly ventricose, the dorsal base slightly broadened and incurved; antheridia single, the stalk 2-seriate. Gynoecia terminal on abbreviated or long branches; bracts in several tightly imbricate series, those of innermost series larger than leaves, shallowly 2-lobed and irregularly and sparsely coarse-dentate to lobulate, with recurved margins, at least in sinuses; bracteole free, large, broad, rarely approaching bracts in size, usually pointed or bilobed or lobulate. Perianth long-emergent, Lophozia-\ikQ, ovate, strongly pluriplicate, apically strongly and sometimes rather abruptly contracted, not compressed, the mouth plurilobulate, the lobules denticulate by rectangular cells; perianth 1-stratose in the densely pluriplicate distal sectors, becoming 3- 4(5)-stratose basally, the cells at and below mouth rectangular. Calyptra 2-layered to above its middle, becoming 3-4-layered toward middle and 4-5-layered toward base. Sporophyte unknown. Distribution and Ecology: ‘A circumsubantarctic species and the commonest and most widespread within the genus” (Bednarek-Ochyra et al., 2000, p. 139); New Zealand: Campbell Island, Stewart Island (600-720 m). South Island (1010-1970 m). North Island (1080- 2300 m); Australia: Tasmania; Antarctica (Bouvetoya, South Orkney Islands, South Shetland Islands); South Georgia; Ealkland Islands; southern South America (Tierra del Euego); Tristan da Cunha; Gough Island; Marion Island. In New Zealand known from Eiordland, Otago, Westland, Canterbury, Sounds-Nelson, Taranaki (Mt. Taranaki), Volcanic Plateau (Tongariro Natl. Park) and Gisborne (Mt. Hikurangi) EPs. The most frequent of our Herzogobryum species, typically associated with alpine areas and in these sites occurring on exposed faces of boulders and outcrops, in rock crevices or deep under protective rock overhangs or between boulders where a sizeably, often thick layer of soil has accumulated and on moist cliff faces. In such sites, it occurs with Acrolophozia pecti- nata, Andreaea acutifolia, Andrew sianthus cuspidatus, Arthroraphis alpina, Dicranoweisia antarctica, Jamesoniella colorata, Nothogymnomitrion erosum, Notholigotrichum australe, Racomitrium crispulum and Rhacocarpus purpurascens, more rarely, on Stewart Island, with Cryptochila acinacifolia, and in Otago with Ptilidium ciliare. Occasionally found in the pen- alpine zone, for example at 1240 m in an exposed stream valley through penalpine scrub of Halocarpus bidwillii, Ozothamnus leptophyllus and Phyllocladus alpinus (Taranaki Ealls Track, Tongariro Natl. Park). On Stewart Island occurring on an exposed ledge of a large rock outcrop at 600-690 m in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi from 0.5 m to 2 m tall and significant areas of exposed rock (Mt. Rakeahua summit area). Plants vary from semi-isolated shoots to formation of loose to tight mats; plants exceptionally may form tight compact small mounds. Comments: This is the largest New Zealand Herzogobryum species. Leaves normally are 24-40 cells wide at widest point, unlobed, with cells 15-25 X 15-26 juim medially and cell walls thin- to firm-walled with trigones minute to small and concave- sided. The stem cortex is ± undifferentiated with the cells of ± the same size throughout. Plants from exposed sites develop notable rust-red pigments except for the decolorate, bleached, marginal sectors. Small phases of the species may have leaves only 17-21 cells wide and therefore may cause confusion. However, such plants have unlobed leaves, with median leaf cells 17-24 juim wide X 20-23 |ULm long. Such populations nevertheless may produce sporophytes. Herzogobryum vermiculare (Schiffn.) Grolle Gymnomitrium vermiculare Schiffn. in Naumann, Forschungsr. Gazelle 4(4): 2. pi. l,f. 9, 10. 1890. len, Successful Harbor, 1874, Naumann. cucullatum (Herzog) Grolle, Rev. Bryol. Lichenol. 32: 160. 1963. Type: Chile, Prov. Aisen, Cerro Tesoro, ca. 1000 m, 13 Feb. 1940, Schwabe 39c p. p. Plants fleshy (rather than wiry), rather rigid when dry, greenish throughout or, more often, brownish green to brick-red on leaves within the hyaline border, the plants relatively vigorous, the shoots (including leaves) 625-685 juim wide, rarely larger, 10-20 mm long or more, remotely to loosely catenulate-leaved. Branching rather common but irregular, the branches mostly lateral-intercalary from near ventral end of leaf axils; Frullania-typt branches sometimes present; flagelliform, microphyllous branches lacking. Stems rigid and stout, the cortex in 1 layer of rather thin- walled, tangentially flattened cells surrounding 2-3 strata of progressively firmer-walled intracortical cells that are subisodiametric in cross section; medullary cells strongly thick-walled, with reduced lumina (in cross sections often angular to substel- late). Rhizoids rare or absent. Leaves erect to suberect, appressed to stem, the base clasping the stem, the leaves remote to contiguous (the stem always ± exposed in dorsal view), the insertion forming an acroscopically arched line; leaves usually (2)3-stratose except for apices and marginal sectors, strongly cochleariform-concave (in cross section lunate), subrotundate but (because of the strongly concave form) impossible to flatten without tearing, undivided, the margins indistinctly crenulate. Cells of leaves (epidermal, abaxial) ± irregularly polygonal to short-oblong, somewhat thick- walled, trigones lacking or distinct and small, the median cells 14-20 X (16)18-24(26) juim, the cells ± similar in size almost throughout leaf; surface smooth. Underleaves absent. Fungal partner absent. Dioecious. Androecia compactly spicate, the bracts in 3-4 to many pairs, contiguous to closely imbricate (the hyaline marginal sectors ± closely appressed to bracts immediately above), strongly concave, orbicular, entire; antheridia monandrous, the stalk 2-seriate. Gy- noecia terminal on leading shoots or ± elongated lateral-intercalary branches, the bracts in 2- 3 closely imbricate pairs, grading below into leaves, the inner bracts of innermost series often strongly dimorphic: one 3-4-lobed or lobulate, very broadly ovate and wider than long, the other usually shallowly lobed or lobulate at apex and ovate; bracteole distinct, free, rather large, lanceolate. Perianth and bracts forming a compact, mostly ovoid to obovate capitulum, the bracts closely sheathing perianth base, but distal half or more of perianth emergent, the perianth terete below, conspicuously plicate above, not compressed above, contracted to a rather small mouth, the mouth shallowly lobulate, the lobules fimbriolate by processes terminating in a uniseriate row of 2-4 cells; perianth mostly 6-7-stratose below, remaining 2(3)-stratose to within 0.2 of apex. Seta massive, of numerous rows. Capsule spherical, the wall rather firm (at least locally 3- stratose), the valves brittle and usually fragmenting after spore discharge; outer layer of cells mostly oblong, with very strong, often opposed, nodular thickenings of longer walls, the transverse walls frequently with a pair of such thickenings; inner layer of cells less regular, often narrowly oblong, variable, with much weaker nodular thickenings. Spores 14-18 juim in diam., minutely granulate. Elaters short and slender, hardly to quite tortuous, with blunt ends, 8-9 |ULm wide, with 2 or 3 spirals, the spirals often rather lax to close, narrow, under 2 juim wide. Distribution and Ecology: Mainly subantarctic in distribution; New Zealand: South Island (1650 m). North Island (1790 m); South Georgia, Ealkland Islands, southern South America only at ca. 1000 m in the Valdivian region, Kerguelen Island, Marion Island, Prince Edward Island (Schuster, 1996d) (also cf. Engel, 1990a). A species known from a few scattered loci. In the alpine zone immediately below the summit of Avalanche Peak (Arthur’s Pass Natl. Park, 1650 m) occurring admixed with Acro- lophozia pectinata and Nothogymnomitrion erosum in a protected niche of a rock outcrop. Also on the northern slope of Mt. Ruapehu (S of Top of the Bruce, Tongariro Natl. Park, 1790 m) on soil under a ledge of an outcrop in an area of cliffs and outcrops with scattered alpine plants. Comments: Plants of this species in situ and even when dry may be distinguished from other members of the genus and from Nothogymnomitrion (both of which are commonly admixed) by the smaller plant size coupled with the remotely to loosely catenulate-leaved shoots. Leaves are unlobed and 2-3-stratose (exclusive of the hyaline border); all other members of the genus have unistratose leaves (aside from a basal field at times present in some species). Nothogymnomitrion R.M.Schust. Nothogymnomitrion R.M.Schust., J. Hattori Bot. Lab. 80: 43. 1996. Plants often in dense, unordered, compact mats, wiry, rigid, nearly terete, vermiform, creeping, erect with crowding, plagiotropic, greenish to golden brown to red-brown. Branching common but irregular, the branches lateral-intercalary, from median sector of axil or from the ventral or sometimes dorsal end of the axil; branches of 2 types: normal and leafy, and stoloni- form, the microphyllous branches issuing from lower ends of leafy axes, creeping, with rudi- mentary 2-ranked leaves and copious rhizoids. Stems rather thick and rigid, striolate in surface view, the cortex very weakly differentiated, in a single layer of slightly larger, firm-walled cells with ± bulging free walls; medullary cells firm- walled, clearly thickened at the angles. Rhizoids colorless, few and scattered on ventral side of normal leafy axes, abundant on stolons and from all sides of axis. Leaves stiffly suberect and weakly laterally spreading, faintly dor- sally assurgent, closely and densely imbricate, the insertion subtransverse, shallowly U-shaped, the insertion lines interlocking dorsally for 2-3 or more cell rows (thus lateral merophytes clearly interlocking in a zigzag manner); leaves unistratose, strongly adaxially concave, broadly ovate-deltoid or rounded- deltoid, 270-580 juim wide X 260-500 juim long, usually as wide as long, narrowed to summit, the expanded bases closely investing the stem; apex shallowly emarginate to bidentate-bilobulate, the lobes then often barely perceptible; sinus shallow to vestigial; margins flat, the marginal cells differentiated into border of hyaline, empty, thick- walled cells in 1-2(3) rows, the marginal row mostly elongated radially, ca. 7-13 X 18- 36 |ULm, the cells typically free distally for only 0.5 or less, with the free ends projecting as irregular, extremely thick- walled, notably irregular ‘‘knobs” or finger- like, solid projections, the thickened tip at times equaling or exceeding the length of the cell lumen, the margins thus irregularly crenulate-denticulate; intramarginal cells chlorophyllose, in ± regular vertical rows, the cells in 2-several rows at the perimeter (especially in distal sector of leaf) usually pigmented, notably thick-walled, with guttulate lumina, the remaining leaf cells often devoid of strong pigmentation, with progressively thinner walls but rounded at angles, trigones lacking or small and concave-sided to, less often, medium and straight-sided; median cells 11-19 |ULm wide X 13-22 juim long; basal cells usually thinner-walled, 14-17 X 16-20 juim; surface conspicuously papillose, the papillae in lower parts of leaf wart-like. Oil-bodies occupying a mod¬ erate portion of cell, pale smokey grey, hyaline, (1)2-4 per middle of lamina, obscurely coarsely papillose, the spherules not bulging beyond membrane, the oil-bodies globose to sub- globose, 2.5-5 |ULm in diam.; oil-bodies at leaf base 4-7 per cell, at leaf margins 2-3 per cell. Underleaves lacking. Autoecious. Androecia on leading leafy shoots or ± elongated branches, terminal but becoming intercalary, the shoots sometimes repeatedly androecial, compactly spicate; bracts leaf-like but larger, more spreading and more strongly concave (the androecia thus appearing tumid), the dorsal margin without lobule, but with dorsal margin incurved and ampliate; an- theridia 2 per bract, the stalk unistratose but with local bistratose areas, particularly toward base. Gynoecia terminal on leafy axes or branches of variable length, completely lacking a subtending perigynium; bracts in several, progressively larger series (and becoming several times the size of stem leaves), closely imbricate, those of innermost series very variable, symmetrically ovate to ovate-deltoid, short-bilobed, with margins as in leaves but often even more coarsely crenulate-denticulate, the projecting thick-walled hyaline cells sometimes recurved; bracteole always present, rather large, rarely wholly free, usually connate on one or both sides with the bracts (sometimes so broadly so on one side that a 3-lobed bract is simulated). Perianth well developed, not or barely exceeding the innermost bracts, when immature ± strongly laterally compressed, at maturity the mouth remaining perceptibly laterally compressed toward the mouth, proximally inflated, ovate, with a narrowed base; mouth narrowed, shallowly bilabiate, irregularly crenulate-denticulate, with maturation soon becoming erose; perianth cells similar to leaf cells, quadrangular to short-rectangular, slightly thin- walled. Calyptra with unfertilized archegonia at or near base. Seta very short, usually not protruding capsule beyond bracts, with 22-24 rows of outer cells surrounding an inner core of ca. 30-32 rows, the outer cells not larger than the internal cells. Capsule subspherical, the wall ca. 24 juim thick, 2-stratose, the outer ca. 2X the inner in thickness; outer layer of cells with strong, nodular thickenings that are often stalked and dilated distally, sporadically extending as weak semiannular bands, the transverse walls also with nodular thickenings; inner layer of cells with nodular thickenings, occasional ones extended as tangential spurs, a few as weak semiannular bands. Spores brown, 10-14 juim in diam., appearing finely punctate, the spores ± equal to elater diam. Elaters 9-11 luim wide, the tips always rounded, the elaters 3-spiral throughout or at least medially and bispiral toward the ends, the spirals narrow, 1.6-2 juim wide. Type: Nothogymnomitrion erosum (Carrington &amp; Pearson) R.M.Schust. (= Cesia erosa Carrington &amp; Pearson) A monotypic genus, with only the subantarctic Nothogymnomitrion erosum. Description adapted and modified from Schuster (1996d). References: Grolle (1966b); Schuster (1996d, 2002a).</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants wiry, but rather fleshy and rigid, terete, julaceous, worm-like, somewhat nitid, green, at least upper surface of shoots, occasionally dull or rusty red or yellow-brown (but leaf margins decolorate), the shoots relatively stout, to 410 juim wide, the upper parts evenly leafy. Branching mostly lateral-intercalary, occasionally ?ventral-intercalary. Stems fleshy, colorless, stiff and wiry, the cells of ± the same size, the outer 1 .5-3 cell layers pale and thin-walled; medullary cells slightly to distinctly thick-walled. Rhizoids scarce, scattered, colorless. Leaves erect, loosely appressed, mostly subcontiguous to weakly to moderately imbricate, the insertion feebly to distinctly succubous, the insertion line broad, basiscopically arched, bowed (insertion both dorsally and ventrally obliquely arched toward shoot apex), the insertion lines extending considerably beyond stem midline; leaves unistratose (or in larger phases with a 2-stratose me¬ dian-basal field), concave, saucer-shaped, orbicular-ovate, wider than long when flattened, (22)24-40 cells wide at widest point, to 375-400 X 480-515 juim, broad-based and clasping the stem, unlobed; marginal cells differentiated into a hyaline, empty, incurved (especially api- cally) border (1)2-4 cells broad, the outermost row of radially or obliquely elongated cells (10-15 X 25—32 |ULm) that are relatively thin- walled and forming a crenulate, conspicuous border, often breaking down with age, the margin then erose; intramarginal cells thin- to clearly thick-walled, trigones minute to small and concave-sided or less often medium and straightsided, the cells 15-25 X 15-26(29) juim medially and subapically; surface typically minutely papillose-short-striate, the striae oriented perpendicular to the cell walls, the surface rarely rather long-striate with striae oriented strictly longitudinal, the surface rarely smooth. Oil-bodies in intramarginal cells of leaf, absent from hyaline marginal cells which also lack cell contents, the oil-bodies occupying a small portion of the cell volume, pale smokey grey, 2-5 per cell, finely papillose, subglobose to irregularly elliptic, 3. 8-5. 3 X 6.7-7.7 juim, globose ones 4.8- 5.8 |ULm in diam. Underleaves frequently developed, lanceolate, small to rather large, to 60 juim wide X 200 juim long, united for most of their length with an adjacent lateral leaf, hyaline, crenulate-margined. Eungal partner absent. Dioecious. Androecia terminal but becoming intercalary; bracts in few pairs, lacking a lobule, slightly ventricose, the dorsal base slightly broadened and incurved; antheridia single, the stalk 2-seriate. Gynoecia terminal on abbreviated or long branches; bracts in several tightly imbricate series, those of innermost series larger than leaves, shallowly 2-lobed and irregularly and sparsely coarse-dentate to lobulate, with recurved margins, at least in sinuses; bracteole free, large, broad, rarely approaching bracts in size, usually pointed or bilobed or lobulate. Perianth long-emergent, Lophozia-\ikQ, ovate, strongly pluriplicate, apically strongly and sometimes rather abruptly contracted, not compressed, the mouth plurilobulate, the lobules denticulate by rectangular cells; perianth 1-stratose in the densely pluriplicate distal sectors, becoming 3- 4(5)-stratose basally, the cells at and below mouth rectangular. Calyptra 2-layered to above its middle, becoming 3-4-layered toward middle and 4-5-layered toward base. Sporophyte unknown. Distribution and Ecology: ‘A circumsubantarctic species and the commonest and most widespread within the genus” (Bednarek-Ochyra et al., 2000, p. 139); New Zealand: Campbell Island, Stewart Island (600-720 m). South Island (1010-1970 m). North Island (1080- 2300 m); Australia: Tasmania; Antarctica (Bouvetoya, South Orkney Islands, South Shetland Islands); South Georgia; Ealkland Islands; southern South America (Tierra del Euego); Tristan da Cunha; Gough Island; Marion Island. In New Zealand known from Eiordland, Otago, Westland, Canterbury, Sounds-Nelson, Taranaki (Mt. Taranaki), Volcanic Plateau (Tongariro Natl. Park) and Gisborne (Mt. Hikurangi) EPs. The most frequent of our Herzogobryum species, typically associated with alpine areas and in these sites occurring on exposed faces of boulders and outcrops, in rock crevices or deep under protective rock overhangs or between boulders where a sizeably, often thick layer of soil has accumulated and on moist cliff faces. In such sites, it occurs with Acrolophozia pecti- nata, Andreaea acutifolia, Andrew sianthus cuspidatus, Arthroraphis alpina, Dicranoweisia antarctica, Jamesoniella colorata, Nothogymnomitrion erosum, Notholigotrichum australe, Racomitrium crispulum and Rhacocarpus purpurascens, more rarely, on Stewart Island, with Cryptochila acinacifolia, and in Otago with Ptilidium ciliare. Occasionally found in the pen- alpine zone, for example at 1240 m in an exposed stream valley through penalpine scrub of Halocarpus bidwillii, Ozothamnus leptophyllus and Phyllocladus alpinus (Taranaki Ealls Track, Tongariro Natl. Park). On Stewart Island occurring on an exposed ledge of a large rock outcrop at 600-690 m in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi from 0.5 m to 2 m tall and significant areas of exposed rock (Mt. Rakeahua summit area). Plants vary from semi-isolated shoots to formation of loose to tight mats; plants exceptionally may form tight compact small mounds. Comments: This is the largest New Zealand Herzogobryum species. Leaves normally are 24-40 cells wide at widest point, unlobed, with cells 15-25 X 15-26 juim medially and cell walls thin- to firm-walled with trigones minute to small and concave- sided. The stem cortex is ± undifferentiated with the cells of ± the same size throughout. Plants from exposed sites develop notable rust-red pigments except for the decolorate, bleached, marginal sectors. Small phases of the species may have leaves only 17-21 cells wide and therefore may cause confusion. However, such plants have unlobed leaves, with median leaf cells 17-24 juim wide X 20-23 |ULm long. Such populations nevertheless may produce sporophytes. Herzogobryum vermiculare (Schiffn.) Grolle Gymnomitrium vermiculare Schiffn. in Naumann, Forschungsr. Gazelle 4(4): 2. pi. l,f. 9, 10. 1890. len, Successful Harbor, 1874, Naumann. cucullatum (Herzog) Grolle, Rev. Bryol. Lichenol. 32: 160. 1963. Type: Chile, Prov. Aisen, Cerro Tesoro, ca. 1000 m, 13 Feb. 1940, Schwabe 39c p. p. Plants fleshy (rather than wiry), rather rigid when dry, greenish throughout or, more often, brownish green to brick-red on leaves within the hyaline border, the plants relatively vigorous, the shoots (including leaves) 625-685 juim wide, rarely larger, 10-20 mm long or more, remotely to loosely catenulate-leaved. Branching rather common but irregular, the branches mostly lateral-intercalary from near ventral end of leaf axils; Frullania-typt branches sometimes present; flagelliform, microphyllous branches lacking. Stems rigid and stout, the cortex in 1 layer of rather thin- walled, tangentially flattened cells surrounding 2-3 strata of progressively firmer-walled intracortical cells that are subisodiametric in cross section; medullary cells strongly thick-walled, with reduced lumina (in cross sections often angular to substel- late). Rhizoids rare or absent. Leaves erect to suberect, appressed to stem, the base clasping the stem, the leaves remote to contiguous (the stem always ± exposed in dorsal view), the insertion forming an acroscopically arched line; leaves usually (2)3-stratose except for apices and marginal sectors, strongly cochleariform-concave (in cross section lunate), subrotundate but (because of the strongly concave form) impossible to flatten without tearing, undivided, the margins indistinctly crenulate. Cells of leaves (epidermal, abaxial) ± irregularly polygonal to short-oblong, somewhat thick- walled, trigones lacking or distinct and small, the median cells 14-20 X (16)18-24(26) juim, the cells ± similar in size almost throughout leaf; surface smooth. Underleaves absent. Fungal partner absent. Dioecious. Androecia compactly spicate, the bracts in 3-4 to many pairs, contiguous to closely imbricate (the hyaline marginal sectors ± closely appressed to bracts immediately above), strongly concave, orbicular, entire; antheridia monandrous, the stalk 2-seriate. Gy- noecia terminal on leading shoots or ± elongated lateral-intercalary branches, the bracts in 2- 3 closely imbricate pairs, grading below into leaves, the inner bracts of innermost series often strongly dimorphic: one 3-4-lobed or lobulate, very broadly ovate and wider than long, the other usually shallowly lobed or lobulate at apex and ovate; bracteole distinct, free, rather large, lanceolate. Perianth and bracts forming a compact, mostly ovoid to obovate capitulum, the bracts closely sheathing perianth base, but distal half or more of perianth emergent, the perianth terete below, conspicuously plicate above, not compressed above, contracted to a rather small mouth, the mouth shallowly lobulate, the lobules fimbriolate by processes terminating in a uniseriate row of 2-4 cells; perianth mostly 6-7-stratose below, remaining 2(3)-stratose to within 0.2 of apex. Seta massive, of numerous rows. Capsule spherical, the wall rather firm (at least locally 3- stratose), the valves brittle and usually fragmenting after spore discharge; outer layer of cells mostly oblong, with very strong, often opposed, nodular thickenings of longer walls, the transverse walls frequently with a pair of such thickenings; inner layer of cells less regular, often narrowly oblong, variable, with much weaker nodular thickenings. Spores 14-18 juim in diam., minutely granulate. Elaters short and slender, hardly to quite tortuous, with blunt ends, 8-9 |ULm wide, with 2 or 3 spirals, the spirals often rather lax to close, narrow, under 2 juim wide. Distribution and Ecology: Mainly subantarctic in distribution; New Zealand: South Island (1650 m). North Island (1790 m); South Georgia, Ealkland Islands, southern South America only at ca. 1000 m in the Valdivian region, Kerguelen Island, Marion Island, Prince Edward Island (Schuster, 1996d) (also cf. Engel, 1990a). A species known from a few scattered loci. In the alpine zone immediately below the summit of Avalanche Peak (Arthur’s Pass Natl. Park, 1650 m) occurring admixed with Acro- lophozia pectinata and Nothogymnomitrion erosum in a protected niche of a rock outcrop. Also on the northern slope of Mt. Ruapehu (S of Top of the Bruce, Tongariro Natl. Park, 1790 m) on soil under a ledge of an outcrop in an area of cliffs and outcrops with scattered alpine plants. Comments: Plants of this species in situ and even when dry may be distinguished from other members of the genus and from Nothogymnomitrion (both of which are commonly admixed) by the smaller plant size coupled with the remotely to loosely catenulate-leaved shoots. Leaves are unlobed and 2-3-stratose (exclusive of the hyaline border); all other members of the genus have unistratose leaves (aside from a basal field at times present in some species). Nothogymnomitrion R.M.Schust. Nothogymnomitrion R.M.Schust., J. Hattori Bot. Lab. 80: 43. 1996. Plants often in dense, unordered, compact mats, wiry, rigid, nearly terete, vermiform, creeping, erect with crowding, plagiotropic, greenish to golden brown to red-brown. Branching common but irregular, the branches lateral-intercalary, from median sector of axil or from the ventral or sometimes dorsal end of the axil; branches of 2 types: normal and leafy, and stoloni- form, the microphyllous branches issuing from lower ends of leafy axes, creeping, with rudi- mentary 2-ranked leaves and copious rhizoids. Stems rather thick and rigid, striolate in surface view, the cortex very weakly differentiated, in a single layer of slightly larger, firm-walled cells with ± bulging free walls; medullary cells firm- walled, clearly thickened at the angles. Rhizoids colorless, few and scattered on ventral side of normal leafy axes, abundant on stolons and from all sides of axis. Leaves stiffly suberect and weakly laterally spreading, faintly dor- sally assurgent, closely and densely imbricate, the insertion subtransverse, shallowly U-shaped, the insertion lines interlocking dorsally for 2-3 or more cell rows (thus lateral merophytes clearly interlocking in a zigzag manner); leaves unistratose, strongly adaxially concave, broadly ovate-deltoid or rounded- deltoid, 270-580 juim wide X 260-500 juim long, usually as wide as long, narrowed to summit, the expanded bases closely investing the stem; apex shallowly emarginate to bidentate-bilobulate, the lobes then often barely perceptible; sinus shallow to vestigial; margins flat, the marginal cells differentiated into border of hyaline, empty, thick- walled cells in 1-2(3) rows, the marginal row mostly elongated radially, ca. 7-13 X 18- 36 |ULm, the cells typically free distally for only 0.5 or less, with the free ends projecting as irregular, extremely thick- walled, notably irregular ‘‘knobs” or finger- like, solid projections, the thickened tip at times equaling or exceeding the length of the cell lumen, the margins thus irregularly crenulate-denticulate; intramarginal cells chlorophyllose, in ± regular vertical rows, the cells in 2-several rows at the perimeter (especially in distal sector of leaf) usually pigmented, notably thick-walled, with guttulate lumina, the remaining leaf cells often devoid of strong pigmentation, with progressively thinner walls but rounded at angles, trigones lacking or small and concave-sided to, less often, medium and straight-sided; median cells 11-19 |ULm wide X 13-22 juim long; basal cells usually thinner-walled, 14-17 X 16-20 juim; surface conspicuously papillose, the papillae in lower parts of leaf wart-like. Oil-bodies occupying a mod¬ erate portion of cell, pale smokey grey, hyaline, (1)2-4 per middle of lamina, obscurely coarsely papillose, the spherules not bulging beyond membrane, the oil-bodies globose to sub- globose, 2.5-5 |ULm in diam.; oil-bodies at leaf base 4-7 per cell, at leaf margins 2-3 per cell. Underleaves lacking. Autoecious. Androecia on leading leafy shoots or ± elongated branches, terminal but becoming intercalary, the shoots sometimes repeatedly androecial, compactly spicate; bracts leaf-like but larger, more spreading and more strongly concave (the androecia thus appearing tumid), the dorsal margin without lobule, but with dorsal margin incurved and ampliate; an- theridia 2 per bract, the stalk unistratose but with local bistratose areas, particularly toward base. Gynoecia terminal on leafy axes or branches of variable length, completely lacking a subtending perigynium; bracts in several, progressively larger series (and becoming several times the size of stem leaves), closely imbricate, those of innermost series very variable, symmetrically ovate to ovate-deltoid, short-bilobed, with margins as in leaves but often even more coarsely crenulate-denticulate, the projecting thick-walled hyaline cells sometimes recurved; bracteole always present, rather large, rarely wholly free, usually connate on one or both sides with the bracts (sometimes so broadly so on one side that a 3-lobed bract is simulated). Perianth well developed, not or barely exceeding the innermost bracts, when immature ± strongly laterally compressed, at maturity the mouth remaining perceptibly laterally compressed toward the mouth, proximally inflated, ovate, with a narrowed base; mouth narrowed, shallowly bilabiate, irregularly crenulate-denticulate, with maturation soon becoming erose; perianth cells similar to leaf cells, quadrangular to short-rectangular, slightly thin- walled. Calyptra with unfertilized archegonia at or near base. Seta very short, usually not protruding capsule beyond bracts, with 22-24 rows of outer cells surrounding an inner core of ca. 30-32 rows, the outer cells not larger than the internal cells. Capsule subspherical, the wall ca. 24 juim thick, 2-stratose, the outer ca. 2X the inner in thickness; outer layer of cells with strong, nodular thickenings that are often stalked and dilated distally, sporadically extending as weak semiannular bands, the transverse walls also with nodular thickenings; inner layer of cells with nodular thickenings, occasional ones extended as tangential spurs, a few as weak semiannular bands. Spores brown, 10-14 juim in diam., appearing finely punctate, the spores ± equal to elater diam. Elaters 9-11 luim wide, the tips always rounded, the elaters 3-spiral throughout or at least medially and bispiral toward the ends, the spirals narrow, 1.6-2 juim wide. Type: Nothogymnomitrion erosum (Carrington &amp; Pearson) R.M.Schust. (= Cesia erosa Carrington &amp; Pearson) A monotypic genus, with only the subantarctic Nothogymnomitrion erosum. Description adapted and modified from Schuster (1996d). References: Grolle (1966b); Schuster (1996d, 2002a).</p>
-    
-    
-  </details>
-  
-  <details>
-    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
-    
-    
-    <p><strong>conservation_status:</strong> Data Deficient</p>
+    <pre class="description-text">Plants wiry, but rather fleshy and rigid, terete, julaceous, worm-like, somewhat nitid, green, at least upper surface of shoots, occasionally dull or rusty red or yellow-brown (but leaf margins decolorate), the shoots relatively stout, to 410 juim wide, the upper parts evenly leafy. Branching mostly lateral-intercalary, occasionally ?ventral-intercalary. Stems fleshy, colorless, stiff and wiry, the cells of ± the same size, the outer 1 .5-3 cell layers pale and thin-walled; medullary cells slightly to distinctly thick-walled. Rhizoids scarce, scattered, colorless. Leaves erect, loosely appressed, mostly subcontiguous to weakly to moderately imbricate, the insertion feebly to distinctly succubous, the insertion line broad, basiscopically arched, bowed (insertion both dorsally and ventrally obliquely arched toward shoot apex), the insertion lines extending considerably beyond stem midline; leaves unistratose (or in larger phases with a 2-stratose me¬ dian-basal field), concave, saucer-shaped, orbicular-ovate, wider than long when flattened, (22)24-40 cells wide at widest point, to 375-400 X 480-515 juim, broad-based and clasping the stem, unlobed; marginal cells differentiated into a hyaline, empty, incurved (especially api- cally) border (1)2-4 cells broad, the outermost row of radially or obliquely elongated cells (10-15 X 25—32 |ULm) that are relatively thin- walled and forming a crenulate, conspicuous border, often breaking down with age, the margin then erose; intramarginal cells thin- to clearly thick-walled, trigones minute to small and concave-sided or less often medium and straightsided, the cells 15-25 X 15-26(29) juim medially and subapically; surface typically minutely papillose-short-striate, the striae oriented perpendicular to the cell walls, the surface rarely rather long-striate with striae oriented strictly longitudinal, the surface rarely smooth. Oil-bodies in intramarginal cells of leaf, absent from hyaline marginal cells which also lack cell contents, the oil-bodies occupying a small portion of the cell volume, pale smokey grey, 2-5 per cell, finely papillose, subglobose to irregularly elliptic, 3. 8-5. 3 X 6.7-7.7 juim, globose ones 4.8- 5.8 |ULm in diam. Underleaves frequently developed, lanceolate, small to rather large, to 60 juim wide X 200 juim long, united for most of their length with an adjacent lateral leaf, hyaline, crenulate-margined. Eungal partner absent. Dioecious. Androecia terminal but becoming intercalary; bracts in few pairs, lacking a lobule, slightly ventricose, the dorsal base slightly broadened and incurved; antheridia single, the stalk 2-seriate. Gynoecia terminal on abbreviated or long branches; bracts in several tightly imbricate series, those of innermost series larger than leaves, shallowly 2-lobed and irregularly and sparsely coarse-dentate to lobulate, with recurved margins, at least in sinuses; bracteole free, large, broad, rarely approaching bracts in size, usually pointed or bilobed or lobulate. Perianth long-emergent, Lophozia-\ikQ, ovate, strongly pluriplicate, apically strongly and sometimes rather abruptly contracted, not compressed, the mouth plurilobulate, the lobules denticulate by rectangular cells; perianth 1-stratose in the densely pluriplicate distal sectors, becoming 3- 4(5)-stratose basally, the cells at and below mouth rectangular. Calyptra 2-layered to above its middle, becoming 3-4-layered toward middle and 4-5-layered toward base. Sporophyte unknown. Distribution and Ecology: ‘A circumsubantarctic species and the commonest and most widespread within the genus” (Bednarek-Ochyra et al., 2000, p. 139); New Zealand: Campbell Island, Stewart Island (600-720 m). South Island (1010-1970 m). North Island (1080- 2300 m); Australia: Tasmania; Antarctica (Bouvetoya, South Orkney Islands, South Shetland Islands); South Georgia; Ealkland Islands; southern South America (Tierra del Euego); Tristan da Cunha; Gough Island; Marion Island. In New Zealand known from Eiordland, Otago, Westland, Canterbury, Sounds-Nelson, Taranaki (Mt. Taranaki), Volcanic Plateau (Tongariro Natl. Park) and Gisborne (Mt. Hikurangi) EPs. The most frequent of our Herzogobryum species, typically associated with alpine areas and in these sites occurring on exposed faces of boulders and outcrops, in rock crevices or deep under protective rock overhangs or between boulders where a sizeably, often thick layer of soil has accumulated and on moist cliff faces. In such sites, it occurs with Acrolophozia pecti- nata, Andreaea acutifolia, Andrew sianthus cuspidatus, Arthroraphis alpina, Dicranoweisia antarctica, Jamesoniella colorata, Nothogymnomitrion erosum, Notholigotrichum australe, Racomitrium crispulum and Rhacocarpus purpurascens, more rarely, on Stewart Island, with Cryptochila acinacifolia, and in Otago with Ptilidium ciliare. Occasionally found in the pen- alpine zone, for example at 1240 m in an exposed stream valley through penalpine scrub of Halocarpus bidwillii, Ozothamnus leptophyllus and Phyllocladus alpinus (Taranaki Ealls Track, Tongariro Natl. Park). On Stewart Island occurring on an exposed ledge of a large rock outcrop at 600-690 m in mosaic communities of penalpine cushion vegetation, herbfields, Chionochloa, prostrate Leptospermum scoparium, Olearia colensoi from 0.5 m to 2 m tall and significant areas of exposed rock (Mt. Rakeahua summit area). Plants vary from semi-isolated shoots to formation of loose to tight mats; plants exceptionally may form tight compact small mounds. Comments: This is the largest New Zealand Herzogobryum species. Leaves normally are 24-40 cells wide at widest point, unlobed, with cells 15-25 X 15-26 juim medially and cell walls thin- to firm-walled with trigones minute to small and concave- sided. The stem cortex is ± undifferentiated with the cells of ± the same size throughout. Plants from exposed sites develop notable rust-red pigments except for the decolorate, bleached, marginal sectors. Small phases of the species may have leaves only 17-21 cells wide and therefore may cause confusion. However, such plants have unlobed leaves, with median leaf cells 17-24 juim wide X 20-23 |ULm long. Such populations nevertheless may produce sporophytes. Herzogobryum vermiculare (Schiffn.) Grolle Gymnomitrium vermiculare Schiffn. in Naumann, Forschungsr. Gazelle 4(4): 2. pi. l,f. 9, 10. 1890. len, Successful Harbor, 1874, Naumann. cucullatum (Herzog) Grolle, Rev. Bryol. Lichenol. 32: 160. 1963. Type: Chile, Prov. Aisen, Cerro Tesoro, ca. 1000 m, 13 Feb. 1940, Schwabe 39c p. p. Plants fleshy (rather than wiry), rather rigid when dry, greenish throughout or, more often, brownish green to brick-red on leaves within the hyaline border, the plants relatively vigorous, the shoots (including leaves) 625-685 juim wide, rarely larger, 10-20 mm long or more, remotely to loosely catenulate-leaved. Branching rather common but irregular, the branches mostly lateral-intercalary from near ventral end of leaf axils; Frullania-typt branches sometimes present; flagelliform, microphyllous branches lacking. Stems rigid and stout, the cortex in 1 layer of rather thin- walled, tangentially flattened cells surrounding 2-3 strata of progressively firmer-walled intracortical cells that are subisodiametric in cross section; medullary cells strongly thick-walled, with reduced lumina (in cross sections often angular to substel- late). Rhizoids rare or absent. Leaves erect to suberect, appressed to stem, the base clasping the stem, the leaves remote to contiguous (the stem always ± exposed in dorsal view), the insertion forming an acroscopically arched line; leaves usually (2)3-stratose except for apices and marginal sectors, strongly cochleariform-concave (in cross section lunate), subrotundate but (because of the strongly concave form) impossible to flatten without tearing, undivided, the margins indistinctly crenulate. Cells of leaves (epidermal, abaxial) ± irregularly polygonal to short-oblong, somewhat thick- walled, trigones lacking or distinct and small, the median cells 14-20 X (16)18-24(26) juim, the cells ± similar in size almost throughout leaf; surface smooth. Underleaves absent. Fungal partner absent. Dioecious. Androecia compactly spicate, the bracts in 3-4 to many pairs, contiguous to closely imbricate (the hyaline marginal sectors ± closely appressed to bracts immediately above), strongly concave, orbicular, entire; antheridia monandrous, the stalk 2-seriate. Gy- noecia terminal on leading shoots or ± elongated lateral-intercalary branches, the bracts in 2- 3 closely imbricate pairs, grading below into leaves, the inner bracts of innermost series often strongly dimorphic: one 3-4-lobed or lobulate, very broadly ovate and wider than long, the other usually shallowly lobed or lobulate at apex and ovate; bracteole distinct, free, rather large, lanceolate. Perianth and bracts forming a compact, mostly ovoid to obovate capitulum, the bracts closely sheathing perianth base, but distal half or more of perianth emergent, the perianth terete below, conspicuously plicate above, not compressed above, contracted to a rather small mouth, the mouth shallowly lobulate, the lobules fimbriolate by processes terminating in a uniseriate row of 2-4 cells; perianth mostly 6-7-stratose below, remaining 2(3)-stratose to within 0.2 of apex. Seta massive, of numerous rows. Capsule spherical, the wall rather firm (at least locally 3- stratose), the valves brittle and usually fragmenting after spore discharge; outer layer of cells mostly oblong, with very strong, often opposed, nodular thickenings of longer walls, the transverse walls frequently with a pair of such thickenings; inner layer of cells less regular, often narrowly oblong, variable, with much weaker nodular thickenings. Spores 14-18 juim in diam., minutely granulate. Elaters short and slender, hardly to quite tortuous, with blunt ends, 8-9 |ULm wide, with 2 or 3 spirals, the spirals often rather lax to close, narrow, under 2 juim wide. Distribution and Ecology: Mainly subantarctic in distribution; New Zealand: South Island (1650 m). North Island (1790 m); South Georgia, Ealkland Islands, southern South America only at ca. 1000 m in the Valdivian region, Kerguelen Island, Marion Island, Prince Edward Island (Schuster, 1996d) (also cf. Engel, 1990a). A species known from a few scattered loci. In the alpine zone immediately below the summit of Avalanche Peak (Arthur’s Pass Natl. Park, 1650 m) occurring admixed with Acro- lophozia pectinata and Nothogymnomitrion erosum in a protected niche of a rock outcrop. Also on the northern slope of Mt. Ruapehu (S of Top of the Bruce, Tongariro Natl. Park, 1790 m) on soil under a ledge of an outcrop in an area of cliffs and outcrops with scattered alpine plants. Comments: Plants of this species in situ and even when dry may be distinguished from other members of the genus and from Nothogymnomitrion (both of which are commonly admixed) by the smaller plant size coupled with the remotely to loosely catenulate-leaved shoots. Leaves are unlobed and 2-3-stratose (exclusive of the hyaline border); all other members of the genus have unistratose leaves (aside from a basal field at times present in some species). Nothogymnomitrion R.M.Schust. Nothogymnomitrion R.M.Schust., J. Hattori Bot. Lab. 80: 43. 1996. Plants often in dense, unordered, compact mats, wiry, rigid, nearly terete, vermiform, creeping, erect with crowding, plagiotropic, greenish to golden brown to red-brown. Branching common but irregular, the branches lateral-intercalary, from median sector of axil or from the ventral or sometimes dorsal end of the axil; branches of 2 types: normal and leafy, and stoloni- form, the microphyllous branches issuing from lower ends of leafy axes, creeping, with rudi- mentary 2-ranked leaves and copious rhizoids. Stems rather thick and rigid, striolate in surface view, the cortex very weakly differentiated, in a single layer of slightly larger, firm-walled cells with ± bulging free walls; medullary cells firm- walled, clearly thickened at the angles. Rhizoids colorless, few and scattered on ventral side of normal leafy axes, abundant on stolons and from all sides of axis. Leaves stiffly suberect and weakly laterally spreading, faintly dor- sally assurgent, closely and densely imbricate, the insertion subtransverse, shallowly U-shaped, the insertion lines interlocking dorsally for 2-3 or more cell rows (thus lateral merophytes clearly interlocking in a zigzag manner); leaves unistratose, strongly adaxially concave, broadly ovate-deltoid or rounded- deltoid, 270-580 juim wide X 260-500 juim long, usually as wide as long, narrowed to summit, the expanded bases closely investing the stem; apex shallowly emarginate to bidentate-bilobulate, the lobes then often barely perceptible; sinus shallow to vestigial; margins flat, the marginal cells differentiated into border of hyaline, empty, thick- walled cells in 1-2(3) rows, the marginal row mostly elongated radially, ca. 7-13 X 18- 36 |ULm, the cells typically free distally for only 0.5 or less, with the free ends projecting as irregular, extremely thick- walled, notably irregular ‘‘knobs” or finger- like, solid projections, the thickened tip at times equaling or exceeding the length of the cell lumen, the margins thus irregularly crenulate-denticulate; intramarginal cells chlorophyllose, in ± regular vertical rows, the cells in 2-several rows at the perimeter (especially in distal sector of leaf) usually pigmented, notably thick-walled, with guttulate lumina, the remaining leaf cells often devoid of strong pigmentation, with progressively thinner walls but rounded at angles, trigones lacking or small and concave-sided to, less often, medium and straight-sided; median cells 11-19 |ULm wide X 13-22 juim long; basal cells usually thinner-walled, 14-17 X 16-20 juim; surface conspicuously papillose, the papillae in lower parts of leaf wart-like. Oil-bodies occupying a mod¬ erate portion of cell, pale smokey grey, hyaline, (1)2-4 per middle of lamina, obscurely coarsely papillose, the spherules not bulging beyond membrane, the oil-bodies globose to sub- globose, 2.5-5 |ULm in diam.; oil-bodies at leaf base 4-7 per cell, at leaf margins 2-3 per cell. Underleaves lacking. Autoecious. Androecia on leading leafy shoots or ± elongated branches, terminal but becoming intercalary, the shoots sometimes repeatedly androecial, compactly spicate; bracts leaf-like but larger, more spreading and more strongly concave (the androecia thus appearing tumid), the dorsal margin without lobule, but with dorsal margin incurved and ampliate; an- theridia 2 per bract, the stalk unistratose but with local bistratose areas, particularly toward base. Gynoecia terminal on leafy axes or branches of variable length, completely lacking a subtending perigynium; bracts in several, progressively larger series (and becoming several times the size of stem leaves), closely imbricate, those of innermost series very variable, symmetrically ovate to ovate-deltoid, short-bilobed, with margins as in leaves but often even more coarsely crenulate-denticulate, the projecting thick-walled hyaline cells sometimes recurved; bracteole always present, rather large, rarely wholly free, usually connate on one or both sides with the bracts (sometimes so broadly so on one side that a 3-lobed bract is simulated). Perianth well developed, not or barely exceeding the innermost bracts, when immature ± strongly laterally compressed, at maturity the mouth remaining perceptibly laterally compressed toward the mouth, proximally inflated, ovate, with a narrowed base; mouth narrowed, shallowly bilabiate, irregularly crenulate-denticulate, with maturation soon becoming erose; perianth cells similar to leaf cells, quadrangular to short-rectangular, slightly thin- walled. Calyptra with unfertilized archegonia at or near base. Seta very short, usually not protruding capsule beyond bracts, with 22-24 rows of outer cells surrounding an inner core of ca. 30-32 rows, the outer cells not larger than the internal cells. Capsule subspherical, the wall ca. 24 juim thick, 2-stratose, the outer ca. 2X the inner in thickness; outer layer of cells with strong, nodular thickenings that are often stalked and dilated distally, sporadically extending as weak semiannular bands, the transverse walls also with nodular thickenings; inner layer of cells with nodular thickenings, occasional ones extended as tangential spurs, a few as weak semiannular bands. Spores brown, 10-14 juim in diam., appearing finely punctate, the spores ± equal to elater diam. Elaters 9-11 luim wide, the tips always rounded, the elaters 3-spiral throughout or at least medially and bispiral toward the ends, the spirals narrow, 1.6-2 juim wide. Type: Nothogymnomitrion erosum (Carrington &amp; Pearson) R.M.Schust. (= Cesia erosa Carrington &amp; Pearson) A monotypic genus, with only the subantarctic Nothogymnomitrion erosum. Description adapted and modified from Schuster (1996d). References: Grolle (1966b); Schuster (1996d, 2002a).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> Data Deficient</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Macquarie I.</p>
     
     
   </details>
@@ -460,14 +439,43 @@ Heteroscyphus compactus (Colenso) R.M.Schust.                  Taylor
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Gymnomitrion atrocapillum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herzogobryum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herzogobryum cucullatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herzogobryum filiarum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herzogobryum filiforme</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herzogobryum molle</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herzogobryum teres</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Herzogobryum vermiculare</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cesius atrocapilla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Gymnomitrion marionense</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia atrocapilla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -482,23 +490,17 @@ Heteroscyphus compactus (Colenso) R.M.Schust.                  Taylor
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
 </script>
+
+
 
 
 </body>

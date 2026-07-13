@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Species — Tasmanian Liverworts</title>
+  <title>Tasmanian Liverworts — Species Database</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <link rel="stylesheet" href="/liverworts/static/style.css">
   
@@ -20,20 +20,34 @@
     </nav>
   </header>
 
+  
+<div class="hero">
+  <div class="container">
+    <div>
+      <h1>Tasmanian Liverworts</h1>
+      <p>Species traits, occurrences &amp; environmental data · Tasmania &amp; Australia</p>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="n">304</div><div class="l">Species</div></div>
+      <div class="hero-stat"><div class="n">44k+</div><div class="l">Occurrences</div></div>
+      <div class="hero-stat"><div class="n">54</div><div class="l">Sources</div></div>
+    </div>
+  </div>
+</div>
+
+
   <main class="container">
     
-<hgroup>
-  <h1>Tasmanian Liverworts</h1>
-  <p>304 species · Renner et al. 2024 backbone · Tasmania &amp; Australia</p>
-</hgroup>
-
-<input
-  type="search"
-  id="species-search"
-  placeholder="Search species, genus, or family…"
-  autocomplete="off"
-  aria-label="Search species"
->
+<div class="search-wrap">
+  <span class="search-icon">&#x2315;</span>
+  <input
+    type="search"
+    id="species-search"
+    placeholder="Search by species, genus, or family…"
+    autocomplete="off"
+    aria-label="Search species"
+  >
+</div>
 
 <figure>
   <table>
@@ -41,2152 +55,4284 @@
       <tr>
         <th>Species</th>
         <th>Family</th>
-        <th class="num">Occurrences</th>
-        <th class="num">Traits</th>
+        <th class="num" title="ALA occurrence records">Occ.</th>
+        <th class="num" title="Extracted traits">Traits</th>
+        <th style="text-align:center" title="Data available: green=occurrences, purple=traits, amber=descriptions">Data</th>
       </tr>
     </thead>
     <tbody id="species-tbody">
       
 <tr data-search="acrobolbus cinerascens acrobolbaceae acrobolbus">
   <td><a href="/liverworts/species/1"><em>Acrobolbus cinerascens</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">188</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="188 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="8 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus concinnus acrobolbaceae acrobolbus">
   <td><a href="/liverworts/species/163"><em>Acrobolbus concinnus</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">150</td>
   <td class="num">16</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="150 occurrences"></span>
+      <span class="dot dot-trait" title="16 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus ochrophyllus acrobolbaceae acrobolbus">
   <td><a href="/liverworts/species/164"><em>Acrobolbus ochrophyllus</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">33</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="33 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus ochrophyllus  acrobolbus">
   <td><a href="/liverworts/species/165"><em>Acrobolbus ochrophyllus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus pseudosaccatus  acrobolbus">
   <td><a href="/liverworts/species/166"><em>Acrobolbus pseudosaccatus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus setulosus  acrobolbus">
   <td><a href="/liverworts/species/167"><em>Acrobolbus setulosus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus spinifolius  acrobolbus">
   <td><a href="/liverworts/species/168"><em>Acrobolbus spinifolius</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus surculosus  acrobolbus">
   <td><a href="/liverworts/species/169"><em>Acrobolbus surculosus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrobolbus tenellus  acrobolbus">
   <td><a href="/liverworts/species/170"><em>Acrobolbus tenellus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acrolejeunea aulacophora lejeuneaceae acrolejeunea">
   <td><a href="/liverworts/species/171"><em>Acrolejeunea aulacophora</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">85</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="85 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum cavifolium lepidoziaceae acromastigum">
   <td><a href="/liverworts/species/172"><em>Acromastigum cavifolium</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">53</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="53 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum colensoanum lepidoziaceae acromastigum">
   <td><a href="/liverworts/species/173"><em>Acromastigum colensoanum</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">251</td>
   <td class="num">22</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="251 occurrences"></span>
+      <span class="dot dot-trait" title="22 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum divaricatum lepidoziaceae acromastigum">
   <td><a href="/liverworts/species/174"><em>Acromastigum divaricatum</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">16</td>
   <td class="num">19</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="16 occurrences"></span>
+      <span class="dot dot-trait" title="19 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum fumosum  acromastigum">
   <td><a href="/liverworts/species/175"><em>Acromastigum fumosum</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum interstisiale  acromastigum">
   <td><a href="/liverworts/species/176"><em>Acromastigum interstisiale</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">17</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="17 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum mooreanum lepidoziaceae acromastigum">
   <td><a href="/liverworts/species/177"><em>Acromastigum mooreanum</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">123</td>
   <td class="num">35</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="123 occurrences"></span>
+      <span class="dot dot-trait" title="35 traits"></span>
+      <span class="dot dot-desc" title="8 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum prismaticale  acromastigum">
   <td><a href="/liverworts/species/178"><em>Acromastigum prismaticale</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acromastigum verticale lepidoziaceae acromastigum">
   <td><a href="/liverworts/species/179"><em>Acromastigum verticale</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">28</td>
   <td class="num">34</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="28 occurrences"></span>
+      <span class="dot dot-trait" title="34 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="acroscyphella phoenicorhiza balantiopsidaceae acroscyphella">
   <td><a href="/liverworts/species/180"><em>Acroscyphella phoenicorhiza</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">39</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="39 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="adelanthus bisetulus adelanthaceae adelanthus">
   <td><a href="/liverworts/species/2"><em>Adelanthus bisetulus</em></a></td>
-  <td>Adelanthaceae</td>
+  <td class="muted">Adelanthaceae</td>
   <td class="num">88</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="88 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="adelanthus falcatus  adelanthus">
   <td><a href="/liverworts/species/3"><em>Adelanthus falcatus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">22</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="22 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="adelanthus gemmiparus adelanthaceae adelanthus">
   <td><a href="/liverworts/species/181"><em>Adelanthus gemmiparus</em></a></td>
-  <td>Adelanthaceae</td>
+  <td class="muted">Adelanthaceae</td>
   <td class="num">36</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="36 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="adelanthus occlusus adelanthaceae adelanthus">
   <td><a href="/liverworts/species/182"><em>Adelanthus occlusus</em></a></td>
-  <td>Adelanthaceae</td>
+  <td class="muted">Adelanthaceae</td>
   <td class="num">93</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="93 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="allisoniella nigra cephaloziellaceae allisoniella">
   <td><a href="/liverworts/species/183"><em>Allisoniella nigra</em></a></td>
-  <td>Cephaloziellaceae</td>
+  <td class="muted">Cephaloziellaceae</td>
   <td class="num">26</td>
   <td class="num">61</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="26 occurrences"></span>
+      <span class="dot dot-trait" title="61 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="allisoniella tasmanica cephaloziellaceae allisoniella">
   <td><a href="/liverworts/species/184"><em>Allisoniella tasmanica</em></a></td>
-  <td>Cephaloziellaceae</td>
+  <td class="muted">Cephaloziellaceae</td>
   <td class="num">2</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="aloina pottiaceae gackstroemia">
   <td><a href="/liverworts/species/263"><em>Aloina</em></a></td>
-  <td>Pottiaceae</td>
+  <td class="muted">Pottiaceae</td>
   <td class="num">144</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="144 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="anastrophyllopsis subcomplicata cephaloziellaceae anastrophyllopsis">
   <td><a href="/liverworts/species/185"><em>Anastrophyllopsis subcomplicata</em></a></td>
-  <td>Cephaloziellaceae</td>
+  <td class="muted">Cephaloziellaceae</td>
   <td class="num">64</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="64 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="andrewsianthus perigonialis scapaniaceae andrewsianthus">
   <td><a href="/liverworts/species/4"><em>Andrewsianthus perigonialis</em></a></td>
-  <td>Scapaniaceae</td>
+  <td class="muted">Scapaniaceae</td>
   <td class="num">84</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="84 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="andrewsianthus puniceus scapaniaceae andrewsianthus">
   <td><a href="/liverworts/species/186"><em>Andrewsianthus puniceus</em></a></td>
-  <td>Scapaniaceae</td>
+  <td class="muted">Scapaniaceae</td>
   <td class="num">7</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="7 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="aneura alterniloba aneuraceae aneura">
   <td><a href="/liverworts/species/5"><em>Aneura alterniloba</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">331</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="331 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="aneura rodwayi aneuraceae aneura">
   <td><a href="/liverworts/species/187"><em>Aneura rodwayi</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">73</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="73 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="asterella australis aytoniaceae asterella">
   <td><a href="/liverworts/species/189"><em>Asterella australis</em></a></td>
-  <td>Aytoniaceae</td>
+  <td class="muted">Aytoniaceae</td>
   <td class="num">125</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="125 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="asterella tasmanica aytoniaceae asterella">
   <td><a href="/liverworts/species/190"><em>Asterella tasmanica</em></a></td>
-  <td>Aytoniaceae</td>
+  <td class="muted">Aytoniaceae</td>
   <td class="num">4</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="4 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="balantiopsis convexiuscula balantiopsidaceae balantiopsis">
   <td><a href="/liverworts/species/191"><em>Balantiopsis convexiuscula</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">92</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="92 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="balantiopsis diplophylla balantiopsidaceae balantiopsis">
   <td><a href="/liverworts/species/6"><em>Balantiopsis diplophylla</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">539</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="539 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="balantiopsis tumida balantiopsidaceae balantiopsis">
   <td><a href="/liverworts/species/7"><em>Balantiopsis tumida</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">97</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="97 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="bazzania accreta lepidoziaceae bazzania">
   <td><a href="/liverworts/species/192"><em>Bazzania accreta</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">88</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="88 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="bazzania adnexa lepidoziaceae bazzania">
   <td><a href="/liverworts/species/8"><em>Bazzania adnexa</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">1156</td>
   <td class="num">36</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="1156 occurrences"></span>
+      <span class="dot dot-trait" title="36 traits"></span>
+      <span class="dot dot-desc" title="22 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="bazzania hochstetteri lepidoziaceae bazzania">
   <td><a href="/liverworts/species/194"><em>Bazzania hochstetteri</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">132</td>
   <td class="num">17</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="132 occurrences"></span>
+      <span class="dot dot-trait" title="17 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="bazzania monilinervis lepidoziaceae bazzania">
   <td><a href="/liverworts/species/195"><em>Bazzania monilinervis</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">220</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="220 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="bazzania novae-zelandiae  bazzania">
   <td><a href="/liverworts/species/196"><em>Bazzania novae-zelandiae</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">21</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="21 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="bazzania novaezelandiae lepidoziaceae bazzania">
   <td><a href="/liverworts/species/193"><em>Bazzania novaezelandiae</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">205</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="205 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="blepharidophyllum vertebrale blepharidophyllaceae blepharidophyllum">
   <td><a href="/liverworts/species/197"><em>Blepharidophyllum vertebrale</em></a></td>
-  <td>Blepharidophyllaceae</td>
+  <td class="muted">Blepharidophyllaceae</td>
   <td class="num">45</td>
   <td class="num">23</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="45 occurrences"></span>
+      <span class="dot dot-trait" title="23 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="brevianthus flavus brevianthaceae brevianthus">
   <td><a href="/liverworts/species/198"><em>Brevianthus flavus</em></a></td>
-  <td>Brevianthaceae</td>
+  <td class="muted">Brevianthaceae</td>
   <td class="num">116</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="116 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="breynia androgyna phyllanthaceae protolophozia">
   <td><a href="/liverworts/species/362"><em>Breynia androgyna</em></a></td>
-  <td>Phyllanthaceae</td>
+  <td class="muted">Phyllanthaceae</td>
   <td class="num">72</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="72 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="calypogeia sphagnicola calypogeiaceae calypogeia">
   <td><a href="/liverworts/species/199"><em>Calypogeia sphagnicola</em></a></td>
-  <td>Calypogeiaceae</td>
+  <td class="muted">Calypogeiaceae</td>
   <td class="num">15</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="15 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="castanoclobus julaceus trichocoleaceae castanoclobos">
   <td><a href="/liverworts/species/200"><em>Castanoclobus julaceus</em></a></td>
-  <td>Trichocoleaceae</td>
+  <td class="muted">Trichocoleaceae</td>
   <td class="num">9</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="9 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cephalomitrion aterrimum cephaloziellaceae cephalomitrion">
   <td><a href="/liverworts/species/201"><em>Cephalomitrion aterrimum</em></a></td>
-  <td>Cephaloziellaceae</td>
+  <td class="muted">Cephaloziellaceae</td>
   <td class="num">70</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="70 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cephaloziella levieri cephaloziellaceae cephaloziella">
   <td><a href="/liverworts/species/202"><em>Cephaloziella levieri</em></a></td>
-  <td>Cephaloziellaceae</td>
+  <td class="muted">Cephaloziellaceae</td>
   <td class="num">1</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="1 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cephaloziella pulcherrima cephaloziellaceae cephaloziella">
   <td><a href="/liverworts/species/203"><em>Cephaloziella pulcherrima</em></a></td>
-  <td>Cephaloziellaceae</td>
+  <td class="muted">Cephaloziellaceae</td>
   <td class="num">32</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="32 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cephaloziella pulcherrima  cephaloziella">
   <td><a href="/liverworts/species/204"><em>Cephaloziella pulcherrima</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="ceramanus grossiseta lepidoziaceae ceramanus">
   <td><a href="/liverworts/species/205"><em>Ceramanus grossiseta</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">52</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="52 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chandonanthus squarrosus scapaniaceae chandonanthus">
   <td><a href="/liverworts/species/206"><em>Chandonanthus squarrosus</em></a></td>
-  <td>Scapaniaceae</td>
+  <td class="muted">Scapaniaceae</td>
   <td class="num">503</td>
   <td class="num">24</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="503 occurrences"></span>
+      <span class="dot dot-trait" title="24 traits"></span>
+      <span class="dot dot-desc" title="8 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cheilolejeunea albovirens lejeuneaceae cheilolejeunea">
   <td><a href="/liverworts/species/207"><em>Cheilolejeunea albovirens</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">48</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="48 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cheilolejeunea campbelliensis lejeuneaceae cheilolejeunea">
   <td><a href="/liverworts/species/208"><em>Cheilolejeunea campbelliensis</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">45</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="45 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cheilolejeunea comitans lejeuneaceae cheilolejeunea">
   <td><a href="/liverworts/species/209"><em>Cheilolejeunea comitans</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">65</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="65 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cheilolejeunea mimosa lejeuneaceae cheilolejeunea">
   <td><a href="/liverworts/species/210"><em>Cheilolejeunea mimosa</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">282</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="282 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cheilolejeunea norrisii  cheilolejeunea">
   <td><a href="/liverworts/species/211"><em>Cheilolejeunea norrisii</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiastocaulon biseriale  chiastocaulon">
   <td><a href="/liverworts/species/212"><em>Chiastocaulon biseriale</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiastocaulon oppositum  chiastocaulon">
   <td><a href="/liverworts/species/213"><em>Chiastocaulon oppositum</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiastocaulon proliferum plagiochilaceae chiastocaulon">
   <td><a href="/liverworts/species/214"><em>Chiastocaulon proliferum</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">30</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="30 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus austrigenus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/215"><em>Chiloscyphus austrigenus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">349</td>
   <td class="num">17</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="349 occurrences"></span>
+      <span class="dot dot-trait" title="17 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus canaliculatus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/216"><em>Chiloscyphus canaliculatus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">158</td>
   <td class="num">16</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="158 occurrences"></span>
+      <span class="dot dot-trait" title="16 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus cuspidatus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/217"><em>Chiloscyphus cuspidatus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">91</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="91 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus gippslandicus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/218"><em>Chiloscyphus gippslandicus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">81</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="81 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus longiciliatus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/219"><em>Chiloscyphus longiciliatus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">15</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="15 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus multipennus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/220"><em>Chiloscyphus multipennus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">35</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="35 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="10 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus muricatus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/9"><em>Chiloscyphus muricatus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">415</td>
   <td class="num">15</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="415 occurrences"></span>
+      <span class="dot dot-trait" title="15 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus perpusillus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/221"><em>Chiloscyphus perpusillus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">63</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="63 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus rarus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/222"><em>Chiloscyphus rarus</em></a></td>
-  <td>Lophocoleaceae</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">Lophocoleaceae</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus rupicola lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/10"><em>Chiloscyphus rupicola</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">103</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="103 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus subemarginatus  chiloscyphus">
   <td><a href="/liverworts/species/223"><em>Chiloscyphus subemarginatus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus suboppositus lophocoleaceae cryptolophocolea">
   <td><a href="/liverworts/species/239"><em>Chiloscyphus suboppositus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">58</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="58 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="chiloscyphus subporosus lophocoleaceae chiloscyphus">
   <td><a href="/liverworts/species/224"><em>Chiloscyphus subporosus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">263</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="263 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clandarium xiphophyllum blepharidophyllaceae clandarium">
   <td><a href="/liverworts/species/225"><em>Clandarium xiphophyllum</em></a></td>
-  <td>Blepharidophyllaceae</td>
+  <td class="muted">Blepharidophyllaceae</td>
   <td class="num">55</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="55 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clasmatocolea humilis lophocoleaceae clasmatocolea">
   <td><a href="/liverworts/species/229"><em>Clasmatocolea humilis</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">28</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="28 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clasmatocolea inflexispina lophocoleaceae clasmatocolea">
   <td><a href="/liverworts/species/226"><em>Clasmatocolea inflexispina</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">157</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="157 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clasmatocolea marginata lophocoleaceae clasmatocolea">
   <td><a href="/liverworts/species/227"><em>Clasmatocolea marginata</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">28</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="28 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clasmatocolea notophylla lophocoleaceae clasmatocolea">
   <td><a href="/liverworts/species/228"><em>Clasmatocolea notophylla</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">84</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="84 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clasmatocolea strongylophylla lophocoleaceae clasmatocolea">
   <td><a href="/liverworts/species/230"><em>Clasmatocolea strongylophylla</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">120</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="120 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clasmatocolea vermicularis lophocoleaceae clasmatocolea">
   <td><a href="/liverworts/species/231"><em>Clasmatocolea vermicularis</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">27</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="27 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="clasmatocolea verrucosa lophocoleaceae clasmatocolea">
   <td><a href="/liverworts/species/232"><em>Clasmatocolea verrucosa</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">29</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="29 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cololejeunea laevigata lejeuneaceae cololejeunea">
   <td><a href="/liverworts/species/233"><em>Cololejeunea laevigata</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">141</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="141 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="colura pulcherrima lejeuneaceae colura">
   <td><a href="/liverworts/species/234"><em>Colura pulcherrima</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">28</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="28 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="colura saccophylla lejeuneaceae colura">
   <td><a href="/liverworts/species/235"><em>Colura saccophylla</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">46</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="46 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cryptolophocolea helmsiana lophocoleaceae cryptolophocolea">
   <td><a href="/liverworts/species/238"><em>Cryptolophocolea helmsiana</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">61</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="61 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cryptoplagiochila radiculosa  cryptoplagiochila">
   <td><a href="/liverworts/species/241"><em>Cryptoplagiochila radiculosa</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="cuspidatula monodon jungermanniaceae cuspidatula">
   <td><a href="/liverworts/species/11"><em>Cuspidatula monodon</em></a></td>
-  <td>Jungermanniaceae</td>
+  <td class="muted">Jungermanniaceae</td>
   <td class="num">562</td>
   <td class="num">31</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="562 occurrences"></span>
+      <span class="dot dot-trait" title="31 traits"></span>
+      <span class="dot dot-desc" title="11 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="dinckleria pleurata plagiochilaceae dinckleria">
   <td><a href="/liverworts/species/242"><em>Dinckleria pleurata</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">162</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="162 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="diplasiolejeunea plicatiloba lejeuneaceae diplasiolejeunea">
   <td><a href="/liverworts/species/243"><em>Diplasiolejeunea plicatiloba</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">129</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="129 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="diplophyllum androgynum scapaniaceae diplophyllum">
   <td><a href="/liverworts/species/244"><em>Diplophyllum androgynum</em></a></td>
-  <td>Scapaniaceae</td>
+  <td class="muted">Scapaniaceae</td>
   <td class="num">19</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="19 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="diplophyllum dioicum scapaniaceae diplophyllum">
   <td><a href="/liverworts/species/246"><em>Diplophyllum dioicum</em></a></td>
-  <td>Scapaniaceae</td>
+  <td class="muted">Scapaniaceae</td>
   <td class="num">14</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="14 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="diplophyllum incrassatum scapaniaceae diplophyllum">
   <td><a href="/liverworts/species/247"><em>Diplophyllum incrassatum</em></a></td>
-  <td>Scapaniaceae</td>
+  <td class="muted">Scapaniaceae</td>
   <td class="num">1</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="1 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="diplophyllum marionense scapaniaceae diplophyllum">
   <td><a href="/liverworts/species/245"><em>Diplophyllum marionense</em></a></td>
-  <td>Scapaniaceae</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">Scapaniaceae</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="diplophyllum obtusifolium  diplophyllum">
   <td><a href="/liverworts/species/248"><em>Diplophyllum obtusifolium</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="diplophyllum verrucosum scapaniaceae diplophyllum">
   <td><a href="/liverworts/species/249"><em>Diplophyllum verrucosum</em></a></td>
-  <td>Scapaniaceae</td>
+  <td class="muted">Scapaniaceae</td>
   <td class="num">33</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="33 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="drepanolejeunea aucklandica lejeuneaceae drepanolejeunea">
   <td><a href="/liverworts/species/250"><em>Drepanolejeunea aucklandica</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">222</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="222 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="drucella integristipula lepidoziaceae drucella">
   <td><a href="/liverworts/species/251"><em>Drucella integristipula</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">90</td>
   <td class="num">18</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="90 occurrences"></span>
+      <span class="dot dot-trait" title="18 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="eoisotachis nigella  eoisotachis">
   <td><a href="/liverworts/species/252"><em>Eoisotachis nigella</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="eotrichocolea polyacantha trichocoleaceae eotricochlea">
   <td><a href="/liverworts/species/12"><em>Eotrichocolea polyacantha</em></a></td>
-  <td>Trichocoleaceae</td>
+  <td class="muted">Trichocoleaceae</td>
   <td class="num">40</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="40 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="eotrichocolea polyacantha  eotrichocolea">
   <td><a href="/liverworts/species/253"><em>Eotrichocolea polyacantha</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="fossombronia australis fossombroniaceae fossombronia">
   <td><a href="/liverworts/species/254"><em>Fossombronia australis</em></a></td>
-  <td>Fossombroniaceae</td>
+  <td class="muted">Fossombroniaceae</td>
   <td class="num">116</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="116 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="fossombronia dentata fossombroniaceae cryptolophocolea">
   <td><a href="/liverworts/species/237"><em>Fossombronia dentata</em></a></td>
-  <td>Fossombroniaceae</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">Fossombroniaceae</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="fossombronia dentata  fossombronia">
   <td><a href="/liverworts/species/255"><em>Fossombronia dentata</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania aterrima frullaniaceae frullania">
   <td><a href="/liverworts/species/256"><em>Frullania aterrima</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">198</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="198 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania deplanata frullaniaceae frullania">
   <td><a href="/liverworts/species/257"><em>Frullania deplanata</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">248</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="248 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania falciloba frullaniaceae frullania">
   <td><a href="/liverworts/species/13"><em>Frullania falciloba</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">829</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="829 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania fugax frullaniaceae frullania">
   <td><a href="/liverworts/species/262"><em>Frullania fugax</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">107</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="107 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania hattorii frullaniaceae frullania">
   <td><a href="/liverworts/species/258"><em>Frullania hattorii</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">7</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="7 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania incumbens frullaniaceae frullania">
   <td><a href="/liverworts/species/259"><em>Frullania incumbens</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">61</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="61 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania probosciphora frullaniaceae frullania">
   <td><a href="/liverworts/species/260"><em>Frullania probosciphora</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">476</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="476 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania rostrata frullaniaceae frullania">
   <td><a href="/liverworts/species/261"><em>Frullania rostrata</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">749</td>
   <td class="num">15</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="749 occurrences"></span>
+      <span class="dot dot-trait" title="15 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="frullania schusteri frullaniaceae archeophylla">
   <td><a href="/liverworts/species/188"><em>Frullania schusteri</em></a></td>
-  <td>Frullaniaceae</td>
+  <td class="muted">Frullaniaceae</td>
   <td class="num">4</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="4 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="gackstroemia weindorferi lepidolaenaceae gackstroemia">
   <td><a href="/liverworts/species/14"><em>Gackstroemia weindorferi</em></a></td>
-  <td>Lepidolaenaceae</td>
+  <td class="muted">Lepidolaenaceae</td>
   <td class="num">573</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="573 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="gackstroemia weindorferi  gackstroemia">
   <td><a href="/liverworts/species/264"><em>Gackstroemia weindorferi</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="geocalyx caledonicus geocalycaceae geocalyx">
   <td><a href="/liverworts/species/265"><em>Geocalyx caledonicus</em></a></td>
-  <td>Geocalycaceae</td>
+  <td class="muted">Geocalycaceae</td>
   <td class="num">84</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="84 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="goebelobryum grossitextum acrobolbaceae goebelobryum">
   <td><a href="/liverworts/species/266"><em>Goebelobryum grossitextum</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">15</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="15 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="gottschea pinnatifolia  gottschea">
   <td><a href="/liverworts/species/268"><em>Gottschea pinnatifolia</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="gymnomitrion incompletum gymnomitriaceae gymnomitrion">
   <td><a href="/liverworts/species/269"><em>Gymnomitrion incompletum</em></a></td>
-  <td>Gymnomitriaceae</td>
+  <td class="muted">Gymnomitriaceae</td>
   <td class="num">43</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="43 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="hampeella concavifolia ptychomniaceae cryptolophocolea">
   <td><a href="/liverworts/species/236"><em>Hampeella concavifolia</em></a></td>
-  <td>Ptychomniaceae</td>
+  <td class="muted">Ptychomniaceae</td>
   <td class="num">8</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="8 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="haplomitrium gibbsiae haplomitriaceae haplomitrium">
   <td><a href="/liverworts/species/270"><em>Haplomitrium gibbsiae</em></a></td>
-  <td>Haplomitriaceae</td>
+  <td class="muted">Haplomitriaceae</td>
   <td class="num">58</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="58 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="11 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="hepatostolonophora paucistipula lophocoleaceae hepatostolonophora">
   <td><a href="/liverworts/species/271"><em>Hepatostolonophora paucistipula</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">71</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="71 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="hepatostolonophora rotata lophocoleaceae hepatostolonophora">
   <td><a href="/liverworts/species/272"><em>Hepatostolonophora rotata</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">77</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="77 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="herbertus oldfieldianus herbertaceae herbertus">
   <td><a href="/liverworts/species/15"><em>Herbertus oldfieldianus</em></a></td>
-  <td>Herbertaceae</td>
+  <td class="muted">Herbertaceae</td>
   <td class="num">139</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="139 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="herzogobryum atrocapillum gymnomitriaceae herzogobryum">
   <td><a href="/liverworts/species/273"><em>Herzogobryum atrocapillum</em></a></td>
-  <td>Gymnomitriaceae</td>
+  <td class="muted">Gymnomitriaceae</td>
   <td class="num">14</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="14 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/275"><em>Heteroscyphus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">2006</td>
   <td class="num">91</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2006 occurrences"></span>
+      <span class="dot dot-trait" title="91 traits"></span>
+      <span class="dot dot-desc" title="22 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus allodontus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/18"><em>Heteroscyphus allodontus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">161</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="161 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus allodontus  heteroscyphus">
   <td><a href="/liverworts/species/274"><em>Heteroscyphus allodontus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus billardierei lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/276"><em>Heteroscyphus billardierei</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">36</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="36 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus coalitus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/16"><em>Heteroscyphus coalitus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">534</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="534 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="21 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus conjugatus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/17"><em>Heteroscyphus conjugatus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">153</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="153 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus decipiens lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/19"><em>Heteroscyphus decipiens</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">99</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="99 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus echinellus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/277"><em>Heteroscyphus echinellus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">128</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="128 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus fissistipus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/20"><em>Heteroscyphus fissistipus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">552</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="552 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="10 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus gunnianus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/21"><em>Heteroscyphus gunnianus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">43</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="43 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus knightii lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/278"><em>Heteroscyphus knightii</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">60</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="60 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus levieri lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/279"><em>Heteroscyphus levieri</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">3</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="3 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus limosus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/280"><em>Heteroscyphus limosus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">48</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="48 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus menziesii  heteroscyphus">
   <td><a href="/liverworts/species/281"><em>Heteroscyphus menziesii</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus mononuculus  heteroscyphus">
   <td><a href="/liverworts/species/282"><em>Heteroscyphus mononuculus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus multifidus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/283"><em>Heteroscyphus multifidus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">2</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus sinuosus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/284"><em>Heteroscyphus sinuosus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">29</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="29 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus supinus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/285"><em>Heteroscyphus supinus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">31</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="31 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus tasmanicus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/286"><em>Heteroscyphus tasmanicus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">3</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="3 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="heteroscyphus triacanthus lophocoleaceae heteroscyphus">
   <td><a href="/liverworts/species/287"><em>Heteroscyphus triacanthus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">84</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="84 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="hygrolembidium acrocladum lepidoziaceae hygrolembidium">
   <td><a href="/liverworts/species/288"><em>Hygrolembidium acrocladum</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">96</td>
   <td class="num">29</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="96 occurrences"></span>
+      <span class="dot dot-trait" title="29 traits"></span>
+      <span class="dot dot-desc" title="9 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="hymenophyton flabellatum hymenophytaceae hymenophyton">
   <td><a href="/liverworts/species/22"><em>Hymenophyton flabellatum</em></a></td>
-  <td>Hymenophytaceae</td>
+  <td class="muted">Hymenophytaceae</td>
   <td class="num">750</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="750 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="hymenophyton leptopodum hymenophytaceae hymenophyton">
   <td><a href="/liverworts/species/289"><em>Hymenophyton leptopodum</em></a></td>
-  <td>Hymenophytaceae</td>
+  <td class="muted">Hymenophytaceae</td>
   <td class="num">163</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="163 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="isolembidium anomalum lepidoziaceae isolembidium">
   <td><a href="/liverworts/species/290"><em>Isolembidium anomalum</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">55</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="55 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="9 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="isophyllaria attenuata pseudolepicoleaceae isophyllaria">
   <td><a href="/liverworts/species/291"><em>Isophyllaria attenuata</em></a></td>
-  <td>Pseudolepicoleaceae</td>
+  <td class="muted">Pseudolepicoleaceae</td>
   <td class="num">32</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="32 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="isotachis grandis balantiopsidaceae isotachis">
   <td><a href="/liverworts/species/292"><em>Isotachis grandis</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">8</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="8 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="isotachis intortifolia balantiopsidaceae isotachis">
   <td><a href="/liverworts/species/293"><em>Isotachis intortifolia</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">161</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="161 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="isotachis montana balantiopsidaceae isotachis">
   <td><a href="/liverworts/species/294"><em>Isotachis montana</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">158</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="158 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="isotachis riparia balantiopsidaceae isotachis">
   <td><a href="/liverworts/species/295"><em>Isotachis riparia</em></a></td>
-  <td>Balantiopsidaceae</td>
+  <td class="muted">Balantiopsidaceae</td>
   <td class="num">4</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="4 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="jamesoniella colorata jungermanniaceae jamesoniella">
   <td><a href="/liverworts/species/23"><em>Jamesoniella colorata</em></a></td>
-  <td>Jungermanniaceae</td>
+  <td class="muted">Jungermanniaceae</td>
   <td class="num">358</td>
   <td class="num">18</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="358 occurrences"></span>
+      <span class="dot dot-trait" title="18 traits"></span>
+      <span class="dot dot-desc" title="8 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia calcarata lepidoziaceae kurzia">
   <td><a href="/liverworts/species/296"><em>Kurzia calcarata</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">49</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="49 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia dendroides lepidoziaceae kurzia">
   <td><a href="/liverworts/species/297"><em>Kurzia dendroides</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">12</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="12 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia reversa lepidoziaceae kurzia">
   <td><a href="/liverworts/species/298"><em>Kurzia reversa</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">7</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="7 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia saddlensis lepidoziaceae kurzia">
   <td><a href="/liverworts/species/299"><em>Kurzia saddlensis</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">9</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="9 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia setiformis lepidoziaceae kurzia">
   <td><a href="/liverworts/species/300"><em>Kurzia setiformis</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">2</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia sexfida lepidoziaceae kurzia">
   <td><a href="/liverworts/species/301"><em>Kurzia sexfida</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">19</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="19 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia tasmanica lepidoziaceae kurzia">
   <td><a href="/liverworts/species/302"><em>Kurzia tasmanica</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">15</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="15 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia tenax lepidoziaceae kurzia">
   <td><a href="/liverworts/species/24"><em>Kurzia tenax</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">107</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="107 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="kurzia verticellata lepidoziaceae kurzia">
   <td><a href="/liverworts/species/303"><em>Kurzia verticellata</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">2</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lejeunea catanduana lejeuneaceae lejeunea">
   <td><a href="/liverworts/species/305"><em>Lejeunea catanduana</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">22</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="22 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lejeunea flava lejeuneaceae lejeunea">
   <td><a href="/liverworts/species/304"><em>Lejeunea flava</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">302</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="302 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lejeunea primordialis lejeuneaceae lejeunea">
   <td><a href="/liverworts/species/306"><em>Lejeunea primordialis</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">203</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="203 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lejeunea subelobata  lejeunea">
   <td><a href="/liverworts/species/307"><em>Lejeunea subelobata</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepicolea attenuata lepicoleaceae lepicolea">
   <td><a href="/liverworts/species/308"><em>Lepicolea attenuata</em></a></td>
-  <td>Lepicoleaceae</td>
+  <td class="muted">Lepicoleaceae</td>
   <td class="num">245</td>
   <td class="num">20</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="245 occurrences"></span>
+      <span class="dot dot-trait" title="20 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepicolea scolopendra lepicoleaceae lepicolea">
   <td><a href="/liverworts/species/309"><em>Lepicolea scolopendra</em></a></td>
-  <td>Lepicoleaceae</td>
+  <td class="muted">Lepicoleaceae</td>
   <td class="num">485</td>
   <td class="num">30</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="485 occurrences"></span>
+      <span class="dot dot-trait" title="30 traits"></span>
+      <span class="dot dot-desc" title="9 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidolaena brachyclada lepidolaenaceae lepidolaena">
   <td><a href="/liverworts/species/310"><em>Lepidolaena brachyclada</em></a></td>
-  <td>Lepidolaenaceae</td>
+  <td class="muted">Lepidolaenaceae</td>
   <td class="num">92</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="92 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidolaena palpebrifolia lepidolaenaceae lepidolaena">
   <td><a href="/liverworts/species/311"><em>Lepidolaena palpebrifolia</em></a></td>
-  <td>Lepidolaenaceae</td>
+  <td class="muted">Lepidolaenaceae</td>
   <td class="num">104</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="104 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidolaena reticulata lepidolaenaceae lepidolaena">
   <td><a href="/liverworts/species/312"><em>Lepidolaena reticulata</em></a></td>
-  <td>Lepidolaenaceae</td>
+  <td class="muted">Lepidolaenaceae</td>
   <td class="num">109</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="109 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidolaena taylorii lepidolaenaceae lepidolaena">
   <td><a href="/liverworts/species/313"><em>Lepidolaena taylorii</em></a></td>
-  <td>Lepidolaenaceae</td>
+  <td class="muted">Lepidolaenaceae</td>
   <td class="num">394</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="394 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia appressifolia lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/314"><em>Lepidozia appressifolia</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">3</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="3 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia chordulifera lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/315"><em>Lepidozia chordulifera</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">1</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="1 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia concinna lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/25"><em>Lepidozia concinna</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">118</td>
   <td class="num">30</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="118 occurrences"></span>
+      <span class="dot dot-trait" title="30 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia digitata  lepidozia">
   <td><a href="/liverworts/species/316"><em>Lepidozia digitata</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">16</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="16 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia glaucophylla lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/317"><em>Lepidozia glaucophylla</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">296</td>
   <td class="num">32</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="296 occurrences"></span>
+      <span class="dot dot-trait" title="32 traits"></span>
+      <span class="dot dot-desc" title="10 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia laevifolia lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/318"><em>Lepidozia laevifolia</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">482</td>
   <td class="num">23</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="482 occurrences"></span>
+      <span class="dot dot-trait" title="23 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia nova lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/319"><em>Lepidozia nova</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">2</td>
   <td class="num">10</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2 occurrences"></span>
+      <span class="dot dot-trait" title="10 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia obtusiloba lepidoziaceae stolonivector">
   <td><a href="/liverworts/species/393"><em>Lepidozia obtusiloba</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">226</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="226 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia pendulina lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/26"><em>Lepidozia pendulina</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">154</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="154 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia pendulina  lepidozia">
   <td><a href="/liverworts/species/320"><em>Lepidozia pendulina</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">16</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="16 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia procera lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/27"><em>Lepidozia procera</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">131</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="131 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia procera  lepidozia">
   <td><a href="/liverworts/species/321"><em>Lepidozia procera</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">20</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="20 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia quadrifida lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/322"><em>Lepidozia quadrifida</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">17</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="17 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia septemfida lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/323"><em>Lepidozia septemfida</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">237</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="237 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia ulothrix lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/28"><em>Lepidozia ulothrix</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">705</td>
   <td class="num">28</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="705 occurrences"></span>
+      <span class="dot dot-trait" title="28 traits"></span>
+      <span class="dot dot-desc" title="9 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lepidozia weymouthiana lepidoziaceae lepidozia">
   <td><a href="/liverworts/species/324"><em>Lepidozia weymouthiana</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">7</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="7 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptophyllopsis laxa  leptophyllopsis">
   <td><a href="/liverworts/species/325"><em>Leptophyllopsis laxa</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptophyllopsis laxus lophocoleaceae leptophyllopsis">
   <td><a href="/liverworts/species/29"><em>Leptophyllopsis laxus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">111</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="111 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptoscyphus australis lophocoleaceae leptoscyphus">
   <td><a href="/liverworts/species/326"><em>Leptoscyphus australis</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">78</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="78 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptoscyphus excipulatus lophocoleaceae leptoscyphus">
   <td><a href="/liverworts/species/328"><em>Leptoscyphus excipulatus</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">56</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="56 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptoscyphus heterophyllus  leptoscyphus">
   <td><a href="/liverworts/species/329"><em>Leptoscyphus heterophyllus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptoscyphus horizontalis lophocoleaceae leptoscyphus">
   <td><a href="/liverworts/species/327"><em>Leptoscyphus horizontalis</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">5</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="5 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptoscyphus idiodontus  leptoscyphus">
   <td><a href="/liverworts/species/330"><em>Leptoscyphus idiodontus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="leptoscyphus incomptus  leptoscyphus">
   <td><a href="/liverworts/species/331"><em>Leptoscyphus incomptus</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lewinskya tasmanica orthotrichaceae protolophozia">
   <td><a href="/liverworts/species/363"><em>Lewinskya tasmanica</em></a></td>
-  <td>Orthotrichaceae</td>
+  <td class="muted">Orthotrichaceae</td>
   <td class="num">92</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="92 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lobatiriccardia alterniloba  lobatiriccardia">
   <td><a href="/liverworts/species/332"><em>Lobatiriccardia alterniloba</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lophocolea trialata  cryptolophocolea">
   <td><a href="/liverworts/species/240"><em>Lophocolea trialata</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="lunularia cruciata lunulariaceae lunularia">
   <td><a href="/liverworts/species/30"><em>Lunularia cruciata</em></a></td>
-  <td>Lunulariaceae</td>
+  <td class="muted">Lunulariaceae</td>
   <td class="num">2165</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2165 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="16 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="marchantia berteroana marchantiaceae marchantia">
   <td><a href="/liverworts/species/31"><em>Marchantia berteroana</em></a></td>
-  <td>Marchantiaceae</td>
+  <td class="muted">Marchantiaceae</td>
   <td class="num">801</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="801 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="marsupella sparsifolia gymnomitriaceae marsupella">
   <td><a href="/liverworts/species/333"><em>Marsupella sparsifolia</em></a></td>
-  <td>Gymnomitriaceae</td>
+  <td class="muted">Gymnomitriaceae</td>
   <td class="num">16</td>
   <td class="num">19</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="16 occurrences"></span>
+      <span class="dot dot-trait" title="19 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="marsupidium surculosum acrobolbaceae marsupidium">
   <td><a href="/liverworts/species/32"><em>Marsupidium surculosum</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">254</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="254 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="megaceros carnosus dendrocerotaceae megaceros">
   <td><a href="/liverworts/species/334"><em>Megaceros carnosus</em></a></td>
-  <td>Dendrocerotaceae</td>
+  <td class="muted">Dendrocerotaceae</td>
   <td class="num">3</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="3 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="megaceros gracilis dendrocerotaceae megaceros">
   <td><a href="/liverworts/species/335"><em>Megaceros gracilis</em></a></td>
-  <td>Dendrocerotaceae</td>
+  <td class="muted">Dendrocerotaceae</td>
   <td class="num">330</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="330 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metalejeunea cucullata lejeuneaceae metalejeunea">
   <td><a href="/liverworts/species/336"><em>Metalejeunea cucullata</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">126</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="126 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metzgeria densiseta  metzgeria">
   <td><a href="/liverworts/species/337"><em>Metzgeria densiseta</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metzgeria furcata metzgeriaceae metzgeria">
   <td><a href="/liverworts/species/33"><em>Metzgeria furcata</em></a></td>
-  <td>Metzgeriaceae</td>
+  <td class="muted">Metzgeriaceae</td>
   <td class="num">1515</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="1515 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metzgeria leptoneura metzgeriaceae metzgeria">
   <td><a href="/liverworts/species/338"><em>Metzgeria leptoneura</em></a></td>
-  <td>Metzgeriaceae</td>
+  <td class="muted">Metzgeriaceae</td>
   <td class="num">683</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="683 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metzgeria nitida  metzgeria">
   <td><a href="/liverworts/species/339"><em>Metzgeria nitida</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metzgeria rigida metzgeriaceae metzgeria">
   <td><a href="/liverworts/species/340"><em>Metzgeria rigida</em></a></td>
-  <td>Metzgeriaceae</td>
+  <td class="muted">Metzgeriaceae</td>
   <td class="num">68</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="68 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metzgeria saccata metzgeriaceae metzgeria">
   <td><a href="/liverworts/species/341"><em>Metzgeria saccata</em></a></td>
-  <td>Metzgeriaceae</td>
+  <td class="muted">Metzgeriaceae</td>
   <td class="num">148</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="148 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="metzgeria submarginata metzgeriaceae metzgeria">
   <td><a href="/liverworts/species/342"><em>Metzgeria submarginata</em></a></td>
-  <td>Metzgeriaceae</td>
+  <td class="muted">Metzgeriaceae</td>
   <td class="num">21</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="21 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="microlejeunea spinosa lejeuneaceae microlejeunea">
   <td><a href="/liverworts/species/343"><em>Microlejeunea spinosa</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">2</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="neogrollea notabilis lepidoziaceae neogrollea">
   <td><a href="/liverworts/species/344"><em>Neogrollea notabilis</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">51</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="51 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="neolepidozia consobrina lepidoziaceae neolepidozia">
   <td><a href="/liverworts/species/345"><em>Neolepidozia consobrina</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">9</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="9 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="neolepidozia palmata lepidoziaceae neolepidozia">
   <td><a href="/liverworts/species/346"><em>Neolepidozia palmata</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">29</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="29 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="neolepidozia patentissima lepidoziaceae neolepidozia">
   <td><a href="/liverworts/species/347"><em>Neolepidozia patentissima</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">237</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="237 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="neolepidozia tridactylis lepidoziaceae neolepidozia">
   <td><a href="/liverworts/species/348"><em>Neolepidozia tridactylis</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">154</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="154 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="nothogymnomitrion erosum gymnomitriaceae nothogymnomitrion">
   <td><a href="/liverworts/species/34"><em>Nothogymnomitrion erosum</em></a></td>
-  <td>Gymnomitriaceae</td>
+  <td class="muted">Gymnomitriaceae</td>
   <td class="num">93</td>
   <td class="num">24</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="93 occurrences"></span>
+      <span class="dot dot-trait" title="24 traits"></span>
+      <span class="dot dot-desc" title="8 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="pachyschistochila parvistipula  pachyschistochila">
   <td><a href="/liverworts/species/349"><em>Pachyschistochila parvistipula</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="pachyschistochila succulenta  pachyschistochila">
   <td><a href="/liverworts/species/350"><em>Pachyschistochila succulenta</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="pachyschistochila trispirales  pachyschistochila">
   <td><a href="/liverworts/species/351"><em>Pachyschistochila trispirales</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="pallavicinia rubristipa pallaviciniaceae pallavicinia">
   <td><a href="/liverworts/species/352"><em>Pallavicinia rubristipa</em></a></td>
-  <td>Pallaviciniaceae</td>
+  <td class="muted">Pallaviciniaceae</td>
   <td class="num">40</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="40 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="paracromastigum vastilobum lepidoziaceae paracromastigum">
   <td><a href="/liverworts/species/353"><em>Paracromastigum vastilobum</em></a></td>
-  <td>Lepidoziaceae</td>
-  <td class="num">0</td>
+  <td class="muted">Lepidoziaceae</td>
+  <td class="num">—</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="paraschistochila tuloides  paraschistochila">
   <td><a href="/liverworts/species/35"><em>Paraschistochila tuloides</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila baileyana plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/36"><em>Plagiochila baileyana</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">70</td>
   <td class="num">17</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="70 occurrences"></span>
+      <span class="dot dot-trait" title="17 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila circinalis plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/355"><em>Plagiochila circinalis</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">363</td>
   <td class="num">14</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="363 occurrences"></span>
+      <span class="dot dot-trait" title="14 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila fasciculata plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/37"><em>Plagiochila fasciculata</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">870</td>
   <td class="num">30</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="870 occurrences"></span>
+      <span class="dot dot-trait" title="30 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila fragmentissima  plagiochila">
   <td><a href="/liverworts/species/356"><em>Plagiochila fragmentissima</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila fuscella plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/357"><em>Plagiochila fuscella</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">318</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="318 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila hartziana  plagiochila">
   <td><a href="/liverworts/species/358"><em>Plagiochila hartziana</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila incurvicolla plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/359"><em>Plagiochila incurvicolla</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">107</td>
   <td class="num">10</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="107 occurrences"></span>
+      <span class="dot dot-trait" title="10 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila ratkowskiana plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/360"><em>Plagiochila ratkowskiana</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">91</td>
   <td class="num">10</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="91 occurrences"></span>
+      <span class="dot dot-trait" title="10 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila retrospectans plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/38"><em>Plagiochila retrospectans</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">334</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="334 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila sciophila plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/354"><em>Plagiochila sciophila</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">24</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="24 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila stephensoniana plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/361"><em>Plagiochila stephensoniana</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">225</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="225 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="plagiochila strombifolia plagiochilaceae plagiochila">
   <td><a href="/liverworts/species/39"><em>Plagiochila strombifolia</em></a></td>
-  <td>Plagiochilaceae</td>
+  <td class="muted">Plagiochilaceae</td>
   <td class="num">404</td>
   <td class="num">16</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="404 occurrences"></span>
+      <span class="dot dot-trait" title="16 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="podomitrium phyllanthus pallaviciniaceae podomitrium">
   <td><a href="/liverworts/species/40"><em>Podomitrium phyllanthus</em></a></td>
-  <td>Pallaviciniaceae</td>
+  <td class="muted">Pallaviciniaceae</td>
   <td class="num">344</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="344 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="pseudocephalozia paludicola lepidoziaceae pseudocephalozia">
   <td><a href="/liverworts/species/364"><em>Pseudocephalozia paludicola</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">40</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="40 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="pseudomarsupidium piliferum  pseudomarsupidium">
   <td><a href="/liverworts/species/365"><em>Pseudomarsupidium piliferum</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="psiloclada clandestina lepidoziaceae psiloclada">
   <td><a href="/liverworts/species/366"><em>Psiloclada clandestina</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">160</td>
   <td class="num">27</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="160 occurrences"></span>
+      <span class="dot dot-trait" title="27 traits"></span>
+      <span class="dot dot-desc" title="8 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula radulaceae radula">
   <td><a href="/liverworts/species/369"><em>Radula</em></a></td>
-  <td>Radulaceae</td>
+  <td class="muted">Radulaceae</td>
   <td class="num">2589</td>
   <td class="num">92</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2589 occurrences"></span>
+      <span class="dot dot-trait" title="92 traits"></span>
+      <span class="dot dot-desc" title="25 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula aneurysmalis radulaceae radula">
   <td><a href="/liverworts/species/367"><em>Radula aneurysmalis</em></a></td>
-  <td>Radulaceae</td>
+  <td class="muted">Radulaceae</td>
   <td class="num">383</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="383 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula australiana radulaceae radula">
   <td><a href="/liverworts/species/368"><em>Radula australiana</em></a></td>
-  <td>Radulaceae</td>
+  <td class="muted">Radulaceae</td>
   <td class="num">120</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="120 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula plicata radulaceae radula">
   <td><a href="/liverworts/species/370"><em>Radula plicata</em></a></td>
-  <td>Radulaceae</td>
+  <td class="muted">Radulaceae</td>
   <td class="num">28</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="28 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula ratkowskyana  radula">
   <td><a href="/liverworts/species/371"><em>Radula ratkowskyana</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula sainsburiana radulaceae radula">
   <td><a href="/liverworts/species/372"><em>Radula sainsburiana</em></a></td>
-  <td>Radulaceae</td>
+  <td class="muted">Radulaceae</td>
   <td class="num">31</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="31 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula strangulata  radula">
   <td><a href="/liverworts/species/373"><em>Radula strangulata</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula tasmanica radulaceae radula">
   <td><a href="/liverworts/species/374"><em>Radula tasmanica</em></a></td>
-  <td>Radulaceae</td>
+  <td class="muted">Radulaceae</td>
   <td class="num">92</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="92 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="radula weymouthiana  radula">
   <td><a href="/liverworts/species/375"><em>Radula weymouthiana</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia aequicellularis aneuraceae riccardia">
   <td><a href="/liverworts/species/41"><em>Riccardia aequicellularis</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">331</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="331 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia alcicornis aneuraceae riccardia">
   <td><a href="/liverworts/species/376"><em>Riccardia alcicornis</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">76</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="76 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia colensoi aneuraceae riccardia">
   <td><a href="/liverworts/species/42"><em>Riccardia colensoi</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">261</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="261 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia crassa aneuraceae riccardia">
   <td><a href="/liverworts/species/43"><em>Riccardia crassa</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">475</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="475 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia eriocaula aneuraceae riccardia">
   <td><a href="/liverworts/species/44"><em>Riccardia eriocaula</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">150</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="150 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia gracilis aneuraceae riccardia">
   <td><a href="/liverworts/species/377"><em>Riccardia gracilis</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">18</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="18 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia lobulata aneuraceae riccardia">
   <td><a href="/liverworts/species/378"><em>Riccardia lobulata</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">114</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="114 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia longiflora aneuraceae riccardia">
   <td><a href="/liverworts/species/379"><em>Riccardia longiflora</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">20</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="20 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia prehensilis aneuraceae riccardia">
   <td><a href="/liverworts/species/380"><em>Riccardia prehensilis</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">3</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="3 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia rupicola aneuraceae riccardia">
   <td><a href="/liverworts/species/381"><em>Riccardia rupicola</em></a></td>
-  <td>Aneuraceae</td>
+  <td class="muted">Aneuraceae</td>
   <td class="num">32</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="32 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccardia wattsiana  riccardia">
   <td><a href="/liverworts/species/45"><em>Riccardia wattsiana</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">12</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="12 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccia multifida ricciaceae riccia">
   <td><a href="/liverworts/species/382"><em>Riccia multifida</em></a></td>
-  <td>Ricciaceae</td>
+  <td class="muted">Ricciaceae</td>
   <td class="num">175</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="175 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="riccia tasmanica ricciaceae riccia">
   <td><a href="/liverworts/species/383"><em>Riccia tasmanica</em></a></td>
-  <td>Ricciaceae</td>
+  <td class="muted">Ricciaceae</td>
   <td class="num">18</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="18 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="saccogynidium decurvum geocalycaceae saccogynidium">
   <td><a href="/liverworts/species/384"><em>Saccogynidium decurvum</em></a></td>
-  <td>Geocalycaceae</td>
+  <td class="muted">Geocalycaceae</td>
   <td class="num">60</td>
   <td class="num">8</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="60 occurrences"></span>
+      <span class="dot dot-trait" title="8 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="schistochila isotachyphylla schistochilaceae gottschea">
   <td><a href="/liverworts/species/267"><em>Schistochila isotachyphylla</em></a></td>
-  <td>Schistochilaceae</td>
+  <td class="muted">Schistochilaceae</td>
   <td class="num">3</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="3 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="schistochila lehmanniana schistochilaceae schistochila">
   <td><a href="/liverworts/species/46"><em>Schistochila lehmanniana</em></a></td>
-  <td>Schistochilaceae</td>
+  <td class="muted">Schistochilaceae</td>
   <td class="num">472</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="472 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="schistochila pseudociliata schistochilaceae schistochila">
   <td><a href="/liverworts/species/386"><em>Schistochila pseudociliata</em></a></td>
-  <td>Schistochilaceae</td>
+  <td class="muted">Schistochilaceae</td>
   <td class="num">81</td>
   <td class="num">18</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="81 occurrences"></span>
+      <span class="dot dot-trait" title="18 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="schistochila tasmanica schistochilaceae schistochila">
   <td><a href="/liverworts/species/385"><em>Schistochila tasmanica</em></a></td>
-  <td>Schistochilaceae</td>
+  <td class="muted">Schistochilaceae</td>
   <td class="num">65</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="65 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="schistochila tasmanica  schistochila">
   <td><a href="/liverworts/species/387"><em>Schistochila tasmanica</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="siphonolejeunea elegantissima lejeuneaceae siphonolejeunea">
   <td><a href="/liverworts/species/388"><em>Siphonolejeunea elegantissima</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">16</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="16 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="siphonolejeunea hamata  siphonolejeunea">
   <td><a href="/liverworts/species/389"><em>Siphonolejeunea hamata</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="siphonolejeunea nudipes lejeuneaceae siphonolejeunea">
   <td><a href="/liverworts/species/390"><em>Siphonolejeunea nudipes</em></a></td>
-  <td>Lejeuneaceae</td>
+  <td class="muted">Lejeuneaceae</td>
   <td class="num">253</td>
   <td class="num">10</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="253 occurrences"></span>
+      <span class="dot dot-trait" title="10 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="siphonolejeunea olgae  siphonolejeunea">
   <td><a href="/liverworts/species/391"><em>Siphonolejeunea olgae</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="solenostoma inundatum solenostomataceae solenostoma">
   <td><a href="/liverworts/species/47"><em>Solenostoma inundatum</em></a></td>
-  <td>Solenostomataceae</td>
+  <td class="muted">Solenostomataceae</td>
   <td class="num">227</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="227 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="solenostoma orbiculatum solenostomataceae solenostoma">
   <td><a href="/liverworts/species/392"><em>Solenostoma orbiculatum</em></a></td>
-  <td>Solenostomataceae</td>
+  <td class="muted">Solenostomataceae</td>
   <td class="num">127</td>
   <td class="num">10</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="127 occurrences"></span>
+      <span class="dot dot-trait" title="10 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="symphyogyna interrupta pallaviciniaceae symphyogyna">
   <td><a href="/liverworts/species/394"><em>Symphyogyna interrupta</em></a></td>
-  <td>Pallaviciniaceae</td>
+  <td class="muted">Pallaviciniaceae</td>
   <td class="num">26</td>
   <td class="num">1</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="26 occurrences"></span>
+      <span class="dot dot-trait" title="1 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="symphyogyna podophylla pallaviciniaceae symphyogyna">
   <td><a href="/liverworts/species/49"><em>Symphyogyna podophylla</em></a></td>
-  <td>Pallaviciniaceae</td>
+  <td class="muted">Pallaviciniaceae</td>
   <td class="num">646</td>
   <td class="num">5</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="646 occurrences"></span>
+      <span class="dot dot-trait" title="5 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="symphyogyna rhodina pallaviciniaceae symphyogyna">
   <td><a href="/liverworts/species/48"><em>Symphyogyna rhodina</em></a></td>
-  <td>Pallaviciniaceae</td>
+  <td class="muted">Pallaviciniaceae</td>
   <td class="num">12</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="12 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-none" title="0 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="symphyogyna rhodina  symphyogyna">
   <td><a href="/liverworts/species/395"><em>Symphyogyna rhodina</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="1 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="syzygiella sonderi adelanthaceae syzygiella">
   <td><a href="/liverworts/species/396"><em>Syzygiella sonderi</em></a></td>
-  <td>Adelanthaceae</td>
+  <td class="muted">Adelanthaceae</td>
   <td class="num">154</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="154 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="syzygiella tasmanica  syzygiella">
   <td><a href="/liverworts/species/397"><em>Syzygiella tasmanica</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="telaranea fragilifolia lepidoziaceae telaranea">
   <td><a href="/liverworts/species/398"><em>Telaranea fragilifolia</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">10</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="10 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="telaranea herzogii lepidoziaceae telaranea">
   <td><a href="/liverworts/species/399"><em>Telaranea herzogii</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">187</td>
   <td class="num">23</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="187 occurrences"></span>
+      <span class="dot dot-trait" title="23 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="telaranea inaequalis lepidoziaceae telaranea">
   <td><a href="/liverworts/species/400"><em>Telaranea inaequalis</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">31</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="31 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="tetracymbaliella cymbalifera lophocoleaceae tetracymbaliella">
   <td><a href="/liverworts/species/402"><em>Tetracymbaliella cymbalifera</em></a></td>
-  <td>Lophocoleaceae</td>
+  <td class="muted">Lophocoleaceae</td>
   <td class="num">120</td>
   <td class="num">7</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="120 occurrences"></span>
+      <span class="dot dot-trait" title="7 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="tetracymbaliella decipiens  tetracymbaliella">
   <td><a href="/liverworts/species/401"><em>Tetracymbaliella decipiens</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="treubia lacunosa treubiaceae treubia">
   <td><a href="/liverworts/species/403"><em>Treubia lacunosa</em></a></td>
-  <td>Treubiaceae</td>
+  <td class="muted">Treubiaceae</td>
   <td class="num">130</td>
   <td class="num">3</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="130 occurrences"></span>
+      <span class="dot dot-trait" title="3 traits"></span>
+      <span class="dot dot-desc" title="4 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="treubia tasmanica treubiaceae treubia">
   <td><a href="/liverworts/species/50"><em>Treubia tasmanica</em></a></td>
-  <td>Treubiaceae</td>
+  <td class="muted">Treubiaceae</td>
   <td class="num">134</td>
   <td class="num">13</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="134 occurrences"></span>
+      <span class="dot dot-trait" title="13 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="triandrophyllum subtrifidum herbertaceae triandrophyllum">
   <td><a href="/liverworts/species/404"><em>Triandrophyllum subtrifidum</em></a></td>
-  <td>Herbertaceae</td>
+  <td class="muted">Herbertaceae</td>
   <td class="num">142</td>
   <td class="num">17</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="142 occurrences"></span>
+      <span class="dot dot-trait" title="17 traits"></span>
+      <span class="dot dot-desc" title="8 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="trichocolea mollissima trichocoleaceae tricochlea">
   <td><a href="/liverworts/species/105"><em>Trichocolea mollissima</em></a></td>
-  <td>Trichocoleaceae</td>
+  <td class="muted">Trichocoleaceae</td>
   <td class="num">909</td>
   <td class="num">33</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="909 occurrences"></span>
+      <span class="dot dot-trait" title="33 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="trichocolea mollissima  trichocolea">
   <td><a href="/liverworts/species/405"><em>Trichocolea mollissima</em></a></td>
-  <td>—</td>
-  <td class="num">0</td>
+  <td class="muted">—</td>
+  <td class="num">—</td>
   <td class="num">33</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-none" title="0 occurrences"></span>
+      <span class="dot dot-trait" title="33 traits"></span>
+      <span class="dot dot-desc" title="9 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="trichocolea rigida trichocoleaceae trichocolea">
   <td><a href="/liverworts/species/406"><em>Trichocolea rigida</em></a></td>
-  <td>Trichocoleaceae</td>
+  <td class="muted">Trichocoleaceae</td>
   <td class="num">249</td>
   <td class="num">21</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="249 occurrences"></span>
+      <span class="dot dot-trait" title="21 traits"></span>
+      <span class="dot dot-desc" title="7 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="tricholepidozia quadriseta lepidoziaceae tricholepidozia">
   <td><a href="/liverworts/species/407"><em>Tricholepidozia quadriseta</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">5</td>
-  <td class="num">0</td>
+  <td class="num">—</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="5 occurrences"></span>
+      <span class="dot dot-none" title="0 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="trichotemnoma corrugatum trichotemnomataceae trichotemnoma">
   <td><a href="/liverworts/species/408"><em>Trichotemnoma corrugatum</em></a></td>
-  <td>Trichotemnomataceae</td>
+  <td class="muted">Trichotemnomataceae</td>
   <td class="num">73</td>
   <td class="num">4</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="73 occurrences"></span>
+      <span class="dot dot-trait" title="4 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="tylimanthus diversifolius acrobolbaceae tylimanthus">
   <td><a href="/liverworts/species/52"><em>Tylimanthus diversifolius</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">84</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="84 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="tylimanthus pseudosaccatus acrobolbaceae tylimanthus">
   <td><a href="/liverworts/species/53"><em>Tylimanthus pseudosaccatus</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">157</td>
   <td class="num">2</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="157 occurrences"></span>
+      <span class="dot dot-trait" title="2 traits"></span>
+      <span class="dot dot-desc" title="2 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="tylimanthus tenellus acrobolbaceae tylimanthus">
   <td><a href="/liverworts/species/54"><em>Tylimanthus tenellus</em></a></td>
-  <td>Acrobolbaceae</td>
+  <td class="muted">Acrobolbaceae</td>
   <td class="num">350</td>
   <td class="num">6</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="350 occurrences"></span>
+      <span class="dot dot-trait" title="6 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="vandiemenia ratkowskiana metzgeriaceae vandiemenia">
   <td><a href="/liverworts/species/409"><em>Vandiemenia ratkowskiana</em></a></td>
-  <td>Metzgeriaceae</td>
+  <td class="muted">Metzgeriaceae</td>
   <td class="num">2</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="2 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="5 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="wettsteinia inversa adelanthaceae wettsteinia">
   <td><a href="/liverworts/species/410"><em>Wettsteinia inversa</em></a></td>
-  <td>Adelanthaceae</td>
+  <td class="muted">Adelanthaceae</td>
   <td class="num">1</td>
   <td class="num">9</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="1 occurrences"></span>
+      <span class="dot dot-trait" title="9 traits"></span>
+      <span class="dot dot-desc" title="3 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="zoopsis leitgebiana lepidoziaceae zoopsis">
   <td><a href="/liverworts/species/411"><em>Zoopsis leitgebiana</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">350</td>
   <td class="num">11</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="350 occurrences"></span>
+      <span class="dot dot-trait" title="11 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
 <tr data-search="zoopsis setulosa lepidoziaceae zoopsis">
   <td><a href="/liverworts/species/412"><em>Zoopsis setulosa</em></a></td>
-  <td>Lepidoziaceae</td>
+  <td class="muted">Lepidoziaceae</td>
   <td class="num">241</td>
   <td class="num">15</td>
+  <td>
+    <div class="dot-wrap">
+      <span class="dot dot-map" title="241 occurrences"></span>
+      <span class="dot dot-trait" title="15 traits"></span>
+      <span class="dot dot-desc" title="6 descriptions"></span>
+    </div>
+  </td>
 </tr>
 
     </tbody>
   </table>
 </figure>
 
+<p class="muted small" style="margin-top:-0.5rem">
+  Data dots: <span style="color:#40916c">●</span> occurrences &nbsp;
+  <span style="color:#6366f1">●</span> traits &nbsp;
+  <span style="color:#f59e0b">●</span> descriptions
+</p>
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>

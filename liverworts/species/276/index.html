@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Heteroscyphus billardierei</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Heteroscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Dicranoloma billarderii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus allodontus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus cambewarranus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus circumdentatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus cuneistipulus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus multifidus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Rosulabryum billarderii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus billarderii</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">36</p>
     <footer>7 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">1</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,46 +74,58 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Bazzania monilinervis                            8         2           25 .6
+    <pre class="description-text">Bazzania monilinervis                            8         2           25 .6
 Lepidozia ulothrix                               7         2           23.1
 Leptoscyphus expansus                            3         5           20.5
 Paraschistochila pinnatijoiia                    7         0           17.9
@@ -323,16 +311,19 @@ Jungennanniaceae
 
 Lepicoleaceae
 
- Lepicolea scolopendra (Hook.) Dum. ex Trev.</p>
+ Lepicolea scolopendra (Hook.) Dum. ex Trev.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Sharp &amp; Mizut.                                          J.J.Engel var. rotata
+    <pre class="description-text">Sharp &amp; Mizut.                                          J.J.Engel var. rotata
 Frullania scandens Mont.                                        Clasmatocolea rotata (Hook.f. &amp; Taylor)
 Frullania setchellii Pearson                                    Grolle
         Frullania falciloba var. setchellii (Pearson)    Herbertus alpinus (Steph.) E.A.Hodgs.
@@ -388,24 +379,27 @@ Heteroscyphus erraticus (W.Martin &amp; E.A.Hodgs.)                Chiloscyphus 
        Chiloscyphus erraticus WMartin &amp;                         R.M.Schust.
        E.A.Hodgs.                                              Chiloscyphus supinus Hook.f. &amp; Taylor
                                                         Heteroscyphus triacanthus (Hook.f. &amp; Taylor)
-134   Tuhinga, Number 10 (1998)</p>
+134   Tuhinga, Number 10 (1998)</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (3 entrys)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(3)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Heteroscyphus billarderii var. clasmatocoleoides</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Heteroscyphus billarderii var. clasmatocoleoides</p>
     
     
   </details>
@@ -414,14 +408,41 @@ Heteroscyphus erraticus (W.Martin &amp; E.A.Hodgs.)                Chiloscyphus 
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Dicranoloma billarderii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus allodontus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cambewarranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus circumdentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cuneistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus multifidus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Rosulabryum billarderii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus billarderii</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -436,22 +457,32 @@ Heteroscyphus erraticus (W.Martin &amp; E.A.Hodgs.)                Chiloscyphus 
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [101.5, 90.2, 115.2, 125.8, 193.1, 179.9, 211.4, 234.3, 220.2, 191.5, 120.4, 144.5], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.3, 18.5, 16.3, 13.2, 10.5, 8.7, 8.1, 8.9, 10.8, 12.6, 15.3, 16.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.8, 9.0, 7.8, 6.2, 5.0, 3.6, 2.6, 2.8, 3.9, 4.7, 6.4, 7.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

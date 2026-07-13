@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,53 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Plagiochila incurvicolla</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Plagiochilaceae</span>
-    <span class="badge secondary">Plagiochila</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (15)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Plagiochila</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila abietina</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila bantamensis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila circumdentata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila incurvicolla var. incurvicolla</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila incurvicolla var. lonchoscypha</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila metcalfii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila ramosissima</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Plagiochila sciophila</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Jungermannia incurvicolla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Plagiochila colensoi</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Plagiochila hatcheri</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Plagiochila lonchoscypha</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Plagiochila lyallii</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Plagiochila quinquespina</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Plagiochila</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -86,21 +48,25 @@
     <p class="big-num">107</p>
     <footer>39 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">10</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">15</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -108,118 +74,121 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>17.0–25.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>17.0–25.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>18.0–25.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>18.0–25.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>4.0–7.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>4.0–7.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>bulging</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>bulging</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Gackstroemia weindoiferi                         10        10          5 1.3
+    <pre class="description-text">Gackstroemia weindoiferi                         10        10          5 1.3
 Acrochila biserialis                             12        I           33.3
 ParaschislOchila tuloides                        6         5           28.2
 Bazzania monilinervis                            8         2           25 .6
@@ -278,16 +247,19 @@ Riccardia sp.                      0   I   2.6
                                          +          0
 
 
-Rhizogonium novae-hollandiae             7           I            53.3</p>
+Rhizogonium novae-hollandiae             7           I            53.3</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Schistochila ruahinensis E.A.Hodgs.             Phyllothallia nivicola E.A.Hodgs.
+    <pre class="description-text">Schistochila ruahinensis E.A.Hodgs.             Phyllothallia nivicola E.A.Hodgs.
 Pachyschistochila parvistipula (Rodw.) R.M.Schust.     Plagiochasma rupestre CT.R. &amp; G. Forst.) Steph.
        &amp;].].Engel                                              Plagiochasma australe (Hook.f &amp; Taylor) Nees
        Schistochila parvistipula Rodw.                         Plagiochasma hodgsoniae Hamlin, nom. illeg.
@@ -347,16 +319,19 @@ Pseudocephalozia lepidozioides R.M.Sch ust.            Riccardia australis (Hook
         R.M.Schust.                                    Riccardia breviala E.A. Brown
 Pseudolophocolea denticulata R.M .Sch ust. &amp;           Riccardia cochleata (Hook.f. &amp; Taylor) Kuntze
         JJ.Engel                                       Riccardia colensoi (Steph.) W.Martin
-Psiloclada clandestina Mitt.</p>
+Psiloclada clandestina Mitt.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_TAS_FLORA_VOL3_REVIEW_2020</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_TAS_FLORA_VOL3_REVIEW_2020</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Engel &amp; Glenny (2018)                               Renner (2018)             maximum of 16 given in Schuster &amp; Engel (1985).
+    <pre class="description-text">Engel &amp; Glenny (2018)                               Renner (2018)             maximum of 16 given in Schuster &amp; Engel (1985).
                                                                                            The replacement of Paraschistochila by Gottschea
              Dinckleria fruticella                        Dinckleria fruticella
              Dinckleria pleurata                          Dinckleria pleurata
@@ -434,16 +409,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
 
                      revisiting the circumscription of Schistochila and                   more broad concept of He &amp; Glenny (2010), has
                      exploring the retention of the distinctive named                     possibly been missed, but to be fair that is probably
-                     lineages embedded within it, including Pachyschis-                   beyond the scope of this work. Besides the ecological</p>
+                     lineages embedded within it, including Pachyschis-                   beyond the scope of this work. Besides the ecological</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>PLAGIOCHILA_AUSTRALIA_2018</strong> (1 entry)</summary>
+    <summary>
+      <strong>PLAGIOCHILA_AUSTRALIA_2018</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Fig 18. Plagiochila microdictyon leaves, all from J.E. Braggins 84/185 (AK 320581).
+    <pre class="description-text">Fig 18. Plagiochila microdictyon leaves, all from J.E. Braggins 84/185 (AK 320581).
 
 Representative misidentified specimens
 Plagiochila retrospectans
@@ -622,20 +600,23 @@ P. bidens (BM); Rakiura Ecological Region, Anglem Ecological District, Freshwate
 to Rocky Mountain from junction with track to North Arm, 46°52&#39;S 167°56&#39;E, 80 m, 9 Apr 2001, M.A.M.
 Renner 136 (AK 255217).
 
-Plagiochila hartziana Pearson, Bulletin of Miscellaneous Information, Royal Gardens, Kew 1924: 72</p>
+Plagiochila hartziana Pearson, Bulletin of Miscellaneous Information, Royal Gardens, Kew 1924: 72</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
     
-    <p><strong>infraspecific_taxon:</strong> Plagiochila incurvicolla f. ex</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Plagiochila incurvicolla f. ex</p>
     
     
   </details>
@@ -644,14 +625,51 @@ Plagiochila hartziana Pearson, Bulletin of Miscellaneous Information, Royal Gard
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Plagiochila</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila abietina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila bantamensis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila circumdentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila incurvicolla var. incurvicolla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila incurvicolla var. lonchoscypha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila metcalfii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila ramosissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila sciophila</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia incurvicolla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Plagiochila colensoi</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Plagiochila hatcheri</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Plagiochila lonchoscypha</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Plagiochila lyallii</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Plagiochila quinquespina</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -666,22 +684,32 @@ Plagiochila hartziana Pearson, Bulletin of Miscellaneous Information, Royal Gard
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [84.7, 74.9, 95.2, 102.0, 150.6, 152.0, 172.8, 190.3, 172.9, 149.1, 102.7, 112.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.6, 19.7, 17.4, 14.2, 11.3, 9.4, 8.8, 9.7, 11.6, 13.5, 16.3, 17.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.1, 9.0, 8.0, 6.0, 4.5, 3.1, 2.4, 2.5, 3.8, 4.8, 6.6, 7.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,27 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Heteroscyphus menziesii</em></h1>
-  <p>
+  <div class="taxon-path">
     
-    <span class="badge secondary">Heteroscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (2)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Chiloscyphus bidentatus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Chiloscyphus menziesii</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -60,16 +48,20 @@
     <p class="big-num">0</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">4</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">2</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
@@ -77,79 +69,83 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>irregular</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>GBIF</strong> (1 entry)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>heteroscyphus menziesii (mitt.) j. j. engel, polish bot. j.:</strong> &lt;div&gt;&lt;p&gt;Heteroscyphus menziesii (Mitt.)J.J.Engel,&lt;/p&gt;&lt;p&gt;Polish Bot.J. 58 (1): 99, 2013(see Engel 2013a). BASIONYM: Chiloscyphus menziesii Mitt., Bot. antarct. voy. II (Fl. Nov.-Zel. 2): 139, 1854 (see Mitten 1852).&lt;/p&gt;&lt;/div&gt;</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>heteroscyphus menziesii (mitt.) j. j. engel, polish bot. j.:</strong> &lt;div&gt;&lt;p&gt;Heteroscyphus menziesii (Mitt.)J.J.Engel,&lt;/p&gt;&lt;p&gt;Polish Bot.J. 58 (1): 99, 2013(see Engel 2013a). BASIONYM: Chiloscyphus menziesii Mitt., Bot. antarct. voy. II (Fl. Nov.-Zel. 2): 139, 1854 (see Mitten 1852).&lt;/p&gt;&lt;/div&gt;</p>
     
     
   </details>
   
   <details>
-    <summary><strong>RADULA_NZ_TASMANIA_2005</strong> (1 entry)</summary>
+    <summary>
+      <strong>RADULA_NZ_TASMANIA_2005</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">cells elongate, irregular, with faint nodular thickening at cell angles and occasionally on
+    <pre class="description-text">cells elongate, irregular, with faint nodular thickening at cell angles and occasionally on
 medial walls, semiannular bands absent. Valve outer surface smooth, inner surface bearing
 fine granular ornamentation evenly distributed. Elaters 132- 157 pm long, 5.6-7.4 pm
                              M. A. M. R EN NER: New austral Radula records                      67
@@ -209,16 +205,19 @@ accurate, her interpretation was not, this material is the earliest known collec
 
 
 ratkowskiana in New Zealand. Material collected fro m Tasmani a in the late 19th Century
-and sent to Stephani by Weymouth and Rodway is similarly erroneously identifi ed, various-</p>
+and sent to Stephani by Weymouth and Rodway is similarly erroneously identifi ed, various-</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
@@ -227,18 +226,31 @@ and sent to Stephani by Weymouth and Rodway is similarly erroneously identifi ed
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Chiloscyphus bidentatus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Chiloscyphus menziesii</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
   
+
+
 
 
 </body>

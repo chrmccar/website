@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,43 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Radula</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Radulaceae</span>
-    <span class="badge secondary">Radula</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (10)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Basidioradulum radula</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Carex demissa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eremophila demissa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Gahnia radula</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Gentianella demissa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hibbertia demissa</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Hyphodontia radula</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Melaleuca radula</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Radula epiphylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Radula demissa</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Radula</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -76,21 +48,25 @@
     <p class="big-num">2589</p>
     <footer>432 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">92</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -98,774 +74,695 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>regularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>regularly pinnate</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>dichotomous</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>dichotomous</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_ALPHABETICAL_LIST_1986</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MARCHANTIOPHYTA_PHYLOGENY_2009</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>Frullania-type</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_TAS_FLORA_VOL3_REVIEW_2020</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>335.0–465.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>335.0–465.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>8.0–12.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>8.0–12.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>12.0–20.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>12.0–20.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>16.0–25.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>16.0–25.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>17.0–30.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>17.0–30.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>17.0–24.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>17.0–24.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SCHISTOCHILA_ASIA_2003</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>bilobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MARCHANTIOPHYTA_PHYLOGENY_2009</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>4-lobed</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>xeric</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>mesic-wet</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–3.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>1.0–4.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>1.0–4.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>3.0–5.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>3.0–5.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>peat</td>
-          <td>categorical</td>
+          <td><strong>peat</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>wood</td>
-          <td>categorical</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>bark</td>
-          <td>categorical</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>wood</td>
-          <td>categorical</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>rock</td>
-          <td>categorical</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_ALPHABETICAL_LIST_1986</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HEPATIC_TYPES_AUSTRALIA_1992</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>1.7</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>1.7</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>small</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>present</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>bulging</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>bulging</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_NZ_TASMANIA_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>none</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SYNOPSIS_NZ_TAS_2005</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>large</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>large</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">RADULA_SOUTH_PACIFIC_2006</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">CEPHALOZIELLA_REMOTIFOLIA_NZ</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">SCHISTOCHILA_ASIA_2003</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">MARCHANTIOPHYTA_PHYLOGENY_2009</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>ACROMASTIGUM_AUSTRALIA_2014</strong> (1 entry)</summary>
+    <summary>
+      <strong>ACROMASTIGUM_AUSTRALIA_2014</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
+    <pre class="description-text">often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
 imbricate, insertion transverse but sometimes the lateral margins slightly decurrent, somewhat spreading to
 almost squarrose, large (c. 3/4 size of lateral leaves), 1.2–1.7 × as wide as stem, suborbicular, 270–545 μm
 long, 335–465 μm wide, not auriculate at base; apex truncate, subentire to emarginate, sinuses vestigal, lobes
@@ -925,16 +822,19 @@ Scotts Peak Road, 42°49&#39;S 146°23&#39;E, 590 m, 19 Oct 2013, J. Jarman s.n.
 (HO49566).
 New Zealand: North Island: Auckland: Coromandel Ranges, Mt Moehau, E from trig, 36°32&#39;17&#39;&#39;S 175°24&#39;59&#39;&#39;E, 640 m,
 3 Nov 1980, E.K. Cameron s.n. (AK323763); Coromandel Ranges, ridge SW of Mt Rowe along track to Mt Rowe, 37°2&#39;16&#39;&#39;S
-175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb</p>
+175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong> (1 entry)</summary>
+    <summary>
+      <strong>BRYOPHYTE_GENERA_ETYMOLOGY_2008</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">alluding to the patch of hyaline cells in the leaf                   (mane, crest, beard), alluding to the persistency
+    <pre class="description-text">alluding to the patch of hyaline cells in the leaf                   (mane, crest, beard), alluding to the persistency
          base.                                                                of the elaters after capsule rupture, forming a
 
 
@@ -1125,16 +1025,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
             Thysananthus Lindenb. 1844—thysanos (tasselled                        (Hewson, 1982, p. 163). As Governor-General
               or tufted)+anthos (flower), alluding to the                         of the Dutch East Indies, Van Diemen (1593–
               tassellike appearance of the perianth caused by                     1645) was the principal force behind Tasman’s
-              the lacerated margins of the bracts.                                search for the “Great South Land.” The name</p>
+              the lacerated margins of the bracts.                                search for the “Great South Land.” The name</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>CEPHALOZIELLA_REMOTIFOLIA_NZ</strong> (1 entry)</summary>
+    <summary>
+      <strong>CEPHALOZIELLA_REMOTIFOLIA_NZ</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">were searched for further collections and one collection from         in leaves, in male bracts 3–4(6) per cell, finely granular, ovoid,
+    <pre class="description-text">were searched for further collections and one collection from         in leaves, in male bracts 3–4(6) per cell, finely granular, ovoid,
 Stewart Island was found that is probably C. remotifolia but the      colourless, 4–6 × 3–5 µm (Fig. 5C). Leaf surfaces both papillose
 specimen is sterile (see Discussion for further details).             with 3–6 papillae over each leaf cell, the papillae hemispherical
                                                                       and 6–8 µm high (Fig. 3A, Fig. 5D). Processes weakly developed
@@ -1194,16 +1097,19 @@ surface densely pluripapillose, the papillae usually elliptical
 and 15–24 µm long and 9–12 µm wide, in transverse section not
 differentiated in size or wall thickness from c. 28 inner rows of     Recognition: Plants are mid-green with slight orange-red tinting.
 medulla cells, all 11–20 µm in diameter, walls c. 2 µm thick with     The stem is green but can be slightly orange on the ventral
-slight, concave trigones (Fig. 1B). Rhizoids hyaline, c. 350 µm       surface, the stem surface is pluripapillose and stem cortical cells</p>
+slight, concave trigones (Fig. 1B). Rhizoids hyaline, c. 350 µm       surface, the stem surface is pluripapillose and stem cortical cells</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Bryaceae                                     Anueraceae
+    <pre class="description-text">Bryaceae                                     Anueraceae
 Brachymenium lanceo/arum                     Riccardia gracilis
 
 Bryum microhodon                             Balantiopsidaceae
@@ -1519,25 +1425,31 @@ wet mode. The dorsiventral shoot (Fig. 5. ld) with its bilobed leaf (Fig. S . l 
 numerous papillae which are clustered above the cell lumina (Fig. 5 . 1 f). The papillae
 have a distinctive structure in that each is at the tip of a wall extension in the form of a
 stalk which may be bifurcated (Fig. S. lg). The papillae are on average 4 to 5 ).lm
-across and are covered by waxy deposits (Fig. 5.1g,h).</p>
+across and are covered by waxy deposits (Fig. 5.1g,h).</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>GBIF</strong> (1 entry)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>radula dumortier 1822:</strong> &lt;div&gt;&lt;p&gt;Key to Neotropical species of Radula with bordered leaf lobes&lt;/p&gt;&lt;p&gt;1. Lobules ligulate ...................................................................................................................................................................... R. ligula&lt;/p&gt;&lt;p&gt;1. Lobules subquadrate...........................................................................................................................................................................2&lt;/p&gt;&lt;p&gt;2. Leaf border reddish-brown, 3-5 cell rows wide, walls of the leaf border evenly thickened, without trigones. Leaves distant........... .............................................................................................................................................................................................. R. smithii&lt;/p&gt;&lt;p&gt;2. Leaf border 1 cell row wide, walls of the leaf border thickened with bulging trigones. Leaves imbricate ......................................... ..................................................................................................................................................................... R. pallens var. marginata&lt;/p&gt;&lt;/div&gt;</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>radula dumortier 1822:</strong> &lt;div&gt;&lt;p&gt;Key to Neotropical species of Radula with bordered leaf lobes&lt;/p&gt;&lt;p&gt;1. Lobules ligulate ...................................................................................................................................................................... R. ligula&lt;/p&gt;&lt;p&gt;1. Lobules subquadrate...........................................................................................................................................................................2&lt;/p&gt;&lt;p&gt;2. Leaf border reddish-brown, 3-5 cell rows wide, walls of the leaf border evenly thickened, without trigones. Leaves distant........... .............................................................................................................................................................................................. R. smithii&lt;/p&gt;&lt;p&gt;2. Leaf border 1 cell row wide, walls of the leaf border thickened with bulging trigones. Leaves imbricate ......................................... ..................................................................................................................................................................... R. pallens var. marginata&lt;/p&gt;&lt;/div&gt;</p>
     
     
   </details>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Frullania ferdinandi-muelleri Stephani (1910: 417)
+    <pre class="description-text">Frullania ferdinandi-muelleri Stephani (1910: 417)
 PROTO: &#39;Australia, New South Wales.&#39;
 LABEL: NEW SOUTH WALES: Tintenbar(?), R[ichmond] R[iver], tea tree bark, W. W. Watts
 153,2 Aug 1900.
@@ -1657,16 +1569,19 @@ Watts, W.W. &amp; Whitelegge, T. (1906) Census Muscorum Australiensium. Proc. Li
     South Wales supp!. 30: 91-163.
 
                              Manuscript received 23 July 1991
-                             Manuscript accepted 4 May 1992</p>
+                             Manuscript accepted 4 May 1992</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Iso/emoidium anomaium (Rodway) Grolle                                                          x                x
+    <pre class="description-text">Iso/emoidium anomaium (Rodway) Grolle                                                          x                x
 iso/aeiJis intortifolia (J.D.Hook. &amp; Taylor) Gott. el al.                                      x
 
 lamesoniella c%rata (Lehm.) Spruce ex Schiftil.                            x                   x                X      x
@@ -1725,16 +1640,19 @@ T. tencl/us (J.D.lhok. &amp; Taylor) Hodgs.                                     
 
 Zoopsis argentea (J.D.Hook. &amp; Taylor) JD.Hook.
     ex Gott. et al.                                              x
-Z. leitgebiana (earring. &amp; Pears.) Bastow                        x                x                x</p>
+Z. leitgebiana (earring. &amp; Pears.) Bastow                        x                x                x</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>LEPIDOZIA_NZ_REVISION_2001</strong> (1 entry)</summary>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">al branch underleaf 1- or 2-lobed; underleaves
+    <pre class="description-text">al branch underleaf 1- or 2-lobed; underleaves
                                                                   underleaves; on one stem, primary underleaves 1-,
      with disc 2 cells high, the lobes usually few-
                                                                   2-, and 3-lobed. Leaves usually strongly asymet-
@@ -1794,16 +1712,19 @@ var.   heterostipa lobes are less attenuated and ter-                         id
 minal cells are usually under 2:            1
                                                     [Fig.   25   :
                                                                      35]).    tical cell           rows (Fig. 26        :
-                                                                                                                                13) and, for a plant of</p>
+                                                                                                                                13) and, for a plant of</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MARCHANTIOPHYTA_PHYLOGENY_2009</strong> (1 entry)</summary>
+    <summary>
+      <strong>MARCHANTIOPHYTA_PHYLOGENY_2009</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Kuwahara (1978) himself recognises as belonging to Metzgeria. Although Schuster
+    <pre class="description-text">Kuwahara (1978) himself recognises as belonging to Metzgeria. Although Schuster
                       (1992) also proposes reduction of Steereella to Metzgeria, this taxon differs enough
                       in morphology to warrant recognition until its status can be tested with molecular
                       data. The transfer of Vandiemenia to the Metzgeriaceae is supported by the mor-
@@ -2042,16 +1963,19 @@ https://doi.org/10.1017/S0960428609005393 Published online by Cambridge Universi
                           Leaves transverse, succubous, or incubous, divided into 2 to 4 lobes, or undivided;
                           underleaves usually present; perianths, when present, usually with 3 broad keels; capsule
                           walls polystratose, only rarely 2-stratose; spore germination exosporic, mostly of the
-                          Nardia-type; gemmae rare.</p>
+                          Nardia-type; gemmae rare.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">18	
+    <pre class="description-text">18	
    Marchantiales ........................................................................................................................ 174	
   
        Marchantiaceae Lindl. ...................................................................................................174	
@@ -2462,16 +2386,19 @@ Zoopsis  argentea  var.  flagelliformis               D  
 
 
 
-                                                336</p>
+                                                336</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Kymatolejeunea bartlettii Grolle - Grolle (1984)                  Schistochila pellucida R.M.Schust. &amp; ].].Engel - in Schuster
+    <pre class="description-text">Kymatolejeunea bartlettii Grolle - Grolle (1984)                  Schistochila pellucida R.M.Schust. &amp; ].].Engel - in Schuster
 Lembidium longifolium R.M.Schust. - in Schuster (1980)            &amp; Engel (1985)
 Marsupella sparsifolz&#39;a subsp. ch1ldii R.M.Schust. in Schuster    Schistochila pluriciliata R.M.Schust. &amp; ].].Engel - in
                                                                                       NZ Liverworts and Hornworts        121
@@ -2783,16 +2710,19 @@ Hodgson, E.A. 19676. New Zealand Hepaticae                              Hepatica
       New Zealand, Botany 3: 175-198.                           Schuster, R.M. 19646. Studies on Hepaticae XVII
 Hodgson, E.A. 1967c. New Zealand Hepaticae                              Trichotemnoma Schust. Gen. N.journal ofthe Hattori
       (Liverworts). XVIII. A revision of the New                       Botanical Laboratory 27: 149-158.
-      Zealand species of the genera miscellany of               Schuster, R.M. 1964c. Studies on Antipodal Hepaticae,</p>
+      Zealand species of the genera miscellany of               Schuster, R.M. 1964c. Studies on Antipodal Hepaticae,</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_TAS_FLORA_VOL3_REVIEW_2020</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_TAS_FLORA_VOL3_REVIEW_2020</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">stoloniferous portions is associated with different                  (but is generally very sparse) which distinguishes it
+    <pre class="description-text">stoloniferous portions is associated with different                  (but is generally very sparse) which distinguishes it
                      vegetative branching modalities, but this is not fully               from P. colensoi, and the teeth on the leaves are not
                      communicated in the Volume 3 treatment. Note                         spinose as they are in P. incurvicolla.
                      that some species whose vegetative branching is                           Couplet 29. Another character is the possession
@@ -2854,16 +2784,19 @@ Terms of Use: https://bioone.org/terms-of-use Access provided by University of T
                                                                                            these Tasmanian endemics are brief, as were the
              Plagiochila annotina                         Plagiochila annotina
              Plagiochila arbuscula var. arbuscula         Plagiochila trispicata
-                                                                                           same sections for Tasmanian endemics in Volume 2.</p>
+                                                                                           same sections for Tasmanian endemics in Volume 2.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>PLAGIOCHILA_AUSTRALIA_2018</strong> (1 entry)</summary>
+    <summary>
+      <strong>PLAGIOCHILA_AUSTRALIA_2018</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">in P. circumdentata, and P. kirkii or distributed all around the stem surface as in P. abietina or confined to the
+    <pre class="description-text">in P. circumdentata, and P. kirkii or distributed all around the stem surface as in P. abietina or confined to the
 ventral stem surface as in P. obtusa and P. streimannii. In Plagiochila abietina paraphyllia are usually uniseriate
 projections, but larger paraphyllia comprising small flanges of tissue, sometimes bearing one or two teeth, are
 also produced. Large branched and ciliate paraphyllia are produced by P. obtusa and P. streimannii; in both
@@ -3112,16 +3045,19 @@ Fig 39. Plagiochila monospiris. A: shoot ventral view. B: shoot dorsal view. C: 
 around leaf apex. F: leaf medial cells. G: leaf basal cells. H: four female bracts. I: perianth mouth. J: gynoecium with
 immature perianth and subfloral innovation, dorsal view. K: two perianths in lateral view. L: two teeth from the perianth
 mouth. All from M.A.M. Renner 7294 &amp; L.J. Gray (NSW 880570).
-306           Telopea 21: 187–380, 2018                                                                   Renner</p>
+306           Telopea 21: 187–380, 2018                                                                   Renner</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>PLAGIOCHILA_DELTOIDEA_2025</strong> (1 entry)</summary>
+    <summary>
+      <strong>PLAGIOCHILA_DELTOIDEA_2025</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">differentiation has been inferred between cryptic species within
+    <pre class="description-text">differentiation has been inferred between cryptic species within
                                                                         2:   Perianth mouth with 14–24 (average 18) short triangular teeth
 the Aneura pinguis (L.) Dumort. complex as well (Bączkiewicz                 on each labium; leaf margins bearing 5–21 (average 13) teeth;
 and Buczkowska 2016). Further study may identify ecological                  leaves 1.8–3.3 mm long by 1.3–2.3 mm wide, plants medium,
@@ -3181,16 +3117,19 @@ WELT-H007775!)
                                                                          Engel and Merrill (2010) made no mention of Inoue and Schuster’s
 =Plagiochila spenceriana Colenso, Transactions and Proceedings           (1971) lectotypification, except to note that ’until now the species
 of the New Zealand Institute 21: 50. 1889.                               has not been evaluated with reference to the original material
-                                                                         studied by Lindenberg (1839-1843)’ (Engel and Merrill 2010</p>
+                                                                         studied by Lindenberg (1839-1843)’ (Engel and Merrill 2010</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RADULA_ALPHABETICAL_LIST_1986</strong> (1 entry)</summary>
+    <summary>
+      <strong>RADULA_ALPHABETICAL_LIST_1986</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Journ. Hattori Bot. Lab. No. 60: 175- 186 (June 1986)
+    <pre class="description-text">Journ. Hattori Bot. Lab. No. 60: 175- 186 (June 1986)
 
 
         AN ALPHABETICAL LIST OF THE SPECIES AND
@@ -3615,16 +3554,19 @@ Yamada, K. 1973. New localities of Radula fauciloba and R . miqueliana from Japa
 - - . 1981. Notes on the type specimens of Radula taxa from Latin America (2). J. Hattori Bot.
     Bot. 49 : 385-398.
 - - . 1984. Tasmanian species of Radula (Hepaticae) collected by Mrs. A. V. Ratkowsky. J.
-    Ja p. Bot. 59(3): 91-96.</p>
+    Ja p. Bot. 59(3): 91-96.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RADULA_NZ_TASMANIA_2005</strong> (1 entry)</summary>
+    <summary>
+      <strong>RADULA_NZ_TASMANIA_2005</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">J HalTori Bot. Lah. No. 97: 39- 79 (Jan. 2(05)
+    <pre class="description-text">J HalTori Bot. Lah. No. 97: 39- 79 (Jan. 2(05)
 
 
 
@@ -5050,16 +4992,19 @@ Yamada, K. 1979. A Revision of Asian taxa of Radula , Hepaticae. 1. Hattori Bot.
 Yamada, K. 1984. Tasmanian species of Radula (Hepaticae) collected by Mrs . A. V Ratkowsky. 1.
      Jap. Bot. 59: 91 - 95 .
 Yamada, K. 1999. Taxonomy of the section Amentulosae Genus Radula (Radulaceae, Hepaticae).
-     Haussknechtia Beiheft 9: 391 - 397.</p>
+     Haussknechtia Beiheft 9: 391 - 397.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RADULA_SOUTH_PACIFIC_2006</strong> (1 entry)</summary>
+    <summary>
+      <strong>RADULA_SOUTH_PACIFIC_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">J Hal/ori Bot. Lab. No. 99: 207-232 (Jail. 2006)
+    <pre class="description-text">J Hal/ori Bot. Lab. No. 99: 207-232 (Jail. 2006)
 
 
 
@@ -6057,16 +6002,19 @@ Yamada, K. 1996. Species of the genus Radllla (Hepatieae) in Japan. Nat. Environ
 Yamada, K. 1999. Taxonomy of the section of Amentu/osae of genus Radu/a (Radulaceae, Hepati-
    cae). Hausskllec htia Beif. 9: 391 - 397.
 Yamada, K. &amp; H. Illoue. 1988. Studies on Taiwan Hepatieae V II. Radulaeeae. Bull. Natl. Sei. Mus .,
-   Tokyo, 8 14: 41 - 51.</p>
+   Tokyo, 8 14: 41 - 51.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RADULA_SYNOPSIS_NZ_TAS_2005</strong> (1 entry)</summary>
+    <summary>
+      <strong>RADULA_SYNOPSIS_NZ_TAS_2005</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">J Hattori Bot. Lab. No. 98: 149- /74 (Aug. 2005)
+    <pre class="description-text">J Hattori Bot. Lab. No. 98: 149- /74 (Aug. 2005)
 
 
 
@@ -7014,25 +6962,31 @@ Yamada, K. 1996. Species of the genus Radula (Hepaticae) in Japan. Nat. Environ.
 Yamada, K. 1999. Taxonomy of the section of Amentulosae of genus Radula (Radulaceae, Hepati-
      cae). Haussknechtia Beih. 9: 391 - 397.
 Yamada, K. &amp; H. Inoue. 1988. Studies on Taiwan Hepaticae VII. Radulaceae. Bull. Natl. Sci. Mus.,
-     Tokyo, B 14: 41 - 51.</p>
+     Tokyo, B 14: 41 - 51.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
     
     
   </details>
   
   <details>
-    <summary><strong>SCHISTOCHILA_ASIA_2003</strong> (1 entry)</summary>
+    <summary>
+      <strong>SCHISTOCHILA_ASIA_2003</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">b
+    <pre class="description-text">b
 
 
 
@@ -7091,16 +7045,19 @@ DESCRIPTION: Plants medium-sized, usually unbranched, shoots 3-6 cm long, 0.8- 1
 zoids on basal part of stem, brown, non-septate. Stem 0.6- 0.7 mm thick, paraphyllia few to numer-
 ous, around base of leaves. Leaves closely imbricate, widely spreading, dorsal lobe broadly oblong,
 2.8- 3.2 mm long, 1.4- 1.6 mm wide, widest around middle, apex almost truncate, with a spur at the
-free end, ventral lobe oblong, 5.2-5 .7 mm long, 1.2- 1.4 mm wide, apex broadly obtuse, margin of</p>
+free end, ventral lobe oblong, 5.2-5 .7 mm long, 1.2- 1.4 mm wide, apex broadly obtuse, margin of</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">o o·vy Io
+    <pre class="description-text">o o·vy Io
                                                                                   -0
                           � , stalk (seta)                                        :r:
 
@@ -7635,16 +7592,19 @@ forest to the driest desert. This field guide brings
 the identification of these small plants within easy reach
 of everyone, from home gardeners to students, naturalists
 and professional botanists. Written in a fresh, easy-to-read
-style and illustrated with startlingly beautiful photographs</p>
+style and illustrated with startlingly beautiful photographs</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">situations.
+    <pre class="description-text">situations.
 Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
 Lejeuneaceae
 
@@ -7843,16 +7803,19 @@ TRICHOCOLEACEAE
  Glossary
 A
 ..............
-                                              elaters: spirally thickened cells which</p>
+                                              elaters: spirally thickened cells which</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Bryophyte special issue
+    <pre class="description-text">Bryophyte special issue
 
                                                                                                                                                                                Group A
                                                                                                                                                                                Leafy liverworts with complicate-bilobed leaves
@@ -7976,25 +7939,31 @@ Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. Univer
                                                                                                                                                                                     2–3 mm wide ..................................................................... Marsupidium setulosum
                                                                                                                                                                                   Stems papillose but lacking bristles; shoots mostly less
                                                                                                                                                                                     than 1 mm wide .................................................................. Acrobolbus cinerascens
-                                                                                                                                                                               11 Plants minute, thread-like, prostrate or erect, almost invisible</p>
+                                                                                                                                                                               11 Plants minute, thread-like, prostrate or erect, almost invisible</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">The radula is an anatomical structure found in most mollusks, serving as their primary feeding tool. Often compared to a tongue, this minutely toothed, chitinous ribbon typically functions by scraping or cutting food before it enters the esophagus. Mollusks in every class possess a radula, except for bivalves, which instead employ waving cilia to draw in minute organisms for feeding.</p>
+    <pre class="description-text">The radula is an anatomical structure found in most mollusks, serving as their primary feeding tool. Often compared to a tongue, this minutely toothed, chitinous ribbon typically functions by scraping or cutting food before it enters the esophagus. Mollusks in every class possess a radula, except for bivalves, which instead employ waving cilia to draw in minute organisms for feeding.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WINDOLF_QLD_HEPATICAE_1987</strong> (1 entry)</summary>
+    <summary>
+      <strong>WINDOLF_QLD_HEPATICAE_1987</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Linn. Soc. New South Wales 95: 60-121.
+    <pre class="description-text">Linn. Soc. New South Wales 95: 60-121.
 
 INOUE, H. (1986). Notes on the Plagiochilaceae XIII. Review of the genus Plagiochila (Dum.) Dum. in mainland
     Australia. J. Hattori Bot. Lab. 60: 357-378.
@@ -8033,7 +8002,7 @@ YAMADA, K. (1984). A Radula collection made by Dr. Marie L. Hicks in Queensland,
 
 
               This content downloaded from 131.217.255.240 on Fri, 10 Jul 2026 03:55:03 UTC
-                               All use subject to https://about.jstor.org/terms</p>
+                               All use subject to https://about.jstor.org/terms</pre>
     
     
   </details>
@@ -8042,14 +8011,41 @@ YAMADA, K. (1984). A Radula collection made by Dr. Marie L. Hicks in Queensland,
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Basidioradulum radula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Carex demissa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eremophila demissa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gahnia radula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gentianella demissa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hibbertia demissa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hyphodontia radula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Melaleuca radula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Radula epiphylla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Radula demissa</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -8064,22 +8060,32 @@ YAMADA, K. (1984). A Radula collection made by Dr. Marie L. Hicks in Queensland,
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [82.4, 70.9, 89.9, 96.4, 139.1, 141.0, 159.8, 175.4, 158.3, 135.9, 98.4, 105.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.8, 19.9, 17.7, 14.6, 11.8, 9.8, 9.2, 10.0, 11.9, 13.8, 16.4, 17.9], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.5, 9.6, 8.4, 6.5, 5.0, 3.5, 2.8, 2.9, 4.2, 5.2, 7.0, 8.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

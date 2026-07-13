@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,51 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Riccardia lobulata</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Aneuraceae</span>
-    <span class="badge secondary">Riccardia</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (14)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Acacia lobulata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia gracilis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Riccardia prehensilis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia scabra</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Richardia stellaris</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Roepera lobulata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Spegazzinia lobulata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Aneura minima</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Aneura perpusilla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Riccardia minima</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Riccardia perpusilla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Zoopsis lobulata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Riccardia</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -84,21 +48,25 @@
     <p class="big-num">114</p>
     <footer>51 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">3</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">14</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -106,62 +74,72 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">NZ_CHECKLIST_1998</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>soil</td>
-          <td>categorical</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">HEPATIC_TYPES_AUSTRALIA_1992</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>HEPATIC_TYPES_AUSTRALIA_1992</strong> (1 entry)</summary>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">ering basalt in rainforest, Hewson, 387, 8.1964, (NSW): ISOTYPE (BRI).&#39;
+    <pre class="description-text">ering basalt in rainforest, Hewson, 387, 8.1964, (NSW): ISOTYPE (BRI).&#39;
 LABEL: QUEENSLAND: Lake Eacham, Vision Falls, HI Hewson H64.68.387, 20 Aug 1964.
 TYPES: NSW (179243: holotype), BRI (isotype).
 COMMENT: Name in current use.
@@ -221,16 +199,19 @@ COMMENT: Name in current use.
 86                                                                Te/opea Vol. 5(1): 1992
 
 
-Riccia bullosa Link var. vesiculosa Carrington &amp; Pearson (1888: 1058)</p>
+Riccia bullosa Link var. vesiculosa Carrington &amp; Pearson (1888: 1058)</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Plagiochila retrospectans (Nees) Nees                          Aneura aequitexta Steph.
+    <pre class="description-text">Plagiochila retrospectans (Nees) Nees                          Aneura aequitexta Steph.
 Plagiochila rutlandii Steph.                                   Aneura effusa Steph.
 Plagiochila sinclairii Mitt.                                   Riccardia effusa (Steph.) E.A.Hodgs.
 Plagiochila stephensoniana Mitt.                       Riccardia alba (Colenso) E.A.Brown
@@ -418,16 +399,19 @@ Austrolejeunea algae
 Solenostoma rufiflora -Jungermannia inundata
 Steereomitrium minutum - Haplomitrium hookeri var.
 minutum
-Stolonophora perssonii - Hepatostolonophora rota ta</p>
+Stolonophora perssonii - Hepatostolonophora rota ta</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
     
     
   </details>
@@ -436,14 +420,49 @@ Stolonophora perssonii - Hepatostolonophora rota ta</p>
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acacia lobulata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia gracilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia prehensilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia scabra</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia stellaris</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Roepera lobulata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Spegazzinia lobulata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Aneura minima</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Aneura perpusilla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Riccardia minima</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Riccardia perpusilla</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Zoopsis lobulata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -458,22 +477,32 @@ Stolonophora perssonii - Hepatostolonophora rota ta</p>
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [70.9, 59.7, 73.9, 77.2, 105.1, 115.9, 125.6, 141.4, 124.9, 103.7, 86.1, 83.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.4, 20.4, 18.2, 14.9, 12.0, 9.9, 9.3, 10.1, 12.2, 14.2, 16.8, 18.5], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.6, 9.7, 8.3, 6.3, 4.7, 3.3, 2.7, 2.8, 4.1, 5.1, 7.0, 8.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,47 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Solenostoma orbiculatum</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Solenostomataceae</span>
-    <span class="badge secondary">Solenostoma</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (12)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Blechnum articulatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Capnodiastrum orbiculatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Scalenostoma</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Senostoma</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Solanum orbiculatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Solenostoma</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Solenostoma infuscum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Solenostoma inundatum</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Solenostomus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Gymnomitrion orbiculatum</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Jungermannia orbiculata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Solenostoma contexta</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Solenostoma</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -80,21 +48,25 @@
     <p class="big-num">127</p>
     <footer>55 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">10</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -102,118 +74,121 @@
 
 
 
-<section>
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
   <h2>Traits</h2>
   <figure>
-    <table>
+    <table class="traits-table">
       <thead>
         <tr>
           <th>Trait</th>
           <th>Value</th>
           <th>Units</th>
           <th>Source</th>
-          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
         </tr>
       </thead>
       <tbody>
         
         <tr class="unverified">
-          <td>branching_pattern</td>
-          <td>intercalary</td>
-          <td>categorical</td>
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>cell_diameter_um</td>
-          <td>28.0–33.0</td>
-          <td>µm</td>
+          <td>cell diameter um</td>
+          <td><strong>28.0–33.0</strong></td>
+          <td class="muted small">µm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>leaf_lobing</td>
-          <td>entire</td>
-          <td>categorical</td>
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>moisture_preference</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_count_per_cell</td>
-          <td>3.0–6.0</td>
-          <td>per cell</td>
+          <td>oil body count per cell</td>
+          <td><strong>3.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>oil_body_present</td>
-          <td>1</td>
-          <td>boolean</td>
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
           <td>substrate</td>
-          <td>aquatic</td>
-          <td>categorical</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>thallus_width_mm</td>
-          <td>2.5</td>
-          <td>mm</td>
+          <td>thallus width mm</td>
+          <td><strong>2.5</strong></td>
+          <td class="muted small">mm</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>trigone_type</td>
-          <td>concave-sided</td>
-          <td>categorical</td>
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
         <tr class="unverified">
-          <td>underleaf_present</td>
-          <td>0</td>
-          <td>boolean</td>
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
           <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
-          <td>⚠</td>
         </tr>
         
       </tbody>
     </table>
   </figure>
-  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
 </section>
 
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">66r- Solenostoma coniflorum L1495 Kergulelen Islands
+    <pre class="description-text">66r- Solenostoma coniflorum L1495 Kergulelen Islands
                                                                                                      *·Solenostoma coniflorum L1412 Kergulelen Islands
                                                                                                       98
                                                                                                                 *IιI Solenostoma pyriflorum gb325
@@ -278,29 +253,35 @@
                                                                                                                                 gracillimum L1439 Czech Republic
                                                                                                Solenostoma gracillimum L1089 USA                                          subg. Metasolenostoma
                                                                                                 Solenostoma fusiforme FATOL433 Japan
-                                                                                                  oienoi</p>
+                                                                                                  oienoi</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>NZ_FLORA</strong> (2 entrys)</summary>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
     
     
-    <p><strong>morphological_description:</strong> Plants prostrate or more commonly ascending to suberect in tightly interwoven mats, resembling Solenostoma hodgsoniae but smaller, often forming tight, closely spaced rosettes, bright green to yellowish to brownish green, rarely somewhat reddish, the plants medium-sized, to 2.5 mm wide. Branching common, the plants irregularly and often repeatedly branched, the 1, 5-9, from Braggins 84/400A, New Zealand, North Is., Southern North Is. EP, Akatarawa; 2-4, from Engel 21152, New Zealand, South Is., Western Nelson EP, track to German Terrace, 6 km SSE of Westport on Nine Mile Road, 90 m.) branches lateral-intercalary. Stem greenish to brownish green, the cortical cells indistinct, in a single layer of smaller cells; medullary cells lax, thin-walled. Rhizoids numerous, colorless to pale brownish, diffuse, never in bundles, arising from the ventral side of stem and from extreme bases of leaves, smooth. Leaves rather firm, vertically oriented, ± bilaterally appressed to the stem, loosely to closely imbricate, succubously oriented, the insertion variable, oblique in extreme dorsal portion, becoming subtransverse, abruptly reflexed at ventral end; leaves plane to concave, weakly asymmetric, elliptic-oval to oblate to subreniform, often broader than long, entire, 1.5-2 mm wide, 1-1.5 mm long, the apex broadly rounded or weakly emar- ginate; margins plane to distinctly reflexed, not undulate, the dorsal and ventral margins about equally short-decurrent. Cells thin- walled but not inflated, with small but prominent, bulging to knot-like trigones; cells of lower median sector of leaf larger, short-rectangular, (27)30- 43(48) |ULm wide X 41—48(55) |ULm long, the cells in distal sector smaller, firm-walled, hexagonal, often somewhat wider than long, 28-33 juim wide and long, the marginal cells almost isodiametric, 20-27 juim in diam.; surface closely striolate-papillose (at least in median basal sector). Oil-bodies very pale grey, (2)3-6 per cell, finely granular, the spherules very slightly protruding beyond membrane, the oil-bodies elliptic to fusiform to spherical, 5. 9-7. 8 X 15.6- 16.6 |ULm, some 4.9-7. 8 X 1 1.7-13.7 juim, spherical ones 6.8 juim in diam. Underleaves absent. Asexual reproduction absent. Eungal partner absent. Dioecious. Androecia terminal, rarely becoming intercalary, inconspicuous; bracts very little differentiated from the leaves, in 3-8 pairs, transversely inserted, widely spreading, the margins recurved, the basal portion moderately concave; antheridia 2-3 per bract, the stalk biseriate. Gynoecia terminal, typically with several lateral-intercalary innovations at some distance below the gynoecium, the subinvolucral leaves gradually larger, the bracts broadly reniform, weakly united with the base of the perianth; bracteole absent. Perianth ca. 0.5 immersed, inflated, ellipsoid, ± irregularly and sharply plicate in distal 0.3-0. 5, often with short, irregular accessory ribs and scabrous near the apex, the mouth contracted to a short beak, the mouth irregularly crenulate by projecting cells; cells of beak portion short-rectangular, uniformly thick-walled, their tips irregularly projecting; cells of the perianth proper isodiametric, firm- walled, with distinct trigones. Capsule short-ellipsoidal, the wall 2-3-stratose, 40-48 juim thick, the outer layer equaling the 2 inner layers in thickness; outer layer of cells short-rectangular, thin- walled, with short peg-like thickenings on the longitudinal walls, sporadically extending a short distance onto the outer tangential wall, the transverse walls rarely with peg-like thickenings; innermost layer of cells with longitudinal walls with thin sheet-like thickenings and ± regular, rather narrow, complete scalariform bands. Spores yellowish brown, 16.8-19.7 juim in diam., finely papillose, the papillae distinct or forming short, irregular vermiculate ridges that do not delimit areolae. Elaters 8.6-9. 1 |ULm wide, bispiral, the ends long-tapering and sinuous, the spirals 2. 9-3. 8 juim wide, not extending into the elater tips. Distribution and Ecology: New Zealand: Stewart Island (sea level). South Island (20-310 m). North Island (95-480 m); Australia: New South Wales. In New Zealand known from Southland, Otago, Westland and Southern North Island EPs. A species primarily of relatively low elevations in the forest zone. On stream banks it occurs over thick soil on boulders submerged to periodically inundated, and in streambeds it oc¬ curs on the tops of rocks that are for the most part above water level. Also on moist, stabilized roadside banks that are covered mostly by hepatics, mosses, often also with Blechnum and the lichen Stereocaulon. Eor example, at Cascade Road (just W of Jackson River, ca. 10 km SW of confluence of Jackson and Arawata rivers, Westland, 45 m) it occurred on a huge rock face of a large, vertical, bryophyte-covered roadside bank dominated by Isotachis, with Fuchsia excorticata at the base of the bank, the bank at the margin of a mature Nothofagus menziesii forest. Accompanying species on such banks are Campylopus clavatus, Chiloscyphus mitteni- anus, C. subporosus, Isotachis montana, Pohlia wahlenbergii and Polytrichadelphus magellan- icus. The species exceptionally is alpine, occurring, for example, at the top of a rock in a rill-bed at 1360-1480 m in a mosaic of tussockland and alpine vegetation along with tarns, rills, rocky outcrops and boulderfields (Rainbow Skifield, St. Arnaud Ra., Nelson Lakes Natl. Park). Solenostoma inundatum is much more frequent at upper elevations, including the alpine zone. Comments: Solenostoma orbiculatum resembles S. hodgsoniae in the lack of strong pigmentation, the shape and position of the leaves, and the prostrate habit and abundant rhizoids from the ventral side of the stem. Schuster (2002a) confused these species, referring to S. orbiculatum plants that are ‘Vigorous” with “leaves to 3.0-3. 6 mm X 3.3-4. 1 mm” and a “capsule wall 4-layered” (key, p. 376), which match characters of S. hodgsoniae. Schuster (2002a) also illustrated these vigorous plants (figs. 353A, 354: 5-7, both as S. orbiculatum), and commented (p. 380) “this is one of the largest Solenostoma spp. known...” Solenostoma orbicula¬ tum sensu Schuster (2002a), then, is identical to S. hodgsoniae. Solenostoma novae zelandiae R. M.Schust. may be the same as S. orbiculatum (see under “Uncertain Species”). The true S. orbiculatum is a smaller plant, with smaller cells and more uniform areolation, and the surface is decidedly striate-papillose, vs. smooth in S. hodgsoniae. It differs from S. inundatum in its prostrate habit and more obliquely inserted, dorsally assurgent leaves.</p>
+    <pre class="description-text">Plants prostrate or more commonly ascending to suberect in tightly interwoven mats, resembling Solenostoma hodgsoniae but smaller, often forming tight, closely spaced rosettes, bright green to yellowish to brownish green, rarely somewhat reddish, the plants medium-sized, to 2.5 mm wide. Branching common, the plants irregularly and often repeatedly branched, the 1, 5-9, from Braggins 84/400A, New Zealand, North Is., Southern North Is. EP, Akatarawa; 2-4, from Engel 21152, New Zealand, South Is., Western Nelson EP, track to German Terrace, 6 km SSE of Westport on Nine Mile Road, 90 m.) branches lateral-intercalary. Stem greenish to brownish green, the cortical cells indistinct, in a single layer of smaller cells; medullary cells lax, thin-walled. Rhizoids numerous, colorless to pale brownish, diffuse, never in bundles, arising from the ventral side of stem and from extreme bases of leaves, smooth. Leaves rather firm, vertically oriented, ± bilaterally appressed to the stem, loosely to closely imbricate, succubously oriented, the insertion variable, oblique in extreme dorsal portion, becoming subtransverse, abruptly reflexed at ventral end; leaves plane to concave, weakly asymmetric, elliptic-oval to oblate to subreniform, often broader than long, entire, 1.5-2 mm wide, 1-1.5 mm long, the apex broadly rounded or weakly emar- ginate; margins plane to distinctly reflexed, not undulate, the dorsal and ventral margins about equally short-decurrent. Cells thin- walled but not inflated, with small but prominent, bulging to knot-like trigones; cells of lower median sector of leaf larger, short-rectangular, (27)30- 43(48) |ULm wide X 41—48(55) |ULm long, the cells in distal sector smaller, firm-walled, hexagonal, often somewhat wider than long, 28-33 juim wide and long, the marginal cells almost isodiametric, 20-27 juim in diam.; surface closely striolate-papillose (at least in median basal sector). Oil-bodies very pale grey, (2)3-6 per cell, finely granular, the spherules very slightly protruding beyond membrane, the oil-bodies elliptic to fusiform to spherical, 5. 9-7. 8 X 15.6- 16.6 |ULm, some 4.9-7. 8 X 1 1.7-13.7 juim, spherical ones 6.8 juim in diam. Underleaves absent. Asexual reproduction absent. Eungal partner absent. Dioecious. Androecia terminal, rarely becoming intercalary, inconspicuous; bracts very little differentiated from the leaves, in 3-8 pairs, transversely inserted, widely spreading, the margins recurved, the basal portion moderately concave; antheridia 2-3 per bract, the stalk biseriate. Gynoecia terminal, typically with several lateral-intercalary innovations at some distance below the gynoecium, the subinvolucral leaves gradually larger, the bracts broadly reniform, weakly united with the base of the perianth; bracteole absent. Perianth ca. 0.5 immersed, inflated, ellipsoid, ± irregularly and sharply plicate in distal 0.3-0. 5, often with short, irregular accessory ribs and scabrous near the apex, the mouth contracted to a short beak, the mouth irregularly crenulate by projecting cells; cells of beak portion short-rectangular, uniformly thick-walled, their tips irregularly projecting; cells of the perianth proper isodiametric, firm- walled, with distinct trigones. Capsule short-ellipsoidal, the wall 2-3-stratose, 40-48 juim thick, the outer layer equaling the 2 inner layers in thickness; outer layer of cells short-rectangular, thin- walled, with short peg-like thickenings on the longitudinal walls, sporadically extending a short distance onto the outer tangential wall, the transverse walls rarely with peg-like thickenings; innermost layer of cells with longitudinal walls with thin sheet-like thickenings and ± regular, rather narrow, complete scalariform bands. Spores yellowish brown, 16.8-19.7 juim in diam., finely papillose, the papillae distinct or forming short, irregular vermiculate ridges that do not delimit areolae. Elaters 8.6-9. 1 |ULm wide, bispiral, the ends long-tapering and sinuous, the spirals 2. 9-3. 8 juim wide, not extending into the elater tips. Distribution and Ecology: New Zealand: Stewart Island (sea level). South Island (20-310 m). North Island (95-480 m); Australia: New South Wales. In New Zealand known from Southland, Otago, Westland and Southern North Island EPs. A species primarily of relatively low elevations in the forest zone. On stream banks it occurs over thick soil on boulders submerged to periodically inundated, and in streambeds it oc¬ curs on the tops of rocks that are for the most part above water level. Also on moist, stabilized roadside banks that are covered mostly by hepatics, mosses, often also with Blechnum and the lichen Stereocaulon. Eor example, at Cascade Road (just W of Jackson River, ca. 10 km SW of confluence of Jackson and Arawata rivers, Westland, 45 m) it occurred on a huge rock face of a large, vertical, bryophyte-covered roadside bank dominated by Isotachis, with Fuchsia excorticata at the base of the bank, the bank at the margin of a mature Nothofagus menziesii forest. Accompanying species on such banks are Campylopus clavatus, Chiloscyphus mitteni- anus, C. subporosus, Isotachis montana, Pohlia wahlenbergii and Polytrichadelphus magellan- icus. The species exceptionally is alpine, occurring, for example, at the top of a rock in a rill-bed at 1360-1480 m in a mosaic of tussockland and alpine vegetation along with tarns, rills, rocky outcrops and boulderfields (Rainbow Skifield, St. Arnaud Ra., Nelson Lakes Natl. Park). Solenostoma inundatum is much more frequent at upper elevations, including the alpine zone. Comments: Solenostoma orbiculatum resembles S. hodgsoniae in the lack of strong pigmentation, the shape and position of the leaves, and the prostrate habit and abundant rhizoids from the ventral side of the stem. Schuster (2002a) confused these species, referring to S. orbiculatum plants that are ‘Vigorous” with “leaves to 3.0-3. 6 mm X 3.3-4. 1 mm” and a “capsule wall 4-layered” (key, p. 376), which match characters of S. hodgsoniae. Schuster (2002a) also illustrated these vigorous plants (figs. 353A, 354: 5-7, both as S. orbiculatum), and commented (p. 380) “this is one of the largest Solenostoma spp. known...” Solenostoma orbicula¬ tum sensu Schuster (2002a), then, is identical to S. hodgsoniae. Solenostoma novae zelandiae R. M.Schust. may be the same as S. orbiculatum (see under “Uncertain Species”). The true S. orbiculatum is a smaller plant, with smaller cells and more uniform areolation, and the surface is decidedly striate-papillose, vs. smooth in S. hodgsoniae. It differs from S. inundatum in its prostrate habit and more obliquely inserted, dorsally assurgent leaves.</pre>
     
     
     
-    <p><strong>morphological_description:</strong> Plants prostrate or more commonly ascending to suberect in tightly interwoven mats, resembling Solenostoma hodgsoniae but smaller, often forming tight, closely spaced rosettes, bright green to yellowish to brownish green, rarely somewhat reddish, the plants medium-sized, to 2.5 mm wide. Branching common, the plants irregularly and often repeatedly branched, the 1, 5-9, from Braggins 84/400A, New Zealand, North Is., Southern North Is. EP, Akatarawa; 2-4, from Engel 21152, New Zealand, South Is., Western Nelson EP, track to German Terrace, 6 km SSE of Westport on Nine Mile Road, 90 m.) branches lateral-intercalary. Stem greenish to brownish green, the cortical cells indistinct, in a single layer of smaller cells; medullary cells lax, thin-walled. Rhizoids numerous, colorless to pale brownish, diffuse, never in bundles, arising from the ventral side of stem and from extreme bases of leaves, smooth. Leaves rather firm, vertically oriented, ± bilaterally appressed to the stem, loosely to closely imbricate, succubously oriented, the insertion variable, oblique in extreme dorsal portion, becoming subtransverse, abruptly reflexed at ventral end; leaves plane to concave, weakly asymmetric, elliptic-oval to oblate to subreniform, often broader than long, entire, 1.5-2 mm wide, 1-1.5 mm long, the apex broadly rounded or weakly emar- ginate; margins plane to distinctly reflexed, not undulate, the dorsal and ventral margins about equally short-decurrent. Cells thin- walled but not inflated, with small but prominent, bulging to knot-like trigones; cells of lower median sector of leaf larger, short-rectangular, (27)30- 43(48) |ULm wide X 41—48(55) |ULm long, the cells in distal sector smaller, firm-walled, hexagonal, often somewhat wider than long, 28-33 juim wide and long, the marginal cells almost isodiametric, 20-27 juim in diam.; surface closely striolate-papillose (at least in median basal sector). Oil-bodies very pale grey, (2)3-6 per cell, finely granular, the spherules very slightly protruding beyond membrane, the oil-bodies elliptic to fusiform to spherical, 5. 9-7. 8 X 15.6- 16.6 |ULm, some 4.9-7. 8 X 1 1.7-13.7 juim, spherical ones 6.8 juim in diam. Underleaves absent. Asexual reproduction absent. Eungal partner absent. Dioecious. Androecia terminal, rarely becoming intercalary, inconspicuous; bracts very little differentiated from the leaves, in 3-8 pairs, transversely inserted, widely spreading, the margins recurved, the basal portion moderately concave; antheridia 2-3 per bract, the stalk biseriate. Gynoecia terminal, typically with several lateral-intercalary innovations at some distance below the gynoecium, the subinvolucral leaves gradually larger, the bracts broadly reniform, weakly united with the base of the perianth; bracteole absent. Perianth ca. 0.5 immersed, inflated, ellipsoid, ± irregularly and sharply plicate in distal 0.3-0. 5, often with short, irregular accessory ribs and scabrous near the apex, the mouth contracted to a short beak, the mouth irregularly crenulate by projecting cells; cells of beak portion short-rectangular, uniformly thick-walled, their tips irregularly projecting; cells of the perianth proper isodiametric, firm- walled, with distinct trigones. Capsule short-ellipsoidal, the wall 2-3-stratose, 40-48 juim thick, the outer layer equaling the 2 inner layers in thickness; outer layer of cells short-rectangular, thin- walled, with short peg-like thickenings on the longitudinal walls, sporadically extending a short distance onto the outer tangential wall, the transverse walls rarely with peg-like thickenings; innermost layer of cells with longitudinal walls with thin sheet-like thickenings and ± regular, rather narrow, complete scalariform bands. Spores yellowish brown, 16.8-19.7 juim in diam., finely papillose, the papillae distinct or forming short, irregular vermiculate ridges that do not delimit areolae. Elaters 8.6-9. 1 |ULm wide, bispiral, the ends long-tapering and sinuous, the spirals 2. 9-3. 8 juim wide, not extending into the elater tips. Distribution and Ecology: New Zealand: Stewart Island (sea level). South Island (20-310 m). North Island (95-480 m); Australia: New South Wales. In New Zealand known from Southland, Otago, Westland and Southern North Island EPs. A species primarily of relatively low elevations in the forest zone. On stream banks it occurs over thick soil on boulders submerged to periodically inundated, and in streambeds it oc¬ curs on the tops of rocks that are for the most part above water level. Also on moist, stabilized roadside banks that are covered mostly by hepatics, mosses, often also with Blechnum and the lichen Stereocaulon. Eor example, at Cascade Road (just W of Jackson River, ca. 10 km SW of confluence of Jackson and Arawata rivers, Westland, 45 m) it occurred on a huge rock face of a large, vertical, bryophyte-covered roadside bank dominated by Isotachis, with Fuchsia excorticata at the base of the bank, the bank at the margin of a mature Nothofagus menziesii forest. Accompanying species on such banks are Campylopus clavatus, Chiloscyphus mitteni- anus, C. subporosus, Isotachis montana, Pohlia wahlenbergii and Polytrichadelphus magellan- icus. The species exceptionally is alpine, occurring, for example, at the top of a rock in a rill-bed at 1360-1480 m in a mosaic of tussockland and alpine vegetation along with tarns, rills, rocky outcrops and boulderfields (Rainbow Skifield, St. Arnaud Ra., Nelson Lakes Natl. Park). Solenostoma inundatum is much more frequent at upper elevations, including the alpine zone. Comments: Solenostoma orbiculatum resembles S. hodgsoniae in the lack of strong pigmentation, the shape and position of the leaves, and the prostrate habit and abundant rhizoids from the ventral side of the stem. Schuster (2002a) confused these species, referring to S. orbiculatum plants that are ‘Vigorous” with “leaves to 3.0-3. 6 mm X 3.3-4. 1 mm” and a “capsule wall 4-layered” (key, p. 376), which match characters of S. hodgsoniae. Schuster (2002a) also illustrated these vigorous plants (figs. 353A, 354: 5-7, both as S. orbiculatum), and commented (p. 380) “this is one of the largest Solenostoma spp. known...” Solenostoma orbicula¬ tum sensu Schuster (2002a), then, is identical to S. hodgsoniae. Solenostoma novae zelandiae R. M.Schust. may be the same as S. orbiculatum (see under “Uncertain Species”). The true S. orbiculatum is a smaller plant, with smaller cells and more uniform areolation, and the surface is decidedly striate-papillose, vs. smooth in S. hodgsoniae. It differs from S. inundatum in its prostrate habit and more obliquely inserted, dorsally assurgent leaves.</p>
+    <pre class="description-text">Plants prostrate or more commonly ascending to suberect in tightly interwoven mats, resembling Solenostoma hodgsoniae but smaller, often forming tight, closely spaced rosettes, bright green to yellowish to brownish green, rarely somewhat reddish, the plants medium-sized, to 2.5 mm wide. Branching common, the plants irregularly and often repeatedly branched, the 1, 5-9, from Braggins 84/400A, New Zealand, North Is., Southern North Is. EP, Akatarawa; 2-4, from Engel 21152, New Zealand, South Is., Western Nelson EP, track to German Terrace, 6 km SSE of Westport on Nine Mile Road, 90 m.) branches lateral-intercalary. Stem greenish to brownish green, the cortical cells indistinct, in a single layer of smaller cells; medullary cells lax, thin-walled. Rhizoids numerous, colorless to pale brownish, diffuse, never in bundles, arising from the ventral side of stem and from extreme bases of leaves, smooth. Leaves rather firm, vertically oriented, ± bilaterally appressed to the stem, loosely to closely imbricate, succubously oriented, the insertion variable, oblique in extreme dorsal portion, becoming subtransverse, abruptly reflexed at ventral end; leaves plane to concave, weakly asymmetric, elliptic-oval to oblate to subreniform, often broader than long, entire, 1.5-2 mm wide, 1-1.5 mm long, the apex broadly rounded or weakly emar- ginate; margins plane to distinctly reflexed, not undulate, the dorsal and ventral margins about equally short-decurrent. Cells thin- walled but not inflated, with small but prominent, bulging to knot-like trigones; cells of lower median sector of leaf larger, short-rectangular, (27)30- 43(48) |ULm wide X 41—48(55) |ULm long, the cells in distal sector smaller, firm-walled, hexagonal, often somewhat wider than long, 28-33 juim wide and long, the marginal cells almost isodiametric, 20-27 juim in diam.; surface closely striolate-papillose (at least in median basal sector). Oil-bodies very pale grey, (2)3-6 per cell, finely granular, the spherules very slightly protruding beyond membrane, the oil-bodies elliptic to fusiform to spherical, 5. 9-7. 8 X 15.6- 16.6 |ULm, some 4.9-7. 8 X 1 1.7-13.7 juim, spherical ones 6.8 juim in diam. Underleaves absent. Asexual reproduction absent. Eungal partner absent. Dioecious. Androecia terminal, rarely becoming intercalary, inconspicuous; bracts very little differentiated from the leaves, in 3-8 pairs, transversely inserted, widely spreading, the margins recurved, the basal portion moderately concave; antheridia 2-3 per bract, the stalk biseriate. Gynoecia terminal, typically with several lateral-intercalary innovations at some distance below the gynoecium, the subinvolucral leaves gradually larger, the bracts broadly reniform, weakly united with the base of the perianth; bracteole absent. Perianth ca. 0.5 immersed, inflated, ellipsoid, ± irregularly and sharply plicate in distal 0.3-0. 5, often with short, irregular accessory ribs and scabrous near the apex, the mouth contracted to a short beak, the mouth irregularly crenulate by projecting cells; cells of beak portion short-rectangular, uniformly thick-walled, their tips irregularly projecting; cells of the perianth proper isodiametric, firm- walled, with distinct trigones. Capsule short-ellipsoidal, the wall 2-3-stratose, 40-48 juim thick, the outer layer equaling the 2 inner layers in thickness; outer layer of cells short-rectangular, thin- walled, with short peg-like thickenings on the longitudinal walls, sporadically extending a short distance onto the outer tangential wall, the transverse walls rarely with peg-like thickenings; innermost layer of cells with longitudinal walls with thin sheet-like thickenings and ± regular, rather narrow, complete scalariform bands. Spores yellowish brown, 16.8-19.7 juim in diam., finely papillose, the papillae distinct or forming short, irregular vermiculate ridges that do not delimit areolae. Elaters 8.6-9. 1 |ULm wide, bispiral, the ends long-tapering and sinuous, the spirals 2. 9-3. 8 juim wide, not extending into the elater tips. Distribution and Ecology: New Zealand: Stewart Island (sea level). South Island (20-310 m). North Island (95-480 m); Australia: New South Wales. In New Zealand known from Southland, Otago, Westland and Southern North Island EPs. A species primarily of relatively low elevations in the forest zone. On stream banks it occurs over thick soil on boulders submerged to periodically inundated, and in streambeds it oc¬ curs on the tops of rocks that are for the most part above water level. Also on moist, stabilized roadside banks that are covered mostly by hepatics, mosses, often also with Blechnum and the lichen Stereocaulon. Eor example, at Cascade Road (just W of Jackson River, ca. 10 km SW of confluence of Jackson and Arawata rivers, Westland, 45 m) it occurred on a huge rock face of a large, vertical, bryophyte-covered roadside bank dominated by Isotachis, with Fuchsia excorticata at the base of the bank, the bank at the margin of a mature Nothofagus menziesii forest. Accompanying species on such banks are Campylopus clavatus, Chiloscyphus mitteni- anus, C. subporosus, Isotachis montana, Pohlia wahlenbergii and Polytrichadelphus magellan- icus. The species exceptionally is alpine, occurring, for example, at the top of a rock in a rill-bed at 1360-1480 m in a mosaic of tussockland and alpine vegetation along with tarns, rills, rocky outcrops and boulderfields (Rainbow Skifield, St. Arnaud Ra., Nelson Lakes Natl. Park). Solenostoma inundatum is much more frequent at upper elevations, including the alpine zone. Comments: Solenostoma orbiculatum resembles S. hodgsoniae in the lack of strong pigmentation, the shape and position of the leaves, and the prostrate habit and abundant rhizoids from the ventral side of the stem. Schuster (2002a) confused these species, referring to S. orbiculatum plants that are ‘Vigorous” with “leaves to 3.0-3. 6 mm X 3.3-4. 1 mm” and a “capsule wall 4-layered” (key, p. 376), which match characters of S. hodgsoniae. Schuster (2002a) also illustrated these vigorous plants (figs. 353A, 354: 5-7, both as S. orbiculatum), and commented (p. 380) “this is one of the largest Solenostoma spp. known...” Solenostoma orbicula¬ tum sensu Schuster (2002a), then, is identical to S. hodgsoniae. Solenostoma novae zelandiae R. M.Schust. may be the same as S. orbiculatum (see under “Uncertain Species”). The true S. orbiculatum is a smaller plant, with smaller cells and more uniform areolation, and the surface is decidedly striate-papillose, vs. smooth in S. hodgsoniae. It differs from S. inundatum in its prostrate habit and more obliquely inserted, dorsally assurgent leaves.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Qld; NSW; ACT; Vic.; Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; ACT; Vic.; Tas.</p>
     
     
   </details>
@@ -309,14 +290,45 @@
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Blechnum articulatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Capnodiastrum orbiculatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Scalenostoma</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Senostoma</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solanum orbiculatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostoma</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostoma infuscum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostoma inundatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostomus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gymnomitrion orbiculatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia orbiculata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Solenostoma contexta</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -331,22 +343,32 @@
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [85.2, 69.1, 90.6, 96.7, 139.2, 149.8, 172.1, 185.8, 163.9, 129.9, 102.3, 103.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.2, 19.1, 16.7, 13.2, 10.1, 8.0, 7.3, 8.1, 10.2, 12.5, 15.6, 17.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.2, 8.4, 6.9, 5.0, 3.4, 1.9, 1.2, 1.4, 2.6, 3.7, 5.5, 6.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

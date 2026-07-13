@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,39 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Heteroscyphus decipiens</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Heteroscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (8)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Cassinia decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Coelospermum decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Daviesia decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Eremophila decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Grevillea decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Heteroscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Indigofera decipiens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptocarpus decipiens</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -72,37 +48,50 @@
     <p class="big-num">99</p>
     <footer>20 Tasmanian</footer>
   </article>
-
   
   <article>
-    <header>Mean annual temp.</header>
+    <header>Mean temp.</header>
     <p class="big-num">9.8&thinsp;°C</p>
     <footer>at occurrence points</footer>
   </article>
   
-
   
   <article>
-    <header>Mean annual precip.</header>
+    <header>Mean precip.</header>
     <p class="big-num">2441&thinsp;mm</p>
-    <footer>
-      CV 19.5
-    </footer>
+    <footer>annual · CV&thinsp;19.5</footer>
   </article>
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">0</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">8</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
 </section>
 
 
@@ -111,14 +100,17 @@
 
 
 
-<section>
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Chiloscyphus allodontus (Hook.f. &amp; Taylor)              Heteroscyphus tridentatus (Mitt.) ].].Engel &amp;
+    <pre class="description-text">Chiloscyphus allodontus (Hook.f. &amp; Taylor)              Heteroscyphus tridentatus (Mitt.) ].].Engel &amp;
        E.A.Hodgs.                                              R.M.Schust.
 Heteroscyphus ammophilus (Colenso) R.M.Schust.          Heteroscyphus lingulatus (Colenso) J.J.Engel &amp;
        Chiloscyphus ammophilus Colenso                         R.M.Schust.
@@ -178,16 +170,19 @@ Isolembidium anomalum (Rodw.) Grolle var.              Kurzia quinquespina ].].E
         R.M.Schust.                                    Kymatolejeunea bartlettii Grolle
         Isolembidium cucullatum (E.A.Hodgs.)
         R.M.Schust.                                    Lamellocolea granditexta (Steph.) ].].Engel
-Isophyllaria attenuata (Rodw.) E.A.Hodgs.                      Lophocolea granditexta Steph.</p>
+Isophyllaria attenuata (Rodw.) E.A.Hodgs.                      Lophocolea granditexta Steph.</pre>
     
     
   </details>
   
   <details>
-    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p class="description-text">Cassinia decipiens commonly known as Goulburn River everlasting is a species of flowering plant in the family Asteraceae and grows in New South Wales. It is a shrub with woolly-hairy young twigs, spreading, cylindrical leaves, and heads of creamy-brown to yellowish flowers arranged in a rounded cyme.</p>
+    <pre class="description-text">Cassinia decipiens commonly known as Goulburn River everlasting is a species of flowering plant in the family Asteraceae and grows in New South Wales. It is a shrub with woolly-hairy young twigs, spreading, cylindrical leaves, and heads of creamy-brown to yellowish flowers arranged in a rounded cyme.</pre>
     
     
   </details>
@@ -196,14 +191,37 @@ Isophyllaria attenuata (Rodw.) E.A.Hodgs.                      Lophocolea grandi
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cassinia decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Coelospermum decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Daviesia decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eremophila decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Grevillea decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Indigofera decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptocarpus decipiens</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -218,22 +236,32 @@ Isophyllaria attenuata (Rodw.) E.A.Hodgs.                      Lophocolea grandi
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [104.1, 94.0, 122.4, 134.5, 207.3, 188.4, 225.7, 245.6, 232.4, 204.0, 122.8, 153.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.6, 19.8, 17.5, 14.5, 11.7, 9.9, 9.4, 10.2, 12.0, 13.8, 16.6, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.1, 9.2, 8.2, 6.3, 5.1, 3.6, 2.9, 3.2, 4.2, 5.1, 6.9, 8.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
 </script>
 
 

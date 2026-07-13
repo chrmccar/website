@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,41 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Cheilolejeunea norrisii</em></h1>
-  <p>
+  <div class="taxon-path">
     
-    <span class="badge secondary">Cheilolejeunea</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (9)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Cheilolejeunea</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cheilolejeunea campbelliensis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cheilolejeunea celata</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cheilolejeunea hallingii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cheilolejeunea meyeniana</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cheilolejeunea parvidens</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Cheilolejeunea streimannii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Lejeunea norrisii</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Trichosanthes morrisii</em> <small class="muted">ALA</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Cheilolejeunea</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -74,16 +48,20 @@
     <p class="big-num">0</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">0</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
@@ -94,23 +72,32 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>GBIF</strong> (1 entry)</summary>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>cheilolejeunea norrisii (grolle) m. a. m. renner, bryologist:</strong> &lt;div&gt;&lt;p&gt;Cheilolejeunea norrisii (Grolle) M.A.M.Renner,&lt;/p&gt;&lt;p&gt;Bryologist 115 (4): 550, 2012 (see Renner 2012). BASIONYM: Lejeunea norrisii Grolle, Wiss. Z. Friedrich-Schiller-Univ. Jena, Math.-Naturwiss. Reihe 31 (2): 215, 1982 (see Grolle 1982).&lt;/p&gt;&lt;/div&gt;</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>cheilolejeunea norrisii (grolle) m. a. m. renner, bryologist:</strong> &lt;div&gt;&lt;p&gt;Cheilolejeunea norrisii (Grolle) M.A.M.Renner,&lt;/p&gt;&lt;p&gt;Bryologist 115 (4): 550, 2012 (see Renner 2012). BASIONYM: Lejeunea norrisii Grolle, Wiss. Z. Friedrich-Schiller-Univ. Jena, Math.-Naturwiss. Reihe 31 (2): 215, 1982 (see Grolle 1982).&lt;/p&gt;&lt;/div&gt;</p>
     
     
   </details>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
@@ -119,18 +106,45 @@
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cheilolejeunea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cheilolejeunea campbelliensis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cheilolejeunea celata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cheilolejeunea hallingii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cheilolejeunea meyeniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cheilolejeunea parvidens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cheilolejeunea streimannii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea norrisii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Trichosanthes morrisii</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
   
+
+
 
 
 </body>

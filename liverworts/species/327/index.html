@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  
+
   <main class="container">
     
 <nav aria-label="breadcrumb">
@@ -31,45 +33,13 @@
   </ul>
 </nav>
 
-<hgroup>
+<div class="species-header">
   <h1><em>Leptoscyphus horizontalis</em></h1>
-  <p>
+  <div class="taxon-path">
     <span class="badge">Lophocoleaceae</span>
-    <span class="badge secondary">Leptoscyphus</span>
-  </p>
-</hgroup>
-
-
-
-<details>
-  <summary>Synonyms &amp; alternative names (11)</summary>
-  <ul class="synonym-list">
-    
-    <li><em>Brachychiton compactus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus australis</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus belmoranus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus excipulatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus longistipulus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leptoscyphus subemarginatus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Leucopogon compactus</em> <small class="muted">ALA</small></li>
-    
-    <li><em>Chiloscyphus compactus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Heteroscyphus compactus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
-    
-    <li><em>Leptoscyphus compactus</em> <small class="muted">input</small></li>
-    
-  </ul>
-</details>
-
+    <span class="badge">Leptoscyphus</span>
+  </div>
+</div>
 
 
 <div class="summary-grid">
@@ -78,21 +48,25 @@
     <p class="big-num">5</p>
     <footer>0 Tasmanian</footer>
   </article>
-
   
-
   
-
   <article>
     <header>Traits</header>
     <p class="big-num">0</p>
-    <footer>NLP-extracted from literature</footer>
+    <footer>from literature</footer>
   </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
 </div>
 
 
 
-<section>
+<section class="data-section">
   <h2>Distribution</h2>
   <div id="map"></div>
 </section>
@@ -103,14 +77,20 @@
 
 
 
-<section>
+
+
+
+<section class="data-section">
   <h2>Source descriptions</h2>
   
   <details>
-    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
     
     
-    <p><strong>distribution:</strong> Tas.</p>
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
     
     
   </details>
@@ -119,14 +99,43 @@
 
 
 
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Brachychiton compactus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus australis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus belmoranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus excipulatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus longistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptoscyphus subemarginatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leucopogon compactus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus compactus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Heteroscyphus compactus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Leptoscyphus compactus</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
   </main>
 
-  <footer class="container-fluid site-footer">
-    <small>
-      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
-      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
-      <a href="https://picocss.com">Pico CSS</a>
-    </small>
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
   </footer>
 
   <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
@@ -141,23 +150,17 @@
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     maxZoom: 18,
   }).addTo(map);
-
-  // Use a CircleMarker layer for performance with many points
   coords.forEach(([lat, lng]) => {
     L.circleMarker([lat, lng], {
-      radius: 4,
-      color: '#2d6a4f',
-      fillColor: '#52b788',
-      fillOpacity: 0.7,
-      weight: 1,
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
     }).addTo(map);
   });
-
-  if (coords.length > 0) {
-    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
-  }
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
 })();
 </script>
+
+
 
 
 </body>
