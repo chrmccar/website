@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hampeella concavifolia — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Hampeella concavifolia</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Hampeella concavifolia</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Ptychomniaceae</span>
+    <span class="badge">Cryptolophocolea</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">8</p>
+    <footer>0 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Chiloscyphus connatifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptolophocolea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptolophocolea leucophylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptolophocolea mitteniana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptolophocolea pallida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptolophocolea trialata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptolophocolea tuberculata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hicksbeachia pinnatifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila pinnatifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cryptolophocolea connatifolia</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-17.1167, 145.5833], [-16.583334, 145.28334], [-16.510653, 145.269403], [-16.5, 145.5], [-16.6, 145.2667], [-17.5, 145.5], [-17.256239, 145.860239], [-16.5167, 145.2667]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+
+</body>
+</html>

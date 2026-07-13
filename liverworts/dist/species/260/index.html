@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frullania probosciphora — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Frullania probosciphora</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Frullania probosciphora</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Frullaniaceae</span>
+    <span class="badge">Frullania</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">476</p>
+    <footer>109 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">4</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Metzgeria albinea Spruce - in Kuwahara (1987)
+                                                                  Metzgeria australis Steph. - in Kuwahara (1987)
+  Species and Subspecies Recorded                                 Metzgen·a epiphylla Evans - in Kuwahara (1987)
+                                                                  Pallavicinia rubristipa Schiffn. - in Grolle (1986)
+   for New Zealand since Hamlin
+                                                                  Phaeoceros hirticalyx (Steph.) Haseg. - in Campbell (1993)
+    (1975) with the publication in                                Radula campanigera Mont. - in Campbell (1977a)
+   which they were first recorded                                 Riccia bullosa Link - in Campbell (1975)
+Acrolejeunea mollis (Hook. f. &amp; Taylor) Schiffn. - in             Riccza ciliata Hoffm. - in Campbell (1975)
+Gradstein (1975)                                                  Riccia crozalsii Levier - in Campbell (1975)
+Acromastigum cunninghamii (Steph.) A. Evans - in Engel            Ricciaglauca L.-in Campbell (1975)
+&amp; Merrill (1994)                                                  Riccia sorocarpa Bisch. - in Campbell (1975)
+Aneura a.ff n(ll)oguineensis Hewson - in Brown &amp; Braggins         Seppeltia succuba Grolle - in Glenny (1995)
+(1989)                                                            Stenolejeunea apiculata (Sande-Lac.) R.M.Schust. - in
+Aneura pinguis (L.) Dumort. - in Brown &amp; Braggins                 Grolle (1982) as lejeunea apiculata
+(1989)                                                            Taxilejeuneagracilipes (Taylor) Steph. -in Campbell (19776)
+Aneura aff. wattsiana (Steph.) Hewson - in Brown &amp;
+Braggins (1989)
+Balantiopsis montana (Col.) J.J. Engel &amp; G.L.S. Merrill              Species of Uncertain Status that
+(1997)                                                                        are in Hamlin (1972)
+Cephaloziella pulcherrima subsp. sphagnicola R.M. Schust.
+- in Glenny (1996a)
+                                                                                or Hamlin (1975)
+Cheilolejeunea mariana (Gottsche, Lindenb. &amp; Nees)                Aneura biflora Colenso,Aneuragibbsiana Steph.,Aneura
+B.Thiers &amp; Gradst. - in Campbell (1977) asArchilejeunea           glaucescens Steph.,Aneura imbncata Colenso,Aneura minuta
+mariana (Gottsche, Lindenb. &amp; Nees) Steph.                        Steph., Aneura pellucida Colenso, Aneura polyantha
+Cheilolejeunea tenella (Taylor) Engel &amp; Tan - in Campbell         Colenso, Aneura punctata Colenso, Riccardia riccioides
+(1977) as Euosmolejeunea tenella (Taylor) Steph.                  Pearson. None of these species that are listed in
+Clasmatocolea vermicularis (Lehm.) Grolle - in Engel (1980)       Hamlin&#39;s (1972) checklist are mentioned in Brown &amp;
+Colokjeunea cardiocarpa (Mont.) Steph. - in Braggins (1997)       Braggins (1989).
+Cololejeunea minutissima (Sw.) Schiffn. - in Grolle (1982)        Frullania probosciphora Taylor. Hattori (1983: 139) sug-
+who comments that it is probably the same species as              gests Hodgson&#39;s records of Frullania cranialis and
+122   Tuhinga, Number 10 (1998)
+
+
+
+
+F. probosciphora (both Australian species) are of F. reptans   by Engel &amp; Schuster (1987).
+which he considers may be a geographical race of F.            Noteroclada conjluens Taylor ex Hook. f. &amp; Wils, rejected
+probosciphora. The name F. reptans is retained pending         by Grolle &amp; Seppelt (1986).
+examination of these two.                                      Noteroclada longiuscula Colenso, rejected by Grolle
+Leioscyphus repens. Hamlin (1972) listed this as a             &amp; Seppelt (1986). No specimen was found by
+synonym       of         Chiloscyphus         physanthus       Grolle and Seppelt, and they did not accept it as
+(=Heteroscyphus physanthus) citing Hodgson (1943:              being in the genus Noteroclada on the basis of the
+44). Hassel de Menendez (1986) examined the New                description.
+Zealand type of this species and found it did not              Megaceros aneuraeformis (Angstr.) Steph., listed in Hamlin
+match Mitten&#39;s description or illustration, but be-            (1972) as Anthoceros aneuraeformis Angstr., rejected by
+lieves that the species on which Mitten based his              Campbell (1984).
+description and illustration may exist in the New              Pachyschistochila splachnophylla (Hook. f. &amp; Taylor) R.M.
+Zealand flora. I have followed Hamlin and not re-              Schust. &amp; J.J. Engel, rejected by Schuster &amp; Engel
+tained the species in the checklist.                           (1985).
+Lepidozia filamentosa. This species is listed in Hamlin
+(1972) in Part II but not Part I. The record&#39;s origin is
+                                                                                        Notes
+D&#39;Urville (1845: 246: &#34;hab. in insulis Auckland et strato
+                                                               l. Fossombronia pusilla (L.) Nees is cited in Hamlin (1972:
+Magellanico a cl. Hombron lecta&#34;) and is cited in
+                                                               261) incorrectly as Fossombronia pusilla (Schmid.) Nees.
+Hooker (1854-5) who says &#34;A NW American and
+                                                               Hamlin (1972: 299 &amp; 340) uses the spellingPlagiochila
+Fuegian plant, of which I have seen no N.Z. speci-</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Vic.; Tas.; Lord Howe I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">E probosciphora Frullaniaceae                                               WSTVAN
+Another very common species, F probosciphora has shoots less
+�han 1 mm wide. It is particularly common on the bark of trees
+and shrubs in drier forests. The lobules are helmet-shaped, about
+as .wide as they are tall. The imderleaves are mostly small and
+kite-shaped, l:fifid to about one-third. Perianths are 8-keeled or
+more (3- 5 dorsal, 3-4 ventral and 2 transverse).
+    F pentapleura (WSTVN) has shorter lobules that are often F. probosciphora
+                                                                        (leaf and
+flattened out ( explanate). The perianth is 5-keeled, with only 1
+                                                                      under/eaves)
+dorsal and 2 ventral keels. Its primary habitat is rock, but it is
+sometimes. epiphytic.
+    F incumbens (TVN) has bell-shaped lobules with a widely
+flaring and often pale mouth, the lobules characteristically inclined
+(incumbent) &#39;towards the stem. It seems to be rare but perhaps
+overlooked.
+                                                                             F. incumbens
+
+
+F. rostrata Frullaniaceae                                                           TVAN
+This is the smallest Frullania in the region , with shoots not much
+more than 0.5.mm wide. The leaves are dark brown and densely
+overlapping. The lobules are tall and helmet-shaped, standing at a
+wide angle to the stem so that the stylus that connects each lobule to its
+leaf can be seen clearly. The oval underleaves are deeply bifid.
+    F aterrima (TVN) is a very similar but much rarer species. It has
+much large; underleaves with numerous blunt teeth.                               leaf and
+                                                                                underfeaf
+Similar species: Frullania probosciphora
+Liverworts with underleaves and incubous leaves - Group D
+
+
+
+
+5mm                                     Frullania rostrata
+        Mosses &amp; Allied Plants of Southern Australia
+
+
+      Gacketroemia weindorferi /HSLGRODHQDFHDH                                             TVN
+       This liverwort is quite common on living trees and fallen logs in
+      Nothofagus forest, and occasionally on soil; elsewhere it is very rare.
+      The shoots form flattened fronds that are densely and pinnately
+      branched. The typical colour is green, bufthere are often shades of
+      fawn or brown. The black stem is usually well covered by densely
+      overlapping, incubous leaves. These leaves are broadly ovate, with �
+      hair-like teeth on the basal margins and a small lobule on the           branch leaf
+      ventral side. The branch leaves are almost circular and carry several
+      lobules, and the margins and lobules bear spinous teeth.
+      The underleaves on the stems are large, bilobed to abo]Jt 1/3 and with a few sh��t
+      marginal teeth. Those on the branches are smaller and deeply bilobed, with several
+      -long teeth around the margins.
+          Lepidolaena taylori (TV) look� rather similar, but the leaves are rounded with an
+      acute apex and there are only a few teeth at the extreme leaf base. The lobules are
+      not ciliate and the underleaves are 4-fid, those on the stem ciliate but those on the
+
+
+I:)
+      branches bearing lobules on at least the two central lobes.
+      Similar species: Frullania spp., Trichocolea spp., other Lepidolaena spp.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Frullania</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania apiculata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania belmorensis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania fugax</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania gracillima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania sheana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania simmondsii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania spathulistipa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania streimannii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania reptans</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.890149, 148.309662], [-41.54846, 146.401828], [-42.090433, 147.001354], [-41.773332, 146.879823], [-43.055944, 147.039222], [-42.900896, 147.123862], [-41.746915, 146.712695], [-39.8639, 147.9814], [-41.729912, 146.760866], [-41.639091, 146.521061], [-43.260899, 146.754961], [-41.67, 146.35], [-42.718502, 147.734151], [-43.260569, 146.631754], [-42.719807, 147.489901], [-42.0, 147.0], [-43.621272, 146.877445], [-43.5792353, 146.8871072], [-42.900369, 147.368839], [-42.810843, 147.123682], [-42.540678, 146.87958], [-39.863889, 147.981389], [-42.720855, 147.001368], [-42.087302, 147.84774], [-42.000302, 147.1221], [-41.72264, 146.730837], [-41.634998, 148.081909], [-43.34583, 145.890957], [-41.817968, 146.278922], [-42.990948, 147.124043], [-39.871111, 148.030556], [-41.729599, 146.640628], [-41.908724, 146.398476], [-42.720274, 146.634965], [-42.375, 146.53], [-42.625529, 148.0989], [-41.649389, 145.063556], [-42.0, 147.0], [-43.0, 147.0], [-41.819667, 146.640125], [-43.0, 147.0], [-41.668936, 146.550871], [-43.0, 147.0], [-42.7667, 147.3167], [-42.3667, 147.1833], [-42.375, 146.53], [-41.45, 147.11666], [-41.7, 146.65], [-43.440988, 146.754236], [-41.35, 147.7], [-42.719819, 146.512835], [-41.2319443, 146.8676878], [-42.809871, 146.512129], [-41.454882, 148.078911], [-39.9229844, 147.8988191], [-42.264137, 148.213849], [-39.8639, 147.9814], [-40.2031, 148.2653], [-41.7, 146.65], [-42.754444, 146.461667], [-41.817149, 146.15853], [-41.715451, 146.73808], [-41.093463, 148.192044], [-42.630537, 147.245283], [-42.810646, 147.245994], [-42.900698, 147.246351], [-42.066667, 145.583333], [-43.055944, 147.039222], [-41.819981, 146.760532], [-41.90626, 146.036792], [-41.726146, 146.039487], [-39.708661, 143.968486], [-41.040583, 146.994528], [-41.635023, 145.92078], [-42.000116, 146.759858], [-42.542722, 147.931389], [-41.275814, 147.956556], [-41.433333, 147.116667], [-41.731621, 146.719977], [-41.907366, 145.957199], [-43.0, 147.0], [-42.54048, 147.24493], [-43.0, 147.0], [-39.8711, 148.0306], [-42.883333, 147.216667], [-40.2031, 148.265], [-41.811163, 145.556662], [-41.5319551, 145.8343741], [-43.0, 147.0], [-43.0, 147.0], [-41.535056, 147.670917], [-41.909293, 146.519046], [-42.88333, 147.23054], [-42.349917, 147.917111], [-42.987784, 147.860009], [-41.368306, 147.599198], [-42.54875, 147.935444], [-41.5333, 146.4333], [-41.4812492, 145.4474981], [-41.8833, 148.3], [-41.368866, 147.479631], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-41.636087, 146.040825], [-42.081279, 145.550555], [-42.000305, 146.880605], [-40.203056, 148.265], [-41.910238, 146.880773], [-35.2792, 149.1292], [-38.57157, 143.42274], [-37.6567, 143.9189], [-34.971296, 117.364587], [-25.0, 135.0], [-37.876778, 146.359111], [-37.65517, 143.92022], [-37.0667, 149.4667], [-37.4083, 149.4083], [-33.166844, 116.266224], [-22.3167, 149.2333], [-38.8825, 146.289722], [-37.1167, 148.9], [-35.35, 148.6667], [-37.41516, 144.56799], [-34.683333, 117.85], [-37.81516, 145.11798], [-35.3333, 149.2667], [-34.441855, 116.648746], [-34.211944, 115.796944], [-37.0667, 149.4667], [-35.1667, 150.7333], [-34.605, 116.440278], [-37.3914, 144.1172], [-34.239022, 116.317215], [-37.0, 145.0], [-34.766667, 116.083333], [-37.54017, 143.88466], [-33.9333, 149.3667], [-37.81516, 145.50131], [-37.604722, 146.325833], [-37.81515, 146.26797], [-38.963889, 146.828889], [-37.79211, 144.57855], [-34.439722, 116.225], [-36.4, 148.3], [-45.3139, 168.1767], [-43.712931, 172.839781], [-34.35, 116.041667], [-38.064806, 141.828639], [-37.005, 144.30528], [-35.6167, 148.9833], [-36.50595, 148.272], [-37.0833, 148.7667], [-14.883333, 125.816667], [-44.8964, 168.0681], [-36.45, 148.3], [-35.4167, 148.9], [-37.1667, 147.6667], [-35.6333, 148.7667], [-34.453611, 116.265], [-37.3083, 148.8333], [-45.005, 167.1339], [-37.68182, 145.51798], [-35.4353, 149.5964], [-34.566667, 149.95], [-35.3, 149.1], [-34.809912, 116.809308], [-35.6167, 149.9167], [-35.4167, 148.9], [-38.74848, 146.50131], [-35.4167, 148.8167], [-34.9167, 138.7167], [-34.681389, 117.868333], [-37.36516, 144.56798], [-33.162222, 116.258611], [-37.875, 146.356917], [-38.9621, 146.44326], [-34.55, 149.9333], [-12.55, 131.2167], [-30.2, 152.9667], [-35.4167, 148.8167], [-35.2667, 149.1], [-35.6167, 148.6833], [-45.3391, 169.306], [-37.2861, 148.5569], [-37.1167, 148.9], [-15.316667, 125.116667], [-52.552, 169.232], [-28.866667, 153.566667], [-33.424444, 115.695583], [-34.980556, 117.282778], [-38.75, 143.2833], [-37.665, 145.82722], [-37.45, 150.0], [-37.36516, 144.56798], [-36.5083, 148.3008], [-32.85, 150.2], [-36.99211, 144.29937], [-37.1167, 148.9], [-17.6167, 145.5333], [-36.858333, 146.527778], [-35.5158, 148.7806], [-37.05, 149.3333], [-35.1667, 150.7333], [-37.0, 145.0], [-37.0, 145.0], [-35.454667, 148.885139], [-35.8667, 147.3333], [-37.59097, 144.47655], [-15.95, 145.3333], [-37.2833, 143.25], [-37.2847, 148.5681], [-37.64694, 145.81778], [-37.72656, 143.62134], [-30.0, 135.0], [-32.3333, 151.9167], [-35.6167, 148.6833], [-34.452943, 116.251136], [-37.1953, 142.5042], [-37.9231, 144.9872], [-35.5667, 149.9833], [-35.6778, 174.0461], [-37.64851, 143.918], [-37.3683, 144.3269], [-35.15, 150.6667], [-32.7139, 147.8583], [-35.628889, 149.515], [-37.13322, 144.48298], [-35.2417, 148.75], [-45.3139, 168.1767], [-42.008, 173.898], [-34.971019, 117.293198], [-35.004353, 117.248755], [-37.372435, 144.596517], [-39.12944, 146.40222], [-45.214278, 167.625078], [-39.5492, 175.7222], [-34.681389, 117.868333], [-37.717, 145.0554], [-31.8167, 152.4167], [-36.99917, 144.31], [-35.0008, 117.3175], [-45.5383, 169.0231], [-35.4547, 148.8853], [-37.66417, 145.82722], [-38.99306, 146.26528], [-37.36516, 144.56798], [-33.249262, 116.286864], [-39.06515, 146.36799], [-37.4, 148.6], [-35.7333, 149.0417], [-36.86167, 144.26306], [-35.35, 148.6667], [-34.734333, 117.511917], [-35.7667, 150.2333], [-35.4833, 150.0], [-35.2783, 149.1067], [-34.983333, 116.666667], [-38.57139, 143.42278], [-37.6497, 144.8258], [-37.5004, 144.45826], [-37.0667, 149.4667], [-37.65139, 145.81167], [-32.3333, 151.9167], [-35.45, 148.7667], [-37.7281, 143.62], [-34.683333, 117.85], [-37.3111, 148.4986], [-35.2783, 149.1067], [-17.6833, 145.5], [-32.833333, 150.916667], [-37.0, 145.0], [-34.282973, 115.885967], [-36.05, 149.3833], [-43.514847, 172.498951], [-37.81516, 145.11798], [-36.0, 149.5667], [-33.544444, 151.180556], [-36.5175, 148.2744], [-37.01016, 144.30215], [-37.21861, 142.96889], [-36.99167, 144.30917], [-35.3, 148.8], [-34.321, 116.569361], [-38.74848, 146.50131], [-38.89278, 146.48361], [-34.455, 116.25], [-34.989444, 116.735556], [-43.718387, 170.145718], [-37.8319, 144.9761], [36.5, 148.266667], [-32.715, 116.064722], [-37.875, 146.356917], [-31.55, 159.087222], [-18.4667, 145.9833], [-30.5, 152.4], [-38.06481, 141.82864], [-37.73722, 145.2], [-18.0833, 145.65], [-37.36516, 144.56798], [-37.79849, 145.00132], [-38.57111, 143.43944], [-37.0, 145.0], [-35.4167, 148.9], [-37.875, 146.356917], [-42.9383, 171.56], [-33.502617, 150.388827], [-35.15, 148.6], [-34.084444, 116.183056], [-37.3167, 148.8556], [-37.36516, 144.56798], [-37.0, 145.0], [-35.5333, 149.0], [-38.4, 146.6333], [-17.8167, 146.1], [-44.083333, -176.583333], [-34.679167, 150.720833], [-36.80222, 144.82611], [-35.6289, 149.515], [-35.1667, 150.6667], [-37.64972, 144.82583], [-35.134167, 150.746667], [-34.0, 148.05], [-37.0833, 148.7667], [-38.5731, 143.4214], [-37.8, 145.85], [-37.41516, 144.56799], [-37.8667, 146.3667], [-37.655, 145.83194], [-37.36516, 144.56798], [-37.69849, 145.51798], [-35.7333, 149.0417], [-35.5167, 148.9167], [-39.456468, 176.277885], [-35.5792, 148.7778], [-31.55, 159.087222], [-36.8667, 147.25], [-37.2167, 149.5667], [-35.8667, 147.3333], [-37.0667, 149.4667], [-35.015464, 117.260977], [-38.58694, 143.47806], [-36.9667, 149.9333], [-35.425, 148.9167], [-37.6433, 144.971503], [-35.3167, 148.8333], [-37.7936, 144.5772], [-35.649943, 148.466634], [-31.516667, 159.083333], [-44.645887, 169.798143], [-34.108333, 150.817222], [-35.6167, 149.0833], [-34.243056, 116.144722], [-34.338056, 117.731667], [-41.6089, 175.2842], [-27.6258, 151.1656], [-35.5333, 148.9], [-35.7017, 174.2625], [-35.5167, 148.9167], [-35.75, 150.15], [-37.830889, 144.977778], [-38.14849, 145.11799], [-35.3667, 148.9333], [-34.794088, 116.074588], [-37.2833, 148.5667], [-35.4833, 149.5667], [-35.3333, 149.25], [-43.746679, 173.038057], [-35.616667, 148.683333], [-37.81516, 145.11798], [-27.625833, 151.165556], [-37.0667, 149.4667], [-38.064806, 141.828639], [-36.896722, 148.088944], [-43.23487, 171.15375], [-37.6681, 144.3525], [-37.6681, 144.3525], [-34.164722, 116.401944], [-28.7067, 152.1017], [-38.09849, 145.11799], [-40.92436, 175.48481], [-32.3333, 151.9167], [-35.4333, 148.8167], [-33.8, 149.7833], [-35.0667, 138.9167], [-34.240222, 116.315694], [-35.5333, 149.0833], [-37.36683, 144.32827], [-37.36516, 144.56798], [-43.707, 172.836], [-37.0, 145.0], [-34.243056, 116.144722], [-37.36516, 144.56798], [-37.76044, 144.57994], [-35.516667, 148.9], [-34.271111, 115.612778], [-37.79849, 145.00132], [-36.3325, 146.21722], [-33.65, 149.1833], [-37.71222, 145.11306], [-43.743973, 172.872265], [-36.0, 149.5667], [-36.843639, 148.13975], [-28.866667, 153.566667], [-35.85, 147.4667], [-37.83194, 144.97611], [-37.3167, 143.1], [-39.5419, 175.7358], [-35.278333, 149.107222], [-37.0833, 148.7667], [-37.1167, 145.2], [-37.2, 149.3167], [-34.455137, 116.243192], [-35.483333, 148.933333], [-37.24602, 142.54829], [-37.56511, 149.75124], [-37.67167, 145.82333], [-35.5158, 148.7806], [-34.083245, 116.184574], [-35.5333, 148.9], [-36.516667, 148.9], [-37.45, 150.0], [-38.4, 146.6333], [-37.51511, 149.66791], [-36.4894, 148.3039], [-38.06481, 141.82864], [-34.084444, 116.183056], [-37.2, 145.1667], [-35.4297, 149.5989], [-35.4833, 150.0], [-35.45, 150.0], [-37.4, 148.6], [-37.02544, 144.29993], [-35.2833, 148.8667], [-37.5167, 149.6667], [-37.51511, 149.61791], [-34.131667, 116.163333], [-37.33988, 144.67798], [-35.2778, 149.1083], [-35.4583, 148.9208], [-37.0, 145.0], [-36.0, 149.5667], [-38.4, 146.6333], [-33.266667, 149.0], [-37.41516, 144.56799], [-35.15, 150.6667], [-32.0667, 151.65], [-30.0, 135.0], [-34.442222, 116.0], [-34.442222, 116.0], [-34.679167, 150.720833], [-34.321, 116.569361], [-34.321, 116.569361], [-37.2475, 142.5469], [-36.8667, 147.2333], [-30.0, 135.0], [-40.0611, 175.9672], [-35.238889, 149.718056], [-36.1667, 149.4833], [-35.6667, 149.2167], [-35.001019, 117.321254], [-37.3833, 144.5833], [-35.5667, 149.5], [-34.681389, 117.868333], [-43.6272, 171.3003], [-38.53389, 143.48917], [-34.442222, 116.0], [-37.71516, 145.13465], [-38.48181, 146.51797], [-35.616667, 148.683333], [-43.63, 171.4133], [-36.648389, 148.129056], [-43.15, 171.733333], [-35.481389, 148.898611], [-37.875, 146.356917], [-37.57278, 145.86028]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [67.1, 56.0, 69.0, 72.5, 99.8, 109.6, 121.6, 134.9, 119.9, 96.8, 80.9, 79.2], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.7, 20.7, 18.5, 15.1, 12.1, 10.0, 9.3, 10.2, 12.3, 14.3, 17.1, 18.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.9, 9.9, 8.6, 6.6, 4.9, 3.2, 2.7, 2.8, 4.2, 5.3, 7.1, 8.3], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

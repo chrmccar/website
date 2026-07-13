@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lepidozia quadrifida — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Lepidozia quadrifida</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Lepidozia quadrifida</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Lepidozia</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">17</p>
+    <footer>3 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Goodenia quadrifida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gunniopsis quadrifida</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia concinna</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia crassitexta</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia eenii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia montana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia ulothrix</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Stockwellia quadrifida</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.983333, 147.1], [-43.166667, 147.233333], [-41.833333, 145.5], [-28.866667, 153.483333], [-33.75, 151.133333], [-33.8, 151.183333], [-35.0833, 150.1333], [-33.8, 151.183333], [-28.866667, 153.483333], [-28.866667, 153.483333], [-33.55, 151.216667], [-33.85, 150.816667], [-28.866667, 153.483333], [-33.716667, 150.3], [-35.0833, 150.1333], [-28.866667, 153.483333], [-33.85, 151.116667]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [72.2, 70.0, 84.8, 86.4, 126.3, 127.0, 141.6, 156.1, 144.3, 125.0, 88.4, 97.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [21.7, 21.7, 19.6, 16.5, 13.7, 11.7, 11.2, 12.1, 14.0, 15.8, 18.2, 19.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.8, 11.0, 9.1, 6.9, 5.7, 3.7, 3.3, 3.7, 5.3, 6.3, 8.2, 9.8], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

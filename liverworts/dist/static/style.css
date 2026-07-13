@@ -1,0 +1,333 @@
+/* ── Colour palette ─────────────────────────────────────────── */
+:root {
+  --green-900: #1b4332;
+  --green-800: #2d6a4f;
+  --green-700: #40916c;
+  --green-500: #52b788;
+  --green-300: #95d5b2;
+  --green-100: #d8f3dc;
+  --cream:     #f8f6f0;
+  --ink:       #1c1c1c;
+  --muted:     #6b7280;
+  --border:    #e2e8e4;
+
+  --pico-primary:            var(--green-700);
+  --pico-primary-hover:      var(--green-800);
+  --pico-primary-background: var(--green-100);
+  --pico-primary-inverse:    #fff;
+  --pico-background-color:   var(--cream);
+  --pico-color:              var(--ink);
+  --pico-muted-color:        var(--muted);
+  --pico-muted-border-color: var(--border);
+  --pico-code-background-color: #f0f4f1;
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+body { background: var(--cream); }
+
+/* ── Header ─────────────────────────────────────────────────── */
+.site-header {
+  background: var(--green-900);
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.site-header nav { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+
+.site-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+  color: #fff !important;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.site-header nav a {
+  color: var(--green-300);
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.site-header nav a:hover { color: #fff; }
+
+/* ── Hero (index only) ──────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, var(--green-900) 0%, var(--green-800) 60%, var(--green-700) 100%);
+  color: #fff;
+  padding: 3rem 0 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.hero p { color: var(--green-300); margin-bottom: 0; font-size: 0.95rem; }
+
+.hero .container { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+
+.hero-stats { display: flex; gap: 2rem; }
+
+.hero-stat { text-align: center; }
+.hero-stat .n { font-size: 2rem; font-weight: 700; color: #fff; line-height: 1; }
+.hero-stat .l { font-size: 0.75rem; color: var(--green-300); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.2rem; }
+
+/* ── Search ─────────────────────────────────────────────────── */
+.search-wrap {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.search-wrap input {
+  padding-left: 2.5rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: #fff;
+  font-size: 0.95rem;
+}
+
+.search-wrap input:focus { border-color: var(--green-500); box-shadow: 0 0 0 3px rgba(82,183,136,.18); }
+
+.search-icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+/* ── Species index table ─────────────────────────────────────── */
+table { font-size: 0.9rem; }
+.num { text-align: right; }
+
+table thead th {
+  background: var(--green-100);
+  color: var(--green-900);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--green-300);
+}
+
+table tbody tr:hover { background: #f0f7f3; }
+
+.dot-wrap { display: flex; gap: 3px; justify-content: center; }
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  title: attr(title);
+}
+.dot-map    { background: var(--green-700); }
+.dot-trait  { background: #6366f1; }
+.dot-desc   { background: #f59e0b; }
+.dot-none   { background: #d1d5db; }
+
+/* ── Breadcrumb ─────────────────────────────────────────────── */
+nav[aria-label="breadcrumb"] {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+nav[aria-label="breadcrumb"] a { color: var(--green-700); text-decoration: none; }
+nav[aria-label="breadcrumb"] a:hover { text-decoration: underline; }
+
+/* ── Species detail header ───────────────────────────────────── */
+.species-header {
+  border-left: 4px solid var(--green-500);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.species-header h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+
+.species-header .taxon-path {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.species-header .taxon-path a {
+  color: var(--green-700);
+  text-decoration: none;
+}
+
+/* ── Summary cards ───────────────────────────────────────────── */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.summary-grid article {
+  text-align: center;
+  padding: 1rem 0.75rem;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+
+.summary-grid article header {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.summary-grid article footer {
+  font-size: 0.72rem;
+  color: var(--muted);
+  padding: 0;
+  background: none;
+  border: none;
+  margin-top: 0.2rem;
+}
+
+.big-num {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0.1rem 0;
+  color: var(--green-800);
+  line-height: 1;
+}
+
+/* ── Sections ────────────────────────────────────────────────── */
+.data-section {
+  margin-top: 2rem;
+}
+
+.data-section h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+  color: var(--green-900);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Map ─────────────────────────────────────────────────────── */
+#map {
+  height: 360px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Climate charts ──────────────────────────────────────────── */
+.climate-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 640px) { .climate-charts { grid-template-columns: 1fr; } }
+
+.chart-box {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+/* ── Traits table ────────────────────────────────────────────── */
+.traits-table td, .traits-table th { padding: 0.45rem 0.65rem; }
+
+tr.verified td:first-child::before {
+  content: "✓ ";
+  color: var(--green-700);
+  font-size: 0.8em;
+}
+tr.unverified { color: var(--muted); }
+tr.unverified td:first-child::before {
+  content: "⚠ ";
+  color: #f59e0b;
+  font-size: 0.8em;
+}
+
+.flag-note { font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; }
+
+/* ── Source descriptions ─────────────────────────────────────── */
+details { margin-bottom: 0.5rem; }
+details summary {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  background: var(--green-100);
+  border-radius: 6px;
+  font-size: 0.88rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::before { content: "▶"; font-size: 0.6em; color: var(--green-700); transition: transform .2s; }
+details[open] summary::before { transform: rotate(90deg); }
+
+.description-text {
+  white-space: pre-wrap;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  background: #fafafa;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  margin: 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+/* ── Synonyms ────────────────────────────────────────────────── */
+.synonym-list {
+  column-count: 2;
+  column-gap: 2rem;
+  font-size: 0.88rem;
+  padding: 0.75rem 1rem;
+}
+.synonym-list li { margin-bottom: 0.2rem; }
+
+/* ── Badges ──────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  background: var(--green-100);
+  color: var(--green-900);
+  border: 1px solid var(--green-300);
+  margin-right: 0.25em;
+}
+
+/* ── Footer ──────────────────────────────────────────────────── */
+.site-footer {
+  margin-top: 4rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+.site-footer a { color: var(--green-700); }
+
+/* ── Utilities ───────────────────────────────────────────────── */
+.muted { color: var(--muted); }
+.small { font-size: 0.82rem; }

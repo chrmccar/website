@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tylimanthus diversifolius — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Tylimanthus diversifolius</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Tylimanthus diversifolius</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Acrobolbaceae</span>
+    <span class="badge">Tylimanthus</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">84</p>
+    <footer>52 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">10.0&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">1709&thinsp;mm</p>
+    <footer>annual · CV&thinsp;23.1</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">9</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">8</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Lepidolaena brachyclada                                 +
+Lejeuneaceae sp?                                        +
+Marsupidium SUTcu/osum                                  +
+Marsupidium setulosum                                                           +
+Metzgeria decipiens                                     ?
+Paraschistochila pinnatifolia                           +
+Paraschistochila tuloides                               +
+Plagiochila incurvicola?                                +
+
+
+                                        64
+Hepatic species                                            lnter-       Intra-        Epi�
+                                                           organ        organ        organ
+Piagiochila circ inalis                                      +
+
+Piagiochiiajasciculata                                       +
+
+Plagiochila strombifolia                                     +
+
+Psilocladia clandestina                                      +
+                                                              ?
+Riccardia sp.
+Radula compacta                                              +
+
+Radula multimentula                                          +
+
+Raduia tasmanica?                                            +
+
+Schistochila pseudociliata                                   +
+
+Tylimanthus diversifolius                                    +
+
+Teiaranea sp                                                 +
+
+Zoopsis argentea                                             +
+
+
+
+mosses possess papillae. The form of papillae occurring on these species is described
+below.
+
+
+Acrobolbus cinerascens (Acrobolbaceae)
+The observations with the LM reveal little detail of the densely papillose surface
+which is obscured especially by the underlying brownish cellular oil bodies (Fig.
+5. 1a). A cross section seen under the LM (Fig. 5. 1b,c) shows that each cell is
+covered on both surfaces by many stalked papillae which are extensions of the cell
+wall material. These observations are confirmed when examined with the ESEM in
+wet mode. The dorsiventral shoot (Fig. 5. ld) with its bilobed leaf (Fig. S . l e) have
+numerous papillae which are clustered above the cell lumina (Fig. 5 . 1 f). The papillae
+have a distinctive structure in that each is at the tip of a wall extension in the form of a
+stalk which may be bifurcated (Fig. S. lg). The papillae are on average 4 to 5 ).lm
+across and are covered by waxy deposits (Fig. 5.1g,h).
+
+
+Clasmatocolea verrucosa (Geocalycaceae)
+This species possesses a single large papilla per cell on both leaf surfaces. It is an
+extension of wall material and lies above the cell lumen. This papilla can be seen wim
+the LM in surface view (Fig. 5.2a) and cross section (Fig. 5.2b,c). The papillae vary
+between 19 to 24 ).lm across and their structure is confirmed with the ESEM in wet
+mode (Fig. 5.2d,e,f). The distance between the papillae is detennined by the</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>KANTVILAS_TAS_WHR</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">149
+
+
+                            LICHENS AND BRYOPHYTES OF
+                       THE TASMANIAN WORLD HERITAGE AREA
+                                 I. MOUNT SPRENT
+                                          by G. Kantvilas and S.J. Jannan
+
+                                           (with two tables and an appendix)
+
+Over 280 lichens and bryophytes were recorded during a botanical survey of Mount Sprent. The number of species is
+approximately twice that of the vascular species (136 species) and demonstrates the importance of lichens and bryophytes in
+assessing the botmical significance of the area. Six species, Catillaria contristans, Ochrolechia androgyna, Polychidium
+contortum, Thelotrema suecicum, Acromastigum verticale and Tylimanthus diversifolius are reported from Tasmania for the
+first time. Many of the species recorded are widespread in the high rainfall parts of Tasmania, but a significant number are
+confined mainly ID the west. Lichen diversity is richest in subalpine and alpine heathland and on alpine rock outcrops, whilst
+bryophytes are most diverse in sheltered habitats such as young forest, scrub and amongst alpine rocks.
+Key Words: Licliens, bryophytes, Tasmania.
+
+
+In BANKS, M.R. et al. (Eds), 1991 (31:iii): ASPECTS OF TASMANIAN BOTANY -A TRIBUTE TO WINIFRED CURTIS.
+          Roy. Soc. Tasm. Hobart: 149-162. https://doi.org/10.26749/rstpp.124.2.149
+
+
+                  INTRODUCTION                                   its vascular flora and geology, Mount Sprent can be
+                                                                 considered typical of many mountains in southwestern
+The Tasmanian World Heritage Area was added to the               Tasmania, and so provides some indication of the
+UNESCO register of the world&#39;s natural and cultural              lichenological and bryological resources of the region.
+heritage on 14 December 1982, in recognition of the
+region as the last great temperate wilderness in Australia
+and one of the last in the world. An area of 769 360 ha                           THE STUDY AREA
+was included and, in 1989, this was increased to
+approximately 1.37 million ha.                                   Mount Sprent (42° 48&#39;S, 145° 57&#39;E) rises 1059 m a.s.l.
+  Major vegetation types represented in the World                and lies at the northern end of the Wilmot Range, at the
+Heritage Area are cool temperate rainforest, buttongrass         boundary of the Tasmanian World Heritage Area. To
+moorland, treeless alpine vegetation, wet eucalypt forest        the east and northeast the mountain overlooks the hydro­
+and scrub. In general, the vascular botany is well known         electric impoundments of the Serpentine, Huon and
+(e.g. see Jarman &amp; Crowden 1978) and the concentration           Gordon Rivers whilst to the south, west and north it is
+of Tasmanian endemics (Kirkpatrick &amp; Brown 1984)                 bounded by wilderness. The mountain is composed of
+demonstrates the uniquely Tasmanian flavour of the               Precambrian metamorphic rocks, predominantly meta­
+region as a whole. In contrast, cryptogams as a group            quartzite and pelitic sequences (Williams &amp; Corbett
+are very poorly documented and constitute a major and            1976). Its slopes support mainly buttongrass moorland,
+very obvious gap in the available biological data for the        dominated by Gymnoschoenus sphaerocephalus,
+area. Despite recent advances in the study of the                species of Restionaceae and shrubs of the Myrtaceae,
+
+---
+
+Large outcrops of bedrock are scattered through the           Siphula decumbens and C ladia aggregata, span
+buttongrass m()orland, frequently surrounded by               several habitats. Indeed a general characteristic of
+scrubby vegetation containing additional shrubs such          Precambrian rock outcrops in southwestern Tasmania
+as Cenarrhener nitida and Monotoca submutica.                 is that numerous species which are typically epiphytic
+Lichens occur in peat-.filled crevices or directly on         occur in moist, sheltered crevices, e.g. Megalospora
+rock. Similar to the exposed rock site habitat, listed        lopadioides and Sphaerophorus spp. The most diverse
+above, but restricted to low altitudes.                       habitat types on Mount Sprent are subalpine and alpine
+                                                              heathland and alpine rock outcrops.
+(8) Alpine rocks (lichen habitat)
+
+(9) Alpine heathland (lichen habitat)                                              Bryophytes
+Low shrubby vegetation dominated by Eucalyptus
+vernicosa, Monotoca submutica, Nothofagus                     For bryophytes, 146 species were recorded (table 2,
+cunninghamii,Epacris serpyllifolia, Cenarrhenes nitida        pp.156-159), including 48 mosses and 98 liverworts.
+and Persoonia gunnii. It rarely forms extensive               Excluding two unidentified species, mosses are
+continuous tracts but occurs as small patches between         represented by 34 genera in 23 families (classification
+rock outcrops and crags.                                      after Scott &amp; Stone 1976). The family which is best
+                                                              represented is the Dicranaceae (10 species) and it
+                                                              contains the two most widespread and abundant mosses
+                      RESULTS                                 recorded, Campylopus introflexlts and Dicranolorna
+                                                              robusturn. The liverworts comprise 86 leafy and 12
+                        Lichens                               thalloid species and, with five unidentified species ex-
+                                                              cluded, are divided into 43 genera and 21 families. The
+For lichens, 141 taxa in 66 genera were recorded              Geocalycaceae, represented by common genera such
+(table 1), including 95 macrolichens and 46 crustose          as Heteroscyphus and Chiloscyphus, and the Lepido-
+species. Major genera with respect to prominence and          ziaceae, which includes genera such as Acromastigum,
+diversity among the macrolichens were Cladia (7 taxa),        Lepidozia and Telaranea, are the largest families present
+Cladonia (14), Menegazzia (5), Pseudocyphellaria (8),         with 19 and 18 species respectively.
+Psororna (6), Siphula (6), Sphaerophorus (6) and Usnea           Acromastigum verticale, previously known only from
+(5). Amongst the crustose lichens, the genera of the          New Zealand, was recorded from Tasmania for the first
+Lecideaceae s.lat. (Bacidia, Catillaria, Fuscidea,            time, and the presence of Tylimanthus diversifolius,
+Lecidea, Lecidella, Mycoblastus, Paraporpidia,                previously listed as doubtful for Tasmania (Scott 1985)
+Poeltiaria and Trernolecia) and those of the                  was confirmed. A rare species, Pulchrinodus inflatus,
+Pertusariaceae (Coccotrerna, Melanaria, Ochrolechia           which we discovered only recently in Tasmania from
+and Pertusaria) tended to be most abundant.                   the De Witt and Propsting Ranges further to the
+   Four species were recorded for Tasmania for the first      southwest (Allen 1987), was also recorded.
+time: Catillaria contristans, Ochrolechia androgyna              Six endemic species were recorded. These include
+and Thelotrerna suecicum are cool temperate Northem           three mosses (Dicranoweissia rnicrocarpa, Tayloria
+Hemisphere species, whilstPolychidiurn contorturn was         gunnii and T. tasmanica) and three liverworts
+previously considered endemic to New Zealand                  (Brevianthus flavus from the monotypic family
+(Galloway 1985). However, several other species,              Brevianthaceae, Schistochila tasrnanica and H erhertus
+reported elsewhere in the literature (e.g. Kantvilas 1989),   oldfieldianus).
+were also first discovered in Tasmania during this               The majority of bryophytes were soil or rock colon-
+present survey.                                                ising species. A few obligate epiphytes were present
+   The endemic Tasmanian lichens found during the             but most epiphytic species were found on stems near
+study include C ladia moniliforrnis, M enegazzia               ground level and occurred also on soil, dead wood or
+subbullata, Sarrameana tasmanica and Siphulajarnesii.          rocks. The highest number of species was found in
+Several of the undescribed species (e.g. in the genera         young forest, scrub and amongst sheltered alpine rocks,
+Baeornyces s.lat., Melanaria, Ramonia and Siphula) are         all of which contain the greatest diversity of
+currently the focus of further study and are likely to be      microhabitats. Exposed habitats such as alpine &#34;lawns&#34;
+endemic to Tasmania as welL Notes on these taxa are            and buttongrass moorland were relatively impoverished,
+given as a footnote to table 1.                                although species richness increased where rocks or
+   Approximately 43 species are terricolous, 52 are            clumps of emergent shrubs provided moist, sheltered
+saxicolous or occur amongst bryophytes over rocks,             microhabitats.
+152      G. Kantvilas and SJ. Jarman
+
+
+                                                TABLE 1
+                   Lichens Recorded from Mount         Showing               Abundal1ce*
+                                         in Seven Habitat
+
+---
+
+M. sp.                                                                                                          x      x
+
+Paraschistochila pinnatifolia (Hook.) Schust.                                                  x                x
+P. tuloides (J.D.Hook. &amp; Taylor) Schust.                                    x
+Plagiochila cireinalis (Lehrn.) Lehm. &amp; Lindenb.                                               x
+P.fasciculata Lindenb.                                                      x                  x                x
+P. radiculosa Mitt.                                                         x
+P. retrospectans Nees                                                       x                                   x
+P. strombifolia (Taylor) Taylor ex Lehm.                                                       x
+Podomitrium phyllanthus (Hook.) Mitt.                                       x
+
+Radula compacta Castle                                                                         x                x
+R. multiamentula Hodgs.                                                     x                                   x      x
+R. ratkowskiana Yamada                                                                         x
+R. tasmanica Steph.                                                         x                                   x
+Riccardia aequicellularis (Steph.) Hewson                                               x      x         x
+R. cochleata (J.D.Hook. &amp; Taylor) Kuntze                                    x           x      x         x      x
+R. crassa (Schwaegr.) Carring. &amp; Pears.                                     x           x      x         x      x
+R. aff. bipinnatijida (Col.) Hewson                                         x
+R. sp.                                                                                                          x
+
+Saccogynidium decurvum (Mitt.) Grolle                                                                           x
+Schistochila lehmanniana (Lindenb.) Carring. &amp; Pears.                       x                  x
+S. pseudoeiliata Schust.                                                                                        x
+S. lasmaniea Steph.                                                                            x                x
+Symphogyna podophylla (Thunb.) Mont. &amp; Nees                                                    x                x
+
+Telaranea mooreana (Stcph.) Schust.                                         x                  x
+T. tetradactyla (J.D.Hook. &amp; Taylor) Hodgs.                                 x           x      x                x
+Telaranea sp.                                                               x
+Tylimanthus diversifolius Hodgs.                                                                                x
+T. pseudosaccatus Grolle                                                                       x
+                                            Lichens and bryaphytes afthe Tasmanian World Heritage area              1.59
+
+                                                                                   Habitat
+                                                                 1        2       3        4       5
+
+T. tencl/us (J.D.lhok. &amp; Taylor) Hodgs.                                                            x
+
+Zoopsis argentea (J.D.Hook. &amp; Taylor) JD.Hook.
+    ex Gott. et al.                                              x
+Z. leitgebiana (earring. &amp; Pears.) Bastow                        x                x                x
+Z. setulosa Leitg                                                x
+
+Total number of taxa                                            56        19      54      19       86      24
+
+* See text under Habitats.
+
+
+
+
+                    DISCUSSION                               species is distinctly westem in its Tasmanian distribution
+                                                             including Baeomyees sJat sp.nov., Cladia moniliformis,
+Lichens and bryophytes constitute a significant              Fuscidea absolodes, Miearea isabel/ina, Multiclavula
+component of the botanical resources of Mount Sprent,        vernalis, Pertusaria gymnospora, Pycnothelia
+with over 280 species being recorded. This number            caliginosa, Siphula sp.nov., S. jamesii and Stephano-
+could be expected to increase significant! y if the survey   eye/os henssenianus. In the absence of published
+were extended to include rainforest, one of the richest      ecological information, similar comparisons are not yet
+habitats in Tasmania for cryptogams but not easily           possible for the bryophytes. However, approximately
+accessible on the mountain. Comparing vegetation from        one-third of the species from Mount Sprent are also
+the same sites, lichens and bryophytes outnumber the         known from the Weilington Range in southeastern</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Schistochila appendiculata (Hook.) Trevis.                     Lepidozia elegans Colenso
+Schistochila balfouriana (Hook.f. &amp; Taylor) Steph.     Telaranea exigua R.M.Schust.
+        Schistochila unguicularis (Hook.f. &amp; Taylor)   Telaranea gibbsiana (Steph.) E.A.Hodgs.
+        Steph.                                         Telaranea gottscheana (Lindenb.) E.A.Hodgs.
+Schistochila chlorophylla (Colenso) ].].Engel &amp;        Telaranea herzogii (E.A.Hodgs.) E.A.Hodgs.
+        R.M.Schust.                                    Telaranea hodgsoniae J.J.Engel &amp; G.L.S.Merrill
+        Gottschea chlorophylla Colenso                 Telaranea lindbergii (Gottsche) J.J.Engel &amp;
+Schistochila ciliata (Mitt.) Steph.                            G.L.S.Merrill var. lindbergii
+Schistochila glaucescens (Hook.) A.Evans                       Lepidozia lindbergii Gottsche
+Schistochila kirkiana Steph.                           Telaranea lindbergii var. complanata ].].Engel &amp;
+Schistochila lehmanniana (Lindenb.) Carrington &amp;               G.L.S.Merrill
+        Pearson                                        Telaranea lindbergii var. mellea J.J.Engel &amp;
+                                                                              NZ Liverworts and Hornworts       139
+
+
+
+
+         G.L.S.Merrill                                    Treubia pygmaea R.M.Schust.
+Telaranea martinii (E.A.Hodgs.) R.M.Schust.               Triandrophyllum subtrifidum (Hook.f. &amp; Taylor)
+Telaranea meridiana (E.A.Hodgs.) E.A.Hodgs.                      Fulford &amp; Hatcher var. subtrifidum
+Telaranea nivicola R.M.Schust.                            Triandrophyllum subtrifidum var. trifidum
+Telaranea paludicola (E.A .Hodgs.) J.J.Engel &amp;                    (Gottsche) Solari
+        G.L.S.Merrill                                             Triandrophyllum trifidum (Gottsche) Fulford
+        Lepidozia meridiana var. paludicola                       &amp; Hatcher
+        E.A.Hodgs.                                        Trichocolea hatcheri E.A.Hodgs.
+Telaranea patentissima (Hook.f. &amp; Taylor)                 Trichocolea julacea Hatcher
+        E.A.Hodgs.                                        Trichocolea mollissima (Hook .f. &amp; Taylor)
+Telaranea pennata ].].Engel &amp; G.L.S.Merrill                      Gottsche
+Telaranea plumulosa (Lehm. &amp; Lindenb.) Fulford            Trichocolea rigida R.M.Schust.
+Telaranea praenitens (Lehm. &amp; Lindenb.) E.A.Hodgs.        Trichotemnoma corrugatum (Steph.) R.M.Schust.
+        var. praenitens                                   Tylimanthus diversifolius E.A.Hodgs.
+Telaranea praenitens var. dentifolia ].].Engel &amp;          Tylimanthus saccatus (Hook.) Mitt.
+        G.L.S.Merrill                                     Tylimanthus tenellus (Taylor) Mitt.
+Telaranea pulcherrima (Steph.) R.M.Schust.
+Telaranea remotifolia (E.A.Hodgs.) E.A.Hodgs. (nom.       Verdoornia succulenta R.M.Schust.
+        illeg. based on Lepidozia remotifolia             Wettsteinia schusteriana Grolle
+        E.A.Hodgs., non L. remotifolia Horik 1934,
+        Taiwan.]                                          Xenothallus vulcanicolus R.M.Schust.
+Telaranea roseana (Steph.) E.A.Hodgs.
+Telaranea tetradactyla (Hook.f. &amp; Taylor) E.A.Hodgs.      Zoopsidella caledonica ( Steph.) R.M.Schust.
+Telaranea tetrapila (Taylor) ].].Engel &amp; G.L.S.Merrill    Zoopsis argentea (Hook.f. &amp; Taylor) Hook.f.
+        var. tetrapila                                    Zoopsis ceratophylla (Spruce) Hamlin
+        Lepidozia tetrapila Taylor                        Zoopsis leitgebiana (Carrington &amp; Pearson) Bastow
+Telaranea tetrapila var. cancellata (Colenso) ].].Engel   Zoopsis nitida Glenny, Braggins &amp; R.M.Schust.
+        &amp; G.L.S.Merrill                                   Zoo psis setulosa Lei tg.
+Telaranea tuberifera ].].Engel &amp; R.M.Schust.
+Temnoma angustifolium R.M.Schust.
+Temnoma palmatum var. cuneatum R.M.Schust.                             Index to Synonyms
+Temnoma palmatum var. laxifolium R.M.Schust.
+Temnoma palmatum (Lindb.) R.M.Schust. var.                                and Basionyms
+        palmatum                                          This index lists all names not in bold in the checklist,
+Temnoma palmatum var. pseudospiniferum                    and the name they should be sought under. These
+        R.M.Schust.                                       consist of basionyms cited in literature since Hamlin
+Temnoma paucisetigerum R.M.Schust.                        (1972), and synonyms which were names accepted by
+Temnoma pulchellum (Hook.) Mitt.                          Hamlin (1972) or in later literature but are not accepted
+Temnoma quadrifidum (Mitt.) E.A.Hodgs. &amp; Allison          in this checklist.
+Temnoma quadripartitum var. pseudopungens
+        R.M.Schust.                                       Acroscyphella phoenicorhiza -Austroscyphus
+Temnoma quadripartitum (Hook.) Mitt. var.                 phoenicorhizus
+        quadripartitum                                    Acroscyphus nitidissimus -Austroscyphus
+Temnoma quadri par ti tum var. randii (S.Arnell)          nitidissimus</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">austrigenus)
+      Jamesoniella colorata ® Syzygiella colorata
+      Jamesoniella tasmanica ® Syzygiella tasmanica
+      Jungermannia inundata ® Solenostoma inundata
+      Jungermannia orbiculata ® Solenostoma orbiculata
+      Metzgeria atrichoneura ® Metzgeria leptoneura
+      Metzgeria decipiens ® Metzgeria furcata
+      Metzgeria hispidisssima ® Metgeria furcata (Australian records only)
+      Nephelolejeunea hamata ® Siphonolejeunea hamata
+      Paraschistochila tuloides ® Gottschea tuloides
+      Phaeoceros brotheri ® Phaeoceros carolinianus
+      Plagiochila obscura ® Plagiochila stephensoniana
+      Plagiochila wattsii ® Cryptoplagiochila radiculosa
+      Radula compacta ® Radula aneurismalis
+      Radula papulosa ® Radula acutiloba
+      Radula physoloba — Not an Australian species (reports are R. aneurismalis or R. tasmanica)
+      Radula tabularis — Not an Australian species (reports are R. aneurismalis, R. ratkowskiana or
+      R. tasmanica)
+282   Radula wattsii ® R. buccinifera
+                                                                     Appendix
+
+Riccardia wattsiana ® R. nitida
+Riccia bifurca ® R. subbifurca (Australian records only)
+Riccia marginata ® Riccia cartilaginosa
+Telaranea centipes ® Ceramanus centipes
+Telaranea dispar ® Kurzia hippurioides
+Telaranea mooreanum ® Tricholepidozia pulcherrima var. mooreana
+Telaranea patentissima ® Neolepidozia patentissima
+Telaranea pulcherrima ® Tricholepidozia pulcherrima
+Tenmoma townrowii ® Temnoma townrowiorum
+Tylimanthus diversifolius ® Acrobolbus tenellus var. diversifolius
+Tylimanthus pseudosacattus ® Acrobolbus pseudosaccatus
+Tylimanthus tenellus ® Acrobolbus tenellus
+
+
+
+
+                                                                                283
+Mosses and their close
+relatives, the liverworts and
+hornworts, are found in almost every
+corner of every continent, from the wettest
+forest to the driest desert. This field guide brings
+the identification of these small plants within easy reach
+of everyone, from home gardeners to students, naturalists
+and professional botanists. Written in a fresh, easy-to-read
+style and illustrated with startlingly beautiful photographs
+and accurate drawings, it will be popular with anyone
+who wants to know more about the wonderful
+world of our lesser known
+native plants.
+
+
+
+
+David Meagher is a science
+writer and editor with an active interest
+in the conservation and ecology of bryophytes.
+His other books include A Field Guide to Wilsons
+Promontory (Oxford University Press) and The Macmillan
+Dictionary of the Australian Environment (Macmillan).</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Chorizema diversifolium is a species of flowering plant in the family Fabaceae and is endemic to the southwest of Western Australia. It is a twining or trailing shrub or climber with variably-shaped, egg-shaped to narrowly lance-shaped leaves and pink, orange and red flowers.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Chorizema diversifolium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Fissidens diversifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leucopogon diversifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Orites diversifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus perpusillus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus pseudosaccatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tylimanthus saccatus</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.170523, 146.632295], [-41.1516826, 145.0466029], [-41.451056, 145.002889], [-42.2759287, 145.8562215], [-41.275814, 147.956556], [-42.688611, 146.490556], [-41.543752, 148.200278], [-42.805633, 145.900657], [-42.259749, 145.425237], [-41.90626, 146.036792], [-41.279544, 146.762518], [-42.815, 146.667778], [-43.34583, 145.890957], [-42.816667, 146.683333], [-42.081279, 145.550555], [-42.899332, 146.388938], [-42.68332, 146.71665], [-42.216667, 146.016667], [-41.72916, 146.520392], [-42.085287, 145.913181], [-41.369805, 146.881765], [-41.9345378, 146.0481011], [-42.2167, 146.0167], [-43.158778, 146.806833], [-43.0787, 146.264315], [-42.087322, 146.154968], [-41.081876, 144.977519], [-42.714359, 145.780149], [-41.714085, 145.078018], [-42.68332, 146.71665], [-41.71955, 145.438498], [-43.529629, 146.382611], [-41.811163, 145.556662], [-41.454882, 148.078911], [-41.8070306, 145.6394883], [-42.539117, 147.610266], [-42.688556, 146.490611], [-41.815107, 148.084935], [-41.349773, 144.849719], [-41.75, 146.333333], [-41.633805, 148.201948], [-43.171046, 147.124407], [-41.729599, 146.640628], [-42.1652959, 145.5343886], [-43.170852, 146.755321], [-42.987784, 147.860009], [-41.184723, 145.928207], [-41.717854, 145.318327], [-41.18577, 146.047427], [-41.712012, 144.957882], [-41.079726, 144.858548], [-42.688556, 146.490611], [-41.2665, 174.7555], [-47.1650404, 167.6994831], [-37.3167, 148.8556], [-43.821032, 173.004815], [-37.3167, 148.8556], [-40.9563207, 173.0387805], [-41.266, 174.755], [-41.945734, 171.674224], [-43.710226, 172.836066], [-41.570178, 172.482167], [-42.862902, 171.176764], [-37.3167, 148.8556], [-45.598892, 167.579758], [-41.5194, 172.042], [-41.768973, 172.153406], [-31.161317, 152.3806], [-38.4074771, 177.4288409], [-38.1913731, 177.5340428], [-38.65, 143.7], [-43.840764, 172.870536], [-38.4857787, 177.4819413], [-41.267, 174.757], [-44.114429, 169.351006], [-37.9592, 178.0094], [-41.1546294, 174.8155006], [-41.25, 175.01], [-37.3167, 148.8556], [-41.297, 174.746], [-42.232321, 171.474608], [-36.773611, 146.793333], [-46.008, 167.455], [-42.792859, 171.551376]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [84.7, 73.9, 97.5, 104.4, 156.1, 153.8, 179.3, 194.1, 176.7, 149.4, 103.0, 113.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.6, 20.7, 18.3, 15.1, 12.2, 10.2, 9.6, 10.5, 12.4, 14.4, 17.2, 18.5], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.6, 9.8, 8.3, 6.2, 4.7, 3.3, 2.6, 2.9, 4.2, 5.2, 7.1, 8.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

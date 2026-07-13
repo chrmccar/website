@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neolepidozia palmata — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Neolepidozia palmata</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Neolepidozia palmata</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Neolepidozia</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">29</p>
+    <footer>29 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>neolepidozia palmata (j. j. engel et g. l. merr.) e. d. cooper, phytotaxa:</strong> &lt;div&gt;&lt;p&gt;Neolepidozia palmata (J.J.Engel et G.L.Merr.) E.D.Cooper,&lt;/p&gt;&lt;p&gt;Phytotaxa 97 (2): 56, 2013 (see Cooper et al. 2013). BASIONYM: Telaranea palmata J.J.Engel et G.L.Merr., Novon 9 (3): 344, 1999 (see Engel &amp; Smith Merrill 1999).&lt;/p&gt;&lt;/div&gt;</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Eria paleata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia consobrina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia patentissima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia praenitens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia quadristipula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia tridactylis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Passiflora filamentosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Thelephora palmata</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.8619054, 145.4488514], [-41.47, 145.98], [-42.12, 146.08], [-41.47, 145.98], [-41.457517, 145.959517], [-42.783333, 145.95], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.450283, 145.9629], [-42.675, 146.566667], [-41.47, 145.98], [-43.244417, 146.772733], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-42.6715772, 146.5421724], [-41.47, 145.98], [-42.675, 146.57], [-42.225, 146.083333], [-41.47, 145.98], [-41.6417, 145.93], [-42.12, 146.08], [-42.116667, 146.083333], [-41.47, 145.98], [-41.47, 145.98]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [99.7, 82.8, 110.2, 121.2, 187.5, 192.0, 234.6, 243.8, 215.0, 165.9, 124.0, 127.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [17.1, 17.1, 14.6, 11.2, 8.1, 6.3, 5.4, 6.1, 8.0, 10.4, 13.8, 14.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [6.6, 6.6, 5.3, 3.4, 2.3, 0.8, 0.2, 0.3, 1.1, 2.1, 4.1, 5.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

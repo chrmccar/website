@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heteroscyphus allodontus — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Heteroscyphus allodontus</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Heteroscyphus allodontus</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lophocoleaceae</span>
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">161</p>
+    <footer>8 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">12.4&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">1662&thinsp;mm</p>
+    <footer>annual · CV&thinsp;20.1</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">6</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>hygric</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>1.5</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">the Lord Howe Island plants would belong to var. argutus, but as it is uncertain whether
+Schiffner’s varieties involve more than one species, and he did not treat any of the six varieties
+described by Gottsche et al. (1847) (as var. β, γ, etc.), I have not identified the plants below
+species level. None of the other varieties have been formally transferred to Heteroscyphus.
+Herzog and Noguchi (1955) failed to cite the basionym when transferring var. brevidens to
+Heteroscyphus, so their transfer is illegitimate.
+
+Key to the varieties of Heteroscyphus argutus sensu Schiffner (1900)
+1   Underleaves  4-­‐fid  but  armed  with  accessory  teeth  or  cilia;  leaf  with  6–10  
+    marginal  teeth  .................................................................................................................  var.  ciliatistipus  
+     Underleaves  simply  4-­‐fid,  lacking  accessory  teeth  or  cilia;  number  of  
+     marginal  teeth  on  leaves  various  ............................................................................................................  2  
+2   Plants  25–30  mm  long  and  up  to  1.5  mm  wide  ......................................................................................  3  
+     Plants  30–40  mm  long  and  wider  than  1.5  mm  (usually  much  wider)  ...................................................  4  
+3   Leaves  with  2–4  very  short  teeth,  1–2  cells  long  ...............................................................  var.  brevidens  
+     Leaves  with  5–6  teeth,  2–3cells  long  .......................................................................................  var.  minor  
+4   Leaves  with  2–5  teeth  .............................................................................................................................  5  
+     Leaves  with  6  or  more  teeth  ...................................................................................................................  6  
+5   Sinuses  between  teeth  deep  and  rounded;  leaf  apex  ±  as  wide  as  base;  3–
+    4  strong,  irregular  teeth  ..........................................................................................................  var.  excisus  
+     Sinus  between  teeth  shallow,  ±  V-­‐shaped;  leaf  apex  narrower  than  base;  
+     2–5  ±  regular  teeth  .....................................................................................................  var.  paucidentatus  
+6   Leaves  (at  least  at  the  base)  wider  than  long;  teeth  long,  ±  7  in  number  ...................  var.  subquadratus  
+     Leaves  as  long  or  longer  than  wide;  teeth  short  (2–3  cells),  or  if  long  then  
+     up  to  11  in  number  .................................................................................................................................  7  
+7   Leaves  with  6–11  teeth  ..........................................................................................................  var.  argutus  
+     Leaves  with  5–6  teeth  ..............................................................................................................  var.  minor  
+
+
+
+Heteroscyphus allodontus (Hook.f. &amp; Taylor) J.J.Engel &amp; R.M.Schust. was reported from Lord
+Howe Island by Stephani and Watts (1914) on the basis of a collection by Watts (Watts LHI
+76b, NSW-818150). Unfortunately this collection could not be found during this study.
+However, it is notable that there are no collections by Watts of Heteroscyphus argutus from the
+island, despite it being very common in Erskine Valley where Watts 76b was collected. Poorly
+developed specimens of H. argutus are quite common among collections from Lord Howe
+Island, often bearing only two or three teeth at the apex and with the underleaf armature
+reduced. It is possible that Watts 76b is merely such a weak form of that species, equivalent to
+Schiffner’s variety paucidentatus.
+It is noteworthy that the type, from the Auckland Islands, was growing on the bark of trees
+(Taylor and Hooker 1845), which is a very unusual habitat for Geocalycaceae generally, and
+that the species has never been fully described or illustrated, so that the identification of the
+numerous specimens in New Zealand herbaria (AVH 2018) must be considered tentative.
+At present I prefer to consider Heteroscyphus allodontus as ‘uncertain’ for Lord Howe Island,
+pending an assessment of Watts 76b when it is found.
+
+
+
+                                                                              222
+Heteroscyphus echinellus (Lindenb. and Gottsche) J.J.Engel and X.L.He var.
+echinellus
+Lophocolea echinella Lindenb. &amp; Gottsche, in Gottsche, Lindenberg &amp; Nees, Syn. Hepat. 5: 703 (1847);
+Chiloscyphus echinellus (Lindenb. &amp; Gottsche) Mitt., in Hooker, Fl. Nov.-Zel. 2(2): 141 (1854);
+Cyanolophocolea echinella (Lindenb. &amp; Gottsche) R.M.Schust., Nova Hedwigia 72: 102 (2001);
+Heteroscyphus echinellus (Lindenb. &amp; Gottsche) J.J.Engel &amp; X.L.He, Bryologist 113: 115 (2010)
+Description: This species was comprehensively described by Engel and He (2010).
+Illustrations: Scott (1985, Figure 84, 85), Engel and He (2010, Figures 3–5).
+Habitat: Soil, bark and rotting wood in damp to wet situations.
+Distribution on LHI: Summit Plateau of Mt Gower, on rotting wood in very wet situations in
+deep gullies.
+Total distribution: Eastern Australia (Tasmania to southern Queensland, Lord Howe I.), New
+Zealand.
+Discussion: Heteroscyphus echinellus was previously known only from New Zealand,
+Tasmania and Victoria (Engel and He 2010). Lord Howe Island is thus the mostly northerly
+known point of its distribution. The variety echinellus was thought to have been endemic to
+New Zealand, with only H. echinellus var. hyalinus J.J.Engel known from Australia (Engel and
+He 2010). This variety is therefore new to the Australian flora. It is easily distinguished from
+var. hyalinus even in the field because it has plane rather than downcurved leaf apices, so that
+the spinose armature around the apex is clearly visible in dorsal view (Engel and He 2010).
+
+Heteroscyphus fissistipus (Hook.f. &amp; Taylor) Schiffn, Oesterr. Bot. Zeit. 60: 172
+(1910)
+Jungermannia fissistipa Hook.f. &amp; Taylor, London J. Bot. 3: 384 (1844)
+Chiloscyphus fissistipus (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees, Syn. Hepat. 2: 175</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Frullania ptychantha Mont.                                      Drepanolejeunea latitans (Hook.f. &amp; Taylor)
+Frullania pycnantha (Hook.f. &amp; Taylor) Taylor                   Steph.
+         Frullania banksiana Colenso                            Drepanolejeunea minima Steph.
+Frullania reptans Mitt.                                          Harpalejeunea colensoi Steph.
+Frullania rostellata Mitt.                               Hepatostolonophora paucistipula (Rodw.) J.J.Engel
+Frullania rostrata (Hook.f. &amp; Taylor) Hook.f. &amp;                 Clasmatocolea paucistipula (Rodw.) Grolle
+        Taylor                                           Hepatostolonophora rotata var. perssonii
+        Frullania congesta (Hook.f. &amp; Taylor) Hook.f.           (R.M.Schust.) J.J.Engel
+        &amp; Taylor                                                Calyptrocolea perssonii R.M.Schust.
+        Frullania dissitifolia Steph.                           Clasmatocolea rotata (Hook.f. &amp; Taylor)
+         Frullania grollei Hamlin                               Grolle
+         Frullania novaustralis S.Hatt.                         Stolonophora perssonii (R.M.Schust.) J .].Engel
+        Neohattoria australis S.Hatt.                           &amp; R.M.Schust.
+        Schusterella australis (R.M.Schust.) S.Hatt.,    Hepatostolonophora rotata (Hook.f. &amp; Taylor)
+        Sharp &amp; Mizut.                                          J.J.Engel var. rotata
+Frullania scandens Mont.                                        Clasmatocolea rotata (Hook.f. &amp; Taylor)
+Frullania setchellii Pearson                                    Grolle
+        Frullania falciloba var. setchellii (Pearson)    Herbertus alpinus (Steph.) E.A.Hodgs.
+        E.A.Hodgs.                                       Herzogianthus sanguineus R.M.Schust.
+                                                                          NZ Liverworts and Hornworts   133
+
+
+
+
+Herzogianthus vaginatus (Herzog) R.M.Schust.            Heteroscyphus furcistipulus (E.A.Hodgs.)
+Herzogobryum atrocapillum (Hook.f. &amp; Taylor)                   J.J.Engel &amp; R.M.Schust.
+       Grolle                                                  Chiloscyphus furcistipulus E.A.Hodgs.
+Herzogobryum filiforme R.M.Schust.                      Heteroscyphus hastatus (E.A.Hodgs.) ].].Engel &amp;
+Herzogobryum vermiculare (Schiffn.) Grolle                     R.M.Schust.
+Herzogobryum teres (Carrington &amp; Pearson) Grolle               Chiloscyphus hastatus E.A.Hodgs.
+Heteroscyphus allodontus (Hook.f. &amp; Taylor)             Heteroscyphus knightii (Steph.) J.J.Engel &amp;
+       ].].Engel &amp; R.M.Schust.                                 R.M.Schust.
+       Chiloscyphus allodontus (Hook.f. &amp; Taylor)              Heteroscyphus tridentatus (Mitt.) ].].Engel &amp;
+       E.A.Hodgs.                                              R.M.Schust.
+Heteroscyphus ammophilus (Colenso) R.M.Schust.          Heteroscyphus lingulatus (Colenso) J.J.Engel &amp;
+       Chiloscyphus ammophilus Colenso                         R.M.Schust.
+Heteroscyphus argutus (Reinw., Blume &amp; Nees)                   Chiloscyphus lingulatus Colenso
+       Schiffn.                                         Heteroscyphus lyallii (Mitt.) R.M.Schust.
+       Chiloscyphus argutus (Reinw., Blume &amp; Nees)             Chiloscyphus lyallii Mitt.
+       Nees                                             Heteroscyphus multispinus (E.A.Hodgs. &amp; Allison)
+Heteroscyphus biciliatus (Hook.f. &amp; Taylor) ].].Engel          ].].Engel &amp; R.M.Schust
+       Chiloscyphus biciliatus (Hook.f. &amp; Taylor)              Chiloscyphus multispinus E.A.Hodgs. &amp;
+       Gottsche, Lindenb. &amp; Nees                               Allison
+       Lophocolea biciliata (Hook.f. &amp; Taylor) Mitt.    Heteroscyphus normalis (Steph.) R.M.Schust.
+Heteroscyphus billardierei (Schwaegr.) Schiffn.                Chiloscyphus normalis (Steph.) E.A.Hodgs.
+       Chiloscyphus billardierei (Schwaegr.) Nees       Heteroscyphus physanthus (Hook.f. &amp; Taylor)
+Heteroscyphus circumdentatus (W.Martin &amp;                       Schiffn.
+       E.A.Hodgs.) J.J.Engel &amp; Schust.                         Chiloscyphus physanthus (Hook.f. &amp; Taylor)
+       Chiloscyphus circumdentatus W.Martin &amp;                  Mitt
+       E.A.Hodgs.                                       Heteroscyphyus planiusculus (Hook.f. &amp; Taylor)
+Heteroscyphus coalitis (Hook.f.) Schiffn.                      Engel
+       Chiloscyphus coalitis (Hook.) Nees                      Chiloscyphus planiusculus (Hook.f. &amp; Taylor)
+Heteroscyphus colensoi (Mitt.) Schiffn.                        ].].Engel &amp; R.M.Schust.
+       Chiloscyphus colensoi (Mitt.) Bastow                    Lophocolea planiuscula (Hook.f. &amp; Taylor)
+Heteroscyphus compactus (Colenso) R.M.Schust.                  Taylor
+       Chiloscyphus compactus Colenso                   Heteroscyphus polycladus (Hook.f. &amp; Taylor)
+Heteroscyphus cuneistipulus (Steph.) Schiffn.                  R.M.Schust.
+       Chiloscyphus cuneistipulus Steph.                       Chiloscyphus polycladus (Hook.f. &amp; Taylor)
+Heteroscyphus cymbaliferus (Hook.f. &amp; Taylor)                  Mitt.
+       ].].Engel &amp; R.M.Schust.                          Heteroscyphus renistipulus (Steph.) Schiffn.
+       Tetracymbaliella cymbalifera (Hook.f. &amp;                 Chiloscyphus renistipulus Steph.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Macrocoma tenue subsp. tenue ® Macrocoma tenuis subsp. tenuis
+Physcomitrella patens subsp. readeri ® Physcomitrella readeri
+Polytrichastrum longisetum ® Polytrichastrum formosum (Australian records only)
+Polytrichum pillferum — Not an Australian species
+Pyrrhobryum bifarium ® Hymenodontopsis bifaria
+Pyrrhobryum mnioides subsp. contorta ® Hymenodontopsis mnioides
+Rhynchostegium tenuifolium var. tenuifolium ® Rhynchostegium tenuifolium
+Rosulabryum billarderi ® Rosulabryum billarderii
+Sauloma tenella ® Sauloma tenellum
+Schizymenium bryoides ® Mielichhoferia bryoides                                                  281
+       Mosses &amp; Allied Plants of Southern Australia
+
+      Scleropodium australe ® Scleropodium touretii
+      Sphagnum novo-zelandicum ® Sphagnum novozelandicum
+      Tayloria octoblepharum ® Tayloria octoblephara
+      Thamnobryum pandum ® Austrothamnium pandum
+      Thamnobryum pumilum ® Austrothamnium pumilum
+      Tortula pagorum ® Syntrichia laevipila
+      Tortula papillosa ® Syntrichia papillosa
+      Tortula rubra ® Syntrichia rubra
+      Trematodon amoenum ® Treamtodon amoenus
+      Trematodon mackayii ® Trematodon mackayi
+      Trematodon suberectum ® Trematodon suberetus
+
+
+      LIVERWORTS &amp; HORNWORTS
+      Acrochila biserialis ® Chiastocaulon biseriale
+      Austrofossombronia australis ® Fossombronia australis
+      Blepharidophyllum xiphophyllum ® Clandarium xiphophyllum
+      Cephaloziella arctica subsp. antarctica ® Cephaloziella varians subsp. antarctica
+      Chiloscyphus biciliatus ® Heteroscyphus allodontus
+      Chiloscyphus echineIlus ® Heteroscyphus echinellus
+      Chiloscyphus latifolius ® Chiloscyphus subporosus (Australian records only)
+      Chiloscyphus pallidus ® Chiloscyphus multipennus
+      Chiloscyphus villosus — Not an Australian species (records are probably C. gippslandicus)
+      Cryptochila grandiflora ® Syzygiella sonderi
+      Diplophyllum domesticum ® Diplophyllum obtusifolium subsp. domesticum
+      Frullania scandens ® Frullania deplanata (Australian records only)
+      Heteroscyphus circumdentatus ® H. billardieri var. billardieri
+      Heteroscyphus cymbaliferus ® Tetracymbaliella cymbalifera
+      Heteroscyphus kirkii ® Heteroscyphus fissitipulus var. repandus
+      Heteroscyphus planiusculus — Not an Australian species (records are probably Chiloscyphus
+      austrigenus)
+      Jamesoniella colorata ® Syzygiella colorata
+      Jamesoniella tasmanica ® Syzygiella tasmanica
+      Jungermannia inundata ® Solenostoma inundata
+      Jungermannia orbiculata ® Solenostoma orbiculata
+      Metzgeria atrichoneura ® Metzgeria leptoneura
+      Metzgeria decipiens ® Metzgeria furcata
+      Metzgeria hispidisssima ® Metgeria furcata (Australian records only)
+      Nephelolejeunea hamata ® Siphonolejeunea hamata
+      Paraschistochila tuloides ® Gottschea tuloides
+      Phaeoceros brotheri ® Phaeoceros carolinianus
+      Plagiochila obscura ® Plagiochila stephensoniana
+      Plagiochila wattsii ® Cryptoplagiochila radiculosa
+      Radula compacta ® Radula aneurismalis
+      Radula papulosa ® Radula acutiloba
+      Radula physoloba — Not an Australian species (reports are R. aneurismalis or R. tasmanica)
+      Radula tabularis — Not an Australian species (reports are R. aneurismalis, R. ratkowskiana or
+      R. tasmanica)
+282   Radula wattsii ® R. buccinifera</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus allodontus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cambewarranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus circumdentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cuneistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus levieri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus multifidus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tetracymbaliella cymbalifera</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cymbaliferus</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.809871, 146.512129], [-41.71955, 145.438498], [-42.216667, 145.433333], [-42.719819, 146.512835], [-43.170852, 146.755321], [-42.259749, 145.425237], [-43.166869, 147.985537], [-42.990749, 147.246711], [-36.9, 174.55], [-36.266667, 174.8], [-46.576383, 169.450685], [-37.119722, 175.065639], [-36.970738, 174.533482], [-43.150876, 170.561462], [-40.799, 175.191], [-38.719, 176.7958], [-36.2, 175.1], [-36.9, 174.55], [-43.783182, 172.832539], [-43.142515, 172.529724], [-36.8, 174.85], [-36.9, 174.55], [-46.8782, 168.1488], [-41.249, 175.022], [-49.71, 178.756], [-37.603, 175.859], [-45.033333, 167.533333], [-37.4320553, 175.7459251], [-38.697479, 175.6809199], [-47.0966, 167.826], [-36.8371443, 175.5536249], [-38.408889, 174.828611], [-37.056944, 174.664722], [-41.1725, 172.670278], [-36.75, 174.496667], [-47.166402, 167.671596], [-38.076389, 174.974722], [-37.066667, 174.666667], [-44.701083, 170.965444], [-37.4382554, 175.7473251], [-38.953283, 175.1887133], [-36.233333, 175.1], [-31.576389, 159.076944], [-36.6075, 174.833611], [-36.880556, 174.704444], [-42.350019, 173.567565], [-38.18994, 176.32684], [-38.338736, 176.339002], [-43.816667, -176.783333], [-41.275, 174.978], [-43.526932, 172.596577], [-36.217556, 175.067056], [-29.266667, -177.883333], [-43.797297, 173.032879], [-34.428611, 172.961389], [-36.262494, 174.591043], [-34.428611, 172.961389], [-37.603, 175.859], [-45.033333, 167.533333], [-34.404167, 173.032222], [-36.791667, 174.7525], [-46.140588, 167.320234], [-41.2823322, 174.7652995], [-40.849142, 172.869722], [-34.411489, 173.02767], [-31.583333, 159.083333], [-43.701954, 172.73946], [-37.056861, 174.664278], [-43.155678, 170.762014], [-37.017605, 175.717705], [-43.705731, 172.8398], [-41.565918, 172.521123], [-42.235092, 173.781432], [-37.056861, 174.664278], [-40.872239, 172.454501], [-43.701924, 172.746411], [-43.703756, 172.741799], [-37.358209, 175.500188], [-46.0608, 168.8292], [-29.233333, -177.933333], [-45.425, 167.5032], [-42.243164, 173.776773], [-41.2107588, 174.8748651], [-38.284082, 176.863955], [-36.916667, 174.603056], [-38.026415, 176.558286], [-46.45662, 169.337944], [-41.905495, 171.437447], [-41.2882329, 175.0096024], [-41.359321, 175.032832], [-46.580917, 169.416556], [-37.282593, 176.242823], [-45.425, 167.5032], [-47.1817009, 167.699483], [-36.791667, 174.7525], [-36.864, 174.575], [-45.425076, 167.503078], [-29.289944, -177.949611], [-36.940137, 175.671042], [-37.093437, 175.629417], [-36.0, 175.0], [-40.872239, 172.454501], [-37.8718637, 175.9280256], [-43.678773, 172.770874], [-39.366667, 175.466667], [-36.940235, 175.824041], [-42.9149316, 170.7662147], [-46.899583, 168.125944], [-35.695028, 174.338833], [-29.25, -177.883333], [-38.416667, 176.05], [-36.883194, 174.616444], [-36.9, 174.55], [-37.392755, 175.9410274], [-41.233, 175.034], [-41.3319, 175.3378], [-34.166667, 172.133333], [-36.916667, 174.603056], [-40.7673857, 172.7040774], [-45.036039, 167.530233], [-39.7998999, 174.9285072], [-39.613278, 176.209436], [-44.845434, 167.456336], [-40.855, 172.868333], [-33.5, 150.383333], [-36.227111, 175.078583], [-42.512785, 171.175463], [-39.363589, 174.1361997], [-39.019853, 174.801751], [-38.0009659, 175.825424], [-38.123729, 177.312234], [-41.297786, 173.577675], [-44.066667, -176.6], [-42.512785, 171.175463], [-44.845462, 167.456347], [-38.266667, 175.95], [-36.561667, 174.704722], [-37.119722, 175.065639], [-43.498961, 169.959418], [-39.81058, 175.854072], [-41.266953, 174.759547], [-36.916667, 174.603056], [-38.7434831, 177.1602367], [-36.6075, 174.833611], [-41.9055, 171.43745], [-37.119722, 175.065639], [-36.8, 174.85], [-38.188115, 177.49892], [-36.8814733, 174.766286], [-45.608413, 166.869629], [-29.25, -177.916667], [-43.676716, 172.724552], [-39.143136, 174.738029], [-39.3323914, 175.5083156], [-34.427055, 172.961288], [-37.964525, 175.099929], [-29.233333, -177.933333], [-38.262455, 174.850605], [-43.808349, 172.85569], [-38.435558, 174.701646], [-36.8399, 175.5541]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [83.2, 76.1, 99.3, 104.7, 152.6, 149.7, 170.0, 186.5, 172.7, 151.3, 100.4, 117.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.6, 20.7, 18.4, 15.1, 12.2, 10.3, 9.8, 10.7, 12.6, 14.5, 17.3, 18.6], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.0, 9.9, 8.8, 6.8, 5.5, 4.0, 3.3, 3.6, 4.9, 5.7, 7.5, 8.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

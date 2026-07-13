@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heteroscyphus decipiens — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Heteroscyphus decipiens</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Heteroscyphus decipiens</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lophocoleaceae</span>
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">99</p>
+    <footer>20 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">9.8&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">2441&thinsp;mm</p>
+    <footer>annual · CV&thinsp;19.5</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">8</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Chiloscyphus allodontus (Hook.f. &amp; Taylor)              Heteroscyphus tridentatus (Mitt.) ].].Engel &amp;
+       E.A.Hodgs.                                              R.M.Schust.
+Heteroscyphus ammophilus (Colenso) R.M.Schust.          Heteroscyphus lingulatus (Colenso) J.J.Engel &amp;
+       Chiloscyphus ammophilus Colenso                         R.M.Schust.
+Heteroscyphus argutus (Reinw., Blume &amp; Nees)                   Chiloscyphus lingulatus Colenso
+       Schiffn.                                         Heteroscyphus lyallii (Mitt.) R.M.Schust.
+       Chiloscyphus argutus (Reinw., Blume &amp; Nees)             Chiloscyphus lyallii Mitt.
+       Nees                                             Heteroscyphus multispinus (E.A.Hodgs. &amp; Allison)
+Heteroscyphus biciliatus (Hook.f. &amp; Taylor) ].].Engel          ].].Engel &amp; R.M.Schust
+       Chiloscyphus biciliatus (Hook.f. &amp; Taylor)              Chiloscyphus multispinus E.A.Hodgs. &amp;
+       Gottsche, Lindenb. &amp; Nees                               Allison
+       Lophocolea biciliata (Hook.f. &amp; Taylor) Mitt.    Heteroscyphus normalis (Steph.) R.M.Schust.
+Heteroscyphus billardierei (Schwaegr.) Schiffn.                Chiloscyphus normalis (Steph.) E.A.Hodgs.
+       Chiloscyphus billardierei (Schwaegr.) Nees       Heteroscyphus physanthus (Hook.f. &amp; Taylor)
+Heteroscyphus circumdentatus (W.Martin &amp;                       Schiffn.
+       E.A.Hodgs.) J.J.Engel &amp; Schust.                         Chiloscyphus physanthus (Hook.f. &amp; Taylor)
+       Chiloscyphus circumdentatus W.Martin &amp;                  Mitt
+       E.A.Hodgs.                                       Heteroscyphyus planiusculus (Hook.f. &amp; Taylor)
+Heteroscyphus coalitis (Hook.f.) Schiffn.                      Engel
+       Chiloscyphus coalitis (Hook.) Nees                      Chiloscyphus planiusculus (Hook.f. &amp; Taylor)
+Heteroscyphus colensoi (Mitt.) Schiffn.                        ].].Engel &amp; R.M.Schust.
+       Chiloscyphus colensoi (Mitt.) Bastow                    Lophocolea planiuscula (Hook.f. &amp; Taylor)
+Heteroscyphus compactus (Colenso) R.M.Schust.                  Taylor
+       Chiloscyphus compactus Colenso                   Heteroscyphus polycladus (Hook.f. &amp; Taylor)
+Heteroscyphus cuneistipulus (Steph.) Schiffn.                  R.M.Schust.
+       Chiloscyphus cuneistipulus Steph.                       Chiloscyphus polycladus (Hook.f. &amp; Taylor)
+Heteroscyphus cymbaliferus (Hook.f. &amp; Taylor)                  Mitt.
+       ].].Engel &amp; R.M.Schust.                          Heteroscyphus renistipulus (Steph.) Schiffn.
+       Tetracymbaliella cymbalifera (Hook.f. &amp;                 Chiloscyphus renistipulus Steph.
+       Taylor) Grolle                                   Heteroscyphus sinuosus (Hook.) Schiffn.
+Heteroscyphus decipiens (Gottsche) J.J.Engel &amp;                 Chiloscyphus sinuosus (Hook.) Nees
+       R.M.Schust.                                      Heteroscyphus splendid us (E.A.Hodgs.) ].].Engel &amp;
+       Tetracymbaliella decipiens (Gottsche) Grolle             R.M.Schust.
+Heteroscyphus erraticus (W.Martin &amp; E.A.Hodgs.)                Chiloscyphus splendidus E.A.Hodgs.
+       ].].Engel &amp; R.M.Schust.                          Heteroscyphus supinus (Hook.f. &amp; Taylor)
+       Chiloscyphus erraticus WMartin &amp;                         R.M.Schust.
+       E.A.Hodgs.                                              Chiloscyphus supinus Hook.f. &amp; Taylor
+                                                        Heteroscyphus triacanthus (Hook.f. &amp; Taylor)
+134   Tuhinga, Number 10 (1998)
+
+
+
+
+       Schiffn.                                                hippuroides
+       Chiloscyphus triacanthus (Hook.f. &amp; Taylor)            Jungermannia dispar Mont. ex Taylor &amp;
+       Steph.                                                  Hook.f.
+Hygrolembidium acrocladum (Berggr.) R.M.Schust.                Kurzia allisonii (Herzog) Grolle
+Hygrolembidium australe (Steph.) Grolle                        Lepidozia allisonii Herz.
+Hygrolembidium rigidum R.M.Schust. &amp; ].].Engel                Telaranea dispar (Mont. ex Taylor &amp; Hook.f.)
+Hygrolembidium triquetrum J.J .Engel &amp;                         E.A.Hodgs.
+       R.M.Schust.                                     Kurzia hippuroides var. ornata J.J.Engel &amp;
+Hymenophyton flabellatum (La bill.) Trevis.                    G.L.S.Merrill
+Hymenophyton leptopodum (Hook.f. &amp; Taylor)             Kurzia quadriseta Grolle var. quadriseta
+       Steph.                                          Kurzia quadriseta var. trilobata R.M.Schust.
+                                                               Kurzia pallescens Grolle
+Isolembidium anomalum (Rodw.) Grolle var.              Kurzia quinquespina ].].Engel &amp; G .LS.Merrill
+        cucullatum (E.A.Hodgs.) J .J.Engel &amp;           Kurzia tenax (Grev.) Grolle
+        R.M.Schust.                                    Kymatolejeunea bartlettii Grolle
+        Isolembidium cucullatum (E.A.Hodgs.)
+        R.M.Schust.                                    Lamellocolea granditexta (Steph.) ].].Engel
+Isophyllaria attenuata (Rodw.) E.A.Hodgs.                      Lophocolea granditexta Steph.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Cassinia decipiens commonly known as Goulburn River everlasting is a species of flowering plant in the family Asteraceae and grows in New South Wales. It is a shrub with woolly-hairy young twigs, spreading, cylindrical leaves, and heads of creamy-brown to yellowish flowers arranged in a rounded cyme.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cassinia decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Coelospermum decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Daviesia decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eremophila decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Grevillea decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Indigofera decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptocarpus decipiens</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.805633, 145.900657], [-42.9486322, 145.7510653], [-42.781962, 145.9843919], [-42.9625, 146.392222], [-43.0986307, 146.0343964], [-42.259749, 145.425237], [-43.86, 146.2342], [-42.932556, 146.441472], [-41.989656, 145.431913], [-42.625555, 145.903831], [-42.63, 145.93], [-41.8402931, 145.6093823], [-43.0925139, 146.6774423], [-43.42001, 146.164713], [-43.0652954, 146.2677262], [-43.0986248, 146.6843863], [-41.811163, 145.556662], [-41.725079, 145.919274], [-43.5404634, 146.0789113], [-43.168742, 146.263235], [-45.493834, 167.622528], [-42.517035, 171.272668], [-45.148005, 167.229565], [-50.53941, 166.27152], [-42.016667, 171.65], [-45.025434, 167.325211], [-41.952419, 171.571578], [-43.816285, 169.555794], [-45.244186, 167.385609], [-45.758618, 166.95546], [-42.660587, 171.500177], [-37.0668486, 175.6684555], [-42.4073505, 171.342354], [-44.121944, 168.546389], [-41.709167, 171.839722], [-42.415313, 171.332968], [-45.758713, 166.955248], [-41.014629, 172.263671], [-45.293245, 166.984291], [-43.407216, 170.11315], [-45.493834, 167.622528], [-44.1466171, 168.5445116], [-46.903955, 168.116999], [-36.2, 175.066667], [-42.1592, 171.4762], [-45.53365, 167.228394], [-46.178486, 166.702986], [-42.167778, 171.885833], [-36.54, 175.402], [-36.74, 175.175], [-41.935112, 171.437338], [-42.638, 171.276941], [-45.2988, 166.981888], [-41.712527, 171.875389], [-41.748236, 171.8495631], [-42.361208, 171.249561], [-50.64649, 166.13786], [-46.970324, 167.845675], [-41.695834, 171.853725], [-50.581806, 166.1661087], [-44.116667, 168.55], [-41.816027, 171.78449], [-47.024007, 167.767552], [-47.196536, 167.667589], [-46.233734, 167.227775], [-37.037778, 175.671944], [-41.670716, 171.853877], [-45.129776, 167.505112], [-46.880176, 167.781122], [-41.662859, 171.855111], [-41.633333, 171.916667], [-42.159386, 171.47613], [-40.639444, 172.635], [-42.3282487, 171.3795548], [-45.249905, 167.410591], [-41.5, 172.05], [-47.230002, 167.536558], [-50.7984828, 165.9827645], [-42.660587, 171.500177], [-45.419901, 167.381344], [-41.66245, 171.85477], [-42.216586, 171.441309], [-45.460811, 166.781856], [-45.2988, 166.981888], [-47.221555, 167.594863], [-45.65, 167.333333], [-42.413861, 171.322615], [-45.819591, 166.742667], [-41.735226, 171.779474], [-41.95242, 171.57158], [-41.704471, 171.889049], [-37.534437, 175.741339], [-47.191344, 167.564738], [-46.196925, 167.045772], [-39.333333, 175.5], [-39.340833, 175.483889], [-46.916667, 167.916667], [-41.814175, 171.68762], [-41.67, 171.881389]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [104.1, 94.0, 122.4, 134.5, 207.3, 188.4, 225.7, 245.6, 232.4, 204.0, 122.8, 153.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.6, 19.8, 17.5, 14.5, 11.7, 9.9, 9.4, 10.2, 12.0, 13.8, 16.6, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.1, 9.2, 8.2, 6.3, 5.1, 3.6, 2.9, 3.2, 4.2, 5.1, 6.9, 8.0], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

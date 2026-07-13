@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acromastigum cavifolium — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Acromastigum cavifolium</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Acromastigum cavifolium</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Acromastigum</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">53</p>
+    <footer>22 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">14</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">9</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>45.0–60.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>30.0–45.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>500.0–585.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>335.0–465.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>45.0–60.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>1.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>1.0–4.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>ACROMASTIGUM_AUSTRALIA_2014</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">10. Marginal cell wall not thicker than internal walls, up to 1-3-(5) μm wide . .......... A. exiguum (Figs 1 S, T)
+11. 	Underleaf width equal to or less than stem; plants with or without a distinct vitta; south eastern
+     Rainforests in New South Wales, and Victoria; and Tasmania and New Zealand . ................................... 12
+11.	Underleaves wider than stem; plants without a distinct vitta; Wet Tropics Bioregion Rainforests,
+    Queensland ...................................................................................................... A. echinatiforme (Figs 1 U, V)
+12. Vitta distinct, extending into ventral leaf lobe ........................................................................................... 13
+12. Vitta indistinct or absent, not extending into the ventral leaf lobe ........................................................... 14
+13. 	Leaves remote to contiguous, plane, spreading. Postical lobe displaced toward antical lobe in plane with
+     disc, sinus frequently narrow, leaf resembling a flat crab claw . ................... A. cunninghamii (Figs 1 W, X)
+13. 	Leaves imbricate, concave, obliquely patent. Postical lobe curved ventrally, not in plane with disc, sinus
+     wide, leaf not really resembling a crab claw ....................................................... A. prismaticale (Figs 1 Y, Z)
+14. 	Shoots up to 1.8 mm in width. Stems typically with more than seven rows of cortical cells .........................
+      ....................................................................................................................... A. colensoanum (Figs 1 AA, AB)
+14. 	Shoots typically 0.7 mm in width. Stems with seven rows of cortical cells .....................................................
+     ........................................................................................................................ A. divaricatum (Figs 1 AC, AD)
+Acromastigum in Australia                                                Telopea 17: 195–237, 2014                     259
+
+
+
+
+Fig. 2. Scanning Electron Microscope images of leaf surfaces for Australasian Acromastigum. A. cavifolium (HO310141)
+A, dorsal; B, ventral. A. verticale (HO571177) C, dorsal; D, ventral. A. tenax (Brown 12/321) E, dorsal; F, ventral; G, apex.
+A. mooreanum (HO409665) H, apex; I, dorsal; J, ventral. A. interstisiale (HO571028) K, apex; M, dorsal; N, ventral.
+A. furcatifolium (NSW299597) L, apex; O, dorsal; P, ventral. A. fumosum (HO443755) Q, dorsal; R, ventral; S, apex.
+A. anisostomum (NSW745732) T, apex; W, dorsal; X, ventral. A. exiguum (NSW761322) U, dorsal; V, ventral; A. echinatiforme
+(NSW896971) Y, dorsal; Z, ventral. A. prismaticale (NSW365325) AA, dorsal; AB, ventral. A. colensoanum (NSW262574)
+AC, dorsal; DC, ventral; A. divaricatum (HO501795) AE, dorsal; AF, ventral.
+260           Telopea 17: 195–237, 2014                                                             Brown and Renner
+
+
+Acromastigum cavifolium R.M.Schust. Journal of the Hattori Botanical Laboratory 26: 257 (1963). Fig. 3.
+Type: New Zealand, Stewart Island, crest of Tin Range, 5-6 miles NE of Port Pegasus, 14 Jan 1962, R.M.
+Schuster 53119 (holotype: F; isotype: JE)
+Acromastigum integrifolium sensu E.A.Hodgs. Transactions of the Royal Society of New Zealand 82: 18 (1954),
+non A. integrifolium (Austin) A.Evans
+Usually in small tufts or patches, shoot tips bright yellow-green, older sectors tinged brown; erect to slightly
+arching; shoots 1.0–1.5 mm wide. Stems slender, filiform, wiry, mostly to 35 mm long by 325–380 μm in
+diam., c. 7 or 8 cells in diam.; cortical cells c. 1.5–2.5 × as long as wide, 80–130 μm long, 45–60 μm wide,
+35–55 μm diam. and in 13-15 rows rather than the normal 7; medullar cells more elongate, c. 2.5–5.5 × as
+long as wide, 105–180 μm long, 30–45 μm wide, 14–30 μm in diam. (tapering somewhat at either end); both
+cortical and medullar cells thick walled, outer tangential surface of cortical cells usually thicker i.e. to 8 μm
+thick. Branches lateral, rather infrequent and distant, diverging at an angle of 50–70°; flagella sporadic (and
+occasionally intercalary). Rhizoids scarce. Leaves inserted on a nearly straight line, imbricate, slightly convex,
+usually rather widely spreading to squarrose (especially when dry), entire, ovate, ± symmetrical, 560–730 μm
+long × 500–585 μm wide, widest just above the slightly narrowed base; central region of leaf with slightly larger
+cells, forming an indistinct band 4 or 5 cells wide at base, tapering to 1 or 2 cells at apex; apex subacute to almost
+rounded. Cells of mid-leaf 40–75 × 25–40 μm, becoming smaller towards the margins, intermediate cells
+25–50 × 25–35 μm, marginal cells 15–25 × 20–45 μm, subquadrate at margin to rectangular; trigones strong,
+often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
+imbricate, insertion transverse but sometimes the lateral margins slightly decurrent, somewhat spreading to
+almost squarrose, large (c. 3/4 size of lateral leaves), 1.2–1.7 × as wide as stem, suborbicular, 270–545 μm
+long, 335–465 μm wide, not auriculate at base; apex truncate, subentire to emarginate, sinuses vestigal, lobes
+rounded. Asexual reproduction not observed. Androecial branches slightly stalked (c. 100 μm), sometimes
+developed in abundance; bracts very slightly bifid (&lt;1/20) or entire, deeply saccate, rounded to bluntly acute,
+1-androus, c. 440–490 μm long, 400–545 μm wide; bracteoles slightly emarginate (with papilla), ovate,
+295–360 μm long, 280–360 μm wide. Gynoecia produced on short branches. Bracts and bracteoles similar, in
+several series, innermost largest, larger ones usually bisbifid, central sinus acute (30–40°) and split 1/3–1/2 length
+of bract, secondary lobes much smaller (&lt;1/10 length of bract), ovate, margins with scattered 1- or 2-celled
+laciniae and papillae; cells rectangular to almost isodiametric, length:width ratio 1.2–4.8, corners rounded
+by small trigones; oil-bodies in scattered patches towards apex, 1–3 per cell, ± botryoidal, 2–5 μm diam.,
+clear. Perianth c. 4 mm long when fully developed, slenderly ovoid-cylindrical, narrowed at mouth, 1-stratose
+throughout, cells rectangular to elongate-rectangular, length:width ratio 1.2–5.5, thick-walled, trigones present
+in mid and basal regions, tangential walls thickened in upper regions and up to 10 μm thick; oil-bodies present,
+particularly in mid-region of perianth, 1–4 per cell, spherical, 4–5 μm diam., clear. Sporophyte; seta with
+12–14 rows of large, hyaline epidermal cells filled with numerous tiny oil-bodies (which may give the cells a
+dark appearance in transverse section) surrounding 15–18 rows of smaller interior cells; capsule inner layer
+with nodular thickenings and occasionally semiannular bands; epidermal layer similar. Spores 13–16 μm diam.
+Variation: Individuals of Acromastigum cavifolium exhibit some variation in shoot stature and the size of
+associated leaves and underleaves. The only inter-individual variation observed during this study was in plant
+colour, which varies from golden-brown to green; apparently in association with sun exposure.
+Distribution and ecology: A. cavifolium is found in Australia (Tasmania) and New Zealand (North and South
+Islands) and, like most Acromastigum species, is widespread but infrequently collected. Jarman describes
+Tasmanian A. cavifolium as an understorey epiphyte (Jarman and Fuhrer 1995) but the species has also been
+collected from damp soil and humus in seepage zones receiving a moderate amount of light (NSW285475);
+a microsite more typical of A. verticale.
+In New Zealand A. cavifolium is almost always encountered as an epiphyte in cool hyperhumid forests where
+it inhabits bark of a wide range of species, including Agathis australis, Manoao colensoi, Olearia colensoii and
+beech species including Nothofagus cliffortioides and N. menziesii. It can be found growing with an equally
+diverse array of bryophytes including Brevianthus flavus, Lepicolea attenuata, Radula multiamentula, Acrochila
+biserialis, Acroscyphella phoenicorhiza, and species of Chiloscyphus, Trichocolea, Telaranea, Lepidozia, Bazzania,
+as well as with the fern Hymenophyllum armstrongii.
+Recognition: The isophyllous shoots with nearly entire, triangular, concave leaves and underleaves in
+combination with the production of ventral flagelliform branches are distinctive within the Australasian
+bryophyte flora. Acromastigum cavifolium could only be confused with A. verticale, but the two species differ
+in microhabitat, shoot orientation, and leaf and underleaf shape. Generally Acromastigum cavifolium is an
+epiphyte or lithophyte whose isophyllous shoots grow horizontally along the substrate. Acromastigum verticale
+Acromastigum in Australia                                                Telopea 17: 195–237, 2014                     261
+
+
+
+
+Fig. 3. Acromastigum cavifolium. A, shoot showing male branches. B, Basal leaf-cells. C, Female bract. D, Marginal leaf
+cells. E, Female bracteole. F, Apex of female bract lobe. G, Cellular detail of perianth mouth. H, Capsule epidermal layer.
+I, Capsule inner layer. J, Seta transverse section. Scale (approximate) A, 300 μm; B, D, F–H, I, J: 50 μm; C, E, 120 μm. From
+Jarman 89/13 (HO).
+262            Telopea 17: 195–237, 2014                                                                 Brown and Renner
+
+
+is a terrestrial whose subisophyllous shoots grow erect from the substrate. Other characters by which the two
+species can be separated are presented in the key above.
+Representative specimens examined: Australia: Tasmania, Central Highlands (Orchard): Mt. Kate, 41°37&#39;S 145°58&#39;E,
+1120 m, 15 Apr 1996, A. Moscal 28233A (HO571027); South West: Anthony Road, 41°50.5&#39;S 145°37&#39;E, 550 m, 13 Nov 1992,
+J. Jarman s.n. (HO547163); Track of road to White Spur Dam, 41°53&#39;S 145°31&#39;E, 600 m, 24 Jan 1992, J. Jarman s.n. (HO310141);
+Scotts Peak Road, 42°49&#39;S 146°23&#39;E, 590 m, 19 Oct 2013, J. Jarman s.n. (HO571170); Mt Sprent, 42°47&#39;S 145°58’E, 850 m,
+5 Feb 1987, J. Jarman s.n. (HO571182); Schnell’s Ridge, south of Mt Anne, 43°02&#39;S 146°25&#39;E, 14 Jan 1978, A.V. Ratkowsky H834
+(HO49566).
+New Zealand: North Island: Auckland: Coromandel Ranges, Mt Moehau, E from trig, 36°32&#39;17&#39;&#39;S 175°24&#39;59&#39;&#39;E, 640 m,
+3 Nov 1980, E.K. Cameron s.n. (AK323763); Coromandel Ranges, ridge SW of Mt Rowe along track to Mt Rowe, 37°2&#39;16&#39;&#39;S
+175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb
+Stream, a tributary of Waimangaroa River, 41°40&#39;12&#39;&#39;S 171°52&#39;53&#39;&#39;E, 700 m, 5 Dec 2006, J.E. Braggins 06/243A (AK301604);
+J.E. Braggins 06/246A (AK301817); Upper Deep Stream, 41°42&#39;33&#39;&#39;S 171°50&#39;23&#39;&#39;E, 913 m, 6 Dec 2006, J.E. Braggins 06/277A
+(AK302280); Westland: Craigieburn, Craigieburn Road East, 42°14&#39;S 171°38&#39;E, 190 m, 28 Mar 2001, M.A.M. Renner 200
+(AK286367).
+
+Acromastigum verticale (Steph.) E.A.Hodgs. Transactions of the Royal Society of New Zealand 82: 18 (1954). Fig. 4
+Bazzania verticalis Steph. Hedwigia 32: 214 (1893).
+Mastigobryum verticale Steph. Species Hepaticarum 3: 449. (1908).
+Type: New Zealand, Great Barrier Island, without date, Kirk 373 (G).
+Usually in small tufts or patches or growing intermixed with other bryophytes, colouring probably similar to that
+of A. cavifolium, dried plants light golden brown to dark brown in older shoots; mature leafy shoots 0.9–1.6 mm
+wide. Stems slender, filiform, wiry, mostly to 20 mm long × 280–380 μm in diam., c. 7–9 cells in diam.; cortical
+cells c. 0.9–2.4 × as long as wide, 45–140 μm long, 45–60 μm wide, 33–75 μm in diam. and in 12 or 13 rows;</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Anthoceros carolinianus Michx.                   Anastrophyllum novae-zelandiae R.M.Schust.
+       Phaeoceros laevis subsp. carolinianus (Michx.)   Anastrophyllum schismoides (Mont.) Steph.
+       Prosk.                                           Andrewsianthus confusus (R.M.Schust.) R.M.Schust.
+Phaeoceros coriaceus (Steph.) E.O.Campb. comb. nov.     Andrewsianthus perigonialis (Hook.f. &amp; Taylor)
+       Anthoceros coriaceus Steph.                             R.M.Schust.
+Phaeoceros delicatus E.O.Campb &amp; Outred                 Aneura aff. novaeguineensis Hewson
+Phaeoceros hirticalyx (Steph.) Haseg.                   Aneura alterniloba (Hook.f. &amp; Taylor) Gottsche,
+       Anthoceros hirticalyx (Steph.) Meijer                    Lindenb. &amp; Nees
+                                                                Aneura dentata Steph.
+HEPATICAE                                               Aneura lobata subsp. australis R.M.Schust.
+                                                        Aneura pinguis (L.) Dumort.
+Acrobolbus cinerascens (Lehm. &amp; Lindenb.) Bastow        Aneura subaquatica R.M.Schust.
+Acrobolbus concinnus (Mitt.) Grolle                     Anthelia juratzkana (Limpr.) Trevis.
+Acrobolbus lophocoleoides (Mitt.) Schiffn.              Archeophylla schusteri (E.A.Hodgs. &amp; Allison)
+Acrobolbus ochrophyllus (Hook.f. &amp; Taylor)                      R.M.Schust.
+        R.M.Schust.                                     Archilejeunea olivacea (Hook.f. &amp; Taylor) Steph.
+Acrochila biserialis (Lehm. &amp; Lindenb.) Grolle                  Archilejeunea scutellata (Taylor) Steph.
+Acrolejeunea allisonii Gradst.                          Asterella australis (Hook.f. &amp; Taylor) Verd.
+Acrolejeunea mollis (Hook.f. &amp; Taylor) Schiffn.         Asterella tenera (Mitt.) R.M.Schust.
+        Ptychocoleus mollis (Hook.£ &amp; Taylor) Steph.    Austrolejeunea fragilis (R.M.Schust.) R.M.Schust.
+Acrolejeunea securifolia (Endl.) Steph. subsp.                   Cololejeunea fragilis R.M.Schust.
+        securifolia                                     Austrolejeunea hispida R.M.Schust.
+Acrolophozia pectinata R.M.Schust.                      Austrolejeunea olgae (R.M.Schust.) R.M.Schust.
+Acromastigum anisostomum (Lehm. &amp; Lindenb.)                     Siphonolejeunea nudipes var. magnicarinata
+        A.Evans var. anisostomum                                 E.A.Hodgs.
+Acromastigum anisostomum var. minutum                   Austrofossombronia australis (Mitt.) R.M.Schust.
+        E.A.Hodgs.                                               Fossombronia australis Mitt.
+Acromastigum brachyphyllum A.Evans                               Fossombronia gigantea Steph.
+Acromastigum cavifolium R.M.Schust.                              Fossombronia naumanii Schiffn.
+Acromastigum colensoanum (Mitt.) A.Evans                Austrolophozia paradoxa R.M.Schust.
+Acromastigum cunninghamii (Steph.) A.Evans                       Austrolophozia camensis non (Steph.) Hassel
+Acromastigum marginatum E.A.Hodgs.                               &amp; Solari
+Acromastigum mooreanum (Steph.) E.A.Hodgs.              Austrometzgeria saccata (Mitt.) Kuwah.
+Acromastigum verticale (Steph.) E.A.Hodgs.              Austroscyphus nitidissimus (R.M.Schust.)
+Adelanthus bisetulus (Steph.) Grolle                             R.M.Schust.
+        Pseudomarsupidium piliferum (Steph.) Herzog              Acroscyphus nitidissimus R.M.Schust.
+Adelanthus falcatus (Hook.) Mitt.                       Austroscyphus phoenicorhizus (Grolle) R.M.Schust.
+Adelanthus gemmiparus (R.M.Schust.) E.A.Hodgs.                   Acroscyphella phoenicorhiza (Grolle) Kitag.
+Adelanthus occlusus (Hook.f. &amp; Taylor) Carrington                &amp; Grolle
+Allisonia cockaynei (Steph.) R.M.Schust.                         Acroscyphus phoenicorhizus (Grolle)
+Allisoniella nigra subsp. novaezelandiae R.M.Schust.             R.M.Schust. &amp; ].].Engel
+        Cephaloziella nigra (Rodw.) Grolle                       Neesioscyphus phoenicorhizus Grolle
+Allisoniella recurva R.M.Schust.
+Allisoniella scottii (R.M.Schust.) R.M.Schust.          Balantiopsis convexiuscula Berggr.
+        Protomarsupella scottii R.M.Schust.             Balantiopsis diplophylla (Hook.£ &amp; Taylor) Mitt. var.
+                                                                diplophylla
+                                                                         NZ Liverworts and Hornworts    129
+
+
+
+
+Balantiopsis diplophylla var. hockenii (Berggr.)      Cephaloziella          crassigyna    (R.M.Schust.)
+       J.J.Engel &amp; G.L.S.Merrill                             R.M .Schust.
+        Balantiopsis glandulifera Colenso                    Ceph alozie ll a aterrima var. crass1gyna
+        Balantiopsis knightii Mitt.                          R.M.Schust.
+Balantiopsis lingulata R.M.Schust.                    Cephaloziella densifolia R.M.Schust. var. densifolia
+Balantiopsis montana (Colenso) J.J.Engel &amp;            Cephaloziella densifolia var. dubia R.M.Schust.
+        G.L.S.Merrill                                 Cephaloziella exigua R.M.Sch ust.
+        Chiloscyphus montanus Colenso                 Cephaloziella exiliflora (Taylor) R.M.Schust.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acromastigum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum anisostomum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum carcinum M.A.M.Renner &amp; T.C.Wilson</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum cunninghamii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum divaricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum echinatiforme</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum mooreanum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum stenophyllum R.M.Schust.</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum verticale</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.811163, 145.556662], [-43.016667, 146.433333], [-41.287333, 145.240333], [-43.2652968, 146.2677296], [-41.840293, 145.6194771], [-43.2486298, 146.2510626], [-43.267706, 146.24972], [-41.6185455, 145.9615385], [-41.635023, 145.92078], [-43.033333, 146.416667], [-42.8236256, 146.3891093], [-42.805633, 145.900657], [-42.780278, 145.971389], [-42.7819621, 145.9677261], [-43.079424, 146.387151], [-41.883333, 145.516667], [-42.8, 145.683333], [-42.62925, 146.391467], [-43.257921, 146.138958], [-41.451056, 145.002889], [-43.456861, 146.740722], [-43.2652968, 146.2677296], [-41.952878, 171.604914], [-44.002465, 168.592906], [-44.148342, 168.600071], [-43.40749, 170.112775], [-44.148342, 168.600071], [-45.215077, 166.76693], [-47.091141, 167.655783], [-36.538056, 175.416389], [-41.67, 171.881389], [-41.743829, 171.854397], [-44.04195, 168.697572], [-41.815796, 171.683397], [-42.228611, 171.625], [-43.330985, 169.666888], [-37.037778, 175.671944], [-40.639739, 172.634882], [-43.431661, 169.966759], [-44.99775, 167.333415], [-42.233333, 171.633333], [-41.67, 171.881389], [-41.709167, 171.839722], [-41.816027, 171.78449], [-45.269001, 167.043258], [-42.233333, 171.633333], [-41.980043, 171.462953], [-41.690219, 171.905933], [-41.699781, 171.855888], [-41.714458, 171.888572], [-36.54, 175.402], [-41.665719, 171.856609], [-44.148342, 168.600071]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [109.4, 96.3, 126.5, 138.6, 213.9, 198.9, 236.0, 256.2, 239.1, 207.4, 129.7, 155.5], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.0, 18.2, 15.8, 12.7, 9.9, 8.2, 7.5, 8.3, 10.1, 12.0, 15.0, 16.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.3, 8.4, 7.3, 5.6, 4.4, 2.9, 2.2, 2.5, 3.4, 4.1, 5.8, 7.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

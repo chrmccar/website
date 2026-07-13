@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Siphonolejeunea elegantissima — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Siphonolejeunea elegantissima</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Siphonolejeunea elegantissima</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lejeuneaceae</span>
+    <span class="badge">Siphonolejeunea</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">16</p>
+    <footer>0 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acacia bidentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Achyranthes bidentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Atherigona bidentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Austrolejeunea bidentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidiota bidentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea nudipes</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Siphonolejeunea schiffneri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Utricularia bidentata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Nephelolejeunea bidentata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Siphonolejeunea bidentata</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-30.366667, 152.796667], [-28.8318686, 153.4507939], [-29.4671239, 152.321593], [-15.0, 153.5], [-15.0, 143.0], [-15.0, 153.5], [-28.404167, 153.040833], [-26.806741, 152.909398], [-30.3703161, 152.7976472], [-28.6, 153.4], [-16.504444, 145.24], [-26.806741, 152.909398], [-15.0, 143.0], [-30.355746, 152.783989], [-30.25, 153.0833], [-30.233442, 152.789383]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marsupella sparsifolia — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Marsupella sparsifolia</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Marsupella sparsifolia</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Gymnomitriaceae</span>
+    <span class="badge">Marsupella</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">16</p>
+    <footer>0 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">19</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>360.0–520.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>12.0–18.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>15.0–22.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>bulging</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Chiloscyphus innovatus (E.A.Hodgs.) J.J.Engel            Marsupidium abbreviatum (Hook.f. &amp; Taylor)
+       &amp; R.M.Schust.                                            Steph.
+       Lophocolea innovata E.A.Hodgs.                           Tylimanthus surculosus (Nees) Hamlin
+Lethocolea pansa (Taylor) G.A.M.Scott &amp;                  Marsupidium setulosum (Mitt.) Watts
+       K.Beckmann                                               Tylimanthus setulosus (Mitt.) Hamlin
+       Jungermannia pansa Taylor                         Mastigolejeunea anguiformis (Hook.f. &amp; Taylor)
+       Lethocolea squamata (Taylor) E.A.Hodgs.                  B.Thiers &amp; Gradst.
+       Podanthe squamata Taylor                                 Thysananthus anguiformis (Hook.f. &amp; Taylor)
+Lopholejeunea colensoi Steph. [an invalid name un-              Taylor
+       less the genus name Lopho-Lejeunea Steph.         Megalembidium insulanum (W.Martin &amp;
+       is accepted]                                             E.A.Hodgs.) R.M.Schust.
+Lopholejeunea knightii Steph.                                   Kurzia insulana (WMartin) Grolle
+Lopholejeunea plicatiscypha (Hook.f. &amp; Taylor)           Metahygrobiella cylindrica E.A.Hodgs. &amp; Herzog
+       Steph.                                            Metahygrobiella drucei R.M.Schust.
+Lophozia autoica R.M.Schust. var. autoica                Metalejeunea cucullata (Reinw., Blume &amp; Nees)
+Lophozia autoica var. subalpina R.M.Schust.                     Grolle
+Lophozia druceae Grolle &amp; E.A.Hodgs.                            Lejeunea cucullata (Reinw., Blume &amp; Nees)
+Lophozia excisa (Dicks.) Dumort.                                Nees
+Lophozia herzogiana E.A.Hodgs. &amp; Grolle                         Microlejeunea cucullata (Reinw., Blume &amp;
+Lophozia multicuspidata (Hook.£. &amp; Taylor) Grolle               Nees) Steph.
+Lophozia nivicola R.M.Schust.                            Metzgeria albinea Spruce
+Lophozia pumicicola Berggr.                              Metzgeria alpina R.M.Schust. &amp; J.J.Engel
+Lunularia cruciata (L.) Dumort.                          Metzgeria atrichoneura Spruce
+                                                         Metzgeria australis Steph.
+Marchantia berteroana Lehm. &amp; Lindenb.                   Metzgeria bartlettii Kuwah.
+Marchantia foliacea Mitt.                                Metzgeria campbelliensis Kuwah.
+Marchantia macropora Mitt.                               Metzgeria chilensis Steph.
+Marchantia pileata Mitt.                                 Metzgeria crassipaginula Kuwah.
+        Marchantia pallida Steph.                        Metzgeria decipiens (C. Massa!.) Schiffn. &amp; Gottsche
+Marchantia polymorpha var. aquatica Nees                 Metzgeria decrescens Steph.
+Marsupella sparsifolia (Lindb.) Dumort. subsp. childii   Metzgeria disciformis A.Evans
+                                                         Metzgeria epiphylla A.Evans
+136   Tuhinga, Number 10 (1998)
+
+
+
+
+Metzgeria furcata (L.) Dumort.                         Pachyschistochila trispiralis (R.M.Schust.)
+Metzgeria leptoneura Spruce                                    R.M.Schust. &amp; ].].Engel
+       Metzgeria hamata Lindb. nom. illeg.                     Schistochila trispiralis R.M.Schust.
+       Metzgeria colensoi Steph.                       Pachyschistochila virescens (R.M.Schust.)
+Metzgeria pinnata Steph.                                       R.M.Schust. &amp; ].].Engel
+Metzgeria rigida Lindb.                                        Schistochila virescens R.M.Sch ust.
+Metzgeria violacea (Ach.) Dumort.                      Pallavicinia connivens (Colenso) Steph.
+Metzgeria vittii Kuwah.                                        Jensenia connivens (Colenso) Grolle
+Monoclea forsteri Hook.                                Pallavicinia innovans Steph.
+                                                       Pallavicinia lyellii (Hook.) Gray
+Neogrollea notabilis E.A.Hodgs.                        Pallavicinia rubristipa Schiffn.
+Neohodgsonia mirabilis (Perss.) Perss.                 Pallavicinia tenuinervis (Hook.f. &amp; Taylor) Trevis.
+Nephelolejeunea conchophylla Grolle                    Pallavicinia xiphoides (Hook.f. &amp; Taylor) Trevis.
+Nephelolejeunea hamata Grolle                          Paracromastigum drucei (R.M.Schust.) R.M.Schust.
+Nephelolejeunea papillosa Glenny                               Pseudocephalozia drucei R.M.Schust.
+Nothogymnomitrion erosum (Carrington &amp; Pearson)        Paracromastigum fiordlandiae R.M.Schust. &amp;
+       R.M.Schust.                                            JJ.Engel
+       Herzogobryum erosum (Carrington &amp;               Paracromastigum fissifolium (Steph.) R.M.Schust.
+       Pearson) Grolle                                 Paracromastigum furcifolium (Steph.) R.M.Schust.
+                                                               Bonneria furcifolia (Steph.) R.M.Schust.
+Pachyglossa tenacifolia (Hook.f. &amp; Taylor) Herzog      Paracromastigum kirkii (Steph.) R.M.Schust.
+       &amp; Grolle                                        Paracromastigum macrostipum (Steph.) R.M.Schust.
+Pachyschistochila altissima (E.A.Hodgs.)                       Pseudocephaloziella macrostipa (Steph.)
+       R.M.Schust. &amp; J.J.Engel subsp. altissima                R.M.Schust.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Plants erect, fuscous or deep brown, 620-700 juim to 770-1160 juim wide in sterile sectors, 5-9(15) mm high. Branching common in basal sectors of plant, typically absent above, the branches lateral-intercalary, from ventral end of leaf axil; stoloniform axes infrequent or occasional. Stems brownish. Leaves remaining almost identical in size and form to near the gametangial region, almost immediately stiffly laterally spreading and remaining so ± throughout shoot, remote, the bases not at all sheathing, essentially transversely oriented and inserted, the leaves distinctly concave, mostly ± symmetrically ovate to ellipsoidal, rather sharply narrowing toward the base, 360-520 juim wide X 400-620 juim long, bilobed to ca. 0.15-0.2 to 0.3-0.35, sometimes a little asymmetrically so, with one lobe slightly larger than the other; lobes usually sharply acute or subacute, terminating in a single cell or a uniseriate row of 2 cells; sinus usually broadly V-shaped, blunt to subacute at base, sometimes narrowly rounded. Cells with trigones large and convex-sided to knot-like, the cells small, the median cells 12- 18 |ULm wide X 14-22 juim long, the basal cells appreciably larger, 15-22 juim wide X 17- 26 |ULm long; surface smooth or inconspicuously striate. Oil-bodies occupying a conspicuous portion of cell lumen, glistening, appearing whitish, (1)2(4) per median lamina cell, at base more commonly 3 or 4 per cell, granular-finely papillose, at times with a depression, the oil- bodies globose to broad-elliptic, 3. 8-4. 8 X 6.7-8. 6 juim to 5.5-6 X 10-11 juim, spherical ones 4-5.8 |ULm in diam., if one per cell then often very large. Paroecious, but fertilized gynoecia infrequent. Androecial bracts abruptly larger than leaves immediately below, in 2-3 pairs, more concave and much larger than leaves, bilobed to ca. 0.2; antheridia 2 per bract, the stalk 10-11 cells long, biseriate. Gynoecial bracts erect. intercalary branches (dorsal view); note also the stoloniform basal sector of the shoot and the dor- mutually involute, sheathing the abbreviated perianth, the base ± clasping the stem. Perianth delicate, low, formed of delicate, narrowly rectangular cells, those near the mouth hyaline, colorless and notably leptodermous, the pigmented cells below with distinct trigones; mouth truncate, crenulate by cells that are finger-like and free only near the distal end. Calyptra with sterile archegonia near its base. Seta with 20 rows of outer cells surrounding an inner core of 23 somewhat smaller cells, the exposed wall rather thick. Capsule spherical, the wall fragile, brittle, 2-stratose, 17-20 juim thick, the outer layer of cells somewhat thicker than inner layer, the outer layer of cells with sharply defined, strong, nodular thickenings that often appear clavate in surface view; inner layer of cells with similar nodular thickenings but moderately to much smaller, semiannular bands rare and isolated. Spores pale brown, 9.1-10.6 juim in diam., the wall with low but sharply defined, short, often furcate, vermiform ridges; spore:elater diam. ratio 1-1. 3:1. Elaters moderately tortuous, 8. 2-9. 6 |ULm wide, bispiral to tips, the spirals 2.9-3. 8 juim wide. Distribution and Ecology: New Zealand: Stewart Island (ca. 30 m). South Island (1220- 1830 m); subspecies childii is endemic to New Zealand. Known from Eiordland (Mt. Burns), Southland (Eyre Mtns.), Otago (head of Wye Creek, Remarkables), Westland (ridge between Young and Blue rivers) and Canterbury (Harman Pass) EPs. At the margins of rills in the alpine zone (e.g., on the plateau and slopes below Mt. Burns, Eiordland Natl. Park), in seepage areas and on alpine tarn margins, on soil or stones, sometimes in Oreobolus pectinatus and O. pusillus cushionfield. In these alpine sites it occurs characteristically with Diplophyllum verrucosum, but also with Andreaea acuminata, A. subulata, Blindia robusta, Cephalomitrion aterrimum, Cryptochila grandiflora, Drepanocladus revolvens, He- patostolonophora rotata var. rotata and Hygrolembidium acrocladum. On Stewart Island the plant occurred over bedrock in a very humid niche that is often inundated or totally saturated (at top of Belltopper Palls, Port Pegasus, North Arm). Interestingly, the site is only 30 m elevation. In the upper Wye Creek (Remarkables, Otago, 1830 m) it forms cushions on soil on a tarn margin, which are at times at the water’s edge but at other times may be 50 m from the water’s edge. On Harman Pass (Main Divide 15 km SW of Arthur’s Pass, 1320 m) it occurs on soil at the margins of small tarns among cushionfields of Oreobolus and on bedrock kept wet by seepage. Schuster (1996d, p. 64) commented that the taxon ‘‘may form extensive mats . . . where subject to submersion, over stones and peaty soil on stones, at the edges of alpine tarns.” Comments: The above description is based solely on New Zealand plants. This is a larger plant than our other species, Marsupella sprucei, being 650-1100 juim wide, 8-15 mm tall vs. to 450 juim wide and typically 2-5 mm tall in M. sprucei. Also, the leafy shoots are subequally leafy throughout or only gradually smaller-leaved below in M. sparsi- folia (Pig. 176: 1) vs. leafy shoots abruptly larger-leaved distally and almost always eventually fertile in M. sprucei. sally interlocking merophytes. 2. Sector of leading shoot showing leaf insertions crossing stem midline dorsally. 3. Sector of main shoot with a lateral-intercalary branch, dorsal view; note 3- of perianth mouth. (All from Glenny 9735, New Zealand, South Is., Canterbury EP, Harman Pass.) Marsupella sparsifolia subsp. childii R.M.Schust. (figs. 1-8) and Marsupella sprucei (Limpr.) Bernet (figs. 9-17). 1. Mature gynoecium, dorsal view; note eapsule dehiseenee within the en- 200 m This species may be confused with species of Allis oniella, particularly A. scottii. The form of the gynoecial apparatus will immediately distinguish Marsupella from Allisoniella, but problems may occur when only sterile plants are at hand. Two of the three species of Allisoniella that occur in New Zealand have sulcate leaf lobes, vs. plane leaf lobes in M. sparsifolia (Eig. 176: 1-3); the character may be observed in the field. Allisoniella scottii, however, has plane leaf lobes and in such cases one should search for branching modalities: A. scottii has ventral-intercalary branches vs. lateral-intercalary in M. sparsifolia (Eig. 176: 3). (Eor further comments see under Allisoniella scottii.) Gymnomitrion Corda Gymnomitrion Corda in Opiz (ed.), Beitr. Naturk. [1]: 651. 1829. Cesius Gray, Nat. Arr. Brit. PI. 1: 705. 1821, nom. rej. Type: Cesius concinnatus (Lightf.) Gray Acolea Dumort., Syll. Jungerm. Europ. 76. 1831, nom. illeg. Type: Acolea concinnatus (Lightf.) Dumort. Cesiusa Kuntze, Revis. Gen. PI. 833. 1891, nom. rej. Type: Cesiusa concinnata (Lightf.) Kuntze. Dianthelia R.M.Schust., Bryologist 52: 103. 1949. Type: Dianthelia steerei R.M.Schust. Plants mostly in dense, compact, pure, typically small cushions, the shoots erect and mutually appressed (less often, and initially in clone formation, procumbent or loosely ascending), ju- laceous to vermiform, terete to weakly dorsally flattened, distally sometimes ± clavate, silver- whitish or grey, at times grey-green, less frequently yellowish brown or reddish/purplish or piceous to reddish black, rather small, usually 250-750 juim wide. Branching irregular, the branches usually from older shoot sectors, of lateral-intercalary type; Frullania-iype branches present in a few taxa (e.g., Gymnomitrion incompletum of Australia) and then only of isolated occurrence; branches usually of 2 types: erect and leafy and geotropic, microphyllous and stoloniform. Stems slender, relatively soft-textured, a little fleshy, the cortical cells usually weakly thick-walled, not forming a hyaloderm. Rhizoids typically from stolons and older shoot sectors. Leaves erect, densely imbricate, with apex and margins mostly ± appressed to those above, nearly transversely oriented, the insertion broad, virtually transverse (on lax shoot sectors subsuccubous), the leaves concave, broad-based, usually ovate or subrotundate, usually 0.1-0.4(0.55) bifid, rarely unlobed; leaves with apex and margins usually narrowly to extensively decolorate (also lacking oil-bodies); intramarginal lamina cells ± collenchyma- tous, often with ± bulging trigones, the cells rather small; surface smooth or asperulate. Oil- bodies large, usually 2-3(4) per cell, finely to coarsely granular. Underleaves lacking or comprised of only 2- to few-celled rudiments, sometimes juxtaposed to leaf bases. closed 9 bracts. 2. Longitudinal section through gynoecium with mature sporophyte; note paroe- same scale). 15. Bract of innermost series (above) and (below) a bract from series immediately below, both inserted on the perigynium (and note drawn to same scale as leaves). 16. Portion of perianth mouth. 17. Antheridial stalk. (Figs. 1-8, from Glenny 9735, New Zealand, South Is., Canterbury EP, Harman Pass; 9-17, from Engel 17909, New Zealand, South Is., Otago EP, Mt. Aspiring Natl. Park, below and W of Mt. Shrimpton.) Dioecious or autoecious. Androecia weakly differentiated from vegetative areas, terminal but soon becoming intercalary; bracts in several pairs, similar to leaves but often slightly larger and more concave or ventricose; antheridia 1-3 per bract, the stalk biseriate. Gynoecia terminal on leading shoots, with several series of closely imbricate, mutually involute, gradually larger, basically leaf-like bracts that typically form a ± clavate ‘‘head,” within the pair of largest bracts (which may be ± toothed) are 1 -several small, often very reduced, multiform, variously incised/ lacerate/ lacini ate innermost bracts (the innermost bracts usually free, sometimes slightly connate). Perianth and perigynium entirely lacking (except Gymnomitrion apicu- latum, which has a low and distinct perianth and a low subtending perigynium); axial tissue below distal-most bracts ± proliferating as a generalized coelocaule-precursor. Calyptra with unfertilized archegonia usually ± elevated. Seta short, the capsule barely exserted. Capsule spherical, the wall 2-, 2(3)- or rarely 3- stratose; outer layer of cells with strong, sometimes ± confluent nodular thickenings; inner layer of cells with nodular thickenings, the thickenings smaller than those of the outer layer and distant. Spores 8-18 juim in diam., distinctly areolate (in ours) or minutely papillose to verruculose. Elaters 6.5-8 juim wide, 2(3-4)-spiral. Type: Gymnomitrion concinnatum (Eighth) Corda (= Jungermannia concinnata Eighth) A genus of ca. 20 species, with two occurring in our area {Gymnomitrion cuspidatum, G. strictum). Gymnomitrion concinnatum (Eighth) Corda occurs in Chile (Tierra del Euego, Ejordo Einlandia, leg. Roivainen). Reports of this species from the Southern Hemisphere were shown to be in error by Grohe (1966d) and Schuster (1974a), and the first credible report from the Southern Hemisphere is by Vaha (1976). Gymnomitrion incompletum (Gottsche) R.M.Schust. occurs in Tasmania, Victoria and New South Wales (McCarthy, 2003) and G. lac- eratum (Steph.) Horik. is present in South and Central Africa. The genus is absent from Antarctica; the report by Chen et al. (1995) of G. corallioides Nees is actually Herzogobryum teres (Bednarek-Ochyra et ah, 2000). Both of our species are autoecious, unlike the majority members of the genus. Treatment of genus adapted and modified from Schuster (1996d). References: Berggren (1898); Grohe (1966d); Schuster (1996d, 2002a). Key to Species la. Leaves (0.25)0.3-0.45(0.5) bilobed; leaf lobes distinctly asperulate; plants whitish green (the leaf apices and margins decolorate); leafy shoots a little dorsiventrally compressed, the leaves erect to obliquely spreading. Leaf lobes terminating in 1-3 cells . G. cuspidatum (p. 807) lb. Leaves 0.15-0.25 bilobed; leaf lobes faintly to moderately asperulate; plants yellowish brown pigmented (the leaf apices and margins decolorate); leafy shoots subterete, with dense, erect-appressed leaves. Leaf lobes terminating in a single cell . G. strictum (p. 809)</pre>
+    
+    
+    
+    <pre class="description-text">Plants erect, fuscous or deep brown, 620-700 juim to 770-1160 juim wide in sterile sectors, 5-9(15) mm high. Branching common in basal sectors of plant, typically absent above, the branches lateral-intercalary, from ventral end of leaf axil; stoloniform axes infrequent or occasional. Stems brownish. Leaves remaining almost identical in size and form to near the gametangial region, almost immediately stiffly laterally spreading and remaining so ± throughout shoot, remote, the bases not at all sheathing, essentially transversely oriented and inserted, the leaves distinctly concave, mostly ± symmetrically ovate to ellipsoidal, rather sharply narrowing toward the base, 360-520 juim wide X 400-620 juim long, bilobed to ca. 0.15-0.2 to 0.3-0.35, sometimes a little asymmetrically so, with one lobe slightly larger than the other; lobes usually sharply acute or subacute, terminating in a single cell or a uniseriate row of 2 cells; sinus usually broadly V-shaped, blunt to subacute at base, sometimes narrowly rounded. Cells with trigones large and convex-sided to knot-like, the cells small, the median cells 12- 18 |ULm wide X 14-22 juim long, the basal cells appreciably larger, 15-22 juim wide X 17- 26 |ULm long; surface smooth or inconspicuously striate. Oil-bodies occupying a conspicuous portion of cell lumen, glistening, appearing whitish, (1)2(4) per median lamina cell, at base more commonly 3 or 4 per cell, granular-finely papillose, at times with a depression, the oil- bodies globose to broad-elliptic, 3. 8-4. 8 X 6.7-8. 6 juim to 5.5-6 X 10-11 juim, spherical ones 4-5.8 |ULm in diam., if one per cell then often very large. Paroecious, but fertilized gynoecia infrequent. Androecial bracts abruptly larger than leaves immediately below, in 2-3 pairs, more concave and much larger than leaves, bilobed to ca. 0.2; antheridia 2 per bract, the stalk 10-11 cells long, biseriate. Gynoecial bracts erect. intercalary branches (dorsal view); note also the stoloniform basal sector of the shoot and the dor- mutually involute, sheathing the abbreviated perianth, the base ± clasping the stem. Perianth delicate, low, formed of delicate, narrowly rectangular cells, those near the mouth hyaline, colorless and notably leptodermous, the pigmented cells below with distinct trigones; mouth truncate, crenulate by cells that are finger-like and free only near the distal end. Calyptra with sterile archegonia near its base. Seta with 20 rows of outer cells surrounding an inner core of 23 somewhat smaller cells, the exposed wall rather thick. Capsule spherical, the wall fragile, brittle, 2-stratose, 17-20 juim thick, the outer layer of cells somewhat thicker than inner layer, the outer layer of cells with sharply defined, strong, nodular thickenings that often appear clavate in surface view; inner layer of cells with similar nodular thickenings but moderately to much smaller, semiannular bands rare and isolated. Spores pale brown, 9.1-10.6 juim in diam., the wall with low but sharply defined, short, often furcate, vermiform ridges; spore:elater diam. ratio 1-1. 3:1. Elaters moderately tortuous, 8. 2-9. 6 |ULm wide, bispiral to tips, the spirals 2.9-3. 8 juim wide. Distribution and Ecology: New Zealand: Stewart Island (ca. 30 m). South Island (1220- 1830 m); subspecies childii is endemic to New Zealand. Known from Eiordland (Mt. Burns), Southland (Eyre Mtns.), Otago (head of Wye Creek, Remarkables), Westland (ridge between Young and Blue rivers) and Canterbury (Harman Pass) EPs. At the margins of rills in the alpine zone (e.g., on the plateau and slopes below Mt. Burns, Eiordland Natl. Park), in seepage areas and on alpine tarn margins, on soil or stones, sometimes in Oreobolus pectinatus and O. pusillus cushionfield. In these alpine sites it occurs characteristically with Diplophyllum verrucosum, but also with Andreaea acuminata, A. subulata, Blindia robusta, Cephalomitrion aterrimum, Cryptochila grandiflora, Drepanocladus revolvens, He- patostolonophora rotata var. rotata and Hygrolembidium acrocladum. On Stewart Island the plant occurred over bedrock in a very humid niche that is often inundated or totally saturated (at top of Belltopper Palls, Port Pegasus, North Arm). Interestingly, the site is only 30 m elevation. In the upper Wye Creek (Remarkables, Otago, 1830 m) it forms cushions on soil on a tarn margin, which are at times at the water’s edge but at other times may be 50 m from the water’s edge. On Harman Pass (Main Divide 15 km SW of Arthur’s Pass, 1320 m) it occurs on soil at the margins of small tarns among cushionfields of Oreobolus and on bedrock kept wet by seepage. Schuster (1996d, p. 64) commented that the taxon ‘‘may form extensive mats . . . where subject to submersion, over stones and peaty soil on stones, at the edges of alpine tarns.” Comments: The above description is based solely on New Zealand plants. This is a larger plant than our other species, Marsupella sprucei, being 650-1100 juim wide, 8-15 mm tall vs. to 450 juim wide and typically 2-5 mm tall in M. sprucei. Also, the leafy shoots are subequally leafy throughout or only gradually smaller-leaved below in M. sparsi- folia (Pig. 176: 1) vs. leafy shoots abruptly larger-leaved distally and almost always eventually fertile in M. sprucei. sally interlocking merophytes. 2. Sector of leading shoot showing leaf insertions crossing stem midline dorsally. 3. Sector of main shoot with a lateral-intercalary branch, dorsal view; note 3- of perianth mouth. (All from Glenny 9735, New Zealand, South Is., Canterbury EP, Harman Pass.) Marsupella sparsifolia subsp. childii R.M.Schust. (figs. 1-8) and Marsupella sprucei (Limpr.) Bernet (figs. 9-17). 1. Mature gynoecium, dorsal view; note eapsule dehiseenee within the en- 200 m This species may be confused with species of Allis oniella, particularly A. scottii. The form of the gynoecial apparatus will immediately distinguish Marsupella from Allisoniella, but problems may occur when only sterile plants are at hand. Two of the three species of Allisoniella that occur in New Zealand have sulcate leaf lobes, vs. plane leaf lobes in M. sparsifolia (Eig. 176: 1-3); the character may be observed in the field. Allisoniella scottii, however, has plane leaf lobes and in such cases one should search for branching modalities: A. scottii has ventral-intercalary branches vs. lateral-intercalary in M. sparsifolia (Eig. 176: 3). (Eor further comments see under Allisoniella scottii.) Gymnomitrion Corda Gymnomitrion Corda in Opiz (ed.), Beitr. Naturk. [1]: 651. 1829. Cesius Gray, Nat. Arr. Brit. PI. 1: 705. 1821, nom. rej. Type: Cesius concinnatus (Lightf.) Gray Acolea Dumort., Syll. Jungerm. Europ. 76. 1831, nom. illeg. Type: Acolea concinnatus (Lightf.) Dumort. Cesiusa Kuntze, Revis. Gen. PI. 833. 1891, nom. rej. Type: Cesiusa concinnata (Lightf.) Kuntze. Dianthelia R.M.Schust., Bryologist 52: 103. 1949. Type: Dianthelia steerei R.M.Schust. Plants mostly in dense, compact, pure, typically small cushions, the shoots erect and mutually appressed (less often, and initially in clone formation, procumbent or loosely ascending), ju- laceous to vermiform, terete to weakly dorsally flattened, distally sometimes ± clavate, silver- whitish or grey, at times grey-green, less frequently yellowish brown or reddish/purplish or piceous to reddish black, rather small, usually 250-750 juim wide. Branching irregular, the branches usually from older shoot sectors, of lateral-intercalary type; Frullania-iype branches present in a few taxa (e.g., Gymnomitrion incompletum of Australia) and then only of isolated occurrence; branches usually of 2 types: erect and leafy and geotropic, microphyllous and stoloniform. Stems slender, relatively soft-textured, a little fleshy, the cortical cells usually weakly thick-walled, not forming a hyaloderm. Rhizoids typically from stolons and older shoot sectors. Leaves erect, densely imbricate, with apex and margins mostly ± appressed to those above, nearly transversely oriented, the insertion broad, virtually transverse (on lax shoot sectors subsuccubous), the leaves concave, broad-based, usually ovate or subrotundate, usually 0.1-0.4(0.55) bifid, rarely unlobed; leaves with apex and margins usually narrowly to extensively decolorate (also lacking oil-bodies); intramarginal lamina cells ± collenchyma- tous, often with ± bulging trigones, the cells rather small; surface smooth or asperulate. Oil- bodies large, usually 2-3(4) per cell, finely to coarsely granular. Underleaves lacking or comprised of only 2- to few-celled rudiments, sometimes juxtaposed to leaf bases. closed 9 bracts. 2. Longitudinal section through gynoecium with mature sporophyte; note paroe- same scale). 15. Bract of innermost series (above) and (below) a bract from series immediately below, both inserted on the perigynium (and note drawn to same scale as leaves). 16. Portion of perianth mouth. 17. Antheridial stalk. (Figs. 1-8, from Glenny 9735, New Zealand, South Is., Canterbury EP, Harman Pass; 9-17, from Engel 17909, New Zealand, South Is., Otago EP, Mt. Aspiring Natl. Park, below and W of Mt. Shrimpton.) Dioecious or autoecious. Androecia weakly differentiated from vegetative areas, terminal but soon becoming intercalary; bracts in several pairs, similar to leaves but often slightly larger and more concave or ventricose; antheridia 1-3 per bract, the stalk biseriate. Gynoecia terminal on leading shoots, with several series of closely imbricate, mutually involute, gradually larger, basically leaf-like bracts that typically form a ± clavate ‘‘head,” within the pair of largest bracts (which may be ± toothed) are 1 -several small, often very reduced, multiform, variously incised/ lacerate/ lacini ate innermost bracts (the innermost bracts usually free, sometimes slightly connate). Perianth and perigynium entirely lacking (except Gymnomitrion apicu- latum, which has a low and distinct perianth and a low subtending perigynium); axial tissue below distal-most bracts ± proliferating as a generalized coelocaule-precursor. Calyptra with unfertilized archegonia usually ± elevated. Seta short, the capsule barely exserted. Capsule spherical, the wall 2-, 2(3)- or rarely 3- stratose; outer layer of cells with strong, sometimes ± confluent nodular thickenings; inner layer of cells with nodular thickenings, the thickenings smaller than those of the outer layer and distant. Spores 8-18 juim in diam., distinctly areolate (in ours) or minutely papillose to verruculose. Elaters 6.5-8 juim wide, 2(3-4)-spiral. Type: Gymnomitrion concinnatum (Eighth) Corda (= Jungermannia concinnata Eighth) A genus of ca. 20 species, with two occurring in our area {Gymnomitrion cuspidatum, G. strictum). Gymnomitrion concinnatum (Eighth) Corda occurs in Chile (Tierra del Euego, Ejordo Einlandia, leg. Roivainen). Reports of this species from the Southern Hemisphere were shown to be in error by Grohe (1966d) and Schuster (1974a), and the first credible report from the Southern Hemisphere is by Vaha (1976). Gymnomitrion incompletum (Gottsche) R.M.Schust. occurs in Tasmania, Victoria and New South Wales (McCarthy, 2003) and G. lac- eratum (Steph.) Horik. is present in South and Central Africa. The genus is absent from Antarctica; the report by Chen et al. (1995) of G. corallioides Nees is actually Herzogobryum teres (Bednarek-Ochyra et ah, 2000). Both of our species are autoecious, unlike the majority members of the genus. Treatment of genus adapted and modified from Schuster (1996d). References: Berggren (1898); Grohe (1966d); Schuster (1996d, 2002a). Key to Species la. Leaves (0.25)0.3-0.45(0.5) bilobed; leaf lobes distinctly asperulate; plants whitish green (the leaf apices and margins decolorate); leafy shoots a little dorsiventrally compressed, the leaves erect to obliquely spreading. Leaf lobes terminating in 1-3 cells . G. cuspidatum (p. 807) lb. Leaves 0.15-0.25 bilobed; leaf lobes faintly to moderately asperulate; plants yellowish brown pigmented (the leaf apices and margins decolorate); leafy shoots subterete, with dense, erect-appressed leaves. Leaf lobes terminating in a single cell . G. strictum (p. 809)</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Marsupella sparsifolia subsp. childii</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Group C cont&#39;d
+                                                                                                                                                                               Leafy liverworts without underleaves, or underleaves not apparent
+                                                                                                                                                                               15 Stems green or brownA ................................................................................ Plagiochila
+                                                                                                                                                                                  Stems black ................................................................................................................ 16
+
+
+
+
+Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. University of Tasmania, on 07/08/2026 11:06 PM AEST; UTC+10:00. © The Victorian Naturalist , 2006.
+                                                                                                                                                                               16 Shoot tips often curved over like a walking stick; leaves opposite,
+                                                                                                                                                                                    finely toothed ± all round margin; leaf cells
+                                                                                                                                                                                    without trigones ...................................................................... Calyptrocolea falcata
+                                                                                                                                                                                  Shoots tips erect; leaves alternating along stem, coarsely toothed
+                                                                                                                                                                                    or lobed along apical margin; leaf cells with very large
+                                                                                                                                                                                    trigones ...................................................................................... Acrochila biserialis
+                                                                                                                                                                               17 Leaves tightly and evenly pressed against stem ........................................................ 18
+                                                                                                                                                                                  Leaves spreading from stem, at least in one direction ............................................... 19
+                                                                                                                                                                               18 Plants greyish; leaves obvious, overlapping; stem hidden by leaves;
+                                                                                                                                                                                    on soil .......................................................................... Gymnomitrion incompletum
+                                                                                                                                                                                  Plants very dark green to black, appearing leafless
+                                                                                                                                                                                    but with minute widely spaced leaves; stem clearly visible;
+                                                                                                                                                                                    on rocks in flowing water .............................................. Cephalomitrion aterrimum
+                                                                                                                                                                               19 Leaves bifid to halfway; plant aquatic or semi-aquatic .................... Allisoniella nigra
+                                                                                                                                                                                  Leaves bifid but never to halfway; plant not aquatic or semi-aquatic ....................... 20
+                                                                                                                                                                               20 Leaves wrapped around stem; epiphytic in wet forest or
+                                                                                                                                                                                    rainforest ..................................................................... Anastrophyllum schismoides
+                                                                                                                                                                                  Leaves spreading widely from the stem; not epiphytic ............................................. 21
+                                                                                                                                                                               21 Leaves longer than wide, ± oblong; on soil
+                                                                                                                                                                                    at low elevationsA ......................................................... Andrewsianthus cuspidatus
+                                                                                                                                                                                  Leaves wider than long, ± oval, on rock at higher elevations .. Marsupella sparsifolia
+                                                                                                                                                                               22 Shoots prostrate, with many rhizoids along much of the stem .................................. 23
+                                                                                                                                                                                  Shoots erect or ascending, attached to the substrate only at the base ........................ 31
+                                                                                                                                                                               23 Leaves with papillose cuticle, at least in lower half of leaf........................................ 24
+                                                                                                                                                                                  Leaves smooth or striolate, never papillose ............................................................... 26
+                                                                                                                                                                               24 Epiphytic in wet forest or rainforest, or on rocks in subalpine
+                                                                                                                                                                                    to alpine areas; capsule developing in perianth .................... Jamiesoniella colorata
+                                                                                                                                                                                  On soil in drier habitats (rarely aquatic); not in alpine areas;
+                                                                                                                                                                                    capsule in a buried marsupium .............................................................................. 25
+                                                                                                                                                                               25 Plants yellowish to deep green, sometimes tinted chestnut;
+                                                                                                                                                                                    oil bodies large, brownish, few per cell; leaf cuticle papillose
+                                                                                                                                                                                    only towards apex ......................................................................... Lethocolea pansa
+                                                                                                                                                                                  Plants silvery white to whitish green, not tinted chestnut;
+                                                                                                                                                                                    oil bodies small, colourless, up to 14 per cell; leaf cuticle
+                                                                                                                                                                                    usually papillose all over ................................................... Gongylanthus scariosus
+                                                                                                                                                                               26 Leaves ± opaque, cells almost filled by brownish oil bodies ... Acrobolbus concinnus
+                                                                                                                                                                                  Leaves translucent, oil bodies pale (brownish only in Lethocolea pansa) ................ 27
+                                                                                                                                                                               27 Plants minute; leaf and stem cells all similar, bulging; leaves few-celled ........ Zoopsis
+                                                                                                                                                                                  Plants small to large, leaf and stem cells not bulging, leaf cells
+                                                                                                                                                                                    distinctly different from stem cells; leaves many-celled ....................................... 28
+                                                                                                                                                                               28 Leaves tongue-shaped, ending in an acute point ....................... Cuspidatula monodon
+                                                                                                                                                                                  Leaves with widely rounded apex, not at all pointed ................................................ 29
+                                                                                                                                                                               29 Leaf insertion succubous, orientation ± longitudinal; leaves ± flat;
+                                                                                                                                                                                    epiphytic in rainforest or subalpine woodlandB .............. Pedinophyllum monoicum
+                                                                                                                                                                                  Leaf insertion ± transverse; leaves flat to concave; terrestrial or aquatic ................. 30
+
+                                                                                                                                                                                240                                                                                   The Victorian Naturalist
+                                                                                                                                                                                                                                                                 Bryophyte special issue
+
+                                                                                                                                                                               Group C cont&#39;d
+                                                                                                                                                                               Leafy liverworts without underleaves, or underleaves not apparent</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Aristolochia sparusifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Dicrastylis parvifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hypoestes sparsiflora</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marsupella</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marsupella sparsifolia subsp. childii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Marsupella sparsifolia subsp. sparsifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Melaleuca sparsiflora</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Mirbelia seorsifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Synaphea sparsiflora</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Nardia sparsifolia</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Sarcocyphos sparsifolius</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-47.150944, 167.696611], [-37.14, 142.512222], [-35.998333, 148.334444], [-44.491863, 168.440216], [-37.840775, 146.273545], [-37.840833, 146.273333], [-45.070371, 168.821369], [-36.4264, 148.2764], [-36.45, 148.2667], [-42.939639, 171.418018], [-45.057147, 167.453356], [-42.938562, 171.420901], [-15.0, 153.5], [-45.07038, 168.819698], [-44.121368, 169.140593], [-37.840538, 146.273442]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+
+</body>
+</html>

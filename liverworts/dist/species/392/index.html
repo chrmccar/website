@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solenostoma orbiculatum — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Solenostoma orbiculatum</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Solenostoma orbiculatum</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Solenostomataceae</span>
+    <span class="badge">Solenostoma</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">127</p>
+    <footer>55 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">10</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>28.0–33.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>3.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>2.5</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>JUNGERMANNIALES_SHAW_2015</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">66r- Solenostoma coniflorum L1495 Kergulelen Islands
+                                                                                                     *·Solenostoma coniflorum L1412 Kergulelen Islands
+                                                                                                      98
+                                                                                                                *IιI Solenostoma pyriflorum gb325
+                                                                                                                                               qb325 South. Korea
+                                                                                                                                                            ..
+                                                                                                                       Solenostoma pyriflorum gb324 South Korea
+                                                                                                     Solenostoma (Horikawaella) subacutum E19 China
+                                                                                                     Solenostoma (Horikawaella)            subacutum  L1205  China
+                                                                                                 Solenostoma (Horikawaella) grosseverrucosum L1529 China
+                                                                                                     Solenostoma clavellatum E23 Bhutan
+                                                                                                          Solenostoma sanguinolentum L1202 China
+                                                                                             Solenostoma patoniae E14 China                                                             subg. Solenostoma
+                                                                                          ■Solenostoma sphaerocarpum L1442 Czech Republic
+                                                                                          - Solenostoma sphaerocarpum (pusillum) L1282 Russia
+                                                                                          -• Solenostoma sphaerocarpum L1441 Norway
+                                                                                          ■Solenostoma sphaerocarpum L1081 Czech Republic
+                                                                                                   Solenostoma confertissimum gb323 Russia
+                                                                                                    Solenostoma confertissimum FATOL504 Russia
+                                                                                                     Solenostoma confertissimum L1417 Norway
+                                                                                              63 i— Solenostoma confertissimum L1099 Austria
+                                                                                                     Solenostoma confertissimum (abyssinicum) FATOL772 Kenya
+                                                                                             Solenostoma appressifolium L1204 China
+                                                                                                      Solenostoma lanigerum L1086 China
+                                                                                                    Solenostoma kashyapii L1199 China
+                                                                                              Solenostoma dulongense L1200 China
+                                                                                                            Solenostoma chenianum L1506 China
+                                                                                                 Solenostoma parvitextum L1073 China
+                                                                                              Solenostoma atrorevolutum L1197 China
+                                                                                      Solenostoma speciosum E57 China
+                                                                                              r Solenostoma orbiculatum L1410 New Zealand
+                                                                                             J-Solenostoma orbiculatum L1232 New Zealand
+                                                                                                Solenostoma orbiculatum L1411 New Zealand
+                                                                                                 Solenostoma orbiculatum L1236 New Zealand
+                                                                                                 Solenostoma orbiculatum L1408 New Zealand
+                                                                                           1— Solenostoma orbiculatum FATOL54 New Zealand
+                                                                             IιSolenostoma macrocarpum L1527 China
+                                                                              *·Solenostoma macrocarpum L1085 China
+                                                                              *•
+                                                                                                             Solenostoma cryptogynum FATOL51 New Zealand
+                                                                                    Solenostoma obovatum gb316 Russia
+                                                                                    Solenostoma obovatum gb317 Russia
+                                                                                    Solenostoma obovatum gb318 Russia
+                                                                                    Solenostoma obovatum FATOL519 Russia
+                                                                                    Solenostoma obovatum L1435 Austria
+                                                                                    Solenostoma obovatum L1434 Czech Republic
+                                                                                    Solenostoma obovatum L1492 USA
+                                                                                    Solenostoma obovatum L1402 USA
+                                                                                    Solenostoma obovatum L1403 USA
+                                                                                    Solenostoma obovatum L1090 Czech Republic                                        subg. Eucalyx
+                                                                                             Solenostoma obovatum (subellipticum) IBC35 USA
+                                                                                   — Solenostoma obovatum (subelipticum) gb319 Russia
+                                                                                  iιSolenostoma obovatum L1433 Norway
+                                                                                 τ— Solenostoma gb320 Russia
+                                                                                — Solenostoma gb321 Russia
+                                                                                    Solenostoma flagellatum FATOL459 Japan
+                                                                              Solenostoma schusterianum IBC34 Canada
+                                                                                                      100Γ Solenostoma gracillimum L1438 Sweden
+                                                                                                      100r
+                                                                                                     f I Solenostoma gracillimum L1080 Czech Republic
+                                                                                                          Solenostoma gracillimum L1437 Austria
+                                                                                                        &#39; Solenostoma
+                                                                                                                                gracillimum L1439 Czech Republic
+                                                                                               Solenostoma gracillimum L1089 USA                                          subg. Metasolenostoma
+                                                                                                Solenostoma fusiforme FATOL433 Japan
+                                                                                                  oienoi</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Plants prostrate or more commonly ascending to suberect in tightly interwoven mats, resembling Solenostoma hodgsoniae but smaller, often forming tight, closely spaced rosettes, bright green to yellowish to brownish green, rarely somewhat reddish, the plants medium-sized, to 2.5 mm wide. Branching common, the plants irregularly and often repeatedly branched, the 1, 5-9, from Braggins 84/400A, New Zealand, North Is., Southern North Is. EP, Akatarawa; 2-4, from Engel 21152, New Zealand, South Is., Western Nelson EP, track to German Terrace, 6 km SSE of Westport on Nine Mile Road, 90 m.) branches lateral-intercalary. Stem greenish to brownish green, the cortical cells indistinct, in a single layer of smaller cells; medullary cells lax, thin-walled. Rhizoids numerous, colorless to pale brownish, diffuse, never in bundles, arising from the ventral side of stem and from extreme bases of leaves, smooth. Leaves rather firm, vertically oriented, ± bilaterally appressed to the stem, loosely to closely imbricate, succubously oriented, the insertion variable, oblique in extreme dorsal portion, becoming subtransverse, abruptly reflexed at ventral end; leaves plane to concave, weakly asymmetric, elliptic-oval to oblate to subreniform, often broader than long, entire, 1.5-2 mm wide, 1-1.5 mm long, the apex broadly rounded or weakly emar- ginate; margins plane to distinctly reflexed, not undulate, the dorsal and ventral margins about equally short-decurrent. Cells thin- walled but not inflated, with small but prominent, bulging to knot-like trigones; cells of lower median sector of leaf larger, short-rectangular, (27)30- 43(48) |ULm wide X 41—48(55) |ULm long, the cells in distal sector smaller, firm-walled, hexagonal, often somewhat wider than long, 28-33 juim wide and long, the marginal cells almost isodiametric, 20-27 juim in diam.; surface closely striolate-papillose (at least in median basal sector). Oil-bodies very pale grey, (2)3-6 per cell, finely granular, the spherules very slightly protruding beyond membrane, the oil-bodies elliptic to fusiform to spherical, 5. 9-7. 8 X 15.6- 16.6 |ULm, some 4.9-7. 8 X 1 1.7-13.7 juim, spherical ones 6.8 juim in diam. Underleaves absent. Asexual reproduction absent. Eungal partner absent. Dioecious. Androecia terminal, rarely becoming intercalary, inconspicuous; bracts very little differentiated from the leaves, in 3-8 pairs, transversely inserted, widely spreading, the margins recurved, the basal portion moderately concave; antheridia 2-3 per bract, the stalk biseriate. Gynoecia terminal, typically with several lateral-intercalary innovations at some distance below the gynoecium, the subinvolucral leaves gradually larger, the bracts broadly reniform, weakly united with the base of the perianth; bracteole absent. Perianth ca. 0.5 immersed, inflated, ellipsoid, ± irregularly and sharply plicate in distal 0.3-0. 5, often with short, irregular accessory ribs and scabrous near the apex, the mouth contracted to a short beak, the mouth irregularly crenulate by projecting cells; cells of beak portion short-rectangular, uniformly thick-walled, their tips irregularly projecting; cells of the perianth proper isodiametric, firm- walled, with distinct trigones. Capsule short-ellipsoidal, the wall 2-3-stratose, 40-48 juim thick, the outer layer equaling the 2 inner layers in thickness; outer layer of cells short-rectangular, thin- walled, with short peg-like thickenings on the longitudinal walls, sporadically extending a short distance onto the outer tangential wall, the transverse walls rarely with peg-like thickenings; innermost layer of cells with longitudinal walls with thin sheet-like thickenings and ± regular, rather narrow, complete scalariform bands. Spores yellowish brown, 16.8-19.7 juim in diam., finely papillose, the papillae distinct or forming short, irregular vermiculate ridges that do not delimit areolae. Elaters 8.6-9. 1 |ULm wide, bispiral, the ends long-tapering and sinuous, the spirals 2. 9-3. 8 juim wide, not extending into the elater tips. Distribution and Ecology: New Zealand: Stewart Island (sea level). South Island (20-310 m). North Island (95-480 m); Australia: New South Wales. In New Zealand known from Southland, Otago, Westland and Southern North Island EPs. A species primarily of relatively low elevations in the forest zone. On stream banks it occurs over thick soil on boulders submerged to periodically inundated, and in streambeds it oc¬ curs on the tops of rocks that are for the most part above water level. Also on moist, stabilized roadside banks that are covered mostly by hepatics, mosses, often also with Blechnum and the lichen Stereocaulon. Eor example, at Cascade Road (just W of Jackson River, ca. 10 km SW of confluence of Jackson and Arawata rivers, Westland, 45 m) it occurred on a huge rock face of a large, vertical, bryophyte-covered roadside bank dominated by Isotachis, with Fuchsia excorticata at the base of the bank, the bank at the margin of a mature Nothofagus menziesii forest. Accompanying species on such banks are Campylopus clavatus, Chiloscyphus mitteni- anus, C. subporosus, Isotachis montana, Pohlia wahlenbergii and Polytrichadelphus magellan- icus. The species exceptionally is alpine, occurring, for example, at the top of a rock in a rill-bed at 1360-1480 m in a mosaic of tussockland and alpine vegetation along with tarns, rills, rocky outcrops and boulderfields (Rainbow Skifield, St. Arnaud Ra., Nelson Lakes Natl. Park). Solenostoma inundatum is much more frequent at upper elevations, including the alpine zone. Comments: Solenostoma orbiculatum resembles S. hodgsoniae in the lack of strong pigmentation, the shape and position of the leaves, and the prostrate habit and abundant rhizoids from the ventral side of the stem. Schuster (2002a) confused these species, referring to S. orbiculatum plants that are ‘Vigorous” with “leaves to 3.0-3. 6 mm X 3.3-4. 1 mm” and a “capsule wall 4-layered” (key, p. 376), which match characters of S. hodgsoniae. Schuster (2002a) also illustrated these vigorous plants (figs. 353A, 354: 5-7, both as S. orbiculatum), and commented (p. 380) “this is one of the largest Solenostoma spp. known...” Solenostoma orbicula¬ tum sensu Schuster (2002a), then, is identical to S. hodgsoniae. Solenostoma novae zelandiae R. M.Schust. may be the same as S. orbiculatum (see under “Uncertain Species”). The true S. orbiculatum is a smaller plant, with smaller cells and more uniform areolation, and the surface is decidedly striate-papillose, vs. smooth in S. hodgsoniae. It differs from S. inundatum in its prostrate habit and more obliquely inserted, dorsally assurgent leaves.</pre>
+    
+    
+    
+    <pre class="description-text">Plants prostrate or more commonly ascending to suberect in tightly interwoven mats, resembling Solenostoma hodgsoniae but smaller, often forming tight, closely spaced rosettes, bright green to yellowish to brownish green, rarely somewhat reddish, the plants medium-sized, to 2.5 mm wide. Branching common, the plants irregularly and often repeatedly branched, the 1, 5-9, from Braggins 84/400A, New Zealand, North Is., Southern North Is. EP, Akatarawa; 2-4, from Engel 21152, New Zealand, South Is., Western Nelson EP, track to German Terrace, 6 km SSE of Westport on Nine Mile Road, 90 m.) branches lateral-intercalary. Stem greenish to brownish green, the cortical cells indistinct, in a single layer of smaller cells; medullary cells lax, thin-walled. Rhizoids numerous, colorless to pale brownish, diffuse, never in bundles, arising from the ventral side of stem and from extreme bases of leaves, smooth. Leaves rather firm, vertically oriented, ± bilaterally appressed to the stem, loosely to closely imbricate, succubously oriented, the insertion variable, oblique in extreme dorsal portion, becoming subtransverse, abruptly reflexed at ventral end; leaves plane to concave, weakly asymmetric, elliptic-oval to oblate to subreniform, often broader than long, entire, 1.5-2 mm wide, 1-1.5 mm long, the apex broadly rounded or weakly emar- ginate; margins plane to distinctly reflexed, not undulate, the dorsal and ventral margins about equally short-decurrent. Cells thin- walled but not inflated, with small but prominent, bulging to knot-like trigones; cells of lower median sector of leaf larger, short-rectangular, (27)30- 43(48) |ULm wide X 41—48(55) |ULm long, the cells in distal sector smaller, firm-walled, hexagonal, often somewhat wider than long, 28-33 juim wide and long, the marginal cells almost isodiametric, 20-27 juim in diam.; surface closely striolate-papillose (at least in median basal sector). Oil-bodies very pale grey, (2)3-6 per cell, finely granular, the spherules very slightly protruding beyond membrane, the oil-bodies elliptic to fusiform to spherical, 5. 9-7. 8 X 15.6- 16.6 |ULm, some 4.9-7. 8 X 1 1.7-13.7 juim, spherical ones 6.8 juim in diam. Underleaves absent. Asexual reproduction absent. Eungal partner absent. Dioecious. Androecia terminal, rarely becoming intercalary, inconspicuous; bracts very little differentiated from the leaves, in 3-8 pairs, transversely inserted, widely spreading, the margins recurved, the basal portion moderately concave; antheridia 2-3 per bract, the stalk biseriate. Gynoecia terminal, typically with several lateral-intercalary innovations at some distance below the gynoecium, the subinvolucral leaves gradually larger, the bracts broadly reniform, weakly united with the base of the perianth; bracteole absent. Perianth ca. 0.5 immersed, inflated, ellipsoid, ± irregularly and sharply plicate in distal 0.3-0. 5, often with short, irregular accessory ribs and scabrous near the apex, the mouth contracted to a short beak, the mouth irregularly crenulate by projecting cells; cells of beak portion short-rectangular, uniformly thick-walled, their tips irregularly projecting; cells of the perianth proper isodiametric, firm- walled, with distinct trigones. Capsule short-ellipsoidal, the wall 2-3-stratose, 40-48 juim thick, the outer layer equaling the 2 inner layers in thickness; outer layer of cells short-rectangular, thin- walled, with short peg-like thickenings on the longitudinal walls, sporadically extending a short distance onto the outer tangential wall, the transverse walls rarely with peg-like thickenings; innermost layer of cells with longitudinal walls with thin sheet-like thickenings and ± regular, rather narrow, complete scalariform bands. Spores yellowish brown, 16.8-19.7 juim in diam., finely papillose, the papillae distinct or forming short, irregular vermiculate ridges that do not delimit areolae. Elaters 8.6-9. 1 |ULm wide, bispiral, the ends long-tapering and sinuous, the spirals 2. 9-3. 8 juim wide, not extending into the elater tips. Distribution and Ecology: New Zealand: Stewart Island (sea level). South Island (20-310 m). North Island (95-480 m); Australia: New South Wales. In New Zealand known from Southland, Otago, Westland and Southern North Island EPs. A species primarily of relatively low elevations in the forest zone. On stream banks it occurs over thick soil on boulders submerged to periodically inundated, and in streambeds it oc¬ curs on the tops of rocks that are for the most part above water level. Also on moist, stabilized roadside banks that are covered mostly by hepatics, mosses, often also with Blechnum and the lichen Stereocaulon. Eor example, at Cascade Road (just W of Jackson River, ca. 10 km SW of confluence of Jackson and Arawata rivers, Westland, 45 m) it occurred on a huge rock face of a large, vertical, bryophyte-covered roadside bank dominated by Isotachis, with Fuchsia excorticata at the base of the bank, the bank at the margin of a mature Nothofagus menziesii forest. Accompanying species on such banks are Campylopus clavatus, Chiloscyphus mitteni- anus, C. subporosus, Isotachis montana, Pohlia wahlenbergii and Polytrichadelphus magellan- icus. The species exceptionally is alpine, occurring, for example, at the top of a rock in a rill-bed at 1360-1480 m in a mosaic of tussockland and alpine vegetation along with tarns, rills, rocky outcrops and boulderfields (Rainbow Skifield, St. Arnaud Ra., Nelson Lakes Natl. Park). Solenostoma inundatum is much more frequent at upper elevations, including the alpine zone. Comments: Solenostoma orbiculatum resembles S. hodgsoniae in the lack of strong pigmentation, the shape and position of the leaves, and the prostrate habit and abundant rhizoids from the ventral side of the stem. Schuster (2002a) confused these species, referring to S. orbiculatum plants that are ‘Vigorous” with “leaves to 3.0-3. 6 mm X 3.3-4. 1 mm” and a “capsule wall 4-layered” (key, p. 376), which match characters of S. hodgsoniae. Schuster (2002a) also illustrated these vigorous plants (figs. 353A, 354: 5-7, both as S. orbiculatum), and commented (p. 380) “this is one of the largest Solenostoma spp. known...” Solenostoma orbicula¬ tum sensu Schuster (2002a), then, is identical to S. hodgsoniae. Solenostoma novae zelandiae R. M.Schust. may be the same as S. orbiculatum (see under “Uncertain Species”). The true S. orbiculatum is a smaller plant, with smaller cells and more uniform areolation, and the surface is decidedly striate-papillose, vs. smooth in S. hodgsoniae. It differs from S. inundatum in its prostrate habit and more obliquely inserted, dorsally assurgent leaves.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; ACT; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Blechnum articulatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Capnodiastrum orbiculatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Scalenostoma</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Senostoma</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solanum orbiculatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostoma</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostoma infuscum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostoma inundatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Solenostomus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gymnomitrion orbiculatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia orbiculata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Solenostoma contexta</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.635023, 145.92078], [-41.66923, 146.633757], [-42.090368, 147.122273], [-41.916415, 145.961875], [-42.8833, 147.1], [-41.638514, 147.601694], [-41.717854, 145.318327], [-42.809871, 146.512129], [-42.082742, 145.671422], [-41.459377, 147.360558], [-41.35, 147.7], [-41.739951, 146.83539], [-41.729599, 146.640628], [-41.54846, 146.401828], [-41.826467, 146.873703], [-43.529629, 146.382611], [-41.542469, 145.682542], [-42.000302, 147.1221], [-41.539472, 145.442839], [-41.546963, 146.162043], [-41.368306, 147.599198], [-41.910049, 146.760195], [-40.370833, 148.107778], [-42.172782, 145.669539], [-41.721012, 146.819809], [-40.283989, 148.060068], [-41.735215, 146.716354], [-42.900896, 147.123862], [-42.049919, 145.98508], [-41.19935, 147.994633], [-42.17642, 146.032703], [-42.719819, 146.512835], [-41.819227, 146.519721], [-40.3708, 148.1078], [-42.1, 146.0833], [-41.547774, 146.281933], [-41.275837, 146.046119], [-41.276745, 147.837167], [-41.725079, 145.919274], [-41.5333, 147.6667], [-42.899332, 146.388938], [-41.735275, 146.741607], [-40.370833, 148.107778], [-42.990749, 147.246711], [-41.864343, 146.929055], [-41.910238, 146.880773], [-43.440988, 146.754236], [-41.726146, 146.039487], [-42.900963, 147.001372], [-43.166869, 147.985537], [-41.71955, 145.438498], [-42.990948, 147.124043], [-42.720274, 146.634965], [-41.548446, 147.600858], [-41.709313, 146.825852], [-39.0021832, 174.821809], [-37.066667, 175.083333], [-41.2963298, 173.5737854], [-54.5, 158.516667], [-38.981203, 174.824051], [-41.2082243, 172.1595692], [-47.104917, 168.153543], [-39.2, 175.566667], [-35.5192, 148.7797], [-36.35, 148.2667], [-44.305, -176.201], [-37.067532, 175.083716], [-41.2104, 172.121], [-35.5158, 148.7806], [-35.0833, 149.6167], [-45.003559, 167.747303], [-41.297778, 173.575833], [-17.273056, 145.628052], [-42.3482492, 171.3795548], [-36.461111, 174.431944], [-35.9, 174.766667], [-38.070833, 174.980278], [-43.433333, 170.083333], [-35.5158, 148.7806], [-37.512988, 146.836977], [-40.966667, 175.116667], [-46.331617, 167.83267], [-41.904334, 171.432921], [-35.5167, 148.7833], [-37.066667, 175.083333], [-42.2378, 171.6277], [-35.5167, 148.7667], [-36.9532469, 175.8196275], [-35.5833, 148.6167], [-38.4262716, 174.7137099], [-42.241364, 171.909526], [-35.6667, 148.8], [-35.213333, 173.739167], [-42.821698, 171.160208], [-44.1149564, 168.5895123], [-43.764681, 169.248782], [-38.9776827, 174.8338092], [-41.714905, 171.7662323], [-44.1, 168.616667], [-40.8553877, 172.7357474], [-41.768973, 172.153406], [-40.7915233, 175.7728133], [-37.0284, 175.5474], [-17.4167, 145.4333], [-38.249444, 177.597745], [-46.1683412, 167.8321911], [-46.8955636, 168.1266902], [-40.931555, 175.1012749], [-37.582778, 175.8], [-36.864905, 147.334273], [-35.9, 174.766667], [-46.451303, 169.658252], [-36.4, 148.4], [-36.933165, 147.28121], [-44.487064, 168.786798], [-36.933165, 147.28121], [-39.18416, 175.467062], [-37.833333, 146.266667], [-37.1444, 142.5156], [-41.748236, 171.8495631], [-41.6149051, 172.7162439], [-41.714905, 171.7662323], [-37.9544676, 177.0224378], [-37.512988, 146.836977], [-36.864905, 147.334273], [-40.4590167, 176.1271187], [-40.9482254, 175.1096049]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [85.2, 69.1, 90.6, 96.7, 139.2, 149.8, 172.1, 185.8, 163.9, 129.9, 102.3, 103.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.2, 19.1, 16.7, 13.2, 10.1, 8.0, 7.3, 8.1, 10.2, 12.5, 15.6, 17.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.2, 8.4, 6.9, 5.0, 3.4, 1.9, 1.2, 1.4, 2.6, 3.7, 5.5, 6.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

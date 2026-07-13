@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frullania rostrata — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Frullania rostrata</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Frullania rostrata</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Frullaniaceae</span>
+    <span class="badge">Frullania</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">749</p>
+    <footer>292 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">15</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">NZ_CHECKLIST_1998</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>2.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>4.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">FRULLANIA_CONGESTA_2006</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">NZ_CHECKLIST_1998</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Laboratory 44: 455-482.
+
+
+
+
+                                        91
+                                    Appendix 1
+
+
+Taxonomic arrangement of epiphytic bryophytes recorded from the trunk of two
+dominant rainforest trees, Nothofagus cunninghamii and Athrotaxis seLaginoides (A.
+laxifolia).
+
+
+HEPATICAE
+Aerobolbaceae
+ Acrobolbus cinerascens (Lehm.&amp; Lindenb.) Schiffn.
+ Marsupidium surculosum (Nees) Semffn.
+ Tylimanthus diversifolius Hodgs.
+
+
+Adelanthaceae
+ Adelanthus bisetulus (Steph.) GroUe
+
+
+Aneuraeeae
+ Riccardia sp
+
+
+Frullaniaceae
+ FruLlania rostrata (Hook. f. &amp; Tayl.) Hook. f. &amp; Tayl. ex Gott. et al
+
+
+Geocalycaceae
+ Chiloscyphus echinellus (Lindenb. &amp; Gott.) Mitt
+ Clasmatocolea notophylla (Hook. f. &amp; Tayl.) GroUe
+ C. verrucosa Engel
+
+ Heteroscyphus billardierei (Schwaegr.) Semffn.
+ H. conjugatus (Mitt.) Engel &amp; Schust.
+
+ H. cymbaliferus (Hook. f. &amp; Tayl.) Engel &amp; Sehust.
+
+ Leptoscyphus expansus (Lehrn.) GroBe
+
+
+Herbertaceae
+ Hubertus ofdjieldianus (Steph.) Rodw.
+
+
+Jungennanniaceae
+ Chandonanthus squarroslts (Hook.) Mitt
+ Cuspidatula monodon (Tayl.) Steph.
+
+
+
+
+                                         92
+Lejeuneaceae
+
+ Drepanolejeunea aucklandica Steph.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>FRULLANIA_CONGESTA_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">long), cylindrical from base to apex, occasionally becoming expanded at the mouth, rim al-
+way s terminated by d ense, thick-walled , unicellular papillae, 20-50 f..I.m long; protuber-
+ances developing the entire length ofthe inner beak surface.
+       Capsule valves ca. 400 f..I.m long X 300 f..I.m wide; epidermal cells nodulose to semi-
+straight at the cell corners, walls:t: leptodermous, often with subnodulose intermediate
+thickenings along the longer walls, ca. 35-60 f..I.m long X 24-36 f..I.m wide; inner cell layer
+with portions of the radial walls spread irregularly over the free tangential face and strong-
+ly thickened, forming a sinuate partial layer of thickening or jig-saw like pattern. Elaters
+32-42 per capsule, to 270 f..I.m long X 25 f..I.m in diam., the surface under SEM irregularly
+rugose-granulate. Spores globose, to ca. 35- 50 f..I.m at the widest axis, which is interspersed
+with 6- 8 rosettes (concavities), :t: uniformly pantoporate in distribution; each rosette ca.
+4 .00-6 .0 f..I.m in diam. , bearing a ring of ca. 4-6 :t: echinate stelae, to 2 f..I.m long, and a simi-
+lar number of smaller :t: echinate-tuberculate stelae, stelae smooth, occasionally divided
+into 1- 2 simple short branches especially towards the apex, stelae not obscuring or reach-
+ing center of rosette; surface between rosettes densely interspersed with irregularly shaped
+nano-papillae.
+      Representative specimens: NEW ZEALAND. NORTH ISLAND. Northland Prov.: Cooper&#39;s Beach, N.
+of Bay of Islands, growing on bark and twigs of Metrasideras excelsa (pohutukawa), sea level, ca.
+34°59&#39;S, 173°31 &#39;E, von Konrat 98/ 106 (AK, F); Waipoua Forest Sanctuary, Lookout Track between
+Lookout Road and Waipoua River Road, on bark of Weinmannia silvicala (towai), ca. 200m, 35°39&#39;S
+173°34&#39;E, van Konrat 981160 (AK, F). SOUTH ISLAND. Westland Prov.: Road toward Gillespies
+Beach, the interior of Coastal rimu forest, on bark of rimu, von Konrat 991540 (AK, F); Southland
+Prov. : Stewart Island: Paters on Inlet, on the Kaipipi Walk-Rakiura Tk to North Arm Hut, young
+Rimu-Miro forest, on trunk of rimu in forest interior, van Konrat 99/591 (AK, F); on the Kaipipi
+Walk-Rakiura Tk to North Arm Hut, at an exposed bay, vegetation windswept and stunted, on
+Olearia sp. von Konrat 99/591 (AK, F) and Dracaphyllum sp., ca. 46°53&#39;S 168°01 E, van Konrat
+99/595 (AK, F). AUCKLAND ISLANDS: Locality s.n., Coil. s.n. (GI8456).
+      Chromosome number: n=9 for female plants and n=8 for male plants.
+
+Morphlog i cal Affinities, Differentiation &amp; variation
+     Frullania congesta has previously been reduced to a synonym of Frullania rostrata
+(Hattori 1978) and purported to be closely allied with F aterrima, and F ptychantha . Table
+I provides a selection of the most significant features that distinguish between the four
+species. Salient characters include those associated with the oil bodies, cell wall anatomy,
+                                                                                                                                              V&gt;
+         Table I.     A comparison of critical morphological characters between F congesta and F rostrata, F aterrima and F ptychantha.       V&gt;
+                                                                                                                                              00
+
+
+         Characters                        F congesta                 F rostrata               F aterrima               F ptychantha
+
+Initial branching appendages
+   Ventral segment of BUL 1              Unlobed                  Bilobed                   Bilobed                   Unlobed
+   No. of saccate segments of BLl        2                        I                         I                         2
+Branching
+   Microphyllous branching              Inconspicuous             Inconspicuous             Inconspicuous             Conspicuous
+   Presence of subfloral innovations    Present                   Present                   Present                   Absent
+   Postion of gynoecia                  Lateral branches &amp;        Main stem                 Main stem                 Lateral branches
+                                          main stem
+Lobule:lobe size ratio                  Medium, 0.25- 0.35 : I    Medium, 0.25- 0.35 : I    Medium, 0.25-0.35: I      Small, 0.25--0.35 : 1
+                                                                                                                                              ~
+Styli
+                                                                                                                                              .,::r:
+  Form                                  ± Small, arched           ± Large, triangular       ± Small, arched           ± Small, arched
+  Uniseriate row of cells               Often present             Absent                    Often present             Often present
+                                                                                                                                              §.
+                                                                                                                                              tll
+  Total no. of cells                    (4) 5- 10 (12)            (S) IS--4S (50)           (4) 5- 10 (12)            (4)S-10(12)             ~
+Perianth                                                                                                                                      r.,
+                                                                                                                                              eT
+  No. of keels                           ±S                       ::&#39;::3                    ±3                        ::&#39;:: S                 z
+
+---
+
+wall anatomy.
+      A suite of morphological characters shared between Frullania congesta and F pty-
+chantha lend support to their placement in F subg. Diastaloba Spruce. Both species share
+the following morphological characteristics: 1) the first branch leaf (BLl) with two saccate
+appendages; 2) rim of perianth beak papillate; 3) comparatively large median cell size; and
+4) lobules at angles of (30) 45- 80 (90)° with stem. The spore surface ultrastructure of the
+two species is also similar. In addition, von Konrat and Braggins (2001a) reported in a sur-
+vey of the initial branching appendages of Frullania that the presence of two saccate ap-
+pendages at BL 1 was a consistent feature for many species of subg. Diastaloba.
+      However, Frullania congesta can easily be differentiated from F ptychantha by the
+following characters: I) large lobules in proportion to the lobes; 2) microphyllous branch-
+ing absent to inconspicuous; 3) gynoecia frequently producing subfloral innovations and
+subfloral branches; 4) median cells of the lobe usually with 2-3 oil bodies per cell, and col-
+lectively the oil bodies frequently occupying up to 112 of the cell lumen; and 5) generally
+smaller plant size Frullania ptychantha, on the other hand, is characterized by 1) small lob-
+ules in comparison to the lobe; 2) conspicuous microphyllous branching; 3) gynoecia rarely
+producing subfloral innovations and subfloral branches; 4) median cells of the lobe usually
+with 4-6 oil bodies per cell, and collectively the oil bodies only occupying up to 1I6th of
+the cell lumen; and 5) generally larger plant size.
+
+Chemistry
+      Recently, Asakawa et al. (2003) identified and discussed the major chemical compo-
+nents, detected by TLC and GC/MS analysis, of a selection of Frullania species, including
+F congesta, F aterrima, F rostrata, and F ptychantha (summarized in Table 2). According
+to the criteria developed by Asakawa et al. (1981), F congesta, F aterrima, and F rostrata
+should be assigned to chemo-type 2 (Sesquiterpene lactone-type), and F ptychantha should
+be assigned to chemo-type 1 (Sesquiterpene lactone-Bibenzyl type). Frullania congesta is
+rich in sesquiterpene lactones with the major components including dihydrodiplophyllolide
+(7%), frullanolide, and three unknown sesquiterpene lactones. Frullania aterrima and F
+rostrata also produce sesquiterpene lactones as the major components, though these are
+chemically different from F congesta. Frullania rostrata also appears to be chemically
+more primitive than F congesta and F ptychantha because F rostrata contained two simple
+germacranolides from which the eudesmane-type sesquiterpene lactones (present in F con-
+gesta and F ptychantha) are biosynthesized (Asakawa et al. 2003).
+560                                    1. Hattori Bot. Lab. No. 100                          200 6
+
+
+Distribution and Ecology
+      Frullania congesta has a seemingly patchy distribution throughout the New Zealand
+botanical region (Fig. 4), ranging from sea level to relatively low elevations of c. 450 m.
+Figure 4 also provides a rudimentary demonstration of the difference in relative abundance
+between the different areas based on the number of collections in each region. Collecting
+effort was similar throughout the country. We predict an increase in the number of known
+present localities, but it is speculated that the pattern of an increasing frequency from
+northern to southern latitudes will remain an accurate representation of its abundance in
+nature. Interestingly, the distribution appears to correlate with the amount of rainfall. For
+instance, in Stewart Island there are over 200 rain days annually (Meteorological Service of
+New Zealand), which corresponds to the greatest number of collections made throughout
+New Zealand. It is also apparent that F. congesta is one of only a few Frullania species in
+New Zealand, which are tolerant to exposure to salt spray. This is significant on two counts:
+a) liverworts have been known for their extremely low salinity tolerances (Engel &amp; Schus-
+ter, 1973); and b) Engel &amp; Schuster (1973) reported for Stewart Island a notable lack of liv-
+erworts in the intertidal zone where sea spray is a factor. Therefore, the amount of precipi-
+tation coupled with coastal environments, appears to play a significant role for the distribu-
+tion of this species.
+      In coastal areas, Frullania congesta grows commonly on Metrosideros excelsa Sol. ex
+Gaertn. (pohutukawa) in the north, and on Dracophyllum Labil1. spp. and M. umbellata
+Cav. (southern rata) in the south, where F. congesta can also be saxicolous. In addition,
+Frullania congesta is found, but not as commonly, in the forest interior where it grows on a
+variety of host species, including Agathis australis Steud. (kauri), Dacrycarpus cupress-
+inum Sol. ex Lambert (rimu), southern rata, Weinmannia silvicola Sol. ex A.Cunn. (towai),
+
+---
+
+Wellington (leg. Stephenson). However, only the record from Wellington is correct, the
+other two specimens are F. rostrata. Mitten (1859) also recorded Frullania congesta for
+Tasmania, but this was based on the misidentification of two specimens (leg. Gunn and leg.
+Archer); both are in fact F. rostrata. Carrington &amp; Pearson (1888) recorded F. congesta for
+the Falkland Islands, but recently, Engel (1990) excluded F. congesta in a study of Hepati-
+
+
+           Fig. 1. 1- 5 Frullania congesta. I, stem; 2- 3, rim of perianth beak; 4-5, initial
+      branching appendages, MS = main stem, FB=Frullania-type branching, HL = half leaf,
+      BUll = first branch leaf, t= tooth, BL I = first branch leaf with two saccate appendages,
+      BL2=second branch leaf. 6, F rostrata, initial branching appendages, BLl with a single sac-
+      cate appendage. 7, F atterima, stem illustrating toothed underleaves. 8- 9 F ptychantha. 8,
+      stem; 9, rim of perianth beak.
+M. VON KONRAT ET AL.: Recognition of Frullania congesta   561
+562                                      1. Hattori Bot. Lab. No. 100                              2 0 0 6
+
+
+
+
+            Fig. 2. Spores. 1--4, F congesta. I, proximal view; 2, distal view; 3, several rosettes,
+      with the spore wall papillae otherwise densely distributed between rosettes; 4, a single
+      rosette bearing a ring of ca. 5-8 ± echinate-tuberculate stelae of unequal lengths, larger ste-
+      lae occasionally divided into 1- 3 simple short branches especially towards the apex, stelae
+      not obscuring or reaching center of rosette. 5-6 F rostrata . 5, several rosettes across the dis-
+      tal face ; 6, a single rosette bearing a ring of 8-10 echinate-tuberculate stelae primary projec-
+      tions, gradually to a rounded or subacute apex, without any divisions or secondary deposits.
+
+cae from this group of islands.
+     In contrast to F congesta, both Frullania aterrima and F rostrata are widely distrib-
+uted throughout the New Zealand botanical region including the North Island, South Island,
+Stewart Island and the subantarctic islands. Frullania rostrata can easily be considered as a
+generalist species growing on bark and twigs of trees and shrubs from sea level to areas of
+high elevation.
+                        M. VON KONRAT ET AL.: Recognition of Frullania congesta                    563
+
+          Table 2.   The major chemical components of selected Frullania species.
+
+                                                                             Chemo-type (after
+     Species                      Major components
+                                                                         Asakawa et al. 1981 , 2003)
+
+
+   F. congesta       Dihydrodiplophyllolide, frullanolide, 3             Sesquiterpene lactone type
+                     unknown Sesquiterpene lactones [M+ 234,             (Chemo-type 2)
+                     mlz 107 (base), M+ 232, mlz 107 (base), M+
+                     232, mlz 109 (base)
+   F. rostrata       Costunolide, dihydrocostunolide                     Sesquiterpene lactone type
+                                                                         (Chemo-type 2)
+   F. aterrima       3 unknown Sesquiterpene lactones [M+ 232            Sesquiterpene lactone type
+                     (base 217), M+ 234 (base 217)] , kaurene            (Chemo-type 2)
+   F. ptychantha     A Bibenzyl derivative with a methooxybenzyl         Sesquiterpene
+                     group (rnIz 121) and rnIz 193 (base), ledene        lactone-Bibenzyl type
+                                                                         (Chemo-type I)
+
+
+
+Nomenclatural Notes
+      Frullania congesta Gottsche et al. (1845) is the correct name for this taxon. It was
+based on Jungermannia congesta Hook.f. &amp; Taylor 1844 (cited as a synonym), which is an
+illegitimate homonym of J congesta Lehm. 1829, which is a different taxon with a differ-
+ent type. However, the name Frullania congesta Gottsche et al. 1845 can be treated as a</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Fossombronia microspora Herz.                    Frullania squarrosula (Hook.f. &amp; Taylor) Taylor
+Fossombronia wondraczekii (Corda) Dumort.                Frullania subhampeana E.A.Hodgs.
+        Jungermannia wondraczekii Corda                  Frullania svihlana S.Hatt.
+Frullania allanii E.A.Hodgs.
+Frullania anomola E.A.Hodgs.                             Gackstroemia alpina R.M.Schust.
+Frullania aterrima (Hook.f. &amp; Taylor) Hook.f.            Gackstroemia weindorferi (Herzog) Grolle
+        &amp; Taylor var. aterrima                           Geocalyx caledonicus Steph.
+Frullania aterrima var. lepida E.A.Hodgs.                Goebeliella cornigera (Mitt.) Steph.
+Frullania aterrima var. rostrata (R.M.Schust.) S.Hatt.   Goebelobryum unguiculatum (Hook.f. &amp; Taylor)
+        Frullania subrostrata S.Hatt.                           Grolle
+        Neohattoria rostrata R.M.Schust.                 Gymnomitrion cuspidatum (Berggr.) R.M.Schust.
+Frullania deplanata Mitt.                                Gymnomitrion strictum (Berggr.) R.M.Schust. var.
+Frullania engelii S.Hatt.                                       strictum
+Frullania falciloba Lehm.                                Gymnomitrion strictum (Berggr.) R.M.Schust. var.
+Frullania fugax (Hook.f. &amp; Taylor) Taylor                       inaequalis R.M.Schust.
+Frullania incumbens Mitt.
+Frullania junghuhniana Gottsche                          Haplomitrium gibbsiae (Steph.) R.M.Schust.
+Frullania media (E.A.Hodgs.) S.Hatt.                     Haplomitrium minutum (E.O.Campb.) J.J.Engel &amp;
+        Frullania fugax var. media E.A.Hodgs.                   R.M.Schust.
+Frullania monocera (Hook.f. &amp; Taylor) Taylor                    Haplomitrium hookeri var. minutum
+        Frullania novae-zealandiae Colenso                      (E.O.Campb.) Bartholomew-Began
+        Frullania hampeana Nees                                 Steereomitrium minutum E.O.Campb.
+Frullania nicholsonii E.A.Hodgs.                         Haplomitrium ovalifolium R.M.Schust.
+Frullania patula Mitt.                                   Harpalejeunea filicuspis (Steph.) Mizut.
+        Frullania kirkii Steph.                          Harpalejeunea latitans (Hook.f. &amp; Taylor) Grolle
+Frullania ptychantha Mont.                                      Drepanolejeunea latitans (Hook.f. &amp; Taylor)
+Frullania pycnantha (Hook.f. &amp; Taylor) Taylor                   Steph.
+         Frullania banksiana Colenso                            Drepanolejeunea minima Steph.
+Frullania reptans Mitt.                                          Harpalejeunea colensoi Steph.
+Frullania rostellata Mitt.                               Hepatostolonophora paucistipula (Rodw.) J.J.Engel
+Frullania rostrata (Hook.f. &amp; Taylor) Hook.f. &amp;                 Clasmatocolea paucistipula (Rodw.) Grolle
+        Taylor                                           Hepatostolonophora rotata var. perssonii
+        Frullania congesta (Hook.f. &amp; Taylor) Hook.f.           (R.M.Schust.) J.J.Engel
+        &amp; Taylor                                                Calyptrocolea perssonii R.M.Schust.
+        Frullania dissitifolia Steph.                           Clasmatocolea rotata (Hook.f. &amp; Taylor)
+         Frullania grollei Hamlin                               Grolle
+         Frullania novaustralis S.Hatt.                         Stolonophora perssonii (R.M.Schust.) J .].Engel
+        Neohattoria australis S.Hatt.                           &amp; R.M.Schust.
+        Schusterella australis (R.M.Schust.) S.Hatt.,    Hepatostolonophora rotata (Hook.f. &amp; Taylor)
+        Sharp &amp; Mizut.                                          J.J.Engel var. rotata
+Frullania scandens Mont.                                        Clasmatocolea rotata (Hook.f. &amp; Taylor)
+Frullania setchellii Pearson                                    Grolle
+        Frullania falciloba var. setchellii (Pearson)    Herbertus alpinus (Steph.) E.A.Hodgs.
+        E.A.Hodgs.                                       Herzogianthus sanguineus R.M.Schust.
+                                                                          NZ Liverworts and Hornworts   133
+
+
+
+
+Herzogianthus vaginatus (Herzog) R.M.Schust.            Heteroscyphus furcistipulus (E.A.Hodgs.)
+Herzogobryum atrocapillum (Hook.f. &amp; Taylor)                   J.J.Engel &amp; R.M.Schust.
+       Grolle                                                  Chiloscyphus furcistipulus E.A.Hodgs.
+Herzogobryum filiforme R.M.Schust.                      Heteroscyphus hastatus (E.A.Hodgs.) ].].Engel &amp;
+Herzogobryum vermiculare (Schiffn.) Grolle                     R.M.Schust.
+Herzogobryum teres (Carrington &amp; Pearson) Grolle               Chiloscyphus hastatus E.A.Hodgs.
+Heteroscyphus allodontus (Hook.f. &amp; Taylor)             Heteroscyphus knightii (Steph.) J.J.Engel &amp;
+       ].].Engel &amp; R.M.Schust.                                 R.M.Schust.
+       Chiloscyphus allodontus (Hook.f. &amp; Taylor)              Heteroscyphus tridentatus (Mitt.) ].].Engel &amp;
+       E.A.Hodgs.                                              R.M.Schust.
+Heteroscyphus ammophilus (Colenso) R.M.Schust.          Heteroscyphus lingulatus (Colenso) J.J.Engel &amp;
+       Chiloscyphus ammophilus Colenso                         R.M.Schust.
+
+---
+
+Archilejeunea scutellata - Archilejeunea olivacea        cuneistipulus
+Austrolophozia camensis -Austrolophozia paradoxa         Chiloscyphus erraticus - Heteroscyphus erraticus
+Balantiopsis glandulifera - Balantiopsis diplophylla     Chiloscyphus fiordlandiae - Stolonivector
+var. hockenii                                            fiordlandiae
+Balantiopsis knightii - Balantiopsis diplophylla var.    Chiloscyphus fulvus - Chiloscyphus leucophyllus
+hockenii                                                 Chiloscyphus furcistipulus - Heteroscyphus
+Bazzania mittenii - Bazzania hochstetteri                furcistipulus
+Blepharidophyllum xiphophyllum - Clandarium              Chiloscyphus hastatus - Heteroscyphus hastatus
+xiphophyllum                                             Chiloscyphus humilis - Clasmatocolea humilis
+Bonneria furcifolia - Paracromastigum furcifolium        Chiloscyphus inflexispinus - Clasmatocolea
+Calyptrocolea perssonii - Hepatostolonophora rotata      inflexispina
+var. persson11                                           Chiloscyphus innovatus - Leptoscyphus innovatus
+Cephaloziella arctica - Cephaloziella varians            Chiloscyphus lingulatus - Heteroscyphus lingulatus
+Cephaloziella aterrima var. crassigyna - Cephaloziella   Chiloscyphus lyallii - Heteroscyphus lyallii
+crass1gyna                                               Chiloscyphus montanus - Balantiopsis montanus
+Cephaloziella byssacea subsp. grandiretis -              Chiloscyphus multispinus - Heteroscyphus
+Cephaloziella grandiretis                                multispinus
+Cephaloziella nigra -Allisoniella nigra subsp.           Chiloscyphus normalis - Heteroscyphus normalis
+novaezelandiae                                           Chiloscyphus notophyllus - Clasmatocolea
+Cheilolejeunea aucklandica - Cheilolejeunea              notophylla
+albovirens                                               Chiloscyphus okaritanus - Chiloscyphus austrigenus
+Cheilolejeunea curnowii - Cheilolejeunea hamlinii        subsp. okaritanus
+Cheilolejeunea tereticalyx - Cheilolejeunea comitans     Chiloscyphus physanthus - Heteroscyphus
+                                                                         NZ Liverworts and Hornworts        141
+
+
+
+
+physanthus                                           Fossombronia perpusilla - Fossombronia pusilla
+Chiloscyphus planiusculus - Heteroscyphyus           Frullania banksiana - Frullania pycnantha
+planiusculus                                         Frullania congesta - Frullania rostrata
+Chiloscyphus polycladus - Heteroscyphus              Frullania dissitifolia - Frullania rostrata
+polycladus                                           Frullania falciloba var. setchellii - Frullania setchellii
+Chiloscyphus renistipulus - Heteroscyphus            Frullania fugax var. media - Frullania media
+renistipulus                                         Frullania grollei - Frullania rostrata
+Chiloscyphus sinuosus - Heteroscyphus sinuosus       Frullania hampeana - Frullania monocera
+Chiloscyphus splendid us - Heteroscyphus             Frullania kirkii - Frullania patula
+splendidus                                           Frullania novae-zealandiae - Frullania monocera
+Chiloscyphus strongylophyllus - Clasmatocolea        Frullania novaustralis - Frullania rostrata
+strongylophylla                                      Frullania subrostrata - Frullania aterrima var. rostrata
+Chiloscyphus supinus - Heteroscyphus supinus         Gottschea chlorophylla - Schistochila
+Chiloscyphus triacanthus - Heteroscyphus             chlorophylla
+triacanthus                                          Haplomitrium hookeri var. minutum - Haplomitrium
+Chiloscyphus vermicularis - Clasmatocolea            mmutum
+vermicularis                                         Harpalejeunea colensoi - Harpalejeunea latitans
+Chiloscyphus verrucosus - Clasmatocolea verrucosa    Herzogobryum aterrimum - Cephalomitrion
+Chiloscyphus vulcanicus - Isotachis mitteniana       aterrimum var. aterrimum
+Chloranthelia filosa - Chloranthelia berggrenii      Herzogobryum erosum - Nothogymnomitrion
+Clasmatocolea fiordlandiae - Stolonivector           erosum
+fiordlandiae                                         Heteroscyphus fissistipus - Chiloscyphus
+Clasmatocolea paucistipula - Hepatostolonophora      fissisti pul us
+paucistipula                                         Heteroscyphus tridentatus - Heteroscyphus knightii
+Clasmatocolea rotata - Hepatostolonophora rota ta    Isolembidium cucullatum - Isolembidium anomalum
+var. perssonu                                        lsophyllaria murrayana -Isophyllaria attenuata
+Cololejeunea fragilis - Austrolejeunea fragilis      Isotachis mitteniana - Chiloscyphus mittenianus
+Cuspidatula monodon -Jamesoniella monodon            Jensenia connivens - Pallavicinia connivens
+Dendroceros allisonii - Dendroceros validus          Jungermannia dispar - Kurzia hippuroides
+Dendroceros giganteus - Megaceros giganteus          Jungermannia hodgsoniae -Jungermannia orbiculata
+Dendroceros megasporus - Dendroceros granulatus      Jungermannia pansa - Lethocolea pansa
+Dendroceros nodulosus - Dendroceros granulatus       Jungermannia rufif1ora -Jungermannia inundata
+Diplasiolejeunea lyratifolia - Diplasiolejeunea      Jungermannia wondraczekii- Fossombronia
+plicatiloba                                          wondraczekii
+Drepanolejeunea la titans - Harpalejeunea latitans   Kurzia allisonii - Kurzia hippuroides
+Drepanolejeunea minima - Harpalejeunea latitans      Kurzia insulana - Megalembidium insulanum
+Drepanolejeunea plicatiloba - Diplasiolejeunea       Kurzia pallescens - Kurzia quadriseta var. trilobata
+lyratifolia                                          Kurzia temnomoides - Kurzia calcarata
+Euosmolejeunea tenella - Cheilolejeunea tenella      Lejeunea apiculata - Stenolejeunea apiculata
+Fossombronia australis -Austrofossombronia           Lejeunea cucullata - Metalejeunea cucullata
+australis                                            Lepidolaena hodgsoniae - Lepidogyna hodgsoniae
+
+---
+
+paludicola                                             Lophocolea spinifera - Chiloscyphus spiniferus
+Lethocolea squamata - Lethocolea pansa                 Lophocolea subporosa - Chiloscyphus subporosa
+Lophocolea amplectens - Clasmatocolea inflexispina     Lophocolea variabilis - Chiloscyphus variabilis
+Lophocolea austrigena - Chiloscyphus austrigenus       Lophocolea villosa - Chiloscyphus villosus
+subsp. austrigenus                                     Marchantia hirsuta - Dumortiera hirsuta
+Lophocolea biciliata - Heteroscyphus biciliatus        Marchantia pallida - Marchantia pileata
+Lophocolea bidentata - Chiloscyphus chlorophyll us     Marsupella ustulata - Marsupella sprucei
+Lophocolea bispinosa - Chiloscyphus bispinosus         Marsupidium abbreviatum - Marsupidium
+Lophocolea caniculata - Chiloscyphus semiteres var.    surculosum
+caniculatus                                            Mastigobryum nitens - Bazzania adnexa var. adnexa
+Lophocolea cheesemanii - Chiloscyphus cheesemanii      Mastigophora flagellifera - Dendromastigophora
+Lophocolea dalliana - Chiloscyphus dallianus           flagellifera
+Lophocolea decurrens - Chiloscyphus herzogii           Megaceros arachnoideus - Megaceros pellucidus
+Lophocolea echinella - Chiloscyphus echinellus
+Lophocolea fiordlandiae - Stolonivector                Megaceros flagellaris - Megaceros pellucidus
+fiordlandiae                                           Megaceros grandis - Megaceros pellucidus
+Lophocolea fissistipula - Heteroscyphus fissistipus    Megaceros longispirus - Megaceros pellucidus
+Lophocolea fulva - Chiloscyphus fulvus                 Megaceros membranaceus - Megaceros pellucidus
+Lophocolea granditexta - Lamellocolea granditexta      Megaceros zotovii - Megaceros pellucidus
+Lophocolea gunniana - Chiloscyphus austrigenus         Metzgeria colensoi - Metzgeria leptoneura
+subsp. okaritanus                                      Metzgeria hamata - Metzgeria leptoneura
+Lophocolea helmsiana - Chiloscyphus helmsianus         Micrisophylla leptodictyon - Pseudocephalozia
+Lophocolea hodgsoniae - Chiloscyphus australis         lepidozioides
+Lophocolea inflexifolia - Chiloscyphus inflexifolius   Microlejeunea cucullata - Metalejeunea cucullata
+Lophocolea innovata - Leptoscyphus innovatus           Neesioscyphus phoenichorizus - Austroscyphus
+Lophocolea insularis - Chiloscyphus insularis          phoenicorhizus
+Lophocolea lenta - Chiloscyphus lentus                 Neohattoria australis - Frullania rostrata
+Lophocolea leucophylla - Chiloscyphus                  Neohattoria rostrata - Frullania subrostrata
+leucophyllus                                           Noteroclada perpusilla - Fossombronia pusilla
+Lophocolea grandistipulus - Chiloscyphus novae-        Phaeoceros laevis subsp. carolinianus - Phaeoceros
+zeelandiae var. grandistipulus                         carolinianus
+Lophocolea meridionalis - Chiloscyphus novae-          Plagiochasma australe - Plagiochasma rupestre
+zeelandiae var. meridionalis                           Plagiochasma hodgsoniae - Plagiochasma australe
+Lophocolea minor - Chiloscyphus minor                  Plagiochila suborbiculata - Plagiochila gigantea
+Lophocolea multipenna - Chiloscyphus multipennus       Podanthe squamata - Lethocolea pansa
+Lophocolea muricata - Chiloscyphus muricatus           Protomarsupella scottii -Allisoniella scottii
+Lophocolea novae-zeelandiae - Chiloscyphus             Pseudocephalozia drucei - Paracromastigum drucei
+novae-zeelandiae var. novae-zeelandiae                 Pseudocephalozia leptodictyon - Pseudocephalozia
+Lophocolea okaritana - Chiloscyphus austrigenus        lepidozioides
+subsp. okaritanus                                      Pseudocephaloziella macrostipa - Paracromastigum
+Lophocolea pallida - Chiloscyphus pallid us            macrostipum
+Lophocolea perpusilla - Chiloscyphus perpusillus       Pseudomarsupidium piliferum -Adelanthus bisetulus
+Lophocolea planiuscula - Heteroscyphus                 Ptychocoleus mollis - Acrolejeunea mollis
+planiusculus                                           Pycnolejeunea glauca - Cheilolejeunea intertexta
+Lophocolea semiteres - Chiloscyphus semiteres var.     Riccardia bistrata - Riccardia bipinnatifida
+semiteres
+                                                                             NZ Liverworts and Hornworts     143
+
+
+
+
+Riccardia effusa - Riccardia aequitexta                    Thysananthus anguiformis - Mastigolejeunea
+Riccardia filicina - Aneura micropinna                     anguiformis
+Riccardia muscoides - Riccardia marginata                  Triandrophyllum trifidum - Triandrophyllum
+Riccardia perpusilla - Riccardia lobulata                  subtrifidum var. trifidum
+Riccia vesiculosa - Riccia sorocarpa                       Trichocolea lanata - Leiomitra lanata
+Schistochila altissima - Pachyschistochila altissima       Tylimanthus epiphytus - Marsupidium epiphytum
+subsp. altissima                                           Tylimanthus knightii- Marsupidium knightii
+Schistochila colensoana - Pachyschistochila                Tylimanthus perpusillus - Marsupidium perpusillum
+colensoana                                                 Tylimanthus setulosus - Marsupidium setulosum
+Schistochila conchophylla - Paraschistochila               Tylimanthus spinosus - Marsupidium knightii
+conchophylla                                               Tylimanthus surculosus - Marsupidium surculosum
+Schistochila papillifera - Pachyschistochila papillifera
+Schistochila parvistipula -Pachyschistochila
+parvisti pula
+Schistochila pinnatifolia - Paraschistochila
+                                                                       Acknowledgements
+pinnatifolia                                               I wish to thank Marie Hicks for sending me her own
+Schistochila pseudokirkiana - Pachyschistochila            checklist which was invaluable in checking mine and
+colensoana                                                 for other helpful information. I also wish to thank
+Schistochila ruahinensis - Pachyschistochila               Jessica Beever, John Braggins, Elizabeth Brown, Ella
+papillifera                                                Campbell, Paddy Dalton, John Engel, Riclef Grolle,
+Schistochila subhyalina - Pachyschistochila                Rudi Schuster, Markus Setzepfand and Rod Seppelt
+subhyalina var. subhyalina                                 for corrections and helpful comments. Any errors that
+Schistochila trispiralis - Pachyschistochila trispiralis   remain are, of course, mine.
+Schistochila tuloides - Paraschistochila tuloides
+Schistochila unguicularis - Schistochila balfouriana
+Schistochila virescens - Pachyschistochila virescens
+Schusterella australis - Frullania rostrata
+Siphonolejeunea nudipes var. magnicarinata -
+Austrolejeunea algae
+Solenostoma rufiflora -Jungermannia inundata
+Steereomitrium minutum - Haplomitrium hookeri var.
+minutum
+Stolonophora perssonii - Hepatostolonophora rota ta
+var. perssonu
+Symphyogyna podophylla - Symphyogyna
+hymenophyllum
+Symphyogyna prolifera - Symphyogyna tenuinervis
+Taxilejeunea gracilipes - Lejeunea gracilipes
+Telaranea dispar - Kurzia hippuroides
+Tetracymbaliella cymbalifera - Heteroscyphus
+cymbaliferus
+Tetracymbaliella decipiens - Heteroscyphus
+decipiens
+144   Tuhinga, Number 10 (1998)
+
+
+
+
+                                                               Campbell, E.O. 1984 Notes on some Anthocerotae of
+                     References                                        New Zealand (4). Tuatara 27: 105-120.
+Allison, K.W. &amp; Child,]. 1975 . The liverworts ofNew           Campbell, E.O. 1986. Notes on some Anthocerotae of
+       Zealand. Otago University Press.                                New Zealand (5). Tuatara 28: 83-94.
+Bartholemew-Began, S. E. 1991. A morphogenetic re-             Campbell, E.O. 1987. Steereomitrium minutum gen. et sp.
+       evaluation of Haplomitrium Nees (Hepatophyta).                   nov. (Calobryales). Memoirs of the New York
+       Bryophytorum Bibliotheca 41: 1-297.                             Botanical Garden 45: 569-574.
+Berggren, S. 1898. On New Zealand Hepaticae: 3. Lund.          Campbell, E.O. 1988. Fossombronia species in New
+Bischler, H. 1979. Plagiochasma Lehm. &amp; Lindenb. III. Les              Zealand. Tuatara 30: 12-22.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; ACT; Vic.; Tas.; Macquarie I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">kite-shaped, l:fifid to about one-third. Perianths are 8-keeled or
+more (3- 5 dorsal, 3-4 ventral and 2 transverse).
+    F pentapleura (WSTVN) has shorter lobules that are often F. probosciphora
+                                                                        (leaf and
+flattened out ( explanate). The perianth is 5-keeled, with only 1
+                                                                      under/eaves)
+dorsal and 2 ventral keels. Its primary habitat is rock, but it is
+sometimes. epiphytic.
+    F incumbens (TVN) has bell-shaped lobules with a widely
+flaring and often pale mouth, the lobules characteristically inclined
+(incumbent) &#39;towards the stem. It seems to be rare but perhaps
+overlooked.
+                                                                             F. incumbens
+
+
+F. rostrata Frullaniaceae                                                           TVAN
+This is the smallest Frullania in the region , with shoots not much
+more than 0.5.mm wide. The leaves are dark brown and densely
+overlapping. The lobules are tall and helmet-shaped, standing at a
+wide angle to the stem so that the stylus that connects each lobule to its
+leaf can be seen clearly. The oval underleaves are deeply bifid.
+    F aterrima (TVN) is a very similar but much rarer species. It has
+much large; underleaves with numerous blunt teeth.                               leaf and
+                                                                                underfeaf
+Similar species: Frullania probosciphora
+Liverworts with underleaves and incubous leaves - Group D
+
+
+
+
+5mm                                     Frullania rostrata
+        Mosses &amp; Allied Plants of Southern Australia
+
+
+      Gacketroemia weindorferi /HSLGRODHQDFHDH                                             TVN
+       This liverwort is quite common on living trees and fallen logs in
+      Nothofagus forest, and occasionally on soil; elsewhere it is very rare.
+      The shoots form flattened fronds that are densely and pinnately
+      branched. The typical colour is green, bufthere are often shades of
+      fawn or brown. The black stem is usually well covered by densely
+      overlapping, incubous leaves. These leaves are broadly ovate, with �
+      hair-like teeth on the basal margins and a small lobule on the           branch leaf
+      ventral side. The branch leaves are almost circular and carry several
+      lobules, and the margins and lobules bear spinous teeth.
+      The underleaves on the stems are large, bilobed to abo]Jt 1/3 and with a few sh��t
+      marginal teeth. Those on the branches are smaller and deeply bilobed, with several
+      -long teeth around the margins.
+          Lepidolaena taylori (TV) look� rather similar, but the leaves are rounded with an
+      acute apex and there are only a few teeth at the extreme leaf base. The lobules are
+      not ciliate and the underleaves are 4-fid, those on the stem ciliate but those on the
+
+
+I:)
+      branches bearing lobules on at least the two central lobes.
+      Similar species: Frullania spp., Trichocolea spp., other Lepidolaena spp.
+
+
+
+
+                                                                                  0
+      leotachie intortifolia %DODQWLRSVLGDFHDH                                           TVAN</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Euploca prostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Fontainea rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Kunzea rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leichhardtia rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Petrophile prostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pultenaea rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Rhynchosia rostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Styphelia prostrata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania novaustralis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Neohattoria australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Schusterella australis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.08, 147.95], [-41.9486273, 145.5510519], [-41.8152928, 145.6177158], [-41.5861274, 145.2777172], [-41.727905, 146.27993], [-41.369303, 147.36006], [-41.349773, 144.849719], [-54.658333, 158.871667], [-43.08, 147.95], [-42.87, 146.22], [-41.716389, 146.754906], [-42.25, 145.6], [-42.26741, 147.850149], [-41.276745, 147.837167], [-41.666667, 145.616667], [-41.33, 145.63], [-42.625529, 148.0989], [-41.815684, 146.900212], [-42.625555, 145.903831], [-43.256903, 147.986988], [-43.267706, 146.24972], [-41.54846, 146.401828], [-42.2167, 146.0], [-43.350944, 146.754599], [-41.744469, 146.846202], [-42.5986111, 147.8676933], [-41.8205087, 145.6367946], [-41.3583, 145.75], [-41.257471, 144.733392], [-43.216667, 146.75], [-43.0, 147.0], [-42.6483217, 146.5838214], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-40.283989, 148.060068], [-42.7719582, 146.3966083], [-41.712012, 144.957882], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-41.833333, 145.616667], [-41.668936, 146.550871], [-42.658611, 146.496389], [-41.87247, 146.983274], [-41.71955, 145.438498], [-42.2097425, 145.2763382], [-41.185748, 147.955244], [-41.038917, 146.986889], [-42.8153, 146.6561], [-41.547774, 146.281933], [-41.833333, 145.616667], [-41.548446, 147.600858], [-42.900963, 147.001372], [-43.0787, 146.264315], [-43.216667, 146.75], [-41.279544, 146.762518], [-43.440982, 147.248532], [-42.72, 146.4083], [-54.495, 158.895], [-41.28, 147.28], [-42.85, 146.45], [-43.0, 147.0], [-43.0, 147.0], [-43.02, 146.38], [-41.542469, 145.682542], [-43.0, 147.0], [-43.0, 147.0], [-42.897763, 146.143987], [-42.900369, 147.368839], [-43.0, 147.0], [-43.0, 147.0], [-41.367638, 146.283917], [-41.726146, 146.039487], [-41.720943, 146.780135], [-41.546963, 146.162043], [-42.177377, 146.153771], [-41.715451, 146.73808], [-42.26647, 146.031327], [-54.768889, 158.825833], [-41.3583, 145.75], [-40.201833, 148.070111], [-43.216667, 146.75], [-41.976049, 147.000145], [-41.3333, 147.55], [-41.549917, 145.892361], [-43.260899, 146.754961], [-41.746915, 146.712695], [-54.766667, 158.816667], [-41.333333, 147.55], [-54.625, 158.883333], [-42.990749, 147.246711], [-43.2486296, 146.2677293], [-41.081876, 144.977519], [-41.907208, 146.157348], [-54.6375, 158.873333], [-42.000367, 147.001352], [-41.55, 146.3], [-41.093463, 148.192044], [-42.0486075, 147.8843503], [-41.742083, 148.080783], [-42.259749, 145.425237], [-43.258764, 147.740609], [-41.3, 147.6], [-43.216667, 146.75], [-41.93067, 145.944758], [-41.5333, 146.4333], [-42.000302, 147.1221], [-41.193056, 147.996389], [-42.675, 146.6417], [-41.703444, 146.629957], [-41.18577, 146.047427], [-41.637026, 146.160877], [-41.5667, 146.3333], [-41.639091, 146.521061], [-41.554139, 145.894694], [-43.216667, 146.75], [-42.87, 146.22], [-43.261094, 147.12459], [-42.805633, 145.900657], [-41.801218, 146.849678], [-41.8333, 145.5167], [-41.67, 145.95], [-41.566667, 146.333333], [-41.539472, 145.442839], [-43.168724, 147.73952], [-43.2486298, 146.2510626], [-41.811163, 145.556662], [-41.8333, 145.5167], [-41.727088, 146.159706], [-43.456861, 146.740722], [-41.7167, 146.7167], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.34583, 145.890957], [-42.899332, 146.388938], [-41.833333, 145.616667], [-43.0, 147.0], [-42.090433, 147.001354], [-40.096389, 143.978056], [-41.7167, 146.7167], [-43.08, 147.95], [-41.1486029, 147.8010051], [-41.5667, 146.6], [-41.629512, 145.440673], [-41.55, 146.3], [-43.216667, 146.75], [-41.55, 146.3], [-42.683333, 146.583333], [-43.261097, 146.87817], [-54.593333, 158.895833], [-42.375, 146.53], [-41.6583, 145.95], [-42.54048, 147.24493], [-54.566667, 158.9], [-42.087302, 147.84774], [-41.566667, 146.333333], [-42.6167, 146.85], [-42.816667, 146.366667], [-42.264137, 148.213849], [-41.47, 145.98], [-42.718502, 147.734151], [-41.72264, 146.730837], [-41.52, 147.6583], [-41.439786, 144.846749], [-41.2667, 144.9167], [-41.910238, 146.880773], [-41.700296, 146.819867], [-41.33, 145.63], [-43.529629, 146.382611], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.0716776, 147.0299363], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-40.10383, 148.057267], [-42.7986293, 145.9677264], [-43.0, 147.0], [-42.720274, 146.634965], [-43.0, 147.0], [-43.0, 147.0], [-42.683333, 146.7], [-41.817968, 146.278922], [-41.72514, 146.655081], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 146.366667], [-41.45, 145.95], [-43.0, 147.0], [-43.166869, 147.985537], [-41.454882, 148.078911], [-41.725079, 145.919274], [-43.0, 147.0], [-41.905186, 145.916242], [-41.833333, 145.616667], [-43.17, 146.78], [-41.817149, 146.15853], [-41.17, 146.0417], [-41.573502, 146.343021], [-43.2579, 147.863801], [-41.6667, 145.95], [-41.45, 147.11666], [-41.5667, 146.6], [-43.216667, 146.75], [-41.459942, 147.001341], [-43.53023, 146.506361], [-54.647778, 158.873611], [-43.2572338, 146.2593716], [-43.216667, 146.75], [-43.17, 146.78], [-41.7833, 146.1833], [-41.7, 146.733333], [-41.963448, 145.98404], [-54.628333, 158.886667], [-42.816667, 146.366667], [-42.900698, 147.246351], [-42.78, 146.32], [-41.7493592, 145.6370984], [-42.889961, 147.236344], [-42.529827, 145.418468], [-42.719819, 146.512835], [42.086667, 146.173333], [-41.368866, 147.479631], [-41.834625, 146.936313], [-41.3333, 147.55], [-41.706569, 146.800618], [-42.809871, 146.512129], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.619665, 146.381691], [-43.0, 147.0], [-41.47, 145.98], [-43.0, 147.0], [-42.683333, 146.583333], [-43.0, 147.0], [-43.0, 147.0], [-39.8711, 148.0306], [-42.178189, 147.727868], [-41.712754, 146.740495], [-43.3, 145.9167], [-41.3583, 145.75], [-41.635023, 145.92078], [-42.7986293, 145.9677264], [-43.08, 147.95], [-39.925557, 147.820476], [-41.813907, 148.205309], [-41.7167, 146.7333], [-41.729599, 146.640628], [-43.07, 147.9417], [-41.95, 146.03], [-41.833333, 145.616667], [-41.815107, 148.084935], [-41.633805, 148.201948], [-41.6583, 145.95], [-42.900896, 147.123862], [-42.17642, 146.032703], [-41.820169, 146.88094], [-42.990948, 147.124043], [-41.67, 145.95], [-41.09908, 146.644087], [-42.626633, 147.97697], [-42.916667, 147.25], [-41.9103, 147.00135], [-54.62, 158.902222], [-41.516667, 146.833333], [-43.461389, 146.40625], [-54.63, 158.9], [-41.566667, 145.683333], [-43.531025, 147.248902], [-41.704811, 146.827066], [-43.0, 147.0], [-41.757961, 146.832938], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-43.0, 147.0], [-41.903956, 148.207002], [-41.968862, 145.985161], [-42.72, 146.4083], [-41.729912, 146.760866], [-41.459377, 147.360558], [-54.635556, 158.888333], [-41.166667, 147.666667], [-33.725, 150.366667], [-54.5, 158.516667], [-43.81113, 173.018483], [-36.0, 149.8667], [-41.216667, 175.6], [-26.556736, 153.092724], [-16.5167, 145.2667], [-17.55, 145.4667], [-54.5, 158.516667], [-54.5, 158.516667], [-50.5318044, 166.1994395], [-36.663235, 175.524044], [-45.544744, 170.44004], [-37.2833, 148.8833], [-37.59306, 145.78], [-35.55, 149.9], [-36.2, 175.066667], [-42.659629, 171.170535], [-34.688889, 150.715278], [-41.2826723, 174.8009899], [-26.473409, 152.92606], [-50.5318046, 166.2827707], [-33.5, 150.3667], [-36.2, 175.1], [-39.327222, 175.5], [-37.5, 176.0], [-36.95425, 175.817111], [-38.4575, 175.561111], [-37.59849, 145.61797], [-50.5318043, 166.1827693], [-41.743255, 173.805347], [-36.9, 174.55], [-37.345, 142.5603], [-35.200556, 173.631389], [-20.8333, 148.5333], [-36.266667, 174.8], [-39.1720879, 175.3752147], [-50.8484847, 166.0161046], [-50.8484847, 166.0161046], [-36.0, 149.8667], [-37.14296, 142.5169], [-15.716667, 145.266667], [-32.416667, 151.011111], [-35.4833, 150.0], [-41.7482359, 171.7828923], [-36.99917, 144.31], [-37.01016, 144.30215], [-35.3667, 149.5167], [-38.5728, 143.4381], [-31.3728, 152.0603], [-36.2, 175.066667], [-28.090067, 153.37607], [-46.072039, 169.899554], [-30.0, 135.0], [-17.3667, 145.6], [-54.5, 158.516667], [-40.0649083, 176.2162912], [-18.6, 145.8333], [-36.9525, 174.605667], [-37.67167, 145.82333], [-26.64007, 153.10939], [-35.484229, 174.733707], [-37.14296, 142.5169], [-17.933333, 145.916667], [-42.689716, 172.254866], [-38.3815036, 176.0162949], [-36.2, 175.366667], [-35.65, 149.5], [-46.4695775, 169.3524932], [-36.0167, 149.8667], [-41.653861, 171.893306], [-52.553722, 169.172194], [-47.1817009, 167.699483], [-50.5318046, 166.2827707], [-37.1444, 142.5156], [-37.2819, 147.5542], [-40.2152113, 176.0996193], [-37.106538, 175.737692], [-20.840105, 148.542752], [-37.706917, 145.682194], [-33.875, 149.375], [-41.2826723, 174.8009899], [-37.4, 148.7833], [-35.5361, 148.9067], [-35.65, 149.8833], [-37.9534676, 177.0246378], [-50.54275, 166.214306], [-45.015436, 167.29965], [-54.5, 158.516667], [-35.5167, 150.05], [-39.216667, 175.533333], [-41.3, 173.566667], [-39.34636, 173.97236], [-37.30324, 142.60357], [-38.788884, 177.1440364], [-54.5, 158.516667], [-54.5, 158.516667], [-17.55, 145.466667], [-20.8333, 148.5333], [-37.59306, 145.78056], [-50.5318046, 166.2827707], [-39.2, 175.533333], [-45.3969, 166.8081], [-35.6667, 148.8], [-36.995, 144.31556], [-21.177636, 148.4848], [-37.55, 145.88333], [-39.3672, 174.5617], [-36.2, 175.066667], [-41.3, 173.566667], [-37.0668486, 175.6684555], [-35.6167, 150.3167], [-37.2833, 148.8833], [-44.125472, 169.341028], [-36.9, 174.466667], [-38.3814736, 176.0162949], [-37.59306, 145.78056], [-40.1315397, 176.1662904], [-38.3003697, 174.9679132], [-36.9607471, 175.8424278], [-54.5, 158.516667], [-37.55, 145.8833], [-38.3814736, 176.0162949], [-31.916111, 151.481667], [-37.70056, 145.66167], [-54.5, 158.516667], [-28.406944, 153.028333], [-31.916111, 151.481667], [-38.525833, 175.292748], [-35.9833, 149.8667], [-43.707, 172.836], [-33.5, 150.3833], [-38.3815036, 176.0162949], [-38.57129, 143.43941], [-40.0649083, 176.2163212], [-34.433333, 172.888333], [-39.016667, 175.733333], [-37.875, 146.356917], [-35.7086, 174.2567], [-50.54025, 166.12714], [-35.6164494, 173.5279368], [-52.578681, 169.210949], [-37.3047, 142.6022], [-52.534, 169.167], [-38.7943808, 175.5857185], [-41.283, 175.007], [-37.4, 148.7833], [-37.4833, 148.3], [-46.933354, 168.020185], [-41.733333, 171.8], [-37.34352, 142.56162], [-38.3815036, 176.0162949], [-35.4297, 149.5989], [-39.326028, 175.783722], [-38.583333, 176.716667], [-37.106538, 175.737692], [-26.506741, 152.942731], [-37.31806, 148.86889], [-35.5333, 149.5167], [-37.69849, 145.66797], [-33.291667, 150.291667], [37.860778, 146.320139], [-39.216667, 175.533333], [-50.54275, 166.214306], [-38.4575, 175.561111], [-37.1444, 142.5156], [-36.8, 174.55], [-38.788884, 177.1440364], [-37.5934, 145.78], [-41.2815622, 174.7662695], [-41.283, 175.007], [-37.6714, 144.7719], [-37.4, 148.7833], [-35.180278, 173.410556], [-45.869232, 167.6372905], [-47.1817009, 167.699483], [-41.2815622, 174.7662695], [-36.789876, 174.867217], [-36.233333, 175.1], [-36.35, 148.4167], [-40.2152113, 176.0996193], [-33.733333, 150.441667], [-26.556736, 153.092724], [-33.629167, 150.307861], [-33.725, 150.366667], [-35.6833, 149.9], [-38.683333, 177.2], [-50.5318046, 166.2827707], [-42.517035, 171.272668], [-39.216667, 175.533333], [-39.216667, 175.533333], [-26.54007, 153.092724], [-37.3167, 148.8556], [-36.789876, 174.867217], [-52.5503, 169.136], [-39.076111, 175.550556], [-34.406667, 173.036389], [-36.217547, 175.067046], [-17.342778, 145.868611], [-36.933333, 174.516667], [-37.4833, 148.3], [-50.5484748, 166.166109], [-43.707, 172.836], [-37.30324, 142.60357], [-44.998108, 167.36586], [-37.2833, 148.8833], [-40.054808, 176.1460204], [-35.6667, 149.8833], [-34.688889, 150.715278], [-37.3167, 148.8333], [-38.4575, 175.561111], [-36.3, 150.0333], [-54.5, 158.516667], [-37.19241, 142.47162], [-34.4118, 173.0273], [-41.266, 174.754], [-35.6667, 149.8833], [-36.3, 150.0333], [-35.5333, 149.5167], [-39.3306914, 175.5025156], [-38.3815036, 176.0162949], [-39.1353, 146.3636], [-50.5318046, 166.2827707], [-33.608333, 151.143889], [-52.533333, 169.166667], [-38.4575, 175.561111], [-36.321028, 174.789], [-39.03972, 146.34389], [-36.99167, 144.30917], [-31.2, 152.4], [-26.556736, 153.092724], [-54.5, 158.516667], [-50.5318046, 166.2827707], [-50.548475, 166.2161096], [-37.890157, 145.309635], [-37.65306, 145.83111], [-33.495833, 150.475], [-37.655, 145.83194], [-52.533333, 169.166667], [-28.8667, 153.5833], [-40.2152113, 176.0996193], [-40.2152113, 176.0996193], [-35.633333, 149.9], [-54.5, 158.516667], [-54.5, 158.516667], [-33.755556, 151.083333], [-36.866667, 174.833333], [-33.341667, 150.308333], [-36.529444, 175.399167], [-35.633333, 149.9], [-36.9525, 174.605667], [-36.216667, 175.1], [-50.5818063, 166.2827703], [-35.6844, 174.0519], [-39.25, 174.083333], [-39.316667, 175.5], [-37.59306, 145.78], [-35.9833, 149.8833], [-45.448085, 168.013213], [-52.549931, 169.086162], [-38.181667, 176.316389], [-41.4419, 173.2439], [-50.5318046, 166.2827707], [-45.802321, 169.91393], [-50.500306, 166.279417], [-38.4575, 175.561111], [-37.5934, 145.78056], [-16.5883, 145.27], [-17.8333, 145.6], [-35.7031, 174.2606], [-46.926702, 168.132076], [-37.59306, 145.78056], [-33.875, 149.375], [-37.1667, 142.5167], [-39.54178, 174.56919], [-36.3, 150.0333], [-17.883333, 146.066667], [-49.684, 178.781], [-36.216667, 175.066667], [-39.12944, 146.40222], [-50.7984832, 166.0994361], [-54.5, 158.516667], [-54.5, 158.516667], [-33.725, 150.366667], [-36.0, 149.5667], [-35.536, 148.906583], [-35.6769, 174.0567], [-41.0058, 175.04], [-37.31639, 148.86889], [-15.983333, 145.45], [-44.9097, 168.0444], [-54.5, 158.516667], [-37.005, 144.30528], [-52.571, 169.163], [-33.745833, 150.241667], [-35.4353, 149.5964], [-38.447778, 175.591667], [-38.25, 175.983333], [-39.320556, 175.505278], [-36.0, 149.566667], [-35.6547901, 173.557937], [-37.6667, 145.6667], [-36.99211, 144.29937], [-26.556736, 153.092724], [-26.556736, 153.092724], [-37.1606, 142.5097], [-37.29852, 142.60134], [-50.8818159, 166.0327645], [-54.5, 158.516667], [-42.406506, 171.342858], [-36.216667, 175.1], [-41.7441407, 173.8051863], [-37.59849, 145.61797], [-37.29852, 142.60134], [-17.35, 145.8833], [-41.298611, 173.5725], [-37.1, 175.15], [-28.2667, 153.175], [-35.7333, 149.3], [-28.250833, 153.208611], [-38.4575, 175.561111], [-37.3167, 148.8333], [-36.266667, 174.8], [-41.216667, 175.6], [-37.3167, 148.8556], [-42.940691, 171.559703], [-41.593004, 173.216732], [-50.54275, 166.214306], [-37.1444, 142.5156], [-39.11833, 146.38722], [-39.095556, 176.186944], [-33.65, 150.3167], [-36.2, 175.066667], [-39.326028, 175.783722], [-33.883333, 149.366667], [-38.4575, 175.561111], [-37.31512, 148.85681], [-41.3729344, 174.7927995], [-35.5, 148.8167], [-15.7833, 145.2833], [-38.549976, 175.6293198], [-26.573403, 153.092724], [-50.8484847, 166.0161046], [-39.2, 175.533333], [-30.1333, 152.4167], [-37.31639, 148.86889], [-35.8, 149.5833], [-17.9333, 145.9167], [-46.8681627, 168.1172902], [-16.483333, 145.266667], [-36.3, 150.0333], [-38.57129, 143.43941], [-37.31806, 148.86889], [-39.295833, 174.064167], [-52.550861, 169.154861], [-31.1, 152.35], [-35.5333, 149.5167], [-54.5, 158.516667], [-39.13361, 146.365], [-54.5, 158.516667], [-33.272222, 150.183333], [-33.5, 150.3833], [-35.8, 149.5833], [-20.35, 148.7333], [-44.766667, 168.166667], [-54.5, 158.516667], [-40.4657149, 175.215508], [-40.054808, 176.1460204], [-35.3, 148.8], [-37.55, 147.4167], [-41.3, 173.566667], [-41.298611, 173.5725], [-37.4, 148.7833], [-38.5728, 143.4381], [-33.341667, 150.308333], [-35.55, 149.9], [-39.216667, 175.483333], [-33.510833, 150.148333], [-50.5318046, 166.2827707], [-40.407115, 175.874816], [-34.688889, 150.719444], [-41.2815622, 174.7662695], [-31.372778, 152.060278], [-35.9, 149.3333], [-31.1, 152.35], [-25.0, 135.0], [-38.4575, 175.561111], [-33.2722, 150.1833], [-37.5825633, 178.2996535], [-37.66972, 144.77333], [-47.1650404, 167.6994831], [-45.2917, 166.92], [-15.9833, 145.4167], [-35.5333, 149.0], [-50.5314745, 166.2494402], [-50.500306, 166.279417], [-39.3278882, 174.1007994], [-38.4575, 175.561111], [-19.0167, 146.15], [-42.943804, 170.96623], [-50.8484847, 166.0161046], [-17.55, 145.4667], [-39.321389, 175.502778], [-41.2815622, 174.7662695], [-45.5494, 169.0278], [-39.13376, 146.36493], [-36.529444, 175.399167], [-36.0167, 149.8667], [-37.0, 145.0], [-40.2152113, 176.0996193], [-35.2833, 149.8333], [-37.3167, 148.8556], [-37.31512, 148.85681], [-37.3028, 148.7958], [-37.0, 145.0], [-35.083333, 148.65], [-36.92352, 142.42273], [-37.904306, 145.714389], [-35.7333, 149.6833], [-37.02544, 144.29993], [-38.3814736, 176.0162949], [-50.8484847, 166.0161046], [-36.2, 175.066667], [-37.296111, 176.265], [-44.8964, 168.0681], [-34.075, 151.108333], [-42.375261, 171.4706], [-39.171852, 175.376482], [-37.70056, 145.66167], [-37.4167, 148.6], [-35.562111, 174.498], [-50.5318046, 166.2827707], [-37.3, 148.9], [-40.9617209, 173.0494806], [-50.8484847, 166.0161046], [-25.4667, 153.05], [-31.916111, 151.481667], [-37.70056, 145.66167], [-35.7167, 148.8667], [-33.733333, 150.4375], [-34.166667, 172.133333], [-50.5318047, 166.2994409], [-41.3729344, 174.7927995], [-36.2, 175.066667], [-18.05, 145.65], [-50.548475, 166.2161096], [-35.6833, 149.9], [-35.6833, 149.9], [-15.7167, 145.2667], [-17.933333, 145.916667], [-46.194722, 167.846667], [-36.789876, 174.867217], [-50.7984828, 165.9827645], [-31.6125, 152.291667], [-38.3315034, 176.366299], [-37.29845, 148.90125], [-39.7949025, 176.1878218]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [78.7, 66.3, 84.6, 90.1, 129.5, 135.6, 155.6, 170.2, 153.1, 125.2, 94.7, 98.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.9, 19.9, 17.5, 14.2, 11.3, 9.2, 8.6, 9.4, 11.4, 13.5, 16.4, 17.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.3, 9.3, 8.1, 6.2, 4.5, 2.8, 2.2, 2.5, 3.7, 4.8, 6.6, 7.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

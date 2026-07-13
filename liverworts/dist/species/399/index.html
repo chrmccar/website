@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Telaranea herzogii — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Telaranea herzogii</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Telaranea herzogii</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Telaranea</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">187</p>
+    <footer>60 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">23</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>18.0–26.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>22.0–28.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>18.0–24.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>250.0–400.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>20.0–27.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>500.0–750.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>4.0–6.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>630.0</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>1.1</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">(Hook. f. &amp; Tayl.) G. L. &amp; N. var. acutiloba En-            ment were regarded            (Schuster,   1963,    1969) as
+gel, L. laevifolia var. alpina Schust.      &amp; Engel, L.     constituting a subgenus of Telaranea. Finally, an
+novae-zelandiae Steph. var. heterostipa Schust.,            isolated element, Lepidozia integristipula Steph.
+L. novae-zelandiae var. minima Schust., L. obtu-
+                                                            (Stephani,      1922,   p.    331),   was segregated by
+siloba Steph. var. parvula Engel, L. ornata Engel
+                                                            Hodgson (1962b) and placed into the autonomous
+and L. pumila Engel.
+                                                            genus Drucella. Thus, at various times, taxa that
+     A key to the Lepidozia species in New Zealand
+                                                            today fit into Bazzania, Telaranea (incl. Neolepi-
+is   included.
+                                                            dozia), Kurzia (incl. as a subgenus of Microlepi-
+                                                            dozia), and Drucella were assigned to Lepidozia.
+                                                                 This confusion continued into the relatively re-
+                                                            cent account of the          New Zealand species of the
+Introduction
+                                                            genus Lepidozia by Hodgson (1956). To date, this
+                                                            is the only revision of the New Zealand taxa.
+     The genus Lepidozia was proposed by Dumor-
+tier in   1835                based on an earlier taxon,    Hodgson assigned some 33 species to the genus,
+                 (p.   19),
+                                                            but of these 33 species, 22 presently belong to
+Pleuroschisma sect. Lepidozia (Dumortier, 1831,
+                                                            other genera (Table      1).
+p. 69). Basically, the latter concept      included taxa
+now placed into Bazzania and allies (the Pleuros-             Thus, in the only prior revision of the New Zea-
+                                                            land taxa of Lepidozia, the 33 species assigned to
+chisma element) and a series of eight taxa that
+constitute Lepidozia. In subsequent years a wide            that genus  belong in some five genera. Hodgson
+                                                            (1964,     70) assigned Telaranea herzogii to a
+range of other taxa were assigned to Lepidozia but                     p.
+
+failed to fit into the genus as we here define it.          sixth genus, Arachniopsis, which does not occur
+                                                            in New Zealand. Hodgson (1962) also segregated
+Spruce (1885, p. 358-360) divided the genus into
+two subgenera, Eu-Lepidozia ( = Lepidozia s. str.)          Lepidozia glaucophylla, which she had assigned
+and Micro-Lepidozia. The latter was divided into            in     1956 to Lepidozia s. str. (her subg. Lepidozia),
+two unnamed groups with four species, of which              to a     new genus, Lepidoziopsis;         this    was trans-
+the first three constitute Microlepidozia s. str., to-      ferred (Schuster, 1973) to Lepidozia subg. Glau-
+
+day placed within Kurzia. v. Mart. The fourth spe-          colepidozia.
+cies (L. chaetophylla Spruce) represents the au-                 From this brief account, it is evident that the
+tonomous genus Telaranea.                                   New Zealand taxa of Lepidozia have been widely
+  In the 19th century and into the early years of           confused with other genera. Rather than               1 1
+                                                                                                                        spe-
+
+
+
+FIELDIANA: BOTANY, N.S., NO. 42, AUGUST 31, 2001, PP. 1-107
+                                                            UJ
+
+
+
+
+ed
+
+
+
+
+                                         -= -        8 &#34;8
+
+---
+
+Lepidozia bidens Engel 79                                    Lepidozia pendulina (Hook.) Lindenb. 32
+Lepidozia bisbifida Steph. 95                                Lepidozia pinnaticruris Spruce ex Steph. 12
+Lepidozia breviloba Steph. 41                                Lepidozia portoricensis Fulf. 27
+Lepidozia brevipinna Pears. 95                               Lepidozia praenitens (Lehm.  &amp;   Lindenb.) G. L. &amp; N. 2
+Lepidozia bursifera Hatt. &amp; Grolle 12, 14                    Lepidozia procera Mitt. 41
+Lepidozia calcarata Steph. 2                                 Lepidozia pulcherrima Steph. 2
+Lepidozia centipes Tayl. 2                                   Lepidozia pumila Engel 76
+Lepidozia cladorhiza (Reinw. et al.) G. L. &amp; N. 13           Lepidozia radiata Steph. 2
+Lepidozia colensoana Steph. 52                               Lepidozia remotifolia Hodgs. 2
+Lepidozia compacta Steph. 2                                  Lepidozia reptans (L.) Dum. 4, 5, 8, 13, 14, 15, 16, 17,
+Lepidozia concinna Col. 52                                       18, 31,   32
+Lepidozia corticola Steph. 2                                 Lepidozia retrusa Col. 56
+Lepidozia cupressina (Sw.) Lindenb. 5                        Lepidozia robusta Steph. 16
+Lepidozia cupressina var. T pendulina (Hook.) Lehm.      &amp;   Lepidozia roseana Steph. 2
+    Lindenb. 32                                              Lepidozia setigera Steph. 36
+Lepidozia dentifolia Steph. 82                               Lepidozia spinosissima (Hook. f.   &amp; Tayl.) Mitt. 23
+Lepidozia digitata Herz. 98                                  Lepidozia subdichotoma Spruce 28
+Lepidozia dispar (Mont, ex Tayl.     &amp;
+                                     Hook, f.) Mont. 2,      Lepidozia subquadrata Steph. 95
+      57                                                     Lepidozia subtransversa Steph. 16
+Lepidozia elobata Schust. 74                                 Lepidozia tetradactyla (Hook. f. &amp; Tayl.) G. L. &amp; N. 2
+Lepidozia ferdinandi-muelleri Steph. 13                      Lepidozia ulothrix (Schwagr.) Lindenb. 88
+
+
+
+106                                                                                      FIELDIANA: BOTANY
+Lepidoziopsis Hodgs. 4, 92                                 Telaranea centipes (Tayl.) Schust. 2, 8
+Lepidoziopsis glaucophylla (Hook.   f.   &amp; Tayl.) Hodgs.   Telaranea corticola (Steph.) Hodgs. 2
+    92                                                     Telaranea gibbsiana (Steph.) Hodgs. 2
+                                                           Telaranea gottscheana (Lindenb.) Hodgs. 2
+Mastigophora albula (Hook. f. &amp; Tayl.) Trev. 88            Telaranea herzogii (Hodgs.) Hodgs. 2
+Mastigophora glaucophylla (Hook. f. &amp; Tayl.) Trev. 92      Telaranea inaequalis Schust. 5
+Mastigophora laevifolia (Hook. f. &amp; Tayl.) Trev. 56        Telaranea martinii (Hodgs.) Schust. 2
+Mastigophora microphylla (Hook.) Mont. 28                  Telaranea meridiana (Hodgs.) Hodgs. 2
+Mastigophora pendulina (Hook.) Trev. 32                    Telaranea mooreana (Steph.) Schust. 5, 8
+Mastigophora ulothrix (Schwagr.) Trev. 88                  Telaranea nematodes (Gott. ex Aust.) Howe 8
+                                                           Telaranea patentissima (Hook. f.   &amp;
+                                                                                              Tayl.) Hodgs. 2
+Paracromastigum longiscyphum (Tayl.) Schust. &amp; Engel       Telaranea praenitens (Lehm.    &amp;
+                                                                                          Lindenb.) Hodgs. 2
+    2                                                      Telaranea remotifolia Hodgs. 2, 5
+Pleuroschisma sect. Lepidozia Dum. 4                       Telaranea tetradactyla (Hook. f.   &amp;Tayl.) Hodgs. 2
+Pseudocephalozia lepidozioides Schust. 2, 3                Telaranea tetrapila var. roseana (Steph.) Engel &amp;  Merr.
+                                                               2
+Sendtnera spinosissima Hook. f. &amp; Tayl. 26                 Telaranea tuberifera Engel &amp;   Schust. 8
+
+
+
+
+INDEX                                                                                                           107
+                        A Si           &#39;
+
+
+
+
+                                            :ted   ;.   ,i
+                                                             &#39;</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Riccardia marginata (Colenso) Pearson                  Seppeltia succuba Grolle
+        Riccardia muscoides (Colenso) E.A.Hodgs.       Siphonolejeunea nudipes (Hook.f. &amp; Taylor)
+Riccardia multicorpora E.A.Brown                               Herzog
+Riccardia nitida (Colenso) E.A.Hodgs.                  Stenolejeunea apiculata (Sande-Lac.) R.M.Schust.
+Riccardia aff. pallidevirens (Steph.) A.Evans                  Lejeunea apiculata Sande-Lac.
+Riccardia papulosa (Steph.) E.A.Brown                  Stolonivector fiordlandiae (E.A.Hodgs.) ].].Engel
+        Aneura papulosa Steph.                                 Chiloscyphus fiordlandiae (E.A.Hodgs.)
+Riccardia pennata E.A.Brown                                    J.J.Engel &amp; R.M.Schust.
+Riccardia perspicua E.A.Brown                                  Clasmatocolea fio rdlandiae (E.A.Hodgs.)
+Riccardia pseudodendroceros R.M.Schust.                        Grolle
+Riccardia pusilla (Steph.) E.A.Brown                           Lophocolea fiordlandiae E.A.Hodgs.
+Riccardia umida E.A.Brown                              Symphyogyna hymenophyllum (Hook.) Mont. &amp;
+Riccardia aff. wattsiana (Steph.) Hewson                       Nees
+Riccia bifurca Hoffm.                                          Symphyogyna podophylla non auct. (Thunb.)
+Riccia bullosa Link                                            Mont. &amp; Nees
+Riccia ciliata Hoffm.                                  Symphyogyna subsimplex Mitt.
+Riccia crozalsii Levier                                Symphyogyna tenuinervis (Hook.f. &amp; Taylor) Grolle
+Riccia crystallina L.                                          Symphyogyna prolifera Colenso
+Riccia fluitans L.                                     Symphyogyna undulata Colenso
+Riccia glauca L.
+Riccia sorocarpa Bisch.                                Targionia hypophylla L.
+        Riccia vesiculosa (Carrington &amp; Pearson)       Telaranea capilligera (Schwaegr.) R.M.Schust.
+        Steph.                                         Telaranea centipes (Taylor) R.M.Schust.
+Ricciocarpos natans (L.) Corda                         Telaranea corticola (Steph.) E.A.Hodgs.
+                                                       Telaranea dispar (Mont.) E.A.Hodgs.
+Saccogynidium australe (Mitt.) Grolle                  Telaranea elegans (Colenso) J.J.Engel &amp; G.L.S.Merrill
+Schistochila appendiculata (Hook.) Trevis.                     Lepidozia elegans Colenso
+Schistochila balfouriana (Hook.f. &amp; Taylor) Steph.     Telaranea exigua R.M.Schust.
+        Schistochila unguicularis (Hook.f. &amp; Taylor)   Telaranea gibbsiana (Steph.) E.A.Hodgs.
+        Steph.                                         Telaranea gottscheana (Lindenb.) E.A.Hodgs.
+Schistochila chlorophylla (Colenso) ].].Engel &amp;        Telaranea herzogii (E.A.Hodgs.) E.A.Hodgs.
+        R.M.Schust.                                    Telaranea hodgsoniae J.J.Engel &amp; G.L.S.Merrill
+        Gottschea chlorophylla Colenso                 Telaranea lindbergii (Gottsche) J.J.Engel &amp;
+Schistochila ciliata (Mitt.) Steph.                            G.L.S.Merrill var. lindbergii
+Schistochila glaucescens (Hook.) A.Evans                       Lepidozia lindbergii Gottsche
+Schistochila kirkiana Steph.                           Telaranea lindbergii var. complanata ].].Engel &amp;
+Schistochila lehmanniana (Lindenb.) Carrington &amp;               G.L.S.Merrill
+        Pearson                                        Telaranea lindbergii var. mellea J.J.Engel &amp;
+                                                                              NZ Liverworts and Hornworts       139
+
+
+
+
+         G.L.S.Merrill                                    Treubia pygmaea R.M.Schust.
+Telaranea martinii (E.A.Hodgs.) R.M.Schust.               Triandrophyllum subtrifidum (Hook.f. &amp; Taylor)
+Telaranea meridiana (E.A.Hodgs.) E.A.Hodgs.                      Fulford &amp; Hatcher var. subtrifidum
+Telaranea nivicola R.M.Schust.                            Triandrophyllum subtrifidum var. trifidum
+Telaranea paludicola (E.A .Hodgs.) J.J.Engel &amp;                    (Gottsche) Solari
+        G.L.S.Merrill                                             Triandrophyllum trifidum (Gottsche) Fulford
+        Lepidozia meridiana var. paludicola                       &amp; Hatcher
+        E.A.Hodgs.                                        Trichocolea hatcheri E.A.Hodgs.
+Telaranea patentissima (Hook.f. &amp; Taylor)                 Trichocolea julacea Hatcher
+        E.A.Hodgs.                                        Trichocolea mollissima (Hook .f. &amp; Taylor)
+Telaranea pennata ].].Engel &amp; G.L.S.Merrill                      Gottsche
+Telaranea plumulosa (Lehm. &amp; Lindenb.) Fulford            Trichocolea rigida R.M.Schust.
+Telaranea praenitens (Lehm. &amp; Lindenb.) E.A.Hodgs.        Trichotemnoma corrugatum (Steph.) R.M.Schust.
+        var. praenitens                                   Tylimanthus diversifolius E.A.Hodgs.
+Telaranea praenitens var. dentifolia ].].Engel &amp;          Tylimanthus saccatus (Hook.) Mitt.
+        G.L.S.Merrill                                     Tylimanthus tenellus (Taylor) Mitt.
+Telaranea pulcherrima (Steph.) R.M.Schust.
+Telaranea remotifolia (E.A.Hodgs.) E.A.Hodgs. (nom.       Verdoornia succulenta R.M.Schust.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Plants exceedingly delicate, minutely prickly in appearance, creeping to ascending, whitish green and nitid; shoots minute, to 630 juim wide with leaves. Branching sparing to very common, irregular, not becoming flagelliform; branch half-leaf stiffly dorsally assurgent, undi¬ vided, setaceous; first branch underleaf at base of branch, strongly asymmetrically bilobed, consisting of a divergent lobe, (2)3-4 cells long and a ± appressed, curved lobe aligned with the branch, resembling an underleaf lobe and consisting of a short basal cell and a ± elongated distal cell, the lobe terminating in a slime papilla, a rhizoid commonly originating from the basal cell. Ventral-intercalary branches occasional to predominant, long and leafy. Stems very delicate, rather stiff for plant size, the cortical cells in 6-9 rows, much larger than the medullary cells which are in 3(4) to 6-11(18) rows. Main shoots with 3-4 cortical cells intervening between successive leaves on either side, the branches with 2-3 cells intervening be¬ tween successive leaves on either side of branch. Leaves rather rigid, contiguous to weakly imbricate (strongly imbricate on branches), widely spreading to subsquarrose, the insertion transverse to weakly succubous, (245)300-450(490) X 245-420 juim (at tips of spreading lobes), 2-3-fid almost to the base (the basal cells connate for 0.1 -0.4 their length), the ventral lobe somewhat shorter. Lobes stiff, gradually tapering from base to apex, straight to broadly incurved, moderately to strongly divergent, on branches disposed in ± regular ranks, uniseri- ate throughout (sporadically one or more lobes biseriate at extreme base), gradually tapering, the lobes (4)5 -6(7) cells long, ± equal in length, or in 3-lobed leaves the ventral lobe perceptibly shorter; basal cells 18-26 juim wide X (66)95-120 juim long, the next cell 14-20 X 56- 98 |ULm; lobe cells gradually shorter and narrower distally, the terminal cell usually much shorter than the penultimate cell; cell walls thin but firm to moderately thick- walled, the transverse septa thickened in the corners and not or feebly swollen and projecting; surface smooth. Oil-bodies opaque, dull, greyish, (5)6-11 per basal cell of lobe, broadly elliptic to irregularly crescentic, often lumpy and irregular, very finely papillose, the globules imperceptibly bulging from membrane, oil-bodies 6.5 X 9 juim to 6-7 X 10-12 juim, less commonly spherical and 7 |ULm in diam., oil-bodies in second lobe cell 4-6 per cell, mostly spherical and 6-8 juim in diam. or nearly spherical and 7X8 juim; oil-bodies of stem cells much smaller and overall narrower, irregularly fusiform to linear to crescentic but with similar ornamentation to oil-bodies of leaves. Underleaves small and inconspicuous, 2(rarely 3)-lobed, caliper-like, the lobes parallel to somewhat divergent, 2-3 cells long (rarely 1 cell), terminating in a hooked slime papilla, the base formed of 2 basally connate, curved cells forming a U-shaped disc, the distal cell(s) elongated; individual rhizoids originating from the base or apex (rarely both) of the basal lobe cells, or the basal cells subdivided into 6-8 small, quadrate, rhizoid initials, with a rhizoid emerging from each. Asexual reproduction lacking. Eungal partner an ascomycete. Plants apparently dioecious. Androecia not seen. Gynoecial bracts delicate, deeply dissected, 2-3-lobed, the lobes 2-4 cells wide at base, terminating in a uniseriate row of 5-6 elongated, tapering cells, each lobe armed with paired uniseriate cilia inserted at apex of the basal tier of lobe cells, the cilia 2-4-celled, often ending in a slime papilla; disc of 2(3) tiers of longitudinally elongate cells, the margins of disc entire or with a blunt tooth on one or both sides at base of the lateral lobes; bracteoles 2-lobed, otherwise similar to bracts. Perianth rather short, terete in basal half, bluntly trigonous above, somewhat contracted at the mouth, the mouth shallowly lobulate-ciliate, the cilia ca. 6-10 (interspersed with smaller 1-2-celled teeth), several cells wide at the extreme base, ending in a stiffly divergent uniseriate process of 4-9 elongate cells, the cilia often armed with few-celled lateral spurs or a single lateral spur inserted at the septa. Seta with 8 rows of outer cells surrounding an inner core of 4-10 much smaller cells. Capsule rather short- to long-ellipsoidal, 190 juim wide, 345 juim long, the wall 16-18 juim thick, uniformly 2-stratose, the outer layer subequal to the inner, or slightly thicker; outer layer of cells ± regularly short-rectangular, with two-phase development, the longitudinal walls with nodule-like thickenings (4-6 per cell) alternating with primary walls devoid of thickenings (or rarely with local, pigmented, nodular swellings), the transverse walls without thickenings; innermost layer of cells somewhat irregularly narrowly rectangular, the radial walls with of 2 different main shoots, eaeh showing 2 underleaves and the basal eells of ventral lobes of 3 leaves (= BC), ventral view. 4. Three-lobed underleaf; note rhizoids (stippled outline). 5, 6. Two- and 3-lobed leaves. 7. Leaf lobes. 8, 9. Stem, eross seetions (note 6 + 6 and 8 + 9 anatomy). 10. Terminal braneh base and first braneh underleaf (ventral view); note rhizoid position and rhizoid continuous sheets of wall material, the radial walls mostly with nodular thickenings and short spine-like extensions onto the exposed tangential wall, only exceptionally with complete semi annular bands. Spores 7. 5-8. 8 to 10.6-12 juim in diam., the wall yellow-brown, rather thin-walled, areolate, with a low, close network of ridges coalescing to delimit areolae. Elaters rather straight, 6. 5-7. 5 to 9.6-1 1 juim wide, only slightly tapering and bispiral to tips, the spirals 2.9- 3.4 |ULm wide. Distribution and Ecology: New Zealand: Stewart Island (20-200 m). South Island (10- 890 m). North Island (25-890 m); Australia: Tasmania, Victoria. In New Zealand known from Eiordland, Southland, Otago, Westland, Canterbury (Arthur’s Pass), Western Nelson, Southern North Island, Volcanic Plateau, Auckland and Northland EPs. In New Zealand the species is found rather commonly on loamy, moist, shaded soil. It occurs for the most part in lower- to middle-elevation moist or swampy forests where it is on soil in protected pockets or shaded hollows associated with, for example, Acromastigum colen- soanum, Bazzania nitida, Lepidozia digitata, Riccardia colensoi, Saccogynidium australe, Telaranea elegans, T. tetradactyla, T. tetrapila and Zoopsis leitgebiana. It may occur over soil of the forest floor deep in humid recesses formed by rock ledges (e.g.. Lake Marion, Eiordland) or it may form a loosely creeping, pure, felt-like covering over soil deep in pockets at tree bases (e.g., Hauturu Highpoint Track, Little Barrier Island). It is rather frequent in humid sites such as steep-sided stream banks and occurs loosely over soil in protected niches; in particularly humid sites it may be epiphyllous on filmy ferns such as Tri- chomanes elongatum. Also in moist, dense, tree-fern gullies, where Telaranea herzogii may be terricolous or on tree-fern caudices (of Cyathea dealbata or Dicks onia squarrosa). It also may be encountered rather commonly in cushions of Leucobryum candidum. It is much less frequent at higher elevations, as in the Temple Basin ski area (Arthur’s Pass). Comments: The delicate, densely interwoven, prickly and highly nitid shoots of Telaranea herzogii lend this species a distinctive appearance. The leaf lobes are uniseriate throughout (or sporadically biseriate at the base) and the basal cells are barely united, forming a ‘‘disc” of considerably less than one cell high (Pig. 75: 5, 6). In this connection it should be noted that the plant illustrated by Schuster (1969c, p. 33, fig. 88: 4-6) as T herzogii is, in fact, T inaequalis. The leaf lobes of T inaequalis are rather flexuous, show essentially no taper and are unequal in length (Pig. 78: 4), the longest up to 9 cells long, and the lobe cells are of roughly equal length throughout. The leaves of T herzogii are also ± asymmetrical, but the lobes are stiffly spreading and distinctly tapering, usually 5 (rarely 6) cells long (Pig. 75: 1, 5-7), the cells progressively narrower and shorter from base to apex (Pig. 75: 7). The first branch underleaves of T inaequalis are equally bilobed like the other stem underleaves (Pig. 78: 3) vs. asymmetrically bilobed in T herzogii (Pig. 75: 10). Plants of Telaranea herzogii resemble those of T quinquespina, but the latter can be readily distinguished by the combination of Microlepidozia-typc branching, slender thread-like initial cells (BC = basal cell of ventral lobe of leaf). (Figs. 1-3, 5, 7, 8, from type of T. herzogii; 4, 6, 9, from Engel 19239, New Zealand, South Is., Western Nelson EP, Paparoa Ra., upper slopes of N side of Tiropahi or Four Mile R.; 10, from Engel 17968, New Zealand, South Is., Westland EP, Mt. Aspiring Natl. Park, summit area of Haast Pass.) Allison 3171, New Zealand, North Is., Voleanie Plateau EP, near Atiamuri, S of Rotorua.) stems, firm-walled cortical cells (Pig. 74: 8, 9), a biseriate tier of cells at the base of each leaf lobe (Pig. 74: 6, 7) and asymmetrically bilobed underleaves (Pig. 74: 1), the larger lobe similar to (and only slightly shorter than) the lobe of a leaf (Pig. 74: 4). The first branch underleaf of T quinquespina is also unusual in being symmetrically bilobed and resembling a leaf; in T herzogii it is asymmetrically bilobed, with one lobe much shorter and ending in a slime papilla. Oil-bodies, all (except fig. 3) with the outline of a few chloroplasts included. 1. Telaranea linden- Telaranea inaequalis R.M.Schust. J.J.Engel &amp; Merrill. Lowermost cell of leaf lobe. (Fig. 1, from Glenny 9725, New Zealand, South Is., Westland EP, Tuke R.; 2, from Glenny 9149, New Zealand, South Is., Westland EP, Big Wainihinihi R.; 3, from Engel 24773, New Zealand, South Is., West- land EP, Cascade Road, just W of Jackson R.; 4, from Glenny 9352, New Zealand, South Is., Western Nelson EP, Mt. Augustus.) with Frullania-iypQ branch (= FB; HE = half-leaf; FBU = first branch underleaf). 2. Portion of Telaranea quinquespina has frequent, leafless, geotropic ventral-intercalary and lateral- intercalary stolons. &#39;&#39;Telaranea herzogii var. nana&#39;&#39; (Schuster, Beih. Nova Hedwigia 118: 230. f. 77: 4-9; 79. 2000, published without a Latin description) is a synonym of T. herzogii. The variety was based on a specimen from Stewart Island {Schuster 60670). Telaranea inaequalis R.M.Schust. ex J.J.Engel &amp; Merrill [Eig. 77: 4, oil-bodies, p. 355; Eig. 78] descr. lat.). Telaranea inaequalis R.M.Schust. J.J.Engel &amp; Merrill, Fieldiana, Bot. 44: 117./ 37. 2004. Holotype: Tasmania, Gordon River, Sir John Falls, just upriver from Butler Is., sea level, Engel 14685B (F); isotype: (HO). Plants exceedingly delicate, loosely creeping, the leaf lobes minutely thread-like in appearance, whitish green and nitid; shoots minute, to 1.1 mm wide with leaves. Branching occa¬ sional, irregular, of the Frullania type; branch half-leaf undivided, leaf-lobe-like; first branch underleaf similar to normal stem underleaves, symmetrically bilobed, the lobes 2-3 cells long, terminating in a slime papilla, inserted on ventral-lateral side of branch just above the base. Flagelliform and stoloniform branches apparently lacking, or rare. Ventral-intercalary branches common, long and leafy. Stems delicate, straight and wiry, rather slender for plant size, the cortical cells in surface view and cross section moderately and evenly thick-walled, in 6 rows (the dorsal larger than the ventral rows); medullary cells in 3(5) rows, smaller, moderately and evenly thick- walled. Main shoots with 2 cortical cells intervening between successive leaves on either side. Rhizoids very thick- walled, from underleaf cells. Leaves distant, widely and laxly spreading, the insertion transverse to at times weakly succubous, consistently bifid essentially to the base (the basal cells scarcely connate), the longer lobes 505-735 juim long, the ventral lobes shorter. Lobes thread-like, not or scarcely tapering, moderately to strongly divergent, flexuous, not disposed in regular ranks, uniseriate throughout, unequal in length: the dorsal (7)8-9 cells long, the ventral 7-8 cells long (not including secondarily divided cells at lobe tips); lobe cells subequal in length except at the tip, the basal cells 22-28 juim wide X 90- 120 |ULm long, the next cell 18-24 juim wide X 78-108(120) juim long, the terminal cell minute, ca. 0.25 the length of the penultimate cell, occasionally with repeated cell divisions at the lobe apex resulting in 3-5 short cells, the tip at times becoming detached; cell walls ± thick- walled, the transverse septa thickened in the corners and feebly swollen and projecting. leading shoot, ventral view. 3. Portion of main shoot with Frullania-iy^t branch (= FB), ventral view (FBU = first branch underleaf; HE = half-leaf; only the ventral lobes of leaves are shown); note the underleaf at base of figure has 2- and 3 -celled lobes and has rhizoid initials formed but rhizoids are lacking. 4. Leaf; note unequal leaf lobes (ventral lobe at left). 5, 6. Leaf lobes (both basal and distal portions included). 7-11. Distal portions of leaf lobes showing subdivision of cells. 12. Underleaves. 13, 14. Stem, cross sections (ventral cortical cells at arrows). 15. Portion of shoot with androecium, oblique-dorsal view (LL = leaf lobe; BC = large cells of collar of the ventral-intercalary androecial branch). 16. Antheridial stalks. (Figs. 1-6, 12-14, from Engel 14685B, Tasma¬ nia, Gordon R., Sir John Falls; 7-11, 15, 16, from Jarman 87/5, Tasmania, Mt. Sprent.) especially in basal half of lobe, the septa in distal portion of lobe at times weakly constricted; surface smooth. Oil-bodies occupying a very small portion of cell, hyaline and somewhat glistening, (l)2-3(4) per lobe cell, subglobose to elliptic, coarsely papillose, the spherules distinctly protruding. Underleaves small and inconspicuous, bifid, the lobes parallel to somewhat con- nivent, 2-3 cells long, terminating in a slime papilla, the ‘‘disc” formed of the two partially connate lobe cells. Asexual reproduction absent. Plants dioecious. Androecia on abbreviated, tiny, inconspicuous, ventral-intercalary, spicate branches; bracts closely imbricate, the entire bract deeply concave, bilobed, each lobe terminating in a single cell, or, more often, a uniseriate row of 2 thick-walled cells, the tip cell par¬ ticularly thick- walled; lamina cells non-tiered, irregular in shape and arrangement, the lamina margins crenulate; antheridia 1 per bract, large for bract size, the stalk uniseriate; bracteolar antheridia absent. Gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island, South Island (0-900 m); Australia: Tasmania. Known from Rakiura (Pegasus Creek), Eiordland (Bowen Palls) and Western Nelson (Stockton Plateau) EPs. At Stockton, the species is abundant on sandstone rock overhangs in sharply incised stream valleys, on vertical or overhanging surfaces kept moist by seepage. There it can be the dominant bryophyte, forming dense mats on rock and at the front of overhangs, forming tapering “stalactites” up to 1 m long composed of vascular plant roots (e.g., Forstera mackayi), this species, Acromastigum marginatum and A. mooreanum. Other accompanying species on the rock walls are Kurzia hippuroides, Pallavicinia aff. rubristipa, Paracromastigum furcifolium, Psiloclada clandestina, Rhizogonium pennatum, Riccardia perspicua, Zoopsis bicruris and Z. setulosa. Comments: Telaranea inaequalis is immediately distinct from T. herzogii by the consistently unequally bilobed leaves, the flexuous, non-tapering lobes 6-9 cells long (Pig. 78: 4) and the equally and symmetrically bilobed first branch underleaf (Pig. 78: 3). See under T. herzogii for additional comments. Telaranea inaequalis is remarkably similar gametophytically to T diacantha (Mont). J. J.Engel &amp; Merrill of the Neotropics and T major Herzog, a species with a broad distribution ranging from Sri Lanka to the Philippines and Malaysia to Vanuatu. Por a discussion see Engel and Merrill (2004). Kurzia G.Martens Kurzia G.Martens, Flora 53(27): 417. 1870. Bergens Mus. Skr. 16: 303. 1934. Dendrolembidium Herzog, Ark. Bot., ser. 2, 1: 497. 1951 (preprint) (1952, journal). Micrisophylla Fulford, Brittonia 14: 124. 1962. Plants isophyllous to strongly anisophyllous, ascending to erect, rarely creeping, deep green to olive-green to brown to fuscous, dull-textured, tiny to vigorous. Branching irregularly to regularly l-2(3)-pinnate, the primary and secondary branches usually ± abbreviated, often weaker, the stems with persistent apical dominance, dendritic in a few species; branches normally all terminal, typically Frullania type on one side of axis, Microlepidozia type on the other (the pattern somewhat irregular in some taxa); ventral-intercalary branches present; lateral-intercalary branches present in Kurzia moniliformis&#39;, main shoots and, more often, lateral branches frequently becoming flagelliform, microphyllous and rhizoid-bearing. Stems firm, the cortical cells in (8)10-20(24) rows, usually thicker- walled and slightly to more often moderately larger than the medullary cells. Leaves usually spreading from stem, the lobes ± erect, the insertion transverse (the leaves then vertically oriented) to ± succubous in a few species (to weakly incubous in K. helophilaf leaves usually symmetric or virtually so, divided to 0.5-0.75(0.85) their length into 3-4(7) narrow, tapered, subequal to somewhat unequal lobes, the lobe margins usually entire; disc 2-10(12) cells high, the margins with teeth or spurs or entire. Cells small, usually ± firm-walled and rigid, quadrate to oblong but not narrowly rectangular, without trigones; surface mostly papillose to striolate. Oil-bodies small and reduced, or absent. Underleaves from 0.2-0.95 the size of lateral leaves, 3-4(6)-lobed, symmetric or often asymmetric due to abortion of 1-2(3) lobes that terminate in a slime papilla. Asexual reproduction lacking or via caducous leaf lobes. Dioecious. Androecia usually on abbreviated, ventral-intercalary branches (rarely on leading branches); bracts in 2-8 or more pairs, the antheridia 1 per bract, the stalk 1- or 2-seriate. Gynoecia normally on short ventral-intercalary branches (rarely on long leafy axes), isophyl- lous, with (2)3-5 series of progressively larger bracts and bracteoles, the innermost with apex 2-4-lobed or -lobulate or crenate-denticulate, the margins often dentate or ciliate. Perianth long, ± fusiform, bluntly trigonous, tapered toward the mouth, the mouth lobulate to ciliate; perianth 2-3(4)-stratose in basal portion. Seta with 8-10 rows of outer cells surrounding an inner core of 16-18 much smaller cells or {Kurzia compacta) 13 rows of outer cells surrounding ca. 42 much smaller cells. Capsule wall 2-3-stratose; outer layer of cells with alternating (secondary) walls with nodular thickenings, the other walls hyaline; innermost layer of cells with semiannular bands complete to incomplete. Spores papillose to verruculose-vermiculate or with dome-shaped coarse bosses, 1-1.5X diam. of elaters. Elaters bispiral. Type: Kurzia crenacanthoidea G.Martens A genus of about 32 species. Nine species occur in Australasia, six from our area plus Kurzia sexfida (Steph.) Grolle (Tasmania), K. dendroides (Carrington &amp; Pearson) Grolle (New South Wales) and K. verticillata (Carrington) Grolle (Tasmania). Pour species occur in southern South America, all belonging to subg. Micrisophylla (Pulford) J.J.Engel ex R.M.Schust.; these are K. setiformis (De Not.) J.J.Engel &amp; R.M.Schust., K. mollis (Steph.) J.J.Engel &amp; R.M.Schust., K. saddlensis (Besch. &amp; C.Massal.) Grolle and K. cucullifolia (Steph.) R.M.Schust. One species, K. fragillima (Herzog) Grolle of Juan Pernandez Islands, was placed in subg. Microlepidozia by Schuster (2000a). The genus extends to the Neotropics (three or four species occur there according to Gradstein et ah, 2001) and four are cold- Laurasian. The genus ranges through the Paleotropics north to Japan. The phylogenetic analysis in Engel and Merrill (2004) indicated that Kurzia, as defined by the presence of Micro- lepidozia-typc branching, is polyphyletic, and five species previously assigned to Kurzia were transferred to Telaranea. The transferred species from our area are K. quadriseta, K. trilobata, K. fragilifolia and K. quinquespina. Until relatively recently, the name Microlepidozia (Spruce) Jorg. was used for this genus. until Grolle (1964b, 1965e) resurrected the older generic name Kurzia G.Martens, which was originally applied to a minute species believed to belong to the red algae {Rhodophyta). Kurzia contains five subgenera; subg. Microlepidozia and subg. Dendrolembidium occur in New Zealand. As Engel and Merrill (2004) demonstrated, Kurzia, as traditionally constituted, is polyphyletic. The circumscription of Kurzia is more uniform after the transfer to Telaranea of several taxa (Engel and Merrill, 2004). Kurzia is characterized by a number of features, some occurring throughout the genus, others distinct tendencies; these are: 1) presence of Microlepidozia-typc branching; 2) underleaf lobes differentiated; 3) plants often developing brownish or fuscous pigmentation; 4) leaves and underleaves with a dense areolation, comprised of evenly thick- walled cells that are small in size and always devoid of trigones; 5) leaves and underleaves often armed with spurs or teeth; 6) surface of leaf lobes and disc typically striate-papillose; 7) leaves usually transversely oriented, and often deeply and palmately (3)4-lobed, with narrow, linear to lanceolate lobes; 8) plants, even when helophytic, tend to have a relatively firm cortex, normally somewhat to strongly thick-walled; 9) leafy shoots tending to develop geotropic, microphyllous axes and lateral leafy branches infrequently or not tapered and rhizoidous; and 10) oil-bodies small and reduced or absent. References: Engel and Merrill (1996b); Engel (2005a); Grolle (1964b); Hodgson (1956); Schuster (1969c, 1980a, 2000a). Key to Species la. Plants not strikingly dendroid, lacking a sharp separation into phototropic, initially unbranched, erect axes that are freely and closely 2-3-pinnate distally and geotropic, fas¬ ciculate, root-like stolons; leaves lacking basiscopically directed, numerous finger-like appendiculi of disc base. Subg. Microlepidozia . 2 2a. Disc margins of leaves and half-leaves consistently entire; leaf surface smooth; cortical cells 5-9 intervening between successive leaves on each side of stem. Sect. Helophilae . K. helophila (p. 362) 2b. Disc margins of some or all leaves toothed or spurred; leaf surface papillose; cortical cells 2-5 intervening between successive leaves on each side of stem .... 3 3a. Leaf lobes submoniliform, the lobe cells short, barrel- shaped, distinctly constricted at the septa; leaves commonly fragmenting (lobes sometimes miss¬ ing but disc usually intact); lateral-intercalary branches present; perianth surface scabrous (prorate) in distal sector. Sect. Moniliformes . K. moniliformis (p. 373) 3b. Leaf lobes straight- sided, the lobe cells not or at most feebly constricted at the septa; leaves not fragmenting; lateral-intercalary branches absent; perianth surface smooth . 4 4a. Disc margins on each side with 1(5) spinose teeth; sinus bases lacking spines or reflexed armature; leafy shoots erect, originating as ventral- intercalary branches from a leafless, reddish brown stolon, the erect shoots usually compactly pinnately branched. Leaf lobes (4)5-7 cells wide at base. Sect. Compactae . K. compacta (p. 377) 4b. Disc margins on each side with a single tooth, or with a basal abaxial spur near the margin (if unarmed, then disc of half-leaf with 1 or more teeth); sinus bases often with spines; leafy shoots both horizontal and erect, the ascending to erect shoots arising as terminal branches from a horizontal leafy axis (which becomes denuded with age). Leaf lobes 2-4 cells wide at base (to 7 cells wide in K. calcarata). Sect. Microlepidozia . 5 5a. Disc and lobes densely areolate, the cells 12-18(20) juim wide, subquadrate, evenly thick-walled; disc margins armed on either side with short, stout, thorn-like teeth (rarely absent, but then half-leaves have teeth); leaves small (250-400 juim wide), stiff and rigid, the disc widely spreading to squarrose, the lobes spreading, or more typically suberect and parallel with the stem; sinus bases and abaxial face of disc unarmed, or (var. ornata) with irregular, broad-based laminar outgrowths. Leaf lobes 2-4 cells wide at base (4-6 cells wide in var. ornata) . K. hippuroides (p. 368) 5b. Disc and lobes laxly areolate, the cells 20-27 juim wide, rather thin- walled; disc margins armed on either side near the base with a spreading, often decurved spur; leaves larger (500-750 juim wide), cupped, suberect from a laxly spreading disc, the lobes gently incurved; sinus bases and abaxial face of disc with 1 -several slender, fleshy appendages, when well developed forming a basiscopic fringe or comb extending across the face of the disc (at times rudimentary or lacking in some or all leaves). Leaf lobes (2)4-7(8) cells wide at base . K. calcarata (p. 364) lb. Plants strongly dendroid: with a sharp division into erect, initially unbranched axes that distally form a closely 2-3 X pinnately branched ‘Trond,” and creeping rhizomes from which arise geotropic, branched, fasciculate, root-like flagella; leaves with a conspicuous comb of basiscopically directed, tapered, finger-like processes arising from the base of the high disc; underleaves large, 4-6-lobed, similarly basally armed. Subg. Dendrolembidium . K. tenax (p. 379) Subg. Microlepidozia (Spruce) R.M.Schust. Bergens Mus. Skr. 16, 303. 1934. Kurzia subg. Microlepidozia (Spruce) R.M.Schust., J. Hattori Bot. Lab. 48: 355. 1980. Type: Microlepidozia pauciflora (Dicks.) Schljakov, Novosti Sist. Nizsh. Rast. 13: 226. 1976. Sect. Helophilae R.M.Schust. phila R.M.Schust.</pre>
+    
+    
+    
+    <pre class="description-text">Plants exceedingly delicate, minutely prickly in appearance, creeping to ascending, whitish green and nitid; shoots minute, to 630 juim wide with leaves. Branching sparing to very common, irregular, not becoming flagelliform; branch half-leaf stiffly dorsally assurgent, undi¬ vided, setaceous; first branch underleaf at base of branch, strongly asymmetrically bilobed, consisting of a divergent lobe, (2)3-4 cells long and a ± appressed, curved lobe aligned with the branch, resembling an underleaf lobe and consisting of a short basal cell and a ± elongated distal cell, the lobe terminating in a slime papilla, a rhizoid commonly originating from the basal cell. Ventral-intercalary branches occasional to predominant, long and leafy. Stems very delicate, rather stiff for plant size, the cortical cells in 6-9 rows, much larger than the medullary cells which are in 3(4) to 6-11(18) rows. Main shoots with 3-4 cortical cells intervening between successive leaves on either side, the branches with 2-3 cells intervening be¬ tween successive leaves on either side of branch. Leaves rather rigid, contiguous to weakly imbricate (strongly imbricate on branches), widely spreading to subsquarrose, the insertion transverse to weakly succubous, (245)300-450(490) X 245-420 juim (at tips of spreading lobes), 2-3-fid almost to the base (the basal cells connate for 0.1 -0.4 their length), the ventral lobe somewhat shorter. Lobes stiff, gradually tapering from base to apex, straight to broadly incurved, moderately to strongly divergent, on branches disposed in ± regular ranks, uniseri- ate throughout (sporadically one or more lobes biseriate at extreme base), gradually tapering, the lobes (4)5 -6(7) cells long, ± equal in length, or in 3-lobed leaves the ventral lobe perceptibly shorter; basal cells 18-26 juim wide X (66)95-120 juim long, the next cell 14-20 X 56- 98 |ULm; lobe cells gradually shorter and narrower distally, the terminal cell usually much shorter than the penultimate cell; cell walls thin but firm to moderately thick- walled, the transverse septa thickened in the corners and not or feebly swollen and projecting; surface smooth. Oil-bodies opaque, dull, greyish, (5)6-11 per basal cell of lobe, broadly elliptic to irregularly crescentic, often lumpy and irregular, very finely papillose, the globules imperceptibly bulging from membrane, oil-bodies 6.5 X 9 juim to 6-7 X 10-12 juim, less commonly spherical and 7 |ULm in diam., oil-bodies in second lobe cell 4-6 per cell, mostly spherical and 6-8 juim in diam. or nearly spherical and 7X8 juim; oil-bodies of stem cells much smaller and overall narrower, irregularly fusiform to linear to crescentic but with similar ornamentation to oil-bodies of leaves. Underleaves small and inconspicuous, 2(rarely 3)-lobed, caliper-like, the lobes parallel to somewhat divergent, 2-3 cells long (rarely 1 cell), terminating in a hooked slime papilla, the base formed of 2 basally connate, curved cells forming a U-shaped disc, the distal cell(s) elongated; individual rhizoids originating from the base or apex (rarely both) of the basal lobe cells, or the basal cells subdivided into 6-8 small, quadrate, rhizoid initials, with a rhizoid emerging from each. Asexual reproduction lacking. Eungal partner an ascomycete. Plants apparently dioecious. Androecia not seen. Gynoecial bracts delicate, deeply dissected, 2-3-lobed, the lobes 2-4 cells wide at base, terminating in a uniseriate row of 5-6 elongated, tapering cells, each lobe armed with paired uniseriate cilia inserted at apex of the basal tier of lobe cells, the cilia 2-4-celled, often ending in a slime papilla; disc of 2(3) tiers of longitudinally elongate cells, the margins of disc entire or with a blunt tooth on one or both sides at base of the lateral lobes; bracteoles 2-lobed, otherwise similar to bracts. Perianth rather short, terete in basal half, bluntly trigonous above, somewhat contracted at the mouth, the mouth shallowly lobulate-ciliate, the cilia ca. 6-10 (interspersed with smaller 1-2-celled teeth), several cells wide at the extreme base, ending in a stiffly divergent uniseriate process of 4-9 elongate cells, the cilia often armed with few-celled lateral spurs or a single lateral spur inserted at the septa. Seta with 8 rows of outer cells surrounding an inner core of 4-10 much smaller cells. Capsule rather short- to long-ellipsoidal, 190 juim wide, 345 juim long, the wall 16-18 juim thick, uniformly 2-stratose, the outer layer subequal to the inner, or slightly thicker; outer layer of cells ± regularly short-rectangular, with two-phase development, the longitudinal walls with nodule-like thickenings (4-6 per cell) alternating with primary walls devoid of thickenings (or rarely with local, pigmented, nodular swellings), the transverse walls without thickenings; innermost layer of cells somewhat irregularly narrowly rectangular, the radial walls with of 2 different main shoots, eaeh showing 2 underleaves and the basal eells of ventral lobes of 3 leaves (= BC), ventral view. 4. Three-lobed underleaf; note rhizoids (stippled outline). 5, 6. Two- and 3-lobed leaves. 7. Leaf lobes. 8, 9. Stem, eross seetions (note 6 + 6 and 8 + 9 anatomy). 10. Terminal braneh base and first braneh underleaf (ventral view); note rhizoid position and rhizoid continuous sheets of wall material, the radial walls mostly with nodular thickenings and short spine-like extensions onto the exposed tangential wall, only exceptionally with complete semi annular bands. Spores 7. 5-8. 8 to 10.6-12 juim in diam., the wall yellow-brown, rather thin-walled, areolate, with a low, close network of ridges coalescing to delimit areolae. Elaters rather straight, 6. 5-7. 5 to 9.6-1 1 juim wide, only slightly tapering and bispiral to tips, the spirals 2.9- 3.4 |ULm wide. Distribution and Ecology: New Zealand: Stewart Island (20-200 m). South Island (10- 890 m). North Island (25-890 m); Australia: Tasmania, Victoria. In New Zealand known from Eiordland, Southland, Otago, Westland, Canterbury (Arthur’s Pass), Western Nelson, Southern North Island, Volcanic Plateau, Auckland and Northland EPs. In New Zealand the species is found rather commonly on loamy, moist, shaded soil. It occurs for the most part in lower- to middle-elevation moist or swampy forests where it is on soil in protected pockets or shaded hollows associated with, for example, Acromastigum colen- soanum, Bazzania nitida, Lepidozia digitata, Riccardia colensoi, Saccogynidium australe, Telaranea elegans, T. tetradactyla, T. tetrapila and Zoopsis leitgebiana. It may occur over soil of the forest floor deep in humid recesses formed by rock ledges (e.g.. Lake Marion, Eiordland) or it may form a loosely creeping, pure, felt-like covering over soil deep in pockets at tree bases (e.g., Hauturu Highpoint Track, Little Barrier Island). It is rather frequent in humid sites such as steep-sided stream banks and occurs loosely over soil in protected niches; in particularly humid sites it may be epiphyllous on filmy ferns such as Tri- chomanes elongatum. Also in moist, dense, tree-fern gullies, where Telaranea herzogii may be terricolous or on tree-fern caudices (of Cyathea dealbata or Dicks onia squarrosa). It also may be encountered rather commonly in cushions of Leucobryum candidum. It is much less frequent at higher elevations, as in the Temple Basin ski area (Arthur’s Pass). Comments: The delicate, densely interwoven, prickly and highly nitid shoots of Telaranea herzogii lend this species a distinctive appearance. The leaf lobes are uniseriate throughout (or sporadically biseriate at the base) and the basal cells are barely united, forming a ‘‘disc” of considerably less than one cell high (Pig. 75: 5, 6). In this connection it should be noted that the plant illustrated by Schuster (1969c, p. 33, fig. 88: 4-6) as T herzogii is, in fact, T inaequalis. The leaf lobes of T inaequalis are rather flexuous, show essentially no taper and are unequal in length (Pig. 78: 4), the longest up to 9 cells long, and the lobe cells are of roughly equal length throughout. The leaves of T herzogii are also ± asymmetrical, but the lobes are stiffly spreading and distinctly tapering, usually 5 (rarely 6) cells long (Pig. 75: 1, 5-7), the cells progressively narrower and shorter from base to apex (Pig. 75: 7). The first branch underleaves of T inaequalis are equally bilobed like the other stem underleaves (Pig. 78: 3) vs. asymmetrically bilobed in T herzogii (Pig. 75: 10). Plants of Telaranea herzogii resemble those of T quinquespina, but the latter can be readily distinguished by the combination of Microlepidozia-typc branching, slender thread-like initial cells (BC = basal cell of ventral lobe of leaf). (Figs. 1-3, 5, 7, 8, from type of T. herzogii; 4, 6, 9, from Engel 19239, New Zealand, South Is., Western Nelson EP, Paparoa Ra., upper slopes of N side of Tiropahi or Four Mile R.; 10, from Engel 17968, New Zealand, South Is., Westland EP, Mt. Aspiring Natl. Park, summit area of Haast Pass.) Allison 3171, New Zealand, North Is., Voleanie Plateau EP, near Atiamuri, S of Rotorua.) stems, firm-walled cortical cells (Pig. 74: 8, 9), a biseriate tier of cells at the base of each leaf lobe (Pig. 74: 6, 7) and asymmetrically bilobed underleaves (Pig. 74: 1), the larger lobe similar to (and only slightly shorter than) the lobe of a leaf (Pig. 74: 4). The first branch underleaf of T quinquespina is also unusual in being symmetrically bilobed and resembling a leaf; in T herzogii it is asymmetrically bilobed, with one lobe much shorter and ending in a slime papilla. Oil-bodies, all (except fig. 3) with the outline of a few chloroplasts included. 1. Telaranea linden- Telaranea inaequalis R.M.Schust. J.J.Engel &amp; Merrill. Lowermost cell of leaf lobe. (Fig. 1, from Glenny 9725, New Zealand, South Is., Westland EP, Tuke R.; 2, from Glenny 9149, New Zealand, South Is., Westland EP, Big Wainihinihi R.; 3, from Engel 24773, New Zealand, South Is., West- land EP, Cascade Road, just W of Jackson R.; 4, from Glenny 9352, New Zealand, South Is., Western Nelson EP, Mt. Augustus.) with Frullania-iypQ branch (= FB; HE = half-leaf; FBU = first branch underleaf). 2. Portion of Telaranea quinquespina has frequent, leafless, geotropic ventral-intercalary and lateral- intercalary stolons. &#39;&#39;Telaranea herzogii var. nana&#39;&#39; (Schuster, Beih. Nova Hedwigia 118: 230. f. 77: 4-9; 79. 2000, published without a Latin description) is a synonym of T. herzogii. The variety was based on a specimen from Stewart Island {Schuster 60670). Telaranea inaequalis R.M.Schust. ex J.J.Engel &amp; Merrill [Eig. 77: 4, oil-bodies, p. 355; Eig. 78] descr. lat.). Telaranea inaequalis R.M.Schust. J.J.Engel &amp; Merrill, Fieldiana, Bot. 44: 117./ 37. 2004. Holotype: Tasmania, Gordon River, Sir John Falls, just upriver from Butler Is., sea level, Engel 14685B (F); isotype: (HO). Plants exceedingly delicate, loosely creeping, the leaf lobes minutely thread-like in appearance, whitish green and nitid; shoots minute, to 1.1 mm wide with leaves. Branching occa¬ sional, irregular, of the Frullania type; branch half-leaf undivided, leaf-lobe-like; first branch underleaf similar to normal stem underleaves, symmetrically bilobed, the lobes 2-3 cells long, terminating in a slime papilla, inserted on ventral-lateral side of branch just above the base. Flagelliform and stoloniform branches apparently lacking, or rare. Ventral-intercalary branches common, long and leafy. Stems delicate, straight and wiry, rather slender for plant size, the cortical cells in surface view and cross section moderately and evenly thick-walled, in 6 rows (the dorsal larger than the ventral rows); medullary cells in 3(5) rows, smaller, moderately and evenly thick- walled. Main shoots with 2 cortical cells intervening between successive leaves on either side. Rhizoids very thick- walled, from underleaf cells. Leaves distant, widely and laxly spreading, the insertion transverse to at times weakly succubous, consistently bifid essentially to the base (the basal cells scarcely connate), the longer lobes 505-735 juim long, the ventral lobes shorter. Lobes thread-like, not or scarcely tapering, moderately to strongly divergent, flexuous, not disposed in regular ranks, uniseriate throughout, unequal in length: the dorsal (7)8-9 cells long, the ventral 7-8 cells long (not including secondarily divided cells at lobe tips); lobe cells subequal in length except at the tip, the basal cells 22-28 juim wide X 90- 120 |ULm long, the next cell 18-24 juim wide X 78-108(120) juim long, the terminal cell minute, ca. 0.25 the length of the penultimate cell, occasionally with repeated cell divisions at the lobe apex resulting in 3-5 short cells, the tip at times becoming detached; cell walls ± thick- walled, the transverse septa thickened in the corners and feebly swollen and projecting. leading shoot, ventral view. 3. Portion of main shoot with Frullania-iy^t branch (= FB), ventral view (FBU = first branch underleaf; HE = half-leaf; only the ventral lobes of leaves are shown); note the underleaf at base of figure has 2- and 3 -celled lobes and has rhizoid initials formed but rhizoids are lacking. 4. Leaf; note unequal leaf lobes (ventral lobe at left). 5, 6. Leaf lobes (both basal and distal portions included). 7-11. Distal portions of leaf lobes showing subdivision of cells. 12. Underleaves. 13, 14. Stem, cross sections (ventral cortical cells at arrows). 15. Portion of shoot with androecium, oblique-dorsal view (LL = leaf lobe; BC = large cells of collar of the ventral-intercalary androecial branch). 16. Antheridial stalks. (Figs. 1-6, 12-14, from Engel 14685B, Tasma¬ nia, Gordon R., Sir John Falls; 7-11, 15, 16, from Jarman 87/5, Tasmania, Mt. Sprent.) especially in basal half of lobe, the septa in distal portion of lobe at times weakly constricted; surface smooth. Oil-bodies occupying a very small portion of cell, hyaline and somewhat glistening, (l)2-3(4) per lobe cell, subglobose to elliptic, coarsely papillose, the spherules distinctly protruding. Underleaves small and inconspicuous, bifid, the lobes parallel to somewhat con- nivent, 2-3 cells long, terminating in a slime papilla, the ‘‘disc” formed of the two partially connate lobe cells. Asexual reproduction absent. Plants dioecious. Androecia on abbreviated, tiny, inconspicuous, ventral-intercalary, spicate branches; bracts closely imbricate, the entire bract deeply concave, bilobed, each lobe terminating in a single cell, or, more often, a uniseriate row of 2 thick-walled cells, the tip cell par¬ ticularly thick- walled; lamina cells non-tiered, irregular in shape and arrangement, the lamina margins crenulate; antheridia 1 per bract, large for bract size, the stalk uniseriate; bracteolar antheridia absent. Gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island, South Island (0-900 m); Australia: Tasmania. Known from Rakiura (Pegasus Creek), Eiordland (Bowen Palls) and Western Nelson (Stockton Plateau) EPs. At Stockton, the species is abundant on sandstone rock overhangs in sharply incised stream valleys, on vertical or overhanging surfaces kept moist by seepage. There it can be the dominant bryophyte, forming dense mats on rock and at the front of overhangs, forming tapering “stalactites” up to 1 m long composed of vascular plant roots (e.g., Forstera mackayi), this species, Acromastigum marginatum and A. mooreanum. Other accompanying species on the rock walls are Kurzia hippuroides, Pallavicinia aff. rubristipa, Paracromastigum furcifolium, Psiloclada clandestina, Rhizogonium pennatum, Riccardia perspicua, Zoopsis bicruris and Z. setulosa. Comments: Telaranea inaequalis is immediately distinct from T. herzogii by the consistently unequally bilobed leaves, the flexuous, non-tapering lobes 6-9 cells long (Pig. 78: 4) and the equally and symmetrically bilobed first branch underleaf (Pig. 78: 3). See under T. herzogii for additional comments. Telaranea inaequalis is remarkably similar gametophytically to T diacantha (Mont). J. J.Engel &amp; Merrill of the Neotropics and T major Herzog, a species with a broad distribution ranging from Sri Lanka to the Philippines and Malaysia to Vanuatu. Por a discussion see Engel and Merrill (2004). Kurzia G.Martens Kurzia G.Martens, Flora 53(27): 417. 1870. Bergens Mus. Skr. 16: 303. 1934. Dendrolembidium Herzog, Ark. Bot., ser. 2, 1: 497. 1951 (preprint) (1952, journal). Micrisophylla Fulford, Brittonia 14: 124. 1962. Plants isophyllous to strongly anisophyllous, ascending to erect, rarely creeping, deep green to olive-green to brown to fuscous, dull-textured, tiny to vigorous. Branching irregularly to regularly l-2(3)-pinnate, the primary and secondary branches usually ± abbreviated, often weaker, the stems with persistent apical dominance, dendritic in a few species; branches normally all terminal, typically Frullania type on one side of axis, Microlepidozia type on the other (the pattern somewhat irregular in some taxa); ventral-intercalary branches present; lateral-intercalary branches present in Kurzia moniliformis&#39;, main shoots and, more often, lateral branches frequently becoming flagelliform, microphyllous and rhizoid-bearing. Stems firm, the cortical cells in (8)10-20(24) rows, usually thicker- walled and slightly to more often moderately larger than the medullary cells. Leaves usually spreading from stem, the lobes ± erect, the insertion transverse (the leaves then vertically oriented) to ± succubous in a few species (to weakly incubous in K. helophilaf leaves usually symmetric or virtually so, divided to 0.5-0.75(0.85) their length into 3-4(7) narrow, tapered, subequal to somewhat unequal lobes, the lobe margins usually entire; disc 2-10(12) cells high, the margins with teeth or spurs or entire. Cells small, usually ± firm-walled and rigid, quadrate to oblong but not narrowly rectangular, without trigones; surface mostly papillose to striolate. Oil-bodies small and reduced, or absent. Underleaves from 0.2-0.95 the size of lateral leaves, 3-4(6)-lobed, symmetric or often asymmetric due to abortion of 1-2(3) lobes that terminate in a slime papilla. Asexual reproduction lacking or via caducous leaf lobes. Dioecious. Androecia usually on abbreviated, ventral-intercalary branches (rarely on leading branches); bracts in 2-8 or more pairs, the antheridia 1 per bract, the stalk 1- or 2-seriate. Gynoecia normally on short ventral-intercalary branches (rarely on long leafy axes), isophyl- lous, with (2)3-5 series of progressively larger bracts and bracteoles, the innermost with apex 2-4-lobed or -lobulate or crenate-denticulate, the margins often dentate or ciliate. Perianth long, ± fusiform, bluntly trigonous, tapered toward the mouth, the mouth lobulate to ciliate; perianth 2-3(4)-stratose in basal portion. Seta with 8-10 rows of outer cells surrounding an inner core of 16-18 much smaller cells or {Kurzia compacta) 13 rows of outer cells surrounding ca. 42 much smaller cells. Capsule wall 2-3-stratose; outer layer of cells with alternating (secondary) walls with nodular thickenings, the other walls hyaline; innermost layer of cells with semiannular bands complete to incomplete. Spores papillose to verruculose-vermiculate or with dome-shaped coarse bosses, 1-1.5X diam. of elaters. Elaters bispiral. Type: Kurzia crenacanthoidea G.Martens A genus of about 32 species. Nine species occur in Australasia, six from our area plus Kurzia sexfida (Steph.) Grolle (Tasmania), K. dendroides (Carrington &amp; Pearson) Grolle (New South Wales) and K. verticillata (Carrington) Grolle (Tasmania). Pour species occur in southern South America, all belonging to subg. Micrisophylla (Pulford) J.J.Engel ex R.M.Schust.; these are K. setiformis (De Not.) J.J.Engel &amp; R.M.Schust., K. mollis (Steph.) J.J.Engel &amp; R.M.Schust., K. saddlensis (Besch. &amp; C.Massal.) Grolle and K. cucullifolia (Steph.) R.M.Schust. One species, K. fragillima (Herzog) Grolle of Juan Pernandez Islands, was placed in subg. Microlepidozia by Schuster (2000a). The genus extends to the Neotropics (three or four species occur there according to Gradstein et ah, 2001) and four are cold- Laurasian. The genus ranges through the Paleotropics north to Japan. The phylogenetic analysis in Engel and Merrill (2004) indicated that Kurzia, as defined by the presence of Micro- lepidozia-typc branching, is polyphyletic, and five species previously assigned to Kurzia were transferred to Telaranea. The transferred species from our area are K. quadriseta, K. trilobata, K. fragilifolia and K. quinquespina. Until relatively recently, the name Microlepidozia (Spruce) Jorg. was used for this genus. until Grolle (1964b, 1965e) resurrected the older generic name Kurzia G.Martens, which was originally applied to a minute species believed to belong to the red algae {Rhodophyta). Kurzia contains five subgenera; subg. Microlepidozia and subg. Dendrolembidium occur in New Zealand. As Engel and Merrill (2004) demonstrated, Kurzia, as traditionally constituted, is polyphyletic. The circumscription of Kurzia is more uniform after the transfer to Telaranea of several taxa (Engel and Merrill, 2004). Kurzia is characterized by a number of features, some occurring throughout the genus, others distinct tendencies; these are: 1) presence of Microlepidozia-typc branching; 2) underleaf lobes differentiated; 3) plants often developing brownish or fuscous pigmentation; 4) leaves and underleaves with a dense areolation, comprised of evenly thick- walled cells that are small in size and always devoid of trigones; 5) leaves and underleaves often armed with spurs or teeth; 6) surface of leaf lobes and disc typically striate-papillose; 7) leaves usually transversely oriented, and often deeply and palmately (3)4-lobed, with narrow, linear to lanceolate lobes; 8) plants, even when helophytic, tend to have a relatively firm cortex, normally somewhat to strongly thick-walled; 9) leafy shoots tending to develop geotropic, microphyllous axes and lateral leafy branches infrequently or not tapered and rhizoidous; and 10) oil-bodies small and reduced or absent. References: Engel and Merrill (1996b); Engel (2005a); Grolle (1964b); Hodgson (1956); Schuster (1969c, 1980a, 2000a). Key to Species la. Plants not strikingly dendroid, lacking a sharp separation into phototropic, initially unbranched, erect axes that are freely and closely 2-3-pinnate distally and geotropic, fas¬ ciculate, root-like stolons; leaves lacking basiscopically directed, numerous finger-like appendiculi of disc base. Subg. Microlepidozia . 2 2a. Disc margins of leaves and half-leaves consistently entire; leaf surface smooth; cortical cells 5-9 intervening between successive leaves on each side of stem. Sect. Helophilae . K. helophila (p. 362) 2b. Disc margins of some or all leaves toothed or spurred; leaf surface papillose; cortical cells 2-5 intervening between successive leaves on each side of stem .... 3 3a. Leaf lobes submoniliform, the lobe cells short, barrel- shaped, distinctly constricted at the septa; leaves commonly fragmenting (lobes sometimes miss¬ ing but disc usually intact); lateral-intercalary branches present; perianth surface scabrous (prorate) in distal sector. Sect. Moniliformes . K. moniliformis (p. 373) 3b. Leaf lobes straight- sided, the lobe cells not or at most feebly constricted at the septa; leaves not fragmenting; lateral-intercalary branches absent; perianth surface smooth . 4 4a. Disc margins on each side with 1(5) spinose teeth; sinus bases lacking spines or reflexed armature; leafy shoots erect, originating as ventral- intercalary branches from a leafless, reddish brown stolon, the erect shoots usually compactly pinnately branched. Leaf lobes (4)5-7 cells wide at base. Sect. Compactae . K. compacta (p. 377) 4b. Disc margins on each side with a single tooth, or with a basal abaxial spur near the margin (if unarmed, then disc of half-leaf with 1 or more teeth); sinus bases often with spines; leafy shoots both horizontal and erect, the ascending to erect shoots arising as terminal branches from a horizontal leafy axis (which becomes denuded with age). Leaf lobes 2-4 cells wide at base (to 7 cells wide in K. calcarata). Sect. Microlepidozia . 5 5a. Disc and lobes densely areolate, the cells 12-18(20) juim wide, subquadrate, evenly thick-walled; disc margins armed on either side with short, stout, thorn-like teeth (rarely absent, but then half-leaves have teeth); leaves small (250-400 juim wide), stiff and rigid, the disc widely spreading to squarrose, the lobes spreading, or more typically suberect and parallel with the stem; sinus bases and abaxial face of disc unarmed, or (var. ornata) with irregular, broad-based laminar outgrowths. Leaf lobes 2-4 cells wide at base (4-6 cells wide in var. ornata) . K. hippuroides (p. 368) 5b. Disc and lobes laxly areolate, the cells 20-27 juim wide, rather thin- walled; disc margins armed on either side near the base with a spreading, often decurved spur; leaves larger (500-750 juim wide), cupped, suberect from a laxly spreading disc, the lobes gently incurved; sinus bases and abaxial face of disc with 1 -several slender, fleshy appendages, when well developed forming a basiscopic fringe or comb extending across the face of the disc (at times rudimentary or lacking in some or all leaves). Leaf lobes (2)4-7(8) cells wide at base . K. calcarata (p. 364) lb. Plants strongly dendroid: with a sharp division into erect, initially unbranched axes that distally form a closely 2-3 X pinnately branched ‘Trond,” and creeping rhizomes from which arise geotropic, branched, fasciculate, root-like flagella; leaves with a conspicuous comb of basiscopically directed, tapered, finger-like processes arising from the base of the high disc; underleaves large, 4-6-lobed, similarly basally armed. Subg. Dendrolembidium . K. tenax (p. 379) Subg. Microlepidozia (Spruce) R.M.Schust. Bergens Mus. Skr. 16, 303. 1934. Kurzia subg. Microlepidozia (Spruce) R.M.Schust., J. Hattori Bot. Lab. 48: 355. 1980. Type: Microlepidozia pauciflora (Dicks.) Schljakov, Novosti Sist. Nizsh. Rast. 13: 226. 1976. Sect. Helophilae R.M.Schust. phila R.M.Schust.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">consisting of species with almost symmetrical                    rows of cortical cells, and a 5-stratose capsule
+                         leaves, leptodermous cells, and a conspicuous hy-                wall as characteristics of this subgenus. Schuster
+                         aloderm, while maintaining Telaranea in the more                 (2000, p. 240) cites relative subisophylly as the
+                         limited sense of Müller and Fulford.                            chief reason for retaining Tricholepidozia as a
+                                                                                          subgenus.
+                                                                                             Grolle (1966) proposed the new subgenus
+                         IV. Merging of concepts: Telaranea in the                        Chaetozia, with T. chaetocarpa of New Caledonia
+                             modern sense                                                 as its type. This species has the distal portion of
+                                                                                          the perianth covered with ciliform outgrowths. A
+                            Hodgson (1962) treated Neolepidozia as a syn-                 second species, T. trisetosa, was originally in-
+                         onym of Telaranea and transferred 10 Australa-                   cluded in the subgenus by Grolle, but it was later
+                         sian species of the Neolepidozia group to Telar-                 found not to have this feature (Grolle, 1968) and
+                         anea, without according it subgeneric rank.                      was excluded. The subgenus was synonymized
+                         Schuster (1963) combined all three elements dis-                 with subg. Telaranea by Schuster (1969).
+                         cussed above under Telaranea, listing Frullania-
+                         type branching, a stem with a hyaloderm, leaf
+                         cells large and pellucid, leaf lobes narrow (1–2,                VI. Telaranea and Arachniopsis
+                         or rarely 3–4 cells broad at base), disc 1–3(4)
+                         cells high, capsule-wall 3-stratose (as in Telara-                   The striking similarity between Telaranea s. str.
+                         nea s. str.), and finely areolate spores as charac-              and Arachniopsis Spruce (Spruce, 1882) has been
+                         teristics of the combined genus. Schuster recog-                 noted since the former was first proposed. Spruce
+                         nized 3 subgenera, of which subg. Telaranea is                   (1885, p. 366) distinguished Arachniopsis from
+                         ‘‘exactly equivalent in concept to [the] genus Te-               Lepidozia chaetophylla, citing exclusively posti-
+                         laranea of Schuster and Blomquist (1955).’’ Sub-                 cal (ventral-intercalary) branching, leaf lobes
+                         genus Neolepidozia comprises the other low-disc,                 quite free from one another (or solitary), and the
+                         capillary-lobed species of Telaranea in the sense                lack of underleaves in Arachniopsis. In fact, un-
+                         of Müller and Fulford, as well as those of Neo-                 derleaves are present in all species, but can con-
+                         lepidozia. A third element, subg. Tricholepidozia,               sist of as few as 2 adjacent cells, each capped by
+                         is discussed below.                                              a slime papilla. In others (A. diacantha) they are
+                                                                                          bilobed and caliper-like, resembling those of e.g,
+                                                                                          Telaranea herzogii. Likewise, terminal, Frullan-
+                         V. Other new elements: Acrolepidozia,                            ia-type branching has since been reported from
+                            Tricholepidozia, Chaetozia                                    many Arachniopsis species. In more recent times,
+                                                                                          a 2-stratose capsule wall (already noted by
+                            Schuster (1963) proposed the genus Acrolepi-                  Spruce, 1885, p. 354), 814 seta (Schuster, 1965),
+                         dozia, based on Lepidozia longitudinalis, empha-                 and the proliferation of rhizoids from near the tips
+                         sizing a dimorphic mode of growth ‘‘quite unlike                 of some leaf lobes (Schuster, 1973, p. 388; illus-
+                         any of the New Zealand taxa [of Lepidozia]                       trated by Fulford, 1968, pl. 96, fig. 2h in A. coac-
+                         known to me.’’ The genus was reduced to a sub-                   tilis) have been cited as additional characters dis-
+                         genus of Telaranea by Schuster (1969, see foot-                  tinguishing Arachniopsis from Telaranea.
+                         note, p. 30), and considered derived from subg.                      Only one species of Telaranea (T. herzogii) has
+                         Neolepidozia. Subgenus Acrolepidozia is de-                      been transferred formally to Arachniopsis (Hodg-
+                         scribed and discussed in detail in Schuster (1973,               son, 1964). The supposed lack of terminal branch-
+                         p. 389), who called attention to the diminuitive                 ing in Arachniopsis and the fact that the genus is
+                         half-leaf and first branch underleaves, and deem-                rare and poorly represented in herbaria have so
+                         phasized the mode of growth in this species.                     far precluded discussion of combining the two
+
+
+                         4                                                                                          FIELDIANA: BOTANY
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                              genera, although according to Grolle (1975), the            ziaceae in the modern sense. Schuster (1965) re-
+                              type of Blepharostoma sejuncta Ångstr. (Telara-            garded the presence of a ‘‘cephalozioid’’ (814)
+                              nea sejuncta (Ångstr.) S. Arnell, a name exten-            seta in Arachniopsis as an instance of ‘‘secondary
+                              sively used in the literature as a synonym of T.            and independent reduction.’’
+                              nematodes) is Arachniopsis diacantha (Mont.)
+                              Howe.                                                       Telaranea Spruce ex Schiffn.
+
+---
+
+T. tuberifera (sect. Ceraceae), T. mamillosa (sect.         ground cover with Goebelobryum unguiculatum
+                              Cancellatae) of New Guinea and Borneo, T. eu-               and Riccardia crassa under Sporadanthus ferru-
+                              ropaea (sect. Telaranea) of western Europe, and             gineus (Restionaceae)-dominated canopy. Other
+                              T. diacantha (sect. Tenuifoliae) of tropical Amer-          associates were Empodisma minus (Restionaceae)
+                              ica.                                                        and Leptospermum scoparium (Myrtaceae) (see
+                                 Telaranea tasmanica also commonly produces               de Lange et al., 1999). The Tasmanian collection
+                              lateral- as well as ventral-intercalary branches, but       occurred with T. herzogii in a Eucalyptus obliqua
+                              differs from T. fragilifolia in the nonfragmenting          wet sclerophyll forest at 130 m.
+                              lobes and smooth cuticle. The abbreviated disc (to
+                              1.5 cells high) sometimes present in leaves of T.             SPECIMENS SEEN—NEW ZEALAND. SOUTH IS-
+                              fragilifolia is reminiscent of the eastern North            LAND. WESTLAND PROV.: Ca. 10 km. along Cascade
+                              American T. longifolia (p. 163; compare Schuster,           Rd, just W of Jackson River, SW of confluence of Jack-
+                                                                                          son and Arawata Rivers, 45 m, Engel 24775 (F).
+                              1980, fig. 4: 6, T. fragilifolia, and Schuster &amp;            NORTH ISLAND: Hauraki Plains, Kopuatai Peat Dome,
+                              Blomquist, 1955, figs. 10, 11, as T. nematodes,             5 m, Clarkson 19 (F). TASMANIA. Manuka Road, W
+                              see also Fig. 50: 3, 4).                                    of Tahune Bridge, 130 m, Jarman 99/2 (HO).
+                                 The underleaves of T. fragilifolia, T. pallescens
+                              and T. trilobata, T. blepharostoma of southern              Telaranea tetradactyla (Hook. f. &amp; Tayl.) Hodgs.
+                              South America (Fig. 38: 1, 3, 4), and T. kogiana
+                              (Grolle, 1966, fig. 3f–g) of New Caledonia and                Jungermannia tetradactyla Hook. f. &amp; Tayl., London
+                              New Guinea are asymmetrically lobed, with one                   J. Bot. 3: 286. 1844 (3: 286 [sic] in errore pro
+                                                                                              386). Lepidozia tetradactyla (Hook. f. &amp; Tayl.) G.
+                              or more lobes abbreviated (Schuster, 1980, fig. 2,              L. &amp; N., Syn Hep. 213. 1845. Mastigophora tetra-
+                              7), as in many Kurzia species (see Schuster, 1969,              dactyla (Hook. f. &amp; Tayl.) Trev., Mem. Ist. Lomb.
+                              fig. 92: 11, K. sylvatica). Telaranea quinquespina              Sci. Lett. III. 4: 416. 1877. Neolepidozia tetradac-
+                              has asymmetrically bilobed underleaves with one                 tyla (Hook. f. &amp; Tayl.) Fulf. &amp; J. Tayl., Brittonia
+                                                                                              11: 84. 1959. Telaranea tetradactyla (Hook. f. &amp;
+                              lobe abbreviated, the other resembling the lobes                Tayl.) Hodgs., Rec. Domin. Mus. 4: 106. 1962.
+                              of the leaves (Fig. 34: 1, 3), as do the extra-ter-             Lectotype (nov.): Auckland Is., Nov. 1840, on Jun-
+                              ritorial T. anomala and T. monocera (sect. Ten-                 germannia coalita, Hooker (FH!); isolectotypes:
+                              uifoliae). Telaranea herzogii (Fig. 35: 2, 3) and               (BM! [2 seen]).
+                              T. tasmanica (Fig. 32: 10–14) differ in having                Telaranea longii J. A. Paton, J. Bryol. 17: 289. fig.
+                                                                                              1. 1992, syn. nov. Holotype: Scotland, Argyll, near
+                              symmetrically bilobed, caliper-like underleaves.                Dunoon, foot of Glen Massan, Younger Botanic
+                                 Schuster (1980) reported the absence of lateral-             Garden, 40 m, Long 14231 (E!); isotypes: (E!,
+                              intercalary branching in T. fragilifolia, but in our            Herb. Paton; NY!).
+                              material (Clarkson 19) lateral-intercalary branch-
+                              es are abundantly produced, to the almost com-                 Plants delicate, flexuous yet firm, procumbent,
+                              plete exclusion of other branch types (occasional           in compact, soft, silky, felt-like mats, normally
+                              ventral-intercalary, but only 2 terminal, Frullania-        silvery green to pure green; plants small, to ca. 5
+                              type branches seen). In the Tasmanian plants (Jar-          mm wide, including branches. Branching some-
+                              men 99/2), only lateral-intercalary branches were           what irregularly 1(2)-pinnate, the branches of the
+                              observed, arising from the axil of nearly every             Frullania type, typically of somewhat unequal
+                              leaf on the main axis.                                      length, complanate, the branch leaves incubously
+                                 DISTRIBUTION AND ECOLOGY—The species is                  inserted and shingled; branch half-leaf bifid, usu-
+                              known only from three stations in New Zealand               ally obliquely inserted, the lobes diverging; first
+
+
+                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                     91
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                         branch underleaf undivided and ciliiform, inserted               cells, terminating in a slime papilla; disc abbre-
+                         on ventral side of branch at juncture of branch                  viated, 2 cells high, 8 cells wide; margins entire.
+                         and main axis. Ventral-intercalary branches oc-                  Rhizoid initial cells small, subquadrate, formed
+                         casional, leafy, sometimes becoming leading                      from some distal cells of underleaf disc.
+                         shoots. Stems with cortical cells distinctly differ-                Plants dioecious. Androecia either terminal or
+                         entiated, thin walled, in 12–13 rows; cortical cells             intercalary on short to moderately long primary
+
+---
+
+3.4 mm wide.                                                     mafic rocks and outcrops with rather open vege-
+                                                                                          tation consisting mainly of Gleichenia, Lycopo-
+                            DIFFERENTIATION AND VARIATION—Telaranea                       dium, Juncus, the lichen Cladina, and scattered
+                         quinquespina resembles T. herzogii (p. 112), but                 Leptospermum; here the species occurs terricolous
+                         can be readily distinguished by the biseriate tier               on slopes with Kurzia hippuroides. At the north-
+                         of cells at the base of each lobe (Fig. 34: 6, 7).               ernmost station (Radar Bush, at 348 28.59 S) the
+                         The leaf lobes of T. herzogii are typically uni-                 species occurs on very thin soil over rock of a
+                         seriate to the base (Fig. 35: 5, 6). In addition, the            bank above a stream at the bottom of a steep-
+                         underleaves in T. quinquespina are asymmetrical-                 sided valley within a forest of Beilschmiedia-Vi-
+                         ly bilobed (Fig. 34: 1, 3), with the stronger lobe               tex-Hoheria and Cyathea dealbata. At the single
+                         remarkably similar to (and only slightly shorter                 higher-elevation forest locality (1080 m at Tar-
+                         than) the lobe of a leaf (Fig. 34: 4). Telaranea                 anaki Falls Track), the plants occurred over soil
+                         tasmanica, like T. quinquespina, has lobes with a                in a shaded pocket of a bank in a steep-sided can-
+                         biseriate base, but as in T. herzogii, the under-                yon through forest of Nothofagus solandri var.
+                         leaves are symmetrically bilobed and caliper-like,               cliffortioides, Griselinia littoralis, Pseudopanax
+                         with both lobes short, terminating in a hooked                   colensoi and Podocarpus hallii.
+                         slime papilla (Fig. 32: 3, 10–14, T. tasmanica;
+                         Fig. 35: 2, 3, T. herzogii). Both ventral-intercalary               SPECIMENS SEEN—NEW ZEALAND. STEWART IS-
+                         and lateral-intercalary branches are frequently                  LAND: Rakiura Natl. Park, Fresh Water Swamp, track
+                         produced in T. quinquespina. Terminal, Microlep-                 to Mason’s Bay, c. 1 km W of Freashwater Hut, 5 m,
+                                                                                          Engel 24436 (F). SOUTH ISLAND, WESTLAND
+                         idozia- and Frullania-type branches are infre-                   PROV.: Cascade Road, Cascade ultramafic moraine, W
+                         quently produced, but not in regular alternation                 of Martyr Saddle, SSW of Jackson Bay, 135 m, Engel
+                         on opposite sides of the stem as, for example, in                23003—c. ? (F). NORTH ISLAND. WELLINGTON
+                         T. quadriseta.                                                   PROV.: Tongariro Natl. Park, Taranaki Falls Track, E of
+                                                                                          Whakapapa Village, 1080 m, Engel 22456 (F); Tree
+                            This species was originally described as a Kur-               Trunk Gorge, W bank of Tongariro River, E border of
+                         zia and assigned to Kurzia subg. Nanolepidozia                   Tongariro Natl. Park, boundry of Kaimanawa State For-
+                         Schust. (Engel &amp; Merrill, 1996b). This subgenus                  est Park, ca. 700 m, Engel 21201, 21202 (F). GISBOR-
+                         is treated here as a synonym of Telaranea sect.                  NE PROV.: Near Lake Waikaremoana, Sainsbury 194a
+                         Telaranea. The type of subg. Nanolepidozia is T.                 as Telaranea herzogii (CHR). SOUTH AUCKLAND
+                                                                                          PROV.: Near Atiamuri, S of Rotorua, Allison H3001 as
+                         bisetula (Steph.) Engel &amp; Merr. of New Caledonia                 Telaranea herzogii (CHR); Kaimai Range, network of
+                         (p. 128).                                                        tracks at the end of Wrights Rd. off the Katikati-Taur-
+                            DISTRIBUTION AND ECOLOGY—Known from few                       anga highway, Swimming Holes Track, 60 m, Engel
+                         and scattered localities on Stewart Island and                   23527 (F); Coromandel State Forest Park, ridge between
+                                                                                          Webb Creek Track and Billy Goat Track, 510–540 m,
+                         South and North Islands, New Zealand. Telaranea                  Engel 22348 (F); ibid., summit of Table Mt., 835 m,
+                         quinquespina for the most part occurs loosely in                 Engel 22379 (F). NORTH AUCKLAND PROV.: Radar
+                         damp, shaded niches on steep-sided banks, bryo-                  Bush, WSW of Cape Reinga, S of Mt. Te Paki, ca. 100
+                         phyte-covered tree bases, cliff faces and stream                 m, Engel 20832 (F).
+                         banks in lower- to middle-elevation forests. The
+                         species appears to grow in at at most moderately                 Telaranea sect. Tenuifoliae (Schust.) Engel &amp;
+                         shaded conditions, and may even tolerate relative-                 Merr., comb. nov.
+                         ly open situations (Cascade ultramafic moraine).
+                         The Stewart Island as well both South Island sta-                  Arachniopsis sect. Tenuifoliae Schust., Beih. Nova
+                                                                                              Hedwigia 118: 461. 2000. Type: Arachniopsis ten-
+                         tions are at lower elevations. On Stewart Island                     uifolia Schust.
+                         the species occurred near sea level in a mosaic of                 Arachniopsis Spruce, On Cephalozia 84. 1882, syn.
+                         stagnant ponds, Sphagnum bog, open Leptosper-                        nov. Lectotype (fide Schuster, 1965): Arachniopsis
+                         mum scoparium-Dracophyllum heath to 1–2 m                            coactilis Spruce.
+                                                                                            Arachniopsis subg. Amphidactylopsis Schust., Nova
+                         tall and dense communities of Gleichenia dicarpa                     Hedwigia 10: 25. 1965. Type: Arachniopsis mon-
+                         and Empodisma. At this site the species formed a                     ocera Schust. &amp; Grolle, nom. inval.
+                         loose intertwined layer below the surface litter.
+                         The type (30 m in Bullock Creek gorge), occurred                 Telaranea herzogii (Hodgs.) Hodgs.
+                         on a weakly shaded limestone face with Adiantum
+                         and Coprosma sp. at the margin of a vehicular                      Lepidozia herzogii Hodgs., Trans. Roy. Soc. New
+
+
+                         112                                                                                         FIELDIANA: BOTANY
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                                   Zealand 83: 618. 1956, nom. nov. pro Lepidozia         thickened in the corners and not or feebly swollen
+                                   bisetula Herz. in Hodgs., Trans. &amp; Proc. Roy. Soc.     and projecting; cuticle smooth. Oil-bodies (fide
+                                   New Zealand 68: 44. pl. 5, d–f. 1938, non L. bi-
+                                   setula Steph., Spec. Hep. 6: 323. 1922. Telaranea      Schuster, 1968), rather large and conspicuous,
+                                   herzogii (Hodgs.) Hodgs., Rec. Domin. Mus. 4:          grayish, granular, the surface nearly or quite
+                                   106. 1962. Arachniopsis herzogii (Hodgs.) Hodgs.,      smooth; basal cells of lobes with ca. 6 oil-bodies,
+                                   Tuatara 12: 6. 1964. Type: New Zealand, North Is.,     irregularly ellipsoidal to fusiform or ovoid, ca. 5–
+                                   Russell, Bay of Islands, Lindauer 281 (CHR!).
+                                 Telaranea exigua Schust., Nova Hedwigia 15: 457.         6 3 8–9 mm to 6–7 3 10–12 m; upper cells with
+                                   1968. Holotype: New Zealand, North Is., Mt. Eg-        oil-bodies progressively smaller (ca. 5 to 5 3 8
+                                   mont, along Stratford Mt. Road, E side of moun-        mm or smaller). Underleaves small and inconspic-
+                                   tain, ca. 2000 ft., Schuster 48916b (non vide).        uous, 2 (rarely 3)-lobed, ‘‘caliper-like,’’ the lobes
+                                                                                          parallel to somewhat divergent, 2–3 cells long
+                                 Plants exceedingly delicate, minutely prickly in         (rarely 1 cell), terminating in a hooked slime pa-
+                              appearance, creeping to ascending, whitish green            pilla, the base formed of two basally connate,
+                              and nitid; shoots minute, to 630 mm wide with               curved cells forming a ‘‘U’’-shaped disc, the dis-
+                              leaves. Branching sparing to very common, irreg-            tal cell(s) elongated; individual rhizoids originat-
+                              ular, not becoming flagelliform; branch half-leaf           ing from the base or apex (rarely both) of the
+                              stiffly dorsally assurgent, undivided, setaceous;           basal lobe cells, or the basal cells subdivided into
+
+---
+
+either side of branch. Leaves rather rigid, contig-         the mouth, the mouth shallowly lobulate-ciliate,
+                              uous to weakly imbricate (strongly imbricate on             the cilia ca. 6–10 (interspersed with smaller 1–2-
+                              branches), widely spreading to subsquarrose, the            celled teeth), several cells wide at the extreme
+                              insertion transverse to weakly succubous,                   base, ending in a stiffly divergent uniseriate pro-
+                              (245)300–450(490) mm long 3 245–420 mm                      cess of 4–9 elongate cells, the cilia often armed
+                              wide (at tips of spreading lobes), 2–3-fid almost           with few-celled lateral spurs or a single lateral
+                              to the base (the basal cells connate for 0.1–0.4            spur inserted at the septa.
+                              their length), the ventral lobe somewhat shorter.              Seta with 8 rows of outer cells, surrounding an
+                              Lobes stiff, gradually tapering from base to apex,          inner core of 4–10 much smaller, very delicate
+                              straight to broadly incurved, moderately to strong-         cells. Capsule 345 mm long, 190 mm wide, rather
+                              ly divergent, on branches disposed in 6 regular             short- to long-elliptic, the wall 16–18 mm thick,
+                              ranks, uniseriate throughout (sporadically one or           uniformly 2-stratose, the outer layer subequal to
+                              more lobes biseriate at extreme base), gradually            the inner, or slightly thicker; outer layer of cells
+                              tapering, the lobes (4)5–6(7) cells long, 6 equal           6 regularly short-rectangular, with two-phase de-
+                              in length, or in 3-lobed leaves the ventral lobe            velopment, the longitudinal walls with nodule-like
+                              perceptibly shorter; basal cells 18–26 mm wide 3            thickenings (4–6 per cell) alternating with pri-
+                              (66)95–120 mm long, the next cell 14–20 3 56–               mary walls devoid of thickenings (or rarely with
+                              98 m; lobe cells gradually shorter and narrower             local, pigmented, nodular swellings), the trans-
+                              distally, the terminal cell usually much shorter            verse walls without thickenings; innermost layer
+                              than the penultimate cell; cell walls thin but firm         of cells somewhat irregularly narrowly rectangu-
+                              to moderately thick-walled, the transverse septa            lar, the radial walls with continuous sheets of wall
+
+
+                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                  113
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                            FIG. 35. Telaranea herzogii (Hodgs.) Hodgs. 1. Portion of main shoot, dorsal view. 2, 3. Portions of two different
+                         main shoots, each showing 2 underleaves and the basal cells of ventral lobes of 3 leaves (5 bc), ventral view. 4.
+                         Three-lobed underleaf; note rhizoids (stippled outline). 5, 6. Two- and 3-lobed leaves. 7. Leaf lobes. 8, 9. Stem, cross
+                         sections (note 616 and 819 anatomy). 10. Terminal branch base and first branch underleaf (ventral view); note
+                         rhizoid position and rhizoid initial cells (bc 5 basal cell of ventral lobe of leaf). (Figs. 1–3, 5, 7, 8 from type of T.
+                         herzogii; 4, 6, 9 from Engel 19239, New Zealand, South Is., Nelson Prov., Paparoa Range, upper slopes of N side
+
+
+                         114                                                                                         FIELDIANA: BOTANY
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                              material, the radial walls mostly with nodular              with 6 rows of cortical cells and 3(4) rows of
+                              thickenings and short spinelike extensions onto             medullary cells to ‘‘var. nana.’’
+                              the exposed tangential wall, only exceptionally                Plants of T. herzogii resemble those of T. quin-
+                              with complete semiannular bands.                            quespina, but the latter can be readily distin-
+                                 Spores 7.5–8.8 to 10.6–12 mm in diam., exine             guished by the combination of Microlepidozia-
+                              yellow-brown, rather thin-walled, areolate, with a          type branching, slender thread-like stems, firm
+                              low, close network of ridges coalescing to delimit          walled cortical cells (Fig. 34: 8, 9), a biseriate tier
+                              areolae. Elaters rather straight, 6.5–7.5 to 9.6–11         of cells at the base of each leaf lobe (Fig. 34: 6,
+                              mm wide, only slightly tapering and bispiral to             7), and asymmetrically bilobed underleaves (Fig.
+                              tips, the spirals 2.9–3.4 mm wide.                          34: 1), the stronger lobe similar to (and only
+                                                                                          slightly shorter than) the lobe of a leaf (Fig. 34:
+                                 DIFFERENTIATION AND VARIATION—The delicate,              4). The first branch underleaf of T. quinquespina
+                              densely interwoven, prickly and highly nitid                is also unusual in being symmetrically bilobed
+                              shoots of T. herzogii lend this species a distinctive       and resembling a leaf; in T. herzogii it is asym-
+                              appearance. The leaf lobes are uniseriate through-          metrically bilobed, with one lobe much shorter
+                              out (or sporadically biseriate at the base), and the        and ending in a slime papilla. Telaranea quin-
+                              basal cells are barely united, forming a ‘‘disc’’ of        quespina has frequent, leafless, geotropic ventral-
+                              considerably less than one cell high (Fig. 35: 5,           intercalary and lateral-intercalary stolons.
+                              6). The leaf lobes of T. inaequalis are rather flex-           Herzog (1938) compared T. herzogii (as L. bi-
+                              uous, show essentially no taper, and are unequal            setula) with Arachniopsis. Hodgson (1964, p. 6)
+                              in length (Fig. 37: 4), the longest up to 9 cells           transferred T. herzogii to Arachniopsis, citing the
+                              long, and the lobe cells are of roughly equal               ‘‘complete absence of a basal discus in the leaf.’’
+                              length throughout. The leaves of T. herzogii are            In our treatment, the genus Arachniopsis is com-
+                              also 6 asymmetric, but the lobes are stiffly                bined with Telaranea. As in other Arachniopsis
+                              spreading and distinctly tapering, usually 5-, rare-        species (sect. Tenuifoliae), the leaf lobes are typ-
+                              ly 6-cells long (Fig. 35: 1, 5–7), the cells pro-           ically uniseriate to the base (see Discussion of
+                              gressively narrower and shorter from base to apex           Phylogenetic Relationships, p. 240).
+                              (Fig. 35: 7). The first branch underleaves of T.               In the field, juvenile phases of Temnoma pau-
+                              inaequalis are equally bilobed like the other stem          cisetigerum have distant leaves consisting of 2–3
+                              underleaves (Fig. 37: 3), vs. asymmetrically bi-            ciliiform lobes and a low disc, and could be con-
+                              lobed in T. herzogii (Fig. 35: 10).                         fused with T. herzogii.
+                                 Telaranea exigua Schust. is described as hav-               ‘‘Telaranea herzogii var. nana’’ (Schuster,
+                              ing predominately 3-lobed leaves. In robust plants          2000, p. 230. fig. 77: 4–9; 79, published without
+                              of T. herzogii the number of leaf lobes varies from         a Latin description) is a synonym of T. herzogii.
+                              2 to 3 on the same plant. Weaker shoots tend to             The variety was based on a specimen from Stew-
+                              have more slender stems, with fewer rows of cor-            art Is. (Schuster 60670).
+                              tical and medullary cells. Herzog’s (1938) de-                 DISTRIBUTION AND ECOLOGY—A species of New
+                              scription and illustration of T. bisetula ([ T. her-        Zealand, Tasmania and Australia (Victoria). In
+                              zogii) is of a plant with bilobed leaves; Hodgson           New Zealand the species is found rather com-
+                              (1956) also described the leaves as bifid. Exami-           monly on loamy, moist, shaded soil. It occurs for
+                              nation of the type reveals that, indeed, the leaves         the most part in lower to middle elevation moist
+                              are apparently all bifid (Fig. 35: 5), and the stem         or swampy forests where on soil in protected
+                              cross-section has 6 rows of cortical cells, sur-            pockets or shaded hollows associated with, for ex-
+                              rounding a medulla of 6 cell rows (Fig. 35: 8).             ample, Telaranea elegans, T. tetradactyla, T. tet-
+                              Schuster (1968, p. 457) assigned to ‘‘T. herzogii           rapila, Saccogynidium sp., Acromastigum colen-
+                              s. lat.’’ a New Zealand plant with uniformly bifid          soanum and Bazzania nitida. It may occur over
+                              lateral leaves; the plant illustrated as T. herzogii        soil of the forest floor deep in humid recesses
+                              in Schuster (1969, fig. 88: 4–6), however, is T.            formed by rock ledges (e.g., Lake Marion, Engel
+                              inaequalis. Schuster (2000, p. 230) referred plants         23169) or it may form a loosely creeping, pure,
+
+
+                              ←
+                              of Tiropahi or Four Mile River; 10, from Engel 17968, New Zealand, South Is., Otago/Westland Prov. Boundary,
+                              Mt. Aspiring Natl. Park, summit area of Haast Pass.)
+
+
+                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                  115
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                            FIG. 36. Telaranea herzogii (Hodgs.) Hodgs. 1. Gynoecium with mature sporophyte. 2. Innermost / bracts. 3.
+                         Perianth mouth. 4. Cilia of perianth mouth. 5. Seta, cross section. 6. Capsule profile. 7. Capsule wall, cross section.
+                         8. Capsule wall, outer layer. 9. Capsule wall, inner layer. (All from Allison 3171, New Zealand, North Is., South
+                         Auckland Prov., near Atiamuri, S of Rotorua.)
+
+
+
+
+                         116                                                                                       FIELDIANA: BOTANY
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                              feltlike covering over soil deep in pockets at tree         (F). NELSON PROV.: Paparoa Range, upper slopes of
+                              bases (e.g., Hauturu Highpoint Track, Engel                 N side of Tiropahi or Four Mile River between sea and
+                                                                                          Route 6, S of Charleston, 130–170 m, Engel 19239 (F);
+                              22599). It is rather frequent in humid sites such           Nelson Lakes Natl. Park, off Lakehead Track, near junc-
+                              as steep-sided stream banks and occurs loosely              ture with southern end of Loop Track, NE end of Lake
+                              over soil in protected niches; in particularly humid        Rotoiti, 630 m, Engel 22738 (F); Big Bush State Forest
+                              sites it may be epiphyllous on filmy ferns such as          48, Donald Creek, 480–600 m, Macmillan 77/108, 77/
+                                                                                          138 (CHR). NORTH ISLAND. WELLINGTON PROV.:
+                              Trichomanes elongata. Also in moist, dense, tree-           Tongariro Natl. Park, Mangawhero River near juncture
+                              fern gullies, where T. herzogii may be terricolous          of Rimu Track and Forest Walk, just NE of Ohakune,
+                              or on tree-fern caudexes (of Cyathea dealbata or            625 m, Engel 22720 (F). SOUTH AUCKLAND PROV.:
+                              Dicksonia squarrosa). It also may be encountered            Roto-a-kui Bush, E of Taupo, ca. 760 m, Allison
+                              rather commonly in cushions of Leucobryum. It is            H3054—c. per. (CHR); near Atiamuri, S of Rotorua, Al-
+                                                                                          lison H3171—c. sporo. (CHR); 10 mile on Atiamuri-
+                              much less frequent at higher elevations, as in the          Rotorua road, Allison H67—c. per. (CHR); between
+                              Temple Basin Ski area (Arthur’s Pass, Westland/             Lake Rotoehu and the coast, Bay of Plenty, Allison
+
+---
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                            TABLE 1.     Taxa included in systematic analysis.            quespina, Fig. 34: 6, 7), or the lobes may be uni-
+                                                                                          seriate to the insertion (T. herzogii, Fig. 35: 1, 5;
+                         Arachniopsis diacantha (Mont.) Howe                              Arachniopsis diacantha, Fig. 46: 5).
+                         Kurzia bisetula (Steph.) Grolle                                     Leaf lobe width is treated as a multistate char-
+                         Kurzia calcarata (Steph.) Grolle                                 acter with 4 states: 0 5 more than 4 cells wide;
+                         Kurzia fragilifolia Schust.                                      1 5 2–4 cells wide; 2 5 lobe base geminate; 3 5
+                         Kurzia helophila Schust.
+                         Kurzia hippuroides (Hook. f. &amp; Tayl.) Grolle                     lobe base uniseriate.
+                         Kurzia pallescens Grolle                                            11. Lobes fragmenting. A tendency toward
+                         Kurzia quinquespina Engel &amp; Merr.                                fragmentation of the leaf, probably as a form of
+                         Kurzia trilobata (Schust.) Schust.                               asexual reproduction, is confined to a few species
+                         Lepidozia obtusiloba Steph.                                      (T. centipes, T. tuberifera, Kurzia fragilifolia).
+                         Lepidozia spinosissima (Hook. f. &amp; Tayl.) G. L. &amp; N.             The extreme condition occurs in T. perfragilis,
+                         Telaranea blepharostoma (Steph.) Fulf.                           where not only the lobes but also the distal por-
+                         Telaranea capilligera (Schwaegr.) Schust.                        tion of the disc are missing (Fig. 20: 7, 10).
+                         Telaranea centipes (Tayl.) Schust.
+                         Telaranea chaetocarpa (Pears.) Grolle                               Lobes fragmenting is treated as a binary char-
+                         Telaranea chaetophylla (Spruce) Schiffn.                         acter: 0 5 not fragmenting; 1 5 fragmenting.
+                         Telaranea clatritexta (Steph.) Engel &amp; Merr.                        12. Lobe tip cells divided. In several species of
+                         Telaranea consobrina Engel &amp; Merr.                               Telaranea (T. tetrapila, Fig. 18: 4–6; T. patentis-
+                         Telaranea elegans (Col.) Engel &amp; Merr.                           sima, sporadically in a few other species) the ter-
+                         Telaranea gibbsiana (Steph.) Hodgs.
+                         Telaranea granulata Engel &amp; Merr.                                minal cell of the lobe is short, and the transverse
+                         Telaranea grossiseta (Steph.) Engel &amp; Schust.                    wall between the terminal cell and the penultimate
+                         Telaranea herzogii (Hodgs.) Hodgs.                               cell is noticeably thinner than those between the
+                         Telaranea hodgsoniae Engel &amp; Merr.                               other cells of the uniseriate row, giving the im-
+                         Telaranea inaequalis Schust. ex Engel &amp; Merr.
+                         Telaranea iriomotensis Yam. &amp; Miz.                               pression that this division occurred later. Repeated
+                         Telaranea kaindina Grolle                                        divisions of the apical lobe cells occur in T. in-
+                         Telaranea kogiana (Steph.) Grolle                                aequalis (Fig. 37: 7–11). In some species (T. in-
+                         Telaranea lawesii (Steph.) Grolle                                aequalis (Fig. 37: 5) the lobes terminate in a very
+                         Telaranea lindenbergii (Gott.) Engel &amp; Merr.                     small, button-like cell, which is much shorter than
+                         Telaranea longifolia (Howe) Engel &amp; Merr.
+                         Telaranea longitudinalis (Herz.) Schust.                         the penultimate cell.
+                         Telaranea martinii (Hodgs.) Schust.                                 Lobe tip cells divided is treated as a multistate
+                         Telaranea meridiana (Hodgs.) Hodgs.                              character with 3 states: 0 5 not divided; 1 5 sec-
+                         Telaranea neesii (Lindenb.) Fulf.                                ondarily divided; 2 5 cap cell.
+                         Telaranea nivicola Schust.
+                         Telaranea oligophylla (Lehm. &amp; Lindenb.) Engel                      13. Septa of uniseriate row. In the leaf lobes of
+                         Telaranea palmata Engel &amp; Merr.                                  some Telaranea species (T. chaetocarpa, Fig. 40:
+                         Telaranea paludicola (Hodgs.) Hodgs.                             6, 7; T. gibbsiana, Fig. 11: 7; T. praenitens, Fig.
+                         Telaranea patentissima (Hook. f. &amp; Tayl.) Hodgs.                 10: 5) the transverse septa in the cell angles of
+                         Telaranea pennata Engel &amp; Merr.                                  the uniseriate row are swollen and projecting
+                         Telaranea perfragilis Engel &amp; Merr.
+                         Telaranea plumulosa (Lehm. &amp; Lindenb.) Fulf.                     (‘‘vorgewölbt,’’ see Grolle, 1966, fig. 1: i, k, T.
+                         Telaranea praenitens (Hook. f. &amp; Tayl.) Hodgs.                   chaetocarpa). In others the septa do not protrude,
+                         Telaranea pseudozoopsis (Herz.) Fulf.                            and the lobes are either straight-sided or are mod-
+                         Telaranea pulcherrima (Steph.) Schust.                           erately to distinctly constricted at the septa (T.
+                         Telaranea quadristea (Steph.) Engel &amp; Merr.
+                         Telaranea remotifolia Hodgs.                                     pulcherrima, Fig. 25: 7; T. tetradactyla, Fig. 27:
+                         Telaranea tasmanica (Steph.) Engel &amp; Merr.                       5). In T. praenitens the marginal cells of the leaf
+                         Telaranea tetradactyla (Hook. f. &amp; Tayl.) Hodgs.                 disc also have projecting septa (Fig. 10: 5, right).
+                         Telaranea tetrapila (Hook. f. &amp; Tayl.) Engel &amp; Merr.                Projecting septa is treated as a binary character:
+                         Telaranea trichocoleoides (Herz.) Schust.                        0 5 not swollen; 1 5 swollen and projecting.
+                         Telaranea tridactylis (Lehm. &amp; Lindenb.) Engel &amp; Merr.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Colura herzogii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lejeunea herzogii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea capilligera</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea fragilifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea gottscheana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea inaequalis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea pallescens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Telaranea pulcherrima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Arachniopsis herzogii</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia herzogii</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Telaranea exigua</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.916667, 147.283333], [-41.729599, 146.640628], [-41.71955, 145.438498], [-41.3616817, 144.8466041], [-42.807699, 147.85751], [-40.223889, 148.051667], [-41.908724, 146.398476], [-41.66923, 146.633757], [-42.987784, 147.860009], [-41.63784, 146.280934], [-43.201667, 146.784444], [-41.131667, 147.176667], [-43.440982, 147.248532], [-41.491389, 145.429722], [-43.0966009, 147.7923956], [-42.80855, 147.735215], [-42.7438048, 147.8868533], [-42.688333, 146.491667], [-42.799892, 145.411606], [-42.990749, 147.246711], [-43.529629, 146.382611], [-42.220278, 145.957222], [-41.454882, 148.078911], [-41.275814, 147.956556], [-43.34583, 145.890957], [-41.626389, 145.055556], [-41.458377, 147.600026], [-42.7454708, 147.781799], [-42.625529, 148.0989], [-41.713476, 146.67077], [-42.805633, 145.900657], [-42.916667, 147.266667], [-42.718502, 147.734151], [-42.933333, 147.3], [-41.086111, 147.763056], [-41.815846, 145.411335], [-41.724278, 146.668311], [-41.644583, 145.341194], [-43.239444, 146.7675], [-42.719819, 146.512835], [-41.714085, 145.078018], [-42.928043, 147.345967], [-43.171046, 147.124407], [-42.883333, 147.25], [-41.547774, 146.281933], [-41.813907, 148.205309], [-41.816204, 146.038142], [-42.810646, 147.245994], [-42.17642, 146.032703], [-42.100433, 145.737233], [-42.95, 147.866667], [-41.839228, 145.475192], [-41.2538005, 148.032314], [-43.2579, 147.863801], [-43.168724, 147.73952], [-42.720274, 146.634965], [-41.4843166, 146.320642], [-42.933333, 147.283333], [-41.4250328, 147.6508645], [-43.167863, 147.862531], [-17.396517, 145.8153], [-42.322587, 171.396111], [-42.361455, 172.252558], [-36.217547, 175.05038], [-38.4333, 146.5667], [-36.95425, 175.817111], [-36.216667, 175.083333], [-37.70056, 145.66167], [-37.705968, 145.612096], [-44.733333, 168.083333], [-38.4333, 146.5667], [-37.70056, 145.66167], [-41.757841, 172.649121], [-37.55, 145.88333], [-37.70056, 145.66167], [-29.25, -177.883333], [-40.900675, 172.578869], [-36.868194, 175.587944], [-34.953579, 173.543148], [-38.456667, 175.820278], [-41.948295, 171.400118], [-37.729, 175.989], [-36.9, 174.55], [-42.232321, 171.474608], [-37.1275, 175.19], [-37.70056, 145.66167], [-34.483333, 172.766667], [-37.55, 145.8833], [-37.881944, 145.484722], [-38.683333, 176.7], [-40.8476227, 174.915003], [-36.868611, 174.719722], [-37.798282, 145.729605], [-40.96, 175.111667], [-36.0, 149.8667], [-17.399167, 145.818683], [-35.382778, 173.291389], [-39.2010853, 173.9782985], [-36.865, 174.829444], [-36.880556, 174.704444], [-43.764681, 169.248782], [-37.55, 145.8833], [-17.791944, 178.020556], [-44.731689, 168.083394], [-35.180278, 173.410556], [-35.624694, 173.52699], [-37.4775, 148.3072], [-37.70056, 145.66167], [-40.9982265, 175.1162748], [-41.956997, 171.601612], [-42.0382428, 171.8195614], [-46.8936635, 168.1242902], [-41.275, 174.978], [-33.570833, 150.333333], [-37.5853, 145.5536], [-43.813829, 173.024698], [-44.815025, 168.10006], [-41.748236, 171.8495631], [-37.7, 145.66139], [-35.250067, 174.120086], [-44.121944, 168.546389], [-41.2871329, 175.0172025], [-41.079125, 175.107365], [-38.8561805, 174.9285107], [-38.672967, 143.4916], [-37.7, 145.66139], [-37.4355553, 175.7472251], [-43.365633, 170.45828], [-41.748236, 171.8495631], [-37.705753, 145.611752], [-33.570833, 150.333333], [-29.266667, -177.9], [-37.7, 145.66139], [-43.692956, 172.741844], [-44.7333, 168.0833], [-42.779888, 171.328012], [-37.59306, 145.78056], [-37.850556, 145.343056], [-41.757841, 172.649121], [-41.95, 171.6], [-38.670859, 176.695907], [-37.55667, 145.8875], [-37.126133, 175.196525], [-36.1941331, 175.4132956], [-42.3815824, 172.3312359], [-37.5934, 145.78056], [-40.96, 175.111667], [-41.933333, 171.433333], [-37.65306, 145.83111], [-36.216667, 175.1], [-41.256, 175.012], [-37.603, 175.859], [-37.70056, 145.66167], [-38.643639, 143.689028], [-38.426667, 174.796667], [-36.885056, 174.616417], [-41.815871, 171.77005], [-37.066667, 174.666667], [-42.446869, 171.46941], [-43.783333, -176.683333], [-37.64694, 145.81778], [-38.486279, 177.482166], [-36.883333, 174.566667], [-37.603, 175.859], [-41.8982385, 171.4328875], [-34.428611, 172.961389], [-45.269516, 167.714614], [-37.7, 145.66139], [-35.25, 174.083333], [-34.25, 141.5], [-37.309722, 176.255556], [-37.1275, 175.19], [-37.55, 145.88333], [-37.5934, 145.78], [-16.513889, 145.269444], [-36.266667, 174.8], [-45.608413, 166.869629], [-44.731689, 168.083394], [-37.1076494, 175.7367261], [-37.798282, 145.729605], [-37.7, 145.66139], [-39.400556, 175.421111], [-44.098343, 169.366747], [-38.689778, 143.479444], [-36.883333, 174.566667], [-37.4775, 148.3072], [-43.703756, 172.741799]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [74.3, 63.0, 80.2, 83.7, 117.0, 124.5, 136.4, 149.3, 132.3, 110.7, 88.4, 89.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.7, 20.7, 18.7, 15.5, 12.7, 10.7, 10.1, 10.9, 12.9, 14.8, 17.3, 18.9], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [10.2, 10.2, 8.9, 6.9, 5.2, 3.8, 3.1, 3.3, 4.7, 5.7, 7.6, 8.7], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

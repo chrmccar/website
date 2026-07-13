@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riccardia eriocaula — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Riccardia eriocaula</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Riccardia eriocaula</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Aneuraceae</span>
+    <span class="badge">Riccardia</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">150</p>
+    <footer>39 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">9.7&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">2129&thinsp;mm</p>
+    <footer>annual · CV&thinsp;19.1</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">5</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>3.0</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Plagiochila pleurata (Hook.f. &amp; Taylor) Hook.f. &amp;      Reboulia hemisphaerica subsp. australis R.M.Schust.
+        Taylor var. pleurata                           Rectolejeunea ocellata Herzog
+Plagiochila radiculosa Mitt.                           Riccardia aequicellularis (Steph.) Hewson
+Plagiochila ramosissima (Hook.) Lindenb.               Riccardia aequitexta (Steph.) E.A. Brown
+Plagiochila retrospectans (Nees) Nees                          Aneura aequitexta Steph.
+Plagiochila rutlandii Steph.                                   Aneura effusa Steph.
+Plagiochila sinclairii Mitt.                                   Riccardia effusa (Steph.) E.A.Hodgs.
+Plagiochila stephensoniana Mitt.                       Riccardia alba (Colenso) E.A.Brown
+Plagiochila strombifolia Taylor                                Aneura alba Colenso
+Plagiochilion conjugatus (Hook.) R.M.Schust.                   Aneura crispa Colenso
+Plagiochilion prolifer (Mitt.) R.M.Schust.                     Aneura vitiensis Steph.
+Podomitrium phyllanthus (Hook.) Mitt.                          Riccardia vitiensis (Steph.) E.O.Campb.
+Porella elegantula (Mont.) E.A.Hodgs.                  Riccardia alcicornis (Hook.f. &amp; Taylor) Trevis.
+Porella pulcherrima S.Hatt.                            Riccardia asperulata R.M.Schust.
+Pseudocephalozia lepidozioides R.M.Sch ust.            Riccardia australis (Hook.f. &amp; Leveille) E.A. Brown
+        Lepidozia leptodictyon Herzog                          Aneura micropinna Steph.
+        Micrisophylla leptodictyon (Herzog)                    Riccardia filicina (Colenso) E.A.Hodgs. nom.
+        E.A.Hodgs.                                             inval.
+        Pseudocephalozia leptodictyon R.M.Schust.      Riccardia bipinnatifida (Colenso) Hewson
+        Pseudocephalozia macrostipa (Steph.)                   Riccardia bistrata Pearson
+        R.M.Schust.                                    Riccardia breviala E.A. Brown
+Pseudolophocolea denticulata R.M .Sch ust. &amp;           Riccardia cochleata (Hook.f. &amp; Taylor) Kuntze
+        JJ.Engel                                       Riccardia colensoi (Steph.) W.Martin
+Psiloclada clandestina Mitt.
+138   Tuhinga, Number 10 (1998)
+
+
+
+
+Riccardia crassa (Schwaegr.) Carrington &amp; Pearson      Schistochila monticola R.M.Schust.
+Riccardia eriocaula (Hook.) Besch. &amp; C. Massal.        Schistochila muricata E.A.Hodgs. &amp; Allison
+Riccardia exilis E.A. Brown                            Schistochila nitidissima R.M.Schust.
+Riccardia furtiva E.A. Brown &amp; Braggins                Schistochila nobilis (Hook.) Trevis.
+Riccardia intercellula E.A. Brown                      Schistochila pellucida R.M.Schust. &amp; ].].Engel
+Riccardia lobulata (Colenso) E.A.Hodgs.                Schistochila pluriciliata R.M.Schust. &amp; ].].Engel
+        Aneura minima (Carrington &amp; Pearson) Steph.    Schistochila pseudociliata R.M.Schust.
+        Riccardia perpusilla (Colenso) E.A.Hodgs.      Schistochila repleta (Hook.f. &amp; Taylor) Steph.
+Riccardia marginata (Colenso) Pearson                  Seppeltia succuba Grolle
+        Riccardia muscoides (Colenso) E.A.Hodgs.       Siphonolejeunea nudipes (Hook.f. &amp; Taylor)
+Riccardia multicorpora E.A.Brown                               Herzog
+Riccardia nitida (Colenso) E.A.Hodgs.                  Stenolejeunea apiculata (Sande-Lac.) R.M.Schust.
+Riccardia aff. pallidevirens (Steph.) A.Evans                  Lejeunea apiculata Sande-Lac.
+Riccardia papulosa (Steph.) E.A.Brown                  Stolonivector fiordlandiae (E.A.Hodgs.) ].].Engel
+        Aneura papulosa Steph.                                 Chiloscyphus fiordlandiae (E.A.Hodgs.)
+Riccardia pennata E.A.Brown                                    J.J.Engel &amp; R.M.Schust.
+Riccardia perspicua E.A.Brown                                  Clasmatocolea fio rdlandiae (E.A.Hodgs.)
+Riccardia pseudodendroceros R.M.Schust.                        Grolle
+Riccardia pusilla (Steph.) E.A.Brown                           Lophocolea fiordlandiae E.A.Hodgs.
+Riccardia umida E.A.Brown                              Symphyogyna hymenophyllum (Hook.) Mont. &amp;
+Riccardia aff. wattsiana (Steph.) Hewson                       Nees
+Riccia bifurca Hoffm.                                          Symphyogyna podophylla non auct. (Thunb.)
+Riccia bullosa Link                                            Mont. &amp; Nees
+Riccia ciliata Hoffm.                                  Symphyogyna subsimplex Mitt.
+Riccia crozalsii Levier                                Symphyogyna tenuinervis (Hook.f. &amp; Taylor) Grolle
+Riccia crystallina L.                                          Symphyogyna prolifera Colenso
+Riccia fluitans L.                                     Symphyogyna undulata Colenso
+Riccia glauca L.
+Riccia sorocarpa Bisch.                                Targionia hypophylla L.
+        Riccia vesiculosa (Carrington &amp; Pearson)       Telaranea capilligera (Schwaegr.) R.M.Schust.
+        Steph.                                         Telaranea centipes (Taylor) R.M.Schust.
+Ricciocarpos natans (L.) Corda                         Telaranea corticola (Steph.) E.A.Hodgs.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">R. craeea                                                                          WTVAN
+In this species the surfaces of the cells are lightly striated, giving the t�allus a rather
+yellowish-green look that is surprisingly easy to recognise once it is known. However,
+greener forms are not unusual and can be very confusing. The apices of the branches
+are rather blunt. It is reasonably common on soil or rotting wood in wet forest and
+rainfores!, and only R. colensoi is similar.
+
+R. eriocaula                                                                         TV
+This is a mainly Tasmanian species with a more or less dendroid habit. The shoots are
+up to 35 mm tall and consist of a stem and a semicircular, flattened frond. The thallus
+i_ s papillose, making it appear rather rough or bristly under a hand lens. The branches
+are tripinnately branched. This species seems to be confined to very wet rainforest.
+
+1&lt;: watt5ianaa                                                                    WTVAN
+This is a common species of wet forest and rainforest in Tasmania, but it is quite
+rare on the mainland. It is usually very densely branched, with two types of
+branches. The primary branches are usually prostrate, 2 to 3 mm wide, and often
+hidden by the secondary branches, which are only 0.5 mm or so wide and rather
+palmate. The apices of the terminal branches are dissected, but this is often
+impossible to see with a hand lens.
+
+
+
+
+                                                                       Riccardia crassa
+              Thallose liverworts and hornworts - Group A
+
+
+
+
+----   10mm                          Riccardia eriocaula
+
+
+
+
+---- 10mm                            Riccardia wattsiana
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+Riccia Ricciaceae
+Intermittently wet soil in drier regions is the typical habitat of most species in this
+genus. Some grow in wet envjronments, and a few are aquatic. The thallus is branched
+once or twice, so that plants can form small rosettes with the branches appearing to
+radiate outwards. There is usually a conspicuous sunken, longitudinal furrow, especially
+near the apex of each branch. The upper surface of the thallus can have either a smooth,
+uniform appearance with regularly spaced air-holes (subgenus Riccia), or a rough
+surface with a honeycombof irregular holes which often become enlarged with age
+(subgenus Ricciella). The ventral surface of the thallus generally carries scales, whose
+nµmber, size and v{sibility are useful diagnostic features for some species. The
+sporophyte consists of what Scott (1985) called a &#39;bag of spores&#39; within the thallus.
+
+Similar species: Asterella spp., Enigmella thallina, Plagiochasma rupestre, Reboulia
+gueenslandica, Targionia hypophylla
+
+Subgenus Riccia
+Riccia al�ida                                                                     WSVN
+This species is commonest on the gypsum-rich soils of the arid mallee regions, where
+�e have seen it growing in mats several metres across. It is immediately distinguished
+by the encrustation of white calcite or gypsum in the cell walls on the dorsal surface,
+giving the thallus a white, cracked, crusty appearance.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Richardia scabra, commonly called rough Mexican clover or Florida pusley, is a species of flowering plant in the family Rubiaceae. It is widespread, native to warm areas of both North America, South America and East African countries like in Central Kenya.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Riccardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia gracilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia longiflora</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia maxima</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia muscoides</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Riccardia prehensilis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia scabra</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Richardia stellaris</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia eriocaula</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.3667, 146.85], [-42.809284, 146.389825], [-43.440988, 146.754236], [-42.259749, 145.425237], [-42.529827, 145.418468], [-42.531443, 145.54019], [-41.65, 145.94999], [-42.900896, 147.123862], [-42.441413, 145.542282], [-42.720274, 146.634965], [-41.458391, 146.402656], [-42.65, 145.66666], [-41.65, 145.94999], [-41.717854, 145.318327], [-41.811163, 145.556662], [-42.532929, 145.66192], [-42.216667, 145.433333], [-42.990749, 147.246711], [-41.13333, 145.05], [-42.087322, 146.154968], [-41.8070306, 145.6394883], [-42.686166, 146.510432], [-43.440982, 147.248532], [-42.688333, 146.491667], [-43.260569, 146.631754], [-43.350944, 146.754599], [-42.354207, 145.787139], [-42.686793, 146.491446], [-42.25802, 145.304046], [-43.260899, 146.754961], [-42.100983, 145.738113], [-41.1516826, 145.0466029], [-43.168724, 147.73952], [-42.16666, 145.6], [-43.0787, 146.264315], [-42.769444, 146.004444], [-42.439802, 145.420735], [-43.2, 146.7833], [-41.6864077, 145.0929986], [-39.3159, 174.1498], [-45.856011, 167.461656], [-47.037297, 168.082662], [-42.519258, 171.467064], [-47.0, 168.0], [-38.704937, 177.157717], [-40.966667, 175.116667], [-39.733333, 176.2], [-38.637556, 143.74], [-42.8426, 171.1681], [-40.966667, 175.15], [-41.309, 174.899], [-38.719811, 177.164426], [-45.003559, 167.747303], [-46.05191, 170.190668], [-46.8682627, 168.1198903], [-41.96443, 171.432857], [-41.85832, 171.601939], [-39.30621, 174.122572], [-45.784041, 167.468436], [-41.945734, 171.674224], [-40.966667, 175.116667], [-42.943804, 170.96623], [-39.266667, 174.083333], [-45.486, 167.292], [-38.698037, 176.147146], [-35.633333, 173.65], [-39.3173, 174.098368], [-39.34672, 173.97289], [-45.4281, 167.125], [-45.75, 167.5], [-38.316667, 143.983333], [-40.9299186, 172.4095733], [-43.287062, 170.164729], [-45.2819, 166.895], [-37.0031, 174.5611], [-43.764681, 169.248782], [-47.0, 168.0], [-44.368801, 168.015695], [-38.700248, 176.996956], [-41.768973, 172.153406], [-50.7984832, 166.0994361], [-45.856011, 167.461656], [-42.917556, 171.557306], [-44.896944, 168.085833], [-45.054902, 167.543374], [-38.514409, 175.55786], [-41.766667, 171.733333], [-45.197861, 167.552005], [-39.269009, 174.097338], [-36.9, 174.516667], [-41.802716, 171.773242], [-44.583611, 168.5875], [-39.316667, 174.133333], [-47.196536, 167.667589], [-44.368801, 168.015695], [-41.8, 172.6], [-38.426719, 174.715174], [-42.808, 171.543], [-44.815278, 168.095278], [-46.868055, 168.117428], [-42.967, 171.769], [-38.733333, 143.716667], [-45.776602, 167.532036], [-35.633333, 173.533333], [-45.033333, 167.533333], [-46.604757, 168.979082], [-42.2921496, 172.0559631], [-50.7984832, 166.0994361], [-43.443447, 170.174446], [-44.05, -176.6], [-35.733333, 173.766667], [-38.754284, 177.155657], [-38.75, 176.083333], [-47.196536, 167.667589], [-39.275999, 174.923934], [-50.8484847, 166.0161046], [-41.147284, 172.197263], [-40.9582256, 175.1112749], [-42.291944, 172.058056], [-45.9361, 167.5089], [-41.004775, 175.125504], [-39.05569, 174.61053], [-42.65097, 171.533589], [-36.2, 175.083333], [-39.306343, 174.093647], [-45.75, 167.5], [-38.754284, 177.155657], [-36.2, 175.066667], [-39.316667, 174.15], [-47.196536, 167.667589], [-38.547076, 175.6372199], [-46.12972, 167.69067], [-45.670545, 166.655923], [-42.3304, 171.3934], [-41.543348, 172.496448], [-38.788884, 177.1440364], [-45.484928, 167.17432], [-44.1916184, 168.5595115], [-40.966667, 175.116667], [-42.095274, 171.374135], [-50.8484845, 165.9494337], [-41.791988, 173.000097], [-38.704937, 177.157717], [-40.966667, 175.116667], [-41.277, 175.004], [-39.3167, 174.1333], [-42.216667, 171.45], [-42.232321, 171.474608], [-38.719811, 177.164426], [-50.7984832, 166.0994361]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [89.5, 80.0, 106.6, 114.2, 172.5, 165.9, 192.3, 206.2, 191.5, 163.4, 107.3, 125.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.8, 19.9, 17.6, 14.5, 11.7, 9.9, 9.3, 10.1, 12.0, 13.8, 16.6, 17.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.4, 8.2, 6.4, 5.0, 3.5, 2.9, 3.1, 4.4, 5.2, 7.0, 8.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

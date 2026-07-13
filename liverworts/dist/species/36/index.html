@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plagiochila baileyana — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Plagiochila baileyana</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Plagiochila baileyana</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Plagiochilaceae</span>
+    <span class="badge">Plagiochila</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">70</p>
+    <footer>14 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">17.5&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">2189&thinsp;mm</p>
+    <footer>annual · CV&thinsp;53.6</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">17</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">8</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>6.0–13.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>18.0–22.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>1200.0–2000.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>750.0–800.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>8.0–14.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>11.0–20.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>11.0–19.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>7.0–12.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>11.0–21.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>14.0–21.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>4.0–7.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>bulging</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>HEPATIC_TYPES_AUSTRALIA_1992</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">TYPES: G, NSW (H224).
+COMMENT: Name in current use.
+
+
+Physocolea casuarinae Stephani (1916: 909)
+PROTO: &#39;Australia orientalis. New South Wales.&#39;
+LABEL: NEW SoUTH WALES: 1. Fig Tree, Lane Cove R[iver], [Sydney], on Casuarina, W. W.
+W[atts] 792, 1903; 2. bottom of gully above bridge, Fig Tree, Lane Cove River, on
+Casuarina, [w. w.] Watts 792, 1903 [both specimens are in the same folder].
+TYPES: G (17524), NSW.
+COMMENT: G 17524 (Watts 792) cited as holotype by Thiers (1988: 134) who does not
+indicate if the G specimen is labelled as the type by Stephani. Reduced to synonymy
+under Cololejeunea minutissima (Smith) Schiffner by Thiers.
+
+
+Plagiochasma queenslandicum Stephani (1917: 9)
+PROTO: &#39;Australia, Queensland (Simmonds legit).&#39;
+LABEL: QUEENSLAND: ex Hb Simmonds, Watts Q258, Aug 1887.
+TYPES: G, NSW.
+COMMENT: = Reboulia hemisphaerica fide Bischler (1979: 76). Recently reinstated as Re-
+boulia queenslandica (Stephani) Hicks fide Hicks (1992: 114) who cites the type as nr
+Brisbane, rH. Simmonds 16340, 1887, Herb. Watts 611 (4490) (G, FI [FH]).
+
+
+Plagiochila rossii Stephani (Stephani &amp; Watts 1914: 130)
+PROTO: &#39;Australia, N.S. Wales (The Jungle, Blackheath): Watts 1035.&#39;
+LABEL: NEW SoUTH WALES: Blackheath, The Jungle, W. W. Watts 1035, 7 Jan 1911 [3 packets
+in folder].
+TYPES: G, NSW (H344).
+COMMENT: = Plagiochila baileyana Stephani fide Inoue (1986: 377).
+
+
+Plagiochila serrifolia Stephani (Stephani &amp; Watts 1914: 130
+PROTO: &#39;Australia, New South Wales (Wyong): Watts, 1100.&#39;
+LABEL: NEW SOUTH WALES: gully over mountain SW of &#39;Kingwell&#39;, Wyong, [W. w.] Watts
+1100,23 Aug 1910 [2 packets in folder].
+TYPES: G, NSW (H345).
+COMMENT: = Plagiochila vitiensis Mitten fide Inoue (1986: 364).
+
+
+Plagiochila victoriae Stephani (Stephani &amp; Watts 1914: 131)
+PROTO: &#39;Australia, Victoria (Lome: leg. Miss E.L. Watts) Hb Watts, 910.&#39;
+LABEL: VICTORIA: Lome, leg. Ethel Watts, Hb W. W. Watts 910, Dec 1909.
+TYPES: G, NSW (H370).
+COMMENT: = Plagiochila baileyana fide Inoue (1986: 377).
+84                                                                 Te/opea Vol. 5(1): 1992
+
+
+Plagiochila wattsii Stephani (in Rodway 1918: 105)
+PROTO: &#39;On Fagus log, Pioneer track, Blue Tier (Weymouth). Determined by Stephani.&#39;
+LABEL: NEW SOUTH WALES: Pearce&#39;s Creek, Richmond River, on tree, W. W. Watts 19, 19
+June 1900.
+TYPES: G (ex Hb Levier 2306), NSW.
+COMMENT: Rodway (1918: 105) reported this species from Tasmania, attributing the
+species description and identification to Stephani. In 1921 Stephani redescribed Pla-
+giochila wattsii as a new species (the protologue cites the type specimen as: &#39;Australia.
+New South Wales (Watts legit)&#39;. The Stephani description does not match the one
+published in Rodway. Inoue &amp; Schuster (1971) were unable to locate Rodway&#39;s spec-
+imen, and they suggested that it is probably a species of Lophocolea. The G specimen
+of Watts 19 is cited as the type by Inoue &amp; Schuster (1971: 221) and Inoue (1986: 371).
+Further work to clarify the status of this taxon is required!
+
+Porella crawfordii Stephani (1889: 270), as &#39;cranfordi&#39;
+PROTO: &#39;New England, Moona near Walcha leg. A. R. Cranford 1884 .... Queensland,
+Toowoomba, Hartmann 1876, Queensland F. M. Bailey (Herb. Brotherus Nr. 11). N.
+S. Wales Rev. Dr. Woolls. 1884&#39;
+LABEL: NEW SOUTH WALES: Moona near Walcha, New England, A.R. Crawford, 1884.
+TYPE: G (lectotype), NSW (H259: isolectotype).
+COMMENT: Lectotypified by Hattori (1985: 53). This species was named after its collec-
+tor, A.R. Crawford, but Stephani appears to have misread the handwritten label.
+Stephani&#39;s spelling, although original, must count as an orthographic error and was
+amended by Scott &amp; Bradshaw (1986: 79).
+
+Riccardia babindae Hewson (1970b: 85)
+PROTO: &#39;Holotype-The Boulders, Babinda, N. Qld., Hewson 460, viii.1964 (NSW): ISOTYPE</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Neohodgsonia mirabilis (Perss.) Perss.                 Pallavicinia tenuinervis (Hook.f. &amp; Taylor) Trevis.
+Nephelolejeunea conchophylla Grolle                    Pallavicinia xiphoides (Hook.f. &amp; Taylor) Trevis.
+Nephelolejeunea hamata Grolle                          Paracromastigum drucei (R.M.Schust.) R.M.Schust.
+Nephelolejeunea papillosa Glenny                               Pseudocephalozia drucei R.M.Schust.
+Nothogymnomitrion erosum (Carrington &amp; Pearson)        Paracromastigum fiordlandiae R.M.Schust. &amp;
+       R.M.Schust.                                            JJ.Engel
+       Herzogobryum erosum (Carrington &amp;               Paracromastigum fissifolium (Steph.) R.M.Schust.
+       Pearson) Grolle                                 Paracromastigum furcifolium (Steph.) R.M.Schust.
+                                                               Bonneria furcifolia (Steph.) R.M.Schust.
+Pachyglossa tenacifolia (Hook.f. &amp; Taylor) Herzog      Paracromastigum kirkii (Steph.) R.M.Schust.
+       &amp; Grolle                                        Paracromastigum macrostipum (Steph.) R.M.Schust.
+Pachyschistochila altissima (E.A.Hodgs.)                       Pseudocephaloziella macrostipa (Steph.)
+       R.M.Schust. &amp; J.J.Engel subsp. altissima                R.M.Schust.
+       Schistochila altissima E.A.Hodgs.               Paraschistochila conchophylla (E.A.Hodgs. &amp;
+Pachyschistochila berggrenii ].].Engel &amp; R.M.Schust.           Allison) R.M.Schust.
+Pachyschistochila childii R.M.Schust. &amp; ].].Engel              Schistochila conchophylla (E.A.Hodgs. &amp;
+Pachyschistochila colensoana (Steph.) R.M.Schust.              Allison) R.M.Schust.
+       &amp;].].Engel                                      Paraschistochila pinnatifolia (Hook.) R.M.Schust.
+       Schistochila colensoana Steph.                          Schistochila pinnatifolia (Hook.) Trevis.
+       Schistochila pseudokirkiana R.M.Schust.         Paraschistochila tuloides (Hook.f. &amp; Taylor)
+Pachyschistochila latiloba R.M.Schust. &amp; J.J.Engel             R.M.Schust.
+Pachyschistochila nivicola R.M.Schust. &amp; ].].Engel             Schistochila tuloides (Hook.f. &amp; Taylor)
+Pachyschistochila papillifera (R.M.Schust.)                    R.M.Schust.
+       R.M.Schust. &amp; ].].Engel                         Pedinophyllum monoicum (Steph.) Grolle
+       Schistochila papillifera R.M.Schust.            Petalophyllum australe Colenso
+       Schistochila ruahinensis E.A.Hodgs.             Phyllothallia nivicola E.A.Hodgs.
+Pachyschistochila parvistipula (Rodw.) R.M.Schust.     Plagiochasma rupestre CT.R. &amp; G. Forst.) Steph.
+       &amp;].].Engel                                              Plagiochasma australe (Hook.f &amp; Taylor) Nees
+       Schistochila parvistipula Rodw.                         Plagiochasma hodgsoniae Hamlin, nom. illeg.
+Pachyschistochila subhyalina var. grandidentata        Plagiochila annotina Lindenb.
+       ].].Engel &amp; R.M.Schust.                         Plagiochila baileyana Steph.
+Pachyschistochila subhyalina (R.M.Schust.)             Plagiochila banksiana Gottsche var. banksiana
+       R.M.Schust. &amp; ].].Engel var. subhyalina         Plagiochila banksiana var. echinophora Inoue &amp;
+       Schistochila subhyalina R.M.Schust.                     R.M.Schust.
+Pachyschistochila succulenta ].].Engel &amp; R.M.Schust.   Plagiochila baylisii Inoue &amp; R.M.Schust.
+                                                                         NZ Liverworts and Hornworts    137
+
+
+
+
+Plagiochila caducifolia Inoue &amp; R.M.Schust.            Psiloclada major (R.M.Schust.) ].].Engel
+Plagiochila circinalis (Lehm. &amp; Lindenb.) Lehm. &amp;      Ptilidium ciliare (L.) Hampe
+         Lindenb.                                      Ptychanthus striatus (Lehm. &amp; Lindenb.) Nees
+Plagiochila circumdentata Steph.
+Plagiochila deltoidea Lindenb.                         Radula allisonii Castle
+Plagiochila fasciculata Lindenb.                       Radula buccinifera (Hook.f. &amp; Taylor) Taylor
+Plagiochila fragmentissima Inoue &amp; R.M.Schust.         Radula campanigera Mont.
+Plagiochila fruticella (Hook.f. &amp; Taylor) Hook.f. &amp;    Radula cuspidata Steph.
+         Taylor                                        Radula dentifolia Grolle
+Plagiochila fuscella (Hook.f. &amp; Taylor) Taylor &amp;       Radula fauciloba Steph.
+         Hook.f.                                       Radula grandis Steph.
+Plagiochila gigantea (Hook.) Dumort.                   Radula marginata Taylor
+         Plagiochila suborbiculata Colenso             Radula mittenii Steph.
+Plagiochila gregaria (Hook.f. &amp; Taylor) Hook.f. &amp;      Radula multimentula E.A.Hodgs.
+        Taylor                                         Radula papulosa Steph.
+Plagiochila incurvicolla (Hook.f. &amp; Taylor) Hook.f.    Radula parviretis E.A.Hodgs.
+        &amp; Taylor                                       Radula physoloba Mont.
+Plagiochila lyallii Mitt. var. lyallii                 Radula plicata Mitt.
+Plagiochila lyallii var. quinquespina (Steph.) Inoue   Radula sainsburiana E.A.Hodgs. &amp; Allison
+        &amp; R.M.Schust.                                  Radula silvosa E.A.Hodgs. &amp; Allison
+Plagiochila obscura Colenso                            Radula tabularis Steph.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>PLAGIOCHILA_AUSTRALIA_2018</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">TELOPEA
+                                        Journal of Plant Systematics
+plantnet.rbgsyd.nsw.gov.au/Telopea • escholarship.usyd.edu.au/journals/index.php/TEL • ISSN 0312-9764 (Print) • ISSN 2200-4025 (Online)
+
+
+
+
+                            A revision of Australian Plagiochila
+                           (Lophocoleinae: Jungermanniopsida)
+
+                                                   Matt A.M. Renner
+
+
+                     National Herbarium of New South Wales, Royal Botanic Gardens and Domain Trust,
+                                   Mrs Macquaries Road, Sydney, NSW 2000, Australia.
+
+
+
+
+                                                             Abstract
+Fifty-five Plagiochila species are recognized for Australia and New Zealand, of which nine are new, all from
+Australia with eight of the new species from the Wet Tropics Bioregion of north-east Queensland and the
+nineth from the south-eastern mesic archipelago of eastern New South Wales and south-east Queensland.
+Four of the new species belong in the challenging, and neglected, section Vagae. Three new Australian records
+are reported, P. daviesiana, P. monospiris, and P. streimannii; and one species, P. alta, is a new record for New
+Zealand. Six species, P. annotina, P. circumdentata, P. colensoi, P. deltoidea, P. gigantea and P. ramosissima, are
+excluded from Australia as these are all New Zealand endemics reported in error for Australia. Plagiochila
+baylisii, previously considered a New Zealand endemic, is reported new for Australia. Four species are excluded
+from Australia, P. furcata, P. inflata, P. renitens and P. sciophila, as they are based on misidentifications or are
+not supported by voucher material. Another interpretation of the confusion surrounding the name Plagiochila
+baileyana is presented, wherein Plagiochila baileyana is accepted as a species distinct from P. gigantea, while
+Plagiochila aculeata is returned to synonymy of P. fasciculata, and Plagiochila subfasciculata Colenso is
+reinstated. The number of Plagiochila species in Australia increases from 32 to 41, but the number of species
+in New Zealand decreases from 28 to 27 as a result of this study. New combinations at species level are also
+proposed for a variety of P. blepharophora from Fiji and two varieties of P. gymnoclada from Sumatra and Java,
+two species which morphological data suggests are grossly polyphyletic as they are currently circumscribed.
+
+
+                                                          Introduction
+The genus Plagiochila currently contains around 600 accepted species (Söderström et al. 2016) globally
+distributed in mesic environments, including lowland tropical rainforest and alpine herbfields. Different
+species partition microsites, including rock, soil, decaying wood, tree trunks, branches, and twigs, and within a
+forest all microsites except leaf surfaces maybe routinely colonized by various Plagiochila species. For example,
+in tropical montane forest of the Wet Tropics bioregion in Queensland Plagiochila baileyana Steph. occupies
+saturated humic soil on the forest floor, P. conturbata Steph. and P. aenea M.A.M.Renner grow on granite
+boulders, P. monospiris Inoue &amp; Grolle grows on decaying wood, P. arbuscula (Brid. ex Lehm.) Lindenb. grows
+on tree trunks, and P. queenslandica Steph. and P. daviesiana Steph. grow on tree trunks, branches and twigs.
+On the west coast of the South Island, New Zealand, Plagiochila circumdentata Steph. and P. incurvicolla
+Hook.f. &amp; Taylor grow on rocks and sand within and alongside streams, P. banksiana grows on damp soil,
+
+
+
+
+© 2018 Royal Botanic Gardens and Domain Trust
+188           Telopea 21: 187–380, 2018                                                                   Renner
+
+
+often on streambanks, P. intertexta Hook.f. &amp; Taylor may inhabit damp rocks, P. gigantea Lindenb. grows in
+depressions on the forest floor, P. stephensoniana Mitt. and P. trispicata Colenso, grow around tree trunk bases,
+P. annotina Lindenb., P. incurvicolla, and P. strombifolia Mitt. grow on tree trunks, and P. circinalis Lindenb.
+grows on branches and twigs. In some situations, including the tree trunks in the previous example, several
+species may co-occur within the same microsite. In lowland tropical rainforests in the Queensland Wet Tropics
+three species, P. daviesiana Steph., P. teysmannii Sande Lac., and P. bantamensis (Reinw., Blume et Nees) Mont.
+can be found syntopic on twigs and branches within riparian forest. Species packing within and partitioning
+among microsites combine with the wide range of microsites and climatic breadth occupied resulting in high
+Plagiochila species diversity, both within the Australasian region and elsewhere.
+The first Plagiochila collections from Australasia were made by Archibald Menzies (1754–1842) at Dusky
+Bay in Fiordland, New Zealand during his appointment as naturalist on the global voyage of HMS Discovery
+under Captain George Vancouver. Menzies collected at least four Plagiochila species at Dusky Bay (now
+Dusky Sound). Three of these, Plagiochila annotina, P. gigantea, and P. ramosissima were described by William
+Jackson Hooker (1818) on the basis of his gatherings and have the distinction of being the first Plagiochila
+reported from New Zealand and Australia. New species were still being described from Menzies specimens
+more than fifty years after their collection, when Lindenberg (1843) described Plagiochila deltoidea Lindenb.
+and included a Menzies gathering in the original material. The next Plagiochila reported from Australasia was
+
+---
+
+species delimitation methods based on genetic distances (Automatic Barcode Gap Detection: ABGD) and tree
+topology using the General Mean Yule Coalescent (GMYC) estimated from a three marker molecular dataset
+(Renner et al. 2016a, 2016b, 2017a). A revision of the Plagiochila arbuscula complex integrated molecular
+and morphological data; and used Geometric Morphometric Methods (GMM) to circumscribe differences
+in patterns of leaf shape variation among lineages within this complex. Differences so identified were then
+reflected onto type specimens of challenging interpretation to achieve data-based assignment of types, which
+resulted in the reinstatement of two species (Renner et al. 2018).
+The strong floristic linkages between Australia and New Zealand, particularly between south-east Australia
+and New Zealand have long been recognized and are reflected in the number of species distributed on both
+sides of the Tasman Sea (Inoue and Schuster 1971; Inoue 1982). Treating Australia and New Zealand in a single
+revision is further justified by three factors, firstly the reciprocal exclusion of species currently thought shared
+by Australia and New Zealand, and contrarily the new Australian records for species thought endemic to New
+Zealand, both of which result from study of Australian specimens, but which have bearing on the New Zealand
+flora. Secondly, the species circumscriptions reached in this study on the basis of a synthesis of molecular and
+morphological data differ for some species from those in the forthcoming Flora of New Zealand treatment,
+and these differences have implications for species recognized in New Zealand. Finally, there is always the
+possibility that species currently New Zealand endemics will be detected in Tasmania, and vice versa. For these
+reasons the floras of Australia and New Zealand are both treated in this work.
+This revision builds upon the work completed by Inoue and Schuster (1971), Inoue (1986) and Engel and
+Merrill (2009a, 2010a, 2010b), and recognizes 55 species from Australia and New Zealand. Nine are new
+species, all from Australia, with eight from the Queensland Wet Tropics Bioregion and one from south-eastern
+Australia. Four of these new species belong in section Vagae. Three species are new Australian records –
+P. daviesiana, P. monospiris, and P. streimannii again all from the Wet Tropics; and one species, P. alta Steph., is
+a new record for New Zealand. The concentration of novelties within this Bioregion reflects how little studied
+this part of Australia is, as was reflected in Inoue’s (1982) synopsis of speciation and distribution of Plagiochila
+in Australasia and the Pacific, at which time only 12 species were recognized from mainland Australia, mostly
+from the south east. The Australian records for six species --P. annotina, P. circumdentata, P. colensoi, P. deltoidea,
+P. gigantea and P. ramosissima--are rejected, these species become New Zealand endemics as a result; while
+one other New Zealand endemic is reported new for Australia (P. baylisii). Four species are excluded from
+the Australasian region entirely, P. furcata, P. inflata, P. renitens, and P. sciophila. Another interpretation of the
+confusion surrounding the name Plagiochila baileyana sensu Inoue and Schuster (1971) is presented, wherein
+Plagiochila baileyana is accepted as a species distinct from P. gigantea, while Plagiochila aculeata is treated
+as a synonym of P. fasciculata, and Plagiochila subfasciculata Colenso is reinstated to accommodate some
+of the plants assigned to P. baileyana by Inoue and Schuster (1971), and to P. aculeata by Engel and Merrill
+(2010). Arrangement of species is by section, following the sectional circumscription presented by Renner et
+al. (2017c), the sections are ordered by phylogeny, with sect. Denticulatae first, sect. Austrocaules second, and
+the others following with sect. Vagae presented last.
+This revision strives for better understanding of phylogenetic and morphological diversity within Plagiochila.
+It does not strive to provide a final answer in terms of the diversity, distribution, and circumscription of species
+in Australia, or the names that should be applied to them. Indeed, perhaps the most interesting components
+of this treatment are the areas of residual uncertainty, about which this treatment seeks explicit disclosure,
+that future improvement in our understanding might be more readily achieved. Further details in areas where
+species circumscription and the application of names might be improved are described under the species
+treatments below. Indeed, some significant challenges to species circumscription manifest in this study, some
+are intrinsic to the plants themselves, others to current circumstances, and it is unlikely that I have overcome
+192           Telopea 21: 187–380, 2018                                                                    Renner
+
+
+them all. Among intrinsic factors are the hierarchical structuring of shoot morphology, where shoot systems
+comprise a structured ordinal hierarchy of differentiated shoots that decrease in size with increasing shoot
+order, and express size-correlated patterns of morphological variation. Many diagnostic differences among
+species are associated with characters expressed at the larger end of this spectrum of size-correlated variation,
+in other words, on primary shoots. Type specimens, particularly of species belonging to Plagiochila sect. Vagae
+may comprise secondary, tertiary and quaternary shoots. It is then exceptionally challenging to relate type
+specimens with species. The hierarchical structuring of Plagiochila shoot systems seems under-appreciated
+by previous studies. Published descriptions and illustrations of leaf shape are usually of unknown shoot
+order, or orders, and species circumscription and identification both suffer because this obscures relevant
+patterns of structural variation. Inoue and Schuster (1971) sought to incorporate data from new sources into
+a framework of traditional interpretation, and this served well in the circumscription of species when fresh
+and fertile material were available. Unfortunately, this approach did not always serve the purposes of effective
+interpretation of type material, and the identification of sterile, and male or female material in some species,
+remains challenging as illustrated by the following examples:
+
+---
+
+Perianth dorsal keel with spinose wing.............................................................................................. P. annotina
+55 Dorsal leaf margin entire, at least in basal two thirds. Male bract lobes entire.
+   Perianth dorsal keel with low, entire wing.................................................................................... P. strombifolia
+200             Telopea 21: 187–380, 2018                                                                 Renner
+
+
+Plagiochila sect. Denticulatae Schiffn., Hep. Fl. Buitenzorg: 106 (1900)
+Type: Plagiochila nobilis Gottsche (lectotype designated by So &amp; Grolle 2000)
+= Plagiochila sect. Fragmentissimae (Inoue et R.M.Schust.) R.M.Schust., Hepaticae and Anthocerotae of North
+America 4: 449 (1980)
+Basionym: Plagiochila subsect. Fragmentissimae Inoue et R.M.Schust., Journal of the Hattori Botanical
+Laboratory 34: 154 (1971)
+Type: Plagiochila fragmentissima Inoue &amp; Schuster.
+Nine species from Australasia belong to sect. Denticulatae, whose other species occur in Malesia and on the
+eastern side of the Pacific in southern South America with a few species distributed along the Andes into
+Central America as far north as Costa Rica (Patzak et al. 2016). The section may be circumscribed by a unique
+combination of features. The stolon branching is lateral-intercalary, and shoot systems may be modular with
+a basal stoloniferous section and upper leafy sector, replicated sympodially from a basal stolon network, or
+monopodially from stolons produced from among leaves. Leafy shoot systems are monomorphic, dimorphic,
+or trimorphic, and shoots are hierarchically arranged. Lateral-intercalary vegetative branching occurs in all
+species, some species also produce Frullania-type terminal branching (P. baileyana, P. gigantea). Spinose
+teeth two or three cells broad at base and uniseriate above, composed of elongate cells with differentially and
+continuously thickened cell walls on the leaf margins are characteristic of the section; but not all species have
+these teeth: P. gregaria and P. fragmentissima have fairly typical triangular teeth and the leaves of P. fuscella
+may be entire. Leaf marginal cells may bear heavy golden-brown pigmented thickening on their cell walls, this
+too is characteristic of some but not all species in the section. Subfloral innovations are produced by ventral-
+intercalary branching when one subfloral innovation is present, and while sect. Denticulatae is the only section
+to produce ventral-intercalary subfloral innovations, the subfloral innovation branching mode switches to
+lateral-intercalary branches when two or more subfloral innovations are present.
+
+Plagiochila baileyana Steph., Bulletin de l’Herbier Boissier, sér. 2 3: 327 (1903) = Species Hepaticarum
+2: 311 (1903)
+Type citation: Australia, Queensland, Bellenden Ker Range (Bailey).
+Type: Australia: Queensland, Bellenden ker District, Bellenden Ker, Palm Camp, 1889, F.M. Bailey (ex herb.
+Brotherus 627?) (lectotype designated by Bonner (1962): G 00064091! as Plag. baileyana St. n.sp. Original.;
+isolectotypes: BM! MEL 1039230!)
+Plagiochila baileyana Steph. ex F.M.Bailey, A synopsis of the Queensland Flora, suppl. 3: 102. (1890) nom.
+inval.
+Type citation: Palm Camp, Bellender-Ker, 4000ft
+Etymology: after Fredrick Manson Bailey (1827–1915) the first government botanist in the state of Queensland
+who collected the type on the 1889 Government Scientific Expedition to the Bellenden Ker Range led by
+Archibald Meston (White 1950).
+Notes: Bailey’s Palm Camp collection was made on the Bellenden Ker expedition either on the way up
+(20-21 June 1889) or on the way back down (28 June-1 July 1889) Bellenden Ker,. Palm Camp is on the ridge
+to the west and north of current Bellenden Ker centre peak, at around 1200 m altitude (Dowe and Broughton
+2007). The specimens labeled F.M. Bailey 627 contain two elements, the other being P. conturbata, as in the
+duplicate now in NY, discussed further below under P. subfasciculata.
+Description: Plants with flabellate branched, procumbent leafy shoots comprising repeated monopodial
+units of a basal stolon and upper leafy sector, stolons arising from within the leafy sector near its base by
+lateral-intercalary branching; forming diffuse mats; mid-green to bronze-green, shoot systems to 120 mm
+long and 70 mm wide, dimorphic; primary shoots 2.0–4.0 mm wide, secondary shoots smaller, arising by
+Frullania-type branches. Stems of primary shoots flexuose, without lamellae, paraphyllia, or paraphyses,
+reddish-brown, to 350 µm diameter, transversely elliptic, surfaces apparently smooth, irregular; cortical cells
+in 4–6 layers, cortical cell walls strongly and continuously thickened, reddish-brown, outer layer with thinner
+walls than inner cortical cell layers, all cortical cells smaller than medulla cells; medulla cell walls without
+secondary thickening, primary walls yellow- to yellow-brown pigmented. Rhizoids on stolons arising from
+the lateral merophytes at the base of leaves and from the ventral merophyte row. Leaves on stolons reduced,
+entire, remote to contiguous. Leaves on primary shoots contiguous, succubously inserted and orientated,
+obovate, 2685–3210 µm long × 1535–1825 µm wide, on secondary shoots 1700–2265 µm long × 1120–1615
+µm wide, dorsal margin shallowly curved, ventral margin straight at base; dorsal margin entire or with a few
+A revision of Australian Plagiochila (Lophocoleinae: Jungermanniopsida)   Telopea 21: 187–380, 2018          201
+
+
+scattered teeth, apex and ventral margin with (15–)23–33 teeth, teeth spinose comprised of two to four cells,
+apical cell triangular, slightly elongated and acute-tipped; leaf insertion J-shaped, recurved at ventral end,
+decurrent dorsally, not attaining ventral stem midline leaving, variably along a shoot, one or two cortical
+cell rows leaf-free, attaining the dorsal stem midline, stem visible between leaves. Marginal leaf cells short
+rectangular to rectangular, 21–27 µm long × 6–13 µm wide, occasionally quadrate, long axis perpendicular
+to leaf margin, walls of one to three tiers of marginal cells with continuous golden-brown thickening; medial
+leaf cells hexagonal to polyhedral, 26–32 µm long × 18–22 µm wide, walls without secondary thickening,
+unpigmented, with small concave to triangular trigones; cells in leaf base elliptic to long rectangular, 40–71 µm
+long × 14–18 µm, walls continuously thickened. Cell surfaces smooth. Oil-bodies 4–7 per cell, ellipsoid, pale
+grey-brown, internally homogeneous, surface granular. Underleaves absent. Asexual reproduction absent.
+Dioicous. Androecia intercalary on shoots that continue vegetative growth, fascicles of two or three male
+branches produced at the apex of vegetative shoots by Frullania-type branching at the base of the leading
+male branch; lateral- and ventral-intercalary branches not associated with male branches; bracts in 3–10 pairs,
+contiguous but not closely packed, bracts resembling sterile leaves but with a dorsal pouch, antheridia 1 per
+bract, stalk biseriate; stem among bracts unornamented. Gynoecia at apices of leafy shoots; bracts elliptic-
+obovate, 2600–3400 µm long × 1200–2000 µm wide; apex and ventral margin with numerous spinose teeth;
+bract cells as for leaf cells; cell surfaces smooth; female bracteole absent. Subfloral innovations produced by
+lateral-intercalary branching from below the female bracts, 1 per gynoecium in the absence of sporophyte
+production, absent when sporophytes are present. Perianth ligulate, 3800–4700 µm long × 1550–1750 µm wide
+at mouth, dorsal and ventral keels not winged, laterally compressed but with a weakly inflated base, lateral
+walls plane; labia rounded, each bearing 25–35 spinose teeth. Fig. 1.
+Recognition: Plagiochila baileyana is distinctive in the procumbent habit of its monopodial shoot systems
+which are pinnate-flabellate with Frullania-type vegetative branching, the numerous spinose-dentate teeth
+around the leaf margin, and the presence of a leaf border formed by cells with continuously thickened, golden-
+brown cell walls.
+Though similar to P. gigantea in details of leaf armature and cell wall architecture, the procumbent growth
+habit of P. baileyana differs from the erect habit of P. gigantea, a feature readily observed in the field. In the
+field Plagiochila baileyana forms mats of decumbent shoots, wherein the basal stolon, though initially erect,
+arches forward and downward, splaying the leafy shoot sector outward in close proximity to the substrate.
+This contrasts with the growth habit of the outwardly similar New Zealand endemic P. gigantea, wherein the
+stolons are erect, and the leafy shoot sector radiates outward around the central axis in much the same manner
+as Hypnodendron alliance. The two species also differ in leaf shape, Plagiochila baileyana has obovate primary-
+shoot leaves, while P. gigantea has broadly elliptic-ovate primary-shoot leaves and this character is probably
+the best basis for identifying herbarium specimens (Fig. 1). To assess shape adequately leaves must be dissected
+from shoots and slide-mounted.
+Notes: The type of Plagiochila baileyana comprises a fragmented collection mostly of secondary and tertiary
+branches, with a couple of primary branches. The distinctive procumbent habit is no longer evident in the
+specimen, whose shoots scarcely now approach 2 cm long, let alone the 7 cm described by Stephani. This
+species presents one instance wherein Stephani’s protologue provides a clearer conception of the species than
+the extant type specimens now do, even the more copious isotype in BM. In particular Stephani’s description
+of the habit and the leaf shape clearly encapsulate salient differences between this species and the related
+P. gigantea, with which this species was synonymised by Engel and Merrill (2010a) on the basis of the shared
+leaf dentition and distinctive architecture and colour of the marginal cell walls. This proposed synonymy
+was rejected by molecular phylogeny reconstruction, which showed P. baileyana was more closely related to
+P. intertexta than P. gigantea (Renner et al. 2017a, Fig. 1).
+Distribution and Ecology: Plagiochila baileyana is endemic to Australia, where it is confined to tropical
+montane rainforests above approximately 1200 m in the Wet Tropics Bioregion of north-east Queensland.
+Plagiochila baileyana has a scattered distribution from Thornton Peak in the north to Mount Bartle Frere in the
+south, and including Mount Bellenden Ker and the Windsor Tableland (M. Grixti pers. comm.). Plants inhabit
+riparian vegetation in permanently wet microsites often beneath overhanging vegetation. On Bartle Frere this
+species grew on permanently wet soil in seepage sites under Helmholtzia, microsites in which the plants were
+hydrated even during the dry season when all surrounding bryophytes were desiccated. On Thornton Peak
+P. baileyana grew on granite boulders on a steep slope in hyperhumid cloud forest with a range of other large
+moisture-dependent bryophyte species.
+The name Plagiochila baileyana has been widely applied to specimens from Tasmania and New Zealand. See
+the treatment of P. subfasciculata below for discussion of how this application came about.
+202           Telopea 21: 187–380, 2018                                                                       Renner
+
+
+
+
+Fig 1. Plagiochila baileyana and P. gigantea leaves from primary shoots. Plagiochila baileyana leaves all from M.A.M.
+Renner 7318 &amp; L.J. Gray (NSW 880459); Plagiochila gigantea all from and Glenny 118 (NSW) respectively.
+A revision of Australian Plagiochila (Lophocoleinae: Jungermanniopsida)   Telopea 21: 187–380, 2018           203
+
+
+Representative specimens examined: Australia: Cook: Summit ridge of Mount Bellenden Ker, between the
+radio mast and W end of centre peak, 17°56&#39;36&#34;S 145°51&#39;06&#34;E, 1370-1420 m, 13 Jun 2001, D.C. Cargill 109
+(CANB 644592.1); Cook, 5 km N of Tinaroo Dam, 17°05&#39;54&#34;S 145°35&#39;26&#34;E, 1025 m, 20 Aug 2000, B.S. Wannan
+1899 &amp; R.L. Jago (NSW 623679); M.A.M. Renner 7311 &amp; L.J. Gray (NSW 880456); ibid, M.A.M. Renner 7318
+&amp; L.J. Gray (NSW 880459).
+
+Plagiochila banksiana Gottsche, Annales des Sciences Naturelles; Botanique, sér. 4, 8: 329 (1857)
+Type citation: None provided.
+Type: New Zealand, 1843, Raoul, ex herb. Mont., Mus. Paris ex herb. Stephani (lectotype designated by Bonner
+(1962): G 00121028!)
+=Plagiochila laeta Mitt., Handbook of the New Zealand Flora: 752 (1867)
+Type citation: Northern Island, Colenso
+Type: n.v.
+=Plagiochila limpida Herzog, Transactions and Proceedings of the Royal Society of New Zealand 68: 42 (1938)
+Type citation: ... by Makaretu Falls, Wairoa, leg. E.A. Hodgson (n.1)
+Type: n.v.
+­=Plagiochila banksiana var. echinophora Inoue et R.M.Schust., Journal of the Hattori Botanical Laboratory 34:
+ 62 (1971) syn. nov.
+Type citation: New Zealand, S. of Haast Pass, Otago Prov., South Island, leg. Schuster 49724a (MASS)
+Type: n.v.
+Etymology: named for Sir Joseph Banks who, with Daniel Solander, were aboard HMB Endeavour on Cook’s
+first voyage to New Zealand.
+Description: Plants irregularly branched, prostrate leafy shoots; robust system of basal stolons absent, but
+microphyllous shoots may be present in basal sectors of the plant; forming diffuse mats; mid-green, shoots to
+90 mm long, monomorphic; primary shoots 2.0–4.0 mm wide, secondary shoots smaller, arising by lateral-
+intercalary branches. Stems of primary shoots without lamellae, paraphyllia, or paraphyses, reddish-brown, to
+
+---
+
+(HO 301763); Central Highlands, Lake Antimony, Great Pine Tier, 41°54&#39;S 146°23&#39;E, 1050 m, 14 Feb 1992, A.
+Moscal 22660 (HO 133892); Montezuma Falls, 7 km SW of Roseberry, 41°50&#39;S 145°28&#39;E, 480 m, 9 May 1997,
+H. Streimann 59579 (HO 501622); Mt Rufus Track, 42°07&#39;S 146°08&#39;E, 1000 m, 30 Dec 1982, A.M. Buchanan
+1066 (HO 305929); Mt Field, Lady Barron Creek, 42°41&#39;S 146°38&#39;E, 980 m, 12 Mar 1992, A. Moscal 23127 (HO
+301758); Mt Field National Park, Lady Barron Creek, 42°41&#39;S 146°37&#39;E, 1000 m, 7 Dec 1988, J.A. Curnow 2606
+(CANB 8807975); Lake Belcher, 42°41&#39;S 146°33&#39;E, Apr 1921, L. Rodway (HO 85844); Mt Wellington, 42°53&#39;S
+147°15&#39;E, Jan 1915, L. Rodway (HO 576900); South West, Junction Creek, 43°06&#39;S 146°16&#39;E, 240 m, 15 Feb
+1996, A. Moscal 28048A (HO 577139); East Coast, Mill Creek, Fortescue Forest Reserve, 43°09&#39;S 147°58&#39;E,
+80 m, 20 Nov 1998, A. Moscal 30098 (HO 577161); Mt Hartz track, 43°15&#39;S 146°46&#39;E, Dec 1914, L. Rodway
+(HO 85842); Summers Creek, Toms Bottom, 4 km WSW of Lune River, 43°27&#39;S 146°52&#39;E, 60 m, 10 Dec 1988,
+J.A. Curnow 2660 (CANB 8808028, HO318834); Mt Wellington, NW Bay River, 26 Mar 1980, A.V. Ratkowsky
+H1553 (CANB 8408762). New Zealand: Rakiura (Stewart Island): Rakiura National Park, Mt Rakeahua
+summit area, 46°56.4&#39;S 167°52.5&#39;E, 600-690 m, 2 Mar 2003, J.J. Engel 24581A, M.J. von Konrat &amp; J.E. Braggins
+258             Telopea 21: 187–380, 2018                                                                    Renner
+
+
+(F); Rakiura National Park, Port Pegasus, at top of Belltopper Falls, North Arm, 30 m, 47°09&#39;S 167°41&#39;E, J.J.
+Engel 24155, M.J. von Konrat, &amp; J.E. Braggins (F).
+
+Plagiochila conturbata Steph., Bulletin de l’Herbier Boissier, sér. 2, 4: 778 (1904) = Species Hepaticarum
+2: 456 (1904)
+Type citation: Queensland (Bailey).
+Type: Australia, Queensland, Bellenden Ker District, 1889, F.M. Bailey 627a (lectotype designated by Bonner
+(1962): G 00064149!)
+Epitype (designated here): Daintree National Park, Manjal Jimalji, track over summit, 16°23&#39;10&#34;S 145°17&#39;31&#34;E,
+907 m, 19 May 2014, M.A.M. Renner 6984 &amp; T.C. Wilson (NSW 880559)
+Notes: The lectotype of P. conturbata in G comprises a plant with shoots up to 5 cm long arising from a basal
+stolon proliferating by lateral intercalary branches. Branching within the leafy shoot sectors is entirely lateral-
+intercalary, and many shoots have damaged apices, subtended by lateral intercalary branches. The leaf shape
+and dentition in the lectotype corresponds well with that illustrated by Inoue and Schuster (1971 Fig. 61:
+2-3, 5) from the NY specimen labeled Plagiochila baileyana as discussed above under that species. The number
+on the lectotype may be a Bailey collection number, but it may also be a Brotherus herbarium number, as
+several other Bailey collections came to Stephani from this source.
+Etymology: con- under, and turbatus- disordered, reference unclear.
+Description: Plants with openly pinnately branched leafy shoots arising from a basal creeping stolon; stolons
+arising from other stolons by lateral-intercalary branching; forming loose turfs; green to bronze-green, shoot
+systems to 100 mm long, dimorphic and 30 mm wide; shoots 3–4 mm wide, branches arising by Frullania-
+type or lateral-intercalary branches. Stems without paraphyllia, lamellae or paraphyses; stem reddish-brown,
+in primary shoots to 400 µm diameter, transversely elliptic, surfaces apparently smooth, irregular; cortical
+cells in 3 or 4 layers, cortical cell walls strongly and continuously thickened, reddish-brown fading to yellow
+on the innermost cortical cell walls, outer layer and free external wall thickened to same degree as inner
+cortical cell layers, all cortical cells smaller than medulla cells; medulla cell walls beneath with walls thickened
+but tapering, other walls with distinct triangular trigones and weak continuous thickening over some walls,
+walls faint yellow pigmented. Rhizoids scattered, on stolons arising from the lateral merophytes at the base of
+leaves and from the ventral merophyte row. Leaves within stolon sector reduced, entire, remote to contiguous.
+Leaves on primary shoots remote to contiguous, succubously inserted and orientated, spreading and postically
+secund when hydrated, often appressed to stem when dry, ovate, 1030–2070 µm long × 910–1600 µm wide,
+dorsal margin straight to shallowly curved, often inrolled, ventral margin curved in outer half and weakly
+ampliate at base, apex and ventral margin bearing 7–13 triangular to spinose teeth, teeth one to four cells
+broad at base, uniseriate above; leaves on secondary shoots 1100-1200 µm long × 750–800 µm wide, margins
+bearing 5–10 teeth; leaf insertion J-shaped, recurved at ventral end, decurrent dorsally, attaining dorsal stem
+midline, not attaining the ventral stem midline, leaving two or more cortical cell rows leaf-free. Marginal leaf
+cells quadrate to short rectangular, 12–18 µm long ×8–14 µm wide, long axis parallel or perpendicular to leaf
+margin, walls with nodulose trigones confluent so that walls are more or less continuously thickened; medial
+leaf cells isodiametric, 13–23 µm long × 11–20 µm wide, walls unpigmented, with bulging trigones, medial
+thickenings occasional, trigones sometimes confluent; cells in leaf base oblong, 16–31 µm long × 11–19 µm
+wide walls with bulging to knot-like trigones, medial thickening present, trigones sometimes confluent. Cell
+surfaces smooth. Oil-bodies not known. Underleaves absent. Asexual reproduction absent.
+Dioicous. Androecia intercalary on shoots that continue vegetative growth, produced singly at shoot apex,
+branching within male branches by Frullania-type branching, lateral- and ventral-intercalary branches not
+associated with male branches; bracts in 3–10 pairs, imbricate, closely packed, bract-lobe reduced and smaller
+
+---
+
+attaining dorsal stem midline, not attaining the ventral stem midline, leaving two or more cortical cell rows
+leaf-free. Marginal leaf cells quadrate to short rectangular, 9–15 µm long × 7–12 µm wide, long axis parallel to
+leaf margin, walls with bulging and confluent trigones, external and internal walls more or less continuously
+thickened; medial leaf cells isodiametric to ovoid, 11–28 µm long × 11–21 µm wide, walls unpigmented, with
+angular bulging trigones, medial thickenings rare; cells in leaf base oblong, 20–39 µm long × 14–21 µm wide
+walls with bulging trigones, medial thickening present, trigones not confluent. Cell surfaces smooth. Oil-
+bodies 4–6 per cell, homogeneous, ovoid, hyaline, 10–12 by 6–7 µm (fide notes on specimen AK 293730).
+Underleaves present, vestigial, triangular or filiform. Asexual reproduction absent.
+Dioicous. Androecia intercalary on shoots that continue vegetative growth produced singly, pairs or more
+commonly fascicles of three, branching within male branches by Frullania-type branching, lateral- and
+ventral-intercalary branches not associated with male branches; bracts in 5–13 pairs, imbricate, closely packed,
+bract-lobe reduced and smaller than adjacent leaves, margin with acute apex and 2–5 teeth, lobule epistatic
+lobes on basal bracts with a single oblique lamella that is fused with the lobule of the preceding bract on
+the same side of the shoot, antheridia not seen; stem among bracts smooth. Gynoecia at apices of shoots;
+bracts oblong-ovate, to 2600 µm long, larger than subtending leaves; dorsal margin recurved, ventral margin
+ampliate; dorsal margin entire, apex and ventral margins with triangular acuminate teeth; bract cells as for
+leaf cells; cell surfaces smooth; female bracteole absent. Subfloral innovations produced by lateral-intercalary
+branching from between the female bracts with or without fertilisation. Perianth obovate, to 2000 µm long and
+1600 µm wide at mouth, keels unwinged; laterally compressed but with an inflated base, lateral walls plane;
+labia rounded, with laciniate-dentate teeth. Fig. 25.
+A revision of Australian Plagiochila (Lophocoleinae: Jungermanniopsida)   Telopea 21: 187–380, 2018           269
+
+
+
+
+Fig 25. Plagiochila subfasciculata leaves, from H. Streimann 55832 (CANB 9514159), J.J. Engel 22604 (F 1141589),
+J.J. Engel 20862 (F 1141137), J.J. Engel 22661 (F 1141192), J.E. Braggins 05/059 (AK 293730), J.E. Braggins 05/116C
+(AK 297119), P.J. de Lange 9994 &amp; M.A.M. Renner (AK 327798), and E.A. Brown 00/35 &amp; A.J. Leishman (NSW
+444725).
+
+Notes: Application of the name Plagiochila baileyana has been associated with confusion that warrants
+examination and explanation. Stephani (1903) described Plagiochila baileyana from collections made by F.M.
+Bailey at Palm Camp (see Dowe and Broughton 2007) during the Bellenden Ker expedition in 1889. Bailey
+collected at least two species of Plagiochila at this location, P. baileyana and P. conturbata Steph., the latter
+is common in tropical montane forests throughout the Wet Tropics Bioregion. Both species were evidently
+included in the original material of Plagiochila baileyana, and unfortunately this admixture is not now evenly
+distributed among contemporary specimens derived from that original gathering. While the type specimen in
+Stephani’s herbarium in Genève comprises two shoot systems that agree with Stephani’s protologue, a presumed
+duplicate of the type in NY contains P. conturbata alone. The lack of admixture in this specimen does not
+270           Telopea 21: 187–380, 2018                                                                     Renner
+
+
+immediately hint at the mismatch between the plant contained in the specimen, and the plant described by
+Stephani, however heterogeneity in the composition of the original material and uneven distribution of these
+components among specimens derived from the original gathering are the genesis of confusion associated
+with the application of the name Plagiochila baileyana, initiated by Inoue and Schuster (1971) and perpetuated
+until application of the name P. baileyana was clarified by Engel and Merrill (2010).
+Plagiochila baileyana is now understood to be a species endemic to the Wet Tropics of north-east Queensland,
+and though similar to P. gigantea, is distinct from it. How then, did Inoue and Schuster (1971) come to use
+the name P. baileyana for plants of wide distribution in southern temperate Australia and New Zealand? One
+explanation is that Inoue and Schuster (1971) made three errors of interpretation when they applied the name
+P. baileyana to Tasmanian and New Zealand plants. Firstly, Inoue and Schuster (1971) did not examine the full
+suite of original material of P. baileyana, and so overlooked the fact that the original material was mixed. They
+did not examine the specimen in G inadvertently designated as the lectotype of P. baileyana by Bonner (1962).
+Secondly, they failed to effectively assess the specimen held by NY against the protologue. Thirdly, they failed
+to appreciate the significance of subtle morphological differences between the NY specimen and plants from
+Tasmania and New Zealand.
+The first error is surprising, but in their revision of Plagiochila was not unique to P. baileyana, see for example
+their typification of P. deltoidea as discussed above where Inoue and Schuster (1971) apparently did not seek
+original material from the describing author’s own herbarium. The second error is equally surprising, because
+although Stephani’s descriptions have a reputation for being ‘usually little informative, without mention of
+important diagnostic characters, and often contain errors’ (Gradstein 2006 p. 560) Stephani’s P. baileyana
+protologue contains detail of several distinctive characters all of which conflict with plants attributed to that
+species by Inoue and Schuster (1971) in particular:
+  1) Stems: ‘ad 7 cm… geniculatim et alterne flexuosis (zigzag)’ [stems to 7 cm… geniculate and alternately
+     flexuose (zigzag)]
+  2) leaves: ‘omnia ex angusta basi elliptica’ [all elliptic from a narrow base]
+  3) leaf margins: ‘dentibus majusculis ubique subaequalibus numerosis’ [teeth almost equal everywhere
+     numerous]
+  4) marginal cells: ‘maxime incrassates, lumine cellularum saepe obliterato’ [maximally incrassate, cell lumen
+     often obliterated]
+These four characters are at such variance with the NY specimen that a mismatch between the description
+and the NY specimen considered as the type should really have been perceived by Inoue and Schuster (1971).
+All the characters above are, by contrast, compatible with the lectotype in Geneva, and are characteristic of
+P. baileyana as we know it from more recent collections. That the specimen of P. baileyana examined by Inoue
+and Schuster (1971) held in NY, although bearing the same collection details as the holotype of P. baileyana in
+G, does not contain the same plant was missed. The illustration of the type of P. baileyana in Inoue and Schuster
+(1971 Fig. 61: 2, 3, 5) shows the characteristic leaf shape and dentition of P. conturbata Steph., specifically the</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Acrotriche baileyana is a species of flowering plant in the family Ericaceae and is endemic to far north Queensland. It is an erect shrub with crowded elliptical leaves, spikes of small, tube-shaped, greenish-white flowers, and deep scarlet drupes.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acrotriche baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cyathea baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Dicranella baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Frullania baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ixora baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochila</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Samadera baileyana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Spermacoce baileyana</em> <span class="muted small">ALA</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.350944, 146.754599], [-42.900698, 147.246351], [-41.729912, 146.760866], [-41.26666, 146.76666], [-41.26666, 146.76666], [-43.440988, 146.754236], [-42.718502, 147.734151], [-42.990749, 147.246711], [-43.2137218, 147.7840616], [-42.720274, 146.634965], [-41.811163, 145.556662], [-42.916667, 147.283333], [-43.258764, 147.740609], [-43.440982, 147.248532], [-17.3961, 145.8156], [-15.81668, 145.27585], [-39.1, 174.033333], [-37.9189, 145.85083], [-17.396028, 145.815444], [-38.1525, 146.7825], [-17.399167, 145.818611], [-17.2652633, 145.8536206], [-17.26, 145.8517], [-17.396028, 145.815444], [-17.3, 145.8667], [-30.5, 152.4], [-16.1633, 145.37308], [-37.9217, 145.7775], [-17.396111, 145.815556], [-16.582944, 145.275278], [-16.1633, 145.37308], [-16.3861, 145.2919], [-16.15, 145.3667], [-37.89, 145.65972], [-25.0, 135.0], [-17.3961, 145.8156], [-37.4, 148.783333], [-16.392139, 145.293083], [-15.81853, 145.287], [-17.387312, 145.816083], [-16.3922, 145.2931], [-37.9133, 145.76917], [-16.581361, 145.277167], [-37.91889, 145.82583], [-17.098333, 145.590556], [-17.3961, 145.8156], [-46.4693425, 169.3509702], [-17.396028, 145.815444], [-15.8167, 145.2667], [-37.9161, 145.86611], [-17.263, 145.854], [-17.2833, 145.8667], [-16.386194, 145.292028], [-16.395278, 145.299167], [-15.81668, 145.27585], [-17.396111, 145.815556], [-37.9092, 145.825], [-17.3961, 145.8156], [-17.396028, 145.815444], [-17.3, 145.8667], [-16.392139, 145.293083], [-17.265278, 145.854167], [-38.00833, 145.62083], [-15.81668, 145.27585], [-17.3, 145.8667], [-17.3, 145.8667], [-16.386111, 145.291944], [-16.581361, 145.277167], [-37.9153, 145.76861], [-17.3, 145.8667]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [75.2, 63.4, 76.4, 81.4, 108.7, 120.0, 127.0, 140.9, 124.2, 105.5, 89.2, 86.3], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.5, 19.6, 17.5, 14.5, 11.7, 9.8, 9.1, 9.9, 11.9, 13.6, 16.0, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.3, 9.2, 8.0, 6.3, 4.6, 3.1, 2.5, 2.7, 3.7, 5.0, 6.9, 7.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

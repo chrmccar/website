@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acromastigum divaricatum — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Acromastigum divaricatum</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Acromastigum divaricatum</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Acromastigum</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">16</p>
+    <footer>8 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">19</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>145.0–295.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>340.0–370.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>160.0–220.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>40.0–55.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>10.0–20.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>145.0–205.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>105.0–150.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>1.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>peat</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>humus</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>1.6</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>small</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">VICTORIAN_ACROMASTIGUM</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>ACROMASTIGUM_AUSTRALIA_2014</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Volume 17: 251–293
+Publication date: 07 October 2014
+dx.doi.org/10.7751/telopea20147708
+                                        Telopea
+                                        Journal of Plant Systematics
+plantnet.rbgsyd.nsw.gov.au/Telopea • escholarship.usyd.edu.au/journals/index.php/TEL • ISSN 0312-9764 (Print) • ISSN 2200-4025 (Online)
+
+
+
+
+                          The genus Acromastigum in Australia
+
+                             Elizabeth A. Brown† and Matt A.M. Renner
+
+
+               Royal Botanic Gardens and Domain Trust, Mrs Macquaries Road, Sydney, NSW 2000, Australia.
+                                          email: matt.renner@rbgsyd.nsw.gov.au
+
+
+
+
+                                                             Abstract
+Twelve species of Acromastigum (Lepidoziaceae) are recognised for Australia including three new species from Tasmania,
+Acromastigum prismaticale sp. nov., A. interstisiale sp. nov. and A. fumosum sp. nov. The new species A. interstisiale also
+occurs in New Zealand on the Denniston Plateau. Acromastigum tenax is a new record for Australia from the Wet Tropics
+Bioregion, and Acromastigum divaricatum is recorded for Tasmania and New Zealand. The enigmatic New Zealand endemic.
+Acromastigum brachyphyllum is synonymised with A. anisostomum, which is excluded from the Australian flora as all
+Australian records are based on misidentifications, primarily of A. interstisiale but also of A. mooreanum and A. fumosum.
+Acromastigum furcatifolium and A. fumosum are geographically restricted and sparsely distributed, the former on
+sandstone in rainforest in the Blue Mountains west of Sydney, the latter on peat in rainforest and shrublands in Tasmania.
+Acromastigum exiguum and A. marginatum are retained as separate species distributed either side of the Tasman Sea.
+Descriptions, illustrations and associated observations for Australian species of Acromastigum are presented, as is a key
+including Australian and New Zealand species.
+
+
+                                                          Introduction
+The Lepidoziineae is a sharply defined group of families (Phycolepidoziaceae, Lepidoziaceae and
+Calypogeiaceae), isolated by the position and almost universal reduction in size of the sexual branches, the
+general development of microphyllous stolons or flagella and the two phase development observed in the
+epidermal cells of the capsule (Schuster 1969).
+As early as 1845, Gottsche and Lindenberg recognised some elements of Acromastigum when they divided the
+genus Mastigobryum Nees into three sections, one of which, Section B, corresponded in a general way with
+Acromastigum. Spruce (1885) made no formal proposal, but expressed the opinion that three of the species in
+Section B might justifiably be separated as a distinct genus.
+Mastiogobryum was further divided by Stephani (1885–1886) into 11 sections, one of which, the Inaequilatera
+included Spruce’s 3 taxa plus another eight species. Schiffner (1893) followed Stephani’s example and recognised
+the Inaequilatera as a section in the genus Bazzania (the correct generic name for Mastigobryum, Carrington
+1870). In 1908 Stephani revised his earlier classification and divided the 11 sections of Mastigobryum into
+4 subgenera (Intergrifolia, Bidentata, Inaequilatera and Tridentata). Stephani thought generic separation
+unwarranted, but in 1934 Evans separated the subgenus Inaequilatera as the genus Acromastigum on the basis
+of branching differences i.e. postical branches arise terminally, replacing half of the underleaf, rather than
+
+† deceased 17 November 2013
+
+---
+
+occasionally with 1 globular oil body c. 1 μm diam. per cell, especially on fertile branches; cuticle smooth to quite
+distinctly but minutely papillate, especially on margins of lobes, 2(–6) μm thick at margins. Underleaves distant,
+insertion ± transverse, appressed, small (c. 0.15–0.25 size of lateral leaves), slightly narrower to slightly wider than
+stem, subquadrate or with lateral margins curving, 105–290 μm long, 145–295 μm wide, not auriculate at base
+and rarely with marginal irregularities; 3(or 4)-lobed with sinuses up to 0.3–0.5(–0.7) deep; lobes 2–4(–9) cells
+long, 2–4(–6) cells wide, often with one lobe larger or smaller than the others; apices of lobes rounded to truncate
+or emarginate, rarely acute. Asexual reproduction by caducous leaves, sporadic. Androecial branches small
+(4 to 6 pairs of androecia), inconspicuous, often with 4 or more per stem; bracts bifid 1/5–3/10 length, 1-androus,
+saccate and broadly ovate (sometimes barely so), c. 360–425 μm long and 340–370 μm wide, lobes acute; bracteoles
+ovate, c. 100–280 μm long and 160–220 μm wide, acute to emarginate (with papilla often present on emarginate
+lobes). Gynoecia produced in axils of underleaves, often several per stem to numerous, moderately common.
+Bracts and bracteoles similar, in several series, innermost largest, usually bifid with central sinus acute and split
+1
+ /2–2/3 length of bract but occasionally undivided or with 1 or 2 distinct teeth or laciniae, ovate, margins often
+smooth or sometimes with scattered protruding cells and papillae; cells rectangular (to almost isodiametric in
+cells at base of unfertilised gynoecia i.e. unexpanded), Length:width ratio 2–3.5, cell walls evenly thickened or
+marginally thicker in corners, sometimes with small trigones; oil-bodies distributed throughout, 1–3 per cell
+(but often with numerous tiny cellular inclusions which may be oil-bodies), ± globular, &lt;1 μm diam., clear.
+Perianth c. 4.5 mm long when fully developed, slenderly ovoid-cylindrical, narrowed at mouth and variously
+lobed, lobes with margins varying from slightly to strongly toothed/laciniate, 2- or 3-stratose basally, reducing
+to 1-stratose near mouth, cells rectangular to elongate-rectangular or somewhat sinuose, Length:width ratio
+2–5 (c. 45–120 × 15–35 μm), radial walls to c. 1 μm, ill-defined trigones scattered throughout, tangential walls
+up to 6 μm thick and having striate papillae in upper regions (very hard to observe); oil-bodies not observed
+in perianth. Sporophyte; seta with 8 or 9 rows of large, hyaline epidermal cells filled with botryoidal clusters of
+tiny oil-bodies (which may give the cells a dark appearance in transverse section) surrounding 21–23 rows of
+smaller interior cells; capsule walls 2 (or 3)-stratose. Inner layer of capsule with thickenings on radial walls and
+occasionally with a light deposit on the inner tangential wall in the corner(s) of the cell; epidermal layer. Elaters
+c. 12 μm diam, band width 4.5–5 μm and spiral periodicity c. 12–14 μm. Spores 12–16 μm diam.
+Variation: Plant size varies between individuals. Some specimens (AK259070) are robust and have the outward
+appearance of a small Bazzania species, whereas the smallest forms are difficult to distinguish from the larger
+forms of Acromastigum divaricatum. The stem of A. colensoanum varies in stature and some small forms of this
+species may have only 7 rows of cortical cells. Individuals vary in leaf papillosity, those bearing more distinct
+papillae appear to carry this feature through into the bracts and perianth. Leaf shape and spacing also varies
+between individuals, the leaves in some New Zealand specimens (AK290018) are falcate, and the spacing varies
+from remote to imbricate. In Australia, mainland populations tend to have more triangular antical leaf lobes than
+Tasmanian individuals, which are more isolobous.
+Distribution and ecology: In Australia Acromastigum colensoanum occurs as far north as the Lamington
+Plateau (Queensland) and from there south to Victoria and Tasmania along the Great Dividing Range.
+This species is also widespread in New Zealand and has been collected from one of the subantarctic Island
+groups (the Auckland Islands). In both countries Acromastigum colensoanum is common and occupies a
+variety of microsites. It may be found growing as an epiphyte on tree trunks, on roots, rotting logs, on boulders
+and bedrock of sedimentary, igneous or volcanic origin, on humus, and on sand.
+Identification: Acromastigum colensoanum is distinctive in its relatively large shoot size (up to 1.6 mm
+wide), mid-green colour, subequally lobed leaves, with the ventral distinctly narrower and usually shorter
+but sometimes slightly longer than the dorsal, and the absence of a vitta in the ventral leaf-lobe, and stems
+with more than 7 cortical cell rows. Acromastigum colensoanum could be confused with A. cunninghamii and
+A. divaricatum. Acromastigum cunninghamii is distinctive in its narrow postical lobe, which is around two cells
+broad throughout its length, and comprised of vitta cells for all or close to all its length; the postical lobe is
+also displaced forward to converge with the apex of the antical lobe. Acromastigum colensoanum differs from
+A. divaricatum in its larger shoots, larger leaves having tens more cells, and stems usually having more than
+seven cortical cell rows.
+Representative specimens examined: Australia: Queensland: Moreton: Lamington National Park, MacPherson Range,
+Tooloona Lookout, 28°15&#39;34&#39;&#39;S 153°10&#39;24&#39;&#39;E, 1180 m, 6 Mar 2014, M.A.M. Renner 6820 &amp; A.E. Orme, (NSW850580). New
+South Wales: Northern Tablelands: Barrington Tops, Laurie Lookout, carpark, Gloucester Falls, River Walk, 31°58&#39;S 151°27&#39;E,
+16 Jul 1989, E.A. Brown 89/174 (NSW435018); Central Tablelands: Barren Grounds Nature Reserve, Lamonds Creek between
+the Natural Stone Bridge and Wonga Falls, 34°41&#39;S 150°43&#39;E, 570 m, 22 Apr 1992, R.G. Coveny 16071 (NSW262583); South
+Coast: Maxwell Road, near stream, Mt Dromedary area, 36°18&#39;S 150°01&#39;E, 9 Jun 1989, E.A. Brown 89/151 (NSW427232);
+Victoria: East Gippsland: Sassafras Creek, Ellery Camp, 30 km SSW of Bendoc, 37°24’S 148°47&#39;E, 750 m, 8 Apr 1987,
+Acromastigum in Australia                                                Telopea 17: 195–237, 2014                     287
+
+
+J.A. Curnow 1484 (HO120038); Tasmania: North West: Sith Cala Nature Reserve, 41°13&#39;S 146°06&#39;E, 60 m, 19 Oct 1994,
+A. Moscal 26111C (HO443739); Anthony Road, 41°49&#39;S 145°38&#39; E, 500 m, 1 May 1993, J. Jarman s.n. (HO551534); East
+Coast: Mt Field, Russell Falls Creek, 42°41’S 146°40’E, 710 m, 14 April 1992, A. Moscal 23442 (HO132867); Sentinel Range,
+42°52&#39;S 146°14&#39;E, 680 m, 25 Feb 1999, J. Jarman s.n. (HO445261); Tasman Peninsula, Wellard Rivulet, 42°56&#39;S 147°52&#39;E,
+4 Feb 1899, W.A. Weymouth 798 (HO88193); Mount Wellington: Mt Wellington, Bower Creek, 42° 55&#39;S 147° 15&#39; E, 28
+Dec 1897, W.A. Weymouth 332 (HO88195); Mt Wellington, gully at Jacksons Bend, 42° 55&#39;S 147°16&#39;E, 15 Oct 1979, D.A.
+Ratkowsky (HO409649); South West: South Bruny Range, Waterfall Creek State Reserve, 43° 24&#39;S 147° 19&#39;E, 100 m, 28 Apr
+1993, A. Moscal 25118 (HO443743); Deadmans Bay, 43° 32&#39;S 146° 30&#39;E, 15 m, 21 Jan 1987, A. Moscal 15925 (HO113404);
+A. Moscal 15959 (HO113044).
+New Zealand: North Island, Western Northland: Waipoua Forest, Yakas track extension to headquarters, 35° 38&#39;S 173° 32&#39;E,
+300 m, 25 Nov 1994, J.E. Braggins 94/211 (AK257216); Auckland: Waitakere Ranges, Spraggs Bush, near car park, 36°54’S
+174°33’E, 31 Jun 1983, J.E. Braggins (AK325140); Waitakere Ranges, Kellys Road University Reserve, Oratia, on slope from
+road to stream near uphill end of reserve, 36° 54&#39;S 174° 36&#39;E, 80 m, 16 Apr 2005, J.E. Braggins 05/039 (AK290018); Hunua
+Range, start of track to summit off mine road, 37°2&#39;24&#39;&#39; S 175°11&#39;6&#39;&#39; E, 470 m, 29 Jul 2003, J.E. Braggins 03/334 (AK284049);
+Coromandel Range, Kaitarakihi Track, lower third, 37° 9&#39;S 175° 40&#39;E, 540 m, 31 Jan 1987, J.E. Braggins 87/016 (AK259070);
+Taranaki: Manaia Road, in mixed broadleaf forest near third Island in road, 39° 21&#39;S 174° 8&#39; E, 580 m, 26 Aug 1998,
+J.E. Braggins 98/271B (AK254258); Volcanic Plateau: Mt Ruapehu, off Ohakune Mountain Road, c. 100 m, downhill of
+7 km marker, 39°22’S 175°28’E, 890 m, 27 Nov 1992, J.E. Braggins 92/090 0(AK325220); Southern North Island: Manawatu
+Gorge, Totara Reserve Pohangina, Fern Walk, No 1 Line Road of Pohangina Valley East Road, 40°8&#39; 56&#39;&#39; S 175° 50&#39; 32&#39;&#39; E,
+480 m, 9 Dec 2005, J.E. Braggins 05/086A, (AK294767); South Island: Western Nelson: Golden Bay, Washbourne Reserve,
+Pohara, 40° 44&#39; 40&#39;&#39;S 172°41’22”E, 70 m, 29 Oct 2004, J.E. Braggins 04/061 (AK290503); Paparoa Range, Sewell Peak, in
+Nothofagus forest near top of road to first peak, 42° 24&#39; 32&#39;&#39;S 171°20&#39;24&#39;&#39;E, 780 m, 6 Dec 2000, J.E. Braggins (AK287210);
+Southland: Catlins Ecological Region, Tahakopa Ecological District, Paptowai Scenic Reserve, on north bank of Tahakopa
+River, 46°34&#39;S 169°28&#39;E, 3 m, 23 Nov 1998, J.E. Braggins 98/390A (AK253811); Campbell: Auckland Islands, Ocean Island,
+50°31&#39;S 166°16&#39;E, 24 Jun 1998, A.J.D. Tennyson (AK258342).
+
+Acromastigum divaricatum (Nees) A.Evans in Reimers, Hedwigia 73: 142 (1933) Fig. 19.
+Jungermannia divaricata Nees, Enumeratio plantarum cryptogamicarum Javae. 60 (1830), non J. divaricata Sm.
+Botanische Jahrbücher für Systematik, Pflanzengeschichte und Pflanzengeographie plate 719 (1800).
+Type: Asia, Java (not located).
+Forming loose tufts composed of procumbent or slightly arching stems, yellow-green, never with brownish
+pigmentation. Shoots 0.7(–1.2) mm wide when flattened, up to 15 mm long. Stems rather lax, 115–185 (255) μm
+and 5 or 6 cells in diam., occasionally very slightly dorsi-ventrally flattened; cortical cells 1.2–1.5 × as long
+as wide, 55–85 μm long, 40–55 μm wide, 25–75 μm in diam., in 7 rows; medullar cells more elongate,
+c. 3.8–5.7 × as long as wide, 70–75 μm lomg, 10–20 μm wide, 13–55 μm diam. (ends slightly tapered to
+square); cortical and medullar cells with walls 1–5(–12) μm thick, outer tangential walls of cortical cells thicker
+(i.e. 5–22 μm) and radial walls of cortical cells frequently slightly thicker (i.e. 2–5(–11) μm); oil-bodies
+unknown. Branches infrequent, usually more than 5 mm apart, lateral (usually diverging at an angle of
+90–100°); flagella commonly 2 or more per stem. Rhizoids not observed. Leaves inserted at an angle of
+c. 40–60 from the vertical, distant to very slightly imbricate, ± flat or with apices slightly deflexed, 2-lobed
+(ventral usually distinctly narrower but not infrequently with lobes of similar length or ventral distinctly
+longer, but also with ventral lobe occasionally noticeably smaller), 330–530(–630) μm long × 145–205 μm
+wide, usually ± parallel sided or widest in middle of leaf but some leaves widest just above the narrowed
+base, dorsal base varying from distinctly auriculate to obtuse, ventral margin often straight, sometimes
+concave or even bulging slightly at ventral lobe; no vitta present but 1 or 2 rows of cells towards the ventral
+margin sometimes very slightly larger than those elsewhere; ventral lobe 100–195 (260) μm long, 55–95 μm
+(2–4 cells) wide at base; dorsal lobe 105–205 μm long, 80–110(–140) μm (3–5 cells) wide at base; lobes acute.
+Cells of leaf slightly bigger towards ventral margin (c. 30–50 × 25–35 μm) and smaller towards the dorsal
+margin especially in the basal lobe (15–25 × 10–25 μm); moderately thick walled throughout, especially in the
+corners (but not forming distinct trigones); oil-bodies unknown; cuticle minutely striate/papillate, especially
+on lobes and margins, (2–)4(–10) μm thick at margins. Underleaves distant, insertion ± transverse, small
+(c. 0.1(–0.3× size of lateral leaves), slightly narrower than stem, subquadrate or with margins very slightly
+curving, 80–135 μm long, 105–150 μm wide, obtuse at base; 3-lobed, sinuses usually c. 1/2 way (ranging from
+0.15–0.6); lobes (1 or) 2(or 3) cells long, 1–3 cells wide, often with one lobe larger or smaller than the others
+(base 2–5 cells high); apices of lobes rounded to truncate or emarginate. Asexual reproduction not observed.
+Androecia, gynoecia and sporophytes not observed.
+Distribution and ecology: In Australasia A. divaricatum occurs in Australia (Tasmania) and New Zealand
+(North Island). It occupies forest and scrub, from near sea-level (2 m asl) to the alpine zone in Tasmania
+288           Telopea 17: 195–237, 2014                                                             Brown and Renner
+
+
+
+
+Fig. 19. Acromastigum divaricatum. A–C, Leaf cellular detail. D, dorsal view of shoot. E, Dorsal view of shoot sector,
+showing stem cellular detail. F–G, Underleaf cellular detail. Scale (approximate) A, F, G, 100 μm; B, C, 200 μm;
+D, 1000 μm; E, 250 μm. From E.A. Brown 94/91, E. Jarman 87/3, W.A. Weymouth 925.
+Acromastigum in Australia                                            Telopea 17: 195–237, 2014                   289
+
+
+(820 m asl). The few widely separated specimens of this species in Australasia were collected from a variety
+of habitats and substrates, including on streambank boulders with Lepidozia, in gullies with waterfalls in
+lowland forest; on soil under overhanging rock on the southern side of a rock outcrop emerging above alpine
+scrub dominated by Astelia, Richaea, and Southern Beech; and on damp rhyolitic saprolite under Blechnum
+triangularifolium just above the spray zone of a boulder beach.
+Schiffner (1898) reported occurrences of A. divaricatum in Ambon, the Straits of Magellan and Tasmania.
+Evans (1934) regarded the Tasmanian report as dubious and probably based on A. colensoanum. This species
+has almost certainly been overlooked because of it’s superficial similarity to A. colensoanum (see discussion
+under that species). The other possibility is that it is genuinely rare; recent collections are from the Mount
+Sprent area and from Mt Hesperus. It is a morphologically variable species, some forms of which closely
+resemble A. colensoanum. Recent reports of this species from Papua New Guinea (Grolle 1978, Piippo 1991)
+give the impression that this is a montane taxon so it’s occurrence in Tasmania might not be anomalous.
+If these New Guinea records are genuine then one would also expect, however, to also find it in suitable
+geographically intermediate localities such as Mount Lewis, Mount Bellenden Ker and Barrington Tops.
+Identification: Distinguished from A. colensoanum by the 7 rows of cortical cells with 2 rows of ventral cortical
+cells that continue into the ventral lobe of the lateral leaf to give the appearance of being distinctly larger than
+the cells in the rest of the leaf (when viewed at 40× magnification). Specimens often have a yellowish tint.
+The leaves are often remote, falcate and narrower at the base than at the apex, the postical leaf lobe is often
+slightly shorter than the antical lobe. The underleaves are rectangular, as wide or narrower than the stem, the
+underleaf lobes are close set, and usually 2 cells wide throughout, and have a distinct notch in the apex due to
+the rounded outline of adjacent apical cells.
+Remarks: We accept Schiffner’s (1898) record and broad circumscription for A. divaricatum.
+Representative specimens examined: Australia: Tasmania: South West: tributary of Serpentine River, E.A. Brown 94/91
+&amp; K.L. Radford, 16 Jan 1994 (NSW285478, det. E.A.Brown); Mount Sprent, J. Jarman 87/3, 1987 (JE); Barker’s Creek, near
+Williamsford, W.A. Weymouth 925, 02 Jan 1900 (G); Southwest National Park, Huon Valley, Arthur Range, Mt Hesperus,</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>VICTORIAN_ACROMASTIGUM</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">bars: A = 2 mm, B,D,E = 200
+                                                                                                                                                                                              µm, C = 500 µm.
+
+
+
+
+                                                                                                                                                                               Fig. 4. Known distribution of Acromastigum
+                                                                                                                                                                               exiguum in Victoria.
+
+
+
+
+                                                                                                                                                            Vol 126 (5) 2009                                           167
+Downloaded from search.informit.org/doi/10.3316/informit.668315447922014. University of Tasmania, on 07/09/2026 11:46 AM AEST; UTC+10:00. © The Victorian
+                                                                                                                                                            Research Reports
+
+                                                                                                                                                            Similar taxa                                          Errinundra Plateau, headwaters of West Erri-
+                                                                                                                                                            The major differences between Acromastigum            nundra River, Chesterfield 3301 &amp; Cook, Mar
+                                                                                                                                                            and Bazzania have been mentioned already. In          1982, MEL-2021123; Warburton, Bastow s.n.,
+                                                                                                                                                            other regions several small bifid or entire-leaved    Feb 1902, MEL-1037679; Tarra–Bulga NP,
+                                                                                                                                                            species of Bazzania could be confused with            Bulga section, Thies FN1627K, Feb 1997, MEL-
+                                                                                                                                                            Acromastigum, but in Victoria only B. hochstet-       241226; headwaters of Blackfish Creek, Wilsons
+                                                                                                                                                            teri (Rchdt) E.A.Hodgs. might be confused with        Promontory NP, Meagher s.n., Jul 1996, MEL-
+                                                                                                                                                            A. colensoanum. Bazzania hochstetteri almost          240158; Toolangi–Black Range SF, Wirrawilla
+                                                                                                                                                            always has some 3-lobed leaves, and its under-        Rainforest Walk, Stajsic &amp; Klazenga VS2311,
+                                                                                                                                                            leaves are entire or weakly crenate, not lobed.       Jun 2001, MEL-2108572; Mueller s.n., source of
+                                                                                                                                                            All other similar-looking species, such as Geo-       the Yarra, undated, MEL-1037623; Black Spur,
+                                                                                                                                                            calyx caledonicus Steph., can be distinguished        Bastow s.n., Nov 1900, MEL-1037608; Clematis
+                                                                                                                                                            immediately because they lack underleaves or          Gully, Sherbrooke Forest, Bibby s.n., Jul 1948,
+                                                                                                                                                            ventral branches, or both.                            MEL-1037677; Turtons Track, west of Tany-
+                                                                                                                                                              Acromastigum divaricatum (Lindenb.) A.Evans         bryn, Otway Range, Thies FN1500A, Feb 1987,
+                                                                                                                                                            is outwardly very similar in appearance, but as       MEL-1050717; jungle at Mt Drummer, Willis
+                                                                                                                                                            well as its vastly different distribution — China,    s.n., MEL-1037682; Paradise Valley, Wilsons
+                                                                                                                                                            Indomalesia and Solomon Islands — it is distin-       Promontory, Meagher s.n., Jan 2003, herb. D.A.
+                                                                                                                                                            guished by its very much smaller size, with more      Meagher 782 (MELU); Western Tyers River,
+                                                                                                                                                            rectangular leaves and a postical leaf lobe that is   Baw Baw Ranges, Meagher s.n., Jun 2008, herb.
+                                                                                                                                                            usually slightly longer and not much narrower         D.A. Meagher 4599 (MELU); Beenak, Scott
+                                                                                                                                                            than the antical lobe. Furthermore, its colour is     s.n., May 1975, MUCV-2796 (MELU); Kallista,
+                                                                                                                                                            whitish green to pale yellowish green and the         Powell &amp; Wykes s.n., Nov 1973, MUCV-4208
+                                                                                                                                                            leaves are strongly caducous, and sporophytes         (MELU); Martins Creek Flora Reserve, Bonang
+                                                                                                                                                            (which are very common in A. colensoanum)             Highway, Scott &amp; Chesterfield s.n., Dec 1988,
+                                                                                                                                                            are unknown (Piippo 1991).                            MELU-911.
+                                                                                                                                                              Acromastigum exiguum is very similar indeed         TASMANIA — Mount Wellington, Gulliver
+                                                                                                                                                            to A. marginatum E.A.Hodgs., a New Zealand            s.n., undated, MEL-1037680.
+                                                                                                                                                            endemic, and Schuster (2000) suggested that           NEW SOUTH WALES — Pinkwood Creek,
+                                                                                                                                                            they might be conspecific. However, the un-           Hanging Mountain Forest Reserve, Curnow
+                                                                                                                                                            derleaves in A. marginatum have very much             3401, Jun 1990, CBG-9404981; Lamonds Creek,
+                                                                                                                                                            smaller and more densely packed cells, with           Barren Grounds NR, Coveny 16071, Apr 1992,
+                                                                                                                                                            leaf lobes 4–7(11) cells wide at the base (En-        MEL-2058332.
+                                                                                                                                                            gel and Glenny 2008). That might be enough
+                                                                                                                                                            to maintain the separation of the species, but a      Acromastigum divaricatum
+                                                                                                                                                            thorough examination of the types and a large         INDONESIA — Sumatra: Mount Nantifo,
+                                                                                                                                                            number of collections from Australia and New          Meijer 6288, Nov 1955, MEL-301605.
+                                                                                                                                                            Zealand would be needed to determine whether          PAPUA NEW GUINEA — Southern High-
+                                                                                                                                                            the difference is constant. If the two were found     lands: Tambul–Mendi road, SW of Tambul,
+                                                                                                                                                            to be conspecific, the epithet exiguum would          Streimann 26760, Dec 1982, CBG-8909603.
+                                                                                                                                                            have priority.                                        Acromastigum echinatiforme
+                                                                                                                                                            Representative specimens examined                     QUEENSLAND — Mt Finnigan Range, Cedar
+                                                                                                                                                            Acromastigum anisostomum                              Bay National Park, Streimann 57144, CBG-
+                                                                                                                                                            NEW ZEALAND — South Island: Red Hill,                 9519287; Mount Lewis, Scott s.n., Aug 1985,
+                                                                                                                                                            Barrier Range, Scott s.n., Dec 1969, MELU-            MUCV-7400 (MELU); Bellenden Ker, track to
+                                                                                                                                                            1354 (dupl. OTA-26569).                               Centre Peak, Scott Sept 1986, MELU-142; Bel-
+                                                                                                                                                            CHILE — Around Lenca, c. 25 km s-e of Pt Montt,       lenden Ker, Stone s.n., Sep 1987, MELU-608.
+                                                                                                                                                            Llanquihue, Inoue s.n., 10 Nov 1981, MELU, s.n.       Acromastigum exiguum
+                                                                                                                                                            (Inoue Bryophyta Selecta Exsiccata 701.)              NEW SOUTH WALES — Mossman Bay,
+                                                                                                                                                                                                                  Whitelegge 54, Dec 1884, MEL-1037670;
+                                                                                                                                                            Acromastigum colensoanum                              Mossman Bay, Whitelegge 47, Dec 1884,
+                                                                                                                                                            VICTORIA — Sassafras Creek, Ellery Camp,              MEL-1037671; Carrington Falls, Schofield &amp;
+                                                                                                                                                            Streimann 43723, Feb 1990, CBG-9007708;
+
+                                                                                                                                                            168                                                                     The Victorian Naturalist
+Downloaded from search.informit.org/doi/10.3316/informit.668315447922014. University of Tasmania, on 07/09/2026 11:46 AM AEST; UTC+10:00. © The Victorian
+                                                                                                                                                                                                                                                       Research Reports
+
+                                                                                                                                                            Schofield 79286, Jun 1983, MEL-2277549; track       Acknowledgements
+                                                                                                                                                            to Grand Canyon, Blue Mountains NP, Stajsic         Thanks to Nicole Middleton and Kathy Vohs (Uni-
+                                                                                                                                                            2649 &amp; Klazenga, Sep 2001, MEL-2133860;             versity of Melbourne) for assistance with material
+                                                                                                                                                                                                                from the university herbarium (MELU, MUCV), and
+                                                                                                                                                            track to Dantes Glen, Blue Mountains NP, Sta-       to the curators of the herbaria at the National Her-
+                                                                                                                                                            jsic 2735 &amp; Klazenga, Sep 2001, MEL-2136332;        barium of Victoria (MEL) and Australian National
+                                                                                                                                                            Pierces Pass, Blue Mountains NP, Stajsic 2794       Botanic Gardens, (CANB, CBG). MEL data was pro-</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Acromastigum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum anisostomum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum cavifolium</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum cunninghamii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum echinatiforme</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum mooreanum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Acromastigum verticale</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Leptospermum divaricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Syzygium divaricatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia divaricata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigobryum divaricatum</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.11125, 146.21925], [-42.780278, 145.971389], [-43.111111, 146.219167], [-42.66, 146.600006], [-43.5512175, 146.0725576], [-42.7902832, 145.9641763], [-42.146633, 145.4681], [-43.5512175, 146.0725576], [-5.9667, 143.8167], [-14.966667, 166.65], [-14.966667, 166.65], [-14.966667, 166.65], [-14.966667, 166.65], [-35.633333, 173.65], [-14.966667, 166.65], [-14.966667, 166.65]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [109.3, 97.0, 126.4, 135.8, 201.0, 183.8, 214.1, 232.5, 220.1, 193.1, 125.1, 152.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [17.2, 17.5, 15.3, 12.4, 9.7, 8.1, 7.4, 8.2, 9.9, 11.7, 14.3, 15.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.2, 8.3, 7.1, 6.0, 4.6, 3.4, 2.8, 2.8, 3.4, 4.1, 6.0, 6.9], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

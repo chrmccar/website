@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoopsis setulosa — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Zoopsis setulosa</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Zoopsis setulosa</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Zoopsis</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">241</p>
+    <footer>59 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">15</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>xeric</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>1.6</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Illustrations: Scott (1985, Figure 65), Meagher and Fuhrer (2003, page 239), Engel and Glenny
+(2008, plate 9B).
+Habitat: Rotting wood and logs, tree-fern and tree trunks, soil, leaf litter, occasionally epiphytic
+and on rock in sheltered habitats.
+Distribution on LHI: Upper eastern slopes of Mt Lidgbird, upper northern slopes and summit
+plateau of Mt Gower .
+Total distribution: South-west Western Australia, eastern Australia (Tas to Qld), LHI, New
+Zealand.
+Discussion: Stephani and Watts (1914) first reported Zoopsis argentea from Lord Howe Island.
+Their report presumably referred to this nominate variety, since var. flagelliformis (as Zoopsis
+flagelliformis Colenso) had been known for some time previously. Zoopsis argentea is the most
+common species of the genus in Australia and New Zealand.
+
+Zoopsis argentea var. flagelliformis (Colenso) R.M.Schust.
+Zoopsis flagelliformis Colenso, Trans. Proc. New Zealand Inst. 18: 250 (1886); Zoopsis argentea var.
+flagelliformis (Colenso) R.M.Schust., Nova Hedwigia 68: 38 (1999).
+Type: NEW ZEALAND, North Island, Norsewood, Colenso s.n., 1885, W (not seen).
+Description: This taxon has been described in detail by Schuster (2000a) and Engel and Glenny
+(2008).
+Illustration: Schuster (2000a, Figures 166, 167).
+Habitat: Damp humus.
+Distribution on LHI: Summit plateau of Mt Gower.
+Total distribution: LHI, New Zealand.
+Discussion: This variety has not been considered in the Australian flora, and may have gone
+unnoticed on the mainland. It is quite distinct even in the field because of the strap-like thallus.
+
+
+
+                                                                           214
+Zoopsis setulosa Leitg.
+Zoopsis setulosa Leitg., Mittheil. Naturwiss, Ver. Steiermark 1876: 24 (1876).
+Type: NEW ZEALAND: North Island, Auckland; herbarium unknown, not seen.
+Description: This taxon was described in detail by Scott (1969, 1985) and Engel and Glenny
+(2008).
+Illustrations: Scott (1969), Grolle and Piippo (1984b: Figures 2e,f).
+Habitat: Rotting wood and logs, tree-fern and tree trunks, soil, often epiphytic and on rock in
+sheltered habitats.
+Distribution on LHI: Slope below eastern face of Mt Gower.
+Total distribution: Eastern Australia (Tas to northern Qld), New Zealand, New Caledonia,
+Papua New Guinea.
+Discussion: This species is reported as new to Lord Howe Island, based on a single collection
+made in 2000 by Elizabeth Brown. It seems to be very rare on the island.
+
+
+Lophocoleaceae De Not.
+Members of the family Lophocoleaceae were at one time included in the family Geocalycaceae,
+but the families are now recognised as distinct (Hentschel et al. 2006). Lophocoleaceae contains
+only Chiloscyphus and Lophocolea, and only Chiloscyphus occurs in Australia.
+
+Chiloscyphus Corda
+Engel (2010) revised Chiloscyphus for Australasia (temperate Australia and New Zealand),
+recognising 38 species from the region. However, he did not include Lord Howe Island in this
+revision and thus did not consider Chiloscyphus howeanus (Steph.) J.J.Engel and R.M.Schust.,
+which is endemic to the island. This species has not been reviewed since it was first published,
+and has never been illustrated. It is therefore fully described and illustrated here.
+Chiloscyphus howeanus was described (as Lophocolea howeana) by Stephani (1914) from a
+collection made by William Watts in 1911 (Stephani and Watts 1914). Engel and Schuster
+(1985) transferred the species to Chiloscyphus with numerous other species as part of a re-
+evaluation of the family Geocalycaceae, in which Chiloscyphus was then placed. The species
+clearly belongs in Chiloscyphus on account of the characters described below.
+The only other Chiloscyphus species known to occur on Lord Howe Island is C. semiteres,</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Plants ribbon-like, pale green, markedly nitid when dry, to 600 juim wide. Branching common, the branches usually mostly of Frullania type; ventral-intercalary branches also com¬ mon, often geotropic and microphyllous. Axes planoconvex, consisting of 2 rows of dorsal cortical cells, the cells very large, isodiametric or wider than high, their inner margins forming a zigzag median line; ventral cortical cells in 4 rows: 2 lateral rows (= lower cells of lateral merophytes) on each side subequal to the dorsal cortical cells, and 2 rows of cells constituting the ventral merophytes rather broad, the cells smaller than those of the 2 lateral rows, subquadrate; medulla of 19-22 rows of small cells forming a central strand. Leaves distinctly pro¬ jecting laterally, each typically separated on the same side of axis by less than half of a marginal cortical cell; leaf consisting of two 1 -celled, ovoid-conoidal basal cells connate to each other for 0.5-0.65 their length, the apices broadly rounded, each bearing a 2-celled setose appendage; appendages conspicuous, attached by the narrow basal-lateral side of the basal cell, arched to geniculate, the distal cell tapered to the summit, curved over the basal leaf cell, the surface of the appendage cells strongly papillose. Oil-bodies 5-10 per thallus cell, occupying a very small portion of volume of lumen, hyaline, moderately botryoidal, elliptic to linear to fusiform to crescentic, 5. 8-7.7 X 17.8-20.6 juim, a few smaller, more broadly elliptic and 5.3- 6.2 X 11.5-14.4 |ULm, a few linear and 4.3 X 17.3 juim. (In a short time the spherules enlarge and the oil-body perimeter becomes irregularly bulged.) Claw-like cells of the leaf lobes thick- walled, with numerous chloroplasts, but with fewer and considerably smaller oil-bodies, only 2.9 X 3. 8-5. 3 |ULm. Underleaves separated by 2 tiers of 2 cells each, rudimentary, consisting of 2-4 subspherical basal cells (‘‘disc”) and two 1 -celled “lobes,” the lobe cells each terminating in a hyaline papilla. Asexual reproduction lacking. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island (20-30 m). South Island (130-630 m). North Island ([240]720-890 m); Australia: Tasmania, Victoria, New South Wales (Meagher and Euhrer, 2003). Known in New Zealand from Eiordland, Westland, Western Nelson, Auckland and Northland (Waipoua) EPs. Sporadic and scattered sites over a broad range, occurring on Stewart Island, on the South Island in Westland north to the Marino Mtns. in Nelson, and in the North Island in scattered, mostly middle-elevation stations, e.g., at 720-750 m in the Herangi Ra. (S of Kawhia Harbor), 880-890 m on Mt. Te Aroha, 835 m on Table Mtn., 650-680 m on the Hauturu Highpoint Track and 800 m on Mt. Moehau. The species occurs in shaded, protected, humid niches within forests. It occurs over peaty soil in well-shaded hollows or pockets, a characteristic niche, and in such situations it may cover large areas. Also, in the Herangi Ra. (S of Te Whaka- patiki), on soil of a small vertical bank in a very narrow and shallow water channel in a small valley system, with vegetation consisting of Podocarpus hallii, Dracophyllum traversii and Weinmannia to 3-5 m tall. In the Paparoa Ra. (upper slopes of N side of Tiropahi River) over soil under a granitic ledge at 130-170 m in dense scrub dominated by Nothofagus menziesii and N. solandri with scattered Dacrydium cupressinum, Freycinetia baueriana, Dicksonia squarrosa, Coprosma spp. and Brachy glottis. On Stewart Island (Pern Gully Track) over humus of the floor in a forest with a canopy of Fuchsia excorticata and Griselinia littoralis, and an understory of Blechnum discolor. Species associated with Z. setulosa are Bazzania adnexa, B. nitida. Cryptopodium bartramioides, Distichophyllum kraussei, D. pulchellum, Hy- menophyton leptopodum, Kurzia hippuroides, Lepidozia spinosissima, Leucobryum can- didum, Psiloclada clandestina, Rhizogonium distichum, Thuidium furfurosum and Wijkia extenuata. Comments&#39;. A distinctive species, recognizable at a glance because of the leaves, which are closely contiguous and formed of two large chlorophyllous cells, each free distally, so that the leaf appears bilobed, bearing a hooked, slender, 2-celled ‘‘appendix.” The precise arrangement of the leaves lends a distinctive, crisp regularity to the plants vs. the somewhat irregularly scalloped margins of shoots of Zoopsis argentea. The surface of the incurved appendices is rough¬ ened, while the surface of the chlorophyllous cells is smooth. The leaves are closely juxtaposed on each side of the stem and only a fraction of one cortical cell intervenes between leaf bases. Zoopsidella R.M.Schust. Zoopsidella R.M.Schust., Nova Hedwigia 10: 24. 1965. Plants markedly distichous-leaved and strongly complanate, prostrate or creeping, light to pale green, nitid, rather translucent, small, the tips occasionally becoming flagelliform, the plants small to medium, to 1.6 mm wide. Branching sparing and irregular, the branches normally ventral-intercalary, often stoloniform and microphyllous; Frullania-typt branches sometimes also present (in ours). Stem with 6 or 10-13 rows of large, hyaline cortical cells forming a conspicuous hyaloderm, the dorsal rows of large cells in surface view irregularly polygonal and not or little elongated, the cells of the ventral merophyte smaller than the dorsal and lateral cells; medullary cells markedly smaller, firm- walled. Rhizoids at the bases of underleaves or (extraterritorial species) sometimes also from ventral side of apical and sub- apical leaf cells, often with bulbous apices. Leaves typically formed of many cells, laterally spreading, nearly or quite flat, almost longitudinally inserted, leaving a broad strip of 2-3(5) cell rows leaf-free; leaves symmetrically 2-lobed to 0. 2-0.4 (in ours), or strongly asymmetric and with a reduced or vestigial dorsal lobe; lobes ending in crescentic slime papillae attached along their longer walls, or without these cells (our species). Cells very large, leptodermous; surface smooth. Oil-bodies (Schuster, 2000a) glistening and almost homogeneous or, at most, obscurely botryoidal. Underleaves small or vestigial. Asexual reproduction absent. Dioecious, autoecious (in ours), or paroecious. Androecia sometimes terminal but becoming intercalary on leading leafy axes, or sometimes on small, ventral-intercalary branches; bracts pouched at base, bilobed; antheridia 1 per bract, the stalk uniseriate. Gynoecia normally on feeble, short, ventral-intercalary branches; bracts and bracteoles of innermost series bifid to 0.5-0.85, the lobes entire or subentire. Perianth fusiform-trigonous, the basal cells much larger than median and apical cells, the mouth narrow, deeply 6-fid; perianth 1-stratose. Seta with 8 rows of large outer cells surrounding 4 rows of internal cells. Capsule wall 2- stratose; outer layer of cells rectangular, usually both faces of alternating walls with sinuous- nodular thickenings; inner layer of cells with well-defined semi annular bands. Spores delicately areolate. Type: Zoopsidella cynosuranda (Spruce ex Steph.) R.M.Schust. (= Zoopsis cynosurandra Spruce ex Steph.) A genus of 8 species, of which only one occurs in New Zealand. The other species are Neotropical and range north to the Antilles; for these see Schuster (1999b). The genus has three subgenera: subg. Hyalolepidoziopsis R.M.Schust., with only our species, subg. Hypo- zoopsis R.M.Schust. and subg. Zoopsidella. All species of Zoopsidella have large, flat, lamelliform leaves, unlike a number of Zoopsis species, in which leaves are usually highly reduced to a very few, specialized cells. Also, Zoopsidella has a seta of the 8+4 type vs. a seta with 8 epidermal cell rows enclosing numerous, much smaller internal cell rows in Zoopsis. References: Schuster (1999b, 2000a). The species treatment is adapted, with considerable modification, from Schuster (1999b).</pre>
+    
+    
+    
+    <pre class="description-text">Plants ribbon-like, pale green, markedly nitid when dry, to 600 juim wide. Branching common, the branches usually mostly of Frullania type; ventral-intercalary branches also com¬ mon, often geotropic and microphyllous. Axes planoconvex, consisting of 2 rows of dorsal cortical cells, the cells very large, isodiametric or wider than high, their inner margins forming a zigzag median line; ventral cortical cells in 4 rows: 2 lateral rows (= lower cells of lateral merophytes) on each side subequal to the dorsal cortical cells, and 2 rows of cells constituting the ventral merophytes rather broad, the cells smaller than those of the 2 lateral rows, subquadrate; medulla of 19-22 rows of small cells forming a central strand. Leaves distinctly pro¬ jecting laterally, each typically separated on the same side of axis by less than half of a marginal cortical cell; leaf consisting of two 1 -celled, ovoid-conoidal basal cells connate to each other for 0.5-0.65 their length, the apices broadly rounded, each bearing a 2-celled setose appendage; appendages conspicuous, attached by the narrow basal-lateral side of the basal cell, arched to geniculate, the distal cell tapered to the summit, curved over the basal leaf cell, the surface of the appendage cells strongly papillose. Oil-bodies 5-10 per thallus cell, occupying a very small portion of volume of lumen, hyaline, moderately botryoidal, elliptic to linear to fusiform to crescentic, 5. 8-7.7 X 17.8-20.6 juim, a few smaller, more broadly elliptic and 5.3- 6.2 X 11.5-14.4 |ULm, a few linear and 4.3 X 17.3 juim. (In a short time the spherules enlarge and the oil-body perimeter becomes irregularly bulged.) Claw-like cells of the leaf lobes thick- walled, with numerous chloroplasts, but with fewer and considerably smaller oil-bodies, only 2.9 X 3. 8-5. 3 |ULm. Underleaves separated by 2 tiers of 2 cells each, rudimentary, consisting of 2-4 subspherical basal cells (‘‘disc”) and two 1 -celled “lobes,” the lobe cells each terminating in a hyaline papilla. Asexual reproduction lacking. Androecia and gynoecia not seen. Distribution and Ecology: Endemic to New Zealand: Stewart Island (20-30 m). South Island (130-630 m). North Island ([240]720-890 m); Australia: Tasmania, Victoria, New South Wales (Meagher and Euhrer, 2003). Known in New Zealand from Eiordland, Westland, Western Nelson, Auckland and Northland (Waipoua) EPs. Sporadic and scattered sites over a broad range, occurring on Stewart Island, on the South Island in Westland north to the Marino Mtns. in Nelson, and in the North Island in scattered, mostly middle-elevation stations, e.g., at 720-750 m in the Herangi Ra. (S of Kawhia Harbor), 880-890 m on Mt. Te Aroha, 835 m on Table Mtn., 650-680 m on the Hauturu Highpoint Track and 800 m on Mt. Moehau. The species occurs in shaded, protected, humid niches within forests. It occurs over peaty soil in well-shaded hollows or pockets, a characteristic niche, and in such situations it may cover large areas. Also, in the Herangi Ra. (S of Te Whaka- patiki), on soil of a small vertical bank in a very narrow and shallow water channel in a small valley system, with vegetation consisting of Podocarpus hallii, Dracophyllum traversii and Weinmannia to 3-5 m tall. In the Paparoa Ra. (upper slopes of N side of Tiropahi River) over soil under a granitic ledge at 130-170 m in dense scrub dominated by Nothofagus menziesii and N. solandri with scattered Dacrydium cupressinum, Freycinetia baueriana, Dicksonia squarrosa, Coprosma spp. and Brachy glottis. On Stewart Island (Pern Gully Track) over humus of the floor in a forest with a canopy of Fuchsia excorticata and Griselinia littoralis, and an understory of Blechnum discolor. Species associated with Z. setulosa are Bazzania adnexa, B. nitida. Cryptopodium bartramioides, Distichophyllum kraussei, D. pulchellum, Hy- menophyton leptopodum, Kurzia hippuroides, Lepidozia spinosissima, Leucobryum can- didum, Psiloclada clandestina, Rhizogonium distichum, Thuidium furfurosum and Wijkia extenuata. Comments&#39;. A distinctive species, recognizable at a glance because of the leaves, which are closely contiguous and formed of two large chlorophyllous cells, each free distally, so that the leaf appears bilobed, bearing a hooked, slender, 2-celled ‘‘appendix.” The precise arrangement of the leaves lends a distinctive, crisp regularity to the plants vs. the somewhat irregularly scalloped margins of shoots of Zoopsis argentea. The surface of the incurved appendices is rough¬ ened, while the surface of the chlorophyllous cells is smooth. The leaves are closely juxtaposed on each side of the stem and only a fraction of one cortical cell intervenes between leaf bases. Zoopsidella R.M.Schust. Zoopsidella R.M.Schust., Nova Hedwigia 10: 24. 1965. Plants markedly distichous-leaved and strongly complanate, prostrate or creeping, light to pale green, nitid, rather translucent, small, the tips occasionally becoming flagelliform, the plants small to medium, to 1.6 mm wide. Branching sparing and irregular, the branches normally ventral-intercalary, often stoloniform and microphyllous; Frullania-typt branches sometimes also present (in ours). Stem with 6 or 10-13 rows of large, hyaline cortical cells forming a conspicuous hyaloderm, the dorsal rows of large cells in surface view irregularly polygonal and not or little elongated, the cells of the ventral merophyte smaller than the dorsal and lateral cells; medullary cells markedly smaller, firm- walled. Rhizoids at the bases of underleaves or (extraterritorial species) sometimes also from ventral side of apical and sub- apical leaf cells, often with bulbous apices. Leaves typically formed of many cells, laterally spreading, nearly or quite flat, almost longitudinally inserted, leaving a broad strip of 2-3(5) cell rows leaf-free; leaves symmetrically 2-lobed to 0. 2-0.4 (in ours), or strongly asymmetric and with a reduced or vestigial dorsal lobe; lobes ending in crescentic slime papillae attached along their longer walls, or without these cells (our species). Cells very large, leptodermous; surface smooth. Oil-bodies (Schuster, 2000a) glistening and almost homogeneous or, at most, obscurely botryoidal. Underleaves small or vestigial. Asexual reproduction absent. Dioecious, autoecious (in ours), or paroecious. Androecia sometimes terminal but becoming intercalary on leading leafy axes, or sometimes on small, ventral-intercalary branches; bracts pouched at base, bilobed; antheridia 1 per bract, the stalk uniseriate. Gynoecia normally on feeble, short, ventral-intercalary branches; bracts and bracteoles of innermost series bifid to 0.5-0.85, the lobes entire or subentire. Perianth fusiform-trigonous, the basal cells much larger than median and apical cells, the mouth narrow, deeply 6-fid; perianth 1-stratose. Seta with 8 rows of large outer cells surrounding 4 rows of internal cells. Capsule wall 2- stratose; outer layer of cells rectangular, usually both faces of alternating walls with sinuous- nodular thickenings; inner layer of cells with well-defined semi annular bands. Spores delicately areolate. Type: Zoopsidella cynosuranda (Spruce ex Steph.) R.M.Schust. (= Zoopsis cynosurandra Spruce ex Steph.) A genus of 8 species, of which only one occurs in New Zealand. The other species are Neotropical and range north to the Antilles; for these see Schuster (1999b). The genus has three subgenera: subg. Hyalolepidoziopsis R.M.Schust., with only our species, subg. Hypo- zoopsis R.M.Schust. and subg. Zoopsidella. All species of Zoopsidella have large, flat, lamelliform leaves, unlike a number of Zoopsis species, in which leaves are usually highly reduced to a very few, specialized cells. Also, Zoopsidella has a seta of the 8+4 type vs. a seta with 8 epidermal cell rows enclosing numerous, much smaller internal cell rows in Zoopsis. References: Schuster (1999b, 2000a). The species treatment is adapted, with considerable modification, from Schuster (1999b).</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">100. Isolembidium aizomal,um is a small, dark green species found on the
+     forest floor. It is uncommon and occurs sporadically in rainforest
+     at high altitudes. The leaves and underleaves are entire and are lhe
+     same shape and size.
+                                                                           Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+101. Kunia tennx forms very neat, compact clumps of dendroid shoots
+     on soil or logs. The minute leaves and underleavcs are divided into
+     several lobes.
+102. Lepidozia glaucophylla is a distinctive pale blue-grcen species often
+     found in drier situations such as on fibrous trce-fern trunks and
+     below overhanging rocks and exposed roots.
+
+103. Lgpidozia ulothrix is widespread, occurring in most wet vegetation
+     types as an epiphyte or on logs, rocks and soil. It is the only
+     Tasmanian Lepidozia with teeth on the dorsal margin of the leaf.
+
+
+
+
+                                                                             Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+     A 102. Lepidozia glaucophylla (x4)
+     7 103. Lepidozia ulothrix (x4)
+104. Telaranea ,mooreana has very pale-coloured, pinnately branched
+     shoots that grow over wet soil. The leaves are divided into eight
+     long, slender segments which give the shoots a hairy appearance.
+
+105. Zoopsis setulosa has a glassy, translucent appearance, closely
+     resembling the more widespread Z. argentea from which it differs
+     in details of the leal cells. It is a tiny species of the forest floor.
+
+
+
+
+                                                                               Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+     A 104. Telaranea mooreana (x2)
+     V 105. Zoopszs sefulora (x6)
+Plagiochilaceae
+Members of the Plagiochilaceae have their leaves in two rows and,
+although the leaves may be toothed, they are never deeply divided.
+
+106. Auochila biwialis is a common rainforest epiphyte, brownish in
+     colour and with rounded leaves which are entire on the dorsal
+     margin and toothed elsewhere. The male shoots (illustrated) appeal
+     to have numerons constrictions along thcir length, an effect which
+     becomes very pronounced as the plants dry.
+
+107. Plugochila circinalis is epiphytic and common in high altitude forests.
+     The ventral leaf margin is undulate.
+
+108. Plagiochilu retrospectans is often found on wet rocks in creeks (usually
+     above water level) but also occurs in drier situations on soil and
+     rocks, or occasionally as a low epiphyte. The leaves typically have
+     numerous ven- small teeth around the margin.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>ZOOPSIS_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Section Setulosae. Leaves with claw-like two-celled papillae; cells papillose. Leaves separated by less than half the length of one dorsal cortical cell. [Source: Engel &amp; Smith Merrill 2006, Two new Zoopsis species and their relationships to other zoopsids]</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Clavulina setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Linnaemya setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Misophrice setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Pultenaea setulosa</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis argentea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis leitgebiana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis liukiuensis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Zoopsis setigera K.I.Goebel</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Cephalozia setulosa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.6539804, 145.432548], [-42.0, 145.616667], [-41.485032, 146.1565275], [-42.990749, 147.246711], [-43.437991, 146.136409], [-41.3607817, 144.8466331], [-40.8777468, 145.5162808], [-41.72916, 146.520392], [-43.531031, 146.75387], [-42.883333, 147.25], [-42.8, 145.95], [-43.529629, 146.382611], [-41.7652924, 145.6343807], [-41.6541455, 145.0866751], [-41.64575, 145.342194], [-43.267706, 146.24972], [-41.633333, 145.95], [-41.2584295, 144.9132615], [-43.0925139, 146.6774423], [-40.909151, 145.457724], [-41.811163, 145.556662], [-41.833333, 145.5], [-42.990948, 147.124043], [-41.8402931, 145.6093823], [-42.805633, 145.900657], [-43.257921, 146.138958], [-43.170523, 146.632295], [-41.66894, 146.552072], [-41.724538, 146.6679874], [-41.529797, 144.843766], [-42.900698, 147.246351], [-41.725079, 145.919274], [-41.3608707, 144.851412], [-41.459377, 147.360558], [-42.781962, 145.9843919], [-41.899622, 145.434118], [-41.3405382, 144.7767898], [-41.833333, 145.5], [-43.204167, 146.7875], [-41.729599, 146.640628], [-42.716676, 147.978381], [-41.310389, 145.447639], [-43.168724, 147.73952], [-42.8, 145.95], [-43.260899, 146.754961], [-41.833333, 145.5], [-43.0952918, 146.6857752], [-43.3037096, 145.9801587], [-43.1667, 146.9], [-42.259749, 145.425237], [-42.216667, 145.433333], [-43.5512175, 146.0725576], [-42.688333, 146.491667], [-42.081279, 145.550555], [-43.5241924, 146.5048393], [-42.266667, 145.833333], [-43.1, 146.733333], [-41.841667, 145.608333], [-41.833333, 145.5], [-42.3282487, 171.3795548], [-33.8, 151.0], [-17.3956, 145.8175], [-34.729167, 150.4375], [-34.45, 150.45], [-33.638611, 150.272222], [-33.4167, 151.1667], [-38.492093, 177.496405], [-44.1089, 169.3528], [-33.291667, 151.291667], [-33.633333, 150.316667], [-42.952165, 170.862448], [-33.433333, 151.283333], [-33.65, 150.316667], [-37.037778, 175.671944], [-16.1597, 145.3694], [-34.65, 150.6333], [-16.081804, 145.401093], [-39.193874, 173.986674], [-38.545176, 175.64282], [-34.65, 150.4833], [-35.666667, 173.566667], [-39.195545, 173.988504], [-33.7375, 150.441667], [-33.5361, 150.475], [-34.633333, 150.466667], [-33.5361, 150.475], [-33.3667, 150.4667], [-33.626111, 150.309722], [-46.196925, 167.045772], [-33.833333, 151.183333], [-33.433333, 150.966667], [-39.315972, 174.14978], [-34.691667, 150.716667], [-41.570178, 172.482167], [-33.633333, 150.283333], [-17.266667, 145.8625], [-39.318, 174.16], [-46.503777, 169.277155], [-38.8561805, 174.9285107], [-41.569758, 172.48277], [-33.570833, 150.333333], [-16.514722, 145.270833], [-33.454167, 150.666667], [-33.866667, 151.216667], [-33.65, 150.316667], [-33.705556, 150.538889], [-16.4833, 145.25], [-35.6, 173.633333], [-47.1650404, 167.6994831], [-43.4, -170.166667], [-40.8649242, 175.4162788], [-33.65, 150.316667], [-35.2833, 150.2], [-33.6667, 150.3333], [-33.716667, 150.45], [-16.156804, 145.376106], [-43.422318, 170.150928], [-35.180278, 173.410556], [-42.446869, 171.46941], [-33.636111, 150.275], [-39.193874, 173.986674], [-16.090137, 145.409439], [-16.159722, 145.369444], [-17.26, 145.8517], [-33.366667, 151.3], [-33.616667, 150.3], [-45.808423, 166.537392], [-38.036944, 176.021111], [-33.729167, 150.4375], [-33.633333, 150.266667], [-33.7, 150.533333], [-43.4, 170.166667], [-41.62799, 171.918438], [-22.061778, 166.347778], [-33.5333, 150.4667], [-41.95, 171.4], [-39.35, 174.133333], [-44.783398, 167.665182], [-41.966667, 171.45], [-46.889383, 167.99055], [-33.7167, 150.4333], [-33.716667, 150.366667], [-33.633333, 150.283333], [-33.5361, 150.475], [-33.516667, 150.583333], [-33.6667, 150.3167], [-33.623056, 151.134722], [-33.816667, 151.233333], [-40.8556, 172.7385], [-33.716667, 150.35], [-46.8904, 168.0945], [-37.535, 175.74], [-34.623392, 150.655021], [-44.05, -176.616667], [-43.405671, 170.169554], [-33.413889, 150.283333], [-33.413889, 150.283333], [-35.0833, 150.1167], [-33.7, 150.533333], [-46.196702, 167.045961], [-43.009749, 170.66956], [-33.7, 150.173056], [-22.181667, 166.511389], [-38.8608, 174.6053], [-33.538889, 150.495833], [-44.098341, 168.616738], [-37.035, 175.673889], [-21.620833, 165.874444], [-33.004167, 151.401389], [-36.84986, 175.559101], [-16.159722, 145.369444], [-33.655, 150.3133], [-18.212778, 145.808333], [-36.538526, 175.405035], [-33.5333, 150.4667], [-33.729167, 150.4375], [-41.633333, 171.916667], [-47.1650404, 167.6994831], [-33.497222, 150.475833], [-33.5667, 150.3333], [-43.433333, 169.966667], [-33.729167, 150.4375], [-47.140694, 167.739429], [-34.688889, 150.719444], [-16.15, 145.3667], [-17.6, 145.583333], [-43.4, 170.166667], [-34.690278, 150.716667], [-33.716667, 150.35], [-45.148005, 167.229565], [-38.498333, 174.77], [-41.654722, 171.893611], [-44.112778, 169.345278], [-16.591667, 145.273056], [-43.021165, 170.662462], [-17.344388, 145.72951], [-33.725, 150.366667], [-44.083333, -176.616667], [-33.716667, 150.433333], [-36.200881, 175.067046], [-43.287062, 170.164729], [-47.230002, 167.536558], [-34.65, 150.48], [-36.201, 175.077], [-33.572222, 150.419167], [-43.4, 170.166667], [-33.65, 150.316667], [-35.516667, 173.466667], [-35.183333, 173.483333], [-33.570833, 150.333333], [-17.3, 145.8667], [-33.65, 150.316667], [-36.838, 175.552], [-33.538889, 150.495833], [-46.9, 168.108333], [-33.716667, 150.366667], [-38.498333, 174.77], [-33.638611, 150.272222], [-21.62, 165.875556], [-33.5333, 150.4667], [-34.633333, 150.55], [-35.624564, 173.561283], [-41.816027, 171.78449], [-42.653903, 171.527802], [-39.193874, 173.986674], [-33.716667, 150.35], [-38.074722, 174.976944], [-47.033333, 167.866667], [-43.422318, 170.150928], [-34.6667, 150.3333], [-34.65, 150.4833], [-38.486279, 177.482166], [-41.654722, 171.893611], [-47.109275, 167.761745], [-33.726923, 150.373001], [-33.341667, 150.308333], [-36.838, 175.552], [-41.773451, 171.788038], [-43.4, 170.166667], [-39.190111, 174.051], [-31.583889, 159.080556]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [88.4, 78.5, 104.7, 113.8, 173.2, 168.2, 197.4, 209.0, 189.9, 161.6, 106.1, 122.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.8, 19.9, 17.7, 14.6, 11.8, 9.9, 9.3, 10.1, 11.9, 13.8, 16.6, 17.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.5, 8.2, 6.3, 5.0, 3.6, 2.8, 3.1, 4.3, 5.2, 7.0, 8.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

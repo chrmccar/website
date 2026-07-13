@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diplophyllum verrucosum — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Diplophyllum verrucosum</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Diplophyllum verrucosum</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Scapaniaceae</span>
+    <span class="badge">Diplophyllum</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">33</p>
+    <footer>3 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">11</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>10.0–11.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>8.0–13.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>12.0–18.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>2.0–4.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">(Gottsche, Lindenb. &amp; Nees) J.J.Engel                    Chiloscyphus vermicularis (Lehm.) Hassel
+        Chiloscyphus caniculatus Gottsche, Lindenb.      Cololejeunea cardiocarpa (Mont.) R.M.Schust.
+        &amp; Nees                                           Cololejeunea cucullifolia (Herzog) E.A.Hodgs.
+        Lophocolea caniculata (Gottsche, Lindenb. &amp;      Cololejeunea ellipsoidea R.M.Schust.
+        Nees) Steph.                                     Cololejeunea falcidentata R.M.Schust.
+Chiloscyphus semiteres (Lehm.) Lehm. &amp;                   Cololejeunea hodgsoniae (Herzog) E.A.Hodgs.
+        Lindenb. var. semiteres                          Cololejeunea inflexifolia R.M.Schust.
+        Lophocolea semiteres (Lehm.) Mitt.               Cololejeunea laevigata (Mitt.) R.M.Schust.
+Chiloscyphus spiniferus (Hook.f. &amp; Taylor) J.J.Engel     Cololejeunea mamillata (Angstr.) R.M.Schust.
+        &amp; R.M.Schust.                                    Cololejeunea minutissima (Sm.) Schiffn.
+        Lophocolea spinifera (Hook.f. &amp; Taylor)          Cololejeunea pulchella (Mitt.) R.M.Schust.
+        Taylor                                           Colura pulcherrima var. bartlettii Ast
+Chiloscyphus subporosus (Mitt.) J.J.Engel &amp;              Colura saccophylla E.A.Hodgs. &amp; Herzog
+        R.M.Schust.                                      Cryptochila acinacifolia (Hook.f. &amp; Taylor) Grolle
+        Lophocolea subporosa Mitt.                       Cryptochila grandiflora (Lindenb. &amp; Gottsche) Grolle
+Chiloscyphus variabilis (Steph.) J.J.Engel &amp;             Cryptochila nigrescens (Steph.) Grolle
+        R.M.Schust.                                      Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust.
+        Lophocolea variabilis Steph.
+Chiloscyphus villosus (Steph.) J J.Engel &amp; R.M.Schust.   Dendromastigophora flagellifera (Hook.f.)
+        Lophocolea villosa Mitt.                                 R.M.Schust.
+Chloranthelia berggrenii (Herzog) R.M.Schust.                    Mastigophora flagellifera (Hook.f.) Steph.
+        Chloranthelia filosa (E.A.Hodgs.) R.M.Schust.    Diplasiolejeunea plicatiloba (Hook.f. &amp; Taylor)
+Clandarium xiphophyllum (Grolle) R.M.Schust.                     Grolle
+        Blepharidophyllum xiphophyllum Grolle                    Diplasiolejeunea lyratifolia (Hook.f. &amp; Taylor)
+Clasmatocolea crassiretis (Herzog) Grolle                        Steph.
+        Chiloscyphus crassiretis (Herzog) Hassel                 Drepanolejeunea plicatiloba (Hook.f. &amp;
+Clasmatocolea humilis (Hook.f. &amp; Taylor) Grolle                  Taylor) Steph.
+        var. humilis                                     Diplasiolejeunea pusilla Grolle
+        Chiloscyphus humilis (Hook.f. &amp; Taylor)          Diplophyllum dioicum R.M.Schust.
+        Hassel                                           Diplophyllum domesticum (Gottsche) Steph.
+Clasmatocolea inflexispina (Hook.f. &amp; Taylor)            Diplophyllum verrucosum R.M.Schust.
+       JJ.Engel                                          Drepanolejeunea aucklandica Steph.
+        Chiloscyphus amplectens (Mitt.) J.J.Engel &amp;      Drepanolejeunea vesiculosa subsp. euvesiculosa
+        R.M.Schust.                                              Herzog
+        Chiloscyphus inflexispinus (Hook.f. &amp; Taylor)    Drucella integristipula (Steph.) E.A.Hodgs.
+       J.J.Engel &amp; R.M.Schust.                           Dumortiera hirsuta (Sw.) Nees
+        Clasmatocolea amplectens (Mitt.) J.J.Engel               Marchantia hirsuta Sw.
+        Lophocolea amplectens Mitt.
+Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle       Echinolejeunea papillata (Mitt.) R.M.Schust.
+        Chiloscyphus notophyllus (Hook.f. &amp; Taylor)      Eoisotachis stephanii (Salm.) R.M.Schust.
+        Hassel                                           Eotrichocolea polyacantha (Hook.f. &amp; Taylor)
+Clasmatocolea strongylophylla (Hook.f. &amp; Taylor)                 R.M.Schust.
+       Grolle
+       Chiloscyphus strongylophyllus (Hook.f. &amp;          Fossombronia pusilla (L.) Nees
+       Taylor) Hassel                                          Fossombronia perpusilla (Colenso) Steph.
+132   Tuhinga, Number 10 (1998)
+
+
+
+
+        Noteroclada perpusilla Colenso                   Frullania solanderiana Colenso
+Fossombronia reticulata Steph.                           Frullania spinifera Taylor
+        Fossombronia microspora Herz.                    Frullania squarrosula (Hook.f. &amp; Taylor) Taylor
+Fossombronia wondraczekii (Corda) Dumort.                Frullania subhampeana E.A.Hodgs.
+        Jungermannia wondraczekii Corda                  Frullania svihlana S.Hatt.
+Frullania allanii E.A.Hodgs.
+Frullania anomola E.A.Hodgs.                             Gackstroemia alpina R.M.Schust.
+Frullania aterrima (Hook.f. &amp; Taylor) Hook.f.            Gackstroemia weindorferi (Herzog) Grolle
+        &amp; Taylor var. aterrima                           Geocalyx caledonicus Steph.
+Frullania aterrima var. lepida E.A.Hodgs.                Goebeliella cornigera (Mitt.) Steph.
+Frullania aterrima var. rostrata (R.M.Schust.) S.Hatt.   Goebelobryum unguiculatum (Hook.f. &amp; Taylor)</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Plants ascending to (often) stiffly erect, in shade clear green but with basal sheathing portion of leaves usually reddish pigmented, with exposure reddish orange with sheath a deep wine-red; shoots to 1.8(2. 7) mm wide. Branches rather common and from leading leafy shoot to at times sparse and restricted to old, partially decayed, basal sectors, lateral-intercalary. Rhizoids not seen. Leaves rigid, brittle, stiffly spreading, weakly imbricate, conduplicate-bilobed, the base hollowed out and loosely sheathing the stem, the keel 0.4-0. 6 the length of ventral lobe, rounded in section and not sharp, strongly arched, the cells forming the keel with exceptionally thick walls, the sinus acute and not or only weakly reflexed; dorsal and ventral lobes often subequal in size, widely divergent and ± regularly and symmetrically broadly squarrose-reflexed to distinctly falcate (the lobed tips directed inward toward the shoot), the shoots appearing 4-ranked, or the shoots plano-convex (in ventral view), the ventral lobe spreading at 90° or more from the stem but not or scarcely recurved; opposing dorsal leaf bases (when leaves imbricate) overlapping, extending to more than half the width of the stem; ventral bases distinctly overlapping, hiding the stem and extending across the full width of the stem. Ventral lobe orientation variable: broadly reflexed to plane to broadly inflexed, the in- sertion of ventral half of leaf ± transverse, the free margin not decurrent, the lobe (when flattened) narrowly ovate to elliptic, often subfalcate; apex acute to broadly acute or at times some¬ what blunted and apiculate, the apex denticulate, the tip often with a sharp, l(2)-celled apiculus; ventral margin broadly arched, cordate at the base, the margins variable: usually rather finely and somewhat irregularly denticulate to the base, the teeth ± similar in size throughout, but in some populations the margin almost entire; dorsal margin often ± straight, toothed like the ventral margin or at times subentire; margins and apex with 1 -several rows of cells often bleached white and eventually eroded away leaving an erose margin, particularly in exposed situations. Dorsal lobe broadly squarrose-reflexed, similar to the ventral in shape, ovate to elliptic, 0.8- 0.9 the length of ventral lobe, 0.7-0.9X area of the ventral; apex broadly acute to rounded, with denticulation and (often) an apiculus like the ventral lobe; dorsal (free) margin broadly arched, contracted to the base, the teeth similar to those of the ventral lobe. Marginal teeth unicellular, formed of sharply projecting marginal cells, or consisting of a narrower conical pro¬ jection of the exposed wall of the marginal cells. Cells of median portion of ventral lobe rather short to somewhat elongate-rectangular, 10-11 juim wide X (26)37-48 juim long; subapical and marginal cells moderately thick-walled, the lumen rounded to somewhat angular, the cells 8-13 |ULm wide and long; cells in distal 0.3 of lobes in ± regular arching tiers; median field of cells in basal 0.5 of leaf narrowly elongate, on both sides of keel (but more so on the ventral side), forming a ± distinct vitta, the vitta variable in length, extending distally (in each lobe) to the lobe middle or a little beyond, the vitta cells reddish pigmented, particularly at the base, with longitudinal walls uniformly thick-walled to sinuous, the transverse walls often thinner, 12-18 |ULm wide X 39-57 juim long (to 4.5:1); surface coarsely papillose, the papillae rounded to short-elliptic, 2-4 per cell in distal half of lobe, at times with a single papilla equaling the cell lumen in diameter; elongate cells of median base finely striate to coarsely striolate- papillose. Oil-bodies (Schuster, 1968a) in median cells of lobe 2-4 per cell (absent in some cells), rather distinctly botryoidal, spherical and 3. 8-4. 5 juim in diam. to ellipsoidal and 3- 4.5 X 4-6.5 |ULm. Gemmae infrequently produced, brownish, angular- stellate, 1 -celled. Paroecious, often with several pairs of non-ventricose leaves between androecium and gy- noecium. cf Bracts below the 9, rigid like the leaves, similar to leaves in shape and form except ventricose toward base; antheridia short-elliptic to distinctly clavate, 2-3 per bract, the stalk variable (often within one androecium): uniseriate or biseriate throughout, or a combination of uniseriate and biseriate, sporadically 4-seriate throughout, the stalk often broadest immediately below the antheridial head, the stalk cells very thick-walled. Subgynoecial bracts larger than vegetative leaves, similar to leaves except the dorsal lobe wider and typically erect, the innermost bract(s) concave, shallowly bilobed, clasping the perianth base. Perianth elliptic to oblong, contracted to mouth, pluriplicate in distal 0.5, the mouth shallowly and irregularly lob- ulate, the lobule margin with several sharply angular, mostly 1-2-celled spine-like teeth, the submarginal cells papillose like the leaves; mouth area often whitish and with lobule tips variously withered and eroded. Sporophyte not seen. Distribution and Ecology: New Zealand: Stewart Island (960 m). South Island (1160-1970 m). North Island (1630 m); Australia: Tasmania (1450-1490 m). New South Wales (1780-2140 m). In New Zealand known from Eiordland, Southland (Eyre Mtns.), Otago, Canterbury, West- land, Sounds-Nelson and Volcanic Plateau (Tongariro Natl. Park) EPs. An alpine species throughout its range and terricolous or saxicolous, typically occurring in wet areas such as the margins of tarns and rills, over peaty soil of seepage areas (particularly spread, the vitta shown by stipple. 6. Upper-median cells of ventral lobe, with coarse surface papil- on slopes providing some drainage), on soil over or between stones or boulders. It is found in sedgelands, short tussocklands and cushionfields of Donatia novae -zelandiae, Oreobolus impar, O. pectinatus, Carpha alpina, Chionochloa australis and C. crassiuscula, and is accompanied by Andreaea acuminata, A. nitida, Cephalomitrion aterrimum, Cryptochila grandiflora, Dicranum aucklandicum, Drepanocladus aduncus, Hygrolembidium acrocladum, Isotachis montana, Marsupella ustulata subsp. childii, Nothogymnomitrion erosum, Notoligotrichum australe, Racomitrium crispulum, Radula sainsburiana, Rhacocarpus purpurascens, Soleno- stoma totipapillosum, Sphagnum cristatum and Warnstorfia sarmentosa. Comments: When optimally developed, Diplophyllum verrucosum is a distinctive plant, with its deep reddish orange color, dorsal and ventral leaf lobes of almost equal size, and both lobes squarrose-reflexed and widely divergent (Eig. 164: 1, 2), forming a distinct ‘W” when seen in lateral aspect (Eig. 164: 3). It differs from the other New Zealand species in being found in constantly wet and often inundated habitats and in having the densely matted growth habit of Isotachis montana or Cryptochila grandiflora. Diplophyllum verrucosum may eventually prove to be conspecific with the southern South American D. squarrosum (for a discussion see Engel and Merrill, 1998). It seems advisable to maintain the two species separate until more collections become available, at which time the status of these two species can be reevaluated.</pre>
+    
+    
+    
+    <pre class="description-text">Plants ascending to (often) stiffly erect, in shade clear green but with basal sheathing portion of leaves usually reddish pigmented, with exposure reddish orange with sheath a deep wine-red; shoots to 1.8(2. 7) mm wide. Branches rather common and from leading leafy shoot to at times sparse and restricted to old, partially decayed, basal sectors, lateral-intercalary. Rhizoids not seen. Leaves rigid, brittle, stiffly spreading, weakly imbricate, conduplicate-bilobed, the base hollowed out and loosely sheathing the stem, the keel 0.4-0. 6 the length of ventral lobe, rounded in section and not sharp, strongly arched, the cells forming the keel with exceptionally thick walls, the sinus acute and not or only weakly reflexed; dorsal and ventral lobes often subequal in size, widely divergent and ± regularly and symmetrically broadly squarrose-reflexed to distinctly falcate (the lobed tips directed inward toward the shoot), the shoots appearing 4-ranked, or the shoots plano-convex (in ventral view), the ventral lobe spreading at 90° or more from the stem but not or scarcely recurved; opposing dorsal leaf bases (when leaves imbricate) overlapping, extending to more than half the width of the stem; ventral bases distinctly overlapping, hiding the stem and extending across the full width of the stem. Ventral lobe orientation variable: broadly reflexed to plane to broadly inflexed, the in- sertion of ventral half of leaf ± transverse, the free margin not decurrent, the lobe (when flattened) narrowly ovate to elliptic, often subfalcate; apex acute to broadly acute or at times some¬ what blunted and apiculate, the apex denticulate, the tip often with a sharp, l(2)-celled apiculus; ventral margin broadly arched, cordate at the base, the margins variable: usually rather finely and somewhat irregularly denticulate to the base, the teeth ± similar in size throughout, but in some populations the margin almost entire; dorsal margin often ± straight, toothed like the ventral margin or at times subentire; margins and apex with 1 -several rows of cells often bleached white and eventually eroded away leaving an erose margin, particularly in exposed situations. Dorsal lobe broadly squarrose-reflexed, similar to the ventral in shape, ovate to elliptic, 0.8- 0.9 the length of ventral lobe, 0.7-0.9X area of the ventral; apex broadly acute to rounded, with denticulation and (often) an apiculus like the ventral lobe; dorsal (free) margin broadly arched, contracted to the base, the teeth similar to those of the ventral lobe. Marginal teeth unicellular, formed of sharply projecting marginal cells, or consisting of a narrower conical pro¬ jection of the exposed wall of the marginal cells. Cells of median portion of ventral lobe rather short to somewhat elongate-rectangular, 10-11 juim wide X (26)37-48 juim long; subapical and marginal cells moderately thick-walled, the lumen rounded to somewhat angular, the cells 8-13 |ULm wide and long; cells in distal 0.3 of lobes in ± regular arching tiers; median field of cells in basal 0.5 of leaf narrowly elongate, on both sides of keel (but more so on the ventral side), forming a ± distinct vitta, the vitta variable in length, extending distally (in each lobe) to the lobe middle or a little beyond, the vitta cells reddish pigmented, particularly at the base, with longitudinal walls uniformly thick-walled to sinuous, the transverse walls often thinner, 12-18 |ULm wide X 39-57 juim long (to 4.5:1); surface coarsely papillose, the papillae rounded to short-elliptic, 2-4 per cell in distal half of lobe, at times with a single papilla equaling the cell lumen in diameter; elongate cells of median base finely striate to coarsely striolate- papillose. Oil-bodies (Schuster, 1968a) in median cells of lobe 2-4 per cell (absent in some cells), rather distinctly botryoidal, spherical and 3. 8-4. 5 juim in diam. to ellipsoidal and 3- 4.5 X 4-6.5 |ULm. Gemmae infrequently produced, brownish, angular- stellate, 1 -celled. Paroecious, often with several pairs of non-ventricose leaves between androecium and gy- noecium. cf Bracts below the 9, rigid like the leaves, similar to leaves in shape and form except ventricose toward base; antheridia short-elliptic to distinctly clavate, 2-3 per bract, the stalk variable (often within one androecium): uniseriate or biseriate throughout, or a combination of uniseriate and biseriate, sporadically 4-seriate throughout, the stalk often broadest immediately below the antheridial head, the stalk cells very thick-walled. Subgynoecial bracts larger than vegetative leaves, similar to leaves except the dorsal lobe wider and typically erect, the innermost bract(s) concave, shallowly bilobed, clasping the perianth base. Perianth elliptic to oblong, contracted to mouth, pluriplicate in distal 0.5, the mouth shallowly and irregularly lob- ulate, the lobule margin with several sharply angular, mostly 1-2-celled spine-like teeth, the submarginal cells papillose like the leaves; mouth area often whitish and with lobule tips variously withered and eroded. Sporophyte not seen. Distribution and Ecology: New Zealand: Stewart Island (960 m). South Island (1160-1970 m). North Island (1630 m); Australia: Tasmania (1450-1490 m). New South Wales (1780-2140 m). In New Zealand known from Eiordland, Southland (Eyre Mtns.), Otago, Canterbury, West- land, Sounds-Nelson and Volcanic Plateau (Tongariro Natl. Park) EPs. An alpine species throughout its range and terricolous or saxicolous, typically occurring in wet areas such as the margins of tarns and rills, over peaty soil of seepage areas (particularly spread, the vitta shown by stipple. 6. Upper-median cells of ventral lobe, with coarse surface papil- on slopes providing some drainage), on soil over or between stones or boulders. It is found in sedgelands, short tussocklands and cushionfields of Donatia novae -zelandiae, Oreobolus impar, O. pectinatus, Carpha alpina, Chionochloa australis and C. crassiuscula, and is accompanied by Andreaea acuminata, A. nitida, Cephalomitrion aterrimum, Cryptochila grandiflora, Dicranum aucklandicum, Drepanocladus aduncus, Hygrolembidium acrocladum, Isotachis montana, Marsupella ustulata subsp. childii, Nothogymnomitrion erosum, Notoligotrichum australe, Racomitrium crispulum, Radula sainsburiana, Rhacocarpus purpurascens, Soleno- stoma totipapillosum, Sphagnum cristatum and Warnstorfia sarmentosa. Comments: When optimally developed, Diplophyllum verrucosum is a distinctive plant, with its deep reddish orange color, dorsal and ventral leaf lobes of almost equal size, and both lobes squarrose-reflexed and widely divergent (Eig. 164: 1, 2), forming a distinct ‘W” when seen in lateral aspect (Eig. 164: 3). It differs from the other New Zealand species in being found in constantly wet and often inundated habitats and in having the densely matted growth habit of Isotachis montana or Cryptochila grandiflora. Diplophyllum verrucosum may eventually prove to be conspecific with the southern South American D. squarrosum (for a discussion see Engel and Merrill, 1998). It seems advisable to maintain the two species separate until more collections become available, at which time the status of these two species can be reevaluated.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Cyathostemon verrucosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplophyllum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplophyllum dioicum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplophyllum domesticum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplophyllum incrassatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Diplophyllum marionense</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Phebalium verrucosum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ricinocarpos verrucosus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Trachythecium verrucosum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Radula sect</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.683333, 145.95], [-41.68, 145.95], [-41.5509062, 147.6904958], [-45.3183189, 168.469504], [36.483333, 148.283333], [-45.698381, 167.433379], [-15.0, 153.5], [-15.0, 153.5], [-15.0, 153.5], [-39.298056, 175.536944], [-44.738808, 168.232956], [-44.871137, 168.212882], [-36.5, 148.0847], [-36.4833, 148.1], [-36.45, 148.2667], [-45.758713, 166.955248], [-45.3222, 168.469], [-15.0, 153.5], [-44.089583, 169.415333], [-45.412056, 168.347346], [-41.883333, 172.85], [-36.4667, 148.2667], [-42.938562, 171.420901], [-45.283022, 168.577975], [-44.213612, 169.353681], [-36.4264, 148.2764], [-15.0, 153.5], [-39.266667, 175.534444], [-36.4833, 148.1], [-41.8833, 172.85], [-45.2833183, 168.5945058], [-36.4833, 148.1], [-36.4833, 148.1]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [114.6, 93.5, 125.5, 134.9, 201.2, 215.8, 251.9, 269.7, 237.7, 190.0, 141.5, 145.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [15.0, 14.9, 12.1, 8.5, 5.3, 3.4, 2.4, 3.0, 5.1, 7.9, 11.6, 12.5], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [6.3, 6.6, 4.8, 3.6, 1.8, 0.1, -1.0, -0.9, 0.2, 1.1, 3.0, 4.4], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

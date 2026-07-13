@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schistochila tasmanica — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Schistochila tasmanica</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Schistochila tasmanica</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Schistochilaceae</span>
+    <span class="badge">Schistochila</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">65</p>
+    <footer>65 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Schistochila</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila aligera</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila brotheri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila isotachyphylla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila lacerata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila pseudociliata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila succulenta</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Schistochila trispiralis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia balfouriana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia unguicularis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Schistochila unguicularis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Schistochila balfouriana</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.0787, 146.264315], [-41.65, 145.933333], [-41.641667, 145.933333], [-43.461889, 146.406306], [-42.7775, 145.961667], [-42.896781, 146.021519], [-42.933333, 147.216667], [-42.086368, 146.034072], [-43.291056, 146.507278], [-42.87, 146.22], [-41.899622, 145.434118], [-42.816667, 146.366667], [-43.0, 147.0], [-42.216667, 146.094444], [-42.805633, 145.900657], [-42.897763, 146.143987], [-42.898613, 146.26646], [-42.933333, 147.216667], [-42.683333, 146.666667], [-41.71955, 145.438498], [-41.9583, 146.07], [-42.990948, 147.124043], [-41.725079, 145.919274], [-43.350944, 146.754599], [-41.9345378, 146.0481011], [-41.5, 145.933333], [-42.933333, 147.216667], [-41.90626, 146.036792], [-41.717854, 145.318327], [-42.26647, 146.031327], [-42.681933, 146.647373], [-43.4667, 146.8667], [-41.6, 145.95], [-41.635023, 145.92078], [-42.683333, 146.583333], [-42.85, 146.3], [-42.82, 146.37], [-43.260899, 146.754961], [-42.990749, 147.246711], [-41.6333, 145.9333], [-41.811163, 145.556662], [-41.8069586, 145.6358394], [-42.720274, 146.634965], [-42.22, 146.095], [-42.933333, 147.216667], [-42.73, 146.42], [-42.087322, 146.154968], [-43.1156421, 146.2266647], [-42.177377, 146.153771], [-43.440988, 146.754236], [-42.71852, 146.268585], [-41.450806, 145.002389], [-42.539131, 146.392462], [-43.0, 147.0], [-42.85, 146.3], [-42.683333, 146.583333], [-42.7986293, 145.9677264], [-41.816667, 145.516667], [-42.719235, 146.390708], [-42.85, 146.3], [-41.6, 145.95], [-41.6417, 145.93], [-41.996315, 146.035435], [-41.6333, 145.9333], [-41.641667, 145.933333]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [100.0, 88.9, 114.3, 123.2, 187.9, 182.3, 214.3, 235.8, 220.4, 187.1, 123.4, 139.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [18.5, 18.6, 16.1, 12.7, 9.8, 7.8, 7.2, 8.0, 10.0, 12.1, 15.3, 16.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [8.3, 8.2, 6.9, 5.3, 4.0, 2.3, 1.6, 1.7, 2.9, 3.8, 5.6, 6.8], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

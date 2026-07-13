@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neolepidozia tridactylis — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Neolepidozia tridactylis</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Neolepidozia tridactylis</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Neolepidozia</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">154</p>
+    <footer>75 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">14</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>neolepidozia tridactylis (lehm. et lindenb.) e. d. cooper, phytotaxa:</strong> &lt;div&gt;&lt;p&gt;Neolepidozia tridactylis (Lehm. et Lindenb.) E.D.Cooper,&lt;/p&gt;&lt;p&gt;Phytotaxa 97 (2): 58, 2013 (see Cooper et al. 2013). BASIONYM: Jungermannia tridactylis Lehm. et Lindenb., Nov. Stirp. Pug. 4: 41, 1832 (see Lehmann 1832).&lt;/p&gt;&lt;/div&gt;</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Amyema tridactyla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hibiscus tridactylites</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia consobrina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia palmata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia praenitens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Neolepidozia quadristipula</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Tridactylus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Utricularia tridactyla</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia tridactylis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia oldfieldiana</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia tridactylis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Leucosarmentum Fulford</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Telaranea tridactylis</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.8, 146.65], [-42.688333, 146.491667], [-42.066667, 146.15], [-42.2167, 146.0833], [-41.6, 145.95], [-41.8598502, 146.1733071], [-42.68, 146.55], [-41.0, 145.525], [-42.92, 146.2583], [-42.6833, 145.7667], [-41.63625, 145.068944], [-41.67, 145.95], [-42.216667, 146.083333], [-41.666667, 145.966667], [-42.25, 145.366667], [-42.688333, 146.491667], [-41.626389, 145.055556], [-41.8167, 145.0833], [-43.5259824, 146.5023494], [-42.2, 145.97], [-42.216667, 146.083333], [-41.654194, 145.081111], [-43.3771731, 147.309666], [-43.240017, 146.77105], [-41.841667, 145.533333], [-43.17, 141.82], [-41.2817795, 148.2942652], [-43.1, 146.716667], [-41.198683, 148.0038], [-40.9917, 145.38], [-42.783333, 145.95], [-43.08, 147.95], [-42.8712995, 147.221423], [-42.8699405, 145.4437526], [-41.8417, 145.53], [-41.310389, 145.447639], [-41.8383052, 145.4762323], [-42.100433, 145.737233], [-43.1, 146.72], [-43.183333, 146.883333], [-43.17, 141.82], [-42.866667, 147.15], [-43.0, 147.0], [-43.1, 146.72], [-43.1, 146.716667], [-43.0, 147.0], [-41.6417, 145.93], [-43.08, 146.73], [-42.716667, 147.133333], [-43.2137218, 147.7840616], [-41.816667, 145.408333], [-42.8153, 146.6561], [-42.22, 146.08], [-42.100433, 145.737233], [-41.6, 145.95], [-41.4, 146.18], [-41.23, 146.27], [-40.991667, 145.383333], [-42.7, 146.67], [-42.777083, 145.981778], [-41.0, 145.525], [-41.656781, 145.3748329], [-41.6557645, 145.431304], [-41.8, 145.22], [-43.1, 146.716667], [-42.216667, 146.083333], [-42.688611, 146.483333], [-41.816667, 145.416667], [-43.5268395, 146.4924426], [-43.33, 146.88], [-42.962778, 146.392778], [-43.18, 146.88], [-42.22, 146.08], [-41.311783, 147.839367], [-41.82, 145.4083], [-37.902, 145.769], [-37.87092, 145.806266], [-37.7, 145.66139], [-34.1528, 151.0139], [-33.7375, 150.333333], [-37.900111, 145.793889], [-37.59306, 145.78], [-37.5886, 145.6403], [-37.7, 145.66139], [-33.729167, 150.4375], [-33.616667, 150.316667], [-37.70056, 145.66167], [-37.371972, 148.867389], [-37.7, 145.66139], [-37.7, 145.66139], [-37.88306, 146.27333], [-30.67, 143.48], [-37.70056, 145.66167], [-37.7, 145.66139], [-37.716667, 145.666667], [-37.931667, 146.454722], [-43.783333, -176.833333], [-37.871611, 146.266861], [-38.63556, 143.71472], [-33.733333, 150.441667], [-37.902306, 145.801278], [-37.70056, 145.66167], [-37.67583, 145.81361], [-37.66611, 145.82778], [-37.59306, 145.78056], [-38.453751, 146.541458], [-36.775, 146.795], [-37.655, 145.82833], [-37.55472, 145.85778], [-38.64333, 143.71361], [-33.7375, 150.333333], [-37.65139, 145.81167], [-37.65611, 145.81639], [-37.64694, 145.81778], [-38.64333, 143.71361], [-37.7, 145.66139], [-37.665, 145.82722], [-37.70056, 145.66167], [37.860778, 146.320139], [-37.915694, 145.762222], [-37.7, 145.66139], [-37.70056, 145.66167], [-37.59306, 145.78056], [-37.5934, 145.78], [-37.7, 145.66139], [37.860778, 146.320139], [-36.707806, 146.823556], [-33.616667, 150.316667], [-37.5934, 145.78056], [37.860778, 146.320139], [-37.31806, 148.86889], [-37.70056, 145.66167], [-43.766667, -176.733333], [-37.66417, 145.82722], [-37.827144, 145.623714], [-17.38338, 146.004065], [-37.71167, 145.68194], [-36.1, 150.333333], [-37.55667, 145.8875], [-15.0, 143.0], [-37.655, 145.83194], [-37.883212, 145.59698], [-37.88389, 146.27444], [-37.88306, 146.27333], [-37.67167, 145.82333], [-33.516667, 150.583333], [-37.798194, 145.7295], [-37.70056, 145.66167], [-37.70056, 145.66167], [-38.63556, 143.71472], [-37.65306, 145.83111], [-33.570833, 150.333333], [-37.24602, 142.54829], [-33.516667, 150.583333]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [85.2, 76.6, 99.6, 107.5, 164.0, 160.6, 188.9, 204.7, 187.9, 159.4, 104.4, 119.0], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.1, 20.2, 17.9, 14.7, 11.8, 9.9, 9.3, 10.1, 12.0, 14.0, 16.8, 18.1], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.3, 8.0, 6.1, 4.4, 3.0, 2.3, 2.7, 3.9, 4.9, 6.8, 7.9], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

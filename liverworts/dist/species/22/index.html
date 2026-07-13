@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hymenophyton flabellatum — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Hymenophyton flabellatum</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Hymenophyton flabellatum</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Hymenophytaceae</span>
+    <span class="badge">Hymenophyton</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">750</p>
+    <footer>158 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">11.7&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">1351&thinsp;mm</p>
+    <footer>annual · CV&thinsp;23.0</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">12</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>23.0–30.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">HYMENOPHYTON_GONDWANAN</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>28.0–35.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">HYMENOPHYTON_GONDWANAN</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>23.0–35.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">HYMENOPHYTON_GONDWANAN</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>28.0–35.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">HYMENOPHYTON_GONDWANAN</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>33.0–35.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">HYMENOPHYTON_GONDWANAN</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HYMENOPHYTON_GONDWANAN</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Wikipedia English; fetched via title &#39;Hymenophyton flab…</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">NZ_CHECKLIST_1998</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">NZ_CHECKLIST_1998</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>HYMENOPHYTON_GONDWANAN</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">HL 1         ....a....A..C......------------............-.........T..............................................
+HL2          .........A..C......------------............T.........T..............................................
+HL3          .........A..C......------------............T.........T..............................................
+HL4          .........A..C......------------............T.........T..............................................
+HL5          .........A..C......------------............T.........T..............................................
+HL Tas       .........A..C......--------................T.........T............................T.................
+
+                                                                                                           300
+HF4          GTGGGAGGAAGTTTTGTTCCAAATTTTGTTAGTTACGAACGAAGCAAGGCAG--GGGGGTATGGCGGAATTGGTAGACGCTGCGGACTT-AATTCGATTG
+HF1          ....................................................--...................................-..........
+HF2          ....................................................--...................................-..........
+HF3          ....................................................--...................................-..........
+HF5          ....................................................--...................................-..........
+HF6          ....................................................--...................................-..........
+HF Tas       ....................................................--...................................-..........
+HF Aus1      ....................................................--...................................-..........
+HF Aus2      ...................................................---...................................-..........
+CHILE 1      ..A................A......C....A...........A.G.....A--...................................-.....A....
+CHILE 2      ..A................A......C....A...........A.G.....A--...................................-.....A....
+CHILE 3      ..A................A......C....A...........A.G.....A--...................................-.....A....
+CHILE 4      ..A................A......C....A...........A.G.....A--...................................-.....A....
+HL 1         ...........A.......G...........A.........G.A.G....G.G-...................................-..........
+HL2          ...........A.......G...........A.........G.A.G....G.G-...................................-..........
+HL3          ...........A.......G...........A.........G.A.G....G.G-...................................-..........
+HL4          ...........A.......G...........A.........G.A.G....G.G-...................................-..........
+HL5          ...........A.......G...........A.........G.A.G....G.G-...................................-..........
+HL Tas       ...........A...................A.........G...G....G---...................................-..........
+
+
+
+Fig. 2. Aligned cpDNA trnT-trnL 5′exon spacer, trnL 5′exon and trnL intron sequences of Hymenophyton flabellatum [HF], H. leptopodum [HL]
+and Chilean Hymenophyton specimens [CHILE] (for abbreviations see Table 1). Positions equal with first sequence are given as dots. Positions
+1–253 - trnT-trnL spacer, 255–289 - trnL 5′exon, 291–642 - trnL intron.
+Interspecific relationships in Hymenophyton                                         Australian Systematic Botany   413
+                                                                                                           400
+HF4          AGCCTTGGTGGAGAAATCTACTAAGTGATTGTTTCCATATTCAGGGAAACCTAGGTTGAAAAAGAAGAACCTACTAGGTAATCCTGAGCCAAATTTCTAT
+HF1          ....................................................................................................
+HF2          ....................................................................................................
+HF3          ................................................................................................A...
+HF5          ....................................................................................................
+HF6          ....................................................................................................
+HF Tas       ....................................................................................................
+HF Aus1      ....................................................................................................
+HF Aus2      ....................................................................................................
+CHILE 1      .............................................................N..a-----------------------------------
+CHILE 2      ....................................................................................................
+CHILE 3      ....................................................................................................
+CHILE 4      ....................................................................................................
+HL 1         ....................................................................................................
+HL2          ....................................................................................................
+HL3          ....................................................................................................
+HL4          ....................................................................................................
+HL5          ....................................................................................................
+HL Tas       ....................................................................................................
+                                                                                                           500
+HF4          TGCGGAATAGGTGCAGAGACTCGAAGGAAACTATCCCAAAAATTTTTCGATGTTCTGCGATTTGTTTCATGCACCAGAGGATGAGTGAGAATAACAATAG
+HF1          ....................................................................................................
+HF2          ....................................................................................................
+HF3          ....................................................................................................
+HF5          ....................................................................................................
+HF6          ....................................................................................................
+
+---
+
+HF3
+                                           99
+                                                                         assumption of lower evolutionary constraints in this region
+                                                                         as well as in the trnT-trnL spacer (Quandt and Stech 2004).
+                                                         HF5                 In the nrDNA ITS2, the observed sequence divergence
+                                                                         between the Hymenophyton specimens of the four groups
+                            62                                           (Australasian HF, New Zealand HL, HL Tas, Chilean
+                                                         HL Tas          specimens; 4.4–9.6%) is in the same range as the
+                                                                         interspecific divergence in Symphyogyna spp. (6.8–10.6%;
+                                                         HL2
+                                                                         Schaumann et al. 2003); the ‘infrataxonomic’ divergence
+                                           95                            between the two studied Chilean specimens (3.2%) is
+                   100                                                   considerably smaller.
+                                                         HL5
+                                                                         Molecular and morphological differentiation
+                                                                         Despite of the different scales of variability, the sequenced
+                                                         CHILE 2
+                                           93                            regions reveal a consistent regional as well as a taxonomic
+                                                                         differentiation within Hymenophyton, which is further
+                                                         CHILE 3         supported by morphological data. The studied specimens
+                                                                         form four regional or taxonomic groups, i.e. Australasian
+ Fig. 6. Strict consensus of 2 most parsimonious trees (length 91, CI    HF, Chilean samples, New Zealand HL and Tasmanian HL
+ = 0.8681, RI = 0.8310) inferred from nrDNA ITS2 sequences of            with little to no divergence between specimens from the
+ seven Hymenophyton [H. flabellatum HF; H. leptopodum HL, HL             same but pronounced differentiation between specimens
+ Tas; and CHILE (H. pedicellatum)] and two Symphyogyna
+ (outgroup) specimens by a heuristic search with PAUP 4.0b10 (for
+                                                                         from different groups.
+ specimen abbreviations see Table 1). Numbers above branches                For New Zealand and Tasmania, the existence of at least
+ indicate bootstrap values from 1000 replicates with 1000 random         two     Hymenophyton       species,    H. flabellatum     and
+ addition replicates per bootstrap-replicate.                            H. leptopodum, has already been stated based on
+  Table 2.     Distribution, morphological, cp- and nrDNA characteristics of Hymenophyton flabellatum, H. leptopodum and southern South American Hymenophyton specimens
+                                                                                (H. pedicellatum)
+                                                                                                                                                                                             416
+Characteristic                        H. flabellatum, Australasia                          H. leptopodum                                     Southern South American Hymenophyton
+                                                                                                                                             specimens (H. pedicellatum)
+Distribution                          New Zealand, Tasmania, south-eastern Australia;      New Zealand, Tasmania (but see comments on HL Chile IX.-XII. Región, adjacent Argentina,
+                                        probably Fiji Is and New Caledonia (see text for    Tas)                                          Juan Fernández Is
+                                        details)
+Fronds                                Olive green                                          Translucent green                                 Emerald green
+Forking                               5–6 times                                            (3–)4–5 times                                     (3–) 4 times
+Segments                              Flat, only borders slightly undulate                 Flat 1–1.5 (–2) mm wide                           Flat, borders slightly recurved 1.5–2 mm wide
+                                        0.8–1 (–1.2) mm wide
+Apex                                  Obtuse, segments with limited grow                   Emarginate, segments with limited growth          Obtuse or attenuate obtuse, with limited
+                                                                                                                                               growth
+                                                                                                                                                                                             Australian Systematic Botany
+
+Lamina cells                          35–49 µm long, 23–30 µm wide, 23–35 µm thick         54–70 µm long, 28–35 µm wide, 44–47 µm thick      54–70 µm long, 30–42 µm wide, 28–35 µm
+                                                                                                                                               thick
+Marginal cells                        Shorter than wide, 18–23 µm long (parallel to         Elongated, 35–47 µm long, 23–35 µm wide          Elongated, 37–51 µm long, 28–35 µm wide
+                                        border), 33–35 µm wide
+Growing apex                          With 1-celled marginal slime papillae                 No apical slime papillae seen                    With 1-celled marginal slime papillae
+Papillae                              Persistent papillae 3 cells long (70–94 µm); lateral, Evanescent slime papillae 2 cells long (117 µm); Evanescent slime papillae 2 cells long
+                                        and dorsally and ventrally on nerve                   lateral to nerve                                 (46 µm); lateral to nerve
+Male branches                         (3–4) 5–6 per frond, lateral on stalk or nerve        5–14 per frond on nerve bifurcation              12–13 per frond, lateral on stalk and some on
+                                        bifurcation                                                                                            nerve bifurcation
+Margin of female scale                Often toothed and (when young) fringed with 12 or Entire or slightly lobed (EO Campbell unpubl. data; Partially entire with some triangular teeth
+                                        more cilia (EO Campbell unpubl. data.; Pfeiffer       Pfeiffer 2000a)
+                                        2000a)
+Pseudoperianth                        n.d.                                                  n.d.                                             3.5 mm long
+Infraspecific molecular variability
+trnT-trnL spacer: length              250 bp (HF Aus2) or251 bp (all other specimens); 240 bp (HL1), 241 bp (all other specimens);           241 bp; no substitutions</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Chiloscyphus colensoi (Mitt.) Bastow                    Lophocolea planiuscula (Hook.f. &amp; Taylor)
+Heteroscyphus compactus (Colenso) R.M.Schust.                  Taylor
+       Chiloscyphus compactus Colenso                   Heteroscyphus polycladus (Hook.f. &amp; Taylor)
+Heteroscyphus cuneistipulus (Steph.) Schiffn.                  R.M.Schust.
+       Chiloscyphus cuneistipulus Steph.                       Chiloscyphus polycladus (Hook.f. &amp; Taylor)
+Heteroscyphus cymbaliferus (Hook.f. &amp; Taylor)                  Mitt.
+       ].].Engel &amp; R.M.Schust.                          Heteroscyphus renistipulus (Steph.) Schiffn.
+       Tetracymbaliella cymbalifera (Hook.f. &amp;                 Chiloscyphus renistipulus Steph.
+       Taylor) Grolle                                   Heteroscyphus sinuosus (Hook.) Schiffn.
+Heteroscyphus decipiens (Gottsche) J.J.Engel &amp;                 Chiloscyphus sinuosus (Hook.) Nees
+       R.M.Schust.                                      Heteroscyphus splendid us (E.A.Hodgs.) ].].Engel &amp;
+       Tetracymbaliella decipiens (Gottsche) Grolle             R.M.Schust.
+Heteroscyphus erraticus (W.Martin &amp; E.A.Hodgs.)                Chiloscyphus splendidus E.A.Hodgs.
+       ].].Engel &amp; R.M.Schust.                          Heteroscyphus supinus (Hook.f. &amp; Taylor)
+       Chiloscyphus erraticus WMartin &amp;                         R.M.Schust.
+       E.A.Hodgs.                                              Chiloscyphus supinus Hook.f. &amp; Taylor
+                                                        Heteroscyphus triacanthus (Hook.f. &amp; Taylor)
+134   Tuhinga, Number 10 (1998)
+
+
+
+
+       Schiffn.                                                hippuroides
+       Chiloscyphus triacanthus (Hook.f. &amp; Taylor)            Jungermannia dispar Mont. ex Taylor &amp;
+       Steph.                                                  Hook.f.
+Hygrolembidium acrocladum (Berggr.) R.M.Schust.                Kurzia allisonii (Herzog) Grolle
+Hygrolembidium australe (Steph.) Grolle                        Lepidozia allisonii Herz.
+Hygrolembidium rigidum R.M.Schust. &amp; ].].Engel                Telaranea dispar (Mont. ex Taylor &amp; Hook.f.)
+Hygrolembidium triquetrum J.J .Engel &amp;                         E.A.Hodgs.
+       R.M.Schust.                                     Kurzia hippuroides var. ornata J.J.Engel &amp;
+Hymenophyton flabellatum (La bill.) Trevis.                    G.L.S.Merrill
+Hymenophyton leptopodum (Hook.f. &amp; Taylor)             Kurzia quadriseta Grolle var. quadriseta
+       Steph.                                          Kurzia quadriseta var. trilobata R.M.Schust.
+                                                               Kurzia pallescens Grolle
+Isolembidium anomalum (Rodw.) Grolle var.              Kurzia quinquespina ].].Engel &amp; G .LS.Merrill
+        cucullatum (E.A.Hodgs.) J .J.Engel &amp;           Kurzia tenax (Grev.) Grolle
+        R.M.Schust.                                    Kymatolejeunea bartlettii Grolle
+        Isolembidium cucullatum (E.A.Hodgs.)
+        R.M.Schust.                                    Lamellocolea granditexta (Steph.) ].].Engel
+Isophyllaria attenuata (Rodw.) E.A.Hodgs.                      Lophocolea granditexta Steph.
+        Isophyllaria murrayana E.A.Hodgs. &amp; Allison    Leiomitra lanata (Hook.) R.M.Schust.
+Isotachis intortifolia (Hook.f. &amp; Taylor) Gottsche             Trichocolea lanata (Hook.) Nees
+Isotachis lyallii Mitt.                                Lejeunea anisophylla Mont.
+lsotachis montana Colenso                              Lejeunea cyanophora R.M.Schust.
+Isotachis westlandica (E.A.Hodgs.) R.M.Schust.         Lejeunea epiphylla Colenso [nom. illeg., non L.
+                                                               epiphylla Mitt. 1861 of Sri Lanka]
+Jackiella curvata Allison &amp; E.A.Hodgs.                 Lejeunea flava (Sw.) Nees
+Jamesoniella colorata (Lehm.) Schiffn.                 Lejeunea gracilipes (Taylor) Steph.
+Jamesoniella kirkii Steph.                                     Taxilejeunea gracilipes (Taylor) Steph.
+Jamesoniella monodon (Lehm.) N. Kitag.                 Lejeunea helmsiana Steph.
+         Cuspidatula monodon (Lehm.) Steph.            Lejeunea primordialis (Hook.f. &amp; Taylor) Taylor
+Jamesoniella tasmanica (Hook.f. &amp; Taylor) Steph.       Lejeunea sinclairii Spruce [nom. illeg., non L. sinclairii
+Jubulopsis novae-zelandiae (E.A.Hodgs. &amp; Arn.)                  Mitt. 1862 ofFiji].
+         R.M.Schust.                                   Lejeunea tumida Mitt.
+Jungermannia inundata Hook.f. &amp; Taylor                 Lembidium longifolium R.M.Schust.
+         Solenostoma rufiflora (Colenso) R.M.Schust.   Lembidium nutans (Hook.f. &amp; Taylor) Mitt.
+         [nom inval. and synonym in Vana 1975]         Lepicolea attenuata (Mitt.) Steph.
+        Jungermannia rufiflora Colenso                 Lepicolea scolopendra (Hook.) Trevis.
+Jungermannia orbiculata (Colenso) Grolle               Lepidogyna hodgsoniae (Grolle) R.M.Schust.
+        Jungermannia hodgsoniae Grolle                         Lepidolaena hodgsoniae Grolle
+Jungermannia totopapillosa E.A.Hodgs.                  Lepidolaena berggrenii E.A.Hodgs.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">(= F maritima Paton)- have b�en described; the differences are microscopic.
+     F wondraczeckii (WSVN) grows up to 20 mm long and is often branched, but it
+usually forms only small colonies. The wings are oblong to almost square, with margins
+that vary from entire to trilobed, and plain to very crinkled.
+    Austrofossombronia australis (TVA)- Fossombronia naumannii of Scott (1985)-
+is·an aquatic or semi aquatic species with rather stiff, kidney-shaped wings that are
+often bilebed and deeply crinkled. The �ings and stem towards the base of the plant
+are distinctly dark crimson but the wing apices are green and usualiy acutely pointed.
+
+Similar species: Goebelobryum unguil;ulatum, Monocarpus sphaerocarpus, Petalophyllum
+preisii, Sphaerocarpos texanus
+                            Thallose liverworts and hornworts - Group A
+
+
+
+
+                                                                          (I
+
+
+
+
+Fossombronia intestinalis                       Fossombronia papillata
+
+
+
+
+Fossombronia pusilla                       Austrofossombronia australis
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+ Hymenophyton flabellatum Hymenophytaceae                                         TVN
+This is one of the commonest bryophytes in wet forest, rainforest and fi;rn gullies. It
+forms dense colonies of umbrella-like shoots on living and fallen trees and
+tree­ferns, and on rocks in streams. It is espec(ally common close to streams. The
+colour is always a pure green, and the vertical stem gives way to a near-perfect circle
+of forked horizontal lobes, each with a distinct midrib. The margins of the lobes are
+not toothed, unlike th_ose of Symphyogyna podaphylla. Botanists unfamiliar with
+liverworts might mistake the shoots for filmy ferns, with which they are often mixed.
+   . H. leptopodum (T) is distinguished by its notched frond-tips.
+
+Similar species: P;llavicinia spp., Symphyogyna podophylla, Podomitrium spp.
+
+
+
+
+Lunuiaria cruciata Lunulariaceae                                                 WSTVAN
+This species is extremely common on recently disturbed soil and in waste places,
+urban gardens and flower-pots. It is probably the most common liverwort world-wide.
+Its natural habitat is bare soil on stream banks and moist soil that dries out periodically.
+It is usually distinguishable by the presence on the upper surface of crescent-shaped
+gemmae j.:ups in which yellow-green, pointed-oval gemmae form. The flat thallus is
+divide� into broad lobes and is dotted with whitish pores that lead to air chambers
+below. Sporophytes, which are rare, each consist of a stalk supporting four capsules
+arranged in a cross (hence cruciata).
+
+Similar species: Marcha�tia spp.
+             Thallose liverworts and hornworts - Group A
+
+
+
+
+      10mm                    Hymenophyton flabellatum
+
+
+
+
+-----1omm                            Lunularia cruciata
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+Marchand&#39;il Marchantiaceae
+This genus of large thallose liverworts is well known to horticulturalists, because
+the species thrive in gardens and greenhouses. Only Lunularia cruciata can be
+confused with the following species, and then only when gemmae cups are absent.
+The other obvious characteristic is the pres_ence of polygonal zones on the upper
+surface of the thallus, each zone having a central pore leading to an air-chamber
+below. The gemmae cups are circular and crown-like. The archegoniophore is also
+characteristic, producing radial rows of pendent yellow capsules alternating with
+sterile photosynthetic rays.
+
+M. berteroana                                                                    WSTVAN
+This species is common in grassy bogs, but is also found on the banks of streams and
+other damp places. The dorsal surface is a shiny pale green and, characteristically, the
+v�ntral surface is covered by pale, almost transparent scales which extend
+more-or­less to the margins. Gemmae cups are usually present, except in very humid
+habitats. They have toothed and slightly hairy margins, and the gemmae within
+are bright green arid discus-shaped.
+M. foliacea                                                                          TVAN
+This is often confused with M berteroana, but the ventral scales are crimson and are
+restricted to a narrow strip close to the centreline of the ventral surface of the thallus.
+The archegoniophore is flat, so that the head looks like an indented disc.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Hymenophyton flabellatum is a species of the order Pallaviciniales (liverworts), one of perhaps several species in the genus Hymenophyton. It is a dendroid thalloid liverwort belongs to the family Hymenophytaceae and is commonly known as Fan liverwort. It is found in New Zealand, Chile, and common in wet forests of Australia and Tasmania. Hymenophyton flabellatum closely resembles with small filmy fern, Hymenophyllum and can be confused with the liverwort, Symphyogyna hymenophyllum.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Andreaea flabellata</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Flabellum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Flabellum (Flabellum) australe</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Flabellum (Flabellum) knoxi</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Flabellum (Flabellum) magnificum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Flabellum (Flabellum) patens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Homaliodendron flabellatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hymenophyton</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Hymenophyton leptopodum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia flabellata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.037417, 146.688334], [-42.68305, 146.700328], [-43.01833, 146.664245], [-43.092878, 146.688077], [-42.684167, 146.604167], [-43.096689, 146.709427], [-42.7, 147.833333], [-42.679133, 146.713395], [-42.744167, 146.413056], [-42.920322, 147.258042], [-42.688958, 146.695938], [-43.095909, 146.707206], [-40.365056, 148.095667], [-40.369444, 148.12], [-42.683333, 146.666667], [-42.717187, 146.50956], [-42.920345, 147.257963], [-41.549222, 145.892556], [-43.377441, 147.319903], [-43.377814, 147.318231], [-42.677912, 146.713002], [-42.920196, 147.257696], [-43.093292, 146.688235], [-41.195028, 146.031223], [-41.230056, 147.214114], [-41.725045, 146.539383], [-41.757809, 145.503899], [-42.342979, 145.591691], [-42.151128, 145.345745], [-42.8833, 147.15], [-42.677713, 146.712953], [-42.689137, 146.695403], [-42.896126, 147.271033], [-42.7825, 146.591111], [-43.378291, 147.315376], [-43.37773, 147.316742], [-43.376325, 147.310097], [-41.757888, 145.503845], [-43.034732, 146.694485], [-43.37738, 147.320756], [-43.377745, 147.316453], [-43.035626, 146.692025], [-43.377481, 147.319672], [-42.814234, 146.700237], [-41.154519, 145.098464], [-41.8205087, 145.6367946], [-42.677503, 146.712967], [-42.895345, 147.262345], [-43.096258, 146.706332], [-43.037417, 146.688334], [-42.895697, 147.26443], [-43.037417, 146.688334], [-43.18332, 146.78333], [-41.6167, 146.3833], [-43.377828, 147.317995], [-42.6667, 146.7], [-43.096153, 146.70428], [-40.3694, 148.12], [-43.091485, 146.685762], [-42.8, 146.5167], [-42.682617, 146.705094], [-42.679011, 146.714446], [-43.096596, 146.708088], [-42.741074, 146.413334], [-43.095999, 146.707206], [-43.377583, 147.317744], [-43.09636, 146.70745], [-43.096983, 146.704866], [-43.377672, 147.318282], [-42.68947, 146.695935], [-43.096262, 146.704624], [-42.563519, 145.461092], [-41.16666, 146.03333], [-41.121686, 144.99237], [-42.0, 147.0], [-42.861687, 147.157303], [-41.47442, 146.326251], [-42.688611, 146.483333], [-42.686263, 146.705423], [-41.766279, 145.503724], [-41.067661, 145.111023], [-42.0214, 146.5933], [-41.28332, 147.93333], [-43.094874, 146.690475], [-41.475078, 145.458008], [-43.095659, 146.708018], [-41.153942, 145.027031], [-43.091768, 146.644046], [-42.863267, 147.153458], [-43.0650837, 146.9015653], [-42.102208, 145.738408], [-41.320556, 147.921111], [-41.375889, 146.05083], [-43.377811, 147.317831], [-42.71662, 146.51169], [-41.75, 147.8167], [-43.097356, 146.709657], [-42.811236, 146.658175], [-41.699428, 146.764603], [-42.683333, 146.583333], [-42.65959, 146.641903], [-41.068088, 145.107332], [-40.3694, 148.12], [-41.320639, 147.921139], [-41.46777, 145.463716], [-43.096028, 146.707906], [-40.3692, 148.0986], [-43.094361, 146.693832], [-42.957263, 146.78418], [-43.377687, 147.31778], [-43.377725, 147.317883], [-41.904997, 146.102909], [-41.756908, 145.507872], [-42.863889, 147.157778], [-42.690058, 146.695617], [-43.095077, 146.688914], [-43.097356, 146.709657], [-41.1682, 145.244128], [-43.092093, 146.687651], [-41.46777, 145.463716], [-43.377616, 147.316263], [-40.369444, 148.12], [-42.36555, 145.771438], [-42.709472, 147.840867], [-41.667198, 146.468463], [-43.095993, 146.704748], [-41.366667, 147.416667], [-41.068239, 145.10849], [-43.377388, 147.320756], [-42.744139, 146.413167], [-41.757694, 145.503956], [-43.096812, 146.708197], [-43.377388, 147.320756], [-41.8236257, 145.6355146], [-41.699433, 146.764617], [-41.28332, 146.78333], [-41.21665, 147.94999], [-43.09692, 146.704891], [-42.685922, 146.715403], [-43.094258, 146.689164], [-43.094901, 146.687219], [-42.85, 147.19999], [-41.757766, 145.504004], [-42.920353, 147.257963], [-43.095821, 146.704417], [-41.837674, 145.492129], [-41.358889, 146.914722], [-42.744167, 146.413056], [-42.9583, 146.4222], [-41.1333, 145.0333], [-41.2, 144.98333], [-43.035626, 146.692025], [-42.67727, 146.712903], [-43.377522, 147.320831], [-43.381567, 146.842053], [-42.744139, 146.413167], [-42.150436, 145.342122], [-41.389543, 145.9247], [-37.3, 148.9833], [-37.67607, 145.739897], [-37.31639, 148.86889], [-38.635005, 143.74061], [-37.927833, 146.324394], [-32.05, 151.45], [-38.64608, 143.611155], [-37.817442, 145.861403], [-39.316667, 174.116667], [-37.684921, 145.577013], [-45.855134, 170.432886], [-40.957784, 175.110093], [-37.927499, 145.940857], [-37.889001, 145.372306], [-38.45448, 146.541599], [-34.633333, 150.483333], [-37.685474, 145.582821], [-37.883854, 145.367004], [-37.526708, 145.521085], [-38.66748, 143.578659], [-37.81746, 145.865417], [-37.888575, 145.367552], [-37.957319, 145.54674], [-38.425189, 146.57126], [-38.64417, 143.65528], [-37.888561, 145.355008], [-38.448612, 146.582067], [-38.753745, 143.555945], [-37.816849, 145.859319], [-38.63492, 143.739853], [-39.03111, 146.39361], [-37.889064, 145.36737], [-38.7553, 143.5555], [-37.878805, 145.345293], [-41.283, 175.007], [-34.616667, 150.716667], [-47.0, 168.0], [-37.835889, 145.373661], [-33.498333, 150.414722], [-45.055839, 167.334046], [-43.893468, 171.234706], [-37.886278, 145.367623], [-37.710254, 145.705629], [-37.848767, 146.046875], [-37.891126, 145.366476], [-37.559101, 145.873423], [-37.381322, 144.602312], [-37.875564, 145.368622], [-33.5, 150.383333], [-39.858236, 176.279061], [-37.656307, 145.736998], [-37.803794, 145.721289], [-37.817197, 145.865662], [-37.774894, 145.707103], [-37.888263, 145.37167], [-37.251305, 148.786032], [-38.519344, 143.922294], [-38.425424, 146.571319], [-38.507738, 143.914018], [-37.816937, 145.863632], [-37.711114, 145.710075], [-35.9617, 149.5692], [-40.9582256, 175.1112749], [-28.256734, 153.17607], [-37.685278, 145.581806], [-37.880306, 145.380394], [-37.685012, 145.581178], [-37.31806, 148.86889], [-37.926375, 145.940862], [-37.817437, 145.860387], [-41.2646318, 174.7520994], [-37.5722, 148.9667], [-35.2, 150.2333], [-37.888168, 145.355438], [-32.1, 151.597778], [-38.754922, 143.555587], [-42.2921496, 172.0559631], [-39.318888, 174.1006995], [-29.463132, 152.335613], [-37.70056, 145.66167], [-37.88145, 145.3183], [-37.890559, 145.366049], [-37.9045, 145.6654], [-37.886129, 145.368369], [-37.70056, 145.66167], [-38.08556, 146.44833], [-37.884997, 145.35347], [-37.26514, 146.76795], [-37.318529, 148.838506], [-37.929609, 145.940146], [-37.319733, 148.838607], [-38.69, 143.4725], [-37.496329, 145.840844], [-37.125556, 175.223333], [-37.55898, 145.87357], [-37.885787, 145.368471], [-38.754931, 143.555152], [-38.446187, 146.53934], [-37.817246, 145.865521], [-38.753745, 143.555945], [-38.519447, 143.922134], [-50.8484847, 166.0161046], [-37.78438, 145.94524], [-37.873487, 145.361703], [-37.886341, 145.368533], [-38.65, 143.5], [-37.843788, 146.048325], [-38.575306, 146.207169], [-43.9, 171.25], [-38.648937, 143.611506], [-37.928918, 145.942078], [-37.888032, 145.371969], [-37.685337, 145.582602], [-37.926941, 145.940078], [-37.861223, 145.344432], [-38.836651, 174.868781], [-37.526694, 145.520958], [-38.446922, 146.538742], [-36.9, 174.55], [-37.909858, 145.3638], [-37.6854, 145.582576], [-38.66748, 143.578659], [-37.684946, 145.576833], [-37.816556, 145.862454], [-44.081356, -176.624246], [-37.81718, 145.867203], [-37.81699, 145.863916], [-37.240198, 149.067352], [-38.425951, 146.570808], [-37.735567, 145.625991], [-37.68533, 145.581247], [-37.81733, 145.865953], [-37.817047, 145.862579], [-38.42525, 146.570257], [-37.77513, 145.70643], [-37.903667, 146.320333], [-39.165, 175.571], [-37.87901, 145.345266], [-38.69, 143.4725], [-37.827917, 145.849413], [-37.817236, 145.868164], [-38.425359, 146.570826], [-37.856007, 145.761362], [-37.859108, 145.762136], [-37.7, 145.66139], [-38.667494, 143.578656], [-37.890156, 145.3763], [-46.584057, 169.43368], [-37.4167, 149.8167], [-38.7553, 143.5555], [-45.261515, 167.109891], [-30.5167, 152.4167], [-37.873724, 145.362333], [-37.890134, 145.374498], [-40.948271, 175.108353], [-39.02833, 146.39139], [-41.0482278, 175.1996056], [-37.895659, 145.360039], [-50.8484847, 166.0161046], [-38.788884, 177.1440364], [-28.242778, 154.152222], [-37.91516, 145.45131], [-37.57067, 148.96792], [-37.847108, 146.047518], [-37.526565, 145.52492], [-40.701722, 175.353488], [-38.415928, 146.564275], [-31.1875, 152.316667], [-38.74833, 143.57889], [-37.889917, 145.37475], [-37.799387, 145.688904], [-38.46515, 146.53464], [-45.608333, 167.358333], [-38.445448, 146.539816], [-37.5275, 145.5192], [-39.750833, 176.044167], [-39.25, 174.083333], [-36.6, 149.3833], [-37.95, 146.417], [-34.6167, 150.7167], [-33.662255, 150.271317], [-37.70056, 145.66167], [-37.685009, 145.579963], [-38.446112, 146.538888], [-37.710774, 145.709469], [-38.754063, 143.555889], [-37.886948, 145.36856], [-37.70056, 145.66167], [-37.873524, 145.361446], [-37.69849, 145.71797], [-45.4042, 170.7799], [-37.91889, 145.82583], [-37.9272, 145.943984], [-37.714156, 145.596624], [-39.7989019, 175.8667181], [-37.875189, 145.368256], [-37.318428, 148.839098], [-43.583333, 169.583333], [-37.846308, 146.048652], [-37.866833, 145.357482], [-37.684935, 145.57691], [-37.943583, 145.902895], [-37.928157, 146.325076], [-41.2911, 174.896], [-39.154722, 176.168889], [-37.885235, 145.368256], [-37.864502, 145.761915], [-37.784119, 145.616061], [-41.292684, 174.897459], [-37.88947, 145.375314], [-43.255796, 170.203435], [-38.68806, 143.59694], [-33.570833, 150.333333], [-37.527634, 145.520355], [-35.0, 173.533333], [-33.5, 150.3667], [-38.66748, 143.578659], [-38.69861, 143.47861], [-37.70056, 145.66167], [-37.683922, 145.580659], [-37.31512, 148.85681], [-44.783398, 167.665182], [-39.028347, 146.388989], [-38.424339, 146.568561], [-38.509713, 143.925398], [-37.3167, 148.8556], [-37.816923, 145.868812], [-37.956864, 145.547812], [-37.532245, 145.523459], [-37.9133, 145.76917], [-30.533333, 152.416667], [-45.916667, 170.533333], [-37.88941, 145.354858], [-41.1530298, 175.018003], [-42.232321, 171.474608], [-37.5667, 145.8833], [-38.697375, 143.371896], [-29.25, -177.916667], [-37.527519, 145.520233], [-37.735128, 145.781983], [-37.70056, 145.66167], [-37.890074, 145.375101], [-37.886318, 145.368487], [-33.454167, 150.666667], [-38.7543, 143.5564], [-37.77469, 145.70707], [-37.9217, 145.7775], [-37.710653, 145.709565], [-42.087622, 171.574437], [-37.846683, 146.047531], [-38.6438, 143.6805], [-37.7, 145.66139], [-38.470824, 146.563052], [-40.0649083, 176.2163212], [-37.685, 145.577033], [-40.1315397, 176.1662904], [-36.5667, 149.6], [-37.878812, 145.344987], [-37.7, 145.66139], [-37.28178, 148.90125], [-34.15, 172.133333], [-37.3, 148.8333], [-37.9092, 145.825], [-37.3611, 148.8644], [-37.874125, 145.363076], [-38.517941, 143.917626], [-37.836082, 146.254778], [-37.684917, 145.576868], [-37.886212, 145.368667], [-38.77, 143.55278], [-33.726447, 150.303405], [-34.6, 150.6667], [-46.5, 169.5], [-37.906652, 145.371807], [-37.890202, 145.374654], [-38.445792, 146.538716], [-37.956948, 145.54723], [-38.755022, 143.554975], [-38.445475, 146.539533], [-37.528127, 145.51972], [-38.754836, 143.555801], [-37.31512, 148.85681], [-38.696428, 143.371746], [-37.899691, 145.383102], [-38.446139, 146.539029], [-37.9153, 145.76861], [-37.7, 145.683333], [-37.886299, 145.368367], [-38.635014, 143.740285], [-37.491378, 144.228713], [-37.7, 145.66139], [-38.695282, 143.371659], [-37.873488, 145.3614], [-37.879595, 145.348258], [-40.5599181, 175.7419138], [-37.685159, 145.581225], [-33.722082, 150.320964], [-41.3, 174.9], [-38.704447, 143.692445], [-37.685168, 145.579661], [-37.888178, 145.371403], [-37.881136, 145.382689], [-33.6667, 150.2667], [-30.173552, 152.424414], [-30.5, 152.4], [-33.291667, 151.291667], [-37.957334, 145.546747], [-37.510939, 145.519611], [-37.885945, 145.368638], [-37.87541, 145.368528], [-37.875645, 145.368788], [-37.880107, 145.380506], [-37.957573, 145.545718], [-37.528144, 145.519455], [-28.2722, 153.1622], [-34.15, 172.133333], [-37.71515, 145.71797], [-37.927655, 145.941204], [-37.888262, 145.35544], [-38.754833, 143.554978], [-47.166402, 167.671596], [-37.892261, 145.36509], [-37.817286, 145.869645], [-38.447369, 146.538544], [-41.25, 175.01], [-37.873813, 145.362449], [-38.755775, 143.554632], [-37.889273, 145.36659], [-37.888866, 145.372604], [-36.6972, 148.2828], [-37.880294, 145.380449], [-37.887555, 145.352967], [-37.711178, 145.708558], [-37.889982, 145.375093], [-45.55, 169.0267], [-37.79944, 145.72833], [-37.887155, 145.35209], [-37.863099, 145.355146], [-44.845575, 167.456414], [-40.853396, 174.916244], [-38.78222, 143.53306], [-36.206, 175.0955], [-37.526202, 145.520877], [-28.591667, 153.45], [-37.886278, 145.368306], [-33.6457778, 150.2769898], [-37.813688, 145.802879], [-39.295833, 174.064167], [-38.445657, 146.538117], [-37.725842, 145.649138], [-33.5, 150.3833], [-37.9161, 145.86611], [-38.755775, 143.554808], [-38.74833, 143.57889], [-40.0649083, 176.2163212], [-38.68806, 143.59694], [-43.712931, 172.839781], [-37.705172, 145.696329], [-37.888938, 145.354888], [-37.879181, 145.319046], [-37.848877, 146.0466], [-39.01515, 146.45132], [-37.526905, 145.520975], [-45.829457, 166.94863], [-41.15, 175.016667], [-37.74052, 145.627258], [-37.890078, 145.37458], [-37.685354, 145.582526], [-38.539097, 146.317078], [-37.902944, 145.766083], [-37.858303, 145.761838], [-37.528207, 145.520178], [-37.895306, 145.382211], [-37.873669, 145.362134], [-37.527778, 145.519833], [-37.81092, 146.176607], [-37.885972, 145.36812], [-38.232574, 177.5871433], [-38.69, 143.4725], [-37.527202, 145.520816], [-35.633333, 149.9], [-40.7982227, 175.4162791], [-38.446102, 146.539459], [-37.8489, 146.046586], [-38.28728, 145.998422], [-37.7167, 145.7], [-38.75268, 143.56386], [-37.890966, 145.36641], [-37.527163, 145.522233], [-38.7553, 143.5555], [-30.5, 152.4], [-38.520442, 143.9262], [-37.705742, 145.610625], [-41.571362, 172.513299], [-38.444425, 146.5413], [-41.1167, 172.65], [-37.775862, 145.708333], [-44.090991, 168.327848], [-42.622665, 171.751612], [-37.685389, 145.582481], [-37.902937, 145.372552], [-37.87885, 145.345092], [-37.888027, 145.342821], [-32.1, 151.595833], [-37.737637, 145.68187], [-38.47395, 146.559161], [-38.446376, 146.539248], [-38.754112, 143.555283], [-37.71167, 145.68194], [-37.884997, 145.35347], [-34.15, 172.133333], [-45.054902, 167.543374], [-43.315552, 170.218283], [-37.70056, 145.66167], [-37.885873, 145.368285], [-37.7, 145.66139], [-38.445803, 146.538444], [-38.445538, 146.539749], [-37.858204, 145.761734], [-41.2525, 174.9667], [-37.873534, 145.361504], [-29.471814, 152.320694], [-37.7, 145.66139], [-40.907774, 175.256245], [-37.527786, 145.519943], [-37.685152, 145.580859], [-37.87563, 145.369002], [-37.888982, 145.354482], [-37.816663, 145.868875], [-43.117439, 170.367014], [-37.873997, 145.363796], [-38.506784, 143.919415], [-37.888184, 145.367879], [-44.845434, 167.456336], [-34.709621, 150.643434], [-37.887438, 145.352614], [-37.957347, 145.546827], [-34.691667, 150.716667], [-37.685261, 145.581268], [-38.75, 177.083333], [-37.928361, 145.941077], [-34.6, 150.6667], [-38.647373, 143.61178], [-37.52674, 145.520845], [-37.817384, 145.86954], [-37.713975, 145.59663], [-37.890039, 145.37514], [-46.329444, 167.838333], [-37.527037, 145.52103], [-37.52962, 145.522723], [-37.849613, 146.045404], [-39.8969, 176.005], [-38.445863, 146.539379], [-37.526729, 145.521205], [-36.8, 149.5333], [-38.445972, 146.539385], [-37.844824, 145.347576], [-37.88826, 145.355467], [-37.325, 148.6625], [-47.1650404, 167.6994831], [-37.2694, 148.5417], [-36.3, 150.033333], [-45.8842, 168.4128], [-38.754878, 143.554825], [-37.685193, 145.581737], [-38.43181, 146.56797], [-38.646947, 143.611558], [-37.776109, 145.708176], [-37.927785, 145.941192], [-33.616667, 150.316667], [-38.426167, 146.571058], [-37.710504, 145.709698], [-38.230082, 177.586247], [-37.886325, 145.368328], [-37.82345, 145.854093], [-37.886594, 145.368388], [-37.490462, 145.839973], [-37.65611, 145.81639], [-37.70995, 145.710127], [-37.884997, 145.35347], [-37.526138, 145.52123], [-43.722719, 169.413354], [-37.685082, 145.577253], [-37.55733, 145.880818], [-37.887188, 145.351825], [-38.658455, 143.814236], [-38.648961, 143.611572], [-37.77483, 145.70723], [-37.890195, 145.37486], [-37.816885, 145.863634], [-38.695295, 143.371733], [-40.701722, 175.353488], [-37.860691, 145.361617], [-37.804086, 145.700573], [-40.8482227, 174.914603], [-37.920979, 145.418773], [-40.0649083, 176.2163212], [-37.519305, 145.525651], [-37.6172, 145.97248], [-38.519182, 143.922109], [-41.998246, 173.4995815], [-38.7543, 143.5564], [-37.861854, 145.361442], [-37.881165, 145.382765], [-37.525506, 145.523921], [-37.527675, 145.52876], [-42.1592, 171.792], [-37.861531, 145.370059], [-50.8818159, 166.0327645], [-37.711725, 145.711199], [-37.727056, 145.704972], [-37.957155, 145.546963], [-41.216667, 172.7], [-45.4294, 166.9053], [-37.88759, 145.35208], [-37.774855, 145.706663], [-37.88759, 145.35208], [-37.8667, 145.3667], [-38.425153, 146.570735], [-37.887341, 145.352128], [-47.0, 168.0], [-37.776105, 145.708109], [-38.425632, 146.569946], [-38.65, 143.6667], [-37.70056, 145.66167], [-37.71515, 145.70131], [-38.7553, 143.5555], [-37.875157, 145.36682], [-37.886093, 145.3518], [-37.874001, 145.362194], [-33.533333, 150.416667], [-37.8986, 145.7911], [-37.889403, 145.375223], [-37.71167, 145.68194], [-33.654572, 150.325425], [-47.081581, 168.181505], [-38.66752, 143.578658], [-37.860761, 145.361726], [-37.878818, 145.345403], [-37.711258, 145.709893], [-37.7, 145.66139], [-38.4333, 146.5667], [-37.7, 145.66139], [-36.868611, 174.719722], [-37.817373, 145.869722], [-37.856107, 145.76136], [-37.527893, 145.519867], [-41.714905, 171.7662323], [-37.875439, 145.36882], [-37.887207, 145.351992], [-37.853987, 145.760463], [-45.261565, 167.109798], [-38.425188, 146.570817], [-44.302597, 168.210635], [-38.66837, 143.568132], [-37.817243, 145.866254], [-37.684482, 145.580758], [-44.486165, 168.786862], [-44.110873, 169.352474], [-37.684899, 145.576934], [-37.557397, 145.883898], [-37.711324, 145.708409], [-50.548475, 166.2161096], [-37.713516, 145.637986], [-45.79931, 170.51211], [-38.507623, 143.917631], [-37.888573, 145.371885], [-38.695392, 143.37178], [-39.193874, 173.986674], [-37.684942, 145.576814], [-38.754108, 143.555358], [-50.54275, 166.214306], [-37.89336, 145.37143], [-36.6, 149.383333], [-30.0627075, 152.3558187], [-40.0649083, 176.2163212], [-37.857534, 145.761736], [-35.583333, 173.666667], [-37.957249, 145.546741], [-37.886967, 145.368443], [-40.0649083, 176.2163212], [-37.879362, 145.318895], [-35.261959, 174.123023], [-40.0968092, 176.2782218], [-38.953283, 175.1888133], [-37.885748, 145.368283], [-29.4167, 152.6167], [-28.273401, 153.159403], [-38.697399, 143.373539], [-37.887552, 145.352966], [-37.774835, 145.706766], [-33.502639, 150.398777]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [71.9, 64.9, 78.7, 84.7, 124.4, 126.2, 145.7, 164.6, 150.2, 129.9, 89.2, 97.5], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.8, 20.8, 18.6, 15.4, 12.5, 10.5, 9.9, 10.8, 12.8, 14.6, 17.3, 18.8], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.8, 9.8, 8.7, 6.6, 5.1, 3.4, 2.7, 2.9, 4.4, 5.5, 7.4, 8.4], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

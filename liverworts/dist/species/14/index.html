@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gackstroemia weindorferi — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Gackstroemia weindorferi</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Gackstroemia weindorferi</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidolaenaceae</span>
+    <span class="badge">Gackstroemia</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">573</p>
+    <footer>470 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">9.4&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">1521&thinsp;mm</p>
+    <footer>annual · CV&thinsp;24.0</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">8</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">6</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>0</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Number of species
+
+
+
+Fig. 4.3. The number of species of epiphytic mosses 0 and hepatics                    •
+which are supported by the number of trees of (A) Nothofagus cunninghamii and
+(B) Athrotaxis selaginoideslA. laxifolia.
+
+
+                                                      35
+4.5.1 Corticolous bryophytes on Nothofagus cunninghamii
+Thirty-seven trees were sampled throughout the study sites and a total of 55
+bryophytes were recorded on the bark of this hardwood species. The frequency of
+occurrence of these epiphytic bryophyres is given in Table 4.4. The ratio of hepatics
+to mosses was almost 2:1, with 36 hepatic species and 19 moss species. The
+variation in distribution of moss and hepatic species on the 39 trees sampled is given
+in Fig 4.3. Every tree sampled supported hepatic epiphytes, the greatest number ( 1 1 )
+was found on one tree. This was not the case with moss epiphytes. with one tree
+supporting no species while the greatest number of epiphytes (7) was found on one
+tree.
+
+
+The mosses which occurred with the greatest frequency on the trunk of Nothofagus
+cunninghamii were; Hypnum chrysogasrer, Dicranoloma menzies ii, Wijkia extenuata,
+
+Lepcotheca gaudichaudii. Dicranoloma robusrum var. selOsum and Rhizogonium
+
+novae·hollandiae. The most frequently occurring hepatics were; Bazzania involura,
+
+Gackstroemia weindorferi, Acrochila biserialis, Paraschistochila tuloides, Lepidozia
+
+ulothrix and Leptoscyphus expallSus.
+
+
+
+4.5.2 Corticolous bryophytes on Athrotaxis             selagilloideslA. taxi/olia.
+lbirteen trees of Athrotaxis selaginoides and two trees of A. [axifolia were sampled
+throughout the study sites. A total of 2 1 bryophytes were recorded on the trunk of
+these softwood species. which are given in Table 4.5. On this phorophyte the ratio of
+hepatic to moss was 6 : 1 , with 1 8 hepatic species and only three moss species. All
+these mosses and 12 of the hepatic species were also found on Notho/agus
+cunninghamii.
+
+
+
+The variation in distribution of moss and hepatic species on the 1 5 trees sampled is
+given in Fig 4.3. Every tree sampled supported at least one hepatic epiphyte, the
+greatest number (10) occurred on only one tree. Moss epiphytes were rare on this
+phorophyte with five trees supporting no species and only a single species on the
+remaining 16 trees. The only moss which was frequently found on the trunk of
+Athrotaxis was Rhizogonium novae-hol/andiae. The hepatics which occurred with
+
+the greatest frequency were; Bazzania involuta, Lepidozia ulothrix, Acromastigum
+mooreanum,      Heteroscyphus     cymbaliferus,   Plagiochila    circinalis,   Bazzania
+
+monilinervis, Acromastigum sp. and Lepidozia sp.
+
+---
+
+38
+                                     Table 4.5.
+  The frequency of epiphytic bryophytes on the trunk ofAthrotaxis selaginoidesiA.
+                laxifolia, arranged in descending order of % occurrence.
+
+
+
+         Moss species                Present      Present    % ocurrcnce
+                                         +          0
+
+
+Rhizogonium novae-hollandiae             7           I            53.3
+
+Dicranoloma billardierei                 I           0            6.7
+Hypnum chrysogaster                      0           I            6.7
+        Hepatic species
+
+Bazzania involuta                        9           I            66.7
+Lepidozia ulothrix                       5           0            33.3
+Acromasrigum mooreanum                   5           0            33.3
+AcromastiJ?um sp.                        4           1            33.3
+Heteroscyphus cymbaliferus               3           2            33.3
+Plagiochila circinalis                   3           1            26.7
+Lepidozia sp.                            2           2            26.7
+Bazzania monlinervis                     1           3            26.7
+Schislochila pseudociliata               3           0             20
+Radula comf)Qcta                         0           2            13.3
+Gackstroemia weindorferi                 I           0            6.7
+Heteroscyphus conjugatus                 1           0            6.7
+Riccardia sp.                            1           0            6.7
+Ciasmatocolea notophylla                 1           0            6.7
+Herhertus oldfieldianus                  1           0            6.7
+Acrochila biserialis                     1           0            6.7
+Clasmatocolea verrucosa                  0           1            6.7
+Leptosyphus expansus                     0           1            6.7
+
+
+
+
+                                             39
+4.5.3 Key Taxa
+The bryophyte species which had a frequency of occurrence of 25% or more on either
+phorophyte are arbitrarily considered to be key epiphyte species. For the mosses they
+included; Dicranoloma      mem.iesii,    Hypnum     chrysogaster.     Wijkia    extenuata,
+LeplOrileca gaudichaudii. Rhizogonium novae-hollandiae and Dicranoloma robuslLlm
+var. selosum. For the bepatics (hey included; Ba72llnia lnvaluta, Gackstroemia
+weindoiferi. Acrochila biserialis. Bazzania        monilinervis,    Lepidozia    ulothrix,
+Lepidozia sp., ParaschislOchi/a lu/aides, Acromasligum mooreanum, Acromasligum
+sp., Heteroscyphus cymbaliferus and Plagiochila circinalis . All the above moss
+species are found on similar substrate in New Zealand and south-eastern mainland
+Australia. The above hepatic species are found on similar substrate in New Zealand
+but in Australia, P. tuloides, A. mooreanum and H. cymbaliferus are confined to
+Tasmania.
+
+
+The following descriptions provide the diagnostic features to allow the identification
+of the key moss and hepatic epiphytes that occur on N. cunninghamii and Athrotaxis,
+as well as their distinguishing characters from related species. It is not intended to be</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">var. humilis                                     Diplasiolejeunea pusilla Grolle
+        Chiloscyphus humilis (Hook.f. &amp; Taylor)          Diplophyllum dioicum R.M.Schust.
+        Hassel                                           Diplophyllum domesticum (Gottsche) Steph.
+Clasmatocolea inflexispina (Hook.f. &amp; Taylor)            Diplophyllum verrucosum R.M.Schust.
+       JJ.Engel                                          Drepanolejeunea aucklandica Steph.
+        Chiloscyphus amplectens (Mitt.) J.J.Engel &amp;      Drepanolejeunea vesiculosa subsp. euvesiculosa
+        R.M.Schust.                                              Herzog
+        Chiloscyphus inflexispinus (Hook.f. &amp; Taylor)    Drucella integristipula (Steph.) E.A.Hodgs.
+       J.J.Engel &amp; R.M.Schust.                           Dumortiera hirsuta (Sw.) Nees
+        Clasmatocolea amplectens (Mitt.) J.J.Engel               Marchantia hirsuta Sw.
+        Lophocolea amplectens Mitt.
+Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle       Echinolejeunea papillata (Mitt.) R.M.Schust.
+        Chiloscyphus notophyllus (Hook.f. &amp; Taylor)      Eoisotachis stephanii (Salm.) R.M.Schust.
+        Hassel                                           Eotrichocolea polyacantha (Hook.f. &amp; Taylor)
+Clasmatocolea strongylophylla (Hook.f. &amp; Taylor)                 R.M.Schust.
+       Grolle
+       Chiloscyphus strongylophyllus (Hook.f. &amp;          Fossombronia pusilla (L.) Nees
+       Taylor) Hassel                                          Fossombronia perpusilla (Colenso) Steph.
+132   Tuhinga, Number 10 (1998)
+
+
+
+
+        Noteroclada perpusilla Colenso                   Frullania solanderiana Colenso
+Fossombronia reticulata Steph.                           Frullania spinifera Taylor
+        Fossombronia microspora Herz.                    Frullania squarrosula (Hook.f. &amp; Taylor) Taylor
+Fossombronia wondraczekii (Corda) Dumort.                Frullania subhampeana E.A.Hodgs.
+        Jungermannia wondraczekii Corda                  Frullania svihlana S.Hatt.
+Frullania allanii E.A.Hodgs.
+Frullania anomola E.A.Hodgs.                             Gackstroemia alpina R.M.Schust.
+Frullania aterrima (Hook.f. &amp; Taylor) Hook.f.            Gackstroemia weindorferi (Herzog) Grolle
+        &amp; Taylor var. aterrima                           Geocalyx caledonicus Steph.
+Frullania aterrima var. lepida E.A.Hodgs.                Goebeliella cornigera (Mitt.) Steph.
+Frullania aterrima var. rostrata (R.M.Schust.) S.Hatt.   Goebelobryum unguiculatum (Hook.f. &amp; Taylor)
+        Frullania subrostrata S.Hatt.                           Grolle
+        Neohattoria rostrata R.M.Schust.                 Gymnomitrion cuspidatum (Berggr.) R.M.Schust.
+Frullania deplanata Mitt.                                Gymnomitrion strictum (Berggr.) R.M.Schust. var.
+Frullania engelii S.Hatt.                                       strictum
+Frullania falciloba Lehm.                                Gymnomitrion strictum (Berggr.) R.M.Schust. var.
+Frullania fugax (Hook.f. &amp; Taylor) Taylor                       inaequalis R.M.Schust.
+Frullania incumbens Mitt.
+Frullania junghuhniana Gottsche                          Haplomitrium gibbsiae (Steph.) R.M.Schust.
+Frullania media (E.A.Hodgs.) S.Hatt.                     Haplomitrium minutum (E.O.Campb.) J.J.Engel &amp;
+        Frullania fugax var. media E.A.Hodgs.                   R.M.Schust.
+Frullania monocera (Hook.f. &amp; Taylor) Taylor                    Haplomitrium hookeri var. minutum
+        Frullania novae-zealandiae Colenso                      (E.O.Campb.) Bartholomew-Began
+        Frullania hampeana Nees                                 Steereomitrium minutum E.O.Campb.
+Frullania nicholsonii E.A.Hodgs.                         Haplomitrium ovalifolium R.M.Schust.
+Frullania patula Mitt.                                   Harpalejeunea filicuspis (Steph.) Mizut.
+        Frullania kirkii Steph.                          Harpalejeunea latitans (Hook.f. &amp; Taylor) Grolle
+Frullania ptychantha Mont.                                      Drepanolejeunea latitans (Hook.f. &amp; Taylor)
+Frullania pycnantha (Hook.f. &amp; Taylor) Taylor                   Steph.
+         Frullania banksiana Colenso                            Drepanolejeunea minima Steph.
+Frullania reptans Mitt.                                          Harpalejeunea colensoi Steph.
+Frullania rostellata Mitt.                               Hepatostolonophora paucistipula (Rodw.) J.J.Engel
+Frullania rostrata (Hook.f. &amp; Taylor) Hook.f. &amp;                 Clasmatocolea paucistipula (Rodw.) Grolle
+        Taylor                                           Hepatostolonophora rotata var. perssonii
+        Frullania congesta (Hook.f. &amp; Taylor) Hook.f.           (R.M.Schust.) J.J.Engel
+        &amp; Taylor                                                Calyptrocolea perssonii R.M.Schust.
+        Frullania dissitifolia Steph.                           Clasmatocolea rotata (Hook.f. &amp; Taylor)
+         Frullania grollei Hamlin                               Grolle</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Although this is a variable species both in colour and leaf shape, it is
+      easy to recognise in the field. The leaves are slightly incubous, but
+
+
+
+
+                                                                                  w
+      can appear to be transverse without close inspection. This common
+      liverwort grows on wet clay in a wide range of lowland and montane
+      habitats, and also in alpine bogs. The erect shoots, 20-50 mm high,
+      are usually yellow-green to brown, but they may also be crimson or
+      various shades of pink. Most leaves are 3-fid with distinctly toothed
+      margins, but they can be bifid and occasionally 4-fid, and may be
+      almost entire. The underleaves are entire or bifid, usually with a few
+                                                                               - I. intortifo/ia
+      extra teeth. Sporophytes are enclosed in a perigynium which is often
+      3 mm or more long._
+          I grandis (TN) is a larger, dark chestnut plant, with the under
+      leaves usually 3-fid or 4-fid. I. montana (TVN) is a quite common
+      species of boggy ground in montane to alpine habitats. It has
+      entire, bifid leaves with blunt lobes, and deeply bifid underleaves.
+          We have not seen I. gunniana, I. nigella or I. riparia, all reported
+      from Tasmania.
+
+      Similar species: Jungermannia spp.                                            I. montana
+      Liverworts with underleaves and incubous leaves - Group D
+
+
+
+
+5mm                                   Gackstroemia weindorferi      4:.1
+
+
+
+
+      5mm                                  Isotachis intortifolia
+   Mosses &amp; Allied Plants of Southern Australia
+
+
+  Kurzia compacta Lepidoziaceae                                                 WSTVAN
+ Kurzia species, once in the more descriptive genus
+ Microlepidozia, are indeed minute liverworts of the family
+ Lepiqoziaceae. In the field they are just about impossible to
+ separate, needing microscopic examination to be even
+   reasonably certain of their identity. The pinnately branched
+                                                                         K. compacta
+ stems of this species form densely packed yellow-green to dark
+                                                                      leaf and underfeaf
+ green mats on damp soil in a range of habitats; they are
+ particularly common on clay banks. The leaves are set more­
+ or-less transversely on the narrow stems, and are angled towards
+ the shoot apex. Each leaf is deeply divided into 4 triangular
+ lobes. The underleaves are smaller and also 4-fid.
+                                                                        K. hippurioides
+       K. hippurioides (WTVN) is very similar, and might be
+ conspecific. It has narrower lobes, and the leaves are more or less squarrose, but with
+ the lobes often almost parallel to the stem near the shoot tips. K. cuculjifolia (STVN)
+ is a larger species with much larger and wider lobes, and the leaves are more ,widely
+ �ryarat1d aforlg the stem.
+
+ Similar species: Lepidozia laevifolia, other Lepidoziaceae spp., *Psiloclada clandestina
+
+---
+
+brevirostre.................................................. 146            strictus ......................................................... 42
+    cylindricarpum .......................................... 146                taylorii ......................................................... 42
+    difficile ...................................................... 146         tenellus ........................................................ 42
+Drepanocladus                                                                    vittatus ......................................................... 42
+     aduncus ....................................................... 62      Fossombronia
+     fluitans ....................................................... 84         intestinalis ................................................. 182
+     uncinatus .................................................... 80           naumanii ................................................... 182
+Drucella integristipula...................................... 252                papillata ..................................................... 182
+Eccremidium                                                                      pusilla ........................................................ 182
+    arcuatum .................................................... 146            wondraczeckii ........................................... 182
+    brisbanicum ............................................... 148          Frullania
+    exiguum..................................................... 146             aterrima ..................................................... 246
+    minutum .................................................... 148             clavata ....................................................... 244
+    pulchellum................................................. 148              deplanata ................................................... 244
+    whiteleggei ................................................ 148             falciloba .................................................... 244
+Echinodium hispidum ...................................... 148                   hamaticoma ............................................... 246
+Encalypta vulgaris............................................ 150                incumbens ................................................ 246
+Enigmella thallina ............................................ 230              monocera ................................................... 246
+Entosthodon                                                                      pentapleura ................................................ 246
+    apophysatus ............................................... 150              probosciphora ............................................ 246
+    productus ................................................... 150            pycnantha .................................................. 244
+    radians ....................................................... 150          rostrata....................................................... 246
+    subnudus var. gracilis................................ 152                   scandens .................................................... 244
+Ephemerum cristatum ...................................... 152                 Funaria
+Eriopus apiculatus ............................................. 32              apophysata ................................................ 150
+Eucamptodon muelleri ....................................... 82                   gracilis ...................................................... 152
+Eurynchium                                                                        glabra........................................................ 150
+    muriculatum ................................................ 58               hygrometrica ............................................. 154
+    praelongum.................................................. 58               producta .................................................... 150
+Fabronia
+    australis........................................................ 64     Gackstroemia weindorferi ............................... 248
+    hampeana ..................................................... 64        Gigaspermum repens ....................................... 100
+Fallaciella gracilis .............................................. 86       Glyphothecium sciuroides ................................. 58
+Fissidens                                                                    Goebelobryum
+     adianthoides ................................................ 38           grossitextum .............................................. 214
+     asplenioides ................................................ 38           unguiculatum............................................. 214
+     berteri .......................................................... 38   Goniobryum subbasilare .................................. 166
+     bifrons ......................................................... 38    Goniomitrium
+     crassipes ..................................................... 41         acuminatum var. enerve ............................ 100
+     curvatus ....................................................... 38        enerve ........................................................ 100
+     dealbatus ..................................................... 41      Gongylanthus scariosus ................................... 226
+     dietrichiae ................................................... 41      Grimmia
+     fontanus ...................................................... 38         apocarpa ..................................................... 74
+     humilis ........................................................ 42        laevigata .................................................... 108
+     integerrimus ................................................ 41           macroperichaetialis ................................... 108
+    leptocladus................................................... 42           pulvinata var. africana............................... 110
+    linearis ......................................................... 42       tricophylla ................................................. 110
+    megalotis ..................................................... 42       Gymnomitrion incompletum ........................... 232
+    oblongifolius ................................................ 38        Gymnostomum
+    pallidus ........................................................ 42        aeroginosum var. calcareum ..................... 154
+    pungens ........................................................ 38         calcareum .................................................. 154
+                                                                                                                                           Index
+
+Hampeella                                                                    Jackiella curvata .............................................. 228
+    alaris ............................................................ 58   Jamesoniella
+    pallens ......................................................... 58         colorata...................................................... 228
+Hedwigia                                                                         tasmanica .................................................. 228
+    ciliata ........................................................... 60   Jungermannia
+    integrifolia ................................................... 60          inundata ..................................................... 230
+Hedwigidium integrifolium ............................... 60                     orbiculata................................................... 230
+Herzogobryum                                                                 Kurzia</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>VICTORIAN_BRYOPHYTES_KEY</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">5 Leaves without lobes or marginal teeth .......................................................... Group E
+                                                                                                                                                                                  Leaves with 2 or more lobes, or with marginal teeth ...................................... Group F
+
+
+                                                                                                                                                                               236                                                                             The Victorian Naturalist
+                                                                                                                                                                                                                                                                           Bryophyte special issue
+
+                                                                                                                                                                               Group A
+                                                                                                                                                                               Leafy liverworts with complicate-bilobed leaves
+                                                                                                                                                                               1 Leaves with a keel running longitudinally along the leaf; lobules absent ...................2
+                                                                                                                                                                                  Leaves not keeled; lobules present .............................................................................. 3
+
+
+
+
+Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. University of Tasmania, on 07/08/2026 11:06 PM AEST; UTC+10:00. © The Victorian Naturalist , 2006.
+                                                                                                                                                                               2 Underleaves present ........................................................... Schistochila lehmanniana
+                                                                                                                                                                                  Underleaves absent ............................................................... Paraschistochila tuloides
+                                                                                                                                                                               3 Lobule dorsal ............................................................................................................... 4
+                                                                                                                                                                                  Lobule ventral .............................................................................................................. 6
+                                                                                                                                                                               4 Plants thick, fleshy, brittle, bright green ......................................... Treubia tasmanica
+                                                                                                                                                                                  Plants delicate, not at all fleshy, dull green to yellow, often tinged chestnut .............. 5
+                                                                                                                                                                               5 Underleaves present .................................................................................. Balantiopsis
+                                                                                                                                                                                  Underleaves absent ................................................................................. Diplophyllum
+                                                                                                                                                                               6 Underleaves (as well as leaves) with saccate lobules ..... Heteroscyphus cymbaliferus
+                                                                                                                                                                                  Underleaves without saccate lobules ........................................................................... 7
+                                                                                                                                                                               7 Lobules complex, forming an inflated claw or sac, very narrowly
+                                                                                                                                                                                    connected to the stem ............................................................................................... 8
+                                                                                                                                                                                  Lobules simple, consisting of the inrolled or folded ventral margin
+                                                                                                                                                                                    of the leaf, inflated or not, usually widely connected to stem ................................. 9
+                                                                                                                                                                               8 More than 1 lobule per leaf ................................................. Gackstroemia weindorferi
+                                                                                                                                                                                  Only 1 lobule per leaf .................................................................................... Frullania
+                                                                                                                                                                               9 Underleaves absent .................................................................................................... 10
+                                                                                                                                                                                  Underleaves present ................................................................................................... 11
+                                                                                                                                                                               10 Rhizoids absent or arising from lobules; habitats various,
+                                                                                                                                                                                    rarely if ever epiphyllous ............................................................................... Radula
+                                                                                                                                                                                  Rhizoids in bundles on stem in the position of missing underleaves;
+                                                                                                                                                                                    mainly epiphyllous plants on leaves in rainforest ................................ Cololejeunea
+                                                                                                                                                                               11 Underleaves entire ................................................................. Acrolejeunea securifolia
+                                                                                                                                                                                  Underleaves lobed or shallowly notched at apex ...................................................... 12
+                                                                                                                                                                               12 Lobule an inflated sac, appearing to be unattached to leaf ........................................ 13
+                                                                                                                                                                                  Lobule formed by a simple rolling or folding of the ventral leaf margin .................. 14
+                                                                                                                                                                               13 Leaves with long, ciliate marginal teeth, at least in partA ... Gackstroemia weindorferi
+                                                                                                                                                                                  Leaves entire .................................................................................................. Frullania
+                                                                                                                                                                               14 One underleaf for each lateral leaf ............................................................................ 15
+                                                                                                                                                                                  One underleaf for each pair of lateral leaves ............................................................. 16
+                                                                                                                                                                               15 Cells with high papillae ............................................................ Colura
+                                                                                                                                                                                  Cells mamillose, never papillose .................. Diplasiolejeunea plicatiloba
+                                                                                                                                                                               16 Leaves very narrow at base, attached to stem by 1 or 2 cells .................................... 17
+                                                                                                                                                                                  Leaves widely attached to stem, by several cells ...................................................... 18
+                                                                                                                                                                               17 Leaf apex rounded; lobule with 3–4 teeth ............................ Siphonolejeunea nudipes
+                                                                                                                                                                                  Leaf apex pointed; lobule with 1 tooth ................................ Nephelolejeunea hamata
+                                                                                                                                                                               18 Oil bodies 1 or 2 per cell, each resembling a cluster of grapes;
+                                                                                                                                                                                    apical tooth of lobule ± at right angles to stem; hyaline papilla
+                                                                                                                                                                                    on inner side of apical tooth of lobule ................................. Cheilolejeunea mimosa
+                                                                                                                                                                                  Oil bodies several per cell, not grape-cluster type; apical tooth of lobule
+                                                                                                                                                                                    ± parallel to stem; hyaline papilla on outer side of apical tooth of lobule ............. 19
+                                                                                                                                                                               19 Leaf base with 1 or 2 enlarged cells, each almost filled by an
+                                                                                                                                                                                    oil body ................................................................................ Harpalejeunea latitans
+                                                                                                                                                                                  Leaf base without such cells ........................................................................... Lejeunea
+
+
+                                                                                                                                                                               Vol. 123 (4) 2006                                                                                                         237
+                                                                                                                                                                               Bryophyte special issue
+
+                                                                                                                                                                               Group B
+                                                                                                                                                                               Leafy liverworts with densely hairy or spiny leaves
+                                                                                                                                                                               1   Lobules present, either dorsally or ventrally ............................................................... 2
+                                                                                                                                                                                   Lobules absent ............................................................................................................. 4</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Gackstroemia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gackstroemia alpina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gackstroemia novae-zelandiae</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Wickstroemia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Wickstroemia australis</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Gackstroemia windorfeii</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-40.95, 144.8333], [-42.916667, 147.25], [-41.4519135, 145.9618069], [-41.6712721, 146.6274162], [-42.086368, 146.034072], [-42.68, 146.55], [-43.034732, 146.694485], [-42.933333, 147.216667], [-42.933333, 147.216667], [-41.714085, 145.078018], [-43.035626, 146.692025], [-43.096761, 146.7095], [-54.523333, 158.893889], [-41.3952687, 145.7880646], [-43.5512175, 146.0725576], [-42.7161195, 146.6615293], [42.086667, 146.173333], [-41.537787, 145.323001], [-42.259749, 145.425237], [-41.633333, 145.933333], [-42.9666998, 147.941549], [-42.087302, 147.84774], [-43.2, 146.7833], [-42.683333, 146.583333], [-43.095909, 146.707206], [-41.6691957, 146.5505463], [-43.089769, 146.700736], [-43.032047, 146.700636], [-43.088885, 146.683662], [-43.217476, 146.770762], [-42.583333, 146.583333], [-41.38333, 147.41666], [-41.38333, 147.41666], [-43.086504, 146.702275], [-42.1167, 146.1167], [42.086667, 146.173333], [-41.704811, 146.827066], [-41.910049, 146.760195], [-41.5, 145.766667], [-41.833333, 145.516667], [-41.5953, 145.932188], [-41.2930025, 144.9324618], [-42.775712, 145.9828368], [-43.077153, 146.733583], [-42.2167, 145.9833], [-41.8333, 145.5167], [-41.283333, 147.283333], [-41.716389, 146.754906], [-43.1032053, 147.8748193], [-42.4722, 145.675], [-42.216667, 145.433333], [-42.889963, 147.236345], [-41.7275623, 146.0704005], [-42.8, 146.58], [-42.716667, 146.408333], [-43.096529, 146.703271], [-42.7719582, 146.3966083], [-41.03332, 145.375], [-43.075311, 146.716394], [-43.083333, 146.233333], [-41.283333, 147.3], [-42.932583, 146.440444], [-41.548446, 147.600858], [-42.703626, 147.8411034], [-42.933333, 147.25], [-43.077153, 146.733583], [-42.683333, 146.666667], [-42.7884285, 146.4899591], [-42.719819, 146.512835], [-41.4949106, 145.7562587], [-41.899622, 145.434118], [-42.6833, 146.5833], [-41.4614025, 145.5163227], [-41.8598502, 146.1733071], [-42.933333, 147.216667], [-42.11297, 146.157502], [-42.933333, 147.25], [-41.7167, 146.6667], [-43.0, 147.0], [-41.0486232, 145.3677076], [-43.0, 147.0], [-40.201389, 148.068333], [-41.541033, 145.562686], [-41.649897, 145.078492], [-41.333333, 147.833333], [-54.554167, 158.9], [-40.375333, 148.114444], [-43.0, 147.0], [-41.1455927, 146.0596027], [-41.728595, 146.40016], [-43.096755, 146.703577], [-41.720943, 146.780135], [-42.6987381, 146.5798223], [-42.933333, 146.416667], [-43.1137701, 147.905698], [-42.783333, 145.983333], [-43.095305, 146.683371], [-43.096851, 146.698981], [-42.915937, 147.253662], [-41.3625817, 144.8465741], [-43.5241924, 146.5048393], [-42.683333, 146.5], [-41.8333, 145.5167], [-42.6167424, 146.3730891], [-41.2582043, 146.7730196], [-43.099751, 146.682426], [-41.616667, 145.95], [-41.4, 146.01666], [-42.0789, 146.3792], [-54.625, 158.895833], [-42.116667, 146.158333], [-41.6667, 146.45], [-43.037417, 146.688334], [-43.094874, 146.690475], [-42.9622478, 145.6964563], [-43.097806, 146.709532], [-43.096546, 146.706195], [-41.54846, 146.401828], [-41.388836, 146.177209], [-42.683333, 146.7], [-41.6333, 147.8], [-42.68, 146.62], [-43.088891, 146.682446], [-41.729599, 146.640628], [-41.8294249, 146.8685579], [-42.783333, 145.95], [-41.811163, 145.556662], [42.086667, 146.173333], [-42.166667, 145.5], [-42.900838, 147.235203], [-41.71955, 145.438498], [-43.096812, 146.708197], [-43.461208, 146.186813], [-43.2486296, 146.2677293], [-43.39166, 147.3], [-41.729912, 146.760866], [-43.100992, 146.685222], [-41.283333, 147.3], [-54.768056, 158.826389], [-41.283333, 147.3], [-43.0038167, 145.631777], [-41.262833, 147.248583], [-41.716667, 146.716667], [-41.166171, 146.0426193], [-43.097327, 146.705295], [-43.18, 146.88], [-43.097356, 146.709657], [-41.57, 146.35], [-41.43332, 147.1], [-43.095474, 146.689268], [-43.097067, 146.68534], [-41.459942, 147.001341], [-41.3984206, 146.0248641], [-43.095999, 146.707206], [-41.8945046, 146.3850244], [-43.094796, 146.691668], [-41.533333, 145.85], [-41.907208, 146.157348], [-41.348234, 146.0554969], [-41.72487, 146.720445], [-42.55, 145.466667], [-54.625, 158.895833], [-42.7344, 146.4233], [-43.096982, 146.704375], [-42.933333, 147.866667], [-42.720274, 146.634965], [-42.82, 146.32], [-42.22, 146.08], [-41.35, 145.75], [-43.17, 141.82], [-41.595295, 145.932113], [-41.331837, 144.7926194], [-41.728792, 146.671895], [-42.1, 145.866667], [-41.125933, 145.003236], [-41.133333, 145.05], [-43.095809, 146.686453], [-41.9345378, 146.0481011], [-41.388836, 146.177209], [-42.078972, 146.379222], [-41.279544, 146.762518], [-41.55, 145.67], [-41.833333, 145.5], [-42.766667, 146.866667], [-54.683333, 158.85], [-41.61666, 146.71665], [-42.373204, 146.533158], [-42.989379, 146.388046], [-41.3684153, 147.4314831], [-41.741752, 146.835385], [-42.987784, 147.860009], [-41.279267, 145.51515], [-41.68332, 146.76666], [-42.666667, 146.6], [-41.7166492, 146.7545829], [-41.333333, 147.833333], [-41.764252, 146.823297], [-42.0, 147.0], [-40.364722, 148.095556], [-42.216667, 146.116667], [-43.291861, 146.507194], [-42.109389, 146.107422], [-43.091511, 146.685393], [-42.166667, 145.35], [-41.733333, 146.683333], [-43.25, 146.76666], [-42.1, 146.13], [-42.916667, 147.25], [-42.959722, 146.360556], [-42.74175, 146.417077], [-41.757961, 146.832938], [-41.722566, 145.678869], [-42.043012, 147.888832], [-43.0866, 146.704621], [-43.095489, 146.684599], [-41.905186, 145.916242], [-42.9, 147.283333], [-42.9324435, 147.9459294], [-42.990749, 147.246711], [-43.03741, 146.685878], [-43.034732, 146.694485], [-42.666667, 146.6], [-43.033835, 146.695717], [-43.0692267, 145.6806804], [-41.53, 145.92], [-43.096802, 146.690613], [-43.089075, 146.683796], [-42.737556, 146.423639], [-41.4195243, 146.1908819], [-41.4565554, 145.9772977], [-41.459377, 147.360558], [-43.267706, 146.24972], [-43.094619, 146.696031], [-41.554139, 145.894694], [-43.097074, 146.704989], [-41.72916, 146.520392], [-43.097195, 146.686163], [-43.09533, 146.686], [-43.0, 147.0], [-43.096085, 146.705731], [-43.097307, 146.687723], [-41.715451, 146.73808], [-41.2, 147.9], [-42.2167, 146.0], [-42.716667, 146.408333], [-42.787167, 146.060361], [-43.23, 146.85], [-42.0226364, 146.2714561], [-41.815107, 148.084935], [-42.13333, 146.1], [-42.031956, 146.1010449], [-43.076202, 146.712705], [-43.079424, 146.387151], [-41.576564, 145.932711], [-41.7950718, 148.1348345], [-41.994032, 145.794002], [-42.216667, 146.1], [-42.684722, 146.5875], [-42.933333, 147.216667], [-41.183333, 147.983333], [-42.2647202, 147.8460213], [-41.5, 145.76667], [-41.717854, 145.318327], [-41.726146, 146.039487], [-41.3765664, 147.4195774], [-40.376389, 148.134333], [-42.933333, 147.216667], [-41.744469, 146.846202], [-41.181122, 147.856217], [-43.091029, 146.683651], [-43.068984, 146.7036], [-42.688333, 146.491667], [-41.549222, 145.892556], [-43.099445, 146.685684], [-41.287333, 145.240333], [-43.094682, 146.685832], [-42.0973081, 146.1303225], [-41.7833, 146.1833], [-42.709019, 147.8423974], [-41.75, 146.333333], [-41.7, 146.566667], [-41.216028, 147.938944], [-41.6833, 146.5], [-43.092592, 146.679121], [42.086667, 146.173333], [-41.506842, 145.776356], [-42.119567, 146.094485], [-41.716667, 146.716667], [-43.0755428, 145.6817735], [-43.096636, 146.710029], [-42.116667, 146.116667], [-43.199111, 146.784611], [-41.6065119, 146.1405456], [-54.508333, 158.926389], [-43.097445, 146.705601], [-43.440982, 147.248532], [-42.320566, 146.4210446], [-43.095356, 146.685361], [-41.367621, 147.718761], [-42.990948, 147.124043], [-43.095053, 146.683385], [-43.0533466, 147.9170868], [-43.2137218, 147.7840616], [-41.647083, 145.342056], [-42.854167, 146.236944], [-43.029351, 146.703104], [-41.542469, 145.682542], [-41.8402929, 145.626049], [-43.10092, 146.691797], [-43.086353, 146.703087], [-41.5333, 145.85], [-41.2833, 147.3], [-42.9, 147.283333], [-42.7667, 145.9833], [-42.66529, 146.5677149], [-54.633333, 158.883333], [-41.596583, 145.926025], [-41.33, 147.8], [-41.716667, 146.716667], [-43.066667, 147.941667], [-41.5087362, 147.6624866], [-42.809871, 146.512129], [-41.7222941, 146.0873082], [-42.0, 147.0], [-41.7582228, 146.8326153], [-41.4875268, 146.4128466], [-43.0, 147.0], [-42.6872, 146.4911], [-41.37, 147.42], [-43.168742, 146.263235], [-41.7770456, 146.1815906], [-43.040397, 146.2877665], [-43.087689, 146.700955], [-41.5345, 145.907278], [-43.097539, 146.707235], [-41.533333, 145.85], [-42.899332, 146.388938], [-41.995237, 145.914715], [-41.450917, 145.002889], [-41.1516826, 145.0466029], [-43.0833, 147.95], [-43.093438, 146.679117], [-41.8333115, 146.1170445], [-43.087024, 146.701253], [-42.7375232, 146.5966636], [-42.787222, 146.060278], [-41.813907, 148.205309], [-41.6503036, 145.0723783], [-42.805633, 145.900657], [-41.546963, 146.162043], [-41.75, 146.183333], [-41.15, 148.0], [-43.0833, 146.2333], [-42.7212014, 146.5662348], [-43.34583, 145.890957], [-42.781962, 145.9843919], [-41.5312611, 146.5203356], [-42.688611, 146.483333], [-41.9512999, 147.8830219], [-41.790173, 146.193025], [-43.2, 146.783333], [-43.09368, 146.688577], [-42.684612, 146.58993], [-43.0787, 146.264315], [-42.1, 146.17], [-41.18655, 148.009467], [-41.85, 145.42], [-42.916667, 147.266667], [-41.349773, 144.849719], [-43.3771731, 147.309666], [-41.4512892, 145.9929444], [-42.529827, 145.418468], [-41.8, 145.22], [-42.9225365, 147.2657181], [-41.7086169, 146.7918762], [-42.8370236, 146.1750848], [-41.6515478, 145.3869726], [-41.688537, 146.499065], [-43.073531, 146.725001], [-41.21665, 147.94999], [-42.6140613, 146.376774], [-43.073443, 146.690608], [-42.1041336, 147.7980596], [-41.62, 146.23], [-41.33, 147.8], [-43.094901, 146.687219], [-41.184648, 144.876566], [-43.096964, 146.707889], [-41.0833, 145.9167], [-41.551814, 145.858288], [-43.089994, 146.70087], [-43.096915, 146.702618], [-42.9943574, 146.4281485], [-43.096706, 146.705507], [-41.527955, 145.7304546], [-41.21665, 147.94999], [-43.0943, 146.678154], [-43.095127, 146.684109], [-41.8383052, 145.4762323], [-43.037417, 146.688334], [-41.531935, 148.167672], [-43.034732, 146.694485], [-41.6833, 145.95], [-41.816204, 146.038142], [-43.45, 146.866667], [-41.7322139, 148.2046704], [-41.28332, 147.93333], [-42.777083, 145.981778], [-42.112937, 146.10405], [-41.637913, 145.943725], [-41.5333, 145.85], [-42.2167, 145.9833], [-40.3647, 148.0956], [-42.17642, 146.032703], [-42.215291, 146.1177146], [-42.683333, 146.583333], [-43.091523, 146.686794], [-42.8832286, 146.5479578], [-42.883333, 147.216667], [-41.367638, 146.283917], [-42.086667, 146.173333], [-41.968048, 147.190509], [-41.819981, 146.760532], [-40.37475, 148.114611], [-42.897763, 146.143987], [-43.094905, 146.691753], [-41.6533255, 145.0915031], [-41.801232, 146.860511], [-41.90516, 148.086459], [-41.4204243, 145.9658984], [-41.7, 146.716667], [-40.3689, 148.0978], [-43.5325, 146.4958], [-41.6333, 145.9333], [-43.093779, 146.678746], [-42.8167, 146.3167], [-43.460389, 146.407806], [-42.683333, 146.616667], [-40.9, 145.46665], [-41.6887963, 146.4987394], [42.086667, 146.173333], [-43.097051, 146.682907], [-43.15, 146.83], [-41.7167, 146.6667], [-42.95975, 146.360583], [-41.654194, 145.081111], [-42.683333, 146.583333], [-42.683333, 146.583333], [-42.68332, 146.71665], [-41.21665, 147.94999], [-41.5704797, 146.0270778], [-41.3, 147.6], [-41.236944, 145.929722], [-42.0, 147.0], [-41.638514, 147.601694], [-40.376389, 148.134333], [-43.45, 146.8667], [-41.18577, 146.047427], [-41.72004, 146.778936], [-43.095852, 146.68569], [-41.712754, 146.740495], [-41.081876, 144.977519], [-43.216667, 146.75], [-42.216667, 146.0], [-41.729164, 146.851048], [-41.68332, 146.76666], [-41.216111, 147.938889], [-43.09579, 146.699478], [-43.09692, 146.704891], [-42.7, 146.73], [-37.55472, 145.85778], [-54.5, 158.516667], [-41.945734, 171.674224], [-43.784214, 169.392266], [-38.5333, 146.3167], [-54.5, 158.516667], [-37.65306, 145.83111], [-41.68071, 171.858381], [-52.539719, 169.175892], [-45.749591, 167.506059], [37.860778, 146.320139], [-42.016667, 171.65], [-37.3167, 148.8556], [-37.893333, 146.346167], [-37.533333, 145.833333], [-38.53, 146.32], [-37.3167, 148.8333], [-54.5, 158.516667], [-37.31639, 148.86889], [-47.191344, 167.564738], [-42.972, 171.350977], [-37.88306, 146.25972], [-54.5, 158.516667], [-36.540139, 175.402134], [-37.5934, 145.78056], [-37.4833, 145.8333], [-45.486, 167.292], [-38.634222, 143.738639], [-39.330278, 175.501944], [-54.5, 158.516667], [-54.5, 158.516667], [-54.5, 158.516667], [-54.5, 158.516667], [-37.28, 148.97], [-37.7, 145.66139], [-37.0, 145.0], [-45.148005, 167.229565], [-37.88306, 146.27333], [-37.48333, 145.83333], [-37.490188, 145.840567], [-38.643389, 143.688972], [-37.5275, 145.51917], [-37.31512, 148.85681], [-37.88389, 146.27444], [-37.7, 145.66139], [-43.884516, 169.548131], [-37.31512, 148.85681], [-43.800313, 169.360203], [-37.88306, 146.27333], [-42.3959, 172.6156], [-37.395722, 148.778306], [-37.875, 146.356917], [-37.892611, 146.355333], [-45.5494, 169.0278], [-37.676389, 145.742163], [-42.377778, 172.402778], [-54.0, 158.0], [-41.695834, 171.853725], [-37.55, 145.88333], [-38.65, 143.5], [-37.3167, 148.8556], [-39.327222, 175.5], [37.860778, 146.320139], [-54.5, 158.516667], [-37.8925, 146.340333], [-42.680077, 171.336816], [-42.289515, 172.057834], [-37.0, 145.0], [-37.7, 145.66139], [-37.28, 148.92], [-40.9482258, 175.2829069], [-38.75, 143.55], [-38.45, 146.53333], [-38.65, 143.5], [-37.9002, 145.78388], [-46.227643, 167.838848], [-37.5934, 145.78], [-37.530467, 145.522855], [-37.3167, 148.8556], [-37.4833, 145.8333], [-45.627501, 167.298342], [-37.70056, 145.66167], [-37.817144, 145.868901], [-37.55, 145.8833], [-34.690278, 150.716667], [-37.88389, 146.27444], [-39.333333, 175.5], [-37.31806, 148.86889], [-37.55667, 145.8875], [-43.816285, 169.555794], [-37.70056, 145.66167], [-44.1516173, 168.5445116], [-41.769033, 171.825754], [-39.24925, 174.038729], [-37.31512, 148.85681], [-42.2767491, 172.0392629], [-38.686056, 143.48], [-54.5, 158.516667], [-37.32, 148.83], [-32.1, 151.595833], [-37.48598, 145.83047], [-37.2833, 148.8667], [-30.4903182, 152.40871]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [82.7, 71.3, 89.9, 98.0, 144.1, 147.1, 171.9, 190.0, 171.5, 144.6, 101.2, 108.8], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.8, 19.8, 17.5, 14.1, 11.2, 9.2, 8.5, 9.4, 11.4, 13.5, 16.4, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.0, 9.1, 7.7, 5.8, 4.3, 2.7, 2.1, 2.2, 3.5, 4.6, 6.4, 7.5], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heteroscyphus coalitus — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Heteroscyphus coalitus</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Heteroscyphus coalitus</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lophocoleaceae</span>
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">534</p>
+    <footer>146 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">11.8&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">1665&thinsp;mm</p>
+    <footer>annual · CV&thinsp;23.6</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">5</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">11</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>1.8</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">GBIF key 7925489; source: A taxonomic revision of the L…</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>CYANOLOPHOCOLEA_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Chiloscyphus cuspidatus (He-Nygrén et al. 2004)                                    AY149845        AY462348       AY149866
+        Chiloscyphus helmsianus (Glenny et al. 2009)                                        FJ173311        FJ173326       FJ173297
+        Chiloscyphus itoanus (He-Nygrén &amp; Piippo 2003)                                     AY149846                       AY149868
+        Chiloscyphus japonicus (He-Nygrén &amp; Piippo 2003)                                   AY149847                       AY149869
+        Chiloscyphus latifolius (He-Nygrén &amp; Piippo 2003)                                  AY149842                       AY149862
+        Chiloscyphus lentus (Glenny et al. 2009)                                            FJ173312        FJ173327       FJ173298
+        Chiloscyphus leucophyllus (Glenny et al. 2009)                                      FJ173313        FJ173328       FJ173299
+        Chiloscyphus martianus (He-Nygrén &amp; Piippo 2003)                                   AY149848                       AY149870
+        Chiloscyphus minor (He-Nygrén &amp; Piippo 2003)                                       AY149843                       AY14986
+        Chiloscyphus novae-zeelandiae var. grandistipulus (Glenny et al. 2009)              FJ173314        FJ173329       FJ173300
+        Chiloscyphus pallescens (He-Nygrén &amp; Piippo 2003)                                  AY149849                       AY149871
+        Chiloscyphus polyanthos (He-Nygrén &amp; Piippo 2003)                                  AY149851                       AY149873
+        Chiloscyphus profundus (He-Nygrén &amp; Piippo 2003; Groth 2005)                       AY149852        DQ193972       AY149874
+        Chiloscyphus semiteres (Glenny et al. 2009)                                         FJ173315        FJ173330       FJ173301
+        Chiloscyphus spiniferus (Glenny et al. 2009)                                        FJ173316        FJ173331       FJ173302
+        Clasmatocolea ctenophylla (Glenny et al. 2009)                                      FJ173318        FJ173333       FJ173304
+        Clasmatocolea humilis (Glenny et al. 2009)                                          FJ173319        FJ173334       FJ173305
+        Clasmatocolea obvoluta (Glenny et al. 2009)                                         FJ173320        FJ173335       FJ173306
+        Clasmatocolea trachyopa (Glenny et al. 2009)                                        FJ173321        FJ173336       FJ173307
+        Cyanolophocolea echinella (NZ, Lewington 1140 (H))                                  FJ919289        FJ919281       FJ919297
+        Cyanolophocolea echinella (NZ, Engel 24683 (F))                                     FJ919290        FJ919282       FJ919298
+        Cyanolophocolea echinella (NZ, Engel 24051 (F))                                     FJ919291        FJ919283       FJ919299
+        Cyanolophocolea echinella (NZ, Engel et al. 23977 (F))                              FJ919292        FJ919284       FJ919300
+        Cyanolophocolea echinella (NZ, Engel et al. 23969 (F))                              FJ919293        FJ919285       FJ919301
+        Cyanolophocolea echinella (NZ, Engel 28280A (F))                                    FJ919294        FJ919286       FJ919302
+        Cyanolophocolea echinella (NZ, Engel 26652 (F))                                     FJ919295        FJ919287       FJ919303
+        Cyanolophocolea echinella (NZ, Engel 27818 (F))                                     FJ919296        FJ919288       FJ919304
+        Heteroscyphus argutus (He-Nygrén et al. 2004; He-Nygrén &amp; Piippo 2003)            AY462355                       AY149861
+        Heteroscyphus aselliformis (He-Nygrén &amp; Piippo 2003)                               AY149841
+        Heteroscyphus coalitus (He-Nygrén &amp; Piippo 2003)                                   AY149844                       AY149865
+        Heteroscyphus cymbaliferus (He-Nygrén et al. 2006)                                 DQ026592        DQ026608       DQ026625
+        Heteroscyphus inflatus (He-Nygrén &amp; Piippo 2003)                                   AY149853                       AY149875
+        Heteroscyphus planus (He-Nygrén &amp; Piippo 2003)                                     AY149850                       AY149872
+        Heteroscyphus splendens (He-Nygrén &amp; Piippo 2003)                                  AY149854                       AY149876
+        Heteroscyphus zollingeri (He-Nygrén &amp; Piippo 2003)                                 AY149856                       AY149879
+        Plagiochila asplenioides (He-Nygrén et al. 2004)                                   AY149839        AY462384       AY149858
+        Plagiochilion conjugatum (He-Nygrén et al. 2006)                                   DQ026588        DQ026604       DQ026622
+
+
+
+
+        Chiloscyphus species including the generic type                     Nygrén et al. 2006; Hentschel et al. 2007), were used
+        species C. polyanthos; eight Heteroscyphus species                  as outgroups. In total, 37 taxa were included in the
+        including the generic type H. aselliformis; and also                phylogenetic analyses (Table 1). A DNA sequence
+        four species of Clasmatocolea. Some authors have                    dataset was obtained from three chloroplast gene
+        suggested that Clasmatocolea should be included in                  regions, rbcL, rps4, and trnL-F. Novel sequences of all
+        Chiloscyphus (see Hässel de Menéndez, 1996;                       Cyanolophocolea echinella exemplars were generated
+        Hentschel et al., 2007). Plagiochila asplenioides and               for all three regions, and their accession numbers are
+        Plagiochilion conjugatum of the family                              in bold in Table 1. The other sequences used here
+        Plagiochilaceae, sister to Lophocoleaceae (e.g., He-                were published in He-Nygrén &amp; Piippo (2003), He-
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+         152      The Bryologist        113(1): 2010
+
+
+         Nygrén et al. (2004, 2006), Groth (2005), and Glenny               which was implemented for each of the three
+         et al. (2009). A rbcL sequence of Heteroscyphus                     partitions based on the estimates obtained from
+         argutus, a trnL-F sequence of H. aselliformis, and rps4             MrModeltest v. 2.3 (Nylander 2004). All sample
+         sequences of seven Chiloscyhus and six Heteroscyphus                points prior to stability were discarded as burn-in
+
+---
+
+Figure 1. Phylogenetic relationship of Cyanolophocolea echinella based on a combined Bayesian analysis of rbcL, rps4 and trnL-F
+        sequence datasets from 37 exemplars. A 50% majority-rule consensus tree is presented. Bayesian posterior probabilities $0.95
+        are indicated. Scale bar 5 substitution/site.
+
+
+        ingroup species (Fig. 1). Cyanolophocolea was                       supported clade consisting of Chiloscyphus
+        strongly supported as the sister group to a clade                   martianus, C. japonicus, C. helmsianus, C.
+        consisting of H. argutus and H. planus. Together they               leucophyllus and C. spiniferus, and also a well
+        formed a sister lineage to another Heteroscyphus                    supported clade which included the remainder of
+        clade, which included H. coalitus, H. zollingeri, H.                species of Chiloscyphus and all of the Clasmatocolea
+        inflatus. H. aselliformis, and H. splendens. This                   species. Parsimony analysis identified 168 equally
+        combined core group of ‘‘Heteroscyphus’’ was                        most parsimonious trees, each 1341 steps long and
+        resolved as a monophyletic group with strong                        characterized by a CI and RI of 0.62 and 0.74,
+        support. A well-supported Clasmatocolea is resolved                 respectively. The strict consensus tree (Fig. 2)
+        within Chiloscyphus. It was composed of a weakly                    differed from the Bayesian 50% majority-rule
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+         154      The Bryologist        113(1): 2010
+
+
+
+
+         Figure 2. Phylogenetic relationship of Cyanolophocolea echinella based on a combined maximum parsimony analysis of rbcL, rps4
+         and trnL-F sequence data sets from 37 exemplars. The tree presented is the strict consensus topology of 168 equally most
+         parsimonious trees. Maximum parsimony bootstrap values are given.
+
+
+
+         consensus only in the placement of the core                         Heteroscyphus coalitus–H. zollingeri clade,
+         Heteroscyphus clade. In the parsimony analysis the                  Heteroscyphus aselliformis–H. splendens–H. inflatus
+         core Heteroscyphus clade comprised a polytomy of                    clade, and the clade includes Heteroscyphus argutus
+         three sub-clades of Heteroscyphus and Heteroscyphus–                and H. planus, and all the Cyanolophocolea echinella
+         Cyanolophocolea exemplars. These sub-clades are the                 populations. In both Bayesian and parsimony
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                                                                                 Engel &amp; He: Systematic identity of Cyanolophocolea   155
+
+
+        analyses, the populations of Cyanolophocolea formed                       Description. Plants prostrate to ascending, deep
+        a polytomy, with two samples with hyaline oil-bodies                blue green, dull green to pale olive green in hb., dull
+        (no. 27818 and 26652) forming a clade within the                    textured, delicate, the shoots small, to 1.8 mm wide,
+        polytomy.                                                           the shoot tips when live indigo blue (var. echinellus)
+                                                                            or pale green (var. hyalinus). Branches common but
+        DISCUSSION                                                          not abundant, mostly of Frullania-type (the half leaf
+             Phylogenetic inferences based on sequences of                  of same basic shape as vegetative leaves), occasionally
+        three loci clearly suggest that Cyanolophocolea arose               intercalary, the intercalary branches variable in
+        from a species of Heteroscyphus and that C. echinella               position, at times in underleaf axil and either
+        is only distantly related to Chiloscyphus. Several                  median-ventral in position or in lateral half of
+        morphological characters support a common                           underleaf axil (then ventral intercalary), at times
+        ancestry for Cyanolophocolea and Heteroscyphus. An                  ventral-lateral in position midway between 2
+        example is the presence of gametangia on short                      underleaves (then ?lateral intercalary). Stems hispid,
+        lateral-intercalary branches, although the position is              the cortical cells on dorsal surface of stem firm-
+        more variable than in Heteroscyphus. Also, androecia                walled, mostly each with a 1–2-celled, short
+        may be intercalary in position on the main shoot                    projection, the cortical cells on ventral surface of
+        (Fig. 4.1), and gynoecia may occur on short,                        stem mostly smooth, sporadically with a projection;
+        abbreviated ventral-intercalary branches (Fig. 5.4);                stems 9 cells high, the cortex poorly differentiated, in
+        for further discussion see under Variation. Perianths               1(–2) layers of rather thick-walled cells; medullary
+        are often subcampanulate, a shape frequently found                  cells slightly less thick walled. Rhizoids from stem in</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>GBIF</strong>
+      <span class="muted small">&nbsp;(14)</span>
+    </summary>
+    
+    
+    <pre class="description-text">DESCRIPTION Dioecious. Habit Plants large with shoots 2.50 - 4.00 mm wide. Leaves Spreading at nearly right angle, longitudinally convex, ovaloblong to subrectangular, 1.30 - 1.60 mm long, 1.00 - 1.60 mm wide at bases, 0.50 - 0.80 mm at apices, usually as wide as long at base, not dorsally confluent, margins entire, truncate apices straight to slightly convex, with a single tooth at both angles, teeth acuminate to linear, acute, 3 - 6 uniseriate cells long above and 0 - 2 biseriate ranks at base. Cells Median leaf cells hexagonal, somewhat elongate, 30 - 60 µm long, 30 - 75 µm wide, trigones acute, small to inconspicuous. Underleaves Reniform, 2 - 3 times the stem width, 0.20 - 0.50 mm long, 0.70 - 1.20 mm wide, inserted on the stem in a deep sinus and connate to both adjacent leaves by a very wide band of cells, the apical margin widely convex with 4 - 6 straight teeth, sublinear acute, the innermost erect, the lateral spreading, like the leaf ones. Gametangia Gynoecia at the end of short leafless ventral lateral branches, bracts small, rounded, 2 - toothed, perianths 1 mm long, cupulate with trilobate mouth, lobes rounded, toothed, surface mammillose; androecia not seen.</pre>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>discussion:</strong> COMMENTS Heteroscyphis coalitus is morphologically highly variable and a large number of forms and varieties have been described in this species (Tropicos 2021). According to Piippo (1985), the species especially varies in the shape of the underleaves and their connation to the leaves. As it is a species widely distributed, it is not surprising that there are so many names for this taxon. The original materiel of Chiloscyphus confertifolius at G is limited to a single packet handwritten by Stephani which is therefore selected as the lectotype. Regarding Lophocolea latistipula, two specimens are kept as types at G, both collected by Franc in the same locality. The specimen with the mark “ n. sp. ” is selected despite the orthographic error “ latistipa ” which may not lead to confusion, since the epithet latistipus is in fact assigned to Chiloscyphus latistipus with a type collected by Mrs L. Le Rat. In addition, the drawing by Stephani matches with this specimen. In contrast, a second specimen labelled Lophocolea latistipula in G (G 00112472, duplicate PC 0102424) turned to be Chiloscyphus longifissus Steph. (see below). Among the specimens marked as types of Chiloscyphus latistipus at G, the specimen G 00069461 is selected as lectotype since it contains the collecting number (171) and the annotation “ n. sp. ” in a letter from Stephani to E. G. Paris dated 31 March 1910 (Rennes 1 University Library). Furthermore, “ original ” is written on the label in the author’s handwriting. In contrast, the specimens kept at PC (PC 0101941 and PC 0150605) are in packets with the handwriting of E. G. Paris without any annotation by Stephani, so that they cannot be considered with certainty as parts of the original material. The name Chiloscyphus similis was given to two different type specimens a few years apart by Stephani. In 1908, a New Caledonian specimen collected by Le Rat was validly published under this name in Revue bryologique and the original materiel can be identified with the number 195 according to a letter to E. G. Paris dated 2 January 1908 (Rennes 1 University Library). But, in 1911, Stephani described another C. similis based on a voucher collected by Scottsberg from Tierra del Fuego. The drawing and protologue show a very different plant, confirmed by the examination of the corresponding specimen from Tierra del Fuego kept at G. No New Caledonian specimen labelled C. similis and matching the diagnosis published in 1908 has been found at G, REN or PC. On another hand, in 1922, Stephani published Chiloscyphus subsimilis based on a type specimen kept at G and marked with the same number (195) than C. similis (1908), according to the correspondence from Stephani to E. G. Paris. Consequently, C. subsimilis is an illegitimate name, superfluous against C. similis (1908) (International Code of Nomenclature, art. 52.1, Turland et al. 2018; Loiseau et al. 2019), which was validly published with an identified type, while C. similis (1911) is invalid as a later homonym. Fortunately, C. similis (1911) from Tierra de Fuego is furthermore synonym of Heteroscyphus valdiviensis (Mont.) Schiffner (Fulford 1976). A lot of duplicates of the original material used by Stephani for Chiloscyphus francanus were examined, raising the opportunity to recognise a set of syntypes. But a further specimen kept at PC as an isosyntype (PC 0101947), cannot be a type since it was collected one year later than the specimens kept at G and lacks annotation by Stephani.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> DISTRIBUTION IN NEW CALEDONIA. — Frequent in rain forest and creek banks in both provinces of Grande Terre, collected from 150 to 1150 m, on soils or rocks, occasionally at the base of trees. TOTAL RANGE. — South-East Asia, Indonesia, Melanesia, Australasia, (Argentina?).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Franc s. n. (lecto-, here designated, G [“ Lophocolea latistipa (sic) n. sp., Nlle Calédonie, forêt de Tao, 600 à 800 m ”, I. 1910, Franc s. n., G 00121768]!) syn. nov.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Franc s. n. (lecto-, here designated, G [“ Mt. Dzumac, 900 m, tronc d’arbre ”, 1. XI. 1907, Franc s. n., G 00283066]!; syn-, G [“ Nlle Calédonie, Mts. Koghis, versant ouest, 300 m, bords d’un torrent ”, 20. X. 1907, Franc s. n., G 00069483, G 0069484! s. l., s. d., Franc s. n., G 00283067]!; isolecto-, PC [PC 0101950]!; isosyn-, PC [PC 101948, PC 0101949]!) syn. nov. FURTHER SPECIMENS EXAMINED. — New Caledonia. South Province, Sarraméa, Dogny plateau, on ground in rain forest, 650 m, 24. X. 2019, Thouvenot NC 2602 (PC [PC 0779853]); Yaté, Dzumac massif, on ground in rain forest, 900 m, 26. X. 2012, Thouvenot NC 2392; North Province, Poindimié, Amoa valley, Tipwadabwé, on damp rock in a creek, 163 m, 13. X. 2019, Thouvenot NC 2726; South Province, Mé Amméri, 700 m, 30. IX. 1950, Guillaumin &amp; Baum. Bod. 9150, det. Hürlimann, as Chiloscyphus francanus (G [G 045946]); “ Mts. Koghis, forêt ”, Franc s. n. as Chiloscyphus similis (sensu 1908) (PC [PC 0167662], G s. n.); “ in jugo Dogny 1040 m ”, VII. 1909, L. Le Rat s. n. as Chiloscyphus latistipus (G s. n.); “ in jugo Dogny ”, X. 1909, L. Le Rat s. n. as Chiloscyphus latistipus (PC [PC 0101941, PC 0150605]); “ Mts. Koghis ”, 1. X. 1909, Franc s. n. as Chiloscyphus latistipus (G s. n.).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Chiloscyphus subsimilis. Nov. Caledon. Sine schedule ”, 1907, Le Rat 195, G 00069431]!) syn. nov.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Nov. Caledon. Inter Farino et Table Unio. 07 / 1909 ”, Le Rat 95, G 00069493]!) syn. nov.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Caledonia. Lerat s. n. (lecto-, here designated, G [“ Nova Caledonia, Me Areimbo. s. d., Dna L. Le Rat 171, mit Balantiopsis, mit Lepidozia ”, G 00069461]!; isolecto-, REN [herb. E. G. Paris, s. n.]!) syn. nov.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>materials_examined:</strong> Type: New Zealand. Dusky Bay, A. Menzies s. n. (G [G 00283086]!).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus confertifolius Steph., Species Hepaticarum 6: 304 (Stephani 1922).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus francanus Steph., Species Hepaticarum 6: 306 (Stephani 1922).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus latistipus Steph., Species Hepaticarum 6: 309 (Stephani 1922).</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Chiloscyphus similis Steph., Revue bryologique 35: 28 (Paris 1908), non Chiloscyphus similis Steph., Kongliga Svenska Vetenskaps Academiens Handlingar, Ny Följd 46: 56 (Stephani 1911). — Chiloscyphus subsimilis Steph., Species Hepaticarum 6: 314 (Stephani 1922), nom. illeg.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>synonymic_list:</strong> Lophocolea latistipula Steph., Species Hepaticarum 6: 281 (Stephani 1922). — Chiloscyphus latistipulus (Steph.) J. J. Engel &amp; R. M. Schust., Nova Hedwigia 39: 418 (Engel &amp; Schuster 1984 [1985]).</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_GLENNY_2006</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">number
+Chiloscyphus pallescens (IV)           Germany,            Hentschel Bryo 01590 (GOET)        AM282824
+                                        Lower Saxony
+Chiloscyphus pallescens (V)            Bulgaria            Hentschel Bryo 0772 (JE)           AM282825
+Chiloscyphus perissodontus (Spruce)    Guyana              Gradstein 4890 (GOET)              AM282826
+ J.J.Engel &amp; R.M.Schust. (I)
+Chiloscyphus perissodontus (II)        Guyana              Gradstein 5042 (GOET)              AM282827
+Chiloscyphus polyanthos (L.)           Germany,            Hentschel Bryo 01308 (JE)          AM282828
+ Corda (I)                              Thuringia
+Chiloscyphus polyanthos (II)           Germany,            Hentschel Bryo 01758 (GOET)        AM282829
+                                        Lower Saxony
+Chiloscyphus polyanthos (III)          Germany,            Hentschel Bryo 01792 (GOET)        AM282830
+                                        Hesse
+Chiloscyphus polyanthos (IV)           Slovakia         Hentschel Bryo 0318 (JE)      AM282831
+Chiloscyphus profundus (Nees)          Germany          Hentschel Bryo 01414 (JE)     AM282832
+ J.J.Engel &amp; R.M.Schust.
+Chiloscyphus randii (S.W.Arnell)        Prince Edward Gremmen 98-63 (JE)              AM282833
+ J.J.Engel &amp; R.M.Schust.                 Isles
+Chiloscyphus sabuletorum                Argentina       Hyvönen 3233 (JE)            AM282834
+ (Hook.f. &amp; Taylor)
+ J.J.Engel &amp; R.M.Schust. (I)
+Chiloscyphus sabuletorum (II)           Chile           Busch et al. Bryo 01396 (JE)  AM282835
+Chiloscyphus semiteres (Lehm.)          Australia       Streimann 58464 (GOET)        AM282836
+ Lehm. &amp; Lindenb. (I)
+Chiloscyphus semiteres (II)             The Netherlands Stieperaere 8611 (JE)         AM282837
+Chiloscyphus spiniferus                 New Zealand     Schäfer-Verwimp &amp;            AM282838
+ (Hook.f. &amp; Taylor)                                      Verwimp 13808 (JE)
+ J.J.Engel &amp; R.M.Schust.
+Heteroscyphus aselliformis (Reinw.,     Indonesia       Gradstein 10240 (GOET)        AM180588
+ Blume &amp; Nees) Schiﬀn.
+Heteroscyphus coalitus (Hook.) Schiﬀn. Nepal            Long 17402 (JE)               AM282839
+Heteroscyphus cuneistipulus (Steph.)    New Zealand     Frahm 9-15 (GOET)             AM282840
+ Schiﬀn.
+Heteroscyphus ﬁssistipus                Ireland         Long H4064 (JE)               AM282841
+ (Hook.f. &amp; Taylor) Schiﬀn.
+Heteroscyphus splendens                 Malaysia        Schäfer-Verwimp &amp;            AM180589
+ (Lehm. &amp; Lindenb.) Grolle                               Verwimp 18905 (GOET)
+Pedinophyllum interruptum               United Kingdom Rycroft 020907 (GOET)          AY438234
+ (Nees) Kaal.
+Plagiochila alternans Lindenb. &amp;        Bolivia         Heinrichs et al. GP 16 (GOET) AY550130
+ Gottsche
+Plagiochila bifaria (Sw.) Lindenb.      Bolivia         Heinrichs et al. 4076 (GOET)  AJ620674
+Plagiochila porelloides (Nees) Lindenb. Germany         Heinrichs &amp; Groth 4340 (GOET) AJ414633
+Plagiochilion mayebarae S.Hatt.         Japan           Ohnishi 5588 (HIRO)           AY438238
+
+
+    Phylogenetic analyses. Thirty seven new ITS1-      Groth et al. (2004) and Heinrichs et al. (2004, 2006)
+5.8S- and ITS2 sequences and 9 sequences from          were aligned manually in BioEdit version 7.0.5.2
+Renker et al. (2002), Groth and Heinrichs (2003),      (Hall 1999), resulting in an alignment including 806
+J. Hentschel et al.: Taxonomic studies in Chiloscyphus                                                 129
+
+putatively homologous sites (alignment available         Results
+upon request). Phylogenetic trees were inferred
+using maximum parsimony (MP) and maximum                 Of 806 investigated characters of the nrITS
+likelihood (ML) criteria as implemented in PAUP          region, 351 were parsimony informative, 107
+version 4.0b10 (Swoﬀord 2003). MP analyses were          autapomorphic and 348 constant. The heuristic
+performed with the following options implemented:        search recovered 2 equally most parsimonious
+heuristic search mode with 1000 random-addition          trees with a length of 1343 steps, a consistency
+sequence replicates, tree bisection-reconnection         index (CI) of 0.50, a CI excluding uninformative
+branch swapping (TBR), MULTrees option on,               characters of 0.45, a retention index of 0.73, and
+and collapse zero-length branches oﬀ. All charac-        a rescaled consistency index of 0.36. The strict</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(4)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Heteroscyphus coalitus var. coalitus</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Heteroscyphus coalitus var. simplicifolius</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Spyridium coalitum is a species of flowering plant in the family Rhamnaceae and is endemic to Kangaroo Island in South Australia. It is a slender, erect shrub with softly-hairy young stems, oblong to narrowly elliptic leaves, and head of white to cream-coloured flowers.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus allodontus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cambewarranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus circumdentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus coalitus var. coalitus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus coalitus var. simplicifolius</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cuneistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Spyridium coalitum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus coalitus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Jungermannia coalita</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.275837, 146.046119], [-41.7652924, 145.6343807], [-42.920083, 147.257833], [-42.625529, 148.0989], [-41.815107, 148.084935], [-42.920083, 147.257833], [-43.077824, 147.861267], [-41.71955, 145.438498], [-41.05, 145.56666], [-42.628454, 147.733092], [-42.085287, 145.913181], [-43.529629, 146.382611], [-41.257471, 144.733392], [-42.990749, 147.246711], [-41.909293, 146.519046], [-41.654194, 145.081111], [-42.6181, 145.294306], [-43.168742, 146.263235], [-42.92, 147.257778], [-41.819981, 146.760532], [-41.813907, 148.205309], [-42.63, 145.93], [-41.184723, 145.928207], [-41.633333, 147.816667], [-43.619665, 146.381691], [-41.717854, 145.318327], [-40.071576, 144.069689], [-41.903956, 148.207002], [-43.0986307, 146.0343964], [-43.258764, 147.740609], [-41.05, 145.56666], [-41.5667, 146.6], [-43.170852, 146.755321], [-41.714085, 145.078018], [-41.712012, 144.957882], [-41.811163, 145.556662], [-43.089372, 146.683832], [-43.2, 146.7833], [-42.086368, 146.034072], [-42.8833, 147.15], [-41.259759, 144.852675], [-42.88333, 147.23054], [-42.539117, 147.610266], [-42.61985, 145.416192], [-42.92, 147.257778], [-42.900896, 147.123862], [-42.719819, 146.512835], [-41.26666, 145.6], [-41.729599, 146.640628], [-41.649389, 145.063556], [-41.079726, 144.858548], [-41.637026, 146.160877], [-43.440656, 146.630664], [-43.158778, 146.806833], [-41.275814, 147.956556], [-43.260569, 146.631754], [-41.9486273, 145.5510519], [-41.817149, 146.15853], [-40.365556, 148.095], [-42.081279, 145.550555], [-41.729912, 146.760866], [-42.899332, 146.388938], [-42.172782, 145.669539], [-42.087322, 146.154968], [-41.369303, 147.36006], [-41.75, 146.183333], [-42.987784, 147.860009], [-43.096085, 146.705731], [-43.261094, 147.12459], [-43.097223, 146.707151], [-42.807699, 147.85751], [-41.726146, 146.039487], [-42.442895, 145.663838], [-42.592222, 146.592222], [-43.080798, 147.247072], [-41.725079, 145.919274], [-42.898613, 146.26646], [-43.55, 146.0833], [-42.75, 146.6], [-43.0787, 146.264315], [-41.36666, 147.46665], [-41.7833, 146.1833], [-41.8333, 148.2167], [-41.68332, 146.85], [-40.3656, 148.095], [-43.1589, 146.8069], [-43.440982, 147.248532], [-43.167863, 147.862531], [-42.0, 147.0], [-42.087302, 147.84774], [-41.68332, 146.76666], [-41.439786, 144.846749], [-40.207, 148.113528], [-41.790173, 146.193025], [-41.0319561, 145.3677073], [-41.720943, 146.780135], [-41.26666, 145.6], [-43.55, 146.0833], [-41.26666, 145.6], [-40.8625, 144.9022], [-41.639091, 146.521061], [-43.095948, 146.694734], [-41.537787, 145.323001], [-42.264137, 148.213849], [-39.981596, 144.073539], [-42.175111, 146.177895], [-43.102427, 146.682978], [-41.18577, 146.047427], [-41.547774, 146.281933], [-42.799892, 145.411606], [-42.88333, 147.23054], [-40.365556, 148.095], [-43.09718, 146.683976], [-40.283989, 148.060068], [-43.260899, 146.754961], [-41.36666, 147.46665], [-41.368866, 147.479631], [-43.158778, 146.806833], [-42.990948, 147.124043], [-41.369805, 146.881765], [-43.0, 147.0], [-41.21665, 147.94999], [-43.53023, 146.506361], [-41.26666, 145.6], [-41.632518, 145.68071], [-41.349773, 144.849719], [-41.8318531, 146.0472155], [-43.2579, 147.863801], [-41.63625, 145.068944], [-40.285007, 147.942445], [-42.718502, 147.734151], [-41.908029, 146.27791], [-41.725433, 146.772906], [-41.543752, 148.200278], [-41.757961, 146.832938], [-43.096582, 146.702693], [-42.720274, 146.634965], [-40.205111, 148.062417], [-41.26666, 145.6], [-41.54846, 146.401828], [-42.75, 147.8167], [-40.068551, 143.952577], [-41.90626, 146.036792], [-41.635023, 145.92078], [-43.168724, 147.73952], [-43.091594, 146.686363], [-37.3167, 148.8556], [-7.3667, 146.2333], [-43.899261, 171.233972], [-49.684, 178.781], [-31.175, 152.341667], [-40.965833, 175.135556], [-43.009749, 170.66956], [-37.2639, 148.5889], [-45.261515, 167.109891], [-38.77, 143.55278], [-42.933457, 171.562762], [-44.315024, -176.2061302], [-30.5, 152.4], [-38.555554, 177.338232], [-36.190556, 176.051944], [-45.5497, 169.0308], [-43.557971, 169.655604], [-37.8731637, 175.9132254], [-40.9982265, 175.1162748], [-41.176514, 172.65743], [-43.894109, 171.235945], [-37.802778, 175.331667], [-40.7673857, 172.7040774], [-35.916667, 175.0], [-37.7, 145.66139], [-7.1667, 146.4667], [-44.792373, 167.770036], [-37.59306, 145.78056], [-32.1, 151.595833], [-37.31512, 148.85681], [-7.3167, 146.3833], [-9.3667, 147.5], [-37.5959585, 175.8599258], [-43.557971, 169.655604], [37.825583, 146.254833], [-36.933333, 174.533333], [-40.639167, 172.636667], [-38.005, 176.34], [-37.3167, 148.8556], [-6.7167, 146.7667], [-7.35, 146.1833], [-5.4333, 143.55], [-37.7167, 145.7], [-7.55, 146.0167], [-40.94281, 172.887353], [-8.95, 146.85], [-45.148005, 167.229565], [-44.113056, 169.352778], [-37.727056, 145.704972], [-40.0649083, 176.2163212], [-39.7998999, 174.9285072], [-41.25, 175.01], [-43.761497, 169.149445], [-37.9161, 145.86611], [-39.282874, 174.963726], [-40.8515528, 174.9262731], [-5.8333, 145.1667], [-39.02833, 146.39139], [-35.183333, 173.483333], [-45.553189, 167.40493], [-9.4833, 147.5167], [37.825583, 146.254833], [-43.899261, 171.233972], [-46.552, 169.49], [-43.287062, 170.164729], [-9.3667, 147.4833], [-37.921842, 146.323857], [-47.1650404, 167.6994831], [-36.1941331, 175.4132956], [-31.175, 152.341667], [-40.2152113, 176.0996193], [-36.190556, 176.051944], [-45.884, 168.412806], [-36.2, 175.1], [-38.64936, 143.611817], [-37.8731637, 175.9132254], [-38.066667, 174.983333], [-38.249444, 177.597745], [-45.8842, 168.4128], [-35.5833, 148.7833], [-15.883333, 145.283333], [-36.75, 174.496667], [-37.871611, 146.266861], [-40.943028, 172.359578], [-50.8151541, 166.1994373], [-7.2667, 146.1], [-37.49848, 145.86797], [-37.7117, 145.7072], [-37.0668486, 175.6684555], [-38.566667, 176.783333], [-38.331562, 176.300194], [-35.5667, 148.7639], [-44.113056, 169.352778], [-50.5318046, 166.2827707], [-9.4833, 147.5167], [-40.7673857, 172.7040774], [-32.1, 151.595833], [-37.31512, 148.85681], [-50.8484847, 166.0161046], [-40.069, 176.216], [-36.970738, 174.533482], [-40.2151113, 176.0996193], [-47.1650404, 167.6994831], [-31.175, 152.341667], [-43.563764, 169.756741], [-47.246915, 167.617547], [37.860778, 146.320139], [-45.033333, 167.533333], [-44.368801, 168.015695], [-7.4667, 146.8], [-40.774757, 175.222235], [-45.866333, 167.468139], [-37.31806, 148.86889], [-45.448085, 168.013213], [-28.22903, 153.245582], [-38.43181, 146.56797], [-7.3667, 146.2333], [-37.55667, 145.8875], [-16.583334, 145.28334], [-38.5137752, 175.5557191], [-50.8484847, 166.0161046], [-43.8975, 171.2244], [-42.8436, 171.1657], [-5.0833, 143.9833], [-42.660587, 171.500177], [-41.2232314, 175.0286029], [-8.9667, 146.95], [-38.96515, 146.36799], [-50.8818159, 166.0327645], [-45.873357, 167.627124], [-37.7339, 175.99], [-41.1418295, 174.9879027], [-30.5, 152.4], [-37.47209, 144.278949], [-35.571778, 148.783472], [-47.249597, 167.637144], [-36.970738, 174.533482], [-37.66916, 175.9229263], [-43.835471, 172.992527], [-43.661118, 172.619245], [-36.983333, 174.916667], [-37.71167, 145.68194], [-40.855, 172.868333], [-41.1525301, 175.1443045], [-21.09191, 148.50665], [-43.783333, -176.633333], [-6.3, 147.2667], [-37.2448521, 175.8213266], [-35.374056, 174.195806], [-6.0167, 146.55], [-41.3128, 175.3648], [-45.425076, 167.503078], [-6.55, 146.55], [-37.8731637, 175.9132254], [-41.757841, 172.649121], [-43.839973, 173.013673], [-7.25, 146.7667], [-50.8484847, 166.0161046], [-42.660309, 171.268449], [-44.845434, 167.456336], [-43.15, 170.566667], [-37.48554, 144.234622], [-37.900361, 145.793361], [-50.5318043, 166.1827693], [-37.00125, 174.92225], [-37.3167, 148.8333], [-6.0833, 147.1833], [-37.3167, 148.8556], [-37.34845, 148.85125], [-42.336122, 171.39819], [-15.8833, 145.2833], [-50.8484847, 166.0161046], [-37.25, 148.7833], [-44.039961, -176.620416], [-44.673, 167.925], [-9.3667, 147.4833], [-41.3729344, 174.7927995], [-46.332346, 167.83159], [-37.2389, 148.5972], [-38.74833, 143.57889], [-43.965316, -176.546747], [-36.5175, 148.2744], [-40.0649083, 176.2163212], [-37.561083, 145.880989], [-37.25, 148.7833], [-41.266, 174.754], [-7.3667, 146.1667], [-6.0167, 145.4167], [-37.416255, 175.7454251], [-37.59849, 145.61797], [-38.5594, 143.4444], [-8.9833, 147.7167], [-38.74833, 143.57889], [-41.2689, 174.753], [-37.3167, 148.8556], [-36.906167, 148.112139], [-17.363763, 145.863305], [-43.767739, 169.347836], [-50.8151541, 166.1994373], [-36.883333, 174.566667], [-40.547387, 172.630076], [-46.5, 169.483333], [-45.486871, 167.292389], [-36.233333, 175.1], [-37.55472, 145.85778], [-37.88389, 146.27444], [-36.231944, 175.094444], [-37.59849, 145.61797], [-44.368801, 168.015695], [-41.25, 175.01], [-35.75, 174.083333], [-7.1667, 146.4667], [-6.0167, 146.5167], [-35.374056, 174.195806], [-38.78222, 143.53306], [-39.28422, 174.905185], [-37.655, 145.83194], [-45.054902, 167.543374], [-38.8, 177.266667], [-37.3028, 148.7944], [-36.9, 174.55], [-43.619292, 171.411441], [-16.4667, 145.3167], [-46.5779578, 169.4147083], [-41.1815581, 173.9995909], [-36.55, 175.416667], [-41.3729344, 174.7927995], [-36.5083, 148.3008], [-50.8484847, 166.0161046], [-37.59306, 145.78056], [-37.31512, 148.85681], [-45.5833, 167.3667], [-43.702163, 172.74847], [-6.15, 143.9833], [-31.175, 152.341667], [-46.3700476, 167.9972919], [-37.839486, 146.273533], [-38.9776827, 174.8338092], [-44.4352013, 170.8703383], [-37.7286612, 175.9901268], [-37.8731637, 175.9132254], [-36.805516, 174.733068], [-38.42447, 146.572061], [-43.884353, 171.233295], [-38.634694, 143.740306], [-5.7667, 143.95], [-40.94281, 172.887353], [-36.883333, 174.566667], [-41.148153, 172.189648], [-37.59306, 145.78056], [-45.963597, 166.784763], [-42.675, 171.125], [-40.965927, 175.15803], [-33.5325, 150.183611], [-43.899261, 171.233972], [-35.5667, 148.7833], [-45.269516, 167.714614], [-45.608413, 166.869629], [-45.295065, 167.821839], [-43.440786, 169.97276], [-40.06, 176.21], [-36.216667, 175.05], [-47.154049, 167.697885], [-37.8731637, 175.9132254], [-43.981613, 168.6161834], [-36.8, 174.483333], [-37.70056, 145.66167], [-40.2152113, 176.0996193], [-45.583333, 167.358333], [-43.740505, 172.875695], [-44.039961, -176.620416], [-36.5595, 174.415528], [-36.876111, 175.194444], [-37.3, 148.8333], [-37.71167, 145.68194], [-9.4833, 147.5167], [-42.80121, 171.06889], [-46.59938, 168.538097], [-36.0, 149.8667], [-45.645176, 167.584825], [-45.448085, 168.013213], [-44.518655, 168.075], [-7.3667, 146.3667], [-9.4167, 147.35], [-45.486871, 167.292389], [-36.966667, 174.466667], [-42.660587, 171.500177], [-36.9, 174.55], [-37.3, 149.5333], [-37.2861, 148.75], [-36.644528, 148.127722], [-38.4850727, 174.6946094], [-30.5, 152.4], [-37.809167, 175.322778], [-7.3333, 146.6833], [-45.197861, 167.552005], [-38.633333, 177.033333], [-35.374056, 174.195806], [-36.8371443, 175.5535249], [-37.3667, 148.8833], [-35.671609, 173.574695], [-41.350098, 172.150255], [-44.64498, 167.684972], [-50.6484783, 166.1661082], [-44.783398, 167.665182], [-45.963597, 166.784763], [-36.970738, 174.533482], [-50.5484748, 166.166109], [-7.4667, 146.8], [-9.4167, 147.4], [-42.446869, 171.46941], [-45.486, 167.292], [-41.7575, 172.646389], [-36.923917, 174.7555], [-37.59849, 145.61797], [-36.889, 174.522], [-37.70056, 145.66167], [-37.3425, 148.8608], [-35.192612, 173.480172], [-6.7167, 147.2333], [-6.05, 146.5833], [-37.116667, 174.5875], [-31.180278, 152.330667], [-36.883333, 174.566667], [-45.963597, 166.784763], [-37.65611, 145.81639], [-37.69845, 148.71793], [30.3333, 130.5833], [-46.8675627, 168.1251903], [-37.4833, 145.8333], [-41.25, 175.01], [-47.1650404, 167.6994831], [-44.701083, 170.965444], [-38.41778, 146.58028], [-5.6833, 144.6333], [-37.31512, 148.85681], [-36.883333, 174.55], [-41.0032, 175.139], [-37.3425, 148.8608], [-6.033333, 146.55], [-50.8151541, 166.1994373], [-38.951347, 175.187953], [-37.49848, 145.86797], [-37.7344611, 175.8735255], [-15.8, 145.3], [-36.233333, 175.1], [-37.3611, 148.8644], [-45.3433197, 168.4928342], [-43.764681, 169.248782], [-50.8818159, 166.0327645], [-36.840103, 148.125757], [-44.586031, 168.087239], [-45.829457, 166.94863], [-37.56515, 145.86797], [-50.7484813, 166.0327656], [-41.106, 174.145], [-36.816667, 175.05], [30.333333, 130.583333], [-43.749035, 173.017219], [-45.353169, 167.5101], [-40.9465553, 175.1096049], [-45.884, 168.412806], [-38.77, 143.55278], [-37.3733, 144.2647], [-40.9121251, 175.3740082], [-6.3333, 144.0333], [-47.166402, 167.671596], [-37.87833, 146.25972], [-50.8484847, 166.0161046], [-37.5934, 145.78056], [-40.8487827, 174.919043], [-36.216667, 175.05], [-38.249444, 177.597745], [-36.916667, 174.6], [-40.8469, 174.9156], [-37.7, 145.66139], [-15.477667, 145.053], [-37.71167, 145.68194], [-37.71167, 145.68194], [-42.675, 171.125], [-36.8, 174.483333], [-42.273059, 171.460423], [-7.3667, 146.1667], [-44.845462, 167.456347], [-40.06, 176.21], [-37.25, 148.7833], [-18.210333, 145.805944], [-36.666667, 175.583333]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [76.3, 64.6, 84.1, 90.6, 131.6, 137.4, 157.9, 170.4, 150.9, 125.5, 92.8, 97.1], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.3, 20.3, 18.2, 15.0, 12.1, 10.2, 9.5, 10.3, 12.2, 14.2, 16.9, 18.3], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.7, 9.8, 8.5, 6.5, 5.0, 3.5, 2.8, 2.9, 4.3, 5.3, 7.2, 8.2], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heteroscyphus conjugatus — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Heteroscyphus conjugatus</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Heteroscyphus conjugatus</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lophocoleaceae</span>
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">153</p>
+    <footer>147 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">9.6&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">1744&thinsp;mm</p>
+    <footer>annual · CV&thinsp;23.4</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">8</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>intercalary</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">DALTON_TAS_BRYOPHYTA</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>large</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">HETEROSCYPHUS_HIMALAYAS_1989</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>DALTON_TAS_BRYOPHYTA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">38
+                                     Table 4.5.
+  The frequency of epiphytic bryophytes on the trunk ofAthrotaxis selaginoidesiA.
+                laxifolia, arranged in descending order of % occurrence.
+
+
+
+         Moss species                Present      Present    % ocurrcnce
+                                         +          0
+
+
+Rhizogonium novae-hollandiae             7           I            53.3
+
+Dicranoloma billardierei                 I           0            6.7
+Hypnum chrysogaster                      0           I            6.7
+        Hepatic species
+
+Bazzania involuta                        9           I            66.7
+Lepidozia ulothrix                       5           0            33.3
+Acromasrigum mooreanum                   5           0            33.3
+AcromastiJ?um sp.                        4           1            33.3
+Heteroscyphus cymbaliferus               3           2            33.3
+Plagiochila circinalis                   3           1            26.7
+Lepidozia sp.                            2           2            26.7
+Bazzania monlinervis                     1           3            26.7
+Schislochila pseudociliata               3           0             20
+Radula comf)Qcta                         0           2            13.3
+Gackstroemia weindorferi                 I           0            6.7
+Heteroscyphus conjugatus                 1           0            6.7
+Riccardia sp.                            1           0            6.7
+Ciasmatocolea notophylla                 1           0            6.7
+Herhertus oldfieldianus                  1           0            6.7
+Acrochila biserialis                     1           0            6.7
+Clasmatocolea verrucosa                  0           1            6.7
+Leptosyphus expansus                     0           1            6.7
+
+
+
+
+                                             39
+4.5.3 Key Taxa
+The bryophyte species which had a frequency of occurrence of 25% or more on either
+phorophyte are arbitrarily considered to be key epiphyte species. For the mosses they
+included; Dicranoloma      mem.iesii,    Hypnum     chrysogaster.     Wijkia    extenuata,
+LeplOrileca gaudichaudii. Rhizogonium novae-hollandiae and Dicranoloma robuslLlm
+var. selosum. For the bepatics (hey included; Ba72llnia lnvaluta, Gackstroemia
+weindoiferi. Acrochila biserialis. Bazzania        monilinervis,    Lepidozia    ulothrix,
+Lepidozia sp., ParaschislOchi/a lu/aides, Acromasligum mooreanum, Acromasligum
+sp., Heteroscyphus cymbaliferus and Plagiochila circinalis . All the above moss
+species are found on similar substrate in New Zealand and south-eastern mainland
+Australia. The above hepatic species are found on similar substrate in New Zealand
+but in Australia, P. tuloides, A. mooreanum and H. cymbaliferus are confined to
+Tasmania.
+
+
+The following descriptions provide the diagnostic features to allow the identification
+of the key moss and hepatic epiphytes that occur on N. cunninghamii and Athrotaxis,
+as well as their distinguishing characters from related species. It is not intended to be
+a taxonomic account for each species since that is already available in the published</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>HETEROSCYPHUS_HIMALAYAS_1989</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">2.9-4.2 mm wide. Stem 10-15 cells across diameter with                    Previous records of H. inflatus from India are as Chi
+outer 1-2 (-3) layers of relatively thick-walled cortical                 loscyphus inflatus (Stephani 1906-1909, Kashyap 1932).
+cells. Leaves closely imbricate, opposite, united dorsally                Following the views of Schiffner (1910), Schuster (1980)
+with each other at antical ends and ventrally with the                    and Engel and Schuster (1984), C. inflatus was trans
+adjoining underleaf bases, usually semicircular, some                     ferred to Heteroscyphus (Srivastava and Srivastava
+times orbicular or rarely ovate, (0.8?) 1.1-2.0 mm 1986a), but without the citation of the basionym. Ste
+long, (0.9-) 1.6-2.5 mm broad, margin entire, often phani (1906-1909) reported this taxon from &#34;Himalaya
+with hyaline papillae, apex obtuse, sometimes retuse;     occidentalis&#34;. Subsequently it was shown to occur in the
+cells thin-walled with small to large triradiate trigones.western Himalayas (Kashyap 1932), eastern Himalayas
+Underleaves 0.6-1.3 mm long, 0.6-1.5 mm broad, usu (Chopra 1938b, Herzog 1939) and Nepal (Grolle 1966,
+ally reniform, sometimes cordate or orbicular, apex Hattori 1975, Mizutani 1979a, b.
+usually smooth, obtuse, retuse or sometimes shortly         Stephani (1906-1909) and Kashyap (1932) both de
+bilobed, lamina 15-25 cells long, margin entire or rarely scribed only sterile plants of H. inflatus. However, the
+dentate with hyaline papillae at the margins.             type specimen as well as the specimens obtained from
+  Dioecious. Male inflorescence/branches short, bracts the Hattori Botanical Laboratory (Japan), on which
+ in 2-4 pairs, very small, 2-3 lobed at apex, saccate, most of our study is based showed a dioecious sexuality.
+subtending a single antheridium, male bracteole much        Heteroscyphus inflatus resembles H. tener St., a spe
+smaller with entire or variously lobed apex, antheridial cies known from China, Ceylon, Formosa, Ryuku, Ja
+body globose, stalk biseriate, about 6-9 cells (27-32                     pan, Nepal and India (see Hattori 1966, Mizutani
+ ?mm) long. Female inflorescence terminal on very short                    1979a, b) in having similar lateral leaves and under
+lateral-intercalary branches lacking vegetative leaves,                    leaves. However, in H. inflatus the lateral leaf and
+bracts and bracteoles in one whorl, often united at the
+                                                     underleaf cells have conspicuous, small to large trira
+                                                     diate trigones, and the underleaves are usually smooth
+base, irregularly lobed at apex, margin with or without
+hyaline papillae, perianth (young) campanulate, with margined with smaller projections and their apices are
+shortly trilobed broad mouth, 2-3-plicate, perianth obtuse, retuse or rarely shortly bifid. Whereas in H.
+lobes dentate with large trigones towards apex, spo tener the trigones are nodulose and bulging, the under
+rophyte not seen.                                     leaves have irregularly dentate margins and the apices
+                                                     are bifid.
+Habitat: Terrestrial (on rock) or epiphytic; altitudinal                    Heteroscyphus conjugatus (Mitt.) Engel and Schust.,
+range 2850-4200 m.                                                        a species from Tasmania, is also close to H. inflatus but
+                                                                          the presence of an accessory armature towards the base
+Range: Nepal, India.                                                      of the lateral leaves and underleaves in the former
+                                                                          clearly differentiates it from the latter (Engel and
+Distribution in India: Eastern Himalayas: Sikkim Schuster 1984; Figs 3 and 4).
+ (Tsomgo Lake-Herzog, 1939); W. Bengal (Darjeeling).
+  Western Himalayas: Himachal Pradesh (Chandar Tal,
+Kidar Kanta, above Jalla (Ganges Valley), Alwas-Sil
+                                                                          Heteroscyphus pandei sp. nov. (Figs 2, 3)
+rundi road-Kashyap, 1932).
+                                                                          Plantae mediocres, 25-65 mm longae, 1,3-2,7 mm la
+Specimens examined: INDIA, NW Himalaya, alt.                              tae. Caulis 9-11 cellulas diam., cellulae dissimiles, pa
+12000?, May 1894, J. S. Gamble, 000563 (G) TYPE of rietibus cellularum ad exterior (1-3 strata) incrassatis.
+Chiloscyphus inflatus St.); Teesta Valley Road, Dar Folia remota vel ad basim parum imbricata, alterna,
+jeeling (Eastern Himalaya), R. Udar et al., 10 May, ?pice quam basis multo angustiore, apice plerumque
+1972, 2431/72 (LWU).                                3-spinosa, dentibus disparibus, m?dius grandis maxi
+NEPAL, Between Dor and Chauke, East Nepal, alt. mus, cellulae dissimiles, parietibus cellularum ad apice
+2850 m, on tree trunk and branch, 7 June, 1972, Z.                         et ad marginem (2-3 strata) incrassatis. Amphigastria
+ Iwatsuki, 311348 (NICH); Between Saju Pokhari and non coalita vel interdum cum foliis unilateraliter pe
+ the pass to Topke Gola, East Nepal, alt. 4200 m., on ranguste coalita parva, utrinque unispina, apice profun
+ rock, 16 June, 1972, Z. Iwatsuki, 312116 (NICH).     dissime bifida. Dioica. Androecia in ramis lateralibus
+                                                                          brevibus, in folio perichaetiali antice lobulus dentatus
+
+
+
+Fig. 1. Heteroscyphus inflatus (St.) Srivastava et Srivastava. 1: A portion of the plant (lateral view). 2: A portion of the plant with
+male inflorescence (dorsal view). 3: A portion of plant with female inflorescence (dorsal view). 4: Cross-section of stem.
+5,6: Leaves. 7: Leaves and adjoining underleaf. 8: Marginal cells of leaf showing hyaline papillae. 9-11: Cells of leaf from apex,
+middle and base respectively. 12-16: Underleaves. 17: Marginal cells of the underleaf showing hyaline papillae. 18: Apical
+portion of the underleaf. 19: Male inflorescence. 20-22: Male bracts. 23,24: Male bracteoles. 25: Antheridium. 26: Female</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_THREATENED_2011</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>conservation_status:</strong> Data Deficient</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Heteroscyphus is a genus of liverworts in the family Lophocoleaceae. 87 species was accepted in this worldwide group in 2019.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus allodontus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cambewarranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus circumdentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cuneistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus levieri</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus multifidus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Plagiochilion conjugatum</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus conjugatus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.899622, 145.434118], [-43.53023, 146.506361], [-41.472758, 145.307788], [-42.8319587, 146.3843865], [-43.0866, 146.704621], [-42.16666, 145.6], [-43.073443, 146.690608], [-41.198383, 148.004333], [-42.000305, 146.880605], [-42.990948, 147.124043], [-41.813907, 148.205309], [-43.267706, 146.24972], [-41.633805, 148.201948], [-42.900896, 147.123862], [-42.7986293, 145.9677264], [-42.7333, 146.2], [-43.0972358, 146.6929971], [-43.086882, 146.70204], [-42.990749, 147.246711], [-41.65, 145.94999], [-42.898613, 146.26646], [-42.626633, 147.97697], [-42.085287, 145.913181], [-42.264166, 145.788866], [-43.2486298, 146.2510626], [-41.638514, 147.601694], [-42.256598, 145.22029], [-41.722566, 145.678869], [-43.0787, 146.264315], [-43.440982, 147.248532], [-41.833333, 145.616667], [-42.8311297, 146.3831615], [-42.900369, 147.368839], [-42.899332, 146.388938], [-42.983079, 145.652198], [-42.783333, 145.95], [-43.080804, 146.75568], [-41.633333, 145.933333], [-41.725079, 145.919274], [-43.095015, 146.682697], [-42.720274, 146.634965], [-43.073443, 146.690608], [-41.666667, 145.945833], [-42.109448, 146.15386], [-41.752334, 146.718685], [-41.829975, 145.412567], [-41.712754, 146.740495], [-43.094682, 146.685832], [-42.7772, 145.9817], [-43.440988, 146.754236], [-42.628454, 147.733092], [-41.729599, 146.640628], [-42.758333, 146.36], [-42.8, 145.966667], [-41.714085, 145.078018], [-42.76666, 146.03333], [-43.5404634, 146.0789113], [-43.087024, 146.701253], [-42.622962, 145.659994], [-43.0986307, 146.0343964], [-43.531031, 146.75387], [-42.781962, 145.9843919], [-43.098151, 146.696861], [-42.63, 145.93], [-41.989656, 145.431913], [-42.439802, 145.420735], [-43.529629, 146.382611], [-43.414058, 146.140533], [-42.629755, 147.489194], [-43.34583, 145.890957], [-41.717854, 145.318327], [-42.76666, 146.03333], [-42.09348, 146.109225], [-41.684722, 145.952222], [-43.461889, 146.406306], [-41.973347, 146.99411], [-43.040111, 146.685865], [-43.089372, 146.683832], [-42.65, 146.6], [-41.64575, 145.342194], [-42.987784, 147.860009], [-42.719819, 146.512835], [-42.444247, 145.785403], [-43.095305, 146.683371], [-42.26647, 146.031327], [-41.6833, 145.7333], [-41.65, 145.94999], [-42.990428, 146.633371], [-41.968862, 145.985161], [-43.095036, 146.683925], [-42.777083, 145.981778], [-43.074376, 146.702887], [-43.257921, 146.138958], [-41.897916, 145.31361], [-41.811163, 145.556662], [-43.531694, 146.404417], [-42.000302, 147.1221], [-43.291861, 146.507194], [-42.534286, 145.78366], [-42.672578, 146.570022], [-43.620737, 146.629563], [-43.095127, 146.684109], [-43.0, 147.0], [-43.068984, 146.7036], [-42.8236256, 146.3891093], [-42.816667, 146.383333], [-41.274786, 145.926735], [-41.90516, 148.086459], [-41.65, 145.94999], [-42.777083, 145.981778], [-41.833333, 145.616667], [-41.9, 145.35], [-41.4652953, 145.0843842], [-43.074487, 145.773029], [-42.805633, 145.900657], [-43.086504, 146.702275], [-42.081279, 145.550555], [-41.819667, 146.640125], [-42.7819621, 145.9677261], [-41.8333, 145.5167], [-41.71955, 145.438498], [-42.776667, 145.976667], [-42.781889, 145.963972], [-42.783333, 145.983333], [-43.083333, 147.883333], [-43.092543, 146.677942], [-42.7667, 145.9833], [-41.261923, 144.971972], [-43.095489, 146.684599], [-42.259749, 145.425237], [-43.095852, 146.68569], [-43.098403, 146.696626], [-41.548446, 147.600858], [-43.350944, 146.754599], [-41.25845, 145.491417], [-42.1652959, 145.5343886], [-41.1516826, 145.0466029], [-43.03741, 146.685878], [-41.9361, 146.4167], [-41.6333, 145.9333], [-42.989379, 146.388046], [-43.0, 147.0], [-43.085869, 146.703961], [-43.0, 147.0], [-43.0, 147.0], [-42.26741, 147.850149], [-41.65, 145.083333], [-46.981144, 168.007058], [-47.024007, 167.767552], [-36.8556446, 175.5688251], [-46.866667, 167.95], [-47.189, 167.708], [-47.126457, 167.746734]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [92.2, 82.1, 105.2, 114.4, 173.3, 166.3, 195.1, 214.1, 199.3, 171.8, 111.1, 128.9], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.7, 19.8, 17.5, 14.2, 11.4, 9.5, 8.9, 9.7, 11.6, 13.6, 16.4, 17.7], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.2, 9.3, 8.1, 6.3, 4.9, 3.3, 2.6, 2.8, 4.1, 5.0, 6.8, 7.9], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

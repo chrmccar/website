@@ -1,0 +1,1431 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lepidozia laevifolia — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Lepidozia laevifolia</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Lepidozia laevifolia</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge">Lepidozia</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">482</p>
+    <footer>115 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">23</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">15</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>pinnate</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>trilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">NZ_CHECKLIST_1998</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">NZ_CHECKLIST_1998</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>bark</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>775.0</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>6.0</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>present</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">LEPIDOZIA_NZ_REVISION_2001</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>LEPIDOZIA_NZ_REVISION_2001</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Field Museum of Natural History
+1400 South Lake Shore Drive
+Chicago, Illinois 60605-2496, U.S.A.
+
+
+
+
+Accepted July 18, 2000
+Published August 31, 2001
+Publication 1513
+
+
+
+
+PUBLISHED BY FIELD MUSEUM OF NATURAL HISTORY
+      2001 Field Museum of Natural History
+               ISSN 0015-0746
+PRINTED IN THE UNITED STATES OF AMERICA
+Table of Contents                                                    12.   Lepidozia setigera Steph                  38
+                                                                     13.   Lepidozia procera Mitt                    42
+                                                                     14.   Lepidozia obtusiloba Steph                44
+ABSTRACT                                                   1         15.   Lepidozia obtusiloba Steph                46
+INTRODUCTION                                               1         16. Lepidozia obtusiloba Steph                  47
+LEPIDOZIA (DuM.) DUM                                      4          17. Lepidozia ornata Engel                      50
+  Affinities and Intrageneric Classification              5
+                                                                                                                     54
+                                                                     18.   Lepidozia concinna Col
+  Taxonomic Characters and Morphology          .          14
+                                                                     19.   Lepidozia concinna Col                    55
+  Conspectus of Subgenera of Lepidozia       . .          18
+                                                                     20. Lepidozia laevifolia (Hook. f.   &amp; Tayl.)
+  Conspectus of New Zealand Lepidozia                                      G. L. &amp; N                                 58
+      Taxa                                                19
+                                                                     21. Lepidozia laevifolia (Hook. f.   &amp; Tayl.)
+  Key to New Zealand Species of Lepido-                                  G. L.   &amp;N                                  60
+        zia                                              20
+                                                                     22. Lepidozia laevifolia var. alpina Schust.
+ACKNOWLEDGMENTS                                          104
+LITERATURE CITED                                         104               &amp; Engel                                   63
+
+INDEX TO TAXA     .                                      106         23. Lepidozia fugax Engel                       64
+                                                                     24. Lepidozia novae -zelandiae Steph            68
+                                                                     25. Lepidozia novae-zelandiae var. heteros-
+
+                                                                           tipa Schust                               69
+List of Figures
+                                                                     26. Lepidozia novae-zelandiae var. minima
+                                                                           Schust., L. spp                           72
+ 1.   Telaranea remotifolia Hodgs                          6         27. Lepidozia acantha Engel                     73
+ 2.   Telaranea mooreana (Steph.) Schust                   7         28. Lepidozia elobata Schust                    75
+ 3.   Telaranea centipes (Tayl.) Schust                    9         29. Lepidozia pumila Engel                      77
+ 4.   Telaranea centipes (Tayl.) Schust                   10         30. Lepidozia bidens Engel                      80
+ 5.   Telaranea tuberifera Engel &amp; Schust.         ...    11         31. Lepidozia kirkii Steph                      83
+ 6.   Lepidozia pendulina (Hook.) Lindenb.,                          32. Lepidozia hirta Steph                       86
+      L. concinna Col., and L. microphylla
+                                                                     33. Lepidozia ulothrix (Schwagr.) Lindenb.
+      (Hook.) Lindenb                                     12
+                                                                                                                     89
+ 7.   Lepidozia spinosissima (Hook. f.   &amp;                           34. Lepidozia ulothrix (Schwagr.) Lindenb.
+      Tayl.) G. L. &amp; N                                    24
+                                                                                                                     90
+ 8.   Lepidozia spinosissima (Hook. f.   &amp;
+                     N&amp;                                   25
+                                                                     35. Lepidozia glaucophylla (Hook.     f.   &amp;
+      Tayl.) G. L.
+                                                                           Tayl.) G. L.   &amp;N                         93
+ 9.   Lepidozia microphylla (Hook.) Lin-
+
+---
+
+are shallowly 4- (exceptionally 5- or 6-) lobate to                                             dian and basal sectors (Figs. 7 7a; 15 9); the      :    :
+
+
+
+
+lobulate, as in, for example, L. spinosissima (Fig.                                             cylindrical sector of the perianth is (2)3-stratose
+7   :
+        4, 5). They are particularly                     shallowly lobed in                     (Fig. 15 8b, m). Perianths become narrowed and
+                                                                                                             :
+
+
+
+
+L. obtusiloba (Fig.          and in this species
+                                       15   :   2, 3),                                          bluntly 3-gonous distally (Fig. 7 7b, c) and deep-
+                                                                                                                                                :
+
+
+
+
+the bracts may occasionally have obsolete lobes,                                                ly plicate for varying distances just below the
+with each represented solely by a slime papilla                                                 mouth. The perianth also becomes unistratose dis-
+mounted on 2 laterally juxtaposed cells that pro-                                               tally (Fig. 158d, d&#39;). The perianth mouth in most
+                                                                                                                    :
+
+
+
+
+ject slightly more than the neighboring cells (Fig.                                             of our species is shallowly 3-lobed, with the lobe
+ 15 2, bract at left, 4). In Lepidozia laevifolia the
+        :
+                                                                                                margins composed of irregularly sinuate-rhom-
+bract         summit may have 4 small                           teeth that are                  boidal cells (Fig. 15:6). These mouth cells are
+
+hardly differentiated from the otherwise crenate-                                               laterally free for varying lengths at the apical end,
+denticulate apex (Fig. 21 2).                    :                                              and only rarely are completely free laterally. This
+
+
+
+ENGEL &amp; SCHUSTER: AUSTRAL HEPATICAE. LEPIDOZIA                                                                                                                     17
+condition results in the prevailing crenate-dentic-                   taxa with 8 rows mentioned above. Seta differ-
+ulate mouth. Examples of exceptions to this con-                      ences also distinguish L. kirkii (10-14 rows) from
+dition follow. The perianth mouth in L. spinosis-                     L. hirta (9 rows).
+
+sima is shallowly lobulate (not divided into 3                             CAPSULES      The capsule in Lepidozia is ellip-
+lobes), and the teeth of the mouth are composed
+                                                                      soidal to oblong in profile (Fig. 15  10, L. obtu-  :
+
+
+
+
+of a single cell or a uniseriate row of at most 3                     siloba), and, like the seta, there seems to be a
+cells (Fig. 7   :
+                     8),   with the teeth thus being more             weak correlation between gametophytic vigor and
+                                                                      the thickness of the capsule wall. Thus, smaller
+protracted than in most species. The perianth of
+L. laevifolia is shallowly 3-lobed, and the mouth                     species, such as L. fugax and L. pumila, have 3-
+
+crenate-denticulate, with mouth cells laterally free
+                                                                      stratose capsule walls, whereas larger species,
+
+---
+
+2-lobed to ca. 0.25; first branch underleaf (1)2-4-
+ley, N of N end Lake Wakatipu, ca. 365 m, Child 1197
+       OTAGO/WESTLAND PROV. BOUNDARY: Haast                    lobed, inserted on ventral side of branch base to
+(F).
+Pass, Matthews s. n. (Allison H3158) (F); Haast Pass,          the ventral-lateral side of junction of main axis
+ca. 610 m, Child H4506 (F). WESTLAND PROV.:                    and branch, in both cases the first branch under-
+Camp Creek,          W
+               of Alexander Range, 210 m, ReifCllZ             leaf aligned with underleaves of branch. Ventral-
+(F); Ahaura, ENE of Greymouth, ca.     150 m, Child
+H3745 (F). MARLBOROUGH NEAR BOUNDRY                            intercalary branching occasional, leafy, at times
+WITH NELSON PROV: Mt. Richmond Forest Park,                    becoming leading shoots. Stems flexuous, ca. 10
+Red Hills, track to Maitland Hut, NE of St. Arnaud, ca.        cells in diam., the cortical cells in 1 layer of thick-
+700-920 m, Engel 21438 (F). MARLBOROUGH                        walled cells    somewhat               than   the    thick-
+                                                                                             larger
+PROV: Red Hills,          W
+                 of hut ca. 915 m, Child H4373
+                                                               walled medullary cells. Leaves when dry deeply
+(F).   NORTH ISLAND. WELLINGTON PROV: Tonga-
+riro Natl. Park, ca. 7     km from Ohakune on Ohakune Mt.      cup-shaped, with the tips of the lobes incurved
+Road, 900 m, Engel 22702           (F). GISBORNE PROV:         and not visible in dorsal view; leaves when moist
+                                                               rigid, distinctly concave, contiguous, with much
+Urewera Natl. Park, Waikareiti Track between track en-
+trance and Lake Ruapani,       N
+                           of eastern extremity of Lake
+                                                               of stem visible in dorsal view, 0.50.65    mm long
+Waikaremoana, 650-920 m, Engel 20588 (F). SOUTH
+AUCKLAND PROV: Waiotapu, Rotorua, Child 43 C                   at longest point, 0.5-0.7   mm wide at widest point,
+(F).                                                           spreading, the insertion distinctly incubous; leaves
+                                                               variable, subsymmetrical to distinctly asymmetri-
+
+Lepidozia laevifolia (Hook. f.            &amp; Tayl.) G. L. &amp;     cal,subequally 4(6)-lobed, sometimes with a
+  N. Figures 20-22                                             shallow dorsal sinus, the leaves divided to ca.
+                                                               0.4-0.65 (median sinus), the distance from dorsal
+   Jungermannia laevifolia Hook. f. &amp; Tayl., London J.         sinus base to insertion equal to or much greater
+     Bot. 3: 385. 1844 (3: 285. [sic] in errore pro 385).      than that from ventral sinus to insertion. Lobes
+        Lepidozia laevifolia (Hook. f. &amp;  Tayl.) G. L.&amp;  N.,
+                                                               broadly to narrowly acute, sometimes short-apic-
+        Syn. Hep. 208. 1845. Mastigophora laevifolia
+                     &amp;                                         ulate, thetwo ventral occasionally somewhat di-
+        (Hook. f.   Tayl.) Trev., Cat. Herb. Crypt. Trevisan
+        2: 30. 1853. Lectotype (nov.): Campbell Is., Nov.      vergent from the dorsal lobes, the lobe margins
+        1840, Hooker (YR\).                                    entire to somewhat sinuate to occasionally 1-2-
+   Lepidozia minuta Col., Trans.      &amp;
+                                     Proc. New Zealand
+                                                               dentate, terminating in a single cell or a uniseriate
+     Inst. 18: 245. 1886 non L. minuta Steph., Spec.
+                                                               row of 2-3 nonelongated, thick-walled cells; dor-
+     Hep. 3: 603. 1909. Original material: New Zealand,
+                                                               sal lobe 5-10 cells wide at base (at times 4 cells
+     Waipawa Co., near Norsewood, 1885, Colenso a.
+        1419 (BM!, o = 0, WELT!).                              wide in minute phases). Disc subsymmetrical to
+   Lepidozia retrusa Col., Trans.     &amp;
+                                     Proc. New Zealand
+                                                               asymmetrical and then obliquely truncate, 12-18
+     Inst. 22: 455. 1890 (1889). Original material: New
+                                                               cells high at dorsal sinus, 4-9 cells high at ventral
+     Zealand, Waipawa Co., S of Dannevirke, 1889,
+      Colenso a. 1515 (BM! c. sporo., G      0, WELT!
+                                                               sinus; dorsal   margin ampliate, cordate to auricu-
+        c. per.).                                              late at the insertion (rarely decurrent), entire to
+   Lepidozia papillata Steph., Spec. Hep. 3: 595. 1909.        sinuate,   sometimes irregularly crenulate to den-
+        Original material: Auckland Is., Hooker (G!, &#34;sub      tate; ventral margin shorter than dorsal,           cordate
+        Lepid. dispar&#34;).
+                                                               at the insertion, entire or   sometimes with an ac-
+   Lepidozia asperifolia Steph., Spec. Hep. 3: 596.   1909.
+        Original material:    New Zealand, South Is. (non      cessory lobe. Cells evenly thick-walled, occasion-
+
+---
+
+short, determinate, tightly spicate, sometimes cer-      dense, rather coarse, sharply defined, rather broad
+nuous      ventral-intercalary   branches   from main    papillae and simple or furcate vermiculate mark-
+shoot or terminal on long flagelliform primary           ings. Elaters   rigid to feebly tortuous, 9.6-10.1
+branches; bracts ventricose-cucullate, 2-lobed to        /Am wide, only slightly tapering toward tips, bis-
+ca. 0.3-0.4, the lobes acute to apiculate, the lateral   piral to tips, the spirals 3.4-3.8    /tm wide.
+margins occasionally with several slime papillae;
+antheridia 1-2 per bract, the stalk biseriate.    Gy-         DIFFERENTIATION   Examination of the type of
+noecia on abbreviated ventral-intercalary branch-        Jungermannia laevifolia, a Campbell Is. plant, re-
+es issuing from     main stem; bracts of innermost       veals that the species     is   identical with the   com-
+series   much larger than leaves, erect and sheath-      mon New Zealand plant called Lepidozia asperi-
+ing the perianth, the bracts deeply concave, sub-        folia by Stephani (1909, sub L. &#34;levifolia&#34;), who
+orbicular to broadly ovate to suboblate; apices          maintained that the true L. laevifolia did not occur
+with 4 small teeth hardly differentiated from the        in   New Zealand. Hodgson (1956) and others (e.g.,
+otherwise crenate-denticulate apex, or with (2)4         Allison    &amp; Child, 1975) use the name Lepidozia
+short, rather irregular lobes composed of   reg-         laevifolia collectively to refer to all of the       New
+ularly rectangular    + irregularly and .feebly sinu-    Zealand species of the &#34;laevifolia&#34; complex.
+ate-rhomboidal cells, the apical end of the mar-         When differentiated, however, as they are here,
+ginal cells often feebly diverging, the lobes thus       the name must be applied to the plant with leaves
+
+finely    and sparingly crenulate; lamina composed       densely papillose, and broadly ampliate dorsal
+of       regularly short rectangular cells, the margin   margins. The species epithet, &#34;laevifolia,&#34; is un-
+bordered by cells of variable shape, some hardly         fortunate and misleading, standing in contradic-
+
+longer than wide, others rather long and narrow,         tion to the more appropriate names &#34;papillata&#34;
+the apical or free end of marginal cells variously       and &#34;asperifolia.&#34;
+divergent and forming a short projection or a               A note on the type of Lepidozia papillata (G!)
+tooth, the margin irregularly crenate-denticulate to     indicates that the specimen was extracted from a
+the base, the teeth occasionally composed of a           specimen of Lepidozia dispar (= Kurzia hippu-
+few to several cells; bracteole similar in size and      roides), leg. Hooker on Auckland Is., Herb. Kew.
+form. Perianth long and prominent, slenderly cy-         At least one of the specimens labeled L. dispar at
+lindrical-fusiform, slightly curved, terete below,       BM includes strands of Lepidozia laevifolia, but
+obscurely trigonous above, distinctly and deeply         other liverwort species that are associated with the
+3-plicate toward mouth, the perianth gradually           type of L. papillata at G are not present, and this
+narrowing toward the strongly contracted, shal-          element in the BM specimen cannot be confidently
+lowly 3-lobed mouth, the lobes composed of               regarded as an isotype of L. papillata.
+tiered, long,   narrow, subrectangular cells; mouth           Stephani (1892) referred L. minuta Col. and L.
+cells rather thick-walled, at the apical end laterally   retrusa Col. to L. praenitens (= Telaranea praen-
+free for varying lengths, the     mouth thus crenate-    itens   (Lehm. &amp; Lindenb.) Hodg.). The types of
+denticulate; perianth cells regularly rather short       these   two Colenso species (BM!) were annotated
+to long subrectangular below mouth and here the          by Stephani as L. praenitens&#39;, both are Lepidozia
+cuticle is conspicuously striate-papillose; perianth     laevifolia.
+2-stratose near base.                                       Small, poorly developed plants of L. laevifolia
+     Seta with 8 rows of outer cells surrounding an      and L. pumila may be difficult to distinguish sat-
+inner core of 18 much smaller cells. Capsule wall        isfactorily. Both species can have distinctly con-
+30-35 n,m thick, of 3-4 or 4-5 layers; outer layer       cave leaves with the lobes incurved and hidden
+of cells with two-phase development, the longi-          when viewed in dorsal aspect. Well-developed
+tudinal walls with sinuous, sheetlike thickenings        leaves should always be selected for examination,
+
+alternating with those that are devoid of thicken-       but a number of leaves should also be examined
+ings (or are rarely locally thickened), the trans-       to determine the range of variation. The leaves of
+verse walls usually devoid of thickenings or spo-        L. laevifolia are nearly    always coarsely papillose
+radically have an isolated nodule; innermost layer       (Fig. 20  8-10), and the papillae are typically pre-
+                                                                    :
+
+
+
+
+of cells   tiered, narrowly rectangular, with no-        sent only on the abaxial surface of the leaf (the
+dulelike to spinelike thickenings common, with           adaxial surface being almost smooth). Distinctly
+
+
+
+ENGEL &amp; SCHUSTER: AUSTRAL HEPATICAE. LEPIDOZIA                                                                  57
+                                                                          50 M
+
+
+
+
+   FIG. 20.                                &amp;
+              Lepidozia laevifolia (Hook. f.  Tayl.) G. L. &amp; N. (Figs. 6, 7 from var. acutiloba; remainder from var.
+laevifolia). 1. Sector of main shoot with Frullania-type branch, ventral view (BUL, first branch underleaf). 2. First
+branch underleaves. 3. Sector of shoot, dorsal view. 4-7. Leaves and underleaves (ul), all drawn at same scale. 8.
+Median disc cells showing cuticular papillae. 9. Marginal cells of ampliate sector of disc. 10. Leaf lobes showing
+cuticular papillae in lobe at left. 11. Portion of stem with underleaf disc and lobe bases. Note ventral merophyte
+width of 10 cells and rhizoid origin (arrows indicate sinus bases). 12. Seta, cross section. (Figs. 1-3 from Engel
+
+
+
+58                                                                                       FIELDIANA: BOTANY
+papillose leaves may vary vis-a-vis the number of                           2.   Leaf lobes narrowly acute, the two dorsal
+papillae per cell: Some populations have very                                    lobes separated by a narrow, rather deep si-
+coarse papillae that number ca. 7-8 or 12-15 per                                 nus (less than 45); median disc cells large,
+cell (as in the type       of L. laevifolia, Fig. 20        :
+                                                                8).              18-25(28) /x,m wide; leaf margins sinuate to
+Other populations are less coursely papillose, with                              occasionally  1-2 -dentate; underleaf lobes
+ca.    30 papillae per cell. The dorsal leaf margin in                           slenderly acuminate; leaves     strongly
+L. laevifolia is usually ampliate and distinctly cor-                            asymmetrical. Occurring from (60 m) 300
+date at the insertion, the margins of the disc and                               m to subalpine zone         var. laevifolia
+lobes are sinuate, and the cells of the ampliate                            2.   Leaf lobes broadly acute, the two dorsal
+portion are small and abruptly differentiated from                               lobes separated by a broad, shallow sinus
+the cells of the disc. Typically, in L. pumila the                               (45-90); median disc cells narrow, 16-20
+cuticle is smooth, and the dorsal leaf margin is                                 /xm wide; leaf margins often sinuate, never
+straight and abruptly cordate at the base (Fig. 29                :
+                                                                                 toothed; underleaf lobes acute to broadly
+1,    4, 5); the leaf cells   appear large in proportion                         acuminate; leaves weakly asymmetrical.
+to the size of the leaf, giving the leaf a &#34;cellular&#34;                            Occurring   in   upper-elevation forests to al-
+appearance. Another useful character in distin-                                  pine zone                        var. acutiloba
+
+guishing L. pumila from L. laevifolia is the pres-                    1 .   Dorsal half of leaf very shallowly bilobed (to
+ence in the former species of a thickened outer                             0.15-0.2); disc cells evenly and very strongly
+wall of at least some of the marginal cells of disc                         thick-walled, no trigones                 var.   alpina
+and lobes (Fig. 29     :
+                           6, 8).
+
+   Suboptimal phases of L. laevifolia at times have                   Lepidozia laevifolia var. laevifolia
+mostly undivided first branch underleaves and
+therefore may be confused with L. acantha. Such                             Leaves       strongly     asymmetrical,    obliquely
+populations differ     from L. acantha by the non-                    truncate, 4(6)-lobed, divided to 0.5-0.65          (median
+elongated cells of the leaf lobe uniseriate row, the                  sinus); leaf lobes  narrowly acute, the two dorsal
+arched dorsal margin of the leaf disc, and the                        lobes    paired, separated by a narrow, rather deep
+presence of at least some bifid (or trifid) first                     sinus (less than 45); disc 12-15 cells high at dor-
+branch underleaves. Bilobed first branch under-                       sal sinus, 4-7 cells high at ventral sinus, the ven-
+
+leaves in L. acantha are very rare. It is important                   tral sinus often        reflexed; leaf margins occasion-
+to select the best-developed shoots               when exam-          ally 1-2-dentate; median disc cells18-25(28) /tm
+ining suspected suboptimal populations.                               wide; underleaf lobes slenderly acuminate, at
+   In the dilated dorsal leaf bases similar to L. elo-                times only 2-3 cells wide at base.
+bata,     which   differs in the consistently            unlobed
+first   branch underleaves (Fig. 28     :
+                                            1);   the relative-          DISTRIBUTION-ECOLOGY Amphipacific tem-
+ly narrower leaves (Fig. 28 3, 4, 8); and the shal-
+                                    :                                 perate: Macquarie Is., Auckland and Campbell Is.,
+lower median sinus of the leaf (Fig. 28 3, 4, 7-     :
+                                                                      New Zealand (South Is., North Is.), Tasmania,
+8).                                                                   Australia (Victoria, N.S.W.), Kerguelen Is., Mar-
+      The species is separable into three varieties, as               ion and Prince Edward Is., Falkland Is., southern
+follows.                                                              South America, Juan Fernandez Is.
+                                                                        In New Zealand var. laevifolia typically ranges
+                                                                      from middle-elevation forests to the subalpine
+Key to the varieties of L. laevifolia                                 zone and is able to tolerate considerable exposure.
+                                                                      However, it may be present in lower-elevation for-
+1 .   Dorsal half of leaf more deeply bilobed (typi-                  ests,and it extends as far north as Radar Bush
+      cally to 0.2 or more); disc cells moderately and                (WSW of Cape Reinga), where it occurs on rot-
+      evenly thick-walled, occasionally with small                    ted, decorticated logs in forests of Beilschmiedia-
+
+      trigones                                   2                    Vitex-Hoheria and Cvathea dealbata (100 m).
+
+
+
+
+18406, New Zealand, South Is., Arthur&#39;s Pass Natl. Park, Kelly Range; 4, 8-10 from type of L. laevifolia; 5 from
+Engel 20585, New Zealand, North Is., Gisborne Prov., Urewera Natl. Park, Waikareiti Track; 6 from Engel 22816,
+South Is., Nelson Prov., road to Rainbow Skifield in vicinity of Red Gate, just              W
+                                                                                of Wairau River; 7 from type of
+var. acutiloba; 1 1 from Engel 22885, New Zealand, South Is., Westland/Canterbury Prov. Boundary, Arthur&#39;s Pass
+Natl. Park, Bealey Valley Track; 12 from Child 2849, New Zealand, South Is., Otago Prov., Maungatua.)
+
+
+
+
+ENGEL &amp; SCHUSTER: AUSTRAL HEPATICAE. LEPIDOZIA                                                                                  59
+   FIG. 21.                                &amp;
+              Lepidozia laevifolia (Hook. f.   Tayl.) G. L.&amp;   N. 1. Two bracts and (to right) bracteole from innermost
+series (all drawn to same scale). 2, 3. Portions of apex of 2 innermost bracts. 4, 5. Complete lateral margin and basal
+half of margin, respectively, of innermost bracts (drawn to same scale). 6, 7. Portions of perianth mouth (drawn to
+same scale). 8, 9. Capsule, cross sections of 3-4- and 4-5-stratose walls. 10. Capsule wall, outer layer. 11. Capsule
+wall, inner layer. (All from Engel 20669, New Zealand, North Is., near Gisborne/South Auckland Prov.        Boundary,
+Urewera Natl. Park, crest trail from Highway 38 towards Whakataka summit.)
+
+
+60                                                                                        FIELDIANA: BOTANY
+Also present at ca. 60-80 m in the Kiwanis Re-                   (F). MARLBOROUGH NEAR BOUNDRY WITH
+serve (S of Kaitaia), where it occurs on nikau in                NELSON PROV: Mt. Richmond Forest Park, Red Hills,
+                                                                 track to Maitland Hut, NE of St. Arnaud, ca. 700-920
+mixed broadleaf forests dominated by Beilschmie-
+                                                                 m, Engel 21472 (F). NORTH ISLAND. Without specific
+dia and   Vitex, with Rhopalostylis (nikau), Co-                 locality, &#34;alpine interior,&#34;   Colenso a.2200 as L. praen-
+prosma, Dacrycarpus, and Hoheria. Generally,                     itens (BM).   WELLINGTON PROV: Near eastern border
+                                                                 of Tongariro Natl. Park along road to Tree Trunk Gorge,
+however, the variety is less common below 300
+                                                                 ca. 0.5   km W from gorge, 750 m, Engel 21209 (F). GIS-
+m. In forests it occurs on shaded, moist cliff faces
+                                                                 BORNE PROV: Urewera Natl. Park, Waikareiti Track
+and boulders, soil banks (including banks of road-               between track entrance and Lake Ruapani, N of eastern
+cuts through the forest, and here at times mixed                 extremity of Lake Waikaremoana, 650-920 m, Engel
+with Breutelia elongata), rotted logs, and occa-                 20585 (F).NEAR GISBORNE/SOUTH AUCKLAND
+                                                                 PROV BOUNDARY: Urewera Natl. Park, crest trail
+sionally over bark. It is rather common on the
+                                                                 from highway 38 toward Whakataka summit, N of
+floor and loosely on bark at the bases of Leptos-
+                                                                 northern extremity of Lake Waikaremoana,         930-1030
+permum in the    &#34;Frost Flats&#34; (South Auckland                   m, Engel 20669        c.sporo. (F). SOUTH AUCKLAND
+Prov., near Otupaka Stream,      SW
+                                of Minginui). In                 PROV:      &#34;Frost Flats,&#34; on South    Road between Totara
+subalpine situations it occurs on soil under and in              Salvage Road and Wong Road, near Otupaka Stream,
+between tussocks (at times where the tussock base
+                                                                 SW of Minginui, Engel 20747 (F); Whirinaki Forest
+                                                                 Park, Waterfall Loop track, near Whirinaki River, SSW
+is   rotted), under shrub cover, in boulder fields, on           of Minginui. Engel 20694 (F); Rotorua thermal area,
+          (where it sometimes forms sheets) and
+cliff faces                                                      Hatcher 90 (F); 7 km N of junction of Highways 33 and
+on clayey banks. In boggy sites, it may occur                    30 on Highway 30, Kantak &amp; Churchill 78 c. d (F).
+                                                                 NORTH AUCKLAND PROV: Auckland, Cheeseman
+among Sphagnum, and then the shoots are often                              L novae -zelandiae (G); NE Waitakere
+                                                                 32, syntype of
+quite straggly.
+                                                                 Ranges, Swanson University Reserve, Tram Valley
+                                                                 Road, 95 m, Engel 20466 c. per. (F); same loc., Brag-
+     SELECTED SPECIMENS SEEN     CAMPBELL IS.: Kirk              gins 99/275 (AKU); SE corner of Waipoua Forest, just
+314, syntype of L. novae -zelandiae   c.   sporo. (G).   NEW     N of Tutamoe, 540 m, Engel 21118 (F); Mangamuka
+ZEALAND. SOUTH ISLAND. SOUTHLAND: Fiord-                         Walkway, Maungataniwha Range, ESE of Kaitaia, sad-
+land Natl. Park, Borland Road, 14 km by road WNW                 dle on State Highway 1, 390 m, Engel 20960 (F); Ki-
+from Borland Lodge, near South Branch of Borland                 wanis Reserve, junction of Okahu Stream and unnamed
+Burn, 855-870 m, Engel 18687 (F); East Dome, Garvie              stream, ca. 5 km S of Kaitaia, N edge of Herekino Forest
+Range, ca. 1370 m, Child H3913 (F); Wilmot Pass Road             area, S of Quarry, ca. 60-80 m, Engel 20907 (F); Radar
+to Deep Cove, ca. 305 m, Child H5602 as L microphylla            Bush,     WSW of Cape Reinga, S of Mt. Te Paki, ca. 100
+(F). OTAGO PROV.: Ajax Swamp, ca. 1 km N of Ajax                 m, Engel 20850 (F).
+Hill, Catlins River area, ca. 610 m, Child H5492 (F); Mt.
+
+Maungatua,    W  of Mosgiel, ca. 500 m, Engel 17781 (F);
+                                                                                             var.   acutiloba Engel,
+Maungatua,    W  of Mosgiel, ca. 855 m, Child HMO as L.          Lepidozia laevifolia                                    var.
+                                                                    nov.
+microphylla (F); Silverpeaks, N of Dunedin, ca. 455 m,
+Child H3406 (F); Flagstaff, NW     of Dunedin, ca. 455 m,
+Child 1377 as L. microph\lla (F); Lammermoor Range,                 Lobi foliares late acuti, sinu inter lobos dorsales duos
+ca. 610 m, Child H3843 (F); Great Moss Swamp,            WSW     non profundo, lato (45-90) instructi; cellulae medianae
+of Middlemarch, ca. 305 m, Child H472 (F); Kakanui               disci angustae 16-20 /im latae; lobi amphigastrii acuti
+Range, ca. 1220 m. Child H2837 (F). WESTLAND                     vel late acuminati.
+PROV.: Near Hercules Creek on Route 6 in Mt. Hercules
+Scenic Reserve, Engel 6559 (F); upper Otira Valley, ca.
+1220 m, Child H5342 (F); Arthur&#39;s Pass Natl. Park, Kel-
+                                                                    HOLOTYPE       New      Zealand,    South   Is.,   Otago
+ly Range, off track to Carroll Hut, above Kellys Creek,          Prov.,    W slope of Flagstaff, NW of Dunedin, 560
+N of Otira,    1040-1110 m, Engel 18406          (F);    Camp    m, Engel 17632 (F); isotype: (CHR).
+Creek,   W of Alexander Range, 320 m, Reif C29C           (F).
+WESTLAND/CANTERBURY PROV. BOUNDARY:                                 Leaves weakly asymmetrical,
+Arthur&#39;s Pass Natl. Park, Arthur&#39;s Pass, near Temple Ba-                                             equally 4(6)-
+sin Ski area, Engel 6473A (F); ibid., Dobson Nature              lobed, divided to 0.35-0.5 (median sinus); leaf
+Walk, summit area of Arthur&#39;s Pass, 920 m, Engel 22025           lobes broadly acute, the two dorsal lobes separat-
+(F); ibid., Bealey Valley Track, ca. 875-900 m, Engel            ed by a broad, often shallow sinus (45-90), the
+22885 (F). CANTERBURY PROV: Mt. Cook Natl.
+                                                                 disc 16-19 cells high at dorsal sinus, 6-10 cells
+Park, Governors Bush, SW of town of Mt. Cook, 760-
+800 m, Engel 18206 c. per. (F); Arthur&#39;s Pass Natl.              high at ventral sinus; leaf margins often sinuate
+Park, immediately below Punchbowl Falls, Engel 6870              but rarely toothed; median disc cells small, 16-20
+(F); Mt. Gloriana, Spencer Range, 1676 m, Child              H   /im wide; underleaves shallowly lobed, the lobes
+3965B (F); Mt. Tourlesse, Hatcher 1221 (F). NELSON               acute to broadly acuminate.
+PROV: Nelson Lakes Natl. Park. Pinchgut Track,       of  W
+southern sector of Lake Rotoiti. SSW of St. Arnaud, ca.
+1280-1390 m, Engel 21405 (F); ibid., NE margin of                   DISTRIBUTION-ECOLOGY New Zealand (South
+Lake Rotoroa,     Wof St. Arnaud, 520 m, Engel 21505             Is.,North Is.). Typically an upper-elevation plant,
+
+---
+
+along small stream ca. 0.5 km from Ohakune Mt. Road,           sinus and cordate to cordate-auriculate dorsal ba-
+ca.  1230 m, Engel 21302 (F). GISBORNE PROV:
+Urewera Natl. Park, Waikareiti Track between track en-         ses) the variety is similar to L. obtusiloba. Lepi-
+trance and Lake Ruapani, N of eastern extremity of Lake        dozia obtusiloba, however, has leaf and underleaf
+Waikaremoana, 650-920 m, Engel 20552 (F).                      lobes usually blunt; they are always sharp in var.
+                                                               alpina (Fig. 22 1-8). Moreover, L. obtusiloba
+                                                                                        :
+
+
+
+
+Lepidozia    laevifolia var. alpina       Schust.   &amp; Engel,   has leaves with a much deeper ventral sinus than
+                                                               in var. alpina.
+                                                                 The var. alpina, as the name implies, is an alpine
+  Dimidium folii dorsale non profunde bilobum, usque           plant,    known only from ca. 1950 m. It is possible
+0.15-0.2 longitudinis folii; cellulae disci parietibus ae-     that var. alpina is a mere alpine extreme in which,
+
+qualiter atque   pervalde incrassatis praeditae, trigonis      with extreme exposure, the dorsal leaf lobes are
+carentes.                                                      abbreviated. Other characters of var. alpina rele-
+                                                               vant to extreme exposure are the very thick-walled
+      HOLOTYPE    New Zealand, South Is., Fiordland            leaf cells and the markedly thick cuticle.
+Natl. Park, Gertrude Cirque       NE of Homer Tunnel,            Leaf surface ornamentation in this species is
+below saddle on       W
+                   facing exposed cliff, 1945 m,               variable. It may be distinctly papillose on some
+
+Schuster 95-2089 (hb. Schuster).                               shoots or obscurely so on others.
+
+
+
+62                                                                                                   FIELDIANA: BOTANY
+  FIG. 22.    Lepidozia laevifolia van alpina Schust. &amp; Engel. 1, 2. Leaf and underleaves, main stem (X75; 300 /im
+scale). 3. Leaf and underleaf, main stem (X75; 300 /im scale). 4. Ventral half of leaf from Fig. 1 (X183; 150 /j.m
+scale). 5, 6. Apices of dorsalmost lobe (X183; 150 /im scale). 7. Leaf and underleaf (X51; 400 ^tm scale). 8. Two
+large stem leaves (X51; 400 fim scale). 9. Part of main axis with bases of two branches; note trifid basal branch
+underleaves (UL ) (X42; 600 /tm scale). 10. Shoot sector, ventral aspect, with bases of two Frullania-lype branches
+                1
+
+
+
+
+at UL
+      1
+         basal branch underleaves, at HL, part of stem half-leaf visible (X51; 500 fim scale). 11. Two leaves (X51;
+          ,
+
+
+400 /Am scale). 12. Stem cross section (X225; 100 /im scale). (All from type.)
+
+
+
+   DISTRIBUTION-ECOLOGY         Known     only   from       Lepidozia fugax Engel, sp. nov. Figure 23.
+type plants, which occurred admixed with Her-
+bertus alpinus and Gymnomitrion strictum, creep-              Plantae in aspectu laceratae; apices lobi foliaris caduci
+ing amid Hymenophyllum.                                     e cellulis turgidis doliiformibus subisodiametrae con-
+
+
+
+
+ENGEL &amp; SCHUSTER: AUSTRAL HEPATICAE. LEPIDOZIA                                                                      63
+                                                                                              15
+
+---
+
+II, pp. i-xii, 1-1062, figs. 85-301. Columbia Univer-       (part II).
+
+  sity Press,   New York.                                   STEPHANI, F. 1892. A revision of Colenso&#39;s New Zealand
+SCHUSTER, R. M. 1973 [1972]. Phylogenetic and taxo-           Hepaticae, with descriptions of new species collected
+  nomic studies on Jungermanniidae. J. Hattori Bot.           by him. J. Linn. Soc., Bot., 29: 263-280, pis. 26-28.
+  Lab., 36: 321-405, figs. 1-11.                            STEPHANI, F. 1898-1924. Species Hepaticarum. Geneve
+SCHUSTER, R. M. 1980. Studies on Hepaticae, LIV-LVIII.        &amp; Bale, 6 vols.
+
+
+
+
+ENGEL &amp; SCHUSTER: AUSTRAL HEPATICAE. LEPIDOZIA                                                                       105
+Index to Taxa
+
+  Recognized taxa are in roman type and illegitimate or synonymous taxa are in italics. New taxa and
+new combinations are in boldface.
+
+Drucella integristipula (Steph.) Hodgs. 2                    Lepidozia fugax Engel 63
+                                                             Lepidozia gibbsiana Steph. 2
+Herbertia spinosissima (Hook. f.     &amp; Tayl.) Trev. 26       Lepidozia gigantea Steph. 32
+Herpetium sect. Lepidozia Nees 4                             Lepidozia glaucescens Engel 101
+                                                             Lepidozia glaucophylla (Hook. f.    &amp; Tayl.) G. L. &amp; N.
+Jungermannia albula Hook. f. &amp; Tayl. 88                          92
+Jungermannia glaucophylla Hook. f. &amp; Tayl. 92                Lepidozia gottscheana Lindenb. 2
+Jungermannia laevifolia Hook. f. &amp; Tayl. 56                  Lepidozia herzogii Hodgs. 2
+Jungermannia microphylla Hook. 28                            Lepidozia hippuroides (Hook. f.    &amp; Tayl.) Steph. 2
+Jungermannia pendulina Hook. 32                              Lepidozia hirta Steph. 85
+Jungermannia ulothrix Schwagr. 88                            Lepidozia integristipula Steph. 2
+                                                             Lepidozia kirkii Steph. 82
+Kurzia calcarata (Steph.) Grolle 2                           Lepidozia lacerifolia Steph. 14
+Kurzia compacta (Steph.) Grolle 2                            Lepidozia laevifolia (Hook. f.&amp;  Tayl.) G. L. &amp; N. 56
+Kurzia hippuroides (Hook. f.     &amp;
+                                 Tayl.) Grolle 2, 57
+                                                             Lepidozia laevifolia var. acutiloba Engel 61
+Kurzia mollis (Steph.) Engel     &amp;
+                                 Schust. 13                  Lepidozia laevifolia var. alpina Schust.    &amp;Engel 62
+Kurzia setiformis (De Not.) Engel &amp; Schust. 13               Lepidozia laevifolia var. laevifolia 59
+                                                             Lepidozia latiloba Col. 52
+                                                             Lepidozia leptodictyon Herz. 2, 3
+Lepidozia (Dum.) Dum. 4
+  III. Incisae Lindenb. 87                                   Lepidozia longifissa Steph. 26
+                                                             Lepidozia longiscypha (Tayl.) Carring &amp; Peras. 2
+  I.
+     Microphyllae Lindenb. 28
+                                                             Lepidozia martinii Hodgs. 2
+  Subg. Austrolepidozia Schust. 87
+                                                             Lepidozia meridiana Hodgs. 2
+  Subg. Chaetolepidozia Schust. 13, 19, 88
+                                                             Lepidozia microphylla (Hook.) Lindenb. 28
+  Subg. Cladolepidozia Schust. 13, 19
+                                                             Lepidozia minuta Col. 56
+  Subg. Dendrolepidozia Schust. 23
+  Subg. Glaucolepidozia Schust. 92                           Lepidozia multipinna Steph. 28
+  Subg. Mastigolepidozia Schust. 27                          Lepidozia novae-zelandiae Steph. 31, 66
+  Subg. Notholepidozia Schust. 3 1                           Lepidozia novae-zelandiae var. heterostipa Schust. 70
+  Sect. Kirkii Schust. 82                                    Lepidozia novae-zelandiae var. minima Schust. 71
+  Sect. Microphyllae (Lindenb.) Grolle 28                    Lepidozia novae-zelandiae var. novae-zelandiae 70
+  Sect. Notholepidozia 40                                    Lepidozia obtusiloba Steph. 43
+  Sect. Pendulinae Schust.  32                               Lepidozia obtusiloba var. obtusiloba 48
+  Sect. Setigerae Schust. 36                                 Lepidozia obtusiloba var. parvula Engel 48
+Lepidozia acantha Engel 71                                   Lepidozia ornata Engel 49
+Lepidozia albula (Hook. f.   &amp;Tayl.) G. L.   &amp; N. 88         Lepidozia papillata Steph. 56
+Lepidozia allisonii Herz. 2                                  Lepidozia parvitexta Steph. 43
+Lepidozia angelii Gott. ex Steph. 85                         Lepidozia patentissima (Hook. f. &amp; Tayl.) G. L. &amp; N. 2
+Lepidozia asperifolia Steph. 56                              Lepidozia pearsonii Spruce 5
+Lepidozia bidens Engel 79                                    Lepidozia pendulina (Hook.) Lindenb. 32
+Lepidozia bisbifida Steph. 95                                Lepidozia pinnaticruris Spruce ex Steph. 12</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">(1845); Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. adnexa, Mem. Reale Ist. Lombardo Sci. Lett,
+Ser. 3, Cl. Sci. Mat. Nat. 4: 414 (1877)
+Type: AUSTRALIA, locality, collector and date unknown, ?S, not seen.
+Description: This taxon was described in detail by Engel and Glenny (2008) and Meagher
+(2013).
+Illustrations: Engel and Glenny (2008, Figures 95, 95), Meagher (2013, Figures 1, 2).
+Habitat: Soil, rotting logs and rock, also epiphytic.
+Distribution on LHI: Scattered localities in the upland areas.
+Total distribution: Eastern Australia (Tas, Vic, ACT, NSW, Qld), LHI, New Zealand; also
+reported from southern China.
+Discussion: Stephani and Watts (1914) first reported Bazzania adnexa from Lord Howe Island
+(as Mastigobryum baileyanum). Their report of Bazzania fasciculata (as M. fasciculatum) from
+Lord Howe Island by Stephani and Watts (1914) was an error for a depauperate form of
+B. adnexa (Meagher 2013, Figure 2). B. fasciculata is known only from the Sydney region and a
+single locality in northern New South Wales, and grows on wet sandstone, a habitat not present
+on the island. The only other variety, B. adnexa var. aucklandica (Lindenb. and Gottsche)
+J.J.Engel &amp; G.L.Merr., is endemic to New Zealand. It is characterised by having underleaves
+barely connate with the leaves and their margins strongly inrolled, giving an almost triangular
+outline (Engel and Glenny 2008).
+
+Lepidozia (Dumort.) Dumort.
+Engel and Schuster (2001) described the Lepidozia as ‘forbiddingly complex’ in their revision
+of the genus for New Zealand. They recognised 22 species, of which seven were newly
+described. The genus has not been revised for Australia nor any other region of Australasia.
+McCarthy (2006) listed 31 species for Australia, but 10 of those belong to other genera, five are
+almost certainly synonyms of other species, and two are not Australian species (Meagher
+unpublished data). Thouvenot and Bardat (2011) listed four species from New Caledonia, none
+of which are known from Australia or New Zealand. Considering the diversity of the genus in
+the region, it is surprising that no species has been reported previously from the island.
+
+Lepidozia laevifolia (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenberg &amp; Nees
+var. laevifolia
+Jungermannia laevifolia Hook.f. &amp; Taylor, London J. Bot. 3: 385 ‘285’ (1844); Lepidozia laevifolia
+(Hook.f. &amp; Taylor) Gottsche, Lindenberg &amp; Nees, Syn. Hepat. 208 (1845); Mastigophora laevifolia
+(Hook.f. &amp; Taylor) Trevis., Cat. Herb. Crypt. Trevisan 2: 30 (1853)
+Type: NEW ZEALAND, Campbell I, J.D. Hooker s.n., 1840, holotype FH (not seen), isotypes
+E-2673!d, PC-102364!dFixed.
+Description: This taxon was described in detail by Scott (1985), Engel and Schuster (2001) and
+Engel and Glenny (2008).
+
+
+
+                                                  211
+Illustrations: Scott (1985, Figure 51), Engel and Schuster (2001, Figures 20.1–20.5, 20.8–
+20.12, 21), Engel and Glenny (2008, Figures 37.1–37.5, 37.8–37.12, 38).
+Habitat: Soil, rotting logs, rock, and epiphytic on trees and tree-ferns.
+Distribution on LHI: Known only from the summit of Mt Gower.
+Total distribution: Throughout eastern Australia, and one record from Western Australia; also
+New Zealand.
+Discussion: Lepidozia laevifolia is probably the most common species of the genus in south-
+eastern Australia and New Zealand. This is the first report of the species (and the genus) from
+Lord Howe Island. It might be more widespread on the island than the single record suggests, as
+there is much suitable habitat on the summit of Mt Gower and probably also on Mt Lidgbird.
+
+Psiloclada Mitt.
+Psiloclada is perhaps the most easily recognisable genus of leafy liverworts because of the
+remarkable leaf anatomy. The leaves are deeply divided into as many as 10 spinose lobes that
+are bent at right angles to the leaf base. Although the genus is commonly said to be monotypic,
+two species are known, one of which one occurs on Lord Howe Island.
+
+Psiloclada clandestina Mitt. in Hook. subsp. clandestina
+Psiloclada clandestina Mitt. in Hook., Fl. Nov.-Zel. 2(2): 143 (1854)
+Type: NEW ZEALAND, North Island, Wellington, Stephenson s.n., date unknown, ?NY herb.
+Mitten, not seen.
+Description: This taxon was described in detail by Mitten (in Hooker 1854–55), Piippo
+(1984b), Scott (1985), Schuster (1980, 2000a) and Engel and Glenny (2008).
+Illustrations: Mitten (in Hooker 1854–55, Table XCIX, Figure 4), Piippo (1984b, Figure 10a),
+Scott (1985, Figure 54), Schuster (1980, Figure 15; 2000a, Figure 104), Engel and Glenny
+(2008, Figure 82).
+Habitat: Epiphytic on trees and tree-ferns; rarely on rock.
+Distribution on LHI: Known only from a single collection on the northern face of Mt Gower,
+close to the summit.
+Total distribution: This subspecies occurs in Australia (Tas, Vic, NSW, LHI) and New
+Zealand. The species ranges throughout eastern Australia, Malesia and the western Pacific, as
+well as South Africa.
+Discussion: This species was described by Mitten from a single stem growing among mosses.
+The specific epithet was coined by Wilson, who had named the species Jungermannia
+clandestina on a specimen in Mitten’s herbarium (Mitten in Hooker 1854–55) but never
+published it. Schuster (2000a) recognised three subspecies. The other two are subspecies: subsp.
+melanesica from Fiji, New Caledonia, New Guinea and probably other islands in the western</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">epiphylla Mitt. 1861 of Sri Lanka]
+Jackiella curvata Allison &amp; E.A.Hodgs.                 Lejeunea flava (Sw.) Nees
+Jamesoniella colorata (Lehm.) Schiffn.                 Lejeunea gracilipes (Taylor) Steph.
+Jamesoniella kirkii Steph.                                     Taxilejeunea gracilipes (Taylor) Steph.
+Jamesoniella monodon (Lehm.) N. Kitag.                 Lejeunea helmsiana Steph.
+         Cuspidatula monodon (Lehm.) Steph.            Lejeunea primordialis (Hook.f. &amp; Taylor) Taylor
+Jamesoniella tasmanica (Hook.f. &amp; Taylor) Steph.       Lejeunea sinclairii Spruce [nom. illeg., non L. sinclairii
+Jubulopsis novae-zelandiae (E.A.Hodgs. &amp; Arn.)                  Mitt. 1862 ofFiji].
+         R.M.Schust.                                   Lejeunea tumida Mitt.
+Jungermannia inundata Hook.f. &amp; Taylor                 Lembidium longifolium R.M.Schust.
+         Solenostoma rufiflora (Colenso) R.M.Schust.   Lembidium nutans (Hook.f. &amp; Taylor) Mitt.
+         [nom inval. and synonym in Vana 1975]         Lepicolea attenuata (Mitt.) Steph.
+        Jungermannia rufiflora Colenso                 Lepicolea scolopendra (Hook.) Trevis.
+Jungermannia orbiculata (Colenso) Grolle               Lepidogyna hodgsoniae (Grolle) R.M.Schust.
+        Jungermannia hodgsoniae Grolle                         Lepidolaena hodgsoniae Grolle
+Jungermannia totopapillosa E.A.Hodgs.                  Lepidolaena berggrenii E.A.Hodgs.
+                                                       Lepidolaena clavigera (Hook.f.) Trevis.
+Kurzia calcarata (Steph.) Grolle                       Lepidolaena palpebrifolia (Hook.f.) Trevis.
+        Kurzia temnomoides R.M.Schust.                 Lepidolaena reticulata (Hook.f. &amp; Taylor) Trevis.
+Kurzia compacta (Steph.) Grolle                        Lepidolaena taylorii (Gottsche) Trevis.
+Kurzia fragilifolia R.M.Schust.                        Lepidozia concinna Colenso
+Kurzia helophila R.M.Schust.                           Lepidozia glaucophylla (Hook.f. &amp; Taylor) Taylor
+Kurzia hippuroides (Hook.f. &amp; Taylor) Grolle var.      Lepidozia filamentosa (Lehm. &amp; Lindenb.) Lehm. &amp;
+                                                                           NZ Liverworts and Hornworts   135
+
+
+
+
+        Linden 6.                                               R.M.Schust.
+Lepidozia kirkii Steph.                                  Marsupella sprucei (Limpr.) Bernet
+Lepidozia laevifolia (Hook.f. &amp; Taylor) Taylor                  Marsupella ustulata (Huebener) Spruce 1901
+Lepidozia microphylla (Hook.) Lindenb.                          [nom. illeg., non (Hueberner) Spruce ex
+Lepidozia obtusiloba Steph.                                     Pearson 1891]
+Lepidozia pendulina (Hook.) Lindenb.                     Marsupidium epiphytum Colenso
+Lepidozia procera Mitt.                                         Tylimanthus epiphytus (Colenso) Hamlin
+Lepidozia setigera Steph.                                Marsupidium knightii Mitt.
+Lepidozia spinosissima (Hook.f. &amp; Taylor) Mitt.                 Tylimanthus knightii (Mitt.) Hassel &amp;
+Lepidozia ulothrix (Schwaegr.) Lindenb.                         Solari
+Leptolejeunea elliptica subsp. subacuta (A.Evans)               Tylimanthus spinosus Steph.
+        R.M.Schust.                                      Marsupidium perpusillum (Colenso) E.A.Hodgs.
+Leptophyllopsis laxus (Mitt.) R.M.Schust.                       Tylimanthus perpusillus Colenso
+Leptoscyphus innovatus (E.A.Hodgs.) J.J.Engel            Marsupidium surculosum (Nees) Schiffn
+       Chiloscyphus innovatus (E.A.Hodgs.) J.J.Engel            Marsupidium abbreviatum (Hook.f. &amp; Taylor)
+       &amp; R.M.Schust.                                            Steph.
+       Lophocolea innovata E.A.Hodgs.                           Tylimanthus surculosus (Nees) Hamlin
+Lethocolea pansa (Taylor) G.A.M.Scott &amp;                  Marsupidium setulosum (Mitt.) Watts
+       K.Beckmann                                               Tylimanthus setulosus (Mitt.) Hamlin
+       Jungermannia pansa Taylor                         Mastigolejeunea anguiformis (Hook.f. &amp; Taylor)
+       Lethocolea squamata (Taylor) E.A.Hodgs.                  B.Thiers &amp; Gradst.
+       Podanthe squamata Taylor                                 Thysananthus anguiformis (Hook.f. &amp; Taylor)
+Lopholejeunea colensoi Steph. [an invalid name un-              Taylor
+       less the genus name Lopho-Lejeunea Steph.         Megalembidium insulanum (W.Martin &amp;
+       is accepted]                                             E.A.Hodgs.) R.M.Schust.
+Lopholejeunea knightii Steph.                                   Kurzia insulana (WMartin) Grolle
+Lopholejeunea plicatiscypha (Hook.f. &amp; Taylor)           Metahygrobiella cylindrica E.A.Hodgs. &amp; Herzog
+       Steph.                                            Metahygrobiella drucei R.M.Schust.
+Lophozia autoica R.M.Schust. var. autoica                Metalejeunea cucullata (Reinw., Blume &amp; Nees)
+Lophozia autoica var. subalpina R.M.Schust.                     Grolle
+Lophozia druceae Grolle &amp; E.A.Hodgs.                            Lejeunea cucullata (Reinw., Blume &amp; Nees)
+Lophozia excisa (Dicks.) Dumort.                                Nees
+Lophozia herzogiana E.A.Hodgs. &amp; Grolle                         Microlejeunea cucullata (Reinw., Blume &amp;</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(2)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Lord Howe I.</p>
+    
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>infraspecific_taxon:</strong> Lepidozia laevifolia var. laevifolia</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">5mm                                   Gackstroemia weindorferi      4:.1
+
+
+
+
+      5mm                                  Isotachis intortifolia
+   Mosses &amp; Allied Plants of Southern Australia
+
+
+  Kurzia compacta Lepidoziaceae                                                 WSTVAN
+ Kurzia species, once in the more descriptive genus
+ Microlepidozia, are indeed minute liverworts of the family
+ Lepiqoziaceae. In the field they are just about impossible to
+ separate, needing microscopic examination to be even
+   reasonably certain of their identity. The pinnately branched
+                                                                         K. compacta
+ stems of this species form densely packed yellow-green to dark
+                                                                      leaf and underfeaf
+ green mats on damp soil in a range of habitats; they are
+ particularly common on clay banks. The leaves are set more­
+ or-less transversely on the narrow stems, and are angled towards
+ the shoot apex. Each leaf is deeply divided into 4 triangular
+ lobes. The underleaves are smaller and also 4-fid.
+                                                                        K. hippurioides
+       K. hippurioides (WTVN) is very similar, and might be
+ conspecific. It has narrower lobes, and the leaves are more or less squarrose, but with
+ the lobes often almost parallel to the stem near the shoot tips. K. cuculjifolia (STVN)
+ is a larger species with much larger and wider lobes, and the leaves are more ,widely
+ �ryarat1d aforlg the stem.
+
+ Similar species: Lepidozia laevifolia, other Lepidoziaceae spp., *Psiloclada clandestina
+         &#34;&#34;
+        ·•
+
+
+
+
+   Lejeunea drummondii Lejeuneaceae                                             WSTVAN
+   The habitat and leaf shape of this species are not sufficient to
+  distinguish it from Frullania species, so that an examination of the
+  _ventral lobules is needed. The overlapping shoots are 2-3 mm wide,
+   forming patches on the bark of trees or shrubs in damp to wet habitats.
+  Tibey are a clear green when moist, but dry to a drab olive-green.
+  &#39;I&#39;he densely overlapping leaves are arranged alternately and
+  incubously on the stem, which is invisible on the dorsal side. They
+  are shortly oval in outline but are often slightly pointed, especially those nearer the
+  shoot tips. The lobules are inflated and ratker diamond-shaped, with a small apical
+• tooth that is sometimes not easily seen. Underleaves are-roughly circular, bifid to
+: abouf half way.
+       The size and lobule shape distinguish this species from Cheilolejeunea mimosa,
+  and the presence of underleaves separate it from Radula species. There are numerous
+  potentially confusing Lejeuneaceae but they are all very much smaller, except
+  Acrolejeunea secwifolia (VN), which has unlobed underleaves.
+
+Similar species: Cheilolejeunea mimos_a, other Lejeuneaceae spp., Frullania spp.,
+Radula spp.
+                    Liverworts with underleaves and incubous leaves - Group D
+
+
+
+
+Kurzia compacta (above)
+with Pallavicinia sp.
+
+
+
+
+                 10mm
+    Lejeunea drummondii
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+Lepidozia glaucophylla Lepidoziaceae                                              TVN
+The glaucous bluish colour is enough to distinguish this from
+most other species. The prostrate, sparsely pinnate shoots creep
+over soil, usually in loose patches, in sheltered crevices and
+overhangs. Erect, pinnate fronds can develop in very moist,
+densely shaded habitats. The glaucous leaves are rather
+asymmetrical and deeply 4-fid, widely spaced on the main
+stems but overlapping on the ends of branches. We have never
+seen capsules. Telaranea centipes, which can look similar at       leaf and underleaf
+first glance, has almost equally sized leaf lobes and larger         from main stem
+leaf cells that are easily seen with a good hand lens.
+
+Similar species: Telaranea centipes
+
+
+
+
+Lepidozia laevifolia Lepidoziaceae                                              TVAN
+This is a common species in damp to wet forest, rainforest
+and other moist habitats, where it forms dense mats with
+other bryophytes on rotting logs. It is sometimes found on tree
+trunks or soil. The narrow shoots are green to greenish
+brown, the ];,ranches alternating in a regular pattern along
+rarely
+the    branching
+    stem  and     further. The leaves are incubous and 4-fid,     leaf and underleaf
+distantly spaced on the main stems but overlapping on the           from main stem
+branches. W hen dry they are appressed to the stem with the
+apices rolled under so that the leaves seem 2-fid or entire; when moist the leaves
+spread from the stem, but not widely. Underleaves are regularly 4-fid, clearly broader
+than long. Capsules arise from a grooved and tapering perianth 4-5 mm long.
+    Drucella integristipula (TVAN) is much smaller, and the leaves
+are 3-fid, spreading widely and increasing in size up the stem. The
+underleaves are minute, only a few cells high, usually divided into
+three lobes only one or two cells high. It grows on clay soil in
+damp to wet forest and rainforest, and rarely ii). montane woodland.
+
+Similar species: other Lepidozia spp., Thuidium spp.                  D. integristipula
+      Liverworts with underleaves and incubous leaves - Group D
+
+
+
+
+5mm                                     Lepidozia glaucophylla     4
+
+
+
+
+5mm                                         Lepidozia laevifolia
+  Mosses &amp; Allied Plants of Southern Australia
+
+
+ Schi5tochila lehmanniana Schistochilaceae                                       WTVN
+ Schistochila species have leaves that are folded laternlly,
+ forming a long ventral lobe. They are plants of wet forest
+ and rainforest. The shoots of this species are about 50 to
+ 100 mm long and 10 mm wide, erect and not much
+ branched, forming yellowish or whitish green tussocks in
+ wet forest and rainforest. The leaves are slightly succubous and spread at a wide
+ angle from the stem, like aeroplane wings. The dorsal lobe is broadly ovate, toothed
+ along the margin. The ventral lobe in a little larger and similarly toothed, the teeth
+ becoming longer near the leaf base. The underleaves are large, deeply 4-fid, the
+ shape obscured by the ciliate teeth around the margin. Sporophytes seem to be
+ uncommon, sunk in a perigynium formed by the apex of the stem.
+    Paraschistochila tuloides (TV) is similar to S. lehmanniana but has no underleaves
+ and grows as a flat epiphyte on trees in Nothofagus rainforest.
+
+ Similar species: Blepharidophyllum spp., other Schistochilaceae spp.
+
+
+
+
+   Siphonolejeunea nudipe5 Lejeuneaceae                                       WSTVAN
+  Although one of the smallest liverworts in the region, this
+  spe�ies is easilyrecognised by its colour and habit. The thin
+  yellow. shoots are well
+                      .   branched, forming straggling colonies
+  on bark in most habitats, from dry woodland to wet forest. It
+  is also found frequently on old specimens of introduced trees         S. nudipes</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>TELARANEA_MONOGRAPH_2004</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">16                                                                                           FIELDIANA: BOTANY
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                              cially at the edges of narrow, shallow, 6 stagnant             Plants rather stiff and wiry, in herbarium clear
+                              pools in the shade of a mixed podocarp-broadleaf            bronze, shoots small for subgenus, the main
+                              forest. Vegetation at this site consists of Dacry-          shoots to 775 mm wide, the plants to 6 mm wide
+                              dium cupressinum, Weinmannia racemosa, Po-                  with branches. Branching 6 regularly pinnate,
+                              docarpus totara, Metrosideros umbellata and an              the branches of the Frullania type, rather short,
+                              open understory dominated by Pseudowintera. It              at times flagelliform; branch half-leaf bifid, sub-
+                              also occurs in pakihis under rushes, etc., associ-          transversely to obliquely inserted, the lobes
+                              ated with Sphagnum. The species is associated               straight to 6 divergent; first branch underleaf un-
+                              with a variety of other hepatics that occur in forest       divided, biseriate in basal portion, with a uni-
+                              niches, e.g., Telaranea tetradactyla, Lepidozia             seriate row of 2–3 submoniliform cells, inserted
+                              procera, L. spinosissima, L. laevifolia, etc.               on ventral side of branch near juncture of branch
+                                                                                          and main axis. Ventral-intercalary branches pre-
+                                 SPECIMENS SEEN—NEW ZEALAND. SOUTH IS-                    sent, leafy. Stems with cortical cells in 9–12
+                              LAND. SOUTHLAND PROV.: Hope Arm, Lake Man-                  rows, rather thick-walled and firm in surface
+                              apouri, ca. 185 m, Johnson 175 (CHR); Fiordland Natl.       view, in section larger than the medullary cells,
+                              Park, Stuart Mts., W shore of Lake Thomson N of
+                              stream draining from Lake Wade, 300 m, Fife 7782 (F).       rather thick-walled; medullary cells in 40–42
+                              OTAGO PROV.: Blue Mts., S end, E of Garden Gully            rows, the cells much smaller, with moderately
+                              Road, ca. 610 m, Child s.n.153 (F); W slope of Flagstaff,   thickened walls. Rhizoids sparse, from distal
+                              NW of Dunedin, 490–520 m, Engel 17624 (F); Mt. Car-         cells of underleaf disc. Leaves on main axis rig-
+                              gill, N of Dunedin, ca. 455 m, Child H3101—c. ? as
+                              Lepidozia laevifolia (F); Lee Stream, ca. 305 m, Child
+                                                                                          id, obliquely spreading, loosely imbricate, the
+                              H2504 as T. gottscheana (F); Lammermoor Range, ca.          disc gently incurved, the lobes moderately to dis-
+                              610 m, Child H3855 (F); N of McKerrow River, Mar-           tinctly incurved, the insertion moderately to
+                              tin’s Bay, Hatcher 760, 853 (F). WESTLAND PROV.:            strongly incubous; leaves 330–440 mm wide
+                              Ca. 4 km N of Haast River, sea level, Engel 21770 (F);      (measured between tips of lobes) 3 290–390 mm
+                              Ship Creek, 14.5 km N of Haast River, sea level, Engel,
+                              21726, (F); near Lake Paringa, near west coast, ca. 15      long, subsymmetric, 4-lobed to 0.5–0.6, the
+                              m, Child H1796, 1801 as Lepidozia microphylla (F); Mt.      lobes moderately spreading, with some leaves on
+                              Aspiring Natl. Park, Cross Creek, 1.1 km N of Haast         main shoot with lateral lobes widely and asym-
+                              Pass, 540 m, Engel 21876 (F); Mahinapua, S of Hoki-         metrically divergent (at times forming an angle
+                              tika, ca. 60 m, Child H3669 as L. microphylla (F); Lake
+                              Kaniere Scenic Reserve, Lake Kaniere Rd, 125 m, Engel
+                                                                                          of up to 1808 with each other), the lobes longer
+                              24881 (F); 10 km S of Greymouth, ca. 150 m, Child           than the disc. Lobes slender, 2–4 cells wide at
+                              H4947 (F).                                                  extreme base followed by 1(2) biseriate tiers, ter-
+                                                                                          minating in a uniseriate row of 4–5(6) cells; cells
+                              Telaranea subg. Telaranea                                   of the uniseriate portion short, submoniliform
+                                                                                          (lobes constricted at the septa), 6 isodiametric,
+                              Telaranea sect. Neolepidozia (Fulf. &amp; J. Tayl.)             evenly and distinctly thick-walled (even the ter-
+                                Engel &amp; Merr., comb. nov.                                 minal cell decidedly thick walled), the basal cell
+                                                                                          of the uniseriate portion 31–40 mm wide and
+                                 Neolepidozia Fulf. &amp; J. Tayl., Brittonia 11: 81. 1959.   long (at most 1.3:1), the next cell smaller, 25–31
+                                   Telaranea subg. Neolepidozia (Fulf. &amp; J. Tayl.)        mm wide and 30–34 mm long, the terminal cell
+                                   Schust., J. Hattori Bot. Lab. 26: 255. 1963. Lepi-
+                                   dozia sect. Neolepidozia (Fulf. &amp; J. Tayl.) Piippo,    a little smaller than the penultimate cell, not sec-
+                                   Ann. Bot. Fennici 21: 314. 1984. Type: Junger-         ondarily divided, broadly rounded at the tip. Disc
+                                   mannia capilligera Schwaegr.                           6 symmetrically cuneate, 4(5) cells high (from
+                                                                                          median sinus to leaf base), 12–15 cells wide in
+                              Telaranea capilligera (Schwaegr.) Schust.                   distal portion narrowing to 8 cells wide in basal
+                                                                                          tier; margins entire, 6 straight. Cells of disc
+
+---
+
+ous resulting from secondary cell divisions; cuti-          noecia oriented laterally and at best only weakly
+                              cle of at least the distal half of lobes finely to 6        dorsally assurgent, with a vestigial stem perigyn-
+                              distinctly striate-papillose. Disc symmetrically to         ium present, swollen, rhizoidous; bracts and brac-
+                              somewhat asymmetrically broadly subrectangular              teoles in 2–3 series, inserted on the vestigial peri-
+                              to cuneate, 4–6(7) cells high (from median sinus            gynium, becoming progressively larger and less
+                              base to leaf base), (9)14–21 cells wide in distal           deeply lobate towards the perianth, those of in-
+                              portion narrowing to 8–12 cells wide in basal por-          nermost series ensheathing the perianth, deeply
+                              tion (disc typically 8 cells wide throughout in var.        concave, the apical portion canaliculate; bracts of
+                              roseana); margins entire, 6 straight to less often          innermost series 6 suborbicular, irregularly 4-lob-
+                              curved; cells of disc margins often bulging. Cells          ulate, the lobules terminating in a uniseriate row
+                              of disc thin-walled but firm, trigones lacking or           of 1–2 cells; bract margins crenate to dentate, the
+                              minute, large, convex, ‘‘pillow-like’’ (obvious             armature frequently sharply inflexed, often ter-
+                              even under low magnification), the largest cells            minating in a slime papilla, the bracts with an ob-
+                              (in median sector of disc) large, often 6 isodia-           scure border formed of 1 to several rows of cells
+                              metric, (45)50–70 mm wide 3 55–90 mm long;                  longer, narrower and more irregular than those
+                              basal 1–2 rows of disc cells considerably larger            within; bracteoles of innermost series nearly iden-
+                              (wider), irregularly arranged or in 6 regular tiers;        tical in form to bracts although a little smaller,
+                              cells of disc margins (especially the dorsal) some-         free from bracts. Perianth not extending above
+                              times forming an indistinct border of elongate,             vegetative axes, 0.5–0.55 emergent, ovoid-cylin-
+
+
+                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                  53
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                         drical, terete in basal half, the distal half obscurely          islands. Hodgson (1956, p. 597), who had not
+                         trigonous and with 6–9 plicae, the sulci shallow                 seen the type, mentioned this name in passing as
+                         to deep; perianth narrowed toward a decidedly                    a possible older name for Lepidozia laevifolia.
+                         contracted mouth, the mouth with 6 narrowly tri-                    DIFFERENTIATION AND VARIATION—Telaranea
+                         angular lobes, each lobe fringed with slightly                   tetrapila is the oldest name for the species which
+                         thick-walled, contorted, crowded, sparingly papil-               has generally been called Telaranea (or Lepido-
+                         lose cilia, the terminal cell of each cilium coarsely            zia) gottscheana in the New Zealand literature
+                         papillose.                                                       (e.g., Hodgson, 1956; Allison &amp; Child, 1975).
+                            Seta with 8–9 rows of outer cells, surrounding                The type of the name L. gottscheana, however, is
+                         an inner core of 20–34 much smaller cells. Cap-                  T. patentissima. At its best, T. tetrapila is one of
+                         sule short-cylindric, 1204–1470 mm 3 560–805                     the most handsome of our Telaranea species, and
+                         mm, the wall 41–50 mm thick, of 4 layers (locally                is common throughout New Zealand. The plants
+                         3), the outer layer subequal to the combined thick-              are highly variable in size, color, and general as-
+                         ness of the inner layers, or slightly less thick; out-           pect, as well as leaf form and number of lobes.
+                         er layer of cells in tiers, 6 regularly short-rect-              The most useful features for distinguishing the
+                         angular, with 2-phase development rather indis-                  species are the large, pillow-like, almost geomet-
+                         tinct, the longitudinal secondary walls with sheet-              rically hexagonal disc cells (Figs. 18: 4; 19: 3),
+                         like thickenings and nodule- to spine-like                       which are conspicuous and easily observed, even
+                         thickenings (4–6 per cell) alternating with pri-                 under the dissecting microscope, the bulging cells
+                         mary walls also with similar thickenings, the                    of the lobe bases and the short, secondarily divid-
+                         transverse walls almost devoid of thickenings, or                ed cells at the lobe tips (Figs. 18: 5, 6; 19: 9).
+                         with local, nonpigmented, nodular swellings; in-                 One marked expression of T. tetrapila (var. ro-
+                         termediate layers (when 2 in number) thinner than                seana) bears a strong resemblance to T. tuberi-
+                         the outer or innermost layers; innermost layer of                fera, due to its widely spreading, parallel-sided
+                         cells 6 tiered, rather regularly narrowly rectan-                leaves (Fig. 19: 1). Another (var. cancellata)
+                         gular, with semiannular bands common, rather                     somewhat resembles T. gibbsiana in the finely
+                         narrow, complete, only rarely forked to delimit                  elongated leaf lobes, and large, ciliiform-lobed
+                         local fenestrae.                                                 underleaves.
+                            Spores 12–13.4 mm in diam., exine rather thick                   Examination of herbarium specimens indicates
+                         in optical section, dark yellow brown, areolate                  that T. tetrapila has often been confused with T.
+                         (with a low, close network of well-defined, rather               praenitens, which differs by its more deeply-
+                         thick, furcate ridges that anastomose to form are-               lobed, palmate leaves and the characteristic mi-
+                         olae). Elaters rigid, 6 straight, 9.1–12.5 mm wide,              nute denticulations formed by the swollen pro-</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Lepidozia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia concinna</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia eenii</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia laevifolia var. acutiloba</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia laevifolia var. alpina</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia laevifolia var. laevifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia montana</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lepidozia ulothrix</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Peperomia laevifolia</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Jungermannia laevifolia</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia asperifolia</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia minuta</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia papillata</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lepidozia retrusa</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Mastigophora laevifolia</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.25, 147.85], [-41.907366, 145.957199], [-41.741752, 146.835385], [-41.187479, 147.716788], [-41.18577, 146.047427], [-42.000367, 147.001352], [-43.440982, 147.248532], [-41.715451, 146.73808], [-41.4833, 146.1667], [-41.543752, 148.200278], [-41.458391, 146.402656], [-43.168742, 146.263235], [-41.93067, 145.944758], [-41.3, 147.6], [-40.068551, 143.952577], [-41.369303, 147.36006], [-43.0, 147.0], [-41.72916, 146.520392], [-41.905186, 145.916242], [-41.903956, 148.207002], [-43.1, 146.616667], [-43.619665, 146.381691], [-41.276745, 147.837167], [-43.257921, 146.138958], [-42.808567, 146.267525], [-41.757961, 146.832938], [-41.71955, 145.438498], [-41.369805, 146.881765], [-41.1833, 148.0], [-42.26647, 146.031327], [-41.633805, 148.201948], [-41.65, 146.2833], [-42.987784, 147.860009], [-41.908029, 146.27791], [-41.712754, 146.740495], [-41.836427, 146.93872], [-42.172782, 145.669539], [-42.629755, 147.489194], [-41.8833, 148.3], [-43.077824, 147.861267], [-41.18332, 147.25], [-43.350944, 146.754599], [-40.371389, 148.104444], [-42.68544, 146.593475], [-41.8333, 145.5167], [-41.7167, 146.2333], [-43.260899, 146.754961], [-41.727088, 146.159706], [-41.703871, 146.80303], [-41.87247, 146.983274], [-43.53023, 146.506361], [-41.688537, 146.499065], [-41.54846, 146.401828], [-42.718502, 147.734151], [-42.17642, 146.032703], [-41.790425, 146.861738], [-41.728939, 146.728406], [-40.909151, 145.457724], [-42.900369, 147.368839], [-41.712012, 144.957882], [42.086667, 146.173333], [-41.703444, 146.629957], [-42.8833, 147.1333], [-42.899332, 146.388938], [-42.816667, 146.316667], [-41.731621, 146.719977], [-41.454882, 148.078911], [-41.5, 145.7667], [-41.833333, 145.516667], [-41.188717, 147.478313], [-54.633333, 158.89], [-42.61985, 145.416192], [-41.807528, 146.853275], [-43.0787, 146.264315], [-42.719819, 146.512835], [-41.635023, 145.92078], [-42.809871, 146.512129], [-42.000302, 147.1221], [-42.900698, 147.246351], [-42.264166, 145.788866], [-41.63784, 146.280934], [-40.3714, 148.1044], [-40.285007, 147.942445], [-41.72264, 146.730837], [-42.777383, 145.647983], [-41.173935, 145.093897], [-41.746915, 146.712695], [-42.714359, 145.780149], [-42.810326, 146.634436], [-41.8167, 146.7], [-41.724278, 146.668311], [-41.717966, 146.665939], [-41.725079, 145.919274], [-41.968862, 145.985161], [-41.55, 146.3], [-40.3714, 148.1044], [-41.279544, 146.762518], [-43.080798, 147.247072], [-41.637026, 146.160877], [-41.542469, 145.682542], [-41.275814, 147.956556], [-41.55, 146.3], [-41.306667, 147.674167], [-41.819227, 146.519721], [-43.168724, 147.73952], [-41.801218, 146.849678], [-43.1333, 147.95], [-42.720274, 146.634965], [-42.990749, 147.246711], [-42.990948, 147.124043], [-43.0, 146.28333], [-43.167863, 147.862531], [-41.458377, 147.600026], [-41.94355, 145.974705], [-42.810846, 146.879058], [-52.524, 169.168], [-42.916667, 171.583333], [-45.8789, 168.4278], [-16.391667, 145.311111], [-37.55472, 145.85778], [-37.8833, 145.3833], [-26.406736, 153.109387], [-38.408098, 177.430396], [-43.956293, -176.586608], [-44.872417, 168.945306], [-41.714905, 171.7662323], [-52.5318844, 169.1827946], [-38.981575, 174.87149], [-39.330556, 175.500833], [-50.5318046, 166.2827707], [-50.5651455, 166.1994393], [-28.226508, 153.247351], [-45.832418, 170.466363], [-35.683333, 173.566667], [-38.005, 176.34], [-46.140588, 167.320234], [-35.45, 148.9], [-44.266667, -176.166667], [-38.7665834, 177.0874358], [-50.8484845, 165.9494337], [-38.655972, 143.475389], [-38.249444, 177.597745], [-41.875, 172.859722], [-37.7467, 148.6461], [-43.137288, 171.696793], [-43.839973, 173.013673], [-28.41283, 153.023158], [-42.936296, 171.573723], [-29.440833, 152.389167], [-37.59306, 145.78056], [-35.3, 174.25], [-42.821698, 171.160208], [-50.7484817, 166.1661074], [-37.107172, 146.692958], [-25.95537, 153.10788], [-52.5544, 169.176], [-38.233333, 176.5], [-37.5004, 144.45826], [-33.7375, 150.441667], [-37.8825, 145.349722], [-39.330556, 175.4975], [-37.59306, 145.78056], [-37.59306, 145.78056], [-50.7484813, 166.0327656], [-38.360375, 146.397516], [-37.306111, 176.256389], [-42.3282487, 171.3795548], [-28.41283, 153.023158], [-43.63593, 172.623119], [-50.5484752, 166.2827705], [-36.784204, 174.867046], [-31.2, 152.4], [-50.548475, 166.2161096], [-39.3815254, 176.8663012], [-37.856923, 144.252591], [-38.901692, 176.524658], [-37.3167, 148.6833], [-36.234222, 175.083722], [-42.383333, 172.166667], [-28.539913, 153.292929], [-41.015278, 172.893333], [-38.506111, 143.913889], [-37.59306, 145.78], [-17.0833, 145.5833], [-42.159386, 171.47613], [-37.0668486, 175.6684555], [-26.8361, 151.5542], [-42.933333, 171.55], [-35.333333, 150.266667], [-50.8151541, 166.1994373], [-38.245556, 146.337222], [-50.5818059, 166.1494385], [-43.81023, 173.018483], [-33.7375, 150.441667], [-44.63249, 168.896263], [-44.064416, 169.629301], [-25.95397, 153.104], [-50.5651454, 166.1661088], [-45.8816705, 170.4661955], [-36.926639, 174.706278], [-50.8484847, 166.0161046], [-45.75, 167.4], [-39.159722, 175.389444], [-44.827194, 168.572966], [-37.1444, 142.5156], [-38.865, 174.873], [-25.993721, 153.091697], [-50.5484748, 166.166109], [-40.7601149, 172.4506745], [-37.7, 145.66139], [-37.871611, 146.266861], [-37.10718, 146.69314], [-42.956758, 171.946513], [-37.8667, 145.3667], [-45.627501, 167.298342], [-42.660309, 171.268449], [-50.7484813, 166.0327656], [-40.7673857, 172.7040774], [-35.51484, 173.466838], [-49.316667, 69.433333], [-37.5167, 149.6667], [-52.524, 169.168], [-33.733333, 150.4375], [-43.822782, 172.826496], [-32.1, 151.595833], [-41.804748, 172.596966], [-41.8333, 172.8], [-37.70056, 145.66167], [-15.8833, 145.2333], [-39.333333, 175.516667], [-40.7648856, 172.6995774], [-44.657681, 168.080774], [-37.5167, 149.6167], [-41.654722, 171.893611], [-46.915085, 167.983378], [-38.363249, 146.388914], [-39.25, 176.323333], [-41.360833, 175.392222], [-37.84631, 145.346828], [-37.1386495, 175.5411238], [-29.978333, 151.963889], [-35.175722, 173.443139], [-37.7, 145.66139], [-33.662222, 150.319444], [-38.360831, 146.39131], [-44.8616352, 168.1161724], [-43.740505, 172.875695], [-35.3333, 150.2667], [-41.284194, 174.766389], [-44.083333, 169.366667], [-38.901692, 176.524658], [-50.4984735, 166.2994411], [-44.796882, 167.967662], [-37.304745, 176.256245], [-33.495833, 150.475], [-52.534, 169.167], [-35.4303, 149.6003], [-33.729167, 150.4375], [-37.6, 145.9], [-37.0668486, 175.6684555], [-40.8528876, 172.7249073], [-15.8167, 145.2667], [-37.3058, 142.2908], [-33.7375, 150.441667], [-31.1875, 152.316667], [-35.95, 149.8667], [37.825583, 146.254833], [-50.5318043, 166.1827693], [-37.879306, 146.275278], [-41.888747, 172.862447], [-37.6, 149.0], [-45.608413, 166.869629], [-37.5167, 149.6667], [-39.133333, 175.616667], [-42.870682, 171.200691], [-39.216667, 175.533333], [-50.5984764, 166.1161079], [-34.679167, 150.720833], [-33.716667, 150.45], [-35.275, 149.104167], [-37.450029, 144.237504], [-41.831629, 172.800137], [-50.7484813, 166.0327656], [-28.440556, 153.122778], [-38.249444, 177.597745], [-37.840222, 146.273194], [-31.622196, 151.171862], [-39.3099878, 174.0888994], [-45.7333, 167.4167], [-37.4764, 144.2881], [-39.250833, 176.321667], [-39.14125, 175.611306], [-37.59306, 145.78056], [-34.4167, 150.7667], [-45.53, 169.0014], [-28.599921, 153.382778], [-36.926639, 174.706278], [-45.6, 167.35], [-33.570833, 150.333333], [-38.425651, 146.569699], [-39.183056, 176.236944], [-37.5381571, 175.7221244], [-37.31639, 148.86889], [-37.87701, 145.37166], [-41.9315729, 172.8829045], [-42.446869, 171.46941], [-44.690437, 168.126808], [-42.931652, 171.550115], [-26.556741, 152.909398], [-45.003559, 167.747303], [37.821861, 146.283639], [-50.8151541, 166.1994373], [-37.0668486, 175.6684555], [-37.655, 145.82833], [-52.534, 169.167], [-43.712931, 172.839781], [-36.883333, 174.566667], [-36.927528, 174.707694], [-50.4984735, 166.2827709], [-50.4984735, 166.2827709], [-37.456944, 148.572028], [-43.740505, 172.875695], [-50.581806, 166.1661087], [-50.581806, 166.1661087], [-50.548475, 166.2161096], [-35.65, 149.5], [-34.5667, 149.95], [-42.781649, 171.550116], [-39.133333, 175.616667], [-39.269167, 175.534722], [-37.832694, 146.313235], [-39.400556, 175.421111], [-40.640278, 172.634167], [-41.357495, 172.152514], [-41.803678, 171.86992], [-50.5318043, 166.1827693], [-43.821032, 173.004815], [-41.0482278, 175.1996056], [-38.433592, 177.446841], [-38.16, 146.33028], [-37.2861, 148.7556], [-49.316667, 69.433333], [-33.866667, 151.2125], [-37.4833, 148.9333], [-50.8818159, 166.0327645], [-36.75, 174.833333], [-50.7984832, 166.0994361], [-42.91356, 171.552752], [-38.732528, 177.15925], [-38.362421, 146.391546], [-50.5818059, 166.1494385], [-41.654722, 171.894722], [-34.65, 150.4833], [-44.494587, 168.722051], [-39.3288914, 175.5012156], [-36.789876, 174.867217], [-38.16, 146.33028], [-38.36893, 146.380646], [-52.5318844, 169.1827946], [-37.66417, 145.82722], [-43.731669, 170.083426], [-41.883333, 172.85], [37.825583, 146.254833], [-35.333333, 150.266667], [-50.8151541, 166.1994373], [-37.3833, 149.1], [-37.7, 145.66139], [-45.881728, 170.116747], [-37.718444, 145.752028], [-36.761706, 174.768431], [-38.86972, 146.38639], [-43.835471, 172.992527], [-39.321389, 175.502778], [-35.0833, 150.1333], [-49.316667, 69.433333], [-33.570833, 150.333333], [-35.45, 148.9], [-39.335861, 175.503556], [-37.6, 149.0], [-38.5167, 143.9167], [-38.362957, 146.392739], [-37.5934, 145.78056], [-40.0649083, 176.2162912], [-42.916667, 171.566667], [-39.25, 175.566667], [-50.548475, 166.2161096], [-50.548475, 166.2161096], [-29.978333, 151.963889], [-50.5318043, 166.1827693], [-38.249444, 177.597745], [-33.65, 150.316667], [-37.7352611, 175.8746255], [-36.529444, 175.399167], [-25.993721, 153.09158], [-37.845806, 146.048333], [-33.5361, 150.475], [-42.565212, 172.295043], [-35.566667, 149.733333], [-39.3323914, 175.5082156], [-37.5934, 145.78], [-43.690599, 172.639646], [-44.1, -176.316667], [-37.59306, 145.78], [37.839278, 146.274583], [-42.965724, 171.776211], [-36.883333, 174.566667], [-38.7434831, 177.1602367], [-50.5818059, 166.1494385], [-35.6, 149.75], [-26.556736, 153.092724], [-37.4, 148.6], [-38.4333, 146.5667], [-42.931652, 171.550115], [-37.0568, 175.68], [-40.9587, 175.376], [-50.5318044, 166.1994395], [-35.6, 149.75], [-50.4984735, 166.2827709], [-45.885858, 166.632007], [37.860778, 146.320139], [-39.233333, 175.383333], [-37.3167, 148.8556], [-50.4984735, 166.2827709], [-50.5318046, 166.2827707], [-40.640278, 172.634167], [-37.5, 145.2333], [-50.4984735, 166.2994411], [-37.318583, 148.872611], [-44.486685, 168.787293], [-36.233333, 175.1], [-37.3167, 148.8556], [-41.761667, 172.971389], [-37.4667, 148.9333], [-35.651667, 173.559167], [-33.623056, 151.134722], [-43.5802, 171.054199], [-43.810229, 173.024697], [-37.864302, 145.327334], [-37.31639, 148.86889], [-37.7, 145.66139], [-16.39355, 145.310617], [-33.498987, 150.417271], [-36.216667, 175.066667], [-37.0833, 148.7667], [-49.316667, 69.433333], [-37.4355553, 175.7471251], [-50.8818159, 166.0327645], [-28.539913, 153.292929], [-36.789876, 174.867217], [-32.35, 151.9333], [-50.7484813, 166.0327656], [-50.8818159, 166.0327645], [-38.364168, 146.390808], [-36.644083, 148.127444], [-38.16484, 176.2496283], [-37.55667, 145.8875], [-15.8833, 145.2333], [-44.194923, 169.274389], [-39.307778, 174.094444], [-38.387237, 145.562517], [-43.087582, 170.958121], [-50.5318046, 166.2827707], [-29.233333, -177.933333], [-41.2812325, 174.8996011], [-35.588056, 149.501389], [-44.6, 168.083333], [-41.709167, 171.839722], [-52.534, 169.167], [-32.0, 150.0], [-45.75, 167.4], [-40.7510453, 172.6887473], [-36.9864, 149.8228], [-36.983333, 174.583333], [-35.2833, 148.8667], [37.878639, 146.342778], [-35.5333, 150.1], [-38.9667, 174.5833], [-42.239566, 172.346682], [-29.25, -177.883333], [-50.5318043, 166.1827693], [-37.561033, 145.877266], [-50.831814, 165.9827643]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [81.9, 66.4, 86.7, 92.7, 132.9, 141.4, 162.1, 174.9, 154.3, 123.9, 97.3, 98.7], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.1, 20.1, 17.8, 14.4, 11.4, 9.4, 8.7, 9.5, 11.6, 13.7, 16.6, 18.0], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.1, 9.3, 7.8, 5.8, 4.3, 2.8, 2.1, 2.3, 3.6, 4.6, 6.5, 7.6], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heteroscyphus echinellus — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Heteroscyphus echinellus</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Heteroscyphus echinellus</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Lophocoleaceae</span>
+    <span class="badge">Heteroscyphus</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">128</p>
+    <footer>58 Tasmanian</footer>
+  </article>
+  
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">12</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">12</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>irregular</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>Frullania-type</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>bilobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>hygric</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>2.0–3.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>aquatic</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>rock</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>wood</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>none</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>CYANOLOPHOCOLEA_2010</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">BioOne is an innovative nonprofit that sees sustainable scholarly publishing as an inherently collaborative enterprise
+       connecting authors, nonprofit publishers, academic institutions, research libraries, and research funders in the common
+       goal of maximizing access to critical research.
+
+
+
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+             Studies on Lophocoleaceae. XIX. The systematic identity of
+             Cyanolophocolea R.M. Schust., an intriguing liverwort from
+              New Zealand and Australia, based on morphological and
+                                molecular evidence
+
+                                                  John J. Engel1,3 and Xiaolan He2
+
+               1
+                 Department of Botany, Field Museum, Chicago, IL 60605-2496, U.S.A.; 2 Botanical
+                Museum, Finnish Museum of Natural History, University of Helsinki, P.O. Box 7,
+                                         FIN-00014, Helsinki, Finland
+
+               ABSTRACT. Cyanolophocolea echinella R.M.Schust. is an intriguing species, possessing some
+               character states characteristic of the genus Chiloscyphus, such as the ability to produce both male
+               and female gametangia on leading shoots, while having other features that are generic characters of
+               Heteroscyphus, namely presence of gametangia on short, abbreviated lateral-intercalary branches.
+               Its systematic identity was here studied using morphological and DNA sequence data of the
+               chloroplast gene regions of rbcL, rps4 and trnL-F. Thirty-seven exemplars including eight of
+               Cyanolophocolea echinella, 27 of Lophocoleaceae and two of Plagiochilaceae were used for
+               phylogenetic reconstruction using both maximum parsimony and Bayesian inference methods.
+               Our analyses placed Cyanolophocolea echinella within Heteroscyphus with strong support.
+               Heteroscyphus echinellus (Lindenb. &amp; Gottsche) J.J.Engel &amp; XiaoL.He is proposed and based on
+               morphological variations two varieties, var. echinellus and var. hyalinus J.J.Engel, are recognized. A
+               large indel (59 base pairs) and one substitution in the trnL intron region, and also one substitution
+               in the intergenic spacer region were found in the trnL-F in two Cyanolophocolea echinella
+               exemplars both with hyaline oil-bodies. This indicates rapid molecular evolution might have
+               occurred within the species.
+
+               KEYWORDS. Chiloscyphus, Cyanolophocolea, Heteroscyphus, Marchantiophyta, rbcL, rps4, trnL-F,
+               phylogeny, taxonomy.
+
+                                                                  ¤         ¤          ¤
+
+
+        Lindenberg and Gottsche (Gottsche et al. 1847)                          Zealand. Several years later Mitten (1854) transferred
+        introduced Lophocolea echinella with a brief                            the species to Chiloscyphus, noting (p. 141) that this
+        description based upon a plant from Dusky Bay, New                      is ‘‘a small species, allied in size and in its papillate
+                                                                                leaves to Lophocolea muricata …’’ and that it had
+        3
+         Corresponding author e-mail:                                           ‘‘the campanulate lateral perianth of Chiloscyphus.’’
+         jengel@fieldmuseum.org                                                 The species for the most part was treated as a
+        DOI: 10.1639/0007-2745-113.1.149                                        Chiloscyphus (i.e., as a Heteroscyphus sensu Schiffner
+
+        The Bryologist 113(1), pp. 149–163                                                                        0007-2745/10/$1.65/0
+        Copyright E2010 by The American Bryological and Lichenological Society, Inc.
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+         150      The Bryologist         113(1): 2010
+
+
+         [1910] and Engel &amp; Schuster [1985]) in the literature,              recognition of the group at the generic level. A leaf-
+
+---
+
+DISCUSSION                                                          not abundant, mostly of Frullania-type (the half leaf
+             Phylogenetic inferences based on sequences of                  of same basic shape as vegetative leaves), occasionally
+        three loci clearly suggest that Cyanolophocolea arose               intercalary, the intercalary branches variable in
+        from a species of Heteroscyphus and that C. echinella               position, at times in underleaf axil and either
+        is only distantly related to Chiloscyphus. Several                  median-ventral in position or in lateral half of
+        morphological characters support a common                           underleaf axil (then ventral intercalary), at times
+        ancestry for Cyanolophocolea and Heteroscyphus. An                  ventral-lateral in position midway between 2
+        example is the presence of gametangia on short                      underleaves (then ?lateral intercalary). Stems hispid,
+        lateral-intercalary branches, although the position is              the cortical cells on dorsal surface of stem firm-
+        more variable than in Heteroscyphus. Also, androecia                walled, mostly each with a 1–2-celled, short
+        may be intercalary in position on the main shoot                    projection, the cortical cells on ventral surface of
+        (Fig. 4.1), and gynoecia may occur on short,                        stem mostly smooth, sporadically with a projection;
+        abbreviated ventral-intercalary branches (Fig. 5.4);                stems 9 cells high, the cortex poorly differentiated, in
+        for further discussion see under Variation. Perianths               1(–2) layers of rather thick-walled cells; medullary
+        are often subcampanulate, a shape frequently found                  cells slightly less thick walled. Rhizoids from stem in
+        in Heteroscyphus. The stem cortex in Cyanolophocolea                an ill-defined zone at base of underleaves, the tips
+        is poorly differentiated (Fig. 3.7) just as in                      sometimes branched. Leaves varying from clearly
+        Heteroscyphus.                                                      alternate to subopposite, horizontal, widely
+             Within the populations sampled, no distinct                    spreading, loosely imbricate, free dorsally,
+        phylogenetic lineage was shown between the two oil-                 orientation strongly succubous, the insertion slightly
+        body types. Therefore evolution of the two types of                 recurved at ventral end, the lines of insertion distant
+        oil-bodies could not be traced with the data                        from stem midline dorsally and delimiting a very
+        presented. However, our study indicates that rapid                  broad leaf free strip of ca. 6–10 cells wide. Leaves
+        molecular evolution might have occurred within the                  with dorsal surface densely hispid, armed with 1(–2)-
+        species Cyanolophocolea echinella.                                  celled short, conical projections, which are
+                                                                            juxtaposed 1 each over the lumen of most cells, the
+        TAXONOMIC TREATMENT                                                 ventral surface completely smooth; leaves broadly
+             According to the results of our study, the                     convex, the apical portion plane and not deflexed
+        following nomenclatural change is proposed:                         (var. echinellus) or deflexed and oriented at ca. 90u
+                                                                            with remainder of leaf (var. hyalinus), the leaves
+        Heteroscyphus echinellus (Lindenb. &amp; Gottsche)                      subsymmetrically oblong-ovate, the sides straight or
+            J.J.Engel &amp; XiaoL.He, comb. nov.                                nearly so, widest near base; apex typically undivided,
+        Lophocolea echinella Lindenb. &amp; Gottsche in                         broadly rounded to obliquely truncate, without a
+            Gottsche, Lindenberg &amp; Nees, Syn. Hep. 703.                     sinus (var. echinellus) or with a broadly rounded to
+            1847; Chiloscyphus echinellus (Lindenb. &amp;                       lunate sinus and then feebly and indistinctly bifid
+            Gottsche) Mitt. in Hooker f., Bot. Antarc. Voy.                 (var. hyalinus), the apices with 2–4 setiform processes
+            2: 141. 1854; Cyanolophocolea echinella                         which are larger than marginal armature, the
+            (Lindenb. &amp; Gottsche) R.M.Schust., Nova                         processes at leaf apex terminating in a uniseriate row
+            Hedwigia 72: 102. 2001. NEOTYPE (designated                     of 5–7 cells, the longest cells of uniseriate row less
+            here.): NEW ZEALAND. NORTH IS.: North Auckland,                 than 2:1 (var. echinellus) or greater than 2:1 (var.
+            NE Waitakere Ranges, Spraggs Bush, 360 m,                       hyalinus), the apex otherwise with abundant 1–2-
+            Engel 22220 (F; duplicate in AK).                               celled spinose teeth; dorsal margin plane to often
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+         156      The Bryologist          113(1): 2010
+
+
+
+
+         Figure 3. Heteroscyphus echinellus. 1, 3, 5–11, var. echinellus; 2, 4, var. hyalinus. 1. Portion of shoot, dorsal view. 2, 3. Distal sector
+         of leaves. 4–6. Setiform processes of leaf apices. 7. Section through stem and median portion of leaf, with a portion (shown by
+         bracket) at higher magnification. 8. Underleaf. 9. Capsule wall, cross section (note hyaline surface thickening). 10. Capsule wall,
+         outer layer, the hyaline surface thickenings indicated on left half with stipple. 11. Capsule wall, inner layer. (Figs. 1, 7, 8, from Engel
+         14754, Tasmania, Gordon River; 2, 4, from Engel 22240, type of var. hyalinus; 3, 5, 6, from Engel 22220, New Zealand, North Is.,
+         North Auckland Prov., NE Waitakere Ranges, Spraggs Bush; 9–11, from Engel 15343, Tasmania, Notley Fern Gorge.).
+
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                                                                                 Engel &amp; He: Systematic identity of Cyanolophocolea    157
+
+
+
+
+        Figure 4. Heteroscyphus echinellus var. echinellus. 1. Plant with androecia on main shoot as well as ventral-intercalary branches,
+        dorsal view (a few leaves removed to reveal details of androecia). 2. Antheridium. 3. Distal portion of leaf. 4. Short-bifid leaves
+        from suboptimal plant. 5, 6. Leaves, and within, underleaves. 7. Basal sector of dorsal margin of leaf (same scale as fig. 8). 8.
+        Median sector of ventral margin of leaf. (Fig. 1 from Engel 15343, Tasmania, Notley Fern Gorge; 2, from Engel 13671, Tasmania,
+        Mt. Eliza; 3, 5, 6, from Engel 14754, Tasmania, Gordon River; 4, from Engel 17689, New Zealand, South Is., Morrisons Creek; 7, 8,
+        from Engel 22220, New Zealand, North Is., North Auckland Prov., NE Waitakere Ranges, Spraggs Bush.).
+
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+         158      The Bryologist        113(1): 2010
+
+
+
+
+         Figure 5. Heteroscyphus echinellus. 1, 3–8, var. echinellus; 2, var. hyalinus. 1. Three cladographs, plant to left with gynoecia on
+         leading shoot and on abbreviated ventral-intercalary branch; two plants at right with all gynoecia on abbreviated ventral-intercalary
+         branches (U-shaped symbol 5 gynoecium; vi 5 ventral-intercalary branch). 2, 3. Median leaf cell with oil-bodies, in fig. 2 the
+         upper spine-bearing cell lacks oil-bodies (at A), the lower spine-bearing cell with oil-bodies (cell at B). 4. Gynoecium with
+
+
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                                                                                 Engel &amp; He: Systematic identity of Cyanolophocolea   159
+
+
+        sharply deflexed, regularly denticulate by 1(–2)-celled             shoots; bracts much smaller than leaves, the bracts
+        spinose teeth to the base, the distal half also ciliate-            erect to suberect, strongly dorsally assurgent, tightly
+        dentate, the base not to very short decurrent; ventral              appressed to bract immediately above, smooth in
+        margin plane, with a mixture of uniseriate ciliate-                 profile, free dorsally; bracts of 2 types depending
+        dentate processes and irregularly distributed 1–2-                  upon position: those on leading shoots larger, mostly
+        celled spinose teeth. Leaf cells with walls slightly                deeply concave but with the apical portion plane to
+        thickened, trigones absent, median cells without                    reflexed; those on short, abbreviated branches much
+        spines 13–18 mm wide, 14–21 mm long, the spine-                     smaller and strongly ventricose-cucullate, so much so
+        bearing cells slightly smaller, being 11–16 mm wide                 that the dorsal pocket is ill-defined, the bracts of both
+        and 12–18 mm long. Oil-bodies blue and coarsely                     types have apices with several spinose teeth, the
+        botryoidal (var. echinellus) or hyaline and coarsely                ventral margins with a few small teeth; adaxial
+        granular to coarsely papillose (var. hyalinus), 2–3(–4)             surface of bracts at most sparingly armed; lobule
+        per cell (see under varieties). Underleaves 6                       large for bract size, margin inflexed, the apex with a
+        trichocoleoid in appearance, much smaller than                      prominent acuminate projection, the free dorsal
+        leaves, slightly wider than stem grading to 1.73 stem               margin entire or with 1 or 2 small teeth; antheridia
+        width, narrowly connate on 1 or (occasionally) both                 large for bract size, 1 (rarely 2) per bract, the stalk
+        sides, the insertion symmetric, crescent-shaped, the                short, uniseriate except just below head, where
+        underleaves widely spreading, at times at 90u or                    biseriate. Gynoecia dorsally assurgent, usually on
+        slightly reflexed, distant, with adaxial and abaxial                reduced, highly abbreviated intercalary branches that
+
+---
+
+of cells small, irregularly rectangular, often narrowly             stem and somewhat removed from the lateral half of
+         rectangular, the walls thin, with semiannular bands                 an underleaf axil grading to about midway between
+         red brown, common, often rather wide, close and                     two underleaves. Type a) is ventral intercalary, type
+         numerous, occasionally nonpigmented in median                       b) is lateral intercalary while type c) is seemingly
+         portion, sometimes incomplete, sporadically forked,                 lateral intercalary.
+         the radial walls frequently with nodular or less often                    Gynoecia may be 1) at times in a location similar
+         spinelike thickenings, the inner wall in surface view               to a) above for the androecium; or 2) in a location
+         with a hyaline amorphous substance partially                        similar to c) above for the androecium.
+         obliterating detail of thickenings. Spores 12.5–                          Sterile branches are 1) at times in the underleaf
+         13.9 mm, pale yellow brown, with faint, rather dense,               axil and either median-ventral in position on the
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                                                                                         Engel &amp; He: Systematic identity of Cyanolophocolea   161
+
+
+        stem or in the lateral half of an underleaf axil, i.e.,                           Distribution. Known only from New Zealand:
+        they originate in a location similar to a) above for the                     Stewart Is., South Island (Southland), North Island
+        androecium; or 2) at times ventral-lateral on the stem                       (South Auckland, North Auckland).
+        midway between 2 underleaves, i.e., in a location                                 Specimens seen. NEW ZEALAND. STEWARD IS.: Fern
+        similar to c) above for the androecium.                                      Gully Track at terminus of Kaipipi Road, Mill Creek,
+             Similar variation in intercalary branch origin is                       ca. 2 km W of Oban, 20–30 m, Engel, von Konrat &amp;
+        also seen, for example, in Chiloscyphus anisolobus                           Braggins 24039 (F). SOUTH ISLAND: Southland
+        Engel &amp; Glenny, as described in Engel &amp; Glenny                               Prov., Table Hill Scenic Reserve, Puketiro Road,
+        (2008, see fig. 2: 2–4) and in C. novaezeelandiae                            Papatowai Highway, 250 m, Engel, von Konrat &amp;
+        (Lehm. &amp; Lindenb.) J.J.Engel &amp; R.M.Schust. as                                Braggins 23977 (F). NORTH ISLAND: South Auckland
+        discussed in Engel (2010).                                                   Prov., Mangaotaki Catchment, Waitanguru Scenic
+             The species may be divided into two varieties,                          Reserve, track to Waitanguru Falls, 180 m, Engel &amp;
+        which are differentiated, among other characters, by                         von Konrat 23791 (F).
+        oil-body color and surface. The varieties may be
+        distinguished as follows.                                                    Heteroscyphus echinellus var. hyalinus J.J.Engel,
+                                                                                         var. nov.
+        KEY TO VARIETIES OF H. ECHINELLUS                                            Guttae olei hyalinae, grosse granulares, apicibus folii
+        1. Oil-bodies deep blue to indigo blue, coarsely botryoidal,                     abrupte ad angulum 90u cum axe folii deflexis vel
+           occasionally absent from spine-bearing cells; leaf apices plane,              revolutis, processibus setiformibus cellulis
+           not deflexed, the armature of leaf apices visible in dorsal view
+                                                                                         longissimis seriei uniseriatae longioribus,
+           of plant; setiform processes at leaf apex not separated by a
+           perceptible sinus, the line between the processes 6 straight,                 plerumque 1:5:1, in apice folii sitis per sinum late
+           the setiform processes with longest cells of uniseriate row                   rotundatum vel lunatum segregatis, apice caulium
+           shorter, less than 2:1, the cells of uniseriate row lacking                   in statu vivo pallide viridi.
+           spines; stem tips dark blue to indigo blue when live. Typically           TYPE: NEW ZEALAND. NORTH IS.: North Auckland Prov.,
+           on wood or tree fern trunks ........................... var. echinellus
+                                                                                         summit area of Mt. Manaia, NW of Bream
+        1. Oil-bodies hyaline, coarsely granular, rarely absent from
+           spine-bearing cells; leaf apices abruptly deflexed and oriented               Head, SE of Whangarei, 390 m, Engel 22240 (F,
+           at 6 90u with remainder of leaf or revolute, the armature of                  holotype; AK, isotype).
+           leaf apices not visible in dorsal view of plant; setiform
+           processes at leaf apex separated by a broadly rounded to                        Description. Stem tips pale green when live. Leaf
+           lunate sinus, the setiform processes with longest cells of                apices abruptly deflexed and oriented at 6 90u with
+           uniseriate row longer, typically at least 2:1, the cells of               remainder of leaf or revolute, the armature of leaf
+           uniseriate row at times with a spine; stem tips pale green when           apices not visible in dorsal view of plant; setiform
+           live. At times terricolous or saxicolous ............. var. hyalinus
+                                                                                     processes at leaf apex separated by a broadly rounded
+                                                                                     to lunate sinus, the setiform processes with longest
+        Heteroscyphus echinellus var. echinellus
+                                                                                     cells of uniseriate row longer, typically at least 2:1, the
+             Diagnosis. Stem tips dark blue to indigo blue                           cells of uniseriate row at times with a spine. Oil-
+        when live. Leaf apices plain, not deflexed, the                              bodies typically present in all lamina cells, including
+        armature of leaf apices visible in dorsal view of plant;                     those that support surface teeth, the surface teeth
+        setiform processes at leaf apex not separated by a                           devoid of oil-bodies but possessing chloroplasts; oil-
+        perceptible sinus, the line between the processes 6                          bodies very large for cell size, hyaline (in leaves of
+        straight, the setiform processes with longest cells of                       both mature sectors of shoot and stem tips), 2–3 per
+        uniseriate row shorter, less than 2:1, the cells of                          cell in some populations, others 2 in spine-free cells
+        uniseriate row lacking spines. Oil-bodies blue to                            and (0–)1–2 in spine-bearing cells, still others 3–4
+        indigo blue, 2–3 per cell (at times lacking in spine-                        per cell, coarsely granular to coarsely papillose, the
+        bearing cells), coarsely botryoidal, elliptic to linear, at                  spherules somewhat protruding beyond membrane,
+        times paramecioid, 11.7–16.6 3 3.9–5.9 mm.                                   the oil-bodies somewhat irregular in shape: broad
+             The concept of variety, and all data presented                          elliptic to linear to fusiform to crescentic, sometimes
+        under this variety, is derived strictly from live plants.                    paramecioid or flask-shaped, occasionally spherical,
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+         162      The Bryologist         113(1): 2010
+
+
+         mostly 6.5–8.5 3 3.3–5.9 to 8.8–13 3 3.9–5.2(–5.9)                  with road to Zeehan, 250–320 m, Engel 20103–c. per.
+         mm, a few 2.9 3 6.8–8.8 mm, spherical ones 3.9–                     + sporo. (F); VICTORIA: Wilsons Promontory, Ferny
+         5.2 mm in diam.                                                     Glade, Meagher 00369 (F).
+              The concept of variety, and all data presented
+         under this variety, is derived strictly from live plants.           ACKNOWLEDGMENTS
+              Distribution. Known from New Zealand:                          The senior author is grateful to the National Geographic
+         Stewart Is., South Island (Nelson), North Island                    Society, which supported field studies in New Zealand (Grants
+                                                                             5375-94, 5795-96, 7379-02, 7927-05 and 8132-06). The senior
+         (Volcanic Plateau EP, South Auckland, North
+                                                                             author also thanks Zorica Dabich for preparing the habit</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>MEAGHER_LHI_BRYOPHYTES</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">4  strong,  irregular  teeth  ..........................................................................................................  var.  excisus  
+     Sinus  between  teeth  shallow,  ±  V-­‐shaped;  leaf  apex  narrower  than  base;  
+     2–5  ±  regular  teeth  .....................................................................................................  var.  paucidentatus  
+6   Leaves  (at  least  at  the  base)  wider  than  long;  teeth  long,  ±  7  in  number  ...................  var.  subquadratus  
+     Leaves  as  long  or  longer  than  wide;  teeth  short  (2–3  cells),  or  if  long  then  
+     up  to  11  in  number  .................................................................................................................................  7  
+7   Leaves  with  6–11  teeth  ..........................................................................................................  var.  argutus  
+     Leaves  with  5–6  teeth  ..............................................................................................................  var.  minor  
+
+
+
+Heteroscyphus allodontus (Hook.f. &amp; Taylor) J.J.Engel &amp; R.M.Schust. was reported from Lord
+Howe Island by Stephani and Watts (1914) on the basis of a collection by Watts (Watts LHI
+76b, NSW-818150). Unfortunately this collection could not be found during this study.
+However, it is notable that there are no collections by Watts of Heteroscyphus argutus from the
+island, despite it being very common in Erskine Valley where Watts 76b was collected. Poorly
+developed specimens of H. argutus are quite common among collections from Lord Howe
+Island, often bearing only two or three teeth at the apex and with the underleaf armature
+reduced. It is possible that Watts 76b is merely such a weak form of that species, equivalent to
+Schiffner’s variety paucidentatus.
+It is noteworthy that the type, from the Auckland Islands, was growing on the bark of trees
+(Taylor and Hooker 1845), which is a very unusual habitat for Geocalycaceae generally, and
+that the species has never been fully described or illustrated, so that the identification of the
+numerous specimens in New Zealand herbaria (AVH 2018) must be considered tentative.
+At present I prefer to consider Heteroscyphus allodontus as ‘uncertain’ for Lord Howe Island,
+pending an assessment of Watts 76b when it is found.
+
+
+
+                                                                              222
+Heteroscyphus echinellus (Lindenb. and Gottsche) J.J.Engel and X.L.He var.
+echinellus
+Lophocolea echinella Lindenb. &amp; Gottsche, in Gottsche, Lindenberg &amp; Nees, Syn. Hepat. 5: 703 (1847);
+Chiloscyphus echinellus (Lindenb. &amp; Gottsche) Mitt., in Hooker, Fl. Nov.-Zel. 2(2): 141 (1854);
+Cyanolophocolea echinella (Lindenb. &amp; Gottsche) R.M.Schust., Nova Hedwigia 72: 102 (2001);
+Heteroscyphus echinellus (Lindenb. &amp; Gottsche) J.J.Engel &amp; X.L.He, Bryologist 113: 115 (2010)
+Description: This species was comprehensively described by Engel and He (2010).
+Illustrations: Scott (1985, Figure 84, 85), Engel and He (2010, Figures 3–5).
+Habitat: Soil, bark and rotting wood in damp to wet situations.
+Distribution on LHI: Summit Plateau of Mt Gower, on rotting wood in very wet situations in
+deep gullies.
+Total distribution: Eastern Australia (Tasmania to southern Queensland, Lord Howe I.), New
+Zealand.
+Discussion: Heteroscyphus echinellus was previously known only from New Zealand,
+Tasmania and Victoria (Engel and He 2010). Lord Howe Island is thus the mostly northerly
+known point of its distribution. The variety echinellus was thought to have been endemic to
+New Zealand, with only H. echinellus var. hyalinus J.J.Engel known from Australia (Engel and
+He 2010). This variety is therefore new to the Australian flora. It is easily distinguished from
+var. hyalinus even in the field because it has plane rather than downcurved leaf apices, so that
+the spinose armature around the apex is clearly visible in dorsal view (Engel and He 2010).
+
+Heteroscyphus fissistipus (Hook.f. &amp; Taylor) Schiffn, Oesterr. Bot. Zeit. 60: 172
+(1910)
+Jungermannia fissistipa Hook.f. &amp; Taylor, London J. Bot. 3: 384 (1844)
+Chiloscyphus fissistipus (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees, Syn. Hepat. 2: 175
+(1845)
+Type: NEW ZEALAND: Auckland Islands, J.D. Hooker s.n., date unknown, herb. Taylor, not
+seen.
+Description: Scott (1985) published a general description of this species that is adequate for
+identification.
+Illustrations: Figure 3. Also Scott (1985, Figure 85), Meagher and Fuhrer (2003, pages 264–
+265).
+Habitat: Soil, bark and rotting wood in damp to wet situations.
+Distribution on LHI: Eastern slopes of Mt Lidgbird, Erskine Valley.
+Total distribution: Eastern Australia (Tasmania to southern Queensland, Lord Howe I.), New
+Zealand.
+Discussion: Heteroscyphus fissistipus is one of the most common species of Heteroscyphus in
+southern Australia, from Tasmania to southern Queensland. Stephani and Watts (1914) reported
+Chiloscyphus multifidus Steph. from Lord Howe Island on the basis of a collection by W.W.
+Watts (presumably Watts LHI 88, NSW-818174). This specimen was not available during the
+present study. However, C. multifidus appears to be conspecific with H. fissistipus judging by
+Stephani’s original description (Stephani 1906–1909: 132) and his sketch in the Icones
+(Stephani 1985) drawn from the type. It is notable that only one other collection identified as
+C. multifidus exists in Australian and New Zealand herbaria (Clark s.n., MEL-64300A), and is
+
+---
+
+327
+LORD HOWE ISLAND: western slope of Mt Gower, on track to summit, Brown 2000/40, 10 Jun 2000, NSW-
+443914.
+
+Frullania vittiana
+LORD HOWE ISLAND: Ramm 37, 31 October 1986, CBG-8605921; ridge to Malabar, Streimann 50001, 23 Jun
+1992, CBG-9218902; Smoking Tree Ridge, beyond junction with Rocky Run track, Brown 2000/18, 9 July 2000,
+NSW-444691; eastern face of Mt Lidgbird, Meagher LH-442, 18 November 2009 (MELU).
+
+Fossombronia sp.
+LORD HOWE ISLAND: Erskine Creek near mouth, Brown 2002/157 and Leishman, 5 Sep 2002, NSW-494614;
+north-west slope of Mt Gower, Brown 2002/171, 5 Sep 2002, NSW-494644; north-west slope of Mt Gower, Brown
+2002/176, 5 Sep 2002, NSW-494656; north-west slope of Mt Gower, Brown 2003/40, 30 Jun 2003, NSW-606601.
+
+Geocalyx caledonicus
+LORD HOWE ISLAND: Streimann 55856, 7 Feb 1995, CBG9514183; Goathouse Cave, Streimann 55890, 7 Feb
+1995, CBG9514217; track to Mt Gower, Erskine Creek crossing, Streimann 56046, 11 Feb 1995, CBG9514380;
+eastern flank of Mt Lidgbird near Goat House, Meagher LH-411, 18 Nov 2009; eastern flank of Mt Lidgbird, Dinner
+Run, Meagher LH-587, 27 Nov 2009.
+
+Heteroscyphus argutus
+LORD HOWE ISLAND: Rocky Run, Beauglehole 73506, 18 Nov 1962, MEL-1041404A; Soldier Creek, below
+amphitheatre, Meagher LH-089, 4 Nov 2009; Soldier Creek, lower reach, Meagher LH-091, 4 Nov 2009; boardwalk
+on Rocky Run, Meagher LH-189, 7 Nov 2009; boardwalk on Rocky Run, Meagher LH-191, 7 Nov 2009; Mt
+Lidgbird, around corner from Goat House, Meagher LH-263, 9 Nov 2009; Mt Lidgbird, 200 m south of Goat House,
+Meagher LH-275, 9 Nov 2009; Boat Harbour, along creek behind beach, Meagher LH-284, 11 Nov 2009; Boat
+Harbour, along creek behind beach, Meagher LH-289, 11 Nov 2009; Erskine Creek just above track crossing,
+Meagher LH-455, 20 Nov 2009.
+
+Heteroscyphus echinellus var. echinellus
+LORD HOWE ISLAND: Mt Gower summit plateau, Meagher LH-533, 24 Nov 2009; Mt Gower summit plateau,
+Meagher LH-600B, 28 Nov 2009. VICTORIA: Wilsons Promontory, Ferny Glade, Meagher 0369, Oct 2007 (F).
+
+Heteroscyphus fissistipus
+LORD HOWE ISLAND: north-east slope of Mt Lidgbird near Goat House, Meagher LH-260, 9 Nov 2009; eastern
+face of Mt Lidgbird, Meagher LH-421, 18 Nov 2009; Erskine Valley, at track crossing on Erskine Creek, Meagher
+LH-450, 20 Nov 2009; Dinner Run, eastern slop of Mt Lidgbird, Meagher LH-570, 27 Nov 2009.
+
+Lejeunea exilis
+LORD HOWE ISLAND: below Goat House, Meagher LH-225, 9 Nov 2009; eastern face of Mt Lidgbird, Meagher
+LH-431 p.p., 18 Nov 2009; eastern face of Mt Lidgbird, Meagher LH-436, 18 Nov 2009; eastern face of Mt Lidgbird,
+Meagher LH-446, 18 Nov 2009; Dinner Run, Meagher LH-573 p.p., 27 Nov 2009.
+
+Lejeunea hawaikana
+LORD HOWE ISLAND: head of Soldier Creek, Meagher LH-068, 4 Nov 2009; Soldier Creek, Meagher LH-082, 4
+Nov 2009; Soldier Creek, Meagher LH-084, 4 Nov 2009; around corner from Goat House, Meagher LH-410, 18 Nov
+2009; eastern face of Mt Lidgbird, Meagher LH-431, 18 Nov 2009; eastern face of Mt Lidgbird, Meagher LH-448, 20
+Nov 2009; eastern face of Mt Lidgbird, Meagher LH-465, 20 Nov 2009.
+
+Lejeunea howeana
+LORD HOWE ISLAND: slope below Smoking Tree Ridge track, Meagher LH-036, 4 Nov 2009; Smoking Tree
+Ridge, Meagher LH-042, 4 Nov 2009; Smoking Tree Ridge, Meagher LH-045, 4 Nov 2009; Smoking Tree Ridge,
+Meagher LH-049, Nov 2009; Smoking Tree Ridge, Meagher LH-055, 4 Nov 2009; Soldier Creek, Meagher LH-069,
+4 Nov 2009; Soldier Creek, Meagher LH-077, 4 Nov 2009; west of Kims Lookout, Northern Hills, Meagher LH-103,
+5 Nov 2009; Meagher LH-153, 7 Nov 2009; Meagher LH-174, 7 Nov 2009; Meagher LH-292, 11 Nov 2009;
+Meagher LH-464, 20 Nov 2009; Meagher LH-488, 23 Nov 2009; Meagher LH-593, 28 Nov 2009.
+
+
+                                                      328
+Lepidozia laevifolia</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>RENNER_2024</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <p style="padding:.5rem 1rem .25rem;font-size:.85rem"><strong>distribution:</strong> NSW; Vic.; Tas.; Lord Howe I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>SOUTHERN_AUS_FIELD_GUIDE</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Physcomitrella patens subsp. readeri ® Physcomitrella readeri
+Polytrichastrum longisetum ® Polytrichastrum formosum (Australian records only)
+Polytrichum pillferum — Not an Australian species
+Pyrrhobryum bifarium ® Hymenodontopsis bifaria
+Pyrrhobryum mnioides subsp. contorta ® Hymenodontopsis mnioides
+Rhynchostegium tenuifolium var. tenuifolium ® Rhynchostegium tenuifolium
+Rosulabryum billarderi ® Rosulabryum billarderii
+Sauloma tenella ® Sauloma tenellum
+Schizymenium bryoides ® Mielichhoferia bryoides                                                  281
+       Mosses &amp; Allied Plants of Southern Australia
+
+      Scleropodium australe ® Scleropodium touretii
+      Sphagnum novo-zelandicum ® Sphagnum novozelandicum
+      Tayloria octoblepharum ® Tayloria octoblephara
+      Thamnobryum pandum ® Austrothamnium pandum
+      Thamnobryum pumilum ® Austrothamnium pumilum
+      Tortula pagorum ® Syntrichia laevipila
+      Tortula papillosa ® Syntrichia papillosa
+      Tortula rubra ® Syntrichia rubra
+      Trematodon amoenum ® Treamtodon amoenus
+      Trematodon mackayii ® Trematodon mackayi
+      Trematodon suberectum ® Trematodon suberetus
+
+
+      LIVERWORTS &amp; HORNWORTS
+      Acrochila biserialis ® Chiastocaulon biseriale
+      Austrofossombronia australis ® Fossombronia australis
+      Blepharidophyllum xiphophyllum ® Clandarium xiphophyllum
+      Cephaloziella arctica subsp. antarctica ® Cephaloziella varians subsp. antarctica
+      Chiloscyphus biciliatus ® Heteroscyphus allodontus
+      Chiloscyphus echineIlus ® Heteroscyphus echinellus
+      Chiloscyphus latifolius ® Chiloscyphus subporosus (Australian records only)
+      Chiloscyphus pallidus ® Chiloscyphus multipennus
+      Chiloscyphus villosus — Not an Australian species (records are probably C. gippslandicus)
+      Cryptochila grandiflora ® Syzygiella sonderi
+      Diplophyllum domesticum ® Diplophyllum obtusifolium subsp. domesticum
+      Frullania scandens ® Frullania deplanata (Australian records only)
+      Heteroscyphus circumdentatus ® H. billardieri var. billardieri
+      Heteroscyphus cymbaliferus ® Tetracymbaliella cymbalifera
+      Heteroscyphus kirkii ® Heteroscyphus fissitipulus var. repandus
+      Heteroscyphus planiusculus — Not an Australian species (records are probably Chiloscyphus
+      austrigenus)
+      Jamesoniella colorata ® Syzygiella colorata
+      Jamesoniella tasmanica ® Syzygiella tasmanica
+      Jungermannia inundata ® Solenostoma inundata
+      Jungermannia orbiculata ® Solenostoma orbiculata
+      Metzgeria atrichoneura ® Metzgeria leptoneura
+      Metzgeria decipiens ® Metzgeria furcata
+      Metzgeria hispidisssima ® Metgeria furcata (Australian records only)
+      Nephelolejeunea hamata ® Siphonolejeunea hamata
+      Paraschistochila tuloides ® Gottschea tuloides
+      Phaeoceros brotheri ® Phaeoceros carolinianus
+      Plagiochila obscura ® Plagiochila stephensoniana
+      Plagiochila wattsii ® Cryptoplagiochila radiculosa
+      Radula compacta ® Radula aneurismalis
+      Radula papulosa ® Radula acutiloba
+      Radula physoloba — Not an Australian species (reports are R. aneurismalis or R. tasmanica)
+      Radula tabularis — Not an Australian species (reports are R. aneurismalis, R. ratkowskiana or
+      R. tasmanica)
+282   Radula wattsii ® R. buccinifera
+                                                                     Appendix</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Heteroscyphus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus allodontus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cambewarranus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus circumdentatus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus cuneistipulus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus decipiens</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus echinellus var. echinellus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus echinellus var. hyalinus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Heteroscyphus multifidus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Chiloscyphus echinellus</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Cyanolophocolea echinella</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+    <li><em>Lophocolea echinella</em> <span class="muted small">NZ_CHECKLIST_2020</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.216667, 147.966667], [-41.543752, 148.200278], [-41.717854, 145.318327], [-42.718502, 147.734151], [-42.25802, 145.304046], [-41.07, 145.12], [-42.25, 145.6], [-42.75, 145.97], [-41.811163, 145.556662], [-43.0, 147.0], [-41.9, 145.266667], [-41.079726, 144.858548], [-41.905186, 145.916242], [-43.5313635, 146.4973546], [-42.9167, 147.25], [-41.5861274, 145.2777172], [-41.714085, 145.078018], [-41.616667, 146.233333], [-42.2167, 146.0], [-43.619665, 146.381691], [-41.8236257, 145.6343816], [-41.35, 146.916667], [-41.726146, 146.039487], [-41.349773, 144.849719], [-41.166667, 146.05], [-42.216667, 145.433333], [-41.081876, 144.977519], [-42.9663704, 147.9807824], [-43.35, 146.816667], [-42.066667, 146.15], [-42.45, 145.6], [-42.333333, 145.6], [-41.275814, 147.956556], [-42.95, 147.2667], [-42.3333, 145.6], [-41.3984301, 144.8370178], [-43.0, 147.0], [-42.733333, 146.416667], [-41.547774, 146.281933], [-43.366667, 147.333333], [-41.0486232, 145.3677076], [-42.85, 146.3], [-41.439786, 144.846749], [-42.85, 146.3], [-42.966667, 146.416667], [-41.216667, 147.966667], [-41.17, 146.05], [-41.257471, 144.733392], [-41.283333, 147.3], [-42.167996, 145.306454], [-42.7161195, 146.6615293], [-42.081279, 145.550555], [-42.45, 145.6], [-40.95, 144.83], [-41.184723, 145.928207], [-42.539117, 147.610266], [-43.5268395, 146.4924426], [-40.8597, 144.9017], [-40.585865, 175.483074], [-42.592809, 171.537785], [-41.25, 175.01], [-38.293631, 177.336562], [-37.7, 145.66139], [-35.711972, 174.329917], [-43.702563, 172.754363], [-37.7, 145.66139], [-36.2, 175.066667], [-37.31639, 148.86889], [-35.596944, 173.518833], [-41.168056, 172.673889], [-50.8151541, 166.1994373], [-40.331104, 175.815411], [-37.902944, 145.766083], [-38.691333, 143.479472], [-40.8465526, 174.917933], [-41.96443, 171.432857], [-41.25, 175.01], [-37.70056, 145.66167], [-41.2717, 174.9883], [-45.814097, 166.639917], [-50.8151541, 166.1994373], [-43.286511, 170.165964], [-39.252809, 174.04342], [-41.273, 174.983], [-42.230813, 173.794545], [-41.2107588, 174.8748651], [-37.6278, 145.6981], [-40.744444, 172.689444], [-43.835471, 172.992527], [-36.946937, 174.498355], [-43.286511, 170.165964], [-37.70056, 145.66167], [-47.222366, 167.609653], [-28.227, 153.131], [-41.256, 175.012], [-46.0608, 168.8292], [-41.2403318, 175.0231027], [-40.94281, 172.887353], [-38.447778, 175.591667], [-37.7, 145.66139], [-41.267, 174.757], [-39.336223, 174.116993], [-31.180278, 152.330667], [-35.63479, 173.649608], [-46.4983556, 169.4661794], [-35.63479, 173.649608], [-47.109275, 167.761745], [-41.2667, 174.7557], [-38.645278, 175.661111], [-38.5387759, 175.6460201], [-40.851, 174.925], [-38.249444, 177.597745], [-44.368801, 168.015695], [-41.3, 173.566667], [-36.2, 175.1], [-38.65722, 143.64639], [-44.2816231, -176.2003001], [-42.905296, 170.812636], [-37.7, 145.66139], [-43.981613, 168.6161834], [-47.142389, 167.70475], [-43.81203, 173.018484], [-38.865, 174.873], [-38.69, 143.4725], [-42.116667, 171.35], [-41.25, 175.01], [-41.2732325, 174.9776021], [-47.037297, 168.082662]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [82.6, 71.5, 97.5, 104.1, 157.3, 155.4, 181.9, 193.3, 172.6, 143.9, 100.1, 110.4], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [20.4, 20.6, 18.4, 15.3, 12.5, 10.6, 10.0, 10.8, 12.5, 14.4, 17.1, 18.4], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.9, 10.1, 8.9, 7.0, 5.3, 4.1, 3.4, 3.7, 4.8, 5.7, 7.6, 8.4], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>

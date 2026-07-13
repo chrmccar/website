@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eotrichocolea polyacantha — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Eotrichocolea polyacantha</em></li>
+  </ul>
+</nav>
+
+<div class="species-header">
+  <h1><em>Eotrichocolea polyacantha</em></h1>
+  <div class="taxon-path">
+    <span class="badge">Trichocoleaceae</span>
+    <span class="badge">Eotricochlea</span>
+  </div>
+</div>
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">40</p>
+    <footer>14 Tasmanian</footer>
+  </article>
+  
+  <article>
+    <header>Mean temp.</header>
+    <p class="big-num">8.7&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+  
+  <article>
+    <header>Mean precip.</header>
+    <p class="big-num">2310&thinsp;mm</p>
+    <footer>annual · CV&thinsp;20.3</footer>
+  </article>
+  
+  <article>
+    <header>Traits</header>
+    <p class="big-num">13</p>
+    <footer>from literature</footer>
+  </article>
+  
+  <article>
+    <header>Synonyms</header>
+    <p class="big-num">10</p>
+    <footer>incl. ALA &amp; NZ checklist</footer>
+  </article>
+  
+</div>
+
+
+
+<section class="data-section">
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Climate at occurrence points</h2>
+  <div class="climate-charts">
+    <div class="chart-box" id="chart-rain"></div>
+    <div class="chart-box" id="chart-temp"></div>
+  </div>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Traits</h2>
+  <figure>
+    <table class="traits-table">
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching pattern</td>
+          <td><strong>regularly pinnate</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>11.0–16.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell diameter um</td>
+          <td><strong>365.0–490.0</strong></td>
+          <td class="muted small">µm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>entire</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf lobing</td>
+          <td><strong>4-lobed</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture preference</td>
+          <td><strong>mesic-wet</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body count per cell</td>
+          <td><strong>5.0–16.0</strong></td>
+          <td class="muted small">per cell</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil body present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td><strong>soil</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>15.0</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus width mm</td>
+          <td><strong>6.0</strong></td>
+          <td class="muted small">mm</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone type</td>
+          <td><strong>concave-sided</strong></td>
+          <td class="muted small">categorical</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf present</td>
+          <td><strong>1</strong></td>
+          <td class="muted small">boolean</td>
+          <td class="muted small">Engel &amp; Glenny (2008) Flora of NZ Liverworts Vol 1</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="flag-note">⚠ = NLP-extracted, awaiting expert verification &nbsp; ✓ = verified</p>
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary>
+      <strong>NZ_CHECKLIST_1998</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Lophocolea spinifera (Hook.f. &amp; Taylor)          Cololejeunea pulchella (Mitt.) R.M.Schust.
+        Taylor                                           Colura pulcherrima var. bartlettii Ast
+Chiloscyphus subporosus (Mitt.) J.J.Engel &amp;              Colura saccophylla E.A.Hodgs. &amp; Herzog
+        R.M.Schust.                                      Cryptochila acinacifolia (Hook.f. &amp; Taylor) Grolle
+        Lophocolea subporosa Mitt.                       Cryptochila grandiflora (Lindenb. &amp; Gottsche) Grolle
+Chiloscyphus variabilis (Steph.) J.J.Engel &amp;             Cryptochila nigrescens (Steph.) Grolle
+        R.M.Schust.                                      Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust.
+        Lophocolea variabilis Steph.
+Chiloscyphus villosus (Steph.) J J.Engel &amp; R.M.Schust.   Dendromastigophora flagellifera (Hook.f.)
+        Lophocolea villosa Mitt.                                 R.M.Schust.
+Chloranthelia berggrenii (Herzog) R.M.Schust.                    Mastigophora flagellifera (Hook.f.) Steph.
+        Chloranthelia filosa (E.A.Hodgs.) R.M.Schust.    Diplasiolejeunea plicatiloba (Hook.f. &amp; Taylor)
+Clandarium xiphophyllum (Grolle) R.M.Schust.                     Grolle
+        Blepharidophyllum xiphophyllum Grolle                    Diplasiolejeunea lyratifolia (Hook.f. &amp; Taylor)
+Clasmatocolea crassiretis (Herzog) Grolle                        Steph.
+        Chiloscyphus crassiretis (Herzog) Hassel                 Drepanolejeunea plicatiloba (Hook.f. &amp;
+Clasmatocolea humilis (Hook.f. &amp; Taylor) Grolle                  Taylor) Steph.
+        var. humilis                                     Diplasiolejeunea pusilla Grolle
+        Chiloscyphus humilis (Hook.f. &amp; Taylor)          Diplophyllum dioicum R.M.Schust.
+        Hassel                                           Diplophyllum domesticum (Gottsche) Steph.
+Clasmatocolea inflexispina (Hook.f. &amp; Taylor)            Diplophyllum verrucosum R.M.Schust.
+       JJ.Engel                                          Drepanolejeunea aucklandica Steph.
+        Chiloscyphus amplectens (Mitt.) J.J.Engel &amp;      Drepanolejeunea vesiculosa subsp. euvesiculosa
+        R.M.Schust.                                              Herzog
+        Chiloscyphus inflexispinus (Hook.f. &amp; Taylor)    Drucella integristipula (Steph.) E.A.Hodgs.
+       J.J.Engel &amp; R.M.Schust.                           Dumortiera hirsuta (Sw.) Nees
+        Clasmatocolea amplectens (Mitt.) J.J.Engel               Marchantia hirsuta Sw.
+        Lophocolea amplectens Mitt.
+Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle       Echinolejeunea papillata (Mitt.) R.M.Schust.
+        Chiloscyphus notophyllus (Hook.f. &amp; Taylor)      Eoisotachis stephanii (Salm.) R.M.Schust.
+        Hassel                                           Eotrichocolea polyacantha (Hook.f. &amp; Taylor)
+Clasmatocolea strongylophylla (Hook.f. &amp; Taylor)                 R.M.Schust.
+       Grolle
+       Chiloscyphus strongylophyllus (Hook.f. &amp;          Fossombronia pusilla (L.) Nees
+       Taylor) Hassel                                          Fossombronia perpusilla (Colenso) Steph.
+132   Tuhinga, Number 10 (1998)
+
+
+
+
+        Noteroclada perpusilla Colenso                   Frullania solanderiana Colenso
+Fossombronia reticulata Steph.                           Frullania spinifera Taylor
+        Fossombronia microspora Herz.                    Frullania squarrosula (Hook.f. &amp; Taylor) Taylor
+Fossombronia wondraczekii (Corda) Dumort.                Frullania subhampeana E.A.Hodgs.
+        Jungermannia wondraczekii Corda                  Frullania svihlana S.Hatt.
+Frullania allanii E.A.Hodgs.
+Frullania anomola E.A.Hodgs.                             Gackstroemia alpina R.M.Schust.
+Frullania aterrima (Hook.f. &amp; Taylor) Hook.f.            Gackstroemia weindorferi (Herzog) Grolle
+        &amp; Taylor var. aterrima                           Geocalyx caledonicus Steph.
+Frullania aterrima var. lepida E.A.Hodgs.                Goebeliella cornigera (Mitt.) Steph.
+Frullania aterrima var. rostrata (R.M.Schust.) S.Hatt.   Goebelobryum unguiculatum (Hook.f. &amp; Taylor)
+        Frullania subrostrata S.Hatt.                           Grolle
+        Neohattoria rostrata R.M.Schust.                 Gymnomitrion cuspidatum (Berggr.) R.M.Schust.
+Frullania deplanata Mitt.                                Gymnomitrion strictum (Berggr.) R.M.Schust. var.
+Frullania engelii S.Hatt.                                       strictum
+Frullania falciloba Lehm.                                Gymnomitrion strictum (Berggr.) R.M.Schust. var.
+Frullania fugax (Hook.f. &amp; Taylor) Taylor                       inaequalis R.M.Schust.
+Frullania incumbens Mitt.
+Frullania junghuhniana Gottsche                          Haplomitrium gibbsiae (Steph.) R.M.Schust.
+Frullania media (E.A.Hodgs.) S.Hatt.                     Haplomitrium minutum (E.O.Campb.) J.J.Engel &amp;
+        Frullania fugax var. media E.A.Hodgs.                   R.M.Schust.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>NZ_FLORA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Plants with gametophytes highly variable, normally leafy and isophyllous to strongly aniso- phyllous, thallose in a few genera, the plants erect to creeping, typically green, sometimes developing brown or fuscous pigments (never with reddish pigmentation), robust to minute. Branch¬ ing plastic, variable, often abundant and regular, at times l-2(3)-pinnate or-pseudo-dichotomous, the branches often of Frullania type, occasionally also of Microlepidozia or Acromastigum types; intercalary branches also present, often ventral, sporadically lateral; nearly always with geotropic stoloniform or flagelliform branches. Stems with cortex variably differentiated, the diameter of cortical cells normally slightly to greatly larger than those of medullary cells, a hyalodermis formed in some taxa. Rhizoids from stem in fascicles at underleaf bases, occasionally from underleaf disc cells, also at bases of leaves of microphyllous branches. Leaves normally large and well developed, vestigial and 1- or few-celled in a few genera, the insertion variable: transverse to incubous to succubous, the lines of insertion extending to stem midline dorsally or not reaching the stem midline and delimiting a leaf-free strip of stem cells; leaves 3-4-fid ranging to, less often, 5- 12-fid by typically entire lobes, at times bifid, exceptionally unlobed, the leaf margins mostly entire, rarely ciliate. Cells variable, thin- to thick-walled, trigones small to large, rarely large and knot-like or altogether lacking; surface variable: smooth or finely to coarsely papillose, or glaucous, waxy and water-repellent. Oil-bodies present, granular to botryoidal, absent in various taxa. Underleaves often 3-4 or more lobed, sometimes unlobed, in some taxa present as 1- or 2-celled vestiges, but a distinct ventral merophyte at least 2 cells wide present in all taxa. Asexual reproduction, if present, by tubers in various taxa, by fragmenting lobe tips (e.g., Telaranea, Kurzia, Lepidozia) or by caducous leaves (Bazzania), never by gemmae. Dioecious in most taxa, sporadically autoecious. Androecia typically on short, spicate ventral-intercalary branches from leading shoots, exceptionally terminal on short to moderately long Frullania-iypQ branches; bracts often moderately to markedly smaller than sterile leaves, usually monandrous, the antheridial stalk 1- or 2-seriate; bracteolar antheridia rare. Gynoecia nearly exclusively on abbreviated ventral-intercalary branches lacking normal vegetative leaves, rarely on lateral-intercalary branches or terminal on leading shoots. Bracts and bracteoles similar (the gynoecia triradial), in 2-several series, usually larger and different from leaves and underleaves, dentate to lobulate to (often) shallowly to deeply lobed. Perianth fusiform, often terete below and bluntly trigonous above, tapered to the mouth, comprised of ± elongated cells; mouth variable, denticulate to shallowly lobulate to more often laciniate or ciliate. Seta with (4), 8, 12, or 16 rows of epidermal layers, the inner cells smaller, 16-24(34) to 12 or fewer, rarely as few as 6 or 4. Capsule ellipsoidal to obloid, the valves erect, nonspiral, the wall 2-5(6)-layered; outer layer of cells ± tiered, rectangular, with two-phase development, the primary longitudinal and all transverse walls normally lacking pigmented thickenings, alternating with the secondary (longitudinal) walls with conspicuous radial (nodular) thickenings; inner layer of cells with weak to distinct semi annular bands. Spores papillose- vermiculate or reticulate-areolate, 1-3X elater diam. Elaters bispiral, blunt-tipped. Type: Lepidozia (Dumort.) Dumort. Schuster (2000a) recognized eight subfamilies. One of these, the Neogrolleoideae, was removed by Engel and Braggins (2001) and placed in an independent family, Neogrolleaceae. One subfamily, the Megalembidioideae, was added (Engel and Braggins, 2005). The eight subfamilies are as follows, the first six occur in New Zealand: 1) Subfam. Lepidozioideae, with six genera, five of which occur in New Zealand. The sixth, Sprucella Steph., has two species, both in tropical- subtropical Africa. 2) Subfam. Bazzanioideae Rodway has four genera, two (Bazzania, Acromastigum) are larger genera that are widely distributed in the southern temperate zone, including New Zealand. One, Dendrobazzania R.M.Schust. &amp; W.B. Schofield, is monotypic and is known only from Bhutan and the Queen Charlotte Islands. The other, Mastigopelma Mitt., has three species and occurs in Samoa, Borneo- Sarawak and the Louisade Archipelago. 3) Subfam. Drucelloideae (Boesen) R.M.Schust. has only the monotypic Drucella E.A. Hodgs., which occurs in our area. 4) Subfam. Lembidioideae R.M.Schust. has four genera, all with representatives in New Zealand. 5) Subfam. Megalembidioideae Engel has only the monotypic Megalembidium R.M.Schust. of New Zealand. 6) Subfam. Zoopsidoideae R.M.Schust. consists of eight genera, five of which occur in New Zealand. Of the extraterritorial genera, Monodactylopsis (R.M.Schust.) R.M.Schust. has two species, both of Brazil; Odontoseries Eulford is monotypic and is known only from Venezuela; and Pteropsiella Spruce has two Neotropical species from the Amazonian- Orinoco drainage. 7) Subfam. Micropterygioideae Grolle consists of two Neotropical genera. Micropterygium Lindenb., Nees &amp; Gottsche, with ca. 18-19 species, and the monotypic Mytilopsis Spruce. 8) Subfam. Protocephalozioideae R.M.Schust. has only the monotypic Protocephalozia (Spruce) Goebel of the Neotropics. Subfam. Lepidozioideae Lepidozia (Dumort.) Dumort. Lepidozia (Dumort.) Dumort., Recueil Observ. Jungerm. 19. 1835, nom. cons. Herpetium sect. Lepidozia Nees, Naturgesch. Eur. Leberm. 3: 31. 1838. Lepidoziopsis E.A.Hodgs., Rec. Domin. Mus. 4: 105. 1962. Plants anisophyllous, firm, creeping to loosely prostrate to, more often, somewhat ascending, rarely stiffly erect, yellowish or whitish to olive-green, rarely brownish in life, rarely glau¬ cous, medium-sized to vigorous, usually 0.5-2.5(4) mm wide. Branching irregular to regular, copiously 1- to 2- or 2-3-pinnate, of Frullania type, the lower terminal branches partly or mostly attenuate at the apices, often becoming rhizoid-bearing; Acromastigum-iypQ branching present in a few species; Microlepidozia-typc branches lacking; ventral-intercalary micro- phyllous or leafy branches in some taxa; lateral-intercalary branches lacking. Stem firm to rigid, with (18)20-32 or more rows of firm- walled cortical cells, typically little or at most moderately larger in diameter than those of adjoining medulla, not forming a discrete hyalo- derm; subepidermal layers occasionally present, composed of thick- walled cells; medullary cells equal to or slightly smaller than cortical, firm- walled (the outer sometimes strongly so). Rhizoids of normal-leaved axes usually rare or absent, except at shoot bases, arising from underleaf bases; rhizoids on flagelliform shoots from all three merophyte rows. Leaves almost without exception 4-lobed or 4-lobulate on main shoots, incubous to subtransverse, the insertion extending to stem midline dorsally, the leaves typically asymmetrical, the dorsal half (and dorsal 1-2 lobes) larger than the ventral, the lobes usually many-celled (at bases 3-4 or more cells broad in most taxa), the cells similar to those of disc, the lobes usually sharp, often deflexed or inflexed in most taxa; disc margins entire or toothed to spinose-dentate or ciliate. Cells of disc irregularly arranged, not tiered, firm- walled, the lumina often rounded, the trigones concave-sided and mostly obscurely defined; median cells of disc mostly 18-25(40) juim wide; surface smooth or clearly papillose. Oil-bodies present in all leaf cells, colorless, usually (2)5-16 per cell, relatively large, usually botryoidal, less often subhomogeneous, often vestigial in subg. Glaucolepidozia. Asexual reproduction lacking or {Lepidozia fugax, occasionally in L. digi- tata) via fragmenting or caducous leaf lobes. Underleaves usually 0.5 or less the lateral leaves in area, transversely inserted, symmetrically 4-lobed on main shoots. Dioecious, rarely (generitype, Lepidozia reptans) autoecious. Gametangial branches all short, devoid of normal leaves and underleaves, ventral-intercalary in origin (the androecia less frequently terminal on primary and secondary branches). Androecia typically spicate, smaller than vegetative shoots, the bracts concave, ± imbricate, lobed like (but usually more shallowly than) vegetative leaves; antheridia 1-2 per bract, the stalk 2-seriate; bracteoles small, lacking antheridia. Gynoecia with bracts and bracteoles identical, 4(6)-lobed to -lobulate, occasionally 2-4-dentate to -lobulate. Perianth fusiform or ellipsoidal-fusiform, bluntly trigonous in at least the narrowed distal sectors, the mouth usually crenulate to crenate-denticulate. Seta with (8)12-16 large epidermal + 16 or more rows of much smaller internal cells. Capsule ellipsoidal to obloid, the wall 3-5(6)-layered; outer layer of cells often imperfectly tiered, the primary longitudinal and all transverse walls normally lacking pigmented thickenings, the secondary (longitudinal) walls with conspicuous radial (nodular) thickenings, often ± coalescing; inner layer of cells narrower, with radial (nodular) thickenings, ± connected by weak, often vestigial, tangential bands. Spores papillose- vermiculate, less than 1.5X the diam. of the bispiral elaters. Type: Lepidozia reptans (L.) Dumort. (= Jungermannia reptans L.), a Holarctic, widespread species. Lepidozia is a large and polytypic genus, with perhaps ca. 80 species worldwide. Over half of these occur in an area extending from New Zealand (with 23 species) into Southeast Asia (e.g.. New Guinea has ca. 17 species). Much of the morphological diversity found within the genus occurs in New Zealand. Of the seven subgenera of Lepidozia, five are present in New Zealand (see Engel and Schuster, 2001; Schuster, 1973). Absent from New Zealand are subg. Chaetolepidozia R.M.Schust., which ranges from Costa Rica south to Colombia and Ecuador, and subg. Cladolepidozia R.M.Schust. of the Paleotropics. The species show a diverse ecology: they occur principally on soil, peat, or decaying logs, but also on soil-covered rocks, rarely a few invade even the lower trunks of trees. The large bulk of taxa occur in sheltered loci, but several ascend into the alpine zone, where they occur in damp sites of alpine grasslands, or on soil in crevices of crags or cliffs. All of our species are unisexual, but cf and 9 plants often occur intermingled, and in many species sporophytes are produced, if infrequently so. References: Hodgson (1956); Engel and Schuster (2001); Engel (2004a). Artificial Key to Species^ la. Branching irregularly to regularly 1 -pinnate (except L. serrulata), secondary branches rarely or sporadically developed, if present only 1(2) per primary branch (branches sometimes developing into new leafy shoots); leaves imbricate to contiguous, the insertion weakly to distinctly incubous . 2 2a. Plants opaque and ivory-white, becoming pale brownish with age; leaves and stems with a dull, waxy, water-repellent surface (at least on new growth) . 3 3a. Dorsal margin of leaf moderately to distinctly ampliate; cells of disc and lobes not papillose (but with a fine, granular coating); leaves broadly inserted and clasping the stem, distinctly concave, with involute lobes and margins; leaf insertion strongly incubous to horizontal . 4 4a. Disc cells with evenly thickened walls, trigones never present; dorsal margin of leaf strongly ampliate, distinctly auriculate at the insertion, the dor¬ sal margin sinuate to distantly toothed; leaf lobes subcaudate, ending in a uniseriate row of 3-5 cells. Rare (South Is.: Eiordland, Paparoa Ra.) . L. glaucophylla (p. 259) 4b. Disc cells lax, nearly thin- walled, trigones lacking to medium; dorsal margin of leaf moderately ampliate, ± clearly cordate at the insertion, the dor¬ sal margin normally entire; leaf lobes acute to apiculate, ending in a single cell or a uniseriate row of 2-3(4) cells . 5 5a. Plants medium, to 1.5 cm wide (including branches); leaves 0.8- 1.3 mm long and broad, the disc 15-22 cells high at dorsal sinus, the median lobes 6-10 cells wide at base; underleaves inserted on 9-10 rows of stem cells, the disc 5-9 cells high; first branch underleaf 2- to 4-lobed, transversely inserted on the stem, often somewhat below the branch. Typically in upper montane forests to penalpine to alpine . L. bisbifida (p. 262) 5b. Plants small, to 0.6 cm wide (including branches); leaves at most 0.55 mm long and broad, the disc 7-13 cells high at dorsal sinus, the median lobes 3-5 cells wide at base; underleaves inserted on 3-4 rows of stem cells, the disc 2-4 cells high; first branch underleaf 2-lobed (or rarely undivided), obliquely inserted at branch base. Eorest plant; 950- 1390 m . L. digit at a {p.26A) ^Modified from Engel and Schuster (2001). 3b. Dorsal margin of leaf ± straight; cells of disc and lobes striate-papillose, the papillae obscured by the continuous waxy coating; leaves narrowly inserted, the disc flat, with spreading lobes; leaf insertion weakly to distinctly incubous. Disc and lobe cells distinctly thick-walled; first branch underleaf undivided or 2- lobed (rarely 4-lobed). Chatham Is. + South Is. (150-300 m) + North Is. (Waipoua area, 340-540 m) . L. glaucescens (p. 266) 2b. Plants green, yellow-green, brownish to dark brown, but without a dull, waxy, water- repellent surface . 6 6a. Dorsal margin of leaves serrate or dentate-laciniate or ciliate . 7 7a. Dorsal pair of lobes caudate, the distal portion ciliiform and with a uniseri- ate row of 4-15 cells . 8 8a. Branching 1 -pinnate; dorsal margin of leaves with numerous (up to 19) spinose teeth or cilia; lobe margins often with paired cilia; underleaf lobes truncate, the summit with several cilia ± equal in size . L. ulothrix (p. 256) 8b. Branching 2-pinnate; dorsal margin of leaves denticulate-dentate; lobe margins entire or sparingly denticulate; underleaf lobes acute or if ± truncate, then with accessory cilia smaller . L. serrulata (p. 253) 7b. Dorsal pair of lobes acute to acuminate, the distal portion not ciliiform, the uniseriate row comprised of 2-3 cells . 9 9a. Dorsal margin of disc and contiguous margin of lobe irregularly dentate to coarsely serrate; leaf lobes acute; underleaves divided to at most 0.5 (the disc 12-16 cells high), the lobe margins entire or sparingly toothed . L. kirkii (p. 248) 9b. Dorsal margin of disc and confluent margin of lobe ± regularly spin- ose-dentate, with discrete, often curved, acuminate spines; leaf lobes acuminate; underleaves divided to 0.55-0.8 (the disc 6-9 cells high). the lobe margins laciniate-multifid (rarely entire) . . . . L. hirta (p. 250) 6b. Dorsal margin of leaves entire (rarely with a basal tooth) . 10 10a. Leaf lobes setaceous, terminating in a uniseriate row of 6-10(12) elongated capillary cells. Leaf insertion distinctly incubous; trigones large and bulging to knot-like; underleaves distinctly connate on one side . L. setigera (p. 209) 10b. Leaf lobes never setaceous, the lobes acute or terminating in a short uniseriate row of up to 2-5 cells . 11 lla. Leaves appressed to stem, distinctly ventrally secund, ± equally and shallowly (0.25-0.4) lobed, the two median lobes wider than the outer lobes. Slender, wiry plants with strongly ventrally secund branches . L. procera (p. 21 1) llb. Leaves spreading, not appressed to stem, the two median lobes not clearly wider than outer lobes. Leaves often asymmetrically lobed, the dorsal lobes often ± united in a perceptible pair, the ventral lobes usually shorter and often somewhat divergent from the dorsal pair .... 12 12a. Leaves and underleaves variously appendaged, with accessory lobes and often lamellae; underleaves plicate, the lobes ventrally sulcate, the sinus bases strongly reflexed. Plants brown; branches spreading. Penalpine-alpine species . L. ornata (p. 219) 12b. Leaves and underleaves not appendaged (rarely with marginal teeth); underleaves plane . 13 13a. Plants with brown pigments, typically erect, with distinctly ventrally secund branches (occasionally greenish with spreading branches in var. parvula). Disc cells often distinctly thick- walled, brownish; leaf and underleaf lobes often bluntly rounded. Montane to alpine species . L. obtusiloba (p. 213) 13b. Plants green, typically prostrate to procumbent, with spreading or ± decurved branches . 14 14a. Median cells of leaf disc large (26-41 mm wide); plants medium-sized; underleaves inserted on 10 rows of stem cells; leaves 0.8-1 mm wide X 0.6- 0.9 mm long. Leaves variable in shape, the ventral lobes typically not much shorter than the dorsal (the branch leaves ± equally 4-lobed). Surface of leaf disc smooth; median disc-cells typically with trigones straight to large and bulging . L. concinna (p. 223) 14b. Median cells of leaf disc smaller: 25 juim wide or less (except sometimes in L. bidens); plants small to minute; underleaves inserted on 9 or fewer rows of stem cells; leaves usually less than 0.5(0.6) mm in longest dimension . 15 15a. Eirst branch underleaf consistently unlobed. South Is. (Westland Prov., 990 m) + North Is. (Rotorua area) . 16 16a. Leaves deeply (0.5 -0.6) quadrifid, the lobes lanceolate; dorsal sinus descending at least 0.5 leaf length; lobes ending in ± elongated cells, the lobe cells mostly rec- tangulate; first branch underleaf subulate; stem half-leaf usually 0.45-0.55 bifid; branch leaves mostly 3-lobed . L. acantha (p. 239) 16b. Leaves under 0.5 quadrifid, the lobes triangular, under 3X as long as broad; dor¬ sal sinus usually descending to 0.2-0. 3; lobes ending in non-elongated cells, the lobe cells mostly subquadrate; first branch underleaf ovate-lanceolate; stem half-leaf under 0.25 bifid; branch leaves 4-lobed . L. elobata (p. 241) 15b. Eirst branch underleaf of mature shoots 2-4- lobed or mixed 1-2-lobed. Leaves mostly bis- bifid: median sinus deeper, dorsal sinus usually shallow, usually strongly asymmetric, the lobes always strongly unequal . 17 17a. Leaves ± conspicuously papillose (at least on the lobes) or if indistinctly papillose (suboptimal populations of L laevifolia) then the dorsal margin of disc ampliate and the outer wall of the marginal cells of disc and lobes not thickened . 18 18a. Marginal cells of disc and lobes with free wall not differentially thickened; dorsal margin of disc ampliate, the margin cordate to auriculate at the insertion; leaves usually distinctly concave, wet or dry. Leaves coarsely papillose, the disc closely and distinctly striate-papillose; lobes with uniseriate row (when present) of non-elongated cells. Common; usually not below 300 m . L. laevifolia (p. 227) 18b. Marginal cells of disc and lobes with a strongly thickened free wall (the wall often bulging into the cell lumen); dorsal margin of disc ± straight to moderately ampliate proximally, cordate at insertion, not clearly auriculate; leaves plane or only moderately concave, the lobes spreading or incurved. Rare or infrequent species . 19 19a. Lobe tips caducous, the cells turgid, barrel- shaped, the septa constricted; lobes with uniseriate row of 2-4(5) cells, the cells ± isodiametric, the terminal cell rounded at the tip; median disc cells 17-24 mm wide; under¬ leaves inserted on 7 rows of stem cells. Margins of disc and lobes occasionally toothed. South Is., 560-900 m . Lfugax (p. 232) 19b. Lobe tips not caducous, the cells with straight or concave walls, the septa dilated; lobes terminating in a single cell or at most 2 superposed cells, the cells elongated (to 2:1), the terminal cell ± tapering to a point; median disc cells 11-16 |ULm wide; underleaves inserted on 4-6 rows of stem cells. South Is. + North Is.; forest species . L. novae-zelandiae (p. 237) 17b. Leaves smooth (rarely finely and indistinctly papillose); outer wall of marginal cells of disc and lobes distinctly thickened . 20 20a. Plants medium-sized (the main shoots, 700-900 mm wide, leaf tip to leaf tip); underleaves inserted on 8 rows of stem cells; leaf disc 8-10 cells high at dorsal sinus, the cells ± longitudinally elongated; leaves with dorsal lobes end¬ ing in a uniseriate row of elongated (up to 2:1) cells. Plants of forests (0-330 m in South Is.; to 920 m in North Is.) . L. bidens (p. 245) 20b. Plants minute to small (the shoots 365-490 juim wide, leaf tip to leaf tip); underleaves inserted on 5-6 rows of stem cells; leaf disc 9-12 cells high at dor¬ sal sinus, the cells quadrate or slightly longer than wide; dorsal lobes with cells of uniseriate row ± isodiametric or at most slightly longer than wide. Plants of forests + penalpine zone + (var. alpina) alpine zone (570-1945 m); South Is. + North Is . L. pumila (p. 242) lb. Branching regularly and consistently 2-pinnate, the branches slender and drooping; leaves typically distant, vertically oriented, the insertion transverse. Plants erect, with rigid, woody stems . 21 21a. Leaves inconspicuous, scale-like, narrower than stem, strongly erect and commonly ± appressed to stem, divided to 0.4-0.5 (median sinus) . . . . L. microphylla (p. 204) 21b. Leaves conspicuous, wider than stem, stiffly patent or erect-patent from a spreading base, divided to 0.65-0.9 . 22 22a. Leaves ± symmetrical, the lobes 6-8 cells wide at base, ending in a uniseriate row of 7-12 cells; dorsal margin of disc straight to slightly concave; underleaf disc 3-6 cells high, the lobes with a uniseriate row of 7-16 cells . L. spinosissima (p. 201) 22b. Leaves asymmetrical, the lobes 14-24 cells wide at base, with a uniseriate row of 2-4(6) cells; dorsal margin of disc broadly ampliate; underleaf disc 14-24 or more cells high, the lobes with a uniseriate row of 1-3(4) cells, the lobes ± parallel, ± ventrally sulcate . L. pendulina (p. 206) The following treatment of taxa is adapted and modified from Engel and Schuster (2001). Subg. Dendrolepidozia R.M.Schust. Lepidozia subg. Dendrolepidozia R.M.Schust., J. Hattori Bot. Lab. 36: 386. 1973 (1972). Type: Lepidozia spinosissima Mitt.</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>TASMANIA_RAINFOREST_BOOK</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">P. ratkowskiana H. Inoue
+*   P. retrospeclans Nees
+*   P. stromhyolia (Tayl.) Tayl. ex Lehrri.
+PSEUDOLEPICOLEACEL4E
+    Tm&#39;chotemnomacormgaturn (Steph.) Schust.
+R4DULACEL4E
+* Radula bucn&#39;nifera U.D. Hook. &amp; Tayl.) Tayl. ex Gott.
+* R. compacta Castle
+* R. multiamentula Hodgs.
+
+
+
+
+                                                             Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+* R. ratkoru~kiar~a
+                  Yamada
+    R. tasmanica Stcph.
+SCAPL4NIACEAE
+* Blc$haridoph~~llum71ertebrale(Tayl.) Aongstr.
+    B. xiphuphyltum Grolle
+    Diplophyllum obtusifolium (Hook.) Durn.
+SCHISTOCHILACEAE
+* Pachyschistochila succulents Engel &amp; Schust.
+* Paraschistochila pinr~ati&amp;olia(Hook.) Schust.
+* P. tuloides (J.D. Hook. &amp; Tayl.) Scllust.
+    Schistochila bulfuuriana U.D. Hook. &amp; Tayl.) Steph.
+*   S. lehmanniana (Lindcnb.) Carring. &amp; Pears.
+*   S. pseudociliata Schust.
+    S. tasmanica steph.
+TRICHOCOLEACEAE
+    Eotrichocolea polyacantha (J.D. Hook. &amp; Tayl.) Schust.
+* Tm&#39;chocolea mollissima (T.D. Hook. &amp; Tayl.) Gott.
+    Trichocolea sp.
+ Glossary
+A
+..............
+                                              elaters: spirally thickened cells which
+                                                 occur amongst liverwort spores
+acute: pointed, with the angle formed by      endemic: restricted to a particular
+   the point being lass than 90&#34;                 rcgion, area or country
+asexual: witlivut the production of sex       entire: without teeth, smooth
+   cells (gametes)                            epiphyllous: growing on leaves
+                                              epiphyte: a plant that grows on another
+                                                 live plant, using it for support
+bracts: modified leaves which surround
+   thc reproduclive organs
+hryophytes: the plant group comprisirlg       fauna: animals; includes vertebrates and
+   mosses, liverworts and hornworts              invei-tcbrates
+                                              flagelliform:a term used for very slender
+c
+..............                                   branches with leases much reduced in
+                                                 size compared to typical leaves
+calyptra: a hood-like structure on the        foot: the base of the skalk (seta) that
+   caps~ileoi mosses; it stays loosely            holds the capsule
+   attached until maturity                    forbs: herbaceous flowering plants
+capsule: the conlairler which holds the          excludirlg grasses and grass-like
+   spores; sonlelinies called the fruit          suecies
+chloroplasts: small, rounded bodies in        fragmentation: in bryophytcs, a process</pre>
+    
+    
+  </details>
+  
+  <details>
+    <summary>
+      <strong>WIKIPEDIA</strong>
+      <span class="muted small">&nbsp;(1)</span>
+    </summary>
+    
+    
+    <pre class="description-text">Rhysida polyacantha is a species of centipede in the Scolopendridae family. It is endemic to Australia, and was first described in 1985 by L. E. Koch.</pre>
+    
+    
+  </details>
+  
+</section>
+
+
+
+
+<section class="data-section">
+  <h2>Synonyms &amp; alternative names</h2>
+  <ul class="synonym-list">
+    
+    <li><em>Actaea polyacantha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Astropecten polyacanthus</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Carex polyantha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eotrichocolea</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Lilaeopsis polyantha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Ophiomitrella polyacantha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Opuntia polyacantha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Perissasterias polyacantha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Rhysida polyacantha</em> <span class="muted small">ALA</span></li>
+    
+    <li><em>Eotricochlea polyacantha</em> <span class="muted small">input</span></li>
+    
+  </ul>
+</section>
+
+
+
+  </main>
+
+  <footer class="site-footer container-fluid">
+    304 species &middot; <a href="https://doi.org/10.7751/telopea18040">Renner et al. 2024</a> backbone &middot;
+    ALA occurrence data &middot; Built with Flask + Pico CSS
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.0952918, 146.6857752], [-43.3667, 146.85], [-41.439786, 144.846749], [-43.0787, 146.264315], [-43.531227, 147.125144], [-42.26647, 146.031327], [-41.811163, 145.556662], [-43.350944, 146.754599], [-42.714359, 145.780149], [-43.440988, 146.754236], [-41.257471, 144.733392], [-41.71955, 145.438498], [-41.8402931, 145.6074363], [-41.717854, 145.318327], [-50.5318043, 166.1827693], [-45.417178, 168.35407], [-41.5765626, 172.0695665], [-42.869551, 171.200228], [-44.116667, 169.35], [-42.871582, 171.200664], [-46.94, 167.875], [-41.606236, 172.068002], [-41.653432, 171.893948], [-44.11051, 169.35211], [-41.551877, 172.561366], [-52.524, 169.168], [-44.1666179, 168.6261825], [-41.748236, 171.8495631], [-42.91543, 171.67372], [-47.1650404, 167.6994831], [-39.327691, 175.498792], [-39.316667, 175.5], [-46.741, 167.962], [-44.112778, 169.345278], [-46.741, 167.962], [-41.9882422, 172.0262341], [-39.316667, 175.5], [-46.939694, 168.003194], [-50.548475, 166.2161096], [-41.682908, 171.936084]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4, color: '#2d6a4f', fillColor: '#52b788',
+      fillOpacity: 0.75, weight: 1,
+    }).addTo(map);
+  });
+  if (coords.length > 0) map.fitBounds(L.latLngBounds(coords), {padding:[24,24]});
+})();
+</script>
+
+
+
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<script>
+
+(function(){
+  const spec = {"data": [{"type": "bar", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [91.3, 82.0, 110.6, 121.7, 189.4, 181.5, 213.6, 226.3, 207.1, 179.3, 109.6, 130.6], "marker": {"color": "#40916c"}, "hovertemplate": "%{y:.0f} mm<extra></extra>"}], "layout": {"title": {"text": "Monthly Rainfall (mm)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "mm"}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-rain', spec.data, spec.layout, spec.config);
+})();
+
+
+(function(){
+  const spec = {"data": [{"type": "scatter", "mode": "lines", "name": "Tmax", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [19.9, 20.0, 17.8, 14.7, 12.0, 10.2, 9.7, 10.4, 12.1, 14.0, 16.8, 17.9], "line": {"color": "#e07a5f", "width": 2}, "fill": "tonexty", "fillcolor": "rgba(224,122,95,.12)", "hovertemplate": "Tmax %{y:.1f}\u00b0C<extra></extra>"}, {"type": "scatter", "mode": "lines", "name": "Tmin", "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "y": [9.4, 9.3, 8.4, 6.4, 5.0, 3.5, 2.8, 3.2, 4.5, 5.3, 7.2, 8.1], "line": {"color": "#81b29a", "width": 2}, "hovertemplate": "Tmin %{y:.1f}\u00b0C<extra></extra>"}], "layout": {"title": {"text": "Monthly Temperature (\u00b0C)", "font": {"size": 13}}, "margin": {"t": 35, "b": 30, "l": 40, "r": 10}, "height": 200, "yaxis": {"title": "\u00b0C"}, "legend": {"orientation": "h", "y": -0.15}, "paper_bgcolor": "rgba(0,0,0,0)", "plot_bgcolor": "#f8f9f8"}, "config": {"displayModeBar": false, "responsive": true}};
+  Plotly.newPlot('chart-temp', spec.data, spec.layout, spec.config);
+})();
+
+</script>
+
+
+</body>
+</html>
