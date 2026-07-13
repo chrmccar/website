@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riccia tasmanica — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Riccia tasmanica</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Riccia tasmanica</em></h1>
+  <p>
+    <span class="badge">Ricciaceae</span>
+    <span class="badge secondary">Riccia</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Lewinskya tasmanica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccia duplex</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccia porosa</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccia pullulans</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tasmanica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tasmanina</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tasmatica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tayloria tasmanica</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">18</p>
+    <footer>18 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.883333, 147.3], [-42.866667, 147.316667], [-42.866667, 147.316667], [-42.833333, 147.35], [-42.866667, 147.316667], [-42.85, 147.35], [-42.883333, 147.3], [-42.833333, 147.35], [-42.8250888, 147.3572173], [-42.883333, 147.3], [-43.077824, 147.861267], [-43.170846, 147.247434], [-42.866667, 147.316667], [-42.900369, 147.368839], [-42.900698, 147.246351], [-42.866667, 147.366667], [-42.990749, 147.246711], [-42.866667, 147.316667]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metzgeria furcata — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Metzgeria furcata</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Metzgeria furcata</em></h1>
+  <p>
+    <span class="badge">Metzgeriaceae</span>
+    <span class="badge secondary">Metzgeria</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (10)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Acacia sulcata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Braithwaitea sulcata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Hakea falcata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Metzgeria</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Metzgeria conjugata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Metzgeria consanguinea</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Metzgeria crassipilis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Metzgeria hebridensis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Metzgeria lindbergii</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Metzgeria fulcata</em> <small class="muted">input</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">1515</p>
+    <footer>392 Tasmanian</footer>
+  </article>
+
+  
+  <article>
+    <header>Mean annual temp.</header>
+    <p class="big-num">12.5&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+
+  
+  <article>
+    <header>Mean annual precip.</header>
+    <p class="big-num">1307&thinsp;mm</p>
+    <footer>
+      CV 25.1
+    </footer>
+  </article>
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">13</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>cell_diameter_um</td>
+          <td>9.0–17.0</td>
+          <td>µm</td>
+          <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell_diameter_um</td>
+          <td>10.0–24.0</td>
+          <td>µm</td>
+          <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>entire</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>4-lobed</td>
+          <td>categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>aquatic</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>bark</td>
+          <td>categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>rock</td>
+          <td>categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>bark</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>aquatic</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus_width_mm</td>
+          <td>7.5</td>
+          <td>mm</td>
+          <td class="muted small">PLAGIOCHILA_DELTOIDEA_2025</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">178
+20         Metzgeriales
+Metzgeriaceae H.Klinggr.
+The family Metzgeriaceae includes about 250 named species in four genera: Apometzgeria,
+Austrometzgeria, Metzgeria and Vandiemenia (Tropicos 2016). Only Metzgeria is known from
+Lord Howe Island.
+
+Metzgeria Raddi.
+So (2002a) noted that Metzgeria includes about 240 named species (So 2002a), of which 58 had
+been recorded from Australasia and some island groups of the Pacific Ocean. Her treatment
+reduced those 58 to 18 species, of which seven species have been reported from Australia, nine
+from New Zealand (Glenny 1998) and three from New Caledonia (So 2002a). However, various
+authors (e.g. Gradstein and Costa 2003, Costa 2008, Thouvenot et al. 2011) have disagreed with
+some aspects of So’s treatment; for example, Thouvenot et al. (2011) recognised seven species
+from New Caledonia. Until a complete world-wide treatment of the genus is undertaken, the
+taxonomy of Metzgeria will continue to be unsettled.
+Metzgeria leptoneura and M. decipiens (as M. furcata) have been reported previously from Lord
+Howe Island (Stephani and Watts 1914, So 2002a). M. lindbergii is new to the island’s flora.
+The three species can be distinguished by the following key:
+
+Key to Metzgeria for Lord Howe Island
+1     Hairs  mostly  paired,  usually  distinctly  falcate  ......................................................................  leptoneura  
+      Hairs  rarely  if  at  all  paired,  rarely  if  at  all  falcate  .................................................................................  2  
+2     Dioicous;  cells  of  wings  with  evenly  thickened  walls;  marginal  gemmae  
+      common  ..................................................................................................................................  decipiens  
+      Autoicous;  cells  of  wings  with  irregularly  thickened  walls;  marginal  
+      gemmae  rare  ...........................................................................................................................  lindbergii  
+  
+
+Metzgeria decipiens (C.Massal.) Schiffn. &amp; Gottsche in Schiffn.
+Metzgeria furcata var. decipiens C.Massal, Nuovo Gior. Bot. Ital. 17: 256 (1885); Metzgeria decipiens
+(C.Massal.) Schiffn. &amp; Gottsche in Schiffn, Leberm, Forschungsreise Gazelle 43 (1890)
+Type: ARGENTINA, ‘ex insula Statuum [Staten Island, Tierra del Fuego] (Basil-Hall, port
+Vancouver’, Spegazzini s.n. (fide Evans 1923), date unknown (YU), not seen.
+Description: This species has been described comprehensively by Scott (1985), Kuwahara
+(1960, as M. caledonica; 1966) and So (2002a).
+Illustrations: Kuwahara (1960, Figure 10a–g, as M. caledonica), Kuwahara (1966, Figure 21e–
+g), Scott (1985, Figure 22), Meagher and Fuhrer 2003, page 189).
+Habitat: Epiphytic and on rotting logs in humid environments, also rarely on rock and soil.
+Distribution on LHI: Throughout the island.
+Total distribution: Temperate and subtropical regions of the Pacific from Australia to South
+America, including New Caledonia and New Zealand.
+Discussion: Grolle (2002) and So (2002a) were I think incorrect in treating Metzgeria decipiens
+as a synonym of the circumglobal M. furcata. The number of cells covering the midrib on the
+ventral side distinguishes the two clearly: 2 (rarely 3) in M. decipiens, and 4 (rarely 3) in
+
+
+                                                                           179
+M. furcata. A further difference is that M. furcata rarely produces gemmae on the margins of
+unmodified thalli (Atherton et al. 2010), whereas M. decipiens commonly produces such
+gemmae (Scott 1985). Until a complete assessment of the two taxa can be made, the two should
+be maintained as separate species.
+As a result of this confusion the overall distribution of M. decipiens in Australia is unclear.
+However, from my own observations it is common throughout the eastern seaboard from
+southern Tasmania to northern New South Wales, but reaching as far north as the Queensland
+Wet Tropics, where it is uncommon.
+Metzgeria caledonica Steph. was synonymised under M. decipiens by Kuwahara (1966), but
+Thouvenot et al. (2011) treated it as a synonym of M. ciliata Raddi and considered all reports of
+M. decipiens from New Caledonia to be M. ciliata. However, I am not convinced without a
+detailed study that the neotropical M. ciliata is likely to occur in the western Pacific, and take
+the conservative view that M. decipiens is the name that should be applied to collections from</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Podanthe squamata Taylor                                 Thysananthus anguiformis (Hook.f. &amp; Taylor)
+Lopholejeunea colensoi Steph. [an invalid name un-              Taylor
+       less the genus name Lopho-Lejeunea Steph.         Megalembidium insulanum (W.Martin &amp;
+       is accepted]                                             E.A.Hodgs.) R.M.Schust.
+Lopholejeunea knightii Steph.                                   Kurzia insulana (WMartin) Grolle
+Lopholejeunea plicatiscypha (Hook.f. &amp; Taylor)           Metahygrobiella cylindrica E.A.Hodgs. &amp; Herzog
+       Steph.                                            Metahygrobiella drucei R.M.Schust.
+Lophozia autoica R.M.Schust. var. autoica                Metalejeunea cucullata (Reinw., Blume &amp; Nees)
+Lophozia autoica var. subalpina R.M.Schust.                     Grolle
+Lophozia druceae Grolle &amp; E.A.Hodgs.                            Lejeunea cucullata (Reinw., Blume &amp; Nees)
+Lophozia excisa (Dicks.) Dumort.                                Nees
+Lophozia herzogiana E.A.Hodgs. &amp; Grolle                         Microlejeunea cucullata (Reinw., Blume &amp;
+Lophozia multicuspidata (Hook.£. &amp; Taylor) Grolle               Nees) Steph.
+Lophozia nivicola R.M.Schust.                            Metzgeria albinea Spruce
+Lophozia pumicicola Berggr.                              Metzgeria alpina R.M.Schust. &amp; J.J.Engel
+Lunularia cruciata (L.) Dumort.                          Metzgeria atrichoneura Spruce
+                                                         Metzgeria australis Steph.
+Marchantia berteroana Lehm. &amp; Lindenb.                   Metzgeria bartlettii Kuwah.
+Marchantia foliacea Mitt.                                Metzgeria campbelliensis Kuwah.
+Marchantia macropora Mitt.                               Metzgeria chilensis Steph.
+Marchantia pileata Mitt.                                 Metzgeria crassipaginula Kuwah.
+        Marchantia pallida Steph.                        Metzgeria decipiens (C. Massa!.) Schiffn. &amp; Gottsche
+Marchantia polymorpha var. aquatica Nees                 Metzgeria decrescens Steph.
+Marsupella sparsifolia (Lindb.) Dumort. subsp. childii   Metzgeria disciformis A.Evans
+                                                         Metzgeria epiphylla A.Evans
+136   Tuhinga, Number 10 (1998)
+
+
+
+
+Metzgeria furcata (L.) Dumort.                         Pachyschistochila trispiralis (R.M.Schust.)
+Metzgeria leptoneura Spruce                                    R.M.Schust. &amp; ].].Engel
+       Metzgeria hamata Lindb. nom. illeg.                     Schistochila trispiralis R.M.Schust.
+       Metzgeria colensoi Steph.                       Pachyschistochila virescens (R.M.Schust.)
+Metzgeria pinnata Steph.                                       R.M.Schust. &amp; ].].Engel
+Metzgeria rigida Lindb.                                        Schistochila virescens R.M.Sch ust.
+Metzgeria violacea (Ach.) Dumort.                      Pallavicinia connivens (Colenso) Steph.
+Metzgeria vittii Kuwah.                                        Jensenia connivens (Colenso) Grolle
+Monoclea forsteri Hook.                                Pallavicinia innovans Steph.
+                                                       Pallavicinia lyellii (Hook.) Gray
+Neogrollea notabilis E.A.Hodgs.                        Pallavicinia rubristipa Schiffn.
+Neohodgsonia mirabilis (Perss.) Perss.                 Pallavicinia tenuinervis (Hook.f. &amp; Taylor) Trevis.
+Nephelolejeunea conchophylla Grolle                    Pallavicinia xiphoides (Hook.f. &amp; Taylor) Trevis.
+Nephelolejeunea hamata Grolle                          Paracromastigum drucei (R.M.Schust.) R.M.Schust.
+Nephelolejeunea papillosa Glenny                               Pseudocephalozia drucei R.M.Schust.
+Nothogymnomitrion erosum (Carrington &amp; Pearson)        Paracromastigum fiordlandiae R.M.Schust. &amp;
+       R.M.Schust.                                            JJ.Engel
+       Herzogobryum erosum (Carrington &amp;               Paracromastigum fissifolium (Steph.) R.M.Schust.
+       Pearson) Grolle                                 Paracromastigum furcifolium (Steph.) R.M.Schust.
+                                                               Bonneria furcifolia (Steph.) R.M.Schust.
+Pachyglossa tenacifolia (Hook.f. &amp; Taylor) Herzog      Paracromastigum kirkii (Steph.) R.M.Schust.
+       &amp; Grolle                                        Paracromastigum macrostipum (Steph.) R.M.Schust.
+Pachyschistochila altissima (E.A.Hodgs.)                       Pseudocephaloziella macrostipa (Steph.)
+       R.M.Schust. &amp; J.J.Engel subsp. altissima                R.M.Schust.
+       Schistochila altissima E.A.Hodgs.               Paraschistochila conchophylla (E.A.Hodgs. &amp;
+Pachyschistochila berggrenii ].].Engel &amp; R.M.Schust.           Allison) R.M.Schust.
+Pachyschistochila childii R.M.Schust. &amp; ].].Engel              Schistochila conchophylla (E.A.Hodgs. &amp;
+Pachyschistochila colensoana (Steph.) R.M.Schust.              Allison) R.M.Schust.
+       &amp;].].Engel                                      Paraschistochila pinnatifolia (Hook.) R.M.Schust.
+       Schistochila colensoana Steph.                          Schistochila pinnatifolia (Hook.) Trevis.
+       Schistochila pseudokirkiana R.M.Schust.         Paraschistochila tuloides (Hook.f. &amp; Taylor)</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>PLAGIOCHILA_DELTOIDEA_2025</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">two scenarios to explain the paraphyly of the re-circumscribed                     (Hedenäs et al. 2014). In these and other genera such as Lejeunea
+P. deltoidea. Either P. deltoidea is paraphyletic or the paraphyly                 Lib., multiple lineages previously attributed to single species
+reflects a knowledge problem. Either is plausible given available                  have been recovered by molecular data, and these were often
+evidence and both are discussed below following an assessment                      separated by subtle morphological differences only, particularly
+of the evidence supporting the recognition of P. geminata as a                     those associated with continuous traits (Heinrichs et al. 2009,
+46         Telopea 29: 37–62, 2025                                                                                                                                Renner
+
+
+
+2010, 2015; Renner et al. 2013; Aranda et al. 2014). The P. deltoidea   Taxonomic Treatment
+complex may present an instance of crypsis in broad sympatry
+                                                                        Key to taxa of the Plagiochila deltoidea complex
+due to incipient divergence in trait means without separation
+of trait distributions, such that the degree of divergence fails to     1.   Leaf medial cells 9–17 µm wide; rows of elongate and heavily
+yield morphological discontinua, and a general lack of qualitative           thickened cells of the basal vitta extending to near mid-leaf leaf,
+                                                                             and occupying more than half of the stem insertion length, often
+differences. Variation within and overlap between species in
+                                                                             with a separate dorsal ‘sub-vitta’ of three or four tiers of cells
+gametophytic traits is problematic for taxon circumscription and             extending a short distance into the leaf cnemis; leaf margins
+identification within P. deltoidea, as noted above, as it is in other        bearing 7–25 (average 15) teeth; leaves imbricate when dry,
+bryophytes including Oligotrichum DC. (Bell and Hyvönen 2012)                rolled along the cnemis only, smallest leaves obovate; female
+and Homalothecium (Hedenäs et al. 2014).                                     bracts usually with large triangular-laciniate teeth;
+                                                                             perianth mouth with 11–22(–27) long triangular teeth on
+Morphologically weakly differentiated taxa at species rank and               each labium..............................................................P. deltoidea var. densa
+below result from a range of processes, including hybridization,        1:   Leaf medial cells 10–24 µm wide; rows of elongate and heavily
+                                                                             thickened cells of the vitta confined to the leaf base, not extending
+for example the allopolyploid P. britannica Paton (Barbulescu
+                                                                             to close to mid-leaf, occupying the ventral half of the leaf insertion
+et al. 2017), and possibly a lineage within Hygroamblystegium                at most, never extending dorsally into the cnemis; leaf margins
+(Vanderpoorten et al. 2004); vicariant divergence, as exemplified            bearing 5–31 teeth; leaves contiguous or remote when dry, often
+by cryptic lineages within Metzgeria furcata (L.) Corda (Fuselier            rolled along their entire width into a cone; smallest leaves ovate;
+et al. 2009); and also possibly by ecological divergence, for                female bracts with small to large triangular teeth; perianth mouth
+which cryptic species of Conocephalum Hill with their apparently             with short triangular teeth, or with large laciniate teeth.......................2
+
+differential tolerance of desiccation and micro-morphological           2.   Perianth mouth with 10–22 (average 13) laciniate teeth on each
+                                                                             labium; leaf margins bearing (7–)12–31 (average 23) teeth; leaves
+differences associated with gas exchange (Szweykowski et
+                                                                             2.5–4.6 mm long by 1.7–3.4 mm wide; plants robust,
+al. 2005), are candidates. At least some degree of ecological                shoots to 7.5 mm wide when hydrated........P. deltoidea var. deltoidea
+differentiation has been inferred between cryptic species within
+                                                                        2:   Perianth mouth with 14–24 (average 18) short triangular teeth
+the Aneura pinguis (L.) Dumort. complex as well (Bączkiewicz                 on each labium; leaf margins bearing 5–21 (average 13) teeth;
+and Buczkowska 2016). Further study may identify ecological                  leaves 1.8–3.3 mm long by 1.3–2.3 mm wide, plants medium,
+differentiation among the three lineages within P. deltoidea that            shoots 4.5 mm wide when hydrated......................................P. geminata
+support the recognition of cryptic species.
+                                                                        Plagiochila deltoidea Lindenb., Species Hepaticarum 5: 132.
+Plagiochila deltoidea var. deltoidea and P. deltoidea var. densa        1843.
+are both widespread throughout cool hyper-humid environments,
+                                                                        =Jungermannia deltoidea (Lindenb.) Hook.f. and Taylor, Choix
+from the Coromandel Range in the North Island to South Westland,
+                                                                        de Plantes de la Nouvelle-Zélande: 36. 1846.
+and Stewart Island, with P. deltoidea var. densa extending east to
+the Chatham Islands. Plagiochila geminata is confined to warm           Type citation: in portu Dusky Bay dicto Novae Zeelandiae; in terra
+temperate forests of the northern North Island and the Chatham          van Diemen (Fraser. Herb. Hookeri); in Barbadoes insula (Herb.
+Islands. This northern North Island – Chatham Islands disjunction       Neesii ab Es.)
+is broadly equivalent to that exhibited by the fern Asplenium
+pauperequitum Brownsey and P.J.Jacks (Cameron et al. 2006),             Type: New Zealand, Dusky Bay, without collector (lectotype
+The Chatham Islands vascular flora comprises three broad                designated by Inoue and Schuster (1971): STR!; isolectotype: W!
+elements, one with affinities to northern New Zealand, Australia,
+and the Pacific, one with affinities to southern New Zealand, and       =Plagiochila caespitosa Colenso, Transactions and Proceedings
+a third derived from New Zealand with no clear center of origin         of the New Zealand Institute 20: 244. 1887 [1888]. Colenso,
+
+---
+
+Glenny) provided constructive comments on earlier drafts of
+                                                                       Collyer ML, Sekora DJ, Adams DC (2015) A method for analysis
+this manuscript, which was submitted to Australian Systematic
+                                                                           of phenotypic change for phenotypes described by high-
+Botany shortly before the author suffered a Traumatic Brain
+                                                                           dimensional data. Heredity 115, 357–365. DOI
+Injury that hampered the manuscript’s revision and resubmission.
+This version has been substantially modified and revised, and
+differs in substance from that submitted to Australian Systematic
+A reassessment of the New Zealand endemic Plagiochila deltoidea                                 Telopea 29: 37–62, 2025          61
+
+
+
+Engel JJ, Glenny D (2008) A flora of the liverworts and hornworts   Hutsemékers V, Vieira CC, Ros RM, Huttunen S, Vanderpoorten
+   of New Zealand. Volume 1. Missouri Botanical Garden Press:           A (2012) Morphology informed by phylogeny reveals
+   St. Louis, Missouri USA.                                             unexpected patterns of species differentiation in the
+                                                                        aquatic moss Rhynchostegium riparioides s.l. Molecular
+Engel JJ, Merrill GLS (2010) Studies on New Zealand Hepaticae.          Phylogenetics and Evolution 62, 748–755. DOI
+   39–55. More new taxa, combinations, typifications and
+   synonymy in Plagiochila from New Zealand (Plagiochilaceae).      Inoue H (1986) Notes on Plagiochilaceae XIII. Review of the genus
+   Nova Hedwigia 91, 501–517. DOI                                       Plagiochila (Dum.) Dum. in mainland Australia. Journal of the
+                                                                        Hattori Botanical Laboratory 60, 357–378. DOI
+Engel JJ, Merrill GLS (2013) Austral Hepaticae 49. New section
+   names and synonymy in Plagiochila, with reference to New         Inoue H, Schuster RM (1971) A monograph of the New Zealand
+   Zealand species [Plagiochilaceae (Jörg.) K.Müll.]. Nova              and Tasmanian Plagiochilaceae. Journal of the Hattori
+   Hedwigia 96, 399–408. DOI                                            Botanical Laboratory 34, 1–225. DOI
+
+Fuselier L, Davison PG, Clements M, Shaw B, Devos N, Heinrichs J,   Klingenberg CP (2016) Size, shape, and form: concepts of
+    Hentschel J, Sabovljevic M, Szövényi, Schuette S, Hofbauer           allometry in geometric morphometrics. Development Genes
+    W, Shaw AJ (2009) Phylogeographic analyses reveal distinct           and Evolution 226, 113–137. DOI
+    lineages of the liverworts Metzgeria furcata (L.) Dumort. and
+    Metzgeria conjugata Lindb. (Metzgeriaceae) in Europe and        Lindenberg JBW (1843) Species hepaticarum, fasc. 5. Henry and
+    North America. Biological Journal of the Linnean Society 98,        Cohen.
+    745–756. DOI
+                                                                    Loy A, Cataudella S, Corti M (1996) Shape changes during the
+Gottsche CM, Lindenberg JBG, Nees von Esenbeck SG (1845)                growth of the sea bass, Dicentrarchus labrax (Teleostea:
+    Synopsis Hepaticarum, Hamburg, Meissner.                            Perciformes), in relation to different rearing conditions.
+                                                                        In: Marcus LF, Corti M, Loy A, Naylor GJP, Slice DE (eds)
+Gould SJ (1966) Allometry and size in ontogeny and phylogeny.           Advances in morphometrics. Plenum, New York, pp 399–405.
+    Biological Reviews 41, 587–640. DOI
+                                                                    McCarthy PM (2006) Checklist of liverworts and hornworts of
+Hedenäs L, Désamoré A, Laenen B, Papp B, Quandt D,                     Australia. ABRS Supplementary Series Number 21. Australian
+   González-Mancebo JM, Patiño J, Vanderpoorten A, Stech               Biological Resources Study, Canberra, ACT, Australia.
+   M (2014) Three species for the price of one within the moss
+   Homalothecium sericeum s.l. Taxon 63, 249–257. DOI               Medina R, Lara F, Goffinet B, Garilleti R, Mazimpaka V (2012)
+                                                                       Integrative taxonomy successfully resolves the pseudo-
+Heinrichs J, Anton H, Gradstein SR, Mues R, Holz I (2000)              cryptic complex of the disjunct epiphytic moss Orthotrichum
+    Surface wax, a new taxonomic feature in Plagiochilaceae.           consimile s.l. (Orthotrichaceae). Taxon 61, 1180–1198. DOI
+    Plant Systematics and Evolution 225, 225–233. DOI
+                                                                    Medina R, Lara F, Goffinet B, Garilleti R, Mazimpaka V (2013)
+Heinrichs J, Feldberg K, Bechteler J, Scheben A, Czumaj A,             Unnoticed diversity within the disjunct moss Orthotrichum
+    Pócs T, Schneider H, Schäfer-Verwimp A (2015) Integrative          tenellum s.l. validated by morphological and molecular
+    taxonomy      of     Lepidolejeunea    (Jungermanniopsida:         approaches. Taxon 62, 1133–1152. DOI
+    Porellales): ocelli allow the recognition of two neglected
+    species. Taxon 64, 216–228. DOI                                 Mitten W (1860) Hepaticae. pp 221–241 in Hooker JD, Flora
+                                                                        Tasmaniae Volume 3 Part 2. Lovell Reed: London.
+Heinrichs J, Hentschel J, Bombosch A, Fiebig A, Reise J,
+    Edelmann M, Kreier HP, Schäfer-Verwimp A, Caspari S,            Monteiro LR (1999) Multivariate regression models and geometric
+    Schmidt AR, Zhu RL, von Konrat M, Shaw B, Shaw AJ (2010)           morphometrics: the search for causal factors in the analysis
+    One species or at least eight? Delimitation and distribution       of shape. Systematic Biology 48, 192–199. DOI
+    of Frullania tamarisci (L.) Dumort. (Jungermanniopsida,</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">the species forms solid yellow-green mats in shel-               to feebly incubous, (230–)365–415 mm long,
+                         tered niches of stream banks in forests dominated                asymmetric, with the ventral lobe of 3-fid leaves
+                         by Nothofagus menziesii. It is also on silty banks               smaller, (2)–3-fid on leading stems, (the basal cell
+                         in the Dart Valley (ca. 365 m, a somewhat higher                 pairs connate for up to 0.5 their length, forming
+                         elevation for the species on South Island). The                  a vestigial disc 4–6 cells broad). Lobes acumi-
+                         species also occurs on roadside banks on North                   nate, strongly tapered, broadly incurved, consist-
+                         Island, but at higher elevations (610–915 m,                     ing of a basal pair of distinctly elongate cells and
+                         type). The species reportedly occurs (Hodgson,                   a uniseriate row of 3–4 cells (rarely biseriate for
+                         1956) in shady pockets on roadside cuttings, on                  an additional tier above base), the dorsal lobe(s)
+                         earth in mixed forests, and on tree fern stems                   usually somewhat longer, the ventral lobe of 3-fid
+                         (Stewart Island).                                                leaves at times uniseriate to base. Cells large, tur-
+                                                                                          gid and barrel-shaped, the paired basal cells ap-
+                            SPECIMENS SEEN—NEW ZEALAND. STEWART IS-                       proaching 0.5 the length of lobe, ca. 38–40 3 85–
+                         LAND: Rakiura Natl. Park, Fresh Water Swamp, track               120 mm to 50–55 3 150–180 mm; first cell of
+                         to Mason’s Bay, ca. 1 km W of Freshwater Hut, 5 m,               uniseriate segment 26–40 3 66–86 mm to ca. 36–
+                         Engel 24402—c. ? 1 / (F). SOUTH ISLAND. OTA-
+                         GO PROV: Paradise, Child H2009—c. sporo. 1 ? (F).                55 3 95–125 mm, the terminal 1–2 cell(s) much
+                         WESTLAND PROV.: Ca. 10 km. along Cascade Rd,                     shorter and strongly tapering to a rounded tip;
+                         just W of Jackson River, SW of confluence of Jackson             cells thin-walled but firm, the transverse septa
+
+
+                         102                                                                                         FIELDIANA: BOTANY
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                              constricted; cuticle smooth. Oil-bodies (fide               termingled T. quadriseta, Phyllothallia nivicola,
+                              Schuster, 1968), colorless, 6 homogeneous but               Jungermannia rufiflora, Diplophyllum domesti-
+                              not strongly glistening, fusiform to ellipsoidal to         cum, Metzgeria furcata and Isotachis lyallii, etc.
+                              crescentic-fusiform, (4)5–9(10) per cell (except in         Also known from two stations in the Ruahine
+                              small 1–2 distal cells), mostly 1.5–2 3 3–6 mm              Mts., both in the Whanahuia Range; the Schuster
+                              to 2.2 3 2.8–3.5 mm up to 1.5–1.8(2) 3 6.5–8 m.             plant occurred in boggy areas at 1370 m on Mt.
+                              Underleaves small and inconspicuous, 3–4-fid;               Mangahuia.
+                              lobes usually 1–2-celled, terminating in a slime
+                              papilla, the basal cells of lobes distinctly elongat-          SPECIMENS SEEN—NEW ZEALAND. SOUTH IS-
+                              ed (to 3:1), inserted on a pair of laterally juxta-         LAND: WESTLAND PROV.: Mt. Aspiring Natl. Park,
+                              posed cells or with secondary divisions resulting           slope of Mt. Brewster, facing Haast River Valley, ca.
+                                                                                          1435 m, Schuster 67-451i (F). NORTH ISLAND: W
+                              in a disc-like tier of small, quadrate, rhizoid ini-        Ruahine Mts., Whanahuia Range, Druce s.n. (ex hb.
+                              tials. Asexual reproduction lacking.                        Hodgson no. 13621) (CHR); same loc., 0.5–1 mi. W of
+                                 Androecia not seen. Gynoecia (see Schuster,              Mt. Mangahuia, 1370 m, Schuster 67-599 (F).
+                              1968, fig. 52: 1, / bracts).
+                                                                                          Telaranea granulata Engel &amp; Merr., sp. nov.
+                                 DIFFERENTIATION AND VARIATION—A distinctive
+                              species, very similar to T. pseudozoopsis (Herz.)              Foliis profunde 3-fidis, in surculis validus transversim
+                              Fulf. of southern South America, the Falkland Is.,          insertis, ramis conspicue complanatis cellulis corticali-
+                                                                                          bus late expositus, amphigastriis primis ramorum sim-
+                              and Juan Fernandez (Schuster, 1968, pl. 53). Both           plicibus, disco foliorum 2 (1.5) cellulas alto, amphigas-
+                              have leaf lobes of somewhat turgid cells, con-              triis 3-fidis foliis aequantibus; cuticula minute scabrosis
+                              stricted at the septa, with marked and progressive          insignis.
+                              reduction in cell size from lobe base to apex. Both
+                              species have 2- to 3-fid stem leaves. However, T.              Holotype: New Zealand, North Is., North
+                              pseudozoopsis has a distinct disc formed of a sin-          Auckland Prov., Waima Forest, Hauturu High-
+                              gle cell tier of slightly elongated cells, smaller          point Track in vicinity of summit area of Hauturu
+                              than the basal lobe cells. It also has a cortex of          Trig, off Waiotemarama Track, 650–680 m, Engel
+                              immense inflated cells, and the underleaves are             22594 (F).
+                              apparently always 2-lobed, vs. 3–4-lobed in T.
+                              nivicola.                                                      Plants exceedingly delicate, threadlike, minute-
+                                 This species resembles a small version of T.             ly prickly, appressed, epiphyllous on fern leaves,</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Metzgeria furcata, the forked veilwort, is a frequent liverwort growing on the bark of a wide range of tree and shrub species and occasionally on rocks. It is a slim, translucent thallose liverwort that forms yellow-green mats of branches about 1mm wide.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.7, 146.65], [-41.279544, 146.762518], [-42.805633, 145.900657], [-41.3801735, 147.4184055], [-41.6337567, 145.9504889], [-42.932278, 146.440333], [-42.68332, 146.71665], [-41.3965851, 144.8346868], [-41.533333, 148.2], [-41.5087362, 147.6624866], [-41.90626, 146.036792], [-41.90626, 146.036792], [-43.408278, 146.556139], [-41.725053, 148.083419], [-41.717854, 145.318327], [-41.4625347, 146.293328], [-42.8833, 147.2167], [-41.633805, 148.201948], [-41.8598502, 146.1733071], [-42.629169, 147.611145], [-41.56665, 146.4], [-41.729912, 146.760866], [-41.729912, 146.760866], [-41.5619698, 146.3534087], [-41.6667, 145.95], [-42.9245107, 147.9249766], [-43.0755428, 145.6817735], [-42.990948, 147.124043], [-41.55, 146.3], [-41.9131509, 147.1614056], [-41.5550306, 146.2491521], [-41.72916, 146.520392], [-42.899909, 147.491324], [-41.6533255, 145.0915031], [-42.7167, 146.6667], [-41.5577017, 146.2443243], [-41.397553, 144.8382428], [-41.188728, 146.524358], [-42.809871, 146.512129], [-41.87247, 146.983274], [-42.4817624, 147.4025488], [-41.910238, 146.880773], [-41.3729324, 147.4279252], [-40.909151, 145.457724], [-41.30305, 145.5087], [-41.2367913, 148.2897977], [-43.1438797, 147.9676295], [-42.703626, 147.8411034], [-41.819981, 146.760532], [-41.637026, 146.160877], [-42.933333, 147.35], [-42.7533015, 147.8210015], [-42.719819, 146.512835], [-42.630537, 147.245283], [-41.459942, 147.001341], [-42.5560011, 147.8318092], [-41.8621618, 148.1805998], [-41.716667, 146.733333], [-41.55, 148.216667], [-41.7256634, 146.0584047], [-43.619665, 146.381691], [-42.65, 148.1], [-41.6986501, 146.7618625], [-41.744469, 146.846202], [-40.8664177, 144.7132334], [-41.4843166, 146.320642], [-42.709019, 147.8423974], [-41.5312463, 147.6639149], [-41.703444, 146.629957], [-41.4843166, 146.320642], [-43.1041053, 147.8748314], [-42.8167, 146.3167], [-41.3684153, 147.4314831], [-42.691, 146.6958473], [-42.178189, 147.727868], [-41.706569, 146.800618], [-41.454882, 148.078911], [-42.900896, 147.123862], [-41.4803221, 146.2572019], [-41.43332, 147.1], [-43.529629, 146.382611], [-41.458391, 146.402656], [-41.3500006, 146.9149438], [-41.712012, 144.957882], [-42.0907827, 147.7749177], [-42.720274, 146.634965], [-41.09908, 146.644087], [-41.081876, 144.977519], [-42.4722, 145.675], [-41.833333, 145.516667], [-40.8619637, 144.7157593], [-41.721961, 146.853469], [-41.55, 146.25], [-41.8598502, 146.1733071], [-41.7725775, 146.1864605], [-42.4817624, 147.4025488], [-42.264137, 148.213849], [-41.66894, 146.552072], [-41.7950718, 148.1348345], [-41.1588219, 147.5719418], [-42.80855, 147.735215], [-43.0935405, 147.8427347], [-41.55, 146.3], [-41.8781372, 146.9925927], [-41.712754, 146.740495], [-43.5313635, 146.4973546], [-42.716676, 147.978381], [-41.3993616, 146.0296351], [-42.916667, 147.283333], [-41.4013966, 146.4842062], [-40.155368, 143.831308], [-42.5489499, 145.4809847], [-42.2241114, 145.1895098], [-40.068551, 143.952577], [-41.433333, 147.116667], [-43.0, 147.0], [-41.63784, 146.280934], [-41.4843166, 146.320642], [-41.433333, 147.116667], [-41.189158, 146.643599], [-41.708373, 146.801814], [-41.03332, 145.08332], [-41.9103, 147.00135], [-42.172782, 145.669539], [-41.544941, 148.080406], [-41.708369, 146.79941], [-42.5560011, 147.8318092], [-41.3984301, 144.8370178], [-41.28332, 147.93333], [-41.719774, 146.668334], [-42.8833, 147.2167], [-43.2, 146.783333], [-41.8632623, 148.2468877], [-41.729164, 146.851048], [-41.4013966, 146.4842062], [-41.287333, 145.240333], [-42.720855, 147.001368], [-39.708661, 143.968486], [-42.7533015, 147.8210015], [-42.987784, 147.860009], [-41.3617487, 144.850188], [-41.7130153, 146.7401721], [-42.000302, 147.1221], [-41.439786, 144.846749], [-42.933333, 147.333333], [-41.726146, 146.039487], [-41.548446, 147.600858], [-41.773283, 146.840117], [-43.5268395, 146.4924426], [-42.8194465, 147.4108491], [-42.706336, 147.8399194], [-41.819981, 146.760532], [-41.8333, 145.5167], [-41.637026, 146.160877], [-43.2167, 146.75], [-41.43332, 147.1], [-41.903956, 148.207002], [-41.8383052, 145.4762323], [-42.7161195, 146.6615293], [-43.529629, 146.382611], [-41.3676072, 146.3900121], [-41.450333, 145.002389], [-42.6378399, 145.3324604], [-41.66894, 146.552072], [-42.916667, 147.233333], [-41.4589167, 146.290972], [-42.61985, 145.416192], [-41.729164, 146.851048], [-41.729599, 146.640628], [-41.7322139, 148.2046704], [-41.7667, 146.1833], [-42.720274, 146.634965], [-41.333333, 145.266667], [-41.2404079, 147.0320474], [-43.0984781, 147.7813608], [-41.72916, 146.520392], [-40.205111, 148.062417], [-41.714085, 145.078018], [-41.7969919, 148.1228317], [-42.900896, 147.123862], [-41.0985032, 146.6663968], [-41.817149, 146.15853], [-41.537787, 145.323001], [-40.8566336, 144.7195022], [-43.3771731, 147.309666], [-42.2165029, 148.3107581], [-41.56665, 146.4], [-41.633833, 145.800741], [-40.283989, 148.060068], [-42.900698, 147.246351], [-41.26666, 145.6], [-43.168724, 147.73952], [-41.189649, 146.882089], [-41.566667, 146.6], [-41.28332, 147.93333], [-41.215109, 146.0788865], [-42.6145043, 147.2839138], [-43.566667, 146.883333], [-41.1407946, 146.6506917], [-42.7533015, 147.8210015], [-41.55, 146.3], [-41.833333, 145.516667], [-41.7167, 146.7333], [-41.776913, 146.860564], [-43.002705, 147.9433256], [-41.255283, 148.032717], [-42.1017736, 145.7384195], [-43.440988, 146.754236], [-41.363641, 148.196962], [-43.440982, 147.248532], [-43.440982, 147.248532], [-41.369805, 146.881765], [-41.8014799, 146.8493558], [-43.441187, 146.877809], [-41.71955, 145.438498], [-42.9, 147.283333], [-42.9, 147.316667], [-41.277502, 146.2344311], [-42.7375232, 146.5966636], [-42.899332, 146.388938], [-41.2717044, 146.7670029], [-41.639091, 146.521061], [-40.8635528, 144.7050265], [-41.539472, 145.442839], [-43.466667, 146.866667], [-41.3508729, 147.7015276], [-42.172782, 145.669539], [-42.610386, 145.3027134], [-41.2055223, 144.7813676], [-41.7, 146.65], [-41.6533255, 145.0915031], [-41.551814, 145.858288], [-41.74357, 146.847407], [-41.533333, 148.2], [-41.815107, 148.084935], [-41.275814, 147.956556], [-41.75115, 146.620061], [-41.5333, 148.2], [-41.017944, 147.028528], [-41.5577017, 146.2443243], [-42.087302, 147.84774], [-41.4945514, 146.2294845], [-42.000302, 147.1221], [-41.6427121, 145.4652413], [-42.0287776, 145.5804097], [-42.8167, 146.3167], [-42.716667, 147.116667], [-43.619665, 146.381691], [-42.88333, 147.23054], [-41.4371695, 148.1668796], [-39.7, 147.916667], [-41.5333, 148.2], [-41.369303, 147.36006], [-42.0648547, 147.8737148], [-41.7681647, 146.8578551], [-41.700296, 146.819867], [-41.819227, 146.519721], [-43.1025626, 147.8403999], [-41.3993616, 146.0296351], [-43.258764, 147.740609], [-42.8266375, 147.4145672], [-42.0833, 145.55], [-43.2864597, 145.9644227], [-41.3399771, 147.5520108], [-41.7294245, 146.8507266], [-40.10383, 148.057267], [-42.987784, 147.860009], [-41.18577, 146.047427], [-42.805633, 145.900657], [-43.4667, 146.8667], [-41.2600013, 146.7706257], [-41.83463, 146.947153], [-41.543752, 148.200278], [-41.459377, 147.360558], [-43.077824, 147.861267], [-40.8569727, 145.5119996], [-41.5833, 146.25], [-40.0125, 148.0847], [-41.819227, 146.519721], [-41.3513884, 147.4074622], [-41.3333, 147.55], [-41.275837, 146.046119], [-42.718502, 147.734151], [-43.3700303, 147.2861783], [-42.720274, 146.634965], [-42.7533015, 147.8210015], [-42.6895888, 147.0571956], [-42.17642, 146.032703], [-41.6503036, 145.0723783], [-41.459377, 147.360558], [-41.1455927, 146.0596027], [-41.542469, 145.682542], [-41.7735448, 146.8397955], [-43.258764, 147.740609], [-41.7068298, 146.800296], [-41.8333, 145.5167], [-41.1719, 144.974751], [-41.54846, 146.401828], [-39.6568488, 144.0811395], [-41.4074541, 146.4315151], [-41.6515478, 145.3869726], [-41.7294245, 146.8507266], [-43.25, 146.76666], [-41.801218, 146.849678], [-41.5833, 146.25], [-40.106194, 143.880917], [-41.368306, 147.599198], [-41.3819744, 146.3815065], [-42.720274, 146.634965], [-41.6691997, 146.5517483], [-41.6986501, 146.7618625], [-41.475098, 146.1530634], [-42.8603692, 146.4673337], [-41.367638, 146.283917], [-41.668936, 146.550871], [-41.1873534, 148.0086134], [-41.546963, 146.162043], [-41.547774, 146.281933], [-42.086368, 146.034072], [-42.916667, 147.3], [-42.809871, 146.512129], [-42.683333, 146.55], [-43.0996783, 147.8649374], [-41.907208, 146.157348], [-41.4074541, 146.4315151], [-41.3983193, 146.4064733], [-41.4902371, 146.258286], [-42.9, 147.233333], [-41.908029, 146.27791], [-43.3771731, 147.309666], [-41.2717044, 146.7670029], [-41.26666, 145.6], [-42.6091243, 147.2741359], [-41.279544, 146.762518], [-41.4751249, 146.1566563], [-42.628454, 147.733092], [-42.087322, 146.154968], [-41.757961, 146.832938], [-41.6828253, 146.3822381], [-41.26666, 145.6], [-41.7, 146.65], [-42.081279, 145.550555], [-41.273583, 148.195316], [-42.086368, 146.034072], [-41.9122489, 147.1626096], [-40.1066632, 143.8860268], [-42.719807, 147.489901], [-41.0639453, 145.0193929], [-41.369303, 147.36006], [-41.4900744, 145.4341104], [-42.899332, 146.388938], [-43.5431445, 146.0763944], [-41.714085, 145.078018], [-41.712012, 144.957882], [-42.090433, 147.001354], [-41.725079, 145.919274], [-42.683333, 146.716667], [-41.7582228, 146.8326153], [-41.5786924, 146.2872649], [-42.6748875, 147.525839], [-42.9, 147.2], [-41.2817795, 148.2942652], [-43.619665, 146.381691], [-41.2404079, 147.0320474], [-41.081876, 144.977519], [-42.259749, 145.425237], [-41.8333, 145.5167], [-41.908256, 145.955978], [-42.4722, 145.675], [-41.583333, 148.166667], [-41.547774, 146.281933], [-41.726299, 146.756071], [-42.990749, 147.246711], [-41.4330117, 145.6975966], [-42.6643083, 146.5263625], [-43.609861, 146.829389], [-41.5428746, 148.2227293], [-42.6548382, 146.6472215], [-43.0395569, 146.2975973], [-41.5, 146.35], [-41.8333, 145.5167], [-42.75, 147.8167], [-41.635023, 145.92078], [-42.718502, 147.734151], [-42.5992431, 147.5252028], [-39.745374, 147.818335], [-42.68332, 146.71665], [-41.5529666, 145.794716], [-42.9156047, 147.9125917], [-42.866667, 147.3], [-41.35, 147.7], [-41.349773, 144.849719], [-31.52, 159.0608], [-43.661, 172.624], [-41.17872, 174.98744], [-36.216667, 175.05], [-37.2333, 148.8167], [-37.7, 145.66139], [-37.79849, 145.26798], [-43.826, 172.715], [-38.39501, 176.032907], [-37.77822, 144.99382], [-29.0167, 167.9417], [-37.2833, 148.9167], [-35.5333, 149.5167], [-36.85, 149.5333], [-37.4, 148.6], [-38.70639, 143.57111], [-37.69849, 145.06798], [-45.675815, 166.757393], [-37.4, 148.7833], [-37.91351, 141.98338], [-38.7167, 143.25], [-37.53182, 145.36798], [-38.92111, 146.38667], [37.890972, 146.296972], [-52.538199, 169.149649], [-40.933333, 175.583333], [-43.702563, 172.754363], [-37.71167, 145.68194], [-37.7, 145.66139], [-35.8167, 148.9], [-35.9, 174.766667], [-37.1833, 142.5167], [-38.65722, 143.64639], [-37.2667, 148.8833], [-30.5, 152.4], [-38.64417, 143.65528], [-38.4182, 174.7221], [-30.5, 152.4], [-39.066667, 175.05], [-32.434139, 152.525889], [-44.7, 167.95], [-38.64333, 143.71361], [-37.2833, 148.8833], [-37.66417, 145.82722], [-36.885389, 174.619972], [-42.8, 171.583333], [-29.0222, 167.9611], [-41.2815321, 174.7329291], [-35.55, 149.95], [-33.544444, 151.180556], [-37.3167, 148.8556], [-37.2361, 148.6], [-39.797, 174.927], [-39.797, 174.927], [-38.41518, 143.71802], [-37.7667, 145.0167], [-41.1625, 173.4125], [-37.31512, 148.85681], [-37.744444, 148.647778], [-28.19051, 153.27162], [-36.863889, 174.829444], [-36.789876, 174.867217], [-34.15, 172.133333], [-41.1165297, 175.3242068], [-36.3, 150.05], [-36.216667, 175.05], [-37.06514, 146.46795], [-26.8508, 151.5619], [-42.3261, 171.4639], [-37.79849, 145.26798], [-39.11833, 146.38722], [-38.5167, 143.3667], [-46.580917, 169.416556], [-37.879417, 146.275583], [-41.666698, 171.888867], [-29.0167, 167.9417], [62.0, 26.5833], [-39.0, 146.2833], [-31.5639, 159.0875], [-38.66778, 143.59722], [-29.025, 167.9375], [-37.31512, 148.85681], [-37.31512, 148.85681], [-37.5275, 145.5192], [-37.57278, 145.86028], [-38.63556, 143.71472], [-44.05, -176.6], [-34.861586, 116.274839], [-38.70417, 143.58361], [-31.175, 152.341667], [-21.03587, 148.597147], [-29.0167, 167.9389], [-38.123729, 177.312234], [-40.8881, 174.8842], [-41.25, 175.01], [-38.64333, 143.71361], [-29.0083, 167.9417], [-37.3167, 148.8556], [-29.0222, 167.9611], [56.0833, 13.25], [-33.3, 148.9833], [-38.68806, 143.59694], [-15.81668, 145.27585], [-37.74512, 148.64737], [-37.890156, 145.3763], [-37.7, 145.0667], [-17.2667, 145.4833], [-25.9933, 153.091744], [-37.3167, 148.8556], [-34.3167, 149.9667], [-41.264, 174.759], [-38.526944, 176.786111], [-39.116667, 146.4], [-43.676716, 172.724552], [-38.70333, 143.58222], [-32.458333, 150.723611], [-31.52, 159.0608], [-33.5, 150.3667], [-37.4564, 149.5547], [-36.644083, 148.127444], [-38.57111, 143.43944], [-34.619444, 150.416667], [-37.71167, 145.68194], [-29.0167, 167.9389], [-37.4, 148.7833], [-38.9575, 146.44389], [-39.2315191, 175.3962847], [-33.816667, 151.166667], [-37.825844, 144.974468], [-37.616667, 148.9], [-44.344111, -176.178167], [-35.275, 149.125], [-36.775222, 146.795222], [-36.0, 149.5667], [-37.276667, 176.252778], [-41.2732325, 174.9776021], [-37.26796, 142.61968], [-37.66611, 145.82778], [-40.385152, 175.617898], [-37.70056, 145.66167], [-38.51518, 143.91801], [-38.70639, 143.57111], [-45.86548, 167.667183], [-17.4167, 145.4333], [-35.633333, 149.9], [-37.0833, 148.7667], [-36.84846, 147.21794], [-37.31512, 148.85681], [-37.876778, 146.359111], [-45.816, 170.428], [-37.71167, 145.68194], [-37.31512, 148.85681], [-44.541572, 168.695358], [-32.0, 151.85], [-37.4, 148.7833], [-47.208015, 167.634541], [-38.66778, 143.59722], [-34.420833, 115.867222], [-37.56517, 143.85133], [-19.0167, 146.15], [-37.906111, 146.294667], [-29.025, 167.9375], [-29.025, 167.9375], [-37.368056, 175.418889], [-38.74833, 143.57889], [-36.35, 148.3], [-38.70333, 143.58222], [-38.63556, 143.71472], [-38.79, 143.54139], [-37.70056, 145.66167], [-37.65517, 143.92022], [-41.2823322, 174.7652995], [-37.81516, 145.11798], [-17.4167, 145.4333], [-37.5, 148.1667], [-35.3, 148.8], [-37.31512, 148.85681], [-38.70639, 143.57111], [-37.7333, 148.65], [-36.866528, 174.720889], [-22.773422, 150.759405], [-33.816667, 151.166667], [-38.79, 143.54139], [-37.2833, 143.2333], [-36.5892, 149.4464], [-41.17872, 174.98744], [-37.8167, 146.05], [-37.8, 145.2333], [-37.67167, 145.82333], [-36.216667, 175.05], [-45.8146, 170.554], [-43.899, 171.234], [-45.5833, 167.3667], [-39.456475, 176.277886], [-37.3683, 144.3269], [-34.442222, 116.0], [-39.797, 174.927], [-38.68806, 143.59694], [-29.0111, 167.9361], [-7.3, 146.5667], [-36.216667, 175.1], [-37.2833, 148.9833], [-34.683333, 117.85], [-37.6167, 148.9], [-37.0333, 147.2333], [-33.495833, 150.475], [-37.76516, 145.01798], [-41.258, 175.008], [-39.9815361, 176.0162892], [-38.78806, 143.53889], [-40.848614, 174.913276], [-38.018873, 145.845624], [-43.806543, 172.850723], [-40.852, 174.926], [-36.8, 174.85], [-37.59306, 145.78056], [-37.46044, 144.36466], [-40.8483, 174.9153], [-37.5758, 143.9589], [-37.2833, 143.2333], [-38.66778, 143.59722], [-30.340769, 152.712092], [-7.3167, 146.5667], [-50.501288, 166.319851], [-35.191667, 173.456944], [-44.039961, -176.620416], [-37.6, 149.0], [-25.0, 135.0], [-17.4667, 145.4833], [-34.15, 172.133333], [-38.65917, 143.57306], [-32.366389, 152.083611], [-45.866, 167.6361], [-38.89278, 146.48361], [-36.791389, 174.754722], [-26.850833, 151.561944], [-37.28456, 148.74292], [-38.70333, 143.58222], [37.860778, 146.320139], [-36.916667, 174.6], [-36.889056, 174.616028], [-29.6747, 152.0886], [-41.3726743, 174.7926595], [-9.4167, 147.4], [49.5667, -54.5333], [-29.2675, -177.907889], [-37.1, 175.633333], [-36.0167, 149.8667], [-37.8833, 145.3833], [-35.5667, 149.9833], [-37.61378, 143.89828], [-17.265303, 145.494826], [-29.266667, -177.9], [-37.3028, 148.7958], [-38.70417, 143.58361], [-38.65722, 143.64639], [-38.65722, 143.64639], [60.25, 20.0], [-40.85, 174.921], [-40.7685457, 172.7057474], [-46.3697, 167.9968], [-38.65917, 143.57306], [-37.31639, 148.86889], [-35.6, 149.916667], [-34.438526, 116.226525], [-29.0083, 167.9417], [-37.5667, 149.3667], [-38.7833, 143.6167], [-36.874722, 174.789444], [-34.15, 172.133333], [-37.3083, 148.7278], [-41.3449041, 174.9596016], [-36.858611, 174.772222], [-34.674967, 117.851756], [-37.570556, 178.145], [-31.5639, 159.0875], [-43.527273, 172.596149], [-37.3167, 148.8556], [-31.25, 152.3333], [-34.396111, 173.008056], [-29.0167, 167.9389], [-37.888345, 145.371563], [-31.585278, 159.076667], [-33.5, 150.383333], [-42.512785, 171.175463], [-34.65, 150.4833], [-31.58333, 159.06667], [-37.70056, 145.66167], [-36.8, 174.85], [-44.087215, 169.798678], [-38.76306, 143.54528], [-36.9375, 174.558333], [-38.511647, 175.107738], [-29.0131, 167.9489], [-38.78222, 143.53306], [-41.2646, 174.7571], [-37.91515, 145.71798], [-31.5833, 159.0667], [-35.5167, 149.6333], [-36.234222, 175.083722], [-31.5556, 159.0925], [-35.5833, 149.7333], [-38.9653, 146.4217], [-37.883333, 145.366667], [-37.368056, 175.418889], [-40.85, 174.9213], [-38.56, 175.5], [-35.9833, 149.8667], [-37.3167, 148.8556], [-38.70639, 143.57111], [-37.2929, 148.4707], [-37.6, 147.4833], [-36.216667, 175.05], [-46.8936635, 168.1242902], [-44.7011, 170.9689], [-37.1625, 142.4433], [-38.79972, 143.55306], [-33.341667, 149.9575], [-17.5333, 145.5667], [-38.76389, 143.54278], [-41.8099104, 173.0045765], [-38.65917, 143.57306], [-41.1157294, 175.2329057], [-41.2732325, 174.9776021], [-37.55, 149.35], [-31.3625, 152.0106], [-37.4564, 149.5547], [-39.0321, 146.3941], [-25.9933, 153.091744], [-37.7, 147.7667], [-37.7, 145.66139], [-29.025, 167.9375], [-36.966667, 176.083333], [-7.2833, 146.8333], [-30.25, 152.7833], [-32.291944, 152.084444], [56.8333, 15.4167], [-37.7653, 145.0314], [-29.0131, 167.9489], [-16.6, 145.2667], [-29.0175, 167.951667], [-44.7, 167.95], [-31.52, 159.0608], [-37.902944, 145.766083], [-31.5867, 159.0772], [-36.932972, 174.738278], [-44.434, 170.872], [66.05, 17.883333], [-38.51518, 143.71802], [-37.2833, 143.2333], [-27.320239, 152.750982], [-36.486563, 174.231033], [-33.624563, 150.298891], [-7.3, 146.5667], [-41.25, 175.01], [-17.4333, 145.4833], [-34.348362, 115.912524], [-40.87, 174.912], [-37.4, 148.7833], [-37.2833, 148.9], [-38.70333, 143.58222], [-35.6, 149.916667], [-33.725, 150.429167], [-35.45, 148.8667], [-37.86516, 145.30132], [-43.590376, 172.690301], [-38.7167, 143.3833], [-38.4191, 174.7214], [-41.2796322, 174.7711996], [-41.714444, 171.841944], [-35.933333, 175.15], [-40.853333, 174.928694], [-45.8150086, 170.4828561], [-41.1165297, 175.3242068], [-37.45, 144.2667], [-37.735, 175.874], [-41.267, 174.757], [-38.23855, 146.09023], [-30.5, 152.4], [-30.5, 152.4], [-37.3083, 148.7278], [-37.8, 145.2333], [-36.25, 175.083333], [-29.0139, 167.9347], [-7.15, 146.5833], [-41.267, 174.757], [54.394667, -3.074694], [-36.929167, 174.455278], [-37.41516, 144.56799], [-20.338866, 148.69613], [-38.78222, 143.53306], [-38.447778, 175.591667], [-39.02833, 146.39139], [-37.1667, 148.85], [-36.216667, 175.05], [59.0833, 5.6667], [-35.45, 148.7833], [-35.1706, 150.7436], [-37.526108, 145.523683], [-33.411111, 150.971111], [-31.58333, 159.06667], [-40.356944, 175.808611], [-35.37, 173.505833], [-24.373657, 150.923261], [-41.272, 174.988], [-41.272, 174.988], [-37.655, 145.82833], [-40.5599181, 175.7419138], [-33.725, 150.429167], [-43.830023, 173.038381], [-39.1, 174.116667], [-41.6815663, 172.5995722], [-37.76377, 145.03271], [-41.1482303, 175.266276], [-41.2982329, 174.899601], [-38.436, 174.702], [-36.216667, 175.1], [-42.695432, 171.552577], [-35.5, 149.5167], [-37.3167, 148.8333], [-38.51518, 143.55135], [-43.498961, 169.959418], [-37.5575, 145.53], [-37.883885, 145.342339], [-37.55472, 145.85778], [-37.936472, 146.454028], [-43.893239, 171.233829], [-37.054444, 175.656667], [-38.65722, 143.64639], [-33.754167, 151.083333], [-41.116667, 172.583333], [-48.0209854, 166.6090165], [-34.15, 172.133333], [-40.9635209, 173.0553807], [-41.265, 174.759], [-33.725, 150.429167], [-37.31806, 148.86889], [-38.65917, 143.57306], [-29.0114, 167.9375], [-34.396111, 173.008056], [-29.025, 167.9375], [-37.18185, 142.51801], [-46.1686, 167.8323], [-33.495833, 150.475], [-52.551017, 169.090543], [-45.869232, 167.6372905], [-29.0111, 167.9444], [-35.7333, 149.7], [-37.416255, 175.7454251], [-36.8525, 174.770833], [-37.4619, 144.3633], [-35.3, 148.8], [-47.203283, 167.671614], [-44.434, 170.872], [-43.8066197, 172.8495656], [-36.843639, 148.13975], [-36.217556, 175.083722], [-38.70417, 143.58361], [-46.0352, 167.7163], [-29.0264, 167.9356], [-37.31639, 148.86889], [-36.811167, 174.64025], [-36.851389, 174.769722], [-33.729167, 150.4375], [54.400611, -2.964222], [-34.442222, 116.0], [-35.5667, 149.7333], [-5.85, 144.3167], [-39.15, 173.4], [-15.7167, 145.25], [-41.2815321, 174.7329291], [-41.3449041, 174.9596016], [-31.5847, 159.0808], [-35.5333, 149.5167], [56.0833, 13.25], [-35.6289, 149.515], [-31.5867, 159.0772], [-37.45, 149.55], [-38.74833, 143.57889], [-31.5889, 159.0778], [60.25, 20.0], [-26.777958, 153.020564], [-29.0083, 167.9417], [-33.5, 150.383333], [-46.3281, 167.843], [-37.36516, 144.56798], [-37.69848, 146.50129], [-37.5275, 145.51917], [-29.025, 167.9375], [-38.65917, 143.57306], [-38.76389, 143.54278], [-42.592809, 171.537785], [-37.368056, 175.418889], [-36.795861, 174.717361], [-35.9, 174.733333], [-37.2, 148.73], [-41.17872, 174.98744], [-36.885389, 174.619972], [-38.64333, 143.71361], [-41.266, 174.754], [-37.45, 150.0], [-36.25, 175.083333], [-37.215278, 175.890556], [-37.64944, 145.81389], [-35.733333, 149.683333], [-33.866667, 151.216667], [-37.70056, 145.66167], [-38.79, 143.54139], [-28.253131, 153.20754], [-37.5, 145.2333], [-37.284926, 176.254348], [-36.789876, 174.867217], [-34.4169, 116.2144], [-43.844474, 173.021138], [-28.262715, 153.170896], [-43.95, -176.55], [-41.1247287, 174.8230008], [-46.0608, 168.8292], [-38.70417, 143.58361], [-37.86516, 145.31798], [-37.71167, 145.68194], [-29.0222, 167.9611], [-35.96667, 149.58333], [-38.9270823, 175.0967124], [-32.0, 151.85], [-17.55, 145.4667], [-34.401389, 173.023333], [-37.55, 149.35], [-37.3333, 148.4833], [-36.789876, 174.867217], [-37.5667, 145.6333], [-39.02611, 146.33389], [-38.78806, 143.53889], [-33.433333, 150.966667], [-29.0111, 167.9361], [-40.148889, 175.842222], [-41.2815321, 174.7329291], [-34.6, 150.6667], [-41.2636088, 174.7582065], [-35.9, 174.733333], [-34.681969, 117.874382], [-37.31806, 148.86889], [-40.87, 174.912], [-37.69846, 147.76794], [-38.159444, 174.9225], [-37.5, 146.6667], [-31.5611, 159.0972], [-45.866, 167.6361], [-34.5, 115.933333], [-43.898, 171.224], [-40.847, 174.9156], [-38.2152, 141.76804], [-38.5167, 143.3667], [-37.2861, 147.5569], [-39.01515, 146.45132], [-35.4833, 150.05], [-37.64694, 145.81778], [-37.91515, 145.71798], [-38.70333, 143.58222], [-37.7, 145.66139], [-43.86, 168.883], [-43.86, 168.883], [-38.76306, 143.54528], [-40.8508, 174.9215], [-38.680883, 174.974693], [-40.476667, 175.617778], [-37.2333, 148.8167], [-37.5667, 145.6333], [-37.86515, 145.55131], [-37.2861, 148.7417], [-38.74833, 143.57889], [-44.4347, 170.8708], [-37.88755, 145.352953], [-37.4, 148.7833], [-35.7333, 149.7], [-37.466179, 145.470214], [-37.88613, 145.351807], [-33.341667, 150.308333], [-35.45, 150.0], [56.0833, 13.25], [-31.5833, 159.0833], [-36.216667, 175.05], [-39.0336, 146.3928], [54.432306, -2.956917], [-38.70333, 143.58222], [-36.6, 149.35], [-34.151944, 172.145], [-36.8525, 174.770833], [-39.628218, 175.165519], [-29.0222, 167.9611], [-34.999506, 138.703653], [-19.01667, 146.26667], [-37.8667, 145.3167], [-31.5889, 159.0778], [-40.8518228, 174.9294032], [-40.5599181, 175.7419138], [-37.65306, 145.83111], [-41.809997, 173.004908], [-37.4167, 148.6], [-46.33, 167.837], [-38.34854, 141.60138], [-36.889056, 174.616028], [-31.5867, 159.0772], [-37.4, 148.7833], [-5.85, 144.3167], [-37.3167, 148.8556], [-35.5333, 148.8833], [-37.34852, 142.56801], [-41.17872, 174.98744], [-37.30678, 148.72903], [-38.6833, 143.5833], [-36.6, 149.3833], [-38.78806, 143.53889], [-34.9855, 138.710891], [-42.377633, 171.664882], [37.881389, 146.275278], [-36.217547, 175.05038], [-37.3167, 148.8556], [-36.216667, 175.05], [-27.106736, 153.392728], [-33.8318833, 151.1841999], [-41.2699319, 174.7495994], [-37.3683, 144.3269], [-29.0175, 167.9517], [-34.176944, 172.07], [-37.5825633, 178.2996535], [-37.56511, 149.36791], [-29.0114, 167.9375], [-36.3, 150.05], [-37.21518, 143.20133], [-41.083333, 172.733333], [-37.4, 148.7833], [-40.49821, 172.8329101], [-40.8483, 174.9153], [-33.341667, 150.308333], [-40.8881, 174.8842], [-43.898488, 171.2342455], [-37.59306, 145.78], [-52.536, 169.132], [-34.415556, 116.0], [-37.19845, 148.95125], [-44.6998087, 170.9644381], [-30.5, 152.4], [-37.9217, 145.7775], [-27.980544, 152.36215], [-33.816667, 151.233333], [-38.79972, 143.55306], [-33.5, 150.383333], [-41.052, 175.193], [52.714861, -1.323222], [-42.8, 171.583333], [-21.03587, 148.597195], [-37.71167, 145.68194], [-37.2944, 148.4694], [-45.880616, 170.111835], [-30.5, 152.4], [-33.729167, 150.4375], [-37.28178, 148.90125], [-34.6833, 117.85], [-38.68806, 143.59694], [-34.442222, 116.0], [-34.442222, 116.0], [-35.45, 148.7833], [-19.0167, 146.15], [-41.266, 174.754], [-38.46515, 146.53464], [-36.916667, 174.603056], [-37.6153, 143.8969], [-52.578681, 169.210949], [-36.789876, 174.867217], [-45.148005, 167.229565], [-37.30123, 148.79708], [-37.2833, 148.9667], [-40.8501, 174.9208], [-35.9, 174.733333], [-36.734205, 174.750378], [-31.5833, 159.0833], [-38.77, 143.55278], [-34.738722, 173.110139], [-37.12807, 175.189831], [-44.266667, -176.166667], [-37.7, 145.66139], [-39.116667, 174.283333], [-29.015, 167.9361], [-36.016667, 149.866667], [-38.70333, 143.58222], [-40.8311, 174.9474], [-37.7, 145.66139], [-44.033333, -176.633333], [-36.216667, 175.5], [-46.33, 167.837], [-37.3167, 148.8556], [-37.45483, 149.55596], [-31.3728, 152.0603], [-37.883222, 145.351778], [-46.0611, 168.8289], [-38.66778, 143.59722], [-34.399722, 173.030889], [-34.397778, 173.005], [-37.86515, 145.75131], [-37.3167, 148.8333], [-38.53389, 143.48917], [-38.4, 146.6333], [-38.64333, 143.71361], [-38.53407, 143.48913], [-38.76389, 143.54278], [-38.76389, 143.54278], [-38.70417, 143.58361], [-34.5125, 115.916667], [-40.7648856, 172.6995774], [-26.777778, 153.020556], [-35.9, 174.733333], [-35.9, 174.733333], [-38.77, 143.55278], [-33.6167, 150.2833], [-45.783333, 167.55], [-34.9995, 138.703639], [-37.2861, 148.75], [-36.216667, 175.1], [-35.7, 150.1], [-33.8180017, 150.0222732], [-33.633333, 150.283333], [-37.3167, 148.8333], [-37.76516, 145.01798], [-37.115083, 146.729602], [-17.266667, 145.8625], [-41.569545, 172.520473], [-19.0167, 146.2167], [-38.290949, 177.384397], [-38.75, 143.283333], [-34.985528, 138.710917], [-38.65722, 143.64639], [-41.2744, 174.9778], [-38.76306, 143.54528], [-34.3833, 118.05], [-36.516667, 174.75], [-38.65, 143.5], [-38.64417, 143.65528], [-38.64417, 143.65528], [-29.0131, 167.9489], [-37.2448521, 175.8213266], [-38.63556, 143.71472], [-41.2732325, 174.9776021], [-41.2810601, 174.7524574], [-38.66778, 143.59722], [-35.7333, 149.6833], [-31.5169, 159.06], [-38.6667, 143.4167], [-37.31512, 148.85681], [-37.31512, 148.85681], [-37.31512, 148.85681], [-40.4982186, 176.6162943], [-43.683616, 172.598991], [-34.420833, 115.867222], [-34.672204, 117.843513], [-41.2592319, 174.8637008], [-37.28456, 148.75125], [-33.5, 150.383333], [-45.448085, 168.013213], [-34.420833, 115.867222], [-37.69846, 147.76794], [-17.56667, 145.63333], [-26.173415, 151.992742], [-37.2722, 148.75], [-36.999806, 174.906972], [-37.745833, 148.646944], [-41.248225, 172.0995683], [-44.7001, 170.9678], [-37.3167, 148.8556], [-41.2666, 174.7557], [-29.0114, 167.9375], [-37.37, 142.28], [-38.76306, 143.54528], [-37.70056, 145.66167], [-38.41518, 143.71802], [-37.655, 145.83194], [-37.64849, 145.63464], [-45.27166, 167.313355], [-29.0125, 167.9361], [-45.055839, 167.334046], [-35.9, 174.766667], [-17.9333, 145.9167], [-17.6167, 145.5333], [-38.70417, 143.58361], [-19.01667, 146.26667], [57.25, 13.3333], [-35.9, 174.733333], [-41.2675, 174.7588], [-36.74, 174.400833], [-35.651202, 173.555713], [-29.0111, 167.9333], [-38.188115, 177.49892], [-38.68806, 143.59694], [-34.386333, 118.049885], [-44.033333, -176.633333], [-41.272, 174.988], [-40.9982265, 175.1246049], [-38.78806, 143.53889], [-33.458333, 150.723611], [-38.75, 143.2833], [-41.2598953, 172.1045683], [-29.0139, 167.9403], [-33.495833, 150.475], [-28.183165, 153.306055], [-42.0932431, 171.3995562], [-29.0167, 167.9389], [-35.3083, 148.8083], [-41.3449041, 174.9596016], [-37.36515, 145.7513], [-31.5333, 159.0833], [-34.442222, 116.0], [-40.054908, 176.1460204], [-31.5611, 159.0972], [-46.045, 167.707], [-41.2732325, 174.9776021], [-35.65, 149.5], [-37.861224, 145.344439], [-40.470904, 175.285959], [-33.8167, 150.0333], [-37.5333, 145.3667], [-40.8318, 174.9457], [-38.63556, 143.71472], [-44.348, 170.841], [-38.52639, 143.42833], [-43.898, 171.232], [-29.0111, 167.9361], [-37.485561, 144.234613], [-39.193874, 173.986674], [-29.0189, 167.9436], [-33.45, 150.716667], [-35.19, 173.455], [-37.9, 147.9333], [-35.5833, 148.6167], [-37.59306, 145.78056], [-38.447778, 175.591667], [-38.447778, 175.591667], [-45.816, 170.428], [-35.45, 148.7833], [-17.2667, 145.7833], [-25.4, 153.05], [-37.9153, 145.76861], [-37.31639, 148.86889], [-44.7011, 170.9657], [-29.025, 167.9375], [-38.396389, 174.869444], [-45.736208, 170.450669], [-19.0167, 146.1833], [-45.866, 167.6361], [-33.772222, 151.005556], [-37.9028, 145.76856], [-38.066667, 174.983333], [-37.22068, 147.59571], [-36.2333, 149.6667], [-29.0167, 167.9389], [-40.7673857, 172.7040774], [-44.434, 170.87], [-36.888722, 174.615583], [-37.7167, 145.7], [-36.216667, 175.066667], [-36.216667, 175.066667], [-42.008, 173.898], [-29.0167, 167.9417], [-37.4, 148.7833], [-39.7998999, 174.9285072], [-33.816667, 151.216667], [-37.59849, 145.61797], [-41.25, 175.01], [-42.232321, 171.474608], [-42.8, 171.583333], [-37.31806, 148.86889], [-35.7333, 149.7], [-37.71515, 145.70131], [-34.275, 116.044444], [-32.1, 151.595833], [-33.6072, 150.63503], [-37.300278, 176.241389], [-34.825831, 116.650948], [-39.8061, 175.8539], [-17.265278, 145.854167], [-29.233333, -177.933333], [-38.76389, 143.54278], [-36.5892, 149.4464], [-35.333333, 173.883333], [-34.766667, 150.566667], [-38.79, 143.54139], [-37.70056, 145.66167], [-38.15, 176.37], [-37.7, 147.7667], [-41.2750325, 174.974702], [-37.3, 148.8333], [-17.6, 145.5833], [-41.219444, 172.681944], [-34.403056, 173.03], [-38.79972, 143.55306], [-41.17872, 174.98744], [-40.8518228, 174.9294032], [-31.5889, 159.0778], [-37.876778, 146.359111], [-38.447778, 175.591667], [-43.86, 168.883], [-37.56515, 145.60131], [-38.66778, 143.59722], [-36.589167, 149.446389], [-40.958, 174.971], [-41.2229315, 175.039203], [-36.883333, 174.533333], [-45.8316691, 170.482856], [-37.4, 148.5167], [-35.7333, 149.7], [-41.267, 174.756], [-40.8311, 174.9474], [-40.5521436, 172.5933271], [-43.707301, 172.842568], [-36.529444, 175.399167], [-37.4355553, 175.7472251], [-39.15, 173.4], [-37.4, 148.7833], [-17.3833, 145.75], [-29.0264, 167.9356], [-37.296111, 176.265], [-38.7833, 143.6167], [-38.65917, 143.57306], [-36.4894, 148.3039], [-38.79972, 143.55306], [-37.3167, 148.8556], [-38.64333, 143.71361], [-40.9582256, 175.1112749], [-43.711332, 172.759874], [-37.4, 148.7833], [-37.2167, 143.2], [-36.3, 150.05], [-36.867778, 174.718611], [-39.155386, 174.7067071], [-38.66778, 143.59722], [-37.81516, 145.11798], [-46.0608, 168.8292], [-41.17872, 174.98744], [-38.64333, 143.71361], [-38.65917, 143.57306], [-35.383333, 173.383333], [-17.616667, 145.533333], [-33.544444, 151.180556], [-31.702003, 152.689278], [-37.57434, 143.96022], [-38.64417, 143.65528], [-40.847, 174.9156], [-37.2333, 148.8167], [-37.4, 148.7833], [-38.78222, 143.53306], [-36.929167, 174.455278], [-36.2, 175.1], [-29.0222, 167.9611], [-29.0222, 167.9611], [-29.0139, 167.9361], [-37.2222, 147.5944], [-37.45, 144.2667], [-33.5, 150.383333], [-38.68806, 143.59694], [-47.249597, 167.637144], [-37.3167, 148.8556], [-36.183056, 175.318611], [-35.45, 148.7833], [-29.274972, -177.929889], [-38.025556, 176.074167], [-38.65722, 143.64639], [-52.536, 169.132], [-46.3850482, 168.0299922], [-26.59007, 153.05939], [-37.3167, 148.8556], [-38.5833, 143.9167], [-41.1704, 174.9881], [-37.008889, 174.583611], [-35.9, 174.733333], [-37.30678, 148.72903], [-35.9, 174.766667], [-37.31806, 148.86889], [-31.5867, 159.0772], [-37.416255, 175.7454251], [-41.1642, 175.32], [-34.15, 172.133333], [-31.5639, 159.0875], [-46.3281, 167.843], [-37.298056, 176.258333], [-39.7989019, 175.8667181], [-29.025, 167.9375], [-37.59306, 145.78056], [-38.8, -72.6667], [-38.75, 177.083333], [-37.2167, 148.7333], [-5.9333, 144.65], [-41.2165609, 174.8779311], [-35.65, 149.5], [-37.2833, 148.5667], [56.0833, 13.25], [-31.5611, 159.0972], [-35.65, 149.5], [-38.70417, 143.58361], [-38.53389, 143.48917], [-35.9, 174.733333], [-34.356345, 118.304537], [-38.2152, 141.76804], [-29.0083, 167.9417], [-24.68234, 151.511027], [-40.470904, 175.285959], [-38.76306, 143.54528], [-17.9833, 145.6667], [-35.9, 174.733333], [-35.61, 174.249444], [-21.3167, 148.55], [-41.3729344, 174.7927995], [-35.3917, 148.8889], [-40.8411, 174.9391], [-35.4, 174.75], [-38.64417, 143.65528], [-40.907774, 175.256245], [-26.8611, 151.5806], [-37.70056, 145.66167], [-37.70056, 145.66167], [-37.4167, 149.8167], [-37.286111, 176.238611], [-33.7375, 150.441667], [-34.348362, 115.912524], [-36.733333, 175.416667], [-41.266, 174.754], [-48.0293936, 166.5845882], [-37.31512, 148.85681], [-37.665, 145.82722], [-38.447778, 175.591667], [-43.956293, -176.586608], [-37.7467, 148.6461], [-37.30123, 148.79708], [50.024167, -5.098056], [-34.401389, 173.023333], [-29.0125, 167.9361], [-19.0, 146.1667], [-37.56515, 145.60131], [-41.2636088, 174.7582065], [-35.5167, 148.7833], [-37.2, 148.75], [-45.923043, 167.247675], [60.25, 20.0], [-36.880556, 174.704444], [-29.025, 167.9375], [-38.55361, 143.47389], [-29.025, 167.9375], [-35.933333, 175.15], [-45.963597, 166.784763], [-36.875886, 147.198501], [-37.74849, 145.70131], [-29.0183, 167.9425], [-37.45483, 149.55596], [-37.36683, 144.32827], [-37.59849, 145.61797], [-38.636611, 143.740111], [-33.110833, 151.264444], [-45.1538, 167.933], [-40.799722, 172.264426], [-33.7, 150.333333], [-31.56, 159.0767], [-41.3729344, 174.7927995], [-37.047151, 175.179435], [-31.56, 159.0767], [-38.65917, 143.57306], [-41.266, 174.754], [-37.875, 146.356917], [-37.71167, 145.68194], [-37.86516, 145.30132], [-37.4342, 144.3033], [-35.2783, 149.1086], [-41.1165297, 175.3242068], [-36.216667, 175.5], [-16.5833, 145.2667], [-43.155678, 170.762014], [-33.103333, 151.231389], [-36.862917, 174.829056], [-33.291667, 151.291667], [-37.8, 148.0333], [-29.0139, 167.9403], [-41.266953, 174.759547], [-38.43181, 146.56797], [-37.5934, 145.78], [-31.6125, 152.291667], [-40.847674, 174.915621], [-41.253822, 175.119226], [-39.171704, 175.806025], [-43.557971, 169.655604], [-35.65, 149.5], [-37.65611, 145.81639], [-46.37, 167.997], [-36.85, 174.766667], [-41.266953, 174.759547], [-38.66778, 143.59722], [-41.5194, 172.042], [-36.537778, 174.712778], [-36.9, 174.55], [-37.88371, 145.35461], [-36.216667, 175.05], [-29.0167, 167.9389], [-36.0, 149.5667], [-37.7797, 144.9925], [-35.2667, 149.1], [-38.51518, 143.91801], [-45.148005, 167.229565], [-37.96516, 145.21799], [-41.17872, 174.98744], [-38.53278, 143.45667], [-49.66715, 178.80671], [-27.968324, 153.208863], [-38.96376, 146.42298], [-35.7333, 149.0417], [-38.78222, 143.53306], [-37.057, 175.6744], [-37.27067, 148.75125], [-35.7333, 149.6833], [-37.4, 148.783333], [-44.061111, -176.433333], [-31.5889, 159.0778], [-41.266614, 174.755616], [-38.68806, 143.59694], [-30.333333, 152.716667], [-29.0111, 167.9444], [-38.70639, 143.57111], [-33.291667, 151.291667]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

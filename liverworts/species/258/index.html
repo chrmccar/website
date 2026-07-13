@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frullania hattorii — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Frullania hattorii</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Frullania hattorii</em></h1>
+  <p>
+    <span class="badge">Frullaniaceae</span>
+    <span class="badge secondary">Frullania</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Frullania</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania apiculata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania belmorensis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania fugax</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania gracillima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania sheana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania simmondsii</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania spathulistipa</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Frullania streimannii</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">7</p>
+    <footer>7 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Frullania hattorii is a species of liverwort in the order Porellales, native to Tasmania, Australia. The species was first described by Matt von Konrat and John E. Braggins in 2003.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.6333, 146.5833], [-42.7986293, 145.9677264], [-43.23, 146.73], [-43.2486298, 146.2510626], [-43.216667, 146.75], [-43.216667, 146.75], [-43.23, 146.73]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

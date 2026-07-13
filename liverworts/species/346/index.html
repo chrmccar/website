@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neolepidozia palmata — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Neolepidozia palmata</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Neolepidozia palmata</em></h1>
+  <p>
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge secondary">Neolepidozia</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Eria paleata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia consobrina</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia patentissima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia praenitens</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia quadristipula</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia tridactylis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Passiflora filamentosa</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Thelephora palmata</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">29</p>
+    <footer>29 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>GBIF</strong> (1 entry)</summary>
+    
+    
+    <p><strong>neolepidozia palmata (j. j. engel et g. l. merr.) e. d. cooper, phytotaxa:</strong> &lt;div&gt;&lt;p&gt;Neolepidozia palmata (J.J.Engel et G.L.Merr.) E.D.Cooper,&lt;/p&gt;&lt;p&gt;Phytotaxa 97 (2): 56, 2013 (see Cooper et al. 2013). BASIONYM: Telaranea palmata J.J.Engel et G.L.Merr., Novon 9 (3): 344, 1999 (see Engel &amp; Smith Merrill 1999).&lt;/p&gt;&lt;/div&gt;</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.8619054, 145.4488514], [-41.47, 145.98], [-42.12, 146.08], [-41.47, 145.98], [-41.457517, 145.959517], [-42.783333, 145.95], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.450283, 145.9629], [-42.675, 146.566667], [-41.47, 145.98], [-43.244417, 146.772733], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-41.47, 145.98], [-42.6715772, 146.5421724], [-41.47, 145.98], [-42.675, 146.57], [-42.225, 146.083333], [-41.47, 145.98], [-41.6417, 145.93], [-42.12, 146.08], [-42.116667, 146.083333], [-41.47, 145.98], [-41.47, 145.98]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

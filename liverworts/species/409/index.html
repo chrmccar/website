@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vandiemenia ratkowskiana — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Vandiemenia ratkowskiana</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Vandiemenia ratkowskiana</em></h1>
+  <p>
+    <span class="badge">Metzgeriaceae</span>
+    <span class="badge secondary">Vandiemenia</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (10)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Eutrombicula vandiemeni</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Juncus ratkowskyanus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Marsupostrongylus vandiemeni</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Parsonsia sankowskyana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila ratkowskiana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Rhinebothrium vandiemeni</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Vandiemenia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Vandiermenia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Vandiermenia beveridgei</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Vandiemenia ratkowskyana</em> <small class="muted">input</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">2</p>
+    <footer>2 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">11</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>dichotomous</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIACEAE_HEWSON_1982</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>dichotomous</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIA_REVISED_2024</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>dichotomous</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIA_REVISED_2024</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">VANDIEMENIACEAE_HEWSON_1982</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>0</td>
+          <td>boolean</td>
+          <td class="muted small">VANDIEMENIA_REVISED_2024</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>0</td>
+          <td>boolean</td>
+          <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>wood</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIACEAE_HEWSON_1982</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>none</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIA_REVISED_2024</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>none</td>
+          <td>categorical</td>
+          <td class="muted small">VANDIEMENIA_FURUKI_2008</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>MARCHANTIOPHYTA_PHYLOGENY_2009</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">E N G E L , J. J. &amp; G L E N N Y , D. (2007). Austral Hepaticae 43. Castanoclobos, a new genus of
+                   Trichocoleaceae from New Zealand. Novon 17: 424–428.
+                 E N G E L , J. J. &amp; H E I N R I C H S , J. (2008). Studies of New Zealand Hepaticae. 39. Dinckleria
+                   Trevis., an older name for Proskauera Heinrichs and J.J. Engel. Cryptog. Bryol. 29:
+                   193–194.
+                 E N G E L , J. J. &amp; S C H U S T E R , R. M. (1984). An overview and evaluation of the genera of
+                   Geocalycaceae subfamily Lophocoleoideae (Hepaticae). Nova Hedwigia 39: 385–463.
+                 E N G E L , J. J. &amp; M E R R I L L , G. L. S. (1998). Austral Hepaticae XXV. Krunodiplophyllum
+                   Grolle and a revision of the Australasian species of Diplophyllum (Dum.) Dum.
+                   (Scapaniaceae, Jungermanniales). J. Hattori Bot. Lab. 84: 241–283.
+                 E V A N S , A. W. (1906). Hepaticae of Puerto Rico. VI. Cheilolejeunea, Rectolejeunea,
+                   Cystolejeunea, and Pycnolejeunea. Bull. Torrey Bot. Club 33: 1–25 + pl. 1–3.
+                 E V A N S , A. W. (1939). The classification of the Hepaticae. Bot. Rev. 5: 49–96.
+                 F O R R E S T , L. L., C R A N D A L L -S T O T L E R , B. J. &amp; F R E I R E , A. V. (2003). A molecular
+                   phylogeny of the simple thalloid liverwort family Fossombroniaceae (Marchantiophyta) as
+                   inferred from the chloroplast genes rps4, trnL and rbcL. In: Bot. Soc. Amer., Abstr., Botany
+                   2003, ‘The Annual Meeting of Four Professional Societies, Botanical Society of America,
+                   Mobile, AL’, p. 17. [Abstr.]
+                 F O R R E S T , L. L., D A V I S , E. C., L O N G , D. G., S T O T L E R , R. E. &amp; C R A N D A L L -S T O T L E R ,
+                   B. J. (2005). A molecular re-evaluation of diversity within Haplomitrium Nees
+                   (Marchantiophyta). In: Botany 2005. Scientific Meeting [Amer. Bryol. Lichenol. Soc.],
+                   August 13–17, 2005, Austin, Texas, p. 28. [Abstr.]
+                 F O R R E S T , L. L., D A V I S , E. C., L O N G , D. G., C R A N D A L L -S T O T L E R , B. J.,
+                   C L A R K , A. &amp; H O L L I N G S W O R T H , M. L. (2006). Unraveling the evolutionary history of
+                   the liverworts (Marchantiophyta): Multiple taxa, genomes and analysis. Bryologist 109:
+                   303–334.
+                 F R E Y , W. &amp; S T E C H , M. (2005). A morpho-molecular classification of the liverworts
+                   (Hepaticophytina, Bryophyta). Nova Hedwigia 81: 55–78.
+                 F R E Y , W. &amp; S T E C H , M. (2008). New suprageneric taxa of liverworts (Marchantiophyta) and
+                   mosses (Bryophyta). Nova Hedwigia 87: 261–267.
+                 F U R U K I , T. &amp; D A L T O N , P. J. (2008). Vandiemenia ratkowskiana Hewson
+                   (Marchantiophyta): A revised description and reassessment of its taxonomic status.
+                   J. Bryol. 30: 48–54.
+                 G A R B A R Y , D. J., R E N Z A G L I A , K. S. &amp; D U C K E T T , J. G. (1993). The phylogeny of land
+                   plants: a cladistic analysis based on male gametogenesis. Pl. Syst. Evol. 188: 237–269.
+                 G O E B E L , K. (1910). Archegoniatenstudien. XIII. Monosolenium tenerum Griffith. Flora 101:
+                   43–97.
+                 G O E B E L , K. (1930). Organographie der Pflanzen, 3rd edition. Jena: G. Fischer.
+                 G O T T S C H E , C. M., L I N D E N B E R G , J. B. G. &amp; N E E S V O N E S E N B E C K , C. G. (1844–1847).
+                   Synopsis Hepaticarum. Hamburg: Meissner.
+                 G R A D S T E I N , S. R. &amp; V A´ Nˇ A , J. (1999). On the taxonomy of Kymatocalyx and Stenorrhipis
+                   (Cephaloziellaceae). Haussknechtia Beih. 9: 155–170.
+
+
+
+
+https://doi.org/10.1017/S0960428609005393 Published online by Cambridge University Press
+                      194                               B. CRANDALL-STOTLER ET AL.
+
+
+
+
+                      G R A Y , S. F. (1821). A Natural Arrangement of British Plants. London: Baldwin, Cradock &amp;
+                        Joy.
+                      G R O L L E , R. (1965). Die Lebermoosgattungen Blepharidophyllum Ångstr. und
+                        Krunodiplophyllum nov. gen. (Scapaniaceae). J. Hattori Bot. Lab. 28: 55–74.
+                      G R O L L E , R. (1973). Lejeuneaceae Casares-Gil, Fl. Ibér., Hepát.: 703, Madrid. 1919; nom.
+                        cons. prop. Taxon 22: 504.
+                      G R O L L E , R. &amp; L O N G , D. G. (2000). An annotated check-list of the Hepaticae and
+                        Anthocerotae of Europe and Macaronesia. J. Bryol. 22: 103–140.
+                      G R O T H , H. (2005). Molecular phylogeny and morphological reconstructions of Plagiochilaceae</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>VANDIEMENIACEAE_HEWSON_1982</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Journ. Hattori Bot. Lab. No . 52: 163- 165 (May 1982)
+
+
+
+
+              VANDIEMENIACEAE: A NEW FAMILY IN
+                      THE METZGERIALES
+
+                                    HELEN J. HEWSON 1
+
+
+      A new monotypic family is described from Tasmania. It is close to the Aneur-
+ aceae and Metzgeriaceae.
+      Vandiemeniaceae Hewson/am. nov. Typus: Vandiemenia ratkowskiana.
+      Plantae thallinae. Thallus ecostatus, Riccardia-formis. Rami masculi ventrales,
+ Metzgeria-formes. Plantae feminae ignotae. Sporophyta ignota.
+      Vandiemenia ratkowskiana Hewson gen. &amp; sp. nov.
+      Plantae thallinae pulvinatae. Thallus ecostatus, c. 1 cm x 0.1-2.0 mm, irregulariter
+ bipinnatim furcatus, marginibus acutis, cuticula laevi. Rami masculi ventrales ut in
+Metzgeria, plerumque unistratosi, cum antheridia superficiales in medio. Typus : V.
+ratkowskiana Hewson. Holotypus : Milles Track ad Wellington Falls, Mt. Wellington,
+Hobart, A. V. Ratkowsky 80/119, 1 I Jan. 1980 (CANB).
+      Plants in cushions on rotten log. Thalli c. 1 cm long, 0.2-1.0 mm wide, nerveless,
+ branched; branching irregular, bipinnate, of two types - apical and pseudo-dichotomous
+and ventral, apparently a modified male branch; margin acute, winged, somewhat crenulate-
+sinuate; wing 1- 3 cells wide; transverse section piano- to biconvex, 4--7 cells thick; apex
+not dissected, protected by ventral non-persistent mucilage papillae; cuticle smooth; rhizoids
+ventral. (Oil bodies not known, &#39;not obvious&#39; according to D . A. Ratkowsky.) Gemmae
+unknown . Dioecious : female plants unknown. Male plants with numerous ventral branch-
+es: branches deeply cucullate to pseudo-spherical, mostly one cell thick with laciniate margin
+tending to have epidermal cells produced into hairs; midrib region bearing antherida on
+dorsal surface; antherida not sunken. Sporophyte unknown .
+      The family and genus are named in honour of Van Diemen after whom Tasmania
+was originally named. The species is named in honour of Ann Ratkowsky who
+collected the plant.
+      This species has a gametophyte with the vegetative morphology of members of
+the genus Riccardia in the Aneuraceae. However, its male branches are similar to
+those of Metzgeria in the Metzgeriaceae. Even in the absence of female and sporo-
+phyte material it is clear that a new family is at hand. One is lead to speculate that
+the Yandiemeniaceae represent a relict of a possible ancestor linki ng the modern
+Aneuraceae and Metzgeriaceae. Certainly this family presents consolidating evidence
+for the taxon Metzgeriineae in the sense of Schuster (1979), who ranks it as a suborder.
+      Schuster (1966) presented some evolutionary speculations in discussion about
+Phy llothallia. He draws attention to the Southern Hemisphere proving to be a
+probable centre for the evolution of a polytypic Metzgerialean flora. Indeed Van-
+diemenia adds weight to this observation but it also brings with it the frustration of
+  1</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>VANDIEMENIA_FURUKI_2008</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Journal of Bryology
+
+
+
+
+      ISSN: 0373-6687 (Print) 1743-2820 (Online) Journal homepage: www.tandfonline.com/journals/yjbr20
+
+
+
+
+Vandiemenia ratkowskiana Hewson
+(Marchantiophyta): a revised description and
+reassessment of its taxonomic status
+
+Tatsuwo Furuki &amp; Patrick J. Dalton
+
+To cite this article: Tatsuwo Furuki &amp; Patrick J. Dalton (2008) Vandiemenia ratkowskiana Hewson
+(Marchantiophyta): a revised description and reassessment of its taxonomic status, Journal of
+Bryology, 30:1, 48-54, DOI: 10.1179/174328208X282139
+
+To link to this article: https://doi.org/10.1179/174328208X282139
+
+
+
+
+       Published online: 18 Jul 2013.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 62
+
+
+
+       View related articles
+
+
+
+       Citing articles: 1 View citing articles
+
+
+
+
+                      Full Terms &amp; Conditions of access and use can be found at
+             https://www.tandfonline.com/action/journalInformation?journalCode=yjbr20
+    Journal of Bryology (2008) 30: 48–54
+
+
+
+
+          Vandiemenia ratkowskiana Hewson (Marchantiophyta): a revised
+               description and reassessment of its taxonomic status
+
+                                    TATSUWO FURUKI1 and PATRICK J. DALTON2
+
+    1
+        Natural History Museum and Institute, Japan and 2 School of Plant Science, University of Tasmania, Australia
+
+
+
+                                                              SUMMARY
+
+             The endemic Tasmanian hepatic Vandiemenia ratkowskiana Hewson, originally referred to the family
+             Vandiemeniaceae (Marchantiophyta), is restudied taxonomically. The rhizoids, female plants, calyptrae and
+             sporophytes are described for the first time. These features are closest to those of Metzgeria (Metzgeriaceae)
+             and support the placement of Vandiemenia within the Metzgeriaceae.
+
+             KEYWORDS: Hepatic, Vandiemeniaceae, Vandiemenia ratkowskiana, Tasmania, taxonomy.
+
+
+                               INTRODUCTION                           branched of apical and pseudo-dichotomous type, adven-
+                                                                      titiously branched ventral-endogenously. Cross-sections of
+    Vandiemenia ratkowskiana Hewson was initially described           thallus concave above convex below, up to 300 mm and 4–7
+    as a monotypic genus endemic to Tasmania (Hewson,                 cells thick, thin walled, lacking trigones; inner cells of
+    1982). The holotype was described from only male plants           middle thallus and ventral epidermal cells of middle thallus
+    growing in cushions on a rotten log, Mt. Wellington,              smaller than others, making obscure midrib region and
+    Tasmania, and this has remained the only known collection         wing; wing ca. 3/4 the thallus width, 2–3 cells thick,
+    to the present time. Hewson (1982) considered that                unistratose margin of wing 1–3 cells wide. Rhizoids
+    affinities of the taxon were close to the Aneuraceae and          colourless, unicellular, mostly scattered on ventral surface
+    Metzgeriaceae and established the genus Vandiemenia, and          of midrib region, rarely on winged and marginal cells, not
+    family Vandiemeniaceae, to accommodate this new species.          penetrating epidermal cells of thallus, superficial at the
+    It was suggested that the inadequacy of the type material         junctions or corners of adjacent epidermal cells. Mucilage
+    would lead to inevitable speculation about its relationship.      papillae, clavate, one- or two-celled; two-celled mucilage
+    Schuster (1992) transferred Vandiemeniaceae to a subfam-          papillae composed of a short basal cell and a long apical
+    ily within the Aneuraceae but Crandall-Stotler &amp; Stotler          cell, arranged alternately in two rows on ventral surface of
+    (2000) retained the status of the family in the Metzgeriales.     thallus; basal cell 15–20 mm long, 15–25 mm wide; apical
+    In December 2004, a collection was found on a decaying log        cell clavate, up to 100 mm long, 15–50 mm wide; unicellular
+    in Southern Tasmania approximately 70 km from the type            mucilage papillae rare on sexual branches. Dorsal epider-
+    locality. This newly discovered collection contained female
+                                                                      mal cells of the middle thallus 4–7, angular, longer than
+    plants with sporophytes and provided the opportunity to
+                                                                      wide, 752150 6 50275 mm, thin-walled, lacking trigones.
+    describe morphological and anatomical features not pre-
+                                                                      Ventral epidermal cells of middle thallus, smaller than
+    viously studied and to further evaluate the taxonomic status
+                                                                      dorsal epidermal cells, 50–100 6 40–60 mm, thin-walled,
+    of the species.
+                                                                      lacking trigones. Dorsal epidermal cells, ventral epidermal
+                                                                      cells and marginal cells as long as wide, thin-walled, lacking
+                               DESCRIPTION                            trigones. Oil bodies and oil droplets lacking. Asexual
+                                                                      reproduction unknown.
+    Vandiemenia ratkowskiana Hewson, J. Hattori Bot. Lab, 52:            Dioicous. Sexual branches reduced, ventral endogenous,
+    163. 1982 (Figs 1–5).                                             arising from ventral inner cells of thallus, arranged in multi-
+      Thalli prostrate, pale-green to green, never pigmented          rows at central part of thallus, sometimes exserted from
+    brown or red, up to 15 mm long, 0.5–2.0 mm wide, with             margin of thallus, with circular collar at base of branches.
+    obscure midrib region, flat to incurved at margin, pinnately      Male branches sometimes branched furcately, cucullate
+
+    # British Bryological Society 2008                                     Received 22 August 2007. Revision accepted 18 December 2007
+    DOI: 10.1179/174328208X282139
+
+
+
+
+Published online 18 Jul 2013
+                                            VANDIEMENIA RATKOWSKIANA HEWSON                                                    49
+
+                                                                    Specimen examined. Australia, Tasmania, near Thermal
+                                                                  Springs at Hastings Cave State Reserve. Elevation 120 m,
+                                                                  43u239S, 146u519E.
+                                                                    Dec. 2004, coll. Dalton, Tsubota and Furuki, no. 19704
+                                                                  (HO, dup. in CBM, HIRO-epitypus, designated here).
+
+
+                                                                                           DISCUSSION
+
+                                                                  The original description of Vandiemenia was restricted to
+                                                                  the anatomy and morphology of male plants and this
+                                                                  limited any conclusive inference to its taxonomic rela-
+                                                                  tionship. The following discussion comprises a detailed
+                                                                  appraisal of both male and female characters of
+                                                                  Vandiemenia, which critically compares its affinity to
+                                                                  related taxa and thereby clarifies its taxonomic status.
+
+
+                                                                  Branching of thallus
+
+Figure 1. Habit of Vandiemenia ratkowskiana Hewson. Scale bar 5   The vegetative branching is either terminal-lateral or
+2 mm. Photo was taken from Dalton et al. 19704.                   ventral endogenous in Vandiemenia and is the same as that
+                                                                  of Metzgeria (Fig. 2a). Metzgeria has two types of lateral
+with incurved lateral margins, forming ovoid to subglobose
+                                                                  branching, pinnate and bifurcate, although these two types
+sacs, with midrib and unistratose wing, crenulate at margin;
+                                                                  are essentially the same. If apical cells of the daughter
+rhizoids rare on ventral surface of midrib; midrib 2–4 cells
+                                                                  branch keep pace with that of the parent, a bifurcate thallus
+thick, thin-walled in cross-sections; antheridia naked on
+                                                                  develops. On the other hand, if the main axis overtakes that
+dorsal surface of midrib in two rows, globose, 150–175 mm
+                                                                  of the daughter branches, a pinnate thallus develops
+in diam., with unicellular long stalk. Female branches
+                                                                  (Renzaglia, 1982).
+short, with fleshy base and lateral wing, lacking involucres;
+                                                                     The ventral branch of Aneuraceae is extraordinary, and
+lateral wing, unistratose, wide, scale-like, 100–200 mm high,     is restricted to the subgenus Neoneura of Riccardia (Furuki,
+flat to concave with long cilia along margin; cilia rhizoid-      1991). It arises from epidermal cells and differs from those
+like, unicellular, elongated marginal cells, with mucilage        of Vandiemenia.
+hairs at apex; archegonia naked, 2–3 archegonia arranged
+irregularly in two rows at base of branches on dorsal
+surface of branches, 5–6 celled neck. Pseudoperianth              Rhizoids and rhizoid-like hairs
+lacking. Calyptrae massive, up to 5 mm long, 0.5–0.7 mm
+wide, scattered with unicellular hairs; unfertilised arche-       The rhizoid morphology of Vandiemenia was not provided in
+gonia remain near base of calyptrae.                              the original description by Hewson (1982). There are two
+   Capsules irregularly four-valved, rarely three-valved;         kinds of rhizoids, one is the rhizoid-like hair and the other is
+valves 1250–1750 mm long, 250–500 mm wide, bistratose.            the true rhizoid. The rhizoid-like hairs are mainly scattered
+Cells of outer layer, irregularly latticed, rectangular or        on the ventral surface of the midrib, rarely on winged and
+irregularly shaped, 125–175 mm long, 40–50 mm wide;               marginal cells of the thallus and never lateral on the margin
+median wall defined; thickenings nodular on adaxial radial        (Fig. 3a). Their initial cells are derived from ventral
+wall, very rarely on abaxial radial wall next to median wall.     epidermal cells, and the rhizoid-like hairs sit superficially
+Cells of inner layer, irregularly latticed, rectangular or        at the junctions or corners of adjacent epidermal cells
+irregularly shaped, 50–125 mm long, 20–30 mm wide; median         (Figs 2b, c, 4). These are unique in Metzgeriales, and are the
+wall not defined; thickenings nodular on adaxial and abaxial      same as the rhizoid-like hairs of the genus Metzgeria
+radial walls extending to outer and inner tangential walls.       (Metzgeriaceae). In Metzgeria, true rhizoids are also
+Elaterophores short at apices of valves, about 1/10 the length    observed intermixed with the rhizoid-like hairs (Renzaglia,
+of valves. Elaters with one-spiral, 350–700 mm long, 10–          1982). The true rhizoids of Vandiemenia arise from the base
+12 mm in diam. Spores 20–25 mm in diam. Seta not observed.        of female branches and the margin of the wing of the female
+                                                                  branch, but are not observed on the thallus surface.
+
+                          HABITAT
+                                                                  Mucilage papillae
+On decaying logs in mixed wet forest, which has a dominant
+overstory of Eucalyptus obliqua, over Cambrian dolomite           Hewson (1982) made a short description about protection
+that is mostly flat with occasional undulations.                  of the thallus apex by ventral non-persistent mucilage
+50                                                         T. FURUKI AND P. J. DALTON
+
+
+
+
+Figure 2. Vandiemenia ratkowskiana Hewson: (a) male plant with male and sterile endogenous branches (arrows); (b) ventral epidermal cells
+of thallus showing two mucilage papillae and rhizoid initial cells; (c) rhizoids and rhizoid initial cells on ventral surface of thallus; (d) inner
+cells of thallus middle; (e–h) cross-sections of thallus; (e–g) male axes; (h) branch; (i–k) male branches; (i) young stage, apical view; (j) ventral
+view in midrib region; (k) mature stage, dorsal view; (l–m) cross-sections of male branches; (n) antheridium. All figures were drawn from
+Dalton et al. 19704.
+
+
+
+papillae. The mucilage papillae of Vandiemenia consist of                    hairs in this genus agree with those of Metzgeria and with
+two cells with a short basal cell and a long apical cell, and                most species of Riccardia, but both Metzgeriaceae and
+they are arranged alternatively in two rows on the ventral                   Aneuraceae have mainly unicellular mucilage papillae. The
+surface of the midrib (Fig. 2b). The two-seriate mucilage                    mucilage papillae of Aneura are exceptionally two-celled
+                                                VANDIEMENIA RATKOWSKIANA HEWSON                                                              51
+
+
+
+
+Figure 3. Vandiemenia ratkowskiana Hewson: (a) female plant; (b–e) female branches; (b) just exerting from epidermal cells; (c) young stage,
+apical view; (d) cross-section of female branch with young calyptra, anterior view; (e) young shoot calyptra with archegonia near base; (f)
+archegonium; (g and h) capsule valves; (i) capsule valve with elaterophore; (j) elaterophore; (k–n) elaters; (o) cells of outer layer of capsule
+valve; (p) cells of inner layer of capsule valve. All figures were drawn from Dalton et al. 19704.
+
+
+with or without short stalk cells (Furuki, 1991), and similar             cell and a long apical cell and differ from those of
+to those of Vandiemenia. Such mucilage papillae are also                  Vandiemenia.
+known for Verdoornia succulenta R. M. Schust. (Schuster,                     Unicellular mucilage papillae in Vandiemenia are found
+1992). Two-celled mucilage hairs are also known in Pellia in              near the apices of sexual branches (Figs 2i, 3c) and are
+the family Pelliaceae, but here they consist of a long basal              similar to those of Metzgeriaceae and Aneuraceae.
+52                                                         T. FURUKI AND P. J. DALTON
+
+
+
+
+Figure 4. Rhizoid-like hairs and their initial cells on ventral surface
+of thallus of Vandiemenia ratkowskiana Hewson. Scale bar 5
+50 mm. Photo was taken from Dalton et al. 19704.
+
+
+
+
+Oil bodies                                                                Figure 5. Cells of apical part of thallus of Vandiemenia ratkowski-
+                                                                          ana Hewson Scale bar 5 100 mm. Photo was taken from Dalton
+                                                                          et al. 19704.
+The oil bodies of Vandiemenia were described as not
+obvious in the type material (Hewson, 1982). In this study
+of fresh material, oil bodies were not observed (Fig. 5).
+The absence of oil bodies in cells of the thallus is known                Male branches
+only in Metzgeriaceae among members of Metzgeriales.
+Metzgeriaceae merely have oil-droplets and only excep-                    Hewson (1982) described the male branches of Vandiemenia
+tionally have oil bodies (Kuwahara, 1978a). Almost all                    as ventral endogenous, reduced, deeply cucullate and
+species of the Aneuraceae have oil bodies in cells of thalli.             forming ovoid to subglobose sacs along the midrib region
+Some species of Riccardia, such as R. latifrons, have                     (Fig. 2a, i–m). As in the Metzgeriaceae, the antheridia are
+been considered as lacking oil bodies, but they do have                   superficially in two rows on the dorsal surface of male
+very small oil bodies in all cells of the thallus (Furuki,                branches and are not sunken.
+1991).                                                                      The antheridial stalk is long up to 50 mm (Fig. 2n).
+                                                                          Metzgeria has a long antheridial stalk, but that of
+                                                                          Aneuraceae is short (Renzaglia, 1982). Vandiemenia agrees
+Cross-section of thallus                                                  well with Metzgeria in the length of antheridial stalk.
+
+A cross-section of the thallus of this species reveals the
+inner and ventral epidermal cells smaller than others and                 Female branches
+the midrib is ill differentiated (Fig. 2h, g). The smaller inner
+cells are similar to those of Metzgeria and are very rare in              The female branches of this species are also ventral
+Aneuraceae. The cylindrical thalli of some species of                     endogenous, arising from inner cells of the thallus at the
+Riccardia, such as R. aequicelullaris (Steph.) Hewson and                 midrib region and are alternately arranged in multi-rows
+R. asperulatus R. M. Schust., do have smaller inner cells                 (Fig. 3a, b). The female branches have no midrib, and have
+(Brown &amp; Braggins, 1989), but Riccardia species with wide                 a wide wing that is an involucre-like structure. The margin
+thin thalli have larger inner cells than epidermal cells                  of wing is ciliate with rhizoid-like, long cilia. The
+(Furuki, 1991).                                                           archegonia are superficial on the dorsal surface of the
+                                            VANDIEMENIA RATKOWSKIANA HEWSON                                                  53
+
+central fleshy part of branches. The female branches are          Aneuraceae and Metzgeriaceae. Schuster (1992) reduced
+thus the same as those of the Metzgeriaceae.                      this family to a new subfamily within the Aneuraceae in
+                                                                  having irregularly bipinnately branched, ecostate, fleshy
+                                                                  thalli which are similar to those of the Aneuraceae,
+Calyptrae                                                         although the ventral sexual branches are similar to those
+                                                                  of Metzgeriaceae and differ from those of Aneuraceae.
+The calyptrae of this species are cylindrical, scattered with     Schuster (1992) referred the ventral branches to those of
+uni-cellular long cells, but lack the true involucres or a        Riccardia. Ventral branches are exceptional in Aneuraceae.
+pseudoperianth around them (Fig. 3d, e). Unfertilised             The subgenus Neoneura of Riccardia has ventral branches,
+archegonia are situated near but not at the base of the           but they arise from epidermal cells in the central part of the
+calyptrae (Fig. 3e). Such shoot calyptrae are the same as         thallus, and are not arranged in two rows along the middle
+those of Metzgeria and some species of Riccardia of the           line of the thallus and lack a collar at the base (Furuki,
+Aneuraceae (Furuki, 1991).                                        1991). The origin of sexual branches in Vandiemenia clearly
+                                                                  differs from that of the Aneuraceae, but is the same as in
+                                                                  Metzgeriaceae.
+Elaterophore and elaters                                             The antheridia are superficial, not sunken in
+                                                                  Vandiemenia, and are the same as those of Metzgeria. In
+The cluster of elaters in this species is attached to the valve   Riccardia, superficial antheridia are exceptional, and
+apices, and they become the short, slender elaterophores          known only for synoicous branches (Schuster, 1992;
+(Fig. 3i, j). Such elaterophores have been known for              Renzaglia, 1982).
+Riccardia     and      Metzgeria       (Kuwahara,       1978b).      The superficial rhizoid-like cilia are very restricted, and
+Lobatiriccardia species also have short elaterophores, but        are known only for the Metzgeriaceae among the order
+their base is thick in diameter (Furuki, 1991). Aneura has        Metzgeriales.
+elaterophores which are longer than 1/4 the capsule length,
+                                                                     Although fresh sporophytes have not been studied for
+and sometimes exceed half the length of the capsule
+                                                                  Vandiemenia, the genus is most closely related to the family
+(Furuki, 1991).
+                                                                  Metzgeriaceae in sharing cells lacking oil bodies, the hair-</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>VANDIEMENIA_REVISED_2024</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Journal of Bryology
+
+
+
+
+      ISSN: 0373-6687 (Print) 1743-2820 (Online) Journal homepage: www.tandfonline.com/journals/yjbr20
+
+
+
+
+Vandiemenia ratkowskiana Hewson
+(Marchantiophyta): a revised description and
+reassessment of its taxonomic status
+
+Tatsuwo Furuki &amp; Patrick J. Dalton
+
+To cite this article: Tatsuwo Furuki &amp; Patrick J. Dalton (2008) Vandiemenia ratkowskiana Hewson
+(Marchantiophyta): a revised description and reassessment of its taxonomic status, Journal of
+Bryology, 30:1, 48-54, DOI: 10.1179/174328208X282139
+
+To link to this article: https://doi.org/10.1179/174328208X282139
+
+
+
+
+       Published online: 18 Jul 2013.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 62
+
+
+
+       View related articles
+
+
+
+       Citing articles: 1 View citing articles
+
+
+
+
+                      Full Terms &amp; Conditions of access and use can be found at
+             https://www.tandfonline.com/action/journalInformation?journalCode=yjbr20
+    Journal of Bryology (2008) 30: 48–54
+
+
+
+
+          Vandiemenia ratkowskiana Hewson (Marchantiophyta): a revised
+               description and reassessment of its taxonomic status
+
+                                    TATSUWO FURUKI1 and PATRICK J. DALTON2
+
+    1
+        Natural History Museum and Institute, Japan and 2 School of Plant Science, University of Tasmania, Australia
+
+
+
+                                                              SUMMARY
+
+             The endemic Tasmanian hepatic Vandiemenia ratkowskiana Hewson, originally referred to the family
+             Vandiemeniaceae (Marchantiophyta), is restudied taxonomically. The rhizoids, female plants, calyptrae and
+             sporophytes are described for the first time. These features are closest to those of Metzgeria (Metzgeriaceae)
+             and support the placement of Vandiemenia within the Metzgeriaceae.
+
+             KEYWORDS: Hepatic, Vandiemeniaceae, Vandiemenia ratkowskiana, Tasmania, taxonomy.
+
+
+                               INTRODUCTION                           branched of apical and pseudo-dichotomous type, adven-
+                                                                      titiously branched ventral-endogenously. Cross-sections of
+    Vandiemenia ratkowskiana Hewson was initially described           thallus concave above convex below, up to 300 mm and 4–7
+    as a monotypic genus endemic to Tasmania (Hewson,                 cells thick, thin walled, lacking trigones; inner cells of
+    1982). The holotype was described from only male plants           middle thallus and ventral epidermal cells of middle thallus
+    growing in cushions on a rotten log, Mt. Wellington,              smaller than others, making obscure midrib region and
+    Tasmania, and this has remained the only known collection         wing; wing ca. 3/4 the thallus width, 2–3 cells thick,
+    to the present time. Hewson (1982) considered that                unistratose margin of wing 1–3 cells wide. Rhizoids
+    affinities of the taxon were close to the Aneuraceae and          colourless, unicellular, mostly scattered on ventral surface
+    Metzgeriaceae and established the genus Vandiemenia, and          of midrib region, rarely on winged and marginal cells, not
+    family Vandiemeniaceae, to accommodate this new species.          penetrating epidermal cells of thallus, superficial at the
+    It was suggested that the inadequacy of the type material         junctions or corners of adjacent epidermal cells. Mucilage
+    would lead to inevitable speculation about its relationship.      papillae, clavate, one- or two-celled; two-celled mucilage
+    Schuster (1992) transferred Vandiemeniaceae to a subfam-          papillae composed of a short basal cell and a long apical
+    ily within the Aneuraceae but Crandall-Stotler &amp; Stotler          cell, arranged alternately in two rows on ventral surface of
+    (2000) retained the status of the family in the Metzgeriales.     thallus; basal cell 15–20 mm long, 15–25 mm wide; apical
+    In December 2004, a collection was found on a decaying log        cell clavate, up to 100 mm long, 15–50 mm wide; unicellular
+    in Southern Tasmania approximately 70 km from the type            mucilage papillae rare on sexual branches. Dorsal epider-
+    locality. This newly discovered collection contained female
+                                                                      mal cells of the middle thallus 4–7, angular, longer than
+    plants with sporophytes and provided the opportunity to
+                                                                      wide, 752150 6 50275 mm, thin-walled, lacking trigones.
+    describe morphological and anatomical features not pre-
+                                                                      Ventral epidermal cells of middle thallus, smaller than
+    viously studied and to further evaluate the taxonomic status
+                                                                      dorsal epidermal cells, 50–100 6 40–60 mm, thin-walled,
+    of the species.
+                                                                      lacking trigones. Dorsal epidermal cells, ventral epidermal
+                                                                      cells and marginal cells as long as wide, thin-walled, lacking
+                               DESCRIPTION                            trigones. Oil bodies and oil droplets lacking. Asexual
+                                                                      reproduction unknown.
+    Vandiemenia ratkowskiana Hewson, J. Hattori Bot. Lab, 52:            Dioicous. Sexual branches reduced, ventral endogenous,
+    163. 1982 (Figs 1–5).                                             arising from ventral inner cells of thallus, arranged in multi-
+      Thalli prostrate, pale-green to green, never pigmented          rows at central part of thallus, sometimes exserted from
+    brown or red, up to 15 mm long, 0.5–2.0 mm wide, with             margin of thallus, with circular collar at base of branches.
+    obscure midrib region, flat to incurved at margin, pinnately      Male branches sometimes branched furcately, cucullate
+
+    # British Bryological Society 2008                                     Received 22 August 2007. Revision accepted 18 December 2007
+    DOI: 10.1179/174328208X282139
+
+
+
+
+Published online 18 Jul 2013
+                                            VANDIEMENIA RATKOWSKIANA HEWSON                                                    49
+
+                                                                    Specimen examined. Australia, Tasmania, near Thermal
+                                                                  Springs at Hastings Cave State Reserve. Elevation 120 m,
+                                                                  43u239S, 146u519E.
+                                                                    Dec. 2004, coll. Dalton, Tsubota and Furuki, no. 19704
+                                                                  (HO, dup. in CBM, HIRO-epitypus, designated here).
+
+
+                                                                                           DISCUSSION
+
+                                                                  The original description of Vandiemenia was restricted to
+                                                                  the anatomy and morphology of male plants and this
+                                                                  limited any conclusive inference to its taxonomic rela-
+                                                                  tionship. The following discussion comprises a detailed
+                                                                  appraisal of both male and female characters of
+                                                                  Vandiemenia, which critically compares its affinity to
+                                                                  related taxa and thereby clarifies its taxonomic status.
+
+
+                                                                  Branching of thallus
+
+Figure 1. Habit of Vandiemenia ratkowskiana Hewson. Scale bar 5   The vegetative branching is either terminal-lateral or
+2 mm. Photo was taken from Dalton et al. 19704.                   ventral endogenous in Vandiemenia and is the same as that
+                                                                  of Metzgeria (Fig. 2a). Metzgeria has two types of lateral
+with incurved lateral margins, forming ovoid to subglobose
+                                                                  branching, pinnate and bifurcate, although these two types
+sacs, with midrib and unistratose wing, crenulate at margin;
+                                                                  are essentially the same. If apical cells of the daughter
+rhizoids rare on ventral surface of midrib; midrib 2–4 cells
+                                                                  branch keep pace with that of the parent, a bifurcate thallus
+thick, thin-walled in cross-sections; antheridia naked on
+                                                                  develops. On the other hand, if the main axis overtakes that
+dorsal surface of midrib in two rows, globose, 150–175 mm
+                                                                  of the daughter branches, a pinnate thallus develops
+in diam., with unicellular long stalk. Female branches
+                                                                  (Renzaglia, 1982).
+short, with fleshy base and lateral wing, lacking involucres;
+                                                                     The ventral branch of Aneuraceae is extraordinary, and
+lateral wing, unistratose, wide, scale-like, 100–200 mm high,     is restricted to the subgenus Neoneura of Riccardia (Furuki,
+flat to concave with long cilia along margin; cilia rhizoid-      1991). It arises from epidermal cells and differs from those
+like, unicellular, elongated marginal cells, with mucilage        of Vandiemenia.
+hairs at apex; archegonia naked, 2–3 archegonia arranged
+irregularly in two rows at base of branches on dorsal
+surface of branches, 5–6 celled neck. Pseudoperianth              Rhizoids and rhizoid-like hairs
+lacking. Calyptrae massive, up to 5 mm long, 0.5–0.7 mm
+wide, scattered with unicellular hairs; unfertilised arche-       The rhizoid morphology of Vandiemenia was not provided in
+gonia remain near base of calyptrae.                              the original description by Hewson (1982). There are two
+   Capsules irregularly four-valved, rarely three-valved;         kinds of rhizoids, one is the rhizoid-like hair and the other is
+valves 1250–1750 mm long, 250–500 mm wide, bistratose.            the true rhizoid. The rhizoid-like hairs are mainly scattered
+Cells of outer layer, irregularly latticed, rectangular or        on the ventral surface of the midrib, rarely on winged and
+irregularly shaped, 125–175 mm long, 40–50 mm wide;               marginal cells of the thallus and never lateral on the margin
+median wall defined; thickenings nodular on adaxial radial        (Fig. 3a). Their initial cells are derived from ventral
+wall, very rarely on abaxial radial wall next to median wall.     epidermal cells, and the rhizoid-like hairs sit superficially
+Cells of inner layer, irregularly latticed, rectangular or        at the junctions or corners of adjacent epidermal cells
+irregularly shaped, 50–125 mm long, 20–30 mm wide; median         (Figs 2b, c, 4). These are unique in Metzgeriales, and are the
+wall not defined; thickenings nodular on adaxial and abaxial      same as the rhizoid-like hairs of the genus Metzgeria
+radial walls extending to outer and inner tangential walls.       (Metzgeriaceae). In Metzgeria, true rhizoids are also
+Elaterophores short at apices of valves, about 1/10 the length    observed intermixed with the rhizoid-like hairs (Renzaglia,
+of valves. Elaters with one-spiral, 350–700 mm long, 10–          1982). The true rhizoids of Vandiemenia arise from the base
+12 mm in diam. Spores 20–25 mm in diam. Seta not observed.        of female branches and the margin of the wing of the female
+                                                                  branch, but are not observed on the thallus surface.
+
+                          HABITAT
+                                                                  Mucilage papillae
+On decaying logs in mixed wet forest, which has a dominant
+overstory of Eucalyptus obliqua, over Cambrian dolomite           Hewson (1982) made a short description about protection
+that is mostly flat with occasional undulations.                  of the thallus apex by ventral non-persistent mucilage
+50                                                         T. FURUKI AND P. J. DALTON
+
+
+
+
+Figure 2. Vandiemenia ratkowskiana Hewson: (a) male plant with male and sterile endogenous branches (arrows); (b) ventral epidermal cells
+of thallus showing two mucilage papillae and rhizoid initial cells; (c) rhizoids and rhizoid initial cells on ventral surface of thallus; (d) inner
+cells of thallus middle; (e–h) cross-sections of thallus; (e–g) male axes; (h) branch; (i–k) male branches; (i) young stage, apical view; (j) ventral
+view in midrib region; (k) mature stage, dorsal view; (l–m) cross-sections of male branches; (n) antheridium. All figures were drawn from
+Dalton et al. 19704.
+
+
+
+papillae. The mucilage papillae of Vandiemenia consist of                    hairs in this genus agree with those of Metzgeria and with
+two cells with a short basal cell and a long apical cell, and                most species of Riccardia, but both Metzgeriaceae and
+they are arranged alternatively in two rows on the ventral                   Aneuraceae have mainly unicellular mucilage papillae. The
+surface of the midrib (Fig. 2b). The two-seriate mucilage                    mucilage papillae of Aneura are exceptionally two-celled
+                                                VANDIEMENIA RATKOWSKIANA HEWSON                                                              51
+
+
+
+
+Figure 3. Vandiemenia ratkowskiana Hewson: (a) female plant; (b–e) female branches; (b) just exerting from epidermal cells; (c) young stage,
+apical view; (d) cross-section of female branch with young calyptra, anterior view; (e) young shoot calyptra with archegonia near base; (f)
+archegonium; (g and h) capsule valves; (i) capsule valve with elaterophore; (j) elaterophore; (k–n) elaters; (o) cells of outer layer of capsule
+valve; (p) cells of inner layer of capsule valve. All figures were drawn from Dalton et al. 19704.
+
+
+with or without short stalk cells (Furuki, 1991), and similar             cell and a long apical cell and differ from those of
+to those of Vandiemenia. Such mucilage papillae are also                  Vandiemenia.
+known for Verdoornia succulenta R. M. Schust. (Schuster,                     Unicellular mucilage papillae in Vandiemenia are found
+1992). Two-celled mucilage hairs are also known in Pellia in              near the apices of sexual branches (Figs 2i, 3c) and are
+the family Pelliaceae, but here they consist of a long basal              similar to those of Metzgeriaceae and Aneuraceae.
+52                                                         T. FURUKI AND P. J. DALTON
+
+
+
+
+Figure 4. Rhizoid-like hairs and their initial cells on ventral surface
+of thallus of Vandiemenia ratkowskiana Hewson. Scale bar 5
+50 mm. Photo was taken from Dalton et al. 19704.
+
+
+
+
+Oil bodies                                                                Figure 5. Cells of apical part of thallus of Vandiemenia ratkowski-
+                                                                          ana Hewson Scale bar 5 100 mm. Photo was taken from Dalton
+                                                                          et al. 19704.
+The oil bodies of Vandiemenia were described as not
+obvious in the type material (Hewson, 1982). In this study
+of fresh material, oil bodies were not observed (Fig. 5).
+The absence of oil bodies in cells of the thallus is known                Male branches
+only in Metzgeriaceae among members of Metzgeriales.
+Metzgeriaceae merely have oil-droplets and only excep-                    Hewson (1982) described the male branches of Vandiemenia
+tionally have oil bodies (Kuwahara, 1978a). Almost all                    as ventral endogenous, reduced, deeply cucullate and
+species of the Aneuraceae have oil bodies in cells of thalli.             forming ovoid to subglobose sacs along the midrib region
+Some species of Riccardia, such as R. latifrons, have                     (Fig. 2a, i–m). As in the Metzgeriaceae, the antheridia are
+been considered as lacking oil bodies, but they do have                   superficially in two rows on the dorsal surface of male
+very small oil bodies in all cells of the thallus (Furuki,                branches and are not sunken.
+1991).                                                                      The antheridial stalk is long up to 50 mm (Fig. 2n).
+                                                                          Metzgeria has a long antheridial stalk, but that of
+                                                                          Aneuraceae is short (Renzaglia, 1982). Vandiemenia agrees
+Cross-section of thallus                                                  well with Metzgeria in the length of antheridial stalk.
+
+A cross-section of the thallus of this species reveals the
+inner and ventral epidermal cells smaller than others and                 Female branches
+the midrib is ill differentiated (Fig. 2h, g). The smaller inner
+cells are similar to those of Metzgeria and are very rare in              The female branches of this species are also ventral
+Aneuraceae. The cylindrical thalli of some species of                     endogenous, arising from inner cells of the thallus at the
+Riccardia, such as R. aequicelullaris (Steph.) Hewson and                 midrib region and are alternately arranged in multi-rows
+R. asperulatus R. M. Schust., do have smaller inner cells                 (Fig. 3a, b). The female branches have no midrib, and have
+(Brown &amp; Braggins, 1989), but Riccardia species with wide                 a wide wing that is an involucre-like structure. The margin
+thin thalli have larger inner cells than epidermal cells                  of wing is ciliate with rhizoid-like, long cilia. The
+(Furuki, 1991).                                                           archegonia are superficial on the dorsal surface of the
+                                            VANDIEMENIA RATKOWSKIANA HEWSON                                                  53
+
+central fleshy part of branches. The female branches are          Aneuraceae and Metzgeriaceae. Schuster (1992) reduced
+thus the same as those of the Metzgeriaceae.                      this family to a new subfamily within the Aneuraceae in
+                                                                  having irregularly bipinnately branched, ecostate, fleshy
+                                                                  thalli which are similar to those of the Aneuraceae,
+Calyptrae                                                         although the ventral sexual branches are similar to those
+                                                                  of Metzgeriaceae and differ from those of Aneuraceae.
+The calyptrae of this species are cylindrical, scattered with     Schuster (1992) referred the ventral branches to those of
+uni-cellular long cells, but lack the true involucres or a        Riccardia. Ventral branches are exceptional in Aneuraceae.
+pseudoperianth around them (Fig. 3d, e). Unfertilised             The subgenus Neoneura of Riccardia has ventral branches,
+archegonia are situated near but not at the base of the           but they arise from epidermal cells in the central part of the
+calyptrae (Fig. 3e). Such shoot calyptrae are the same as         thallus, and are not arranged in two rows along the middle
+those of Metzgeria and some species of Riccardia of the           line of the thallus and lack a collar at the base (Furuki,
+Aneuraceae (Furuki, 1991).                                        1991). The origin of sexual branches in Vandiemenia clearly
+                                                                  differs from that of the Aneuraceae, but is the same as in
+                                                                  Metzgeriaceae.
+Elaterophore and elaters                                             The antheridia are superficial, not sunken in
+                                                                  Vandiemenia, and are the same as those of Metzgeria. In
+The cluster of elaters in this species is attached to the valve   Riccardia, superficial antheridia are exceptional, and
+apices, and they become the short, slender elaterophores          known only for synoicous branches (Schuster, 1992;
+(Fig. 3i, j). Such elaterophores have been known for              Renzaglia, 1982).
+Riccardia     and      Metzgeria       (Kuwahara,       1978b).      The superficial rhizoid-like cilia are very restricted, and
+Lobatiriccardia species also have short elaterophores, but        are known only for the Metzgeriaceae among the order
+their base is thick in diameter (Furuki, 1991). Aneura has        Metzgeriales.
+elaterophores which are longer than 1/4 the capsule length,
+                                                                     Although fresh sporophytes have not been studied for
+and sometimes exceed half the length of the capsule
+                                                                  Vandiemenia, the genus is most closely related to the family
+(Furuki, 1991).
+                                                                  Metzgeriaceae in sharing cells lacking oil bodies, the hair-</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.990948, 147.124043], [-42.8861, 147.2153]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

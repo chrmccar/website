@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brevianthus flavus — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Brevianthus flavus</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Brevianthus flavus</em></h1>
+  <p>
+    <span class="badge">Brevianthaceae</span>
+    <span class="badge secondary">Brevianthus</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (13)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Aspergillus flavus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Brevianthus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Brevianthus flavus subsp. crenulatus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Brevianthus flavus subsp. flavus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Clavus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Flavodon flavus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Gymnomyces flavus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Mitthyridium flavum</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Suillus flavus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Cincinnulus Dumort</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Jackiella flavus</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Kantius Gray</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Parentia Léman</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">116</p>
+    <footer>92 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">13</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>cell_diameter_um</td>
+          <td>335.0–465.0</td>
+          <td>µm</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>bilobed</td>
+          <td>categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_count_per_cell</td>
+          <td>1.0–3.0</td>
+          <td>per cell</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_count_per_cell</td>
+          <td>1.0–4.0</td>
+          <td>per cell</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>bark</td>
+          <td>categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>rock</td>
+          <td>categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">KANTVILAS_TAS_WHR</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>small</td>
+          <td>categorical</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">ACROMASTIGUM_AUSTRALIA_2014</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>ACROMASTIGUM_AUSTRALIA_2014</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">often bulging and coalescing, margin of leaf thick walled; oil-bodies not observed; cuticle smooth. Underleaves
+imbricate, insertion transverse but sometimes the lateral margins slightly decurrent, somewhat spreading to
+almost squarrose, large (c. 3/4 size of lateral leaves), 1.2–1.7 × as wide as stem, suborbicular, 270–545 μm
+long, 335–465 μm wide, not auriculate at base; apex truncate, subentire to emarginate, sinuses vestigal, lobes
+rounded. Asexual reproduction not observed. Androecial branches slightly stalked (c. 100 μm), sometimes
+developed in abundance; bracts very slightly bifid (&lt;1/20) or entire, deeply saccate, rounded to bluntly acute,
+1-androus, c. 440–490 μm long, 400–545 μm wide; bracteoles slightly emarginate (with papilla), ovate,
+295–360 μm long, 280–360 μm wide. Gynoecia produced on short branches. Bracts and bracteoles similar, in
+several series, innermost largest, larger ones usually bisbifid, central sinus acute (30–40°) and split 1/3–1/2 length
+of bract, secondary lobes much smaller (&lt;1/10 length of bract), ovate, margins with scattered 1- or 2-celled
+laciniae and papillae; cells rectangular to almost isodiametric, length:width ratio 1.2–4.8, corners rounded
+by small trigones; oil-bodies in scattered patches towards apex, 1–3 per cell, ± botryoidal, 2–5 μm diam.,
+clear. Perianth c. 4 mm long when fully developed, slenderly ovoid-cylindrical, narrowed at mouth, 1-stratose
+throughout, cells rectangular to elongate-rectangular, length:width ratio 1.2–5.5, thick-walled, trigones present
+in mid and basal regions, tangential walls thickened in upper regions and up to 10 μm thick; oil-bodies present,
+particularly in mid-region of perianth, 1–4 per cell, spherical, 4–5 μm diam., clear. Sporophyte; seta with
+12–14 rows of large, hyaline epidermal cells filled with numerous tiny oil-bodies (which may give the cells a
+dark appearance in transverse section) surrounding 15–18 rows of smaller interior cells; capsule inner layer
+with nodular thickenings and occasionally semiannular bands; epidermal layer similar. Spores 13–16 μm diam.
+Variation: Individuals of Acromastigum cavifolium exhibit some variation in shoot stature and the size of
+associated leaves and underleaves. The only inter-individual variation observed during this study was in plant
+colour, which varies from golden-brown to green; apparently in association with sun exposure.
+Distribution and ecology: A. cavifolium is found in Australia (Tasmania) and New Zealand (North and South
+Islands) and, like most Acromastigum species, is widespread but infrequently collected. Jarman describes
+Tasmanian A. cavifolium as an understorey epiphyte (Jarman and Fuhrer 1995) but the species has also been
+collected from damp soil and humus in seepage zones receiving a moderate amount of light (NSW285475);
+a microsite more typical of A. verticale.
+In New Zealand A. cavifolium is almost always encountered as an epiphyte in cool hyperhumid forests where
+it inhabits bark of a wide range of species, including Agathis australis, Manoao colensoi, Olearia colensoii and
+beech species including Nothofagus cliffortioides and N. menziesii. It can be found growing with an equally
+diverse array of bryophytes including Brevianthus flavus, Lepicolea attenuata, Radula multiamentula, Acrochila
+biserialis, Acroscyphella phoenicorhiza, and species of Chiloscyphus, Trichocolea, Telaranea, Lepidozia, Bazzania,
+as well as with the fern Hymenophyllum armstrongii.
+Recognition: The isophyllous shoots with nearly entire, triangular, concave leaves and underleaves in
+combination with the production of ventral flagelliform branches are distinctive within the Australasian
+bryophyte flora. Acromastigum cavifolium could only be confused with A. verticale, but the two species differ
+in microhabitat, shoot orientation, and leaf and underleaf shape. Generally Acromastigum cavifolium is an
+epiphyte or lithophyte whose isophyllous shoots grow horizontally along the substrate. Acromastigum verticale
+Acromastigum in Australia                                                Telopea 17: 195–237, 2014                     261
+
+
+
+
+Fig. 3. Acromastigum cavifolium. A, shoot showing male branches. B, Basal leaf-cells. C, Female bract. D, Marginal leaf
+cells. E, Female bracteole. F, Apex of female bract lobe. G, Cellular detail of perianth mouth. H, Capsule epidermal layer.
+I, Capsule inner layer. J, Seta transverse section. Scale (approximate) A, 300 μm; B, D, F–H, I, J: 50 μm; C, E, 120 μm. From
+Jarman 89/13 (HO).
+262            Telopea 17: 195–237, 2014                                                                 Brown and Renner
+
+
+is a terrestrial whose subisophyllous shoots grow erect from the substrate. Other characters by which the two
+species can be separated are presented in the key above.
+Representative specimens examined: Australia: Tasmania, Central Highlands (Orchard): Mt. Kate, 41°37&#39;S 145°58&#39;E,
+1120 m, 15 Apr 1996, A. Moscal 28233A (HO571027); South West: Anthony Road, 41°50.5&#39;S 145°37&#39;E, 550 m, 13 Nov 1992,
+J. Jarman s.n. (HO547163); Track of road to White Spur Dam, 41°53&#39;S 145°31&#39;E, 600 m, 24 Jan 1992, J. Jarman s.n. (HO310141);
+Scotts Peak Road, 42°49&#39;S 146°23&#39;E, 590 m, 19 Oct 2013, J. Jarman s.n. (HO571170); Mt Sprent, 42°47&#39;S 145°58’E, 850 m,
+5 Feb 1987, J. Jarman s.n. (HO571182); Schnell’s Ridge, south of Mt Anne, 43°02&#39;S 146°25&#39;E, 14 Jan 1978, A.V. Ratkowsky H834
+(HO49566).
+New Zealand: North Island: Auckland: Coromandel Ranges, Mt Moehau, E from trig, 36°32&#39;17&#39;&#39;S 175°24&#39;59&#39;&#39;E, 640 m,
+3 Nov 1980, E.K. Cameron s.n. (AK323763); Coromandel Ranges, ridge SW of Mt Rowe along track to Mt Rowe, 37°2&#39;16&#39;&#39;S
+175°40&#39;19&#39;&#39;E, 720 m, 26 Jun 2007, M.A.M. Renner 2833 (AK300167); South Island, Western Nelson: Stockton mine area, Webb</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>DALTON_TAS_BRYOPHYTA</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">lesser extent with South Africa (Scott and Stone 1976). it awaits detailed floristic
+
+studies before conclusions can be made as (0 the extent of these relationships.
+
+
+
+1.4.4 Relationships of Tasmanian hepatics
+
+There is no specific account of the relationship of Tasmanian hepatics. although in a
+
+series of papers Schuster (1969,    1979, 1982) discussed the relationships of the
+Gondwanan hepatic flora. However, some trends in the relationship of the Tasmanian
+
+flora can be obtained from Piippo (1992), where using an index of similarity a
+
+comparison of the Australian hepatics is made with nearby temperate and tropical
+
+geographic areas. It is not surprising that the closest affinity is with the New Zealand
+
+flora where it is estimated that 80% of Australian genera are shared with New
+
+Zealand. At the specific level they have separated much more from each other with the
+
+index of similarity being only 39%. Australia and New Zealand together have many
+
+endemic genera, but as previously mentioned the level of endemism in New Zealand
+
+is much higher. In Tasmania there are only two endemic genera and both               are
+
+monorypic   -   Brevianthus flavus of the family Brevianthaceae and Vandiemenia
+ratkowskiana of Vandiemeniaceae.
+
+
+1.4.5 Land based versus long distance dispersal
+The preceeding discussion has described the bryofloristics of Tasmania as a mixture
+
+of different biogeographical elements and that many of the taxa comprising those
+
+elements have close affinity to the the floristics of other land masses at similar
+
+latitudes across the austral zone. The past decade has seen debate in the literature to
+
+account for the dispersal patterns displayed by the mOSSes and hepatics.
+
+
+
+At the time Raven and Axelrod (1972) proposed the concept of plate tectonics (0
+
+account for Angiospenn affinities in the southern hemisphere, Schuster            (1969)
+initially proposed and then expanded fullher (Schuster 1972) the hypothesis that a
+
+similar set of events could explain the origin and distribution of antipodal hepatics.
+
+According to Schuster, during the Cretaceous there existed a rich flora of cool­
+
+adapted and moisture preferring hepatics across New Zealand, Australia, Antarctica
+
+and southern South America. He has consistently argued (Schuster 1979) that the
+
+dispersal of southern hemisphere hepatics can be visualized as resulting primarily</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>KANTVILAS_TAS_WHR</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">(9) Alpine heathland (lichen habitat)                                              Bryophytes
+Low shrubby vegetation dominated by Eucalyptus
+vernicosa, Monotoca submutica, Nothofagus                     For bryophytes, 146 species were recorded (table 2,
+cunninghamii,Epacris serpyllifolia, Cenarrhenes nitida        pp.156-159), including 48 mosses and 98 liverworts.
+and Persoonia gunnii. It rarely forms extensive               Excluding two unidentified species, mosses are
+continuous tracts but occurs as small patches between         represented by 34 genera in 23 families (classification
+rock outcrops and crags.                                      after Scott &amp; Stone 1976). The family which is best
+                                                              represented is the Dicranaceae (10 species) and it
+                                                              contains the two most widespread and abundant mosses
+                      RESULTS                                 recorded, Campylopus introflexlts and Dicranolorna
+                                                              robusturn. The liverworts comprise 86 leafy and 12
+                        Lichens                               thalloid species and, with five unidentified species ex-
+                                                              cluded, are divided into 43 genera and 21 families. The
+For lichens, 141 taxa in 66 genera were recorded              Geocalycaceae, represented by common genera such
+(table 1), including 95 macrolichens and 46 crustose          as Heteroscyphus and Chiloscyphus, and the Lepido-
+species. Major genera with respect to prominence and          ziaceae, which includes genera such as Acromastigum,
+diversity among the macrolichens were Cladia (7 taxa),        Lepidozia and Telaranea, are the largest families present
+Cladonia (14), Menegazzia (5), Pseudocyphellaria (8),         with 19 and 18 species respectively.
+Psororna (6), Siphula (6), Sphaerophorus (6) and Usnea           Acromastigum verticale, previously known only from
+(5). Amongst the crustose lichens, the genera of the          New Zealand, was recorded from Tasmania for the first
+Lecideaceae s.lat. (Bacidia, Catillaria, Fuscidea,            time, and the presence of Tylimanthus diversifolius,
+Lecidea, Lecidella, Mycoblastus, Paraporpidia,                previously listed as doubtful for Tasmania (Scott 1985)
+Poeltiaria and Trernolecia) and those of the                  was confirmed. A rare species, Pulchrinodus inflatus,
+Pertusariaceae (Coccotrerna, Melanaria, Ochrolechia           which we discovered only recently in Tasmania from
+and Pertusaria) tended to be most abundant.                   the De Witt and Propsting Ranges further to the
+   Four species were recorded for Tasmania for the first      southwest (Allen 1987), was also recorded.
+time: Catillaria contristans, Ochrolechia androgyna              Six endemic species were recorded. These include
+and Thelotrerna suecicum are cool temperate Northem           three mosses (Dicranoweissia rnicrocarpa, Tayloria
+Hemisphere species, whilstPolychidiurn contorturn was         gunnii and T. tasmanica) and three liverworts
+previously considered endemic to New Zealand                  (Brevianthus flavus from the monotypic family
+(Galloway 1985). However, several other species,              Brevianthaceae, Schistochila tasrnanica and H erhertus
+reported elsewhere in the literature (e.g. Kantvilas 1989),   oldfieldianus).
+were also first discovered in Tasmania during this               The majority of bryophytes were soil or rock colon-
+present survey.                                                ising species. A few obligate epiphytes were present
+   The endemic Tasmanian lichens found during the             but most epiphytic species were found on stems near
+study include C ladia moniliforrnis, M enegazzia               ground level and occurred also on soil, dead wood or
+subbullata, Sarrameana tasmanica and Siphulajarnesii.          rocks. The highest number of species was found in
+Several of the undescribed species (e.g. in the genera         young forest, scrub and amongst sheltered alpine rocks,
+Baeornyces s.lat., Melanaria, Ramonia and Siphula) are         all of which contain the greatest diversity of
+currently the focus of further study and are likely to be      microhabitats. Exposed habitats such as alpine &#34;lawns&#34;
+endemic to Tasmania as welL Notes on these taxa are            and buttongrass moorland were relatively impoverished,
+given as a footnote to table 1.                                although species richness increased where rocks or
+   Approximately 43 species are terricolous, 52 are            clumps of emergent shrubs provided moist, sheltered
+saxicolous or occur amongst bryophytes over rocks,             microhabitats.
+152      G. Kantvilas and SJ. Jarman
+
+
+                                                TABLE 1
+                   Lichens Recorded from Mount         Showing               Abundal1ce*
+                                         in Seven Habitat
+
+                                                   &#39;---~---&#39;-~&#39;-~----
+
+
+                                                                      Habitat
+                                                         2       :1     4        7     8   9
+-------                                                 -~----~--------~--.-----.--</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>NZ_THREATENED_2011</strong> (1 entry)</summary>
+    
+    
+    <p><strong>conservation_status:</strong> At Risk - Naturally Uncommon</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+    
+    <p><strong>infraspecific_taxon:</strong> Brevianthus flavus subsp. flavus</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.433333, 145.65], [-42.7819621, 145.9677261], [-41.8, 145.22], [-42.891547, 145.531724], [-41.833333, 145.5], [-41.963448, 145.98404], [-42.442895, 145.663838], [-42.783333, 145.983333], [-43.25, 146.766667], [-42.956111, 146.365556], [-43.620737, 146.629563], [-42.25, 145.6], [-41.15, 145.466667], [-41.349773, 144.849719], [-41.3607817, 144.8466331], [-42.622962, 145.659994], [-41.717854, 145.318327], [-41.7667, 145.5], [-42.9625, 146.392222], [-43.440988, 146.754236], [-42.783333, 145.983333], [-41.7667, 145.5], [-41.766667, 145.5], [-42.5986339, 148.1139553], [-43.0246688, 145.6435872], [-43.566667, 146.883333], [-42.7775, 145.961667], [-43.11125, 146.21925], [-43.621272, 146.877445], [-42.085287, 145.913181], [-42.83, 146.38], [-43.366667, 146.85], [-41.6471661, 145.4615325], [-42.55, 145.466667], [-41.7086248, 146.7966841], [-41.5861274, 145.2777172], [-41.7667, 145.5], [-41.708373, 146.801814], [-41.71955, 145.438498], [-42.801523, 145.533855], [-41.6539804, 145.432548], [-41.85, 145.42], [-41.833333, 145.616667], [-43.040397, 146.2877665], [-42.75, 145.97], [-41.88, 145.48], [-43.0986307, 146.0343964], [-42.61985, 145.416192], [-43.461389, 146.40625], [-41.700296, 146.819867], [-43.0395569, 146.2975973], [-41.899622, 145.434118], [-41.729912, 146.760866], [-41.833333, 145.616667], [-41.0404427, 144.9629934], [-43.1, 146.73], [-41.766667, 145.5], [-43.3667, 146.85], [-42.9561, 146.365633], [-42.805633, 145.900657], [-41.811163, 145.556662], [-42.803023, 145.656114], [-42.259749, 145.425237], [-43.0246688, 145.6435872], [-43.35, 146.85], [-42.441413, 145.542282], [-43.0787, 146.264315], [-41.7986256, 145.6343813], [-41.6939077, 145.0974436], [-41.6505245, 145.0855811], [-41.708369, 146.79941], [-42.9625, 146.392222], [-41.287333, 145.240333], [-42.9624, 146.39215], [-42.7652959, 145.9843916], [-42.1652959, 145.5343886], [-42.087322, 146.154968], [-43.260899, 146.754961], [-42.086368, 146.034072], [-43.111389, 146.219167], [-42.827656, 146.1262704], [-43.23, 146.8], [-42.89992, 146.511419], [-41.909, 145.475583], [-41.175, 145.475], [-43.350944, 146.754599], [-42.783333, 145.95], [-42.8236256, 146.3891093], [-41.714085, 145.078018], [-43.216667, 146.75], [-42.8671633, 146.2358944], [-42.566667, 145.7], [-42.241906, 171.628405], [-42.333333, 171.4], [-37.037778, 175.671944], [-42.336105, 171.396977], [-42.233333, 171.633333], [-42.224775, 171.626358], [-42.333333, 171.4], [-37.037778, 175.671944], [-42.336122, 171.39819], [-35.616667, 173.55], [-42.2333, 171.6333], [-42.224775, 171.626358], [-42.336122, 171.39819], [-42.336122, 171.39819], [-42.25584, 171.62961], [-35.675, 173.562778], [-42.231577, 171.6328883], [-37.037778, 175.671944], [-42.233333, 171.633333], [-42.233333, 171.633333], [-37.037778, 175.671944], [-42.228611, 171.625], [-35.616667, 173.55], [-37.05, 175.666666]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

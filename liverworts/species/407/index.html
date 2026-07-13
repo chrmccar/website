@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tricholepidozia quadriseta — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Tricholepidozia quadriseta</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Tricholepidozia quadriseta</em></h1>
+  <p>
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge secondary">Tricholepidozia</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (11)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Bibulocystis pulcherrima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Euphorbia pulcherrima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tricholepidozia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tricholepidozia jowettiana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tricholepidozia lindenbergii</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tricholepidozia pulcherrima var. mooreana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tricholepidozia pulcherrima var. pulcherrima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tricholepidozia tetradactyla</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Lepidozia pulcherrima</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Telaranea pulcherrima</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Tricholepidozia pulcherrima</em> <small class="muted">input</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">5</p>
+    <footer>0 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>GBIF</strong> (1 entry)</summary>
+    
+    
+    <p><strong>tricholepidozia quadriseta (steph.) e. d. cooper, phytotaxa:</strong> &lt;div&gt;&lt;p&gt;Tricholepidozia quadriseta (Steph.) E.D.Cooper,&lt;/p&gt;&lt;p&gt;Phytotaxa 97 (2): 60, 2013 (see Cooper et al. 2013). BASIONYM: Lepidozia quadriseta Steph., Sp. Hepat. (Stephani) 3: 582, 1909 (see Stephani 1909).&lt;/p&gt;&lt;/div&gt;</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    
+    
+    <p><strong>distribution:</strong> NSW; Vic.; Tas.</p>
+    
+    
+    
+    <p><strong>infraspecific_taxon:</strong> Tricholepidozia pulcherrima var. mooreana</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-24.36358, 151.011311], [-44.098343, 169.366747], [18.991667, 146.155], [-15.0, 143.0], [-44.765023, 168.05006]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

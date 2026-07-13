@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aneura rodwayi — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Aneura rodwayi</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Aneura rodwayi</em></h1>
+  <p>
+    <span class="badge">Aneuraceae</span>
+    <span class="badge secondary">Aneura</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Aneura</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Carpha rodwayi</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Gahnia rodwayi</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Gunniopsis rodwayi</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Leucopogon rodwayi</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Ozothamnus rodwayi</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Pultenaea rodwayi</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Rodwaya</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Rodwayia</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">73</p>
+    <footer>54 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.5333, 145.55], [-41.908724, 146.398476], [-42.448352, 147.730988], [-41.276745, 147.837167], [-42.900698, 147.246351], [-41.53, 145.55], [-42.990948, 147.124043], [-41.727088, 146.159706], [-41.2333, 147.85], [-41.66923, 146.633757], [-43.204167, 146.7875], [-42.805633, 145.900657], [-41.233333, 147.85], [-41.539472, 145.442839], [-42.17642, 146.032703], [-41.813907, 148.205309], [-41.9903, 146.645], [-41.729599, 146.640628], [-41.7833, 146.1833], [-41.23, 147.85], [-41.53, 145.55], [-41.90626, 146.036792], [-41.5333, 145.55], [-41.541033, 145.562686], [-41.908029, 146.27791], [-42.991015, 147.001374], [-42.6833, 146.5833], [-41.725172, 146.665901], [-41.819981, 146.760532], [-42.990749, 147.246711], [-42.900896, 147.123862], [-41.45, 148.25], [-42.7889, 145.9611], [-42.68, 146.58], [-42.719819, 146.512835], [-42.088131, 147.726838], [-41.716667, 146.233333], [-41.542469, 145.682542], [-43.078683, 147.738437], [-41.726146, 146.039487], [-41.817149, 146.15853], [-40.909151, 145.457724], [-41.239281, 147.848031], [-41.7167, 146.2333], [-41.819667, 146.640125], [-41.635023, 145.92078], [-42.807699, 147.85751], [-42.6833, 146.5833], [-41.80305, 146.874953], [-42.720274, 146.634965], [-41.7167, 146.2333], [-41.78, 146.18], [-41.72916, 146.520392], [-41.776011, 146.859363], [-33.9, 147.95], [-33.9, 147.95], [-36.99917, 144.31], [-38.3875, 141.5819], [-36.4944, 148.2917], [-37.02544, 144.29993], [-50.546, 166.214], [-34.0, 148.05], [-36.995, 144.31556], [-31.5783, 159.0786], [-36.99167, 144.30917], [-34.0, 148.05], [-45.75, 167.4], [-37.005, 144.30528], [-37.01016, 144.30215], [-47.280908, 167.532122], [-36.99167, 144.30917], [-36.99211, 144.29937], [-33.9, 147.95]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

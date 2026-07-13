@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schistochila tasmanica — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Schistochila tasmanica</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Schistochila tasmanica</em></h1>
+  <p>
+    <span class="badge">Schistochilaceae</span>
+    <span class="badge secondary">Schistochila</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (12)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Schistochila</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Schistochila aligera</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Schistochila brotheri</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Schistochila isotachyphylla</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Schistochila lacerata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Schistochila pseudociliata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Schistochila succulenta</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Schistochila trispiralis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Jungermannia balfouriana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Jungermannia unguicularis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Schistochila unguicularis</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Schistochila balfouriana</em> <small class="muted">input</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">65</p>
+    <footer>65 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.0787, 146.264315], [-41.65, 145.933333], [-41.641667, 145.933333], [-43.461889, 146.406306], [-42.7775, 145.961667], [-42.896781, 146.021519], [-42.933333, 147.216667], [-42.086368, 146.034072], [-43.291056, 146.507278], [-42.87, 146.22], [-41.899622, 145.434118], [-42.816667, 146.366667], [-43.0, 147.0], [-42.216667, 146.094444], [-42.805633, 145.900657], [-42.897763, 146.143987], [-42.898613, 146.26646], [-42.933333, 147.216667], [-42.683333, 146.666667], [-41.71955, 145.438498], [-41.9583, 146.07], [-42.990948, 147.124043], [-41.725079, 145.919274], [-43.350944, 146.754599], [-41.9345378, 146.0481011], [-41.5, 145.933333], [-42.933333, 147.216667], [-41.90626, 146.036792], [-41.717854, 145.318327], [-42.26647, 146.031327], [-42.681933, 146.647373], [-43.4667, 146.8667], [-41.6, 145.95], [-41.635023, 145.92078], [-42.683333, 146.583333], [-42.85, 146.3], [-42.82, 146.37], [-43.260899, 146.754961], [-42.990749, 147.246711], [-41.6333, 145.9333], [-41.811163, 145.556662], [-41.8069586, 145.6358394], [-42.720274, 146.634965], [-42.22, 146.095], [-42.933333, 147.216667], [-42.73, 146.42], [-42.087322, 146.154968], [-43.1156421, 146.2266647], [-42.177377, 146.153771], [-43.440988, 146.754236], [-42.71852, 146.268585], [-41.450806, 145.002389], [-42.539131, 146.392462], [-43.0, 147.0], [-42.85, 146.3], [-42.683333, 146.583333], [-42.7986293, 145.9677264], [-41.816667, 145.516667], [-42.719235, 146.390708], [-42.85, 146.3], [-41.6, 145.95], [-41.6417, 145.93], [-41.996315, 146.035435], [-41.6333, 145.9333], [-41.641667, 145.933333]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

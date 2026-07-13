@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riccardia colensoi — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Riccardia colensoi</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Riccardia colensoi</em></h1>
+  <p>
+    <span class="badge">Aneuraceae</span>
+    <span class="badge secondary">Riccardia</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (10)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Phyllachne colensoi</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccardia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccardia gracilis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccardia longiflora</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccardia maxima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Riccardia prehensilis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Richardia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Richardia scabra</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Richardia stellaris</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Aneura colensoi</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">261</p>
+    <footer>102 Tasmanian</footer>
+  </article>
+
+  
+  <article>
+    <header>Mean annual temp.</header>
+    <p class="big-num">10.0&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+
+  
+  <article>
+    <header>Mean annual precip.</header>
+    <p class="big-num">1550&thinsp;mm</p>
+    <footer>
+      CV 22.2
+    </footer>
+  </article>
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">8</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>pinnate</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>Frullania-type</td>
+          <td>categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>trilobed</td>
+          <td>categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>hygric</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus_width_mm</td>
+          <td>3.0</td>
+          <td>mm</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Taylor                                         Radula papulosa Steph.
+Plagiochila incurvicolla (Hook.f. &amp; Taylor) Hook.f.    Radula parviretis E.A.Hodgs.
+        &amp; Taylor                                       Radula physoloba Mont.
+Plagiochila lyallii Mitt. var. lyallii                 Radula plicata Mitt.
+Plagiochila lyallii var. quinquespina (Steph.) Inoue   Radula sainsburiana E.A.Hodgs. &amp; Allison
+        &amp; R.M.Schust.                                  Radula silvosa E.A.Hodgs. &amp; Allison
+Plagiochila obscura Colenso                            Radula tabularis Steph.
+Plagiochila pleurata var. arguta Steph.                Radula uvifera (Hook.f. &amp; Taylor) Taylor
+Plagiochila pleurata (Hook.f. &amp; Taylor) Hook.f. &amp;      Reboulia hemisphaerica subsp. australis R.M.Schust.
+        Taylor var. pleurata                           Rectolejeunea ocellata Herzog
+Plagiochila radiculosa Mitt.                           Riccardia aequicellularis (Steph.) Hewson
+Plagiochila ramosissima (Hook.) Lindenb.               Riccardia aequitexta (Steph.) E.A. Brown
+Plagiochila retrospectans (Nees) Nees                          Aneura aequitexta Steph.
+Plagiochila rutlandii Steph.                                   Aneura effusa Steph.
+Plagiochila sinclairii Mitt.                                   Riccardia effusa (Steph.) E.A.Hodgs.
+Plagiochila stephensoniana Mitt.                       Riccardia alba (Colenso) E.A.Brown
+Plagiochila strombifolia Taylor                                Aneura alba Colenso
+Plagiochilion conjugatus (Hook.) R.M.Schust.                   Aneura crispa Colenso
+Plagiochilion prolifer (Mitt.) R.M.Schust.                     Aneura vitiensis Steph.
+Podomitrium phyllanthus (Hook.) Mitt.                          Riccardia vitiensis (Steph.) E.O.Campb.
+Porella elegantula (Mont.) E.A.Hodgs.                  Riccardia alcicornis (Hook.f. &amp; Taylor) Trevis.
+Porella pulcherrima S.Hatt.                            Riccardia asperulata R.M.Schust.
+Pseudocephalozia lepidozioides R.M.Sch ust.            Riccardia australis (Hook.f. &amp; Leveille) E.A. Brown
+        Lepidozia leptodictyon Herzog                          Aneura micropinna Steph.
+        Micrisophylla leptodictyon (Herzog)                    Riccardia filicina (Colenso) E.A.Hodgs. nom.
+        E.A.Hodgs.                                             inval.
+        Pseudocephalozia leptodictyon R.M.Schust.      Riccardia bipinnatifida (Colenso) Hewson
+        Pseudocephalozia macrostipa (Steph.)                   Riccardia bistrata Pearson
+        R.M.Schust.                                    Riccardia breviala E.A. Brown
+Pseudolophocolea denticulata R.M .Sch ust. &amp;           Riccardia cochleata (Hook.f. &amp; Taylor) Kuntze
+        JJ.Engel                                       Riccardia colensoi (Steph.) W.Martin
+Psiloclada clandestina Mitt.
+138   Tuhinga, Number 10 (1998)
+
+
+
+
+Riccardia crassa (Schwaegr.) Carrington &amp; Pearson      Schistochila monticola R.M.Schust.
+Riccardia eriocaula (Hook.) Besch. &amp; C. Massal.        Schistochila muricata E.A.Hodgs. &amp; Allison
+Riccardia exilis E.A. Brown                            Schistochila nitidissima R.M.Schust.
+Riccardia furtiva E.A. Brown &amp; Braggins                Schistochila nobilis (Hook.) Trevis.
+Riccardia intercellula E.A. Brown                      Schistochila pellucida R.M.Schust. &amp; ].].Engel
+Riccardia lobulata (Colenso) E.A.Hodgs.                Schistochila pluriciliata R.M.Schust. &amp; ].].Engel
+        Aneura minima (Carrington &amp; Pearson) Steph.    Schistochila pseudociliata R.M.Schust.
+        Riccardia perpusilla (Colenso) E.A.Hodgs.      Schistochila repleta (Hook.f. &amp; Taylor) Steph.
+Riccardia marginata (Colenso) Pearson                  Seppeltia succuba Grolle
+        Riccardia muscoides (Colenso) E.A.Hodgs.       Siphonolejeunea nudipes (Hook.f. &amp; Taylor)
+Riccardia multicorpora E.A.Brown                               Herzog
+Riccardia nitida (Colenso) E.A.Hodgs.                  Stenolejeunea apiculata (Sande-Lac.) R.M.Schust.
+Riccardia aff. pallidevirens (Steph.) A.Evans                  Lejeunea apiculata Sande-Lac.
+Riccardia papulosa (Steph.) E.A.Brown                  Stolonivector fiordlandiae (E.A.Hodgs.) ].].Engel
+        Aneura papulosa Steph.                                 Chiloscyphus fiordlandiae (E.A.Hodgs.)
+Riccardia pennata E.A.Brown                                    J.J.Engel &amp; R.M.Schust.
+Riccardia perspicua E.A.Brown                                  Clasmatocolea fio rdlandiae (E.A.Hodgs.)
+Riccardia pseudodendroceros R.M.Schust.                        Grolle
+Riccardia pusilla (Steph.) E.A.Brown                           Lophocolea fiordlandiae E.A.Hodgs.
+Riccardia umida E.A.Brown                              Symphyogyna hymenophyllum (Hook.) Mont. &amp;
+Riccardia aff. wattsiana (Steph.) Hewson                       Nees
+Riccia bifurca Hoffm.                                          Symphyogyna podophylla non auct. (Thunb.)
+Riccia bullosa Link                                            Mont. &amp; Nees
+Riccia ciliata Hoffm.                                  Symphyogyna subsimplex Mitt.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> NSW; ACT; Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">This is perhaps the most recognisable of
+all the Riccardia species. The thallus is
+usually distinctly concave, so that each
+branch apex resembles the bowl of a
+spoon. There is often a yellowish tinge
+from the powdery yellow gemmae that
+develqp in the- cupped tips. The apices are
+deep1y but irregularly dissected, and the
+margins are liped .with large, thickened
+cells (visible as a pale border when the
+thallus is dry): Occasionally plants do not
+                                               -2mm                Riccardia cochleata
+ have the typical spoon-shaped thallus; in
+those cases the pale border is sufficient to identify the species.
+
+R. co/ensoi                                                                          TVN
+In the field thjs species is very difficult to distinguish from R. crassa, but the thallus
+is covered with mamillae, giving if a rather rough, sandpaper-like look under a hand
+lens. Like R. crassa, it grows oh soil or rotting wood in wet forest and rainforest, but
+the thallus is often much more pinnate than that species.
+       Thallose liverworts and hornworts - Group A
+
+
+
+
+ 5mm                     Riccardia aequicellularis
+
+
+
+
+5mm                            Riccardia colensoi
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+R. craeea                                                                          WTVAN
+In this species the surfaces of the cells are lightly striated, giving the t�allus a rather
+yellowish-green look that is surprisingly easy to recognise once it is known. However,
+greener forms are not unusual and can be very confusing. The apices of the branches
+are rather blunt. It is reasonably common on soil or rotting wood in wet forest and
+rainfores!, and only R. colensoi is similar.
+
+R. eriocaula                                                                         TV
+This is a mainly Tasmanian species with a more or less dendroid habit. The shoots are
+up to 35 mm tall and consist of a stem and a semicircular, flattened frond. The thallus
+i_ s papillose, making it appear rather rough or bristly under a hand lens. The branches
+are tripinnately branched. This species seems to be confined to very wet rainforest.
+
+1&lt;: watt5ianaa                                                                    WTVAN
+This is a common species of wet forest and rainforest in Tasmania, but it is quite
+rare on the mainland. It is usually very densely branched, with two types of
+branches. The primary branches are usually prostrate, 2 to 3 mm wide, and often
+hidden by the secondary branches, which are only 0.5 mm or so wide and rather
+palmate. The apices of the terminal branches are dissected, but this is often
+impossible to see with a hand lens.
+
+
+
+
+                                                                       Riccardia crassa
+              Thallose liverworts and hornworts - Group A</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">teeth (or marginal cells divergent at their upper           other leafy shoots, resulting in a loosely to dense-
+                              ends), often terminating in a slime papilla; brac-          ly interwoven, felt like mat of leafy shoots. The
+                              teoles 2-lobed, somewhat smaller but otherwise              cells of the leaf lobes in T. tasmanica are broader
+                              similar to bracts. Perianth dorsally assurgent, fu-         in proportion to their length (basal cell of uni-
+                              siform, strongly trigonous and deeply sulcate, ta-          seriate row 25–35 3 65–83 mm vs. 15–25 3 55–
+                              pering to the mouth, the mouth lobulate-ciliate,            96 mm in T. quinquespina). The underleaves of T.
+                              the cilia ca. 10 (interspersed with short few-celled        quinquespina are almost exclusively asymmetri-
+                              teeth), flexuous, without lateral spurs, 2(3) cells         cally bilobed (Fig. 34: 1, 4), vs. a mixture of
+                              wide at the base, the uniseriate portion of (3)4–5          asymmetrically and symmetrically, 2- and 3-lobed
+                              elongate cells, the cells capillary (to 5.8:1), the         underleaves in T. tasmanica, present on the same
+                              septa swollen at the corners and at times weakly            shoot. Microlepidozia-type branching, present in
+                              projecting.                                                 T. quinquespina (Fig. 34: 1, 2), has not been ob-
+                                 Sporophyte not seen.                                     served in T. tasmanica.
+                                                                                             In the analysis, the half-leaf was scored as un-
+                                 DIFFERENTIATION AND VARIATION—Distin-                    divided; subsequently a specimen (Jarmen 98/1)
+                              guished from T. herzogii (p. 112) by the short,             was received in which a few symmetrically bi-
+                              paired cells at the base of each lobe in both leaves        lobed half-leaves were seen. This specimen also
+                              and underleaves (Fig. 32: 5, 6, 9–13), the stolon-          has more frequent Frullania-type branching than
+                              iform habit of growth (Fig. 32: 1), the strongly            is usual for the species, and bears gynoecia.
+                              sulcate perianth (Fig. 33: 1), and the presence of             DISTRIBUTION AND ECOLOGY—Endemic to Tas-
+                              tuberous swellings on the stoloniform axes (Fig.            mania. The species for the most part occurs be-
+                              32: 1, 2). The leaves are bilobed, with the lobes           tween sea level and 430 m in riparian situations.
+                              of 6 equal length, although occasionally shoots             It occurs over rock in streams or on stream banks,
+                              with predominantly 3-lobed leaves (and under-               at times within mats of Riccardia spp. or Fissi-
+                              leaves) have been seen (Fig. 32: 4). Telaranea              dens spp. or on soil of cliffs overlooking rivers.
+                              herzogii has lobes uniseriate to the base (Fig. 35:         Also on seepage slopes with Restio complanatus,
+                              1, 5, 6) or only sporadically one or more lobes             R. monocephalus, Sprengelia incarnata and Hak-
+                              biseriate, and the lobe cells are shorter (cells of         ea teretifolia, and associated with Goebelobryum
+                              basal tier 54–74 mm long in T. tasmanica vs.                unguiculatum, Campylopus introflexus, C. clava-
+                              (66)95–110 mm in T. herzogii). The underleaves              tus, Kurzia sp., Isotachis sp., Treubia tasmanica
+                              in T. herzogii are uniformly symmetrically 2-               and Riccardia colensoi. The sole higher-elevation
+                              (rarely 3-) lobed (Fig. 35: 2–4). In T. tasmanica           station (1150 m, Lake Botsford), occurred on a
+                              the / bracts are divided to 0.4 (Fig. 33: 2), with          lake-shore bank with Drepanocladus fluitans, Fis-
+                              a disc 8–11 cells high, and the perianth cilia un-          sidens aplenioides between Carex gaudichaudi-
+                              branched (Fig. 33: 6, 7). In T. herzogii the bracts         ana, Scaevola hookeri, Richea scoparia, R. acer-
+                              are deeply divided, with a disc 2(3) cells high             osa, Epacris gunnii, E. lanuginosa, Empodisma
+                              (Fig. 36: 2) and the cilia of the perianth are armed        minus and Donatia novae-zelandiae.
+                              with lateral spurs (Fig. 36: 4).                               The report of Rodway (1916, p. 64) of Lepi-
+                                 Branching of the prostrate leafless axes occurs          dozia tasmanica is based on misdetermined spec-
+                              from all three merophytes in T. tasmanica (Fig.             imens of Paracromastigum furcifolium (Steph.)
+                              32: 1). Elsewhere in the genus, lateral-intercalary         Schust. (Tasmania, Longley, Jan. 1915, leg. Rod-
+                              branches are known in T. fragilifolia and T. tri-           way, HO!). Schuster (2000, p. 382) transferred
+                              lobata (sect. Transversae) and T. quinquespina              this species to Paracromastigum, based on ex-
+                              (sect. Telaranea). Tubers are also reported in T.           amination of a duplicate of this collection.
+                              clatritexta (subg. Acrolepidozia; Fig. 1: 14), T.
+                              tuberifera (sect. Ceraceae; Fig. 23: 2, 10), and T.
+                                                                                            SELECTED SPECIMENS SEEN—TASMANIA: Cape Pillar
+                              europaea (sect. Telaranea, see Paton, 2000, fig.            State Reserve, Lunchtime Creek, 180 m, Moscal 15418
+                              9).                                                         as T. herzogii (HO); Tasman Peninsula, Long Bay
+                                 The growth habit of T. tasmanica is distinctive,         Creek, 12 m, Moscal 29675A as Arachniopsis herzogii
+
+
+                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                107
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                            FIG. 32. Telaranea tasmanica (Steph.) Engel &amp; Merr. 1. Plant showing prostrate stoloniform branches, 3 upright
+                         leafy shoots (5 LS), lateral-intercalary branches (5 LIB), ventral-intercalary branches (5 VIB) and 2 tubers (5 T).</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.261094, 147.12459], [-54.6, 158.9], [-42.805633, 145.900657], [-41.762447, 146.820896], [-41.548446, 147.600858], [-54.5, 158.886667], [-42.625529, 148.0989], [-41.5333, 145.55], [-43.55, 146.9], [-41.721012, 146.819809], [-41.257471, 144.733392], [-54.5, 158.933333], [-41.459377, 147.360558], [-42.720274, 146.634965], [-41.790425, 146.861738], [-41.968862, 145.985161], [-41.439786, 144.846749], [-41.819227, 146.519721], [-42.000302, 147.1221], [-41.759743, 146.819701], [-41.54846, 146.401828], [-42.256598, 145.22029], [-42.719819, 146.512835], [-41.714085, 145.078018], [-41.726146, 146.039487], [-41.739951, 146.83539], [-42.889886, 147.236208], [-41.546963, 146.162043], [-40.0, 144.066667], [-41.547774, 146.281933], [-41.189158, 146.643599], [-41.537787, 145.323001], [-42.900896, 147.123862], [-41.5, 147.65], [-41.725079, 145.919274], [-42.081279, 145.550555], [-43.260899, 146.754961], [-54.633333, 158.883333], [-41.8319601, 145.484384], [-42.087322, 146.154968], [-42.987784, 147.860009], [-41.83463, 146.947153], [-42.6778, 146.5028], [-42.990749, 147.246711], [-40.10383, 148.057267], [-41.349773, 144.849719], [-41.838186, 146.883315], [-54.616667, 158.883333], [-41.813907, 148.205309], [-41.826467, 146.873703], [-54.633333, 158.883333], [-41.71955, 145.438498], [-43.53023, 146.506361], [-54.5, 158.883333], [-43.0787, 146.264315], [-41.819981, 146.760532], [-43.529629, 146.382611], [-54.533333, 158.933333], [-40.104841, 147.939954], [-41.638514, 147.601694], [-54.633333, 158.883333], [-43.350944, 146.754599], [-42.61985, 145.416192], [-42.172782, 145.669539], [-41.712012, 144.957882], [-41.900389, 146.973622], [-41.188717, 147.478313], [-41.09908, 146.644087], [-54.5, 158.886667], [-41.275837, 146.046119], [-41.908724, 146.398476], [-43.256903, 147.986988], [-41.717854, 145.318327], [-42.990948, 147.124043], [-42.000367, 147.001352], [-41.864343, 146.929055], [-54.5, 158.883333], [-41.7399, 146.80292], [-43.2579, 147.863801], [-41.816204, 146.038142], [-42.718502, 147.734151], [-42.883333, 147.25], [-42.539117, 147.610266], [-41.815107, 148.084935], [-54.6, 158.9], [-41.635023, 145.92078], [-41.886882, 146.994118], [-42.983079, 145.652198], [-43.170852, 146.755321], [-41.764252, 146.823297], [-41.910238, 146.880773], [-54.630556, 158.891111], [-54.630556, 158.891111], [-43.41622, 146.159366], [-43.34583, 145.890957], [-41.90516, 148.086459], [-41.910049, 146.760195], [-42.900698, 147.246351], [-54.633333, 158.9], [-54.616667, 158.883333], [-42.264137, 148.213849], [-41.812805, 146.775006], [-37.316667, 148.833333], [-36.952419, 175.818361], [-40.966667, 175.116667], [-42.038099, 171.393318], [-37.683333, 145.566667], [-38.695122, 143.371938], [-41.275, 174.978], [-37.91889, 145.82583], [-31.175, 152.341667], [-46.002734, 167.89955], [-42.661803, 171.711784], [-43.661118, 172.619245], [-38.961763, 174.926524], [-34.765103, 116.084839], [-41.168889, 172.625], [-33.662222, 150.319444], [-46.002734, 167.89955], [-54.5, 158.516667], [-54.5, 158.516667], [-41.583333, 172.05], [-42.906899, 171.579416], [-33.454167, 150.666667], [-40.9, 172.583333], [-39.300833, 174.09], [-30.5, 152.4], [-45.726255, 170.568495], [-40.966667, 175.116667], [-35.11408, 173.2637], [-43.149524, 172.524148], [-54.5, 158.516667], [-41.178889, 172.658333], [-45.818452, 170.501547], [-40.0649083, 176.2163212], [-42.404656, 171.342972], [-38.550751, 143.942361], [-42.792859, 171.551376], [-33.662222, 150.319444], [-33.714862, 150.497898], [-45.27166, 167.313355], [-41.606236, 172.068002], [-37.3469, 148.8614], [-35.5667, 148.7833], [-40.476667, 175.617778], [-40.966667, 175.116667], [-35.5333, 148.7667], [-37.3469, 148.8614], [-46.177718, 167.825187], [-35.466667, 150.0], [-37.59849, 145.61797], [-54.5, 158.516667], [-38.486279, 177.482166], [-54.5, 158.516667], [-54.5, 158.516667], [-25.0, 135.0], [-35.3833, 148.8167], [-44.792373, 167.770036], [-40.8528876, 172.7249073], [-35.5333, 148.7667], [-38.755489, 177.151365], [-44.039018, 169.748963], [-40.614148, 175.485821], [-40.966667, 175.116667], [-35.5667, 148.7833], [-41.583333, 172.05], [-35.035384, 117.913865], [-43.722961, 172.969868], [-40.9, 172.583333], [-36.2, 175.083333], [-34.43, 172.905], [-41.347921, 174.937513], [-45.833333, 170.5], [-41.579167, 172.601111], [-35.733333, 173.766667], [37.917524, 178.05645], [-37.9092, 145.825], [-54.5, 158.516667], [-44.116667, 168.533333], [-46.170915, 167.832642], [-41.583333, 173.083333], [-42.230813, 173.794545], [-54.5, 158.516667], [-38.066667, 175.966667], [-41.049444, 172.518889], [-35.5667, 148.7833], [-33.715111, 150.498367], [-54.5, 158.516667], [-44.10589, 169.82], [-39.033333, 177.416667], [-36.970738, 174.533482], [-34.90684, 116.69098], [-30.5, 152.4], [-36.217547, 175.05038], [-39.316667, 174.1], [-33.623056, 151.134722], [-34.6833, 150.2833], [-37.9217, 145.7775], [-38.249444, 177.597745], [-45.75, 167.5], [-44.716667, 167.95], [-54.5, 158.516667], [-42.87192, 171.164407], [-39.033333, 146.316667], [-41.2646, 174.7571], [-35.8667, 148.9], [-41.083333, 172.616667], [-39.033786, 177.345686], [-36.754458, 175.504219], [-38.42152, 177.360706], [-37.26514, 146.76795], [-38.1833, 176.3167], [-36.524573, 175.464878], [-40.900675, 172.578869], [-38.766599, 177.156258], [-37.89, 145.65972], [-38.2892695, 174.9701133], [-35.5333, 148.7667], [-39.216667, 175.533333], [-43.117525, 172.548609], [-33.728157, 150.436996], [-36.983333, 175.583333], [-35.4833, 150.0], [-41.043056, 172.4975], [-36.940235, 175.824041], [-54.5, 158.516667], [-37.61515, 145.60131], [-34.816944, 116.594167], [-39.269009, 174.097338], [-44.490278, 168.780556], [-42.916667, 171.583333], [-40.895983, 172.717707], [-43.894404, 171.261684], [-39.694177, 176.060801], [-41.873333, 172.855833], [-43.035207, 171.775961], [-33.720527, 150.359128], [-40.339413, 175.817556], [-46.86192, 168.111401], [-45.8, 170.466667], [-36.218587, 175.060787], [-43.003756, 171.593091], [-35.5333, 148.7667], [-38.2167, 176.3], [-45.28383, 168.594479], [-36.865678, 174.579803], [-42.9125, 171.584444], [-37.9133, 145.76917], [-36.5, 175.416667], [-54.5, 158.516667], [-39.304615, 174.089456], [-36.052222, 148.3025], [-37.43608, 175.746268], [-37.112242, 175.124056], [-39.033333, 177.35], [37.917524, 178.05645], [-46.027, 166.985], [-37.9161, 145.86611], [-45.9, 169.966667], [-44.05, -176.6], [-37.59849, 145.61797]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

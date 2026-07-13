@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neolepidozia consobrina — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Neolepidozia consobrina</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Neolepidozia consobrina</em></h1>
+  <p>
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge secondary">Neolepidozia</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Acacia consobrina</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Grimmia consobrina</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Lepidiota consobrina</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia palmata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia patentissima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia praenitens</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia quadristipula</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Neolepidozia tridactylis</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">9</p>
+    <footer>8 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>GBIF</strong> (1 entry)</summary>
+    
+    
+    <p><strong>neolepidozia consobrina (j. j. engel et g. l. merr.) e. d. cooper, phytotaxa:</strong> &lt;div&gt;&lt;p&gt;Neolepidozia consobrina (J.J.Engel et G.L.Merr.) E.D.Cooper,&lt;/p&gt;&lt;p&gt;Phytotaxa 97 (2): 55, 2013 (see Cooper et al. 2013). BASIONYM: Telaranea consobrina J.J.Engel et G.L.Merr., Novon 9 (3): 339, 1999 (see Engel &amp; Smith Merrill 1999).&lt;/p&gt;&lt;/div&gt;</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Vic.; Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-41.67, 145.93], [-41.67, 145.93], [-42.25, 145.366667], [-41.45, 145.95], [-41.45, 145.95], [-41.67, 145.93], [-41.67, 145.93], [-43.0, 147.0], [-36.974361, 142.452139]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

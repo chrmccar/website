@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treubia tasmanica — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Treubia tasmanica</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Treubia tasmanica</em></h1>
+  <p>
+    <span class="badge">Treubiaceae</span>
+    <span class="badge secondary">Treubia</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Dendrocryphaea tasmanica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Lewinskya tasmanica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tasmanica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tasmanina</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tasmatica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tayloria tasmanica</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Treubia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Treubia lacunosa</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Triquetrella tasmanica</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">134</p>
+    <footer>110 Tasmanian</footer>
+  </article>
+
+  
+  <article>
+    <header>Mean annual temp.</header>
+    <p class="big-num">9.7&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+
+  
+  <article>
+    <header>Mean annual precip.</header>
+    <p class="big-num">1328&thinsp;mm</p>
+    <footer>
+      CV 20.0
+    </footer>
+  </article>
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">13</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>Frullania-type</td>
+          <td>categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>bilobed</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>bilobed</td>
+          <td>categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>trilobed</td>
+          <td>categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">Wikipedia English; fetched via title &#39;Treubia lacunosa&#39;</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">TASMANIA_RAINFOREST_BOOK</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>0</td>
+          <td>boolean</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">TELARANEA_MONOGRAPH_2004</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Vic.; Tas.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">----• 10mm                     Symphyogyna podophylla
+
+
+
+
+----5mm                             Targionia hypophylla
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+freubia tasmanica              Treubiaceae                                             rv
+Although this seems to be a very rare species, it is immediately recognisable because of
+its distinctive thallus structure. It grows on open damp clay banks in upland forests,
+usually creeping among grasses, herbs or lichens. Occasionally it is found on exposed
+wet rock in streams. The vividly green thallus, up to 60 mm long and 8 mm wide, is
+thick and fleshy but quite brittle. It is anchored to the soil by many colourless rhizoids.
+The lobes are rather circular and resemble leaves, arranged regularly on each side of the
+thallus. On the dorsal side are two rows of crescent-shaped, scale-like lobes, in the axils
+of which may sometimes be found small yellow-green gemmae. The whole appearance
+is therefore like a fleshy, leafy liverwort. As far as we know, sporophytes have never
+been found.
+     T lacunosa (&#39;f) is immediately distinguishable because the thallus is covered in
+minute yellow dots. These are cells that contain large oil bodies.
+
+Similar species: Lethocolea pansa
+                Thallose liverworts and hornworts - Group A
+
+
+
+
+-------- 5 mm                            Treubia tasmanica
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+&lt;::;RDvt.P&#34;B-
+L6AV6S D6NS6LY H-AfRY OR.SPINY
+
+
+Balantiopsie; diplophylla Balantiopsidaceae                                   WSTVN
+This is a common species on soil in damp habitats, such as
+south­facing road cuttings in wet forest. It can also form large
+clumps in or on the edges of clear-flowing streams. The soft
+shoots are pale fawn to green, reddish green or even purple.
+The spined leaves are bilobed, with the smaller lobe lying flat on      diplophylla
+the dorsal side of the leaf. Underleaves are well toothed and
+deeply bifid.
+     In H tumida (TVN) the leaves have two apical teeth on both
+lobe and lobule, sometimes with a few extra small teeth. It grows
+in bogs, swamps and other wet places, especially in alpine areas.
+The illustration shows two forms with the leaves opened out,
+and the corresponding underleaves.
+     Diplophyllum domesticum (TVN) has the same leaf form,
+but the margins are neither lobed nor toothed, although crenulate. It
+occurs in much the same habitats as Balantiopsis. D.                       tumida
+verrucosum (TVN) is an alpine species with a relatively much
+larger lobule, about three-quarters of the size of the lobe. The
+other southern Australian members of this genus in Australia are
+all rare species from Tasmania: D. androgyhum, D. angustifolium,
+D. dioicum, and D. incrassatum .                                        D. domesticum
+
+Similar species: Schistochila spp.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>TASMANIA_RAINFOREST_BOOK</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+  A 62. Trfubia lacunosa ( XI)
+
+
+
+
+                                           b
+                            Speckled surface
+                               of T. znc2mosa
+62. Treubia lacunosa has a speckled appearance
+                                    appearance caused by tiny
+                                                         tiny yellow dots
+    on the surface,
+           surface, which
+                    which represent cells
+                                    cells containing large oil bodies. It
+    has
+    has been collected infrequently
+                       infrequently and its habitat range
+                                                    range is not
+                                                             not well
+                                                                 well
+    known in Tasmania. The illustrated plant was found
+                                                   found on a clay bank
+    below a mixture
+            mixture of species from
+                               from rainforest
+                                    rainforest and wet sclerophyll forest.
+
+63. Treubia tasmanica is readily distinguished from T . lacunosa by the
+    uniformly green
+               green thallus. It grows in rainforest
+                                          rainforest and wet eucalypt forest
+                                                                       forest
+    among
+    among other
+            other bryophytes on soil, rocks and logs.
+
+
+
+
+                                                                                Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+   A 63. Treubia tasmanica (x1.5)
+                           (xl.5)
+                                               Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+A tangled rainforest underbtorey, with leafy
+liverworts dominating thc bqopl~ytcflora.
+                 Leah liverworts
+
+
+
+Leafy liverworts are often mistaken for mosses because of their leafy
+appearance and a common misconception that all Iivenvorts have a
+
+
+
+
+                                                                              Downloaded from http://connectsci.au/books/monograph-pdf/6171/9780643101210.pdf by U
+thallose plant body. Thus, the lush green carpet of a &#39;mossy&#39; forest is
+due, as often as not, to a predominance of liverworts rather than mosses.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>TELARANEA_MONOGRAPH_2004</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">cells high, the disc margins armed with unicellular         eral-intercalary branches originate freely from
+                              teeth (or marginal cells divergent at their upper           other leafy shoots, resulting in a loosely to dense-
+                              ends), often terminating in a slime papilla; brac-          ly interwoven, felt like mat of leafy shoots. The
+                              teoles 2-lobed, somewhat smaller but otherwise              cells of the leaf lobes in T. tasmanica are broader
+                              similar to bracts. Perianth dorsally assurgent, fu-         in proportion to their length (basal cell of uni-
+                              siform, strongly trigonous and deeply sulcate, ta-          seriate row 25–35 3 65–83 mm vs. 15–25 3 55–
+                              pering to the mouth, the mouth lobulate-ciliate,            96 mm in T. quinquespina). The underleaves of T.
+                              the cilia ca. 10 (interspersed with short few-celled        quinquespina are almost exclusively asymmetri-
+                              teeth), flexuous, without lateral spurs, 2(3) cells         cally bilobed (Fig. 34: 1, 4), vs. a mixture of
+                              wide at the base, the uniseriate portion of (3)4–5          asymmetrically and symmetrically, 2- and 3-lobed
+                              elongate cells, the cells capillary (to 5.8:1), the         underleaves in T. tasmanica, present on the same
+                              septa swollen at the corners and at times weakly            shoot. Microlepidozia-type branching, present in
+                              projecting.                                                 T. quinquespina (Fig. 34: 1, 2), has not been ob-
+                                 Sporophyte not seen.                                     served in T. tasmanica.
+                                                                                             In the analysis, the half-leaf was scored as un-
+                                 DIFFERENTIATION AND VARIATION—Distin-                    divided; subsequently a specimen (Jarmen 98/1)
+                              guished from T. herzogii (p. 112) by the short,             was received in which a few symmetrically bi-
+                              paired cells at the base of each lobe in both leaves        lobed half-leaves were seen. This specimen also
+                              and underleaves (Fig. 32: 5, 6, 9–13), the stolon-          has more frequent Frullania-type branching than
+                              iform habit of growth (Fig. 32: 1), the strongly            is usual for the species, and bears gynoecia.
+                              sulcate perianth (Fig. 33: 1), and the presence of             DISTRIBUTION AND ECOLOGY—Endemic to Tas-
+                              tuberous swellings on the stoloniform axes (Fig.            mania. The species for the most part occurs be-
+                              32: 1, 2). The leaves are bilobed, with the lobes           tween sea level and 430 m in riparian situations.
+                              of 6 equal length, although occasionally shoots             It occurs over rock in streams or on stream banks,
+                              with predominantly 3-lobed leaves (and under-               at times within mats of Riccardia spp. or Fissi-
+                              leaves) have been seen (Fig. 32: 4). Telaranea              dens spp. or on soil of cliffs overlooking rivers.
+                              herzogii has lobes uniseriate to the base (Fig. 35:         Also on seepage slopes with Restio complanatus,
+                              1, 5, 6) or only sporadically one or more lobes             R. monocephalus, Sprengelia incarnata and Hak-
+                              biseriate, and the lobe cells are shorter (cells of         ea teretifolia, and associated with Goebelobryum
+                              basal tier 54–74 mm long in T. tasmanica vs.                unguiculatum, Campylopus introflexus, C. clava-
+                              (66)95–110 mm in T. herzogii). The underleaves              tus, Kurzia sp., Isotachis sp., Treubia tasmanica
+                              in T. herzogii are uniformly symmetrically 2-               and Riccardia colensoi. The sole higher-elevation
+                              (rarely 3-) lobed (Fig. 35: 2–4). In T. tasmanica           station (1150 m, Lake Botsford), occurred on a
+                              the / bracts are divided to 0.4 (Fig. 33: 2), with          lake-shore bank with Drepanocladus fluitans, Fis-
+                              a disc 8–11 cells high, and the perianth cilia un-          sidens aplenioides between Carex gaudichaudi-
+                              branched (Fig. 33: 6, 7). In T. herzogii the bracts         ana, Scaevola hookeri, Richea scoparia, R. acer-
+                              are deeply divided, with a disc 2(3) cells high             osa, Epacris gunnii, E. lanuginosa, Empodisma
+                              (Fig. 36: 2) and the cilia of the perianth are armed        minus and Donatia novae-zelandiae.
+                              with lateral spurs (Fig. 36: 4).                               The report of Rodway (1916, p. 64) of Lepi-
+                                 Branching of the prostrate leafless axes occurs          dozia tasmanica is based on misdetermined spec-
+                              from all three merophytes in T. tasmanica (Fig.             imens of Paracromastigum furcifolium (Steph.)
+                              32: 1). Elsewhere in the genus, lateral-intercalary         Schust. (Tasmania, Longley, Jan. 1915, leg. Rod-
+                              branches are known in T. fragilifolia and T. tri-           way, HO!). Schuster (2000, p. 382) transferred
+                              lobata (sect. Transversae) and T. quinquespina              this species to Paracromastigum, based on ex-
+                              (sect. Telaranea). Tubers are also reported in T.           amination of a duplicate of this collection.
+                              clatritexta (subg. Acrolepidozia; Fig. 1: 14), T.
+                              tuberifera (sect. Ceraceae; Fig. 23: 2, 10), and T.
+                                                                                            SELECTED SPECIMENS SEEN—TASMANIA: Cape Pillar
+                              europaea (sect. Telaranea, see Paton, 2000, fig.            State Reserve, Lunchtime Creek, 180 m, Moscal 15418
+                              9).                                                         as T. herzogii (HO); Tasman Peninsula, Long Bay
+                                 The growth habit of T. tasmanica is distinctive,         Creek, 12 m, Moscal 29675A as Arachniopsis herzogii
+
+
+                              ENGEL &amp; MERRILL: AUSTRAL HEPATICAE TELARANEA                                                                107
+
+
+
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                            FIG. 32. Telaranea tasmanica (Steph.) Engel &amp; Merr. 1. Plant showing prostrate stoloniform branches, 3 upright</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">2 Leaves densely hairy or ciliate, the leaf lamina hard to distinguish ............... Group B
+                                                                                                                                                                                  Leaves ciliate or not, but lamina always easily distinguished ..................................... 3
+                                                                                                                                                                               3 Underleaves absent or not visible.................................................................... Group C
+                                                                                                                                                                                  Underleaves present ................................................................... 4
+                                                                                                                                                                               4 Leaves inserted incubously on stem; i.e. when viewed from the dorsal
+                                                                                                                                                                                    side, each leaf overlaps one closer to the shoot apex (or would do so
+                                                                                                                                                                                     if they were close enough) .......................................................................... Group D
+                                                                                                                                                                                  Leaves inserted succubously, i.e. when viewed from the
+                                                                                                                                                                                    dorsal side, each leaf overlaps one farther from the shoot apex
+                                                                                                                                                                                    (or would do so if they were close enough); or inserted transversely ....................... 5
+                                                                                                                                                                               5 Leaves without lobes or marginal teeth .......................................................... Group E
+                                                                                                                                                                                  Leaves with 2 or more lobes, or with marginal teeth ...................................... Group F
+
+
+                                                                                                                                                                               236                                                                             The Victorian Naturalist
+                                                                                                                                                                                                                                                                           Bryophyte special issue
+
+                                                                                                                                                                               Group A
+                                                                                                                                                                               Leafy liverworts with complicate-bilobed leaves
+                                                                                                                                                                               1 Leaves with a keel running longitudinally along the leaf; lobules absent ...................2
+                                                                                                                                                                                  Leaves not keeled; lobules present .............................................................................. 3
+
+
+
+
+Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. University of Tasmania, on 07/08/2026 11:06 PM AEST; UTC+10:00. © The Victorian Naturalist , 2006.
+                                                                                                                                                                               2 Underleaves present ........................................................... Schistochila lehmanniana
+                                                                                                                                                                                  Underleaves absent ............................................................... Paraschistochila tuloides
+                                                                                                                                                                               3 Lobule dorsal ............................................................................................................... 4
+                                                                                                                                                                                  Lobule ventral .............................................................................................................. 6
+                                                                                                                                                                               4 Plants thick, fleshy, brittle, bright green ......................................... Treubia tasmanica
+                                                                                                                                                                                  Plants delicate, not at all fleshy, dull green to yellow, often tinged chestnut .............. 5
+                                                                                                                                                                               5 Underleaves present .................................................................................. Balantiopsis
+                                                                                                                                                                                  Underleaves absent ................................................................................. Diplophyllum
+                                                                                                                                                                               6 Underleaves (as well as leaves) with saccate lobules ..... Heteroscyphus cymbaliferus
+                                                                                                                                                                                  Underleaves without saccate lobules ........................................................................... 7
+                                                                                                                                                                               7 Lobules complex, forming an inflated claw or sac, very narrowly
+                                                                                                                                                                                    connected to the stem ............................................................................................... 8
+                                                                                                                                                                                  Lobules simple, consisting of the inrolled or folded ventral margin
+                                                                                                                                                                                    of the leaf, inflated or not, usually widely connected to stem ................................. 9
+                                                                                                                                                                               8 More than 1 lobule per leaf ................................................. Gackstroemia weindorferi
+                                                                                                                                                                                  Only 1 lobule per leaf .................................................................................... Frullania
+                                                                                                                                                                               9 Underleaves absent .................................................................................................... 10
+                                                                                                                                                                                  Underleaves present ................................................................................................... 11
+                                                                                                                                                                               10 Rhizoids absent or arising from lobules; habitats various,
+                                                                                                                                                                                    rarely if ever epiphyllous ............................................................................... Radula
+                                                                                                                                                                                  Rhizoids in bundles on stem in the position of missing underleaves;
+                                                                                                                                                                                    mainly epiphyllous plants on leaves in rainforest ................................ Cololejeunea
+                                                                                                                                                                               11 Underleaves entire ................................................................. Acrolejeunea securifolia
+                                                                                                                                                                                  Underleaves lobed or shallowly notched at apex ...................................................... 12
+                                                                                                                                                                               12 Lobule an inflated sac, appearing to be unattached to leaf ........................................ 13
+                                                                                                                                                                                  Lobule formed by a simple rolling or folding of the ventral leaf margin .................. 14
+                                                                                                                                                                               13 Leaves with long, ciliate marginal teeth, at least in partA ... Gackstroemia weindorferi
+                                                                                                                                                                                  Leaves entire .................................................................................................. Frullania
+                                                                                                                                                                               14 One underleaf for each lateral leaf ............................................................................ 15
+                                                                                                                                                                                  One underleaf for each pair of lateral leaves ............................................................. 16
+                                                                                                                                                                               15 Cells with high papillae ............................................................ Colura
+                                                                                                                                                                                  Cells mamillose, never papillose .................. Diplasiolejeunea plicatiloba
+                                                                                                                                                                               16 Leaves very narrow at base, attached to stem by 1 or 2 cells .................................... 17
+                                                                                                                                                                                  Leaves widely attached to stem, by several cells ...................................................... 18
+                                                                                                                                                                               17 Leaf apex rounded; lobule with 3–4 teeth ............................ Siphonolejeunea nudipes</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>WIKIPEDIA</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Treubia lacunosa is a species of liverwort in the family Treubiaceae that is found across New Zealand in moist shady areas on logs or soil. The organism is relatively complex for a liverwort, and hosts endosymbiotic fungi which provide it with growth-inhibiting nutrients.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.9333, 147.25], [-42.688556, 146.490611], [42.666667, 146.7], [-43.2137218, 147.7840616], [-43.033835, 146.695717], [-42.7486241, 146.5010503], [-42.818611, 146.282778], [-43.355678, 147.284972], [-42.910212, 147.246234], [-42.922136, 147.25379], [-43.0152914, 146.6677191], [-42.109345, 146.153753], [-41.197991, 148.0058], [-41.9345378, 146.0481011], [-42.684685, 146.502928], [-43.440988, 146.754236], [-42.810646, 147.245994], [-42.6789669, 146.5909398], [-42.900896, 147.123862], [-41.8318531, 146.0472155], [-42.89, 147.23], [-43.109224, 147.7901008], [-43.0996783, 147.8649374], [-43.181944, 146.794722], [-42.68792, 146.49556], [-41.4370969, 146.0182998], [-42.681948, 146.647384], [-43.0533466, 147.9170868], [-41.7285228, 148.2130172], [-42.914025, 147.24173], [-42.907811, 147.247738], [-42.69912, 146.49249], [-42.113177, 146.157388], [-42.109729, 146.164306], [-42.8446787, 147.4061206], [-43.092104, 146.678534], [-43.029351, 146.703104], [-42.688556, 146.490611], [-43.097067, 146.68534], [-43.1021051, 147.7777199], [-42.666667, 146.6], [-42.910577, 147.24611], [-41.729912, 146.760866], [-43.0966009, 147.7923956], [-42.917531, 147.243366], [-43.356103, 147.285095], [-42.8186, 146.2828], [-43.350938, 147.248165], [-42.721667, 146.271944], [-42.720274, 146.634965], [-42.885202, 147.2211], [-41.6672, 146.468467], [-43.2, 146.766667], [-42.907622, 147.244974], [-42.990749, 147.246711], [-43.096204, 146.702855], [-42.916667, 147.25], [-42.916667, 147.25], [-41.834759, 145.411233], [-41.7041695, 146.8255446], [-42.68685, 146.491423], [-43.35, 146.8167], [-41.6065119, 146.1405456], [-42.7486241, 146.5010503], [-41.735275, 146.741607], [-41.90626, 146.036792], [-42.914895, 146.984987], [-42.094158, 146.171982], [-42.26647, 146.031327], [-43.350944, 146.754599], [-42.1, 146.15], [-42.904477, 147.24964], [-43.170523, 146.632295], [-43.333333, 146.883333], [-43.258764, 147.740609], [-43.074487, 145.773029], [-42.915997, 147.248147], [-42.686793, 146.491446], [-42.916667, 147.25], [-43.187222, 148.0275], [-42.909816, 147.246537], [-43.167863, 147.862531], [-42.8217, 146.2822], [-43.170852, 146.755321], [-41.735215, 146.716354], [-42.818611, 146.282778], [-42.89, 147.23], [-42.688908, 146.500248], [-41.1984, 148.005533], [-42.900369, 147.368839], [-42.919893, 147.249265], [-43.34583, 145.890957], [-42.890096, 147.251466], [-42.858609, 147.160176], [-42.688798, 146.505069], [-42.719819, 146.512835], [-42.916667, 147.25], [-42.906458, 147.245693], [-43.1184643, 147.8811825], [-42.177377, 146.153771], [-43.0677136, 147.922214], [-41.813907, 148.205309], [-42.990948, 147.124043], [-42.621566, 148.106421], [-42.826, 146.276], [-42.680181, 146.635483], [-42.917513, 147.243347], [-42.696926, 146.494666], [-42.883333, 147.233333], [-42.7161195, 146.6615293], [-37.88389, 146.27444], [-37.87833, 146.27583], [-37.88306, 146.27333], [-41.95, 171.6], [-37.88306, 146.25972], [-37.87833, 146.25972], [-37.87667, 146.27694], [-37.88306, 146.27333], [-37.89111, 146.255], [-37.89848, 146.21797], [-37.88389, 146.27444], [-37.90333, 146.25306], [-37.90194, 146.25444], [-37.88389, 146.27444], [-37.90444, 146.25833], [-37.94848, 146.3013], [-37.88028, 146.27472], [-37.88306, 146.27333], [-37.90472, 146.29194], [-37.88833, 146.25778], [-37.89848, 146.21797], [-37.88306, 146.25972], [-37.90181, 146.25436], [-37.88222, 146.26361]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

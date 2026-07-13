@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiloscyphus perpusillus — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Chiloscyphus perpusillus</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Chiloscyphus perpusillus</em></h1>
+  <p>
+    <span class="badge">Lophocoleaceae</span>
+    <span class="badge secondary">Chiloscyphus</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (11)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Bryochiton perpusillus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Chiloscyphus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Epilobium perpusillum</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Fissidens perpusillus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Ornithopus perpusillus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Philoscaphus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Pleurotus perpusillus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Tylimanthus perpusillus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Weissia perpusilla</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Jungermannia perpusilla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Lophocolea perpusilla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">63</p>
+    <footer>41 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">8</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>Frullania-type</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>trilobed</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_count_per_cell</td>
+          <td>2.0–3.0</td>
+          <td>per cell</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>none</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Recorded from Banks Peninsula (see checklist). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">ENGEL: CHILOSCYPHUS IN AUSTRALASIA                                                                                                             65
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+             FIG. 24. Chiloscyphus anisolobus J. J. Engel &amp; Glenny. 1. Complete innovation terminating in a gynoecium (ventral view), a new innovation
+          at right (5 in). 2. Innovation bearing a perianth (lateral view), which issues at a short distance below point A from a parent gynoecium-bearing
+          innovation (IB 5 innermost bract; IBRO 5 innermost bracteole). 3. R Bracts and in middle, bracteole (dm 5 dorsal margin). 4. Perianth mouth.
+          5, 6. Lobes of perianth mouth. 7. Cross section through median third of perianth. (All from Engel 28583, New Zealand, South Is., Western
+          Nelson Ecological Prov., Kahurangi Natl. Park, Matiri Range, Thousand Acres Plateau.)
+
+
+
+          limited to rather specific loci. The distal sector of the ventral               at most 1.53 the stem width, free or very narrowly connate
+          margin often has a process varying from a small to large                        on 1 side, and bifid to ca. 0.6–0.8 (Figs. 22: 2; 23: 2–4, 6).
+          tooth to a small lobe, and in the latter instances, the leaves                  The presence of a leaf-free strip and the underleaf form are
+          are then trifid (Figs. 22: 1, 7; 23: 3). The dorsal lobe at times               similar to Leptophyllopsis laxus, but that species has
+          has a tooth toward the sinus base, but the leaf apices                          caducous leaf lobes and apical teeth lending the leaf apices
+          otherwise are devoid of accessory armature (Figs. 22: 9; 23:                    ragged (see Engel, 2007). Perianths have a distinctive aspect
+          5). The presence of a leaf-free strip of stem cells is also                     in the field. They are cyathiform (Fig. 24: 1, 2), and because
+          distinctive (Fig. 23: 1), a condition otherwise rare among our                  the perianths are dorsally assurgent, the wide and open
+          other species of the genus (see Engel 2004). Underleaves are                    mouths are oriented toward the viewer.
+
+
+          66                                                                                                                  FIELDIANA: BOTANY
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+              Chiloscyphus anisolobus is similar to C. excisifolius of New                Tongariro Natl. Park, boundary of Kaimanawa State Forest Park,
+           South Wales, Australia, and shares the presence of a leaf-free                 ca. 700 m, Engel 21198 (F).
+           strip of stem cells; distinctly bifid leaves; leaf cells notably thin          Chiloscyphus perpusillus (Hook. f. &amp; Taylor) J. J. Engel
+           walled and without trigones; underleaves about as wide as the
+           stem to at most 1.53 the stem width; and a poorly differentiated                 Jungermannia perpusilla Hook. f. &amp; Taylor, London J. Bot. 3: 380.
+                                                                                              1844. Lophocolea perpusilla (Hook. f. &amp; Taylor) Gottsche,
+           stem cortex. For separation of the two species, see the key.                       Lindenb. &amp; Nees, Syn. Hep. 163. 1845. Chiloscyphus perpusillus
+              For additional comments see Engel and Glenny (2008a) and                        (Hook. f. &amp; Taylor) J. J. Engel, Contr. Univ. Michigan Herb. 18:
+           Engel (2007).                                                                      110. 1992. Lectotype (nov.): Campbell Is., Nov. 1840, Hooker
+              DISTRIBUTION AND ECOLOGY—This species is known from                             (FH!); isolectotypes: (BM![4], S![2], W!).
+           several sites in Westland, Western Nelson, and Canterbury in                     Lophocolea decolorata Steph., Bull. Herb. Boissier 6 (10): 875. 1906
+                                                                                              (5 Spec. Hep. 3: 100), syn. nov. Chiloscyphus decoloratus (Steph.)
+           the South Is. of New Zealand, and one station on the North Is.                     J. J. Engel &amp; R. M. Schust., Nova Hedwigia 39: 414. 1985 (1984).
+              The species is primarily known from scattered subalpine                         Type: Tasmania, Mt. Wellington, St. Crispin’s Well, 23 Dec.
+           and alpine sites on South Is. It is locally common at the                          1895, Weymouth 592 (G!–c. per. + young R).
+           Gordon’s Pyramid station, and occurred in a mosaic of                            Lophocolea macroloba Steph., Bull. Herb. Boissier 6(10): 876. 1906
+                                                                                              (5 Spec. Hep. 3: 101), syn. nov. Chiloscyphus macrolobus (Steph.)
+           tussocklands, occasional Dracophyllum, karst vegetation, bluff                     J. J. Engel &amp; R. M. Schust., Nova Hedwigia 39: 418. 1985 (l984).
+           and scree communities, and exposed soil, set in a karst plateau                    Lectotype (nov.): Tasmania, Mt. Wellington, St. Crispin’s track,
+           landform. At this site plants formed large (15 3 30 cm), pure,                     24 Jan. 1899, Weymouth 1548 (G!–c. = + young R); isolectotype:
+           loose, soft mats hanging from rock as well as on moist rock                        (HO!).
+           under vegetation cover deep in a small sinkhole. At the                          Lophocolea brevis Steph., Spec. Hep. 6: 265. 1922, syn. nov.
+                                                                                              Chiloscyphus brevis (Steph.) J. J. Engel &amp; R. M. Schust., Nova
+           Temple Basin Ski Area occurring with Marsupidium surculo-                          Hedwigia 39: 412. 1985 (1984). Lectotype (nov.): Tasmania, West
+           sum on soil at the base of a very large exposed rocky outcrop                      Coast, Dubbilbarril, Mt. Lyell, railway, 30 Dec. 1899, Weymouth
+           near a stream. The type occurred at 1050 m in a steep river                        969 (G!–c. per.); isolectotype: (HO!).
+           gorge, ca. 100 m deep, cut through greywacke (siltstone). The
+                                                                                             Plants with a superficial resemblance to Geocalyx, rather
+           gorge walls are largely unvegetated but have isolated forbs
+                                                                                          fragile, loosely prostrate, pale green; shoots small, to 2.2 mm
+           such as Chionochloa conspicua, Ourisia macrophylla, and
+                                                                                          wide. Branches common, all or mostly of Frullania type (the
+           Aciphylla similis. The plants formed a mat ca. 30 3 50 cm at
+                                                                                          half-leaf usually undivided but sporadically bifid and then the
+           the back of a cave formed by a sloping rock ledge and a
+                                                                                          ventral lobe larger than the dorsal); lateral-intercalary branch-
+           protecting overhang. Also known from ca. 790 m on
+
+---
+
+von Konrat 28583 (F). NORTH ISLAND. WELLINGTON PROV.:                          entire or (frequently) with a broad-based tooth. Leaf cells with
+           Tree Trunk Gorge, W bank of Tongariro River, E border of                       walls thin, trigones normally medium to large to 6 knot-like,
+
+
+           ENGEL: CHILOSCYPHUS IN AUSTRALASIA                                                                                                                67
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+          atypically minute, at times more pronounced in basal half of                    feebly spine-like thickenings mostly on longitudinal walls and
+          lobes, median leaf cells 16–26 mm wide, 19–29 mm long; surface                  only sporadically on transverse walls, the exposed tangential
+          smooth. Oil-bodies 2 or 2–3 per cell, the surface coarse.                       wall thickened; intermediate and inner layer of cells subequal in
+          Underleaves much smaller than leaves, 1–1.93 stem width,                        thickness; innermost layer of cells irregularly short rectangular,
+          usually free but in suboptimal plants sporadically narrowly                     the vertical radial walls with somewhat thick continuous sheets
+          connate by 1–2 cells on 1 side, insertion often asymmetric,                     of red-brown wall material, with semiannular bands red brown,
+          crescent shaped, the underleaves varying from 6 parallel with                   common, wide, close and numerous, sometimes incomplete,
+          stem to widely spreading, distant to approximate, plane to                      often forked and anastomosing to delimit fenestrae, the radial
+          slightly convex (ventral view) sometimes feebly concave but                     walls with nodular to spine-like thickenings sometimes present
+          never consistently so, sporadically but never consistently                      on both longitudinal and transverse walls.
+          concave, obtrapezoid, bifid to at least 0.65 and defining a                        Spores and elaters not seen.
+          lamina 2–6 cells high; lobes mostly diverging, sporadically 6                      DIFFERENTIATION—This species is at once distinct from
+          parallel, acuminate to subcaudate, plane or faintly ventrally                   other members of sect. Lophocolea in having caducous leaf tips
+          sulcate, the lobe margins entire or with a tooth; lamina margins                (Fig. 26: 6, 7) and, together with C. erosus, are the only species
+          plane to slightly reflexed, entire or with a process ranging in size            in the section that produce gemmae (Fig. 26: 4, 5). The form
+          from a tooth to a lacinium, the armature somewhat variable in                   of the leaf (distinctly bilobed and often ovate-elliptic) and
+          position: basal or slightly distal to level of sinus base.                      underleaf (reduced lamina height and 2 prominent lateral
+             Asexual reproduction by caducous leaf lobe tips, by                          processes) also occurs in Chiloscyphus lentus, and confusion
+          regeneration from adult leaves, in situ, or by gemmae                           may occur with that species. Chiloscyphus lentus, however, has
+          produced at the lobe tips or from regenerants, the gemmae                       persistent leaf tips, underleaves consistently connate on one
+          2-celled and 19–25 3 11–12 mm to less often 4-celled and 22–                    side, uniformly entire-margined leaves, and, on the whole,
+          46 3 12–13 mm.                                                                  smaller trigones, being minute to small or at most medium and
+             Plants dioecious. Androecia on leading shoots or elongate,                   straight sided. Chiloscyphus perpusillus normally has free
+          indeterminate, Frullania-type branches, occasionally on later-                  underleaves (Fig. 25: 1), ventral leaf margins often 1-dentate
+          al-intercalary branches or, rarely (1 branch seen), on ventral-                 and trigones normally at least medium and straight sided and
+          intercalary branches that lack vegetative leaves basal to bracts                often large and bulging (Fig. 25: 4).
+          but proliferate vegetatively distally, the androecia subfolious;                   The closest relative to C. perpusillus among underleaf-free
+          bracts slightly to moderately smaller than leaves, often similar                species is C. bispinosus, which is unknown for Tasmania but
+          in shape and size to vegetative leaves except for development                   common in New Zealand. The two species have well-
+          of a lobule, the bracts suberect to spreading, strongly dorsally                developed trigones, similar cell size, and deeply divided
+          assurgent, loosely appressed to bract immediately above, the                    underleaves (though the range is shallower in C. perpusillus).
+          saccate portion crenulate in profile and fused toward base with                 Chiloscyphus bispinosus is at once distinct in having bordered
+          opposite bract, the apex as in leaves, the ventral margin entire;               leaves and persistent leaf lobes.
+          lobule margin involute, with a distinct distal rounded or tooth-                   Asexual reproduction in C. perpusillus occurs via caducous
+          like projection, the margin otherwise crenate-denticulate and                   leaf lobe tips, gemmae, and regeneration from in situ adult
+          with copious slime papillae; antheridia solitary, the stalk to 30               leaves (Engel, 1993). The uniseriate row of cells of both lobes
+          cells long, uniseriate. = Bracteoles often connate on 1 side,                   breaks from the parent plant within a few gyres of the shoot
+          often less deeply bifid than underleaves (sometimes divided to                  apex, and, consequently, complete lobes are rare (Fig. 25: 1, 3).
+          only 0.5). Gynoecia 6 isophyllous, on main shoot, or on                         Secondary cell wall division, as the presumed precursor to
+          lateral-intercalary branches varying from short and without                     regenerant and gemmae formation, may be seen on young
+          normal leaves to long, or on subfloral innovations that                         leaves (Fig. 26: 2) as well as at the tips of that portion of the lobe
+          originate from axil of innermost bract or those of second                       remaining on adult leaves (Fig. 26: 6, 7), and the frequent
+          series. Bracts of innermost series much larger than leaves, erect               presence of such very thin secondary walls is a good taxonomic
+          and ensheathing perianth, free from one another, convex,                        character for the species. Remarkably, regenerants, even when
+          ovate, rather strongly narrowed distally; apex bifid to 0.3, the                young, produce gemmae (Fig. 26: 4), a feature unique for
+          lobes subcaudate-caudate, ventrally sulcate, entire or sporad-                  Hepaticae (see Engel, 1993). Also, remarkably, gemmae may be
+          ically with a tooth; lamina margins reflexed, the dorsal often                  produced from leaf lobe tips of juvenile plants, as in Ratkowsky
+          strongly and sharply so, the margins entire or with a few teeth.                79/45 from Tasmania. The form of the lobe tips of adult leaves
+          Bracteoles of innermost series similar to bracts in size, free or               is diagnostic for the species, and consists of 2–3 laterally
+          narrowly connate on 1 side, concave to distally subcanalicu-                    juxtaposed cells, each rounded at the free end (Fig. 26: 6, 7).
+          late, similar to bract shape or obovate; apex bifid to 0.35, the                Such consistently nonragged lobe apices indicate that gemmae
+          lobes similar to those of bracts; lamina margins reflexed, entire               production is limited. The basal sector of the leaf lobes remains
+          or with 1–2 teeth or laciniae. Perianth seldom produced, long-                  intact and the intervening sinus is always present. In this respect
+          exserted beyond bracts, sharply trigonous throughout, nar-                      C. perpusillus differs from C. erosus, in which gemmae
+          rowly oblong, not narrowing toward the rather deeply 3-lobed                    formation is copious and probably continuous, resulting in
+          mouth; lobes distinctly bifid, the segments acuminate to                        the entire distal sector of the leaf becoming erose, with
+          subcaudate, entire or with a tooth, the lobes spinose dentate to                disappearance of lobes and ultimately the sinus.
+          laciniate below level of segments; keels sharp, with keelar                        Chiloscyphus perpusillus bears a superficial resemblance to
+          wings common, rather high, with laciniae common.                                Geocalyx caledonica, which also occurs in Tasmanian forests.
+             Seta seen only in collapsed state. Capsule wall 35–38 mm                     If sterile plants are at hand the smooth leaf surface and
+          thick, of 4 layers, the outer layer of cells exceeding thickness of             caducous leaf tips of C. perpusillus will immediately resolve
+          all combined interior strata; outer layer of cells irregularly                  any ambiguity; G. caledonica has a coarsely striate-papillose
+          quadrate, the radial walls thin, with red-brown nodular to                      surface and persistent leaf tips.
+
+
+          68                                                                                                                      FIELDIANA: BOTANY
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+              FIG. 25. Chiloscyphus perpusillus (Hook. f. &amp; Tayl.) J. J. Engel. 1. Sector of main shoot, ventral view, with Frullania-type branch (5 FB; HL
+           5 half-leaf); note form of 1st branch leaf and position of very young lateral-intercalary branch (5 LIB) in lateral half of axil of basalmost
+           underleaf. 2. Antheridial stalk. 3. Sector of leading shoot with 2 Frullania-type branches (5 FB; HL 5 half-leaf) (dorsal view); note 3-lobed leaf
+           on main shoot just distal to left branch and an additional one on left branch. 4. Median leaf cells. 5. Leaves from same shoot, note
+           subsymmetrical shape. 6. Leaves and underleaves from same shoot, top 3 all with dorsal margin (5 dm) at left, bottom 3 all with dorsal margin
+           (5 dm) at right. 7. Perianth mouth, ventral lobe in middle (r 5 regenerant from inner face; w 5 wing) 8. R Bracts and in middle, bracteole. (1, 4,
+           6, from Norris 28684, Tasmania, Mt. Field Natl. Park, Lake Belcher; 2, from Engel 16349, Tasmania, Mt. Rufus Canal Road; 3, from Norris
+           29292, Tasmania, Mt. Wellington, McRobies Gully; 5, from Engel 12804, Tasmania, Hartz Mtn. Natl. Park, Devils Backbone; 7, 8, from Engel
+           19467, Tasmania, Griffiths Creek, ESE of Mt. Arrowsmith.)
+
+
+             A rare phase of this species may have teeth, one each on the                 perhaps presence of such ornamentation is restricted to
+           dorsal and ventral margins, the sinus, and the outer margin of                 suboptimal plants. This phase has copious gemmae produc-
+           the lobe, lending a somewhat ragged appearance (examples are                   tion.
+           Rodway s.n. from Cascades, Tasmania, and Rodway s.n. from                         Such rare phenotypes should not be confused with
+           Sandfly, Tasmania). Both collections are suboptimal, and                       Leptophyllopsis laxus, which also has caducous leaf lobes.
+
+
+           ENGEL: CHILOSCYPHUS IN AUSTRALASIA                                                                                                             69
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+            FIG. 26. Chiloscyphus perpusillus (Hook. f. &amp; Tayl.) J. J. Engel. 1. Mature isophyllous gynoecium (note 2 laciniiform processes toward
+          perianth base), ventral-lateral view. 2. Distal sectors of 3 segments of young leaves, all from same shoot; note precocious secondary cell wall
+          development (5 scw). 3. Underleaf. 4. Apex of leaf segment showing gemmae producing regenerant; note 2–4 celled gemmae. 5. Gemmae (all to
+          same scale). 6, 7. Distal sectors of segments of adult leaves, the uniseriate row having been lost; note secondary cell wall formation in distalmost
+          cells. 8. Sector of main shoot showing regeneration from leaves (on 2 basalmost opposing leaves), lateral view. (1, 4, 5, from Engel 19467,
+          Tasmania, Griffiths Creek, ESE of Mt. Arrowsmith; 2, 3, 6–8, from Norris 28684, Tasmania, Mt. Field Natl. Park, Lake Belcher.)
+
+
+          The two species, though rarely, may be intermixed. Lepto-                       possessing minute trigones, whereas other leaves have trigones
+          phyllopsis is larger, translucent, and has much larger leaf cells               medium and straight sided (Engel 19467).
+          that are completely devoid of trigones. Also, Leptophyllopsis                      Underleaf orientation and concavity are variable. Under-
+          does not produce gemmae.                                                        leaves may be 6 parallel with the stem to widely and stiffly
+             This phenotype, when rather small, may offer confusion                       spreading, and the disc varies from plane to concave. Leaves
+          with Clasmatocolea inflexispina, which also has well-developed                  that are stiffly spreading often are also concave (Fig. 26: 8).
+          trigones and free underleaves. That species may be immedi-                      Underleaves are either uniformly plane or occur as a mixture
+          ately separated by persistent leaf lobes and absence of                         of plane and concave individuals (they are never consistently
+          secondary cell walls.                                                           concave).
+             VARIATION—Trigones are usually medium and straight                              NOTE—Interesting tendencies occur on androecium-bearing
+          sided to large and convex sided (Fig. 25: 4). However,                          plants. The bracteoles are often connate on one side and often
+          occasional populations have trigones varying from minute to                     less deeply divided, at times bifid to only 0.5. Underleaves on
+          large and bulging; I have seen shoots with some leaves                          sterile shoots, on the other hand, are free and uniformly deeply
+
+
+          70                                                                                                                    FIELDIANA: BOTANY
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+           divided. = Bract lobes, however, show little differentiation                   Androecia and young gynoecia are present; the latter are in the
+           from vegetative leaves, and in side view (the predominent view                 early leaf-fusion stage and included within subtending bracts.
+           of the shoot in that both = bracts and leaves are usually                         3) Lophocolea macroloba Steph. Androecial shoots are
+           dorsally assurgent) the bracts are hardly distinguishable from                 abundant, and at times they grow in close association with</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Chiloscyphus austrigenus subsp. okaritanus (Steph.)    Chiloscyphus leucophyllus (Hook.f. &amp; Taylor)
+       JJ.Engel                                               Gottsche, Lindenb. &amp; Nees
+        Chiloscyphus okaritanus (Steph.) JJ.Engel &amp;           Chiloscyphus fulvus (Steph.) ].].Engel &amp;
+        R.M.Schust.                                           R.M.Schust.
+        Lophocolea okaritana Steph.                           Lophocolea leucophylla (Hook.f. &amp; Taylor)
+        Lophocolea gunniana Nees                              Taylor
+Chiloscyphus bispinosus (Hook.f. &amp; Taylor) ].].Engel   Chiloscyphus mittenianus (Colenso) ].].Engel
+        &amp; R.M. Schust                                         Isotachis mitteniana Colenso
+       Lophocolea bispinosa (Hook.f. &amp; Taylor)                Chiloscyphus vulcanicus Colenso
+       Taylor                                          Chiloscyphus minor (Nees) ].].Engel &amp; R.M.Schust.
+Chiloscyphus calcareus (Steph.) J.J.Engel &amp;                    Lophocolea minor Nees
+        R.M.Schust.                                    Chiloscyphus multipennus (Hook.f. &amp; Taylor)
+        Chiloscyphus calcarea Steph.                          ].].Engel &amp; R.M.Schust.
+Chiloscyphus cheesemanii (Steph.) ].].Engel &amp;                  Lophocolea multipenna (Hook.f. &amp; Taylor)
+        R.M.Schust.                                            Hook.f. &amp; Taylor
+        Lophocolea cheesemanii Steph.                  Chiloscyphus muricatus (Lehm.) ].].Engel &amp;
+Chiloscyphus chlorophyll us (Hook.f. &amp; Taylor) Mitt.           R.M.Schust.
+        Lophocolea bidentata (L.) Dumort.                      Lophocolea muricata (Lehm.) Nees
+Chiloscyphus dallianus (Steph.) ].].Engel &amp;            Chiloscyphus novae-zeelandiae var. grandistipulus
+        R.M.Schust.                                            (Schiffn.) ].].Engel
+        Lophocolea dalliana Steph.                             Lophocolea grandistipulus Schiffn.
+Chiloscyphus echinellus (Lindenb. &amp; Gottsche) Mitt.    Chiloscyphus novae-zeelandiae var. meridionalis
+        Lophocolea echinella Lindenb. &amp; Gottsche               (Steph.) ].].Engel
+Chiloscyphus erectifolius (Steph.) Steph.                      Lophocolea meridionalis Steph.
+Chiloscyphus fissistipulus (Steph.) ].].Engel &amp;        Chiloscyphus novae-zeelandiae (Lehm. &amp; Lindenb.)
+        R.M.Schust.                                           ].].Engel &amp; R.M.Schust. var. novae-zeelandiae
+        Heteroscyphus fissistipus (Hook.f. &amp; Taylor)           Lophocolea novae-zeelandiae (Lehm. &amp;
+       Schiffn.                                                Lindenb.) Nees
+        Lophocolea fissistipula Steph.                 Chiloscyphus pallid us (Mitt.) JJ.Engel &amp; R.M.Schust.
+Chiloscyphus fulvus (Steph.) ].].Engel &amp; R.M.Schust.           Lophocolea pallida Mitt.
+        Lophocolea fulva Steph.                        Chiloscyphus perpusillus (Hook.f. &amp; Taylor) ].].Engel
+Chiloscyphus hattorii J.J .Engel                              Jungermannia perpusilla (Hook.f. &amp; Taylor)
+Chiloscyphus helmsianus (Steph.) ].].Engel &amp;                   Taylor
+         R.M.Schust.                                           Lophocolea perpusilla Hook.f. &amp; Taylor
+                                                                            NZ Liverworts and Hornworts     131
+
+
+
+
+Chiloscyphus semiteres var. caniculatus                  Clasmatocolea vermicularis (Lehm.) Grolle
+        (Gottsche, Lindenb. &amp; Nees) J.J.Engel                    Chiloscyphus vermicularis (Lehm.) Hassel
+        Chiloscyphus caniculatus Gottsche, Lindenb.      Cololejeunea cardiocarpa (Mont.) R.M.Schust.
+        &amp; Nees                                           Cololejeunea cucullifolia (Herzog) E.A.Hodgs.
+        Lophocolea caniculata (Gottsche, Lindenb. &amp;      Cololejeunea ellipsoidea R.M.Schust.
+        Nees) Steph.                                     Cololejeunea falcidentata R.M.Schust.
+Chiloscyphus semiteres (Lehm.) Lehm. &amp;                   Cololejeunea hodgsoniae (Herzog) E.A.Hodgs.
+        Lindenb. var. semiteres                          Cololejeunea inflexifolia R.M.Schust.
+        Lophocolea semiteres (Lehm.) Mitt.               Cololejeunea laevigata (Mitt.) R.M.Schust.
+Chiloscyphus spiniferus (Hook.f. &amp; Taylor) J.J.Engel     Cololejeunea mamillata (Angstr.) R.M.Schust.
+        &amp; R.M.Schust.                                    Cololejeunea minutissima (Sm.) Schiffn.
+        Lophocolea spinifera (Hook.f. &amp; Taylor)          Cololejeunea pulchella (Mitt.) R.M.Schust.
+        Taylor                                           Colura pulcherrima var. bartlettii Ast
+Chiloscyphus subporosus (Mitt.) J.J.Engel &amp;              Colura saccophylla E.A.Hodgs. &amp; Herzog
+        R.M.Schust.                                      Cryptochila acinacifolia (Hook.f. &amp; Taylor) Grolle
+        Lophocolea subporosa Mitt.                       Cryptochila grandiflora (Lindenb. &amp; Gottsche) Grolle
+Chiloscyphus variabilis (Steph.) J.J.Engel &amp;             Cryptochila nigrescens (Steph.) Grolle
+        R.M.Schust.                                      Cryptochila pseudocclusa (E.A.Hodgs.) R.M.Schust.
+        Lophocolea variabilis Steph.
+Chiloscyphus villosus (Steph.) J J.Engel &amp; R.M.Schust.   Dendromastigophora flagellifera (Hook.f.)
+        Lophocolea villosa Mitt.                                 R.M.Schust.
+Chloranthelia berggrenii (Herzog) R.M.Schust.                    Mastigophora flagellifera (Hook.f.) Steph.
+
+---
+
+Lophocolea dalliana - Chiloscyphus dallianus           flagellifera
+Lophocolea decurrens - Chiloscyphus herzogii           Megaceros arachnoideus - Megaceros pellucidus
+Lophocolea echinella - Chiloscyphus echinellus
+Lophocolea fiordlandiae - Stolonivector                Megaceros flagellaris - Megaceros pellucidus
+fiordlandiae                                           Megaceros grandis - Megaceros pellucidus
+Lophocolea fissistipula - Heteroscyphus fissistipus    Megaceros longispirus - Megaceros pellucidus
+Lophocolea fulva - Chiloscyphus fulvus                 Megaceros membranaceus - Megaceros pellucidus
+Lophocolea granditexta - Lamellocolea granditexta      Megaceros zotovii - Megaceros pellucidus
+Lophocolea gunniana - Chiloscyphus austrigenus         Metzgeria colensoi - Metzgeria leptoneura
+subsp. okaritanus                                      Metzgeria hamata - Metzgeria leptoneura
+Lophocolea helmsiana - Chiloscyphus helmsianus         Micrisophylla leptodictyon - Pseudocephalozia
+Lophocolea hodgsoniae - Chiloscyphus australis         lepidozioides
+Lophocolea inflexifolia - Chiloscyphus inflexifolius   Microlejeunea cucullata - Metalejeunea cucullata
+Lophocolea innovata - Leptoscyphus innovatus           Neesioscyphus phoenichorizus - Austroscyphus
+Lophocolea insularis - Chiloscyphus insularis          phoenicorhizus
+Lophocolea lenta - Chiloscyphus lentus                 Neohattoria australis - Frullania rostrata
+Lophocolea leucophylla - Chiloscyphus                  Neohattoria rostrata - Frullania subrostrata
+leucophyllus                                           Noteroclada perpusilla - Fossombronia pusilla
+Lophocolea grandistipulus - Chiloscyphus novae-        Phaeoceros laevis subsp. carolinianus - Phaeoceros
+zeelandiae var. grandistipulus                         carolinianus
+Lophocolea meridionalis - Chiloscyphus novae-          Plagiochasma australe - Plagiochasma rupestre
+zeelandiae var. meridionalis                           Plagiochasma hodgsoniae - Plagiochasma australe
+Lophocolea minor - Chiloscyphus minor                  Plagiochila suborbiculata - Plagiochila gigantea
+Lophocolea multipenna - Chiloscyphus multipennus       Podanthe squamata - Lethocolea pansa
+Lophocolea muricata - Chiloscyphus muricatus           Protomarsupella scottii -Allisoniella scottii
+Lophocolea novae-zeelandiae - Chiloscyphus             Pseudocephalozia drucei - Paracromastigum drucei
+novae-zeelandiae var. novae-zeelandiae                 Pseudocephalozia leptodictyon - Pseudocephalozia
+Lophocolea okaritana - Chiloscyphus austrigenus        lepidozioides
+subsp. okaritanus                                      Pseudocephaloziella macrostipa - Paracromastigum
+Lophocolea pallida - Chiloscyphus pallid us            macrostipum
+Lophocolea perpusilla - Chiloscyphus perpusillus       Pseudomarsupidium piliferum -Adelanthus bisetulus
+Lophocolea planiuscula - Heteroscyphus                 Ptychocoleus mollis - Acrolejeunea mollis
+planiusculus                                           Pycnolejeunea glauca - Cheilolejeunea intertexta
+Lophocolea semiteres - Chiloscyphus semiteres var.     Riccardia bistrata - Riccardia bipinnatifida
+semiteres
+                                                                             NZ Liverworts and Hornworts     143
+
+
+
+
+Riccardia effusa - Riccardia aequitexta                    Thysananthus anguiformis - Mastigolejeunea
+Riccardia filicina - Aneura micropinna                     anguiformis
+Riccardia muscoides - Riccardia marginata                  Triandrophyllum trifidum - Triandrophyllum
+Riccardia perpusilla - Riccardia lobulata                  subtrifidum var. trifidum
+Riccia vesiculosa - Riccia sorocarpa                       Trichocolea lanata - Leiomitra lanata
+Schistochila altissima - Pachyschistochila altissima       Tylimanthus epiphytus - Marsupidium epiphytum
+subsp. altissima                                           Tylimanthus knightii- Marsupidium knightii
+Schistochila colensoana - Pachyschistochila                Tylimanthus perpusillus - Marsupidium perpusillum
+colensoana                                                 Tylimanthus setulosus - Marsupidium setulosum
+Schistochila conchophylla - Paraschistochila               Tylimanthus spinosus - Marsupidium knightii
+conchophylla                                               Tylimanthus surculosus - Marsupidium surculosum
+Schistochila papillifera - Pachyschistochila papillifera
+Schistochila parvistipula -Pachyschistochila
+parvisti pula
+Schistochila pinnatifolia - Paraschistochila
+                                                                       Acknowledgements
+pinnatifolia                                               I wish to thank Marie Hicks for sending me her own
+Schistochila pseudokirkiana - Pachyschistochila            checklist which was invaluable in checking mine and
+colensoana                                                 for other helpful information. I also wish to thank
+Schistochila ruahinensis - Pachyschistochila               Jessica Beever, John Braggins, Elizabeth Brown, Ella
+papillifera                                                Campbell, Paddy Dalton, John Engel, Riclef Grolle,</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.683333, 146.583333], [-41.275814, 147.956556], [-41.45, 145.966667], [-42.990948, 147.124043], [-42.990749, 147.246711], [-42.169719, 145.427472], [-42.720274, 146.634965], [-42.17, 146.12], [-43.257921, 146.138958], [-42.064389, 146.323528], [-43.216667, 146.75], [-41.45, 145.966667], [-42.9, 147.27], [-42.916667, 147.25], [-43.1, 146.62], [-42.9, 147.0], [-42.916667, 147.25], [-42.531443, 145.54019], [-43.216667, 146.75], [-42.883333, 147.116667], [-42.133333, 146.1], [-42.68, 146.55], [-43.0, 147.0], [-42.02775, 146.349111], [-42.350667, 147.919028], [-42.900698, 147.246351], [-42.900896, 147.123862], [-42.259749, 145.425237], [-41.725079, 145.919274], [-43.15, 146.83], [-43.22, 146.75], [-42.87, 147.13], [-42.053806, 146.335639], [-42.22, 146.095], [-41.45, 145.97], [-41.45, 145.97], [-42.216667, 146.095], [-41.90626, 146.036792], [-42.68, 146.55], [-42.78, 145.97], [-41.67, 145.93], [-43.678763, 172.770675], [-43.60451, 172.649323], [-43.661118, 172.619245], [-41.375435, 175.0715028], [-38.242215, 176.345711], [-41.968391, 171.434909], [-46.045, 167.707], [-43.830022, 173.040867], [-42.2286523, 173.789284], [-41.567648, 172.525644], [-42.229616, 173.789319], [-43.705702, 172.838638], [-38.5157752, 175.5499191], [-35.627873, 174.202247], [-40.5778197, 176.3264206], [-43.807355, 172.792315], [-41.2601319, 174.8649008], [-46.045, 167.707], [-43.581501, 171.029297], [-45.0187152, 170.118226], [-40.211, 176.094], [-41.178654, 175.831375]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

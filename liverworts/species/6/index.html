@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balantiopsis diplophylla — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Balantiopsis diplophylla</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Balantiopsis diplophylla</em></h1>
+  <p>
+    <span class="badge">Balantiopsidaceae</span>
+    <span class="badge secondary">Balantiopsis</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (11)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Balaniopsis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balaniopsis dendroidea</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balaniopsis kirkii</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balantiopsis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balantiopsis convexiuscula</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balantiopsis diplophylla f. paucidentata</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balantiopsis diplophylla var. diplophylla</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balantiopsis diplophylla var. hockenii</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Diplophyllum</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Balantiopsis knightii</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Jungermannia diplophylla</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">539</p>
+    <footer>191 Tasmanian</footer>
+  </article>
+
+  
+  <article>
+    <header>Mean annual temp.</header>
+    <p class="big-num">11.5&thinsp;°C</p>
+    <footer>at occurrence points</footer>
+  </article>
+  
+
+  
+  <article>
+    <header>Mean annual precip.</header>
+    <p class="big-num">1589&thinsp;mm</p>
+    <footer>
+      CV 24.7
+    </footer>
+  </article>
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">14</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>regularly pinnate</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>pinnate</td>
+          <td>categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>4-lobed</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>bilobed</td>
+          <td>categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">MEAGHER_LHI_BRYOPHYTES</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>bark</td>
+          <td>categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">VICTORIAN_BRYOPHYTES_KEY</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>none</td>
+          <td>categorical</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">SOUTHERN_AUS_FIELD_GUIDE</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>JUNGERMANNIALES_SHAW_2015</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">to the genera of antipodal Hepaticae with special reference to                    cal rearrangements of Solenostomataceae (Marchantiophyta) with
+
+
+
+
+                                                              This content downloaded from
+                                            131.217.255.200 on Thu, 09 Jul 2026 03:22:11 UTC
+                                                      All use subject to https://about.jstor.org/terms
+42                                                              SYSTEMATIC BOTANY                                                              [Volume 40
+
+     description of new family Endogemmataceae based on trnL-F DNA                KF943135, KF942720,—; Gottschelia schizopleura: L1206, Malaysia:
+     analysis. Folia Cryptogamica Estonica 48:125-133.                            Pahang, D.G. Long 36922 (E)·,    KF851920,—, KF852362, KF851453,—,
+Vilnet, Α. Α., Ν. A. Konstantinova, and Α. V. Troitsky. 2012. Molecular           KJ802085, KF852521, KF851624, KJ802021; Gymnocolea inflata: FATOL535,
+     phylogeny and systematics of the suborder Cephaloziineae with                Svalbard, N.A. Konstantinova &amp; A.N. Savchenko K118-1-04 (F), KF852019,
+     special attention to the family Cephaloziaceae s. 1. (Jungermanniales,       KF851861, KF852141, KF852306, KF851412, KJ802048, KJ802076, KF852452,
+     Marchantiophyta). Arctoa 21:113-132.                                         KF851553, KJ802022. Antheliaceae: &#34;Pseudolepicolea&#34; trollii subsp. andoi:
+Vilnet, Α. Α., I. A. Milyutina, N. A. Konstantinova, M. S. Ignatov, and           E53, China: Yunnan, D.G.Long 33719 (Ε),—,—, KF943263, KF943547,
+     Α. V. Troitsky. 2007. Phylogeny of the genus Lophozia (Dumort.)              KF943399,—,—, KF943117, KF942703,—; Anthelia julacea: E67, UK:
+     Dumort. s. s. inferred from nuclear and chloroplast sequences                Scotland, D.G. Long 31292 (Ε),—, KF851830, KF852121, KF852280,
+     ITS1-2 and TRNL-F. Russian journal of Genetics 43: 1306-1313.                KF851384, KJ802043, KJ802070, KF852428, KF851527, KJ802014;
+Wilson, R., S. R. Gradstein, H. Schneider, and J. Heinrichs. 2007.                L1404, USA: Alaska, B. Shaw ¥952/5 (DUKE),—, KF942570, KF943340,
+     Unraveling the phylogeny of Lejeuneaceae (Jungermaniopsida):                 KF943594, KF943488, KF942894, KF943055, KF943212, KF942772,
+     evidence for four main lineages. Molecular Phylogenetics and Evolu           KF942677; Hygrobiella laxifolia: FATOL512, Russia, N.A. Konstantinova
+     tion 453: 270-282.                                                           31-2-03 (F),—, KF942489, KF943285,—, KF943420,—,—;          FATOL683,
+Wodniok, S., H. Brinkmann, G. Glôckner, A. J. Heidel, H. Philippe, M.             Russia, V. A. Bakalin s.n. (F),—,—, KF852154, KF852320, KF851422,—·,—,
+     Melkonian, and B. Becker. 2011. Origin of land plants: do conju              KF852462, KF851560,—. Arnelliaceae: Arnellia fennica: L1498, Finland,
+     gating green algae hold the key? BMC Evolutionary Biology 11:104.            B. Shaw 1250 (DUKE), KF852098, KF851969, KF852251, KF852402,
+Yatsentyuk, S. P., N. A. Konstantinova, M. S. Ignatov, J. Hyvonen, and            KF851493, KJ802058, KJ802096,—, KF851663,—. Balantiopsidaceae:
+     Α. V. Troitsky. 2004. On phylogeny of Lophoziaceae and related               Acroscyphella phoenicorhiza: FATOL865, New Zealand, ].E. Braggins &amp;
+     families (Hepaticae, Jungermanniales) based on TrnL-TrnF intron              M.AM.     Renner 4174 (F), KF852039, KF851900, KF852165, KF852339,
+     spacer sequences of chloroplast DNA. Pp. 151-167 in Molecular                —,—,—,—,—,—; Balantiopsis diplophylla: IBC7, Australia, H. Streimann
+     systematics of bryophytes: progress, problems &amp; perspectives eds.            59554 (NY),—„ KF852201, KF852348,—,            KF851610,—; B. splendens:
+     B. Goffinet, V. C. Hollowell, and R. E. Magill. Monographs in                FATOL783, Chile, J.J. Engel 25363 (F),—, KF851887,—, KF852330,
+     Systematic Botany from the Missouri Botanical Garden. Vol. 98.               —,—,—; Isotachis lyallii: IBC30, New Zealand, J.J. Engel 21825 (F),
+     St. Louis: Missouri Botanical Garden.                                        AY607905, AY607952, AY608010, KF852343, AY608073, AY608178,
+Yu, Y., T. Pôcs, A. Schàfer-Verwimp, J. Heinrichs, R.-L. Zhu, and H.              AY608130, KF852497, KF851600,—. Blepharidophyllaceae: Blepharidophyllum
+     Schneider. 2013. Evidence for rampant homoplasy in the phy                                    New Zealand, J.J. Engel &amp; M. von Konrat s.n. (F),
+                                                                                  vertebrate: L1209,
+     logeny of the epiphyllous liverwort genus Cololejeuenea (Lejeuneaceae).      KF852073, KF851921, KF852217, KF852363, KF851454,—, KJ802086,
+     Systematic Botany 38: 553-563.                                               KF852522, KF851625,—; Clandarium gottscheanum: FATOL777, Chile, /./.
+Zwickl, D. J. 2006. Genetic algorithm approaches for the phylogenetic             Engel 26229 (F), KF852032, KF851885,, KF852329, KF851425,—,—,
+     analysis of large biological sequence datasets under the maxi                KF852472, KF851564,—; C. xiphophyllum: L1373, Australia: Tasmania,
+     mum likelihood criterion. Ph.D. dissertation. Austin: University             B. Shaw 6433 (DUKE), KF942448,—, KF943334, KF943590, KF943482,
+     of Texas.                                                                    —,—, KF943206, KF942767,—. Calypogeiaceae: Eocalypogeia quelpartensis:
+                                                                                  gb242, Japan, Γ. Furuki 20233 (HIRO),—,            AB476566, AB476605,
+                                                                                  —,—,—,——■; Calypogeia muelleriana: E77, UK: Scotland, D.G. Long
+   Appendix 1. List of sampled taxa by family, voucher information,               31227 (Ε),—, KF942466, KF943266,—,—, KF942826, KF942955,
+and GenBank Accession numbers (atpB, psbA, psbT, rbcL, rps4, trnC, trtiL,         KF943121, KF942707, KF942633; IBC11, USA, E.C. Davis 130 (DUKE),
+nadl, rps3, rpb2, respectively).—: missing data. Voucher numbers begin            JF315941, AY6079311, JF316196, JF316291, AY6080521, AY608169,
+ning with &#34;gb&#34; designate sequences downloaded from GenBank.                       AY608121, AY607870, AY608169, KJ802016; Metacalypogeia altemifolia:
+                                                                                  E30, Bhutan, D.G. Long 28712 (Ε),—, JF513396, JF513412, JF513455,
+   Acrobolbaceae: Acrobolbus ochrophyllus: FATOL118, Chile, /./. En gel           JF513474, KJ802040, KJ802068, KF852423, KF851522,—; Mizutania
+26633  (F), KF852005, KF851834, KJ451735, KF852285, KF851387,                     riccardioides: L1510, Malaysia: Pahang, D.G. Long, D.S. Rycroft &amp;
+KJ802044, KJ802071, KF852430, KF851532,—; Austrolophozia paradoxa.                B. O&#39;Shea 36926 (Ε),—, KF851971, KF852254,—,                    KF852568,
+FATOL785, New Zealand, /./. Engel &amp; M. von Konrat 28538 (F)                       KF851664,—; Mnioloma fuscum: L1516, Fiji, J.E. Braggins et al. 16. IV. 2008
+KF852035, KF851889,—,—, KF851427,—,—, KF852475, KF851567,—                        (NSW),—,—, KF852256, KF852404, KF851498,—, KJ802100, KF852569,
+Goebelobryum unguiculatum: L1274, New Zealand: North Island, Y. Qiu               KF851665, KJ802029. Cephaloziaceae: Alobiellopsis parvifolius: L1532,
+M.A.M. Renner &amp; R.M. Schuster NZ-03054 (AK), KF852077, JF513406,·                 Japan: Honshu, B. Shaw 8240 (DUKE), KF852105, KF851979, KF852262,
+JF513466, JF513487,—,—, JF513386, KF851638,—; Lethocolea glossophylla             KF852411, KF851505, KJ802064, KJ802104, KF852576, KF851672,—;
+IBC41, Ecuador, E.C. Davis 259 (DUKE), KF852059, AY607963, KF852195               Cephalozia (Jungermannia) conchata: LI 198, China: Yunnan, D.G. Long
+DQ439692, AY608084, KJ802051, KJ802080, KF852498, KF851602, KJ802025,             34888 (Ε),—, KF942541, KF943323, KF943576, KF943462, KF942883,</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>MEAGHER_LHI_BRYOPHYTES</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Description: Scott (1985) published a general description of this species that is adequate for
+identification.
+Illustrations: Figure 3. Also Scott (1985, Figure 85), Meagher and Fuhrer (2003, pages 264–
+265).
+Habitat: Soil, bark and rotting wood in damp to wet situations.
+Distribution on LHI: Eastern slopes of Mt Lidgbird, Erskine Valley.
+Total distribution: Eastern Australia (Tasmania to southern Queensland, Lord Howe I.), New
+Zealand.
+Discussion: Heteroscyphus fissistipus is one of the most common species of Heteroscyphus in
+southern Australia, from Tasmania to southern Queensland. Stephani and Watts (1914) reported
+Chiloscyphus multifidus Steph. from Lord Howe Island on the basis of a collection by W.W.
+Watts (presumably Watts LHI 88, NSW-818174). This specimen was not available during the
+present study. However, C. multifidus appears to be conspecific with H. fissistipus judging by
+Stephani’s original description (Stephani 1906–1909: 132) and his sketch in the Icones
+(Stephani 1985) drawn from the type. It is notable that only one other collection identified as
+C. multifidus exists in Australian and New Zealand herbaria (Clark s.n., MEL-64300A), and is
+no different from H. fissistipus as circumscribed by Scott (1985).
+
+                                                  223
+Until Watts LHI 88 can be studied or the status of Heteroscyphus multifidus is clarified, I prefer
+to treat the species as ‘uncertain’ in the Lord Howe Island flora.
+
+
+Balantiopsaceae H.Buch
+Balantiopsis Mitt.
+Balantiopsis is a largely south temperate genus, although extending into the tropics from
+Malesia to Brazil. The genus was monographed by Engel (1968), who recognised 13 species.
+Since then another three species have been recognised. Three species are known from Australia.
+One species occurs on Lord Howe Island.
+
+Balantiopsis diplophylla (Hook.f. &amp; Taylor) Mitt.
+Jungermannia diplophylla Hook.f. &amp; Taylor, London J. Bot. 3: 377 (1844); Gottschea diplophylla
+(Hook.f. &amp; Taylor) Nees, Syn. Hepat. 624 (1846); Balantiopsis diplophylla (Hook.f. &amp; Taylor) Mitt.,
+Rep. Challenger Bot. 1(3): 87 (1855)
+Type: NEW ZEALAND, J.D. Hooker s.n., Auckland Islands, 1841, holotype unknown;
+isotypes E-2028!d, E-28028!d
+Description: This species was fully described by Engel (1968).
+Illustrations: Engel (1968, Figures 349–464); Scott (1986, Figure 107); Meagher &amp; Fuhrer
+(2006, page 213).
+Habitat: Soil in shaded situations in wet forest and rainforest.
+Distribution on LHI: Known only from the northern face of Mt Gower and the north-eastern
+slope of Mt Lidgbird.
+Total distribution: Eastern Australia, New Caledonia and New Zealand.
+Discussion: Engel (1968) reported Balantiopsis diplophylla for Lord Howe Island, citing Watts
+91c, originally described as B. pusilla Steph. Engel considered the only extant type material of
+B. pusilla to be a poorly developed specimen of B. diplophylla (Hook.f. &amp; Taylor) Mitt. at the
+extreme end of a series of forms he described, although he did not illustrate this form. Since
+then several additional collections of Balantiopsis have been made on Lord Howe Island, and all
+match B. pusilla as described by Stephani. Since no other forms have been found on Lord Howe
+Island, as one would expect if B. pusilla were only a form of B. diplophylla, there may be no
+grounds for maintaining the synonymy. However, in the absence of fertile specimens and
+genetic data, I am reluctant to disregard Engel’s treatment, and therefore accept for the present
+that the Lord Howe Island plants belong in B. diplophylla.
+The digital data with the isotypes cited above incorrectly state the collector as W.J. Hooker, and
+the collection date as 1839 and 1847.
+
+
+Plagiochilaceae (Joerg.) Dumort.
+The family Plagiochilaceae was recently re-circumscribed by Söderström et al. (2013) who
+recognised 10 genera. Plagiochila (Dumort.) Dumort, Acrochila R.M.Schust., Chiastocaulon
+Carl and Plagiochilion S.Hatt. are all present in Australia, New Zealand and New Caledonia
+(McCarthy 2006, Engel and Glenny 2008, Thouvenot et al. 2011) but only Plagiochila is known
+to occur on Lord Howe Island.
+
+
+
+
+                                                  224
+Plagiochila (Dumort.) Dumort.
+At present 34 species of Plagiochila are recognised from eastern Australia (McCarthy 2006).
+The Australian species of Plagiochila are currently under review by Matt Renner (NSW), who
+has advised (in litt. 9 Feb. 2018) that the names of Lord Howe Island plants will change. Until
+these changes are published, it is appropriate to continue to use the current names applied to the
+Lord Howe Island plants. With this in mind, two species are recognised, and may be separated</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Acrobolbus ochrophyllus (Hook.f. &amp; Taylor)                      R.M.Schust.
+        R.M.Schust.                                     Archilejeunea olivacea (Hook.f. &amp; Taylor) Steph.
+Acrochila biserialis (Lehm. &amp; Lindenb.) Grolle                  Archilejeunea scutellata (Taylor) Steph.
+Acrolejeunea allisonii Gradst.                          Asterella australis (Hook.f. &amp; Taylor) Verd.
+Acrolejeunea mollis (Hook.f. &amp; Taylor) Schiffn.         Asterella tenera (Mitt.) R.M.Schust.
+        Ptychocoleus mollis (Hook.£ &amp; Taylor) Steph.    Austrolejeunea fragilis (R.M.Schust.) R.M.Schust.
+Acrolejeunea securifolia (Endl.) Steph. subsp.                   Cololejeunea fragilis R.M.Schust.
+        securifolia                                     Austrolejeunea hispida R.M.Schust.
+Acrolophozia pectinata R.M.Schust.                      Austrolejeunea olgae (R.M.Schust.) R.M.Schust.
+Acromastigum anisostomum (Lehm. &amp; Lindenb.)                     Siphonolejeunea nudipes var. magnicarinata
+        A.Evans var. anisostomum                                 E.A.Hodgs.
+Acromastigum anisostomum var. minutum                   Austrofossombronia australis (Mitt.) R.M.Schust.
+        E.A.Hodgs.                                               Fossombronia australis Mitt.
+Acromastigum brachyphyllum A.Evans                               Fossombronia gigantea Steph.
+Acromastigum cavifolium R.M.Schust.                              Fossombronia naumanii Schiffn.
+Acromastigum colensoanum (Mitt.) A.Evans                Austrolophozia paradoxa R.M.Schust.
+Acromastigum cunninghamii (Steph.) A.Evans                       Austrolophozia camensis non (Steph.) Hassel
+Acromastigum marginatum E.A.Hodgs.                               &amp; Solari
+Acromastigum mooreanum (Steph.) E.A.Hodgs.              Austrometzgeria saccata (Mitt.) Kuwah.
+Acromastigum verticale (Steph.) E.A.Hodgs.              Austroscyphus nitidissimus (R.M.Schust.)
+Adelanthus bisetulus (Steph.) Grolle                             R.M.Schust.
+        Pseudomarsupidium piliferum (Steph.) Herzog              Acroscyphus nitidissimus R.M.Schust.
+Adelanthus falcatus (Hook.) Mitt.                       Austroscyphus phoenicorhizus (Grolle) R.M.Schust.
+Adelanthus gemmiparus (R.M.Schust.) E.A.Hodgs.                   Acroscyphella phoenicorhiza (Grolle) Kitag.
+Adelanthus occlusus (Hook.f. &amp; Taylor) Carrington                &amp; Grolle
+Allisonia cockaynei (Steph.) R.M.Schust.                         Acroscyphus phoenicorhizus (Grolle)
+Allisoniella nigra subsp. novaezelandiae R.M.Schust.             R.M.Schust. &amp; ].].Engel
+        Cephaloziella nigra (Rodw.) Grolle                       Neesioscyphus phoenicorhizus Grolle
+Allisoniella recurva R.M.Schust.
+Allisoniella scottii (R.M.Schust.) R.M.Schust.          Balantiopsis convexiuscula Berggr.
+        Protomarsupella scottii R.M.Schust.             Balantiopsis diplophylla (Hook.£ &amp; Taylor) Mitt. var.
+                                                                diplophylla
+                                                                         NZ Liverworts and Hornworts    129
+
+
+
+
+Balantiopsis diplophylla var. hockenii (Berggr.)      Cephaloziella          crassigyna    (R.M.Schust.)
+       J.J.Engel &amp; G.L.S.Merrill                             R.M .Schust.
+        Balantiopsis glandulifera Colenso                    Ceph alozie ll a aterrima var. crass1gyna
+        Balantiopsis knightii Mitt.                          R.M.Schust.
+Balantiopsis lingulata R.M.Schust.                    Cephaloziella densifolia R.M.Schust. var. densifolia
+Balantiopsis montana (Colenso) J.J.Engel &amp;            Cephaloziella densifolia var. dubia R.M.Schust.
+        G.L.S.Merrill                                 Cephaloziella exigua R.M.Sch ust.
+        Chiloscyphus montanus Colenso                 Cephaloziella exiliflora (Taylor) R.M.Schust.
+Balantiopsis rosea Berggr.                            Cephaloziella grandiretis (R.M.Schust.) R.M.Schust.
+Balantiopsis tumida Berggr.                                  Cephaloziella byssacea subsp. grandiretis
+Balantiopsis verrucosa J.J.Engel &amp; G.L.S.Merrill             R.M.Schust.
+Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis. var. ad-   Cephaloziella hispidissima R.M.Schust.
+        nexa                                          Cephaloziella invisa R.M.Schust.
+       Mastigobryum nitens Colenso                    Cephaloziella muelleriana R.M.Schust.
+Bazzania adnexa var. aucklandica (Lindenb. &amp;          Cephaloziella nothogena R.M.Schust.
+       Gottsche) J.J.Engel &amp; G.L.S.Merrill            Cephaloziella pellucida R.M.Schust.
+Bazzania baileyana (Steph.) Rodw.                     Cephaloziella pseudocrassigyna R.M.Schust.
+Bazzania hochstetteri (Reicht.) E.A.Hodgs.            Cephaloziella pulcherrima R.M.Schust. subsp.
+       Bazzania mittenii (Steph.) Steph.                    pulcherrima
+Bazzania involuta (Mont.) Trevis. var. involuta       Cephaloziella pulcherrima subsp. sphagnicola
+Bazzania involuta var. submutica (Lindenb. &amp;                  R.M.Schust.
+       Gottsche) J.J.Engel &amp; G.L.S.Merrill            Cephaloziella subspinosa R.M.Schust.
+Bazzania monilinervis (Lehm. &amp; Lindenb.) Trevis.      Cephaloziella varians (Gottsche) Steph.
+Bazzania nitida (Web.) Grolle                                 Cephaloziella arctica Bryhn &amp; Douin
+Bazzania nova J.J.Engel &amp; G.L.S.Merrill               Chaetophyllopsis whiteleggei (Carrington &amp; Pearson)
+Bazzania novae-zelandiae (Mitt.) Besch. &amp; C.Massal.           R.M.Schust.
+Bazzania semicordata (Lindenb. &amp; Gottsche) Kuntze     Chandonanthus squarrosus (Hook.) Schiffn.
+Bazzania tayloriana (Mitt.) Kuntze                    Cheilolejeunea albovirens (Hook.f. &amp; Taylor)
+Blepharidophyllum vertebrale (Gottsche, Lindenb.              E.A.Hodgs.
+       &amp; Nees) Angstr.                                        Cheilolejeunea aucklandica (Steph.) H.A.Mill.,
+Bragginsella anomala R.M.Schust.                              Bonner &amp; Bisch.
+
+---
+
+140   Tuhinga, Number 10 (1998)
+
+
+
+
+Aneura aequitexta - Riccardia aequitexta                 Chiloscyphus allodontus - Heteroscyphus
+Aneura alba - Riccardia alba                             allodontus
+Aneura crispa - Riccardia alba                           Chiloscyphus ammophilus - Heteroscyphus
+Aneura dentata -Aneura alterniloba                       ammophilus
+Aneura effusa - Riccardia aequitexta                     Chiloscyphus amplectens - Clasmatocolea
+Aneura micropinna - Riccardia australis                  inflexispina
+Aneura minima - Riccardia lobulata                       Chiloscyphus amplectens - Clasmatocolea
+Aneura papulosa - Riccardia papulosa                     inflexispina
+Aneura vitiensis - Riccardia alba                        Chiloscyphus argutus - Heteroscyphus argutus
+Anthoceros affinis - Phaeoceros carolinianus             Chiloscyphus biciliatus - Heteroscyphus biciliatus
+Anthoceros arachnoideus - Megaceros pellucidus           Chiloscyphus billardierei - Heteroscyphus
+Anthoceros carolinianus - Phaeoceros                     billardierei
+carolinianus                                             Chiloscyphus calcarea - Chiloscyphus calcareus
+Anthoceros colensoi - Megaceros giganteus                Chiloscyphus caniculatus - Chiloscyphus
+Anthoceros coriaceus - Phaeoceros coriaceus              semiteres var. caniculatus
+Anthoceros granulatus - Megaceros pellucid us            Chiloscyphus circumdentatus - Heteroscyphus
+Anthoceros helmsii - Anthoceros muscoides                circumdentatus
+Anthoceros hirticalyx - Phaeoceros hirticalyx            Chiloscyphus coalitis - Heteroscyphus coalitis
+Anthoceros longispirus - Megaceros pellucidus            Chiloscyphus colensoi - Heteroscyphus colensoi
+Anthoceros membranaceus - Megaceros pellucidus           Chiloscyphus compactus - Heteroscyphus
+Anthoceros nostocoides - Megaceros leptohymenius         compactus
+Anthoceros pellucidus - Megaceros pellucidus             Chiloscyphus crassiretis - Clasmatocolea crassiretis
+Archilejeunea mariana - Cheilolejeunea mariana           Chiloscyphus cuneistipulus - Heteroscyphus
+Archilejeunea scutellata - Archilejeunea olivacea        cuneistipulus
+Austrolophozia camensis -Austrolophozia paradoxa         Chiloscyphus erraticus - Heteroscyphus erraticus
+Balantiopsis glandulifera - Balantiopsis diplophylla     Chiloscyphus fiordlandiae - Stolonivector
+var. hockenii                                            fiordlandiae
+Balantiopsis knightii - Balantiopsis diplophylla var.    Chiloscyphus fulvus - Chiloscyphus leucophyllus
+hockenii                                                 Chiloscyphus furcistipulus - Heteroscyphus
+Bazzania mittenii - Bazzania hochstetteri                furcistipulus
+Blepharidophyllum xiphophyllum - Clandarium              Chiloscyphus hastatus - Heteroscyphus hastatus
+xiphophyllum                                             Chiloscyphus humilis - Clasmatocolea humilis
+Bonneria furcifolia - Paracromastigum furcifolium        Chiloscyphus inflexispinus - Clasmatocolea
+Calyptrocolea perssonii - Hepatostolonophora rotata      inflexispina
+var. persson11                                           Chiloscyphus innovatus - Leptoscyphus innovatus
+Cephaloziella arctica - Cephaloziella varians            Chiloscyphus lingulatus - Heteroscyphus lingulatus
+Cephaloziella aterrima var. crassigyna - Cephaloziella   Chiloscyphus lyallii - Heteroscyphus lyallii
+crass1gyna                                               Chiloscyphus montanus - Balantiopsis montanus
+Cephaloziella byssacea subsp. grandiretis -              Chiloscyphus multispinus - Heteroscyphus
+Cephaloziella grandiretis                                multispinus
+Cephaloziella nigra -Allisoniella nigra subsp.           Chiloscyphus normalis - Heteroscyphus normalis
+novaezelandiae                                           Chiloscyphus notophyllus - Clasmatocolea
+Cheilolejeunea aucklandica - Cheilolejeunea              notophylla
+albovirens                                               Chiloscyphus okaritanus - Chiloscyphus austrigenus
+Cheilolejeunea curnowii - Cheilolejeunea hamlinii        subsp. okaritanus
+Cheilolejeunea tereticalyx - Cheilolejeunea comitans     Chiloscyphus physanthus - Heteroscyphus
+                                                                         NZ Liverworts and Hornworts        141
+
+
+
+
+physanthus                                           Fossombronia perpusilla - Fossombronia pusilla
+Chiloscyphus planiusculus - Heteroscyphyus           Frullania banksiana - Frullania pycnantha
+planiusculus                                         Frullania congesta - Frullania rostrata
+Chiloscyphus polycladus - Heteroscyphus              Frullania dissitifolia - Frullania rostrata
+polycladus                                           Frullania falciloba var. setchellii - Frullania setchellii
+Chiloscyphus renistipulus - Heteroscyphus            Frullania fugax var. media - Frullania media
+renistipulus                                         Frullania grollei - Frullania rostrata</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Qld; NSW; Vic.; Tas.; Lord Howe I.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>SOUTHERN_AUS_FIELD_GUIDE</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">in bogs, swamps and other wet places, especially in alpine areas.
+The illustration shows two forms with the leaves opened out,
+and the corresponding underleaves.
+     Diplophyllum domesticum (TVN) has the same leaf form,
+but the margins are neither lobed nor toothed, although crenulate. It
+occurs in much the same habitats as Balantiopsis. D.                       tumida
+verrucosum (TVN) is an alpine species with a relatively much
+larger lobule, about three-quarters of the size of the lobe. The
+other southern Australian members of this genus in Australia are
+all rare species from Tasmania: D. androgyhum, D. angustifolium,
+D. dioicum, and D. incrassatum .                                        D. domesticum
+
+Similar species: Schistochila spp.
+
+Chaetophyllopsis whiteleggei Scapaniaceae                                   WSTVAN
+This beautiful liverwort, known locally as Furry Worms, is quite common in sandy
+heathlands and dry sclerophyll forest, but can be overlooked because it often grows
+beneath low shrubs and grass tussocks. The prostrate shoots are a distinctive grey­
+green when dry but clear green when wet. The shoots are unbranched but rather
+tangled. The leaves are complex, being divided into three or four lobes, each lobe.
+carrying several long hair-like teeth. The leaves overlap so much that the stem is
+hidden. The large, bifid underleaves are also bordered with similar teeth. Capsules
+are uncommon. They are carried high on very long, thin and rather crooked setae.
+
+Similar species: none in the region
+      Liverworts with densely hairy or spiny leaves - Group B
+
+
+
+
+5mm                                  Balantiopsis diplophylla
+
+
+
+
+                                Chaetophyllopsis whiteleggei
+    Mosses &amp; Allied Plants of Southern Australia
+
+
+    Goebelobryum unguiculatum Acrobolbaceae                                          WSTVN
+    The range of size, colour and habitat of this terrestrial species is considerable, yet its
+    unusual and distinctive structure make it one of the most recognisable of all live1worts.
+    xlt is more common on damp soil in otherwise dry habitats. The large prostrate shoots
+    are usually a pure green in deeply shaded habitats, but as the exposure increases the
+    amount of chestnut or crimson colouration increases. The size also seems to decrease
+    with exposure. In swampy heathlands the species can be 15-20 mm across and pure
+    green, but on exposed sandy soils they might be only 2 mm wide and entirely crimson.
+
+
+
+D   The leaves are flexed upwards from a flat base, so that they stand erect in rows separated
+
+
+    by regular spaces. The margins of the leaves are fringed all round with long, narrow
+    teeth, so that the whole shoot looks rather spiky. This species is known locally as
+    Mister W hiskers, a name coined by Cliff Beauglehole before the scientific name was
+    known.
+        G. grossitextum (W ) reportedly differs microscopically, having blue oil bodies
+    and leaf cells mostly without trigones.
+
+    Similar species: Chaetophyllopsis whiteleggei, Fossombronia spp., Schistochila spp.
+
+---
+
+Similar species: Lepidozia ulothrix
+   Liverworts with densely hairy or spiny leaves - Group B
+
+
+
+
+10mm                        Goebelobryum unguiculatum
+
+
+
+
+                                   Lepicolea scolopendra
+ Mosses &amp; Allied Plants of Southern Australia
+
+
+Lepidozia ulothrix Lepidoziaceae                                                            TVN
+This is the largest and by- far the commone st Lepidozia in the
+region. It forms dense mats on the tops of rotting logs and tree
+trunks (especially around the base_of trees) in damp to wet forest
+and rainforest.
+The shoots are pale ye llow-brown and regularly pinnate , with
+theleaves overlapping densely on both stems and branches. The
+leaves themselves are asymmetric and basically 4-fid, with
+characteristic extra teeth around the margins. The underleaves
+are 4-fid, but those on the main stems have the lobes commonly          stem leaf (top)
+                                                                         and underleaf
+divided and have extra teeth of varying size.
+    This is one of the few qryophytes that can survive the toxic conditions on eucalypt
+trunks, a�d is often found stained a. dirty red-brown from the gum resin.
+
+Similar species.: Balantiopsis diplophylla, Lepicolea scolopendra
+
+
+
+Schistochila pseudociliata Schistochilaceae                                                   r
+In this and other Schistochila species the leaves are folded
+laterally, forming two lobes and a keel. It is an epiphyte in wet
+forest and rainforest. The shoots of this species are very pale
+green to yellowish white, and not much branched, forming dense
+colonies. The leaves are slightly succubous and spread at a wide
+angle from the stem, like aeroplane wings. The dorsal lobe is
+broadly ovate, with long cilia all around the margin. The ventral          S. pseudociliata
+lobe in a little larger and similarly toothed, the teeth becoming
+longer near the leaf base. The underleaves are 2-fid or often
+unlobed. Sporophytes seem to be uncommon, sunk in a
+perigynium formed by the apex of the stem.
+    Scliistochila tasmanica (T) is very similar, but the underleaves
+are always 2�fid or 4-fid. Other differences are microscopic.
+    Blepharidophyllum vertebrale (T) also has equally bilobed,
+transverse leaves (to about 2 mm long), clasping the stem but               B. vertebrale
+spreading at a wide angle. The margins are ciliate all around.
+    B. xiphophyllum (T) is much smaller, with the leaves (to about 1.2
+mm) much less ciliate, but with each lobe carrying two long teeth at the
+apex.
+
+Similar species: other Schistochilaceae spp.
+                                                                           B. xiphophyf/um
+        Liverworts with densely hairy or spiny leaves - Group B</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>VICTORIAN_BRYOPHYTES_KEY</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Cells mamillose, never papillose .................. Diplasiolejeunea plicatiloba
+                                                                                                                                                                               16 Leaves very narrow at base, attached to stem by 1 or 2 cells .................................... 17
+                                                                                                                                                                                  Leaves widely attached to stem, by several cells ...................................................... 18
+                                                                                                                                                                               17 Leaf apex rounded; lobule with 3–4 teeth ............................ Siphonolejeunea nudipes
+                                                                                                                                                                                  Leaf apex pointed; lobule with 1 tooth ................................ Nephelolejeunea hamata
+                                                                                                                                                                               18 Oil bodies 1 or 2 per cell, each resembling a cluster of grapes;
+                                                                                                                                                                                    apical tooth of lobule ± at right angles to stem; hyaline papilla
+                                                                                                                                                                                    on inner side of apical tooth of lobule ................................. Cheilolejeunea mimosa
+                                                                                                                                                                                  Oil bodies several per cell, not grape-cluster type; apical tooth of lobule
+                                                                                                                                                                                    ± parallel to stem; hyaline papilla on outer side of apical tooth of lobule ............. 19
+                                                                                                                                                                               19 Leaf base with 1 or 2 enlarged cells, each almost filled by an
+                                                                                                                                                                                    oil body ................................................................................ Harpalejeunea latitans
+                                                                                                                                                                                  Leaf base without such cells ........................................................................... Lejeunea
+
+
+                                                                                                                                                                               Vol. 123 (4) 2006                                                                                                         237
+                                                                                                                                                                               Bryophyte special issue
+
+                                                                                                                                                                               Group B
+                                                                                                                                                                               Leafy liverworts with densely hairy or spiny leaves
+                                                                                                                                                                               1   Lobules present, either dorsally or ventrally ............................................................... 2
+                                                                                                                                                                                   Lobules absent ............................................................................................................. 4
+
+
+
+
+Downloaded from search.informit.org/doi/10.3316/informit.667141570732747. University of Tasmania, on 07/08/2026 11:06 PM AEST; UTC+10:00. © The Victorian Naturalist , 2006.
+                                                                                                                                                                               2   Small, helmet-shaped ventral lobules present ...................... Gackstroemia weindorfei
+                                                                                                                                                                                   Ventral lobules not present .......................................................................................... 3
+                                                                                                                                                                               3   Lobule formed by keeling of leaf ....................................... Schistochila lehmanniana
+                                                                                                                                                                                   Lobule formed by folding of leaf margin .............................. Balantiopsis diplophylla
+                                                                                                                                                                               4   Leaves with long, single-celled spines bent ± parallel to
+                                                                                                                                                                                     stem, pointing to the stem apex ............................................ Psiloclada clandestina
+                                                                                                                                                                                   Leaves not as above (if spines pointing to the apex, then not single-celled) .............. 5
+                                                                                                                                                                               5   Leaves almost wholly divided into lobes and hairs, so that
+                                                                                                                                                                                     leaf lamina is not evident; stems with paraphyllia ................................................... 6
+                                                                                                                                                                                   Leaf lamina evident, although bordered by hairs or spines; paraphyllia absent .......... 7
+                                                                                                                                                                               6   Cilia of leaves distinctly papillose; in dry sclerophyll forest .......... Trichocolea rigida
+                                                                                                                                                                                   Cilia of leaves not papillose; in wet forest or rainforest ......... Trichocolea mollissima
+                                                                                                                                                                               7   Hairs 1-celled, bristle-like; plant of dry heathland or
+                                                                                                                                                                                     woodland .................................................................... Chaetophyllopsis whiteleggei
+                                                                                                                                                                                   Hairs many-celled; plants of dry to wet sclerophyll forest or rainforest ..................... 8
+                                                                                                                                                                               8   Shoots bipinnate, at least in widest part
+                                                                                                                                                                                     of plant; leaf hairs 1 cell wide at base ........ Telaranea pulcherrima var. mooreana
+                                                                                                                                                                                   Shoots simple or 1-pinnate; leaf hairs several to many cells wide at base .................. 9
+                                                                                                                                                                               9   Shoots long, fawn to yellow, epiphytic in wet forest or
+                                                                                                                                                                                     other cool, moist habitats; leaves bifid, each lobe also
+                                                                                                                                                                                     bifid, the tips extended into hyaline hairs ............................. Lepicolea scolopendra
+                                                                                                                                                                                   Shoots and leaves not as above .................................................................................. 10
+                                                                                                                                                                               10 Shoots distinctly golden brown, terrestrial on clayey soil ........... Temnoma townrowii
+                                                                                                                                                                                  Shoots yellow-brown to yellow-green, epiphytic
+                                                                                                                                                                                    on trees and rotting wood*........................................................... Lepidozia ulothrix
+
+
+                                                                                                                                                                               * Most specimens keying to here will be Lepidozia ultothrix, but another species
+                                                                                                                                                                                  resesmbling L. hirta of New Zealand is present in Victoria. L. ulothrix often has the
+                                                                                                                                                                                  lobes further divided; the other species does not.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.216667, 146.75], [-41.275837, 146.046119], [-41.6833, 145.95], [-43.092878, 146.688077], [-41.717854, 145.318327], [-41.41666, 145.68333], [-41.901203, 145.554636], [-43.216667, 146.75], [-43.18332, 146.78333], [-42.8186, 146.2828], [-42.259749, 145.425237], [-41.279544, 146.762518], [-42.683333, 146.582778], [-42.25, 145.6], [-41.88, 145.47], [-41.310389, 145.447639], [-42.6833, 146.7], [-42.987784, 147.860009], [-41.82, 145.43], [-42.8, 146.6], [-42.932061, 147.265723], [-42.081279, 145.550555], [-41.7167, 146.65], [-41.9583, 146.07], [-41.16666, 146.03333], [-42.8833, 147.25], [-41.85, 145.42], [-41.88248, 145.31474], [-42.683333, 146.582861], [-42.1, 146.17], [-43.091511, 146.685393], [-41.257471, 144.733392], [-42.17, 145.5], [-41.33332, 147.83332], [-41.259759, 144.852675], [-41.349773, 144.849719], [-41.897916, 145.31361], [-43.23, 146.85], [-41.42, 146.025], [-41.8333, 145.5], [-43.2, 146.87], [-43.350944, 146.754599], [-42.02, 146.12], [-45.97, 145.0], [-42.675, 146.625], [-41.819667, 146.640125], [-43.0, 147.0], [-41.712012, 144.957882], [-41.45, 145.94999], [-42.172782, 145.669539], [-41.26666, 146.76666], [-41.467534, 145.46311], [-40.285007, 147.942445], [-42.97, 146.38], [-41.85, 145.42], [-42.02, 146.12], [-42.720274, 146.634965], [-42.721667, 146.271944], [-41.537787, 145.323001], [-42.990749, 147.246711], [-40.370556, 148.109722], [-41.54846, 146.401828], [-42.7, 146.67], [-41.68, 145.95], [-42.6833, 146.7], [-40.365, 148.0956], [-43.17, 141.82], [-42.25, 145.6], [-41.26666, 145.6], [-41.079726, 144.858548], [-42.8, 146.6], [-43.168742, 146.263235], [-41.263963, 145.091281], [-41.82, 145.43], [-41.8, 145.22], [-43.515222, 146.3585], [-43.066667, 147.941667], [-42.0214, 146.5933], [-41.3, 145.75], [-43.090883, 146.683173], [-42.196049, 146.141979], [-41.8168787, 145.6344635], [-41.833333, 145.5], [-42.535514, 145.905407], [-43.1, 146.73], [-43.191389, 146.796944], [-42.77, 146.53], [-43.461671, 146.856292], [-41.819981, 146.760532], [-42.8, 146.35], [-41.449431, 145.444994], [-41.67, 146.35], [-43.440982, 147.248532], [-42.9, 147.23], [-42.02, 146.12], [-41.71955, 145.438498], [-43.168724, 147.73952], [-42.32, 145.6], [-42.72, 146.48], [-42.85, 147.1333], [-41.88, 145.47], [-43.158889, 146.806944], [-41.548446, 147.600858], [-43.5819594, 146.8843913], [-41.78, 145.6], [-42.17, 145.65], [-42.7, 146.67], [-41.15, 147.78], [-41.700296, 146.819867], [-42.25, 145.6], [-43.17, 141.82], [-41.416667, 146.025], [-41.735215, 146.716354], [-42.5667, 145.7], [-41.63, 147.82], [-42.8917, 147.2083], [-43.621272, 146.877445], [-42.086667, 146.173333], [-42.8297, 146.6708], [-43.217477, 146.770767], [-43.0952918, 146.6857752], [-42.165962, 146.150811], [-43.18, 146.88], [-41.816204, 146.038142], [-43.1, 146.73], [-42.2, 145.4], [-42.883333, 147.25], [-42.15, 145.35], [-41.758375, 146.626033], [-41.638514, 147.601694], [-43.45, 146.8667], [-42.82, 146.35], [-42.900698, 147.246351], [-40.370556, 148.109722], [-42.1, 146.17], [-41.725079, 145.919274], [-41.841667, 145.625], [-43.1, 146.62], [-41.68, 145.95], [-43.09579, 146.699478], [-41.547774, 146.281933], [-42.264137, 148.213849], [-41.546963, 146.162043], [-41.729599, 146.640628], [-42.03, 146.13], [-43.260899, 146.754961], [-41.26666, 144.9], [-40.283989, 148.060068], [-42.167996, 145.306454], [-42.83, 146.38], [-42.2, 145.4333], [-43.55, 146.883333], [-41.5722347, 145.682711], [-42.92, 147.25], [-43.23, 146.8], [-41.66666, 144.91666], [-41.8, 145.22], [-41.42, 146.025], [-41.896082, 145.193113], [-41.081876, 144.977519], [-42.82, 146.35], [-42.066667, 146.066667], [-43.093779, 146.678746], [-42.2, 145.4333], [-42.7, 146.75], [-42.8333, 146.3833], [-42.192534, 146.116714], [-41.85, 145.42], [-43.260106, 146.508549], [-41.26666, 145.6], [-42.73, 146.42], [-43.5095426, 146.6917681], [-41.74421, 146.711504], [-42.316667, 145.6], [-41.717966, 146.665939], [-43.33, 146.88], [-42.02, 146.12], [-42.03, 146.13], [-42.32, 145.6], [-43.17, 141.82], [-41.899622, 145.434118], [-43.35, 146.87], [-41.996315, 146.035435], [-41.819227, 146.519721], [-41.267, 145.332944], [-42.68332, 146.71665], [-41.85, 145.42], [-41.78, 145.6], [-41.908029, 146.27791], [-42.192671, 146.160143], [-41.85, 145.48], [-33.516667, 150.583333], [-33.729167, 150.375], [-37.34845, 148.85125], [-37.4, 148.7833], [-37.79944, 145.72833], [-37.5833, 148.7667], [-44.7, 170.967], [-36.933056, 174.572778], [-39.401667, 175.418611], [-41.1220287, 174.8253009], [-41.4649029, 173.2495809], [-34.15, 172.133333], [-41.033333, 172.5], [-43.817439, 172.822894], [-41.3, 174.9], [-43.715636, 172.843496], [-36.965, 174.538], [-15.8181, 145.28273], [-37.922778, 146.322778], [-43.715636, 172.843496], [-38.548897, 143.9582], [-38.116667, 176.733333], [-28.599921, 153.382778], [-33.5, 150.4167], [-33.7102219, 150.4236552], [-46.970324, 167.845675], [-41.8615718, 173.0929073], [-35.883333, 174.716667], [-37.531487, 175.7329546], [-46.8937634, 168.1045899], [-36.133333, 175.483333], [-42.095, 171.374], [-39.330556, 175.500833], [-40.7654825, 172.6571769], [-36.2, 175.066667], [-44.06875, -176.63046], [-38.48181, 146.51797], [-33.65, 150.3167], [-33.8320783, 151.1843949], [-38.649278, 143.609056], [-37.656283, 145.736967], [-33.4139, 150.2833], [-37.81515, 145.80131], [-41.2969, 175.04], [-39.0298, 177.338], [-31.208333, 152.479167], [-36.949, 174.621], [-33.729167, 150.4375], [-36.95425, 175.817111], [-41.316667, 174.816667], [-37.083333, 175.15], [-37.126489, 175.223554], [-37.438222, 175.749059], [-43.698335, 170.150093], [-37.83181, 146.2513], [-33.496888, 150.415915], [-36.234214, 175.083713], [-33.538889, 150.495833], [-37.0, 145.0], [-29.4694, 152.3503], [-37.24602, 142.54829], [-40.949444, 175.108889], [-37.519305, 145.525651], [-38.649357, 143.611822], [-43.694485, 172.741503], [-38.074722, 174.976944], [-44.0316462, -176.3669715], [-18.998056, 146.179167], [-44.690437, 168.126808], [-33.7, 150.35], [-40.966667, 175.116667], [-36.866667, 174.766667], [-36.930422, 174.740458], [-41.25, 175.0215], [-36.836811, 175.551302], [-41.4649029, 173.2495809], [-37.2389, 148.5972], [-33.8296613, 151.1814229], [-37.893333, 146.346167], [-17.388667, 145.808194], [-17.266667, 145.8625], [-35.6159, 173.5], [-40.9982265, 175.1162748], [-45.797635, 170.480435], [-33.413889, 150.283333], [-39.327222, 175.5], [-37.9092, 145.825], [-39.155468, 174.699675], [-37.49848, 145.86797], [-34.166667, 172.133333], [-36.25, 174.75], [-18.9833, 146.1667], [-40.633, 172.546], [-35.663731, 173.626839], [-37.120357, 146.648536], [-33.633333, 150.283333], [-37.8925, 146.355833], [-45.681714, 167.450046], [-37.0276476, 175.5379241], [-41.27, 174.76], [-46.331617, 167.83267], [-37.064167, 174.665], [-47.1650404, 167.6994831], [-33.729167, 150.4375], [-41.28, 175.0], [-41.757841, 172.649121], [-34.15133, 151.0150394], [-37.902944, 145.766083], [-34.241667, 150.913889], [-37.69849, 145.66797], [-41.2583, 175.0083], [-33.718, 150.4323], [-37.70056, 145.66167], [-36.5625, 174.702778], [-33.498333, 150.414722], [37.841694, 146.254139], [-41.2982329, 174.899601], [-37.017605, 175.717705], [-37.714778, 145.636222], [-43.749035, 173.017219], [-37.2333, 148.8167], [-37.05, 175.183333], [-33.744444, 150.6], [-45.9833, 167.9167], [-37.884997, 145.35347], [-33.413889, 150.283333], [-33.413889, 150.283333], [-33.816667, 151.233333], [-45.831727, 170.466752], [-41.343234, 174.9479314], [-33.5667, 150.3333], [-37.412055, 175.7929257], [-34.152778, 151.013889], [-37.7, 145.66139], [-37.35956, 148.8657], [-37.85465, 146.253206], [-43.743184, 172.872711], [-36.607222, 174.833611], [-37.713491, 145.637956], [-37.7, 145.7167], [-37.5667, 145.8833], [-36.75, 174.496667], [-37.991667, 175.122778], [-36.8, 174.85], [-44.0316462, -176.3669715], [-43.705731, 172.8398], [-38.066667, 175.966667], [-41.730895, 171.774846], [-37.4, 148.7833], [-37.55, 145.8833], [-35.083333, 173.25], [-37.9161, 145.86611], [-34.415, 173.026667], [-37.531487, 175.7329546], [-43.695027, 172.742357], [-33.8296613, 151.1814229], [-37.1, 175.15], [-41.558242, 172.035139], [-41.2649017, 174.7329292], [-38.977935, 174.833846], [-43.694989, 172.741451], [-34.016667, 151.066667], [-39.333333, 174.1], [-33.570833, 150.333333], [-35.6159, 173.5], [-28.22475, 153.27268], [-37.55, 145.88333], [-38.48181, 146.51797], [-37.55667, 145.8875], [-43.60451, 172.649323], [-35.083333, 173.25], [-37.08185, 142.38468], [-40.966667, 175.116667], [-39.266667, 174.083333], [-37.55, 175.8], [-41.3, 173.566667], [-42.2315762, 171.3162246], [37.860778, 146.320139], [-45.81506, 170.566753], [37.825556, 146.254722], [-28.263292, 153.170805], [-33.433333, 150.966667], [-38.516762, 143.916743], [-38.46515, 146.53464], [-35.6167, 150.3167], [-37.5886, 145.6403], [-38.290949, 177.384397], [-36.7, 174.566667], [-35.526944, 173.451111], [-37.7, 145.66139], [-41.347921, 174.937513], [-33.454167, 150.666667], [-33.413889, 150.283333], [-35.8594, 174.4078], [-37.8731637, 175.9132254], [-40.708686, 172.565002], [-42.3315785, 171.2828837], [-29.266667, -177.9], [-37.88389, 146.27444], [-45.425076, 167.503078], [-35.2667, 150.3667], [-17.273465, 145.859437], [-42.918093, 171.558222], [-38.6333, 143.65], [-37.111944, 175.125], [-43.722961, 172.969868], [37.833667, 146.280917], [-41.1681, 175.055], [-41.2149009, 174.8829312], [-40.512811, 172.646181], [-33.609444, 151.146667], [-42.239566, 172.346682], [-37.55, 145.88333], [-36.023056, 173.976667], [-33.6268885, 150.3139341], [-40.7768859, 172.7037474], [-33.498498, 150.414897], [-33.7125, 150.425], [-40.9299186, 172.4095733], [-34.729167, 150.4375], [-36.874167, 174.703056], [-35.6167, 150.3167], [-38.83648, 174.8681101], [-39.7998999, 174.9285072], [-36.9, 174.55], [-44.690437, 168.126808], [-36.4667, 148.2833], [-41.8165701, 172.8495746], [-33.8320783, 151.1843949], [-36.266667, 174.8], [-37.5275, 145.5192], [-37.55, 145.8833], [-38.48181, 146.51797], [-46.853856, 168.075776], [-37.3611, 148.8644], [-37.916639, 145.761639], [-37.8925, 146.355833], [-37.7, 145.66139], [-42.382, 171.219], [-39.02833, 146.39139], [-33.496723, 151.416046], [-37.16102, 142.44468], [-28.60185, 153.382137], [-35.8594, 174.4078], [-38.43181, 146.56797], [-33.516667, 150.583333], [-37.120357, 146.648536], [-38.788884, 177.1440364], [-37.1625, 142.4433], [-39.193874, 173.986674], [-34.640223, 150.559217], [-38.87694, 146.36389], [-41.17872, 174.98744], [-36.45, 174.6333], [-33.6457778, 150.2769898], [-25.0, 135.0], [-38.48181, 146.51797], [-40.848489, 172.76958], [-37.55, 175.8], [-37.71028, 145.70972], [-35.8619, 174.4192], [-40.7510453, 172.6887473], [-42.988333, 171.595], [-43.659318, 172.619256], [-37.4833, 145.8333], [-37.950118, 176.169803], [-45.8, 170.483333], [-41.1733, 174.8119], [-43.811129, 173.023454], [-34.694694, 174.341833], [-38.473, 174.682], [-39.03056, 146.46417], [-37.7333, 145.6], [-37.11, 175.124167], [-45.885858, 166.632007], [-33.729167, 150.4375], [-50.6651487, 166.1327676], [-42.232321, 171.474608], [-34.65, 150.4833], [-37.014444, 174.538889], [-34.65, 150.4833], [-35.7011, 174.2644], [-36.7, 175.533333], [-35.633333, 173.65], [-37.65, 148.8167], [-44.166667, 169.266667], [-35.7123, 174.3368], [-21.091818, 148.506674], [-32.1, 151.595833], [-35.6159, 173.5], [-36.833333, 175.55], [-28.239604, 153.2689], [-41.75, 171.8], [-40.7148842, 172.5829062], [-43.698335, 170.150093], [-33.291667, 151.291667], [-36.9, 174.533333], [-36.217547, 175.05038], [-37.4, 148.7833], [-37.2448521, 175.8213266], [-36.883333, 174.566667], [-33.408333, 151.391667], [-36.823611, 174.708611], [-40.512811, 172.646181], [-39.033333, 177.35], [-38.408333, 174.83], [-41.275, 174.978], [-36.965556, 147.145833], [-37.21519, 142.51801], [-36.965556, 147.145833], [-37.112242, 175.124056], [-37.8, 146.3], [-34.6333, 150.6833], [-38.48181, 146.51797], [-36.836694, 175.550972], [-37.0668686, 175.6685155], [-35.95, 175.15], [-39.316667, 174.1], [-46.516667, 169.566667], [-37.568056, 174.826667], [-37.69849, 145.71797], [-37.3028, 148.7958], [-33.6667, 150.3333], [-37.91889, 145.82583], [-34.428611, 172.961389], [-36.796972, 174.721556], [-36.883333, 174.55], [-33.7, 150.533333], [-44.066667, -176.6], [-33.5667, 150.3333], [-37.333333, 175.783333], [-43.764681, 169.248782], [-33.7102219, 150.4236552], [-37.710278, 145.709722], [-41.127568, 175.050651], [-34.65, 150.48], [-37.2475, 142.5469], [-41.798294, 172.616801], [-44.690437, 168.126808], [-36.7, 174.566667], [-41.201738, 172.178218], [-39.261616, 173.967075], [-37.416667, 175.733333], [-41.178889, 172.658333], [-33.65, 150.316667], [-37.727111, 145.704944], [-38.453781, 146.541992], [-15.0, 143.0]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

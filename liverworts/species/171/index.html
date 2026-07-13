@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acrolejeunea aulacophora — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Acrolejeunea aulacophora</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Acrolejeunea aulacophora</em></h1>
+  <p>
+    <span class="badge">Lejeuneaceae</span>
+    <span class="badge secondary">Acrolejeunea</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Acrolejeunea</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Acrolejeunea arcuata (Nees) Grolle &amp; Gradst.</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Acrolejeunea pycnoclada</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Acrolejeunea securifolia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Aulacophora</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Aulacoptera</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Microlejeunea</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Microlejeunea gracillima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Microlejeunea spinosa</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">85</p>
+    <footer>0 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Qld; NSW; Tas.; Norfolk I.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-26.59007, 153.05939], [-17.956794, 146.092767], [-18.3, 146.3], [-26.573403, 153.076057], [-20.8333, 148.5333], [-26.873415, 151.509414], [-26.573403, 153.05939], [-26.573403, 153.05939], [-20.840105, 148.542752], [-26.573403, 153.05939], [-26.573403, 153.076057], [-26.373409, 152.842726], [-26.573403, 153.05939], [-29.0508, 167.9181], [-26.573403, 153.076057], [-26.573403, 153.076057], [-26.573403, 153.05939], [-26.356736, 153.04272], [-20.4667, 148.7167], [-21.295028, 148.7655], [-26.573403, 153.05939], [-26.573403, 153.05939], [-26.573403, 153.05939], [-26.54007, 153.092724], [-26.59007, 153.05939], [-26.59007, 153.05939], [-22.773422, 150.759405], [-26.59007, 153.05939], [-17.95, 146.0833], [-28.70673, 153.409411], [-26.573403, 153.05939], [-26.573403, 153.05939], [-26.573403, 153.076057], [-26.573403, 153.076057], [-26.59007, 153.05939], [-17.8333, 146.0833], [-26.573403, 153.05939], [-26.473403, 153.09272], [-26.573403, 153.076057], [-26.556736, 153.076057], [-27.173406, 152.976069], [-27.173406, 152.976069], [-20.490106, 148.726082], [-26.473403, 153.09272], [-26.556736, 153.076057], [-26.59007, 153.05939], [-26.573403, 153.076057], [-26.573403, 153.05939], [-26.573403, 153.076057], [-20.790101, 149.292745], [-20.790101, 149.292745], [-26.573403, 153.05939], [-26.59007, 153.05939], [-28.784778, 153.576722], [-26.59007, 153.05939], [-27.456736, 153.042728], [-16.416667, 145.4], [-27.173403, 153.042728], [-26.573403, 153.05939], [-26.640074, 152.642731], [-26.506741, 152.942731], [-27.173406, 152.976069], [-21.295028, 148.7655], [-16.55, 145.4833], [-26.640074, 152.642731], [-27.340073, 152.876069], [-26.573403, 153.076057], [-26.356736, 153.04272], [-27.173406, 152.976069], [-29.0506, 167.92], [-26.356736, 153.04272], [-27.440069, 153.009394], [-28.784778, 153.576722], [-20.790101, 149.292745], [-16.759722, 145.973889], [-21.295028, 148.7655], [-20.790101, 149.292745], [-20.790101, 149.292745], [-26.573403, 153.05939], [-17.5575, 146.09], [-26.506741, 152.942731], [-20.295028, 148.765472], [-26.573403, 153.076057], [-26.540074, 152.942731], [-26.59007, 153.076057]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

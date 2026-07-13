@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isotachis montana — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Isotachis montana</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Isotachis montana</em></h1>
+  <p>
+    <span class="badge">Balantiopsidaceae</span>
+    <span class="badge secondary">Isotachis</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Endiandra montana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Isotachis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Isotachis grandis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Isotachis intortifolia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Isotachis nigella</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Isotachis riparia</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Lagenophora montana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Lomandra montana</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Montanoa</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">158</p>
+    <footer>8 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Vic.; Tas.; Macquarie I.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.0, 147.0], [-42.719819, 146.512835], [-42.854167, 146.236944], [-42.7333, 146.55], [-42.8186, 146.2828], [-42.805633, 145.900657], [-42.081279, 145.550555], [-41.54846, 146.401828], [-42.4058, 171.343], [-36.883333, 174.55], [-38.697479, 175.6809199], [-43.811329, 173.017269], [-41.403083, 172.238263], [-36.308611, 175.512222], [-40.6433127, 172.6377772], [-40.639444, 172.635], [-41.626845, 171.915457], [-40.185278, 175.872222], [-41.333333, 174.733333], [-39.171944, 175.801944], [-37.1, 175.216667], [-45.419386, 167.303968], [-45.486122, 168.90625], [-35.186389, 173.285], [-44.034526, -176.349695], [-45.75, 167.5], [-37.7610617, 175.9597264], [-39.2888904, 175.4337149], [-35.6667, 173.6167], [-37.6032586, 175.8568257], [-36.2, 175.083333], [-35.666667, 173.616667], [-40.8529376, 172.7248573], [-37.0668486, 175.6684555], [-39.316667, 175.5], [-41.1725, 172.670278], [-38.322222, 176.388889], [-36.953021, 174.468809], [-41.7449058, 171.7995625], [-35.2, 173.483333], [-42.4073505, 171.342354], [-40.639444, 172.635], [-39.033333, 177.416667], [-45.4866549, 168.9061784], [-46.4680544, 169.3512082], [-41.3, 174.9], [-41.3, 174.9], [-38.066667, 174.966667], [-36.9, 174.533333], [-42.916667, 171.583333], [-38.699, 175.683], [-39.327222, 175.5], [-38.066667, 174.966667], [-39.076944, 175.549444], [-40.895206, 172.561105], [-38.266667, 175.016667], [-36.95425, 175.817111], [-43.8948879, 171.2355455], [-36.2, 175.35], [-40.9479254, 175.1068049], [-39.257534, 175.744728], [-43.808349, 172.85569], [-44.1, 168.616667], [-37.333333, 175.783333], [-44.1333, 168.5833], [-42.916667, 171.566667], [-36.816667, 174.683333], [-44.034526, -176.349695], [-42.63, 171.675], [-36.883333, 174.566667], [-41.745073, 171.80135], [-42.3475, 172.150833], [-40.639167, 172.636667], [-39.266667, 175.534444], [-39.18416, 175.467062], [-38.7434831, 177.1602367], [-45.3833, 168.15], [-40.093889, 175.527778], [-41.055974, 172.518262], [-35.672972, 173.610944], [-39.224721, 175.537269], [-39.329722, 175.488056], [-41.654722, 171.893611], [-44.283333, -176.2], [-35.280668, 174.091035], [-42.862829, 171.531369], [-46.168532, 167.832164], [-45.758618, 166.95546], [-44.090056, 168.642528], [-41.75, 171.8], [-37.111944, 175.125], [-39.3, 174.083333], [-47.299036, 168.072795], [-41.733333, 171.783333], [-39.316667, 174.1], [-39.216667, 175.516667], [-37.1108, 175.13], [-46.903, 168.117], [-40.7315448, 172.6995775], [-39.6565297, 176.2062926], [-42.916667, 171.583333], [-46.451303, 169.658252], [-41.654722, 171.894722], [-36.8505445, 175.558525], [-43.293878, 170.920486], [-41.738313, 171.861773], [-35.2, 173.733333], [-42.232321, 171.474608], [-37.106538, 175.737692], [-41.67, 171.881389], [-41.652172, 171.747131], [-39.327222, 175.5], [-41.2482321, 175.047603], [-39.233333, 175.516667], [-35.18271, 173.471358], [-40.588889, 175.988611], [-40.947222, 175.130278], [-43.2999417, 170.9162146], [-38.7943808, 175.5857185], [-39.226989, 175.3782145], [-41.704471, 171.889049], [-39.076944, 175.549444], [-41.744512, 171.673832], [-35.18271, 173.471358], [-36.916667, 174.533333], [-42.167778, 171.885833], [-41.1029732, 172.6922089], [-40.966667, 175.133333], [-43.2999417, 170.9162146], [-45.8146, 170.554], [-43.69387, 172.748042], [-43.8271, 172.75], [-37.0668486, 175.6684555], [-41.333333, 174.733333], [-37.991667, 175.122778], [-46.3683476, 167.9911918], [-44.116667, 168.583333], [-38.9776827, 174.8338092], [-40.895206, 172.561105], [-41.652831, 171.897884], [-36.833333, 175.55], [-41.654722, 171.894722], [-45.4866549, 168.9061784], [-40.4590167, 176.1271187], [-40.7510453, 172.6887473], [-41.654722, 171.893611], [-45.75, 167.4], [-44.1, 168.616667], [-35.623994, 173.55867], [-39.2, 175.533333], [-42.1, 171.383333], [-36.911509, 147.295723], [-41.5, 172.05], [-37.416255, 175.7629253], [-36.883333, 174.55], [-41.75, 171.8], [-41.628954, 171.918469], [-42.862829, 171.531369]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

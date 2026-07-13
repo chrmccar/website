@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ceramanus grossiseta — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Ceramanus grossiseta</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Ceramanus grossiseta</em></h1>
+  <p>
+    <span class="badge">Lepidoziaceae</span>
+    <span class="badge secondary">Ceramanus</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (9)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Ceramanus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Ceramanus centipes</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Ceramanus clatritexta</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Ceramanus elegans</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Ceramanus perfragilis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Ceramanus tuberifera</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Lepidozia grossiseta</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Parectecephala grossiseta</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Telaranea grossiseta</em> <small class="muted">ALA</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">52</p>
+    <footer>52 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">0</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>GBIF</strong> (1 entry)</summary>
+    
+    
+    <p><strong>ceramanus grossiseta (steph.) e. d. cooper, phytotaxa:</strong> &lt;div&gt;&lt;p&gt;Ceramanus grossiseta (Steph.) E.D.Cooper,&lt;/p&gt;&lt;p&gt;Phytotaxa 97 (2): 54, 2013 (see Cooper et al. 2013). BASIONYM: Lepidozia grossiseta Steph., Sp. Hepat. (Stephani) 3: 584, 1909 (see Stephani 1909).&lt;/p&gt;&lt;/div&gt;</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-42.259749, 145.425237], [-42.193217, 145.939483], [-42.333333, 145.6], [-41.85, 145.42], [-40.95, 144.833333], [-42.333333, 145.6], [-41.899622, 145.434118], [-42.566667, 145.7], [-42.05, 145.616667], [-43.0975139, 146.6821643], [-41.714085, 145.078018], [-42.33, 145.6], [-42.02, 146.12], [-41.537787, 145.323001], [-41.07, 145.12], [-41.85, 145.42], [-41.897916, 145.31361], [-42.375748, 145.752569], [-42.3333, 145.6], [-42.987784, 147.860009], [-42.0250866, 145.5732438], [-42.17, 145.5], [-42.333333, 145.6], [-43.0, 147.0], [-42.5667, 145.7], [-43.097067, 146.682231], [-41.259759, 144.852675], [-42.803023, 145.656114], [-41.77, 145.63], [-43.619665, 146.381691], [-41.839228, 145.475192], [-42.566667, 145.7], [-42.8819609, 146.1843904], [-42.086368, 146.034072], [-42.354207, 145.787139], [-42.33, 145.6], [-41.7319599, 145.4343832], [-41.066667, 145.116667], [-42.376224, 145.754989], [-42.05, 145.616667], [-42.2, 145.97], [-41.811163, 145.556662], [-41.081876, 144.977519], [-41.6539804, 145.432548], [-42.622962, 145.659994], [-42.333333, 145.6], [-42.265382, 145.910093], [-41.717854, 145.318327], [-43.515222, 146.3585], [-42.081279, 145.550555], [-42.566667, 145.7], [-41.083904, 145.096502]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

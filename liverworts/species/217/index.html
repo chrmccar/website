@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiloscyphus cuspidatus — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Chiloscyphus cuspidatus</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Chiloscyphus cuspidatus</em></h1>
+  <p>
+    <span class="badge">Lophocoleaceae</span>
+    <span class="badge secondary">Chiloscyphus</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (12)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Andrewsianthus cuspidatus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Chiloscyphus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Cyperus castaneus - Cyperus cuspidatus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Cyperus cuspidatus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Diorygopyx cuspidatus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Distichophyllum cuspidatum</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Euptychium cuspidatum</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Odontonema cuspidatum</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Philoscaphus</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Lophocolea bidentata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Lophocolea cuspidata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Lophocolea fusca</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">91</p>
+    <footer>35 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">9</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>Frullania-type</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>4-lobed</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_count_per_cell</td>
+          <td>2.0–4.0</td>
+          <td>per cell</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>oil_body_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">CYANOLOPHOCOLEA_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>thallus_width_mm</td>
+          <td>1.8</td>
+          <td>mm</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>concave-sided</td>
+          <td>categorical</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>1</td>
+          <td>boolean</td>
+          <td class="muted small">CHILOSCYPHUS_MONOGRAPH_2010</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>BANKS_PENINSULA_2013</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> Recorded from Banks Peninsula: Port Hills (DG10751 Cass Peak 520 m; DG10954 Bowenvale Valley 400 m); Herbert district (DG10941 Kaituna Valley 360 m; DG11580 The Monument 668 m); Akaroa district (CHR348608 JL Otepatotu; DG10817 Cloud Farm 620 m). [Glenny 2013, Canterbury Botanical Society Journal 44: 4–33]</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>CHILOSCYPHUS_MONOGRAPH_2010</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">1(2–3) per bract, the stalk 1-seriate but sometimes with a few                  enlarged cells, which may be easily distinguished under the
+          local oblique walls. Gynoecia infrequent, on main shoot and                     dissecting microscope (Figs. 10: 12; 13: 7; see under Notes).
+          short to rather long lateral- and ventral-intercalary branches.                 The dorsal and ventral margins of the leaf are entire or 1–2-
+          Bracts of innermost series much larger than leaves, erect and                   ciliate; the ventral margin, especially in larger phases, is
+          ensheathing perianth throughout or appressed basally but                        sharply and abruptly reflexed in the basal half (Fig. 10: 1). The
+          with the lobes reflexed, the bracts free from one another,                      underleaves are divided nearly to the base, and the long
+          convex (dorsal view), narrowly ovate to elliptic; apex bifid to                 acuminate to subcaudate, ventrally sulcate lobes also have a
+          0.5, the lobes acuminate to subcaudate, ventrally sulcate,                      border of large cells (Fig. 10: 2). The underleaves have a pair
+          entire, or with a cilium near the base; lamina margins reflexed                 of lateral processes that are variable in stature, and when
+          at least distally, the reflexed portions confluent with those of                large, the underleaves are 4-lobed (Fig. 10: 1, 9, 10).
+
+
+          32                                                                                                                    FIELDIANA: BOTANY
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+             FIG. 10. Chiloscyphus bispinosus (Hook. f. &amp; Tayl.) J. J. Engel &amp; R. M. Schust. (Robust phase). 1. Sector of main shoot, ventral view. 2.
+           Distal portion of median lobe of underleaf. 3. Portion of shoot with Frullania-type branch, dorsal view; note unlobed half-leaf (5 HL). 4.
+           Perianth mouth, ventral lobe in middle. 5–8. Leaves, each from a single shoot; note intra- and interpopulation variability. 9–11. Underleaves. 12.
+           Distal portion of leaf. (1, 3, 8, 9, from Schuster 67-584, New Zealand, North Is., Ruahine Mtns.; 2, 10–12, from Engel 18402, New Zealand,
+           South Is., Arthur’s Pass Natl. Park; 4, from Engel 18416, New Zealand, South Is., Arthur’s Pass Natl. Park; 5, from Engel 18983, New Zealand,
+           South Is., track to Alex Knob; 6, from Child 2914; New Zealand, South Is., Siberia Hut; 7, from Child 3833, South Is., Lammermoor Range.)
+
+
+
+           ENGEL: CHILOSCYPHUS IN AUSTRALASIA                                                                                                             33
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+             Larger phases of this species initially may be confused with                     underleaves (1.5)2–2.83 stem width, the median lobes
+          Chiloscyphus cuspidatus, in that both are similar in stature and                    (10)13–20 cells wide at base, the lobe margins with a few
+          have distinctly bilobed, ovate-trapezoid leaves that have                           cilia or laciniae; half-leaf of terminal branches narrowly
+          piliform lobe tips and that may have teeth on the ventral                           acute; oil-bodies 2–3(4) per cell . . . . . . . . . . robust phase
+          margin. The two species also share such features as free,
+          deeply divided underleaves with a reduced lamina, and
+          subcaudate-caudate underleaf lobes with often opposing                             Representative specimens of the small phase are Schuster
+          armature. Care is especially needed because C. bispinosus,                      67-1054a, 67-1056a, and 55487, whereas those of the large
+          which is confined to New Zealand, and C. cuspidatus are not                     phase are Engel 18402, Schuster 67-584, and Child 4651. The
+          ecologically differentiated; the two species often occur at the                 graphs in Tab. 4 illustrate not only the spectrum of variability
+          same site and may be intermixed (e.g., Engel 18201).                            of several of the main characters in the key above, but that the
+          Chiloscyphus bispinosus, however, is immediately separable                      extremes are quite distinct, with no character overlap.
+          by the presence of a border of larger cells on leaf and underleaf               However, because larger numbers of specimens of the complex
+          lobes, the smaller cell size, the often sulcate leaf lobes, and the             were examined, a continuum involving each of the distin-
+          dioecious condition. After some experience with this complex,                   guishing characters became evident (Table 4). Some of these
+          the student will be able to recognize this cell size differential               intermediate collections were selected and measurements of
+          under the dissecting microscope. Also, C. bispinosus often                      their character states placed in each of the graphs.
+          develops larger trigones, which are nearly always distinct.                        In general, increase in plant size is accompanied by a
+          Populations having leaves with small, concave-sided trigones                    gradual shift in leaf shape. Small shoots have basically oblong-
+          are usually accompanied on the same shoot by medium,                            ovate to oblong rectangular, 6 symmetric leaves that are
+          straight-sided trigones. Populations with trigones ranging                      always longer than wide and nearly always widest in the
+          from medium to large and 6 knot-like are common.                                median or distal third of the leaf, frequently with both dorsal
+          Uniformly minute as well as uniformly distinctly knot-like                      and ventral margins curved and narrowed toward the base
+          trigones are exceptional. Chiloscyphus cuspidatus has uniform-                  (Fig. 13: 4, 5). With increase in shoot vigor, leaves tend to be
+          ly minute to small trigones.                                                    dilated in the basal sector, where the leaves of such plants are
+             Larger phases of C. bispinosus also may be confused with                     widest, lending a wide ovate to trapezoid shape, commonly
+          the allied C. subporosus. See the Differentiation section under                 with the ventral margin sharply curved near the base and the
+          that species for discussion.                                                    dorsal margin straight or curved inward (Fig. 11: 2, 8). This
+             The sharply deflexed ventral margin of the leaf is a valuable                shape change is accompanied by a shift in symmetry to sharply
+          taxonomic character but must be considered in combination                       asymmetric leaves. Intermediate populations often have a
+          with other diagnostic features of the species, such as free                     mixture of leaves (on one shoot), some being longer than wide,
+          underleaves, piliferous leaf tips, small cell size, etc. Unrelated              others wider than long. Because a continuum is involved with
+          species in both Chiloscyphus and Heteroscyphus also have                        this intriguing variation, I cannot recognize infraspecific
+          deflexed ventral margins, and it seems that this character was                  categories.
+          given undue emphasis and served as the basis for numerous                          Branch type is variable, even at the same site. For example,
+          misidentifications.                                                             Engel 18402 from Kelly Range has nearly exclusively
+             VARIATION—For a considerable period of time I had                            Frullania-type branching, with only a single lateral-intercalary
+          recognized a robust phase of C. bispinosus as a distinct                        branch observed. Engel 18415 from the same locality,
+          species; I had no name for that species. I took this position                   however, has Frullania and lateral-intercalary types both
+          because my early concepts of the complex were based on a                        common, with the latter slightly more predominant. Ventral-
+          limited suite of specimens that fit into opposing ends of a                     intercalary branches also are present, although sporadic, in the
+          broad spectrum, without intermediates at hand. It is useful to                  latter. Engel 18777, from a different locality, also had
+          be aware of and to understand these extremes, and a key is                      overwhelmingly terminal branches—of the 65 sterile branches
+          therefore provided.                                                             seen, only five were lateral-intercalary. In that collection
+                                                                                          androecia were exclusively on Frullania-type branches (50
+                                                                                          seen).
+          Key to Extreme Phenotypes of C. bispinosus                                         A small (shoots 450–630 mm wide), wire-like phase with
+                                                                                          dorsally assurgent leaves should be treated with great care
+          1.    Plants very small and threadlike, to 1.8 mm wide, the                     because of possible confusion with Clasmatocolea inflexispina.
+                tips often attenuated and with small leaves; leaves distant               That species and Chiloscyphus bispinosus share such features as
+                to contiguous, 220–650 mm wide, basically symmetric or                    large trigones, presence of a leaf border of large cells, and
+                nearly so, oblong-ovate to oblong rectangular to                          deeply divided leaves (0.4–0.55-fid). Potential confusion
+                cuneate, 1.3–2.53 longer than wide, the lamina mostly                     especially occurs on those shoots of this phase possessing
+                widest in median or distal third, the dorsal margin not                   concave leaves with nonattenuated to at most feebly piliform
+
+---
+
+alpina (HO); ibid., Newman’s Creek, Weymouth 614 as L. bispinosa               underleaf lamina margins somewhat reflexed.
+           (HO); Iron Creek near Tier Gully about 7 mi. S of Nugent on road to               DIFFERENTIATION—This variety represents a particularly
+           Sorell, ca. 150 m, Norris 30463 (F); Burns Creek, ca. 200 m, Norris            robust phase of the species. Such plants approach large phases
+           30788 (F); Freycinet Natl. Park, trail to Wineglass Bay, ca. 100–
+           400 m, Norris 30620 (F); Sassafras Gully, ca. 490 m, Ratkowsky s.n.–
+                                                                                          of C. bispinosus and therefore may offer confusion. The two
+           c. sporo. (F); Mona Vale, near Ross, Weymouth 859 as L. bispinosa              taxa, for example, have acuminate to subcaudate leaf lobes,
+           (HO); summit area of Mt. Barrow, ENE of Launceston, 1300 m,                    reflexed ventral leaf margins (basal sector), somewhat reflexed
+           Engel 15231 (F); St. Patrick’s Head, ca. 610 m, Weymouth 1244, 1247,           underleaf disc margins and a well-defined border of enlarged
+           both as L. mooreana (G), 1244 as L. lenta–c. =, 1249 as L. fissistipula,       cells of both leaf and underleaf. The following suite of
+           1252 as L. decolorata–c. sporo. (HO); St. Mary’s Pass, The Glen, ca.
+           275 m, Weymouth 1254 as L. multipenna, 1255 as L. longistipula (M);            diagnostic characters preclude placement in C. bispinosus: the
+           Blue Tier, Rodway s.n. as L. lenta (HO); Legerwood Creek, at                   leaves are bifid to 0.2–0.3, have plane lobes, and usually entire
+           Scottsdale to St. Helens Highway, Norris 31947 (F); Launceston,                ventral margins (only sporadically with a spine); the underleaf
+           Cataract Gorge, Weymouth 1306 as L. subemarginata (HO); Great                  lamina is 6–14(19) cells high; and trigones are minute or small.
+           Taylor’s Bay, Rodway s.n. as L. variabilis (HO); Sandfly, Rodway s.n.
+           as L. austro-alpina (HO); Fern Tree, near Hobart, Ratkowsky s.n.–c.            Furthermore, the leaves have a particularly pronounced
+           per. + = (F), 79/96 (HO); trail from Fern Tree to Silver Falls, ca.            speckled appearance because of the distinctly dimorphic cells.
+           500 m, Norris 29191 (F); Wellington Falls Track, ca. 760 m,                       The appearance of the robust extreme in ventral aspect is
+           Ratkowsky s.n. (F); Mt. Wellington, Ratkowsky s.n. as L. lenta (F);            reminiscent of the sparsely armed variant of C. villosus,
+           ibid., Rodway s.n. as L. lenta (HO); ibid., NW Bay River, bottom of
+           Pipeline Track, Ratkowsky 78/137–c. = (HO); ibid., St. Crispins Well,          particularly with regard to recurved ventral leaf margins and
+           Ratkowsky s.n. (F); ibid., S slope, upper Pipeline Track, E of St.             underleaf form (compare Figs. 15: 4 and 76: 3). Polymorphic
+           Crispins Well, 750 m, Engel 20200–c. = (F); ibid., Watchorn’s Creek,           leaf apices will immediately distinguish that phase of C.
+
+
+           ENGEL: CHILOSCYPHUS IN AUSTRALASIA                                                                                                                 49
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+          villosus. Only smaller, weak, often flaccid plants of C.                            Krypt.-Fl. Schlesien 1: 303. 1876. Chiloscyphus cuspidatus (Nees)
+          subporosus have polymorphic leaf apices.                                            J. J. Engel &amp; R. M. Schust., Nova Hedwigia 39: 413. 1985 (1984).
+                                                                                              Type: Germany, Riesengebirge, von Flotow.
+             Hodgson (1953) and Allison and Child (1975) recognized                         Lophocolea setacea Steph., Hedwigia 31: 125. 1892, syn. fide Jones
+          this phase as L. inflexifolia Steph. These authors used the                         (1953). Type: South Africa, ‘‘prope Clermont. leg. Rehmann.’’
+          reflexed ventral margin of the leaf in their keys and noted the                   Lophocolea longispica Steph., Hedwigia 31: 210. 1892, syn. fide
+          dimorphic leaf cells.                                                               Jones (1953). Type: Mascarene Is., Rodriguez.
+             VARIATION—Length and degree of reflexation of the                              Lophocolea fusca Steph., Bull. Herb. Boissier 6(10): 872. 1906
+                                                                                              (5 Spec. Hep. 3: 97), syn. nov. Type: New Zealand, without
+          ventral margin of the leaf is variable. Optimally it is broadly                     specific loc., Colenso 1931 p. p. (G!–c. = + per. + sporo.).
+          reflexed in the basal half of the margin; this condition is                       Lophocolea mooreana Steph., Bull. Herb. Boissier 6(10): 875. 1906
+          present in the type of L. inflexifolia (see below). In less optimal                 (5 Spec. Hep. 3: 100), syn. nov. Chiloscyphus mooreanus (Steph.)
+          plants the margin is reflexed only at the extreme base, with                        J. J. Engel &amp; R. M. Schust., Nova Hedwigia 39: 419. 1985 (1984)
+                                                                                              (non Chiloscyphus moorei Steph., Hedwigia 33: 2. 1894 [5 Het-
+          merely a narrow strip of dorsal surface of leaf exposed in                          eroscyphus]). Lectotype (nov.): Tasmania, Jones Track, 17 Sept.
+          ventral view.                                                                       1895, Moore s.n. (G 024458!–c. = + per. + sporo.).
+             NOTES ON TYPE SPECIMENS—1) Lophocolea inflexifolia                             Lophocolea scott-elliottii Steph., Bull. Herb. Boissier 7(4): 308. 1907
+          Steph. Leaves are long decurrent dorsally, have the uniseriate                      (5 Spec. Hep. 3: 172), syn. fide Jones (1953). Type: Uganda, ‘‘in
+                                                                                              monte Runssoro (5 Ruwenzori) (Scott Elliott).’’
+          row of lobes composed of 5–7 cells, and have the ventral
+                                                                                            Leptoscyphus stephensii Sim, Trans. Roy. Soc. South Africa 15:
+          margin of the leaf in its basal half broadly reflexed, such that                    105. 1926, syn. fide Arnell (1955). Type: South Africa, ‘‘Table
+          the dorsal surface of the leaf is partially in view and the ventral                 Mountain, Miss Stephens (Sim n. 9527, 9528); Stellenbosch (Sim
+          margin is aligned toward the shoot base. The leaves have a                          n. 9529).’’
+          pronounced speckled appearance because of the scattered                           Lophocolea arisancola Horik., J. Sci. Hiroshima Univ., Ser. B, Div.
+                                                                                              2, Bot. 2: 169. f. 22. 1934. Holotype: Taiwan, Mt. Arisan,
+          enlarged cells among markedly smaller ones. Trigones are                            (Numanodaira-Iwaiyama), Prov. Tainan, Aug. 1932, Horikawa
+          lacking. Underleaves are similar to the Stephani Icon of the                        11075.
+          species (Lophocolea no. 130) except the lobes are piliform                        Lophocolea cuspidata subsp. antipodea R. M. Schust., Hep. Anthoc.
+          distally and have a long uniseriate row of cells. Underleaf                         N. Amer. 4: 203. 1980, syn. nov. Holotype: New Zealand, South
+                                                                                              Is., Mt. Cook Natl. Park, Sealy Range, above Sealy Lakes, ca.
+
+---
+
+on South Is. and on North Is. occurs at 930–1030 m, the only                    quency: in some populations sporadic while terminal branches
+          recorded elevation for that island. At Rainbow Skifield                         are common, in others of equal frequency to terminal
+          (Nelson) the variety occurs at 1360–1480 m on soil over                         branches. Stems narrow for plant size, 10–11 cells high, the
+          boulders in a mosaic of tussock grass and alpine vegetation                     cortex moderately differentiated, in 1(2) layers of cells
+          along with tarns, rills, rocky outcrops, and boulder fields.                    somewhat smaller than those of medulla, the cortical and
+          Below the ski field, at 1210 m, the variety is present in the                   medullary cells thin walled except for the slightly thickened
+          uppermost reaches of a Nothofagus solandri var. cliffortioides                  exposed walls of cortex. Rhizoids in tight fascicles from stem
+          forest, occurring on a vertical rock face at the margin of a                    at immediate base of underleaves, the rhizoids short for plant
+          stream in a steep-sided, narrow valley with nearly vertical cliff-              size. Leaves alternate, usually horizontal, widely spreading,
+          like sides. On the track to the Whakataka summit in Urewera                     mostly loosely imbricate but occasionally densely so, free
+          Natl. Park the variety was found on a thick soil layer over a                   dorsally, the orientation strongly succubous, the insertion
+          bryophyte covered log in a Nothofagus fusca-N. menziesii                        distinctly recurved at ventral end (weakly to distinctly J-
+          forest.                                                                         shaped), the lines of insertion extending to stem midline
+                                                                                          dorsally and thus not delimiting a leaf-free strip of stem cells.
+             S PECIMENS S EEN —NEW ZEALAND. SOUTH ISLAND.
+          OTAGO: Blue Mtns., ca. 915 m, Child 387 (F); Rock and Pillar,                   Leaves broadly and rather evenly convex, a- to subsymmet-
+          760–1280 m, Child H 425, H 3028 (F); Herbert, Breakneck Road, ca.               rically ovate-trapezoid to trapezoid, occasionally subsymmet-
+          610 m, Child 288 (F); vicinity of Quartz Reef Hill, ca. 915 m, Allison          rically ovate, length/width ratios variable: ranging from 1.33
+          H 5724 (CHR). NELSON: Nelson Lakes Natl. Park, St. Arnaud                       wider than long to 1.63 longer than wide, widest near base,
+          Range, Arnst Basin, ca. 1740 m, Simpson 4023, 4026 (CHR); St.
+          Arnaud Range, Rainbow Skifield, S of St. Arnaud, 1360–1480 m,
+                                                                                          apex bifid to 0.2–0.35(0.45), the lobes parallel to diverging,
+          Engel 22775 (F); ibid., Rainbow Skifield just below ski tow area, S of          plane, the ventral often considerably larger, subcaudate,
+          St. Arnaud, 1210 m, Engel 22812 (F). NORTH ISLAND. NEAR                         tapering from a narrowly to broadly acute basal sector to a
+          GISBORNE/SOUTH AUCKLAND BOUNDARY: Urewera Natl.                                 zone of up to 7 tiers of 2 laterally juxtaposed cells and,
+          Park, crest trail from Highway 38 toward Whakataka summit, N of                 ultimately, terminating in a piliform tip consisting of a
+          northern extremity of Lake Waikaremoana, 930–1030 m, Engel 20663
+          (F). CHATHAM IS.: Crispans Lane, Orihou Stream, ca. 10 m, de                    uniseriate row of 5–10(13) cells that are variable but usually
+          Lange CH1043 (AK, F).                                                           longer than wide, being 12–23 mm wide 3 22–40 mm long or
+                                                                                          1.3–2.23 longer than wide and only rarely and sporadically
+          Chiloscyphus cuspidatus (Nees) J. J. Engel &amp; R. M. Schust.                      isodiametric, the lobe margins entire, the sinus broadly
+             Lophocolea bidentata var. ß cuspidata Nees, Naturg. Eur. Leberm.             rounded to lunate, the sinus + lobe margins often delimiting
+               2: 327. 1836. Lophocolea cuspidata (Nees) Limpr. in Cohn,                  a half circle; dorsal margin straight to broadly and evenly
+
+
+          50                                                                                                                        FIELDIANA: BOTANY
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+           slightly arched, plane to somewhat deflexed, entire, often very                a cilium; lobule margin involute, armed with an ill-defined,
+           long decurrent; ventral margin broadly arched (sharply so at                   low and rounded to tooth-like or distinct and ciliiform to
+           base), slightly to distinctly more arched than the dorsal, plane               laciniiform distal projection, the margin otherwise with several
+           to sharply deflexed in basal sector, entire or sporadically with               cilia each consisting of a uniseriate filament of cells
+           1(2) ciliiform projections. Leaf cells with walls very thin,                   terminating in a slime papilla, the margin otherwise entire
+           trigones minute to small and concave sided, median leaf cells                  and devoid of slime papilla or crenate-dentate by protruding
+           nearly isodiametric, variable: (24)28–42 mm wide 3 28–54 mm                    cells that are partially or wholly free from laterally adjoining
+           long, the basal cells similar in size or slightly larger (to 58 mm             cells, the projections each terminating in a slime papilla, the
+           wide and 54 mm long). Oil-bodies small for cell size, hyaline,                 sinus between distal process and dorsal margin of lobe
+           2–4 to 5–8(12) per cell, the surface mostly ill-defined, coarsely              sometimes with a projection; antheridia solitary, the stalk
+           papillose to finely botryoidal, occasional populations coarsely                uniseriate. Gynoecia mostly on main shoot or lateral-
+           botryoidal, for the most part fusiform, less often elliptic to                 intercalary branches lacking normal vegetative leaves, rarely
+           sublinear or subglobose to globose, sometimes with 1–2                         on elongate lateral-intercalary branches possessing many
+           elongate concavities, 7.2–10.4 3 3.3–3.9 mm to wider and                       cycles of vegetative leaves; gynoecia occasionally on Frulla-
+           7.2–10.4 mm 3 5.2–6.5 mm to 10.4–11.7 mm 3 5.2–7.2 mm,                         nia-type branches and then nearly always with several cycles of
+           subglobose ones 7.2 3 5.9–6.5 mm, globose ones 5.2–6.5 mm in                   normal vegetative leaves (rarely on terminal branches lacking
+           diam. Chloroplasts 3.3 3 1.3–2 mm. Underleaves much                            vegetative leaves). Bracts of innermost series much larger than
+           smaller than leaves, 1.6–2.73 stem width, free and in close                    leaves (especially in length), erect and ensheathing perianth,
+           proximity to side nearest adjacent ventral base of leaf, in some               free from one another, distinctly convex to 6 canaliculate
+           populations occasionally very narrowly connate by fusion of                    distally, ovate; apex bifid to 0.35, the lobes ventrally sulcate,
+           basalmost cells of underleaf and adjacent leaf, the insertion                  similar in size, caudate distally, the margins entire or with a
+           symmetric, inverted U-shaped, the underleaves parallel with                    cilium; lamina margins strongly reflexed, plane or undulate,
+
+---
+
+basal to them and then on the lamina, the lamina margins                       or cilia, the lobes otherwise dentate-ciliate in basal half; keels
+           sporadically armed with a few accessory cilia.                                 sharp, with keelar wings common, of a few to several cells
+              Asexual reproduction absent.                                                high, often sparingly dentate-ciliate.
+              Plants autoecious, nearly always fertile. Androecia nearly                     Seta 6–7 cells in diam., with 21–22 rows of outer cells
+           always on lateral-intercalary branches, the branches either                    surrounding a layer of cells of similar size or slightly larger, the
+           rather short, appearing to cease growth, and ca. 23 or less the                innermost core of cells scattered and much larger, the core
+           length of a main shoot leaf or, more often, proliferate                        cells (particularly the outermost layers) with corners thickened
+           vegetatively distally, the androecia then basal on a branch,                   as in knot-like trigones. Capsule wide ovate to elliptic, 41–
+           the branch usually less than ca. 23 the length of a main shoot                 46 mm thick, of 4 layers, the outer layer of cells equal to
+           leaf and only sporadically elongate; lateral-intercalary branch-               thickness of 1.5–2.4 of interior strata; outer layer of cells
+           es variable in position, at times in lateral half of underleaf axil;           subquadrate to short rectangular, even at valve base, the radial
+           androecia occasionally on main shoot, only rarely on                           walls rather thick, with red-brown nodular to weakly spine-
+           Frullania-type branches and then elongate and at least 33                      like thickenings, the thickenings mostly on longitudinal walls
+           the leaf length; androecia subfolious to subspicate; bracts                    and sporadically on transverse walls; intermediate and inner
+           much smaller than leaves if androecia on leading shoots, but if                layer of cells subequal in thickness; innermost layer of cells
+           androecia on short branches, then leaves only slightly larger,                 long rectangular, the vertical radial walls sometimes with local
+           the bracts suberect to spreading, dorsally assurgent through-                  continuous sheets or red-brown wall material that connects
+           out or dorsally assurgent and inflated in basal half, the distal               the bases of bands or sheets, the walls rather thick, with
+           half obliquely assurgent or more or less reflexed, loosely                     semiannular bands red brown, somewhat common but not
+           appressed to bract immediately above, the saccate portion                      copious, often incomplete, the radial walls with nodular and
+           faintly crenulate or smooth in profile and weakly fused toward                 especially spine-like thickenings often present on longitudinal
+           base with opposite bract, the apex similar to leaves except the                walls.
+           lobes often acuminate to subcaudate, the distal sector often                      Spores 12.4–13.5 mm, red brown, with dense, low but
+           less protracted; ventral margin sharply reflexed, entire or with               sharply defined, close papillae and short, simple or sometimes
+
+
+           ENGEL: CHILOSCYPHUS IN AUSTRALASIA                                                                                                              51
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+            FIG. 17. Chiloscyphus cuspidatus (Nees) J. J. Engel &amp; R. M. Schust. 1, 2. Median cells with oil-bodies (6363, 6543, respectively). 3. Sector of
+          plant with a gynoecium on a lateral-intercalary branch and androecia on main shoot and on 3 lateral-intercalary branches, the distalmost =
+          branch consisting of only a few bracts and barely exceeding vegetative leaf (dorsal view). 4. Perianth, cross section; note that all 3 keels are
+          winged. 5. Seta, cross section. 6. Cladograph (F 5 Frullania-type branch; LI 5 lateral-intercalary branch; U-shaped symbol 5 gynoecium; * 5
+          apex and base of main shoot). 7. Perianth mouth, ventral lobe in middle. 8. Capsule wall, outer layer. 9. Antheridial stalk. 10, 11. = Bract lobules;
+          note differences in marginal armature (s [11] 5 cilium in sinus between distalmost process and dorsal margin of lobe). 12. Gynoecium with only
+          innermost bracts and bracteole shown, those below indicated with scars (ventral view). 13. R Bracts and in middle bracteole (note the
+
+
+          52                                                                                                                     FIELDIANA: BOTANY
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+              FIG. 18. Chiloscyphus cuspidatus (Nees) J. J. Engel &amp; R. M. Schust. 1. Sector of main shoot (ventral view). 2–5. Leaves and (in 2 and 5)
+           underleaves. 6, 7. Cladographs (F 5 Frullania-type branch; LI 5 lateral-intercalary branch; U-shaped symbol [7] 5 gynoecium; * 5 apex and
+           base of main shoot). 8. Portion of ventral segment of leaf. 9. Lateral half of underleaf. (1, 2, 5, 7–9, from Schuster 67-491a, New Zealand, South
+           Is., Mt. Cook, Natl. Park, Sealy Range; 3, from Engel 20196, Tasmania, Mt. Wellington, off Pipeline Track; 4, from Schuster 67-4413, New
+           Zealand, South Is., Mt. Cook, Natl. Park, Sealy Lakes; 6, from Engel 13023, Tasmania, Mt. Wellington, Fern Glade Track.)
+
+
+
+
+           r
+
+           magnification here is 28% less than that for leaves in Fig. 18: 2–5). 14. Capsule wall, inner layer. 15. Capsule wall, cross section. (1, from Engel
+           20196, Tasmania, Mt. Wellington, off Pipeline Track; 2, from Engel 20114, Tasmania, Mt. Roland; 3, 4, 6, 7, 9, 11–13, from Schuster 67-491a,
+           New Zealand, South Is., Mt. Cook, Natl. Park, Sealy Range; 5, from Allison 3604, New Zealand, North Is., E of Taupo; 8, 14, 15, from Engel
+           12996, Tasmania, Lyell Highway near turnoff to Tarraleah; 10, from Engel 13023, Tasmania, Mt. Wellington, Fern Glade Track.)
+
+
+           ENGEL: CHILOSCYPHUS IN AUSTRALASIA                                                                                                               53
+
+Downloaded From: https://bioone.org/journals/Fieldiana-Botany on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+          furcate, vermiculate markings, the spore:elater diameter ratio                  somewhat in surface characters—Engel 20196 is coarsely
+          1.4–1.8:1. Elaters tortuous, 7.2–8.6 mm wide, the spirals 2.4–                  papillose and often has 1 or 2 elongate concavities (Fig. 17:
+          2.9 mm wide.                                                                    1), whereas Engel 20114 is finely botryoidal and lacks cavities
+             DIFFERENTIATION—At first glance this species might be                        (Fig. 17: 2). Engel 18176 agrees with Engel 20196 in having
+          mistaken for a vigorous C. lentus, a species that also has                      large median leaf cells (38–50 mm wide 3 44–56 mm long) and
+          distinctly bifid leaves, with lobes composed of a conspicuous                   papillose oil-bodies, but it differs in having a direct correlation
+          uniseriate row of cells, and deeply bifid underleaves with a                    between cell size and oil-body number, here (4)5–6(8) per cell.
+          conspicuous lateral process on each side of the lamina.                         A direct correlation between oil-body number and cell size
+          Chiloscyphus cuspidatus differs from that species in the 1) free                also exists in Engel 18867, which has cells 35–47 mm wide 3
+          underleaves; 2) larger plant size, even when suboptimal; 3)                     47–54 mm long and (3)4–7(8) oil-bodies per cell. However, oil-
+          larger cell size; and 4) monoecious condition. It should be                     bodies of Engel 18867 differ from all other observed
+          added that sex organs in C. cuspidatus are of much greater                      populations of C. cuspidatus in being very coarsely botryoidal.
+          frequency than in C. lentus. Chiloscyphus cuspidatus is                         Also, oil-body size is at the upper end of the range for the
+          separable from all other members of sect. Lophocolea, except                    species, being 10.4–11.7 3 5.2–7.2 mm.
+          C. longiciliatus, by the ability to produce armature on the                        NOTE—Hodgson (1953, p. 354) and Allison and Child
+          ventral margin of the leaf (careful search of several shoots is                 (1975) treated this species as Lophocolea bidentata, stating that
+          often required to find cilia, and often only 1 or 2 leaves of a                 it is monoecious and cosmopolitan. Most CHR specimens
+          shoot will have them), as well as by characters 2, 3                            named L. bidentata are actually C. cuspidatus.
+          (nonenlarged cells must be used for measurement, e.g., see                         NOTES ON TYPE SPECIMENS—1) Lophocolea fusca Steph.
+          C. subporosus), and 4 above.                                                    The specimen represents a rather well-developed phase of C.
+             The closest relative of this species is C. longiciliatus; see                cuspidatus. Stephani states that the plants are monoecious, and
+          under that species for a discussion.                                            I was able to verify that condition. Gynoecia and androecia
+             VARIATION—The leaves are mostly loosely imbricate and                        may be found on the main shoot or on short, abbreviated
+          broadly, evenly, and moderately convex, the whole lending a                     lateral-intercalary branches lacking normal vegetative leaves.
+          flat aspect to the shoots in dorsal view. However, occasional                   Dehisced capsules are present, although the protologue does
+          populations have leaves densely imbricate, and this is coupled                  not mention them. Trigones are minute and not ‘‘magnis’’ as
+          with greater leaf convexity, both features lending the shoots a                 stated in the protologue.
+          convex aspect in dorsal view. The latter condition tends to                        2) Lophocolea mooreana Steph. The protologue states for
+          occur in smaller shoots. It also is the normal condition in well-               locality and collector ‘‘Tasmania (Moore).’’ A specimen from
+          developed plants of C. longiciliatus, which, when optimal, are                  G labeled TYPE (leg. Moore, Macquarie Harbour, Moore’s
+          vigorous, being 3.2–3.6 mm wide.                                                Track, G 17652; duplicate in M) contains an admixture of the
+             The student should be aware of the range of leaf shape                       following species: Chiloscyphus leucophyllus, Saccogynidium
+          variability when working with this species. Robust phases are                   decurvum, Bazzania sp., Heteroscyphus cf. coalitus (p. p. min.)
+          asymmetrically ovate-trapezoid to trapezoid and up to 1.33                      and Telaranea sp. However, no element in the packet matches
+          wider than long (Fig. 18: 2; Schuster 67-491a). However, some                   the protologue. The only plant with bifid leaves is C.
+          populations of the robust phase have subsymmetric leaves up to                  leucophyllus, but that plant disagrees with the protologue in
+          1.23 longer than wide (Fig. 18: 3; Engel 20196). Populations                    having knot-like trigones. Furthermore, perianths are de-
+          with a greater length/width ratio tend to occur in smaller, but                 scribed as ‘‘magna,’’ but I found no gynoecia within the
+          not necessarily weak, phases. For example, Schuster 67-4413                     packet. (The plants of C. leucophyllus consist of both sterile
+          has subsymmetric, rather narrowly ovate leaves that are 1.3–                    and androecial shoots.) The protologue unfortunately lacks a
+          1.63 longer than wide (Fig. 18: 4). Leaf symmetry is correlated                 description of underleaves.
+          with the degree of curvature of the dorsal margin and extent of                    Another Moore collection at G (Jones Track) consists of
+          dilation of the ventral, primarily basal, sector of the leaf.                   two corticolous, bifid-leaved elements. The first is a fragment
+
+---
+
+base on optimal shoots, 4–9(11) cells wide on suboptimal ones,                 important that the traits of suboptimal plants be noted and
+           the margins with 1–3 cilia, 2 of which are opposite, often entire              contrasted to the optimal phase; both are compared with C.
+           or 1-ciliate in suboptimal plants; underleaf lamina margins                    cuspidatus in Table 7.
+           plane to slightly reflexed, with a laciniiform to ciliiform                       Chiloscyphus longiciliatus is distinct from C. cuspidatus in a
+           process always much smaller than the main lobes, the lamina                    number of features. Chiloscyphus longiciliatus has a much
+           margins often armed with a few accessory cilia.                                higher frequency of leaf armature, and processes may be
+              Asexual reproduction rare, by regeneration from in situ                     present on the ventral and dorsal margins as well as the sinus
+           leaves.                                                                        base (Fig. 19: 5, 6, 12). Armature of C. cuspidatus is only
+              Plants autoecious, nearly always fertile. Androecia occa-                   sporadic, and then only on the ventral margin (Fig. 18: 2).
+           sionally on main shoot but more often on long Frullania-type                   Underleaves of C. longiciliatus are often 4-lobed and often
+           branches or lateral-intercalary branches that vary from rather                 have a lamina high for the section (Fig. 19: 8, 10), whereas
+           short and ca. 23 the length of a main shoot leaf to rather long;               those of C. cuspidatus are always bilobed and have a lamina, at
+           androecia subfolious to subspicate; bracts moderately to much                  most, a few cells high (Fig. 18: 5, 9). Oil-body differences also
+           smaller than leaves, suberect to spreading, strongly dorsally                  will distinguish the species.
+           assurgent throughout, rather closely appressed to bract                           NOTES—1) Leaf insertions may define a long and very
+           immediately above, the saccate portion smooth in profile                       narrow slit of stem tissue, lending the shoots a distinctive
+           and fused toward base with opposite bract, the apex similar to                 appearance in dorsal view. Some variability may occur, even
+           leaves except the lobes often acuminate to subcaudate, the                     on one shoot, where the slit is parallel sided and stem tissue
+           distal sector often less protracted; ventral margin sharply                    may be completely covered, or the slits gradually somewhat
+           reflexed, entire; lobule margin involute, armed with a distal                  widen apically between each opposing leaf pair (i.e., the
+           ciliiform to laciniiform projection, the margin otherwise                      exposed stem tissue is narrowest between dorsal sectors of
+           crenulate-dentate by cells that are partially or wholly free                   opposing leaves). The variation is correlated with vigor, and
+           from laterally adjoining cells or laterally fused the entire length            differences in this feature lend quite different aspects in dorsal
+           with only the free end forming a convex projection, the margin                 view (compare Fig. 19: 1 with 12).
+           often also with a few cilia, the projections each terminating in                  2) Several interesting ‘‘freaks’’ occur on long, lateral-
+           a slime papilla, the sinus between distal process and dorsal                   intercalary branches of Engel 19413A. The two dorsal faces of
+           margin of lobe sometimes armed; antheridia solitary, the stalk                 the perianth are formed, but the ventral is totally lacking.
+           uniseriate. Gynoecia on main shoot or long Frullania-type                      Normal vegetative leaves and underleaves occur distal to the
+           branches or lateral-intercalary branches that are either long                  perianth lobes, and after 3–4 gyres, a young gynoecium is
+           or, if short, either lacking normal vegetative leaves (or with                 produced. This was also observed in Engel 19382.
+           only a few gyres); gynoecia rarely on ventral-intercalary                         3) Chiloscyphus cuspidatus has an interesting inverse
+           branches (1 branch seen). Bracts of innermost series much                      correlation between oil-body number and cell size (see
+           larger than leaves, erect and ensheathing perianth, free from                  p. 54). This does not exist in C. longiciliatus because those
+           one another, convex to 6 canaliculate distally, elliptic; apex                 populations that have a higher oil-body number (Engel 19387,
+           bifid to 0.25, the lobes ventrally sulcate, similar in size,                   19820, both with 4–6[10] per cell) have slightly larger median
+           subcaudate-caudate distally, the margins entire or with 1–2                    leaf cells (24–38 mm wide 3 30–41 mm long). Populations with
+                                                                                          lower oil-body numbers (Engel 19382, with 2–4 per cell) have
+           cilia; lamina margins reflexed, plane or undulate, the dorsal
+                                                                                          smaller cells (23–30 mm wide 3 25–38 mm long).
+           entire or with several cilia, the ventral sparingly dentate-
+           laciniate. Bracteoles of innermost series similar to bracts in                    NOTES ON TYPE SPECIMEN—Lophocolea longiciliata Her-
+                                                                                          zog. The specimen represents a vigorous expression of the
+           length but somewhat narrower, free, weakly concave (ventral
+                                                                                          species, largely agreeing with the optimal phase in Table 7.
+           view), narrowly elliptic to narrowly obovate; apex bifid to 0.3,
+                                                                                          Perianths are juvenile as stated in the protologue; they do not
+           the lobes similar to those of bracts, entire or with a cilium or
+                                                                                          extend beyond subtending bracts. The plant is autoecious, not
+           opposing pair of cilia; lamina margins reflexed as in bracts,
+                                                                                          dioecious as stated in protologue.
+           with a lacinium or lobule distally and entire or sparingly ciliate
+                                                                                             DISTRIBUTION AND ECOLOGY—This infrequent Tasmanian
+           below. Perianth exserted beyond bracts but not markedly so,
+                                                                                          endemic occurs in mosaics of low subalpine scrub (dominated
+           sharply trigonous and prismatic throughout, the sides
+                                                                                          by Richea scoparia, R. sprengelioides, Orites revoluta, and
+           sometimes infolded, the perianths long and narrowly oblong,
+                                                                                          others) and cushion plants among boulders and rocky
+           3.5–4.83 longer than broad, not to slightly narrowing toward
+                                                                                          outcrops (1260–1370 m). It may be found terrestrially, well
+           the deeply 3-lobed mouth, the lobes free for ca. 0.25–0.3 the</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>CYANOLOPHOCOLEA_2010</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">calling attention to the characters that he (Schuster               generic rank, i.e., as belonging to an independent
+         1980) used to describe Lophocolea sect.                             genus, Cyanolophocolea? If not, what is the natural
+         Cyanolophocolea and to differentiate it from sect.                  systematic position of the species? In order to address
+         Microlophocolea. These are a) the bluish oil-bodies;                these questions, we inferred the phylogenetic
+         and b) the dimorphic leaf cells, with (p. 103) ‘‘the                relationships of C. echinella based on variation in
+         cells bearing surface spines sporadically with 1 relatively         multiple DNA sequences sampled for various species
+         small oil-body or no oil-bodies; those devoid of spines             of the Lophocoleaceae.
+         bear either -2 or 2(3) relatively large oil-bodies.’’ Both
+         characters a) and b) are variable within the species. As            MATERIALS AND METHODS
+         revealed here, oil-bodies are either intense bluish or                   Taxon sampling for phylogenetic analyses.
+         hyaline, depending upon the population, and oil-body                Eight samples of Cyanolophocolea echinella, collected
+         presence and number varies in cells with and without                within a wide geographic range in New Zealand, were
+         spines. It should be noted here that Chiloscyphus                   included in the present study. Four of them possessed
+         muricatus (Lehm.) J.J.Engel &amp; R.M.Schust., a species                blue oil-bodies and the other four had hyaline oil-
+         that also possesses surface armature, has a similar                 bodies. In addition to addressing the systematic
+         distribution of oil-bodies among spine-bearing and                  position of Cyanolophocolea, an attempt was also
+         non-spine bearing cells.                                            made to examine whether oil-body types defined
+               Schuster (2001) also called attention to presence             phylogenetically distinct lineages within C. echinella.
+         of a leaf-free strip as a character to support                      The remaining ingroup was composed of 15
+
+Downloaded From: https://bioone.org/journals/The-Bryologist on 08 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+                                                                                 Engel &amp; He: Systematic identity of Cyanolophocolea   151
+
+
+        Table 1. List of taxa and the GenBank accession numbers for rbcL, rps4 and trnL-F sequences used in the present study. Accession
+        numbers for novel sequences generated in this study are in Bold.
+
+                                     Taxon (Source)                                            rbcL            rps4          trnL-F
+
+        Chiloscyphus cuspidatus (He-Nygrén et al. 2004)                                    AY149845        AY462348       AY149866
+        Chiloscyphus helmsianus (Glenny et al. 2009)                                        FJ173311        FJ173326       FJ173297
+        Chiloscyphus itoanus (He-Nygrén &amp; Piippo 2003)                                     AY149846                       AY149868
+        Chiloscyphus japonicus (He-Nygrén &amp; Piippo 2003)                                   AY149847                       AY149869
+        Chiloscyphus latifolius (He-Nygrén &amp; Piippo 2003)                                  AY149842                       AY149862
+        Chiloscyphus lentus (Glenny et al. 2009)                                            FJ173312        FJ173327       FJ173298
+        Chiloscyphus leucophyllus (Glenny et al. 2009)                                      FJ173313        FJ173328       FJ173299
+        Chiloscyphus martianus (He-Nygrén &amp; Piippo 2003)                                   AY149848                       AY149870
+        Chiloscyphus minor (He-Nygrén &amp; Piippo 2003)                                       AY149843                       AY14986
+        Chiloscyphus novae-zeelandiae var. grandistipulus (Glenny et al. 2009)              FJ173314        FJ173329       FJ173300
+        Chiloscyphus pallescens (He-Nygrén &amp; Piippo 2003)                                  AY149849                       AY149871
+        Chiloscyphus polyanthos (He-Nygrén &amp; Piippo 2003)                                  AY149851                       AY149873
+        Chiloscyphus profundus (He-Nygrén &amp; Piippo 2003; Groth 2005)                       AY149852        DQ193972       AY149874
+        Chiloscyphus semiteres (Glenny et al. 2009)                                         FJ173315        FJ173330       FJ173301
+        Chiloscyphus spiniferus (Glenny et al. 2009)                                        FJ173316        FJ173331       FJ173302
+        Clasmatocolea ctenophylla (Glenny et al. 2009)                                      FJ173318        FJ173333       FJ173304
+        Clasmatocolea humilis (Glenny et al. 2009)                                          FJ173319        FJ173334       FJ173305
+        Clasmatocolea obvoluta (Glenny et al. 2009)                                         FJ173320        FJ173335       FJ173306
+        Clasmatocolea trachyopa (Glenny et al. 2009)                                        FJ173321        FJ173336       FJ173307
+        Cyanolophocolea echinella (NZ, Lewington 1140 (H))                                  FJ919289        FJ919281       FJ919297
+        Cyanolophocolea echinella (NZ, Engel 24683 (F))                                     FJ919290        FJ919282       FJ919298
+        Cyanolophocolea echinella (NZ, Engel 24051 (F))                                     FJ919291        FJ919283       FJ919299
+        Cyanolophocolea echinella (NZ, Engel et al. 23977 (F))                              FJ919292        FJ919284       FJ919300
+        Cyanolophocolea echinella (NZ, Engel et al. 23969 (F))                              FJ919293        FJ919285       FJ919301
+        Cyanolophocolea echinella (NZ, Engel 28280A (F))                                    FJ919294        FJ919286       FJ919302
+        Cyanolophocolea echinella (NZ, Engel 26652 (F))                                     FJ919295        FJ919287       FJ919303
+        Cyanolophocolea echinella (NZ, Engel 27818 (F))                                     FJ919296        FJ919288       FJ919304
+        Heteroscyphus argutus (He-Nygrén et al. 2004; He-Nygrén &amp; Piippo 2003)            AY462355                       AY149861
+        Heteroscyphus aselliformis (He-Nygrén &amp; Piippo 2003)                               AY149841
+        Heteroscyphus coalitus (He-Nygrén &amp; Piippo 2003)                                   AY149844                       AY149865
+        Heteroscyphus cymbaliferus (He-Nygrén et al. 2006)                                 DQ026592        DQ026608       DQ026625</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (1 entry)</summary>
+    
+    
+    <p><strong>distribution:</strong> NSW; ACT; Tas.</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-43.0, 147.0], [-42.916667, 147.25], [-43.0, 147.0], [-42.933333, 147.216667], [-42.63, 145.93], [-43.233333, 146.766667], [-43.080998, 147.124224], [-42.125, 146.1], [-42.900698, 147.246351], [-42.720274, 146.634965], [-42.63, 145.93], [-42.933333, 147.216667], [-42.933333, 147.216667], [-41.905186, 145.916242], [-43.216667, 146.75], [-43.216667, 146.75], [-41.63625, 145.068944], [-40.47, 146.27], [-43.171046, 147.124407], [-42.933333, 147.216667], [-42.8986187, 147.2177085], [-41.368306, 147.599198], [-41.8326832, 146.0387727], [-42.990749, 147.246711], [-42.9, 147.233333], [-41.90626, 146.036792], [-41.275814, 147.956556], [-42.883333, 147.25], [-42.9, 147.2], [-42.916667, 147.25], [-43.0, 147.0], [-42.719819, 146.512835], [-43.0, 147.0], [-41.907208, 146.157348], [-41.535056, 147.670917], [-39.266667, 175.534444], [-38.8377801, 174.8981104], [-45.654644, 167.789828], [18.4, 146.083306], [-42.237502, 172.055622], [-39.15358, 174.689849], [-43.703756, 172.741799], [-45.746611, 167.386583], [-39.1594, 175.8128], [-48.0147032, 166.6036105], [-48.0224214, 166.6095485], [-37.056861, 174.664278], [-40.8410025, 174.908773], [-39.28422, 174.905185], [-43.595543, 172.660521], [-39.316667, 174.15], [-39.8206011, 175.259911], [-41.569823, 172.520051], [-44.434361, 170.870286], [-43.801229, 173.027177], [-48.0147032, 166.6036105], [52.711833, -1.205889], [-36.200556, 175.091389], [-45.866451, 170.422557], [-45.731031, 167.885758], [49.1833, -121.7333], [-36.838611, 175.551111], [-43.678763, 172.770675], [-45.883333, 170.116667], [-39.15, 175.6], [53.259583, -1.743417], [-41.199722, 172.710833], [-44.74425, 168.022889], [-48.0196123, 166.6063675], [-43.63593, 172.623119], [-38.074722, 174.976944], [-39.901778, 176.024139], [-40.069, 176.216], [-48.0214764, 166.6009924], [-42.802383, 171.664391], [-40.191, 176.114], [-36.887778, 174.702222], [-41.222222, 172.685556], [-43.623183, 172.635275], [-48.0209114, 166.6088355], [-36.216667, 175.05], [-39.226989, 175.3782145], [-37.056861, 174.664278], [-48.0244485, 166.6080955], [-47.154049, 167.697885], [-39.254971, 175.711881], [-48.0209324, 166.6089725], [-48.0344998, 166.6097794], [-41.85, 172.8], [-44.796882, 167.967662], [-40.7673857, 172.7040774]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>

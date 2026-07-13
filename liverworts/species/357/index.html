@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plagiochila fuscella — Tasmanian Liverworts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/liverworts/static/style.css">
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container-fluid">
+      <ul>
+        <li><a href="/liverworts/" class="site-title">Tasmanian Liverworts</a></li>
+      </ul>
+      <ul>
+        <li><a href="/liverworts/">Species</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/liverworts/">Species</a></li>
+    <li><em>Plagiochila fuscella</em></li>
+  </ul>
+</nav>
+
+<hgroup>
+  <h1><em>Plagiochila fuscella</em></h1>
+  <p>
+    <span class="badge">Plagiochilaceae</span>
+    <span class="badge secondary">Plagiochila</span>
+  </p>
+</hgroup>
+
+
+
+<details>
+  <summary>Synonyms &amp; alternative names (14)</summary>
+  <ul class="synonym-list">
+    
+    <li><em>Niditinea fuscella</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila abietina</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila bantamensis</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila fuscella var. fuscella</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila fuscella var. novae-zelandiae</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila metcalfii</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila ramosissima</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Plagiochila sciophila</em> <small class="muted">ALA</small></li>
+    
+    <li><em>Jungermannia fuscella</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Plagiochila beckettiana</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Plagiochila multidentata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Plagiochila orbiculata</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+    <li><em>Plagiochila rotundifolia</em> <small class="muted">NZ_CHECKLIST_2020</small></li>
+    
+  </ul>
+</details>
+
+
+
+<div class="summary-grid">
+  <article>
+    <header>Occurrences</header>
+    <p class="big-num">318</p>
+    <footer>134 Tasmanian</footer>
+  </article>
+
+  
+
+  
+
+  <article>
+    <header>Traits</header>
+    <p class="big-num">12</p>
+    <footer>NLP-extracted from literature</footer>
+  </article>
+</div>
+
+
+
+<section>
+  <h2>Distribution</h2>
+  <div id="map"></div>
+</section>
+
+
+
+
+<section>
+  <h2>Traits</h2>
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Trait</th>
+          <th>Value</th>
+          <th>Units</th>
+          <th>Source</th>
+          <th title="0 = verified, 1 = NLP-extracted (unverified)">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>Frullania-type</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>branching_pattern</td>
+          <td>Frullania-type</td>
+          <td>categorical</td>
+          <td class="muted small">NZ_TAS_FLORA_VOL3_REVIEW_2020</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell_diameter_um</td>
+          <td>8.0–15.0</td>
+          <td>µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>cell_diameter_um</td>
+          <td>10.0–23.0</td>
+          <td>µm</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>entire</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>leaf_lobing</td>
+          <td>entire</td>
+          <td>categorical</td>
+          <td class="muted small">NZ_TAS_FLORA_VOL3_REVIEW_2020</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>mesic-wet</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>moisture_preference</td>
+          <td>xeric</td>
+          <td>categorical</td>
+          <td class="muted small">NZ_TAS_FLORA_VOL3_REVIEW_2020</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>substrate</td>
+          <td>soil</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>bulging</td>
+          <td>categorical</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>trigone_type</td>
+          <td>present</td>
+          <td>categorical</td>
+          <td class="muted small">NZ_TAS_FLORA_VOL3_REVIEW_2020</td>
+          <td>⚠</td>
+        </tr>
+        
+        <tr class="unverified">
+          <td>underleaf_present</td>
+          <td>0</td>
+          <td>boolean</td>
+          <td class="muted small">PLAGIOCHILA_AUSTRALIA_2018</td>
+          <td>⚠</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </figure>
+  <p class="muted small">⚠ = NLP-extracted, not yet human-verified</p>
+</section>
+
+
+
+
+<section>
+  <h2>Source descriptions</h2>
+  
+  <details>
+    <summary><strong>NZ_CHECKLIST_1998</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Schistochila pseudokirkiana R.M.Schust.         Paraschistochila tuloides (Hook.f. &amp; Taylor)
+Pachyschistochila latiloba R.M.Schust. &amp; J.J.Engel             R.M.Schust.
+Pachyschistochila nivicola R.M.Schust. &amp; ].].Engel             Schistochila tuloides (Hook.f. &amp; Taylor)
+Pachyschistochila papillifera (R.M.Schust.)                    R.M.Schust.
+       R.M.Schust. &amp; ].].Engel                         Pedinophyllum monoicum (Steph.) Grolle
+       Schistochila papillifera R.M.Schust.            Petalophyllum australe Colenso
+       Schistochila ruahinensis E.A.Hodgs.             Phyllothallia nivicola E.A.Hodgs.
+Pachyschistochila parvistipula (Rodw.) R.M.Schust.     Plagiochasma rupestre CT.R. &amp; G. Forst.) Steph.
+       &amp;].].Engel                                              Plagiochasma australe (Hook.f &amp; Taylor) Nees
+       Schistochila parvistipula Rodw.                         Plagiochasma hodgsoniae Hamlin, nom. illeg.
+Pachyschistochila subhyalina var. grandidentata        Plagiochila annotina Lindenb.
+       ].].Engel &amp; R.M.Schust.                         Plagiochila baileyana Steph.
+Pachyschistochila subhyalina (R.M.Schust.)             Plagiochila banksiana Gottsche var. banksiana
+       R.M.Schust. &amp; ].].Engel var. subhyalina         Plagiochila banksiana var. echinophora Inoue &amp;
+       Schistochila subhyalina R.M.Schust.                     R.M.Schust.
+Pachyschistochila succulenta ].].Engel &amp; R.M.Schust.   Plagiochila baylisii Inoue &amp; R.M.Schust.
+                                                                         NZ Liverworts and Hornworts    137
+
+
+
+
+Plagiochila caducifolia Inoue &amp; R.M.Schust.            Psiloclada major (R.M.Schust.) ].].Engel
+Plagiochila circinalis (Lehm. &amp; Lindenb.) Lehm. &amp;      Ptilidium ciliare (L.) Hampe
+         Lindenb.                                      Ptychanthus striatus (Lehm. &amp; Lindenb.) Nees
+Plagiochila circumdentata Steph.
+Plagiochila deltoidea Lindenb.                         Radula allisonii Castle
+Plagiochila fasciculata Lindenb.                       Radula buccinifera (Hook.f. &amp; Taylor) Taylor
+Plagiochila fragmentissima Inoue &amp; R.M.Schust.         Radula campanigera Mont.
+Plagiochila fruticella (Hook.f. &amp; Taylor) Hook.f. &amp;    Radula cuspidata Steph.
+         Taylor                                        Radula dentifolia Grolle
+Plagiochila fuscella (Hook.f. &amp; Taylor) Taylor &amp;       Radula fauciloba Steph.
+         Hook.f.                                       Radula grandis Steph.
+Plagiochila gigantea (Hook.) Dumort.                   Radula marginata Taylor
+         Plagiochila suborbiculata Colenso             Radula mittenii Steph.
+Plagiochila gregaria (Hook.f. &amp; Taylor) Hook.f. &amp;      Radula multimentula E.A.Hodgs.
+        Taylor                                         Radula papulosa Steph.
+Plagiochila incurvicolla (Hook.f. &amp; Taylor) Hook.f.    Radula parviretis E.A.Hodgs.
+        &amp; Taylor                                       Radula physoloba Mont.
+Plagiochila lyallii Mitt. var. lyallii                 Radula plicata Mitt.
+Plagiochila lyallii var. quinquespina (Steph.) Inoue   Radula sainsburiana E.A.Hodgs. &amp; Allison
+        &amp; R.M.Schust.                                  Radula silvosa E.A.Hodgs. &amp; Allison
+Plagiochila obscura Colenso                            Radula tabularis Steph.
+Plagiochila pleurata var. arguta Steph.                Radula uvifera (Hook.f. &amp; Taylor) Taylor
+Plagiochila pleurata (Hook.f. &amp; Taylor) Hook.f. &amp;      Reboulia hemisphaerica subsp. australis R.M.Schust.
+        Taylor var. pleurata                           Rectolejeunea ocellata Herzog
+Plagiochila radiculosa Mitt.                           Riccardia aequicellularis (Steph.) Hewson
+Plagiochila ramosissima (Hook.) Lindenb.               Riccardia aequitexta (Steph.) E.A. Brown
+Plagiochila retrospectans (Nees) Nees                          Aneura aequitexta Steph.
+Plagiochila rutlandii Steph.                                   Aneura effusa Steph.
+Plagiochila sinclairii Mitt.                                   Riccardia effusa (Steph.) E.A.Hodgs.
+Plagiochila stephensoniana Mitt.                       Riccardia alba (Colenso) E.A.Brown
+Plagiochila strombifolia Taylor                                Aneura alba Colenso
+Plagiochilion conjugatus (Hook.) R.M.Schust.                   Aneura crispa Colenso
+Plagiochilion prolifer (Mitt.) R.M.Schust.                     Aneura vitiensis Steph.
+Podomitrium phyllanthus (Hook.) Mitt.                          Riccardia vitiensis (Steph.) E.O.Campb.
+Porella elegantula (Mont.) E.A.Hodgs.                  Riccardia alcicornis (Hook.f. &amp; Taylor) Trevis.
+Porella pulcherrima S.Hatt.                            Riccardia asperulata R.M.Schust.
+Pseudocephalozia lepidozioides R.M.Sch ust.            Riccardia australis (Hook.f. &amp; Leveille) E.A. Brown
+        Lepidozia leptodictyon Herzog                          Aneura micropinna Steph.
+        Micrisophylla leptodictyon (Herzog)                    Riccardia filicina (Colenso) E.A.Hodgs. nom.
+        E.A.Hodgs.                                             inval.</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>NZ_TAS_FLORA_VOL3_REVIEW_2020</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">Smith-Merrill (2013) have been building for a                                      plane, often occurring at such sites with Notogram-
+                     decade. Their joint contribution to this family                                    mitis crassior.’’ This communicates not only the
+                     treatment is explicitly acknowledged on the family                                 linkage between New Zealand’s flora and its
+                     authorship. The authors’ familiarity with the family                               geological history, which for our alpine environ-
+
+                     The Bryologist 123(3), pp. 541–546 Published online: October 15 2020                                                0007-2745/20/$0.75/0
+                     Copyright Ó2020 by The American Bryological and Lichenological Society, Inc.
+Downloaded From: https://bioone.org/journals/The-Bryologist on 09 Jul 2026
+Terms of Use: https://bioone.org/terms-of-use Access provided by University of Tasmania
+             542         The Bryologist         123(3): 2020
+
+
+             ments is particularly tight, but also the authors’                           appear to conflict with the distinct lateral compres-
+             knowledge of the land and its plants; both are                               sion of the dry shoots at this couplet. In the event
+             evident throughout the volume.                                               that P. hartziana is progressed through 16b to
+                  The Plagiochila keys are clear and well struc-                          couplet 22, it will likely key to P. gregaria if the plant
+             tured, breaking species into progressively smaller                           has few teeth, which are then borne around the apex
+             groups, achieving a significant reduction in options                         only. If the plant has leaves with many teeth, then
+             at each step, which is preferable to keys that serially                      they will probably key to P. deltoidea, in whose
+             remove single distinctive species. Indented keys have                        synonymy So (2001) placed P. hartziana.
+             advantage of placing similar/related species together,                            Couplet 18. Plagiochila fragrantissima does not
+             but the disadvantage that couplets often appear on                           often have fragmenting leaves, despite the type
+             different sides of the same leaf, rather than side by                        specimen and epithet. Plants of Plagiochila fragmen-
+             side which can make comparison tedious. Two keys                             tissima without fragmenting leaves will mis-key
+             to Plagiochila are presented, one for sterile speci-                         here, likely progressing through to P. deltoidea or
+             mens, the other for fertile specimens, which includes                        P. gregaria. From P. deltoidea they can be distin-
+             characters from both male and female structures.                             guished by their ovate-triangular leaves whose
+             Some additional guidance on using the keys for                               margins bear few small triangular teeth, and
+             Plagiochila in Volume 3 is provided below.                                   perianths whose dorsal keel is winged and mouth
+                  Vegetative characters key (pages 25–28). Cou-                           is entire or nearly so. Plagiochila gregaria, is a New
+             plet 3a. The key implies Plagiochila fuscella should                         Zealand endemic, but misidentification of P.
+             proceed to 4. In fact, it should proceed to 3b, even                         fragmentissima led to a previous erroneous report
+             though leaves may be toothed to base; the text ‘‘(or                         of P. gregaria from Tasmania. From P. gregaria, P.
+             if minutely denticulate [P. fuscella], then the leaves                       fragmentissima can be distinguished by leaf-shape,
+             orbicular-reniform)’’ was probably intended for                              and the presence of a wing on the dorsal keel.
+             couplet 3b.                                                                       Couplet 21. Trigone development is evidently a
+                  Couplet 8. It might be possible to mis-key                              function of plant exposure in Plagiochila hartziana.
+             Plagiochila fasciculata and P. subflabellata here, on                        Tasmanian plants growing in full sun are not only
+             the basis of their straight or nearly straight ventral                       black and nitid, but their cell walls bear cordate to
+             leaf margin, especially the latter species. However,                         nodular trigones.
+             unlike P. arbuscula, P. pacifica and P. strombifolia,                             Couplet 24. Two other useful differences at this
+             which all have shoots with imbricate leaves, the                             point are vegetative branching and stolon origin.
+             shoots of P. subflabellata have well-spaced, usually                         Frullania-type vegetative branching and lateral-
+             remote leaves.                                                               intercalary stolon origin occur in Plagiochila acu-
+                  Couplet 12. Plagiochila rutlandii may have                              leata, P. fasciculata and P. subflabellata, whereas
+             bipinnately branched shoots. The leaf dimorphism                             Plagiochila deltoidea has only lateral-intercalary
+             character described in this couplet evidently pertains                       vegetative branches, and stolons originating by
+             only to size; both P. stephensoniana and P. rutlandii                        ventral-intercalary branching.
+             exhibit leaf dimorphism (see the comments under P.                                Couplet 28. Expression of caducous leaves is
+             intertexta p. 81, where P. rutlandii is described as                         variable among individuals of Plagiochila caducifolia,
+             having dimorphic leaves). The leaf dentition differs                         and some bear few or no caducous leaves. The
+             between the two species, on primary shoots of P.                             striolate-papillose cell-surface ornamentation is
+             stephensoniana the leaf teeth are sharp triangular,                          diagnostic.
+             prominent, and distributed on dorsal and ventral                                  Couplet 29. Another character is the possession
+             margins as well as around the apex. On primary                               of minute underleaves—present in Plagiochila
+             shoots of P. rutlandii the teeth are low triangular,                         colensoi but absent in P. incurvicolla.
+             relatively obscure, and occur around the apex only.                               Fertile characters key (pages 29–33). Couplet 1.
+             This can be used as a check on the kind of vegetative                        Branching type is only informative here if vegetative
+             branching emphasized in this couplet, which is itself                        Frullania-type branches are present, then proceed
+             diagnostic at this stage of the key.                                         through 1a. I think there may be a tendency to mis-
+                  Couplet 16. Plagiochila hartziana leaves are                            key Plagiochila ramosissima through 1a, given the
+
+---
+
+—                                            Chiastocaulon flamabile          though these are present in Schuster &amp; Engel (1985)
+             Plagiochilion proliferum                     Chiastocaulon proliferum         and the ‘‘Distribution’’ and ‘‘Ecology’’ sections for
+             Plagiochila aculeata                         Plagiochila fasciculata
+                                                                                           these Tasmanian endemics are brief, as were the
+             Plagiochila annotina                         Plagiochila annotina
+             Plagiochila arbuscula var. arbuscula         Plagiochila trispicata
+                                                                                           same sections for Tasmanian endemics in Volume 2.
+             Plagiochila arbuscula var. rekohuensis       Plagiochila trispicata                Although the generic classification adopted for
+             Plagiochila banksiana var. banksiana         Plagiochila banksiana            Schistochilaceae differs from that contained within
+             Plagiochila banksiana var. echinophora       Plagiochila banksiana            the World Checklist of Liverworts (Soderstrom et al.
+             Plagiochila baylisii                         Plagiochila baylisii             2016), one can sympathize with the approach taken
+             Plagiochila bazzanioides                     Plagiochila kirkii               in Volume 3, which retains Pachyschistochila along-
+             Plagiochila caducifolia                      Plagiochila spinulosa
+                                                                                           side Gottsche and Schistochila. The first molecular
+             Plagiochila circinalis var. circinalis       Plagiochila circinalis
+                                                                                           phylogenetic study devoted to Schistochilaceae (He
+             Plagiochila circinalis var. hemicardia       Plagiochila circinalis
+             Plagiochila circumdentata var.               Plagiochila circumdentata var.   &amp; Glenny 2010) resolved Perssoniella nested within
+               circumdentata                                circumdentata                  Schistochila, sister to a lineage containing Para-
+             Plagiochila circumdentata var. carinata      Plagiochila circumdentata var.   schistochila, however the sister relationship was not
+                                                            carinata                       strongly supported. He &amp; Glenny (2010) also
+             Plagiochila colensoi var. colensoi           Plagiochila colensoi             presented Pachyschistochila nested within a para-
+             Plagiochila colensoi var. quinquespina       Plagiochila incurvicolla
+                                                                                           phyletic Schistochila. To resolve the paraphyly of
+             Plagiochila deltoidei var. deltoidea         Plagiochila deltoidea
+                                                                                           Schistochila, He &amp; Glenny (2010) proposed synon-
+             Plagiochila deltoidea var. densa             Plagiochila deltoidea
+             Plagiochila fasciculata                      Plagiochila fasciculata
+                                                                                           ymizing Perssoniella, Pachyschistochila and Para-
+             Plagiochila fragmentissima                   Plagiochila fragmentissima       schistochila with Schistochila. A second study found
+             Plagiochila fuscella var. fuscella           Plagiochila fuscella             Pleurocladopsis nested within Schistochila in the
+             Plagiochila fuscella var. novae-zelandiae    Plagiochila fuscella             Gottschea clade (Clade IV), so He &amp; Sun (2013)
+             Plagiochila gigantea var. gigantea           Plagiochila gigantea             proposed a new combination in Schistochila for
+             Plagiochila gigantea var. inermis            —
+                                                                                           Pleurocladopsis simulans. The sister relationship
+             Plagiochila gregaria                         Plagiochila gregaria
+                                                                                           between Perssoniella and the Gottschea clade was
+             Plagiochila hartziana                        Plagiochila harztiana
+             Plagiochila incurvicolla var. incurvicolla   Plagiochila incurvicolla
+                                                                                           again recovered by He &amp; Sun (2013) and then by
+             Plagiochila incurvicolla var.                Plagiochila incurvicolla         Sun et al. (2014) on a larger sample of Schistochila
+               lonchoscypha                                                                species. The broader tree architecture with five main
+             Plagiochila intertexta                       Plagiochila intertexta           lineages was stable among the various analyses
+             Plagiochila microdictyon                     Plagiochila microdictyon         presented in these two studies, but some of the
+             Plagiochila pacifica                         Plagiochila pacifica             relationships within these main lineages were not.
+             Plagiochila radiculosa                       Cryptoplagiochila radiculosa
+                                                                                                As can happen in the interpretation of molec-
+             Plagiochila ramosissima                      Plagiochila ramosissima
+             Plagiochila reischeckiana                    Plagiochila subfasciculata
+                                                                                           ular phylogenies, the correlation between broad
+             Plagiochila rutlandii                        Plagiochila rutlandii            morphological groups and monophyly may not be
+             Plagiochila stephensoniana                   Plagiochila stephensoniana       readily apparent when a small subsample of species
+             Plagiochila stephensoniana                   Plagiochila alta                 is included in a phylogenetic study. This may have
+             Plagiochila strombifolia                     Plagiochila strombifolia         contributed to the ready rejection of Pachyschisto-
+             Plagiochila subflabellata                    Plagiochila subfasciculata       chila and Paraschistochila lineages and a decision to
+             34 species                                   36 species
+                                                                                           adopt a broad Schistochila by He &amp; Glenny (2010).
+             43 taxa                                      37 taxa
+                                                                                           The later and broader sampled phylogeny of Sun et
+                                                                                           al. (2014) provides a more encouraging platform for</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>PLAGIOCHILA_AUSTRALIA_2018</strong> (1 entry)</summary>
+    
+    
+    <p class="description-text">R.D. Seppelt 11963 (HO 577599); Boiler Rocks, 54°33&#39;S 158°52&#39;E, 15 m, 13 Dec 1979, R.D. Seppelt 7225 (HO
+577583); Sawyer Creek valley, above main water fall, 54°38&#39;S 158°53&#39;E, 80 m, 19 Nov 1979, R.D. Seppelt 6894
+(HO 577582); north west of Handspike Corner, 54°30&#39;S 158°53&#39;E, 15 m, 3 Jan 1980, R.D. Seppelt 7403 (HO
+577584); ibid, R.D. Seppelt 7406 (HO 577585); ibid, 20 Jan 1980, R.D. Seppelt 10230 (HO 577588); ibid, 25 Oct
+1984, R.D. Seppelt 14587 (HO 577605); Hurd Point, coastal slopes behind field Hut, 54°46&#39;S 158°50&#39;E, 100
+m, 17 Jan 1980, R.D. Seppelt 7791 (HO 577586); 1.5 km north east of Bauer Bay refuge hut, 54°33&#39;S 158°53&#39;E,
+120 m, 6 Nov 1981, R.D. Seppelt 11694 (HO 577589); west coast raised beach terrace between Boiler Rocks
+and Douglas Point, 54°33&#39;S 158°52&#39;E, 20 m, 16 Nov 1981, R.D. Seppelt 11804 (HO 577590); Finch Creek Valley,
+west of Sandy Bay, 54°34&#39;S 158°54&#39;E, 150 m, 23 Nov 1975, R.D. Seppelt 9572 (HO 577587); Raised beach terrace
+between Boiler Rocks and Douglas Point, 54°33&#39;S 158°52&#39;E, 20 m, 16 Nov 1981, R.D. Seppelt 11809 (HO 577591);
+A revision of Australian Plagiochila (Lophocoleinae: Jungermanniopsida)   Telopea 21: 187–380, 2018          205
+
+
+Razor Back Ridge, 54°30&#39;S 158°56&#39;E, 100 m, 5 Nov 1983, R.D. Seppelt 14427 (HO 577603); Hasselborough Bay,
+54°30&#39;S 158°56&#39;E, 10 m, 7 Nov 1983, R.D. Seppelt 14466 (HO 577604); Nuggets Creek, 54°32&#39;S 158°56&#39;E, 20 m,
+22 Nov 1984, R.D. Seppelt 14776 (HO 577606); 50 m west of Gadgets Gully dam, 54°30&#39;S 158°55&#39;E, 110 m, 9 Feb
+1995, R.D. Seppelt 19540 (HO 577607); creek on south side of Tractor Rocks, 54°30&#39;S 158°56&#39;E, 3 Feb 1995,
+R.D. Seppelt 19958 (HO 577608). New Zealand: North Island: North Cape, Te Paki, North Cape Scientific
+Reserve, Pararaki Stream, at the confluence of eastern and western tributaries, 34°24&#39;15&#34;S 173°01&#39;56&#34;E, 100 m,
+22 Feb 2011, P.J. de Lange 9934 (AK 323586); Central North Island, Eastern Volcanic Plateau, Whirinaki, near
+Minginui, Whirinaki River, Mangamate waterfall, 39°31&#39;21&#34;S 176°46&#39;52&#34;E, 320 m, 6 Dec 2007, P.J. de Lange
+7359 &amp; P.B. Cashmore (AK 303499); South Island: Nelson Province, Gridiron Bivvy, Flora track, NW Nelson,
+41°11&#39;S 172°44&#39;E, 1000 m, 20 May 1983, J. Child H4773 (F 1088173); Arthurs Pass, east of pass, Pegleg Creek,
+north of the road, 42°54&#39;S 171°34&#39;E, 950 m, 1 Feb 1986, J.E. Braggins 86/041B (AK 258044); Hokitika Gorge
+track from footbridge, at river access about 1 km upstream of footbridge, 42°57&#39;34&#34;S 171°36&#39;E, 75 m, 26 Nov
+1995, J.E. Braggins 95/649A (AK 303869); Lake Monowai, 19 km WSW of Manapouri, 45°35&#39;S 167°22&#39;E, 180 m,
+16 Nov 1990, J.A. Curnow 3480 (CANB 9406344); Chatham Islands: Rekohu (Chatham Island) Tuku-a-
+Tamatea Nature Reserve, Tuku-a-Tamatea River, 44°04&#39;S 176°36&#39;W, 200 m, 13 Sep 2007, P.J. de Lange CH1143
+&amp; P.B. Heenan (AK 302541).
+
+Plagiochila fuscella (Hook.f. &amp; Taylor) Taylor &amp; Hook.f. ex Gottsche, Lindenb. &amp; Nees,
+Synopsis Hepaticarum 5: 648 (1847)
+Basionym: Jungermannia fuscella Hook.f. &amp; Taylor, London Journal of Botany 3: 373 (1844)
+Type citation: Lord Auckland’s group.
+Type: Auckland Islands, Lord Auckland’s group, Nov 1840, J.D. Hooker, Voyage of H.M. Discovery Ships Erebus
+and Terror (lectotype designated here: FH 00458014!)
+=Plagiochila beckettiana Steph., Bulletin de l’Herbier Boissier, sér. 2 4: 788. (1904) = Species Hepaticarum 2:
+466. (1904)
+Type citation: New Zealand (Colenso, Beckett)
+Type: New Zealand, insula merid., Waimate (Canterbury) in damp bush, May 1901, T.W.N. Beckett 247, ex
+herb. Levier 2784 (lectotype designated by Bonner (1962): G 00121210!)
+=Plagiochila orbiculata Colenso, Transactions and Proceedings of the New Zealand Institute 21: 48 (1888)
+Type citation: On ground, sides of Mount Tongariro, County of East Taupo; 1887; Mr. H. Hill.
+Type: New Zealand, Mt Tongariro, county of East Taupo, 1887, Colenso 1357 (lectotype designated by Bonner
+(1962): G).
+=Plagiochila rotundifolia Colenso, Transactions and Proceedings of the New Zealand Institute 20: 246 (1887) [1888]
+Type citation: Among small herbage, shaded woods, base of Mount Tongariro, County of East Taupo; 1887: Mr.
+H. Hill.
+Type: n.v.
+=Plagiochila taylorii Steph., Bulletin de l’Herbier Boissier, sér. 2 4: 781 (1904) = Species Hepaticarum 2: 459
+(1904)
+Type citation: Tasmania (Weymouth).
+Type: Tasmania, Mt Wellington, St Crispin’s, 2000 ft, on rocks, 24 Jan 1899, W.A. Weymouth 550, (lectotype
+designated by Inoue and Schuster (1971): NY; isolectotypes: BM! HO 305177! HO 85834! MEL 300793!)
+=Plagiochila fuscella var. novae-zelandiae (E.A.Hodgs.) J.J.Engel &amp; G.L.Merr., Nova Hedwigia 89: 294 (2009)
+syn. nov.
+Basionym: Plagiochila retrospectans var. novae-zelandiae E.A.Hodgs., Transactions and Proceedings of the
+Royal Society of New Zealand 73: 293. (1944)
+Type citation: New Zealand Bealey River, coll. Berggren, n.3685e, 1874
+Type: n.v.
+Notes: Engel and Merrill (2010a) redundantly lectotypified P. beckettiana on the same specimen as Bonner
+(1962) and identified a lectotype for J. fuscella but their lectotypification did not fulfill the rather stringent
+requirements of the ICN.
+206           Telopea 21: 187–380, 2018                                                                       Renner
+
+
+A new lectotype for P. orbiculata was identified by Engel and Merrill (2010a): New Zealand, Colenso 1329
+sub Plagiochila alpina Colenso (WELT: isolectotype: G 00120994!), however Bonner (1962) had already
+inadvertently lectotypified this species. Plagiochila rotundifolia is a synonym of P. fuscella fide Engel &amp; Merrill
+(2009). Inoue and Schuster (1971) were not able to study the type of P. rotundifolia, but Stephani (1892) gives
+it as a synonym of Adelanthus falcatus fide Hamlin (1972); Colenso’s collection (n. 1424a) in WELT agrees
+with Plagiochila retrospectans fide Hamlin (1972). Inoue and Schuster (1971) designated Weymouth no. 550 in
+NY as the lectotype of P. taylorii and listed the name under synonymy of P. stephensoniana; Engel and Merrill
+(2013) clarified the status of P. taylorii, and placed it in synonymy of P. fuscella. Engel and Merrill (2010)
+recognized Plagiochila fuscella var. novae-zelandiae for plants with reniform leaves, teeth on the leaf margins,
+and thickened marginal cell walls. All these characters vary as a function of exposure. The number of marginal
+teeth also varies within and among specimens.
+Etymology: fusci- dark brown, -ella diminutive suffix, in reference to plant colour.
+Description: Plants with irregularly branched, erect leafy shoots comprising repeated monopodial units of
+a basal stolon and upper leafy sector, stolons arising from within the leafy sector near its base by lateral-
+intercalary branching; forming dense turfs; dark-green to bronze-green, shoot systems to 60 mm long and
+25 mm wide, monomorphic; shoots 1.0–1.5 mm wide, arising by lateral-intercalary branches. Stems without
+lamellae, paraphyllia, or paraphyses, reddish-brown, to 400 µm diameter, transversely elliptic, surfaces
+apparently smooth, irregular; cortical cells in 4–6 layers, cortical cell walls strongly and continuously
+thickened, constricting the cell lumen in middle cortical layers, reddish-brown, outer layer with thinner walls
+than inner cortical cell layers, all cortical cells smaller than medulla cells; medulla cell walls without secondary
+thickening except those beneath the cortex, on whose walls thickening tapers over 2 or 3 tiers toward the stem
+centre, primary walls faint red-brown pigmented. Rhizoids on stolons arising from the lateral merophytes at
+the base of leaves and from the ventral merophyte row. Leaves within stolon sector reduced, entire, remote to
+contiguous. Leaves on leafy shoots imbricate, succubously inserted but transversely orientated, rotund-ovate,
+1550–2500 µm long × 1500–2350 µm wide, dorsal margin shallowly curved, ventral margin ampliate; margins
+entire or with up to 100 teeth on apex and ventral margin, teeth small and triangular, comprised of one or two
+cells, apical cell triangular, slightly elongated and acute-tipped; leaf insertion J-shaped, recurved at ventral end,
+decurrent dorsally, attaining dorsal stem midline, not attaining the ventral stem midline leaving two or more
+cortical cell rows leaf-free. Marginal leaf cells quadrate to short rectangular 7–17 µm long × 8–15 µm wide,
+long axis parallel or perpendicular to leaf margin, walls of one to three tiers of marginal cells with continuous
+golden-brown thickening; medial leaf cells quadrate to polyhedral, 8–18 µm long × 10–23 µm wide, walls
+unpigmented, with conspicuous cordate to bulging trigones and occasional medial thickening; cells in leaf
+base long rectangular, to 60 µm long × 15 µm wide, walls continuously thickened. Cell surfaces smooth. Oil-
+bodies 1–4 per cell, ellipsoid, granular. Underleaves absent. Asexual reproduction absent.
+Dioicous. Androecia intercalary on shoots that continue vegetative growth, often in a terminal tuft produced
+by serial lateral-intercalary branching at the apex of a leafy shoot itself bearing a male branch, male branches
+nodding, ventral-intercalary and Frullania-type branches not associated with male branches; bracts in 3–8
+pairs, imbricate and closely packed, bracts resembling sterile leaves but with a dorsal pouch, antheridia 1 per
+bract, stalk biseriate; stem among bracts unornamented. Gynoecia at apices of leafy shoots; bracts ovate-
+rotund, larger than subtending leaves but otherwise similar; apex and ventral margin with numerous spinose
+teeth; bract cells as for leaf cells; cell surfaces smooth; female bracteole absent. Subfloral innovations produced
+by lateral- or ventral-intercalary branching from between the female bracts. Perianth ligulate, to 5500 µm long
+× 2500 µm wide at mouth, dorsal and ventral keels not winged, laterally compressed but with a weakly inflated
+base, lateral walls plane; labia truncate or emarginate, each bearing 18–24 spinose teeth. Fig. 3.
+Distribution and Ecology: Plagiochila fuscella is a native of southern temperate Australasia, and occurs in
+Australia and New Zealand. In Australia P. fuscella is widely distributed in Victoria, Tasmania, and Macquarie
+Island in wet sites associated with watercourses and seepages in forest, grassland, and herbfield. In Victoria
+P. fuscella is restricted to higher elevation sites in the Great Dividing Range. In New Zealand P. fuscella is
+widely distributed in the South Island but is rarer in the North Island, where it is restricted to cool hyperhumid
+forests in association with mountains and ranges. Plagiochila fuscella is often a rheophyte, growing within the
+flood zone of watercourses on bedrock, boulders, sand or soil, but it also grows in seepage sites associated
+with cliffs, and in saturated herbfield associated with soaks, tarns, and springs. On Macquarie Island P. fuscella
+has been collected in a wide range of microhabitats, including fellfield terraces in short grassland ecotones,
+with Azorella macquariensis, Polytrichum, Campylopus, Dicranoloma, Syzygiella colorata, and Racomitrium
+crispulum; in sheltered recesses alongside streams with Bartramia papillata, Chiloscyphus bidentatus, Lepidozia,
+and Peltigera; on wet stones and earth bank at edge of waterfall, with Acrocladium, Breutelia elongata, Temnoma
+palmatum, and Dicranella cardotii; in short grassland with Breutelia pendula and Thuidiopsis furfurosa; on
+stones at the edge of a small lake; and within rockfield formed by pillow basalt.
+A revision of Australian Plagiochila (Lophocoleinae: Jungermanniopsida)   Telopea 21: 187–380, 2018          207
+
+
+
+
+Fig 3. Plagiochila fuscella leaves from primary shoots, from H. Streimann 51191 (CANB 9306641), H. Streimann 51342
+(CANB 9306792), and H. Streimann 60997 (CANB 9910339.1)
+
+Recognition: Plagiochila fuscella can be recognized by the combination of succubously inserted but transversely
+orientated, ovate to reniform, imbricate leaves whose margins are either entire, or bear few to numerous small
+triangular teeth composed of one to three cells whose walls are usually continuously thickened to a degree
+greater than the subtending medial leaf cell walls, at least on the free external wall; vegetative branching
+by lateral-intercalary mode only; the decurrent wing formed by the dorsal leaf insertion; and the ventral-
+intercalary subfloral innovation when only one is present.
+Plagiochila fuscella could be confused with P. retrospectans, but differs by the absence of a pronounced,
+larger, spinose-dentate tooth close to the outer extremity of the dorsal leaf margin. Plagiochila fuscella and
+P. retrospectans also differ in leaf shape, the dorsal margin of P. fuscella leaves is more shallowly curved such
+that the leaf apex is above the leaf midline, whereas in P. retrospectans the dorsal margin is more curved, and
+the leaf apex is close to the leaf midline (Figs 3, 4).
+208          Telopea 21: 187–380, 2018                                                                   Renner
+
+
+Plagiochila fuscella could be confused with Adelanthus falcatus, but differs by the smaller, often more numerous
+teeth, the rotund to reniform leaf shape (not obovate) and the imbricate leaves.
+Representative specimens examined: Australia: Tasmania: North West Coast: Emu Bay, Jan 1892, J.H. Royce
+ex herb. Weymouth No. 68 det Stephani (BM); South West, Waterfall Creek State Reserve, South Bruny Range,
+43°24&#39;S 147°19&#39;E, 100 m, 28 Apr 1993, A. Moscal 25214 (HO 577324); South West, Wilson Bight, 43°33&#39;S
+146°05&#39;E, 5 m, 14 Jan 1987, A. Moscal 13963 (HO 577366); North East, Groom River, 3.5 km SSE of Lottah,
+41°15&#39;S 148°02&#39;E, 160 m, 23 Nov 1984, A. Moscal 26353 (HO 577342); eastern slope to Mackintosh Creek
+watershed, 480-680 m, 41°34&#39;S 145°49&#39;E, 5 May 2003, A. Moscal 31387A (HO 577373); Ben Lomond, Mount
+Barrow State Reserve, 41°22&#39;S 147°26&#39;E, 900 m, 26 Feb 1993, A. Moscal 24686 (HO 577416); Russell Falls to
+Lady Barron Falls track, Mt Field National Park, 42°41&#39;S 146°42&#39;E, 20 Dec 1980, A.V. Ratkowsky (HO 304472);
+Mt Freycinet, Freycinet National Park, 42°13&#39;S 148°18&#39;E, 620 m, 12 Jul 2003, K. Felton (HO 305596); Cradle
+Mountain-Lake St Clair National Park, track from Lees Paddocks to Kia Ora, 41°53&#39;S 146°06&#39;E, 630 m, 25 Sep
+2000, K. Felton (HO511113); Central Highlands, Qualie Falls, Olivia Creek, 41°34&#39;S 146°01&#39;E, 700 m, 16 May
+1996, A. Moscal 28324 (HO 577317); Macquarie Island: Lusitania Creek, 54°43&#39;S 158°50&#39;E, 50 m, 11 Jan 1980,
+R.D. Seppelt 9645 (HO 577657); ibid, 80 m, R.D. Seppelt (HO577658); ibid, 130 m, R.D. Seppelt 9700 (HO
+577659); 500 m south east of Mt Flectcher, 54°44&#39;S 158°49&#39;E, 320 m, 11 Jan 1980, R.D. Seppelt 9717 (HO
+577660); Bauer Bay, west coast, along creek north east of Bauer Bay hut, 54°33&#39;S 158°53&#39;E, 15 m, 8 Jan 1980,
+R.D. Seppelt 9772 (HO 577661); Green Gorge, 54°38&#39;S 158°54&#39;E, 40 m, 8 Feb 1980, R.D. Seppelt 9862 (HO
+577663); south east side of Mt Haswell, 54°46&#39;S 158°48&#39;E, 300 m, 31 Jan 1980, R.D. Seppelt 9979 (HO 577667);
+eastern shore of Prion Lake, 54°35&#39;S 158°54&#39;E, 190 m, 9 Feb 1980, R.D. Seppelt 10213 (HO 577674); Pyramid
+Peak, 54°39&#39;30&#34;S 158°52&#39;18&#34;E, 240 m, 26 Feb 1980, R.D. Seppelt 10329 (HO 577677); 1 km west of Scoble Lake,
+54°31&#39;S 158°54&#39;E, 200 m, 2 Mar 1980, R.D. Seppelt 10602 (HO 577684); Sawyer Creek valley, beside main
+waterfall, 54°38&#39;S 158°53&#39;E, 70 m, 5 Dec 1981, R.D. Seppelt 12117 (HO 577695); 500 m SW of Mt Elder, in water
+at east end of lake, 54°32&#39;S 158°55&#39;E, 340 m, 17 Dec 1984, R.D. Seppelt 14895a (HO 130040); 500 m SE of Mt
+Elder, on stones at edge of small lake, 54°32&#39;14&#34;S 158°55&#39;00&#34;E, 310 m, 17 Dec 1984, R.D. Seppelt 14895c (HO
+577614); 350 m N of Island Lake, 54°31&#39;S 158°53&#39;E, 200 m, 3 Mar 1985, R.D. Seppelt 15600 (HO 130033); 500
+m SW of Mt Elder, 54°32&#39;S 158°55&#39;E, 290 m, 17 Dec 1984, R.D. Seppelt 14895b (HO 130027); Sawyer Creek
+gorge, by main waterfall, 54°38&#39;S 158°53&#39;E, 5 Dec 1986, R.D. Seppelt 12116 (HO 129596); Green Gorge, 54°38&#39;S
+158°54&#39;E, 29 Oct 1980, R.D. Seppelt 11393 (HO 127643); Green Gorge, SW side, 54°38&#39;S 158°53&#39;E, 18 Nov 1979,
+R.D. Seppelt 6903 (HO 577642); Green Gorge, south side of lake, 54°37&#39;44&#34;S 158°53&#39;45&#34;E, 6 m, 26 Mar 2003,
+P.M. Turner (HO577634); Skua Lake, 54°37&#39;S 158°50&#39;E, 22 Oct 1983, G.R. Copson (HO 577632); Sawyer Creek</p>
+    
+    
+  </details>
+  
+  <details>
+    <summary><strong>RENNER_2024</strong> (2 entrys)</summary>
+    
+    
+    <p><strong>distribution:</strong> Vic.; Tas.; Macquarie I.</p>
+    
+    
+    
+    <p><strong>infraspecific_taxon:</strong> Plagiochila fuscella f. ex</p>
+    
+    
+  </details>
+  
+</section>
+
+
+
+  </main>
+
+  <footer class="container-fluid site-footer">
+    <small>
+      304 species · Renner et al. 2024 backbone · ALA occurrence data ·
+      Built with <a href="https://flask.palletsprojects.com">Flask</a> +
+      <a href="https://picocss.com">Pico CSS</a>
+    </small>
+  </footer>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>
+  
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  const coords = [[-54.633333, 158.866667], [-54.583333, 158.9], [-54.666667, 158.866667], [-54.516667, 158.9], [-41.815107, 148.084935], [-54.766667, 158.8], [-42.683333, 146.716667], [-54.683333, 158.816667], [-54.633333, 158.883333], [-54.766667, 158.783333], [-54.716667, 158.833333], [-54.65, 158.85], [-54.633333, 158.883333], [-54.716667, 158.85], [-54.533333, 158.916667], [-54.516667, 158.883333], [-54.633333, 158.9], [-54.666667, 158.866667], [-42.683333, 146.266667], [-54.635556, 158.888333], [-41.9263818, 146.0421921], [-42.7161195, 146.6615293], [-54.6, 158.9], [-54.6, 158.9], [-54.65, 158.866667], [-54.508333, 158.929444], [-42.8138732, 146.65716], [-42.916667, 147.266667], [-54.583333, 158.9], [-43.3771731, 147.309666], [-54.633333, 158.85], [-41.8945046, 146.3850244], [-42.987784, 147.860009], [-42.6757318, 146.7117878], [-54.627778, 158.891667], [-54.633333, 158.883333], [-42.2165859, 148.3034903], [-42.6149414, 146.3731071], [-54.633333, 158.9], [-42.783333, 145.95], [-42.683333, 146.716667], [-41.2538005, 148.032314], [-54.766667, 158.816667], [-54.593333, 158.893889], [-54.716667, 158.833333], [-54.733333, 158.816667], [-54.516667, 158.883333], [-41.7645129, 146.8229746], [-54.658333, 158.871667], [-54.627778, 158.893889], [-54.633333, 158.883333], [-54.65, 158.85], [-54.616667, 158.833333], [-54.716667, 158.833333], [-54.564167, 158.918889], [-42.666667, 146.633333], [-54.7, 158.816667], [-41.184723, 145.928207], [-54.695, 158.820833], [-43.183333, 146.9], [-54.633333, 158.9], [-42.66529, 146.5677149], [-41.094658, 145.929672], [-54.616667, 158.833333], [-41.7525948, 146.718361], [-54.566667, 158.85], [-41.275814, 147.956556], [-42.688333, 146.491667], [-42.6878542, 146.5591434], [-41.7627079, 146.8205736], [-54.633333, 158.883333], [-54.716667, 158.833333], [-54.5, 158.883333], [-54.633333, 158.883333], [-54.55, 158.883333], [-54.633333, 158.883333], [-54.583333, 158.9], [-54.5, 158.933333], [-42.666667, 146.65], [-54.55, 158.866667], [-54.633333, 158.883333], [-54.635556, 158.888333], [-42.916667, 147.25], [-43.2333, 146.75], [-41.333333, 147.833333], [-42.7161195, 146.6615293], [-54.616667, 158.833333], [-42.9, 147.3167], [-54.633333, 158.9], [-42.6878542, 146.5591434], [-54.633333, 158.883333], [-54.5, 158.883333], [-42.7161195, 146.6615293], [-42.683333, 146.716667], [-54.514444, 158.9], [-41.7645129, 146.8229746], [-54.635556, 158.888333], [-42.1319566, 146.1010465], [-54.508333, 158.929444], [-42.85, 146.3], [-54.516667, 158.883333], [-54.633333, 158.9], [-54.616667, 158.833333], [-54.616667, 158.833333], [-54.533333, 158.883333], [-41.4542722, 145.0913659], [-54.518333, 158.911667], [-42.933333, 147.216667], [-42.933333, 147.233333], [-42.883333, 147.25], [-54.633333, 158.9], [-42.081279, 145.550555], [-41.466667, 145.516667], [-54.55, 158.916667], [-41.7222941, 146.0873082], [-54.716667, 158.833333], [-42.933333, 147.233333], [-54.6075, 158.8975], [-42.6766328, 146.7117838], [-43.216667, 146.75], [-54.616667, 158.85], [-54.525, 158.893056], [-54.683333, 158.85], [-54.628889, 158.895833], [-54.633333, 158.883333], [-54.633333, 158.883333], [-43.2333, 146.75], [-54.516667, 158.9], [-54.516667, 158.9], [-41.5704797, 146.0270778], [-42.133333, 146.1], [-42.916667, 147.25], [-54.514444, 158.9], [-54.533333, 158.916667], [-37.4, 148.8333], [-50.5318042, 166.1661091], [-42.975265, 171.578121], [-39.1314876, 175.6329178], [-42.916031, 171.550514], [-46.4596542, 169.3440081], [-43.020714, 171.76403], [-41.303253, 172.355863], [-42.907154, 171.558466], [-35.735833, 173.761111], [-50.8151541, 166.1994373], [-39.296513, 174.063435], [-43.891109, 171.231228], [-41.879866, 172.446547], [-39.150031, 175.926304], [-35.180278, 173.410556], [-38.634222, 143.738639], [-41.15, 172.6], [-42.310676, 172.345746], [-50.7984827, 165.9494341], [-41.1, 174.1167], [-39.193874, 173.986674], [-38.5167, 143.9167], [-52.571, 169.163], [-46.459748, 169.344546], [-43.956293, -176.586608], [-50.5818058, 166.116108], [-43.497639, 170.047159], [-46.006263, 167.447262], [-45.3433197, 168.4928342], [-42.981096, 171.761218], [-41.3, 173.566667], [-37.1167, 145.2], [-40.943059, 175.271226], [-50.7984827, 165.9494341], [-38.260556, 174.901111], [-38.788884, 177.1440364], [-42.0011446, 172.8910773], [-41.107721, 172.620298], [-41.757841, 172.649121], [-40.9, 172.583333], [-46.407942, 169.418144], [-38.730035, 177.088022], [-41.1833, 172.7333], [-50.5818058, 166.116108], [-45.818452, 170.501547], [-46.452651, 168.3186953], [-50.8151539, 166.1494366], [-43.695027, 172.742357], [-42.907, 171.729], [-45.408652, 167.380923], [-45.27166, 167.313355], [-41.25, 175.01], [-50.8151541, 166.1994373], [-44.8947, 168.0797], [-42.094254, 172.154491], [-39.271069, 174.095449], [-43.690467, 172.738724], [-50.5818058, 166.116108], [-38.9776827, 174.8338092], [-41.551432, 173.168231], [-44.792373, 167.770036], [-47.196536, 167.667589], [-38.584069, 177.12141], [-43.3366023, 170.801213], [-44.9103, 168.0433], [-39.193874, 173.986674], [-39.150031, 175.926304], [-45.269516, 167.714614], [-41.571803, 172.513403], [-50.8484844, 165.9327635], [-36.761287, 175.498128], [-38.743641, 177.161411], [-42.940779, 171.556921], [-39.207118, 175.537748], [-41.379601, 172.30249], [-44.842482, 168.347969], [-45.408652, 167.380923], [-38.719811, 177.164426], [-35.165833, 173.27], [-43.694171, 172.735434], [-50.5318042, 166.1661091], [-38.584069, 177.12141], [-47.140694, 167.739429], [-45.429844, 167.60503], [-40.937702, 175.272703], [-44.906514, 168.050936], [-40.943059, 175.271226], [-38.75482, 177.152653], [-38.75482, 177.152653], [-42.907154, 171.558466], [-40.96, 175.111667], [-39.518543, -39.518543], [-43.3016017, 170.9178746], [-41.773585, 171.786182], [-41.108836, 172.589837], [-42.0815727, 171.382886], [-41.499787, 175.310766], [-38.722617, 177.159262], [-41.56, 172.3161], [-44.690437, 168.126808], [-50.8151539, 166.1494366], [-46.74053, 167.916493], [-39.135386, 175.905], [-43.902516, 169.638671], [-39.193874, 173.986674], [-47.039601, 167.842531], [-38.719811, 177.164426], [-41.145809, 172.598074], [-45.465368, 167.16651], [-49.694, 178.773], [-41.373804, 172.298483], [-42.382323, 172.15044], [-36.538526, 175.405035], [-45.608413, 166.869629], [-45.148005, 167.229565], [-45.81665, 170.498295], [-44.107207, 169.354806], [-46.896273, 168.098373], [-43.032, 171.692], [-39.359104, 175.473601], [-37.5959585, 175.8599258], [-47.1650404, 167.6994831], [-41.561776, 172.527942], [-43.704072, 172.748487], [-41.0275, 175.0247], [-40.047066, 175.969391], [-43.701924, 172.746411], [-45.054841, 167.543295], [-39.171944, 175.801944], [-45.645176, 167.584825], [-41.543233, 172.5445722], [-38.685692, 176.07021], [-35.642371, 173.551884], [-45.238784, 166.93777], [-38.687319, 176.135645], [-39.518543, -39.518543], [-45.261515, 167.109891], [-42.4667, 172.3833], [-41.390446, 172.281851], [-45.466154, 166.883942], [-37.605418, 175.856436], [-40.455994, 175.672237], [-45.026222, 167.326584], [-45.296299, 167.682293], [-39.806162, 176.193409], [-43.692956, 172.741844], [-50.831814, 165.9827643], [-45.5383, 169.0206], [-40.944911, 172.929382], [-50.5984764, 166.1161079], [-42.810436, 171.538635], [-42.965724, 171.776211], [-40.900675, 172.578869], [-45.054902, 167.543374], [-50.5318042, 166.1661091], [-40.8815482, 172.7162471], [-40.943028, 172.359578], [-41.484538, 172.460113], [-42.945303, 171.555462], [-41.695834, 171.853725], [-39.295583, 176.015911], [-42.83611, 171.554028], [-45.054841, 167.543295], [-41.571647, 172.527738], [-50.5984764, 166.1161079], [-41.168889, 172.625], [-42.021486, 172.059007], [-40.130984, 176.220286], [-45.608413, 166.869629], [-40.331104, 175.815411], [-36.666667, 175.583333], [-43.69387, 172.748042], [-42.800277, 171.568319], [-40.943713, 172.889726], [-39.518543, -39.518543], [-42.30955, 172.054315], [-41.222222, 172.685556], [-44.586031, 168.087239], [-41.219843, 172.687635], [-45.1408, 167.9794], [-45.75, 167.4], [-50.5318043, 166.1827693], [-45.148005, 167.229565]];
+  const map = L.map('map').setView([-42, 147], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Use a CircleMarker layer for performance with many points
+  coords.forEach(([lat, lng]) => {
+    L.circleMarker([lat, lng], {
+      radius: 4,
+      color: '#2d6a4f',
+      fillColor: '#52b788',
+      fillOpacity: 0.7,
+      weight: 1,
+    }).addTo(map);
+  });
+
+  if (coords.length > 0) {
+    map.fitBounds(L.latLngBounds(coords), { padding: [20, 20] });
+  }
+})();
+</script>
+
+
+</body>
+</html>
