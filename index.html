@@ -24,11 +24,14 @@ html,body{
 
 body{
 
-    overflow:hidden;
+    overflow-x:hidden;
+
+    /* tall enough that the page can be "moved" (scrolled) */
+    min-height:220vh;
 
     font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
-    background:#111;
+    background:#0a0a0a;
 
 }
 
@@ -47,7 +50,7 @@ body{
 
     filter:
         blur(28px)
-        brightness(.30)
+        brightness(.22)
         contrast(120%)
         saturate(0);
 
@@ -62,7 +65,7 @@ body{
     position:absolute;
     inset:0;
 
-    background:rgba(0,0,0,.45);
+    background:rgba(0,0,0,.5);
 
 }
 
@@ -104,6 +107,30 @@ main{
 
 }
 
+.hero img.disintegrating{
+    visibility:hidden;
+}
+
+.hero canvas{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+}
+
+/* text sits ABOVE the shard canvas so it stays legible */
+.hero .plate{
+    position:absolute;
+    inset:0;
+    z-index:3;
+    pointer-events:none;
+}
+
 /* ---------- NAME ---------- */
 
 .name{
@@ -124,7 +151,57 @@ main{
     letter-spacing:-.04em;
 
     text-shadow:
-        0 3px 25px rgba(0,0,0,.7);
+        0 3px 25px rgba(0,0,0,.85);
+
+    mix-blend-mode:difference;
+
+}
+
+/* ---------- CONCERN LINE (on the image) ---------- */
+
+.concern{
+
+    position:absolute;
+
+    left:40px;
+
+    bottom:128px;
+
+    max-width:60%;
+
+    color:#ece8df;
+
+    font-family:Georgia,serif;
+    font-style:italic;
+
+    font-size:clamp(1rem,1.9vw,1.35rem);
+
+    line-height:1.3;
+
+    text-shadow:
+        0 2px 20px rgba(0,0,0,.9);
+
+    pointer-events:auto;
+
+}
+
+.concern a{
+
+    color:#ece8df;
+
+    text-decoration:none;
+
+    border-bottom:1px solid rgba(236,232,223,.55);
+
+    transition:.25s;
+
+}
+
+.concern a:hover{
+
+    opacity:.6;
+
+    letter-spacing:.05em;
 
 }
 
@@ -136,6 +213,8 @@ main{
 
     top:34px;
     left:38px;
+
+    z-index:4;
 
     border:none;
     background:none;
@@ -216,7 +295,7 @@ nav{
 
     height:100vh;
 
-    background:#1b1b1b;
+    background:#141414;
 
     padding:120px 70px;
 
@@ -252,13 +331,15 @@ nav a:hover{
 
 }
 
-body.open nav{
+body.open-time .nav-time,
+body.open-plants .nav-plants{
 
     transform:translateX(0);
 
 }
 
-body.open .overlay{
+body.open-time .overlay,
+body.open-plants .overlay{
 
     opacity:1;
     pointer-events:auto;
@@ -273,11 +354,17 @@ body.open .overlay{
 
 <div class="background"></div>
 
-<div class="overlay" onclick="toggleMenu()"></div>
+<div class="overlay" onclick="closeMenu()"></div>
 
-<nav>
+<nav class="nav-time">
 
-<a href="/liverworts/">Liverwort</a>
+<a href="/time/">Time</a>
+
+</nav>
+
+<nav class="nav-plants">
+
+<a href="/plants/">Plants</a>
 
 </nav>
 
@@ -285,16 +372,21 @@ body.open .overlay{
 
 <div class="hero">
 
-<img src="01-024.jpg">
+<img src="01-024.jpg" id="hero-img" crossorigin="anonymous">
 
-<button class="index" onclick="toggleMenu()">
-INDEX
-</button>
+<canvas id="shatter"></canvas>
 
-<div class="name">
+<div class="plate">
 
-Christopher<br>
-McCarthy
+    <div class="concern">
+        I am concerned about what is happening to <a href="#" onclick="openMenu('time');return false;">time</a>.<br>
+        I am concerned about <a href="#" onclick="openMenu('plants');return false;">plants</a>.
+    </div>
+
+    <div class="name">
+        Christopher<br>
+        McCarthy
+    </div>
 
 </div>
 
@@ -304,11 +396,112 @@ McCarthy
 
 <script>
 
-function toggleMenu(){
+function openMenu(which){
 
-    document.body.classList.toggle("open");
+    document.body.classList.remove("open-time","open-plants");
+    document.body.classList.add("open-" + which);
 
 }
+
+function closeMenu(){
+
+    document.body.classList.remove("open-time","open-plants");
+
+}
+
+/* ---------- DISINTEGRATION ---------- */
+
+(function(){
+
+    const img    = document.getElementById("hero-img");
+    const canvas = document.getElementById("shatter");
+    const ctx    = canvas.getContext("2d");
+
+    const COLS = 26;
+    const ROWS = 18;
+
+    let cells = [];
+    let ready = false;
+
+    function build(){
+
+        const w = img.naturalWidth;
+        const h = img.naturalHeight;
+        if(!w || !h) return;
+
+        canvas.width  = w;
+        canvas.height = h;
+
+        const cw = w / COLS;
+        const ch = h / ROWS;
+
+        cells = [];
+
+        for(let r=0; r<ROWS; r++){
+            for(let c=0; c<COLS; c++){
+
+                cells.push({
+                    sx:c*cw, sy:r*ch, w:cw, h:ch,
+                    dx:(Math.random()-.5),
+                    dy:(Math.random()*.6+.4),
+                    rot:(Math.random()-.5),
+                    jitter:Math.random()*Math.PI*2
+                });
+
+            }
+        }
+
+        img.classList.add("disintegrating");
+        ready = true;
+        draw(0);
+    }
+
+    function draw(progress){
+
+        if(!ready) return;
+
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+
+        const p = Math.min(Math.max(progress,0),1);
+        const spread = p * Math.max(canvas.width,canvas.height) * 0.9;
+
+        for(const cell of cells){
+
+            const wob = Math.sin(cell.jitter + p*10) * 6 * p;
+
+            const ox = cell.dx * spread + wob;
+            const oy = cell.dy * spread;
+
+            ctx.save();
+            ctx.globalAlpha = 1 - p*0.9;
+            ctx.translate(cell.sx + cell.w/2 + ox,
+                          cell.sy + cell.h/2 + oy);
+            ctx.rotate(cell.rot * p * 1.2);
+            ctx.drawImage(
+                img,
+                cell.sx, cell.sy, cell.w, cell.h,
+                -cell.w/2, -cell.h/2, cell.w, cell.h
+            );
+            ctx.restore();
+        }
+    }
+
+    function onMove(){
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = max > 0 ? window.scrollY / max : 0;
+        draw(progress);
+    }
+
+    if(img.complete && img.naturalWidth){
+        build();
+    } else {
+        img.addEventListener("load", build);
+    }
+
+    window.addEventListener("scroll", onMove, {passive:true});
+    window.addEventListener("resize", onMove);
+
+})();
 
 </script>
 
