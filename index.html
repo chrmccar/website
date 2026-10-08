@@ -45,7 +45,7 @@
   .panel {
     position: fixed; top: 0; right: 0; bottom: 0; width: min(440px, 100vw); z-index: 2;
     box-sizing: border-box; padding: 96px 30px 30px; overflow-y: auto;
-    background: rgba(11, 16, 20, 0.88); border-left: 1px solid #1f2b2e;
+    background: color-mix(in srgb, var(--bg) 88%, transparent); border-left: 1px solid rgba(255, 255, 255, 0.07);
     -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
     transform: translateX(100%); visibility: hidden;
     transition: transform 0.35s ease, visibility 0s linear 0.35s;
@@ -62,10 +62,18 @@
   }
   .panel .close:hover, .panel .close:focus-visible { color: var(--text); outline: none; }
 
+  /* tells you which background you have switched to, briefly */
+  #bgnote {
+    position: fixed; left: 28px; bottom: 16px; margin: 0; z-index: 3; font-size: 11px; letter-spacing: 0.06em;
+    color: var(--dim); opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
+    text-shadow: 0 0 6px var(--bg);
+  }
+  #bgnote.on { opacity: 1; }
+
   @media (max-width: 640px) {
     .masthead { padding: 16px 18px; }
     .masthead h1 { font-size: 16px; letter-spacing: 0.12em; }
-    .panel { padding: 110px 22px 24px; border-left: 0; background: rgba(11, 16, 20, 0.93); }
+    .panel { padding: 110px 22px 24px; border-left: 0; background: color-mix(in srgb, var(--bg) 93%, transparent); }
     .panel .close { top: 104px; right: 18px; }
   }
   @media (prefers-reduced-motion: reduce) { .panel { transition: none; } }
@@ -88,6 +96,8 @@
      Each <section> opens when its menu link is clicked. Replace the
      text in [square brackets] with your own. To add a section later,
      copy one, give it a new id, and add a matching link in the menu. -->
+<p id="bgnote" aria-live="polite"></p>
+
 <section class="panel" id="about" aria-labelledby="about-h">
   <button class="close" type="button">close &times;</button>
   <h2 id="about-h">about</h2>
@@ -108,9 +118,16 @@
    SETTINGS: the things you are most likely to want to change
 ------------------------------------------------------------------ */
 const CONFIG = {
-  fontSize: 11,             // px. Smaller = more characters = a bigger, finer tree
-                            // next to the wallaby (which is a fixed number of rows tall)
-  fontFamily: '"JetBrains Mono", "Fira Code", Menlo, Consolas, "DejaVu Sans Mono", monospace',
+  // Background. Pick one of the names in BACKGROUNDS further down (night, dusk,
+  // forest, slate, ink), or press the B key on the page to step through them.
+  background: 'night',
+  backgroundKey: true,      // let the B key change the background (handy while choosing)
+  fontWeight: 'bold',       // 'bold' fills the picture in more; 'normal' is lighter and finer
+  adaptive: true,           // if frames take too long, step up to a slightly larger font
+                            // (same picture, a little less fine) until it runs smoothly
+  fontSize: 8,              // px. Smaller = finer detail but more work for the computer.
+                            // Everything keeps its size on screen whatever you choose.
+  fontFamily: 'Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", "Courier New", monospace',
   fps: 30,
   seed: 11,                 // change for a different individual tree
   wind: 1.0,                // 0 = still air, 2 = blustery
@@ -166,58 +183,69 @@ const CONFIG = {
   cockatoos: true,          // a pair of white cockatoos flies over now and then
   cockatooEvery: [25, 60],  // seconds between fly-overs: shortest, longest
   cockatooSize: 1.0,
-  cockatooPerch: 0.33,      // share of visits where they land on the main tree and look around
-  cockatooLook: 1.0,        // seconds they spend looking around before flying off
+  cockatooPerch: 0.66,      // share of visits where they land on the main tree and look around
+  cockatooStay: [2, 20],    // seconds they stay: shortest, longest (picked at random each visit)
   wallabySize: 1.0,         // 1 = about nine rows of text tall
   wallabyLook: true,        // stops part-way across and looks out at the viewer
   wallabyWait: 1.0,         // seconds it holds the look before hopping on
+  // Colours. Each kind of thing has its own hue so it is easy to tell apart:
+  // Callitris blue-green, tussocks yellow-olive, grass trees teal, eucalypts
+  // grey-blue, the far hill purple-grey, bare ground warm brown.
   colors: {
-    // forest layers, kept deliberately dim so the Callitris stays the subject
-    ridge: ['#121f26', '#27404a'],              // distant hill: slope, crest
-    star: ['#3d4c5c', '#7f90a3', '#c9d3de'],    // dim -> bright
-    rock: ['#3c4548', '#566064', '#8c979a'],    // shaded -> lit
-    lichen: '#9aa68a',
-    log: ['#5d5044', '#93816c', '#b39b7c'],     // bark, lit bark, cut end
-    farHill: ['#1b2930', '#35454d', '#62757d'],   // distant rocky hill: scree, rock, lit skyline
-    farCallitris: ['#1f3a31', '#2c4c40'],         // Callitris silhouettes on its skyline: shaded, lit
-    farScrub: '#213a31',                          // tiny far-off shrubs on it
-    grassTree: ['#4a6652', '#66876a', '#88a784'],   // fine grey-green leaves, shaded -> lit
-    grassTreeStalk: '#8c8e63',
-    grassTreeSpike: ['#6f5238', '#8e6d48', '#e3d9b0'],   // old flower spike: dark, brown, cream flecks
-    grassTreeFlower: ['#c9bd8c', '#efe8c6', '#fffbe6'],  // spike in bloom
-    insect: '#f0dc8a',
-    fernTrunk: ['#3b2f27', '#524238', '#6a5746'],
-    fernFrond: ['#2f6a3a', '#4a9150', '#7cbf6e'],   // underside, frond, lit
-    mist: ['#22313a', '#31434d'],
-    echidna: '#5a4838',
-    echidnaSpine: '#cdb888',
-    echidnaDark: '#2c2521',
-    crest: '#526a5c',                           // the edge of the hill against the forest behind
-    far: ['#1a2c34', '#243b40'],                // distant misty canopy
-    midTrunk: '#39403f',                        // background trunks
-    midCrown: ['#1c342f', '#28473b'],           // background crowns
-    shrub: ['#414f2e', '#5c6b39', '#7d8a49'],   // tussock leaves: tough olive green, shaded -> lit
-    straw: ['#7a6c46', '#a39160'],              // dead leaves and old flower spikes
-    bg: '#0b1014',
-    // foliage, shaded side -> sunlit side
-    foliage: ['#1f3f38', '#2a5344', '#376a50', '#4a8360', '#6c9f7a', '#96bd98'],
-    barkLight: '#9a8b78',
-    barkDark: '#65584c',
-    cone: '#c0905f',
-    // browned, drought-killed foliage, shaded -> lit
-    deadFoliage: ['#3b2d24', '#574030', '#755438', '#91663f', '#ab7b4a', '#c2955f'],
-    deadWood: '#8b8a84',
-    wallaby: '#a3978a',       // grey-brown coat
-    wallabyNeck: '#b3805f',   // reddish neck and shoulders
-    wallabyDark: '#3a332e',   // eye, in profile
-    cockatoo: '#f0ece2',
-    cockatooCrest: '#ecd24a',
-    cockatooBeak: '#5f5c5a',
-    wallabyEye: '#f1e8d2',    // eyes, when it looks at you
-    grass: '#7d8f55',
-    ground: '#6b6a4a',
+    bg: '#0b1014',                                    // set from the chosen background
     air: '#243240',
+    star: ['#3d4c5c', '#8192a6', '#d3dce6'],          // dim -> bright
+    mist: ['#27384a', '#3b5169'],
+
+    // Callitris: foliage shaded -> sunlit, bark, cones
+    foliage: ['#1e4b45', '#286456', '#348064', '#4a9c72', '#70ba8a', '#a2d8a9'],
+    barkLight: '#b39c82',
+    barkDark: '#7c6856',
+    cone: '#d99c5a',
+    // the drought-killed tree: browned foliage shaded -> lit, bleached wood
+    deadFoliage: ['#4c3323', '#70462b', '#965b32', '#b8723a', '#d38c48', '#e6aa62'],
+    deadWood: '#a9a69d',
+
+    // the forest floor
+    ground: '#8c6b4e',                                // leaf litter
+    grass: '#9c9d63',
+    crest: '#6f8b73',                                 // top edge of the slope
+    shrub: ['#586a2a', '#7e9036', '#aaba4e'],         // tussocks: yellow-olive, shaded -> lit
+    straw: ['#907e4a', '#c6ae6c'],                    // dead leaves and old flower spikes
+    rock: ['#4a5258', '#6d787f', '#a6b2b8'],          // shaded -> lit
+    lichen: '#d28b3c',
+    log: ['#7c5038', '#b37c55', '#dab28a'],           // bark, lit bark, cut end
+    grassTree: ['#3d7271', '#5a9995', '#8cc7be'],     // teal, shaded -> lit
+    grassTreeStalk: '#a5a76f',
+    grassTreeSpike: ['#7f5b3a', '#a87c4d', '#ecdfb4'],    // old spike: dark, brown, cream flecks
+    grassTreeFlower: ['#d8cb90', '#f5edc5', '#fffbe6'],   // spike in bloom
+    insect: '#f5e08c',
+    fernTrunk: ['#3b2f27', '#524238', '#6a5746'],
+    fernFrond: ['#2f6a3a', '#4a9150', '#7cbf6e'],
+
+    // behind the slope
+    midTrunk: '#71807f',                              // eucalypt trunks, pale
+    midCrown: ['#2e4b54', '#45696d'],                 // eucalypt crowns, grey-blue
+    far: ['#1d3442', '#2b4858'],                      // distant canopy, slate
+    ridge: ['#17252f', '#30495a'],                    // furthest ridge: slope, crest
+    farHill: ['#272b3c', '#454a66', '#747aa0'],       // rocky hill, purple-grey: scree, rock, skyline
+    farCallitris: ['#24493f', '#356250'],             // Callitris silhouettes on it
+    farScrub: '#2b4c3d',
+
+    // animals
+    wallaby: '#b4a797',
+    wallabyNeck: '#cb8760',
+    wallabyDark: '#3a332e',
+    wallabyEye: '#f1e8d2',
+    cockatoo: '#f3efe6',
+    cockatooCrest: '#f0d648',
+    cockatooBeak: '#5f5c5a',
+    echidna: '#6d5642',
+    echidnaSpine: '#dec790',
+    echidnaDark: '#2c2521',
+
     caption: '#56636f'
+
   }
 };
 
@@ -275,6 +303,28 @@ const reducedMotion = window.matchMedia &&
 let cols = 0, rows = 0, cw = 8, ch = 16;   // grid size and cell size (px)
 let groundRow = 0, treeH = 40, cx = 0, aspect = 0.5;
 let W = 0, H = 0;
+// The scene was laid out for 14px-tall cells. DK says how much finer the current
+// grid is than that, so sizes given in rows or columns keep their size on screen.
+let DK = 1;
+
+/* Backgrounds: each is a soft top-to-bottom blend from the colour high in the
+   sky to the colour at the horizon and below. Add your own as [top, horizon]. */
+const BACKGROUNDS = {
+  night:  ['#080c12', '#0e181d'],     // blue-black, close to the original
+  dusk:   ['#12112a', '#35212c'],     // indigo sky warming to plum near the horizon
+  forest: ['#06100d', '#10221a'],     // deep green-black
+  slate:  ['#151a21', '#1e272e'],     // lighter charcoal, softer contrast
+  ink:    ['#000000', '#000000']      // pure black, strongest contrast
+};
+let bgFill = '#0b1014';     // what the canvas is cleared with (a gradient)
+let bgName = CONFIG.background in BACKGROUNDS ? CONFIG.background : 'night';
+let coarser = 0;      // extra font size added automatically if this computer can't keep up
+
+// draw one character in one cell
+function put(c, color, i, j) {
+  ctx.fillStyle = color;
+  ctx.fillText(c, i * cw, j * ch);
+}
 
 function resize() {
   const dpr = window.devicePixelRatio || 1;
@@ -286,21 +336,36 @@ function resize() {
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
   // shrink the font on small screens so the tree keeps enough rows
-  const fs = Math.max(8, Math.min(CONFIG.fontSize, Math.floor(H / 42)));
-  ctx.font = fs + 'px ' + CONFIG.fontFamily;
+  // background: a gradient for the canvas, and its horizon colour for everything
+  // else (the page behind, and what distant things fade towards)
+  const bgc = BACKGROUNDS[bgName];
+  bgFill = ctx.createLinearGradient(0, 0, 0, H);
+  bgFill.addColorStop(0, bgc[0]);
+  bgFill.addColorStop(0.7, bgc[1]);
+  bgFill.addColorStop(1, bgc[1]);
+  CONFIG.colors.bg = bgc[1];
+  document.documentElement.style.setProperty('--bg', bgc[1]);
+
+  const fs = Math.max(6, Math.min(CONFIG.fontSize, Math.floor(H / 42))) + coarser;
+  const fontCss = CONFIG.fontWeight + ' ' + fs + 'px ' + CONFIG.fontFamily;
+  ctx.font = fontCss;
   ctx.textBaseline = 'top';
   cw = ctx.measureText('M').width;
   ch = Math.round(fs * 1.25);
+  // plain, evenly spaced characters: no joined-up letter pairs
+  if ('fontKerning' in ctx) ctx.fontKerning = 'none';
+  if ('textRendering' in ctx) ctx.textRendering = 'optimizeSpeed';
   cols = Math.ceil(W / cw);
   rows = Math.floor(H / ch);
   aspect = cw / ch;
+  DK = 14 / ch;
 
   groundRow = rows - 1;
   buildTerrain();
   // main tree height in rows: as tall as fits every tree where it stands on the slope
   treeH = Math.floor(cols * 0.8 * aspect / 0.22);
   for (const t of CONFIG.trees) {
-    treeH = Math.min(treeH, (groundRow - groundUp(cols * t.x, t.distance) - (CONFIG.cockatoos ? 5 : 2)) / t.size);
+    treeH = Math.min(treeH, (groundRow - groundUp(cols * t.x, t.distance) - (CONFIG.cockatoos ? 5 : 2) * DK) / t.size);
   }
   treeH = Math.max(12, Math.floor(treeH));
   cx = Math.floor(cols / 2);
@@ -332,8 +397,8 @@ function buildTerrain() {
     let x = i / Math.max(1, cols - 1);
     if (CONFIG.hillRises === 'right') x = 1 - x;
     const h = 0.5 + 0.5 * Math.cos(Math.PI * x);          // 1 on the high side .. 0 on the low side
-    const wob = (noise3(i * 0.03, 21.7, 0) - 0.5) * hill;  // gentle unevenness
-    frontUp[i] = 2.5 + rows * 0.085 * hill * h + wob * 1.2;
+    const wob = (noise3(i * 0.03 / DK, 21.7, 0) - 0.5) * hill * DK;  // gentle unevenness
+    frontUp[i] = 2.5 * DK + rows * 0.085 * hill * h + wob * 1.2;
     crestUp[i] = frontUp[i] + rows * (0.13 + 0.14 * hill * h) + wob * 2;
   }
   groundPal = []; grassPal = [];
@@ -437,7 +502,7 @@ function treeAt(T, i, j, t) {
     tColor = (alive ? T.fol : T.dead)[Math.floor(light * T.fol.length)];
     // seed cones, clustered on the older wood inside the crown
     if (D > 0.3 + sick * 0.3 && d > 0.1 && d < 0.8 &&
-        noise3(ti * 0.13 + z, tj * 0.13, 40) > 0.6 && hash3(ti, tj, 2 + z) < 0.09) {
+        noise3(ti * 0.13 / DK + z, tj * 0.13 / DK, 40) > 0.6 && hash3(ti, tj, 2 + z) < 0.09) {
       tC = 'o';
       tColor = T.cone;
     }
@@ -482,7 +547,7 @@ function buildForest() {
   ridgeH = new Float32Array(cols);
   midTrees = [];
   if (CONFIG.ridge) for (let i = 0; i < cols; i++) {
-    ridgeH[i] = treeH * (0.5 + 0.2 * noise3(i * 0.012, 11.3, 0) + 0.05 * noise3(i * 0.07, 12.1, 0));
+    ridgeH[i] = treeH * (0.5 + 0.2 * noise3(i * 0.012 / DK, 11.3, 0) + 0.05 * noise3(i * 0.07 / DK, 12.1, 0));
   }
   buildRockyHill();
   buildGround();
@@ -491,22 +556,24 @@ function buildForest() {
 
   for (let i = 0; i < cols; i++) {
     // skyline: long rolling shape plus small bumps for individual treetops
-    const bump = noise3(i * 0.55, 8.3, 0);
-    farH[i] = treeH * (0.28 + 0.22 * noise3(i * 0.035, 7.1, 0)) + 3 * bump * bump;
+    const bump = noise3(i * 0.55 / DK, 8.3, 0);
+    farH[i] = treeH * (0.28 + 0.22 * noise3(i * 0.035 / DK, 7.1, 0)) + 3 * DK * bump * bump;
 
   }
   buildTussocks();
 
   // background trees: one per slot across the width, none behind the main crown
-  const n = Math.round(cols / 24 * CONFIG.forestTrees);
+  const n = Math.round(cols / (24 * DK) * CONFIG.forestTrees);
   for (let k = 0; k < n; k++) {
     const x = (k + 0.2 + 0.6 * hash3(k, 1, 20)) * cols / n;
-    if (trees.some(T => Math.abs(x - T.x) < T.width * 0.6 * T.h / aspect + 12)) continue;
+    if (trees.some(T => Math.abs(x - T.x) < T.width * 0.6 * T.h / aspect + 12 * DK)) continue;
     midTrees.push({
       x: x,
-      h: treeH * (0.5 + 0.42 * hash3(k, 2, 20)),   // rows from ground to crown centre
-      rx: 6 + 6 * hash3(k, 3, 20),                 // crown radii, in columns / rows
-      ry: 3.5 + 3.5 * hash3(k, 4, 20),
+      // tall, but never so tall that the crown is off the top of the screen
+      h: Math.min(treeH * (0.5 + 0.42 * hash3(k, 2, 20)),
+                  groundRow - crestUp[Math.min(cols - 1, Math.round(x))] - 9 * DK),   // rows from ground to crown centre
+      rx: (6 + 6 * hash3(k, 3, 20)) * DK,                 // crown radii, in columns / rows
+      ry: (3.5 + 3.5 * hash3(k, 4, 20)) * DK,
       lean: (hash3(k, 5, 20) - 0.5) * 0.12,
       wide: hash3(k, 6, 20) < 0.35,
       k: k
@@ -532,7 +599,7 @@ let wallaby = null, nextWallaby = -1;
 function spawnWallaby(t) {
   if (wallaby || !cols || !CONFIG.wallaby) return;
   const dir = Math.random() < 0.5 ? 1 : -1;
-  const S = ch * 8.5 * CONFIG.wallabySize;          // pixels per body-height
+  const S = ch * 8.5 * DK * CONFIG.wallabySize;          // pixels per body-height
   const x0 = dir > 0 ? -S : W + S;
   // pick a spot somewhere across the middle of the view to stop and look
   let target = W * (0.22 + 0.56 * Math.random());
@@ -695,10 +762,9 @@ function paintShape(P, ox, oy, S, dir, i0, i1, j0, j1, colors, eyes, eyeColor) {
       for (let e = 0; e < eyeCells.length; e++) {
         if (i === eyeCells[e][0] && j === eyeCells[e][1] && cnt >= 3) { c = 'o'; color = eyeColor; }
       }
-      ctx.fillStyle = CONFIG.colors.bg;
+      ctx.fillStyle = bgFill;
       ctx.fillRect(i * cw, j * ch, cw + 0.5, ch);
-      ctx.fillStyle = color;
-      ctx.fillText(c, i * cw, j * ch);
+      put(c, color, i, j);
     }
   }
 }
@@ -763,7 +829,9 @@ function drawCockatoos(t) {
     const perch = Math.random() < CONFIG.cockatooPerch && trees.length > 0;
     const dir = Math.random() < 0.5 ? 1 : -1;
     flock = {
-      t0: t, dir: dir, S: ch * 8 * CONFIG.cockatooSize, perch: perch,
+      t0: t, dir: dir, S: ch * 8 * DK * CONFIG.cockatooSize, perch: perch,
+      stay: CONFIG.cockatooStay[0] + Math.random() * (CONFIG.cockatooStay[1] - CONFIG.cockatooStay[0]),
+      seed: Math.random() * 100,
       y0: H * (0.12 + 0.26 * Math.random()),
       climb: (Math.random() - 0.5) * 0.12,                 // drifting slightly up or down
       speed: Math.max(150, W / 7)                          // pixels per second
@@ -800,8 +868,8 @@ function drawCockatoos(t) {
 
   /* ----- landing on the main tree: fly in, settle, look around, fly off ----- */
   const T = trees[0];
-  const SETTLE = 0.35, TURN = 0.3;
-  const hold = SETTLE + TURN + CONFIG.cockatooLook + TURN + 0.3;
+  const SETTLE = 0.35;
+  const hold = F.stay;
   let allGone = true;
   for (let k = 0; k < 2; k++) {
     // the first bird takes the top of the tree, the second a branch below it
@@ -818,9 +886,13 @@ function drawCockatoos(t) {
       allGone = false;
     } else if (el < tIn + tSit) {
       const u = el - tIn;
-      // head: forward, then round to look behind, then forward again
+      // head: forward as it settles and again just before leaving; in between it
+      // keeps glancing round, each bird in its own time
       let head = 1;
-      if (u > SETTLE) head = 1 - 2 * Math.min(1, (u - SETTLE) / TURN, Math.max(0, (tSit - 0.3 - u) / TURN));
+      if (u > SETTLE && u < tSit - 0.45) {
+        const n = noise3(u * 0.55, k * 5.3, F.seed);
+        head = Math.max(-1, Math.min(1, (0.56 - n) * 9));
+      }
       const P = cockatooPerched(head);
       paintShape(P, p[0], p[1], S, dir,
                  Math.floor((p[0] - 0.5 * S) / cw), Math.ceil((p[0] + 0.5 * S) / cw),
@@ -865,10 +937,9 @@ function drawFalling(t, dt) {
     b.y += (b.cone ? 150 : 34 + 16 * Math.sin(t * 5 + b.ph)) * dt;          // foliage flutters, cones drop
     if (b.y > b.floor || b.x < -cw || b.x > W + cw) { bits.splice(n, 1); continue; }
     const i = Math.floor(b.x / cw), j = Math.floor(b.y / ch);
-    ctx.fillStyle = CONFIG.colors.bg;
+    ctx.fillStyle = bgFill;
     ctx.fillRect(i * cw, j * ch, cw, ch);
-    ctx.fillStyle = b.color;
-    ctx.fillText(b.c, i * cw, j * ch);
+    put(b.c, b.color, i, j);
   }
 }
 
@@ -905,7 +976,7 @@ function drawEchidna(t, dt) {
   if (!echidna) {
     if (t < nextEchidna || !cols) return;
     const dir = Math.random() < 0.5 ? 1 : -1;
-    const S = ch * 10;
+    const S = ch * 10 * DK;
     echidna = { dir: dir, S: S, x: dir > 0 ? -0.7 * S : W + 0.7 * S, step: 0, nose: 0, seed: Math.random() * 50 };
   }
   const E = echidna, C = CONFIG.colors, S = E.S;
@@ -922,7 +993,7 @@ function drawEchidna(t, dt) {
     return;
   }
   // it walks on the slope in front of the main tree's line
-  const gy = (groundRow - Math.max(1, groundUp(E.x / cw, -0.2))) * ch;
+  const gy = (groundRow - Math.max(DK, groundUp(E.x / cw, -0.2))) * ch;
   const P = echidnaPose(E.step, E.nose + (snuffling ? 0.25 * Math.sin(t * 9) : 0));
   paintShape(P, E.x, gy, S, E.dir,
              Math.floor((E.x - 0.75 * S) / cw), Math.ceil((E.x + 0.75 * S) / cw),
@@ -942,7 +1013,7 @@ function buildRockyHill() {
     const xs = (side(i / Math.max(1, cols - 1)) - 0.44) / 0.56;      // 0 where it starts .. 1 at the screen edge
     if (xs <= 0) continue;
     const dome = Math.pow(Math.sin(Math.PI * 0.62 * xs), 1.15);       // rises, peaks, eases off
-    const crag = 3.2 * noise3(i * 0.06, 31.1, 0) + 1.6 * noise3(i * 0.27, 32.4, 0) - 2.4;
+    const crag = (3.2 * noise3(i * 0.06 / DK, 31.1, 0) + 1.6 * noise3(i * 0.27 / DK, 32.4, 0) - 2.4) * DK;
     hill2H[i] = Math.max(0, rows * 0.4 * CONFIG.rockyHillSize * dome + crag * Math.min(1, xs * 5));
   }
   // small Callitris standing along its skyline, seen as silhouettes
@@ -950,9 +1021,9 @@ function buildRockyHill() {
   spots.forEach((fx, n) => {
     const x = Math.round(cols * side(fx));
     const base = hill2H[Math.max(0, Math.min(cols - 1, x))];
-    if (base < 2) return;
-    const h = (3.2 + 4.3 * hash3(n, 1, 95)) * CONFIG.rockyHillSize;       // rows tall
-    farRocks.push({ x: x, y: base - 0.6, h: h, w: 0.9 + h * (0.2 + 0.1 * hash3(n, 2, 95)), n: n });
+    if (base < 2 * DK) return;
+    const h = (3.2 + 4.3 * hash3(n, 1, 95)) * DK * CONFIG.rockyHillSize;       // rows tall
+    farRocks.push({ x: x, y: base - 0.6 * DK, h: h, w: 0.9 * DK + h * (0.2 + 0.1 * hash3(n, 2, 95)), n: n });
   });
 }
 
@@ -989,10 +1060,10 @@ function buildGround() {
     o.baseRows = Math.round(groundUp(o.x, o.z));
     objects.push(o);
   };
-  put({ rock: true, x: cols * 0.05, z: 0.3, rx: 7, ry: 3.2 });
-  put({ rock: true, x: cols * 0.05 + 10, z: 0.22, rx: 3.5, ry: 1.7 });
-  put({ rock: true, x: cols * 0.825, z: 0.4, rx: 5.5, ry: 2.6 });
-  put({ rock: false, x: cols * 0.535, z: 0.12, rx: Math.min(13, cols * 0.07), ry: 2 });
+  put({ rock: true, x: cols * 0.05, z: 0.3, rx: 7 * DK, ry: 3.2 * DK });
+  put({ rock: true, x: cols * 0.05 + 10 * DK, z: 0.22, rx: 3.5 * DK, ry: 1.7 * DK });
+  put({ rock: true, x: cols * 0.825, z: 0.4, rx: 5.5 * DK, ry: 2.6 * DK });
+  put({ rock: false, x: cols * 0.535, z: 0.12, rx: Math.min(13 * DK, cols * 0.07), ry: Math.max(2, Math.round(2.2 * DK)) });
 }
 
 function objectAt(i, up) {
@@ -1018,14 +1089,17 @@ function objectAt(i, up) {
     return true;
   }
   // the log: a lit top edge, a bark-textured side, and a cut end showing
-  if (up > 2 || Math.abs(dx) > o.rx) return false;
+  const thick = o.ry;                              // rows
+  if (up > thick || Math.abs(dx) > o.rx) return false;
   const h = hash3(i, up, 80);
-  const end = dx < -o.rx + 3;
-  if (up === 2) {
-    if (end || dx > o.rx - 1) return false;
+  const endCol = Math.round(dx + o.rx);            // 0, 1, 2 across the cut end
+  if (up === thick) {
+    if (endCol < 3 || dx > o.rx - 1) return false;
     oC = h < 0.06 ? '/' : '_'; oColor = C.log[1];
-  } else if (end) {
-    oC = '(@)'[Math.round(dx + o.rx)] || '('; oColor = C.log[2];
+  } else if (endCol < 3) {
+    const middle = up === Math.ceil((thick - 1) / 2);
+    oC = endCol === 0 ? '(' : endCol === 2 ? ')' : (middle ? '@' : hash3(i, up, 81) < 0.5 ? 'o' : ':');
+    oColor = C.log[2];
   } else if (dx > o.rx - 1) { oC = ')'; oColor = C.log[0]; }
   else { oC = h < 0.45 ? '=' : h < 0.75 ? '-' : h < 0.9 ? '~' : ':'; oColor = C.log[h < 0.3 ? 1 : 0]; }
   return true;
@@ -1048,14 +1122,14 @@ function buildPlants() {
   const STALKS = [{ lean: -0.16, h: 12.5, ph: 0 }, { lean: 0.07, h: 14.5, ph: 2.1 }, { lean: 0.3, h: 10.5, ph: 4.0 }];
   (CONFIG.grassTrees || []).forEach((g, k) => {
     const zc = Math.max(0, g.z), sc = g.size * (1 - 0.62 * zc);
-    const L = 5.6 * sc;
+    const L = 5.6 * sc * DK;
     const flip = k % 2 ? -1 : 1;                       // so no two lean the same way
     plantGs.push({
       k: k * 7, x: Math.round(cols * g.x), z: g.z,
       baseRows: Math.max(0, Math.round(groundUp(cols * g.x, g.z))),
       L: L, reach: Math.ceil(L / aspect) + 5, flowering: !!g.flowering,
       // flower stalks: how far each leans, how tall, and a sway offset
-      scapes: STALKS.slice(k % 2, (k % 2) + (g.spikes || 0)).map(S => ({ lean: S.lean * flip, h: S.h * sc, ph: S.ph + k })),
+      scapes: STALKS.slice(k % 2, (k % 2) + (g.spikes || 0)).map(S => ({ lean: S.lean * flip, h: S.h * sc * DK, ph: S.ph + k })),
       col: C.grassTree.map(c => fade(c, zc * 0.45)),
       stalk: fade(C.grassTreeStalk, zc * 0.45),
       spike: (g.flowering ? C.grassTreeFlower : C.grassTreeSpike).map(c => fade(c, zc * 0.45)),
@@ -1106,7 +1180,7 @@ function plantAt(i, rowsUp, t) {
     if (y >= 1 && dxc >= -G.reach && dxc <= G.reach) {
       pZ = G.z;
       // leaves: a rounded tuft radiating from one point on the ground
-      const push = wind * 0.9 * Math.min(1, y / G.L);                 // leaning in the wind
+      const push = wind * 0.9 * DK * Math.min(1, y / G.L);                 // leaning in the wind
       const X = (dxc - push) * aspect, Y = y - 0.5;
       const r = Math.sqrt(X * X + Y * Y), ang = Math.atan2(X, Y);    // angle from straight up
       const len = G.L * (0.7 + 0.3 * hash3(Math.floor((ang + 2) * 11), 1, 110 + G.k));
@@ -1116,10 +1190,10 @@ function plantAt(i, rowsUp, t) {
         const S = G.scapes[k];
         if (y > S.h) continue;
         const fy = y / S.h;
-        const cx = S.lean * y + (wind * 0.5 + Math.sin(t * 1.7 + S.ph) * 0.2 * wind) * fy * fy * 1.6;
-        if (Math.round(cx) !== dxc) continue;
+        const cx = S.lean * y + (wind * 0.5 + Math.sin(t * 1.7 + S.ph) * 0.2 * wind) * fy * fy * 1.6 * DK;
+        if (Math.abs(cx - dxc) > 0.5 * Math.max(1, DK * 0.8)) continue;
         if (fy > 0.6) {                                              // the flower spike itself
-          const h = hash3(k, Math.round(y), 112 + G.k);
+          const h = hash3(k + dxc * 3, Math.round(y), 112 + G.k);
           pC = h < 0.6 ? '#' : h < 0.85 ? '%' : '*';
           pColor = h < 0.3 ? G.spike[0] : h < 0.85 ? G.spike[1] : G.spike[2];
           return true;
@@ -1202,13 +1276,12 @@ function drawInsects(t) {
       const cyp = (groundRow - G.baseRows - S.h * 0.8) * ch;
       for (let k = 0; k < 3; k++) {
         const a = t * (1.3 + 0.5 * k) + k * 2.1 + n * 1.3 + G.k;
-        const x = cxp + (Math.sin(a) * 2.6 + Math.sin(a * 2.7 + k) * 1.2) * cw;
-        const y = cyp + (Math.cos(a * 1.3) * 1.6 + Math.sin(a * 3.1 + n) * 0.6) * ch;
+        const x = cxp + (Math.sin(a) * 2.6 + Math.sin(a * 2.7 + k) * 1.2) * cw * DK;
+        const y = cyp + (Math.cos(a * 1.3) * 1.6 + Math.sin(a * 3.1 + n) * 0.6) * ch * DK;
         const i = Math.floor(x / cw), j = Math.floor(y / ch);
-        ctx.fillStyle = CONFIG.colors.bg;
+        ctx.fillStyle = bgFill;
         ctx.fillRect(i * cw, j * ch, cw, ch);
-        ctx.fillStyle = CONFIG.colors.insect;
-        ctx.fillText(Math.sin(t * 20 + k * 3) > 0 ? '.' : "'", i * cw, j * ch);
+        put(Math.sin(t * 20 + k * 3) > 0 ? '.' : "'", CONFIG.colors.insect, i, j);
       }
     });
   }
@@ -1221,23 +1294,23 @@ function buildTussocks() {
   colT = new Int16Array(cols * SLOTS).fill(-1);
   if (!CONFIG.understory) return;
   const C = CONFIG.colors, list = [];
-  const count = Math.round(cols * 0.23);
+  const count = Math.round(cols * 0.23 / DK);
   for (let n = 0; n < count; n++) {
     const x = Math.floor(hash3(n, 1, 60) * cols);
     // depth: a few in the foreground (z < 0), the rest spread up the slope
     const z = -0.3 + 1.25 * Math.pow(hash3(n, 2, 60), 1.2);
     const zc = z < 0 ? 0 : z;
     const r = hash3(n, 3, 60);
-    let h = (2.6 + 4.6 * r * Math.sqrt(r)) * (1 - 0.62 * zc) * (z < 0 ? 1.15 : 1) * CONFIG.understory;
+    let h = (2.6 + 4.6 * r * Math.sqrt(r)) * DK * (1 - 0.62 * zc) * (z < 0 ? 1.15 : 1) * CONFIG.understory;
     // smaller close to a trunk at the same depth, so the trees stay readable
     for (const T of trees) {
-      if (Math.abs(z - T.distance) < 0.2) h *= Math.min(1, 0.35 + Math.abs(x - T.x) / (14 * T.size));
+      if (Math.abs(z - T.distance) < 0.2) h *= Math.min(1, 0.35 + Math.abs(x - T.x) / (14 * DK * T.size));
     }
-    if (h < 1.6) continue;
+    if (h < 1.6 * DK) continue;
     if (colO[x] >= 0 && Math.abs(z - objects[colO[x]].z) < 0.25) continue;   // not on a boulder or the log
     // leave the grass tree and the tree fern clear so they can be seen
-    if (plantGs.some(G => Math.abs(x - G.x) < 13 && Math.abs(z - G.z) < 0.35)) continue;
-    if (plantF && Math.abs(x - plantF.x) < 10 && z < plantF.z + 0.08) continue;
+    if (plantGs.some(G => Math.abs(x - G.x) < 13 * DK && Math.abs(z - G.z) < 0.35)) continue;
+    if (plantF && Math.abs(x - plantF.x) < 10 * DK && z < plantF.z + 0.08) continue;
     list.push({
       x: x, z: z, h: h, w: h * (0.7 + 0.5 * hash3(n, 4, 60)),
       baseRows: Math.max(0, Math.round(groundUp(x, z))),
@@ -1281,7 +1354,7 @@ function tussockAt(i, rowsUp, t) {
     if (hash3(hx, up, 9) < 0.1 + 0.28 * (1 - f)) sColor = K.straw[hash3(hx, up, 10) < 0.5 ? 0 : 1];
     else sColor = K.shrub[Math.max(0, Math.min(2, Math.floor(f * 1.5 + hash3(hx, up, 11) * 1.5 - (dx > 0 ? 0.4 : 0))))];
     // an old flower spike or two standing among the leaves
-    if (K.flower && Math.abs(dx - 1) < 0.6 && f > 0.5 && f < 0.92) {
+    if (K.flower && Math.abs(dx - DK) < 0.6 && f > 0.5 && f < 0.92) {
       sC = hash3(hx, up, 12) < 0.55 ? '*' : '!'; sColor = K.straw[1];
     }
     return true;
@@ -1295,19 +1368,19 @@ function midAt(i, up, t, wind) {
   for (let m = 0; m < midTrees.length; m++) {
     const T = midTrees[m];
     const far = i - T.x;
-    if (far > T.rx + 8 || far < -T.rx - 8) continue;
+    if (far > T.rx + 8 * DK || far < -T.rx - 8 * DK) continue;
     const f = up / T.h;
-    const dx = far - T.lean * up - wind * 1.6 * f * f;
+    const dx = far - T.lean * up - wind * 1.6 * DK * f * f;
     const ey = (up - T.h) / T.ry;
     if (ey > -1.3 && ey < 1) {
       const ex = dx / T.rx;
       const r = ex * ex + ey * ey;
       if (r < 1) {
-        const nn = noise3(dx * 0.33 + T.k * 13, up * 0.5, t * 0.18 + T.k);
+        const nn = noise3(dx * 0.33 / DK + T.k * 13, up * 0.5 / DK, t * 0.18 + T.k);
         if (nn > 0.36 + r * 0.26) return nn > 0.6 ? 3 : 2;
       }
     }
-    if (up < T.h && Math.abs(dx) < (T.wide && f < 0.5 ? 1 : 0.5)) return 1;
+    if (up < T.h && Math.abs(dx) < (T.wide && f < 0.5 ? 1 : 0.5) * DK) return 1;
   }
   return 0;
 }
@@ -1327,6 +1400,22 @@ if (CONFIG.pointerWind) {
   document.addEventListener('pointerleave', () => { pointerTarget = 0; });
 }
 canvas.addEventListener('click', () => spawnWallaby(lastT));
+if (CONFIG.backgroundKey) {
+  window.addEventListener('keydown', e => {
+    if (e.key !== 'b' && e.key !== 'B') return;
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    const names = Object.keys(BACKGROUNDS);
+    bgName = names[(names.indexOf(bgName) + 1) % names.length];
+    resize();
+    const note = document.getElementById('bgnote');
+    if (note) {
+      note.textContent = 'background: ' + bgName;
+      note.classList.add('on');
+      clearTimeout(note._t);
+      note._t = setTimeout(() => note.classList.remove('on'), 1800);
+    }
+  });
+}
 
 /* ------------------------------------------------------------------
    One frame. Like the ASCII playground, every cell of the grid asks
@@ -1346,10 +1435,19 @@ function draw(t) {
   wind += (target - wind) * 0.06;
   windPhase += wind * dt * 0.5;
 
-  ctx.fillStyle = C.bg;
+  ctx.fillStyle = bgFill;
   ctx.fillRect(0, 0, W, H);
 
   let lastColor = '';
+
+  // Neighbouring characters of the same colour are drawn together in short
+  // runs, which is much quicker than drawing every character separately.
+  let run = '', runI = 0, runColor = '', gap = 0;
+  const flush = j => {
+    if (runColor !== lastColor) { ctx.fillStyle = runColor; lastColor = runColor; }
+    ctx.fillText(run, runI * cw, j * ch);
+    run = ''; gap = 0;
+  };
 
   for (let j = 0; j < rows; j++) {
     const up = groundRow - j;                    // rows above the bottom of the scene
@@ -1387,13 +1485,13 @@ function draw(t) {
           if (h < 0.88) { c = h < 0.45 ? '_' : h < 0.65 ? '.' : h < 0.8 ? '-' : ','; color = C.crest; }
         } else if (hash3(i, j, 6) < 0.02 + 0.12 * (1 - f) * (1 - f) + (z < 0 ? 0.05 : 0)) {
           // blades of grass, thinning out with distance
-          const lw = wind + (noise3(i * 0.15 - windPhase * 2, j * 0.5, t * 0.4) - 0.5) * 1.6;
+          const lw = wind + (noise3(i * 0.15 / DK - windPhase * 2, j * 0.5 / DK, t * 0.4) - 0.5) * 1.6;
           c = lw > 0.45 ? '/' : lw < -0.45 ? '\\' : '|';
           if (hash3(i, j, 2) < 0.3) c = lw > 0 ? ',' : "'";
           color = grassPal[bin];
         } else {
           // leaf litter, in faint bands that follow the lie of the land
-          const band = Math.sin(z * 24 + noise3(i * 0.06, 3.3, 0) * 2.5);
+          const band = Math.sin(z * 24 + noise3(i * 0.06 / DK, 3.3, 0) * 2.5);
           const h = hash3(i, j, 5);
           if (h < 0.07 + 0.15 * (1 - f) + 0.09 * band) {
             const set = f < 0.45 ? LITTER_NEAR : LITTER_FAR;
@@ -1415,9 +1513,9 @@ function draw(t) {
           }
         } else {
           // faint streaks of moving air
-          const a = noise3(i * 0.05 - windPhase, j * 0.8, t * 0.07);
+          const a = noise3(i * 0.05 / DK - windPhase, j * 0.8 / DK, t * 0.07);
           if (a > 0.8) { c = a > 0.87 ? '~' : '-'; color = C.air; }
-          else if (hash3(i, j, 7) < 0.004) { c = '.'; color = C.air; }
+          else if (hash3(i, j, 7) < 0.004 / DK) { c = '.'; color = C.air; }
 
           // the more distant rocky hill, with small Callitris standing on its skyline
           let onHill = false;
@@ -1431,7 +1529,7 @@ function draw(t) {
                 const hh = hash3(i, j, 17);
                 if (upB > h2 - 1) {
                   if (hh < 0.9) { c = hh < 0.4 ? '_' : hh < 0.6 ? '.' : hh < 0.8 ? '-' : '^'; color = C.farHill[2]; }
-                } else if (noise3(i * 0.17, j * 0.5, 31) > 0.6) {
+                } else if (noise3(i * 0.17 / DK, j * 0.5 / DK, 31) > 0.6) {
                   // rock outcrops breaking through
                   if (hh < 0.7) { c = [':', '.', "'", '^', ',', ':', '.'][Math.floor(hh / 0.7 * 7)]; color = C.farHill[1]; }
                 } else if (hh < 0.025) { c = hh < 0.012 ? 'i' : '!'; color = C.farScrub; }
@@ -1443,7 +1541,7 @@ function draw(t) {
           // distant canopy: densest at its skyline, thinning into mist below
           if (!onHill && c === ' ' && d < -0.15 && upB <= farH[i]) {
             const f = upB / farH[i];
-            const drift = noise3(i * 0.08 + t * 0.03, j * 0.35, t * 0.05);
+            const drift = noise3(i * 0.08 / DK + t * 0.03, j * 0.35 / DK, t * 0.05);
             if (hash3(i, j, 12) < (0.1 + 0.5 * f * f) * (0.45 + drift)) {
               c = FAR_CH[Math.floor(hash3(i, j, 13) * FAR_CH.length)];
               color = C.far[f > 0.72 ? 1 : 0];
@@ -1462,10 +1560,10 @@ function draw(t) {
               }
             } else if (CONFIG.stars && upB > rh) {
               const hs = hash3(i, j, 16);
-              if (hs < 0.011) {
+              if (hs < 0.011 / (DK * DK)) {
                 const tw = noise3(i * 7.3, j * 3.1, t * 0.6 + hs * 900);   // twinkle
                 if (tw > 0.3) {
-                  c = hs < 0.0012 ? '*' : hs < 0.004 ? '+' : '.';
+                  c = hs < 0.0012 / (DK * DK) ? '*' : hs < 0.004 / (DK * DK) ? '+' : '.';
                   color = C.star[tw > 0.62 ? 2 : tw > 0.45 ? 1 : 0];
                 }
               }
@@ -1478,10 +1576,10 @@ function draw(t) {
       // but not the trees standing in front of it
       if (CONFIG.mist && best === 0 && up > crest && d < 0) {
         const upB = up - crest;
-        if (upB < 11) {
-          const m = noise3(i * 0.03 - t * 0.022, upB * 0.3, t * 0.035) * 0.7
-                  + noise3(i * 0.11 - t * 0.04, upB * 0.8, 9.2) * 0.3;
-          const dens = (m - 0.4) * 2.2 * Math.exp(-upB / 4.5) * CONFIG.mist;
+        if (upB < 11 * DK) {
+          const m = noise3(i * 0.03 / DK - t * 0.022, upB * 0.3 / DK, t * 0.035) * 0.7
+                  + noise3(i * 0.11 / DK - t * 0.04, upB * 0.8 / DK, 9.2) * 0.3;
+          const dens = (m - 0.4) * 2.2 * Math.exp(-upB / (4.5 * DK)) * CONFIG.mist;
           if (dens > 0.08 && hash3(i, j, 18) < dens * 1.6) {
             c = dens > 0.3 ? (hash3(i, j, 19) < 0.5 ? '=' : '~') : (hash3(i, j, 19) < 0.5 ? '-' : '.');
             color = C.mist[dens > 0.3 ? 1 : 0];
@@ -1489,11 +1587,16 @@ function draw(t) {
         }
       }
 
-      if (c !== ' ') {
-        if (color !== lastColor) { ctx.fillStyle = color; lastColor = color; }
-        ctx.fillText(c, i * cw, j * ch);
+      if (c === ' ') {
+        if (run && ++gap > 2) flush(j);
+      } else if (run && color === runColor && run.length + gap < 8) {
+        run += (gap === 2 ? '  ' : gap === 1 ? ' ' : '') + c; gap = 0;
+      } else {
+        if (run) flush(j);
+        run = c; runI = i; runColor = color;
       }
     }
+    if (run) flush(j);
   }
 
   drawInsects(t);
@@ -1523,12 +1626,18 @@ resize();
 
 if (!reducedMotion) {
   const frameMs = 1000 / CONFIG.fps;
-  let lastFrame = 0;
+  let lastFrame = 0, slow = 0;
   const loop = now => {
     requestAnimationFrame(loop);
     if (now - lastFrame < frameMs - 1) return;
     lastFrame = now;
+    const began = performance.now();
     draw(now / 1000);
+    // keep it smooth: count slow frames, and coarsen the grid a step if they persist
+    if (CONFIG.adaptive) {
+      slow = performance.now() - began > 30 ? slow + 1 : Math.max(0, slow - 2);
+      if (slow > 45 && CONFIG.fontSize + coarser < 12) { coarser++; slow = 0; resize(); }
+    }
   };
   requestAnimationFrame(loop);
 }
