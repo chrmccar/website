@@ -1,397 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-
-<title>Christopher McCarthy</title>
-
+<title>Callitris rhomboidea</title>
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,body{
-
-    height:100%;
-
-}
-
-body{
-
-    overflow:hidden;
-
-    font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
-
-    background:#0a0a0a;
-
-}
-
-/* ---------- BLURRED BACKGROUND ---------- */
-
-.background{
-
-    position:fixed;
-    inset:0;
-
-    background-image:url("01-024.jpg");
-    background-size:cover;
-    background-position:center;
-
-    transform:scale(1.15);
-
-    filter:
-        blur(28px)
-        brightness(.22)
-        contrast(120%)
-        saturate(0);
-
-}
-
-/* dark overlay */
-
-.background::after{
-
-    content:"";
-
-    position:absolute;
-    inset:0;
-
-    background:rgba(0,0,0,.5);
-
-}
-
-/* ---------- PAGE ---------- */
-
-main{
-
-    position:relative;
-
-    z-index:2;
-
-    width:100%;
-    height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-}
-
-/* ---------- IMAGE ---------- */
-
-.hero{
-
-    position:relative;
-
-    width:min(760px,88vw);
-
-    box-shadow:
-        0 25px 80px rgba(0,0,0,.55);
-
-}
-
-.hero img{
-
-    display:block;
-    width:100%;
-    height:auto;
-
-}
-
-/* text sits ABOVE the shard canvas so it stays legible */
-.hero .plate{
-    position:absolute;
-    inset:0;
-    z-index:3;
-    pointer-events:none;
-}
-
-/* ---------- NAME ---------- */
-
-.name{
-
-    position:absolute;
-
-    left:38px;
-    bottom:36px;
-
-    color:#8a0303;
-
-    font-family:"Cormorant Garamond",Georgia,serif;
-
-    font-size:clamp(2rem,4vw,3.6rem);
-
-    line-height:.9;
-
-    letter-spacing:-.04em;
-
-    text-shadow:
-        0 3px 25px rgba(0,0,0,.85);
-
-}
-
-/* ---------- CONCERN LINE (on the image) ---------- */
-
-.concern{
-
-    position:absolute;
-
-    left:40px;
-
-    bottom:210px;
-
-    max-width:none;
-    white-space:nowrap;
-
-    color:#8a0303;
-
-    font-family:"Cormorant Garamond",Georgia,serif;
-    font-style:italic;
-
-    font-size:clamp(1rem,1.9vw,1.35rem);
-
-    line-height:1.3;
-
-    text-shadow:
-        0 2px 20px rgba(0,0,0,.9);
-
-    pointer-events:auto;
-
-}
-
-.concern a{
-
-    color:#8a0303;
-
-    text-decoration:none;
-
-    border-bottom:1px solid rgba(138,3,3,.55);
-
-    transition:.25s;
-
-}
-
-.concern a:hover{
-
-    opacity:.6;
-
-    letter-spacing:.05em;
-
-}
-
-/* ---------- INDEX ---------- */
-
-.index{
-
-    position:absolute;
-
-    top:34px;
-    left:38px;
-
-    z-index:4;
-
-    border:none;
-    background:none;
-
-    color:#ece8df;
-
-    font-size:12px;
-
-    letter-spacing:.35em;
-
-    text-transform:uppercase;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-}
-
-.index::after{
-
-    content:"";
-
-    display:block;
-
-    width:58px;
-    height:1px;
-
-    background:#ece8df;
-
-    margin-top:9px;
-
-    transition:.25s;
-
-}
-
-.index:hover{
-
-    opacity:.65;
-
-}
-
-.index:hover::after{
-
-    width:80px;
-
-}
-
-/* ---------- OVERLAY ---------- */
-
-.overlay{
-
-    position:fixed;
-    inset:0;
-
-    background:rgba(0,0,0,.35);
-
-    opacity:0;
-
-    pointer-events:none;
-
-    transition:.35s;
-
-    z-index:8;
-
-}
-
-/* ---------- MENU ---------- */
-
-nav{
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:430px;
-    max-width:85vw;
-
-    height:100vh;
-
-    background:#141414;
-
-    padding:120px 70px;
-
-    transform:translateX(-100%);
-
-    transition:.45s cubic-bezier(.2,.8,.2,1);
-
-    z-index:10;
-
-}
-
-nav a{
-
-    display:block;
-
-    color:#ece8df;
-
-    text-decoration:none;
-
-    font-family:Georgia,serif;
-
-    font-size:46px;
-
-    margin-bottom:22px;
-
-    transition:.25s;
-
-}
-
-nav a:hover{
-
-    opacity:.45;
-
-}
-
-body.open-time .nav-time,
-body.open-plants .nav-plants{
-
-    transform:translateX(0);
-
-}
-
-body.open-time .overlay,
-body.open-plants .overlay{
-
-    opacity:1;
-    pointer-events:auto;
-
-}
-
+  html, body { margin: 0; height: 100%; background: #0b1014; }
+  /* The canvas fills whatever box you give it. For the website, put it in
+     any container and set the width/height you want here. */
+  #tree { display: block; width: 100vw; height: 100vh; }
 </style>
-
 </head>
-
 <body>
-
-<div class="background"></div>
-
-<div class="overlay" onclick="closeMenu()"></div>
-
-<nav class="nav-time">
-
-<a href="/time/">Time</a>
-
-</nav>
-
-<nav class="nav-plants">
-
-<a href="/plants/">Plants</a>
-
-</nav>
-
-<main>
-
-<div class="hero">
-
-<img src="01-024.jpg">
-
-<div class="plate">
-
-    <div class="concern">
-        I am concerned about <a href="#" onclick="openMenu('time');return false;">time</a> &amp; <a href="#" onclick="openMenu('plants');return false;">plants</a>.
-    </div>
-
-    <div class="name">
-        Christopher<br>
-        McCarthy
-    </div>
-
-</div>
-
-</div>
-
-</main>
+<canvas id="tree" role="img"
+  aria-label="Animated text art of a Callitris rhomboidea tree swaying in the wind"></canvas>
 
 <script>
+(() => {
+'use strict';
 
-function openMenu(which){
+/* ------------------------------------------------------------------
+   SETTINGS: the things you are most likely to want to change
+------------------------------------------------------------------ */
+const CONFIG = {
+  fontSize: 11,             // px. Smaller = more characters = a bigger, finer tree
+                            // next to the wallaby (which is a fixed number of rows tall)
+  fontFamily: '"JetBrains Mono", "Fira Code", Menlo, Consolas, "DejaVu Sans Mono", monospace',
+  fps: 30,
+  seed: 11,                 // change for a different individual tree
+  wind: 1.0,                // 0 = still air, 2 = blustery
+  pointerWind: true,        // moving the mouse left/right pushes the wind
+  caption: 'Callitris rhomboidea',   // set to '' to hide
+  forest: true,             // false = just the single tree, as before
+  forestTrees: 1.0,         // how many dim background trees (0 = none, 2 = lots)
+  understory: 1.0,          // height of the shrub layer (0 = none)
+  wallaby: true,            // a wallaby hops through now and then (click to call one)
+  wallabyEvery: [20, 50],   // seconds between visits: shortest, longest
+  wallabySize: 1.0,         // 1 = about nine rows of text tall
+  wallabyLook: true,        // stops part-way across and looks out at the viewer
+  wallabyWait: 1.0,         // seconds it holds the look before hopping on
+  colors: {
+    // forest layers, kept deliberately dim so the Callitris stays the subject
+    far: ['#1a2c34', '#243b40'],                // distant misty canopy
+    midTrunk: '#39403f',                        // background trunks
+    midCrown: ['#1c342f', '#28473b'],           // background crowns
+    shrub: ['#2c4634', '#3b5a3d', '#52704a'],   // understory, shaded -> lit
+    bg: '#0b1014',
+    // foliage, shaded side -> sunlit side
+    foliage: ['#1f3f38', '#2a5344', '#376a50', '#4a8360', '#6c9f7a', '#96bd98'],
+    barkLight: '#9a8b78',
+    barkDark: '#65584c',
+    cone: '#c0905f',
+    wallaby: '#a3978a',       // grey-brown coat
+    wallabyNeck: '#b3805f',   // reddish neck and shoulders
+    wallabyDark: '#3a332e',   // eye, in profile
+    wallabyEye: '#f1e8d2',    // eyes, when it looks at you
+    grass: '#7d8f55',
+    ground: '#6b6a4a',
+    air: '#243240',
+    caption: '#56636f'
+  }
+};
 
-    document.body.classList.remove("open-time","open-plants");
-    document.body.classList.add("open-" + which);
+/* Tree proportions, as fractions of tree height */
+const CROWN_BASE = 0.08;    // height at which foliage starts
+const CROWN_WIDTH = 0.22;   // scales the crown half-width profile
 
+/* ------------------------------------------------------------------
+   Noise helpers
+------------------------------------------------------------------ */
+const SEED = CONFIG.seed | 0;
+
+function hash3(x, y, z) {
+  let h = Math.imul(x, 374761393) ^ Math.imul(y, 668265263) ^
+          Math.imul(z, 1440662683) ^ Math.imul(SEED, 974634777);
+  h = Math.imul(h ^ (h >>> 13), 1274126177);
+  h ^= h >>> 16;
+  return (h >>> 0) / 4294967296;
 }
 
-function closeMenu(){
-
-    document.body.classList.remove("open-time","open-plants");
-
+function noise3(x, y, z) {
+  const xi = Math.floor(x), yi = Math.floor(y), zi = Math.floor(z);
+  const xf = x - xi, yf = y - yi, zf = z - zi;
+  const u = xf * xf * (3 - 2 * xf);
+  const v = yf * yf * (3 - 2 * yf);
+  const w = zf * zf * (3 - 2 * zf);
+  const a = hash3(xi, yi, zi),         b = hash3(xi + 1, yi, zi);
+  const c = hash3(xi, yi + 1, zi),     d = hash3(xi + 1, yi + 1, zi);
+  const e = hash3(xi, yi, zi + 1),     f = hash3(xi + 1, yi, zi + 1);
+  const g = hash3(xi, yi + 1, zi + 1), h = hash3(xi + 1, yi + 1, zi + 1);
+  const x1 = a + (b - a) * u, x2 = c + (d - c) * u;
+  const x3 = e + (f - e) * u, x4 = g + (h - g) * u;
+  const y1 = x1 + (x2 - x1) * v, y2 = x3 + (x4 - x3) * v;
+  return y1 + (y2 - y1) * w;
 }
 
+/* ------------------------------------------------------------------
+   Character sets. Callitris foliage is fine and thread-like on
+   ascending branches, so the glyphs are thin and the outer sprays
+   slant upward and outward: \ on the left of the trunk, / on the right.
+------------------------------------------------------------------ */
+// outermost branchlets droop at the tips, so the slant flips at the edge
+const EDGE_L  = ['/', ',', ';', '.', '/', ',', ':'];
+const EDGE_R  = ['\\', ',', ';', '.', '\\', ',', ':'];
+const MID_L   = ['\\', ';', '!', ':', 'i', '\\', 'l', ';'];
+const MID_R   = ['/', ';', '!', ':', 'i', '/', 'l', ';'];
+const DENSE   = ['i', 'l', '!', '|', 't', ';', '%', '&', '*', 'f'];
+const BARK    = ['|', '|', '|', '!', '|', ':', 'I', '|'];
+const SURFACE = ['_', '_', '_', '_', '.', '_', ',', '-', '_', ' '];
+
+/* ------------------------------------------------------------------
+   Canvas / grid set-up
+------------------------------------------------------------------ */
+const canvas = document.getElementById('tree');
+const ctx = canvas.getContext('2d');
+const reducedMotion = window.matchMedia &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+let cols = 0, rows = 0, cw = 8, ch = 16;   // grid size and cell size (px)
+let groundRow = 0, treeH = 40, cx = 0, aspect = 0.5;
+let W = 0, H = 0;
+
+function resize() {
+  const dpr = window.devicePixelRatio || 1;
+  W = canvas.clientWidth;
+  H = canvas.clientHeight;
+  if (!W || !H) return;
+  canvas.width = Math.round(W * dpr);
+  canvas.height = Math.round(H * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  // shrink the font on small screens so the tree keeps enough rows
+  const fs = Math.max(8, Math.min(CONFIG.fontSize, Math.floor(H / 42)));
+  ctx.font = fs + 'px ' + CONFIG.fontFamily;
+  ctx.textBaseline = 'top';
+  cw = ctx.measureText('M').width;
+  ch = Math.round(fs * 1.25);
+  cols = Math.ceil(W / cw);
+  rows = Math.floor(H / ch);
+  aspect = cw / ch;
+
+  groundRow = rows - 3;
+  // tree height in rows: as tall as fits, but never wider than the screen
+  treeH = Math.max(12, Math.min(groundRow - 2,
+                                Math.floor(cols * 0.8 * aspect / CROWN_WIDTH)));
+  cx = Math.floor(cols / 2);
+  buildForest();
+  if (reducedMotion) draw(0);
+}
+
+/* ------------------------------------------------------------------
+   Forest backdrop: three quiet layers behind and beside the main tree
+     far   - a distant canopy line dissolving into mist
+     mid   - a few dim, open-crowned trees standing further back
+     shrub - understory mounds along the ground
+------------------------------------------------------------------ */
+const FAR_CH   = ['.', ':', '.', "'", ',', '.'];
+const CROWN_CH = ['.', ':', ';', "'", '"', ',', ':'];
+const SHRUB_CH = ['&', '%', ';', ':', '*', '"', ';', '!'];
+const SHRUB_TOP = [',', '.', "'", '`', '"'];
+
+let farH = [], shrubH = [], midTrees = [];
+
+function buildForest() {
+  farH = new Float32Array(cols);
+  shrubH = new Float32Array(cols);
+  midTrees = [];
+  if (!CONFIG.forest) return;
+
+  for (let i = 0; i < cols; i++) {
+    // skyline: long rolling shape plus small bumps for individual treetops
+    const bump = noise3(i * 0.55, 8.3, 0);
+    farH[i] = treeH * (0.34 + 0.24 * noise3(i * 0.035, 7.1, 0)) + 3 * bump * bump;
+
+    // shrubs: scattered mounds, kept low close to the main trunk
+    const near = Math.min(1, Math.abs(i - cx) / 16);
+    const m = (noise3(i * 0.085, 5.4, 0) - 0.42) * 15 + noise3(i * 0.5, 6.6, 0) * 1.5;
+    shrubH[i] = Math.max(0, m) * near * CONFIG.understory;
+  }
+
+  // background trees: one per slot across the width, none behind the main crown
+  const n = Math.round(cols / 24 * CONFIG.forestTrees);
+  const clear = CROWN_WIDTH * 0.45 * treeH / aspect + 12;
+  for (let k = 0; k < n; k++) {
+    const x = (k + 0.2 + 0.6 * hash3(k, 1, 20)) * cols / n;
+    if (Math.abs(x - cx) < clear) continue;
+    midTrees.push({
+      x: x,
+      h: treeH * (0.62 + 0.5 * hash3(k, 2, 20)),   // rows from ground to crown centre
+      rx: 6 + 6 * hash3(k, 3, 20),                 // crown radii, in columns / rows
+      ry: 3.5 + 3.5 * hash3(k, 4, 20),
+      lean: (hash3(k, 5, 20) - 0.5) * 0.12,
+      wide: hash3(k, 6, 20) < 0.35,
+      k: k
+    });
+  }
+}
+
+/* ------------------------------------------------------------------
+   Wallaby. Built as a little skeleton of tapered "sausages" (body,
+   haunch, hind leg, tail, neck, head, ears, forearm). Each text cell
+   checks how much of itself the animal covers and picks a character
+   to match, so the silhouette animates smoothly as the pose changes.
+   Units: 1 = roughly the animal's standing height.
+------------------------------------------------------------------ */
+const RAD = Math.PI / 180;
+const HOP_TIME = 0.62;      // seconds per hop
+const HOP_LENGTH = 1.9;     // body-heights travelled per hop
+const HOP_HEIGHT = 0.42;    // body-heights off the ground
+const FUR = ['%', '&', '#', '%', '&', '%', '#', '&'];
+
+let wallaby = null, nextWallaby = -1;
+
+function spawnWallaby(t) {
+  if (wallaby || !cols || !CONFIG.wallaby) return;
+  const dir = Math.random() < 0.5 ? 1 : -1;
+  const S = ch * 8.5 * CONFIG.wallabySize;          // pixels per body-height
+  const x0 = dir > 0 ? -S : W + S;
+  // pick a spot somewhere across the middle of the view to stop and look
+  let target = W * (0.22 + 0.56 * Math.random());
+  // ...but not right in front of the tree
+  if (Math.abs(target - W / 2) < W * 0.14) target += (target < W / 2 ? -1 : 1) * W * 0.14;
+  const stopHop = Math.max(1, Math.round(Math.abs(target - x0) / (HOP_LENGTH * S)));
+  wallaby = { t0: t, dir: dir, S: S, x0: x0, stopHop: stopHop };
+}
+
+// value at "a" along a list of [position, value] keyframes
+function key(a, k) {
+  for (let i = 1; i < k.length; i++) {
+    if (a <= k[i][0]) {
+      const f = (a - k[i - 1][0]) / (k[i][0] - k[i - 1][0]);
+      return k[i - 1][1] + (k[i][1] - k[i - 1][1]) * f;
+    }
+  }
+  return k[k.length - 1][1];
+}
+
+// a = 0..1 through one hop (0 and 1 = crouched on the ground)
+// look = 0..1, how far it has stood up and turned its face to the viewer
+function wallabyPose(a, look, twitch) {
+  const P = [];
+  const add = (ax, ay, bx, by, ra, rb, tint) => P.push([ax, ay, bx, by, ra, rb, tint || 0]);
+  const pitch = (key(a, [[0, 40], [0.2, 26], [0.8, 26], [1, 40]]) + 22 * look) * RAD;
+  const hx = 0, hy = 0.42;                                   // hip
+  const sx = hx + 0.46 * Math.cos(pitch), sy = hy + 0.46 * Math.sin(pitch);   // shoulder
+  add(hx, hy, sx, sy, 0.21, 0.135);                         // body
+  add(hx - 0.03, hy - 0.02, hx + 0.03, hy + 0.01, 0.24, 0.23);  // haunch
+
+  const na = pitch + (42 - 22 * look) * RAD;                 // neck and head
+  const nx = sx + 0.2 * Math.cos(na), ny = sy + 0.2 * Math.sin(na);
+  add(sx, sy, nx, ny, 0.115, 0.08, 1);
+  // head: in profile the snout points forward; face-on it shortens into a round face
+  add(nx, ny, nx + 0.19 * (1 - look), ny - 0.06 - 0.03 * look, 0.085 + 0.012 * look, 0.04 + 0.022 * look);
+  // ears: swept back in profile, an upright V when facing the viewer
+  add(nx - 0.03 - 0.03 * look, ny + 0.04, nx - 0.15 - 0.01 * look, ny + 0.27 + 0.02 * look, 0.042, 0.022);
+  add(nx + 0.01 + 0.05 * look, ny + 0.05, nx + 0.06 + 0.1 * look + 0.05 * twitch, ny + 0.3 - 0.01 * look, 0.042, 0.022);
+  add(sx + 0.03, sy - 0.06, sx + 0.13, sy - 0.23, 0.05, 0.03);    // forearm
+
+  const t1 = key(a, [[0, -45], [0.18, -95], [0.5, -60], [0.85, -30], [1, -45]]) * RAD;
+  const t2 = key(a, [[0, -135], [0.18, -115], [0.5, -150], [0.85, -115], [1, -135]]) * RAD;
+  const t3 = key(a, [[0, 0], [0.18, -80], [0.5, -50], [0.85, -15], [1, 0]]) * RAD;
+  const kx = hx + 0.24 * Math.cos(t1), ky = hy + 0.24 * Math.sin(t1);   // knee
+  const ax = kx + 0.28 * Math.cos(t2), ay = ky + 0.28 * Math.sin(t2);   // ankle
+  add(hx, hy, kx, ky, 0.16, 0.085);                           // thigh
+  add(kx, ky, ax, ay, 0.075, 0.05);                          // shin
+  add(ax, ay, ax + 0.26 * Math.cos(t3), ay + 0.26 * Math.sin(t3), 0.05, 0.032);  // long foot
+
+  const d1 = (key(a, [[0, 30], [0.25, 10], [0.5, -8], [0.8, 15], [1, 30]]) + 12 * look) * RAD;
+  const d2 = key(a, [[0, 4], [0.25, -15], [0.5, -25], [0.8, -5], [1, 4]]) * RAD;
+  const bx = hx - 0.13, by = hy - 0.04;                      // tail, in two pieces
+  const mx = bx - 0.4 * Math.cos(d1), my = by - 0.4 * Math.sin(d1);
+  add(bx, by, mx, my, 0.125, 0.07);
+  add(mx, my, mx - 0.42 * Math.cos(d2), my - 0.42 * Math.sin(d2), 0.07, 0.03);
+  P.eyes = look > 0.5 ? [[nx - 0.055, ny + 0.012], [nx + 0.055, ny + 0.012]]
+                      : [[nx + 0.035, ny + 0.015]];
+  P.facing = look > 0.5;
+  return P;
+}
+
+// which part of the animal (if any) covers this point: 0 none, 1 body, 2 neck, 3 tail tip
+function wallabyAt(P, x, y) {
+  let hit = 0;
+  for (let m = 0; m < P.length; m++) {
+    const s = P[m];
+    const dx = s[2] - s[0], dy = s[3] - s[1];
+    let h = ((x - s[0]) * dx + (y - s[1]) * dy) / (dx * dx + dy * dy);
+    h = h < 0 ? 0 : h > 1 ? 1 : h;
+    const ex = x - s[0] - dx * h, ey = y - s[1] - dy * h;
+    const r = s[4] + (s[5] - s[4]) * h;
+    if (ex * ex + ey * ey < r * r) { if (s[6]) return s[6] + 1; hit = 1; }
+  }
+  return hit;
+}
+
+function drawWallaby(t) {
+  if (!CONFIG.wallaby || reducedMotion) return;
+  if (nextWallaby < 0) nextWallaby = t + 6 + Math.random() * 6;
+  if (!wallaby) {
+    if (t < nextWallaby) return;
+    spawnWallaby(t);
+    if (!wallaby) return;
+  }
+  const S = wallaby.S, dir = wallaby.dir;
+  // timeline: hop in, land, pause (settle, turn to look, wait, turn back), hop out
+  const te = t - wallaby.t0;
+  const tStop = wallaby.stopHop * HOP_TIME;
+  const SETTLE = 0.25, TURN = 0.3, BACK = 0.25;
+  const hold = CONFIG.wallabyLook ? SETTLE + TURN + CONFIG.wallabyWait + BACK : 0;
+  let q, look = 0, twitch = 0;
+  if (te < tStop) q = te / HOP_TIME;
+  else if (te < tStop + hold) {
+    q = wallaby.stopHop;
+    const p = te - tStop;
+    look = Math.max(0, Math.min(1, (p - SETTLE) / TURN, (hold - p) / BACK));
+    look = look * look * (3 - 2 * look);
+    const tw = p - SETTLE - TURN - CONFIG.wallabyWait * 0.45;   // one ear flick while it waits
+    if (tw > 0 && tw < 0.24) twitch = Math.sin(tw / 0.24 * Math.PI * 2);
+  } else q = (te - hold) / HOP_TIME;
+  const n = Math.floor(q);
+  const a = Math.min(1, (q - n) / 0.78);          // in the air, then a beat on the ground
+  const ox = wallaby.x0 + dir * (n + a) * HOP_LENGTH * S;
+  if (ox > W + 1.2 * S || ox < -1.2 * S) {
+    wallaby = null;
+    const e = CONFIG.wallabyEvery;
+    nextWallaby = t + e[0] + Math.random() * (e[1] - e[0]);
+    return;
+  }
+  const lift = HOP_HEIGHT * 4 * a * (1 - a);
+  const P = wallabyPose(a, look, twitch);
+  const C = CONFIG.colors;
+  const groundY = groundRow * ch;
+  const i0 = Math.max(0, Math.floor((ox - 1.1 * S) / cw));
+  const i1 = Math.min(cols - 1, Math.ceil((ox + 1.1 * S) / cw));
+  const j0 = Math.max(0, Math.floor((groundY - (1.4 + lift) * S) / ch));
+  const ci = Math.round(ox / cw);
+  const eyes = P.eyes.map(e => [Math.floor((ox + dir * e[0] * S) / cw),
+                                Math.floor((groundY - (e[1] + lift) * S) / ch)]);
+
+  for (let j = j0; j < groundRow; j++) {
+    for (let i = i0; i <= i1; i++) {
+      // six sample points per cell: 2 across, 3 down
+      let bits = 0, cnt = 0, part = 0;
+      for (let b = 0; b < 6; b++) {
+        const px = (i + (b & 1 ? 0.75 : 0.25)) * cw;
+        const py = (j + ((b >> 1) * 2 + 1) / 6) * ch;
+        const hit = wallabyAt(P, dir * (px - ox) / S, (groundY - py) / S - lift);
+        if (hit) { bits |= 1 << b; cnt++; if (hit > part) part = hit; }
+      }
+      if (!cnt) continue;
+      const top = (bits & 1) + (bits >> 1 & 1), mid = (bits >> 2 & 1) + (bits >> 3 & 1);
+      const bot = (bits >> 4 & 1) + (bits >> 5 & 1);
+      const lft = (bits & 1) + (bits >> 2 & 1) + (bits >> 4 & 1), rgt = cnt - lft;
+      let c;
+      if (cnt >= 3) c = FUR[Math.floor(hash3(i - ci, j, 30) * FUR.length)];
+      else if (top === 0 && mid === 0) c = bot === 2 ? '_' : lft ? '.' : ',';
+      else if (bot === 0 && mid === 0) c = top === 2 ? '"' : lft ? '`' : "'";
+      else if (top === 0 && bot === 0) c = '-';
+      else if (top === 0) c = lft ? '.' : ',';
+      else if (bot === 0) c = lft ? '`' : "'";
+      else c = ':';
+      let color = part === 2 ? C.wallabyNeck : part === 3 ? C.wallabyDark : C.wallaby;
+      for (let e = 0; e < eyes.length; e++) {
+        if (i === eyes[e][0] && j === eyes[e][1] && cnt >= 3) {
+          c = 'o'; color = P.facing ? C.wallabyEye : C.wallabyDark;
+        }
+      }
+      ctx.fillStyle = C.bg;
+      ctx.fillRect(i * cw, j * ch, cw + 0.5, ch);
+      ctx.fillStyle = color;
+      ctx.fillText(c, i * cw, j * ch);
+    }
+  }
+}
+
+/* What, if anything, of a background tree is in this cell?
+   0 = nothing, 1 = trunk, 2 = shaded crown, 3 = lit crown */
+function midAt(i, up, t, wind) {
+  for (let m = 0; m < midTrees.length; m++) {
+    const T = midTrees[m];
+    const far = i - T.x;
+    if (far > T.rx + 8 || far < -T.rx - 8) continue;
+    const f = up / T.h;
+    const dx = far - T.lean * up - wind * 1.6 * f * f;
+    const ey = (up - T.h) / T.ry;
+    if (ey > -1.3 && ey < 1) {
+      const ex = dx / T.rx;
+      const r = ex * ex + ey * ey;
+      if (r < 1) {
+        const nn = noise3(dx * 0.33 + T.k * 13, up * 0.5, t * 0.18 + T.k);
+        if (nn > 0.36 + r * 0.26) return nn > 0.6 ? 3 : 2;
+      }
+    }
+    if (up < T.h && Math.abs(dx) < (T.wide && f < 0.5 ? 1 : 0.5)) return 1;
+  }
+  return 0;
+}
+
+/* ------------------------------------------------------------------
+   Wind
+------------------------------------------------------------------ */
+let wind = 0.3;         // current wind, roughly -2..2 (positive = to the right)
+let windPhase = 0;      // accumulated wind, used to drift the air streaks
+let pointer = 0, pointerTarget = 0;
+let lastT = 0;
+
+if (CONFIG.pointerWind) {
+  canvas.addEventListener('pointermove', e => {
+    pointerTarget = (e.offsetX / (W || 1) - 0.5) * 3;
+  });
+  canvas.addEventListener('pointerleave', () => { pointerTarget = 0; });
+}
+canvas.addEventListener('click', () => spawnWallaby(lastT));
+
+/* ------------------------------------------------------------------
+   One frame. Like the ASCII playground, every cell of the grid asks
+   "what am I?" and answers with one character and one colour.
+------------------------------------------------------------------ */
+function draw(t) {
+  const C = CONFIG.colors;
+  const dt = Math.max(0, Math.min(0.1, t - lastT));
+  lastT = t;
+
+  // slow gusts + quicker flutter + the mouse
+  pointer += (pointerTarget - pointer) * 0.04;
+  const gust = noise3(t * 0.13, 3.1, 0.5) * 2 - 1;
+  const flutter = noise3(t * 0.7, 9.7, 0.5) * 2 - 1;
+  let target = (0.3 + 0.9 * gust + 0.25 * flutter) * CONFIG.wind + pointer;
+  target = Math.max(-2.2, Math.min(2.2, target));
+  wind += (target - wind) * 0.06;
+  windPhase += wind * dt * 0.5;
+
+  ctx.fillStyle = C.bg;
+  ctx.fillRect(0, 0, W, H);
+
+  const unit = aspect / treeH;       // one column, in tree-height units
+  const nFol = C.foliage.length;
+  let lastColor = '';
+
+  for (let j = 0; j < rows; j++) {
+    const v = (groundRow - j) / treeH;          // 0 at the ground, 1 at the tip
+
+    // the tree bends more the higher you go, with a little whip at the top
+    const bend = v > 0
+      ? wind * 0.045 * v * v + Math.sin(t * 1.9 + v * 5) * 0.004 * v * wind
+      : 0;
+    // the leading shoot nods over at the very top
+    const tip = Math.max(0, (v - 0.86) / 0.14);
+    const nod = 0.024 * tip * tip * (1 + 0.5 * wind);
+
+    // crown half-width at this height: a narrow column tapering to a point,
+    // with foliage carried almost to the ground
+    const s = (v - CROWN_BASE) / (1 - CROWN_BASE);
+    const cw_ = (s > 0 && s < 1)
+      ? CROWN_WIDTH * Math.pow(s, 0.3) * Math.pow(1 - s, 0.65) : 0;
+
+    for (let i = 0; i < cols; i++) {
+      let c = ' ', color = C.air;
+
+      if (v > 0) {
+        const u = (i - cx) * unit - bend - nod;       // sideways distance from the trunk
+        const au = Math.abs(u);
+        const left = u < 0;
+        // "home" cell in the tree's own frame, so details travel with the sway
+        const ti = Math.round(u / unit), tj = groundRow - j;
+
+        let D = -1, d = -1, n = 0.5;
+        if (cw_ > 1e-4) {
+          d = 1 - au / cw_;                     // 1 on the axis, 0 at the crown edge
+          if (d > -0.7) {
+            // clumps stretched along ascending branches (constant q)
+            const q = v - au * 1.4;
+            n = 0.62 * noise3(q * 30, au * 14 + (left ? 0 : 17.3), t * 0.22) +
+                0.38 * noise3(u * 70 + 9, v * 45, t * 0.5);
+            D = d * 1.15 + (n - 0.5) * 1.05;
+          }
+        }
+
+        if (D > 0.07) {
+          /* ---------- foliage ---------- */
+          const shimmer = noise3(i * 0.7, j * 0.7, t * 0.8);
+          const pick = (hash3(ti, tj, 1) + shimmer) % 1;
+          const k = D + (shimmer - 0.5) * 0.3;
+          const set = k < 0.32 ? (left ? EDGE_L : EDGE_R)
+                    : k < 0.7  ? (left ? MID_L : MID_R)
+                    : DENSE;
+          c = set[Math.floor(pick * set.length)];
+
+          // light from the upper left; outer sprays a little paler
+          let light = 0.48 - (u / cw_) * 0.3 + (v - 0.5) * 0.15 + (n - 0.5) * 0.9;
+          light = Math.max(0, Math.min(0.999, light));
+          color = C.foliage[Math.floor(light * nFol)];
+
+          // seed cones, clustered on the older wood inside the crown
+          if (D > 0.3 && d > 0.1 && d < 0.8 &&
+              noise3(ti * 0.13, tj * 0.13, 40) > 0.6 && hash3(ti, tj, 2) < 0.09) {
+            c = 'o';
+            color = C.cone;
+          }
+        } else {
+          /* ---------- trunk, branches, grass, air ---------- */
+          const tw = Math.max(unit * 0.5,
+                              0.011 * (1 - 0.8 * v) + 0.012 * Math.exp(-v * 28));
+          if (v < 0.97 && au < tw) {
+            c = BARK[Math.floor(hash3(ti, tj >> 1, 3) * BARK.length)];
+            color = left ? C.barkLight : C.barkDark;
+          } else if (d > 0.3 && hash3(ti, tj, 4) < 0.45) {
+            c = left ? '\\' : '/';              // branch glimpsed through a gap
+            color = C.barkDark;
+          } else {
+            const up = groundRow - j;           // rows above the ground
+            const gh = hash3(i, 1, 6) < 0.6
+              ? Math.floor(noise3(i * 0.35, 2.2, 0) * 3.3) : 0;
+            // understory shrubs lean a little with the wind
+            let si = i - Math.round(wind * up * 0.12);
+            si = si < 0 ? 0 : si >= cols ? cols - 1 : si;
+            const sh = shrubH[si];
+            let mid = 0;
+            if (up <= sh) {
+              const top = up > sh - 1;
+              const hs = hash3(si, up, 8);
+              c = top ? SHRUB_TOP[Math.floor(hs * SHRUB_TOP.length)]
+                      : SHRUB_CH[Math.floor(hs * SHRUB_CH.length)];
+              const li = up / sh * 1.6 + hash3(si, up, 9) * 1.4;
+              color = C.shrub[Math.min(2, Math.floor(li))];
+            } else if (up > gh && d < 0 && (mid = midAt(i, up, t, wind))) {
+              if (mid === 1) {
+                c = hash3(i, up >> 1, 10) < 0.8 ? '|' : ':';
+                color = C.midTrunk;
+              } else {
+                c = CROWN_CH[Math.floor(hash3(i, j, 11) * CROWN_CH.length)];
+                color = C.midCrown[mid - 2];
+              }
+            } else if (up <= gh) {
+              const lw = wind +
+                (noise3(i * 0.15 - windPhase * 2, 0.5, t * 0.4) - 0.5) * 1.6;
+              c = lw > 0.45 ? '/' : lw < -0.45 ? '\\' : '|';
+              if (up === gh && hash3(i, 2, 6) < 0.4) c = lw > 0 ? ',' : "'";
+              color = C.grass;
+            } else {
+              // faint streaks of moving air
+              const a = noise3(i * 0.05 - windPhase, j * 0.8, t * 0.07);
+              if (a > 0.8) { c = a > 0.87 ? '~' : '-'; color = C.air; }
+              else if (hash3(i, j, 7) < 0.004) { c = '.'; color = C.air; }
+
+              // distant canopy: densest at its skyline, thinning into mist below
+              if (c === ' ' && d < -0.15 && up <= farH[i]) {
+                const f = up / farH[i];
+                const drift = noise3(i * 0.08 + t * 0.03, j * 0.35, t * 0.05);
+                if (hash3(i, j, 12) < (0.1 + 0.5 * f * f) * (0.45 + drift)) {
+                  c = FAR_CH[Math.floor(hash3(i, j, 13) * FAR_CH.length)];
+                  color = C.far[f > 0.72 ? 1 : 0];
+                }
+              }
+            }
+          }
+        }
+      } else if (j === groundRow) {
+        c = SURFACE[Math.floor(hash3(i, 0, 5) * SURFACE.length)];
+        color = C.ground;
+      } else {
+        const depth = j - groundRow;
+        const h = hash3(i, j, 5);
+        if (h < 0.22 / depth) { c = h < 0.07 / depth ? ',' : '.'; color = C.ground; }
+      }
+
+      if (c !== ' ') {
+        if (color !== lastColor) { ctx.fillStyle = color; lastColor = color; }
+        ctx.fillText(c, i * cw, j * ch);
+      }
+    }
+  }
+
+  drawWallaby(t);
+
+  if (CONFIG.caption && rows > 4) {
+    ctx.fillStyle = C.caption;
+    const row = rows - 1;
+    for (let k = 0; k < CONFIG.caption.length; k++) {
+      ctx.fillText(CONFIG.caption[k], (2 + k) * cw, row * ch);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Run
+------------------------------------------------------------------ */
+if (typeof ResizeObserver !== 'undefined') {
+  new ResizeObserver(resize).observe(canvas);
+} else {
+  window.addEventListener('resize', resize);
+}
+resize();
+
+if (!reducedMotion) {
+  const frameMs = 1000 / CONFIG.fps;
+  let lastFrame = 0;
+  const loop = now => {
+    requestAnimationFrame(loop);
+    if (now - lastFrame < frameMs - 1) return;
+    lastFrame = now;
+    draw(now / 1000);
+  };
+  requestAnimationFrame(loop);
+}
+})();
 </script>
-
 </body>
-
 </html>
