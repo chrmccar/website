@@ -135,9 +135,16 @@ const CONFIG = {
     // drought-killed: mostly bare grey branches with patches of browned foliage
     { x: 0.262, size: 0.64, distance: 0.30, base: 0.10, width: 0.20, shoulders: 0.30, taper: 0.70, nod: -1, health: 0.15 }
   ],
-  // Two single understory plants. x = position across the view, z = depth
-  // (0 = level with the main tree, 1 = top of the slope). Set one to null to remove it.
-  grassTree: { x: 0.34, z: -0.05, size: 1.0 },    // Xanthorrhoea minor
+  // Understory plants. x = position across the view, z = depth
+  // (0 = level with the main tree, 1 = top of the slope).
+  // Grass trees (Xanthorrhoea minor). spikes = how many flower stalks (0-3);
+  // flowering: true gives cream spikes in bloom instead of old brown ones.
+  grassTrees: [
+    { x: 0.34,  z: -0.05, size: 1.0,  spikes: 3, flowering: false },
+    { x: 0.668, z: 0.12,  size: 1.05, spikes: 2, flowering: true },
+    { x: 0.2,   z: 0.42,  size: 1.0,  spikes: 1, flowering: false }
+  ],
+  insects: true,            // a few insects hovering round the flowering spikes
   treeFern:  null,                                // Cyathea australis: switched off (e.g. { x: 0.81, z: 0.2, size: 1.25 })
   mist: 1.0,                // haze drifting between the slope and the far hill (0 = none)
   falling: 1.0,             // foliage and the odd cone shaken loose in gusts (0 = none)
@@ -176,7 +183,9 @@ const CONFIG = {
     farScrub: '#213a31',                          // tiny far-off shrubs on it
     grassTree: ['#4a6652', '#66876a', '#88a784'],   // fine grey-green leaves, shaded -> lit
     grassTreeStalk: '#8c8e63',
-    grassTreeSpike: ['#6f5238', '#8e6d48', '#e3d9b0'],   // flower spike: dark, brown, cream flecks
+    grassTreeSpike: ['#6f5238', '#8e6d48', '#e3d9b0'],   // old flower spike: dark, brown, cream flecks
+    grassTreeFlower: ['#c9bd8c', '#efe8c6', '#fffbe6'],  // spike in bloom
+    insect: '#f0dc8a',
     fernTrunk: ['#3b2f27', '#524238', '#6a5746'],
     fernFrond: ['#2f6a3a', '#4a9150', '#7cbf6e'],   // underside, frond, lit
     mist: ['#22313a', '#31434d'],
@@ -461,7 +470,7 @@ let farH = [], ridgeH = [], midTrees = [];
 let hill2H = new Float32Array(0), farRocks = [];
 let rC = ' ', rColor = '';              // what farRockAt() found
 let colO = new Int16Array(0), objects = [];
-let plantG = null, plantF = null, fernPts = [], fernT = -1;
+let plantGs = [], plantF = null, fernPts = [], fernT = -1;
 let pC = ' ', pColor = '', pZ = 0;      // what plantAt() found
 let oC = ' ', oColor = '', oZ = 0;      // what objectAt() found, and how far away it is
 let tussocks = [], colT = new Int16Array(0);
@@ -1033,22 +1042,27 @@ function objectAt(i, up) {
    shapes keep their proportions (one column is narrower than one row).
 ------------------------------------------------------------------ */
 function buildPlants() {
-  plantG = plantF = null;
+  plantGs = []; plantF = null;
   const C = CONFIG.colors;
-  const g = CONFIG.grassTree, f = CONFIG.treeFern;
-  if (g) {
+  const f = CONFIG.treeFern;
+  const STALKS = [{ lean: -0.16, h: 12.5, ph: 0 }, { lean: 0.07, h: 14.5, ph: 2.1 }, { lean: 0.3, h: 10.5, ph: 4.0 }];
+  (CONFIG.grassTrees || []).forEach((g, k) => {
     const zc = Math.max(0, g.z), sc = g.size * (1 - 0.62 * zc);
     const L = 5.6 * sc;
-    plantG = {
-      x: Math.round(cols * g.x), z: g.z, baseRows: Math.max(0, Math.round(groundUp(cols * g.x, g.z))),
-      L: L, reach: Math.ceil(L / aspect) + 4,
+    const flip = k % 2 ? -1 : 1;                       // so no two lean the same way
+    plantGs.push({
+      k: k * 7, x: Math.round(cols * g.x), z: g.z,
+      baseRows: Math.max(0, Math.round(groundUp(cols * g.x, g.z))),
+      L: L, reach: Math.ceil(L / aspect) + 5, flowering: !!g.flowering,
       // flower stalks: how far each leans, how tall, and a sway offset
-      scapes: [{ lean: -0.16, h: 12.5 * sc, ph: 0 }, { lean: 0.07, h: 14.5 * sc, ph: 2.1 }, { lean: 0.3, h: 10.5 * sc, ph: 4.0 }],
+      scapes: STALKS.slice(k % 2, (k % 2) + (g.spikes || 0)).map(S => ({ lean: S.lean * flip, h: S.h * sc, ph: S.ph + k })),
       col: C.grassTree.map(c => fade(c, zc * 0.45)),
-      stalk: fade(C.grassTreeStalk, zc * 0.45), spike: C.grassTreeSpike.map(c => fade(c, zc * 0.45)),
+      stalk: fade(C.grassTreeStalk, zc * 0.45),
+      spike: (g.flowering ? C.grassTreeFlower : C.grassTreeSpike).map(c => fade(c, zc * 0.45)),
       straw: C.straw.map(c => fade(c, zc * 0.45))
-    };
-  }
+    });
+  });
+  plantGs.sort((a, b) => a.z - b.z);                    // nearest first
   if (f) {
     const zc = Math.max(0, f.z), sc = f.size * (1 - 0.62 * zc);
     const fronds = [];
@@ -1087,8 +1101,7 @@ function fernFrame(t) {
 
 function plantAt(i, rowsUp, t) {
   /* ---------- grass tree ---------- */
-  const G = plantG;
-  if (G) {
+  for (const G of plantGs) {
     const dxc = i - G.x, y = rowsUp - G.baseRows;
     if (y >= 1 && dxc >= -G.reach && dxc <= G.reach) {
       pZ = G.z;
@@ -1096,8 +1109,8 @@ function plantAt(i, rowsUp, t) {
       const push = wind * 0.9 * Math.min(1, y / G.L);                 // leaning in the wind
       const X = (dxc - push) * aspect, Y = y - 0.5;
       const r = Math.sqrt(X * X + Y * Y), ang = Math.atan2(X, Y);    // angle from straight up
-      const len = G.L * (0.7 + 0.3 * hash3(Math.floor((ang + 2) * 11), 1, 110));
-      const leaf = r <= len && hash3(i, rowsUp, 111) < 0.96 - 0.34 * (r / len);
+      const len = G.L * (0.7 + 0.3 * hash3(Math.floor((ang + 2) * 11), 1, 110 + G.k));
+      const leaf = r <= len && hash3(i, rowsUp, 111 + G.k) < 0.96 - 0.34 * (r / len);
       // flower stalks rising through the tuft
       for (let k = 0; k < G.scapes.length; k++) {
         const S = G.scapes[k];
@@ -1106,7 +1119,7 @@ function plantAt(i, rowsUp, t) {
         const cx = S.lean * y + (wind * 0.5 + Math.sin(t * 1.7 + S.ph) * 0.2 * wind) * fy * fy * 1.6;
         if (Math.round(cx) !== dxc) continue;
         if (fy > 0.6) {                                              // the flower spike itself
-          const h = hash3(k, Math.round(y), 112);
+          const h = hash3(k, Math.round(y), 112 + G.k);
           pC = h < 0.6 ? '#' : h < 0.85 ? '%' : '*';
           pColor = h < 0.3 ? G.spike[0] : h < 0.85 ? G.spike[1] : G.spike[2];
           return true;
@@ -1178,6 +1191,29 @@ function plantAt(i, rowsUp, t) {
   return false;
 }
 
+// A few insects circling each spike that is in flower.
+function drawInsects(t) {
+  if (!CONFIG.insects || reducedMotion) return;
+  for (const G of plantGs) {
+    if (!G.flowering) continue;
+    G.scapes.forEach((S, n) => {
+      // centre of the flowering part of this stalk
+      const cxp = (G.x + 0.5 + S.lean * S.h * 0.8) * cw;
+      const cyp = (groundRow - G.baseRows - S.h * 0.8) * ch;
+      for (let k = 0; k < 3; k++) {
+        const a = t * (1.3 + 0.5 * k) + k * 2.1 + n * 1.3 + G.k;
+        const x = cxp + (Math.sin(a) * 2.6 + Math.sin(a * 2.7 + k) * 1.2) * cw;
+        const y = cyp + (Math.cos(a * 1.3) * 1.6 + Math.sin(a * 3.1 + n) * 0.6) * ch;
+        const i = Math.floor(x / cw), j = Math.floor(y / ch);
+        ctx.fillStyle = CONFIG.colors.bg;
+        ctx.fillRect(i * cw, j * ch, cw, ch);
+        ctx.fillStyle = CONFIG.colors.insect;
+        ctx.fillText(Math.sin(t * 20 + k * 3) > 0 ? '.' : "'", i * cw, j * ch);
+      }
+    });
+  }
+}
+
 /* Tussocks: each is a fan of long strap leaves rising from one point,
    stiff and fairly upright, with the outer leaves shorter. */
 function buildTussocks() {
@@ -1200,7 +1236,7 @@ function buildTussocks() {
     if (h < 1.6) continue;
     if (colO[x] >= 0 && Math.abs(z - objects[colO[x]].z) < 0.25) continue;   // not on a boulder or the log
     // leave the grass tree and the tree fern clear so they can be seen
-    if (plantG && Math.abs(x - plantG.x) < 13 && Math.abs(z - plantG.z) < 0.35) continue;
+    if (plantGs.some(G => Math.abs(x - G.x) < 13 && Math.abs(z - G.z) < 0.35)) continue;
     if (plantF && Math.abs(x - plantF.x) < 10 && z < plantF.z + 0.08) continue;
     list.push({
       x: x, z: z, h: h, w: h * (0.7 + 0.5 * hash3(n, 4, 60)),
@@ -1460,6 +1496,7 @@ function draw(t) {
     }
   }
 
+  drawInsects(t);
   drawFalling(t, dt);
   drawCockatoos(t);
   drawWallaby(t);
