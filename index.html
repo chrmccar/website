@@ -30,10 +30,29 @@ const CONFIG = {
   seed: 11,                 // change for a different individual tree
   wind: 1.0,                // 0 = still air, 2 = blustery
   pointerWind: true,        // moving the mouse left/right pushes the wind
-  caption: 'Callitris rhomboidea',   // set to '' to hide
+  caption: '',              // text shown bottom-left, e.g. 'Callitris rhomboidea' ('' = none)
+  // The Callitris trees, nearest first. For each one:
+  //   x         where it stands across the view (0 = left edge, 1 = right edge)
+  //   size      height compared with the main tree
+  //   distance  0 = close, 1 = far away (fainter, and its base sits slightly higher)
+  //   base      how far up the trunk the foliage starts (fraction of height)
+  //   width     how broad the crown is
+  //   shoulders small = sides nearly parallel (columnar), large = widest low down (conical)
+  //   taper     small = blunt top, large = long drawn-out point
+  //   nod       which way the leading shoot leans: 1 right, -1 left
+  //   health    1 = healthy (the default), 0.5 = sickly and thinning, 0 = dead and bare
+  trees: [
+    { x: 0.42, size: 1.00, distance: 0.00, base: 0.08, width: 0.22, shoulders: 0.30, taper: 0.65, nod:  1 },
+    { x: 0.72, size: 0.72, distance: 0.45, base: 0.18, width: 0.17, shoulders: 0.20, taper: 0.50, nod: -1 },
+    { x: 0.16, size: 0.50, distance: 0.85, base: 0.05, width: 0.30, shoulders: 0.48, taper: 0.95, nod:  1 },
+    { x: 0.90, size: 0.60, distance: 0.65, base: 0.12, width: 0.20, shoulders: 0.36, taper: 0.85, nod: -1 },
+    { x: 0.57, size: 0.38, distance: 1.00, base: 0.10, width: 0.27, shoulders: 0.26, taper: 0.55, nod:  1 },
+    // drought-killed: mostly bare grey branches with patches of browned foliage
+    { x: 0.285, size: 0.64, distance: 0.30, base: 0.10, width: 0.20, shoulders: 0.30, taper: 0.70, nod: -1, health: 0.15 }
+  ],
   forest: true,             // false = just the single tree, as before
   forestTrees: 1.0,         // how many dim background trees (0 = none, 2 = lots)
-  understory: 1.0,          // height of the shrub layer (0 = none)
+  understory: 1.0,          // size of the grassy tussocks along the ground (0 = none)
   wallaby: true,            // a wallaby hops through now and then (click to call one)
   wallabyEvery: [20, 50],   // seconds between visits: shortest, longest
   wallabySize: 1.0,         // 1 = about nine rows of text tall
@@ -44,13 +63,17 @@ const CONFIG = {
     far: ['#1a2c34', '#243b40'],                // distant misty canopy
     midTrunk: '#39403f',                        // background trunks
     midCrown: ['#1c342f', '#28473b'],           // background crowns
-    shrub: ['#2c4634', '#3b5a3d', '#52704a'],   // understory, shaded -> lit
+    shrub: ['#414f2e', '#5c6b39', '#7d8a49'],   // tussock leaves: tough olive green, shaded -> lit
+    straw: ['#7a6c46', '#a39160'],              // dead leaves and old flower spikes
     bg: '#0b1014',
     // foliage, shaded side -> sunlit side
     foliage: ['#1f3f38', '#2a5344', '#376a50', '#4a8360', '#6c9f7a', '#96bd98'],
     barkLight: '#9a8b78',
     barkDark: '#65584c',
     cone: '#c0905f',
+    // browned, drought-killed foliage, shaded -> lit
+    deadFoliage: ['#3b2d24', '#574030', '#755438', '#91663f', '#ab7b4a', '#c2955f'],
+    deadWood: '#8b8a84',
     wallaby: '#a3978a',       // grey-brown coat
     wallabyNeck: '#b3805f',   // reddish neck and shoulders
     wallabyDark: '#3a332e',   // eye, in profile
@@ -61,10 +84,6 @@ const CONFIG = {
     caption: '#56636f'
   }
 };
-
-/* Tree proportions, as fractions of tree height */
-const CROWN_BASE = 0.08;    // height at which foliage starts
-const CROWN_WIDTH = 0.22;   // scales the crown half-width profile
 
 /* ------------------------------------------------------------------
    Noise helpers
@@ -143,28 +162,137 @@ function resize() {
   groundRow = rows - 3;
   // tree height in rows: as tall as fits, but never wider than the screen
   treeH = Math.max(12, Math.min(groundRow - 2,
-                                Math.floor(cols * 0.8 * aspect / CROWN_WIDTH)));
+                                Math.floor(cols * 0.8 * aspect / 0.22)));
   cx = Math.floor(cols / 2);
+  buildTrees();
   buildForest();
   if (reducedMotion) draw(0);
+}
+
+/* ------------------------------------------------------------------
+   The Callitris trees
+------------------------------------------------------------------ */
+let trees = [];
+let tC = ' ', tColor = '', tD = -1;     // what treeAt() found in the last cell it looked at
+
+function fade(hex, f) {                 // blend a colour towards the background
+  const a = parseInt(hex.slice(1), 16), b = parseInt(CONFIG.colors.bg.slice(1), 16);
+  const m = sh => Math.round((a >> sh & 255) + ((b >> sh & 255) - (a >> sh & 255)) * f);
+  return 'rgb(' + m(16) + ',' + m(8) + ',' + m(0) + ')';
+}
+
+function buildTrees() {
+  const C = CONFIG.colors;
+  trees = CONFIG.trees.map((t, k) => {
+    const h = Math.max(8, treeH * t.size);
+    const f = t.distance * 0.42;
+    return {
+      k: k, x: Math.round(cols * t.x), h: h, size: t.size, distance: t.distance,
+      baseRows: Math.round(t.distance * 2.4),
+      base: t.base, width: t.width, shoulders: t.shoulders, taper: t.taper, nod: t.nod,
+      reach: Math.ceil((t.width * 1.05 + 0.13) * h / aspect),
+      health: t.health === undefined ? 1 : t.health,
+      fol: C.foliage.map(c => fade(c, f)),
+      dead: C.deadFoliage.map(c => fade(c, f)), wood: fade(C.deadWood, f),
+      barkLight: fade(C.barkLight, f), barkDark: fade(C.barkDark, f), cone: fade(C.cone, f)
+    };
+  });
+  trees.sort((a, b) => a.distance - b.distance);      // nearest first, so it is drawn in front
+}
+
+/* Is part of tree T in this cell? If so, sets tC / tColor and returns true.
+   Always sets tD: how deep inside that tree's crown outline the cell is. */
+function treeAt(T, i, j, t) {
+  tD = -1;
+  const di = i - T.x;
+  if (di > T.reach || di < -T.reach) return false;
+  const tj = groundRow - T.baseRows - j;
+  const v = tj / T.h;                               // 0 at the ground, 1 at the tip
+  if (v <= 0 || v > 1.02) return false;
+  const unit = aspect / T.h;                        // one column, in tree-height units
+
+  // the tree bends more the higher you go, with a little whip at the top
+  const bend = wind * 0.045 * v * v + Math.sin(t * 1.9 + v * 5 + T.k * 2.1) * 0.004 * v * wind;
+  // the leading shoot nods over at the very top
+  const tip = Math.max(0, (v - 0.86) / 0.14);
+  const nod = T.nod * 0.024 * tip * tip * (1 + 0.5 * wind * T.nod);
+  // crown half-width at this height
+  const s = (v - T.base) / (1 - T.base);
+  const cw_ = (s > 0 && s < 1) ? T.width * Math.pow(s, T.shoulders) * Math.pow(1 - s, T.taper) : 0;
+
+  const u = di * unit - bend - nod;                 // sideways distance from the trunk
+  const au = Math.abs(u);
+  const left = u < 0;
+  // "home" cell in the tree's own frame, so details travel with the sway
+  const ti = Math.round(u / unit), z = T.k * 37;
+
+  let D = -1, d = -1, n = 0.5;
+  if (cw_ > 1e-4) {
+    d = 1 - au / cw_;                               // 1 on the axis, 0 at the crown edge
+    if (d > -0.7) {
+      // clumps stretched along ascending branches (constant q)
+      const q = v - au * 1.4;
+      n = 0.62 * noise3(q * 30 + z, au * 14 + (left ? 0 : 17.3), t * 0.22) +
+          0.38 * noise3(u * 70 + 9, v * 45 + z, t * 0.5);
+      D = d * 1.15 + (n - 0.5) * 1.05;
+    }
+  }
+  tD = d;
+
+  const sick = 1 - T.health;
+  // an unhealthy tree has lost foliage, most of all from the outside in
+  if (D > 0.07 + sick * (0.5 + 0.25 * (1 - d))) {
+    /* ---------- foliage ---------- */
+    const shimmer = noise3(i * 0.7, j * 0.7, t * 0.8);
+    const pick = (hash3(ti, tj, 1 + z) + shimmer) % 1;
+    const k = D + (shimmer - 0.5) * 0.3;
+    const set = k < 0.32 ? (left ? EDGE_L : EDGE_R)
+              : k < 0.7  ? (left ? MID_L : MID_R)
+              : DENSE;
+    tC = set[Math.floor(pick * set.length)];
+    // light from the upper left; outer sprays a little paler
+    let light = 0.48 - (u / cw_) * 0.3 + (v - 0.5) * 0.15 + (n - 0.5) * 0.9;
+    light = Math.max(0, Math.min(0.999, light));
+    // what foliage is left on a sick tree is mostly browned off
+    const alive = sick === 0 || hash3(ti >> 1, tj >> 1, 5 + z) < T.health * 0.8;
+    tColor = (alive ? T.fol : T.dead)[Math.floor(light * T.fol.length)];
+    // seed cones, clustered on the older wood inside the crown
+    if (D > 0.3 + sick * 0.3 && d > 0.1 && d < 0.8 &&
+        noise3(ti * 0.13 + z, tj * 0.13, 40) > 0.6 && hash3(ti, tj, 2 + z) < 0.09) {
+      tC = 'o';
+      tColor = T.cone;
+    }
+    return true;
+  }
+  const tw = Math.max(unit * 0.5, 0.011 * (1 - 0.8 * v) + 0.012 * Math.exp(-v * 28));
+  if (v < 0.97 && au < tw) {
+    tC = BARK[Math.floor(hash3(ti, tj >> 1, 3 + z) * BARK.length)];
+    tColor = left ? T.barkLight : T.barkDark;
+    return true;
+  }
+  if (d > 0.3 - sick * 0.28 && hash3(ti, tj, 4 + z) < 0.45 + sick * 0.2 * d) {
+    tC = left ? '\\' : '/';                         // branch glimpsed through a gap
+    tColor = sick > 0.4 ? T.wood : T.barkDark;      // bleached grey on a dead tree
+    return true;
+  }
+  return false;
 }
 
 /* ------------------------------------------------------------------
    Forest backdrop: three quiet layers behind and beside the main tree
      far   - a distant canopy line dissolving into mist
      mid   - a few dim, open-crowned trees standing further back
-     shrub - understory mounds along the ground
+     shrub - strappy tussocks along the ground (loosely Lomandra longifolia
+             as it grows in dry forest: upright, ragged, part straw-coloured)
 ------------------------------------------------------------------ */
 const FAR_CH   = ['.', ':', '.', "'", ',', '.'];
 const CROWN_CH = ['.', ':', ';', "'", '"', ',', ':'];
-const SHRUB_CH = ['&', '%', ';', ':', '*', '"', ';', '!'];
-const SHRUB_TOP = [',', '.', "'", '`', '"'];
-
-let farH = [], shrubH = [], midTrees = [];
+let farH = [], midTrees = [];
+let tussocks = [], colT = new Int16Array(0);
+let sC = ' ', sColor = '';              // what tussockAt() found
 
 function buildForest() {
   farH = new Float32Array(cols);
-  shrubH = new Float32Array(cols);
   midTrees = [];
   if (!CONFIG.forest) return;
 
@@ -173,18 +301,14 @@ function buildForest() {
     const bump = noise3(i * 0.55, 8.3, 0);
     farH[i] = treeH * (0.34 + 0.24 * noise3(i * 0.035, 7.1, 0)) + 3 * bump * bump;
 
-    // shrubs: scattered mounds, kept low close to the main trunk
-    const near = Math.min(1, Math.abs(i - cx) / 16);
-    const m = (noise3(i * 0.085, 5.4, 0) - 0.42) * 15 + noise3(i * 0.5, 6.6, 0) * 1.5;
-    shrubH[i] = Math.max(0, m) * near * CONFIG.understory;
   }
+  buildTussocks();
 
   // background trees: one per slot across the width, none behind the main crown
   const n = Math.round(cols / 24 * CONFIG.forestTrees);
-  const clear = CROWN_WIDTH * 0.45 * treeH / aspect + 12;
   for (let k = 0; k < n; k++) {
     const x = (k + 0.2 + 0.6 * hash3(k, 1, 20)) * cols / n;
-    if (Math.abs(x - cx) < clear) continue;
+    if (trees.some(T => Math.abs(x - T.x) < T.width * 0.6 * T.h / aspect + 12)) continue;
     midTrees.push({
       x: x,
       h: treeH * (0.62 + 0.5 * hash3(k, 2, 20)),   // rows from ground to crown centre
@@ -220,7 +344,10 @@ function spawnWallaby(t) {
   // pick a spot somewhere across the middle of the view to stop and look
   let target = W * (0.22 + 0.56 * Math.random());
   // ...but not right in front of the tree
-  if (Math.abs(target - W / 2) < W * 0.14) target += (target < W / 2 ? -1 : 1) * W * 0.14;
+  for (const T of trees) {
+    const tx = T.x * cw, gap = W * 0.11 * T.size;
+    if (Math.abs(target - tx) < gap) target = tx + (target < tx ? -gap : gap);
+  }
   const stopHop = Math.max(1, Math.round(Math.abs(target - x0) / (HOP_LENGTH * S)));
   wallaby = { t0: t, dir: dir, S: S, x0: x0, stopHop: stopHop };
 }
@@ -373,6 +500,66 @@ function drawWallaby(t) {
   }
 }
 
+/* Tussocks: each is a fan of long strap leaves rising from one point,
+   stiff and fairly upright, with the outer leaves shorter. */
+function buildTussocks() {
+  tussocks = [];
+  colT = new Int16Array(cols * 3).fill(-1);
+  if (!CONFIG.understory) return;
+  let x = Math.floor(hash3(0, 1, 60) * 6), n = 0;
+  while (x < cols) {
+    n++;
+    // smaller close to a trunk, so the trees stay readable
+    let near = 1;
+    for (const T of trees) near = Math.min(near, 0.35 + Math.abs(x - T.x) / (14 * T.size));
+    const r = hash3(n, 2, 60);
+    const h = (2.6 + 4.6 * r * Math.sqrt(r)) * near * CONFIG.understory;
+    if (h >= 2) {
+      const K = { x: x, h: h, w: h * (0.7 + 0.5 * hash3(n, 3, 60)), flower: hash3(n, 4, 60) < 0.3 };
+      const reach = Math.ceil(K.w) + 5;
+      for (let i = Math.max(0, x - reach); i <= Math.min(cols - 1, x + reach); i++) {
+        for (let s = 0; s < 3; s++) if (colT[i * 3 + s] < 0) { colT[i * 3 + s] = tussocks.length; break; }
+      }
+      tussocks.push(K);
+    }
+    // loose clumps of two or three, then a gap
+    x += hash3(n, 5, 60) < 0.35 ? 3 + Math.floor(hash3(n, 6, 60) * 3) : 7 + Math.floor(hash3(n, 7, 60) * 15);
+  }
+}
+
+function tussockAt(i, up, t) {
+  for (let s = 0; s < 3; s++) {
+    const id = colT[i * 3 + s];
+    if (id < 0) break;
+    const K = tussocks[id];
+    if (up > K.h) continue;
+    const f = up / K.h;                               // 0 at the base, 1 at the leaf tips
+    // leaves flex in the wind, the tips most of all
+    const dx = i - K.x - (wind * 0.9 + Math.sin(t * 1.3 + K.x) * 0.25 * wind) * f * f * K.h * 0.22;
+    const spread = 0.6 + K.w * Math.pow(f, 0.75);     // the fan opens out as it rises
+    const a = Math.abs(dx) / spread;
+    if (a > 1) continue;
+    const e = Math.abs(dx) / K.w;
+    const top = 1 - 0.4 * e * e;                      // outer leaves are shorter
+    if (f > top) continue;
+    const hx = Math.round(dx) + K.x * 3;
+    if (hash3(hx, up, 8) > 0.97 - 0.42 * a - 0.12 * f) continue;    // ragged, more so outwards
+    const slope = dx / up;
+    sC = slope < -0.4 ? '\\' : slope > 0.4 ? '/' : '|';
+    if (f > top - 1.1 / K.h && e > 0.5) sC = dx < 0 ? '`' : "'";    // thin leaf tips
+    const C = CONFIG.colors;
+    // dead straw-coloured leaves, mostly low down in the tussock
+    if (hash3(hx, up, 9) < 0.1 + 0.28 * (1 - f)) sColor = C.straw[hash3(hx, up, 10) < 0.5 ? 0 : 1];
+    else sColor = C.shrub[Math.max(0, Math.min(2, Math.floor(f * 1.5 + hash3(hx, up, 11) * 1.5 - (dx > 0 ? 0.4 : 0))))];
+    // an old flower spike or two standing among the leaves
+    if (K.flower && Math.abs(dx - 1) < 0.6 && f > 0.5 && f < 0.92) {
+      sC = hash3(hx, up, 12) < 0.55 ? '*' : '!'; sColor = C.straw[1];
+    }
+    return true;
+  }
+  return false;
+}
+
 /* What, if anything, of a background tree is in this cell?
    0 = nothing, 1 = trunk, 2 = shaded crown, 3 = lit crown */
 function midAt(i, up, t, wind) {
@@ -433,96 +620,41 @@ function draw(t) {
   ctx.fillStyle = C.bg;
   ctx.fillRect(0, 0, W, H);
 
-  const unit = aspect / treeH;       // one column, in tree-height units
-  const nFol = C.foliage.length;
   let lastColor = '';
 
   for (let j = 0; j < rows; j++) {
-    const v = (groundRow - j) / treeH;          // 0 at the ground, 1 at the tip
-
-    // the tree bends more the higher you go, with a little whip at the top
-    const bend = v > 0
-      ? wind * 0.045 * v * v + Math.sin(t * 1.9 + v * 5) * 0.004 * v * wind
-      : 0;
-    // the leading shoot nods over at the very top
-    const tip = Math.max(0, (v - 0.86) / 0.14);
-    const nod = 0.024 * tip * tip * (1 + 0.5 * wind);
-
-    // crown half-width at this height: a narrow column tapering to a point,
-    // with foliage carried almost to the ground
-    const s = (v - CROWN_BASE) / (1 - CROWN_BASE);
-    const cw_ = (s > 0 && s < 1)
-      ? CROWN_WIDTH * Math.pow(s, 0.3) * Math.pow(1 - s, 0.65) : 0;
+    const up = groundRow - j;                    // rows above the ground
 
     for (let i = 0; i < cols; i++) {
       let c = ' ', color = C.air;
 
-      if (v > 0) {
-        const u = (i - cx) * unit - bend - nod;       // sideways distance from the trunk
-        const au = Math.abs(u);
-        const left = u < 0;
-        // "home" cell in the tree's own frame, so details travel with the sway
-        const ti = Math.round(u / unit), tj = groundRow - j;
+      if (up > 0) {
+        // ground cover at this column: grass height, and any tussock
+        const gh = hash3(i, 1, 6) < 0.6
+          ? Math.floor(noise3(i * 0.35, 2.2, 0) * 3.3) : 0;
+        const tus = tussockAt(i, up, t);
 
-        let D = -1, d = -1, n = 0.5;
-        if (cw_ > 1e-4) {
-          d = 1 - au / cw_;                     // 1 on the axis, 0 at the crown edge
-          if (d > -0.7) {
-            // clumps stretched along ascending branches (constant q)
-            const q = v - au * 1.4;
-            n = 0.62 * noise3(q * 30, au * 14 + (left ? 0 : 17.3), t * 0.22) +
-                0.38 * noise3(u * 70 + 9, v * 45, t * 0.5);
-            D = d * 1.15 + (n - 0.5) * 1.05;
+        // the Callitris trees, nearest first
+        let hit = false, d = -1;
+        for (let k = 0; k < trees.length; k++) {
+          const T = trees[k];
+          const found = treeAt(T, i, j, t);
+          if (tD > d) d = tD;
+          if (found) {
+            // the foot of a tree further back is hidden by the grass and tussocks in front
+            hit = !(T.baseRows && (up <= gh || tus));
+            break;
           }
         }
 
-        if (D > 0.07) {
-          /* ---------- foliage ---------- */
-          const shimmer = noise3(i * 0.7, j * 0.7, t * 0.8);
-          const pick = (hash3(ti, tj, 1) + shimmer) % 1;
-          const k = D + (shimmer - 0.5) * 0.3;
-          const set = k < 0.32 ? (left ? EDGE_L : EDGE_R)
-                    : k < 0.7  ? (left ? MID_L : MID_R)
-                    : DENSE;
-          c = set[Math.floor(pick * set.length)];
-
-          // light from the upper left; outer sprays a little paler
-          let light = 0.48 - (u / cw_) * 0.3 + (v - 0.5) * 0.15 + (n - 0.5) * 0.9;
-          light = Math.max(0, Math.min(0.999, light));
-          color = C.foliage[Math.floor(light * nFol)];
-
-          // seed cones, clustered on the older wood inside the crown
-          if (D > 0.3 && d > 0.1 && d < 0.8 &&
-              noise3(ti * 0.13, tj * 0.13, 40) > 0.6 && hash3(ti, tj, 2) < 0.09) {
-            c = 'o';
-            color = C.cone;
-          }
+        if (hit) {
+          c = tC; color = tColor;
         } else {
-          /* ---------- trunk, branches, grass, air ---------- */
-          const tw = Math.max(unit * 0.5,
-                              0.011 * (1 - 0.8 * v) + 0.012 * Math.exp(-v * 28));
-          if (v < 0.97 && au < tw) {
-            c = BARK[Math.floor(hash3(ti, tj >> 1, 3) * BARK.length)];
-            color = left ? C.barkLight : C.barkDark;
-          } else if (d > 0.3 && hash3(ti, tj, 4) < 0.45) {
-            c = left ? '\\' : '/';              // branch glimpsed through a gap
-            color = C.barkDark;
-          } else {
-            const up = groundRow - j;           // rows above the ground
-            const gh = hash3(i, 1, 6) < 0.6
-              ? Math.floor(noise3(i * 0.35, 2.2, 0) * 3.3) : 0;
-            // understory shrubs lean a little with the wind
-            let si = i - Math.round(wind * up * 0.12);
-            si = si < 0 ? 0 : si >= cols ? cols - 1 : si;
-            const sh = shrubH[si];
+          /* ---------- tussocks, background trees, grass, air ---------- */
+          {
             let mid = 0;
-            if (up <= sh) {
-              const top = up > sh - 1;
-              const hs = hash3(si, up, 8);
-              c = top ? SHRUB_TOP[Math.floor(hs * SHRUB_TOP.length)]
-                      : SHRUB_CH[Math.floor(hs * SHRUB_CH.length)];
-              const li = up / sh * 1.6 + hash3(si, up, 9) * 1.4;
-              color = C.shrub[Math.min(2, Math.floor(li))];
+            if (tus) {
+              c = sC; color = sColor;
             } else if (up > gh && d < 0 && (mid = midAt(i, up, t, wind))) {
               if (mid === 1) {
                 c = hash3(i, up >> 1, 10) < 0.8 ? '|' : ':';
