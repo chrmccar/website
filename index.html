@@ -3,17 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Callitris rhomboidea</title>
+<title>Christopher McCarthy</title>
 <style>
-  html, body { margin: 0; height: 100%; background: #0b1014; }
-  /* The canvas fills whatever box you give it. For the website, put it in
-     any container and set the width/height you want here. */
-  #tree { display: block; width: 100vw; height: 100vh; }
+  :root {
+    --bg: #0b1014;
+    --text: #dbe4d6;      /* name, headings */
+    --soft: #a3b3a7;      /* body text, links */
+    --dim: #6f8078;       /* close button */
+    --accent: #ecd24a;    /* the cockatoo's crest */
+    --mono: "JetBrains Mono", "Fira Code", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  }
+  html, body { margin: 0; height: 100%; background: var(--bg); overflow: hidden; }
+  body { font-family: var(--mono); color: var(--soft); }
+
+  /* the animated scene fills the whole window, behind everything */
+  #tree { position: fixed; inset: 0; display: block; width: 100vw; height: 100vh; }
+
+  /* ---- name (top left) and menu (top right), sitting in the sky ---- */
+  .masthead {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 3;
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;
+    gap: 10px 28px; padding: 22px 28px;
+    pointer-events: none;                 /* clicks fall through to the scene... */
+    text-shadow: 0 0 6px var(--bg), 0 0 14px var(--bg);
+  }
+  .masthead a { pointer-events: auto; }   /* ...except on the links */
+  .masthead h1 {
+    margin: 0; font-size: 19px; font-weight: 500; letter-spacing: 0.16em;
+    color: var(--text); white-space: nowrap;
+  }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 13px; letter-spacing: 0.08em; }
+  nav a { color: var(--soft); text-decoration: none; padding: 4px 0; }
+  nav a::before { content: "["; opacity: 0; margin-right: 3px; color: var(--accent); }
+  nav a::after  { content: "]"; opacity: 0; margin-left: 3px;  color: var(--accent); }
+  nav a:hover, nav a:focus-visible, nav a[aria-current="true"] { color: var(--text); outline: none; }
+  nav a:hover::before, nav a:hover::after,
+  nav a:focus-visible::before, nav a:focus-visible::after,
+  nav a[aria-current="true"]::before, nav a[aria-current="true"]::after { opacity: 1; }
+
+  /* ---- content panels: slide in over the right of the scene ---- */
+  .panel {
+    position: fixed; top: 0; right: 0; bottom: 0; width: min(440px, 100vw); z-index: 2;
+    box-sizing: border-box; padding: 96px 30px 30px; overflow-y: auto;
+    background: rgba(11, 16, 20, 0.88); border-left: 1px solid #1f2b2e;
+    -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+    transform: translateX(100%); visibility: hidden;
+    transition: transform 0.35s ease, visibility 0s linear 0.35s;
+    font-size: 13.5px; line-height: 1.75;
+  }
+  .panel.open { transform: none; visibility: visible; transition: transform 0.35s ease; }
+  .panel h2 { margin: 0 0 18px; font-size: 14px; font-weight: 500; letter-spacing: 0.16em; color: var(--text); }
+  .panel h2::before { content: "/ "; color: var(--accent); }
+  .panel p { margin: 0 0 16px; }
+  .panel a { color: var(--text); }
+  .panel .close {
+    position: absolute; top: 90px; right: 26px; background: none; border: 0; cursor: pointer;
+    font: inherit; font-size: 13px; letter-spacing: 0.08em; color: var(--dim); padding: 4px;
+  }
+  .panel .close:hover, .panel .close:focus-visible { color: var(--text); outline: none; }
+
+  @media (max-width: 640px) {
+    .masthead { padding: 16px 18px; }
+    .masthead h1 { font-size: 16px; letter-spacing: 0.12em; }
+    .panel { padding: 110px 22px 24px; border-left: 0; background: rgba(11, 16, 20, 0.93); }
+    .panel .close { top: 104px; right: 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .panel { transition: none; } }
 </style>
 </head>
 <body>
 <canvas id="tree" role="img"
-  aria-label="Animated text art of a Callitris rhomboidea tree swaying in the wind"></canvas>
+  aria-label="Animated text art of a dry forest: Callitris rhomboidea trees swaying in the wind, with a wallaby and cockatoos passing through"></canvas>
+
+<!-- ================= NAME AND MENU ================= -->
+<header class="masthead">
+  <h1 id="name">Christopher McCarthy</h1>
+  <nav aria-label="Sections">
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<!-- ================= CONTENT PANELS =================
+     Each <section> opens when its menu link is clicked. Replace the
+     text in [square brackets] with your own. To add a section later,
+     copy one, give it a new id, and add a matching link in the menu. -->
+<section class="panel" id="about" aria-labelledby="about-h">
+  <button class="close" type="button">close &times;</button>
+  <h2 id="about-h">about</h2>
+  <p>[Your text here.]</p>
+</section>
+
+<section class="panel" id="contact" aria-labelledby="contact-h">
+  <button class="close" type="button">close &times;</button>
+  <h2 id="contact-h">contact</h2>
+  <p>[Your contact details here.]</p>
+</section>
 
 <script>
 (() => {
@@ -50,16 +135,27 @@ const CONFIG = {
     // drought-killed: mostly bare grey branches with patches of browned foliage
     { x: 0.285, size: 0.64, distance: 0.30, base: 0.10, width: 0.20, shoulders: 0.30, taper: 0.70, nod: -1, health: 0.15 }
   ],
+  ridge: true,              // a distant hill line behind the forest
+  stars: true,              // a few faint stars in the open sky
+  groundDetail: true,       // boulders and a fallen log on the forest floor
   forest: true,             // false = just the single tree, as before
   forestTrees: 1.0,         // how many dim background trees (0 = none, 2 = lots)
   understory: 1.0,          // size of the grassy tussocks along the ground (0 = none)
   wallaby: true,            // a wallaby hops through now and then (click to call one)
   wallabyEvery: [20, 50],   // seconds between visits: shortest, longest
+  cockatoos: true,          // a pair of white cockatoos flies over now and then
+  cockatooEvery: [25, 60],  // seconds between fly-overs: shortest, longest
+  cockatooSize: 1.0,
   wallabySize: 1.0,         // 1 = about nine rows of text tall
   wallabyLook: true,        // stops part-way across and looks out at the viewer
   wallabyWait: 1.0,         // seconds it holds the look before hopping on
   colors: {
     // forest layers, kept deliberately dim so the Callitris stays the subject
+    ridge: ['#121f26', '#27404a'],              // distant hill: slope, crest
+    star: ['#3d4c5c', '#7f90a3', '#c9d3de'],    // dim -> bright
+    rock: ['#3c4548', '#566064', '#8c979a'],    // shaded -> lit
+    lichen: '#9aa68a',
+    log: ['#5d5044', '#93816c', '#b39b7c'],     // bark, lit bark, cut end
     far: ['#1a2c34', '#243b40'],                // distant misty canopy
     midTrunk: '#39403f',                        // background trunks
     midCrown: ['#1c342f', '#28473b'],           // background crowns
@@ -77,6 +173,9 @@ const CONFIG = {
     wallaby: '#a3978a',       // grey-brown coat
     wallabyNeck: '#b3805f',   // reddish neck and shoulders
     wallabyDark: '#3a332e',   // eye, in profile
+    cockatoo: '#f0ece2',
+    cockatooCrest: '#ecd24a',
+    cockatooBeak: '#5f5c5a',
     wallabyEye: '#f1e8d2',    // eyes, when it looks at you
     grass: '#7d8f55',
     ground: '#6b6a4a',
@@ -287,13 +386,20 @@ function treeAt(T, i, j, t) {
 ------------------------------------------------------------------ */
 const FAR_CH   = ['.', ':', '.', "'", ',', '.'];
 const CROWN_CH = ['.', ':', ';', "'", '"', ',', ':'];
-let farH = [], midTrees = [];
+let farH = [], ridgeH = [], midTrees = [];
+let colO = new Int16Array(0), objects = [];
+let oC = ' ', oColor = '';              // what objectAt() found
 let tussocks = [], colT = new Int16Array(0);
 let sC = ' ', sColor = '';              // what tussockAt() found
 
 function buildForest() {
   farH = new Float32Array(cols);
+  ridgeH = new Float32Array(cols);
   midTrees = [];
+  if (CONFIG.ridge) for (let i = 0; i < cols; i++) {
+    ridgeH[i] = treeH * (0.6 + 0.22 * noise3(i * 0.012, 11.3, 0) + 0.05 * noise3(i * 0.07, 12.1, 0));
+  }
+  buildGround();
   if (!CONFIG.forest) return;
 
   for (let i = 0; i < cols; i++) {
@@ -457,47 +563,166 @@ function drawWallaby(t) {
   const P = wallabyPose(a, look, twitch);
   const C = CONFIG.colors;
   const groundY = groundRow * ch;
-  const i0 = Math.max(0, Math.floor((ox - 1.1 * S) / cw));
-  const i1 = Math.min(cols - 1, Math.ceil((ox + 1.1 * S) / cw));
-  const j0 = Math.max(0, Math.floor((groundY - (1.4 + lift) * S) / ch));
-  const ci = Math.round(ox / cw);
-  const eyes = P.eyes.map(e => [Math.floor((ox + dir * e[0] * S) / cw),
-                                Math.floor((groundY - (e[1] + lift) * S) / ch)]);
+  paintShape(P, ox, groundY - lift * S, S, dir,
+             Math.floor((ox - 1.1 * S) / cw), Math.ceil((ox + 1.1 * S) / cw),
+             Math.floor((groundY - (1.4 + lift) * S) / ch), groundRow - 1,
+             [C.wallaby, C.wallabyNeck, C.wallabyDark],
+             P.eyes, P.facing ? C.wallabyEye : C.wallabyDark);
+}
 
-  for (let j = j0; j < groundRow; j++) {
+/* Draw a creature made of tapered segments (P) as text. (ox, oy) is where
+   its own origin sits on screen in pixels, S is pixels per unit, dir = 1
+   facing right / -1 facing left. Each cell is sampled at six points and
+   gets a character that matches how much of it is covered. */
+function paintShape(P, ox, oy, S, dir, i0, i1, j0, j1, colors, eyes, eyeColor) {
+  i0 = Math.max(0, i0); i1 = Math.min(cols - 1, i1);
+  j0 = Math.max(0, j0); j1 = Math.min(rows - 1, j1);
+  const ci = Math.round(ox / cw), cj = Math.round(oy / ch);
+  const eyeCells = eyes.map(e => [Math.floor((ox + dir * e[0] * S) / cw),
+                                  Math.floor((oy - e[1] * S) / ch)]);
+  for (let j = j0; j <= j1; j++) {
     for (let i = i0; i <= i1; i++) {
-      // six sample points per cell: 2 across, 3 down
       let bits = 0, cnt = 0, part = 0;
       for (let b = 0; b < 6; b++) {
         const px = (i + (b & 1 ? 0.75 : 0.25)) * cw;
         const py = (j + ((b >> 1) * 2 + 1) / 6) * ch;
-        const hit = wallabyAt(P, dir * (px - ox) / S, (groundY - py) / S - lift);
+        const hit = wallabyAt(P, dir * (px - ox) / S, (oy - py) / S);
         if (hit) { bits |= 1 << b; cnt++; if (hit > part) part = hit; }
       }
       if (!cnt) continue;
       const top = (bits & 1) + (bits >> 1 & 1), mid = (bits >> 2 & 1) + (bits >> 3 & 1);
       const bot = (bits >> 4 & 1) + (bits >> 5 & 1);
-      const lft = (bits & 1) + (bits >> 2 & 1) + (bits >> 4 & 1), rgt = cnt - lft;
+      const lft = (bits & 1) + (bits >> 2 & 1) + (bits >> 4 & 1);
       let c;
-      if (cnt >= 3) c = FUR[Math.floor(hash3(i - ci, j, 30) * FUR.length)];
+      if (cnt >= 3) c = FUR[Math.floor(hash3(i - ci, j - cj, 30) * FUR.length)];
       else if (top === 0 && mid === 0) c = bot === 2 ? '_' : lft ? '.' : ',';
       else if (bot === 0 && mid === 0) c = top === 2 ? '"' : lft ? '`' : "'";
       else if (top === 0 && bot === 0) c = '-';
       else if (top === 0) c = lft ? '.' : ',';
       else if (bot === 0) c = lft ? '`' : "'";
       else c = ':';
-      let color = part === 2 ? C.wallabyNeck : part === 3 ? C.wallabyDark : C.wallaby;
-      for (let e = 0; e < eyes.length; e++) {
-        if (i === eyes[e][0] && j === eyes[e][1] && cnt >= 3) {
-          c = 'o'; color = P.facing ? C.wallabyEye : C.wallabyDark;
-        }
+      let color = colors[part - 1];
+      for (let e = 0; e < eyeCells.length; e++) {
+        if (i === eyeCells[e][0] && j === eyeCells[e][1] && cnt >= 3) { c = 'o'; color = eyeColor; }
       }
-      ctx.fillStyle = C.bg;
+      ctx.fillStyle = CONFIG.colors.bg;
       ctx.fillRect(i * cw, j * ch, cw + 0.5, ch);
       ctx.fillStyle = color;
       ctx.fillText(c, i * cw, j * ch);
     }
   }
+}
+
+/* ------------------------------------------------------------------
+   Cockatoos. A pair of white, yellow-crested cockatoos crosses the sky
+   now and then, one a little behind and above the other, flapping with
+   the odd short glide. Units: 1 = the bird's length, beak to tail.
+------------------------------------------------------------------ */
+let flock = null, nextFlock = -1;
+
+function cockatooPose(ph, glide) {
+  const P = [];
+  const add = (ax, ay, bx, by, ra, rb, tint) => P.push([ax, ay, bx, by, ra, rb, tint || 0]);
+  const th = glide ? 0.2 : 1.15 * Math.sin(ph);            // inner wing angle
+  const th2 = glide ? 0.3 : 1.25 * Math.sin(ph - 0.7);     // the outer wing follows a beat behind
+  const bob = glide ? 0 : -0.04 * Math.sin(ph);            // body rises as the wings push down
+  add(-0.3, bob, 0.24, 0.03 + bob, 0.115, 0.105);          // body
+  add(-0.3, bob, -0.62, -0.03 + bob, 0.085, 0.06);         // tail
+  add(0.33, 0.06 + bob, 0.4, 0.07 + bob, 0.1, 0.095);      // head
+  add(0.36, 0.15 + bob, 0.2, 0.26 + bob, 0.042, 0.018, 1); // yellow crest, swept back
+  add(0.48, 0.04 + bob, 0.52, -0.03 + bob, 0.04, 0.025, 2);  // dark beak
+  const sx = 0.06, sy = 0.05 + bob;                        // shoulder
+  const mx = sx - 0.1, my = sy + 0.38 * Math.sin(th);
+  add(sx, sy, mx, my, 0.15, 0.13);                         // wing, in two pieces
+  add(mx, my, mx - 0.12 - 0.06 * Math.abs(Math.sin(th2)), my + 0.36 * Math.sin(th2), 0.13, 0.05);
+  P.eyes = [[0.4, 0.09 + bob]];
+  return P;
+}
+
+function drawCockatoos(t) {
+  if (!CONFIG.cockatoos || reducedMotion) return;
+  if (nextFlock < 0) nextFlock = t + 10 + Math.random() * 8;
+  if (!flock) {
+    if (t < nextFlock || !cols) return;
+    const dir = Math.random() < 0.5 ? 1 : -1;
+    flock = {
+      t0: t, dir: dir, S: ch * 8 * CONFIG.cockatooSize,
+      y0: H * (0.12 + 0.26 * Math.random()),
+      climb: (Math.random() - 0.5) * 0.12,                 // drifting slightly up or down
+      speed: Math.max(150, W / 7)                          // pixels per second
+    };
+  }
+  const C = CONFIG.colors, F = flock, S = F.S;
+  const gone = (W + 6 * S) / F.speed;
+  if (t - F.t0 > gone) {
+    flock = null;
+    const e = CONFIG.cockatooEvery;
+    nextFlock = t + e[0] + Math.random() * (e[1] - e[0]);
+    return;
+  }
+  for (let k = 0; k < 2; k++) {
+    const lead = (F.dir > 0 ? -S : W + S) + F.dir * F.speed * (t - F.t0);
+    const ox = lead - F.dir * k * 2.1 * S;
+    const oy = F.y0 - k * 0.7 * S + (ox - W / 2) * F.climb * F.dir
+             + Math.sin(t * 0.9 + k * 2.3) * 0.22 * S;
+    const glide = noise3(t * 0.55, k * 9.1, 7.7) > 0.66;
+    const P = cockatooPose(t * 15 + k * 1.9, glide);
+    paintShape(P, ox, oy, S, F.dir,
+               Math.floor((ox - 0.85 * S) / cw), Math.ceil((ox + 0.85 * S) / cw),
+               Math.floor((oy - 1.0 * S) / ch), Math.ceil((oy + 1.0 * S) / ch),
+               [C.cockatoo, C.cockatooCrest, C.cockatooBeak], P.eyes, C.cockatooBeak);
+  }
+}
+
+/* Boulders and a fallen log on the forest floor. Positions are fractions
+   of the width, chosen to sit in the gaps between the trees. */
+function buildGround() {
+  objects = [];
+  colO = new Int16Array(cols).fill(-1);
+  if (!CONFIG.groundDetail) return;
+  const put = o => {
+    for (let i = Math.max(0, Math.floor(o.x - o.rx)); i <= Math.min(cols - 1, Math.ceil(o.x + o.rx)); i++) {
+      if (colO[i] < 0) colO[i] = objects.length;
+    }
+    objects.push(o);
+  };
+  put({ rock: true, x: cols * 0.065, rx: 7, ry: 3.2 });
+  put({ rock: true, x: cols * 0.065 + 10, rx: 3.5, ry: 1.7 });
+  put({ rock: true, x: cols * 0.815, rx: 5.5, ry: 2.5 });
+  put({ rock: false, x: cols * 0.515, rx: Math.min(13, cols * 0.07), ry: 2 });
+}
+
+function objectAt(i, up) {
+  const id = colO[i];
+  if (id < 0) return false;
+  const o = objects[id], C = CONFIG.colors;
+  const dx = i - o.x;
+  if (o.rock) {
+    const inside = (x, y) => x * x / (o.rx * o.rx) + y * y / (o.ry * o.ry) <= 1;
+    if (!inside(dx, up - 0.5)) return false;
+    const top = !inside(dx, up + 0.5);
+    const edgeL = !inside(dx - 1, up - 0.5), edgeR = !inside(dx + 1, up - 0.5);
+    const h = hash3(i, up, 70 + id);
+    if (top && !edgeL && !edgeR) { oC = h < 0.8 ? '_' : '.'; oColor = C.rock[2]; }
+    else if (edgeL) { oC = top ? '.' : '('; oColor = C.rock[2]; }
+    else if (edgeR) { oC = top ? '.' : ')'; oColor = C.rock[0]; }
+    else if (h < 0.05) { oC = 'o'; oColor = C.lichen; }                 // lichen
+    else if (h < 0.4) { oC = h < 0.2 ? '.' : h < 0.3 ? ':' : ','; oColor = C.rock[dx < 0 ? 1 : 0]; }
+    else oC = ' ';
+    return true;
+  }
+  // the log: a lit top edge, a bark-textured side, and a cut end showing
+  if (up > 2 || Math.abs(dx) > o.rx) return false;
+  const h = hash3(i, up, 80);
+  const end = dx < -o.rx + 3;
+  if (up === 2) {
+    if (end || dx > o.rx - 1) return false;
+    oC = h < 0.06 ? '/' : '_'; oColor = C.log[1];
+  } else if (end) {
+    oC = '(@)'[Math.round(dx + o.rx)] || '('; oColor = C.log[2];
+  } else if (dx > o.rx - 1) { oC = ')'; oColor = C.log[0]; }
+  else { oC = h < 0.45 ? '=' : h < 0.75 ? '-' : h < 0.9 ? '~' : ':'; oColor = C.log[h < 0.3 ? 1 : 0]; }
+  return true;
 }
 
 /* Tussocks: each is a fan of long strap leaves rising from one point,
@@ -514,7 +739,7 @@ function buildTussocks() {
     for (const T of trees) near = Math.min(near, 0.35 + Math.abs(x - T.x) / (14 * T.size));
     const r = hash3(n, 2, 60);
     const h = (2.6 + 4.6 * r * Math.sqrt(r)) * near * CONFIG.understory;
-    if (h >= 2) {
+    if (h >= 2 && colO[Math.min(cols - 1, x)] < 0) {       // not on top of a boulder or the log
       const K = { x: x, h: h, w: h * (0.7 + 0.5 * hash3(n, 3, 60)), flower: hash3(n, 4, 60) < 0.3 };
       const reach = Math.ceil(K.w) + 5;
       for (let i = Math.max(0, x - reach); i <= Math.min(cols - 1, x + reach); i++) {
@@ -592,10 +817,10 @@ let pointer = 0, pointerTarget = 0;
 let lastT = 0;
 
 if (CONFIG.pointerWind) {
-  canvas.addEventListener('pointermove', e => {
-    pointerTarget = (e.offsetX / (W || 1) - 0.5) * 3;
+  window.addEventListener('pointermove', e => {
+    pointerTarget = (e.clientX / (W || 1) - 0.5) * 3;
   });
-  canvas.addEventListener('pointerleave', () => { pointerTarget = 0; });
+  document.addEventListener('pointerleave', () => { pointerTarget = 0; });
 }
 canvas.addEventListener('click', () => spawnWallaby(lastT));
 
@@ -633,6 +858,7 @@ function draw(t) {
         const gh = hash3(i, 1, 6) < 0.6
           ? Math.floor(noise3(i * 0.35, 2.2, 0) * 3.3) : 0;
         const tus = tussockAt(i, up, t);
+        const obj = !tus && up <= 4 && objectAt(i, up);
 
         // the Callitris trees, nearest first
         let hit = false, d = -1;
@@ -642,7 +868,7 @@ function draw(t) {
           if (tD > d) d = tD;
           if (found) {
             // the foot of a tree further back is hidden by the grass and tussocks in front
-            hit = !(T.baseRows && (up <= gh || tus));
+            hit = !(T.baseRows && (up <= gh || tus || obj));
             break;
           }
         }
@@ -655,6 +881,8 @@ function draw(t) {
             let mid = 0;
             if (tus) {
               c = sC; color = sColor;
+            } else if (obj && !(up === 1 && gh > 0 && hash3(i, 3, 6) < 0.45)) {
+              c = oC; color = oColor;                 // a little grass grows in front
             } else if (up > gh && d < 0 && (mid = midAt(i, up, t, wind))) {
               if (mid === 1) {
                 c = hash3(i, up >> 1, 10) < 0.8 ? '|' : ':';
@@ -684,6 +912,28 @@ function draw(t) {
                   color = C.far[f > 0.72 ? 1 : 0];
                 }
               }
+
+              // a distant hill behind the canopy, and a few stars above it
+              if (c === ' ' && d < -0.15) {
+                const rh = Math.max(ridgeH[i], farH[i]);
+                if (up <= ridgeH[i] && up > farH[i] * 0.7) {
+                  const crest = up > ridgeH[i] - 1;
+                  const hr = hash3(i, j, 15);
+                  if (hr < (crest ? 0.8 : 0.09)) {
+                    c = crest ? (hr < 0.3 ? '.' : hr < 0.55 ? ',' : hr < 0.7 ? ':' : "'") : '.';
+                    color = C.ridge[crest ? 1 : 0];
+                  }
+                } else if (CONFIG.stars && up > rh) {
+                  const hs = hash3(i, j, 16);
+                  if (hs < 0.011) {
+                    const tw = noise3(i * 7.3, j * 3.1, t * 0.6 + hs * 900);   // twinkle
+                    if (tw > 0.3) {
+                      c = hs < 0.0012 ? '*' : hs < 0.004 ? '+' : '.';
+                      color = C.star[tw > 0.62 ? 2 : tw > 0.45 ? 1 : 0];
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -703,6 +953,7 @@ function draw(t) {
     }
   }
 
+  drawCockatoos(t);
   drawWallaby(t);
 
   if (CONFIG.caption && rows > 4) {
@@ -735,6 +986,60 @@ if (!reducedMotion) {
   };
   requestAnimationFrame(loop);
 }
+})();
+</script>
+
+<script>
+/* ------------------------------------------------------------------
+   Page behaviour, separate from the scene: the name settling out of
+   foliage characters on load, and the slide-in panels.
+------------------------------------------------------------------ */
+(() => {
+'use strict';
+const still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const nameEl = document.getElementById('name');
+const NAME = nameEl.textContent;
+const GLYPHS = '\\/|;:!il%&*';
+if (!still) {
+  nameEl.setAttribute('aria-label', NAME);
+  const t0 = performance.now();
+  const tick = now => {
+    const done = (now - t0 - 500) / 55;          // letters settled so far
+    let out = '';
+    for (let k = 0; k < NAME.length; k++) {
+      out += k < done || NAME[k] === ' ' ? NAME[k]
+           : GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+    }
+    nameEl.textContent = out;
+    if (done < NAME.length) setTimeout(() => requestAnimationFrame(tick), 45);
+  };
+  requestAnimationFrame(tick);
+}
+
+// panels are opened by #links, so the back button and shared links work
+const panels = Array.from(document.querySelectorAll('.panel'));
+const links = Array.from(document.querySelectorAll('nav a'));
+function show() {
+  const id = location.hash.slice(1);
+  panels.forEach(p => p.classList.toggle('open', p.id === id));
+  links.forEach(a => {
+    if (a.getAttribute('href') === '#' + id) a.setAttribute('aria-current', 'true');
+    else a.removeAttribute('aria-current');
+  });
+}
+function closePanel() {
+  history.pushState('', document.title, location.pathname + location.search);
+  show();
+}
+window.addEventListener('hashchange', show);
+links.forEach(a => a.addEventListener('click', e => {
+  if (a.getAttribute('aria-current')) { e.preventDefault(); closePanel(); }   // click again to close
+}));
+panels.forEach(p => p.querySelector('.close').addEventListener('click', closePanel));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && location.hash) closePanel(); });
+document.getElementById('tree').addEventListener('click', () => { if (location.hash) closePanel(); });
+show();
 })();
 </script>
 </body>
