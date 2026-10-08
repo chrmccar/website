@@ -119,7 +119,7 @@ const CONFIG = {
   // The Callitris trees, nearest first. For each one:
   //   x         where it stands across the view (0 = left edge, 1 = right edge)
   //   size      height compared with the main tree
-  //   distance  0 = close, 1 = far away (fainter, and its base sits slightly higher)
+  //   distance  0 = close, 1 = far away at the top of the slope (smaller, fainter, higher up)
   //   base      how far up the trunk the foliage starts (fraction of height)
   //   width     how broad the crown is
   //   shoulders small = sides nearly parallel (columnar), large = widest low down (conical)
@@ -127,14 +127,27 @@ const CONFIG = {
   //   nod       which way the leading shoot leans: 1 right, -1 left
   //   health    1 = healthy (the default), 0.5 = sickly and thinning, 0 = dead and bare
   trees: [
-    { x: 0.42, size: 1.00, distance: 0.00, base: 0.08, width: 0.22, shoulders: 0.30, taper: 0.65, nod:  1 },
-    { x: 0.72, size: 0.72, distance: 0.45, base: 0.18, width: 0.17, shoulders: 0.20, taper: 0.50, nod: -1 },
-    { x: 0.16, size: 0.50, distance: 0.85, base: 0.05, width: 0.30, shoulders: 0.48, taper: 0.95, nod:  1 },
-    { x: 0.90, size: 0.60, distance: 0.65, base: 0.12, width: 0.20, shoulders: 0.36, taper: 0.85, nod: -1 },
-    { x: 0.57, size: 0.38, distance: 1.00, base: 0.10, width: 0.27, shoulders: 0.26, taper: 0.55, nod:  1 },
+    { x: 0.435, size: 1.00, distance: 0.00, base: 0.08, width: 0.22, shoulders: 0.30, taper: 0.65, nod:  1 },
+    { x: 0.735, size: 0.72, distance: 0.45, base: 0.18, width: 0.17, shoulders: 0.20, taper: 0.50, nod: -1 },
+    { x: 0.135, size: 0.50, distance: 0.85, base: 0.05, width: 0.30, shoulders: 0.48, taper: 0.95, nod:  1 },
+    { x: 0.91, size: 0.60, distance: 0.65, base: 0.12, width: 0.20, shoulders: 0.36, taper: 0.85, nod: -1 },
+    { x: 0.60, size: 0.38, distance: 1.00, base: 0.10, width: 0.27, shoulders: 0.26, taper: 0.55, nod:  1 },
     // drought-killed: mostly bare grey branches with patches of browned foliage
-    { x: 0.285, size: 0.64, distance: 0.30, base: 0.10, width: 0.20, shoulders: 0.30, taper: 0.70, nod: -1, health: 0.15 }
+    { x: 0.262, size: 0.64, distance: 0.30, base: 0.10, width: 0.20, shoulders: 0.30, taper: 0.70, nod: -1, health: 0.15 }
   ],
+  // Two single understory plants. x = position across the view, z = depth
+  // (0 = level with the main tree, 1 = top of the slope). Set one to null to remove it.
+  grassTree: { x: 0.34, z: -0.05, size: 1.0 },    // Xanthorrhoea minor
+  treeFern:  null,                                // Cyathea australis: switched off (e.g. { x: 0.81, z: 0.2, size: 1.25 })
+  mist: 1.0,                // haze drifting between the slope and the far hill (0 = none)
+  falling: 1.0,             // foliage and the odd cone shaken loose in gusts (0 = none)
+  echidna: true,            // an echidna wanders across the foreground now and then
+  echidnaEvery: [45, 100],  // seconds between visits: shortest, longest
+  hill: 1.0,                // how strongly the ground slopes (0 = level ground)
+  hillRises: 'left',        // which side the hill climbs towards: 'left' or 'right'
+  rockyHill: true,          // a second, more distant rocky hill with Callitris silhouettes along its skyline
+  rockyHillSide: 'right',   // 'left' or 'right'
+  rockyHillSize: 1.0,       // how high it stands
   ridge: true,              // a distant hill line behind the forest
   stars: true,              // a few faint stars in the open sky
   groundDetail: true,       // boulders and a fallen log on the forest floor
@@ -146,6 +159,8 @@ const CONFIG = {
   cockatoos: true,          // a pair of white cockatoos flies over now and then
   cockatooEvery: [25, 60],  // seconds between fly-overs: shortest, longest
   cockatooSize: 1.0,
+  cockatooPerch: 0.33,      // share of visits where they land on the main tree and look around
+  cockatooLook: 1.0,        // seconds they spend looking around before flying off
   wallabySize: 1.0,         // 1 = about nine rows of text tall
   wallabyLook: true,        // stops part-way across and looks out at the viewer
   wallabyWait: 1.0,         // seconds it holds the look before hopping on
@@ -156,6 +171,19 @@ const CONFIG = {
     rock: ['#3c4548', '#566064', '#8c979a'],    // shaded -> lit
     lichen: '#9aa68a',
     log: ['#5d5044', '#93816c', '#b39b7c'],     // bark, lit bark, cut end
+    farHill: ['#1b2930', '#35454d', '#62757d'],   // distant rocky hill: scree, rock, lit skyline
+    farCallitris: ['#1f3a31', '#2c4c40'],         // Callitris silhouettes on its skyline: shaded, lit
+    farScrub: '#213a31',                          // tiny far-off shrubs on it
+    grassTree: ['#4a6652', '#66876a', '#88a784'],   // fine grey-green leaves, shaded -> lit
+    grassTreeStalk: '#8c8e63',
+    grassTreeSpike: ['#6f5238', '#8e6d48', '#e3d9b0'],   // flower spike: dark, brown, cream flecks
+    fernTrunk: ['#3b2f27', '#524238', '#6a5746'],
+    fernFrond: ['#2f6a3a', '#4a9150', '#7cbf6e'],   // underside, frond, lit
+    mist: ['#22313a', '#31434d'],
+    echidna: '#5a4838',
+    echidnaSpine: '#cdb888',
+    echidnaDark: '#2c2521',
+    crest: '#526a5c',                           // the edge of the hill against the forest behind
     far: ['#1a2c34', '#243b40'],                // distant misty canopy
     midTrunk: '#39403f',                        // background trunks
     midCrown: ['#1c342f', '#28473b'],           // background crowns
@@ -258,14 +286,57 @@ function resize() {
   rows = Math.floor(H / ch);
   aspect = cw / ch;
 
-  groundRow = rows - 3;
-  // tree height in rows: as tall as fits, but never wider than the screen
-  treeH = Math.max(12, Math.min(groundRow - 2,
-                                Math.floor(cols * 0.8 * aspect / 0.22)));
+  groundRow = rows - 1;
+  buildTerrain();
+  // main tree height in rows: as tall as fits every tree where it stands on the slope
+  treeH = Math.floor(cols * 0.8 * aspect / 0.22);
+  for (const t of CONFIG.trees) {
+    treeH = Math.min(treeH, (groundRow - groundUp(cols * t.x, t.distance) - (CONFIG.cockatoos ? 5 : 2)) / t.size);
+  }
+  treeH = Math.max(12, Math.floor(treeH));
   cx = Math.floor(cols / 2);
   buildTrees();
   buildForest();
   if (reducedMotion) draw(0);
+}
+
+/* ------------------------------------------------------------------
+   The ground. Instead of a flat line, the forest floor is a sloping
+   surface seen at an angle. Two lines define it, each stored as "rows
+   above the bottom of the screen" for every column:
+     frontUp - where depth 0 sits (the main tree and the wallaby)
+     crestUp - the top edge of the slope, where it meets the forest behind
+   Anything with a depth z (0 near .. 1 far) stands on the surface at
+   groundUp(x, z). Below frontUp is foreground, closer than the main tree.
+------------------------------------------------------------------ */
+let frontUp = new Float32Array(0), crestUp = new Float32Array(0);
+let groundPal = [], grassPal = [];
+const DEPTH_BINS = 5;
+const LITTER_NEAR = [',', '.', '`', "'", '-', '~', ':', ';', '_', '.'];
+const LITTER_FAR = ['.', '.', ':', '-', '.', '_'];
+
+function buildTerrain() {
+  frontUp = new Float32Array(cols);
+  crestUp = new Float32Array(cols);
+  const hill = CONFIG.hill;
+  for (let i = 0; i < cols; i++) {
+    let x = i / Math.max(1, cols - 1);
+    if (CONFIG.hillRises === 'right') x = 1 - x;
+    const h = 0.5 + 0.5 * Math.cos(Math.PI * x);          // 1 on the high side .. 0 on the low side
+    const wob = (noise3(i * 0.03, 21.7, 0) - 0.5) * hill;  // gentle unevenness
+    frontUp[i] = 2.5 + rows * 0.085 * hill * h + wob * 1.2;
+    crestUp[i] = frontUp[i] + rows * (0.13 + 0.14 * hill * h) + wob * 2;
+  }
+  groundPal = []; grassPal = [];
+  for (let b = 0; b < DEPTH_BINS; b++) {
+    const f = b / (DEPTH_BINS - 1);
+    groundPal.push(fade(CONFIG.colors.ground, f * 0.55));
+    grassPal.push(fade(CONFIG.colors.grass, f * 0.6));
+  }
+}
+function groundUp(x, z) {
+  const i = Math.max(0, Math.min(cols - 1, Math.round(x)));
+  return frontUp[i] + (crestUp[i] - frontUp[i]) * z;
 }
 
 /* ------------------------------------------------------------------
@@ -287,7 +358,7 @@ function buildTrees() {
     const f = t.distance * 0.42;
     return {
       k: k, x: Math.round(cols * t.x), h: h, size: t.size, distance: t.distance,
-      baseRows: Math.round(t.distance * 2.4),
+      baseRows: Math.round(groundUp(cols * t.x, t.distance)),
       base: t.base, width: t.width, shoulders: t.shoulders, taper: t.taper, nod: t.nod,
       reach: Math.ceil((t.width * 1.05 + 0.13) * h / aspect),
       health: t.health === undefined ? 1 : t.health,
@@ -387,25 +458,32 @@ function treeAt(T, i, j, t) {
 const FAR_CH   = ['.', ':', '.', "'", ',', '.'];
 const CROWN_CH = ['.', ':', ';', "'", '"', ',', ':'];
 let farH = [], ridgeH = [], midTrees = [];
+let hill2H = new Float32Array(0), farRocks = [];
+let rC = ' ', rColor = '';              // what farRockAt() found
 let colO = new Int16Array(0), objects = [];
-let oC = ' ', oColor = '';              // what objectAt() found
+let plantG = null, plantF = null, fernPts = [], fernT = -1;
+let pC = ' ', pColor = '', pZ = 0;      // what plantAt() found
+let oC = ' ', oColor = '', oZ = 0;      // what objectAt() found, and how far away it is
 let tussocks = [], colT = new Int16Array(0);
-let sC = ' ', sColor = '';              // what tussockAt() found
+let sC = ' ', sColor = '', sZ = 0;      // what tussockAt() found, and how far away it is
+const SLOTS = 5;                        // tussocks that can overlap one column
 
 function buildForest() {
   farH = new Float32Array(cols);
   ridgeH = new Float32Array(cols);
   midTrees = [];
   if (CONFIG.ridge) for (let i = 0; i < cols; i++) {
-    ridgeH[i] = treeH * (0.6 + 0.22 * noise3(i * 0.012, 11.3, 0) + 0.05 * noise3(i * 0.07, 12.1, 0));
+    ridgeH[i] = treeH * (0.5 + 0.2 * noise3(i * 0.012, 11.3, 0) + 0.05 * noise3(i * 0.07, 12.1, 0));
   }
+  buildRockyHill();
   buildGround();
+  buildPlants();
   if (!CONFIG.forest) return;
 
   for (let i = 0; i < cols; i++) {
     // skyline: long rolling shape plus small bumps for individual treetops
     const bump = noise3(i * 0.55, 8.3, 0);
-    farH[i] = treeH * (0.34 + 0.24 * noise3(i * 0.035, 7.1, 0)) + 3 * bump * bump;
+    farH[i] = treeH * (0.28 + 0.22 * noise3(i * 0.035, 7.1, 0)) + 3 * bump * bump;
 
   }
   buildTussocks();
@@ -417,7 +495,7 @@ function buildForest() {
     if (trees.some(T => Math.abs(x - T.x) < T.width * 0.6 * T.h / aspect + 12)) continue;
     midTrees.push({
       x: x,
-      h: treeH * (0.62 + 0.5 * hash3(k, 2, 20)),   // rows from ground to crown centre
+      h: treeH * (0.5 + 0.42 * hash3(k, 2, 20)),   // rows from ground to crown centre
       rx: 6 + 6 * hash3(k, 3, 20),                 // crown radii, in columns / rows
       ry: 3.5 + 3.5 * hash3(k, 4, 20),
       lean: (hash3(k, 5, 20) - 0.5) * 0.12,
@@ -562,10 +640,13 @@ function drawWallaby(t) {
   const lift = HOP_HEIGHT * 4 * a * (1 - a);
   const P = wallabyPose(a, look, twitch);
   const C = CONFIG.colors;
-  const groundY = groundRow * ch;
+  // stand on the slope at depth 0, wherever along it the wallaby is
+  const gc = Math.max(0, Math.min(cols - 1.001, ox / cw)), g0 = Math.floor(gc);
+  const front = frontUp[g0] + (frontUp[g0 + 1] - frontUp[g0]) * (gc - g0);
+  const groundY = (groundRow - front) * ch;
   paintShape(P, ox, groundY - lift * S, S, dir,
              Math.floor((ox - 1.1 * S) / cw), Math.ceil((ox + 1.1 * S) / cw),
-             Math.floor((groundY - (1.4 + lift) * S) / ch), groundRow - 1,
+             Math.floor((groundY - (1.4 + lift) * S) / ch), rows - 1,
              [C.wallaby, C.wallabyNeck, C.wallabyDark],
              P.eyes, P.facing ? C.wallabyEye : C.wallabyDark);
 }
@@ -639,39 +720,251 @@ function cockatooPose(ph, glide) {
   return P;
 }
 
+// Perched: upright on its feet (the origin), wings folded, crest up.
+// head = 1 facing the way the body faces .. -1 looking back over its shoulder
+function cockatooPerched(head) {
+  const P = [];
+  const add = (ax, ay, bx, by, ra, rb, tint) => P.push([ax, ay, bx, by, ra, rb, tint || 0]);
+  add(0, 0.14, 0.03, 0.5, 0.125, 0.115);                       // body, upright
+  add(-0.01, 0.14, -0.1, -0.2, 0.075, 0.05);                   // tail hanging down behind
+  add(0.03, 0.64, 0.03 + 0.03 * head, 0.65, 0.105, 0.1);       // head
+  add(0.03 - 0.02 * head, 0.74, 0.03 - 0.15 * head, 0.93, 0.045, 0.018, 1);   // crest raised
+  add(0.03 + 0.11 * head, 0.63, 0.03 + 0.14 * head, 0.56, 0.04, 0.025, 2);    // beak
+  P.eyes = [[0.03 + 0.05 * head, 0.67]];
+  return P;
+}
+
+// Where a bird can sit on a tree: a point on its swaying trunk line at height v
+// (0 ground .. 1 tip), pushed sideways by "side" crown-widths. Returns pixels.
+function perchPoint(T, v, side, t) {
+  const bend = wind * 0.045 * v * v + Math.sin(t * 1.9 + v * 5 + T.k * 2.1) * 0.004 * v * wind;
+  const tip = Math.max(0, (v - 0.86) / 0.14);
+  const nod = T.nod * 0.024 * tip * tip * (1 + 0.5 * wind * T.nod);
+  const s = (v - T.base) / (1 - T.base);
+  const half = T.width * Math.pow(s, T.shoulders) * Math.pow(1 - s, T.taper);
+  const col = T.x + 0.5 + (bend + nod + side * half) * T.h / aspect;
+  return [col * cw, (groundRow - T.baseRows - v * T.h) * ch];
+}
+
 function drawCockatoos(t) {
   if (!CONFIG.cockatoos || reducedMotion) return;
   if (nextFlock < 0) nextFlock = t + 10 + Math.random() * 8;
   if (!flock) {
     if (t < nextFlock || !cols) return;
+    const perch = Math.random() < CONFIG.cockatooPerch && trees.length > 0;
     const dir = Math.random() < 0.5 ? 1 : -1;
     flock = {
-      t0: t, dir: dir, S: ch * 8 * CONFIG.cockatooSize,
+      t0: t, dir: dir, S: ch * 8 * CONFIG.cockatooSize, perch: perch,
       y0: H * (0.12 + 0.26 * Math.random()),
       climb: (Math.random() - 0.5) * 0.12,                 // drifting slightly up or down
       speed: Math.max(150, W / 7)                          // pixels per second
     };
   }
-  const C = CONFIG.colors, F = flock, S = F.S;
-  const gone = (W + 6 * S) / F.speed;
-  if (t - F.t0 > gone) {
+  const C = CONFIG.colors, F = flock, S = F.S, dir = F.dir;
+  const colors = [C.cockatoo, C.cockatooCrest, C.cockatooBeak];
+  const el = t - F.t0;
+  const done = () => {
     flock = null;
     const e = CONFIG.cockatooEvery;
     nextFlock = t + e[0] + Math.random() * (e[1] - e[0]);
-    return;
-  }
-  for (let k = 0; k < 2; k++) {
-    const lead = (F.dir > 0 ? -S : W + S) + F.dir * F.speed * (t - F.t0);
-    const ox = lead - F.dir * k * 2.1 * S;
-    const oy = F.y0 - k * 0.7 * S + (ox - W / 2) * F.climb * F.dir
-             + Math.sin(t * 0.9 + k * 2.3) * 0.22 * S;
-    const glide = noise3(t * 0.55, k * 9.1, 7.7) > 0.66;
+  };
+  const fly = (k, ox, oy, glide) => {
     const P = cockatooPose(t * 15 + k * 1.9, glide);
-    paintShape(P, ox, oy, S, F.dir,
+    paintShape(P, ox, oy, S, dir,
                Math.floor((ox - 0.85 * S) / cw), Math.ceil((ox + 0.85 * S) / cw),
                Math.floor((oy - 1.0 * S) / ch), Math.ceil((oy + 1.0 * S) / ch),
-               [C.cockatoo, C.cockatooCrest, C.cockatooBeak], P.eyes, C.cockatooBeak);
+               colors, P.eyes, C.cockatooBeak);
+  };
+
+  if (!F.perch) {
+    /* ----- flying straight over ----- */
+    if (el > (W + 6 * S) / F.speed) { done(); return; }
+    for (let k = 0; k < 2; k++) {
+      const lead = (dir > 0 ? -S : W + S) + dir * F.speed * el;
+      const ox = lead - dir * k * 2.1 * S;
+      const oy = F.y0 - k * 0.7 * S + (ox - W / 2) * F.climb * dir
+               + Math.sin(t * 0.9 + k * 2.3) * 0.22 * S;
+      fly(k, ox, oy, noise3(t * 0.55, k * 9.1, 7.7) > 0.66);
+    }
+    return;
   }
+
+  /* ----- landing on the main tree: fly in, settle, look around, fly off ----- */
+  const T = trees[0];
+  const SETTLE = 0.35, TURN = 0.3;
+  const hold = SETTLE + TURN + CONFIG.cockatooLook + TURN + 0.3;
+  let allGone = true;
+  for (let k = 0; k < 2; k++) {
+    // the first bird takes the top of the tree, the second a branch below it
+    const p = k === 0 ? perchPoint(T, 0.93, 0, t) : perchPoint(T, 0.76, -dir * 0.75, t);
+    const sx = dir > 0 ? -S : W + S, sy = p[1] + H * 0.14 + k * 0.4 * S;
+    const tIn = Math.abs(p[0] - sx) / F.speed * 1.35 + k * 0.5;
+    const tSit = hold + k * 0.3;
+    if (el < tIn) {
+      // gliding in, slowing as it reaches the branch
+      const q = el / tIn, e = 1 - (1 - q) * (1 - q);
+      const ox = sx + (p[0] - sx) * e;
+      const oy = sy + (p[1] - sy) * e - Math.sin(Math.PI * q) * 0.05 * H - 0.3 * S * q * q;
+      fly(k, ox, oy, q > 0.82 && q < 0.93);
+      allGone = false;
+    } else if (el < tIn + tSit) {
+      const u = el - tIn;
+      // head: forward, then round to look behind, then forward again
+      let head = 1;
+      if (u > SETTLE) head = 1 - 2 * Math.min(1, (u - SETTLE) / TURN, Math.max(0, (tSit - 0.3 - u) / TURN));
+      const P = cockatooPerched(head);
+      paintShape(P, p[0], p[1], S, dir,
+                 Math.floor((p[0] - 0.5 * S) / cw), Math.ceil((p[0] + 0.5 * S) / cw),
+                 Math.floor((p[1] - 1.05 * S) / ch), Math.ceil((p[1] + 0.35 * S) / ch),
+                 colors, P.eyes, C.cockatooBeak);
+      allGone = false;
+    } else {
+      // away again, picking up speed
+      const u = el - tIn - tSit;
+      const ox = p[0] + dir * F.speed * u * u / (u + 0.7);
+      const oy = p[1] - 0.35 * S + H * 0.1 * Math.min(1, u / 1.5) + Math.sin(t * 0.9 + k * 2.3) * 0.15 * S;
+      if (ox > -1.5 * S && ox < W + 1.5 * S) { fly(k, ox, oy, false); allGone = false; }
+    }
+  }
+  if (allGone) done();
+}
+
+/* ------------------------------------------------------------------
+   Bits of foliage, and the odd cone, shaken out of the trees in gusts.
+------------------------------------------------------------------ */
+let bits = [];
+function drawFalling(t, dt) {
+  if (!CONFIG.falling || reducedMotion || !trees.length) return;
+  // the harder it blows, the more comes loose
+  const gusty = Math.max(0, Math.abs(wind) - 0.75);
+  if (bits.length < 40 && Math.random() < gusty * dt * 14 * CONFIG.falling) {
+    const T = trees[Math.floor(Math.random() * Math.random() * trees.length)];   // mostly the nearer trees
+    const p = perchPoint(T, T.base + 0.12 + Math.random() * (0.8 - T.base), Math.random() * 1.6 - 0.8, t);
+    const cone = Math.random() < 0.08 && T.health > 0.5;
+    const pal = T.health > 0.5 ? T.fol : T.dead;
+    bits.push({
+      x: p[0], y: p[1], vx: 0, ph: Math.random() * 6, cone: cone,
+      floor: (groundRow - T.baseRows) * ch,                 // where that tree meets the ground
+      c: cone ? 'o' : ["'", ',', '`', ';', '.', ':'][Math.floor(Math.random() * 6)],
+      color: cone ? T.cone : pal[3 + Math.floor(Math.random() * 3)]
+    });
+  }
+  for (let n = bits.length - 1; n >= 0; n--) {
+    const b = bits[n];
+    b.vx += ((b.cone ? 12 : 55) * wind - b.vx) * Math.min(1, dt * 2.5);     // carried along by the wind
+    b.x += b.vx * dt;
+    b.y += (b.cone ? 150 : 34 + 16 * Math.sin(t * 5 + b.ph)) * dt;          // foliage flutters, cones drop
+    if (b.y > b.floor || b.x < -cw || b.x > W + cw) { bits.splice(n, 1); continue; }
+    const i = Math.floor(b.x / cw), j = Math.floor(b.y / ch);
+    ctx.fillStyle = CONFIG.colors.bg;
+    ctx.fillRect(i * cw, j * ch, cw, ch);
+    ctx.fillStyle = b.color;
+    ctx.fillText(b.c, i * cw, j * ch);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Echidna. Wanders slowly across the foreground, nearer than the
+   wallaby, stopping now and then to nose at the ground.
+   Units: 1 = its length.
+------------------------------------------------------------------ */
+let echidna = null, nextEchidna = -1;
+
+function echidnaPose(step, nose) {
+  const P = [];
+  const add = (ax, ay, bx, by, ra, rb, tint) => P.push([ax, ay, bx, by, ra, rb, tint || 0]);
+  const rock = 0.012 * Math.sin(step * 2);                    // a slight waddle
+  add(-0.28, 0.2 + rock, 0.18, 0.19 - rock, 0.2, 0.17);       // domed body
+  add(0.28, 0.15, 0.56, 0.1 - 0.09 * nose, 0.1, 0.035);       // head tapering to a long snout
+  // short legs, stepping in turn
+  const l1 = Math.max(0, Math.sin(step)) * 0.05, l2 = Math.max(0, -Math.sin(step)) * 0.05;
+  add(-0.24, 0.1, -0.24 + l1, 0.03 + l1, 0.055, 0.05, 2);
+  add(0.14, 0.1, 0.14 + l2, 0.03 + l2, 0.055, 0.05, 2);
+  // spines: a fan of quills over the back, raked towards the tail
+  for (let k = 0; k < 9; k++) {
+    const a = (158 - k * 15) * RAD;
+    const cxp = -0.05 + 0.2 * Math.cos(a), cyp = 0.2 + rock + 0.17 * Math.sin(a);
+    add(cxp, cyp, cxp + 0.2 * Math.cos(a + 0.4), cyp + 0.2 * Math.sin(a + 0.4), 0.036, 0.012, 1);
+  }
+  P.eyes = [[0.31, 0.19]];
+  return P;
+}
+
+function drawEchidna(t, dt) {
+  if (!CONFIG.echidna || reducedMotion) return;
+  if (nextEchidna < 0) nextEchidna = t + 14 + Math.random() * 10;
+  if (!echidna) {
+    if (t < nextEchidna || !cols) return;
+    const dir = Math.random() < 0.5 ? 1 : -1;
+    const S = ch * 10;
+    echidna = { dir: dir, S: S, x: dir > 0 ? -0.7 * S : W + 0.7 * S, step: 0, nose: 0, seed: Math.random() * 50 };
+  }
+  const E = echidna, C = CONFIG.colors, S = E.S;
+  // stop and snuffle every so often
+  const snuffling = noise3(t * 0.22, E.seed, 3.3) > 0.64;
+  E.nose += ((snuffling ? 1 : 0) - E.nose) * Math.min(1, dt * 4);
+  const speed = 36 * (1 - E.nose);                            // pixels per second
+  E.x += E.dir * speed * dt;
+  E.step += speed * dt / S * 16;
+  if (E.x > W + 0.8 * S || E.x < -0.8 * S) {
+    echidna = null;
+    const e = CONFIG.echidnaEvery;
+    nextEchidna = t + e[0] + Math.random() * (e[1] - e[0]);
+    return;
+  }
+  // it walks on the slope in front of the main tree's line
+  const gy = (groundRow - Math.max(1, groundUp(E.x / cw, -0.2))) * ch;
+  const P = echidnaPose(E.step, E.nose + (snuffling ? 0.25 * Math.sin(t * 9) : 0));
+  paintShape(P, E.x, gy, S, E.dir,
+             Math.floor((E.x - 0.75 * S) / cw), Math.ceil((E.x + 0.75 * S) / cw),
+             Math.floor((gy - 0.7 * S) / ch), rows - 1,
+             [C.echidna, C.echidnaSpine, C.echidnaDark], P.eyes, C.echidnaDark);
+}
+
+/* The distant rocky hill. hill2H is its height in rows above the top of
+   the main slope, for each column; farRocks are the small trees on its skyline. */
+function buildRockyHill() {
+  hill2H = new Float32Array(cols);
+  farRocks = [];
+  if (!CONFIG.rockyHill) return;
+  const right = CONFIG.rockyHillSide !== 'left';
+  const side = x => right ? x : 1 - x;
+  for (let i = 0; i < cols; i++) {
+    const xs = (side(i / Math.max(1, cols - 1)) - 0.44) / 0.56;      // 0 where it starts .. 1 at the screen edge
+    if (xs <= 0) continue;
+    const dome = Math.pow(Math.sin(Math.PI * 0.62 * xs), 1.15);       // rises, peaks, eases off
+    const crag = 3.2 * noise3(i * 0.06, 31.1, 0) + 1.6 * noise3(i * 0.27, 32.4, 0) - 2.4;
+    hill2H[i] = Math.max(0, rows * 0.4 * CONFIG.rockyHillSize * dome + crag * Math.min(1, xs * 5));
+  }
+  // small Callitris standing along its skyline, seen as silhouettes
+  const spots = [0.60, 0.67, 0.695, 0.76, 0.80, 0.815, 0.86, 0.915, 0.94, 0.985];
+  spots.forEach((fx, n) => {
+    const x = Math.round(cols * side(fx));
+    const base = hill2H[Math.max(0, Math.min(cols - 1, x))];
+    if (base < 2) return;
+    const h = (3.2 + 4.3 * hash3(n, 1, 95)) * CONFIG.rockyHillSize;       // rows tall
+    farRocks.push({ x: x, y: base - 0.6, h: h, w: 0.9 + h * (0.2 + 0.1 * hash3(n, 2, 95)), n: n });
+  });
+}
+
+function farRockAt(i, upB) {
+  for (let k = 0; k < farRocks.length; k++) {
+    const R = farRocks[k];
+    const dx = i - R.x;
+    if (dx > R.w || dx < -R.w) continue;
+    const f = (upB - R.y) / R.h;                      // 0 at its foot, 1 at its tip
+    if (f <= 0 || f > 1) continue;
+    // the same narrow outline as the trees in front: nearly parallel sides, pointed top
+    const half = R.w * Math.pow(f, 0.25) * Math.pow(1 - f, 0.6) * 1.35;
+    if (Math.abs(dx) > half + 0.35) continue;
+    const h = hash3(i, Math.round(upB), 96 + R.n);
+    if (f > 0.85) rC = h < 0.5 ? '|' : '!';
+    else if (Math.abs(dx) > half - 0.6) rC = dx < 0 ? (h < 0.5 ? '/' : ';') : (h < 0.5 ? '\\' : ';');
+    else rC = h < 0.35 ? 'i' : h < 0.6 ? '!' : h < 0.8 ? 'l' : ';';
+    rColor = CONFIG.colors.farCallitris[dx < 0 ? 1 : 0];
+    return true;
+  }
+  return false;
 }
 
 /* Boulders and a fallen log on the forest floor. Positions are fractions
@@ -684,12 +977,13 @@ function buildGround() {
     for (let i = Math.max(0, Math.floor(o.x - o.rx)); i <= Math.min(cols - 1, Math.ceil(o.x + o.rx)); i++) {
       if (colO[i] < 0) colO[i] = objects.length;
     }
+    o.baseRows = Math.round(groundUp(o.x, o.z));
     objects.push(o);
   };
-  put({ rock: true, x: cols * 0.065, rx: 7, ry: 3.2 });
-  put({ rock: true, x: cols * 0.065 + 10, rx: 3.5, ry: 1.7 });
-  put({ rock: true, x: cols * 0.815, rx: 5.5, ry: 2.5 });
-  put({ rock: false, x: cols * 0.515, rx: Math.min(13, cols * 0.07), ry: 2 });
+  put({ rock: true, x: cols * 0.05, z: 0.3, rx: 7, ry: 3.2 });
+  put({ rock: true, x: cols * 0.05 + 10, z: 0.22, rx: 3.5, ry: 1.7 });
+  put({ rock: true, x: cols * 0.825, z: 0.4, rx: 5.5, ry: 2.6 });
+  put({ rock: false, x: cols * 0.535, z: 0.12, rx: Math.min(13, cols * 0.07), ry: 2 });
 }
 
 function objectAt(i, up) {
@@ -697,6 +991,9 @@ function objectAt(i, up) {
   if (id < 0) return false;
   const o = objects[id], C = CONFIG.colors;
   const dx = i - o.x;
+  up -= o.baseRows;                       // rows above where it sits on the slope
+  if (up < 1) return false;
+  oZ = o.z;
   if (o.rock) {
     const inside = (x, y) => x * x / (o.rx * o.rx) + y * y / (o.ry * o.ry) <= 1;
     if (!inside(dx, up - 0.5)) return false;
@@ -725,39 +1022,210 @@ function objectAt(i, up) {
   return true;
 }
 
+/* ------------------------------------------------------------------
+   Two single plants on the slope.
+   Grass tree (Xanthorrhoea minor): no trunk above ground, just a dense
+   rounded tuft of very fine leaves, with a few tall thin flower stalks,
+   each ending in a brown spike.
+   Tree fern (Cyathea australis): a rough dark trunk with a crown of long
+   arching fronds, the oldest hanging down around it.
+   Measurements are in rows of text; sideways distances are converted so
+   shapes keep their proportions (one column is narrower than one row).
+------------------------------------------------------------------ */
+function buildPlants() {
+  plantG = plantF = null;
+  const C = CONFIG.colors;
+  const g = CONFIG.grassTree, f = CONFIG.treeFern;
+  if (g) {
+    const zc = Math.max(0, g.z), sc = g.size * (1 - 0.62 * zc);
+    const L = 5.6 * sc;
+    plantG = {
+      x: Math.round(cols * g.x), z: g.z, baseRows: Math.max(0, Math.round(groundUp(cols * g.x, g.z))),
+      L: L, reach: Math.ceil(L / aspect) + 4,
+      // flower stalks: how far each leans, how tall, and a sway offset
+      scapes: [{ lean: -0.16, h: 12.5 * sc, ph: 0 }, { lean: 0.07, h: 14.5 * sc, ph: 2.1 }, { lean: 0.3, h: 10.5 * sc, ph: 4.0 }],
+      col: C.grassTree.map(c => fade(c, zc * 0.45)),
+      stalk: fade(C.grassTreeStalk, zc * 0.45), spike: C.grassTreeSpike.map(c => fade(c, zc * 0.45)),
+      straw: C.straw.map(c => fade(c, zc * 0.45))
+    };
+  }
+  if (f) {
+    const zc = Math.max(0, f.z), sc = f.size * (1 - 0.62 * zc);
+    const fronds = [];
+    const N = 13;
+    for (let k = 0; k < N; k++) {
+      const a = -1.95 + 3.9 * k / (N - 1) + (hash3(k, 1, 120) - 0.5) * 0.16;    // angle from straight up
+      const out = Math.abs(a) / 1.95;
+      fronds.push({ a: a, len: 9 * sc * (1 - 0.32 * out * out) * (0.88 + 0.24 * hash3(k, 2, 120)), k: k });
+    }
+    plantF = {
+      x: Math.round(cols * f.x), z: f.z, baseRows: Math.max(0, Math.round(groundUp(cols * f.x, f.z))),
+      sc: sc, trunkH: 9.5 * sc, L: 9 * sc, fronds: fronds, reach: Math.ceil(10 * sc / aspect) + 3,
+      trunk: C.fernTrunk.map(c => fade(c, zc * 0.45)), frond: C.fernFrond.map(c => fade(c, zc * 0.45))
+    };
+  }
+  fernT = -1;
+}
+
+// the fern's fronds as rows of points, recalculated once per frame as they stir
+function fernFrame(t) {
+  const F = plantF, M = 18;
+  fernPts = [];
+  for (const fr of F.fronds) {
+    const droop = (0.026 + 0.032 * Math.abs(fr.a) + 0.006 * Math.sin(t * 1.4 + fr.k * 1.7) * wind) / F.sc;
+    let px = 0, py = 0;
+    for (let m = 1; m <= M; m++) {
+      const f = m / M, s = f * fr.len;
+      const x = Math.sin(fr.a) * s + wind * 0.35 * f * f * F.sc;
+      const y = Math.cos(fr.a) * s - droop * s * s;
+      fernPts.push(x, y, f, x - px, y - py);
+      px = x; py = y;
+    }
+  }
+  fernT = t;
+}
+
+function plantAt(i, rowsUp, t) {
+  /* ---------- grass tree ---------- */
+  const G = plantG;
+  if (G) {
+    const dxc = i - G.x, y = rowsUp - G.baseRows;
+    if (y >= 1 && dxc >= -G.reach && dxc <= G.reach) {
+      pZ = G.z;
+      // leaves: a rounded tuft radiating from one point on the ground
+      const push = wind * 0.9 * Math.min(1, y / G.L);                 // leaning in the wind
+      const X = (dxc - push) * aspect, Y = y - 0.5;
+      const r = Math.sqrt(X * X + Y * Y), ang = Math.atan2(X, Y);    // angle from straight up
+      const len = G.L * (0.7 + 0.3 * hash3(Math.floor((ang + 2) * 11), 1, 110));
+      const leaf = r <= len && hash3(i, rowsUp, 111) < 0.96 - 0.34 * (r / len);
+      // flower stalks rising through the tuft
+      for (let k = 0; k < G.scapes.length; k++) {
+        const S = G.scapes[k];
+        if (y > S.h) continue;
+        const fy = y / S.h;
+        const cx = S.lean * y + (wind * 0.5 + Math.sin(t * 1.7 + S.ph) * 0.2 * wind) * fy * fy * 1.6;
+        if (Math.round(cx) !== dxc) continue;
+        if (fy > 0.6) {                                              // the flower spike itself
+          const h = hash3(k, Math.round(y), 112);
+          pC = h < 0.6 ? '#' : h < 0.85 ? '%' : '*';
+          pColor = h < 0.3 ? G.spike[0] : h < 0.85 ? G.spike[1] : G.spike[2];
+          return true;
+        }
+        if (!leaf || y > G.L * 0.55) {                               // bare stalk above the leaves
+          pC = S.lean < -0.1 ? '\\' : S.lean > 0.2 ? '/' : '|';
+          pColor = G.stalk;
+          return true;
+        }
+      }
+      if (leaf) {
+        const a = Math.abs(ang);
+        pC = a < 0.2 ? '|' : a < 1.12 ? (ang > 0 ? '/' : '\\') : (hash3(i, rowsUp, 113) < 0.5 ? '-' : '_');
+        if (r > len - 0.9 && a > 0.5) pC = ang > 0 ? "'" : '`';      // fine leaf tips
+        // a skirt of old dead leaves low down on the outside
+        if (a > 1.0 && hash3(i, rowsUp, 114) < 0.45) pColor = G.straw[0];
+        else pColor = G.col[Math.max(0, Math.min(2, Math.floor(hash3(i, rowsUp, 115) * 1.6 + (ang < 0 ? 0.9 : 0.3) + r / len * 0.5)))];
+        return true;
+      }
+    }
+  }
+
+  /* ---------- tree fern ---------- */
+  const F = plantF;
+  if (F) {
+    const dxc = i - F.x, y = rowsUp - F.baseRows;
+    if (y >= 1 && dxc >= -F.reach && dxc <= F.reach && y <= F.trunkH + F.L + 1) {
+      if (fernT !== t) fernFrame(t);
+      const X = (dxc + 0.5) * aspect, Y = y - 0.5 - F.trunkH;        // measured from the top of the trunk
+      // nearest point on any frond
+      let best = 1e9, bf = 0, bx = 0, by = 0, bY = 0;
+      for (let n = 0; n < fernPts.length; n += 5) {
+        const ex = X - fernPts[n], ey = Y - fernPts[n + 1];
+        const d2 = ex * ex + ey * ey;
+        if (d2 < best) { best = d2; bf = fernPts[n + 2]; bx = fernPts[n + 3]; by = fernPts[n + 4]; bY = fernPts[n + 1]; }
+      }
+      const d = Math.sqrt(best);
+      const half = 0.2 + 1.3 * F.sc * Math.pow(Math.sin(Math.PI * Math.pow(bf, 0.75)), 0.8);   // widest mid-frond
+      if (d < half) {
+        pZ = F.z;
+        const flat = Math.abs(bx) > Math.abs(by) * 0.9;              // is this stretch of frond lying flat?
+        const h = hash3(i, rowsUp, 121);
+        if (d < 0.33) {
+          // the midrib
+          pC = flat ? (Math.abs(by) < Math.abs(bx) * 0.25 ? '-' : (bx * by > 0 ? '/' : '\\'))
+                    : (Math.abs(bx) < Math.abs(by) * 0.3 ? '|' : (bx * by > 0 ? '/' : '\\'));
+          pColor = F.frond[1];
+          return true;
+        }
+        if (h < 0.74) {
+          // the leaflets, set across the midrib, with gaps so the frond looks lacy
+          pC = flat ? ['!', 'i', ':', '|', ';', 'l'][Math.floor(h / 0.74 * 6)] : ['-', '~', '=', ':', '-'][Math.floor(h / 0.74 * 5)];
+          pColor = F.frond[Y > bY ? 2 : by < -0.15 ? 0 : 1];         // lit on top, darker where it hangs
+          return true;
+        }
+      }
+      // the trunk: rough and fibrous, with stubs of old frond stalks
+      if (y <= F.trunkH && dxc >= -1 && dxc <= 1) {
+        pZ = F.z;
+        const h = hash3(dxc, Math.round(y), 122);
+        if (dxc === -1) pC = h < 0.4 ? '\\' : h < 0.75 ? '#' : '%';
+        else if (dxc === 1) pC = h < 0.4 ? '/' : h < 0.75 ? '#' : '&';
+        else pC = h < 0.4 ? '#' : h < 0.7 ? '%' : h < 0.9 ? '&' : 'X';
+        pColor = F.trunk[dxc === -1 ? 2 : dxc === 0 ? 1 : 0];
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
 /* Tussocks: each is a fan of long strap leaves rising from one point,
    stiff and fairly upright, with the outer leaves shorter. */
 function buildTussocks() {
   tussocks = [];
-  colT = new Int16Array(cols * 3).fill(-1);
+  colT = new Int16Array(cols * SLOTS).fill(-1);
   if (!CONFIG.understory) return;
-  let x = Math.floor(hash3(0, 1, 60) * 6), n = 0;
-  while (x < cols) {
-    n++;
-    // smaller close to a trunk, so the trees stay readable
-    let near = 1;
-    for (const T of trees) near = Math.min(near, 0.35 + Math.abs(x - T.x) / (14 * T.size));
-    const r = hash3(n, 2, 60);
-    const h = (2.6 + 4.6 * r * Math.sqrt(r)) * near * CONFIG.understory;
-    if (h >= 2 && colO[Math.min(cols - 1, x)] < 0) {       // not on top of a boulder or the log
-      const K = { x: x, h: h, w: h * (0.7 + 0.5 * hash3(n, 3, 60)), flower: hash3(n, 4, 60) < 0.3 };
-      const reach = Math.ceil(K.w) + 5;
-      for (let i = Math.max(0, x - reach); i <= Math.min(cols - 1, x + reach); i++) {
-        for (let s = 0; s < 3; s++) if (colT[i * 3 + s] < 0) { colT[i * 3 + s] = tussocks.length; break; }
-      }
-      tussocks.push(K);
+  const C = CONFIG.colors, list = [];
+  const count = Math.round(cols * 0.23);
+  for (let n = 0; n < count; n++) {
+    const x = Math.floor(hash3(n, 1, 60) * cols);
+    // depth: a few in the foreground (z < 0), the rest spread up the slope
+    const z = -0.3 + 1.25 * Math.pow(hash3(n, 2, 60), 1.2);
+    const zc = z < 0 ? 0 : z;
+    const r = hash3(n, 3, 60);
+    let h = (2.6 + 4.6 * r * Math.sqrt(r)) * (1 - 0.62 * zc) * (z < 0 ? 1.15 : 1) * CONFIG.understory;
+    // smaller close to a trunk at the same depth, so the trees stay readable
+    for (const T of trees) {
+      if (Math.abs(z - T.distance) < 0.2) h *= Math.min(1, 0.35 + Math.abs(x - T.x) / (14 * T.size));
     }
-    // loose clumps of two or three, then a gap
-    x += hash3(n, 5, 60) < 0.35 ? 3 + Math.floor(hash3(n, 6, 60) * 3) : 7 + Math.floor(hash3(n, 7, 60) * 15);
+    if (h < 1.6) continue;
+    if (colO[x] >= 0 && Math.abs(z - objects[colO[x]].z) < 0.25) continue;   // not on a boulder or the log
+    // leave the grass tree and the tree fern clear so they can be seen
+    if (plantG && Math.abs(x - plantG.x) < 13 && Math.abs(z - plantG.z) < 0.35) continue;
+    if (plantF && Math.abs(x - plantF.x) < 10 && z < plantF.z + 0.08) continue;
+    list.push({
+      x: x, z: z, h: h, w: h * (0.7 + 0.5 * hash3(n, 4, 60)),
+      baseRows: Math.max(0, Math.round(groundUp(x, z))),
+      flower: hash3(n, 5, 60) < 0.3,
+      shrub: C.shrub.map(c => fade(c, zc * 0.5)), straw: C.straw.map(c => fade(c, zc * 0.5))
+    });
+  }
+  list.sort((a, b) => a.z - b.z);                  // nearest first
+  for (const K of list) {
+    const reach = Math.ceil(K.w) + 5;
+    for (let i = Math.max(0, K.x - reach); i <= Math.min(cols - 1, K.x + reach); i++) {
+      for (let s = 0; s < SLOTS; s++) if (colT[i * SLOTS + s] < 0) { colT[i * SLOTS + s] = tussocks.length; break; }
+    }
+    tussocks.push(K);
   }
 }
 
-function tussockAt(i, up, t) {
-  for (let s = 0; s < 3; s++) {
-    const id = colT[i * 3 + s];
+function tussockAt(i, rowsUp, t) {
+  for (let s = 0; s < SLOTS; s++) {
+    const id = colT[i * SLOTS + s];
     if (id < 0) break;
     const K = tussocks[id];
-    if (up > K.h) continue;
+    const up = rowsUp - K.baseRows;                   // rows above where it stands on the slope
+    if (up < 1 || up > K.h) continue;
     const f = up / K.h;                               // 0 at the base, 1 at the leaf tips
     // leaves flex in the wind, the tips most of all
     const dx = i - K.x - (wind * 0.9 + Math.sin(t * 1.3 + K.x) * 0.25 * wind) * f * f * K.h * 0.22;
@@ -772,13 +1240,13 @@ function tussockAt(i, up, t) {
     const slope = dx / up;
     sC = slope < -0.4 ? '\\' : slope > 0.4 ? '/' : '|';
     if (f > top - 1.1 / K.h && e > 0.5) sC = dx < 0 ? '`' : "'";    // thin leaf tips
-    const C = CONFIG.colors;
+    sZ = K.z;
     // dead straw-coloured leaves, mostly low down in the tussock
-    if (hash3(hx, up, 9) < 0.1 + 0.28 * (1 - f)) sColor = C.straw[hash3(hx, up, 10) < 0.5 ? 0 : 1];
-    else sColor = C.shrub[Math.max(0, Math.min(2, Math.floor(f * 1.5 + hash3(hx, up, 11) * 1.5 - (dx > 0 ? 0.4 : 0))))];
+    if (hash3(hx, up, 9) < 0.1 + 0.28 * (1 - f)) sColor = K.straw[hash3(hx, up, 10) < 0.5 ? 0 : 1];
+    else sColor = K.shrub[Math.max(0, Math.min(2, Math.floor(f * 1.5 + hash3(hx, up, 11) * 1.5 - (dx > 0 ? 0.4 : 0))))];
     // an old flower spike or two standing among the leaves
     if (K.flower && Math.abs(dx - 1) < 0.6 && f > 0.5 && f < 0.92) {
-      sC = hash3(hx, up, 12) < 0.55 ? '*' : '!'; sColor = C.straw[1];
+      sC = hash3(hx, up, 12) < 0.55 ? '*' : '!'; sColor = K.straw[1];
     }
     return true;
   }
@@ -848,102 +1316,141 @@ function draw(t) {
   let lastColor = '';
 
   for (let j = 0; j < rows; j++) {
-    const up = groundRow - j;                    // rows above the ground
+    const up = groundRow - j;                    // rows above the bottom of the scene
 
     for (let i = 0; i < cols; i++) {
       let c = ' ', color = C.air;
+      const crest = crestUp[i];
 
-      if (up > 0) {
-        // ground cover at this column: grass height, and any tussock
-        const gh = hash3(i, 1, 6) < 0.6
-          ? Math.floor(noise3(i * 0.35, 2.2, 0) * 3.3) : 0;
-        const tus = tussockAt(i, up, t);
-        const obj = !tus && up <= 4 && objectAt(i, up);
+      // what stands in this cell? trees (nearest first), a tussock, a boulder or the log
+      let best = 0, zBest = 9, d = -1;
+      for (let k = 0; k < trees.length; k++) {
+        const T = trees[k];
+        const found = treeAt(T, i, j, t);
+        if (tD > d) d = tD;
+        if (found) { best = 1; zBest = T.distance; break; }
+      }
+      // ...whichever of them is closest to the viewer is the one you see
+      if (tussockAt(i, up, t) && sZ < zBest) { best = 2; zBest = sZ; }
+      if (objectAt(i, up) && oZ < zBest) { best = 3; zBest = oZ; }
+      if (plantAt(i, up, t) && pZ < zBest) best = 4;
 
-        // the Callitris trees, nearest first
-        let hit = false, d = -1;
-        for (let k = 0; k < trees.length; k++) {
-          const T = trees[k];
-          const found = treeAt(T, i, j, t);
-          if (tD > d) d = tD;
-          if (found) {
-            // the foot of a tree further back is hidden by the grass and tussocks in front
-            hit = !(T.baseRows && (up <= gh || tus || obj));
-            break;
+      if (best === 1) { c = tC; color = tColor; }
+      else if (best === 2) { c = sC; color = sColor; }
+      else if (best === 3) { c = oC; color = oColor; }
+      else if (best === 4) { c = pC; color = pColor; }
+      else if (up <= crest) {
+        /* ---------- the sloping forest floor ---------- */
+        const fr = frontUp[i];
+        const z = (up - fr) / (crest - fr);          // 0 at the main tree, 1 at the top of the slope
+        const f = z < 0 ? 0 : z;
+        const bin = Math.min(DEPTH_BINS - 1, Math.floor(f * DEPTH_BINS));
+        if (up > crest - 1) {
+          // the top edge of the hill, slightly brighter so the slope reads against the forest
+          const h = hash3(i, j, 5);
+          if (h < 0.88) { c = h < 0.45 ? '_' : h < 0.65 ? '.' : h < 0.8 ? '-' : ','; color = C.crest; }
+        } else if (hash3(i, j, 6) < 0.02 + 0.12 * (1 - f) * (1 - f) + (z < 0 ? 0.05 : 0)) {
+          // blades of grass, thinning out with distance
+          const lw = wind + (noise3(i * 0.15 - windPhase * 2, j * 0.5, t * 0.4) - 0.5) * 1.6;
+          c = lw > 0.45 ? '/' : lw < -0.45 ? '\\' : '|';
+          if (hash3(i, j, 2) < 0.3) c = lw > 0 ? ',' : "'";
+          color = grassPal[bin];
+        } else {
+          // leaf litter, in faint bands that follow the lie of the land
+          const band = Math.sin(z * 24 + noise3(i * 0.06, 3.3, 0) * 2.5);
+          const h = hash3(i, j, 5);
+          if (h < 0.07 + 0.15 * (1 - f) + 0.09 * band) {
+            const set = f < 0.45 ? LITTER_NEAR : LITTER_FAR;
+            c = set[Math.floor(hash3(i, j, 4) * set.length)];
+            color = groundPal[bin];
           }
         }
-
-        if (hit) {
-          c = tC; color = tColor;
+      } else {
+        /* ---------- behind the hill: background trees, air, distant canopy, sky ---------- */
+        const upB = up - crest;                      // rows above the top of the slope
+        let mid = 0;
+        if (d < 0 && (mid = midAt(i, upB, t, wind))) {
+          if (mid === 1) {
+            c = hash3(i, j >> 1, 10) < 0.8 ? '|' : ':';
+            color = C.midTrunk;
+          } else {
+            c = CROWN_CH[Math.floor(hash3(i, j, 11) * CROWN_CH.length)];
+            color = C.midCrown[mid - 2];
+          }
         } else {
-          /* ---------- tussocks, background trees, grass, air ---------- */
-          {
-            let mid = 0;
-            if (tus) {
-              c = sC; color = sColor;
-            } else if (obj && !(up === 1 && gh > 0 && hash3(i, 3, 6) < 0.45)) {
-              c = oC; color = oColor;                 // a little grass grows in front
-            } else if (up > gh && d < 0 && (mid = midAt(i, up, t, wind))) {
-              if (mid === 1) {
-                c = hash3(i, up >> 1, 10) < 0.8 ? '|' : ':';
-                color = C.midTrunk;
-              } else {
-                c = CROWN_CH[Math.floor(hash3(i, j, 11) * CROWN_CH.length)];
-                color = C.midCrown[mid - 2];
-              }
-            } else if (up <= gh) {
-              const lw = wind +
-                (noise3(i * 0.15 - windPhase * 2, 0.5, t * 0.4) - 0.5) * 1.6;
-              c = lw > 0.45 ? '/' : lw < -0.45 ? '\\' : '|';
-              if (up === gh && hash3(i, 2, 6) < 0.4) c = lw > 0 ? ',' : "'";
-              color = C.grass;
-            } else {
-              // faint streaks of moving air
-              const a = noise3(i * 0.05 - windPhase, j * 0.8, t * 0.07);
-              if (a > 0.8) { c = a > 0.87 ? '~' : '-'; color = C.air; }
-              else if (hash3(i, j, 7) < 0.004) { c = '.'; color = C.air; }
+          // faint streaks of moving air
+          const a = noise3(i * 0.05 - windPhase, j * 0.8, t * 0.07);
+          if (a > 0.8) { c = a > 0.87 ? '~' : '-'; color = C.air; }
+          else if (hash3(i, j, 7) < 0.004) { c = '.'; color = C.air; }
 
-              // distant canopy: densest at its skyline, thinning into mist below
-              if (c === ' ' && d < -0.15 && up <= farH[i]) {
-                const f = up / farH[i];
-                const drift = noise3(i * 0.08 + t * 0.03, j * 0.35, t * 0.05);
-                if (hash3(i, j, 12) < (0.1 + 0.5 * f * f) * (0.45 + drift)) {
-                  c = FAR_CH[Math.floor(hash3(i, j, 13) * FAR_CH.length)];
-                  color = C.far[f > 0.72 ? 1 : 0];
-                }
+          // the more distant rocky hill, with small Callitris standing on its skyline
+          let onHill = false;
+          const h2 = hill2H[i];
+          if (h2 > 0 && d < 0) {
+            if (farRockAt(i, upB)) { onHill = true; c = rC; color = rColor; }
+            else if (upB <= h2) {
+              onHill = true;
+              if (c === ' ') {
+                const f = upB / h2;                               // 0 at its foot, 1 at the skyline
+                const hh = hash3(i, j, 17);
+                if (upB > h2 - 1) {
+                  if (hh < 0.9) { c = hh < 0.4 ? '_' : hh < 0.6 ? '.' : hh < 0.8 ? '-' : '^'; color = C.farHill[2]; }
+                } else if (noise3(i * 0.17, j * 0.5, 31) > 0.6) {
+                  // rock outcrops breaking through
+                  if (hh < 0.7) { c = [':', '.', "'", '^', ',', ':', '.'][Math.floor(hh / 0.7 * 7)]; color = C.farHill[1]; }
+                } else if (hh < 0.025) { c = hh < 0.012 ? 'i' : '!'; color = C.farScrub; }
+                else if (hh < 0.05 + 0.13 * f) { c = '.'; color = C.farHill[0]; }   // scree, thinning into haze at the foot
               }
+            }
+          }
 
-              // a distant hill behind the canopy, and a few stars above it
-              if (c === ' ' && d < -0.15) {
-                const rh = Math.max(ridgeH[i], farH[i]);
-                if (up <= ridgeH[i] && up > farH[i] * 0.7) {
-                  const crest = up > ridgeH[i] - 1;
-                  const hr = hash3(i, j, 15);
-                  if (hr < (crest ? 0.8 : 0.09)) {
-                    c = crest ? (hr < 0.3 ? '.' : hr < 0.55 ? ',' : hr < 0.7 ? ':' : "'") : '.';
-                    color = C.ridge[crest ? 1 : 0];
-                  }
-                } else if (CONFIG.stars && up > rh) {
-                  const hs = hash3(i, j, 16);
-                  if (hs < 0.011) {
-                    const tw = noise3(i * 7.3, j * 3.1, t * 0.6 + hs * 900);   // twinkle
-                    if (tw > 0.3) {
-                      c = hs < 0.0012 ? '*' : hs < 0.004 ? '+' : '.';
-                      color = C.star[tw > 0.62 ? 2 : tw > 0.45 ? 1 : 0];
-                    }
-                  }
+          // distant canopy: densest at its skyline, thinning into mist below
+          if (!onHill && c === ' ' && d < -0.15 && upB <= farH[i]) {
+            const f = upB / farH[i];
+            const drift = noise3(i * 0.08 + t * 0.03, j * 0.35, t * 0.05);
+            if (hash3(i, j, 12) < (0.1 + 0.5 * f * f) * (0.45 + drift)) {
+              c = FAR_CH[Math.floor(hash3(i, j, 13) * FAR_CH.length)];
+              color = C.far[f > 0.72 ? 1 : 0];
+            }
+          }
+
+          // a distant hill behind the canopy, and a few stars above it
+          if (!onHill && c === ' ' && d < -0.15) {
+            const rh = Math.max(ridgeH[i], farH[i]);
+            if (upB <= ridgeH[i] && upB > farH[i] * 0.7) {
+              const top = upB > ridgeH[i] - 1;
+              const hr = hash3(i, j, 15);
+              if (hr < (top ? 0.8 : 0.09)) {
+                c = top ? (hr < 0.3 ? '.' : hr < 0.55 ? ',' : hr < 0.7 ? ':' : "'") : '.';
+                color = C.ridge[top ? 1 : 0];
+              }
+            } else if (CONFIG.stars && upB > rh) {
+              const hs = hash3(i, j, 16);
+              if (hs < 0.011) {
+                const tw = noise3(i * 7.3, j * 3.1, t * 0.6 + hs * 900);   // twinkle
+                if (tw > 0.3) {
+                  c = hs < 0.0012 ? '*' : hs < 0.004 ? '+' : '.';
+                  color = C.star[tw > 0.62 ? 2 : tw > 0.45 ? 1 : 0];
                 }
               }
             }
           }
         }
-      } else if (j === groundRow) {
-        c = SURFACE[Math.floor(hash3(i, 0, 5) * SURFACE.length)];
-        color = C.ground;
-      } else {
-        const depth = j - groundRow;
-        const h = hash3(i, j, 5);
-        if (h < 0.22 / depth) { c = h < 0.07 / depth ? ',' : '.'; color = C.ground; }
+      }
+
+      // haze lying in the gap behind the slope: it covers the far hill and canopy,
+      // but not the trees standing in front of it
+      if (CONFIG.mist && best === 0 && up > crest && d < 0) {
+        const upB = up - crest;
+        if (upB < 11) {
+          const m = noise3(i * 0.03 - t * 0.022, upB * 0.3, t * 0.035) * 0.7
+                  + noise3(i * 0.11 - t * 0.04, upB * 0.8, 9.2) * 0.3;
+          const dens = (m - 0.4) * 2.2 * Math.exp(-upB / 4.5) * CONFIG.mist;
+          if (dens > 0.08 && hash3(i, j, 18) < dens * 1.6) {
+            c = dens > 0.3 ? (hash3(i, j, 19) < 0.5 ? '=' : '~') : (hash3(i, j, 19) < 0.5 ? '-' : '.');
+            color = C.mist[dens > 0.3 ? 1 : 0];
+          }
+        }
       }
 
       if (c !== ' ') {
@@ -953,8 +1460,10 @@ function draw(t) {
     }
   }
 
+  drawFalling(t, dt);
   drawCockatoos(t);
   drawWallaby(t);
+  drawEchidna(t, dt);
 
   if (CONFIG.caption && rows > 4) {
     ctx.fillStyle = C.caption;
