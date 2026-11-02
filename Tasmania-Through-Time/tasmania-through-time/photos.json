@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "photos": [
+    {
+      "id": "photo-240e4473500f4c",
+      "title": "Lilydale Druids Hall in the Weekly Courier. (April 13, 1927)",
+      "description": "Lilydale Druids Hall in the Weekly Courier. (April 13, 1927)",
+      "place": "Lilydale Druids Hall",
+      "date_display": "1927",
+      "year_start": 1927,
+      "year_end": 1927,
+      "image_type": "ground",
+      "image": "images/photo-240e4473500f4c.webp",
+      "thumbnail": "images/photo-240e4473500f4c-thumb.webp",
+      "camera": {
+        "lat": -41.252006,
+        "lng": 147.21638,
+        "bearing": 259.0
+      },
+      "subject": {
+        "lat": -41.2521,
+        "lng": 147.215996
+      },
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "",
+        "source": "",
+        "source_url": "",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    }
+  ]
+}

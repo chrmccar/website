@@ -1,0 +1,85 @@
+TASMANIA THROUGH TIME
+====================
+
+Your map and photo manager are ready. Start with a single photograph.
+
+1. UNZIP this folder somewhere you will keep it (Desktop or Documents).
+
+2. OPEN THE PHOTO MANAGER:
+   Windows: double-click START-WINDOWS.bat
+   Mac:     double-click START-MAC.command
+
+   It will open in your browser. Keep the small Terminal/Command window open
+   while editing. You need Python 3 installed, but no extra Python packages.
+
+3. ADD A PHOTO:
+   - Click "Add photograph" and choose/drag in your image.
+   - Type a title (other text can be added later).
+   - Click the map with "Camera" selected to mark where the photographer stood.
+     Use "Subject" if you only know what place the image depicts.
+     Use "Direction" then click a landmark to estimate the camera bearing.
+   - Fill in "Rights & attribution". For your own copyright-owned work, an
+     example is: "© Christopher McCarthy. All rights reserved."
+   - Select the rights status (e.g. All rights reserved for work you own).
+   - Tick "I have checked the rights" and leave "Show on public map" ticked.
+   - Click "Save photograph".
+
+   The photograph and its details save into your local folder immediately.
+   The full photograph is optimised to WebP for the website and a thumbnail is
+   generated. Your original file is NOT changed.
+
+4. CLICK "PREVIEW WEBSITE" in the photo manager to see the public map locally.
+
+5. TO PUBLISH IT:
+   - Open https://github.com/chrmccar/website
+   - Select Add file > Upload files, from the ROOT of the repository (where
+     index.html and CNAME are currently visible).
+   - Drag in ONLY the folder named "tasmania-through-time" from this package.
+     Keep the folder name and its internal structure unchanged.
+   - Commit the upload to the main branch.
+   - Your new page should be available at:
+     https://christophermccarthy.au/tasmania-through-time/
+
+   Your original index.html and CNAME are NOT touched. No link from the main
+   page is necessary.
+
+EACH TIME YOU ADD OR EDIT PHOTOGRAPHS
+-----------------------------------
+Open the local Photo Manager again, save your changes, and re-upload ONLY the
+"tasmania-through-time" folder to the same location on GitHub. Changed files
+will replace the earlier files at those paths. Don't rename the folder.
+
+IMPORTANT: WHAT IS PRIVATE?
+---------------------------
+Only "tasmania-through-time/" should be uploaded to GitHub.
+
+- LOCAL_COLLECTION.json is your PRIVATE working catalogue including drafts.
+- photo-assets/ contains your PRIVATE image library including drafts.
+- editor.html, editor.js, editor.css and photo_manager.py run locally only.
+
+The public "tasmania-through-time/photos.json" includes only photos that are
+marked published AND have rights reviewed, with only their publishable image
+files. If you upload the whole parent package, you would expose your private
+unpublished photographs. Do not do that.
+
+If a photograph has no confirmed rights yet, untick "Show on public map" and
+save it as a draft. It stays locally in your Photo Manager.
+
+TROUBLESHOOTING
+---------------
+- Opening the editor requires Python 3. Your Mac already may have it; on
+  Windows, install Python 3 from python.org if the launcher says it is missing.
+- On macOS, if double-click is blocked, open Terminal, type "bash ", then
+  drag START-MAC.command onto the Terminal window and press Return.
+- If the browser doesn't open, visit http://127.0.0.1:8765/editor.html
+  while the launcher window is running.
+- Both maps require an internet connection to load OpenFreeMap and MapLibre.
+- If you already have the manager open, reuse that tab instead of launching
+  another copy, because only one program can use port 8765.
+- If you add an image then can't see it in the public preview, check that
+  "Show on public map" is ticked, "rights reviewed" is ticked, and you have
+  set a camera or subject location.
+- If you move the project to another computer, copy this ENTIRE unzipped
+  package, including LOCAL_COLLECTION.json and photo-assets/.
+
+Good to go. You don't need to edit HTML or JSON to add photographs.
