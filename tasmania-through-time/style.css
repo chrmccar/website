@@ -44,3 +44,7 @@ button:focus-visible,select:focus-visible,a:focus-visible{outline-color:var(--ac
 .photo-marker{position:absolute;top:0;left:0;display:grid;place-items:center;width:24px;height:24px;padding:0;background:transparent;border:0;border-radius:50%;cursor:pointer}
 .photo-marker .pin{display:block;width:10px;height:10px;border:0;border-radius:50%;background:#335f50;box-shadow:none}
 .photo-marker:focus-visible{outline:2px solid #335f50;outline-offset:1px}
+
+/* A short, same-colour stroke, pointing north before MapLibre applies the bearing. */
+.photo-marker .direction-tick{position:absolute;inset:0;pointer-events:none}
+.photo-marker .direction-tick::before{content:"";position:absolute;left:calc(50% - .75px);top:1px;width:1.5px;height:7px;border-radius:1px;background:#335f50}

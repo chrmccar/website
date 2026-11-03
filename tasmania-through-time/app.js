@@ -85,6 +85,14 @@ function makeMarker(group) {
   el.type = 'button'; el.className = 'photo-marker';
   el.setAttribute('aria-pressed', String(index >= 0));
   el.setAttribute('aria-label',group.photos.length===1 ? `View ${chosen.title}` : `View ${group.photos.length} photographs at this location`);
+  const bearing = chosen.camera?.bearing;
+  const hasDirection = Number.isFinite(bearing) && bearing >= 0 && bearing <= 360;
+  if (hasDirection) {
+    const tick = document.createElement('span');
+    tick.className = 'direction-tick';
+    tick.setAttribute('aria-hidden', 'true');
+    el.append(tick);
+  }
   const pin = document.createElement('span'); pin.className='pin';
   el.append(pin);
   el.addEventListener('click', () => {
@@ -92,7 +100,7 @@ function makeMarker(group) {
     if (index >= 0 && group.photos.length > 1) selectPhoto(group.photos[(index+1)%group.photos.length].id);
     else selectPhoto(group.photos[0].id);
   });
-  return new maplibregl.Marker({element:el,anchor:'center',subpixelPositioning:true}).setLngLat(group.coord).addTo(map);
+  return new maplibregl.Marker({element:el,anchor:'center',subpixelPositioning:true,rotation:hasDirection ? bearing : 0,rotationAlignment:'map'}).setLngLat(group.coord).addTo(map);
 }
 function updateMarkers() {
   markers.forEach(marker => marker.remove()); markers=[];

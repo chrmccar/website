@@ -11,7 +11,9 @@ Keep the map understated and responsive, with a light OpenFreeMap Positron basem
 Public files live only in the lowercase root `tasmania-through-time/`. Clicking a marker
 opens a photograph, date, location confidence and source/rights details without changing
 the map centre or zoom. Use identical solid dots at exact stored coordinates; marker
-containers must stay absolutely positioned so they never stack or drift when zooming. Preserve the
+containers must stay absolutely positioned so they never stack or drift when zooming.
+When a camera bearing is recorded, show a tiny same-colour direction stroke; omit it
+when direction is unknown. Keep its size constant while zooming and align it with the map. Preserve the
 `photos.json` contract: `{ "version": 1, "photos": [...] }`, permanent IDs, optional dates,
 optional camera/bearing and subject coordinates, rights review and publication flag.
 Do not invent dates, geography, bearings or attribution. A subject location is not a known
