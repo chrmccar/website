@@ -28,6 +28,8 @@ with tempfile.TemporaryDirectory() as d:
                 errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
                 editor=(base/'editor.js').read_text()+'\nwindow.entryTest=()=>({map,mapReady,currentId,pendingImage,entryMode});'
                 page.route('**/editor.js?v=*',lambda r:r.fulfill(body=editor,content_type='text/javascript'))
+                response=page.request.get(url+'/editor.html',headers={'If-Modified-Since':'Fri, 01 Jan 2100 00:00:00 GMT'})
+                assert response.status==200 and 'no-store' in response.headers.get('cache-control','')
                 page.goto(url+'/editor.html')
                 page.wait_for_function('window.entryTest && entryTest().mapReady && document.querySelectorAll(".photo-item").length>0',timeout=45000)
                 page.locator('#image-input').set_input_files(str(base/'tasmania-through-time'/original[0]['image']))

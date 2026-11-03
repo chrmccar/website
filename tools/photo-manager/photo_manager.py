@@ -315,6 +315,12 @@ class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(BASE), **kwargs)
 
+    def end_headers(self):
+        path=urlparse(self.path).path
+        if path.endswith(('.html', '.js', '.css', '/')):
+            self.send_header('Cache-Control', 'no-store')
+        super().end_headers()
+
     def log_message(self, fmt, *args):
         if not self.path.startswith('/api/'):
             super().log_message(fmt, *args)
@@ -357,9 +363,12 @@ class Handler(SimpleHTTPRequestHandler):
             return
         if path == '/preview':
             self.send_response(302)
-            self.send_header('Location', '/tasmania-through-time/')
+            self.send_header('Location', f'/tasmania-through-time/?session={uuid.uuid4().hex[:12]}')
             self.end_headers()
             return
+        # Program updates can preserve ZIP timestamps: never return stale HTML/JS.
+        if path.endswith(('.html', '.js', '.css', '/')) and 'If-Modified-Since' in self.headers:
+            del self.headers['If-Modified-Since']
         super().do_GET()
 
     def do_POST(self):
@@ -419,7 +428,7 @@ def main():
     except OSError as exc:
         print(f'Unable to start on port {PORT}: {exc}\nClose any other Photo Manager window and retry.')
         return
-    url=f'http://127.0.0.1:{PORT}/editor.html'
+    url=f'http://127.0.0.1:{PORT}/editor.html?session={uuid.uuid4().hex[:12]}'
     print('\n' + '='*56)
     print(' TASMANIA THROUGH TIME — PHOTO MANAGER')
     print('='*56)
