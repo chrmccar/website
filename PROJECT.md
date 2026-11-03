@@ -37,3 +37,12 @@ The desktop Photo Manager must fit within the viewport as the collection grows.
 Its photo list and form scroll independently; scrolling either must not move the map
 or hide the save controls. Existing installations receive interface-only updates that
 never replace working catalogues or images.
+
+Places/buildings are optional dated records in `places.json` (`version`, `places`).
+Each has an id, title, description, location {lat,lng}, required start year for publication,
+optional inclusive end year, optional source URL, and publication flag. Public places have
+no image requirement; they are separate from photo rights review. All time shows all
+approved places, individual years only those then present. Group exact shared coordinates
+across photos/places so all entries remain accessible by cycling a dot. Editor map markers
+are noninteractive references: only the library selects another entry. Existing private
+catalogues/photos must survive all program updates and place edits without replacement.

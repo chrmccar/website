@@ -46,7 +46,7 @@ with tempfile.TemporaryDirectory() as d:
                     assert page.locator('#editor-map').bounding_box()==box
                     assert page.evaluate('window.scrollY')==0
                     library_scroll=library.evaluate('(el)=>el.scrollTop')
-                    form=page.locator('.form-content')
+                    form=page.locator('.form-content:visible')
                     assert form.evaluate('(el)=>el.scrollHeight>el.clientHeight')
                     form.evaluate('(el)=>el.scrollTop=0');form.hover();page.mouse.wheel(0,500)
                     page.wait_for_function('document.querySelector(".form-content").scrollTop>0')

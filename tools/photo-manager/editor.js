@@ -2,6 +2,7 @@ import * as maplibregl from 'https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-
 const $=id=>document.getElementById(id);
 let catalogue=[],currentId=null,pendingImage=null,placement='camera',mapReady=false,previewUrl=null;
 let placementMarkers=[],otherMarkers=[];
+let places=[],currentPlaceId=null,entryMode='photo';
 const form=$('photo-form'),saveMessage=$('save-message');
 const map=new maplibregl.Map({container:'editor-map',style:'https://tiles.openfreemap.org/styles/positron',center:[146.55,-42.05],zoom:6.15,minZoom:4.4,maxZoom:18,attributionControl:false,dragRotate:false,touchPitch:false});
 map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
@@ -13,13 +14,17 @@ const thumbUrl=p=>(p.published?'/tasmania-through-time/images/':'/photo-assets/'
 const value=id=>$(id).value.trim();
 const set=(id,v)=>{$(id).value=v ?? '';};
 const num=id=>value(id)===''?null:Number(value(id));
-function showMessage(msg,isError=false){saveMessage.textContent=msg;saveMessage.classList.toggle('error',isError);}
+function showMessage(msg,isError=false){const target=entryMode==='place'?$('place-message'):saveMessage;target.textContent=msg;target.classList.toggle('error',isError);}
 function setStatus(text,live=false){$('draft-status').textContent=text;$('draft-status').classList.toggle('live',live);}
 function setMode(mode){placement=mode;document.querySelectorAll('.mode').forEach(el=>el.classList.toggle('active',el.dataset.mode===mode));const messages={camera:'Camera mode: click where the photographer was standing.',subject:'Subject mode: click the place shown in the photograph.',direction:'Direction mode: click a landmark the camera was facing. Place the camera first.'};$('map-status').textContent=messages[mode];}
 document.querySelectorAll('.mode').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
 function bearingDegrees(a,b){const r=Math.PI/180;const lat1=a[1]*r,lat2=b[1]*r,dlon=(b[0]-a[0])*r;return (Math.atan2(Math.sin(dlon)*Math.cos(lat2),Math.cos(lat1)*Math.sin(lat2)-Math.sin(lat1)*Math.cos(lat2)*Math.cos(dlon))*180/Math.PI+360)%360;}
 map.on('click',event=>{
   const {lng,lat}=event.lngLat;
+  if(entryMode==='place'){
+    set('place-lat',lat.toFixed(6));set('place-lng',lng.toFixed(6));
+    showMessage('Location updated. Click Save place to keep your changes.');refreshMap();return;
+  }
   if(placement==='direction'){
     if(num('camera-lat')===null||num('camera-lng')===null){showMessage('Set the camera position first, then choose direction.',true);return;}
     set('camera-bearing',Math.round(bearingDegrees([num('camera-lng'),num('camera-lat')],[lng,lat])));
@@ -43,15 +48,18 @@ function refreshMap(){
   if(!mapReady)return;
   placementMarkers.forEach(m=>m.remove());placementMarkers=[];
   otherMarkers.forEach(m=>m.remove());otherMarkers=[];
-  const lat=num('camera-lat'),lng=num('camera-lng');
-  createPoint(lat,lng,'camera',num('camera-bearing'));
-  createPoint(num('subject-lat'),num('subject-lng'),'subject');
-  for(const p of catalogue){
-    if(p.id===currentId)continue;
-    const c=p.camera||p.subject;
+  if(entryMode==='place') createPoint(num('place-lat'),num('place-lng'),'subject');
+  else {
+    createPoint(num('camera-lat'),num('camera-lng'),'camera',num('camera-bearing'));
+    createPoint(num('subject-lat'),num('subject-lng'),'subject');
+  }
+  for(const p of [...catalogue,...places]){
+    if(p.id===currentId||p.id===currentPlaceId)continue;
+    const c=p.camera||p.subject||p.location;
     if(!c)continue;
     const el=document.createElement('div');el.className='other-marker';el.title=p.title;
-    el.addEventListener('click',e=>{e.stopPropagation();editPhoto(p.id);});
+    // Reference markers are visual only. Map clicks always position the current entry.
+    el.setAttribute('aria-hidden','true');
     otherMarkers.push(new maplibregl.Marker({element:el}).setLngLat([c.lng,c.lat]).addTo(map));
   }
 }
@@ -61,9 +69,9 @@ function locateForm(){
 }
 for(const id of ['camera-lat','camera-lng','camera-bearing','subject-lat','subject-lng'])$(id).addEventListener('change',refreshMap);
 function renderList(){
-  $('library-count').textContent=`${catalogue.length} photo${catalogue.length===1?'':'s'}`;
+  $('library-count').textContent=`${catalogue.length} photos${places.length?` · ${places.length} places`:''}`;
   const list=$('library-list');list.replaceChildren();
-  if(!catalogue.length){const el=document.createElement('div');el.className='library-empty';el.textContent='No photographs yet. Add your first image to get started.';list.append(el);return;}
+  if(!catalogue.length&&!places.length){const el=document.createElement('div');el.className='library-empty';el.textContent='No photographs yet. Add your first image to get started.';list.append(el);return;}
   catalogue.forEach(p=>{
     const button=document.createElement('button');button.type='button';button.className=`photo-item${currentId===p.id?' active':''}`;
     const image=document.createElement('img');image.loading='lazy';image.src=thumbUrl(p);image.alt='';
@@ -72,13 +80,61 @@ function renderList(){
     const status=document.createElement('small');status.className='state'+(p.published?'':' draft');status.textContent=p.published?'● Ready for website':'● Draft';
     info.append(title,place,status);button.append(image,info);button.addEventListener('click',()=>editPhoto(p.id));list.append(button);
   });
+  for(const place of places){
+    const button=document.createElement('button');button.type='button';button.className='photo-item'+(place.id===currentPlaceId?' active':'');
+    const info=document.createElement('span'),title=document.createElement('strong'),meta=document.createElement('small');
+    title.textContent=place.title;meta.textContent=`Place · ${place.year_start??'Date unknown'}${place.year_end?`–${place.year_end}`:' onwards'}${place.published?'':' · Draft'}`;
+    info.append(title,meta);button.append(info);button.addEventListener('click',()=>editPlace(place.id));list.append(button);
+  }
 }
+function showEditor(mode){
+  entryMode=mode;$('photo-editor').hidden=mode!=='photo';$('place-editor').hidden=mode!=='place';
+  document.querySelector('.place-controls').hidden=mode==='place';
+}
+function newPlace(){
+  showEditor('place');currentId=null;currentPlaceId=null;
+  $('place-form').reset();$('place-published').checked=true;$('place-heading').textContent='New place';
+  $('place-delete').hidden=true;showMessage('');
+  $('map-status').textContent='Place mode: click the location of the building or landmark.';
+  renderList();refreshMap();
+}
+function editPlace(id){
+  const place=places.find(p=>p.id===id);if(!place)return;
+  showEditor('place');currentId=null;currentPlaceId=id;
+  for(const [field,key] of [['place-title','title'],['place-description','description'],['place-year-start','year_start'],['place-year-end','year_end'],['place-source-url','source_url']])set(field,place[key]);
+  set('place-lat',place.location?.lat);set('place-lng',place.location?.lng);
+  $('place-published').checked=!!place.published;$('place-heading').textContent='Edit place';$('place-delete').hidden=false;
+  $('map-status').textContent='Place mode: click the location of the building or landmark.';
+  showMessage('');renderList();refreshMap();
+}
+$('new-place-button').addEventListener('click',newPlace);
+for(const id of ['place-lat','place-lng'])$(id).addEventListener('change',refreshMap);
+$('place-form').addEventListener('submit',async event=>{
+  event.preventDefault();$('place-save').disabled=true;
+  try{
+    const data={id:currentPlaceId,title:value('place-title'),description:value('place-description'),location:point('place-lat','place-lng'),year_start:num('place-year-start'),year_end:num('place-year-end'),source_url:value('place-source-url'),published:$('place-published').checked};
+    const res=await fetch('/api/place/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    const result=await res.json();if(!res.ok)throw Error(result.error||'Could not save place. Update photo_manager.py and restart the manager.');
+    places=places.filter(p=>p.id!==result.place.id);places.push(result.place);currentPlaceId=result.place.id;
+    $('place-heading').textContent='Edit place';$('place-delete').hidden=false;renderList();refreshMap();
+    showMessage('Place saved. Download and upload the website update to publish it.');
+  }catch(error){showMessage(error.message,true);}finally{$('place-save').disabled=false;}
+});
+$('place-delete').addEventListener('click',async()=>{
+  if(!currentPlaceId||!confirm('Delete this place?'))return;
+  try{
+    const res=await fetch('/api/place/delete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:currentPlaceId})});
+    if(!res.ok)throw Error('Could not delete place');
+    places=places.filter(p=>p.id!==currentPlaceId);newPlace();showMessage('Place removed locally. Upload a website update to remove it online.');
+  }catch(error){showMessage(error.message,true);}
+});
 function setPreview(src){
   const img=$('image-preview'),placeholder=$('image-placeholder');
   if(src){img.src=src;img.hidden=false;placeholder.hidden=true;}
   else{img.removeAttribute('src');img.hidden=true;placeholder.hidden=false;}
 }
 function resetForNew(){
+  showEditor('photo');currentPlaceId=null;
   currentId=null;pendingImage=null;form.reset();$('image-input').value='';$('published').checked=true;
   setPreview(null);$('form-heading').textContent='New photograph';$('delete-button').hidden=true;
   setStatus('Not saved');showMessage('');setMode('camera');renderList();refreshMap();
@@ -86,6 +142,7 @@ function resetForNew(){
 $('new-button').addEventListener('click',resetForNew);
 function editPhoto(id){
   const p=catalogue.find(x=>x.id===id);if(!p)return;
+  showEditor('photo');currentPlaceId=null;
   currentId=id;pendingImage=null;$('image-input').value='';
   for(const name of ['title','place','description','date-display'])set(name,p[name==='date-display'?'date_display':name]);
   set('year-start',p.year_start);set('year-end',p.year_end);set('image-type',p.image_type||'ground');
@@ -101,7 +158,7 @@ function editPhoto(id){
 async function loadPhotos(){
   try{
     const res=await fetch('/api/photos',{cache:'no-store'});if(!res.ok)throw Error('Could not read photo catalogue');
-    const data=await res.json();catalogue=data.photos||[];renderList();refreshMap();
+    const data=await res.json();catalogue=data.photos||[];places=data.places||[];renderList();refreshMap();
   }catch(e){showMessage(e.message,true);}
 }
 function updateImageFromFile(file){

@@ -34,3 +34,8 @@ before opening it on the other computer. Keep occasional backups of the whole fo
 Deleting/unpublishing removes a map marker after you upload an update. Older public
 image files and Git history can remain accessible; request a separate cleanup to withdraw
 previously published files. Your private originals are never included in website exports.
+
+PLACES AND BUILDINGS
+Use Add place / building. Enter the name, click its location, and fill Exists from
+and optionally Last year present. Save place, then export/upload the website update
+as usual. Existing markers do not select other entries; use the left list for that.

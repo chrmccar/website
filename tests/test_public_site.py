@@ -39,12 +39,24 @@ class PublicSiteTests(unittest.TestCase):
             if not path.is_file():
                 continue
             rel = path.relative_to(SITE).as_posix()
-            self.assertTrue(rel in {'index.html', 'app.js', 'style.css', 'photos.json'} or
+            self.assertTrue(rel in {'index.html', 'app.js', 'style.css', 'photos.json', 'places.json'} or
                             re.fullmatch(r'images/(?:README\.txt|photo-[0-9a-f]{14}(?:-thumb)?\.(?:webp|jpg))', rel), rel)
         self.assertFalse((ROOT / 'Tasmania-Through-Time').exists())
         self.assertFalse((ROOT / '01-024.jpg').exists())
         for name in ('LOCAL_COLLECTION.json', 'photo-assets', 'photo-originals', 'editor.html', 'photo_manager.py'):
             self.assertFalse((ROOT / name).exists())
+
+    def test_public_places_are_approved_and_dated(self):
+        places=json.loads((SITE/'places.json').read_text())['places']
+        ids=set()
+        for place in places:
+            self.assertTrue(place['published']);self.assertTrue(place['title'])
+            self.assertNotIn(place['id'],ids);ids.add(place['id'])
+            self.assertIsInstance(place['year_start'],int)
+            self.assertTrue(-90<=place['location']['lat']<=90)
+            self.assertTrue(-180<=place['location']['lng']<=180)
+            if place.get('year_end') is not None:
+                self.assertGreaterEqual(place['year_end'],place['year_start'])
 
     def test_asset_urls_match_current_contents(self):
         # HTML must request fresh assets when code changes: older cached scripts

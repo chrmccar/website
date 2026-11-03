@@ -5,6 +5,8 @@ const mapError = $('error-state');
 const ui = { panel: $('photo-panel'), empty: $('empty-state') };
 let allPhotos = [], visiblePhotos = [], groups = [], selectedId = null;
 let markers = [], lastMarker = null;
+let allPlaces=[],visiblePlaces=[];
+const entries=()=>[...visiblePhotos,...visiblePlaces];
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -30,7 +32,7 @@ map.on('load', () => {
 });
 
 function coords(photo) {
-  const c = photo.camera || photo.subject;
+  const c = photo.camera || photo.subject || photo.location;
   return c && Number.isFinite(c.lat) && Number.isFinite(c.lng) && Math.abs(c.lat)<=90 && Math.abs(c.lng)<=180 ? [c.lng, c.lat] : null;
 }
 const yearSlider = $('year-slider');
@@ -48,7 +50,7 @@ function matchesTime(photo) {
   return years !== null && years[0] <= year && years[1] >= year;
 }
 function setupTimeline() {
-  const years = allPhotos.flatMap(photo => photoYears(photo) || []);
+  const years = [...allPhotos,...allPlaces].flatMap(photo => photoYears(photo) || []);
   firstYear = Math.min(1800, ...years);
   lastYear = Math.max(new Date().getFullYear(), ...years);
   yearSlider.min = firstYear - 1;
@@ -82,9 +84,9 @@ function makeMarker(group) {
   const chosen = group.photos[Math.max(0,index)];
   const el = document.createElement('button');
   el.dataset.lng=group.coord[0];
-  el.type = 'button'; el.className = 'photo-marker';
+  el.type = 'button'; el.className = 'photo-marker'+(chosen.kind==='place'?' place-marker':'');
   el.setAttribute('aria-pressed', String(index >= 0));
-  el.setAttribute('aria-label',group.photos.length===1 ? `View ${chosen.title}` : `View ${group.photos.length} photographs at this location`);
+  el.setAttribute('aria-label',group.photos.length===1 ? `View ${chosen.title}` : `View ${group.photos.length} entries at this location`);
   const bearing = chosen.camera?.bearing;
   const hasDirection = Number.isFinite(bearing) && bearing >= 0 && bearing <= 360;
   if (hasDirection) {
@@ -104,15 +106,17 @@ function makeMarker(group) {
 }
 function updateMarkers() {
   markers.forEach(marker => marker.remove()); markers=[];
-  groups = groupPhotos(visiblePhotos);
+  groups = groupPhotos(entries());
   groups.forEach(g => markers.push(makeMarker(g)));
 }
 function updateFilter() {
   visiblePhotos=allPhotos.filter(matchesTime);
-  ui.empty.hidden = visiblePhotos.length > 0;
-  ui.empty.textContent = allPhotos.length ? 'No photographs for this year.' : 'No photographs here yet.';
-  if (selectedId && !visiblePhotos.some(p=>p.id===selectedId)) closePanel(false);
-  else if (selectedId) renderPhoto(visiblePhotos.find(p=>p.id===selectedId));
+  const year=Number(yearSlider.value);
+  visiblePlaces=allPlaces.filter(p=>year===firstYear-1 || (year>=p.year_start && (p.year_end==null || year<=p.year_end)));
+  ui.empty.hidden = entries().length > 0;
+  ui.empty.textContent = allPhotos.length+allPlaces.length ? 'No entries for this year.' : 'No entries here yet.';
+  if (selectedId && !entries().some(p=>p.id===selectedId)) closePanel(false);
+  else if (selectedId) renderPhoto(entries().find(p=>p.id===selectedId));
   updateMarkers();
 }
 function put(id,value){ $(id).textContent=value || ''; }
@@ -127,6 +131,11 @@ function formatDate(p) {
   return `${p.year_start}`;
 }
 function renderPhoto(p) {
+  if(p.kind==='place'){renderPlace(p);return;}
+  ui.panel.setAttribute('aria-label','Photograph details');
+  $('photo-image-wrap').hidden=false;$('photo-bearing').hidden=false;$('rights-details').hidden=false;
+  $('photo-credit').closest('.meta-block').hidden=false;
+  $('panel-kind').textContent='FROM THE COLLECTION';
   const image=$('photo-image');
   image.src=p.image; image.alt=p.title ? `Historical photograph: ${p.title}` : 'Historical photograph';
   image.onerror=()=>{ image.alt='Photograph could not be loaded'; image.removeAttribute('src'); };
@@ -150,13 +159,26 @@ function renderPhoto(p) {
   if (/^https?:\/\//i.test(rights.licence_url||'')) {
     const link=document.createElement('a'); link.href=rights.licence_url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='View licence ↗';block.append(link);
   }
-  const idx=visiblePhotos.findIndex(item=>item.id===p.id);
-  put('photo-position',`${idx+1} / ${visiblePhotos.length}`);
-  $('prev-photo').disabled=visiblePhotos.length<2;
-  $('next-photo').disabled=visiblePhotos.length<2;
+  const idx=entries().findIndex(item=>item.id===p.id);
+  put('photo-position',`${idx+1} / ${entries().length}`);
+  $('prev-photo').disabled=entries().length<2;
+  $('next-photo').disabled=entries().length<2;
+}
+function renderPlace(p){
+  ui.panel.setAttribute('aria-label','Place details');$('panel-kind').textContent='PLACE / BUILDING';
+  $('photo-image-wrap').hidden=true;$('photo-image').removeAttribute('src');
+  $('photo-bearing').hidden=true;$('rights-details').hidden=true;
+  put('photo-title',p.title);put('photo-description',p.description);
+  put('photo-date',p.year_end==null?`From ${p.year_start}`:`${p.year_start}–${p.year_end}`);
+  put('photo-location','Place / building');
+  const link=$('photo-source-link'),hasSource=/^https?:\/\//i.test(p.source_url||'');
+  $('photo-credit').closest('.meta-block').hidden=!hasSource;put('photo-credit','');
+  link.hidden=!hasSource;if(hasSource)link.href=p.source_url;else link.removeAttribute('href');
+  put('photo-position',`${entries().findIndex(item=>item.id===p.id)+1} / ${entries().length}`);
+  $('prev-photo').disabled=$('next-photo').disabled=entries().length<2;
 }
 function selectPhoto(id) {
-  const p=visiblePhotos.find(item=>item.id===id);
+  const p=entries().find(item=>item.id===id);
   if(!p)return;
   selectedId=id;renderPhoto(p);
   ui.panel.inert=false;ui.panel.classList.add('open');ui.panel.setAttribute('aria-hidden','false');
@@ -166,9 +188,9 @@ function selectPhoto(id) {
 }
 function closePanel(restoreFocus=true){const restore=!!selectedId && restoreFocus;selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');ui.panel.inert=true;updateMarkers();if(restore){const marker=markers.find(m=>m.getLngLat().lng===Number(lastMarker?.dataset.lng));(marker?.getElement()||document.querySelector('.photo-marker')||$('about-button')).focus({preventScroll:true});}}
 function stepPhoto(direction){
-  if(!visiblePhotos.length)return;
-  const idx=Math.max(0,visiblePhotos.findIndex(p=>p.id===selectedId));
-  selectPhoto(visiblePhotos[(idx+direction+visiblePhotos.length)%visiblePhotos.length].id);
+  if(!entries().length)return;
+  const idx=Math.max(0,entries().findIndex(p=>p.id===selectedId));
+  selectPhoto(entries()[(idx+direction+entries().length)%entries().length].id);
 }
 $('close-panel').addEventListener('click',closePanel);
 $('prev-photo').addEventListener('click',()=>stepPhoto(-1));
@@ -192,6 +214,15 @@ async function loadPhotos(){
     const data=await res.json();
     if(!Array.isArray(data.photos))throw new Error('Invalid photo catalogue');
     allPhotos=data.photos.filter(p=>p.published && p.rights?.reviewed && coords(p) && p.image && p.id);
+    try {
+      const placesRes=await fetch('./places.json',{cache:'no-store'});
+      if(placesRes.ok){
+        const data=await placesRes.json();if(!Array.isArray(data.places))throw Error('Invalid places catalogue');
+        allPlaces=data.places.filter(p=>p.published && p.id && p.title && coords(p) && Number.isInteger(p.year_start) && (p.year_end==null || (Number.isInteger(p.year_end) && p.year_end>=p.year_start))).map(p=>({...p,kind:'place'}));
+      }else if(placesRes.status!==404){throw Error('Could not load places');}
+    }catch(error){
+      allPlaces=[];mapError.dataset.source='places';mapError.textContent='Could not load places. Photographs are still available.';mapError.hidden=false;console.error('Places:',error);
+    }
     setupTimeline();
     updateTimeControls();
     updateFilter();

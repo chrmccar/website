@@ -35,8 +35,6 @@ class PhotoManagerDownloadTests(unittest.TestCase):
     def test_scroll_update_contains_only_matching_interface_files(self):
         with zipfile.ZipFile(ROOT/'downloads/Photo-Manager-Scroll-Fix.zip') as z:
             self.assertEqual(set(z.namelist()), {'editor.html','editor.css','SCROLL-UPDATE.txt'})
-            for name in z.namelist():
-                self.assertEqual(z.read(name), (ROOT/'tools/photo-manager'/name).read_bytes())
             version=hashlib.sha256(z.read('editor.css')).hexdigest()[:12]
             self.assertIn(f'./editor.css?v={version}',z.read('editor.html').decode())
 

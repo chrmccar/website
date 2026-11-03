@@ -7,7 +7,7 @@
   <meta name="description" content="Explore Tasmania through historical photographs, mapped to the places they were taken.">
   <title>Tasmania Through Time — Historical Photograph Atlas</title>
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="./style.css?v=6ebd69b0e5ec">
+  <link rel="stylesheet" href="./style.css?v=a847122c5624">
 </head>
 <body>
   <main class="atlas">
@@ -24,7 +24,7 @@
     <div id="error-state" class="error-state" hidden role="alert"></div>
     <aside id="photo-panel" class="photo-panel" aria-label="Photograph details" aria-hidden="true" inert>
       <div class="panel-handle" aria-hidden="true"></div>
-      <div class="panel-top"><span class="eyebrow">FROM THE COLLECTION</span><button id="close-panel" class="close-panel" type="button" aria-label="Close photograph">×</button></div>
+      <div class="panel-top"><span id="panel-kind" class="eyebrow">FROM THE COLLECTION</span><button id="close-panel" class="close-panel" type="button" aria-label="Close photograph">×</button></div>
       <div class="panel-inner">
         <div id="photo-image-wrap" class="photo-image-wrap"><img id="photo-image" alt=""></div>
         <div class="photo-heading"><div id="photo-date" class="photo-date"></div><h2 id="photo-title"></h2><p id="photo-description" class="photo-description"></p></div>
@@ -32,12 +32,12 @@
         <div class="meta-block"><div class="meta-label">SOURCE</div><p id="photo-credit"></p><a id="photo-source-link" rel="noopener noreferrer" target="_blank" hidden>View original record ↗</a></div>
         <details id="rights-details" class="rights-details"><summary>Rights &amp; attribution <span aria-hidden="true">+</span></summary><div id="photo-rights" class="rights-content"></div></details>
       </div>
-      <div class="panel-bottom"><span id="photo-position"></span><div class="panel-arrows"><button id="prev-photo" aria-label="Previous photograph" type="button">←</button><button id="next-photo" aria-label="Next photograph" type="button">→</button></div></div>
+      <div class="panel-bottom"><span id="photo-position"></span><div class="panel-arrows"><button id="prev-photo" aria-label="Previous entry" type="button">←</button><button id="next-photo" aria-label="Next entry" type="button">→</button></div></div>
     </aside>
     <div id="about-modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="about-title"><button id="close-about" class="modal-close" aria-label="Close about" type="button">×</button><div class="eyebrow">ABOUT THE PROJECT</div><h2 id="about-title">Tasmania Through Time</h2><p>A small, independently curated photographic atlas exploring Tasmania's past, one place at a time.</p><p>Markers indicate an original camera position where known, or the location depicted by the photograph. Location confidence and any known viewing direction are shown in the photograph details.</p><p>Each photograph includes its own source and attribution information.</p><p class="modal-signoff">A personal project by Christopher McCarthy.</p></div></div>
   </main>
   <script type="module">
-    import('./app.js?v=1d0860534fa3').catch(() => {
+    import('./app.js?v=2c225a23feab').catch(() => {
       const error = document.getElementById('error-state');
       error.dataset.source = 'startup';
       error.textContent = 'The map could not start. Check your internet connection, enable WebGL in your browser, and reload.';

@@ -24,6 +24,7 @@ BASE = Path(__file__).resolve().parent
 SITE = BASE / 'tasmania-through-time'
 CATALOGUE = BASE / 'LOCAL_COLLECTION.json'  # private; never upload
 PUBLIC_CATALOGUE = SITE / 'photos.json'
+PUBLIC_PLACES = SITE / 'places.json'
 PRIVATE_IMAGES = BASE / 'photo-assets'  # drafts stay private
 IMAGES = SITE / 'images'
 PORT = 8765
@@ -36,6 +37,8 @@ def load_catalogue():
     data = json.loads(CATALOGUE.read_text(encoding='utf-8'))
     if not isinstance(data.get('photos'), list):
         raise ValueError('Invalid catalogue structure')
+    if not isinstance(data.get('places', []), list):
+        raise ValueError('Invalid places structure')
     return data
 
 
@@ -48,6 +51,10 @@ def initialise_collection():
     if CATALOGUE.exists():
         return
     data = json.loads(PUBLIC_CATALOGUE.read_text(encoding='utf-8'))
+    if PUBLIC_PLACES.is_file():
+        places = json.loads(PUBLIC_PLACES.read_text(encoding='utf-8')).get('places', [])
+        if places:
+            data['places'] = places
     paths = set()
     for photo in data['photos']:
         rights = photo.get('rights') or {}
@@ -91,6 +98,7 @@ def public_photos(data):
 def atomic_catalogue(data):
     # Validate before replacing either catalogue; drafts never enter the export.
     live = public_photos(data)
+    places = public_places(data)
     IMAGES.mkdir(parents=True, exist_ok=True)
     permitted = set()
     for photo in live:
@@ -104,6 +112,9 @@ def atomic_catalogue(data):
     public_tmp = PUBLIC_CATALOGUE.with_suffix('.json.tmp')
     public_tmp.write_text(json.dumps({'version': 1, 'photos': live}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     os.replace(public_tmp, PUBLIC_CATALOGUE)
+    places_tmp = PUBLIC_PLACES.with_suffix('.json.tmp')
+    places_tmp.write_text(json.dumps({'version': 1, 'places': places}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    os.replace(places_tmp, PUBLIC_PLACES)
     for image in IMAGES.iterdir():
         if re.fullmatch(r'photo-[0-9a-f]{14}(?:-thumb)?\.(?:webp|jpg)', image.name) and image.name not in permitted:
             image.unlink()
@@ -117,7 +128,7 @@ def website_update():
     output = io.BytesIO()
     with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:
         # Photo uploads update data only, preserving improvements to the live map.
-        for name in ('photos.json',):
+        for name in ('photos.json', 'places.json'):
             archive.write(SITE / name, 'tasmania-through-time/' + name)
         names = {p[field] for p in live for field in ('image', 'thumbnail')}
         for name in sorted(names):
@@ -265,6 +276,41 @@ def save_photo(obj):
     return photo
 
 
+def clean_place(obj, place_id):
+    title = clean(obj.get('title'), 180)
+    if not title:
+        raise ValueError('A place name is required')
+    start = optional_year(obj.get('year_start'))
+    end = optional_year(obj.get('year_end'))
+    if start is not None and end is not None and end < start:
+        raise ValueError('The last year present cannot be before the first year')
+    location = parse_point(obj.get('location'))
+    published = bool(obj.get('published'))
+    if published and (location is None or start is None):
+        raise ValueError('A public place needs a location and its first year of existence')
+    return {'id': place_id, 'title': title, 'description': clean(obj.get('description'), 2500),
+            'location': location, 'year_start': start, 'year_end': end,
+            'source_url': clean(obj.get('source_url'), 500), 'published': published}
+
+
+def public_places(data):
+    return [clean_place(p, p['id']) for p in data.get('places', []) if p.get('published')]
+
+
+def save_place(obj):
+    data = load_catalogue()
+    items = data.setdefault('places', [])
+    existing = next((p for p in items if p.get('id') == obj.get('id')), None)
+    place_id = existing['id'] if existing else f'place-{uuid.uuid4().hex[:14]}'
+    place = clean_place(obj, place_id)
+    if existing:
+        items[items.index(existing)] = place
+    else:
+        items.append(place)
+    atomic_catalogue(data)
+    return place
+
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(BASE), **kwargs)
@@ -318,7 +364,7 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         path = urlparse(self.path).path
-        if path not in ('/api/save', '/api/delete'):
+        if path not in ('/api/save', '/api/delete', '/api/place/save', '/api/place/delete'):
             return self.respond(404, {'error':'Not found'})
         try:
             length = int(self.headers.get('Content-Length', '-1'))
@@ -327,6 +373,17 @@ class Handler(SimpleHTTPRequestHandler):
             obj = json.loads(self.rfile.read(length))
             if not isinstance(obj,dict):
                 raise ValueError('Invalid submission')
+            if path == '/api/place/save':
+                return self.respond(200, {'ok': True, 'place': save_place(obj)})
+            if path == '/api/place/delete':
+                data = load_catalogue()
+                items = data.get('places', [])
+                existing = next((p for p in items if p['id'] == obj.get('id')), None)
+                if existing is None:
+                    return self.respond(404, {'error': 'Place not found'})
+                items.remove(existing)
+                atomic_catalogue(data)
+                return self.respond(200, {'ok': True})
             if path == '/api/save':
                 result=save_photo(obj)
                 return self.respond(200, {'ok':True,'photo':result})

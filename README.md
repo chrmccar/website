@@ -11,12 +11,28 @@ only in All time.
 
 ## Update an existing Photo Manager
 
-For the fixed-size photo list and independent panel scrolling, download the
-[interface-only scroll fix](https://github.com/chrmccar/website/raw/refs/heads/main/downloads/Photo-Manager-Scroll-Fix.zip).
-Close the manager, extract the ZIP, and copy **editor.html** and **editor.css** into
-your existing working Photo Manager folder, replacing those two files. Restart it.
-This update contains no photographs or catalogue. Keep your current working folder;
-do not replace it with a new starter download. Hover over the photo list to scroll it.
+Download the [Photo Manager update](https://github.com/chrmccar/website/raw/refs/heads/main/downloads/Photo-Manager-Update.zip).
+Close the manager and its terminal, extract the ZIP, then copy its contents into your
+existing working Photo Manager folder and replace matching program files. Restart the
+manager. This update contains no catalogue or photographs; keep your existing folder.
+It includes the scrolling fix, safe map placement, and dated places.
+
+Existing markers on the editor map are visual references only. Map clicks position the
+current entry, even over another marker. Select older entries from the left-hand list.
+
+## Buildings and other places
+
+Click **Add place / building**, enter a name, and click its location on the map.
+Set **Exists from** to the first year it was present; **Last year present** is optional
+and blank means it still exists. Dates are inclusive. Do not guess unknown dates: save
+an unapproved draft until the start year is known. Add a description/source link if useful.
+Click **Save place**, then download and upload the website update in the usual way.
+The export now includes **places.json** as well as photos.json and approved photo images.
+
+On the public map, All time shows all approved places. A selected year shows only those
+then present. Places use a small outlined dot; photographs keep solid dots and optional
+direction strokes. Entries sharing exactly the same point share a dot; click it again
+to cycle between them. Opening a place never changes the map's centre or zoom.
 
 ## Add photographs to the map
 
@@ -75,6 +91,7 @@ python3 tests/browser_timeline.py
 python3 tests/browser_cached_upgrade.py
 python3 tests/browser_markers.py
 python3 tests/browser_editor_layout.py
+python3 tests/browser_places.py
 ```
 
 See `PROJECT.md` for project boundaries and `AUDIT.md` for the corrected layout and

@@ -1,0 +1,22 @@
+PHOTO MANAGER UPDATE — PLACES AND SAFE MAP PLACEMENT
+
+1. Close the Photo Manager browser tab AND its terminal window.
+2. Extract Photo-Manager-Update.zip into Downloads.
+3. Copy everything inside that extracted update into your EXISTING working
+   Tasmania-Photo-Manager folder. Choose Replace matching files.
+   Copy into the folder containing START-WINDOWS.bat and LOCAL_COLLECTION.json.
+4. Reopen START-WINDOWS.bat (Mac: START-MAC.command).
+
+The update contains program files and public map templates only. It contains NO
+LOCAL_COLLECTION.json, photographs, originals or drafts, so it does not replace
+or reset your collection. Keep your existing folder; do not start from a new kit.
+
+Map markers are now references only. Click the map to position the current entry;
+select an entry from the left list when you want to edit an older one.
+
+Use Add place / building for landmarks. Enter a name, click its position, enter
+Exists from, and optionally Last year present. Blank end means it still exists.
+Both boundary years are included. Use a source link if available. Do not guess dates.
+Click Save place, then Download website update and upload its extracted
+"tasmania-through-time" folder to GitHub as usual. This includes places.json.
+In All time all approved places appear; a selected year shows only places then present.
