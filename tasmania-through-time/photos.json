@@ -734,6 +734,198 @@
         "reviewed": true
       },
       "published": true
+    },
+    {
+      "id": "photo-0ae8238292dd4a",
+      "title": "468643405 10162559546685972 319694527044423925 n",
+      "description": "Lilydale taken from set of postcards dated 1918.\nAgain in Winsome's handwriting. Not a bad scan for something old, blown up and laminated!\nIt's one that GW doesn't have in his postcards, as is the mill chimney being built. This is #1.\nIt's a view of Main Road I haven't seen, note tree in bottom right corner, there was a horse paddock and big trough there. Still there in 1934 according to Des Targett's notes.",
+      "place": "Lilydale",
+      "date_display": "1918",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-0ae8238292dd4a.webp",
+      "thumbnail": "images/photo-0ae8238292dd4a-thumb.webp",
+      "camera": {
+        "lat": -41.249757,
+        "lng": 147.217499,
+        "bearing": 201.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Fran Williams",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10155339854615972&set=g.467853263384639",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-c88db67c6f3e4e",
+      "title": "View at Lilydale / F. Styant-Browne",
+      "description": "(34) View at Lilydale. A field day to Lilydale and district by the Northern Camera Club on Easter Monday 1904",
+      "place": "Lilydale",
+      "date_display": "1904",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-c88db67c6f3e4e.webp",
+      "thumbnail": "images/photo-c88db67c6f3e4e-thumb.webp",
+      "camera": {
+        "lat": -41.249214,
+        "lng": 147.21774,
+        "bearing": 199.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "F. Styant-Browne",
+        "source": "Northern Tasmanian Camera Club album. no. 3 1904 Northern Tasmanian Camera Club.",
+        "source_url": "https://libraries.tas.gov.au/Digital/AUTAS001139592463/AUTAS001139592463-34",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-d12cde125b2148",
+      "title": "468732555 10162562788380972 757913757614603946 n",
+      "description": "",
+      "place": "",
+      "date_display": "",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-d12cde125b2148.webp",
+      "thumbnail": "images/photo-d12cde125b2148-thumb.webp",
+      "camera": {
+        "lat": -41.25037,
+        "lng": 147.217266,
+        "bearing": 245.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Fran Williams",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10155348533335972&set=g.467853263384639",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-b265462f936d41",
+      "title": "471613290 10162746854155972 566257759338227299 n",
+      "description": "",
+      "place": "",
+      "date_display": "1904",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-b265462f936d41.webp",
+      "thumbnail": "images/photo-b265462f936d41-thumb.webp",
+      "camera": {
+        "lat": -41.244351,
+        "lng": 147.212636,
+        "bearing": 151.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Fran Williams",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10155348533250972&set=g.467853263384639",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-07772cf117da40",
+      "title": "467127031 10228515734542113 4288339313565256299 n",
+      "description": "Coffee Palace 1940s",
+      "place": "Coffee Palace",
+      "date_display": "",
+      "year_start": 1940,
+      "year_end": 1949,
+      "image_type": "ground",
+      "image": "images/photo-07772cf117da40.webp",
+      "thumbnail": "images/photo-07772cf117da40-thumb.webp",
+      "camera": {
+        "lat": -41.249725,
+        "lng": 147.212832,
+        "bearing": 193.0
+      },
+      "subject": {
+        "lat": -41.249873,
+        "lng": 147.212798
+      },
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Helen McLean",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10209854907553101&set=g.467853263384639",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-ad6ab94b617d45",
+      "title": "468668589 10161206257913208 7323679606672140043 n",
+      "description": "Coffee Palace",
+      "place": "Coffee Palace",
+      "date_display": "1918",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-ad6ab94b617d45.webp",
+      "thumbnail": "images/photo-ad6ab94b617d45-thumb.webp",
+      "camera": {
+        "lat": -41.249703,
+        "lng": 147.212801,
+        "bearing": 191.0
+      },
+      "subject": {
+        "lat": -41.249889,
+        "lng": 147.212788
+      },
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Phillip Mahnken",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo.php?fbid=10154789411433208&set=p.10154789411433208&type=3",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
     }
   ]
 }
