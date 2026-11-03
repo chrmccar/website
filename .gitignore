@@ -1,0 +1,9 @@
+# Private working collections belong outside the public checkout.
+/LOCAL_COLLECTION.json
+/photo-assets/
+/photo-originals/
+/UPLOAD-TO-GITHUB/
+/Tasmania-Through-Time/
+/private-photo-manager/
+__pycache__/
+*.pyc

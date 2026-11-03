@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#101719">
+  <meta name="theme-color" content="#0b1014">
   <meta name="description" content="Explore Tasmania through historical photographs, mapped to the places they were taken.">
   <title>Tasmania Through Time — Historical Photograph Atlas</title>
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-gl.css">
@@ -13,7 +13,7 @@
   <main class="atlas">
     <div id="map" role="application" aria-label="Map of historical Tasmanian photographs"></div>
     <header class="masthead">
-      <div class="identity"><span class="identity-symbol" aria-hidden="true">✳</span><div><h1>Tasmania <span>Through Time</span></h1><p>A photographic atlas</p></div></div>
+      <div class="identity"><a class="home-link" href="/" aria-label="Return to homepage">home</a><span class="identity-symbol" aria-hidden="true">✳</span><div><h1>Tasmania <span>Through Time</span></h1><p>A photographic atlas</p></div></div>
       <button id="about-button" class="header-icon" title="About this project" aria-label="About this project" type="button">ⓘ</button>
     </header>
     <div class="map-tools" role="group" aria-label="Photograph controls">
@@ -22,7 +22,7 @@
     </div>
     <div id="empty-state" class="empty-state" hidden><div class="empty-mark">⌁</div><h2>No photographs here yet</h2><p>This collection is starting small. More places and moments will appear as photographs are added.</p></div>
     <div id="error-state" class="error-state" hidden role="alert"></div>
-    <aside id="photo-panel" class="photo-panel" aria-label="Photograph details" aria-hidden="true">
+    <aside id="photo-panel" class="photo-panel" aria-label="Photograph details" aria-hidden="true" inert>
       <div class="panel-handle" aria-hidden="true"></div>
       <div class="panel-top"><span class="eyebrow">FROM THE COLLECTION</span><button id="close-panel" class="close-panel" type="button" aria-label="Close photograph">×</button></div>
       <div class="panel-inner">
@@ -36,6 +36,12 @@
     </aside>
     <div id="about-modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="about-title"><button id="close-about" class="modal-close" aria-label="Close about" type="button">×</button><div class="eyebrow">ABOUT THE PROJECT</div><h2 id="about-title">Tasmania Through Time</h2><p>A small, independently curated photographic atlas exploring Tasmania's past, one place at a time.</p><p>Markers indicate an original camera position where known, or the location depicted by the photograph. Arrows indicate estimated viewing directions, not exact photograph footprints.</p><div class="legend"><span><i class="dot known"></i> Camera location</span><span><i class="dot estimated"></i> Estimated position</span><span><i class="dot subject"></i> Depicted place</span></div><p>Each photograph includes its own source and attribution information.</p><p class="modal-signoff">A personal project by Christopher McCarthy.</p></div></div>
   </main>
-  <script type="module" src="./app.js"></script>
+  <script type="module">
+    import('./app.js').catch(() => {
+      const error = document.getElementById('error-state');
+      error.textContent = 'The map could not start. Check your internet connection, enable WebGL in your browser, and reload.';
+      error.hidden = false;
+    });
+  </script>
 </body>
 </html>

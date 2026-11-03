@@ -4,11 +4,11 @@ const $ = id => document.getElementById(id);
 const mapError = $('error-state');
 const ui = { panel: $('photo-panel'), filter: $('era-filter'), empty: $('empty-state'), count: $('photo-count') };
 let allPhotos = [], visiblePhotos = [], groups = [], selectedId = null;
-let markers = [];
+let markers = [], lastMarker = null;
 
 const map = new maplibregl.Map({
   container: 'map',
-  style: 'https://tiles.openfreemap.org/styles/positron',
+  style: 'https://tiles.openfreemap.org/styles/dark',
   center: [146.55, -42.05], zoom: 6.2,
   minZoom: 4.4, maxZoom: 18,
   attributionControl: false,
@@ -30,7 +30,7 @@ map.on('load', () => {
 
 function coords(photo) {
   const c = photo.camera || photo.subject;
-  return c && Number.isFinite(+c.lat) && Number.isFinite(+c.lng) ? [+c.lng, +c.lat] : null;
+  return c && Number.isFinite(c.lat) && Number.isFinite(c.lng) && Math.abs(c.lat)<=90 && Math.abs(c.lng)<=180 ? [c.lng, c.lat] : null;
 }
 function markerType(photo) {
   return photo.camera ? (photo.location_accuracy === 'known' ? 'known' : 'estimated') : 'subject';
@@ -62,6 +62,7 @@ function makeMarker(group) {
   const index = group.photos.findIndex(p=>p.id === selectedId);
   const chosen = group.photos[Math.max(0,index)];
   const el = document.createElement('button');
+  el.dataset.lng=group.coord[0];
   el.type = 'button'; el.className = `photo-marker ${markerType(chosen)}${index>=0?' active':''}`;
   el.setAttribute('aria-label',group.photos.length===1 ? `View ${chosen.title}` : `View ${group.photos.length} photographs at this location`);
   const arrow = document.createElement('span'); arrow.className = 'bearing-arrow';
@@ -71,6 +72,7 @@ function makeMarker(group) {
   el.append(arrow,pin);
   if (group.photos.length > 1){ const badge=document.createElement('span'); badge.className='pin-count';badge.textContent=group.photos.length;el.append(badge); }
   el.addEventListener('click', () => {
+    lastMarker = el;
     if (index >= 0 && group.photos.length > 1) selectPhoto(group.photos[(index+1)%group.photos.length].id);
     else selectPhoto(group.photos[0].id);
   });
@@ -132,7 +134,8 @@ function selectPhoto(id) {
   const p=visiblePhotos.find(item=>item.id===id);
   if(!p)return;
   selectedId=id;renderPhoto(p);
-  ui.panel.classList.add('open');ui.panel.setAttribute('aria-hidden','false');
+  ui.panel.inert=false;ui.panel.classList.add('open');ui.panel.setAttribute('aria-hidden','false');
+  $('close-panel').focus({preventScroll:true});
   updateMarkers();
   const c=coords(p);
   if(c){
@@ -140,7 +143,7 @@ function selectPhoto(id) {
     map.easeTo({center:c,zoom:Math.max(map.getZoom(),mobile?8:8.5),padding:mobile?{bottom:230,top:65,left:20,right:20}:{top:60,bottom:20,left:20,right:Math.min(450,window.innerWidth*.43)},duration:400});
   }
 }
-function closePanel(){selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');updateMarkers();map.easeTo({padding:{top:0,bottom:0,left:0,right:0},duration:200});}
+function closePanel(){const restore=!!selectedId;selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');ui.panel.inert=true;updateMarkers();if(restore){const marker=markers.find(m=>m.getLngLat().lng===Number(lastMarker?.dataset.lng));(marker?.getElement()||document.querySelector('.photo-marker')||$('about-button')).focus({preventScroll:true});}map.easeTo({padding:{top:0,bottom:0,left:0,right:0},duration:200});}
 function stepPhoto(direction){
   if(!visiblePhotos.length)return;
   const idx=Math.max(0,visiblePhotos.findIndex(p=>p.id===selectedId));
@@ -152,11 +155,13 @@ $('next-photo').addEventListener('click',()=>stepPhoto(1));
 ui.filter.addEventListener('change',updateFilter);
 const about=$('about-modal');
 $('about-button').addEventListener('click',()=>{about.hidden=false;$('close-about').focus();});
-$('close-about').addEventListener('click',()=>about.hidden=true);
-about.addEventListener('click',ev=>{if(ev.target===about)about.hidden=true;});
+function closeAbout(){about.hidden=true;$('about-button').focus();}
+$('close-about').addEventListener('click',closeAbout);
+about.addEventListener('click',ev=>{if(ev.target===about)closeAbout();});
 document.addEventListener('keydown',ev=>{
-  if(ev.key==='Escape'){if(!about.hidden)about.hidden=true;else closePanel();}
-  if(!about.hidden || !selectedId)return;
+  if(ev.key==='Escape'){if(!about.hidden)closeAbout();else closePanel();}
+  if(!about.hidden){if(ev.key==='Tab'){ev.preventDefault();$('close-about').focus();}return;}
+  if(!selectedId)return;
   if(ev.key==='ArrowRight')stepPhoto(1);
   if(ev.key==='ArrowLeft')stepPhoto(-1);
 });
@@ -166,7 +171,8 @@ async function loadPhotos(){
     if(!res.ok)throw new Error(`HTTP ${res.status}`);
     const data=await res.json();
     if(!Array.isArray(data.photos))throw new Error('Invalid photo catalogue');
-    allPhotos=data.photos.filter(p=>p.published && (p.camera || p.subject) && p.image && p.id);
+    allPhotos=data.photos.filter(p=>p.published && p.rights?.reviewed && coords(p) && p.image && p.id);
+    document.querySelector('.filter').hidden = allPhotos.length < 2;
     updateFilter();
   } catch(err){
     ui.empty.hidden=true;
