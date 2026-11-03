@@ -2,30 +2,414 @@
   "version": 1,
   "photos": [
     {
-      "id": "photo-240e4473500f4c",
-      "title": "Lilydale Druids Hall in the Weekly Courier. (April 13, 1927)",
-      "description": "Lilydale Druids Hall in the Weekly Courier. (April 13, 1927)",
-      "place": "Lilydale Druids Hall",
-      "date_display": "1927",
-      "year_start": 1927,
-      "year_end": 1927,
+      "id": "photo-59670a88e63b4a",
+      "title": "467650881 10233715453964746 3049493404061836671 n",
+      "description": "",
+      "place": "",
+      "date_display": "2017",
+      "year_start": null,
+      "year_end": null,
       "image_type": "ground",
-      "image": "images/photo-240e4473500f4c.webp",
-      "thumbnail": "images/photo-240e4473500f4c-thumb.webp",
+      "image": "images/photo-59670a88e63b4a.webp",
+      "thumbnail": "images/photo-59670a88e63b4a-thumb.webp",
       "camera": {
-        "lat": -41.252006,
-        "lng": 147.21638,
-        "bearing": 259.0
+        "lat": -41.226724,
+        "lng": 147.142231,
+        "bearing": 358.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Suzanne Griffin",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo?fbid=10213082443712385&set=pcb.771167083053254",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-87754c9b7cae46",
+      "title": "Early game of football",
+      "description": "I wonder about what year? Clearly see church, convent school & looks like Walter Kostuik’s building, which to my recollection he didn’t build until ??? mid 1950’s, in background.",
+      "place": "Karoola oval",
+      "date_display": "",
+      "year_start": 1950,
+      "year_end": 1959,
+      "image_type": "ground",
+      "image": "images/photo-87754c9b7cae46.webp",
+      "thumbnail": "images/photo-87754c9b7cae46-thumb.webp",
+      "camera": {
+        "lat": -41.255281,
+        "lng": 147.148,
+        "bearing": 239.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Robert Chick",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10219055507171564&set=gm.1759372324232720",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-896075e56cb246",
+      "title": "161279323 10159394054970972 2675092566853074196 n",
+      "description": "Today Heritage Lilydale group set off on an adventure to the Appleshed at Lalla. Many of us remembered it as the Apple packing shed for the Walkers, some will remember it being used as the local hall for church fairs, dances and the trend setting Lalla market, a first for its time! It’s now a gallery for Shelly MacLeod’s beautiful art and doll’s houses.",
+      "place": "Appleshed at Lalla",
+      "date_display": "2021",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-896075e56cb246.webp",
+      "thumbnail": "images/photo-896075e56cb246-thumb.webp",
+      "camera": {
+        "lat": -41.259539,
+        "lng": 147.179403,
+        "bearing": 41.0
       },
       "subject": {
-        "lat": -41.2521,
-        "lng": 147.215996
+        "lat": -41.259417,
+        "lng": 147.179534
+      },
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Fran Williams",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo?fbid=10159394054965972&set=pcb.1738162113020408",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-5f41c3734c5946",
+      "title": "Orchard country at Karoola September 1920",
+      "description": "This orchard is Mascot in the early 1920s on Pipers River Road. This house, on the right, burnt down in 1926. I was brought up here and still live there. This photo seems to be taken from the property opposite and opposite Nicholls Road. The trees, at this stage, had been in 10+ years.",
+      "place": "",
+      "date_display": "1920",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-5f41c3734c5946.webp",
+      "thumbnail": "images/photo-5f41c3734c5946-thumb.webp",
+      "camera": {
+        "lat": -41.259946,
+        "lng": 147.143885,
+        "bearing": 102.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=23877500921837954&set=gm.2853487458154529&idorvanity=467853263384639",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-9d247b0c71fb4c",
+      "title": "39950272 10156045641853208 219893430677929984 n",
+      "description": "Attached a photo of the 1948 anniversary that came from (aunt) Ria McCarthy.",
+      "place": "Sacred Heart Church Karoola",
+      "date_display": "1948",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-9d247b0c71fb4c.webp",
+      "thumbnail": "images/photo-9d247b0c71fb4c-thumb.webp",
+      "camera": {
+        "lat": -41.259191,
+        "lng": 147.143928,
+        "bearing": 271.0
+      },
+      "subject": {
+        "lat": -41.259079,
+        "lng": 147.142946
+      },
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Ria McCarthy",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10156045641843208&set=gm.997285313774762",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-c98095b49b2d42",
+      "title": "Mt. Arthur from Karoola",
+      "description": "An old Post Card of Mt. Arthur from Karoola.",
+      "place": "Karoola",
+      "date_display": "",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-c98095b49b2d42.webp",
+      "thumbnail": "images/photo-c98095b49b2d42-thumb.webp",
+      "camera": {
+        "lat": -41.257258,
+        "lng": 147.140029,
+        "bearing": 105.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo?fbid=10158786776605972&set=pcb.1542567809246507",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-e7dc346eea434a",
+      "title": "LILYDALE AND MT ARTHUR TAS 1301 SPURLING",
+      "description": "",
+      "place": "Lilydale",
+      "date_display": "1909",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-e7dc346eea434a.webp",
+      "thumbnail": "images/photo-e7dc346eea434a-thumb.webp",
+      "camera": {
+        "lat": -41.246255,
+        "lng": 147.204517,
+        "bearing": 116.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Spurling",
+        "source": "Weekly Courier",
+        "source_url": "",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-e6e9f547724447",
+      "title": "MOUNT ARTHUR AS SEEN FROM LILYDALE",
+      "description": "Photo from the Tasmanian Mail dated 1912. Photo includes Railway Station.",
+      "place": "Lilydale",
+      "date_display": "1912",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-e6e9f547724447.webp",
+      "thumbnail": "images/photo-e6e9f547724447-thumb.webp",
+      "camera": {
+        "lat": -41.245844,
+        "lng": 147.20961,
+        "bearing": 119.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Spurling",
+        "source": "Tasmanian Mail",
+        "source_url": "",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-1ecf8cd3577b4a",
+      "title": "855561871 10163662210723014 4805116052373229581 n",
+      "description": "",
+      "place": "",
+      "date_display": "2016",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-1ecf8cd3577b4a.webp",
+      "thumbnail": "images/photo-1ecf8cd3577b4a-thumb.webp",
+      "camera": {
+        "lat": -41.249942,
+        "lng": 147.214446,
+        "bearing": 191.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Katherine Hawes",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10153681759843014&set=g.467853263384639",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-a3c4e24216ad4a",
+      "title": "STATION ROAD LILYDALE TAS 7.",
+      "description": "",
+      "place": "Station Road, From Railway Crossing",
+      "date_display": "",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-a3c4e24216ad4a.webp",
+      "thumbnail": "images/photo-a3c4e24216ad4a-thumb.webp",
+      "camera": {
+        "lat": -41.249626,
+        "lng": 147.212457,
+        "bearing": 110.0
+      },
+      "subject": null,
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo/?fbid=10154278150685972&set=g.467853263384639",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-d1d6417deb4d4a",
+      "title": "Lilydale Council Chambers in Tasmania - 1909",
+      "description": "Lilydale Council Chambers",
+      "place": "Lilydale",
+      "date_display": "1909",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-d1d6417deb4d4a.webp",
+      "thumbnail": "images/photo-d1d6417deb4d4a-thumb.webp",
+      "camera": {
+        "lat": -41.252232,
+        "lng": 147.216235,
+        "bearing": 240.0
+      },
+      "subject": {
+        "lat": -41.252301,
+        "lng": 147.216083
       },
       "location_accuracy": "estimated",
       "rights": {
         "creator": "",
-        "source": "",
-        "source_url": "",
+        "source": "flicker",
+        "source_url": "https://www.flickr.com/photos/hwmobs/9799122884/in/album-72157681591452516",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-99d121f5505146",
+      "title": "14432583922 fab1642b04 o",
+      "description": "Brand new Suburban Car on test on the North East line with a B class 4-4-0 locomotive, at Karoola. Spurling photo",
+      "place": "Karoola Station",
+      "date_display": "1907",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-99d121f5505146.webp",
+      "thumbnail": "images/photo-99d121f5505146-thumb.webp",
+      "camera": {
+        "lat": -41.269434,
+        "lng": 147.16592,
+        "bearing": 99.0
+      },
+      "subject": {
+        "lat": -41.269506,
+        "lng": 147.166645
+      },
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Spurling",
+        "source": "flickr",
+        "source_url": "https://www.flickr.com/photos/29903115@N06/14432583922/in/photolist-2imHtBV-a3vMfF-7MQff9-7MQf5b-2imHNAM-sxgRr5-7MLg3x-2imLhh7-7ed4Gw-2khKpNa-pXDS8v-25MGJDL-dmN459-2imMsqC-7MQf9N-2imMsBe-7ed2eU-7MQf7G-7MQf2d-2khFbBV-2imHNAm-5PZMTk-7edt7S-dPCpnr-dPJ25W-7e9qqc-7edqiu-dPJ1mY-7e9xS2-bF4uFp-65BQ4Q-7e9zxF-7e9eGH-dPo5rg-7a8Me7-7edjR3-2rZEr3s-dPJ2rE-2imHRRe-7e9eND-nZmLnQ-7edpF7-7e98zV-dPtHFb-7e9sAK-7ed4bW-dPJ2xs-7e9vyx-7e9bBB-7e9dDp",
+        "archive_id": "",
+        "status": "other",
+        "licence_url": "",
+        "statement": "",
+        "notes": "",
+        "reviewed": true
+      },
+      "published": true
+    },
+    {
+      "id": "photo-5078153dd2de4e",
+      "title": "468295937 10160806312843014 6882784470893645007 n",
+      "description": "",
+      "place": "Lalla Station",
+      "date_display": "",
+      "year_start": null,
+      "year_end": null,
+      "image_type": "ground",
+      "image": "images/photo-5078153dd2de4e.webp",
+      "thumbnail": "images/photo-5078153dd2de4e-thumb.webp",
+      "camera": {
+        "lat": -41.258045,
+        "lng": 147.180181,
+        "bearing": 292.0
+      },
+      "subject": {
+        "lat": -41.258008,
+        "lng": 147.17959
+      },
+      "location_accuracy": "estimated",
+      "rights": {
+        "creator": "Katherine Hawes",
+        "source": "Facebook Group: Heritage Lilydale",
+        "source_url": "https://www.facebook.com/photo?fbid=10154096461348014&set=g.467853263384639",
         "archive_id": "",
         "status": "other",
         "licence_url": "",
