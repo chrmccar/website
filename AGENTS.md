@@ -17,6 +17,8 @@ Use this checkout; cloud tasks are isolated, so do not create worktrees unless r
 - Use safe DOM text APIs and accessible controls. Test public paths, JSON/image integrity,
   draft exclusion and empty collection behaviour. Exercise browser map rendering when
   network access permits; do not call a map working from HTTP status alone.
+- After map JS/CSS changes, run `python3 tools/update_asset_versions.py` so cached
+  assets cannot break newly deployed markup.
 - Run `python3 -m unittest discover -s tests -v` and the JavaScript syntax check in README.
   Explain which changes and checks succeeded and what remains unverified. Publish or
   merge only within the user's authorised scope; never silently rewrite history.

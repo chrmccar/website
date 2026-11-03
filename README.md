@@ -51,6 +51,9 @@ From the repository root, run `python3 -m http.server 8000 --bind 127.0.0.1`.
 The root serves the homepage and `/tasmania-through-time/` serves the map.
 MapLibre and OpenFreeMap need internet access; the editor is a separate local-only tool.
 
+After changing map JavaScript or CSS, run `python3 tools/update_asset_versions.py`.
+This updates asset URLs so browsers load the matching version after deployment.
+
 Checks:
 
 ```sh
@@ -58,6 +61,7 @@ python3 -m unittest discover -s tests -v
 node --check --input-type=module < tasmania-through-time/app.js
 # Optional browser integration test (Playwright + Chromium, server on port 8000):
 python3 tests/browser_timeline.py
+python3 tests/browser_cached_upgrade.py
 ```
 
 See `PROJECT.md` for project boundaries and `AUDIT.md` for the corrected layout and

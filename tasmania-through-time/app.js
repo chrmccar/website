@@ -19,12 +19,13 @@ map.addControl(new maplibregl.AttributionControl({compact:true}), 'bottom-right'
 map.on('error', err => {
   const msg = String(err?.error?.message || '');
   if (/style|failed to fetch/i.test(msg)) {
+    mapError.dataset.source = 'map';
     mapError.textContent = 'Map tiles could not load. Check your internet connection and reload the page.';
     mapError.hidden = false;
   }
 });
 map.on('load', () => {
-  mapError.hidden = true;
+  if (mapError.dataset.source === 'map') mapError.hidden = true;
   map.fitBounds([[143.45,-44.25],[149.1,-39.05]],{padding:{top:25,bottom:50,left:25,right:25},duration:0,maxZoom:7});
 });
 
@@ -198,6 +199,7 @@ async function loadPhotos(){
     updateFilter();
   } catch(err){
     ui.empty.hidden=true;
+    mapError.dataset.source='catalogue';
     mapError.textContent='Could not open the photograph catalogue. Reload or check photos.json.';
     mapError.hidden=false;
     console.error('Photo catalogue:',err);

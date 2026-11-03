@@ -1,5 +1,6 @@
 """Run with python3 -m unittest discover -s tests -v. No packages required."""
 import json
+import hashlib
 from pathlib import Path
 import re
 import unittest
@@ -44,6 +45,15 @@ class PublicSiteTests(unittest.TestCase):
         self.assertFalse((ROOT / '01-024.jpg').exists())
         for name in ('LOCAL_COLLECTION.json', 'photo-assets', 'photo-originals', 'editor.html', 'photo_manager.py'):
             self.assertFalse((ROOT / name).exists())
+
+    def test_asset_urls_match_current_contents(self):
+        # HTML must request fresh assets when code changes: older cached scripts
+        # can reference removed controls and prevent the catalogue from loading.
+        html = (SITE / 'index.html').read_text()
+        for name in ('app.js', 'style.css'):
+            version = hashlib.sha256((SITE / name).read_bytes()).hexdigest()[:12]
+            self.assertIn(f'./{name}?v={version}', html,
+                          'Run python3 tools/update_asset_versions.py after editing map assets')
 
     def test_map_entrypoints_exist(self):
         html = (SITE / 'index.html').read_text()
