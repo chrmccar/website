@@ -1,0 +1,16 @@
+PHOTO MANAGER SCROLL FIX — FOR YOUR EXISTING WORKING FOLDER
+
+1. Close the Photo Manager browser tab and its terminal window.
+2. Extract Photo-Manager-Scroll-Fix.zip into a temporary folder (Downloads is fine).
+3. Copy editor.css and editor.html from that extracted folder.
+4. Paste both files into your EXISTING Tasmania-Photo-Manager working folder,
+   where START-WINDOWS.bat, photo_manager.py and LOCAL_COLLECTION.json are.
+5. Choose Replace the files in the destination.
+6. Open START-WINDOWS.bat again (or START-MAC.command on Mac).
+
+The photo list on the left now scrolls inside its own panel. Hover over the list
+and use your mouse wheel. The map stays in place. The form has its own scroll too.
+
+This update contains only the interface files. It does NOT contain a catalogue,
+photographs, originals, or drafts. Do not replace your working folder with a fresh
+starter download; keep your existing folder and replace ONLY these two files.

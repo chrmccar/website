@@ -1,5 +1,6 @@
 """The public starter must contain no private data and preserve the existing photo."""
 import importlib.util
+import hashlib
 import io
 import json
 from pathlib import Path
@@ -30,6 +31,14 @@ class PhotoManagerDownloadTests(unittest.TestCase):
                 self.assertNotIn('photo-originals', name)
             mode = z.getinfo(PREFIX+'START-MAC.command').external_attr >> 16
             self.assertTrue(mode & 0o100)
+
+    def test_scroll_update_contains_only_matching_interface_files(self):
+        with zipfile.ZipFile(ROOT/'downloads/Photo-Manager-Scroll-Fix.zip') as z:
+            self.assertEqual(set(z.namelist()), {'editor.html','editor.css','SCROLL-UPDATE.txt'})
+            for name in z.namelist():
+                self.assertEqual(z.read(name), (ROOT/'tools/photo-manager'/name).read_bytes())
+            version=hashlib.sha256(z.read('editor.css')).hexdigest()[:12]
+            self.assertIn(f'./editor.css?v={version}',z.read('editor.html').decode())
 
     def test_first_launch_seeds_public_collection_and_never_replaces_existing(self):
         with tempfile.TemporaryDirectory() as d:

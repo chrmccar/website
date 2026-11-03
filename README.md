@@ -9,6 +9,15 @@ appears to its left. Move the slider all the way left to return to **All time**.
 Approximate photo date ranges match overlapping years; undated photographs appear
 only in All time.
 
+## Update an existing Photo Manager
+
+For the fixed-size photo list and independent panel scrolling, download the
+[interface-only scroll fix](https://github.com/chrmccar/website/raw/refs/heads/main/downloads/Photo-Manager-Scroll-Fix.zip).
+Close the manager, extract the ZIP, and copy **editor.html** and **editor.css** into
+your existing working Photo Manager folder, replacing those two files. Restart it.
+This update contains no photographs or catalogue. Keep your current working folder;
+do not replace it with a new starter download. Hover over the photo list to scroll it.
+
 ## Add photographs to the map
 
 Download the [Photo Manager ZIP](https://github.com/chrmccar/website/raw/refs/heads/main/downloads/Tasmania-Photo-Manager.zip) and extract it on your computer.
@@ -65,6 +74,7 @@ node --check --input-type=module < tasmania-through-time/app.js
 python3 tests/browser_timeline.py
 python3 tests/browser_cached_upgrade.py
 python3 tests/browser_markers.py
+python3 tests/browser_editor_layout.py
 ```
 
 See `PROJECT.md` for project boundaries and `AUDIT.md` for the corrected layout and

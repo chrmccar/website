@@ -32,3 +32,8 @@ records are public. Keep originals and all existing catalogue entries losslessly
 Validate case-sensitive routes, homepage animation/navigation, published images, empty
 state, mobile/keyboard behaviour and draft exclusion. See README.md for running and
 publishing. Keep changes small and report actual tests and deployment status accurately.
+
+The desktop Photo Manager must fit within the viewport as the collection grows.
+Its photo list and form scroll independently; scrolling either must not move the map
+or hide the save controls. Existing installations receive interface-only updates that
+never replace working catalogues or images.
