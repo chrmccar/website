@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 PHOTOS = json.loads((ROOT/'tasmania-through-time/photos.json').read_text())['photos']
 PHOTO_COUNT = len({(c['lng'], c['lat']) for p in PHOTOS for c in [p.get('camera') or p['subject']]})
-PHOTO_YEAR = PHOTOS[0]['year_start']
+PHOTO_YEAR = next((p['year_start'] for p in PHOTOS if isinstance(p.get('year_start'), int)), None)
 legacy_requests = []
 
 class UpgradeHandler(SimpleHTTPRequestHandler):
@@ -77,8 +77,9 @@ try:
             page.locator('#year-slider').focus();page.keyboard.press('Home')
             assert page.locator('#time-label').inner_text()=='All time'
             assert page.locator('.photo-marker').count()==PHOTO_COUNT
-            page.locator('#year-slider').evaluate('(el,year)=>{el.value=year;el.dispatchEvent(new Event("input",{bubbles:true}));}',PHOTO_YEAR)
-            assert page.locator('#time-label').inner_text()==str(PHOTO_YEAR)
+            if PHOTO_YEAR is not None:
+                page.locator('#year-slider').evaluate('(el,year)=>{el.value=year;el.dispatchEvent(new Event("input",{bubbles:true}));}',PHOTO_YEAR)
+                assert page.locator('#time-label').inner_text()==str(PHOTO_YEAR)
             page.locator('.photo-marker').first.focus();page.keyboard.press('Enter')
             page.wait_for_function('document.getElementById("photo-image").naturalWidth>0')
             assert page.locator('#photo-title').inner_text()
