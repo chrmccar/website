@@ -6,7 +6,7 @@ MapLibre GL JS and OpenFreeMap. No accounts, public uploads, backend or paid API
 
 Preserve the homepage's animated forest. Its palette is `#0b1014`, `#dbe4d6`, `#a3b3a7`,
 `#6f8078` and `#ecd24a`, with the JetBrains Mono/Fira Code/Menlo/Consolas monospace stack.
-Keep the map understated, dark, responsive and consistent with those values.
+Keep the map understated and responsive, with a light OpenFreeMap Positron basemap for legibility and the existing dark header/photo details. A year slider starts at All time; single-year steps and an optional year-range mode filter photographs by overlapping date intervals. Undated photographs appear only in All time.
 
 Public files live only in the lowercase root `tasmania-through-time/`. Clicking a marker
 opens a photograph, date, location confidence and source/rights details. Preserve the

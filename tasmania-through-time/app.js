@@ -2,13 +2,13 @@ import * as maplibregl from 'https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-
 
 const $ = id => document.getElementById(id);
 const mapError = $('error-state');
-const ui = { panel: $('photo-panel'), filter: $('era-filter'), empty: $('empty-state'), count: $('photo-count') };
+const ui = { panel: $('photo-panel'), empty: $('empty-state'), count: $('photo-count') };
 let allPhotos = [], visiblePhotos = [], groups = [], selectedId = null;
 let markers = [], lastMarker = null;
 
 const map = new maplibregl.Map({
   container: 'map',
-  style: 'https://tiles.openfreemap.org/styles/dark',
+  style: 'https://tiles.openfreemap.org/styles/positron',
   center: [146.55, -42.05], zoom: 6.2,
   minZoom: 4.4, maxZoom: 18,
   attributionControl: false,
@@ -25,7 +25,7 @@ map.on('error', err => {
 });
 map.on('load', () => {
   mapError.hidden = true;
-  map.fitBounds([[143.45,-44.25],[149.1,-39.05]],{padding:{top:125,bottom:50,left:25,right:25},duration:0,maxZoom:7});
+  map.fitBounds([[143.45,-44.25],[149.1,-39.05]],{padding:{top:document.querySelector('.timeline').getBoundingClientRect().bottom+15,bottom:50,left:25,right:25},duration:0,maxZoom:7});
 });
 
 function coords(photo) {
@@ -35,18 +35,74 @@ function coords(photo) {
 function markerType(photo) {
   return photo.camera ? (photo.location_accuracy === 'known' ? 'known' : 'estimated') : 'subject';
 }
-function isInEra(photo, era) {
-  if (era === 'all') return true;
-  const a = Number.isFinite(photo.year_start) ? photo.year_start : null;
-  const b = Number.isFinite(photo.year_end) ? photo.year_end : a;
-  if (era === 'undated') return a === null;
-  if (a === null) return false;
-  if (era === 'pre1900') return a < 1900;
-  if (era === '1900-1949') return a <= 1949 && b >= 1900;
-  if (era === '1950-1999') return a <= 1999 && b >= 1950;
-  if (era === '2000plus') return b >= 2000;
-  return true;
+const yearSlider = $('year-slider'), endYearSlider = $('end-year-slider');
+const rangeMode = $('range-mode');
+let firstYear = 1800, lastYear = new Date().getFullYear();
+function photoYears(photo) {
+  const start = Number.isInteger(photo.year_start) ? photo.year_start : photo.year_end;
+  const end = Number.isInteger(photo.year_end) ? photo.year_end : start;
+  return Number.isInteger(start) && Number.isInteger(end) ? [Math.min(start,end), Math.max(start,end)] : null;
 }
+function matchesTime(photo) {
+  const year = Number(yearSlider.value);
+  if (!rangeMode.checked && year === firstYear - 1) return true;
+  const years = photoYears(photo);
+  const end = rangeMode.checked ? Number(endYearSlider.value) : year;
+  // A photograph with an uncertain date interval matches any overlapping year.
+  return years !== null && years[0] <= end && years[1] >= year;
+}
+function setupTimeline() {
+  const years = allPhotos.flatMap(photo => photoYears(photo) || []);
+  firstYear = Math.min(1800, ...years);
+  lastYear = Math.max(new Date().getFullYear(), ...years);
+  yearSlider.min = firstYear - 1;
+  yearSlider.max = lastYear;
+  yearSlider.value = firstYear - 1;
+  endYearSlider.min = firstYear;
+  endYearSlider.max = lastYear;
+  endYearSlider.value = lastYear;
+  yearSlider.disabled = endYearSlider.disabled = false;
+  $('time-end').textContent = lastYear;
+}
+function updateTimeControls() {
+  const year = Number(yearSlider.value), end = Number(endYearSlider.value);
+  const all = !rangeMode.checked && year === firstYear - 1;
+  const label = all ? 'All time' : rangeMode.checked ? `${year}–${end}` : `${year}`;
+  $('time-label').textContent = label;
+  yearSlider.setAttribute('aria-valuetext', all ? 'All time' : `${year}`);
+  endYearSlider.setAttribute('aria-valuetext', `${end}`);
+  $('end-year-row').hidden = !rangeMode.checked;
+  $('year-label').textContent = rangeMode.checked ? 'From' : 'Year';
+  $('time-start').textContent = rangeMode.checked ? `${firstYear}` : `All time · ${firstYear}`;
+  $('all-time').disabled = all;
+}
+function changeTime(event) {
+  if (rangeMode.checked && Number(yearSlider.value) > Number(endYearSlider.value)) {
+    if (event.target === endYearSlider) yearSlider.value = endYearSlider.value;
+    else endYearSlider.value = yearSlider.value;
+  }
+  updateTimeControls();
+  updateFilter();
+}
+yearSlider.addEventListener('input', changeTime);
+endYearSlider.addEventListener('input', changeTime);
+rangeMode.addEventListener('change', event => {
+  const wasAll = Number(yearSlider.value) === firstYear - 1;
+  yearSlider.min = rangeMode.checked ? firstYear : firstYear - 1;
+  if (rangeMode.checked && wasAll) yearSlider.value = firstYear;
+  if (rangeMode.checked) endYearSlider.value = Math.max(Number(yearSlider.value),Number(endYearSlider.value));
+  changeTime(event);
+});
+new ResizeObserver(() => {
+  document.querySelector('.atlas').style.setProperty('--timeline-bottom', `${document.querySelector('.timeline').offsetTop + document.querySelector('.timeline').offsetHeight}px`);
+}).observe(document.querySelector('.timeline'));
+$('all-time').addEventListener('click', () => {
+  rangeMode.checked = false;
+  yearSlider.min = firstYear - 1;
+  yearSlider.value = firstYear - 1;
+  updateTimeControls();
+  updateFilter();
+});
 function groupPhotos(photos) {
   const buckets = new Map();
   for (const p of photos) {
@@ -84,10 +140,13 @@ function updateMarkers() {
   groups.forEach(g => markers.push(makeMarker(g)));
 }
 function updateFilter() {
-  visiblePhotos=allPhotos.filter(p=>isInEra(p,ui.filter.value));
+  visiblePhotos=allPhotos.filter(matchesTime);
   ui.count.textContent = `${visiblePhotos.length} photograph${visiblePhotos.length===1?'':'s'}`;
   ui.empty.hidden = visiblePhotos.length > 0;
-  if (selectedId && !visiblePhotos.some(p=>p.id===selectedId)) closePanel();
+  ui.empty.querySelector('h2').textContent = allPhotos.length ? 'No photographs for these years' : 'No photographs here yet';
+  ui.empty.querySelector('p').textContent = allPhotos.length ? 'Try another year, select a range, or choose All time to see the whole collection.' : 'This collection is starting small. More places and moments will appear as photographs are added.';
+  if (selectedId && !visiblePhotos.some(p=>p.id===selectedId)) closePanel(false);
+  else if (selectedId) renderPhoto(visiblePhotos.find(p=>p.id===selectedId));
   updateMarkers();
 }
 function put(id,value){ $(id).textContent=value || ''; }
@@ -140,10 +199,10 @@ function selectPhoto(id) {
   const c=coords(p);
   if(c){
     const mobile=window.matchMedia('(max-width:700px)').matches;
-    map.easeTo({center:c,zoom:Math.max(map.getZoom(),mobile?8:8.5),padding:mobile?{bottom:230,top:65,left:20,right:20}:{top:60,bottom:20,left:20,right:Math.min(450,window.innerWidth*.43)},duration:400});
+    map.easeTo({center:c,zoom:Math.max(map.getZoom(),mobile?8:8.5),padding:mobile?{bottom:Math.min(window.innerHeight*.65,680)+12,top:document.querySelector('.timeline').getBoundingClientRect().bottom+15,left:20,right:20}:{top:190,bottom:20,left:20,right:Math.min(450,window.innerWidth*.43)},duration:400});
   }
 }
-function closePanel(){const restore=!!selectedId;selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');ui.panel.inert=true;updateMarkers();if(restore){const marker=markers.find(m=>m.getLngLat().lng===Number(lastMarker?.dataset.lng));(marker?.getElement()||document.querySelector('.photo-marker')||$('about-button')).focus({preventScroll:true});}map.easeTo({padding:{top:0,bottom:0,left:0,right:0},duration:200});}
+function closePanel(restoreFocus=true){const restore=!!selectedId && restoreFocus;selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');ui.panel.inert=true;updateMarkers();if(restore){const marker=markers.find(m=>m.getLngLat().lng===Number(lastMarker?.dataset.lng));(marker?.getElement()||document.querySelector('.photo-marker')||$('about-button')).focus({preventScroll:true});}map.easeTo({padding:{top:0,bottom:0,left:0,right:0},duration:200});}
 function stepPhoto(direction){
   if(!visiblePhotos.length)return;
   const idx=Math.max(0,visiblePhotos.findIndex(p=>p.id===selectedId));
@@ -152,7 +211,6 @@ function stepPhoto(direction){
 $('close-panel').addEventListener('click',closePanel);
 $('prev-photo').addEventListener('click',()=>stepPhoto(-1));
 $('next-photo').addEventListener('click',()=>stepPhoto(1));
-ui.filter.addEventListener('change',updateFilter);
 const about=$('about-modal');
 $('about-button').addEventListener('click',()=>{about.hidden=false;$('close-about').focus();});
 function closeAbout(){about.hidden=true;$('about-button').focus();}
@@ -161,7 +219,7 @@ about.addEventListener('click',ev=>{if(ev.target===about)closeAbout();});
 document.addEventListener('keydown',ev=>{
   if(ev.key==='Escape'){if(!about.hidden)closeAbout();else closePanel();}
   if(!about.hidden){if(ev.key==='Tab'){ev.preventDefault();$('close-about').focus();}return;}
-  if(!selectedId)return;
+  if(!selectedId || ev.target.matches('input, select, textarea, button'))return;
   if(ev.key==='ArrowRight')stepPhoto(1);
   if(ev.key==='ArrowLeft')stepPhoto(-1);
 });
@@ -172,7 +230,8 @@ async function loadPhotos(){
     const data=await res.json();
     if(!Array.isArray(data.photos))throw new Error('Invalid photo catalogue');
     allPhotos=data.photos.filter(p=>p.published && p.rights?.reviewed && coords(p) && p.image && p.id);
-    document.querySelector('.filter').hidden = allPhotos.length < 2;
+    setupTimeline();
+    updateTimeControls();
     updateFilter();
   } catch(err){
     ui.empty.hidden=true;

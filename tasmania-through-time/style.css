@@ -16,3 +16,24 @@ a{color:var(--text)}.home-link{font-size:11px;text-decoration:none;margin-right:
 button:focus-visible,select:focus-visible,a:focus-visible{outline-color:var(--accent)}
 [hidden]{display:none!important}
 @media(max-width:700px){.identity{gap:6px}.identity h1{font-size:12px}.home-link{font-size:10px;margin-right:2px}}
+
+/* A light basemap, with the existing dark header and photo details retained. */
+.timeline{position:absolute;z-index:2;top:82px;left:20px;right:70px;max-width:1000px;padding:12px 16px 9px;background:#fffffff2;color:#26332f;border:1px solid #c9d1cd;border-radius:8px;box-shadow:0 2px 12px #0b10141a;font-size:12px}
+.timeline-heading{display:flex;align-items:center;gap:16px;margin-bottom:5px;min-height:28px}
+#time-label{font-weight:600;min-width:92px;font-size:14px;font-variant-numeric:tabular-nums}
+.timeline .photo-count{background:transparent;color:#4b6057;padding:0;border:0}
+.range-option{display:flex;gap:6px;align-items:center;margin-left:auto;white-space:nowrap;cursor:pointer}
+.range-option input{accent-color:#335f50;width:16px;height:16px}
+#all-time{background:#edf1ee;color:#26332f;border:1px solid #aebeb6;border-radius:4px;padding:4px 8px;white-space:nowrap;font:inherit}
+#all-time:disabled{opacity:.55;cursor:default}
+.year-row{display:flex;gap:10px;align-items:center;min-height:28px}
+.year-row label{width:34px;flex-shrink:0}
+.year-row input{flex:1;width:0;min-width:0;accent-color:#335f50;cursor:pointer;height:24px;margin:0}
+.timeline-scale{display:flex;justify-content:space-between;margin-left:44px;font-size:10px;color:#536a5e}
+#time-hint{font-size:10px;color:#536a5e;margin:5px 0 0}
+.timeline :focus-visible{outline:2px solid #335f50;outline-offset:3px}
+.photo-marker.estimated .pin{background:#e7bb21;border:2px solid #3a483f;box-shadow:0 0 0 1px #fff}
+.photo-marker .pin{background:#335f50;border-color:white}.photo-marker.subject .pin{background:white;border-color:#335f50}
+@media(max-width:700px){.timeline{top:72px;left:10px;right:10px;padding:8px 10px}.timeline-heading{gap:8px;flex-wrap:wrap}#time-label{font-size:12px;min-width:74px}.timeline .photo-count{font-size:9px}.range-option,#all-time{font-size:10px}.maplibregl-ctrl-top-right{top:235px;right:6px}.timeline-scale,#time-hint{font-size:9px}}
+
+@media(max-width:700px){.maplibregl-ctrl-top-right{top:calc(var(--timeline-bottom,220px) + 10px)}}

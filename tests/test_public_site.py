@@ -51,7 +51,7 @@ class PublicSiteTests(unittest.TestCase):
             self.assertIn('./' + name, html)
             self.assertTrue((SITE / name).is_file())
         self.assertIn('href="/"', html)
-        self.assertIn('/styles/dark', (SITE / 'app.js').read_text())
+        self.assertIn('/styles/positron', (SITE / 'app.js').read_text())
 
 if __name__ == '__main__':
     unittest.main()

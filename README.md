@@ -4,6 +4,10 @@ The homepage is `index.html`. The photo map is at
 [christophermccarthy.au/tasmania-through-time/](https://christophermccarthy.au/tasmania-through-time/).
 The site uses plain HTML, CSS and JavaScript; no build or package installation is required.
 
+The timeline starts at **All time**. Drag the slider to select a year, or tick **Year range**
+to choose From and To years (inclusive). **All time** resets it. Approximate photo date
+ranges match overlapping years; undated photographs appear only in All time.
+
 ## Add photographs to the map
 
 Use the **private Tasmania Photo Manager** download supplied with the website update.
@@ -51,6 +55,8 @@ Checks:
 ```sh
 python3 -m unittest discover -s tests -v
 node --check --input-type=module < tasmania-through-time/app.js
+# Optional browser integration test (Playwright + Chromium, server on port 8000):
+python3 tests/browser_timeline.py
 ```
 
 See `PROJECT.md` for project boundaries and `AUDIT.md` for the corrected layout and
