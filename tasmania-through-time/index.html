@@ -7,7 +7,7 @@
   <meta name="description" content="Explore Tasmania through historical photographs, mapped to the places they were taken.">
   <title>Tasmania Through Time — Historical Photograph Atlas</title>
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="./style.css?v=bcd041f0528f">
+  <link rel="stylesheet" href="./style.css?v=ae05bef669b5">
 </head>
 <body>
   <main class="atlas">
@@ -34,10 +34,10 @@
       </div>
       <div class="panel-bottom"><span id="photo-position"></span><div class="panel-arrows"><button id="prev-photo" aria-label="Previous photograph" type="button">←</button><button id="next-photo" aria-label="Next photograph" type="button">→</button></div></div>
     </aside>
-    <div id="about-modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="about-title"><button id="close-about" class="modal-close" aria-label="Close about" type="button">×</button><div class="eyebrow">ABOUT THE PROJECT</div><h2 id="about-title">Tasmania Through Time</h2><p>A small, independently curated photographic atlas exploring Tasmania's past, one place at a time.</p><p>Markers indicate an original camera position where known, or the location depicted by the photograph. Arrows indicate estimated viewing directions, not exact photograph footprints.</p><div class="legend"><span><i class="dot known"></i> Camera location</span><span><i class="dot estimated"></i> Estimated position</span><span><i class="dot subject"></i> Depicted place</span></div><p>Each photograph includes its own source and attribution information.</p><p class="modal-signoff">A personal project by Christopher McCarthy.</p></div></div>
+    <div id="about-modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="about-title"><button id="close-about" class="modal-close" aria-label="Close about" type="button">×</button><div class="eyebrow">ABOUT THE PROJECT</div><h2 id="about-title">Tasmania Through Time</h2><p>A small, independently curated photographic atlas exploring Tasmania's past, one place at a time.</p><p>Markers indicate an original camera position where known, or the location depicted by the photograph. Location confidence and any known viewing direction are shown in the photograph details.</p><p>Each photograph includes its own source and attribution information.</p><p class="modal-signoff">A personal project by Christopher McCarthy.</p></div></div>
   </main>
   <script type="module">
-    import('./app.js?v=e14094b066aa').catch(() => {
+    import('./app.js?v=d8d56c96b401').catch(() => {
       const error = document.getElementById('error-state');
       error.dataset.source = 'startup';
       error.textContent = 'The map could not start. Check your internet connection, enable WebGL in your browser, and reload.';

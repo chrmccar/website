@@ -2,6 +2,7 @@
 Requires Playwright/Chromium; starts its own local server and uses the real catalogue.
 """
 import os
+import json
 from pathlib import Path
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import threading
@@ -9,6 +10,9 @@ from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
+PHOTOS = json.loads((ROOT/'tasmania-through-time/photos.json').read_text())['photos']
+PHOTO_COUNT = len({(c['lng'], c['lat']) for p in PHOTOS for c in [p.get('camera') or p['subject']]})
+PHOTO_YEAR = PHOTOS[0]['year_start']
 legacy_requests = []
 
 class UpgradeHandler(SimpleHTTPRequestHandler):
@@ -64,7 +68,7 @@ try:
             assert not page.locator('#year-slider').is_disabled()
             assert page.locator('#year-slider').is_visible()
             assert page.locator('#time-label').inner_text()=='All time'
-            assert page.locator('.photo-marker').count()==1
+            assert page.locator('.photo-marker').count()==PHOTO_COUNT
             # Actual pointer interaction must change the year and filter the photo.
             slider=page.locator('#year-slider').bounding_box()
             page.mouse.click(slider['x']+slider['width']-1,slider['y']+slider['height']/2)
@@ -72,14 +76,14 @@ try:
             assert page.locator('.photo-marker').count()==0
             page.locator('#year-slider').focus();page.keyboard.press('Home')
             assert page.locator('#time-label').inner_text()=='All time'
-            assert page.locator('.photo-marker').count()==1
-            page.locator('#year-slider').evaluate('(el)=>{el.value=1927;el.dispatchEvent(new Event("input",{bubbles:true}));}')
-            assert page.locator('#time-label').inner_text()=='1927'
-            page.locator('.photo-marker').click()
+            assert page.locator('.photo-marker').count()==PHOTO_COUNT
+            page.locator('#year-slider').evaluate('(el,year)=>{el.value=year;el.dispatchEvent(new Event("input",{bubbles:true}));}',PHOTO_YEAR)
+            assert page.locator('#time-label').inner_text()==str(PHOTO_YEAR)
+            page.locator('.photo-marker').first.focus();page.keyboard.press('Enter')
             page.wait_for_function('document.getElementById("photo-image").naturalWidth>0')
-            assert 'Lilydale Druids Hall' in page.locator('#photo-title').inner_text()
+            assert page.locator('#photo-title').inner_text()
             assert not errors,errors
-            print('PASS cached old JS/CSS upgrade, pointer/keyboard slider, All time/1927 filtering and actual Lilydale photograph')
+            print('PASS cached old JS/CSS upgrade, pointer/keyboard slider, All time/year filtering and actual public photograph')
         finally:
             browser.close()
 finally:

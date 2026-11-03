@@ -33,9 +33,6 @@ function coords(photo) {
   const c = photo.camera || photo.subject;
   return c && Number.isFinite(c.lat) && Number.isFinite(c.lng) && Math.abs(c.lat)<=90 && Math.abs(c.lng)<=180 ? [c.lng, c.lat] : null;
 }
-function markerType(photo) {
-  return photo.camera ? (photo.location_accuracy === 'known' ? 'known' : 'estimated') : 'subject';
-}
 const yearSlider = $('year-slider');
 let firstYear = 1800, lastYear = new Date().getFullYear();
 function photoYears(photo) {
@@ -74,7 +71,7 @@ function groupPhotos(photos) {
   for (const p of photos) {
     const loc = coords(p);
     if (!loc) continue;
-    const key = loc.map(n=>n.toFixed(5)).join(':');
+    const key = loc.join(':');
     if (!buckets.has(key)) buckets.set(key, {coord:loc,photos:[]});
     buckets.get(key).photos.push(p);
   }
@@ -85,20 +82,17 @@ function makeMarker(group) {
   const chosen = group.photos[Math.max(0,index)];
   const el = document.createElement('button');
   el.dataset.lng=group.coord[0];
-  el.type = 'button'; el.className = `photo-marker ${markerType(chosen)}${index>=0?' active':''}`;
+  el.type = 'button'; el.className = 'photo-marker';
+  el.setAttribute('aria-pressed', String(index >= 0));
   el.setAttribute('aria-label',group.photos.length===1 ? `View ${chosen.title}` : `View ${group.photos.length} photographs at this location`);
-  const arrow = document.createElement('span'); arrow.className = 'bearing-arrow';
-  if (index >= 0 && Number.isFinite(chosen.camera?.bearing)) arrow.style.transform = `rotate(${chosen.camera.bearing}deg)`;
-  else arrow.style.display='none';
   const pin = document.createElement('span'); pin.className='pin';
-  el.append(arrow,pin);
-  if (group.photos.length > 1){ const badge=document.createElement('span'); badge.className='pin-count';badge.textContent=group.photos.length;el.append(badge); }
+  el.append(pin);
   el.addEventListener('click', () => {
     lastMarker = el;
     if (index >= 0 && group.photos.length > 1) selectPhoto(group.photos[(index+1)%group.photos.length].id);
     else selectPhoto(group.photos[0].id);
   });
-  return new maplibregl.Marker({element:el,anchor:'center'}).setLngLat(group.coord).addTo(map);
+  return new maplibregl.Marker({element:el,anchor:'center',subpixelPositioning:true}).setLngLat(group.coord).addTo(map);
 }
 function updateMarkers() {
   markers.forEach(marker => marker.remove()); markers=[];
@@ -160,13 +154,9 @@ function selectPhoto(id) {
   ui.panel.inert=false;ui.panel.classList.add('open');ui.panel.setAttribute('aria-hidden','false');
   $('close-panel').focus({preventScroll:true});
   updateMarkers();
-  const c=coords(p);
-  if(c){
-    const mobile=window.matchMedia('(max-width:700px)').matches;
-    map.easeTo({center:c,zoom:Math.max(map.getZoom(),mobile?8:8.5),padding:mobile?{bottom:Math.min(window.innerHeight*.65,680)+12,top:25,left:20,right:20}:{top:25,bottom:20,left:20,right:Math.min(450,window.innerWidth*.43)},duration:400});
-  }
+
 }
-function closePanel(restoreFocus=true){const restore=!!selectedId && restoreFocus;selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');ui.panel.inert=true;updateMarkers();if(restore){const marker=markers.find(m=>m.getLngLat().lng===Number(lastMarker?.dataset.lng));(marker?.getElement()||document.querySelector('.photo-marker')||$('about-button')).focus({preventScroll:true});}map.easeTo({padding:{top:0,bottom:0,left:0,right:0},duration:200});}
+function closePanel(restoreFocus=true){const restore=!!selectedId && restoreFocus;selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');ui.panel.inert=true;updateMarkers();if(restore){const marker=markers.find(m=>m.getLngLat().lng===Number(lastMarker?.dataset.lng));(marker?.getElement()||document.querySelector('.photo-marker')||$('about-button')).focus({preventScroll:true});}}
 function stepPhoto(direction){
   if(!visiblePhotos.length)return;
   const idx=Math.max(0,visiblePhotos.findIndex(p=>p.id===selectedId));

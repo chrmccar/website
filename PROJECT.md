@@ -9,7 +9,9 @@ Preserve the homepage's animated forest. Its palette is `#0b1014`, `#dbe4d6`, `#
 Keep the map understated and responsive, with a light OpenFreeMap Positron basemap for legibility and the existing dark header/photo details. The minimal header contains home, a year display, a single year slider and the existing information button, without branding or subtitles. The slider starts at All time (far left); single-year steps filter photographs by overlapping date intervals. There is no year-range mode or floating timeline panel. Undated photographs appear only in All time.
 
 Public files live only in the lowercase root `tasmania-through-time/`. Clicking a marker
-opens a photograph, date, location confidence and source/rights details. Preserve the
+opens a photograph, date, location confidence and source/rights details without changing
+the map centre or zoom. Use identical solid dots at exact stored coordinates; marker
+containers must stay absolutely positioned so they never stack or drift when zooming. Preserve the
 `photos.json` contract: `{ "version": 1, "photos": [...] }`, permanent IDs, optional dates,
 optional camera/bearing and subject coordinates, rights review and publication flag.
 Do not invent dates, geography, bearings or attribution. A subject location is not a known

@@ -64,6 +64,7 @@ node --check --input-type=module < tasmania-through-time/app.js
 # Optional browser integration test (Playwright + Chromium, server on port 8000):
 python3 tests/browser_timeline.py
 python3 tests/browser_cached_upgrade.py
+python3 tests/browser_markers.py
 ```
 
 See `PROJECT.md` for project boundaries and `AUDIT.md` for the corrected layout and
