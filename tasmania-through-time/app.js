@@ -2,7 +2,7 @@ import * as maplibregl from 'https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-
 
 const $ = id => document.getElementById(id);
 const mapError = $('error-state');
-const ui = { panel: $('photo-panel'), empty: $('empty-state'), count: $('photo-count') };
+const ui = { panel: $('photo-panel'), empty: $('empty-state') };
 let allPhotos = [], visiblePhotos = [], groups = [], selectedId = null;
 let markers = [], lastMarker = null;
 
@@ -25,7 +25,7 @@ map.on('error', err => {
 });
 map.on('load', () => {
   mapError.hidden = true;
-  map.fitBounds([[143.45,-44.25],[149.1,-39.05]],{padding:{top:document.querySelector('.timeline').getBoundingClientRect().bottom+15,bottom:50,left:25,right:25},duration:0,maxZoom:7});
+  map.fitBounds([[143.45,-44.25],[149.1,-39.05]],{padding:{top:25,bottom:50,left:25,right:25},duration:0,maxZoom:7});
 });
 
 function coords(photo) {
@@ -35,8 +35,7 @@ function coords(photo) {
 function markerType(photo) {
   return photo.camera ? (photo.location_accuracy === 'known' ? 'known' : 'estimated') : 'subject';
 }
-const yearSlider = $('year-slider'), endYearSlider = $('end-year-slider');
-const rangeMode = $('range-mode');
+const yearSlider = $('year-slider');
 let firstYear = 1800, lastYear = new Date().getFullYear();
 function photoYears(photo) {
   const start = Number.isInteger(photo.year_start) ? photo.year_start : photo.year_end;
@@ -45,11 +44,10 @@ function photoYears(photo) {
 }
 function matchesTime(photo) {
   const year = Number(yearSlider.value);
-  if (!rangeMode.checked && year === firstYear - 1) return true;
+  if (year === firstYear - 1) return true;
   const years = photoYears(photo);
-  const end = rangeMode.checked ? Number(endYearSlider.value) : year;
   // A photograph with an uncertain date interval matches any overlapping year.
-  return years !== null && years[0] <= end && years[1] >= year;
+  return years !== null && years[0] <= year && years[1] >= year;
 }
 function setupTimeline() {
   const years = allPhotos.flatMap(photo => photoYears(photo) || []);
@@ -58,48 +56,15 @@ function setupTimeline() {
   yearSlider.min = firstYear - 1;
   yearSlider.max = lastYear;
   yearSlider.value = firstYear - 1;
-  endYearSlider.min = firstYear;
-  endYearSlider.max = lastYear;
-  endYearSlider.value = lastYear;
-  yearSlider.disabled = endYearSlider.disabled = false;
-  $('time-end').textContent = lastYear;
+  yearSlider.disabled = false;
 }
 function updateTimeControls() {
-  const year = Number(yearSlider.value), end = Number(endYearSlider.value);
-  const all = !rangeMode.checked && year === firstYear - 1;
-  const label = all ? 'All time' : rangeMode.checked ? `${year}–${end}` : `${year}`;
+  const year = Number(yearSlider.value);
+  const label = year === firstYear - 1 ? 'All time' : `${year}`;
   $('time-label').textContent = label;
-  yearSlider.setAttribute('aria-valuetext', all ? 'All time' : `${year}`);
-  endYearSlider.setAttribute('aria-valuetext', `${end}`);
-  $('end-year-row').hidden = !rangeMode.checked;
-  $('year-label').textContent = rangeMode.checked ? 'From' : 'Year';
-  $('time-start').textContent = rangeMode.checked ? `${firstYear}` : `All time · ${firstYear}`;
-  $('all-time').disabled = all;
+  yearSlider.setAttribute('aria-valuetext', label);
 }
-function changeTime(event) {
-  if (rangeMode.checked && Number(yearSlider.value) > Number(endYearSlider.value)) {
-    if (event.target === endYearSlider) yearSlider.value = endYearSlider.value;
-    else endYearSlider.value = yearSlider.value;
-  }
-  updateTimeControls();
-  updateFilter();
-}
-yearSlider.addEventListener('input', changeTime);
-endYearSlider.addEventListener('input', changeTime);
-rangeMode.addEventListener('change', event => {
-  const wasAll = Number(yearSlider.value) === firstYear - 1;
-  yearSlider.min = rangeMode.checked ? firstYear : firstYear - 1;
-  if (rangeMode.checked && wasAll) yearSlider.value = firstYear;
-  if (rangeMode.checked) endYearSlider.value = Math.max(Number(yearSlider.value),Number(endYearSlider.value));
-  changeTime(event);
-});
-new ResizeObserver(() => {
-  document.querySelector('.atlas').style.setProperty('--timeline-bottom', `${document.querySelector('.timeline').offsetTop + document.querySelector('.timeline').offsetHeight}px`);
-}).observe(document.querySelector('.timeline'));
-$('all-time').addEventListener('click', () => {
-  rangeMode.checked = false;
-  yearSlider.min = firstYear - 1;
-  yearSlider.value = firstYear - 1;
+yearSlider.addEventListener('input', () => {
   updateTimeControls();
   updateFilter();
 });
@@ -141,10 +106,8 @@ function updateMarkers() {
 }
 function updateFilter() {
   visiblePhotos=allPhotos.filter(matchesTime);
-  ui.count.textContent = `${visiblePhotos.length} photograph${visiblePhotos.length===1?'':'s'}`;
   ui.empty.hidden = visiblePhotos.length > 0;
-  ui.empty.querySelector('h2').textContent = allPhotos.length ? 'No photographs for these years' : 'No photographs here yet';
-  ui.empty.querySelector('p').textContent = allPhotos.length ? 'Try another year, select a range, or choose All time to see the whole collection.' : 'This collection is starting small. More places and moments will appear as photographs are added.';
+  ui.empty.textContent = allPhotos.length ? 'No photographs for this year.' : 'No photographs here yet.';
   if (selectedId && !visiblePhotos.some(p=>p.id===selectedId)) closePanel(false);
   else if (selectedId) renderPhoto(visiblePhotos.find(p=>p.id===selectedId));
   updateMarkers();
@@ -199,7 +162,7 @@ function selectPhoto(id) {
   const c=coords(p);
   if(c){
     const mobile=window.matchMedia('(max-width:700px)').matches;
-    map.easeTo({center:c,zoom:Math.max(map.getZoom(),mobile?8:8.5),padding:mobile?{bottom:Math.min(window.innerHeight*.65,680)+12,top:document.querySelector('.timeline').getBoundingClientRect().bottom+15,left:20,right:20}:{top:190,bottom:20,left:20,right:Math.min(450,window.innerWidth*.43)},duration:400});
+    map.easeTo({center:c,zoom:Math.max(map.getZoom(),mobile?8:8.5),padding:mobile?{bottom:Math.min(window.innerHeight*.65,680)+12,top:25,left:20,right:20}:{top:25,bottom:20,left:20,right:Math.min(450,window.innerWidth*.43)},duration:400});
   }
 }
 function closePanel(restoreFocus=true){const restore=!!selectedId && restoreFocus;selectedId=null;ui.panel.classList.remove('open');ui.panel.setAttribute('aria-hidden','true');ui.panel.inert=true;updateMarkers();if(restore){const marker=markers.find(m=>m.getLngLat().lng===Number(lastMarker?.dataset.lng));(marker?.getElement()||document.querySelector('.photo-marker')||$('about-button')).focus({preventScroll:true});}map.easeTo({padding:{top:0,bottom:0,left:0,right:0},duration:200});}

@@ -13,28 +13,14 @@
   <main class="atlas">
     <div id="map" role="application" aria-label="Map of historical Tasmanian photographs"></div>
     <header class="masthead">
-      <div class="identity"><a class="home-link" href="/" aria-label="Return to homepage">home</a><span class="identity-symbol" aria-hidden="true">✳</span><div><h1>Tasmania <span>Through Time</span></h1><p>A photographic atlas</p></div></div>
+      <a class="home-link" href="/" aria-label="Return to homepage">home</a>
+      <div class="header-timeline">
+        <output id="time-label" for="year-slider" aria-live="polite">All time</output>
+        <input id="year-slider" type="range" min="1799" max="2026" step="1" value="1799" aria-label="Photograph year" aria-valuetext="All time" title="Slide to select a year; far left shows all time" disabled>
+      </div>
       <button id="about-button" class="header-icon" title="About this project" aria-label="About this project" type="button">ⓘ</button>
     </header>
-    <section class="timeline" aria-label="Filter photographs by year">
-      <div class="timeline-heading">
-        <output id="time-label" for="year-slider end-year-slider" aria-live="polite">All time</output>
-        <span id="photo-count" class="photo-count" aria-live="polite"></span>
-        <label class="range-option"><input id="range-mode" type="checkbox"> Year range</label>
-        <button id="all-time" type="button">All time</button>
-      </div>
-      <div class="year-row">
-        <label id="year-label" for="year-slider">Year</label>
-        <input id="year-slider" type="range" min="1799" max="2026" step="1" value="1799" aria-valuetext="All time" disabled>
-      </div>
-      <div id="end-year-row" class="year-row" hidden>
-        <label for="end-year-slider">To</label>
-        <input id="end-year-slider" type="range" min="1800" max="2026" step="1" value="2026" disabled>
-      </div>
-      <div class="timeline-scale"><span id="time-start">All time · 1800</span><span id="time-end"></span></div>
-      <p id="time-hint">Move one step per year. Undated photographs appear in All time.</p>
-    </section>
-    <div id="empty-state" class="empty-state" hidden><div class="empty-mark">⌁</div><h2>No photographs here yet</h2><p>This collection is starting small. More places and moments will appear as photographs are added.</p></div>
+    <p id="empty-state" class="empty-state" hidden role="status">No photographs here yet.</p>
     <div id="error-state" class="error-state" hidden role="alert"></div>
     <aside id="photo-panel" class="photo-panel" aria-label="Photograph details" aria-hidden="true" inert>
       <div class="panel-handle" aria-hidden="true"></div>

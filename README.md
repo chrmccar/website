@@ -4,9 +4,10 @@ The homepage is `index.html`. The photo map is at
 [christophermccarthy.au/tasmania-through-time/](https://christophermccarthy.au/tasmania-through-time/).
 The site uses plain HTML, CSS and JavaScript; no build or package installation is required.
 
-The timeline starts at **All time**. Drag the slider to select a year, or tick **Year range**
-to choose From and To years (inclusive). **All time** resets it. Approximate photo date
-ranges match overlapping years; undated photographs appear only in All time.
+The header slider starts at **All time**. Drag it to select a single year; the year
+appears to its left. Move the slider all the way left to return to **All time**.
+Approximate photo date ranges match overlapping years; undated photographs appear
+only in All time.
 
 ## Add photographs to the map
 
