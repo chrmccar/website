@@ -11,7 +11,9 @@ only in All time.
 
 ## Add photographs to the map
 
-Use the **private Tasmania Photo Manager** download supplied with the website update.
+Download the [Photo Manager ZIP](https://github.com/chrmccar/website/raw/refs/heads/main/downloads/Tasmania-Photo-Manager.zip) and extract it on your computer.
+The starter includes only the already-public collection; it creates your private working
+catalogue on first launch.
 Keep that whole folder on your computer, ideally in your private Google Drive folder.
 Do not upload the manager folder to GitHub.
 
@@ -66,3 +68,7 @@ python3 tests/browser_cached_upgrade.py
 
 See `PROJECT.md` for project boundaries and `AUDIT.md` for the corrected layout and
 historical private-file exposure. `CNAME` must remain unchanged.
+
+The public starter download is built with `python3 tools/build_photo_manager_download.py`.
+Rebuild it after changes to editor source, map templates, or the public catalogue. It reads
+only the generic editor source and public site files, never private working folders.

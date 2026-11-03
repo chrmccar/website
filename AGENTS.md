@@ -8,8 +8,9 @@ Use this checkout; cloud tasks are isolated, so do not create worktrees unless r
 - Match the homepage palette and monospace typography. Keep plain static HTML/CSS/JS;
   avoid frameworks, accounts, backends or paid services without a concrete need.
 - Never commit private catalogues, drafts, originals, private editor working folders,
-  Drive snapshots or backups. Keep private tooling outside the checkout. Do not assume
-  Drive access. Targeted ignores are a guard, not a substitute for checking tracked files.
+  Drive snapshots or backups. Keep private working folders outside the checkout. Generic editor source and a
+  public-only starter ZIP may be distributed under tools/ and downloads/; never
+  include private catalogues or assets. Do not assume Drive access. Targeted ignores are a guard, not a substitute for checking tracked files.
 - Do not delete or overwrite photos/catalogue entries without authorisation and a
   verified lossless copy outside the public tree. No force pushes or history rewriting.
 - Only reviewed, approved photos with valid camera/subject locations may be exported.

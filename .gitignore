@@ -7,3 +7,9 @@
 /private-photo-manager/
 __pycache__/
 *.pyc
+
+# Generic manager source is public; generated working data is not.
+/tools/photo-manager/LOCAL_COLLECTION.json
+/tools/photo-manager/photo-assets/
+/tools/photo-manager/photo-originals/
+/tools/photo-manager/tasmania-through-time/

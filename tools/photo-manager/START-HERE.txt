@@ -1,0 +1,36 @@
+TASMANIA PHOTO MANAGER
+
+1. Extract the entire ZIP first. Do not run the launcher inside the ZIP.
+2. Windows: open START-WINDOWS.bat. Mac: open START-MAC.command.
+   If Python is missing, install Python 3 from https://www.python.org/downloads/.
+   On Windows, tick Add Python to PATH in the installer.
+   If macOS blocks the launcher, open Terminal, type bash followed by a space,
+   drag START-MAC.command into Terminal and press Return.
+3. Your photo editor opens in a browser. Keep the terminal window open.
+   If it does not open automatically, visit http://127.0.0.1:8765/editor.html.
+4. Click Add photograph, choose an image, enter its title and year, and mark its
+   camera or subject location. Complete the rights details and confirmation.
+5. Tick Show on public map when approved, then click Save photograph.
+   Untick Show on public map to keep a private draft.
+6. Click Download website update. Extract the downloaded website-update.zip.
+7. Open https://github.com/chrmccar/website on the main branch.
+   Click Add file > Upload files. Drag in ONLY the tasmania-through-time folder
+   from the extracted website update. Click Commit changes.
+8. Wait for deployment, then refresh https://christophermccarthy.au/tasmania-through-time/.
+
+This starter includes only the collection already published on the website, with its
+public image derivatives. It contains no private originals or drafts. On first launch,
+it creates your private working catalogue and image folder on your computer.
+
+Keep your whole working folder somewhere private, such as your Google Drive folder.
+Never upload the whole Photo Manager folder or LOCAL_COLLECTION.json to GitHub.
+Only upload the exported website update. Saving locally does not update the live site.
+Downloads update photograph data only, preserving the current website design.
+
+For two computers, copy/sync your existing working folder rather than starting another
+collection from this starter. Close the manager and wait for Drive to finish syncing
+before opening it on the other computer. Keep occasional backups of the whole folder.
+
+Deleting/unpublishing removes a map marker after you upload an update. Older public
+image files and Git history can remain accessible; request a separate cleanup to withdraw
+previously published files. Your private originals are never included in website exports.
