@@ -71,7 +71,11 @@ async function start(){
       {id:'unavailable',type:'fill',source:'mask',paint:{'fill-color':'#999f9d','fill-opacity':1}}
     ]}});
   map.addControl(new maplibregl.NavigationControl());
-  map.on('error',event=>{if(!/abort/i.test(String(event.error?.message)))fail(event.error||'Terrain could not load');});
+  map.on('error',event=>{
+    const missing=String(event.error?.url||'').match(/tiles\/(\d+)\/(\d+)\/(\d+)\.png/);
+    if(event.error?.status===404&&missing&&!Object.hasOwn(manifest.tiles,missing.slice(1).join('/')))return;
+    if(!/abort/i.test(String(event.error?.message)))fail(event.error||'Terrain could not load');
+  });
   map.on('load',()=>{map.setTerrain({source:'terrain',exaggeration:1});});
   map.on('click',event=>{
     if(!hasCoverage(event.lngLat.lng,event.lngLat.lat)){$('coverage-status').textContent='No elevation data at this location.';return;}

@@ -23,6 +23,10 @@ conda activate tasmania-terrain
 python -m pip install -r tools/terrain/requirements.txt
 ```
 
+The multiline commands below use POSIX `\` continuation. On Windows PowerShell or
+Anaconda Prompt, put each command on a single line and remove those continuation
+backslashes. Quoted paths may use forward slashes on both systems.
+
 The current Linux machine already provides GDAL 3.10.3, NumPy 2.2.4 and Pillow 11.1.0
 through `/usr/bin/python3`. PMTiles 3.8.1 was installed separately under
 `/workspace/terrain-work/vendor`; validation here used

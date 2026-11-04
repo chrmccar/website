@@ -44,8 +44,9 @@ Timing is one machine/run, not a performance guarantee or cross-platform benchma
 
 The local test server returned **206**, `Content-Range: bytes 0-126/1700806`, exactly 127
 header bytes, `Access-Control-Allow-Origin: *`, and no content encoding. The browser
-successfully switched between local PNG and PMTiles terrain. This proves the local
-server/library path only. It does **not** establish GitHub Pages range/CORS readiness.
+successfully switched between local PNG and PMTiles terrain. The host probe also correctly rejected an ordinary static server that ignored Range
+and returned HTTP 200, stopping after 128 bytes instead of downloading its full archive.
+This proves the local server/library path only. It does **not** establish GitHub Pages range/CORS readiness.
 
 ## Hosting decision and sizing limits
 
@@ -110,3 +111,11 @@ camera/subject coordinates, require explicit acceptance before applying a match,
 undo and retain confidence/source/landmark evidence. Confirm pitch/FOV/height conventions
 on real terrain before exporting approved poses. Stage 2 requires measured statewide
 storage and boundary/coverage tests; Stage 3 landmark assistance/public 3D remains later.
+
+## Review delivery
+
+The code and report are saved on `terrain/stage-0-pilot`, with no merge or deployment.
+Git push succeeded. Creating a draft pull request through the available GitHub CLI
+failed with HTTP 403 at the GraphQL API; no token was requested or extracted. The
+branch remains reviewable through GitHub's compare view. This API limitation does not
+prevent continuing local work once the official data hosts become accessible.
