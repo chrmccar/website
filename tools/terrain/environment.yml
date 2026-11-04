@@ -1,0 +1,11 @@
+name: tasmania-terrain
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - gdal=3.10
+  - numpy>=1.26,<3
+  - pillow>=10,<13
+  - pip
+  - pip:
+      - pmtiles==3.8.1

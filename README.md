@@ -100,3 +100,10 @@ historical private-file exposure. `CNAME` must remain unchanged.
 The public starter download is built with `python3 tools/build_photo_manager_download.py`.
 Rebuild it after changes to editor source, map templates, or the public catalogue. It reads
 only the generic editor source and public site files, never private working folders.
+
+## Terrain prototype (review branch only)
+
+The isolated regional terrain tools and scene are described in [the pilot guide](docs/terrain-pilot.md).
+[Stage 0 results](docs/terrain-stage0-results.md) distinguish tested synthetic machinery
+from the real LIST data and hosting checks that are still blocked. This work does not
+change the existing map, Photo Manager, photo data or export workflow.

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terrain pilot — review only</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.16.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="pilot.css">
+</head>
+<body>
+<header><strong>Terrain pilot</strong><span id="dataset-status" role="status">Loading build manifest…</span><a href="../../">home</a></header>
+<main>
+ <div id="view"><div id="map" aria-label="Regional three-dimensional terrain"></div><img id="overlay" alt="Locally selected alignment photograph" hidden></div>
+ <aside>
+  <h1>Regional test scene</h1>
+  <label>Terrain delivery<select id="delivery"><option value="png">Individual PNG tiles</option><option value="pmtiles">PMTiles archive</option></select></label>
+  <p id="coverage-status">Terrain is available only inside the generated coverage. Grey areas have no elevation data.</p>
+  <p>True scale · exaggeration 1×</p>
+  <details><summary>Local photo overlay experiment</summary>
+   <p>Select an image on this computer. It is not uploaded or added to the public catalogue.</p>
+   <label>Photograph<input id="photo" type="file" accept="image/*"></label>
+   <label>Opacity<input id="opacity" type="range" min="0" max="100" value="50"><output id="opacity-value">50%</output></label>
+   <p id="image-info"></p>
+   <label>Camera longitude<input id="longitude" type="number" step="any"></label>
+   <label>Camera latitude<input id="latitude" type="number" step="any"></label>
+   <label>Camera elevation (metres, DEM datum)<input id="altitude" type="number" step="0.1" value="1600"></label>
+   <label>Bearing (clockwise from north)<input id="bearing" type="number" min="0" max="360" value="0" step="0.1"></label>
+   <label>Pitch (0° down; 90° horizontal)<input id="pitch" type="number" min="0" max="85" value="65" step="0.1"></label>
+   <label>Photo vertical field of view (degrees)<input id="fov" type="number" min="10" max="100" value="45" step="0.1"></label>
+   <button id="apply" type="button">Apply viewpoint</button><button id="reset" type="button">Reset scene</button>
+   <p>This is an unsaved pilot experiment. It never changes an existing photograph's coordinates. Camera alignment cannot be validated until the real DEM and its vertical datum are verified.</p>
+  </details>
+  <p id="error" role="alert" hidden></p>
+  <p id="measurements"></p>
+  <p id="credit"></p><a id="licence">Source licence</a>
+ </aside>
+</main>
+<script src="https://unpkg.com/pmtiles@4.3.0/dist/pmtiles.js"></script>
+<script type="module" src="pilot.js"></script>
+</body>
+</html>

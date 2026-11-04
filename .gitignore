@@ -13,3 +13,12 @@ __pycache__/
 /tools/photo-manager/photo-assets/
 /tools/photo-manager/photo-originals/
 /tools/photo-manager/tasmania-through-time/
+
+# Terrain inputs and generated datasets stay outside the public source tree.
+/pilots/terrain/data/
+/pilots/terrain/.cache/
+/terrain-work/
+*.asc
+*.prj
+*.tif
+*.tiff
