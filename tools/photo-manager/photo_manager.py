@@ -19,6 +19,12 @@ import uuid
 import webbrowser
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import unquote, urlparse
+import importlib.util
+
+# Load beside this program, including when a test imports it by absolute path.
+_alignment_spec = importlib.util.spec_from_file_location('photo_manager_alignment', Path(__file__).with_name('alignment.py'))
+alignment = importlib.util.module_from_spec(_alignment_spec)
+_alignment_spec.loader.exec_module(alignment)
 
 BASE = Path(__file__).resolve().parent
 SITE = BASE / 'tasmania-through-time'
@@ -29,6 +35,7 @@ PRIVATE_IMAGES = BASE / 'photo-assets'  # drafts stay private
 IMAGES = SITE / 'images'
 PORT = 8765
 MAX_BODY = 27 * 1024 * 1024
+MUTATION_LOCK = threading.RLock()
 
 
 def load_catalogue():
@@ -72,6 +79,8 @@ def initialise_collection():
         target = PRIVATE_IMAGES / Path(name).name
         if not target.exists():
             shutil.copy2(SITE / name, target)
+    for photo in data['photos']:
+        alignment.import_public_pose(photo, BASE)
     atomic_catalogue(data)
 
 
@@ -91,7 +100,14 @@ def public_photos(data):
                 raise ValueError('Invalid photograph image path')
             if not (PRIVATE_IMAGES / Path(name).name).is_file():
                 raise ValueError('A photograph file is missing')
-        live.append(photo)
+        public = dict(photo)
+        public.pop('alignment', None)
+        # A draft is private even when the photograph itself is already public.
+        public.pop('camera_pose', None)
+        approved_pose = alignment.public_pose(photo, BASE)
+        if approved_pose:
+            public['camera_pose'] = approved_pose
+        live.append(public)
     return live
 
 
@@ -254,7 +270,8 @@ def save_photo(obj):
         thumbnail = image_from_data(incoming_thumb, photo_id, '-thumb')
     if not image:
         raise ValueError('Select a photograph to save')
-    photo = {
+    photo = dict(existing or {})
+    photo.update({
         'id': photo_id,
         'title': title,
         'description': clean(obj.get('description'), 2500),
@@ -267,7 +284,11 @@ def save_photo(obj):
         'location_accuracy': accuracy,
         'rights': rights,
         'published': requested_publish,
-    }
+    })
+    # Invalidate any alignment window that opened before this photo edit, even
+    # when it had not saved its first draft yet (for example, an image replacement).
+    photo['alignment'] = dict(photo.get('alignment') or {})
+    photo['alignment']['revision'] = uuid.uuid4().hex
     if existing:
         items[items.index(existing)] = photo
     else:
@@ -344,7 +365,8 @@ class Handler(SimpleHTTPRequestHandler):
             return
         if path == '/api/export':
             try:
-                body = website_update()
+                with MUTATION_LOCK:
+                    body = website_update()
                 self.send_response(200)
                 self.send_header('Content-Type', 'application/zip')
                 self.send_header('Content-Disposition', 'attachment; filename="website-update.zip"')
@@ -372,8 +394,15 @@ class Handler(SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self):
+        origin = self.headers.get('Origin')
+        if origin and origin != 'http://' + self.headers.get('Host', ''):
+            return self.respond(403, {'error': 'Save from the local Photo Manager window only'})
+        with MUTATION_LOCK:
+            return self._post()
+
+    def _post(self):
         path = urlparse(self.path).path
-        if path not in ('/api/save', '/api/delete', '/api/place/save', '/api/place/delete'):
+        if path not in ('/api/save', '/api/delete', '/api/place/save', '/api/place/delete', '/api/alignment'):
             return self.respond(404, {'error':'Not found'})
         try:
             length = int(self.headers.get('Content-Length', '-1'))
@@ -382,6 +411,15 @@ class Handler(SimpleHTTPRequestHandler):
             obj = json.loads(self.rfile.read(length))
             if not isinstance(obj,dict):
                 raise ValueError('Invalid submission')
+            if path == '/api/alignment':
+                data = load_catalogue()
+                photo = alignment.update(data, obj, BASE, obj.get('action'))
+                # Lossless private snapshot before changing alignment metadata.
+                backups = BASE / 'alignment-backups'
+                backups.mkdir(exist_ok=True)
+                shutil.copy2(CATALOGUE, backups / f'{uuid.uuid4().hex}.json')
+                atomic_catalogue(data)
+                return self.respond(200, {'ok': True, 'photo': photo})
             if path == '/api/place/save':
                 return self.respond(200, {'ok': True, 'place': save_place(obj)})
             if path == '/api/place/delete':

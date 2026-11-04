@@ -1,0 +1,55 @@
+{
+  "retrieved_utc": "2026-11-04",
+  "dataset": "LIST Tasmania 25 metre Digital Elevation Model",
+  "edition": "Third edition, July 2007; official metadata revised 2025-03-12",
+  "archive_extraction_date": "2021-01-13",
+  "archives": [
+    {
+      "name": "LIST_DEM_25M_LAUNCESTON.zip",
+      "sha256": "d3846421455b9fe28f31bd57e4d5ea72eaca49f25d9508d4a29a9d888433a35b"
+    },
+    {
+      "name": "LIST_DEM_25M_DORSET.zip",
+      "sha256": "322811171fb2b49ba6eaded51391b089daf066f961408b173eda339c0f2280f3"
+    },
+    {
+      "name": "LIST_DEM_25M_GEORGE_TOWN.zip",
+      "sha256": "7298cf8a40ec6ef87da20e55d72672837251f5aee355ab74abb0e4dffda75462"
+    }
+  ],
+  "archive_bytes": {
+    "LIST_DEM_25M_LAUNCESTON.zip": 39531813,
+    "LIST_DEM_25M_DORSET.zip": 83427041,
+    "LIST_DEM_25M_GEORGE_TOWN.zip": 17784881
+  },
+  "archive_urls": {
+    "LIST_DEM_25M_LAUNCESTON.zip": "https://listdata.thelist.tas.gov.au/opendata/data/LIST_DEM_25M_LAUNCESTON.zip",
+    "LIST_DEM_25M_DORSET.zip": "https://listdata.thelist.tas.gov.au/opendata/data/LIST_DEM_25M_DORSET.zip",
+    "LIST_DEM_25M_GEORGE_TOWN.zip": "https://listdata.thelist.tas.gov.au/opendata/data/LIST_DEM_25M_GEORGE_TOWN.zip"
+  },
+  "metadata_url": "https://www.thelist.tas.gov.au/app/content/data/download?downloadType=xml&detailUID=47b71113-a99d-4a9c-82c0-ba92c8313e79",
+  "metadata_sha256": "221e683c62b656bce26879a41c16aa2416d9054e62757db4165d514849e6115a",
+  "attribution_guidelines_url": "https://listdata.thelist.tas.gov.au/public/LandTasmaniaDataAttributionGuidelines.pdf",
+  "attribution_guidelines_sha256": "28106227e48704101f468fed27061c8225e3b04f7052623d70996f9e83c447d8",
+  "horizontal_crs": "EPSG:28355 (GDA94 / MGA zone 55)",
+  "grid_spacing_m": 25,
+  "elevation_units": "metres (official metadata describes heights in metres)",
+  "vertical_datum": "Not named in package README, raster PRJ or full ISO19139 metadata. Native values retained; no vertical transform.",
+  "verified_facts": [
+    "Official download origin and SHA256 of each complete archive",
+    "Every archive ZIP CRC check",
+    "Horizontal CRS from official metadata and package README/PRJ",
+    "25 metre grid spacing from raster geotransforms",
+    "CC BY 3.0 Australia from README and official metadata",
+    "Source accuracy statement: 90% of elevations within 5 m, caveats for steep/obscured areas"
+  ],
+  "unverified": [
+    "Absolute vertical datum",
+    "Independent survey control or geoid conversion",
+    "A historical photograph’s true camera pose"
+  ],
+  "licence_url": "https://creativecommons.org/licenses/by/3.0/au/",
+  "attribution": "LIST Tasmania 25 metre Digital Elevation Model from theLIST © State of Tasmania; CC BY 3.0 AU. Reprojected and Terrarium encoded.",
+  "source_limitations": "Derived from 10 m contours, some spot heights and known-level waterbodies; drainage not used. Grid spacing is not positional accuracy. Excludes Macquarie Island.",
+  "uploaded_file_note": "The chat upload exceeds the 32 MiB transfer limit. The same named Launceston package was fetched from the official LIST origin; byte identity with the inaccessible upload is not asserted."
+}

@@ -2,14 +2,16 @@
 
 This work implements the conversion and isolated scene requested in
 [the agreed handover](LIST-25m-3d-terrain-photo-alignment-handoff.md).
-**The real LIST regional pilot is not yet validated.** Official LIST metadata/download
-access is blocked by the current cloud network policy. The working local dataset is
-explicitly synthetic, generated for tests, and excluded from Git. It is not a substitute
-for LIST elevation and must not be presented as Tasmanian topography.
+The official Launceston, Dorset and George Town packages now supply real regional
+terrain. Read [the measured results](terrain-stage0-results.md) for source verification,
+coverage, sizes and remaining limits. The ready-to-use local update includes the derived
+PNGs; the user does not need GDAL or a conversion step. Installation and use are in
+[PHOTO-ALIGNMENT-START.txt](PHOTO-ALIGNMENT-START.txt).
 
-Nothing links the pilot from the public map. The homepage, public catalogues, places,
-Photo Manager, export format and camera/subject fields are unchanged. No terrain has
-been merged to main or deployed. Work is on `terrain/stage-0-pilot` for review.
+Work remains on `terrain/stage-0-pilot` for review. No live deployment or statewide upload
+has been made. Existing public photos, places, homepage and marker behaviour are preserved.
+The private manager gains an optional separate alignment tool and optional accepted pose
+metadata; private drafts never enter the website export.
 
 ## Install tools
 
@@ -47,32 +49,36 @@ gdalinfo /private/path/to/region.asc
 python tools/terrain/build.py --help
 ```
 
-The handover specifies LIST 25 m DEM local-government packages and refers to CC BY 3.0
-Australia, but **the current download URL, coverage, CRS and vertical datum have not
-been independently retrieved in this task**. Do not copy an assumed EPSG code or datum
-into the following command. Fill them from the actual source metadata. Grid spacing is
-not a claim of survey accuracy.
+The official package README, PRJ and full metadata confirm GDA94 / MGA zone 55
+(EPSG:28355). The source grid is 25 m and nodata is -9999. The package README and full
+metadata do **not** name a vertical datum (`Zunits NO` in the PRJ). Retain the supplied
+height values; do not claim an AHD or ellipsoid transform. Source, licence and checksum
+evidence are in `docs/terrain/list-source-record.json`.
 
 ```sh
 python tools/terrain/build.py \
-  --input /private/path/to/official-region.zip \
-  --output pilots/terrain/data \
-  --bounds 147.08 -41.34 147.32 -41.16 \
-  --min-zoom 10 --max-zoom 12 \
-  --kind list --elevation-units metres \
-  --vertical-datum 'REPLACE WITH VERIFIED SOURCE DATUM' \
-  --source-url 'REPLACE WITH EXACT OFFICIAL DOWNLOAD URL' \
-  --licence-url 'REPLACE WITH VERIFIED LICENCE URL' \
-  --attribution 'REPLACE WITH REQUIRED LIST ATTRIBUTION'
+  --input /private/path/LIST_DEM_25M_LAUNCESTON.zip /private/path/LIST_DEM_25M_DORSET.zip /private/path/LIST_DEM_25M_GEORGE_TOWN.zip \
+  --output /private/path/lilydale-terrain \
+  --bounds 147.05 -41.36 147.4 -41.08 --min-zoom 10 --max-zoom 12 \
+  --source-crs EPSG:28355 --kind list --elevation-units metres \
+  --vertical-datum 'Supplied LIST heights; vertical datum not stated in supplied metadata' \
+  --source-url https://listdata.thelist.tas.gov.au/opendata/data/LIST_DEM_25M_LAUNCESTON.zip \
+  --licence-url https://creativecommons.org/licenses/by/3.0/au/ \
+  --attribution 'LIST Tasmania 25 metre Digital Elevation Model from theLIST © State of Tasmania; CC BY 3.0 AU. Reprojected and Terrarium encoded.' \
+  --source-record docs/terrain/list-source-record.json
+python tools/terrain/package_update.py --data /private/path/lilydale-terrain
 ```
+
+The source record is tied to the recorded archive SHA256s. A new upstream archive needs
+a newly checked record; the builder rejects mismatches.
 
 If an ASC has no embedded CRS or recognised PRJ, supply `--source-crs` only after
 checking its metadata. A conflicting CRS, non-metre unit, compound vertical CRS,
 nonempty output folder, excessive region or excessive tile count is rejected. There
 is no silent CRS guess, height-unit conversion, geoid conversion or overwrite. The
 explicit vertical-datum label describes the supplied heights, not a verified transform.
-The manifest intentionally keeps `source_metadata_verified: false`; independent source
-verification is an outstanding acceptance step, not something the converter can infer.
+The manifest intentionally keeps `source_metadata_verified: false`; complete vertical-datum verification remains unavailable; individual verified source facts
+are recorded separately rather than inferred from filenames.
 
 Defaults cap a regional build at 400 candidate tiles, a one-degree extent per axis and
 zoom 14. Bounds expand to the intersecting XYZ tile edges. Do not use this as a shortcut
@@ -94,8 +100,8 @@ in the checksum-verified MapLibre package's `src/data/dem_data.ts`.
 
 `coverage.geojson` describes fully valid tiles at the highest generated zoom;
 `nodata-mask.geojson` visibly masks unavailable areas. Incomplete coarse tiles may be
-absent even where finer tiles are valid. The viewer starts no lower than the first valid
-zoom. Grey masked areas and missing tiles are **unavailable data**, not zero-height land.
+absent even where finer tiles are valid. The local viewer uses the finest complete level and limits regional zoom-out;
+it does not expose missing coarser tiles inside fine coverage. Grey masked areas and missing tiles are **unavailable data**, not zero-height land.
 The overlay experiment refuses a camera outside the valid footprint or without a loaded
 height sample. Regional edge/coast behaviour must be rechecked with real source data.
 
@@ -122,14 +128,32 @@ rather than silently fetching an entire archive or changing elevation providers.
 The manifest, licence link and attribution remain visible. Synthetic inputs are labelled
 **SYNTHETIC TEST DATA — not Tasmanian terrain** in the header.
 
-The optional local photo experiment reads a file through a browser object URL. It is
-not uploaded or stored in the repository. Opacity, camera position/elevation, clockwise
-bearing, pitch (0° down; 90° horizontal) and **photo vertical** FOV are explicit. Letterbox
-height is accounted for when converting photo FOV to viewport FOV. Camera height uses
-the DEM's declared datum. Apply/reset controls are tested, but this is **not** the Stage 1
-Photo Manager alignment editor: no pose is saved, no source camera is overwritten,
-accepted-pose provenance/undo/landmark fitting are not implemented, and real-terrain
-camera calibration remains unverified. Apply the viewpoint again after resizing.
+The local photo overlay uses the existing saved collection when served by Photo Manager,
+or a browser-local file for an unsaved experiment. Opacity 0–100%, camera coordinates,
+elevation, clockwise bearing, pitch (0° down / 90° horizontal; supported to 89.9°), and
+photo vertical FOV are explicit. Letterboxing is included in the photo/viewport FOV
+conversion; resizing reapplies the same eye position. The eye position is independently
+reconstructed from public renderer getters, checking for camera constraints rather than
+saving a requested pose that was not rendered.
+
+Private `alignment` stores drafts, bounded undo history, source camera/subject snapshots,
+image hash, terrain-manifest hash, confidence, private notes and revision IDs. Ordinary
+photo saves preserve these fields. An explicit acceptance copies the last saved draft;
+only a numerical `camera_pose` plus confidence/source provenance enters an approved
+photo export. Private notes, originals, undo history and unaccepted drafts are stripped.
+A changed image invalidates its accepted pose. Rights approval is required; camera and
+subject fields are never overwritten. Revisions reject stale alignment windows. Writes
+are serialised, and alignment changes take private catalogue snapshots in
+`alignment-backups/`. These snapshots belong in the user's whole-folder backup.
+
+The current public map remains 2D. It does not interpret accepted pose metadata yet.
+The regional renderer starts overhead. A small adapter to the pinned MapLibre 6.16
+terrain tile manager prevents rendering terrain below the available DEM level; unavailable
+coarse geometry is omitted rather than presented as flat land. The adapter fails visibly
+if that renderer interface changes. Upgrade tests must cover this rule as well as the
+camera/framing checks; it is not a renderer-version-independent extension.
+Statewide processing, independent survey controls and assisted landmark fitting are
+later work; this regional delivery does not claim them.
 
 ## Reproduce the synthetic test scene
 
@@ -156,7 +180,8 @@ With the loopback server running, the existing Playwright/Chromium environment c
 python tests/terrain/browser_pilot.py
 ```
 
-That browser test explicitly depends on synthetic data in `pilots/terrain/data`.
+That browser test defaults to synthetic data in `pilots/terrain/data`; use
+`TERRAIN_KIND=list python tests/terrain/browser_pilot.py` for the real regional build.
 It checks true-scale elevation, both delivery modes, real 206 requests, no external
 terrain fallback, local photo opacity, letterboxed FOV, camera apply/reset and mobile
 layout. It does not validate LIST heights or a photograph's real-world viewpoint.

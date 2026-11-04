@@ -101,9 +101,20 @@ The public starter download is built with `python3 tools/build_photo_manager_dow
 Rebuild it after changes to editor source, map templates, or the public catalogue. It reads
 only the generic editor source and public site files, never private working folders.
 
-## Terrain prototype (review branch only)
+## Local 3D photo alignment (regional review)
 
-The isolated regional terrain tools and scene are described in [the pilot guide](docs/terrain-pilot.md).
-[Stage 0 results](docs/terrain-stage0-results.md) distinguish tested synthetic machinery
-from the real LIST data and hosting checks that are still blocked. This work does not
-change the existing map, Photo Manager, photo data or export workflow.
+The real LIST Lilydale / Mount Arthur terrain and local alignment editor are available in
+[the regional update](https://github.com/chrmccar/website/raw/refs/heads/terrain/stage-0-pilot/downloads/Photo-Manager-Terrain-Update.zip).
+Follow [the simple installation and use instructions](docs/PHOTO-ALIGNMENT-START.txt).
+It installs into the existing private Photo Manager; no catalogue or photos are replaced.
+The update includes terrain PNGs and needs no GDAL on the user's computer.
+
+Draft alignments stay private; accepted numerical poses can enter an approved website
+export. Existing map locations remain unchanged. Back up the entire private manager
+folder, including its catalogue, photo-assets, alignment-backups and terrain. A website
+export is not a private backup.
+
+This is a regional review tool. The public website remains 2D and has not been deployed.
+[Measured results](docs/terrain-stage0-results.md) describe real source verification,
+coverage, height-datum uncertainty and statewide hosting limits. Developer conversion
+and test instructions are in [the pilot guide](docs/terrain-pilot.md).

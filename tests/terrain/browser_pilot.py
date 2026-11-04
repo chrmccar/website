@@ -1,4 +1,4 @@
-"""Browser proof using generated SYNTHETIC data only; server on loopback port 8766."""
+"""Browser delivery/calibration proof; use TERRAIN_KIND=list for real built data."""
 import json
 import io
 import math
@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[2]
-source=(ROOT/'pilots/terrain/pilot.js').read_text()+'\nwindow.terrainPilot=()=>({map,manifest,hasCoverage,viewportFov});'
+source=(ROOT/'pilots/terrain/pilot.js').read_text()+'\nwindow.terrainPilot=()=>({map,manifest,hasCoverage,viewportFov,actualCamera,applyView});'
 with sync_playwright() as p:
     browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,
         proxy={'server':os.environ['HTTPS_PROXY'],'bypass':'127.0.0.1,localhost'},args=['--no-sandbox','--enable-unsafe-swiftshader'])
@@ -24,7 +24,9 @@ with sync_playwright() as p:
         print('PNG terrain:',json.dumps({'terrain':result['terrain'],'elevation':result['elevation'],'encoding':result['sources']['terrain']['encoding']}),flush=True)
         assert result['terrain']['exaggeration']==1
         assert result['elevation']>200,result
-        assert 'SYNTHETIC TEST DATA' in page.locator('#dataset-status').inner_text()
+        expected_kind=os.environ.get('TERRAIN_KIND','synthetic-test')
+        assert page.evaluate('terrainPilot().manifest.kind')==expected_kind
+        assert ('SYNTHETIC TEST DATA' in page.locator('#dataset-status').inner_text())==(expected_kind=='synthetic-test')
         assert result['sources']['terrain']['encoding']=='terrarium'
         assert all('openfreemap' not in url and 'mapterhorn' not in url for url,status in responses)
         page.screenshot(path='/workspace/scratch/terrain-png.png')
@@ -36,9 +38,9 @@ with sync_playwright() as p:
         assert abs(elevation-first)<1,(first,elevation)
         assert any('.pmtiles' in url and status==206 for url,status in responses)
         assert not page.locator('#error').is_visible(),page.locator('#error').inner_text()
-        print('PASS true-scale synthetic 3D terrain, local PNG/PMTiles equivalence, real 206 requests, no external terrain sources')
+        print(f'PASS true-scale {expected_kind} 3D terrain, local PNG/PMTiles equivalence, real 206 requests, no external terrain sources')
         # A locally selected wide photograph stays letterboxed and uses photo-vertical FOV.
-        page.get_by_text('Local photo overlay experiment',exact=True).click()
+        page.get_by_text('Align photograph',exact=True).click()
         buffer=io.BytesIO();Image.new('RGB',(1200,400),'white').save(buffer,format='PNG')
         page.locator('#photo').set_input_files({'name':'test.png','mimeType':'image/png','buffer':buffer.getvalue()})
         page.wait_for_selector('#overlay',state='visible')
@@ -49,8 +51,18 @@ with sync_playwright() as p:
         size=page.locator('#view').bounding_box();frame_height=min(size['width']/3,size['height'])
         expected=2*math.atan(math.tan(math.radians(45/2))*size['height']/frame_height)*180/math.pi
         assert abs(page.evaluate('terrainPilot().map.getVerticalFieldOfView()')-expected)<.1
+        actual=page.evaluate('''()=>{const {map,actualCamera}=terrainPilot();const tr=map._camera.transform,p=tr.getCameraLngLat();return {calculated:actualCamera(),drawn:{lng:p.lng,lat:p.lat,alt:tr.getCameraAltitude()}}}''')
+        assert abs(actual['calculated']['lat']-actual['drawn']['lat'])<1e-8,actual
+        assert abs(actual['calculated']['lng']-actual['drawn']['lng'])<1e-8,actual
+        assert abs(actual['calculated']['elevation_m']-actual['drawn']['alt'])<.001,actual
+        before=page.evaluate('terrainPilot().actualCamera()')
+        page.set_viewport_size({'width':1200,'height':800})
+        page.wait_for_timeout(250)
+        after=page.evaluate('terrainPilot().actualCamera()')
+        assert abs(before['lat']-after['lat'])<1e-6,(before,after)
+        assert abs(before['elevation_m']-after['elevation_m'])<.5,(before,after)
         page.locator('#reset').click()
-        assert page.evaluate('terrainPilot().map.getPitch()')==60
+        assert page.evaluate('terrainPilot().map.getPitch()')==0
         page.set_viewport_size({'width':390,'height':844})
         page.wait_for_timeout(100)
         assert page.evaluate('document.documentElement.scrollWidth')==390

@@ -220,8 +220,7 @@ def build(args):
     envelope = coverage_geom.GetEnvelope()
     bounds = [envelope[0], envelope[2], envelope[1], envelope[3]]
     outer = ogr.CreateGeometryFromJson(json.dumps({'type': 'Polygon', 'coordinates': [[
-        [bounds[0] - 1, bounds[1] - 1], [bounds[2] + 1, bounds[1] - 1],
-        [bounds[2] + 1, bounds[3] + 1], [bounds[0] - 1, bounds[3] + 1], [bounds[0] - 1, bounds[1] - 1]]]}))
+        [-180, -85], [180, -85], [180, 85], [-180, 85], [-180, -85]]]}))
     mask = outer.Difference(coverage_geom)
     coverage = {'type': 'Feature', 'properties': {}, 'geometry': json.loads(coverage_geom.ExportToJson())}
     write_json(output / 'coverage.geojson', coverage)
@@ -236,6 +235,11 @@ def build(args):
                 'tile_count_by_zoom': dict(Counter(t[0] for t in tiles)), 'tiles': stats,
                 'nodata_policy': 'Omit incomplete tiles; opaque mask outside fully valid max-zoom footprint. No zero fill.',
                 'build_seconds': round(time.monotonic() - started, 3)}
+    if getattr(args, 'source_record', None):
+        record = json.loads(Path(args.source_record).read_text())
+        if record.get('archives') != sources:
+            raise ValueError('Source record must identify every input archive by name and SHA256, in input order')
+        manifest['source_record'] = record
     package_pmtiles(output, tiles, bounds, attribution, manifest)
     manifest['png_bytes'] = sum(s['bytes'] for s in stats.values())
     manifest['pmtiles_bytes'] = (output / 'terrain.pmtiles').stat().st_size
@@ -261,6 +265,7 @@ def parser():
     p.add_argument('--source-url', required=True)
     p.add_argument('--licence-url', required=True)
     p.add_argument('--attribution', required=True)
+    p.add_argument('--source-record', help='Reviewed metadata/attribution record; archive names and SHA256 must match inputs')
     return p
 
 if __name__ == '__main__':

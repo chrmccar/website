@@ -1,0 +1,95 @@
+{
+  "kind": "source-consistency-not-survey-control",
+  "sample_points": [
+    {
+      "label": "Lilydale",
+      "requested_lon_lat": [
+        147.214,
+        -41.25
+      ],
+      "output_pixel_centre_lon_lat": [
+        147.2138786315918,
+        -41.250064088298785
+      ],
+      "decoded_elevation_m": 164.6171875,
+      "nearby_native_min_m": 161.47500610351562,
+      "nearby_native_max_m": 168.30499267578125,
+      "source_rasters": [
+        "list_dem_25m_launceston.asc"
+      ]
+    },
+    {
+      "label": "southern high ridge",
+      "requested_lon_lat": [
+        147.28975,
+        -41.2769
+      ],
+      "output_pixel_centre_lon_lat": [
+        147.28975296020508,
+        -41.27690341275435
+      ],
+      "decoded_elevation_m": 1180.0,
+      "nearby_native_min_m": 1170.843994140625,
+      "nearby_native_max_m": 1180.0,
+      "source_rasters": [
+        "list_dem_25m_launceston.asc",
+        "list_dem_25m_dorset.asc"
+      ]
+    },
+    {
+      "label": "Karoola",
+      "requested_lon_lat": [
+        147.17,
+        -41.24
+      ],
+      "output_pixel_centre_lon_lat": [
+        147.1699333190918,
+        -41.239996497801926
+      ],
+      "decoded_elevation_m": 102.109375,
+      "nearby_native_min_m": 100.0,
+      "nearby_native_max_m": 104.00900268554688,
+      "source_rasters": [
+        "list_dem_25m_launceston.asc"
+      ]
+    },
+    {
+      "label": "northeast",
+      "requested_lon_lat": [
+        147.35,
+        -41.15
+      ],
+      "output_pixel_centre_lon_lat": [
+        147.34983444213867,
+        -41.15009395273924
+      ],
+      "decoded_elevation_m": 103.734375,
+      "nearby_native_min_m": 98.36199951171875,
+      "nearby_native_max_m": 109.15699768066406,
+      "source_rasters": [
+        "list_dem_25m_dorset.asc"
+      ]
+    },
+    {
+      "label": "south",
+      "requested_lon_lat": [
+        147.25,
+        -41.33
+      ],
+      "output_pixel_centre_lon_lat": [
+        147.24992752075195,
+        -41.33003335283126
+      ],
+      "decoded_elevation_m": 429.421875,
+      "nearby_native_min_m": 425.5509948730469,
+      "nearby_native_max_m": 436.6109924316406,
+      "source_rasters": [
+        "list_dem_25m_launceston.asc"
+      ]
+    }
+  ],
+  "verified_png_pmtiles_tiles": 27,
+  "max_encoding_error_m": 0.001953125,
+  "datum_warning": "Supplied LIST heights; vertical datum not stated in supplied metadata",
+  "method": "All PNG SHA256s and PMTiles payloads checked. Five fixed regional output pixel centres independently transformed to GDA94 native rasters; decoded bilinear values lie within their native 5x5 neighbourhood envelope. Analytic-ramp tests separately constrain reprojection accuracy and axis orientation."
+}

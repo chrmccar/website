@@ -69,6 +69,7 @@ function locateForm(){
 }
 for(const id of ['camera-lat','camera-lng','camera-bearing','subject-lat','subject-lng'])$(id).addEventListener('change',refreshMap);
 function renderList(){
+  $('alignment-link').href='/terrain/'+(currentId?'?photo='+encodeURIComponent(currentId):'');
   $('library-count').textContent=`${catalogue.length} photos${places.length?` · ${places.length} places`:''}`;
   const list=$('library-list');list.replaceChildren();
   if(!catalogue.length&&!places.length){const el=document.createElement('div');el.className='library-empty';el.textContent='No photographs yet. Add your first image to get started.';list.append(el);return;}

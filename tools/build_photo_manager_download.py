@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'tools/photo-manager'
 SITE = ROOT / 'tasmania-through-time'
 OUTPUT = ROOT / 'downloads/Tasmania-Photo-Manager.zip'
-SOURCES = ('photo_manager.py', 'editor.html', 'editor.js', 'editor.css',
+SOURCES = ('photo_manager.py', 'alignment.py', 'editor.html', 'editor.js', 'editor.css',
            'START-MAC.command', 'START-WINDOWS.bat', 'START-HERE.txt')
 
 def build():
@@ -43,7 +43,7 @@ def build():
             archive.writestr(info, path.read_bytes())
     update = ROOT / 'downloads/Photo-Manager-Update.zip'
     with zipfile.ZipFile(update, 'w', zipfile.ZIP_DEFLATED) as archive:
-        files = [(SOURCE/name, name) for name in ('photo_manager.py','editor.html','editor.js','editor.css','UPDATE-INSTRUCTIONS.txt')]
+        files = [(SOURCE/name, name) for name in ('photo_manager.py','alignment.py','editor.html','editor.js','editor.css','UPDATE-INSTRUCTIONS.txt')]
         files += [(SITE/name,'tasmania-through-time/'+name) for name in ('index.html','app.js','style.css')]
         for path,name in files:
             info=zipfile.ZipInfo(name,date_time=(2026,1,1,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED

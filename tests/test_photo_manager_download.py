@@ -14,7 +14,7 @@ PREFIX = 'Tasmania-Photo-Manager/'
 
 class PhotoManagerDownloadTests(unittest.TestCase):
     def test_archive_contains_only_source_and_public_site(self):
-        source_names = {'photo_manager.py', 'editor.html', 'editor.js', 'editor.css',
+        source_names = {'alignment.py', 'photo_manager.py', 'editor.html', 'editor.js', 'editor.css',
                         'START-HERE.txt', 'START-MAC.command', 'START-WINDOWS.bat'}
         with zipfile.ZipFile(ARCHIVE) as z:
             self.assertIsNone(z.testzip())

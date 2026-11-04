@@ -1,121 +1,127 @@
-# Stage 0 evidence — 4 November 2026
+# Regional LIST terrain and private alignment results
 
-## Current result
+The network/source blocker recorded in the first prototype is resolved. Real LIST terrain
+is built and supplied in `downloads/Photo-Manager-Terrain-Update.zip` for local review.
+The existing public website has not been deployed or changed. Statewide terrain and
+optional public 3D/assisted landmark fitting are not claimed as complete.
 
-**Partial Stage 0 implementation; not a completed real-LIST pilot.** The isolated
-conversion pipeline and rendering scene work with explicitly synthetic test data.
-Official LIST metadata and data downloads are blocked by this environment's enforced
-HTTP allowlist. No master DEM has been retrieved, no actual LIST terrain has been
-validated, no statewide dataset has been built, and no live site deployment has occurred.
-Stage 1 production editor, Stage 2 statewide rollout and Stage 3 assisted alignment
-are not complete and are not represented as delivered.
+## Source verification
 
-Existing project audit: MapLibre 6.16.0, separate static map and standard-library local
-Photo Manager. Published photo fields distinguish camera, subject and camera bearing;
-there is no accepted 3D pose schema. Optional places use a separate catalogue. The
-current builder exposes the extension points without changing these contracts. The
-existing tracked site/source footprint measured 13,643,281 bytes, including downloadable
-editor archives. Raw DEM and generated terrain outputs stay outside tracked source.
+Retrieved 4 November 2026 from the official LIST open-data origin. The Launceston chat
+upload exceeded the executor's 32 MiB transfer limit, so the same named official package
+was retrieved directly. It is not claimed to be byte-identical to the inaccessible upload.
+Launceston, Dorset and George Town cover the regional pilot across municipal boundaries.
+All archive CRCs passed. Exact URLs, SHA256s, metadata XML and attribution-PDF hashes,
+verified facts and remaining uncertainties are in [the source record](terrain/list-source-record.json).
 
-## Measured local test dataset
+The package README, PRJ and official ISO19139 metadata agree on **GDA94 / MGA zone 55,
+EPSG:28355**. Actual source raster cells are 25 m; nodata is -9999. Source generation is
+the third edition, July 2007; package extraction is January 2021, while the metadata was
+revised March 2025. These are different dates, not a claim of a 2025 elevation survey.
 
-The input is a generated 25 m EPSG:7855 mathematical surface centred near the intended
-pilot coordinates. This geographic placement does **not** make it real Tasmanian terrain.
-Its height datum is explicitly synthetic, not AHD. Requested bounds are
-147.08, -41.34, 147.32, -41.16, expanded to full tile edges.
+**The supplied metadata does not name a vertical datum.** The PRJ has `Zunits NO`.
+Native metre elevations are retained without a geoid or ellipsoid conversion. The
+manifest's complete-metadata-verification flag remains false for that reason; individual
+confirmed facts are recorded separately. Camera heights use these same supplied values.
 
-| Measurement | Actual synthetic run |
+Licence: [CC BY 3.0 Australia](https://creativecommons.org/licenses/by/3.0/au/).
+Digital attribution: “LIST Tasmania 25 metre Digital Elevation Model from theLIST
+© State of Tasmania”; reprojection and Terrarium encoding are identified as modifications.
+The CC BY badge is extracted unchanged from the official attribution PDF and links to the source licence.
+The official source states 90% of elevations are within 5 m of true elevation, with
+exceptions in steep/obscured areas. 25 m is grid spacing, not survey-grade positioning.
+
+## Measured real regional build
+
+Requested bounds: west 147.05, south -41.36, east 147.4, north -41.08. Tile-edge envelope:
+147.041015625, -41.37680856570234, 147.48046875, -41.04621681452063. The valid footprint
+has gaps; the envelope is not a promise of complete rectangular coverage.
+
+| Measurement | Real LIST build |
 | --- | ---: |
-| Fully valid tiles | 22 |
-| Zoom 11 tiles / PNG bytes | 6 / 469,581 |
-| Zoom 12 tiles / PNG bytes | 16 / 1,230,756 |
-| Total PNG bytes | 1,700,337 |
-| PMTiles bytes | 1,700,806 |
-| Archive overhead over PNG payload | 469 bytes |
-| Initial build duration in this instance | 3.543 s |
-| Browser centre height, either delivery mode | approximately 928.663 m (synthetic) |
-| Terrain vertical exaggeration | 1 |
+| Input ZIP bytes: Launceston | 39,531,813 |
+| Input ZIP bytes: Dorset | 83,427,041 |
+| Input ZIP bytes: George Town | 17,784,881 |
+| Fully valid output tiles | 27 |
+| Zoom 11 / zoom 12 tiles | 4 / 23 |
+| PNG payload | 3,064,636 bytes |
+| PMTiles archive | 3,065,159 bytes |
+| Archive overhead | 523 bytes |
+| Conversion time, one run here | 3.612 seconds |
+| Largest encoding error | 0.001953125 m |
+| Supplied height range in generated tiles | 10 to approximately 1,405 m |
+| Vertical exaggeration | 1 |
 
-The archive contained byte-identical PNGs at every z/x/y address. Source CRS was actually
-reprojected from EPSG:7855 to EPSG:3857. Known independent east/north height ramps matched
-sampled output to within 0.05 m, while encoding alone stayed within 1/512 m. Raster grid
-orientation, missing-data handling and source units must still be validated against LIST.
-Timing is one machine/run, not a performance guarantee or cross-platform benchmark.
+Every PNG checksum and every PMTiles tile payload was verified. Five fixed regional
+reference positions were independently transformed back into the native rasters;
+output values lie within their native neighbourhood elevation envelopes. See
+[the numerical report](terrain/regional-validation.json). These are source-consistency
+checks, **not independently surveyed control points**. Analytic-ramp tests separately
+check reprojection within 0.05 m, north/east orientation, encoding precision and no-data.
 
-The local test server returned **206**, `Content-Range: bytes 0-126/1700806`, exactly 127
-header bytes, `Access-Control-Allow-Origin: *`, and no content encoding. The browser
-successfully switched between local PNG and PMTiles terrain. The host probe also correctly rejected an ordinary static server that ignored Range
-and returned HTTP 200, stopping after 128 bytes instead of downloading its full archive.
-This proves the local server/library path only. It does **not** establish GitHub Pages range/CORS readiness.
+Incomplete tiles are omitted, never filled with zero or transparent RGB. The viewer
+uses the finest complete level and an opaque no-data mask to avoid coarse missing-tile
+fallback being mistaken for valid fine terrain. Unknown or unloaded heights cannot be
+used to place a camera. The scene loads this project's generated elevation files only,
+with no hosted terrain fallback. CDN access supplies renderer code, not elevation data.
 
-## Hosting decision and sizing limits
+## Hosting decision
 
-Individual PNGs are the conservative baseline pending real-host checks; PMTiles is a
-supported experimental alternative, not an automatic deployment choice. In this sample
-PMTiles reduced file count, not payload bytes. It needs real range responses, byte-stable
-content encoding and appropriate cross-origin headers if a separate host is chosen.
-Use `tools/terrain/check_host.py` on an actual approved hosted archive before accepting it.
-No matching archive is deployed to the public site, and its origin cannot currently be
-reached from this environment, so the hosting check remains unrun there.
+PNG is the supported local distribution: the complete regional update serves elevation
+from the user's computer through Photo Manager. It needs no GDAL on the user's computer.
+PMTiles is tested separately through the range-capable loopback pilot server; it is
+excluded from the local program update because the normal manager needs only PNG files.
+There is little payload saving in this pilot; PMTiles mainly reduces file count.
 
-The handover's GitHub Pages published-site ceiling is 1 GB. Its current official wording
-could not be fetched because docs.github.com is also blocked. We have not assumed a
-statewide archive fits. An illustrative main-Tasmania/island rectangle (143.4, -44.3,
-149, -39) gives 1,353 z11 tiles and 5,330 z12 tiles: **6,683 tiles**. This rectangle includes
-sea and is not a verified LIST footprint. Uncompressed RGB pixel payload would be
-**1,313,931,264 bytes**, before packaging/metadata. Applying the *synthetic* sample's mean
-compression gives 516,516,008 bytes, but this is not a defensible estimate for actual LIST
-heights. Source entropy, coast/gap exclusions, overview requirements, tile duplication,
-archive packaging and the existing site all matter. No statewide upload is justified yet.
+A read-only request to an **existing** project-hosted image returned HTTP 206, exactly
+127 bytes, `Content-Range: bytes 0-126/278096`, CORS `*`, and no content encoding.
+[Recorded headers](terrain/hosting-probe.json) establish binary range support on that
+response; they do not certify an unhosted PMTiles archive. No new terrain was deployed
+for this check. The archive must still be probed at its actual approved deployed URL.
 
-Reproduce geometric budgeting (no data downloads):
+The [official Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+were reachable and confirm a **1 GB published-site ceiling**. A broad Tasmania/island
+rectangle (143.4, -44.3, 149, -39) contains 6,683 z11/z12 tiles. At this regional sample's
+mean compression, that illustrates approximately **758,554,163 bytes** of PNG payload,
+before metadata, packaging, existing site files and overviews. The rectangle includes
+sea and is not the official coverage footprint. Other regions can compress differently;
+this is not a verified statewide budget or approval to upload the state.
 
-```sh
-python tools/terrain/estimate.py --manifest pilots/terrain/data/manifest.json \
-  --bounds 143.4 -44.3 149 -39 --max-zoom 12
-```
+Recommendation: retain PNG for local/regional review; benchmark several more representative
+regions and whole-state coverage before choosing a dedicated static terrain repository
+or a verified range-enabled PMTiles host. Do not put raw source masters in public Git.
 
-## Checks and concrete limits
+## Local Photo Manager integration
 
-- Existing 12 repository tests passed; no tracked homepage, CNAME, catalogue, editor,
-  download archive or public map files were changed by this terrain branch.
-- Eight geospatial tests passed, covering Terrarium values/errors, actual CRS reprojection, XYZ orientation,
-  omission of incomplete data, PMTiles byte equivalence, unknown CRS rejection,
-  non-overwrite behaviour, safe ZIP extraction and ASC/PRJ handling.
-- Chromium rendered real 3D from local **synthetic** height tiles and exercised local
-  photo opacity, letterboxed vertical FOV, camera apply/reset and narrow layout.
-- No actual LIST heights, official known-point comparisons, coastline, statewide source
-  mosaics, Mac/Windows execution, real-photo camera-pose calibration or public-host archive
-  behaviour have been verified. No silent alternate DEM source was used.
+The optional alignment view selects existing saved photographs, adjusts opacity,
+position/elevation, bearing, pitch and photo vertical FOV. Letterboxing and viewport
+resizing are accounted for. A requested eye position is checked against the realised
+renderer camera rather than silently saving a constrained viewpoint. Existing camera
+and subject coordinates stay intact. A camera-location shortcut uses an explicitly
+estimated 1.7 m eye height above the supplied DEM.
 
-## External prerequisite and next actions
+Private drafts, notes, bounded undo history, original positions, image/terrain hashes,
+confidence and revision IDs live in the local catalogue. Alignment writes save lossless
+private catalogue snapshots. Ordinary photograph edits preserve alignment fields.
+Only explicit acceptance of the last saved draft permits `camera_pose` metadata into
+a rights-approved public photograph export. Drafts/notes/history never enter exports;
+replacing the image invalidates its old pose. The public map remains 2D and keeps its
+existing marker coordinates and year filtering.
 
-The existing custom network entries were unpkg.com and tiles.openfreemap.org. Required
-additions were saved to the environment draft, preserving those entries:
+See [simple installation/use/backup instructions](PHOTO-ALIGNMENT-START.txt).
+The update contains program files and derived terrain, never the user's catalogue or photos.
 
-- www.thelist.tas.gov.au — official metadata
-- listdata.thelist.tas.gov.au — official open-data downloads
-- maplibre.org, docs.protomaps.com, docs.github.com — authoritative format/hosting docs
-- christophermccarthy.au, chrmccar.github.io — read-only checks of project-controlled hosting
+## Validation and remaining limits
 
-Saving a draft did not apply these rules. Current runtime access remained blocked.
-After the user saves/publishes the environment settings, recheck connectivity, obtain a
-single official regional package, record its metadata/CRS/vertical datum/licence and SHA,
-run the converter on that real input, verify known points and no-data edges, and replace
-this synthetic-only measurement section with real results. Do not download the entire
-state first, or commit raw regional ZIPs/ASC grids. Keep data in the private master folder.
-
-Then review the Stage 0 pilot and hosting evidence before production work. Stage 1 should
-use a separately versioned pose draft in the local Photo Manager, preserve the original
-camera/subject coordinates, require explicit acceptance before applying a match, support
-undo and retain confidence/source/landmark evidence. Confirm pitch/FOV/height conventions
-on real terrain before exporting approved poses. Stage 2 requires measured statewide
-storage and boundary/coverage tests; Stage 3 landmark assistance/public 3D remains later.
-
-## Review delivery
-
-The code and report are saved on `terrain/stage-0-pilot`, with no merge or deployment.
-Git push succeeded. Creating a draft pull request through the available GitHub CLI
-failed with HTTP 403 at the GraphQL API; no token was requested or extracted. The
-branch remains reviewable through GitHub's compare view. This API limitation does not
-prevent continuing local work once the official data hosts become accessible.
+- Seventeen repository tests: public file integrity, rights/draft exclusion, place dates,
+  catalogue preservation, private alignment acceptance/withdrawal, undo, stale revision
+  rejection, invalid pose rejection and image-replacement invalidation.
+- Eight geospatial tests: reprojection, orientation, encoding, no-data holes, ZIP safety,
+  ASC/PRJ handling, non-overwrite behaviour and PNG/PMTiles equivalence.
+- Browser checks cover actual rendering, both terrain delivery modes, photo framing,
+  realised camera position, opacity, resize, reset/undo, mobile layout and installed
+  private draft save/reopen/accept/export/withdraw behaviour.
+- Absolute height datum and independent survey/photo-pose validation remain unknown.
+- Statewide conversion/hosting, optional landmark solving and public read-only 3D remain
+  later stages. A functioning regional editor is not represented as statewide completion.
+- All work is on the review branch; no merge, live deployment or environment publication.

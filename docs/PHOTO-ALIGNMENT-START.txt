@@ -1,0 +1,58 @@
+PHOTO ALIGNMENT — LILYDALE / MOUNT ARTHUR
+
+INSTALL ONCE
+1. Close Photo Manager and its terminal window.
+2. Extract Photo-Manager-Terrain-Update.zip.
+3. Copy ALL extracted files and the terrain folder INTO your EXISTING
+   Photo Manager folder (the one containing START-WINDOWS.bat and
+   LOCAL_COLLECTION.json). Replace matching program files.
+4. Open START-WINDOWS.bat again (START-MAC.command on Mac).
+
+This update contains no photographs or collection. Do not delete your
+existing folder. Keep a backup of the entire existing folder first.
+Python 3 is required, as with the existing manager. No GDAL installation
+or DEM conversion is needed on your computer. Internet is needed to load
+MapLibre; elevation tiles are included and served from your computer.
+
+ALIGN A PHOTOGRAPH
+1. In Photo Manager select a photograph and save any edits.
+2. Click "3D photo alignment" below LOCATION. A new tab opens.
+3. Open "Align photograph". The saved photograph appears over the terrain.
+4. Adjust Opacity to see both the photo and mountains.
+5. Click "Use existing camera location" if it was already recorded.
+   Otherwise click "Place camera on map", then where the photographer stood.
+   This uses an estimated eye height of 1.7 m above the DEM. You can edit
+   the coordinates and elevation directly.
+6. Adjust Bearing, Pitch and Photo vertical field of view, then click
+   "Apply viewpoint". Repeat until the ridgelines match. Bearing is
+   clockwise from north; pitch is 0 degrees down and 90 horizontal.
+   Right-drag also turns/tilts the view. "Reset scene" returns overhead;
+   "Undo viewpoint" returns to the previous applied view.
+7. Choose confidence, write any private notes and click
+   "Save alignment draft". You can close and reopen the tool later.
+   "Restore previous saved draft" restores an earlier saved version.
+
+This is a regional terrain pack. Grey areas have no elevation data.
+Photos outside the pack remain editable in the normal manager.
+The 25 m DEM does not show individual buildings or trees. Heights use
+LIST's supplied values; the supplied metadata does not name a vertical
+height datum. Do not treat a match as survey-grade positioning.
+Existing camera and subject locations are preserved. Alignment is stored
+separately; it does not move the dot on the current public map.
+
+OPTIONAL PUBLIC METADATA
+Saving a draft does not publish it. Review the photo's rights in the normal
+manager first. To approve a match, tick the approval box and click
+"Accept saved alignment". This accepts the LAST SAVED draft.
+Then use "Download website update" in the normal manager and upload the
+exported tasmania-through-time folder to GitHub as before. The existing
+public map remains 2D; accepted pose metadata is included for future 3D
+viewing. Private alignment notes, drafts and history are excluded.
+"Keep alignment private" removes pose metadata from the next export.
+
+BACK UP
+Close Photo Manager and its terminal. Copy the WHOLE Photo Manager folder
+to your backup drive, including LOCAL_COLLECTION.json, photo-assets,
+alignment-backups and terrain. Keep original full-resolution photos too.
+The website update ZIP is a public export, not a complete private backup.
+If using Google Drive, wait for syncing before switching computers.

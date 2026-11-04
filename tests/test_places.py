@@ -40,7 +40,7 @@ class PlaceTests(unittest.TestCase):
 
     def test_update_package_cannot_replace_catalogues_or_images(self):
         with zipfile.ZipFile(ROOT/'downloads/Photo-Manager-Update.zip') as z:
-            self.assertEqual(set(z.namelist()),{'photo_manager.py','editor.html','editor.js','editor.css','UPDATE-INSTRUCTIONS.txt','tasmania-through-time/index.html','tasmania-through-time/app.js','tasmania-through-time/style.css'})
+            self.assertEqual(set(z.namelist()),{'alignment.py','photo_manager.py','editor.html','editor.js','editor.css','UPDATE-INSTRUCTIONS.txt','tasmania-through-time/index.html','tasmania-through-time/app.js','tasmania-through-time/style.css'})
             for name in z.namelist():
                 self.assertNotIn('json',name);self.assertNotIn('images/',name)
                 source = ROOT/name if name.startswith('tasmania-through-time/') else ROOT/'tools/photo-manager'/name
